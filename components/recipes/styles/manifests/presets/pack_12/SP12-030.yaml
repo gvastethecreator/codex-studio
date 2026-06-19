@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Esmalte cuarteado, lona con moho, mecánica oxidada y grasa envejecida en nodos críticos.
   camera_and_composition: Choke-points, revelación escalonada y funnels de presión sin exigir parque, showdown o arena fija.
   atmosphere_and_mood: Macabra, burlona y crecientemente impredecible.
-  rendering_and_quality: Encounter key-art de alto impacto con legibilidad de fases de boss y hazards ambientales grotescos.
+  rendering_and_quality: "Boss-showdown gameplay screencap: phase hazards, grotesque arena beats, dodge space readable."
 avoidRules:
   - watermark
   - text
   - logo
   - clean-theme
   - low-contrast
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-030.webp
 taxonomy:

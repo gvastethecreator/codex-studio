@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Asfalto mojado, vidrio urbano, metal liviano y reflejos de interfaz holográfica.
   camera_and_composition: Foco central, ventanas de jugada y presión de público sin exigir alley o mesa literal.
   atmosphere_and_mood: Tensa, estilizada y de apuestas altas.
-  rendering_and_quality: Urban tactical PvP gameplay art con claridad de turno, ventaja y presión de crowd.
+  rendering_and_quality: "Card-duel gameplay screencap: turn pressure, crowd advantage, alley tactics, readable play space."
 avoidRules:
   - watermark
   - text
   - logo
   - medieval-castle
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-074.webp
 taxonomy:

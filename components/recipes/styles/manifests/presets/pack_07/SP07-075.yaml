@@ -12,29 +12,29 @@ tags:
   - architecture-and-interior
   - megastructure-and-impossible-space
 visualDna:
-  aesthetic: Paradoja espacial de perspectiva imposible, ambigüedad óptica matemática y circulación imposible.
+  aesthetic: Impossible-perspective spatial paradox, mathematical optical ambiguity, and impossible circulation.
   form_and_line: >-
-    Bucles interbloqueados, arcos invertibles, mallas isométricas y permuta suelo-muro-techo en
-    trayectorias cerradas.
+    Interlocked loops, reversible arches, isometric meshes, and floor-wall-ceiling
+    permutation through closed circulation paths.
   color_palette: >-
     Monochrome gray spectrum, warm print-paper cream, deep ink black linework, subtle sepia
     undertones, and cool shadow modulation bands
   lighting_setup: >-
-    Exposición uniforme de impresión con sombras deliberadamente conflictivas y contraste moderado
-    para sostener la ilusión.
-  material_texture: Grano de papel litográfico, hatch de tinta grabada y tratamiento plano mate de piedra abstracta.
+    Even print-like exposure with deliberately conflicting shadows and moderate contrast
+    that keeps the illusion legible.
+  material_texture: Lithographic paper grain, engraved ink hatching, and flat matte abstract-stone treatment.
   render_quality: >-
-    Ilusión óptica de precisión alta, coherencia geométrica estricta y topología desestabilizante
-    pero legible.
+    High-precision optical illusion, strict geometric coherence, and destabilizing
+    but readable topology.
   spatial_distortion: Multi-gravity inversion loops and perspective-locked paradox compression across connected planes
-  atmosphere: Cerebral, elegante y desorientante, con infinitud no resuelta.
+  atmosphere: Cerebral, elegant, and disorienting, with unresolved infinity.
   key_features: >-
-    Circuitos multi-gravedad, transiciones imposibles de arco, loops bloqueados por perspectiva y
-    jerarquía de línea litográfica.
+    Multi-gravity circuits, impossible arch transitions, perspective-locked loops, and
+    lithographic line hierarchy.
   creative_brief: >-
-    Usa arquitectura imposible como estilo transferible: gravedad contradictoria, bucles cerrados,
-    transiciones suelo-muro-techo y línea litográfica disciplinada. El objetivo es paradoja legible,
-    no una escalera específica.
+    Use impossible architecture as transferable style: contradictory gravity, closed loops,
+    floor-wall-ceiling transitions, and disciplined lithographic linework. Aim for readable
+    paradox, not one specific staircase.
 avoidRules:
   - logical physics
 assets:

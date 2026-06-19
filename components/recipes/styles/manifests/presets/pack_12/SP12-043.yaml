@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Agua turbulenta, hormigón roto, acero doblado y residuos urbanos activos.
   camera_and_composition: Escala colosal, corredores de evacuación y puntos de defensa visibles sin exigir puerto.
   atmosphere_and_mood: Abrumadora, urgente y de supervivencia colectiva.
-  rendering_and_quality: Event-scale gameplay key-art con legibilidad de rutas civiles, amenaza y objetivos de contención.
+  rendering_and_quality: "Evacuation event gameplay frame: civilian routes, kaiju scale, containment objectives readable."
 avoidRules:
   - watermark
   - text
   - logo
   - cute-style
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-043.webp
 taxonomy:

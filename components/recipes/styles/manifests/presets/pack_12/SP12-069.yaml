@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Antenas corroídas, lona técnica, arena fina y cableado expuesto por tormenta.
   camera_and_composition: Objetivos dominantes, rutas de aproximación y zonas contestadas sin exigir dunas o torres literales.
   atmosphere_and_mood: Estratégica, hostil y de supervivencia informacional.
-  rendering_and_quality: Dynamic objective-mode gameplay art con legibilidad de control de señal y prioridad táctica.
+  rendering_and_quality: "Objective-mode gameplay frame: signal control, dune cover, radio priority, tactical pressure readable."
 avoidRules:
   - watermark
   - text
   - logo
   - fantasy-castle
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-069.webp
 taxonomy:

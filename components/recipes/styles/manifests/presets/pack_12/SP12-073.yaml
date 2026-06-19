@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Corteza gigante, savia espesa, placas mecánicas y anclajes de ascenso.
   camera_and_composition: Escala extrema y puntos de ascenso sin exigir huerto titánico.
   atmosphere_and_mood: Asombrosa, peligrosa y cooperativamente épica.
-  rendering_and_quality: Hunting-season gameplay key-art con telegraph claro de fase, ascenso y remate.
+  rendering_and_quality: "Colossus-hunt gameplay frame: phase telegraph, climb route, weak point, finishing window readable."
 avoidRules:
   - watermark
   - text
   - logo
   - city-neon
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-073.webp
 taxonomy:

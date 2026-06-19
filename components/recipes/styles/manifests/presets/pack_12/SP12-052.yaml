@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Superficies metálicas, escudos de campo y chispas de impacto sostenido.
   camera_and_composition: Eje central contestado, flancos jugables y rutas de reconquista sin exigir puente.
   atmosphere_and_mood: Frenética, competitiva y de control territorial.
-  rendering_and_quality: Objective-mode map con layout nítido de punto, cobertura y líneas de empuje.
+  rendering_and_quality: "Objective-mode gameplay screencap: capture point, flank lanes, bridge pressure, cover readable."
 avoidRules:
   - watermark
   - text
   - logo
   - clutter
   - blur
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-052.webp
 taxonomy:

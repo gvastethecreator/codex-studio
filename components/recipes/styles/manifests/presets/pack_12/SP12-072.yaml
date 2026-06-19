@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Piedra erosionada, caucho de alto desgaste, metal reforzado y escombro activo.
   camera_and_composition: Checkpoints, atajos y zonas de choque sin exigir catedrales.
   atmosphere_and_mood: Ruidosa, veloz y de conquista territorial.
-  rendering_and_quality: Seasonal action-racer gameplay art con legibilidad robusta de pacing y control de tramo.
+  rendering_and_quality: "Rally-raid gameplay screencap: pacing, route conquest, dust hazards, control segment clear."
 avoidRules:
   - watermark
   - text
   - logo
   - tropical
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-072.webp
 taxonomy:

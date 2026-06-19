@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Escoria vítrea, hierro incandescente, cadenas antiguas y piedra volcánica fracturada.
   camera_and_composition: Eje diagonal de progresión con crisoles, plataformas seguras y landmarks térmicos como anclas opcionales.
   atmosphere_and_mood: Hostil, abrasiva y ceremonial, de supervivencia técnico-combativa.
-  rendering_and_quality: Entorno jugable de alta claridad sistémica para hazards, rutas, crafting nodes y encuentros.
+  rendering_and_quality: "Dungeon gameplay screencap: lava hazards, crafting nodes, routes, combat space readable."
 avoidRules:
   - watermark
   - text
   - logo
   - snow
   - pastel
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-010.webp
 taxonomy:

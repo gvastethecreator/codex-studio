@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Basalto pulido espejo, aleaciones ceremoniales oscuras, ceniza fina y ornamento imperial desgastado.
   camera_and_composition: Dominio axial, carril de duelo y arquitectura de clímax sin exigir trono físico.
   atmosphere_and_mood: Fatalista, resuelta y catastróficamente épica.
-  rendering_and_quality: Campaign-finale gameplay key-art con legibilidad decisiva de fase, distancia y cierre narrativo.
+  rendering_and_quality: "Final-boss gameplay screencap: phase distance, duel lane, eclipse silhouette, campaign closure readable."
 avoidRules:
   - watermark
   - text
   - logo
   - comedic-style
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-080.webp
 taxonomy:

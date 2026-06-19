@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Mármol estelar, energía fluida y metal fino de interfaz arcano-tecnológica.
   camera_and_composition: Top-down suave, cuadrícula implícita y espacios limpios para lectura sistémica sin exigir ajedrez literal.
   atmosphere_and_mood: Calma cerebral, cálculo estratégico y anticipación táctica.
-  rendering_and_quality: Strategy art de reglas claras con telemetría visual de sinergia, amenaza y tempo.
+  rendering_and_quality: "Strategy gameplay frame: board rules, synergy threats, tempo lanes, astral pieces readable."
 avoidRules:
   - watermark
   - text
   - logo
   - clutter
   - noisy-palette
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-031.webp
 taxonomy:

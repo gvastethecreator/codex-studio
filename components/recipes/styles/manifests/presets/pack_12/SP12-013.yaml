@@ -23,17 +23,26 @@ visualDna:
     Gran angular con líneas guía, nodos puzzle y lectura ceremonial; escaleras o templos sólo si refuerzan la mecánica
     visual.
   atmosphere_and_mood: Sagrada, silenciosa y analítica, de descubrimiento ritual.
-  rendering_and_quality: Zone-art premium con readability de mecánicas ópticas y landmarks de exploración.
+  rendering_and_quality: "Exploration gameplay screencap: optical mechanics, shrine landmarks, traversal decisions clear."
   creative_brief: >-
     Aplica Crystal Desert Shrine como gramatica original de videojuego sobre cualquier input: conserva su sistema de
     genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
-    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text
   - logo
   - urban-neon
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-013.webp
 taxonomy:

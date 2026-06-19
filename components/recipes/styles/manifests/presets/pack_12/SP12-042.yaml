@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Vidrio blindado, cableado expuesto, holografía rota y módulos de confinamiento.
   camera_and_composition: Núcleo, anillos de contención y rutas de intervención como estructura visual sin exigir laboratorio.
   atmosphere_and_mood: Tensa, científica y caótica bajo protocolo.
-  rendering_and_quality: Critical-incident gameplay art con claridad de niveles de amenaza, ruta y objetivo.
+  rendering_and_quality: "Lab-incident gameplay screencap: rift threat level, route choice, objective state, hazard timing clear."
 avoidRules:
   - watermark
   - text
   - logo
   - fantasy-castle
   - muddy
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-042.webp
 taxonomy:

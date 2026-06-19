@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Óxido, moho, hormigón mojado, cableado expuesto y residuos orgánicos intrusivos.
   camera_and_composition: Profundidad estrecha, evasión lateral y visibilidad rota como tensión; no requiere metro ni pasillos concretos.
   atmosphere_and_mood: Opresiva, incómoda y paranoica.
-  rendering_and_quality: Horror gameplay con tensión ambiental sostenida y telemetría visual de peligro.
+  rendering_and_quality: "Survival-horror gameplay frame: danger telemetry, escape route, mutation pressure readable."
 avoidRules:
   - watermark
   - text
   - logo
   - cheerful-light
   - clean-surfaces
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-019.webp
 taxonomy:

@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Nieve compacta, acero helado, escarcha y cableado expuesto por clima extremo.
   camera_and_composition: Nodo central, rutas de acceso y puntos de fallo identificables sin exigir torre o estación.
   atmosphere_and_mood: Aislada, paranoica y resistente.
-  rendering_and_quality: Survival gameplay visual con identidad fuerte y telemetría clara de riesgo operativo.
+  rendering_and_quality: "Survival-outbreak gameplay screencap: signal objective, infection risk, weather cover, route pressure clear."
 avoidRules:
   - watermark
   - text
   - logo
   - tropical
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-050.webp
 taxonomy:

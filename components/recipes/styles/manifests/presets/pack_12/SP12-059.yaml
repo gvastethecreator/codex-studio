@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Armaduras limpias, cristal de energía y materiales de escenario broadcast-ready.
   camera_and_composition: Presentación frontal, jerarquía de picks y composición de equipo sin exigir arena.
   atmosphere_and_mood: Competitiva, hypeada y visualmente precisa.
-  rendering_and_quality: Draft-phase promotional art con legibilidad superior de roles, counters y narrativa competitiva.
+  rendering_and_quality: "Hero-draft gameplay frame: roles, counters, team pressure, readable picks staged as arena silhouettes."
 avoidRules:
   - watermark
   - text
   - logo
   - muddy-palette
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-059.webp
 taxonomy:

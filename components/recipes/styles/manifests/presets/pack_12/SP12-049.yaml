@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Piedra mojada, enredaderas hostiles, hierro antiguo y barreras orgánicas activas.
   camera_and_composition: Punto de entrada claro, rutas secundarias y capas defensivas sin exigir castillo o murallas.
   atmosphere_and_mood: Calculada, valiente y tensa en cooperación.
-  rendering_and_quality: Raid-opening gameplay art con claridad de acceso, amenaza y priorización táctica.
+  rendering_and_quality: "Raid-opening gameplay frame: moonlit access, threat layers, tactical priority, escape routes readable."
 avoidRules:
   - watermark
   - text
   - logo
   - daylight
   - flat
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-049.webp
 taxonomy:

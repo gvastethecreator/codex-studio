@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Musgo artificial, metal urbano, pintura descascarada y estructuras improvisadas.
   camera_and_composition: Barricadas, rutas de flanco y nodos críticos visibles sin exigir metro o estación.
   atmosphere_and_mood: Urgente, combativa y esperanzadamente política.
-  rendering_and_quality: Insurgent-faction gameplay art con legibilidad de lanes, puntos de presión y control territorial.
+  rendering_and_quality: "Rebellion gameplay frame: metro lanes, pressure points, territorial control, insurgent routes readable."
 avoidRules:
   - watermark
   - text
   - logo
   - medieval
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-071.webp
 taxonomy:

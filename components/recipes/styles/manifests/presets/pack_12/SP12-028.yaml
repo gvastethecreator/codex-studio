@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Mármol pulido, madera lacada, tela ceremonial y detalles de desgaste por entrenamiento.
   camera_and_composition: Simetría central, límites claros, zonas de presión y reset neutral sin exigir arena física.
   atmosphere_and_mood: Serena, tensa y honorable.
-  rendering_and_quality: PvP stage elegante con legibilidad de hitbox, distancia y estados de ventaja.
+  rendering_and_quality: "Duel-stage gameplay screencap: hitbox distance, advantage state, vertical calm, timing cues visible."
 avoidRules:
   - watermark
   - text
   - logo
   - grunge
   - chaotic-fx
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-028.webp
 taxonomy:

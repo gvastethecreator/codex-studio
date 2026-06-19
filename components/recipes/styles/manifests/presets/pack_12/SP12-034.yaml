@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Roca sedimentaria, polvo fino, textil áspero y equipamiento antiabrasión.
   camera_and_composition: Profundidad extrema, rutas de flanqueo y ventanas de tiro como composición sin exigir cañón.
   atmosphere_and_mood: Precisa, paciente y letal a distancia.
-  rendering_and_quality: Competitive map readability-first con claridad de sightlines, sniping nests y riesgo de cruce.
+  rendering_and_quality: "Competitive sniper-map screencap: sightlines, nests, crossing risk, canyon cover readable."
 avoidRules:
   - watermark
   - text
   - logo
   - neon-city
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-034.webp
 taxonomy:

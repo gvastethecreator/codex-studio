@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Piedra erosionada, cuero técnico, bronce antiguo y sedimento móvil.
   camera_and_composition: Ruta serpenteante, hitos y atajos de alto riesgo sin exigir desierto u obeliscos.
   atmosphere_and_mood: Competitiva, feroz y cargada de misterio histórico.
-  rendering_and_quality: Seasonal-race gameplay art con claridad de checkpoints, reliquias y pacing.
+  rendering_and_quality: "Relic-race gameplay frame: checkpoints, pacing, obelisk obstacles, competitive route choices readable."
 avoidRules:
   - watermark
   - text
   - logo
   - rainy-city
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-063.webp
 taxonomy:

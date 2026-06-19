@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Frentes de cantera fracturados, cadenas tensadas, surcos de arcilla y borde de escombro afilado.
   camera_and_composition: Zigzag ascendente, capas de riesgo y chokepoints legibles sin exigir cantera.
   atmosphere_and_mood: Pánica, ingeniosa y de estrés ascendente.
-  rendering_and_quality: Adventure-mission gameplay art con lógica de traversal clara y señalización territorial enemiga.
+  rendering_and_quality: "Escape mission gameplay frame: traversal logic, quarry threat, enemy territory, exit route readable."
 avoidRules:
   - watermark
   - text
   - logo
   - clean-futuristic
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-077.webp
 taxonomy:

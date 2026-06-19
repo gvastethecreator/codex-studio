@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Madera pulida, piedra húmeda, seda ritual y marcas de práctica.
   camera_and_composition: Trayectoria, impacto y dificultad progresiva sin exigir santuario o calle de tiro.
   atmosphere_and_mood: Concentrada, calmada y extremadamente precisa.
-  rendering_and_quality: Challenge-stage gameplay art con legibilidad impecable de trayectoria, impacto y scoring.
+  rendering_and_quality: "Archer-trial gameplay screencap: trajectory, impact scoring, shrine spacing, target timing clear."
 avoidRules:
   - watermark
   - text
   - logo
   - daytime
   - clutter
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-070.webp
 taxonomy:

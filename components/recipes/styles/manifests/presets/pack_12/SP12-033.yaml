@@ -21,17 +21,26 @@ visualDna:
   texture_and_material: Fruta cerosa, metal esmaltado, tierra húmeda y tubería de riego inteligente.
   camera_and_composition: Lanes defensivos, choke-points y nodos de upgrade; orchard y cultivo son anclas opcionales.
   atmosphere_and_mood: Ingenio comunitario, urgencia agrícola y resistencia cooperativa.
-  rendering_and_quality: Tower-defense visual fresco con legibilidad alta de oleadas, rango y estado estructural.
+  rendering_and_quality: "Tower-defense gameplay frame: wave direction, orchard range, robot state, structure health readable."
   creative_brief: >-
     Aplica Robot Orchard Defense como gramatica original de videojuego sobre cualquier input: conserva su sistema de
     genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
-    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text
   - logo
   - grimdark
   - overfog
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-033.webp
 taxonomy:

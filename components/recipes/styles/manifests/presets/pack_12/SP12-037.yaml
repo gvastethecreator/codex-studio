@@ -19,17 +19,26 @@ visualDna:
   texture_and_material: Superficies esponjosas, musgo vivo, madera orgánica y setas con propiedades de rebote.
   camera_and_composition: Verticalidad lúdica, checkpoints visuales y reward loops; hongos gigantes pueden reforzar pero no dominar.
   atmosphere_and_mood: Maravillosa, aventurera y con humor ligero.
-  rendering_and_quality: Platformer world gameplay-first con identidad fuerte y legibilidad de salto/tránsito.
+  rendering_and_quality: "Platformer in-game frame: jump arcs, safe platforms, frontier landmarks, traversal route readable."
   creative_brief: >-
     Aplica Mushroom Kingdom Frontier como gramatica original de videojuego sobre cualquier input: conserva su sistema de
     genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
-    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text
   - logo
   - grimdark
   - photoreal-grain
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-037.webp
 taxonomy:

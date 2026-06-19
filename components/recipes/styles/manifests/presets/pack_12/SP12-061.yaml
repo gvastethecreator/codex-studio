@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Piedra vitrificada, oro ritual, ceniza suspendida y grietas activas.
   camera_and_composition: Ascenso por fases, checkpoints y cuellos de botella sin exigir templo o volcán literal.
   atmosphere_and_mood: Devocional, peligrosa y trascendente.
-  rendering_and_quality: Endgame-zone gameplay art con legibilidad alta de ruta, fase y prioridad táctica.
+  rendering_and_quality: "Endgame shrine gameplay frame: route, fire hazard phase, checkpoint priority, tactical read clear."
 avoidRules:
   - watermark
   - text
   - logo
   - snow
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-061.webp
 taxonomy:

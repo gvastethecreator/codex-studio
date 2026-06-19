@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Madera alquitranada, latón corroído, lona tensionada y planchas remachadas salinizadas.
   camera_and_composition: Diagonal aérea, capas de altitud y trayectorias cruzadas sin exigir puerto o combate literal.
   atmosphere_and_mood: Agressiva, codiciosa y espectacularmente tormentosa.
-  rendering_and_quality: Faction splash gameplay-first con lectura nítida de abordaje, flagship priority y escala aérea.
+  rendering_and_quality: "Airship boarding gameplay frame: flagship priority, approach vectors, pirate-sky scale readable."
 avoidRules:
   - watermark
   - text
   - logo
   - modern-cars
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-057.webp
 taxonomy:

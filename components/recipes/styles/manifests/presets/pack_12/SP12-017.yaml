@@ -14,18 +14,27 @@ tags:
 visualDna:
   aesthetic: Gramática arcade-sport extrema con velocidad, plataformas dinámicas, hazards térmicos y feedback de mastery.
   subject_treatment: Si hay personaje, usar arquetipos speed/control/trick; si hay objeto, darle equipamiento termo-reactivo, marcas de agarre y energía de truco.
-  color_and_tone: Rojo magma, negro basalto y cian HUD para separar riesgo ambiental y estado del jugador.
+  color_and_tone: Rojo magma, negro basalto y cian de estado diegético para separar riesgo ambiental y posición del jugador.
   lighting_and_shadow: Glow de lava + focos arena para alternar visibilidad de ruta y zonas de castigo.
   texture_and_material: Roca vitrificada, metal anodizado, humo denso y superficies antideslizantes quemadas.
   camera_and_composition: Líneas de circuito, jumps y bifurcaciones como ritmo visual competitivo sin exigir arena literal.
   atmosphere_and_mood: Vertiginosa, espectacular y frenética.
-  rendering_and_quality: Promo de modo competitivo con feedback visual fuerte de ritmo, riesgo y mastery.
+  rendering_and_quality: "Competitive arena gameplay frame: lava risk, trick timing, rhythm, mastery feedback visible."
 avoidRules:
   - watermark
   - text
   - logo
   - static-pose
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-017.webp
 taxonomy:

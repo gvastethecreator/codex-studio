@@ -19,17 +19,26 @@ visualDna:
   texture_and_material: Corteza carbonizada, cuero reforzado, acero templado y ceniza suspendida.
   camera_and_composition: Líneas de defensa, alarma y accesos secundarios visibles; outpost o portón son anclas opcionales.
   atmosphere_and_mood: Vigilante, resistente y tácticamente austera.
-  rendering_and_quality: Defensive-hub gameplay-first con legibilidad de patrulla, alarma y respuesta.
+  rendering_and_quality: "Defensive outpost gameplay frame: patrol paths, alarm states, ranger response, ember cues readable."
   creative_brief: >-
     Aplica Emberwood Ranger Outpost como gramatica original de videojuego sobre cualquier input: conserva su sistema de
     genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
-    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text
   - logo
   - snow-theme
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-041.webp
 taxonomy:

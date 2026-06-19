@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Hormigón, metal galvanizado, graffiti táctico y vidrio rompible contextual.
   camera_and_composition: Perspectiva dinámica con jump lines, flancos y high-ground abstracto como señal de navegación.
   atmosphere_and_mood: Rítmica, competitiva y técnica, centrada en posicionamiento.
-  rendering_and_quality: PvP readability-first con layout claro de lanes, alturas y líneas de visión.
+  rendering_and_quality: "PvP parkour screencap: lanes, height changes, sightlines, chase pressure readable."
 avoidRules:
   - watermark
   - text
   - logo
   - fog-heavy
   - muddy-contrast
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-014.webp
 taxonomy:

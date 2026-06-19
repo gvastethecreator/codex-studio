@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Troncado de aleación, cableado orgánico, barro conductor y depósitos de limadura.
   camera_and_composition: Acecho, presa, rodeo y ventana de ataque como composición sin exigir bosque.
   atmosphere_and_mood: Silenciosa, precisa y de tensión incremental.
-  rendering_and_quality: Hunting gameplay concept con claridad de firma objetivo, cobertura y ventana de ataque.
+  rendering_and_quality: "Mech-hunt gameplay frame: target signature, cover pockets, attack window, alloy forest routes clear."
 avoidRules:
   - watermark
   - text
   - logo
   - clean-lab
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-045.webp
 taxonomy:

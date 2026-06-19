@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Piedra tallada, madera estructural y metal oxidado de mecanismos activos.
   camera_and_composition: Perspectiva de fuga, lanes y puntos de salto inequívocos como estructura, sin exigir gauntlet o templo.
   atmosphere_and_mood: Urgente, rítmica y punitiva, de riesgo constante.
-  rendering_and_quality: Entorno endless-runner gameplay-first con lectura instantánea de hazards y ritmo.
+  rendering_and_quality: "Runner gameplay screencap: trap rhythm, hazard spacing, dodge timing, traversal path readable."
 avoidRules:
   - watermark
   - text
   - logo
   - static
   - flat-light
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-024.webp
 taxonomy:

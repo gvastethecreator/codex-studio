@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Planchas húmedas, cabos tensos, óxido salino y oleaje áspero de alta fricción.
   camera_and_composition: Vista amplia con corredores de flanqueo, bloqueo y emboscada sin exigir arrecife o mar literal.
   atmosphere_and_mood: Tensa, táctica y dominada por control marítimo.
-  rendering_and_quality: Naval map strategy-first con legibilidad de vectores, alcance y prioridades de objetivo.
+  rendering_and_quality: "Naval strategy gameplay screencap: vectors, range bands, target priority, reef hazards visible."
 avoidRules:
   - watermark
   - text
   - logo
   - landlocked
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-038.webp
 taxonomy:

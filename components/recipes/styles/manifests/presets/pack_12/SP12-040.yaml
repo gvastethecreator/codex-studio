@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Pelaje mojado, cuero blindado, barro pesado y marcas de zarpazo sobre terreno saturado.
   camera_and_composition: Escala amplia, rutas de cerco y líneas de escape visibles sin exigir llanura abierta.
   atmosphere_and_mood: Épica, riesgosa y altamente coordinada.
-  rendering_and_quality: Hunting-season key-art gameplay-first con claridad de patrón, objetivo y recompensa táctica.
+  rendering_and_quality: "Monster-hunt gameplay screencap: storm telegraphs, weak points, pursuit routes, reward target clear."
 avoidRules:
   - watermark
   - text
   - logo
   - cityscape
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-040.webp
 taxonomy:

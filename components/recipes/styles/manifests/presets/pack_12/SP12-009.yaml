@@ -21,11 +21,11 @@ visualDna:
   texture_and_material: Piedra erosionada, vitrales rotos, metal fatigado y restos de barricada reutilizable.
   camera_and_composition: Objective hub, flancos activos y rutas de oleada telegráficas como composición; no exigir catedral ni nave central.
   atmosphere_and_mood: Presión sostenida, heroísmo cooperativo y resistencia de último tramo.
-  rendering_and_quality: Raid-endgame visual con excelente readability de objetivos, flujos enemigos y ventanas de cooldown.
+  rendering_and_quality: "Co-op raid gameplay frame: objective layers, enemy flow, cooldown windows, party roles visible."
   creative_brief: >-
     Aplica Ruined Cathedral Co-op Siege como gramatica original de videojuego sobre cualquier input: conserva su sistema
     de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
-    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece
+    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece
     fijo.
 avoidRules:
   - watermark
@@ -33,6 +33,15 @@ avoidRules:
   - logo
   - modern-weapons
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-009.webp
 taxonomy:

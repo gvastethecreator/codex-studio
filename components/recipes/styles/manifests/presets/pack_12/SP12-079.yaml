@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Mármol ceremonial pulido, aleación filigranada, nodos cristalinos y piedra patrimonial.
   camera_and_composition: Ingresos ramificados, posiciones de equipo y foco objetivo por capas sin exigir citadel.
   atmosphere_and_mood: Unida, urgente y épicamente esperanzada.
-  rendering_and_quality: Co-op warfront gameplay art de alta claridad con cues sólidos de pacing y control de línea.
+  rendering_and_quality: "Co-op hold gameplay frame: line control, team positions, pacing cues, radiant objective readable."
 avoidRules:
   - watermark
   - text
   - logo
   - grimdark
   - blur
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-079.webp
 taxonomy:

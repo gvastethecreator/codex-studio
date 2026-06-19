@@ -16,16 +16,25 @@ visualDna:
   subject_treatment: Convierte el input en clase jugable o asset de operación con kit modular, placas funcionales, señales de rol y jerarquía visual clara sin exigir distrito urbano.
   color_and_tone: Dúo cian-magenta sobre negros aceitosos, con codificación cromática de facción y threat level.
   lighting_and_shadow: Iluminación diegética de neón con pockets de sombra para stealth readability y rim de detección.
-  texture_and_material: Asfalto mojado PBR, metal cepillado, vidrio sucio y holografía de baja persistencia tipo HUD-world.
+  texture_and_material: Asfalto mojado PBR, metal cepillado, vidrio sucio y holografía ambiental de baja persistencia.
   camera_and_composition: Composición third-person táctica con profundidad legible, rutas sugeridas, cobertura abstracta y puntos de interacción reconocibles.
   atmosphere_and_mood: Tensión operativa, vigilancia constante y ritmo de incursión de alto riesgo.
-  rendering_and_quality: Key art AAA con pipeline de legibilidad gameplay-first, contraste de objetivo y nitidez de interacción.
+  rendering_and_quality: "In-game third-person screencap AAA: stealth routes, interactables, objective contrast, neon threat readability."
 avoidRules:
   - watermark
   - text
   - logo
   - lowres
   - blurry
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-001.webp
 taxonomy:

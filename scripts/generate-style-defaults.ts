@@ -115,6 +115,8 @@ const CATEGORY_BASE_PROMPTS: Record<string, string> = {
     'An early-2000s anime adventure scene with one original character, layered environment, energetic pose, clean background details, and enough color variety for era-specific digital-cel styling.',
   pack_05__modern_shonen_and_action:
     'A modern action anime battle moment with one original fighter, motion arcs, impact energy, dramatic camera angle, debris, layered background, and readable costume details without referencing any franchise.',
+  pack_05__action:
+    'A character-led anime action keyframe with one original protagonist, readable pose, motion arcs, impact energy, clean cel silhouette, and a simple support environment chosen for the preset. Keep action legible without weapon-first framing, franchise likeness, corridor defaults, market/library aisles, cameras, or noisy debris overload.',
   pack_05__shojo_magical_girl_and_visionary_classics:
     'An emotional anime portrait or character duet with expressive eyes, elegant costuming, symbolic props, soft or celestial background motifs, and a romantic, magical, or visionary dramatic atmosphere.',
   pack_05__mecha_and_cyberpunk:
@@ -131,6 +133,16 @@ const CATEGORY_BASE_PROMPTS: Record<string, string> = {
     'A vertical fantasy anime scene with one original traveler, magical city, forest, dungeon, or floating landscape, costume detail, glowing artifact, atmospheric depth, and adventure mood.',
   pack_05__anime_style_spectrum:
     'An auteur anime style-study scene with one original subject, expressive line discipline, distinctive silhouette logic, creative rendering texture, and a clear authorial identity rather than franchise imitation.',
+  pack_13__core_anime:
+    'A character-led anime keyframe with one original protagonist, readable acting pose, clean cel silhouette, preset-specific costume or body-language cue, and a simple support environment that reinforces the style without becoming a generic corridor, market, library, camera, or prop room.',
+  pack_13__slice_of_life_school_music:
+    'A gentle character-led anime lifestyle keyframe with one original student, musician, friend, or everyday protagonist, soft acting, warm small-scene context, and restrained props chosen for the preset without forcing classroom, hallway, cafe, or music-room repetition.',
+  pack_13__shojo_magical_girl_and_visionary_classics:
+    'An emotional shojo or visionary anime keyframe with one original character, expressive eyes, elegant pose language, symbolic light motifs, soft costume detail, and clean romantic or magical atmosphere without franchise costume echoes.',
+  pack_13__slice_of_life_and_moe:
+    'A cozy anime character moment with one original protagonist, gentle gesture, readable outfit silhouette, soft everyday context, and warm color identity; keep it character-first without generic bedroom, cafe, school, lamp, curtain, or prop formula.',
+  pack_13__anime_style_spectrum:
+    'An anime style-spectrum card with one original character or clear character-adjacent focal subject, distinctive line discipline, era or auteur-specific rendering texture, and strong silhouette identity rather than a generic anime face or abstract material field.',
 
   pack_06__traditional_painting:
     'A finished traditional painting scene with one original subject, studio-like composition, visible brushwork-ready surfaces, fabric, background depth, and lighting suited to classic painted media.',
@@ -203,21 +215,21 @@ const CATEGORY_BASE_PROMPTS: Record<string, string> = {
     'A close-up or miniature-scale vertical scene with one tiny or magnified subject, strong scale cues, macro detail, shallow depth, texture, and readable environment context.',
 
   pack_12__neon_urban_and_night_ops:
-    'An original game key art scene set in a dense night-city district with one hero encounter, neon spill, tactical motion lanes, wet surfaces, and a strong playable-world identity.',
+    'An in-engine gameplay screencap from a neon urban game: one playable moment, third-person or tactical camera, navigable lanes, interactable objective read, wet neon surfaces, and no promo/key-art staging.',
   pack_12__arcane_temples_and_mythic_realms:
-    'An original fantasy game scene with sacred architecture, ritual objects, mythic atmosphere, and one central confrontation or discovery beat inside a storied realm.',
+    'An in-engine gameplay screencap from an arcane fantasy game: one playable exploration, boss, puzzle, or traversal beat inside a mythic space, with readable route and no concept-art poster framing.',
   pack_12__sci_fi_frontiers_and_mech_zones:
-    'An original sci-fi game scene with mechanical scale, frontier infrastructure, advanced systems, and one clear exploration, breach, or contact moment.',
+    'An in-engine gameplay screencap from a sci-fi frontier game: playable camera, mechanical scale, traversal/combat objective, functional infrastructure, readable cover or route, and no asset-render presentation.',
   pack_12__sieges_warfronts_and_last_stands:
-    'An original warfront or defense scenario with fortified space, opposing pressure, readable battle lines, and a decisive hold-the-line or breakthrough focal point.',
+    'An in-engine gameplay screencap from a siege or defense game: playable battlefield camera, fortified objective, readable front line, cover lanes, pressure state, and no cinematic poster/key-art lineup.',
   pack_12__speed_sport_and_competitive_arenas:
-    'An original competitive game scene with velocity, spectacle, rules-of-play cues, and one central matchup, race line, duel lane, or arena climax.',
+    'An in-engine gameplay screencap from a competitive speed or arena game: readable track, lane, duel, rhythm, or match state, action timing, camera feedback, and no promotional sports poster.',
   pack_12__wilderness_hunts_and_harsh_frontiers:
-    'An original frontier game scene with dangerous terrain, survival pressure, creature or weather threat, and a strong expedition or hunt read.',
+    'An in-engine gameplay screencap from a wilderness survival or hunt game: playable terrain, pursuit route, creature/weather threat, resource or weak-point read, and no creature concept sheet.',
   pack_12__heists_horror_and_underworld_runs:
-    'An original infiltration or horror-action scene with shadow logic, illicit routes, lurking danger, and one clear underworld, stealth, or panic-inducing objective beat.',
+    'An in-engine gameplay screencap from a heist, horror, or underworld run: stealth route, escape lane, threat state, interactable objective, stylized danger when needed, and no horror poster/key-art pose.',
   pack_12__puzzle_chambers_and_adventure_setpieces:
-    'An original adventure setpiece with puzzle logic, hub-like worldbuilding, or endgame staging, built around one strong progression beat rather than generic combat clutter.',
+    'An in-engine gameplay screencap from an adventure or puzzle game: playable chamber, hub, landmark, or finale state with spatial mechanic, progression route, and no UI/menu or concept-art layout.',
 };
 
 const CATEGORY_SCENE_ANCHORS: Record<string, string[]> = {
@@ -278,49 +290,54 @@ const PACK_SCENE_ANCHORS: Record<string, string[]> = {
     'Build the composition around a polished in-engine-meets-marketing moment with collectible props, world map cues, and readable UI-adjacent framing.',
   ],
   pack_12__neon_urban_and_night_ops: [
-    'Use a rain-slick district, transit deck, or rooftop lane with dense signage glow, tactical sightlines, and one unmistakable urban objective.',
-    'Stage the scene in a midnight city corridor with wet pavement, hard neon color separation, layered infrastructure, and a stealth-or-chase beat.',
-    'Build the frame around a dense downtown choke point with cables, reflections, alley depth, and one hero-versus-system encounter.',
+    'Use third-person stealth gameplay in a rain-slick district, transit deck, or rooftop lane with objective contrast and readable patrol/sightline logic.',
+    'Use a playable night-op route with wet pavement, hard neon color separation, layered infrastructure, and a clear chase, stealth, or breach state.',
+    'Build the frame as a gameplay choke point with cables, reflections, route depth, and one hero-versus-system objective, not a poster portrait.',
   ],
   pack_12__arcane_temples_and_mythic_realms: [
-    'Use a shrine court, ritual hall, monastery bridge, or palace interior with sacred geometry, relic props, and one mythic confrontation axis.',
-    'Stage the scene inside an ancient ceremonial space with banners, carved stone, ritual light, and a single magical focal object.',
-    'Build the frame around legendary architecture, symbolic weather, and a discovery-or-duel beat that feels rooted in old world myth.',
+    'Use playable exploration in a shrine court, ritual hall, bridge, or palace space with route depth, readable relic interaction, and mythic threat state.',
+    'Stage an in-game ceremonial encounter with carved stone, ritual light, a clear dodge/traversal/puzzle lane, and no static concept-art altar.',
+    'Build the frame around a playable discovery, duel, or traversal decision rooted in old-world myth, with camera distance matching gameplay.',
   ],
   pack_12__sci_fi_frontiers_and_mech_zones: [
-    'Use a breach corridor, orbital platform, mech convoy lane, or research habitat with machine scale, warning light, and a central systems event.',
-    'Stage the image in a frontier-tech zone with armored surfaces, exposed conduits, and one exploration or combat beat around advanced hardware.',
-    'Build the scene around future industry, colony infrastructure, or mechanized mobility with readable function and a strong sci-fi silhouette.',
+    'Use a playable orbital platform, mech convoy lane, research habitat, or breach route with machine scale, warning light, and a central systems event.',
+    'Stage a frontier-tech gameplay beat with armored surfaces, exposed conduits, cover/traversal logic, and one interactable hardware objective.',
+    'Build future industry or colony infrastructure as a playable route with readable function, not a clean hard-surface asset render.',
   ],
   pack_12__sieges_warfronts_and_last_stands: [
-    'Use a fortress edge, bridge hold, defense rail, or bastion breach with clear frontlines, layered pressure, and one pivotal holdout beat.',
-    'Stage the scene at the exact moment a wall, bridge, or convoy line is about to break, with readable opposing force geometry.',
-    'Build the frame around a fortified battlefield where position, attrition, and last-stand drama are visible at a glance.',
+    'Use gameplay camera on a fortress edge, bridge hold, defense rail, or bastion breach with clear frontlines and one defend/breakthrough objective.',
+    'Stage a playable pressure moment where a wall, bridge, or convoy line is about to break, with readable opposing-force geometry.',
+    'Build a fortified battlefield as an active game state where cover, attrition, and last-stand pressure are visible at a glance.',
   ],
   pack_12__speed_sport_and_competitive_arenas: [
-    'Use a racetrack, duel hall, rhythm stage, or arena lane with obvious rule-space, velocity paths, and one competition-defining focal moment.',
-    'Stage the image around a polished match environment with audience depth, lane markers, and a clean rivalry read.',
-    'Build the frame as a high-spectacle contest image with momentum arcs, score-space energy, and one central clash or finish line.',
+    'Use gameplay camera on a racetrack, duel hall, rhythm stage, or arena lane with obvious rule-space, velocity paths, and timing feedback.',
+    'Stage an active match state with lane markers, spacing, rivalry pressure, and camera motion that reads like play, not sports key art.',
+    'Build high-spectacle competition as a playable moment with momentum arcs, turn/rhythm/finish timing, and no promotional lineup.',
   ],
   pack_12__wilderness_hunts_and_harsh_frontiers: [
-    'Use a hostile biome, mine route, frozen outpost, or thunder plain with expedition gear, environmental threat, and one hunt or survival objective.',
-    'Stage the scene across frontier terrain where weather, beasts, or unstable geography are as dangerous as the enemy.',
-    'Build the frame around a rugged traversal or hunting beat with layered landscape scale and one immediate danger cue.',
+    'Use gameplay camera in a hostile biome, mine route, frozen outpost, or thunder plain with route readability and one hunt/survival objective.',
+    'Stage frontier terrain where weather, beasts, or unstable geography create a playable threat state, not a creature showcase.',
+    'Build a rugged traversal or hunting beat with layered landscape scale, weak-point/resource read, and one immediate danger cue.',
   ],
   pack_12__heists_horror_and_underworld_runs: [
-    'Use a cursed transit line, black-market corridor, shadow court, or criminal route with hiding places, illicit props, and one panic-inducing objective.',
-    'Stage the scene in a low-trust environment where stealth, dread, or criminal intent dominate the read before open combat.',
-    'Build the frame around a tense underworld operation or horror breach with narrow exits, suspicious silhouettes, and a sharp danger gradient.',
+    'Use gameplay camera on a cursed transit line, black-market route, shadow court, or criminal path with hiding places and one panic objective.',
+    'Stage a low-trust playable environment where stealth, dread, violence, or escape pressure dominates before open combat.',
+    'Build an underworld operation or horror breach with exits, patrol/threat silhouettes, interactable objective, and sharp danger gradient.',
   ],
   pack_12__puzzle_chambers_and_adventure_setpieces: [
-    'Use a puzzle chamber, quest hub, campaign finale room, or curiosity-heavy landmark with one central progression mechanic made spatially clear.',
-    'Stage the image as a handcrafted adventure setpiece with navigable props, layered clue logic, and a strong “what happens next” focal beat.',
-    'Build the frame around a memorable game-world landmark that feels designed for puzzle solving, narrative payoff, or chapter-ending spectacle.',
+    'Use gameplay camera in a puzzle chamber, quest hub, finale room, or landmark with one central progression mechanic made spatially clear.',
+    'Stage a handcrafted adventure gameplay state with navigable props, layered clue logic, and a strong next-action focal beat.',
+    'Build the frame around a game-world landmark designed for puzzle solving, traversal, narrative payoff, or chapter-ending play state.',
   ],
   pack_05__modern_shonen_and_action: [
     'Use one original anime-style character or costume fragment with clean motion arcs, bold cel shading, and readable shonen momentum; avoid franchise likeness, headband-copy design, named-series cues, dominant weapons, or combat injury.',
     'Stage one original action-study pose on a simplified graphic backdrop with speed lines, cloth motion, and expressive silhouette; no schoolyard/street/stair lock, no recognizable hero design, no sword-first composition.',
     'Build the frame around optimistic movement energy, color accents, and exaggerated expression physics while keeping props secondary and non-iconic; no gang fight, battle aftermath, arena duel, or IP-like emblem.',
+  ],
+  pack_05__action: [
+    'Use one original anime protagonist in a clean action beat, with broad cel shapes, readable motion arcs, and no weapon-first framing.',
+    'Stage a character-led impact moment on a simplified support backdrop; avoid corridor, market, library, camera, and noisy rubble formulas.',
+    'Build the frame around pose, speed field, expression, and color identity so the style reads as action without becoming abstract-only.',
   ],
   pack_05__2000s_classics: [
     'Use a late-night platform, apartment corridor, or city overpass with reflective surfaces, practical lights, and a quiet narrative beat.',
@@ -382,11 +399,6 @@ const PACK_SCENE_ANCHORS: Record<string, string[]> = {
     'Stage the subject on a train platform or station walkway with hard perspective lines, signage-free depth, and a strong late-night travel mood.',
     'Set the scene in a shrine path, alley, or hillside overlook with lantern glow, layered distance, and a clean hero lane through the frame.',
   ],
-  pack_13__slice_of_life_school_music: [
-    'Use a rehearsal room, classroom, club room, or small live-house corner with instruments, notes, chairs, and a quiet emotional beat.',
-    'Set the scene in a sunlit school hallway or commuter stop with everyday props and a soft slice-of-life rhythm.',
-    'Stage the subject in a cozy indoor scene with posters, craft items, or music gear and a clean pastel read.',
-  ],
   pack_13__action: [
     'Use a battle-stopped moment in a stairwell, bridge span, or broken street with flying debris, sharp perspective, and a decisive motion cue.',
     'Stage the subject against a cracked arena edge, industrial catwalk, or rooftop fight space with a single hard impact read and no clutter.',
@@ -401,6 +413,31 @@ const PACK_SCENE_ANCHORS: Record<string, string[]> = {
     'Use a narrow corridor, abandoned room, or shrine ruin with crawling shadow, fractured wallpaper, and one unsettling negative-space opening.',
     'Stage the subject in a rain-dark alley or hospital-like passage with flicker light, damp surfaces, and a single eerie focal spill.',
     'Build the frame around a sealed doorway, torn curtain, or broken threshold with oppressive depth and a clear dread cue.',
+  ],
+  pack_13__core_anime: [
+    'Stage one original anime character in a compact, readable environment chosen for the preset; keep the face, pose, costume silhouette, and emotion as the first read.',
+    'Use a character-led vertical keyframe with clean cel shapes, one preset-specific support detail, and enough background to clarify mood without corridor or room formula.',
+    'Build the card around one original protagonist plus a single readable world cue: arena light, shrine glow, machine scale, gothic trim, travel gear, or magical motif.',
+  ],
+  pack_13__slice_of_life_school_music: [
+    'Use one original everyday anime protagonist in a quiet lifestyle beat with soft light, simple props, and character acting as the first read.',
+    'Stage a warm slice-of-life keyframe with restrained school, music, street, or home cues only when they clarify the preset, not as repeated hallway or room filler.',
+    'Build the image around a small emotional gesture, outfit read, and color mood; keep instruments, chairs, desks, posters, or windows secondary.',
+  ],
+  pack_13__shojo_magical_girl_and_visionary_classics: [
+    'Use one original expressive character with elegant pose language, symbolic light, flowing costume shape, and no copied magical-girl franchise silhouette.',
+    'Stage a romantic or visionary anime card around face/gesture/emblem hierarchy, with background glow supporting the character rather than replacing them.',
+    'Build the frame around soft costume motion, luminous motif, and emotional close-to-mid shot clarity.',
+  ],
+  pack_13__slice_of_life_and_moe: [
+    'Use one cozy original character with warm expression, soft outfit silhouette, and one small everyday support detail that feels preset-specific.',
+    'Stage a gentle character moment in a simple lived-in context without repeating bedroom, cafe, classroom, lamp, curtain, or window formula.',
+    'Build the card around gesture, mood, and color warmth first; props stay small and useful.',
+  ],
+  pack_13__anime_style_spectrum: [
+    'Use a character-led anime style study where line discipline, pose shape, color design, and rendering texture show the preset identity.',
+    'Stage one original subject against a minimal authored backdrop; avoid generic anime portrait sameness and avoid empty abstract-only texture fields.',
+    'Build the card around a distinctive silhouette and one era/auteur rendering cue, with no franchise likeness.',
   ],
 };
 
@@ -457,7 +494,7 @@ const MATERIAL_VARIANTS = [
 ];
 
 const DETAIL_VARIANTS = [
-  'Include one specific micro-detail linked to the preset tone.',
+  'Include one broad, thumbnail-readable detail linked to the preset tone.',
   'Keep one small secondary prop that supports the main story element.',
   'Use one distinct pose nuance that is not repeated in the base scene.',
   'Add a subtle asymmetry in object placement to avoid template repetition.',
@@ -493,10 +530,20 @@ const HERO_VARIANTS: Record<string, string[]> = {
     'An original sports or stage lead whose silhouette instantly communicates motion, confidence, and event type at card size.',
     'An original athlete, musician, or performer with venue-aware costume logic, expressive posture, and a strong hero read.',
   ],
+  anime_action: [
+    'An original anime protagonist caught mid-action with clear acting, strong silhouette, and preset-specific costume logic.',
+    'An original action lead whose pose and motion arcs explain the style without relying on weapons or franchise cues.',
+    'An original character or creature in a readable kinetic beat, with broad cel shapes and controlled impact detail.',
+  ],
   anime_fantasy: [
     'An original fantasy adventurer with layered costume logic, one magical prop, and a clear quest vibe.',
     'An original mage or traveler with readable gear, elegant silhouette, and story-driven pose.',
     'An original high-fantasy lead with cloak, artifact, and a clean heroic read from card distance.',
+  ],
+  anime_style_spectrum: [
+    'An original anime figure whose silhouette, line discipline, and pose logic make this preset feel authored, not generic.',
+    'An original character or creature-study subject with a distinctive face, gesture, and costume rhythm tied to the preset name.',
+    'An original protagonist framed as a style specimen: clear acting, unique contour language, and one preset-specific visual token.',
   ],
   illustration_print: [
     'One strong symbolic subject with a silhouette that survives heavy reduction and bold shape simplification.',
@@ -536,10 +583,20 @@ const ENVIRONMENT_VARIANTS: Record<string, string[]> = {
     'Build the environment around motion lanes, audience or teammate cues, and a clear support structure that reinforces the discipline.',
     'Give the scene enough event context to feel live and kinetic, while keeping the focal hierarchy clean and card-readable.',
   ],
+  anime_action: [
+    'Use a compact action space with one clear depth lane, not a corridor, market aisle, library aisle, or generic rubble field.',
+    'Keep the support environment simple and preset-specific so the character pose remains readable.',
+    'Use background motion planes, impact haze, or graphic speed fields as support, not as the whole card.',
+  ],
   anime_fantasy: [
     'Place the subject in a magical environment with clear worldbuilding layers and one glowing focal cue.',
     'Use a fantasy setting with path, ruins, city edge, or forest depth that suggests a larger world.',
     'Build an adventure-ready backdrop with scale cues, atmosphere, and one memorable landmark element.',
+  ],
+  anime_style_spectrum: [
+    'Use a compact backdrop that exposes linework, color system, and composition logic without turning into an artist studio.',
+    'Keep environment cues minimal but specific: one graphic plane, prop, texture field, or scene fragment that clarifies the style.',
+    'Avoid shared anime-stage formulas; make the background rhythm, palette, and spatial logic unique to this preset.',
   ],
   illustration_print: [
     'Reduce the environment to bold supporting shapes, negative space, and print-friendly texture masses.',
@@ -597,7 +654,8 @@ function broadPromptFamily(pack: StyleRuntimePack, category: string) {
   if (key === 'pack_05__slice_of_life_and_moe') return 'anime_slice';
   if (key === 'pack_05__sports_competition_and_performance') return 'anime_sports';
   if (key === 'pack_05__isekai_and_high_fantasy') return 'anime_fantasy';
-  if (key === 'pack_05__anime_style_spectrum') return 'anime_masterpieces';
+  if (key === 'pack_05__anime_style_spectrum') return 'anime_style_spectrum';
+  if (key === 'pack_05__action') return 'anime_action';
   if (key === 'pack_13__slice_of_life_school_music') return 'anime_slice';
   if (key === 'pack_12__speed_sport_and_competitive_arenas') return 'anime_sports';
   if (key === 'pack_04__ink_and_print') return 'illustration_print';
@@ -843,26 +901,55 @@ function safeImagegenStyleLabel(preset: StyleRuntimePreset) {
     'SP05-124': 'PREDATOR EGO SPORTS INTENSITY',
     'SP05-125': 'CIVIC COLOSSAL RESPONSE ACTION',
     'SP05-126': 'PARANORMAL TURBO COMEDY ACTION',
+    'SP05-127': 'POISON GARDEN CEREMONIAL HORROR',
+    'SP05-128': 'BLACK INK MARBLE SPIRITUAL OPERA',
     'SP05-129': 'DEADPAN PRESTIGE IMPACT SATIRE',
     'SP05-130': 'PSYCHIC PAINT SURGE EMOTION',
+    'SP05-131': 'NEON STREETWIND PROTECTOR RUSH',
+    'SP05-132': 'VIOLET SHADOW ASCENSION RAID',
     'SP05-133': 'DEADPAN MAGIC FORCE COMEDY',
+    'SP05-134': 'MUNDANE ACTION VELOCITY GRID',
+    'SP05-135': 'RULE LOGIC CHAOTIC IMPACT',
+    'SP05-136': 'GRIMOIRE THUNDER UNDERDOG FORCE',
     'SP05-137': 'SCIENCE BLUEPRINT OPTIMISM',
+    'SP05-138': 'NEON RAIN OATH RESTRAINT',
+    'SP05-139': 'COLOSSAL RUPTURE SCALE DREAD',
     'SP05-140': 'ANCIENT CALM SPELL IMPACT',
+    'SP05-142': 'HUMID TROPICAL NOIR GRIT',
     'SP05-143': 'ELECTRIC NIGHT RAIN NOIR',
     'SP05-144': 'LO FI SUNBAKED RHYTHM',
     'SP05-148': 'JAZZ PULP MOTION ENSEMBLE',
+    'SP05-221': 'POP SIGNAL ENGINEERED MOTION',
     'SP05-222': 'CIVIC MACHINE PROCEDURE',
+    'SP05-223': 'CHROME NOIR ARMOR ELEGANCE',
+    'SP05-224': 'CERAMIC ARCOLOGY CONTROL GEOMETRY',
     'SP05-225': 'SCRAP VELOCITY RESILIENCE',
+    'SP05-226': 'CYBER GOTH CONCRETE DREAD',
+    'SP05-227': 'RUST WIRE DESCENT PRESSURE',
+    'SP05-229': 'PUNITIVE NEON VICE TEXTURE',
+    'SP05-230': 'TERMINAL MEGASTRUCTURE SILENCE',
     'SP05-228': 'PALE MACHINE ELEGY',
     'SP05-231': 'CORAL RESONANCE LITURGY',
+    'SP05-232': 'DUSTFRONT DRONE LAMENT',
+    'SP05-233': 'VACUUM FORTRESS SURVIVAL DISCIPLINE',
+    'SP05-234': 'EXTINCTION COMMAND PRESSURE',
+    'SP05-235': 'POP CYBER SIMULATION GLOSS',
     'SP05-236': 'COMPACT ATTRITION HARDWARE',
+    'SP05-237': 'MONUMENTAL IGNITION SACRIFICE',
+    'SP05-238': 'TOKUSATSU DIGITAL GRID SCALE',
+    'SP05-240': 'TRI FIRE RIOT GEOMETRY',
+    'SP05-241': 'SYSTEMIC COOPERATION GRID FANTASY',
+    'SP05-242': 'SMOKE MUD VULNERABILITY FANTASY',
     'SP05-239': 'BUBBLEGUM COSMIC SCALE',
     'SP05-243': 'CLASSIC OVA QUEST TAPESTRY FANTASY',
     'SP05-244': 'JADE CINNABAR RITUAL AUTHORITY FANTASY',
     'SP05-245': 'WINDBLOWN PROPHECY ROMANCE FANTASY',
     'SP05-246': 'AMBER TURQUOISE ARABESQUE ADVENTURE',
+    'SP05-247': 'THORN COTTAGE OCCULT ENCHANTMENT',
     'SP05-248': 'FUNCTIONAL FANTASY CUISINE',
+    'SP05-249': 'PRINTING PRESS DEVOTION CRAFT',
     'SP05-250': 'QUIET VOW SACRED STONE FANTASY',
+    'SP05-251': 'AERIAL WAR MAGE DOCTRINE',
     'SP05-255': 'GEM ENGINE COOPERATIVE MAGIC FANTASY',
     'SP05-256': 'FOLKLORE THRESHOLD ROMANCE',
     'SP05-252': 'MERCHANT ROAD COMFORT FANTASY',
@@ -872,12 +959,31 @@ function safeImagegenStyleLabel(preset: StyleRuntimePreset) {
     'SP05-258': 'UTILITY CRAFT PARTY QUEST FANTASY',
     'SP05-259': 'STORYBOOK COURAGE CROWN FANTASY',
     'SP05-260': 'PASTEL COMPANION QUEST FANTASY',
+    'SP05-261': 'ECLIPSE SCAR WEIGHT',
     'SP05-262': 'QUIET MORAL SUSPENSE REALISM',
+    'SP05-263': 'BLACK SIGNAL NIHILISM',
+    'SP05-264': 'CLINICAL INNOCENCE RUPTURE',
     'SP05-265': 'ROSE BLACK LACQUER GOTHIC ROMANCE',
+    'SP05-266': 'BLACK PARTICLE FUGITIVE TENSION',
+    'SP05-267': 'BLOOD INK SEVERANCE RHYTHM',
+    'SP05-268': 'NEON DESPAIR PRESSURE',
+    'SP05-269': 'SMOKE FILLED CALCULATION',
+    'SP05-270': 'CURSED SEVERANCE COMPASSION',
     'SP05-271': 'SUN BLEACHED CONCRETE MYSTERY',
     'SP05-272': 'RAIN POLISHED MACHINE MOURNING',
     'SP05-273': 'MOONLIT ECOLOGICAL CALM',
+    'SP05-274': 'WINTER GUILT SUSPICION',
+    'SP05-275': 'CIVIC RUMOR BREAKDOWN',
+    'SP05-276': 'SUN BLEACHED CRUEL DISCIPLINE',
+    'SP05-277': 'RUSTED NEON ADOLESCENT DREAD',
     'SP05-278': 'CRYSTALLINE LONELINESS MINERAL VOID',
+    'SP05-279': 'RED OPTIC SECURITY NOIR',
+    'SP05-280': 'LANTERN RETRIBUTION RITUAL',
+    'SP13-021': 'ACTION BURST RUSH FORCE',
+    'SP13-022': 'VERTIGO ENERGY CROSS FORCE',
+    'SP13-023': 'NEON VECTOR DISCHARGE',
+    'SP13-024': 'MONUMENTAL IMPACT BURST',
+    'SP13-025': 'UPWARD THUNDER MOMENTUM',
   };
   return labels[preset.id] ?? sanitizeStylePromptName(preset.name).toUpperCase();
 }
@@ -898,88 +1004,135 @@ function safeImagegenStyleDna(preset: StyleRuntimePreset) {
     }
   > = {
     'SP05-091': {
-      aesthetic: 'Glowing virtual fantasy with crystalline atmosphere, polished adventure scale, soft romance, and tactile digital light',
-      subject: 'Clean fantasy contours, translucent luminous arcs, modular edge highlights, and readable original silhouettes or relics',
+      aesthetic:
+        'Glowing virtual fantasy with crystalline atmosphere, polished adventure scale, soft romance, and tactile digital light',
+      subject:
+        'Clean fantasy contours, translucent luminous arcs, modular edge highlights, and readable original silhouettes or relics',
       color: 'Sky sapphire, cyan, warm amber, emerald glow, white bloom, and deep virtual blue',
-      light: 'Atmospheric depth haze, soft rim auras, crystalline light planes, and luminous edge bloom',
-      texture: 'Glassy overlays, polished cel surfaces, fine particles, synthetic fabric sheen, and smooth light gradients',
-      camera: 'Layered depth, suspended luminous planes, and horizon expansion that feels software-shaped',
+      light:
+        'Atmospheric depth haze, soft rim auras, crystalline light planes, and luminous edge bloom',
+      texture:
+        'Glassy overlays, polished cel surfaces, fine particles, synthetic fabric sheen, and smooth light gradients',
+      camera:
+        'Layered depth, suspended luminous planes, and horizon expansion that feels software-shaped',
       mood: 'Adventurous, virtual, epic, romantic',
       render: 'Expansive digital-fantasy anime polish with high clarity and clean compositing',
       features: 'Virtual glow, clean adventure polish, synthetic depth, emotional immersion',
     },
     'SP05-092': {
-      aesthetic: 'Ornate reset-loop dark fantasy with beautiful repetition, cold glow, and emotional pressure',
-      subject: 'Elegant fantasy contours, spiral repeats, stress-fracture accents, and tightening visual rhythms',
-      color: 'Icy violet, pale silver, bruised blue, candle amber, deep burgundy, and shadowed ivory',
-      light: 'Beautiful surface glow with dread beneath it, cold rim halos, and looping highlight echoes',
-      texture: 'Fine fabric grain, carved ornament, paper-thin magic particles, damp shadow glaze, and polished despair',
+      aesthetic:
+        'Ornate reset-loop dark fantasy with beautiful repetition, cold glow, and emotional pressure',
+      subject:
+        'Elegant fantasy contours, spiral repeats, stress-fracture accents, and tightening visual rhythms',
+      color:
+        'Icy violet, pale silver, bruised blue, candle amber, deep burgundy, and shadowed ivory',
+      light:
+        'Beautiful surface glow with dread beneath it, cold rim halos, and looping highlight echoes',
+      texture:
+        'Fine fabric grain, carved ornament, paper-thin magic particles, damp shadow glaze, and polished despair',
       camera: 'Spiral compression, deja-vu repetition, and ornamental depth closing inward',
       mood: 'Anxious, tragic, harrowing, relentless',
-      render: 'High-polish fantasy anime with psychological tension and controlled emotional breakdown',
+      render:
+        'High-polish fantasy anime with psychological tension and controlled emotional breakdown',
       features: 'Recursive fate, spiral dread, fragile hope, ornate emotional pressure',
     },
     'SP05-093': {
-      aesthetic: 'Wandering mage chronicle with patient world texture, learned magic, natural wonder, and mature travel curiosity',
-      subject: 'Soft fantasy linework, practical ornament, maplike flow lines, layered detail zones, and calm exploratory rhythm',
-      color: 'Weathered sky blue, warm ochre, moss green, parchment cream, mineral violet, and soft mana glow',
-      light: 'Long-horizon daylight, warm ambient bounce, gentle spell glows, and atmospheric depth',
-      texture: 'Parchment grain, woven cloth, weathered leather, mineral dust, soft particles, and painted terrain color',
-      camera: 'Maplike expansion, slow parallax depth, and open composition that rewards looking around',
+      aesthetic:
+        'Wandering mage chronicle with patient world texture, learned magic, natural wonder, and mature travel curiosity',
+      subject:
+        'Soft fantasy linework, practical ornament, maplike flow lines, layered detail zones, and calm exploratory rhythm',
+      color:
+        'Weathered sky blue, warm ochre, moss green, parchment cream, mineral violet, and soft mana glow',
+      light:
+        'Long-horizon daylight, warm ambient bounce, gentle spell glows, and atmospheric depth',
+      texture:
+        'Parchment grain, woven cloth, weathered leather, mineral dust, soft particles, and painted terrain color',
+      camera:
+        'Maplike expansion, slow parallax depth, and open composition that rewards looking around',
       mood: 'Curious, expansive, wondrous, immersive',
       render: 'Expansive but intimate fantasy anime polish with rich cultural texture',
       features: 'Learned magic, lived-in texture, soft horizon depth, world curiosity',
     },
     'SP05-094': {
-      aesthetic: 'Bright party-quest comedy with parody fantasy, theatrical mishap timing, and joyful failure',
-      subject: 'Bouncy contours, exaggerated reaction shapes, clean fantasy trims, and elastic timing accents',
-      color: 'Aqua blue, sunny gold, rosy blush, carnival green, comic violet, and warm amber notes',
-      light: 'Cheerful high-key glow, sudden gag flashes, soft magical bloom, and clean readable contrast',
-      texture: 'Polished cel surfaces, fluffy effect puffs, glossy magical sparks, and bright comedic overlays',
+      aesthetic:
+        'Bright party-quest comedy with parody fantasy, theatrical mishap timing, and joyful failure',
+      subject:
+        'Bouncy contours, exaggerated reaction shapes, clean fantasy trims, and elastic timing accents',
+      color:
+        'Aqua blue, sunny gold, rosy blush, carnival green, comic violet, and warm amber notes',
+      light:
+        'Cheerful high-key glow, sudden gag flashes, soft magical bloom, and clean readable contrast',
+      texture:
+        'Polished cel surfaces, fluffy effect puffs, glossy magical sparks, and bright comedic overlays',
       camera: 'Small perspective exaggerations, reaction zooms, and anticlimax framing',
       mood: 'Comedic, chaotic, irreverent, satirical',
       render: 'Clean comedy-fantasy anime finish with expressive timing and controlled chaos',
       features: 'Parody brightness, elastic failure, gag-timed magic, cheerful disorder',
     },
     'SP05-095': {
-      aesthetic: 'Afterquest melancholy fantasy with quiet post-heroic light, long memory, restrained spellcraft, and time-softened grief',
-      subject: 'Gentle contours, delicate trim, small gesture emphasis, wide breathing spaces, and low-conflict silhouettes',
-      color: 'Pale sky blue, sage green, soft wheat gold, faded violet, pearl white, and warm memory amber',
-      light: 'Diffuse morning light, slow rim glow, transparent magical motes, and subtle shifts that make time visible',
-      texture: 'Soft cloth grain, weathered parchment, grasslike brush texture, translucent particles, and watercolor cel softness',
+      aesthetic:
+        'Afterquest melancholy fantasy with quiet post-heroic light, long memory, restrained spellcraft, and time-softened grief',
+      subject:
+        'Gentle contours, delicate trim, small gesture emphasis, wide breathing spaces, and low-conflict silhouettes',
+      color:
+        'Pale sky blue, sage green, soft wheat gold, faded violet, pearl white, and warm memory amber',
+      light:
+        'Diffuse morning light, slow rim glow, transparent magical motes, and subtle shifts that make time visible',
+      texture:
+        'Soft cloth grain, weathered parchment, grasslike brush texture, translucent particles, and watercolor cel softness',
       camera: 'Open breathing room, postcard stillness, and time-depth layering through light',
       mood: 'Reflective, serene, melancholic, timeless',
       render: 'Serene fantasy anime finish with high restraint and lyrical clarity',
       features: 'Post-heroic quiet, memory light, soft horizon, gentle spellcraft',
     },
     'SP05-096': {
-      aesthetic: 'Hyper-saturated strategy fantasy with candy-neon logic, theatrical confidence, impossible geometry, and rule-like space',
-      subject: 'Crisp decorative contours, grid-aware diagonals, playful scale shifts, geometric overlays, and theatrical rhythm',
-      color: 'Electric magenta, cyan candy, saturated violet, acid yellow, luminous peach, and impossible sky blue',
-      light: 'Overbright neon wash, prismatic rim bands, luminous grid bounce, and deliberate bloom',
-      texture: 'Glossy cel polish, glassy surfaces, holographic gradients, candy plastic sheen, and sharp geometric overlays',
-      camera: 'Boardlike planes, impossible perspective folds, floating rule geometry, and controlled elasticity',
+      aesthetic:
+        'Hyper-saturated strategy fantasy with candy-neon logic, theatrical confidence, impossible geometry, and rule-like space',
+      subject:
+        'Crisp decorative contours, grid-aware diagonals, playful scale shifts, geometric overlays, and theatrical rhythm',
+      color:
+        'Electric magenta, cyan candy, saturated violet, acid yellow, luminous peach, and impossible sky blue',
+      light:
+        'Overbright neon wash, prismatic rim bands, luminous grid bounce, and deliberate bloom',
+      texture:
+        'Glossy cel polish, glassy surfaces, holographic gradients, candy plastic sheen, and sharp geometric overlays',
+      camera:
+        'Boardlike planes, impossible perspective folds, floating rule geometry, and controlled elasticity',
       mood: 'Strategic, dazzling, hyper, confident',
-      render: 'Ultra-clean anime finish with maximal saturation, strategic clarity, and surreal confidence',
-      features: 'Candy-neon grids, rule-logic spectacle, overconfident saturation, geometric theater',
+      render:
+        'Ultra-clean anime finish with maximal saturation, strategic clarity, and surreal confidence',
+      features:
+        'Candy-neon grids, rule-logic spectacle, overconfident saturation, geometric theater',
     },
     'SP05-121': {
-      aesthetic: 'Lantern elemental motion with patterned tenderness, breathlike luminous arcs, and elegant tragedy',
-      subject: 'Razor-clean contours, ribboned motion trails, patterned shape blocks, ceremonial pauses, and flow lines',
-      color: 'Lantern amber, winter blue, deep crimson accents, charcoal black, snow white, and vivid elemental tones',
-      light: 'Warm lantern glow against cold mist, precise rim cuts, soft memory bloom, and arc highlights',
-      texture: 'Woven pattern grain, ink-wash mist, polished cel edges, snowlike particles, and luminous trails',
-      camera: 'Curved motion space, expanded depth, and choreographic foreshortening that frames motion as dance',
+      aesthetic:
+        'Lantern elemental motion with patterned tenderness, breathlike luminous arcs, and elegant tragedy',
+      subject:
+        'Razor-clean contours, ribboned motion trails, patterned shape blocks, ceremonial pauses, and flow lines',
+      color:
+        'Lantern amber, winter blue, deep crimson accents, charcoal black, snow white, and vivid elemental tones',
+      light:
+        'Warm lantern glow against cold mist, precise rim cuts, soft memory bloom, and arc highlights',
+      texture:
+        'Woven pattern grain, ink-wash mist, polished cel edges, snowlike particles, and luminous trails',
+      camera:
+        'Curved motion space, expanded depth, and choreographic foreshortening that frames motion as dance',
       mood: 'Heroic, tragic, elegant, intense',
       render: 'Premium modern anime action polish with ornamental clarity and emotional pauses',
-      features: 'Breathlike arcs, patterned emotion, lantern warmth, winter contrast, choreographic motion',
+      features:
+        'Breathlike arcs, patterned emotion, lantern warmth, winter contrast, choreographic motion',
     },
     'SP05-122': {
-      aesthetic: 'Grimy contract-panic action with industrial fatigue, deadpan panic, and jagged absurdity',
-      subject: 'Jagged contours, broken impact strokes, exhausted rhythm, industrial diagonals, and unstable comic timing',
-      color: 'Grease black, muted red, sickly yellow, concrete gray, rust orange, and harsh fluorescent green',
-      light: 'Hard fluorescent glare, dirty rim light, overcast industrial bounce, and bleak shadow compression',
-      texture: 'Grease, concrete dust, rust, torn paper, hard cel edges, and worn industrial surfaces',
+      aesthetic:
+        'Grimy contract-panic action with industrial fatigue, deadpan panic, and jagged absurdity',
+      subject:
+        'Jagged contours, broken impact strokes, exhausted rhythm, industrial diagonals, and unstable comic timing',
+      color:
+        'Grease black, muted red, sickly yellow, concrete gray, rust orange, and harsh fluorescent green',
+      light:
+        'Hard fluorescent glare, dirty rim light, overcast industrial bounce, and bleak shadow compression',
+      texture:
+        'Grease, concrete dust, rust, torn paper, hard cel edges, and worn industrial surfaces',
       camera: 'Unstable diagonals, compressed street-scale depth, and abrupt cropped motion',
       mood: 'Desperate, absurd, grimy, exhausted',
       render: 'Modern gritty anime polish with rough texture and readable chaos',
@@ -1667,14 +1820,199 @@ function presetMotifForPrompt(
   preset: StyleRuntimePreset,
 ) {
   const key = styleCategoryImageKey(pack.id, category);
+  if (pack.id === 'pack_16') {
+    return 'Use one lineage-specific acting pose, silhouette proportion, color-script split, era texture, and shot grammar unique to this preset; do not reuse a generic anime face, generic aura, rubble field, corridor, market/library aisle, camera prop, lamp setup, or object-only card.';
+  }
   if (PACK_01_TRANSFERABLE_PRESET_IDS.has(preset.id)) {
     return 'Use one transferable photographic cue in lighting, color, surface response, framing, texture, or background geometry; do not literalize the preset title as the subject, scene, or person.';
+  }
+  if (preset.id === 'SP05-178') {
+    return 'Use one occult hazard geometry, invasive shadow contour, or empty-handed defensive pose as the identity cue; do not add a handheld prop, sword, staff, wand, blade, weapon, camera, or generic desk object.';
+  }
+  if (
+    [
+      'SP05-184',
+      'SP05-185',
+      'SP05-186',
+      'SP05-187',
+      'SP05-188',
+      'SP05-189',
+      'SP05-190',
+      'SP05-191',
+      'SP05-192',
+      'SP05-193',
+      'SP05-194',
+      'SP05-195',
+      'SP05-196',
+      'SP05-197',
+      'SP05-198',
+      'SP05-199',
+      'SP05-200',
+      'SP05-201',
+      'SP05-202',
+      'SP05-203',
+      'SP05-204',
+      'SP05-205',
+      'SP05-206',
+      'SP05-207',
+      'SP05-208',
+      'SP05-209',
+      'SP05-210',
+      'SP05-211',
+      'SP05-212',
+      'SP05-213',
+      'SP05-214',
+      'SP05-215',
+      'SP05-216',
+      'SP05-217',
+      'SP05-218',
+      'SP05-219',
+      'SP05-220',
+      'SP05-321',
+      'SP05-322',
+      'SP05-323',
+      'SP05-324',
+      'SP05-325',
+      'SP05-326',
+      'SP05-327',
+      'SP05-328',
+      'SP05-329',
+      'SP05-330',
+      'SP05-331',
+      'SP05-332',
+      'SP05-333',
+      'SP05-334',
+      'SP05-335',
+      'SP05-336',
+      'SP05-337',
+      'SP05-338',
+      'SP05-339',
+      'SP05-340',
+      'SP05-341',
+      'SP05-342',
+      'SP05-001',
+      'SP05-002',
+      'SP05-003',
+      'SP05-004',
+      'SP05-005',
+      'SP05-006',
+    ].includes(preset.id)
+  ) {
+    return 'Use one preset-specific body-language cue, costume trim, light shape, reaction silhouette, or graphic framing device; do not add a handheld prop, camera, desk object, readable sign, weapon, or generic decorative object.';
   }
   if (isPack02CartoonMediaPreset(pack, preset)) {
     return 'Use one preset-specific cartoon media cue in line shape, proportion, paper texture, color fill, collage edge, or animation surface, plus one simple original graphic anchor when useful; do not force an adult model, realistic body, camera prop, or literal title scene.';
   }
   if (isPack02NonPortraitLightingPreset(pack, preset)) {
     return 'Use one preset-specific optical cue on architectural planes, glass, fabric, metal, water, haze, or shadow geometry; do not use a human model, portrait, chair, curtain, or studio-session setup.';
+  }
+  if (preset.id === 'SP04-001') {
+    return 'Use one Golden Age comic card with a readable original emblem/object anchor, thick ink, Ben-Day dots, cheap newsprint, primary color blocks, and pulp optimism; no cape, crest, superhero body, speech balloon, readable text, city rescue, franchise cue, camera prop, or modern digital polish.';
+  }
+  if (preset.id === 'SP04-002') {
+    return 'Use one Silver Age cosmic comic card with an original energy-charged object or silhouette, atom-age burst halos, crackle dots, foreshortened contour rhythm, and bright primary pop; no capes, planets, rockets, battles, cosmic hero body, readable text, UI, or empty energy-only abstraction.';
+  }
+  if (preset.id === 'SP04-003') {
+    return 'Use one modern superhero digital-comic card built around a polished costume-material fragment, symbolic hero object, or emblem-free armor detail with widescreen rim light and glossy FX; no face, full body, cape, weapon, fight scene, city rooftop, readable text, franchise cue, or generic action poster.';
+  }
+  if (preset.id === 'SP04-004') {
+    return 'Use one shonen manga action card with a non-franchise creature/object fragment caught in speed-line impact, screentone fields, hard black masses, and burst geometry; no anime face, fighter body, tournament arena, weapon, named-series cue, readable text, or color.';
+  }
+  if (preset.id === 'SP04-005') {
+    return 'Use one shojo manga emotional card with a delicate ornamental object or cropped non-human silhouette, fine linework, airy screentones, soft glow, and lyrical negative space; no face-first portrait, couple, classroom, school romance, rose overload, readable text, or generic cute human.';
+  }
+  if (preset.id === 'SP04-006') {
+    return 'Use one webtoon-style vertical-scroll card made of 3-4 tall stacked illustrated beat panels around the same simple non-human object, with clean digital contours, saturated cel color, soft gradient emphasis, and generous mobile-scroll spacing; no person, face, full body, fantasy relic, corridor, phone UI, app screen, dialogue bubbles, readable text, romance panel, or screenshot layout.';
+  }
+  if (preset.id === 'SP04-007') {
+    return 'Use one Franco-Belgian ligne-claire card with a clear-line original object, clean architectural corner, or small environment slice, uniform monoline, flat color, readable props, and tidy spatial logic; no person, boy adventurer, dog, bicycle, car/plane hero prop, wall lamp, travel poster, shelves/library filler, readable text, or hatching.';
+  }
+  if (preset.id === 'SP04-008') {
+    return 'Use one binary noir comic card with a symbolic object or abstract silhouette cut from brutal black/white shapes, hard white carve-outs, dry ink grain, and zero-gray contrast; no person, detective, hat, trenchcoat, cards, gun, knife, alley, rain street, blood, readable text, or color accent.';
+  }
+  if (preset.id === 'SP04-009') {
+    return 'Use one underground comix card with a non-human mascot/object specimen, nervous wobble contour, dense crosshatching, raw print-paper grit, and grotesque proportion energy; no real person, face-led caricature, crowd, cramped room, body-first satire, readable text, or polished mainstream finish.';
+  }
+  if (preset.id === 'SP04-010') {
+    return 'Use one painted graphic-novel card with a solemn mythic object, costume-material fragment, statue fragment, or symbolic prop rendered in gouache-like brushwork, nuanced value modeling, and soft spotlight gravitas; no person, face, body, cape, rooftop/city tableau, group pose, Americana tableau, celebrity likeness, readable text, or generic superhero.';
+  }
+  if (preset.id === 'SP04-011') {
+    return 'Use one horror-manga pattern card with spiral/cavity motifs invading an object or material specimen, obsessive black-white line texture, and uncanny pressure; no gore, wounds, realistic body, creepy face, village/room horror, readable text, camera prop, or shock image.';
+  }
+  if (preset.id === 'SP04-012') {
+    return 'Use one airy European sci-fi comic card with a vehicleless organic-futurist structure, biomech arch, or alien material object, pastel space, clean line, stipple texture, and surreal scale; no face, humanoid, traveler, body, hand, spaceship, desert vista, portal, fantasy hall, readable text, or Moebius copy.';
+  }
+  if (preset.id === 'SP04-013') {
+    return 'Use one chibi-style card with an original mascot/object in compact cute proportions, oversized simple shapes, sticker-clean silhouette, and soft color pop; no human child, celebrity/anime face, UI sticker sheet, readable text, franchise cue, or toy-store scene.';
+  }
+  if (preset.id === 'SP04-014') {
+    return 'Use one pixel-comic card with a single object or tiny non-human creature icon in chunky pixel panels, cluster/dither proof, limited palette, and sprite-like contour energy; no person, face, rooftop, city skyline, game UI, health bars, screen capture, weapon pose, platform combat, readable text, or tiny noisy detail.';
+  }
+  if (preset.id === 'SP04-015') {
+    return 'Use one riso-print card with a single graphic anchor, overprint misregistration, grainy spot colors, flat stencil shapes, and paper texture; no readable type, zine/flyer layout, print-shop tools, table scene, poster title, or brand mark.';
+  }
+  if (preset.id === 'SP04-016') {
+    return 'Use one cyberpunk comic card with tech-noir reflective planes around a symbolic object, material shard, or city-light abstract plane, neon ink edges, rainlike texture, and saturated shadow color; no person, humanoid, hand-held device, screen, camera, phone, card prop, alley, skyline, car, detective, readable text, or body-led scene.';
+  }
+  if (preset.id === 'SP04-017') {
+    return 'Use one watercolor storybook card with a gentle object or creature fragment, loose wash edges, soft pigment blooms, warm paper, and childlike narrative calm; no cottage, garden path, child, crowded pastoral vignette, animal-story cliche, readable text, or hard digital line.';
+  }
+  if (preset.id === 'SP04-018') {
+    return 'Use one tactile paper-cut illustration card with a clear cut-paper object, animal, or landscape fragment, torn edges, stacked shadows, colored paper fibers, and simple depth; no person, child, body, face, hands, scissors, glue, desk, classroom, labels, craft-table scene, or flat collage sheet.';
+  }
+  if (preset.id === 'SP04-019') {
+    return 'Use one crayon illustration card with an original object or non-human creature anchor, waxy strokes, uneven pressure, bright naive color, and paper tooth; no person, child, body, face, costume, fantasy hero, school page, child hand, house-sun cliche, stick figure, classroom, readable scribbles, or polished digital finish.';
+  }
+  if (preset.id === 'SP04-020') {
+    return 'Use one flat vector educational-comic metaphor card with a static ecology cutaway, modular seed system, or simple energy-cycle object, clean geometric shapes, friendly palette, and simple explanatory hierarchy; no person, child, vehicle, rocket, drone, flying machine, planets, birds, charts, labels, dashboard UI, readable text, app screen, or Kurzgesagt copy.';
+  }
+  if (preset.id === 'SP04-021') {
+    return 'Use one mid-century gouache illustration card with a playful geometric animal, plant, or learning-object scene, opaque chalky paint, dry-brush edges, matte color blocks, and warm atomic-age optimism; no classroom, family, poster, interior room, product diagram, readable text, lamp, chair, curtain, or studio setup.';
+  }
+  if (preset.id === 'SP04-022') {
+    return 'Use one colored-pencil fantasy/concept card with a calm invented creature, talisman object, or landscape fragment, layered pigment, visible paper tooth, directional hatching, and soft value transitions; no sketchbook page, domestic still life, portrait, face-led character, table prop, readable scribbles, ink, or paint.';
+  }
+  if (preset.id === 'SP04-023') {
+    return 'Use one scratchboard card with a luminous object, nocturnal animal silhouette, or botanical specimen carved from black ground, white incised strokes, burr chatter, and hatch-density modeling; no portrait, theater prop, full moon cliche, readable text, white background, gore, weapon, or crowded night scene.';
+  }
+  if (preset.id === 'SP04-024') {
+    return 'Use one claymation-style card with a tactile non-humanoid clay creature, object, or chunky landscape fragment, visible fingerprints, seam traces, matte plasticine color, and handmade stop-motion charm; no person, humanoid, face-led hero, sword, weapon, fantasy path, studio set, camera, lamp, curtain, chair, human actor, comedy skit, text, or 2D drawn look.';
+  }
+  if (preset.id === 'SP04-025') {
+    return 'Use one felt-tip marker card with a bold non-human creature, object, or concept-art material prop, broad marker strokes, edge bleed, overlap gradients, feathered paper artifacts, and fast saturated color; no person, portrait, face-led character, fashion pose, cloak, armor, sketchbook page, product drawing, desk scene, readable notes, photoreal paint, or smooth airbrush blend.';
+  }
+  if (preset.id === 'SP04-026') {
+    return 'Use one pop-up paper-engineering card with a foldable creature, object, or tiny landscape mechanism, die-cut contours, tabs, slots, crease shadows, layered cardstock depth, and cut-edge fuzz; no open book page, child, theater stage, classroom, hands, scissors, glue, readable text, or flat page.';
+  }
+  if (preset.id === 'SP04-027') {
+    return 'Use one whimsical ink storybook card with a lively object, odd little creature, or playful plant, scratchy fast nib lines, broken contours, watercolor splash accents, ink flicks, and loose humor; no child, classroom, heavy dark scene, joke caption, readable text, face-led portrait, brand mascot, or polished clean vector.';
+  }
+  if (preset.id === 'SP04-028') {
+    return 'Use one chalk pastel card with a soft creature, object, or dreamy landscape fragment, powdery transitions, smudged tooth catch, dust halos, matte bloom, and reduced hard edges; no bedroom, bedtime room, portrait, seasonal postcard, sharp pen line, readable text, lamp, curtain, or studio prop.';
+  }
+  if (preset.id === 'SP04-029') {
+    return 'Use one sticker-art card with a single die-cut non-humanoid creature, object, or emblem-like subject, thick white cutline, saturated vector color, compact vinyl gloss, and thumbnail-readable silhouette; no person, humanoid, armor hero, face mask, lantern, weapon, vehicle, sticker sheet, slogans, readable text, peel-off hand, UI icon set, brand mark, or busy background.';
+  }
+  if (preset.id === 'SP04-030') {
+    return 'Use one vintage scientific botanical card with a clear plant specimen, seed pod, leaf cross-section, or naturalist study, fine ink contour, transparent tint, warm archival paper, orthographic layout, and non-readable callout marks; no readable labels, Latin text, cartoon, messy sketch, human hand, desk, book page, or classroom chart.';
+  }
+  if (preset.id === 'SP04-031') {
+    return 'Use one Art Deco poster card with a streamlined animal, vessel, architectural object, or emblematic landscape form, stepped geometry, sunburst rhythm, teal/gold/black palette, elegant frame discipline, and smooth poster polish; no readable title, city skyline, travel ad, skyscraper wall, product ad, person portrait, car, or messy organic detail.';
+  }
+  if (preset.id === 'SP04-032') {
+    return 'Use one Art Nouveau lithograph card with an elegant creature, botanical object, or ornamental artifact inside flowing halo/border systems, sinuous contour, muted gold, peach/sage/ivory palette, and lithograph grain; no woman portrait, hair-as-subject, poster title, readable text, bouquet cliche, room, lamp, or straight-line minimal layout.';
+  }
+  if (preset.id === 'SP04-033') {
+    return 'Use one constructivist propaganda-poster card with a bold object, machine part, animal silhouette, or abstract emblem at heroic low angle, red-black-cream contrast, rays, screenprint flatness, and command diagonals; no workers, flags, crowds, slogans, politics, readable text, weapon, fist, or uniformed person.';
+  }
+  if (preset.id === 'SP04-034') {
+    return 'Use one 60s psychedelic poster card with a clear central creature, object, or flower-like emblem warped by liquid contours, vibrating complementary colors, radial waves, dense screenprint rhythm, and optical overload; no band name, concert poster, readable typography, face portrait, event layout, drug paraphernalia, or pure unreadable abstraction.';
+  }
+  if (preset.id === 'SP04-035') {
+    return 'Use one minimalist vector card with friendly simplified figures, creature/object modules, or abstract human-like shapes, flat bright palette, soft blobby geometry, shadowless surfaces, and clean editorial hierarchy; no office scene, dashboard UI, chart, app screen, product demo, laptop, text, or detailed texture.';
+  }
+  if (preset.id === 'SP04-036') {
+    return 'Use one Dada collage card with a strange hybrid object, animal-paper fragment, or impossible still-life, hard scissor seams, torn edges, halftone wear, source-light mismatch, and abrupt scale discontinuity; no human body parts, camera, lens, optical device, newspaper text, manifestos, politics, readable headlines, desk scene, or seamless painted look.';
   }
   if (preset.id === 'SP04-037') {
     return 'Use one readable Bauhaus anchor built from circles, squares, triangles, bars, and primary blocks; no readable letters, title area, furniture, room, fantasy character, weapon, or pure abstract-only layout.';
@@ -1686,139 +2024,187 @@ function presetMotifForPrompt(
     return 'Use one original symbolic montage anchor with painted one-sheet drama; no cast lineup, weapon hero prop, readable title zone, franchise cue, celebrity likeness, or literal film poster text.';
   }
   if (preset.id === 'SP04-040') {
-    return 'Use infographic-like hierarchy as abstract chart primitives, icons, modular blocks, and flow shapes around one readable subject; no readable labels, numbers, dashboard UI, arrows with text, or explainer page screenshot.';
+    return 'Use infographic-like hierarchy as abstract chart primitives, icons, modular blocks, and flow shapes around one simple natural system or material cycle; no readable labels, numbers, product, backpack, gear, dashboard UI, app screen, arrows with text, or explainer page screenshot.';
+  }
+  if (preset.id === 'SP04-041') {
+    return 'Use one fashion-illustration card with an elegant elongated runway figure or garment-focused pose, loose gestural ink, watercolor splash accents, editorial whitespace, fabric line speed, and chic atelier energy; no realistic photo model, lingerie, sexualized pose, readable text, logo, camera, backstage studio, chair, curtain, or product catalog layout.';
+  }
+  if (preset.id === 'SP04-042') {
+    return 'Use one surreal album-cover card with a memorable central object paradox, impossible room, or symbolic creature silhouette, square-cover tension, impossible lighting, prismatic accents, matte analog grain, and iconic mystery; no fashion model, runway pose, portrait, band name, record disc, instrument, readable title, celebrity likeness, plain landscape, UI, or canonical album-copy motif.';
+  }
+  if (preset.id === 'SP04-043') {
+    return 'Use one pulp magazine cover card with a dramatic explorer, creature, vehicle, or strange object in lurid adventure staging, hard spotlight contrast, cheap paper wear, sensational diagonals, and masthead-safe composition; no detective, playing card, readable card symbol, readable headlines, guns, knives, explicit peril, gore, sexist damsel trope, modern clean finish, city noir skyline, or logo.';
+  }
+  if (preset.id === 'SP04-044') {
+    return 'Use one vintage travel poster card with a bright destination-like scene, landmark silhouette, traveler-scale figure or transit-era object if useful, flattened scenic planes, optimistic ink bands, archival litho grain, and clean poster framing; no readable destination title, real city label, photo look, airline logo, generic beach ad, or cluttered street market.';
+  }
+  if (preset.id === 'SP04-045') {
+    return 'Use one screenprint gig-poster card with a loud central creature, musician silhouette, object, or emblem, limited spot colors, thick ink contours, overprint drift, distressed border, squeegee drag, and live-event energy; no readable band name, venue text, instrument brand, UI, pure typography, or digital gradient.';
+  }
+  if (preset.id === 'SP04-046') {
+    return 'Use one speedpaint concept card with a rough character, creature, vehicle, or environment beat, large value block-ins, gestural brush economy, opacity passes, mood-first lighting, and selective detail suppression; no polished final render, tiny microdetail, photoreal finish, UI, readable text, or empty abstract smears.';
+  }
+  if (preset.id === 'SP04-047') {
+    return 'Use one cinematic matte-painting card with a vast background plate, atmospheric depth, horizon layering, god-ray haze, photobash realism, and a small scale cue or foreground silhouette if helpful; no cartoon style, sketch look, close-up character focus, UI, readable text, castle cliche, or fantasy corridor.';
+  }
+  if (preset.id === 'SP04-048') {
+    return 'Use one character-sheet card with a clear creature or humanoid design in neutral turnaround/reference presentation, orthographic consistency, clean contour hierarchy, flat color/material blocks, scale cues, and annotation-ready edges; no action pose, dramatic background, readable labels, UI sheet screenshot, weapon showcase, or crowded expression grid.';
+  }
+  if (preset.id === 'SP04-049') {
+    return 'Use one environment-concept card with a navigable place, path-guided composition, atmospheric depth, readable silhouette layering, mood-led worldbuilding, and tiny scale figure only if useful; no character focus, market aisle, library aisle, fantasy corridor, repeated lamp/studio wall, readable signage, or pure landscape postcard.';
+  }
+  if (preset.id === 'SP04-050') {
+    return 'Use one vehicle-design card with a plausible futuristic vehicle or mobility prototype, aerodynamic silhouette, panel segmentation, studio/product highlight, material separation, and engineering-forward form language; no camera prop, weaponized tank, cockpit close-up, readable callouts, brand logo, organic creature, or generic car ad.';
+  }
+  if (preset.id === 'SP04-051') {
+    return 'Use one creature-design card with a clear original creature in design-presentation pose, adaptive anatomy, ecological feature logic, readable predator/guardian silhouette, scales/fur/skin material cues, and rim-light reveal; no human, cute mascot, generic dragon, horror gore, weapon, rider, battle scene, readable text, or fantasy corridor.';
+  }
+  if (preset.id === 'SP04-052') {
+    return 'Use one isometric game-art card with a small modular scene, creature, building chunk, or gameplay object, fixed-angle orthographic logic, tile-grid coherence, bright zone colors, toy-scale abstraction, and consistent isometric shadows; no perspective camera, UI overlay, readable labels, huge map, market aisle, library aisle, or flat front view.';
+  }
+  if (preset.id === 'SP04-053') {
+    return 'Use one storyboard-sketch card with 3-4 rough cinematic panels around one simple beat, greyscale value blocking, frame boxes, camera arrows, motion marks, and red accent shorthand; no readable captions, finished comic page, polished color render, gore, weapon glamor, UI, or overly detailed illustration.';
+  }
+  if (preset.id === 'SP04-054') {
+    return 'Use one prop-design card with an isolated non-weapon artifact, tool, relic, or game-ready object, orthographic clarity, material wear, silhouette-first readability, neutral pedestal lighting, and callout-friendly edges; no sword, gun, blade, weapon, character holding it, inventory UI, readable labels, fantasy hero, or busy background.';
+  }
+  if (preset.id === 'SP04-055') {
+    return 'Use one keyframe-art card with a cinematic story beat, clear environment and one small character or object focal point, motivated light, color-graded mood, widescreen composition, and emotional turning-point weight; no generic fantasy hero posing, weapon focus, battle scene, cliff-only postcard, readable text, UI, or pure landscape without story.';
+  }
+  if (preset.id === 'SP04-056') {
+    return 'Use one photobash concept card with a believable speculative object, vehicle, set piece, or environment fragment, multi-source texture assembly, perspective harmonization, seam-disguise compositing, unified grading, and realistic art-direction cohesion; no fantasy character focus, sword, castle corridor, obvious stock-photo collage, readable text, or cartoon paint.';
   }
   if (preset.id === 'SP04-057') {
     return 'Use blueprint schematic grammar as white technical linework, orthographic fragments, grid, and exploded-view shapes around one simple object or structure; no readable labels, numbers, title blocks, fantasy character, weapon hero, or shaded 3D render.';
   }
   if (preset.id === 'SP04-058') {
-    return 'Use low-poly constraint through faceted geometry, vertex-color ramps, hard silhouettes, and affine texture cues on one simple object, creature, or environment module; no epic fantasy hero, weapon pose, smooth high-res realism, or cinematic landscape.';
+    return 'Use low-poly constraint through faceted geometry, vertex-color ramps, hard silhouettes, affine texture cues, and fixed-function shading on one simple object, creature, vehicle, or environment module; no epic fantasy hero, weapon pose, smooth high-res realism, cinematic landscape, photoreal creature, or modern game screenshot.';
   }
   if (preset.id === 'SP04-059') {
-    return 'Use HUD grammar as translucent reticles, modular frames, icon-like widgets, and cyan-orange vector hierarchy around one abstract subject; no readable UI text, numbers, map labels, helmet, gun sight, mission screen, or dashboard screenshot.';
+    return 'Use HUD grammar as translucent reticles, modular frames, icon-like widgets, cyan-orange vector hierarchy, and screen-space data layers around one abstract vehicle/system silhouette; no readable UI text, numbers, map labels, helmet, gun sight, sword, character hero, mission screen, dashboard screenshot, or FPS combat view.';
   }
   if (preset.id === 'SP04-060') {
-    return 'Use weapon-design language as component hierarchy, side-profile silhouettes, ergonomic arcs, material wear, and exploded mechanical fragments; avoid a literal gun/blade as the only subject, combat scene, armory wall, fantasy sword hero, or weapon held by a character.';
+    return 'Use weapon-design concept language as mechanical component hierarchy, side-profile silhouettes, ergonomic arcs, scratched-metal material wear, and exploded non-lethal sci-fi tool or industrial device fragments on a neutral concept-sheet background; no literal gun, blade, sword, missile, combat scene, armory wall, corridor, market alley, fantasy hero, character holding object, readable labels, or toy softness.';
   }
   if (preset.id === 'SP04-061') {
-    return 'Use linocut relief-print grammar with chunky carved marks, heavy black masses, gouge channels, and one simple emblematic object or landscape fragment; no readable text, poster title, workshop scene, portrait, animal mascot, fantasy hero, or fine-detail hatching.';
+    return 'Use linocut relief-print grammar with chunky carved marks, heavy black masses, gouge channels, and a bold folk-tale action vignette: one small traveler, creature, or working animal crossing a graphic landscape shape; no readable text, poster title, workshop scene, portrait bust, mascot cuteness, fantasy armor hero, or fine-detail hatching.';
   }
   if (preset.id === 'SP04-062') {
-    return 'Use etching grammar with dense crosshatch, burin-like incision, archival paper, and one simple architectural/object fragment; no banknote, seal, map label, readable document text, portrait bust, fantasy hero, or smooth shaded render.';
+    return 'Use etching grammar with dense crosshatch, burin-like incision, archival paper, and a compact non-studio subject: weathered astrolabe fragment, fossil shell, ruined arch detail, or mechanical relic in open negative space; no printing press, print studio, paper sheet as subject, banknote, seal, map label, readable document text, portrait bust, fantasy hero, library aisle, market corridor, or smooth shaded render.';
   }
   if (preset.id === 'SP04-063') {
-    return 'Use ukiyo-e woodblock grammar through carved contour rhythm, bokashi gradients, flat perspective, and indigo restraint on one original scene fragment; no named masterwork imitation, seal signature, readable calligraphy, portrait actor, wave-only cliche, or 3D realism.';
+    return 'Use ukiyo-e woodblock grammar through carved contour rhythm, bokashi gradients, flat perspective, and indigo restraint on an original seasonal scene with one small human or animal silhouette integrated into landscape motion; no named masterwork imitation, seal signature, readable calligraphy, actor portrait, wave-only cliche, fantasy temple hallway, or 3D realism.';
   }
   if (preset.id === 'SP04-064') {
-    return 'Use stipple dotwork through dot-density value, point clusters, and stroke-less monochrome form on one simple object or abstract subject; no tattoo skin, portrait, animal head, fantasy hero, continuous line drawing, or solid filled shapes.';
+    return 'Use stipple dotwork through dot-density value, point clusters, and stroke-less monochrome form on a readable organic subject: moth, skull-like seedpod, mask fragment, or quiet creature study with strong silhouette; no tattoo skin, human portrait, generic animal head trophy, fantasy hero, continuous line drawing, or solid filled shapes.';
   }
   if (preset.id === 'SP04-065') {
-    return 'Use lithograph grammar through grease-crayon grain, stone-soft tonal fields, waxy pressure marks, and one simple object or landscape fragment; no print studio, portrait, artist figure, poster layout, readable text, or sharp vector linework.';
+    return 'Use lithograph grammar through grease-crayon grain, stone-soft tonal fields, waxy pressure marks, and a quiet illustrative scene with one figure, animal, or vehicle caught in atmospheric tonal haze; no print studio, artist figure, portrait bust, poster layout, readable text, lamp/chair/curtain studio setup, or sharp vector linework.';
   }
   if (preset.id === 'SP04-066') {
-    return 'Use screenprint grammar with flat color separations, mesh texture, halftone rosettes, and offset layers on one simple graphic anchor; no celebrity, product/can, readable poster title, repeat-grid sheet, fantasy hero, or painterly gradients.';
+    return 'Use screenprint grammar with flat color separations, mesh texture, halftone rosettes, and offset layers on a punchy character, creature, vehicle, or protest-poster-like scene without words; no celebrity likeness, product/can, readable poster title, repeat-grid sheet, fantasy hero with weapon, logo, or painterly gradients.';
   }
   if (preset.id === 'SP04-067') {
-    return 'Use monotype grammar with one-pass ink transfer, ghost edges, smudged plate pressure, and non-repeatable ink movement on one simple subject; no print studio, artist portrait, clean repeat pattern, readable text, or polished fantasy scene.';
+    return 'Use monotype grammar with one-pass ink transfer, ghost edges, smudged plate pressure, and non-repeatable ink movement on an expressive non-urban subject: fish, bird, mask, wind-bent tree, or storm-tossed boat silhouette; no human portrait close-up, alley/corridor/street canyon, print studio, artist portrait, table/hand stamping, clean repeat pattern, readable text, lamp/chair setup, or polished fantasy scene.';
   }
   if (preset.id === 'SP04-068') {
-    return 'Use cyanotype grammar through Prussian-blue wash, UV-contact silhouettes, soft exposure falloff, and coated-paper grain on one simple object cluster or abstract form; no botanicals-only cliche, science props, Victorian scene, portrait, readable notes, red, or yellow.';
+    return 'Use cyanotype grammar through Prussian-blue wash, UV-contact silhouettes, soft exposure falloff, and coated-paper grain on a non-human contact-print composition: layered moth wings, folded garment fragments, shells, rope, driftwood, or architectural cutout silhouettes with clear overlap; no person, humanoid, warrior, cape, sword, blade, weapon, mountain hero, botanicals-only cliche, science props, Victorian room scene, portrait, readable notes, red, yellow, or empty abstract wash.';
   }
   if (preset.id === 'SP04-069') {
-    return 'Use rubber-stamp grammar through broken thick contours, frame pressure gaps, ink starvation, and red-black stamp-pad economy on one simple emblematic object or creature silhouette; no readable document, official seal text, office desk, paperwork, bureaucracy scene, passport, signature, or perfect vector stamp.';
+    return 'Use rubber-stamp grammar through broken thick contours, frame pressure gaps, ink starvation, and red-black stamp-pad economy on a bold non-humanoid emblem: creature silhouette, expedition vehicle, moon-anchor badge, or crate icon scene with no words; no fantasy hero, cape figure, castle, weapon, readable document, official seal text, office desk, paperwork, bureaucracy scene, passport, signature, logo, or perfect vector stamp.';
   }
   if (preset.id === 'SP04-070') {
-    return 'Use mezzotint grammar through velvet black matrix, burnished highlight recovery, rocker-tooth softness, and smooth chiaroscuro on one simple object, mask-like form, or creature fragment; no museum wall, portrait bust, gothic room, candlelit scene, night landscape, or line-art dominance.';
+    return 'Use mezzotint grammar through velvet black matrix, burnished highlight recovery, rocker-tooth softness, and smooth chiaroscuro on a dramatic vessel, raven-like creature fragment, shell, or ceremonial mask emerging from darkness with clear readable form; no human holding object, knife, blade, cross, religious icon, museum wall, portrait bust, gothic room, candlelit scene, night landscape, fantasy hallway, or line-art dominance.';
   }
   if (preset.id === 'SP04-071') {
-    return 'Use aquatint grammar through rosin-grain gradients, acid-bitten porous tone, soft shadow pools, and wash-like plate atmosphere on one simple structure or object fragment; no gothic castle, ruins, haunted hallway, literal landscape, portrait, or sharp etched-line dominance.';
+    return 'Use aquatint grammar through rosin-grain gradients, acid-bitten porous tone, soft shadow pools, and wash-like plate atmosphere on a moody but readable non-gothic subject: fogbound boat, strange animal, weathered gate fragment, or suspended vessel shape in tonal mist; no ruins, gothic arch, castle, fantasy traveler, staff, weapon, haunted hallway, market/library corridor, portrait close-up, empty abstract wash, or sharp etched-line dominance.';
   }
   if (preset.id === 'SP04-072') {
-    return 'Use ballpoint pen grammar through blue pressure lines, cumulative hatching, ink clots, paper indent drag, and margin rhythm on one simple creature, object, or diagram-like form; no notebook page as main subject, study desk, classroom, readable notes, ballpoint pen prop, hand holding pen, or ultra-dense microdetail noise.';
+    return 'Use ballpoint pen grammar through blue pressure lines, cumulative hatching, ink clots, paper indent drag, and margin rhythm on a lively sketch subject: creature, small vehicle, toy-like robot, or exploration vignette; no notebook page as main subject, study desk, classroom, readable notes, ballpoint pen prop, hand holding pen, camera, or ultra-dense microdetail noise.';
   }
   if (preset.id === 'SP04-073') {
-    return 'Use fountain-pen grammar through hairline-to-broad flex strokes, tapered entry marks, wet-ink pooling, and vellum warmth on one simple creature, object, or ornamental form; no readable writing, manuscript page, signature, letter, desk, fountain pen prop, or hand writing.';
+    return 'Use fountain-pen grammar through hairline-to-broad flex strokes, tapered entry marks, wet-ink pooling, and vellum warmth on an elegant non-human subject: sailing vessel, bird, creature silhouette, mask, or architectural ornament with clear silhouette; no human fantasy hero, sword, blade, weapon, readable writing, manuscript page, signature, letter, desk, fountain pen prop, hand writing, or empty flourish-only abstraction.';
   }
   if (preset.id === 'SP04-074') {
-    return 'Use permanent-marker grammar through chisel-tip masses, blunt contour turns, fiber soak, back-bleed ghosts, and black-paper contrast on one simple emblematic subject; no readable poster, graffiti tag, signage, marker pen prop, hand drawing, or ultra-fine detail.';
+    return 'Use permanent-marker grammar through chisel-tip masses, blunt contour turns, fiber soak, back-bleed ghosts, and black-paper contrast on a bold emblematic creature, character bust, vehicle, or mask-like subject; no readable poster, graffiti tag, signage, marker pen prop, hand drawing, studio wall, or ultra-fine detail.';
   }
   if (preset.id === 'SP04-075') {
-    return 'Use traditional tattoo-flash grammar through bold-will-hold contour, flat primaries, pepper shading, and compact emblem logic on one original friendly creature or object; no skull/rose/dagger cliche, skin, tattoo shop, flash sheet grid, readable banner text, or adult body framing.';
+    return 'Use traditional tattoo-flash grammar through bold-will-hold contour, flat primaries, pepper shading, and compact emblem logic on one original friendly creature, charm object, ship, bird, or tiny heroic mascot; no skull/rose/dagger cliche, skin, tattoo shop, flash sheet grid, readable banner text, adult body framing, or weapon dominance.';
   }
   if (preset.id === 'SP04-076') {
-    return 'Use graffiti tag grammar as abstract aerosol gesture, overspray halos, drip rhythm, chrome-black contrast, and motion curves around one non-text subject; no readable word, name, signature, wall mural, brick alley, vandal scene, spray-can prop, or font sample.';
+    return 'Use graffiti tag grammar as abstract aerosol gesture, overspray halos, drip rhythm, chrome-black contrast, and motion curves wrapping a dynamic non-text subject: creature head, racing vehicle, mask, or dancer silhouette; no readable word, name, signature, wall mural, brick alley, vandal scene, spray-can prop, or font sample.';
   }
   if (preset.id === 'SP04-077') {
-    return 'Use wildstyle graffiti-piece construction as interlocking abstract letterform architecture around one non-text creature or object silhouette; no readable word, mural wall, train, street scene, artist tag, spray-can prop, or messy tag sample.';
+    return 'Use wildstyle graffiti-piece construction as interlocking flat aerosol letterform architecture on a clean poster-paper background around one non-text creature, vehicle, sneaker-like object, or mask silhouette with saturated spray depth; no readable word, mural wall, brick/block wall, stone wall, building, window, train, street scene, artist tag, spray-can prop, weapon, axe, blade, staff, armored fantasy hero, market/library corridor, or messy tag sample.';
   }
   if (preset.id === 'SP04-078') {
-    return 'Use protest-stencil grammar through bridged cutouts, one-ink silhouettes, registration slips, and overspray halos on one symbolic object or creature; no readable slogan, protest crowd, political figure, wall poster, named artist imitation, or literal street scene.';
+    return 'Use protest-stencil grammar through bridged cutouts, one-ink silhouettes, registration slips, and overspray halos on a strong symbolic creature, raised hand silhouette, bird, broken chain, or small lone figure; no readable slogan, protest crowd, real political figure, wall poster, named artist imitation, literal street scene, or weapon.';
   }
   if (preset.id === 'SP04-079') {
-    return 'Use blackletter calligraphic architecture as ornamental broad-nib strokes, diamond joins, and vertical compression shaping one non-text emblem or creature; no readable word, manuscript page, scroll, religious document, illuminated capital letter, or calligrapher hand.';
+    return 'Use blackletter calligraphic architecture as ornamental broad-nib strokes, diamond joins, and vertical compression shaping one non-text dragon, raven, mask, armor crest, or ornamental beast silhouette; no readable word, manuscript page, scroll, religious document, illuminated capital letter, calligrapher hand, or empty typography sheet.';
   }
   if (preset.id === 'SP04-080') {
-    return 'Use brush-pen ink grammar through one-breath gesture arcs, dry-brush fractures, wet pooling, rice-paper bloom, and strong negative space on one simple standalone subject; no person, portrait, hands, workshop, table, print block, brayer, ink tray, calligraphy text, bamboo cliche, mountain landscape, scroll, brush prop, or hand painting.';
+    return 'Use brush-pen ink grammar through one-breath gesture arcs, dry-brush fractures, wet pooling, rice-paper bloom, and strong negative space on a decisive standalone animal, creature, mask, boat, or wind-bent tree; no person, portrait, hands, workshop, table, print block, brayer, ink tray, calligraphy text, bamboo cliche, mountain landscape, scroll, brush prop, or hand painting.';
   }
   if (preset.id === 'SP04-081') {
-    return 'Use value-thumbnail silhouette exploration as 3-value shape-read study around one subject family or creature/object variants; no famous artist imitation, readable labels, character-sheet grid, UI board, polished render, color, tiny details, or final concept art.';
+    return 'Use value-thumbnail silhouette exploration as 3-value shape-read study around one readable non-hero subject family: creatures, vehicles, masks, boats, or tool silhouettes in several bold variants; no cliff pose, lone hero, cape figure, staff, weapon, famous artist imitation, readable labels, rigid character-sheet grid, UI board, polished render, color, tiny details, or final concept art.';
   }
   if (preset.id === 'SP04-082') {
-    return 'Use photobash-paintover iteration through visible cut seams, lasso shapes, photo-texture patches, paint correction strokes, and grade cohesion on one object/creature/environment fragment; no before-after layout, robot kitbash default, software UI, text labels, clean final render, or tutorial board.';
+    return 'Use photobash-paintover iteration through visible cut seams, lasso shapes, photo-texture patches, paint correction strokes, and grade cohesion on one readable non-human concept: creature fragment, vehicle chunk, field kit, crashed pod, or material-heavy environment slice; no fantasy gate, stone portal, corridor, full character portrait, heroic pose, weapon, before-after layout, robot kitbash default, software UI, text labels, clean final render, or tutorial board.';
   }
   if (preset.id === 'SP04-083') {
-    return 'Use loose gesture energy through sweeping action arcs, search lines, smudge trails, and graphite/charcoal force marks on one moving creature/object silhouette; no named animator imitation, animation frame sheet, anatomy classroom pose, model sheet, readable notes, or polished character render.';
+    return 'Use loose gesture energy through sweeping action arcs, search lines, smudge trails, and graphite/charcoal force marks on one moving creature, dancer-like figure, animal, or kinetic vehicle silhouette; no named animator imitation, animation frame sheet, anatomy classroom pose, static model sheet, readable notes, or polished character render.';
   }
   if (preset.id === 'SP04-084') {
-    return 'Use material texture exploration as visual swatches, surface edge tests, wear patches, macro insets, and material contrast around one simple subject; no readable labels, arrows with text, product board, UI grid, workshop table, person, or literal sample catalog.';
+    return 'Use material texture exploration as visual swatches, surface edge tests, wear patches, macro insets, and material contrast around one tangible subject: creature armor, travel pack, boot, mask, or small vehicle panel; no readable labels, arrows with text, product board, UI grid, workshop table, person, or literal sample catalog.';
   }
   if (preset.id === 'SP04-085') {
-    return 'Use mood color-script language through broad color keys, atmosphere bands, value blocks, and time-of-day palette progression around one simple environment or abstract scene fragment; no character close-up, hero figure, panel grid, storyboard frames, readable notes, finished render, or literal film scene.';
+    return 'Use mood color-script language through broad color keys, atmosphere bands, value blocks, and time-of-day palette progression around one readable environment beat: harbor, forest clearing, canyon gate, floating market silhouette, or storm-lit road; no character close-up, hero figure, panel grid, storyboard frames, readable notes, finished render, corridor, fantasy castle, or literal film scene.';
   }
   if (preset.id === 'SP04-086') {
-    return 'Use callout-detail sheet grammar as orthographic fragments, exploded cutaways, magnified inserts, tick marks, and graphic leader lines around one object or creature detail; no readable labels, dimensions, weapons, vehicle blueprint default, UI board, product manual page, or text annotations.';
+    return 'Use callout-detail sheet grammar as orthographic fragments, exploded cutaways, magnified inserts, tick marks, and graphic leader lines around one non-body detail: mask parts, boot sole, saddle buckle, pack clasp, shell housing, or small non-weapon tool; no full character, armor suit, heroic pose, readable labels, dimensions, weapons, vehicle blueprint default, UI board, product manual page, or text annotations.';
   }
   if (preset.id === 'SP04-087') {
-    return 'Use silhouette iteration as black-white shape families, proportion variants, negative-space tests, and thumbnail-read forms around one creature/object archetype; no single hero pose, sword silhouette, colored render, UI grid, readable labels, or polished concept art.';
+    return 'Use silhouette iteration as black-white shape families, proportion variants, negative-space tests, and thumbnail-read forms around one non-humanoid creature, vehicle, mask, or prop archetype; no single hero pose, humanoid lineup, sword silhouette, weapon, colored render, UI grid, readable labels, or polished concept art.';
   }
   if (preset.id === 'SP04-088') {
-    return 'Use rough environment-pass rendering through broad macro shapes, atmospheric recession, value blocking, and large painterly strokes on one environment fragment; no named artist imitation, character close-up, hero figure, weapon pose, finished landscape painting, tiny details, or corridor/hallway default.';
+    return 'Use rough environment-pass rendering through broad macro shapes, atmospheric recession, value blocking, and large painterly strokes on one readable place: canyon gate, industrial dock, forest shrine silhouette, alien plain, or coastal ruins seen wide; no named artist imitation, character close-up, hero figure, weapon pose, finished landscape painting, tiny details, market/library aisle, or corridor/hallway default.';
   }
   if (preset.id === 'SP04-089') {
     return 'Use creature-design iteration as biomorphic anatomy studies, skeletal ghost overlays, locomotion variants, material biology swatches, and silhouette mutations around one original non-human creature family; no named artist imitation, human figure, cute pet, recognizable animal, final render, text labels, medical diagram, or single hero monster.';
   }
   if (preset.id === 'SP04-090') {
-    return 'Use prop-variant design as object-shape families, side-view variants, material swaps, exploded mini parts, and graphic callout marks around one non-weapon object system; no readable labels, weapon set, inventory UI, single hero prop, text annotations, product catalog, or floating contextless object.';
+    return 'Use prop-variant design as object-shape families, side-view variants, material swaps, exploded mini parts, and graphic callout marks around one useful non-weapon object system: lantern, field pack, mask, climbing tool, musical device, or courier container; no readable labels, weapon set, inventory UI, single hero prop, text annotations, product catalog, or floating contextless object.';
   }
   if (preset.id === 'SP04-091') {
-    return 'Use architecture massing model style as foam-core/chipboard block volumes, rough-cut planes, glue seams, shadow massing, and scale cues around one abstract structure; no finished building render, interior, furniture, workshop table, human hand, realistic photo, city block, or tiny text.';
+    return 'Use architecture massing model style as foam-core/chipboard block volumes, rough-cut planes, glue seams, shadow massing, and scale cues around one readable spatial concept: pavilion, bridge, tower cluster, stepped shelter, or creature-scale habitat; no finished building render, interior, furniture, workshop table, human hand, realistic photo, city block, or tiny text.';
   }
   if (preset.id === 'SP04-092') {
-    return 'Use costume exploration board as textile swatches, silhouette fragments, trim systems, colorway strips, and material contrast around one abstract costume language; no full posed model, fashion catalog, readable labels, body-first portrait, lingerie read, single outfit final, or runway scene.';
+    return 'Use costume exploration board as textile swatches, cropped garment fragments, sleeves, cuffs, collars, trims, belts, colorway strips, accessory rhythm, and material contrast for one readable role costume; no full posed model, face, body, weapon, sword, staff, figure lineup, fashion catalog, readable labels, body-first portrait, lingerie read, single outfit final, or runway scene.';
   }
   if (preset.id === 'SP04-093') {
-    return 'Use lighting scenario pass as same-form relighting studies, rim/bounce variants, shadow temperature shifts, exposure bands, and atmospheric value planning around one simple object or environment fragment; no character focus, hero pose, panel text, story frames, UI grid, or single finished scene.';
+    return 'Use lighting scenario pass as same-form relighting studies, rim/bounce variants, shadow temperature shifts, exposure bands, and atmospheric value planning around one readable non-human subject: mask, small shrine, vehicle shell, creature statue, or object silhouette; no character focus, hero pose, panel text, story frames, UI grid, or single finished scene.';
   }
   if (preset.id === 'SP04-094') {
     return 'Use anatomy reference sheet grammar as layered skeletal-like scaffolds, tendon/muscle-flow analogues, cutaways, transparent overlays, and inset structural details around one non-human creature/object system; no named artist imitation, human medical plate, gore, readable labels, classroom page, or realistic cadaver anatomy.';
   }
   if (preset.id === 'SP04-095') {
-    return 'Use foliage design kit grammar as leaf-shape families, branching rhythms, canopy clusters, texture swatches, seasonal color strips, and growth-pattern variants; no named studio imitation, literal forest scene, garden path, house, market plant display, readable labels, or single finished landscape.';
+    return 'Use foliage design kit grammar as leaf-shape families, branching rhythms, canopy clusters, texture swatches, seasonal color strips, bark/fern/moss variants, and growth-pattern studies arranged as a production kit; no humanoid plant creature, forest character, literal forest scene, garden path, house, market plant display, readable labels, or single finished landscape.';
   }
   if (preset.id === 'SP04-096') {
-    return 'Use equipment-tier progression as non-weapon object evolution, modular silhouette escalation, material rarity changes, ornament deltas, and comparison rows; no literal gun, blade, combat weapon, inventory UI, readable labels, violent pose, held weapon, or single final artifact.';
+    return 'Use equipment-tier progression as non-weapon object evolution, modular silhouette escalation, material rarity changes, ornament deltas, and comparison rows around lanterns, field packs, masks, boots, or courier containers; no literal gun, blade, axe, sword, spear, combat weapon, inventory UI, readable labels, violent pose, held weapon, or single final artifact.';
   }
   if (preset.id === 'SP04-097') {
-    return 'Use composition thumbnail grid grammar as rough grayscale value thumbnails, crop tests, focal hierarchy, lens-like framing, and shot-size alternatives around one abstract object/environment idea; no named director imitation, readable notes, full storyboard sequence, character acting scene, UI, labels, or polished render.';
+    return 'Use composition thumbnail grid grammar as rough grayscale value thumbnails, crop tests, focal hierarchy, lens-like framing, and shot-size alternatives around one readable object or environment idea: vehicle wreck, harbor gate, creature nest, shrine, or road bend; no named director imitation, readable notes, full storyboard sequence, character acting scene, UI, labels, or polished render.';
   }
   if (preset.id === 'SP04-098') {
-    return 'Use world-map concept as abstract cartographic plate: parchment, contour coastlines, rhumb-line geometry, terrain icons, route marks, cartouche shapes, and aged ink; no readable labels, compass hero prop, fantasy novel map cliche, political borders, modern map UI, city names, or text.';
+    return 'Use world-map concept as abstract cartographic plate: parchment, contour coastlines, island masses, rhumb-line geometry, terrain icons, route marks, cartouche shapes, and aged ink; no readable labels, compass hero prop, fantasy novel map cliche, political borders, modern map UI, city names, or text.';
   }
   if (preset.id === 'SP04-099') {
-    return 'Use UI/HUD wireframe concept as abstract interface architecture: safe-zone frames, modular panels, reticle placeholders, stat-block boxes, scanline grids, and hierarchy guides; no readable UI text, numbers, screenshot, game scene, weapon targeting, dashboard app, logo, or polished final UI.';
+    return 'Use UI/HUD wireframe concept as abstract interface architecture: safe-zone frames, modular panels, reticle placeholders, stat-block boxes, scanline grids, icon blanks, and hierarchy guides around a neutral geometric object silhouette; no face, mask, character, readable UI text, numbers, screenshot, game scene, weapon targeting, dashboard app, logo, or polished final UI.';
   }
   if (preset.id === 'SP04-100') {
-    return 'Use monster size comparison chart as clean baseline-aligned silhouette scale study with abstract creature forms, tick-like marks, and proportional hierarchy; no readable labels, numbers, human benchmark figure, city skyline, single creature, realistic monster portrait, or infographic text.';
+    return 'Use monster size comparison chart as clean baseline-aligned silhouette scale study with several abstract creature forms, tick-like marks, and proportional hierarchy; no readable labels, numbers, human benchmark figure, city skyline, single creature, realistic monster portrait, or infographic text.';
   }
   if (preset.id === 'SP05-021') {
     return 'Use an original youth-adventure anime style-card: one energetic but non-famous character silhouette or costume fragment with teal-orange cloth motion, training-scroll geometry, optimistic speed arcs, and clean cel shading; no recognizable ninja franchise, forehead metal plate, spiral emblem, kunai, shuriken, village wall, named-series headband, copied hairstyle, or weapon-first pose.';
@@ -1839,34 +2225,34 @@ function presetMotifForPrompt(
     return 'Use an original chaotic indie-adolescence anime style-card: collage panels, abrupt color blocks, expressive rough line, surreal pop stickers without readable text, and teenage emotional motion around one invented character/shape anchor; no franchise likeness, school fight, weapon, readable poster, logo, camera, or ultra-detailed battle scene.';
   }
   if (preset.id === 'SP05-031') {
-    return 'Use an original ornamental fantasy-action anime style-card with calligraphic elemental arcs, ceremonial cloth, luminous petals, and a cropped non-famous costume/object fragment; no visible blade, sword-first pose, named demon-hunter likeness, checker haori copy, mouth gag, blood, or combat kill.';
+    return 'Use an original ornamental fantasy-action anime style-card with a full readable non-famous protagonist, calligraphic elemental arcs, patterned ceremonial cloth, luminous petals, and choreographed breathing-motion energy. Keep clean cel shapes, broad color blocks, and controlled detail density; no visible blade, sword-first pose, named demon-hunter likeness, checker haori copy, mouth gag, blood, combat kill, dense forest, ruin corridor, or noisy debris field.';
   }
   if (preset.id === 'SP05-032') {
-    return 'Use an original urban-occult anime style-card with abstract curse geometry, pressure-field ribbons, black-cyan-violet contrast, and one invented silhouette/hand/object anchor; no school uniform copy, finger/talisman fetish prop, monster gore, named sorcerer likeness, alley fight pileup, or readable sigils.';
+    return 'Use an original urban-occult anime style-card with one charismatic non-famous sorcerer-like protagonist, streetwear silhouette, abstract curse geometry, pressure-field ribbons, black-cyan-violet contrast, and confident hand-acting. Keep graphic shadow blocks and clean aura shapes over tiny particle noise; no school uniform copy, finger/talisman fetish prop, monster gore, named sorcerer likeness, alley fight pileup, readable sigils, dense forest, ruin corridor, or generic shonen rubble.';
   }
   if (preset.id === 'SP05-033') {
-    return 'Use an original chaotic punk-action anime style-card with red ink splatter as graphic paint, jagged halftone ruptures, absurd creature/object fragments, and comedic shock energy; no chainsaw head, gore, severed limbs, blood realism, named character likeness, weapon-first composition, or horror torture.';
+    return 'Use an original chaotic punk-action anime style-card with one messy antihero protagonist, jagged grin energy, rough jacket silhouette, red ink splatter as graphic paint, halftone ruptures, absurd creature shapes, and comedic shock timing. Keep punchy poster shapes and readable face/pose, not micro-noisy gore texture; no chainsaw head, gore, severed limbs, blood realism, named character likeness, weapon-first composition, horror torture, dense forest, or ruin corridor.';
   }
   if (preset.id === 'SP05-034') {
-    return 'Use an original bright hero-academy anime style-card with emblem-like costume fragments, upbeat motion arcs, civic color blocks, and aspirational cel polish; no school uniform copy, superhero franchise likeness, green-haired hero, numbered hero suit, cape-logo copy, classroom scene, or readable badges.';
+    return 'Use an original bright hero-academy anime style-card with one optimistic trainee protagonist, bold expressive pose, emblem-like but unreadable costume shapes, upbeat motion arcs, civic color blocks, and aspirational cel polish. Favor clean broadcast anime, simple readable background, and low-noise highlights; no school uniform copy, superhero franchise likeness, green-haired hero, numbered hero suit, cape-logo copy, classroom scene, readable badges, dense forest, or rubble field.';
   }
   if (preset.id === 'SP05-035') {
-    return 'Use an original vertical-survival anime style-card with tether geometry, wind shear, wall-scale depth, and cropped gear/boot/cable fragments; no giant humanoid, titan likeness, blood, eaten-body implication, military insignia, named corps outfit, rooftop gore, or despair portrait.';
+    return 'Use an original vertical-survival anime style-card with one tense scout protagonist, harness/tether geometry, wind shear, wall-scale vertical depth, and disciplined fear-forward body language. Keep strong silhouette and large value shapes instead of gritty microtexture; no giant humanoid, titan likeness, blood, eaten-body implication, military insignia, named corps outfit, rooftop gore, despair portrait, dense forest, or generic ruin corridor.';
   }
   if (preset.id === 'SP05-036') {
-    return 'Use an original colossal-war-drama anime style-card with severe silhouette hierarchy, ruined-mechanized scale, smoke planes, and mournful institutional geometry; no real-world uniforms, fascist insignia, giant humanoids, battlefield gore, guns foreground, named franchise likeness, or propaganda poster text.';
+    return 'Use an original colossal-war-drama anime style-card with one small human protagonist or commander silhouette dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry, and mournful pressure. Keep the composition broad, cinematic, and readable with restrained texture; no real-world uniforms, fascist insignia, giant humanoids, battlefield gore, guns foreground, named franchise likeness, propaganda poster text, dense forest, or same ruined corridor formula.';
   }
   if (preset.id === 'SP05-037') {
-    return 'Use an original impact-frame comedy anime style-card with deadpan stillness, blank reaction geometry, dust-cloud rings, shattered abstract debris, and satirical overpowered energy; no bald caped hero likeness, yellow suit, red gloves, punch contact, gore, destroyed city panorama, or franchise face.';
+    return 'Use an original impact-frame comedy anime style-card with one deadpan gag protagonist, absurdly calm posture, blank reaction geometry, dust-cloud rings, shattered graphic debris, and satirical overpowered energy. Keep crisp cel comedy timing and simple readable shapes; no bald caped hero likeness, yellow suit, red gloves, punch contact, gore, destroyed city panorama, franchise face, dense forest, or noisy rubble storm.';
   }
   if (preset.id === 'SP05-038') {
-    return 'Use an original psychedelic psychic minimalism anime style-card with rough sketch aura, pastel emotional rupture, simple school-age silhouette abstraction, and warped pop shapes; no bowl-cut psychic boy likeness, school uniform copy, city-destruction scene, readable symbols, gore, or franchise face.';
+    return 'Use an original psychedelic psychic minimalism anime style-card with one anxious plainclothes protagonist, rough sketch aura, pastel emotional rupture, simple silhouette acting, warped pop shapes, and deliberately sparse psychic distortion. Preserve minimalism and air; no bowl-cut psychic boy likeness, school uniform copy, city-destruction scene, readable symbols, gore, franchise face, dense background, or over-rendered particle field.';
   }
   if (preset.id === 'SP05-039') {
-    return 'Use an original tactical-adventure shonen style-card with diagrammatic motion vectors, ability-network motifs, discovery-map energy as abstract shapes, and one invented costume/object anchor; no hunter-license copy, card-game UI, readable labels, fishing-rod hero prop, green outfit copy, or franchise team likeness.';
+    return 'Use an original tactical-adventure shonen style-card with one clever young adventurer protagonist, diagrammatic motion vectors, ability-network motifs, discovery-map energy as abstract shapes, and playful strategic confidence. Keep clean cel readability and distinct costume color logic; no hunter-license copy, card-game UI, readable labels, fishing-rod hero prop, green outfit copy, franchise team likeness, dense forest, or generic ruin corridor.';
   }
   if (preset.id === 'SP05-040') {
-    return 'Use an original mythic urban-fantasy style-card with ceremonial opposition, repeated luminous emblems, reality-fold ribbons, and symbolic field geometry; no sword field, blade rain, red-cloaked archer likeness, servant duel, holy-grail iconography, weapon-first composition, or franchise face.';
+    return 'Use an original mythic urban-fantasy anime style-card with one composed protagonist, ceremonial opposition, repeated luminous emblems, reality-fold ribbons, and symbolic field geometry. Keep the scene graphic, ritual, and character-led with controlled glow, not noisy blade spectacle; no sword field, blade rain, red-cloaked archer likeness, servant duel, holy-grail iconography, weapon-first composition, franchise face, dense forest, or ruin corridor.';
   }
   if (preset.id === 'SP05-051') {
     return 'Use an original neon kinetic alloy sprint style-card with reflective prosthetic-like geometry, speed ribbons, alloy panels, and engineered motion around cropped limbs/mech fragments; no named cyborg heroine likeness, roller-blade weapon feet, gore, police logo, readable UI, or full body fan-art pose.';
@@ -2493,7 +2879,7 @@ function presetMotifForPrompt(
     return 'Use one clean non-gory diagnostic cutaway of an original mechanical-biological, botanical, or creature-specimen system with translucent layers and red/blue/white coding; no readable labels, text, UI, blood, gore, human torso, realistic human anatomy, surgery, hospital room, full body, or horror mood.';
   }
   if (preset.id === 'SP03-052') {
-    return 'Use one aerodynamic original surface form, wheel-arch slice, grille-like module, or metallic body-contour sculpture with long reflection sweeps and color-shift paint; no full car hero, generic car ad, brand/logo, showroom, dealership, road scene, camera, readable text, driver, or vehicle lifestyle setup.';
+    return 'Use one aerodynamic automotive-material study: isolated wheel-arch slice, paint-body contour sculpture, grille-material tile, or lighting-reflection panel with long reflection sweeps and color-shift paint; no full vehicle, car front, headlight face, generic car ad, brand/logo, showroom, dealership, road scene, camera, readable text, driver, or lifestyle setup.';
   }
   if (preset.id === 'SP03-053') {
     return 'Use one original high-jewelry material specimen, faceted sculptural object, gemstone cluster, or precious-metal micro-architecture with macro caustics, dispersion, polished metal, and carat-level clarity; no ring/proposal/wedding box/hand/model/neck display/product pedestal/bridal scene, logo, text, camera, or generic jewelry ad.';
@@ -2502,7 +2888,7 @@ function presetMotifForPrompt(
     return 'Use one appetizing CGI food hero form, fruit/gel/sauce/material specimen, or stylized edible construction with droplets, steam, glossy highlights, crumb texture, and subsurface glow; no burger/fries default, character, bust, face, body, restaurant scene, table/plate clutter, brand packaging, logo, readable text, or rotten/gross read.';
   }
   if (preset.id === 'SP03-055') {
-    return 'Use one inhabitable VR-ready scene fragment or interactive-scale environment module with wide-FOV depth, parallax layers, player-scale cues, optimized surfaces, and clear interaction distance; no headset, goggles, person, VR gear, UI, controller, screenshot, portal, corridor, hallway, aisle, fantasy hall, full generic room, readable text, or camera prop.';
+    return 'Use one grounded VR-ready environment module or interactive-scale scene fragment with wide-FOV depth, parallax layers, player-scale cues, optimized surfaces, and clear interaction distance; no headset, goggles, person, VR gear, UI, controller, screenshot, portal, corridor, hallway, aisle, fantasy hall, floating islands, fantasy landscape, full generic room, readable text, or camera prop.';
   }
   if (preset.id === 'SP03-056') {
     return 'Use one scientific data hero form such as protein fold, particle cloud, molecule cluster, galaxy simulation, or volumetric measurement field with false-color data and scale cues; no UI, charts, lab screen, readable labels, lab room, magic/fantasy glow, character, camera, logo, or text.';
@@ -2514,52 +2900,52 @@ function presetMotifForPrompt(
     return 'Use one bold invented glyph sculpture, abstract letterform mass, or typographic-object construction with extruded bevels, material-built strokes, readable silhouette rhythm, and brand-color energy; no readable word, real alphabet sample, slogan, logo, UI, poster layout, flat text, or signage.';
   }
   if (preset.id === 'SP03-059') {
-    return 'Use one digital fashion hero garment, simulated textile form, or stylized figure fragment wearing impossible iridescent fabric with real drape, weave, seams, folds, and cloth dynamics; no curtain, generic fabric backdrop, showroom, retail store, runway crowd, logo, readable text, camera, or stiff cloth.';
+    return 'Use one digital fashion hero garment, simulated textile form, or faceless featureless mannequin fragment wearing impossible iridescent fabric with real drape, weave, seams, folds, and cloth dynamics; no human face/body, curtain, generic fabric backdrop, showroom, retail store, runway crowd, logo, readable text, camera, or stiff cloth.';
   }
   if (preset.id === 'SP03-060') {
-    return 'Use one original environment-design scene fragment, modular kit corner, terrain slice, or worldbuilding material study with baked-GI depth, atmospheric perspective, navigable scale, and environmental-storytelling cues; no library aisle, market aisle, generic corridor, fantasy hallway, shop shelves, drone, surveillance pod, chrome orb, tarp, fabric sheet, UI, logo, readable text, or camera prop.';
+    return 'Use one clear environment-design production card: a small playable terrain corner with path, modular props, foliage/rock/water set pieces, and lighting blockout cues, like a game level concept maquette; no abstract material board, aisles, library aisle, market aisle, corridor, hallway, archway, ruin, temple, fantasy palace, shop shelves, drone, orb, device prop, tarp, fabric sheet, UI, logo, readable text, or camera prop.';
   }
   if (preset.id === 'SP03-061') {
-    return 'Use one original hard-surface engineering hero form, mech torso fragment, industrial module, or machined armor panel with bevel hierarchy, panel lines, service seams, scratched metal, and functional component density; no weapon, gun, missile, battlefield, soldier, military insignia, cockpit UI, camera prop, readable text, or generic vehicle ad.';
+    return 'Use one original hard-surface engineering hero form, industrial module, or machined armor panel with bevel hierarchy, panel lines, service seams, scratched metal, and functional component density; no weapon, gun, missile, battlefield, soldier, full humanoid body, military insignia, cockpit UI, camera prop, readable text, or generic vehicle ad.';
   }
   if (preset.id === 'SP03-062') {
-    return 'Use one organic sculpt hero form, creature bust fragment, botanical anatomy, or growth-like material specimen with flowing topology, dynamesh mass, subsurface warmth, bark/skin texture maps, and natural rhythm; no gore, horror monster, forest scene, hard robot edges, lab specimen jar, readable text, logo, or camera prop.';
+    return 'Use one isolated organic sculpt hero form, botanical anatomy specimen, creature-material shell, or growth-like material object with flowing topology, dynamesh mass, subsurface warmth, bark/skin texture maps, and natural rhythm on a simple lookdev ground; no human face, full body, bust portrait, gore, horror monster, forest scene, roots environment, hard robot edges, lab specimen jar, readable text, logo, or camera prop.';
   }
   if (preset.id === 'SP03-063') {
     return 'Use one isometric 3D cartographic terrain miniature, stacked contour island, elevation-coded scene fragment, or toy-like exploration map with topographic layers, terrain shadows, and clear height readability; no flat 2D paper map, parchment, atlas page, UI minimap, readable labels, compass rose, market/library aisle, logo, or text.';
   }
   if (preset.id === 'SP03-064') {
-    return 'Use one original exploded-view assembly of a creature/object/module with separated layers, invisible axes, precise spacing, cross-section surfaces, and subsystem color coding; no readable labels, arrows with text, instruction manual page, UI, contact sheet, weapon assembly, camera prop, logo, or flat diagram.';
+    return 'Use one original exploded-view assembly of an object, module, or abstract organism-material form with separated layers, invisible axes, precise spacing, cross-section surfaces, and subsystem color coding; no human/face/body, readable labels, arrows with text, instruction manual page, UI, contact sheet, weapon assembly, camera prop, logo, or flat diagram.';
   }
   if (preset.id === 'SP03-065') {
     return 'Use one original 3D app-icon-like hero object, squircle glass/plastic emblem, or friendly platform-icon sculpt with rounded corners, gradient polish, soft shadow, and front-facing legibility; no real app logo, brand mark, readable letter, UI screen, phone mockup, app store layout, flat 2D icon, camera prop, or text.';
   }
   if (preset.id === 'SP03-066') {
-    return 'Use one polished abstract 3D wallpaper composition with flowing sculptural ribbons, translucent gel forms, broad gradient fields, calm ambient lighting, and strong large-shape rhythm; no character, product, room, wall/floor seam, curtain, lamp, shelf, corridor, text, logo, UI, or noisy microdetail clutter.';
+    return 'Use one wallpaper-ready abstract 3D background only: full-frame layered gel waves, broad gradients, soft depth, translucent ribbons crossing edge-to-edge, calm ambient lighting, clean large-shape rhythm, no single isolated subject; no central trophy object, shell/object/specimen, letterform, number, character, product, room, wall/floor seam, curtain, lamp, shelf, corridor, text, logo, UI, material swatch board, or noisy microdetail clutter.';
   }
   if (preset.id === 'SP03-067') {
-    return 'Use one clean cybernetic integration hero form, prosthetic module, chrome/skin transition fragment, or augmented hand/face/torso detail with seamless seams and LED status glows; no gore, exposed wound, surgery, horror mood, weapon, UI, readable text, camera prop, logo, or fetishized body framing.';
+    return 'Use one clean cybernetic implant product study: isolated prosthetic module, neural connector object, chrome bio-interface plate, or off-body integration part on neutral lookdev ground with seamless seams and LED status glows; no skin, anatomy, face, body, torso, shoulder, hand, wearable fashion pose, gore, exposed wound, surgery, horror mood, weapon, UI, readable text, camera prop, logo, or fetishized body framing.';
   }
   if (preset.id === 'SP03-068') {
-    return 'Use one grounded photogrammetry scan asset, photo-textured material chunk, scanned architectural fragment, or natural surface specimen with baked de-lit color, mesh imperfections, scan noise, and real-world scale cues; no generic rock pile, tree stump, ruined wall default, outdoor trail, market/library aisle, UI, labels, logo, text, or camera prop.';
+    return 'Use one grounded photogrammetry scan asset, photo-textured material chunk, scanned architectural fragment, or natural surface specimen on neutral plinth-like ground with baked de-lit color, mesh imperfections, scan noise, and real-world scale cues; no capture setup, camera rig, tripod, generic rock pile, tree stump, ruined wall default, outdoor trail, market/library aisle, UI, labels, logo, text, or camera prop.';
   }
   if (preset.id === 'SP03-069') {
-    return 'Use one controlled Houdini-style pyro simulation hero volume, smoke plume, heat vortex, or fire/smoke material specimen with turbulent density curls, self-illumination, layered black smoke, and visible fluid dynamics; no explosion disaster scene, weapon blast, burning building, person, battlefield, skull/monster, readable text, logo, UI, or camera prop.';
+    return 'Use one controlled Houdini-style pyro simulation hero volume, contained smoke plume, heat vortex, or fire/smoke material specimen in black void or lookdev stage with turbulent density curls, self-illumination, layered black smoke, and visible fluid dynamics; no explosion disaster scene, weapon blast, burning building, person, battlefield, skull/monster, readable text, logo, UI, or camera prop.';
   }
   if (preset.id === 'SP03-070') {
-    return 'Use one original retro-90s CGI hero object, simple polygon creature/object, checkerboard material study, or awkward low-poly scene fragment with Phong shading, primary colors, and nostalgic early-render charm; no Toy Story/Reboot/franchise likeness, mascot copy, readable text, logo, UI, modern PBR realism, camera prop, or crowded room.';
+    return 'Use one original retro-90s CGI hero object, non-human polygon creature-object, checkerboard material study, or awkward low-poly scene fragment with Phong shading, primary colors, and nostalgic early-render charm; no face-forward mascot, Toy Story/Reboot/franchise likeness, toy room, readable text, logo, UI, modern PBR realism, camera prop, or crowded room.';
   }
   if (preset.id === 'SP03-071') {
-    return 'Use one tactile glassmorphism material interface sculpture with frosted translucent cards, white border layers, blurred color fields, depth stacking, and diffuse transmission; no readable UI text, app screenshot, icons, brand logo, phone mockup, web page layout, dashboard chart, camera prop, or flat opaque panel.';
+    return 'Use one tactile glassmorphism interface sculpture, not usable app UI, with frosted translucent cards, white border layers, blurred color fields, depth stacking, and diffuse transmission; no readable UI text, app screenshot, icons, brand logo, phone mockup, web page layout, dashboard chart, camera prop, or flat opaque panel.';
   }
   if (preset.id === 'SP03-072') {
-    return 'Use one friendly clay-UI material sculpture with soft rounded cards, pill forms, molded buttons, pastel matte surfaces, and warm soft shadows; no readable UI text, app screenshot, icons, brand logo, phone mockup, web page layout, dashboard chart, camera prop, pottery studio scene, or flat sharp panel.';
+    return 'Use one friendly clay interface material sculpture with soft rounded cards, pill buttons, molded cards, pastel matte surfaces, and warm soft shadows; no character, face, mascot, toy body, readable UI text, app screenshot, icons, brand logo, phone mockup, web page layout, dashboard chart, camera prop, pottery studio scene, or flat sharp panel.';
   }
   if (preset.id === 'SP03-073') {
-    return 'Use one original papercraft 3D hero form, layered cardstock creature/object, folded architectural fragment, or cut-paper material sculpture with visible fold lines, paper grain, cut edges, warm craft shadows, and clean layered depth; no craft table, scissors, glue, hands, instruction sheet, origami crane default, readable text, logo, UI, or camera prop.';
+    return 'Use one original papercraft 3D hero form, layered cardstock creature/object, folded architectural fragment, or cut-paper material sculpture filling the card with visible fold lines, paper grain, cut edges, warm craft shadows, and clean layered depth; no craft table, scissors, glue, hands, instruction sheet, contact sheet, material-strip bottom, origami crane default, readable text, logo, UI, or camera prop.';
   }
   if (preset.id === 'SP03-074') {
-    return 'Use one abstract neon-tube sculpture, bent-glass creature/object outline, or non-text emissive sign-form with gas glow, transformer fittings, colored bloom, and wall-reflection ambience; no readable word, letters, logo, bar sign, brick wall default, nightclub scene, brand mark, UI, camera prop, or flat print.';
+    return 'Use one abstract bent neon-tube creature/object silhouette or non-letter emissive glass sculpture with gas glow, transformer fittings, colored bloom, and wall-reflection ambience; no readable word, letters, logo, bar sign, brick wall default, nightclub scene, brand mark, UI, camera prop, or flat print.';
   }
   if (preset.id === 'SP03-075') {
     return 'Use one original ice sculpture hero form, carved translucent creature/object, frozen material specimen, or chiseled architectural fragment with blue-tinted refraction, frosty dispersion, melt-edge detail, and cold caustics; no gala/event table, swan default, cocktail sculpture, warm lighting, puddle melt, readable text, logo, UI, or camera prop.';
@@ -2627,8 +3013,675 @@ function visualResetRule() {
   return 'If any earlier phrase sounds like abstract-only, no-scene, or no-object, reinterpret it as anti-cliche guidance. The final card still needs one readable representative subject: character, figure, object, room fragment, scene fragment, material form, or environment motif. Abstract marks support that subject; they are not the whole image.';
 }
 
+function pack13AnimeIdentityRule(pack: StyleRuntimePack, preset?: StyleRuntimePreset) {
+  if (pack.id !== 'pack_13' || !preset?.id.startsWith('SP05-')) return '';
+  return [
+    'ANIME IDENTITY RULE: do not collapse this preset into generic glossy anime, same-face moe, default pastel portrait, object-only still life, or shared modern TV-anime rendering.',
+    'When artist, studio, series, or movement names appear, use them as broad visual lineage only: line discipline, color script, composition grammar, acting style, texture, and animation-era cues. Do not copy named characters, costumes, logos, scenes, or exact franchise compositions.',
+    'Give this preset one representative original character, silhouette, creature, mask, garment/body-language cue, or character-adjacent emblem unless the preset explicitly demands a material-only card.',
+    'Make the card distinguishable from neighboring SP05 anime cards at thumbnail size through a unique palette, pose rhythm, material language, and scene logic.',
+  ].join(' ');
+}
+
+const PACK16_LINEAGE_BY_ID: Record<string, string> = {
+  'SP05-007':
+    'Tetsuo Hara and Buronson wasteland martial melodrama, Hokuto no Ken-era Toei pressure, thick 1980s anatomy, brutal sun, and dry analog cel impact',
+  'SP05-008':
+    'Tsukasa Hojo procedural cool, City Hunter-era neon comedy-noir, polished 1980s TV detective timing, glass reflections, and dry clue-reading charisma',
+  'SP05-009':
+    'Katsuhiro Otomo cyber-retro city density, Akira-era infrastructure pressure, Rintaro industrial spectacle, layered traffic-light color, and mechanical social overload',
+  'SP05-010':
+    'Akira Toriyama round adventure comedy, Dr. Slump / early Dragon Ball-era elastic slapstick, simple sunny cel shapes, and friendly physical gag timing',
+  'SP05-011':
+    'Yoshihiro Togashi and 1990s shonen aura rivalries, Yu Yu Hakusho tournament pressure, Dragon Ball Z power-up staging, and heavy cel contrast',
+  'SP05-012':
+    'Naoko Takeuchi magical-girl glamour, Ikuko Itoh 1990s transformation polish, Toei chorus staging, ribbon spirals, pearl pastel light, and hopeful team rhythm',
+  'SP05-014':
+    'Shinichiro Watanabe jazz-noir cool, Cowboy Bebop space melancholy, Yoko Kanno-era lounge rhythm, and late-1990s Sunrise cel atmosphere',
+  'SP05-015':
+    'Mamoru Oshii cyber-operations vertigo, Ghost in the Shell philosophical police tension, Production I.G precision, rain glass, and cold network anxiety',
+  'SP05-016':
+    'Yoshihiro Togashi spirit-tournament pressure, Yu Yu Hakusho 1990s arena tension, sharp rival silhouettes, aura smoke, and emotional combat restraint',
+  'SP05-017':
+    'Nobuhiro Watsuki wandering atonement melodrama, Studio Gallop / Deen 1990s cel drama, wind-worn cloth, moral restraint, and sunset memory',
+  'SP05-018':
+    'Yasuhiro Nightow dusty space-western absurdity, Trigun / Madhouse outlaw melancholy, desert comedy timing, battered coats, and warm analog grit',
+  'SP05-024':
+    'Hiromu Arakawa alchemical moral geometry, Bones 2000s adventure drama, robust humanist anatomy, diagram-like energy, and practical metal warmth',
+  'SP05-026':
+    'Goro Taniguchi and CLAMP operatic rebellion strategy, Code Geass-era chesslike staging, Sunrise masked melodrama, and black-red-gold theatrical contrast',
+  'SP05-027':
+    'Hiroyuki Imaishi and Gainax spiral bravado, Gurren Lagann-era impossible scale, flame-orange confidence, and explosive graphic diagonals',
+  'SP05-030':
+    'Atsushi Ohkubo gothic soul-pop action, Bones-era clean black shapes, skull-pop rhythm, angular costume silhouettes, and musical combat timing',
+  'SP05-071':
+    'Hayao Miyazaki and Studio Ghibli warm liminal fantasy, Spirited Away-era handcrafted wonder, ethical discovery, soft creature warmth, and humid amber glow',
+  'SP05-072':
+    'Hayao Miyazaki ecological conflict epic, Princess Mononoke-era mythic nature pressure, painterly forest mass, moral ambiguity, and living material surfaces',
+  'SP05-073':
+    'Hayao Miyazaki clockwork hearth fantasy, Howl-era wandering domestic magic, brass machinery, warm rooms, floating wonder, and emotional craft',
+  'SP05-074':
+    'Ghibli sky-adventure longing, Castle in the Sky-era blue horizons, hand-painted clouds, small human courage, and luminous flight melancholy',
+  'SP05-075':
+    'Makoto Shinkai rainlight romance and Naoko Yamada threshold microacting, refracted glass, blue-white longing, and intimate weather memory',
+  'SP05-076':
+    'Satoshi Kon dream-collapse surrealism, Paprika-era montage logic, unstable perception, carnival color, and precise adult-anime editing rhythm',
+  'SP05-077':
+    'Satoshi Kon identity thriller, Perfect Blue-era mirror fracture, adult performance anxiety, clean psychological cuts, and controlled visual paranoia',
+  'SP05-078':
+    'Katsuhiro Otomo light-trail collapse, Akira-era urban catastrophe, red taillight smear, concrete scale, and dense but readable cel machinery',
+  'SP05-079':
+    'Takeshi Koike / Studio 4C hyperkinetic cosmic velocity, Redline-like chromatic speed, razor anatomy, and impossible motion compression',
+  'SP05-080':
+    'Daisuke Igarashi and Studio 4C oceanic cosmic lyricism, Children of the Sea water-light anatomy, blue bioluminescence, and flowing hand-drawn density',
+};
+
+const PACK16_LINEAGE_RULES: Array<[RegExp, string]> = [
+  [
+    /space|astral|cosmic|corsair|journey|opera|pulp/i,
+    'Leiji Matsumoto romantic space opera, 1970s-1980s astral melancholy, long silhouettes, antique brass, star depth, and noble distance',
+  ],
+  [
+    /cyber|wired|techno|noir|ops|infrastructure|telemetry|arcade/i,
+    'Katsuhiro Otomo, Mamoru Oshii, Production I.G, and 1990s cyber-anime layout discipline: hard surfaces, rain reflections, signal glow, and system pressure',
+  ],
+  [
+    /gothic|velvet|rose|baroque|covenant|ascetic|nocturne/i,
+    'Kunihiko Ikuhara, CLAMP, and classic gothic shojo stage grammar: symbolic symmetry, vertical poise, velvet shadows, and ornamental emotional coding',
+  ],
+  [
+    /sports|rivalry|team|relay|endurance|training|duel|spin|sprint|performance|partner|ensemble/i,
+    'Takehiko Inoue sports anatomy, Production I.G competitive motion clarity, Kyoto Animation performance microacting, and clean body-language-first tension',
+  ],
+  [
+    /romance|intimacy|domestic|warmth|reconciliation|confession|tender|humanist/i,
+    'Naoko Yamada intimate microacting, Isao Takahata humanist observation, Kyoto Animation softness, and restrained everyday emotional realism',
+  ],
+  [
+    /dream|surreal|memory|temporal|metaphysical|mourning|carnival/i,
+    'Satoshi Kon psychological cinema, Mamoru Oshii metaphysical stillness, and art-anime montage grammar: fractured time, symbolic edits, and adult emotional tension',
+  ],
+  [
+    /eco|rusted|biomorphic|mist|nature|whisper/i,
+    'Hayao Miyazaki ecological myth, Isao Takahata naturalist patience, Studio Ghibli painted-world craft, and living landscape materiality',
+  ],
+  [
+    /mecha|machine|formation|institutional|paramilitary|iron|command/i,
+    'Ryousuke Takahashi real-robot restraint, Sunrise tactical cel staging, Mamoru Oshii institutional pressure, and worn machine readability',
+  ],
+  [
+    /slapstick|rom-com|comedy|deadpan|mayhem|irony/i,
+    'Rumiko Takahashi elastic rom-com timing, Akira Toriyama round gag shapes, Sunrise TV comedy staging, and expressive cel reaction rhythm',
+  ],
+  [
+    /magical|sparkling|zodiac|heraldic|vow|ritual|omen|celestial/i,
+    'Naoko Takeuchi magical-girl glamour, CLAMP decorative verticality, 1990s Toei transformation language, and jewel-light symbolic staging',
+  ],
+  [
+    /horror|demonic|grotesque|void|marionette|dread/i,
+    'Kazuo Umezz and Junji Ito manga dread, Mamoru Oshii void silence, 1990s OVA horror texture, and non-graphic psychological pressure',
+  ],
+  [
+    /glam|punk|fashion|elegant|heist/i,
+    'Ai Yazawa fashion-drama linework, Tsukasa Hojo elegant adult cool, 1980s-2000s magazine-anime glamour, and pose-led styling',
+  ],
+  [
+    /velocity|speed|drift|flow|apex|breakaway|aerial/i,
+    'Takeshi Koike speed-poster anatomy, Hiroyuki Imaishi kinetic diagonals, Studio 4C velocity color, and high-contrast motion compression',
+  ],
+];
+
+function pack16AnimeReferenceLineage(preset: StyleRuntimePreset) {
+  const exact = PACK16_LINEAGE_BY_ID[preset.id];
+  if (exact) return exact;
+  const search = `${preset.name} ${preset.category ?? ''}`;
+  for (const [pattern, lineage] of PACK16_LINEAGE_RULES) {
+    if (pattern.test(search)) return lineage;
+  }
+  if (preset.category?.includes('70s') || preset.category?.includes('80s')) {
+    return 'Osamu Dezaki, Toei / Nippon Animation broadcast cel craft, 1970s-1980s analog registration softness, bold silhouettes, and era-authentic color limits';
+  }
+  if (preset.category?.includes('90s')) {
+    return '1990s prestige TV-anime grammar: Sunrise, Madhouse, Production I.G, Gainax, and CLAMP-era cel staging, strong silhouettes, and analog cinematic contrast';
+  }
+  if (preset.category?.includes('2000s')) {
+    return '2000s classics grammar: Bones, Kyoto Animation, Madhouse, Shaft, and Production I.G-era digital-cel clarity, strong character acting, and distinct color scripts';
+  }
+  if (preset.category?.includes('Studio Masterpieces')) {
+    return 'anime film-masterpiece grammar: Studio Ghibli, Satoshi Kon, Mamoru Oshii, Masaaki Yuasa, and Studio 4C lineage cues in composition, acting, palette, and texture';
+  }
+  return 'anime classics and prestige lineage through era-specific line discipline, color script, character acting, studio lighting grammar, and animation texture';
+}
+
+function pack16AnimeBasePromptOverride(pack: StyleRuntimePack, preset?: StyleRuntimePreset) {
+  if (pack.id !== 'pack_16' || !preset) return undefined;
+  const lineage = pack16AnimeReferenceLineage(preset);
+  const brief =
+    typeof preset.style.creative_brief === 'string' && preset.style.creative_brief.trim()
+      ? ` Creative brief: ${preset.style.creative_brief.trim()}`
+      : '';
+  return `A character-led anime classics/prestige style-card with one original anime character, character-adjacent creature, machine silhouette, mask, garment/body-language cue, or symbolic focal subject chosen specifically for ${preset.name}. Reference lineage: ${lineage}. Use those names as broad visual lineage only: line discipline, era texture, color script, composition grammar, acting style, and lighting behavior; do not copy named characters, costumes, logos, scenes, layouts, or franchise compositions.${brief} Must read as ${sanitizeStylePromptName(preset.name).toLowerCase()} through distinctive pose rhythm, silhouette logic, palette, and shot grammar, not generic glossy anime, same-face portrait, object-only still life, rubble field, aura wallpaper, corridor, market/library aisle, camera prop, lamp setup, or empty abstraction.`;
+}
+
+function pack16AnimeIdentityRule(pack: StyleRuntimePack, preset?: StyleRuntimePreset) {
+  if (pack.id !== 'pack_16' || !preset) return '';
+  return [
+    'ANIME PRESTIGE IDENTITY RULE: every pack_16 card must be distinguishable from neighboring anime presets at thumbnail size.',
+    'Use artist, studio, director, era, or movement names only as broad lineage cues for visual grammar, never as literal copying.',
+    'Prefer an original visible character or character-adjacent subject; machinery, creatures, masks, emblems, or environments may lead only when they are the preset-specific subject, not a generic object escape.',
+    'Allow stylized blood, bruising, threat, combat intensity, or weapon presence when the preset identity genuinely needs it; keep it non-gory, non-explicit, and silhouette/composition-led.',
+    'Separate each card with unique line weight, body-language cue, color-script split, lighting setup, texture density, and composition logic.',
+  ].join(' ');
+}
+
 function pickVariant(list: string[], seed: string) {
   return list[Math.abs(hashString(seed)) % list.length];
+}
+
+function presetBasePromptOverride(preset?: StyleRuntimePreset) {
+  if (!preset) return undefined;
+  const overrides: Record<string, string> = {
+    'SP13-011':
+      'A character-led labyrinth-glow anime style-card with one original cautious adventurer, readable pose, clean cel silhouette, toxic-lime bio-glow, carved stone fragments, crystal nodes, mist pockets, and rune-like non-readable light cues as support. Keep survival tension and subterranean mood without a literal dungeon corridor, tunnel hallway, torch procession, explorer group, market, library, camera, weapon, monster attack, readable symbols, or empty abstract glow.',
+    'SP05-008':
+      'A neon procedural irony anime style-card with one original magnetic adult lead in a dry comic-noir pause: raised eyebrow, elegant 1980s cel contour, cobalt night, controlled pink neon, amber contradiction-light, wet glass color planes, and one absurd visual mismatch that reads as tactical humor. Reference lineage: Tsukasa Hojo adult cool, City Hunter-era neon comedy timing, and polished 1980s TV blocking, without copying any franchise, artist asset, costume, logo, or named character. Must read as procedural rhythm through acting, timing, and lighting, not literal detective cosplay. Avoid police badge, gun, trench coat, office case board, readable file/text, street chase, window-wall room, camera prop, library/market/corridor drift, object-only clue, or generic neon portrait.',
+    'SP05-030':
+      'A gothic soul-pop action anime style-card with one original angular youth performer-warrior in black/red rhythm shapes: skull-pop geometry as abstract pattern only, bone-white accents, crimson moon pulse, crisp early-digital cel edges, and musical combat timing in the pose. Reference lineage: Atsushi Ohkubo gothic soul-pop action, Bones-era clean black shapes, and angular youth-action design, without copying any franchise, artist asset, uniform, logo, weapon, or named character. Must read as gothic rhythm action through silhouette, not generic dark shonen. Avoid scythe, chains, school hallway, literal skull logo, mask hero, weapon duel, camera prop, market/library/corridor drift, object-only emblem, or noisy red particles.',
+    'SP05-073':
+      'A wandering clockwork hearth anime style-card with one original warm traveler and a friendly brass machine-creature sharing a small domestic-magic action: honey light, teal shadow, worn copper, floating cloth, hand-painted texture, and soft emotional craft. Reference lineage: Hayao Miyazaki clockwork hearth fantasy, Howl-era wandering domestic magic, and Ghibli handmade world warmth, without copying any franchise, artist asset, castle, logo, creature design, or named character. Must read as mobile hearth and clockwork comfort, not generic fantasy room. Avoid literal castle interior, stove/fireplace hero, market aisle, library aisle, corridor, lamp/chair/studio setup, camera prop, object-only gears, or over-detailed machinery.',
+    'SP05-074':
+      'A skyglow longing drama anime style-card with one original small courageous figure suspended against vast blue-gold horizon light: hand-painted cloud planes, wind-pulled clothing, soft aircraft-like silhouette far away as scale cue, and luminous melancholy. Reference lineage: Ghibli sky-adventure longing, Castle in the Sky-era blue horizons, and classic adventure-anime emotional distance, without copying any franchise, artist asset, ship design, logo, costume, or named character. Must read as longing flight drama through scale and sky color, not generic cloudscape. Avoid cockpit, castle ruin, literal airship hero, bird fixation, market/library/corridor drift, camera prop, empty landscape, readable text, or glossy modern anime face.',
+    'SP05-075':
+      'A rainlight threshold romance anime style-card with two original characters separated by a narrow weather-lit threshold: blue-white rain glow, warm skin reflection, translucent umbrella edge or glass plane, tiny hand hesitation, and restrained microacting. Reference lineage: Makoto Shinkai rainlight romance, Naoko Yamada threshold acting, and refracted weather memory, without copying any franchise, artist asset, costume, logo, location, or named character. Must read as intimate rain threshold through gesture and light, not generic couple portrait. Avoid school hallway, train platform cliche, window-wall room, umbrella product shot, library/market/corridor drift, camera prop, readable signs/text, excessive sparkles, or same pastel idol faces.',
+    'SP05-076':
+      'A cinematic dream-collapse surrealism anime style-card with one original adult dreamer running through a controlled montage of folding color panels: carnival red, acid cyan, warm yellow, violet shadow, impossible perspective cuts, and one readable human anchor. Reference lineage: Satoshi Kon Paprika-era dream-collapse editing, Madhouse adult-anime polish, and precise surreal montage rhythm, without copying any franchise, artist asset, costume, logo, scene, or named character. Must read as perception collapsing around a character, not random psychedelic wallpaper. Avoid parade crowd, toy clutter, market/library/corridor drift, camera prop, object-only masks, readable text, gore, or dense fine-noise confetti.',
+    'SP05-077':
+      'A mirror identity collapse thriller anime style-card with one original performer-like adult figure split between two offset reflections: cool grey-blue, magenta stress accent, clean anxious eyes, poster-glass fracture, mismatched expression continuity, one stylized blood-red or makeup-red smear if useful, and sober psychological framing. Reference lineage: Satoshi Kon Perfect Blue-era identity thriller, adult performance anxiety, and controlled mirror-cut editing, without copying any franchise, artist asset, idol costume, logo, scene, or named character. Must read as identity pressure through reflection behavior, not beauty mirror portrait. Avoid bathroom/vanity mirror, low-neck glamour, idol stage, camera prop, hallway/corridor scene lock, market/library drift, readable posters/text, explicit gore, injury detail, or chaotic abstract shards.',
+    'SP05-046':
+      'A luminous epistolary shojo drama style-card with one original period-romance character defined by hand gesture, sealed letter, paper-fiber tactility, amber window glow, restrained sepia-rose palette, lace/satin detail, and contemplative stillness. Reference lineage: Yumeji-era lyrical portrait mood, Mucha ornamental framing, and 1970s cinematic shojo close-up grammar, without copying any artist, franchise, or named character. Keep it sepia-amber and letter-led, not black-gothic or palace-fantasy. Avoid generic pastel idol face, modern cafe, classroom, library, desk clutter, readable writing, camera, corridor, market, crown, gothic crest, candle shrine, or empty abstract glow.',
+    'SP05-047':
+      'An airy first-love shojo style-card with one original character caught in a hesitant near-contact gesture, pale spring air, restrained blush, clean cream negative space, soft green-blue freshness, translucent fabric motion, and suspended emotional distance. Reference lineage: vintage lyrical shojo magazine softness, Macoto-style big-eye delicacy, and watercolor romance illustration cues, without copying any artist, franchise, or named character. Must feel daylight, light, open, and innocent. Avoid gothic academy, black dress, red roses, palace interiors, candles, crests, dark windows, generic magical-girl costume, idol sparkle overload, school-confession cliche, cherry-blossom default, classroom, library, camera, corridor, market, or same pink face as neighboring presets.',
+    'SP05-048':
+      'A crimson quest-romance anime style-card with one original wind-swept heroine or noble traveler, visible resolve, jewel-green and crimson palette split, brushed leather/metal trim, horizon light, adventure silhouette, and loyal warmth. Reference lineage: Dezaki/Araki-era theatrical adventure shojo, Pre-Raphaelite color romance, and noble quest poster composition, without copying any artist, franchise, or named character. Must read as outdoor adventure romance with wind and horizon, not indoor court shojo. Avoid generic pastel princess, static glamour portrait, sword-first fantasy hero, castle hallway, palace room, marketplace, library, camera, compass/map prop, gothic academy, or empty landscape.',
+    'SP05-049':
+      'A velvet gothic academy shojo style-card with one original nocturnal character, black velvet massing, moon-silver rim, wine-red accent, lace edgework, restrained melancholy gaze, and one sharp gothic accessory. Reference lineage: Aubrey Beardsley black-shape elegance, Gothic Revival ornament, and dark 1990s shojo romance framing, without copying any artist, franchise, or named character. Must be the only dark gothic entry in this wave. Avoid literal school corridor, bookshelf/library, chapel hallway, vampire cosplay, generic candle room, camera, market, readable text, pastel daylight romance, crimson quest horizon, or identical pastel romance face.',
+    'SP05-050':
+      'A cozy tactile sign-language romance style-card with one original character using clear hand-led communication, warm winter cream/blue palette, knit texture, close-range tender expression, soft practical warmth, and gesture readability as the focal style signal. Reference lineage: iyashikei warmth, classic romance manga hand-gesture acting, and quiet European winter illustration color, without copying any artist, franchise, or named character. Must prioritize readable hands and soft winter texture over face glamor. Avoid coffee-shop date cliche, scarf-only shortcut, city festival, classroom, library, camera, market corridor, unreadable hands, gothic/palace styling, crown/crest props, or generic pastel idol face.',
+    'SP05-081':
+      'A shared-warmth slice-of-life anime style-card with two or three original friends in a tiny social beat: one shoulder tilt, one hand gesture, one almost-laughing eye-line, cream/butter/mint palette, tea-toned comfort, polished lived-in fabrics, and soft afternoon bounce. Reference lineage: Kyoto Animation ensemble microacting, Naoko Yamada-style gesture empathy, and K-On! warmth as broad production grammar, without copying any studio asset, franchise, artist, or named character. Must read as ensemble microacting, not solo glamour. Avoid generic bedroom/cafe/school staging, instrument fan-service, idol portrait, gothic/palace mood, dramatic action pose, camera, library, market corridor, text, or empty pastel abstraction.',
+    'SP05-082':
+      'A deadpan-explosion comedy anime style-card with one original character frozen in calm blank-faced setup while an impossible elastic gag erupts nearby: sudden scale jump, simplified everyday object, clean pale background, saturated comic accent spike, readable reaction silhouette, and slapstick timing held in one frame. Reference lineage: Nichijou/Keiichi Arawi absurd timing, manga reaction economy, and elastic TV-anime gag posing, without copying any franchise, artist, or named character. Must read as comedy timing, not cozy moe portrait. Avoid generic cute smile, romantic pastel pose, school/classroom default, gothic/palace mood, weapon, camera, library, market corridor, readable sound effects, or cluttered gag sheet.',
+    'SP05-083':
+      'A low-stakes banter anime style-card with two or three original friends in a flat conversational rhythm: simple talk-circle geometry, tiny reaction differences, relaxed snack-warm palette, low-contrast indoor pastels, and expression-over-action pacing. Reference lineage: Lucky Star conversational timing, late-2000s otaku slice-of-life flatness, and clean episodic comedy framing, without copying any franchise, artist, or named character. Must read as casual banter, not ensemble warmth or slapstick explosion. Avoid solo glamour portrait, dramatic action, gothic/palace mood, cosmic anomaly, classroom default, cafe default, camera, library, market corridor, readable text, or prop clutter.',
+    'SP05-084':
+      'An ordinary-cosmic whimsy anime style-card with original everyday characters reacting to one impossible blue anomaly intruding into cozy routine: grounded warm room or street fragment, sudden non-euclidean glow, ribbon-like accent, playful meta-chaos, and ensemble reaction pressure. Reference lineage: Haruhi-era ordinary-to-cosmic anime pivot, late-2000s sci-fi school-life energy, and light novel cover anomaly composition, without copying any franchise, artist, or named character. Must read as reality pivot, not normal cozy moe or generic magic. Avoid classroom default, clubroom copy, starry fantasy hallway, idol pose, deadpan toaster gag, gothic/palace mood, camera, library, market corridor, readable text, or empty abstract portal.',
+    'SP05-085':
+      'An anxiety-glitch catharsis comedy anime style-card with one original awkward character at emotional overload: soft baseline pose ruptured by magenta glitch, halftone panic insert, photocopy smear, hard black-white burst, and one cathartic color release. Reference lineage: Bocchi the Rock! mixed-media panic grammar, Aki Hamaji anxiety-comedy rhythm, and experimental TV-anime mode-switching, without copying any franchise, artist, or named character. Must read as panic-to-release comedy, not cozy moe portrait. Avoid generic cute smile, normal clubroom, idol stage, music gear as required prop, gothic/palace mood, camera, library, market corridor, readable text, or empty glitch abstraction.',
+    'SP05-086':
+      'A cold-warm restorative comfort anime style-card with one or two original travelers in a practical warmth pocket: cool pine/mountain blue ambient, ember orange thermal key, wool layers, enamel cup or small cooking kit, vapor haze, rough natural grain, and slow companionship pacing. Reference lineage: Yuru Camp restorative outdoor rhythm, Afro-style practical coziness, and iyashikei landscape intimacy, without copying any franchise, artist, or named character. Must read as thermal comfort and calm utility, not generic indoor cozy anime. Avoid bedroom/cafe/school default, romance glamour, comic gag, gothic/palace mood, camera, library, market corridor, readable text, weapon, or crowded camping gear catalog.',
+    'SP05-087':
+      'A pastoral breathing-room stillness anime style-card with one original rural kid, sibling pair, or quiet traveler held small inside warm open space: summer grass, cicada-hour air, straw beige, soft sky blue, slow hand ritual, and large negative-space calm. Reference lineage: Non Non Biyori rural spacing, Atto-style gentle everyday timing, and World Masterpiece Theater countryside observation, without copying any franchise, artist, or named character. Must read as spacious pastoral pause, not generic cozy portrait. Avoid bedroom/cafe/classroom default, clubroom, lamp/curtain/studio setup, glamour face, city street, fantasy village, camera, library, market corridor, readable text, or empty landscape without a character beat.',
+    'SP05-088':
+      'A domestic-fantasy scale-chaos anime style-card with one original household character reacting warmly to a huge friendly magical creature fragment, tiny dragon-adjacent silhouette, or impossible oversized visitor squeezed into routine space: cream wood warmth, cyan magical spill, affectionate panic, round comfort shapes, and scale-comedy staging. Reference lineage: Miss Kobayashi-style domestic monster comedy, Coolkyousinnjya scale-gag rhythm, and Kyoto Animation creature-in-routine polish, without copying any franchise, artist, studio asset, or named character. Must read as mythic scale colliding with home routine, not normal cozy moe. Avoid generic bedroom/cafe/school default, empty portal, gothic palace, market/library corridor, camera, readable text, weapon, creature attack, or same cute solo portrait as neighboring presets.',
+    'SP05-089':
+      'A soft-surreal deadpan-drift anime style-card with one original calm character accepting a quiet impossible event: floating kettle, tiny cloud indoors, fish-shadow crossing daylight, soft bending perspective, pale mint/beige/blue palette, and almost no reaction. Reference lineage: Yokohama Kaidashi Kikou calm dream logic, Hitoshi Ashinano gentle stillness, and Tsukumizu-style deadpan quiet absurdity, without copying any franchise, artist, or named character. Must read as sweet mundane surrealism with deadpan timing, not cozy friendship scene. Avoid loud slapstick, anxiety glitch, magical portal spectacle, bedroom/cafe/classroom default, lamp/curtain/studio setup, market/library corridor, camera, readable text, object-only still life, or generic smiling anime portrait.',
+    'SP05-090':
+      'A memory-washed melodrama softness anime style-card with one original character in a bittersweet emotional close-to-mid shot: translucent tearline glow, faded amber/sky-blue haze, soft blossom pink, half-remembered rain glass or train-platform light, lowered gesture pressure, and sincere vulnerable stillness. Reference lineage: Makoto Shinkai memory-light, Naoko Yamada emotional microacting, and Key/Jun Maeda visual-novel melodrama softness, without copying any franchise, artist, studio asset, or named character. Must read as nostalgic emotional memory, not generic pastel romance. Avoid classroom/cafe confession cliche, gothic palace, idol glamour, comedy gag, fantasy portal, library/market corridor, camera, readable text, excessive sky-only landscape, or the same cute face as neighboring slice-of-life presets.',
+    'SP05-101':
+      'A fluid painterly anime style-card with one original character half-dissolving into watercolor and ink wash: wet rice-paper bloom, sumi-e gesture line, indigo/crimson pigment pools, disappearing contours, and readable silhouette held by one calm pose. Reference lineage: Studio 4C art-anime looseness, Masaaki Yuasa fluid morph grammar, and Tale of the Princess Kaguya wash economy, without copying any franchise, artist, studio asset, or named character. Must read as painterly anime experiment, not generic pretty portrait or empty abstract wash. Avoid hard cel outlines, glossy digital finish, cyber neon, gritty realism, deco geometry, classroom/cafe/studio wall, camera, market/library corridor, readable text, or pigment-only card with no subject.',
+    'SP05-102':
+      'A gritty realist seinen anime style-card with one original adult character in an unsentimental documentary frame: tired eyes, worn jacket, concrete gray, fluorescent green cast, scuffed material, practical posture, and hard overhead light. Reference lineage: Satoshi Kon adult-drama realism, Naoki Urasawa grounded faces, and Katsuhiro Otomo urban material weight, without copying any franchise, artist, studio asset, or named character. Must read as adult realist seinen, not cute/moe or cinematic hero glamor. Avoid school uniform, idol face, fantasy ruins, weapon, noir detective cliche, camera, market/library corridor, readable signs, gore, excessive wrinkles/noise, or abstract material-only card.',
+    'SP05-103':
+      'A neon hyperpop anime style-card with one original avatar-like character in a saturated music-video pose: RGB channel split, magenta/cyan/toxic green palette, holographic foil shimmer, glossy digital edge, glitch displacement, and clean candy-color silhouette. Reference lineage: Studio Trigger color impact, Redline-era speed saturation, and internet-native Vocaloid/music-video maximalism, without copying any franchise, artist, studio asset, or named character. Must read as terminally-online hyperpop anime, not cyberpunk noir or generic idol portrait. Avoid dark moody palette, readable UI/text, brand logos, phone/camera prop, nightclub crowd, market/library corridor, gritty realism, painterly wash, or noisy microdetail sparkle.',
+    'SP05-104':
+      'A minimalist indie quiet anime style-card with one tiny original figure or spare character silhouette held against vast off-white/sky-gradient negative space: very few ink lines, one accent color, lonely scale, soft overcast light, and intentional silence. Reference lineage: Kunio Kato sparse animation, arthouse short-film framing, and iyashikei quiet-space restraint, without copying any franchise, artist, studio asset, or named character. Must read as less-is-more indie anime, not unfinished prompt or empty abstraction. Avoid detailed background, dramatic lighting, large glamour face, cute moe pose, props-as-clutter, lamp/curtain/studio setup, camera, market/library corridor, readable text, or saturated hyperpop color.',
+    'SP05-105':
+      'A textured hand-drawn rough anime style-card with one original character in a raw genga-like keyframe: visible pencil underdrawing, construction lines, eraser ghosts, peg-bar registration hints, colored-pencil rough fill, graphite pressure, and warm human imperfection. Reference lineage: Yoshinori Kanada rough key-animation energy, pre-digital OVA pencil-test material, and Studio 4C production-sketch tactility, without copying any franchise, artist, studio asset, or named character. Must read as production-art roughness, not polished clean anime. Avoid fully rendered digital color, vector-clean lines, finished cel shade, desk/tool/studio scene, readable notes, camera, market/library corridor, generic pretty portrait, or noisy dirty scan overload.',
+    'SP05-106':
+      'A deco-inspired geometric anime style-card with one original elegant character or mask-like figure built from faceted planes: gold leaf, lapis blue, ruby accent, ruler-straight lines, fan geometry, enamel black, stained-glass color blocking, and theatrical symmetry. Reference lineage: Art Deco poster design, Erte ornamental geometry, Tamara de Lempicka faceted elegance, and classic shojo theatrical composition, without copying any franchise, artist, studio asset, or named character. Must read as geometric deco anime, not generic fantasy palace or soft organic shojo. Avoid round soft contours, messy pencil texture, painterly wash, gothic academy, palace corridor, readable crest/text, camera, market/library corridor, weapon, or bland centered face.',
+    'SP05-107':
+      'An unsettling non-graphic horror anime style-card with one original shadowed figure or creature-adjacent silhouette undergoing implied transformation: clinical off-white void, bruise-crimson accent, black organic spiral, porcelain/membrane surface, oppressive close crop, and dread through shape distortion rather than gore. Reference lineage: Junji Ito psychological dread, Satoshi Kon nightmare montage unease, and 1990s bio-horror OVA atmosphere, without copying any franchise, artist, studio asset, or named character. Must read as visceral horror mood while staying non-graphic. Avoid exposed organs, blood spray, dismemberment, injury detail, torture, medical gore, cute/moe face, monster attack scene, weapon, camera, market/library corridor, readable text, or generic dark portrait.',
+    'SP05-108':
+      'A fairy-tale storybook soft anime style-card with one original gentle character or small enchanted traveler inside an illuminated-manuscript frame: watercolor paper grain, buttercream/lavender/mint palette, floral ornament, gold-foil edge, lace-like border, and warm picture-book wonder. Reference lineage: Studio Ghibli storybook tenderness, Kinuko Craft fairytale ornament, and classic shojo picture-book softness, without copying any franchise, artist, studio asset, or named character. Must read as soft fairytale illustration, not generic pastel anime portrait. Avoid dark gothic, gritty realism, horror, adult glamor, palace corridor, literal princess-castle cliche, readable book/page text, camera, market/library corridor, or empty floral abstraction.',
+    'SP05-109':
+      'A kinetic impact-line choreography anime style-card with one original character in a clean non-weapon motion burst: diagonal body arc, speed-line forest, radial impact geometry, afterimage smear, electric-blue aura, yellow-white flash, and clear force direction. Reference lineage: Yoshinori Kanada impact-line grammar, Yutaka Nakamura cube/impact rhythm, and Imaishi/Gainax kinetic exaggeration, without copying any franchise, artist, studio asset, or named character. Must read as motion choreography, not generic shonen battle. Avoid weapon-first pose, punch-to-face impact, injury, rubble storm, dense forest/ruin, readable sound effects, camera, market/library corridor, or static glamour portrait.',
+    'SP05-110':
+      "A surreal dream-logic anime style-card with one original sleeper/traveler figure in impossible gentle space: floating door fragment, fish-moon shadow, inverted stair or water-sky plane, contradictory soft light, lavender/indigo/gold palette, and symbolic object morphing. Reference lineage: Satoshi Kon dream montage, Angel's Egg liminal symbolism, and Masaaki Yuasa morphing surreal animation, without copying any franchise, artist, studio asset, or named character. Must read as dream logic with a readable subject, not random fantasy hallway. Avoid literal bedroom dream scene, corridor/tunnel, readable text, camera, library/market aisle, horror gore, hyperpop neon, or empty floating-object collage without a character anchor.",
+    'SP05-111':
+      'An ukiyo-e woodblock anime style-card with one original character, spirit, or traveler composed through flat washi color planes: indigo/vermillion/ochre palette, bokashi gradient, carved sumi contour, wave/rain rhythm, paper grain, and flattened decorative depth. Reference lineage: Hokusai wave dynamism, Hiroshige rain atmosphere, Sharaku theatrical contour, and modern anime print-fusion, without copying any franchise, artist, studio asset, or named character. Must read as woodblock-anime fusion, not modern digital fantasy. Avoid smooth CGI shading, western perspective, readable kanji/text, literal famous wave copy, sword-first samurai, palace corridor, camera, market/library corridor, or generic kimono portrait.',
+    'SP05-112':
+      'A spray-drip wildstyle anime style-card with one original street-anime character or bold character silhouette fused into a mural-scale abstract shape: overspray halos, non-readable wildstyle curves, chrome/safety-orange/neon fill, concrete grain, buff-paint beige, stencil edges, and paint drips. Reference lineage: Lee Quinones subway mural energy, Lady Pink color rhythm, Basquiat street-mark intensity, and anime street-art fusion, without copying any artist, tag, logo, franchise, or named character. Must read as graffiti-surface anime, not gallery poster or readable tag. Avoid readable letters/words, real graffiti crew tags, white-wall gallery, spray-can/camera prop focus, market/library corridor, polished clean vector, vandalism scene with police, or empty paint-only abstraction.',
+    'SP05-113':
+      'A leaded jewel-light segmentation anime style-card with one original character, angelic mask, or solemn heroine silhouette built from stained-glass panes: thick black came lines, sapphire/ruby/emerald panes, rosette framing, translucent backlight, glass bubbles, gothic vertical rhythm, and sacred color glow. Reference lineage: medieval cathedral stained glass, Alphonse Mucha ornamental framing, Kunihiko Ikuhara theatrical symbolism, and Revolutionary Girl Utena jewel-window composition grammar, without copying any franchise, artist, studio asset, or named character. Must read as stained-glass anime segmentation, not generic chapel interior or empty window pattern. Avoid literal church aisle, palace corridor, readable religious text, crest/logo, camera, market/library corridor, smooth digital gradient, or subjectless glass pattern.',
+    'SP05-114':
+      'A threadbare textile patchwork anime style-card with one original character, mascot-like figure, or soft heroine silhouette built from visible fabric patches: boro indigo scraps, sashiko white stitching, frayed edges, embroidery contours, linen/ecru warmth, button accents, and soft stuffed-volume proportions. Reference lineage: Japanese boro textiles, sashiko craft geometry, quilted folk-art storytelling, Rankin/Bass tactile stop-motion softness, and handmade anime craft illustration, without copying any franchise, artist, studio asset, or named character. Must read as anime-through-fabric, not sewing-room still life. Avoid sewing tools, hands crafting, curtain/lamp/studio room, readable labels, fashion catalog, glossy digital finish, market/library corridor, or empty fabric swatch board.',
+    'SP05-115':
+      'An ice-crystal refractive anime style-card with one original figure, mask, or guardian silhouette refracted through sharp hexagonal crystal planes: ice-blue/cyan monochrome, prism rainbow edge, internal bubbles, frost-fern texture, caustic light, gem-cut body geometry, and clean frozen negative space. Reference lineage: Haruko Ichikawa mineral-body serenity, Houseki no Kuni refractive material grammar, arctic glass sculpture photography, and 1990s OVA icy elegance, without copying any franchise, artist, studio asset, or named character. Must read as refractive frozen anime, not generic ice princess or palace fantasy. Avoid throne/castle corridor, snow queen cliche, warm fire glow, soft organic curves, readable text, camera, market/library corridor, or empty crystal cluster.',
+    'SP05-116':
+      'A sumi-e impact brushstroke anime style-card with one original character silhouette or creature stroke formed from a single explosive ink gesture: pressure-variable black brush, dry-brush splinter, wet ink pool, rice-paper fiber, large negative space, and one restrained vermillion seal-like accent without readable text. Reference lineage: Hokusai ink force, Zen enso discipline, Yoshinori Kanada impact posing, and Masaaki Yuasa gesture-led animation energy, without copying any franchise, artist, studio asset, or named character. Must read as one-breath sumi-e anime impact, not colorful cel action. Avoid readable calligraphy, kanji, samurai sword cliche, weapon-first pose, detailed filled background, camera, market/library corridor, or noisy ink splatter clutter.',
+    'SP05-117':
+      'A phosphor sensor-vision grain anime style-card with one original nocturnal silhouette, small creature, or equipment-free figure seen through green intensifier vision: phosphor monochrome, reticle-like non-text alignment marks, lens-tube vignette, sensor bloom, scanline grain, and mediated vulnerability. Reference lineage: night-vision documentary texture, found-footage anime tension, Mamoru Oshii surveillance mood, and tactical sensor aesthetics as visual grammar, without copying any franchise, artist, studio asset, logo, or real unit identity. Must read as phosphor sensor vision, not cyberpunk neon or military gear poster. Avoid camera/device prop, readable HUD text/numbers, guns, soldiers, real military insignia, market/library corridor, bright daylight, colorful palette, or empty UI overlay.',
+    'SP05-118':
+      'A backlit contour longing anime style-card with one original character silhouette held against a huge sky color script: orange-magenta sunset core, gold rim hair edge, violet dusk gradient, flare haze, posture-only emotion, and minimal facial detail. Reference lineage: Makoto Shinkai sky-led color scripts, Naoko Yamada silhouette microacting, Osamu Dezaki postcard-memory stillness, and classic anime sunset longing compositions, without copying any franchise, artist, studio asset, or named character. Must read as silhouette longing and atmosphere, not generic pretty-face romance. Avoid visible detailed face, classroom/cafe confession, repeated train-platform staging, dark indoor scene, camera/lens prop, market/library corridor, readable text, or empty sky with no character anchor.',
+    'SP05-119':
+      'A chalk-dust slate sketch anime style-card with one original character bust, dancer silhouette, or creature mask drawn as powdery chalk on a dark slate ground: smeared white contour, erased ghost trails, classroom-board value bloom without classroom context, dusty edge halos, and one pale blue or peach accent. Reference lineage: chalk animation tests, early production layout roughs, William Kentridge charcoal-erasure motion logic, and anime genga construction economy, without copying any franchise, artist, studio asset, or named character. Must read as chalk-dust anime sketch, not school blackboard gag or polished cel portrait. Avoid equations, readable writing, chalk sticks, teacher/classroom scene, desk/lamp/curtain setup, camera, market/library corridor, or empty smudge field.',
+    'SP05-120':
+      'A thermal-heat-signature vision anime style-card with one original running figure, animal-like spirit, or hidden character silhouette rendered through infrared heat bands: black/cold blue background, yellow-orange-white heat core, false-color contour edges, low-detail face, sensor bloom, and body-heat storytelling. Reference lineage: FLIR thermal imaging, science-documentary false-color maps, Mamoru Oshii techno-surveillance mood, and anime stealth tension grammar, without copying any franchise, artist, studio asset, logo, or real unit identity. Must read as thermal vision anime, not neon cyberpunk or rainbow abstract map. Avoid readable UI numbers, weapons, soldiers, camera/device prop, market/library corridor, full daylight, detailed facial glamour, or empty heat-map texture.',
+    'SP05-162':
+      'A moonlit ribbon-justice magical-girl anime style-card with one original heroine in a compassionate heroic pose: crescent-moon halo logic, flowing ribbon arcs, jewel-pastel pink/cyan/lilac glow, crisp vintage cel contours, satin sparkle, and transformation-energy choreography. Reference lineage: Naoko Takeuchi magical-girl elegance, 1990s Toei transformation sequencing, Ikuko Itoh polished silhouette design, and classic shojo magazine romance sparkle, without copying any franchise, artist, studio asset, costume, logo, weapon, or named character. Must read as moonlit magical-radiance justice, not generic idol pastel or exact sailor-uniform cosplay. Avoid sailor collar copy, twin-bun hairstyle cue, wand prop, rooftop city scene, literal moon-title emblem, readable text, camera, market/library corridor, or object-only sparkle field.',
+    'SP05-168':
+      'A red-alert psychological biomecha anime style-card with one original isolated pilot-like figure or fragile silhouette trapped inside oppressive diagnostic geometry: crimson warning planes without readable UI, bruised violet/industrial green palette, cross-blast light, angular 90s cel mechanical contours, cathode bloom, and sacred-apocalypse scale pressure. Reference lineage: Hideaki Anno psychological montage discipline, Yoshiyuki Sadamoto restrained character tension, Gainax late-90s cel-mecha layouts, and mecha-interface claustrophobia, without copying any franchise, artist, studio asset, robot design, logo, or named character. Must read as red-alert interior collapse, not generic mecha poster. Avoid plug-suit copy, specific mecha silhouette, command-room screens with text, giant robot hero pose, religious icon copy, soldiers, weapons, market/library corridor, or empty red UI overlay.',
+    'SP05-171':
+      'An arcane-chaos roadtrip fantasy-comedy anime style-card with one original mischievous mage or mercenary traveler caught mid-gag: elastic reaction pose, oversized spell-circle burst without readable glyphs, fire-orange/sapphire-blue color punctuation, scorched parchment texture, and bright 90s fantasy sky reset. Reference lineage: Rui Araizumi sharp comic-fantasy illustration, 1990s TV fantasy-comedy timing, expressive cel reaction shots, and slapstick spell-impact staging, without copying any franchise, artist, studio asset, costume, logo, or named character. Must read as loud fantasy-comedy spell chaos, not serious RPG party art. Avoid tavern/market/corridor, fixed adventuring party lineup, readable magic symbols, lewd gag, weapon-first pose, dragon attack, camera, library aisle, or generic fireball-only abstraction.',
+    'SP05-172':
+      'A tarot-mecha fantasy anime style-card with one original windswept shojo protagonist before an ornate ceremonial machine silhouette or mecha-emblem fragment: jewel crimson/sapphire/violet sky, antique gold rim, tarot-card segmentation without readable symbols, elongated romantic pose language, enamel mechanical contour, and prophecy glow. Reference lineage: Shoji Kawamori ornate transformable machine myth, Nobuteru Yuki elegant 90s character drama, Kazuki Akane romantic fantasy staging, and late-90s cel fantasy skies, without copying any franchise, artist, studio asset, robot design, logo, or named character. Must read as fated shojo-mecha fantasy, not generic castle romance or cockpit scene. Avoid exact tarot card labels, cockpit interior, battlefield, castle corridor, angel wings, weapon-first mecha, readable text, market/library corridor, or object-only tarot collage.',
+    'SP05-176':
+      'A jewel-armor quest magical-knight anime style-card with one original heroine or compact trio silhouette implied through color partitions: gem-faceted armor plates, saturated red/blue/pink jewel primaries, gold rune arcs without readable symbols, sky-fantasy glow, heroic friendship warmth, and bright 90s cel-fantasy polish. Reference lineage: CLAMP ornate shojo geometry, Magic Knight-era jewel armor fantasy grammar, Mokona/CLAMP decorative silhouette logic, and 1990s TMS magical-fantasy color staging, without copying any franchise, artist, studio asset, costume, weapon, logo, or named character. Must read as jewel quest armor and team-color optimism, not generic magical-girl sparkle. Avoid exact school-uniform armor, sword-first pose, fixed party lineup, castle corridor, readable runes, giant gem mascot, market/library corridor, or object-only rune field.',
+    'SP05-177':
+      'A cheerful bridge-deck mecha comedy anime style-card with one original expressive pilot/operator or small ensemble beat around retro console glow: cyan/amber practical light, deep space navy, launch-vector diagonals, analog panel shapes without readable UI, bouncy reaction timing, and clean 90s cel mecha-comedy finish. Reference lineage: Kia Asamiya space-opera character energy, Xebec-era ensemble mecha comedy, 1990s TV anime command-room color rhythm, and playful genre-aware launch staging, without copying any franchise, artist, studio asset, ship design, logo, or named character. Must read as cheerful mecha bridge banter, not serious military cockpit. Avoid readable screen text, full bridge replica, weapon launch, battleship hero shot, uniform copy, market/library corridor, camera prop, or empty console-panel abstraction.',
+    'SP05-178':
+      'A mythic urban-purge occult anime style-card with one original empty-handed guardian silhouette under ritual warning light, composed like a shallow emergency-poster close-to-mid shot instead of a navigable street: siren red framing, toxic chlorophyll green invasive silhouettes, flat broken-facade panels, wet asphalt fragments only as texture, talisman-gold flashes, sharp 90s cel action contours, and occult hazard geometry without readable script. Reference lineage: Yuzo Takada occult-action manga energy, Blue Seed-era urban mythic emergency grammar, 1990s supernatural action cel staging, and tactical ritual contrast, without copying any franchise, artist, studio asset, monster design, logo, or named character. Must read as urban occult crisis and invasive myth through color/line/symbol pressure, not magical-knight battle fantasy or alley scene. The character must have visible empty hands, a defensive stance, no handheld object, no uniform copy, no cape-hero silhouette, no jewel sword silhouette, no prop centered in the composition, no deep vanishing-point lane, and no walkable road/hallway/corridor behind them. Avoid Tokyo Tower, recognizable city landmarks, street-corridor perspective, alley, road, sidewalk, hallway, shrine corridor, responder team, handheld staff, spear, blade, sword, wand, weapon, ritual rod, literal monster-vine attack, readable talismans, gore, market/library corridor, camera prop, or empty red-green texture.',
+    'SP05-181':
+      'A zodiac warmth-and-grief shojo style-card with one original tender character in a quiet healing gesture: cream/peach halation, tea-brown softness, spring-green haze, subtle zodiac constellation or origami motif, kind-eyed microacting, cotton-matte textures, and emotional safety. Reference lineage: Natsuki Takaya healing shojo tenderness, early-2000s soft romance anime restraint, gentle manga screentone emotion, and seasonal iyashikei warmth, without copying any franchise, artist, studio asset, zodiac character design, logo, or named character. Must read as healing warmth with grief under it, not generic pastel portrait. Avoid literal animal transformation, family embrace scene, zodiac wheel with readable labels, classroom/cafe/hallway default, market/library corridor, camera prop, or object-only constellation card.',
+    'SP05-182':
+      'A black-lace apartment-heartbreak josei anime style-card with one original adult fashion-forward singer or artist figure: slim angular pose, black lace/leather contrast, wine-red anchor, smoky mauve night light, silver jewelry accents without logos, low amber practical glow, and intimate performance-vs-heartbreak tension. Reference lineage: Ai Yazawa fashion-drama linework, josei manga glamor restraint, punk-lace editorial silhouette, and mature early-2000s anime nightlife mood, without copying any franchise, artist, studio asset, brand, logo, or named character. Must read as adult fashion heartbreak, not pastel shojo confession or generic idol stage. Avoid school uniform, brand marks, readable posters, microphone as required prop, cigarette glamor, bedroom/cafe default, market/library corridor, camera prop, or object-only lace still life.',
+    'SP05-183':
+      'A shy daylight-bloom romance anime style-card with one original soft-spoken character shown through posture and social distance, not glamour face: side profile or three-quarter small gesture, an off-frame friendly hand or second silhouette only as spacing cue, cream field, pale sky blue, blush pink accent, fine soft contour, cautious negative space, and sincere microexpression. Reference lineage: Karuho Shiina gentle romance manga, Production I.G clean sincerity, early-2010s soft shojo lighting, and friendship-circle emotional distance grammar, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as social-anxiety thaw and daylight sincerity, not generic cute pastel face or solo beauty portrait. Avoid close glamour face, hallway/classroom requirement, school-uniform copy, paired confession staging, cherry-blossom default, readable letters, market/library corridor, camera prop, lamp/curtain filler, or empty blush-gradient card.',
+    'SP05-184':
+      'A theatrical host-club comedy shojo style-card with one original charismatic greeter and two soft reaction silhouettes as graphic halos: champagne cream, rose pink, black tuxedo accents, ornate sparkle timing, playful fourth-wall charm, and elegant gag rhythm. Reference lineage: Bisco Hatori comedic shojo timing, Bones mid-2000s polished ensemble energy, Takarazuka theatrical posture, and early-2000s shojo club-room exaggeration, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as witty theatrical hospitality and ensemble comedy, not generic pretty anime romance. Avoid literal host club lineup, rose bouquet, ballroom, school hallway, cafe table, lamp/chandelier filler, camera prop, readable signage, or empty champagne sparkle card.',
+    'SP05-185':
+      'A punk-luxe backstage fashion-drama anime style-card with one original fashion-forward figure adjusting a structured garment: black plum, hot magenta, silver chain glints, runway-shadow diagonals, angular josei linework, and bittersweet glamour restraint. Reference lineage: Ai Yazawa fashion-drama line discipline, Madhouse mid-2000s music-fashion mood, Harajuku punk-luxe tailoring, and editorial runway silhouette language, without copying any franchise, artist, studio asset, brand, logo, or named character. Must read as music/fashion heartbreak with adult attitude, not catalog model, idol stage, or generic glamour portrait. Avoid white photo studio, mannequin, brand marks, microphone requirement, breakup literalism, camera prop, readable posters, lamp/curtain filler, or object-only clothing still life.',
+    'SP05-186':
+      'A height-contrast romcom banter anime style-card with two same-age original peers in casual everyday clothes, one tall lanky silhouette and one shorter sharp-tongued silhouette, locked in elastic reaction timing: warm apricot, teal accent, crisp TV-shojo cel lines, asymmetrical body-language scale, comic timing sparks, and Kansai-manzai energy. Reference lineage: Aya Nakahara romantic-comedy manga rhythm, Toei late-2000s TV-shojo bounce, early-2000s banter framing, and expressive proportion contrast, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as lively peer-scale banter and awkward comedy, not idol duo, magical-girl pair, child/adult contrast, or pastel confession romance. Avoid idol outfit, giant ribbon/bow, frilly costume, magical-girl silhouette, classroom or hallway default, literal height-measuring gag, couple embrace, school-uniform copy, lamp/cafe filler, camera prop, readable signs, or solo pretty portrait.',
+    'SP05-187':
+      'A showbiz persona-theater shojo style-card with one original performer caught between public mask and private resolve: violet spotlight slice, gold stage dust, black ribbon tension, half-mask emblem, dynamic manga acting, and melodrama-with-comedy edge. Reference lineage: Yoshiki Nakamura showbiz shojo intensity, Hal Film Maker late-2000s performance drama, theatrical mask/persona grammar, and TV-anime rehearsal energy, without copying any franchise, artist, studio asset, costume, logo, or named character. Must read as performer identity transformation, not generic idol concert. Avoid front-facing idol stage, crowd/audience, audition room, microphone as required prop, readable marquee, camera prop, lamp filler, or empty spotlight abstraction.',
+    'SP05-188':
+      'A high-status rain-confrontation shojo style-card with two original figures arranged by vertical social pressure in a compressed close-to-mid crop: navy tailoring, ivory highlights, cold rain sheen on fabric, abstract glass-panel bars, 90s cel melodrama shadows, and status-line composition. Reference lineage: Yoko Kamio status shojo tension, Toei mid-1990s drama staging, J-drama/K-drama melodrama contrast, and elite-romance graphic hierarchy, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as class-pressure romance conflict through posture, tailoring, rain, and hierarchy, not palace romance, gothic heir portrait, or campus luxury postcard. Avoid palace, castle, cathedral, balcony, gothic spires, wealthy school hallway, limo, ballroom, literal rose storm, rose brooch, chandelier/lamp filler, camera prop, readable signage, or generic pretty couple confession.',
+    'SP05-189':
+      'A dusk time-memory teen drama anime style-card with one original character holding a sealed unreadable letter away from the face: amber sunset, lilac shadow, soft film haze, restrained tear-bright eyes, delayed-message tension, and quiet temporal melancholy. Reference lineage: Ichigo Takano memory-drama manga, Telecom mid-2010s soft teen color, post-2010 shojo restraint, and letter-as-emotional-distance staging, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as time-memory regret and hope, not generic sunset confession. Avoid readable letter text, letter-only closeup, classroom, station platform repeat, hallway, lamp/window filler, camera prop, cherry-blossom default, or solo glamour face.',
+    'SP05-190':
+      'A modern airy blue-sky shojo style-card with two original same-age figures almost crossing paths in clean negative space: pale cyan, white shirts as soft shape blocks, wind-lifted hair, restrained blush accent, minimal contour, and quiet unresolved distance. Reference lineage: Io Sakisaka modern shojo restraint, Production I.G clean teen-drama sincerity, mid-2010s airy color design, and near-miss body-language grammar, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as emotional distance and second-chance hesitation, not generic pretty anime portrait. Avoid close glamour face, school hallway/classroom, copied uniform, confession pose, station platform repeat, lamp/window filler, camera prop, readable signage, or cherry-blossom default.',
+    'SP05-191':
+      'A grounded night-intimacy shojo style-card with two original figures in cautious proximity inside one warm amber pool of light: deep navy, soft rainless pavement sheen, muted casual coats, hesitant hand distance, sparse city bokeh, and quiet realism. Reference lineage: Kanae Hazuki contemporary shojo realism, Zexcs early-2010s grounded romance mood, streetlamp-intimacy cinema, and restrained microacting, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as quiet trust forming at night, not rainy confession, umbrella romance, or glossy idol portrait. Avoid umbrella, heavy rain, alley/corridor, classroom, phone/camera prop, lamp-post as giant object, readable signs, crowd, or generic couple embrace.',
+    'SP05-192':
+      'A secret-identity romcom anime style-card with one original strict-and-flustered character in modest blazer-like everyday clothes, visually split between disciplined posture and hidden service-persona energy through abstract apron-shaped white graphic panels behind them, not worn as an outfit: crisp high-key lighting, coral blush, navy/white contrast, small comedic stress marks without readable text, and early-2010s TV-shojo polish. Reference lineage: Hiro Fujiwara secret-identity romcom rhythm, J.C.Staff 2010 high-key comedy finish, student-council vs service-persona contrast, and sharp fluster acting, without copying any franchise, artist, studio asset, maid outfit, uniform, logo, or named character. Must read as hidden-persona comedy through posture, blush, and graphic split, not maid-cafe illustration, changing-room scene, or generic cute server. Avoid wearing maid outfit, maid cafe, tray/cup focus, council desk, classroom/hallway, copied uniform, frilly costume, exposed-thigh fetish framing, dressing-room mirror, wall lamp, curtain, camera prop, readable menu/sign, lamp filler, or object-only costume card.',
+    'SP05-193':
+      'A botanical court-fantasy shojo style-card with one original herbalist traveler holding a small unlabeled glass vial near linen folds and leaf silhouettes: soft cream, medicinal green, copper hair accent, clean adventure-romance lines, and gentle apothecary competence. Reference lineage: Sorata Akizuki botanical fantasy manga, Bones mid-2010s court-fantasy clarity, herbalist-adventure color restraint, and soft noble-world staging, without copying any franchise, artist, studio asset, royal crest, logo, or named character. Must read as capable herbalist fantasy, not princess castle romance. Avoid castle, throne, palace hallway, royal gown, prince rescue, garden corridor, readable vial label, camera prop, lamp/chandelier filler, or object-only herb still life.',
+    'SP05-194':
+      'A 1970s operatic revolutionary shojo style-card with one original androgynous lace-and-uniform figure framed by abstract gold filigree and cold blue shadow: theatrical cel line, dramatic eyelashes, rose-gold tension used as graphic rhythm, formal military-lace silhouette, and tragic resolve. Reference lineage: Riyoko Ikeda operatic shojo composition, Osamu Dezaki postcard-memory staging, TMS late-1970s cel drama, and revolutionary melodrama contrast, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as vintage operatic shojo revolution, not palace romance postcard. Avoid Versailles literal, throne room, palace corridor, duel, sword, crown, chandelier/lamp filler, readable crest, camera prop, or generic aristocrat portrait.',
+    'SP05-195':
+      'A handmade street-fashion shojo style-card with one original young designer figure in denim, candy-color trims, stitched accessories, and expressive handmade charm: lemon, denim blue, hot pink, loose marker-like fashion line, craft confidence, and 90s neighborhood creativity. Reference lineage: Ai Yazawa early street-fashion manga energy, Toei mid-1990s colorful shojo finish, handmade accessory culture, and neighborhood fashion-school optimism, without copying any franchise, artist, studio asset, brand, logo, or named character. Must read as DIY fashion identity, not fashion catalog or Harajuku tourist postcard. Avoid literal Harajuku street signs, store display, mannequin, brand marks, readable posters, craft desk clutter, camera prop, lamp/curtain filler, or object-only accessory still life.',
+    'SP05-196':
+      'A quiet art-school melancholy anime style-card with one original small-scale artist figure holding posture over loose paper planes and graphite marks: spring cream, soft mint, warm gray, watercolor bloom, sketch-line tenderness, and understated josei introspection. Reference lineage: Chica Umino watercolor emotional texture, J.C.Staff mid-2000s art-school warmth, analog sketchbook softness, and josei/seinen campus melancholy, without copying any franchise, artist, studio asset, logo, or named character. Must read as fragile creative interiority through figure, paper, and light, not generic studio still life. Avoid art-desk clutter, brush/pencil pile as hero, literal classroom/taller, studio lamp, camera prop, readable drawings/text, object-only sketch tools, or empty watercolor wash.',
+    'SP05-197':
+      'A yokai-romcom shrine-folklore anime style-card with one original figure in flowing sleeve motion and fox-gold supernatural hint: vermilion accent, moon rim, cream fabric, playful spirit glow, elegant shojo comedy posture, and folklore ornament. Reference lineage: Julietta Suzuki yokai-romcom manga rhythm, TMS early-2010s supernatural shojo finish, shrine-folklore color grammar, and contract-comedy body language, without copying any franchise, artist, studio asset, deity design, logo, or named character. Must read as romantic folklore comedy, not shrine postcard or mascot card. Avoid central torii, literal shrine corridor, fox mascot as full subject, couple contract pose, lantern rows, readable talismans, camera prop, market/library corridor, or object-only charm still life.',
+    'SP05-198':
+      'A jellyfish-fashion sisterhood anime style-card with one original outsider fashion figure framed by translucent jellyfish glow and controlled makeover clutter: lavender blue, pearl white, coral frill, soft comedic vulnerability, textile layers, and compassionate transformation energy. Reference lineage: Akiko Higashimura makeover comedy manga, Brain’s Base 2010 expressive josei comedy, otaku-sisterhood warmth, and jellyfish-fashion silhouette language, without copying any franchise, artist, studio asset, logo, or named character. Must read as awkward fashion transformation with character identity, not generic cute dress-up. Avoid saturated otaku bedroom, readable posters, before/after split screen, mannequin, object-only jellyfish lamp, camera prop, room clutter dominance, or empty translucent abstraction.',
+    'SP05-199':
+      'A folk-fantasy journey shojo style-card with one original crimson-profile traveler in wind, sandstone dusk, and minimal guardian silhouettes behind them: warm ochre, deep crimson, teal shadow, clean adventure linework, and traveling resolve. Reference lineage: Mizuho Kusanagi journey-fantasy shojo, Studio Pierrot mid-2010s folk-adventure color, guardian-ensemble drama, and wind-carried quest staging, without copying any franchise, artist, studio asset, royal crest, logo, or named character. Must read as traveling folk-fantasy heroine energy, not princess court or battle poster. Avoid throne, royal gown, party lineup, battlefield, sword foreground, wilderness postcard, camera prop, readable banners, castle corridor, or object-only cloth card.',
+    'SP05-200':
+      'A rainy contemporary confession anime style-card with two original figures in shared-canopy crop, wet asphalt reflections, sodium amber rain, and one hesitant hand gesture: deep blue, muted beige coats, intimate close framing, grounded microacting, and soft adult teen realism. Reference lineage: Kanae Hazuki contemporary shojo realism, Zexcs 2012 rainy romance mood, modern street-confession cinema, and restrained hand-distance staging, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as rainy hesitant confession, distinct from dry night-walk intimacy. Avoid umbrella-only still life, classroom/hallway, station platform repeat, generic streetlamp hero object, readable signs, camera prop, couple embrace, over-glossy idol portrait, or empty rain texture.',
+    'SP05-201':
+      'A quiet observational mystery anime style-card with one original curious protagonist noticing a tiny clue under tea-amber side light: polished restraint, pale beige and moss green, precise eye-line acting, clean KyoAni-like spatial calm, and subtle deduction energy. Reference lineage: Hyouka-style quiet mystery mood, Kyoto Animation 2010s polish, Yasuhiro Takemoto-era observational pacing, and refined clue-light composition, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as gentle intellectual curiosity through face, posture, and clue-light, not library/book still life. Avoid library shelves, book stacks, clubroom literal, desk lamp as hero, readable notes/text, magnifying glass, camera prop, object-only teacup, or generic pretty anime closeup.',
+    'SP05-202':
+      'A neighborhood-community warmth anime style-card with one original cheerful character in a small ritual of shared hospitality: mochi-cream softness, paper accents, warm storefront-like glow as abstract shapes, friendly neighbor silhouettes, and Naoko Yamada-style body-language tenderness. Reference lineage: Tamako Market community warmth, Kyoto Animation 2010s neighborhood slice, Naoko Yamada gentle gesture grammar, and soft festival-paper color rhythm, without copying any franchise, artist, studio asset, mascot, logo, or named character. Must read as local community kindness, not market aisle or food still life. Avoid market corridor, storefront signage, mascot bird, mochi prop as sole subject, pendant lantern rows, readable labels, camera prop, crowd clutter, or empty pastel decor.',
+    'SP05-203':
+      'A bright youth-expedition anime style-card with one original protagonist leaning forward into departure light: sky-heavy horizon, cold white and expedition orange, glove/strap hints, wind-pulled posture, and hopeful challenge energy. Reference lineage: A Place Further Than the Universe expedition-drama clarity, Madhouse 2018 youth adventure color, high-horizon departure staging, and friendship courage rhythm, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as youth expedition resolve, not travel poster or gear pile. Avoid map, compass, station platform, airport/train corridor, uniform copy, backpack pile, empty sky postcard, camera prop, readable ticket/sign, or object-only travel gear.',
+    'SP05-204':
+      'A tranquil iyashikei water-light anime style-card with one original calm figure framed by oval reflective underlight and pearl haze: aqua teal, warm cream, soft blue shadow, floating stillness, slow healing posture, and canal-like flow expressed as abstract light bands. Reference lineage: Aria-style healing anime, Junichi Sato iyashikei pacing, Hal Film Maker softness, and gentle Aqua-world reflective color, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as serene restorative drift with a figure, not literal gondola/canal postcard. Avoid gondola, canal city panorama, boat as hero, water-only reflection, lamppost rows, market/library corridor, camera prop, readable signs, or empty shimmer abstraction.',
+    'SP05-205':
+      'An island-summer creative restart anime style-card with one original character in a warm reset gesture surrounded by broad abstract ink-drag shapes woven into wind, clothing edges, and sunlit paper tooth, never as glyphs or writing: summer green, sea-blue edge, rough black non-letter brush rhythm, friendly comedy warmth, and handmade imperfection. Reference lineage: Barakamon-style island comedy, Kinema Citrus 2014 warm restart mood, calligraphy-brush slice-of-life texture, and rural summer air, without copying any franchise, artist, studio asset, logo, or named character. Must read as creative restart through figure, abstract ink rhythm, and summer warmth, not calligraphy display or brush-tool still life. Avoid readable kanji, fake letters, glyphs, symbols, calligraphy sheets, hanging scrolls, wall banners, brush as sole subject, classroom/tatami room literal, fish market, village postcard, kids crowd, camera prop, desk clutter, or object-only paper card.',
+    'SP05-206':
+      'An everyday-care gesture intimacy anime style-card with two original figures in close relational spacing, one careful hand gesture, cotton-cream daylight, lunchbox-red accent, mild navy, and patient practical tenderness. Reference lineage: Usagi Drop everyday-care warmth, Yumi Unita manga softness, Production I.G 2011 domestic restraint, Kanta Kamei direction, and Satoshi Yamaguchi character-design clarity, without copying any franchise, artist, studio asset, logo, or named character. Must read as responsible care through hands, posture, and small routine detail, not parent-child scene literalism or object still life. Avoid daycare/classroom, child-only portrait, lunchbox as sole subject, apartment room formula, school bag pile, readable notes, camera prop, lamp/couch staging, or generic cozy anime face.',
+    'SP05-207':
+      'A deadline-cheer workflow density anime style-card with one original coordinator under optimistic overtime pressure: quick reaction silhouette, unreadable storyboard panels as graphic shapes, sticky-note yellow accents, cool monitor blue, coffee-brown warmth, and controlled task-layer rhythm. Reference lineage: Shirobako production-workday energy, P.A. Works workplace clarity, Tsutomu Mizushima deadline-comedy timing, and Ponkan8 light character appeal, without copying any franchise, artist, studio asset, logo, or named character. Must read as collaborative production hustle through posture, layered panels, and upbeat stress, not office desk clutter. Avoid readable checklists/text, monitor UI, desk as hero, coffee cup still life, scooter, studio corridor, cubicle panorama, camera prop, paper-stack object-only card, or generic business anime.',
+    'SP05-208':
+      'A beginner-made DIY glow anime style-card with one original maker character mid-build, cheerful imperfect posture, sanded-wood beige, glue-white highlight, mint hardware accents, cloth scraps, tape-edge shapes, and warm process light. Reference lineage: Do It Yourself!! handmade club warmth, Pine Jam 2022 tactile optimism, Kazuhiro Yoneda direction, and Yusuke Matsuo rounded character-design charm, without copying any franchise, artist, studio asset, logo, or named character. Must read as earnest handmade construction through figure, material traces, and friendly process, not tool catalogue or workshop still life. Avoid saw/tool foreground, power tools, hardware store aisle, desk object pile, classroom/workshop corridor, readable labels, camera prop, wood-only material card, or generic craft-room anime.',
+    'SP05-209':
+      'A sugar-cotton hospitality miniature anime style-card with one original tiny-world host character, rounded service gesture, whipped-cream white, strawberry pink, mint accent, caramel shadow, lace-like trim, plush texture, and compact symmetrical warmth. Reference lineage: Is the Order a Rabbit? sugar-cotton moe hospitality, Koi manga decorative cuteness, White Fox and Kinema Citrus TV softness, and Hiroyuki Hashimoto gentle cafe-comedy direction, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as plush welcoming hospitality through character scale, decorative symmetry, and soft dessertlike color, not cafe counter still life. Avoid teacup/dessert as sole subject, cafe aisle, menu/signage, maid uniform copy, rabbit mascot, market/library corridor, readable labels, camera prop, or generic pink moe portrait.',
+    'SP05-210':
+      'A sunshine-scribble soft-geometry anime style-card with one original relaxed creative character reduced into warm paper cutout geometry, soft coral and mint blocks, graphite line wobble, flat Shaft-like offset framing, doodle-edge texture, and low-pressure comedy. Reference lineage: Hidamari Sketch sketchbook warmth, Ume Aoki soft geometric character language, Shaft 2000s flat-composition play, and Akiyuki Shinbo cozy graphic timing, without copying any franchise, artist, studio asset, logo, or named character. Must read as warm sketchbook geometry through character silhouette, paper-light fields, and playful abstraction, not cozy room portrait or art-supply still life. Avoid literal sketchbook as hero, dorm-room formula, school desk, lamp, mug, plant, plush toy, shelf, furniture corner, pencil pile, readable doodles/text, camera prop, empty abstract geometry, or generic pastel anime face.',
+    'SP05-211':
+      'A utilitarian quiet-freedom minimalism anime style-card with one original self-possessed character beside a compact functional silhouette implied by matte metal/rubber planes, cold morning blue, dry asphalt beige, broad open negative space, and one restrained independence gesture. Reference lineage: Super Cub quiet-freedom minimalism, Tone Koken ordinary-road restraint, Studio Kai 2021 calm utility finish, and Toshiro Fujii direction, without copying any franchise, artist, studio asset, vehicle design, logo, or named character. Must read as practical freedom through spare framing, utility texture, and quiet posture, not bike advertisement or road postcard. Avoid motorcycle/bicycle as sole subject, brand-like vehicle, highway vista, school uniform copy, garage, parking lot, map/compass, readable signs, camera prop, desk clutter, or generic cozy anime face.',
+    'SP05-212':
+      'An immaculate social-jitter comedy anime style-card with one original polished character frozen in overpolite anxiety: pristine white/navy shapes, blush beat, chalk-dust specks as abstract pressure, huge polite negative space, and precise awkward body language. Reference lineage: Komi-style silent social comedy, Tomohito Oda pristine gag timing, OLM 2020s clean anime finish, and Kazuki Kawagoe social-pressure direction, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as beautiful nervous silence and social-jitter comedy, not classroom/chalkboard literalism. Avoid readable chalk/text, blackboard as hero, classroom corridor, school desk rows, notebook/letter prop, speech bubbles, camera prop, generic pretty-anime closeup, or empty white abstraction.',
+    'SP05-213':
+      'A shift-comedy choreography warmth anime style-card with two original coworkers crossing a practical handoff arc: diner cream, menu red as abstract accent, black-white costume contrast, warm pass-through glow, comic reaction timing, and clear ensemble blocking. Reference lineage: Working!! workplace ensemble comedy, Karino Takatsu service-rhythm manga, A-1 Pictures 2010s warm sitcom finish, and Yoshimasa Hiraike timing, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as coordinated shift banter through handoff motion and reaction rhythm, not restaurant still life. Avoid tray/plate as sole subject, menu readable text, cafe counter panorama, kitchen corridor, customer crowd, maid uniform copy, camera prop, lamp row, or generic workplace anime.',
+    'SP05-214':
+      'A breeze-drift beautiful inertia anime style-card with one original low-energy character suspended in airy pause: pale sky blue, soft gray, spring green, relaxed silhouette collapse, drifting contour lines, broad quiet negative space, and elegant near-motionless comedy. Reference lineage: Tanaka-kun sleepy inertia, Nozomi Uda gentle character comedy, Silver Link 2016 airy slice-of-life finish, and Shin ya Kawatsura pause-centric direction, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as beautiful low-energy pause and ambient friendship, not nap scene stock image. Avoid sleeping pose as sole concept, classroom/bench literal, bed/couch, desk, cafe, lamp, pillow prop, camera prop, school corridor, or generic pastel closeup.',
+    'SP05-215':
+      'A looped-routine healing pastel anime style-card with one original character tying or tracing a simple cast-line loop near reflective water light: water pastel blue, grassy green, soft coral, cork/nylon tactile hints, curved line arcs, and inherited hobby calm. Reference lineage: Slow Loop restorative hobby warmth, Maiko Uchino manga tenderness, Connect 2022 pastoral anime softness, and Noriaki Akitaya patient direction, without copying any franchise, artist, studio asset, fishing gear design, logo, or named character. Must read as healing through repeated waterside routine, curved line paths, and practical tenderness, not garden craft or fishing-gear postcard. Avoid knitting, sewing, yarn basket, garden patio, potted plant cluster, fishing rod as hero, lure/fish object-only card, river panorama, dock/camp scene, sibling literalism, readable tackle labels, camera prop, market/library corridor, or generic outdoor anime portrait.',
+    'SP05-216':
+      'A bundled warmth-pocket anime style-card with one original bundled character holding shared orange heat inside a broad cold-blue field: quilted padding, fleece cream, pine green, star indigo, soft vapor edges, and circular comfort composition. Reference lineage: Laid-Back Camp cold-warm comfort, Afro manga outdoor gentleness, C-Station 2018 cozy travel finish, and Yoshiaki Kyogoku calm direction, without copying any franchise, artist, studio asset, campsite design, logo, or named character. Must read as deliberate warmth in cold space through body posture, textile texture, and heat glow, not camping equipment postcard. Avoid tent/stove/flame as hero, food closeup, campfire scene, mountain panorama, brand-like gear, lantern row, camera prop, readable labels, or generic cozy anime face.',
+    'SP05-217':
+      'A rough-ideation motion overlay anime style-card with one original inventor-dreamer character surrounded by unreadable cutaway boxes, graphite scratch lines, marker red/yellow sparks, cardboard mockup planes, and kinetic invention arrows. Reference lineage: Eizouken rough imagination energy, Sumito Owara sketch invention, Science SARU elastic animation language, and Masaaki Yuasa preproduction-motion play, without copying any franchise, artist, studio asset, machine design, logo, or named character. Must read as ideas being invented live through sketch overlays and cutaway motion, not desk sketchbook still life. Avoid readable annotations/text, storyboard pages as hero, classroom clubroom, desk pile, robot/mecha copy, camera prop, blueprint UI, or generic art-supply anime.',
+    'SP05-218':
+      'An incremental-ascent confidence anime style-card with one original character stepping upward through crisp air and supportive light: high-altitude blue, pine green, sunlit ochre, practical strap hints, rosy effort highlight, and route-like diagonal composition. Reference lineage: Yama no Susume small-progress outdoor warmth, Shiro manga sincerity, 8bit clean hobby-anime clarity, and Yusuke Yamamoto uplift direction, without copying any franchise, artist, studio asset, outfit design, logo, or named character. Must read as confidence gained in small steps through upward rhythm and bright reveal light, not mountain postcard. Avoid summit panorama, gear pile, map/compass, hiking pole as hero, schoolgirl uniform copy, trail sign text, camera prop, cliff danger, or generic outdoor anime portrait.',
+    'SP05-219':
+      'A mundane absurdist theater anime style-card with two original characters staging dead-serious nonsense in plain daylight: neutral gray, navy anchors, cheap plastic accent, awkward underplayed poses, reaction-pop geometry, and banal stage framing. Reference lineage: Daily Lives of High School Boys deadpan ensemble comedy, Yasunobu Yamauchi dry gag manga, Sunrise 2012 low-budget absurd timing, and Shinji Takamatsu underplayed direction, without copying any franchise, artist, studio asset, uniform, logo, or named character. Must read as dry everyday absurdism through body language and banal staging, not school hallway stock scene. Avoid hallway/classroom as default, riverbank postcard, blazer-copy uniforms, readable signs/text, prop-only gag object, camera prop, crowd clutter, or generic cute anime comedy.',
+    'SP05-220':
+      'An observational watercolor drift anime style-card with one original quiet observer noticing a tiny mundane detail in warm afternoon wash: watercolor cream, dusty pastel, muted foliage green, soft ink edges, paper grain, and nearly plotless curiosity. Reference lineage: Sketchbook Full Colors observational calm, Totan Kobako gentle noticing manga, Hal Film Maker soft anime wash, and Yoshimasa Hiraike relaxed direction, without copying any franchise, artist, studio asset, logo, or named character. Must read as tiny noticing and watercolor comfort through gaze, small detail, and paper texture, not art-club or cat postcard. Avoid sketchbook as hero, cats as sole subject, art supplies, classroom/clubroom, town-street panorama, readable notes/text, camera prop, plant shelf formula, or generic pastel closeup.',
+    'SP05-001':
+      'A retro pioneer hero anime style-card with one original optimistic retro-TV protagonist silhouette and a simple emblematic uplift pose: sun-warmed primaries, thick confident contours, rounded 70s/early-80s shape language, stepped cel shadows, mild acetate shimmer, and hand-painted matte backdrop. Reference lineage: early television anime optimism, Osamu Tezuka-era iconic simplification, Toei/Nippon Animation broadcast cel charm, and pre-digital registration softness, without copying any franchise, artist asset, logo, costume, robot, or named character. Must read as reusable retro-pioneer grammar through warm analog cel color, bold contour clarity, and earnest iconic staging, not generic modern anime hero. Avoid fixed boy-hero adventure scene, sidekick, robot as hero, cockpit, broadcast frame border, weapon, readable text, camera prop, corridor/market/library drift, or polished digital sakuga.',
+    'SP05-002':
+      'A vintage mechanical grandeur anime style-card with one original monumental machine-totem or armored silhouette in low-angle retro cel massing: saturated super-robot primaries, steel neutrals, hot warning red blocks, riveted panels, chrome edge highlights, chunky silhouette blocking, and launch-vector drama. Reference lineage: 1970s super robot broadcast grandeur, Go Nagai / Toei mechanical spectacle cues, Mazinger-era heroic massing, and analog cel compositing, without copying any franchise, artist asset, robot face, cockpit, logo, or named character. Must read as vintage mechanical grandeur through riveted scale and triumphant cel machinery, not modern mecha poster. Avoid literal launch bay, pilot portrait, cockpit UI, copied robot head, weapon-first pose, readable insignia/text, camera prop, corridor/market/library drift, photoreal metal, or noisy debris storm.',
+    'SP05-003':
+      'A jazzy rogue heist rhythm anime style-card with one original sly adult rogue in vintage cel timing: charcoal night, amber streetlight as abstract edge glow, muted turquoise, cream poster accents, wet reflection slashes, oblique framing, and a half-smile double-intention gesture. Reference lineage: Lupin-era jazzy caper anime, Monkey Punch graphic cool, 1970s-1980s telecine grain, and dry heist comedy timing, without copying any franchise, artist asset, costume, car, gun, logo, or named character. Must read as jazzy rogue rhythm through silhouette, swing, noir color, and trickster acting, not literal robbery scene. Avoid alley/corridor chase, safe/vault, gun, cigarette as hero, police badge, trenchcoat cliche, readable signs/text, camera prop, market/library drift, or generic handsome detective portrait.',
+    'SP05-004':
+      'A melancholy astral opera anime style-card with one original noble figure or relic silhouette in long-axis cosmic solitude: deep indigo, aged gold, wine red, desaturated star grey, broad cape-like drape or fabric plane, lateral cel key light, analog grain, and monumental empty scale. Reference lineage: Leiji Matsumoto romantic space opera, 1970s-1980s astral melodrama, noble twilight heroism, and premium retro cel lyricism, without copying any franchise, artist asset, ship, train, uniform, logo, or named character. Must read as astral opera through noble loneliness, drape, antique metal, and vast scale, not literal space captain fan art. Avoid pirate captain silhouette, starship bridge, cockpit/window wall, literal train corridor, gun/weapon, copied cape costume, readable insignia/text, camera prop, market/library drift, or hard sci-fi UI.',
+    'SP05-005':
+      'A grounded tactical machinery anime style-card with one original heavy functional machine silhouette or practical field figure shaped by logistics: muted olive, dusty earth, matte steel, tiny risk-red marks, scratched panels, canvas straps, dry hard light, and layered tactical mass. Reference lineage: Ryosuke Takahashi real-robot grounded machinery, VOTOMS-era utilitarian mecha weight, 1980s operational anime grit, and documentary hardware clarity, without copying any franchise, artist asset, cockpit, unit insignia, weapon, logo, or named character. Must read as grounded tactical machinery through function, wear, and logistics, not generic battlefield action. Avoid battlefield panorama, soldiers squad, gun as hero, tank, map UI, cockpit screen, real military insignia, gore, readable labels/text, camera prop, corridor/market/library drift, or sterile 3D render.',
+    'SP05-006':
+      'A pop transformable aerial spectacle anime style-card with one original pop-tech icon silhouette suspended in rising performance energy: magenta show light, electric cyan, pearl white, chrome accents, sequined textile hints, translucent panel rhythm, bright retro cel rim, and transformation-flight framing. Reference lineage: 1980s pop mecha/anime spectacle, Macross-era idol-tech hybrid energy, Studio Nue/Artland broadcast gloss, and emotional aerial climax staging, without copying any franchise, artist asset, idol costume, aircraft design, cockpit, logo, or named character. Must read as pop-transformable aerial spectacle through ascent, chrome showlight, and hybrid performance engineering, not concert/idol stock image. Avoid literal concert stage, microphone as hero, cockpit, aircraft as sole subject, dogfight, idol fan pose, readable signage/text, camera prop, corridor/market/library drift, or glitter micro-noise.',
+    'SP05-007':
+      'A wasteland-impact legend anime style-card with one original hardened survivor silhouette built from broad pressure shapes rather than recognizable martial-hero likeness: scorched ochre sky, black ink mass, rust-red accent cloth, cracked leather-like texture, dry sun glare, and monumental stillness before impact. Reference lineage: 1980s martial apocalypse manga, Tetsuo Hara-style muscular pressure, Buronson-era survival melodrama, and Toei analog cel heat, without copying any franchise, artist asset, costume, hair, face, logo, or named character. Must read as brutal wasteland body-language and material weight, not a famous post-apocalyptic hero portrait. Avoid spiky black hero hair, torn sleeveless gi, exact chest-scar/body pattern, leather-strap cosplay, shoulder-pad villain design, direct Hokuto/Kenshiro likeness, fist-forward attack pose, gore, named-symbol marks, readable text, camera prop, market/library corridor, or noisy rubble storm.',
+    'SP05-011':
+      'A generational aura-clash anime style-card with one original rival-protagonist silhouette in a broad power-pressure standoff: angular 90s cel line, asymmetrical costume color blocking, yellow-blue-red aura split as large clean planes, intense eye-line, and compressed confrontation framing. Reference lineage: Yoshihiro Togashi tournament tension, Dragon Ball-era power-up scale, 1990s shonen cel contrast, and rival-generation melodrama, without copying any franchise, artist asset, costume, hair, face, logo, spirit beast, or named character. Must read as 90s aura rivalry through pose, color pressure, and cel contrast, not a specific anime hero. Avoid spiky black-blue hair silhouette, forehead-point hair shape, school/tournament uniform copy, spirit monster head behind the hero, jewel brooch, cape-sash hero costume, hand-reaching poster cliche, copied Togashi/DBZ character face, rubble storm, weapon, readable text, camera prop, or generic aura wallpaper.',
+    'SP05-012':
+      'A sparkling magical-chorus anime style-card with one original magical ensemble lead in a clean choreographic transformation beat: pearl-pink and lilac color script, ribbon arcs as broad motion bands, star-flower geometry, satin cel highlights, graceful group-energy composition, and hopeful 90s shojo glow. Reference lineage: Naoko Takeuchi fashion-glamour illustration, Ikuko Itoh transformation polish, 1990s Toei magical-girl chorus staging, and classic shojo magazine sparkle, without copying any franchise, artist asset, costume, hairstyle, mascot, symbol, logo, or named character. Must read as radiant magical chorus and team hope, not a Sailor-style character card. Avoid crescent moons, sailor collar, twin buns, forehead tiara, exact wand/brooch copy, winged mascot, pearl belt overload, recognizable school uniform, palace platform, readable symbols/text, camera prop, market/library corridor, or dense glitter micro-noise.',
+    'SP05-321':
+      'An ether-wisp gothic ornament anime style-card with one original elongated spectral figure dissolving into calligraphic ink wisps, antique gold voids, moon-silver haze, dried rose accents, silk translucency, and feather-light melancholy. Reference lineage: Yoshitaka Amano ethereal fantasy illustration, Final Fantasy-era fine-art anime ornament, antique-gold airbrush mist, and celestial gothic void composition, without copying any franchise, artist asset, character, costume, wing design, logo, or named character. Must read as Amano-like spectral ornament through line, elongation, void, and gilded mist, not generic fantasy angel or dark cathedral scene. Avoid wings as hero, sword, armor, throne, cathedral corridor, readable sigil/text, angel copy, modern streetwear, camera prop, hard-background realism, or empty abstract mist.',
+    'SP05-322':
+      'A celestial vertical ornament anime style-card with two original poised figures woven into one cathedral-tall black-white-red composition: long elegant anatomy, lacquer-black hair ribbons, ivory cloak planes, sparse crimson flower geometry, thin gold frame arcs, asymmetric negative space, and emotional distance. Reference lineage: CLAMP supernatural vertical elegance, Mokona decorative fashion geometry, X/xxxHolic-era elongated manga poise, and high-contrast decorative character illustration, without copying any franchise, artist asset, costume, logo, or named character. Must read as CLAMP-like vertical ornament through silhouette, long hands, manga line, and graphic negative space, not pastel moon-jewel glamour. Avoid moon backdrop, crystal curtains, pearl bead overload, pink magical-girl palette, copied school uniform, card-captor staff, tarot/card symbols, readable sigils/text, casual modern outfit, thick comic inking, camera prop, palace/cathedral corridor, or empty jewel abstraction.',
+    'SP05-323':
+      'A prism-glamour transformation polish anime style-card with one original romantic magical-fashion heroine against a clean blush-to-midnight aura field: flowing pink hair, ivory couture bodice, navy velvet accents, rose-gold ribbon spiral, pearl cosmetic glow, heart-shaped light rhythm, and graceful transformation posture. Reference lineage: Naoko Takeuchi moon-prism glamour, 1990s shojo fashion illustration, polished magical-girl romance, and celestial diary-heart tenderness, without copying any franchise, artist asset, brooch design, uniform, logo, moon symbol, or named character. Must read as Takeuchi-like romantic prism glamour through fashion-beauty framing, soft face, ribbon rhythm, and disciplined sparkle, not CLAMP vertical ornament or generic idol portrait. Avoid giant moon backdrop, crystal curtain set, jewelry overload, sailor uniform copy, moon wand/brooch copy, pose callout, readable symbols/text, heavy armor, gritty realism, camera prop, stage spotlight, palace/cathedral corridor, dressing-table still life, or dense fine-noise glitter.',
+    'SP05-324':
+      'An elastic rom-com slapstick anime style-card with two original characters in a bright affection-argument beat: candy red, sky blue, clean cel paint, elastic reaction scale, simple comedic exaggeration, and instantly readable silhouettes. Reference lineage: Rumiko Takahashi rom-com elasticity, 1980s-1990s TV-animation bounce, lively expression marks, and affectionate chaos timing, without copying any franchise, artist asset, uniform, weapon, logo, or named character. Must read as classic elastic rom-com slapstick through pose, reaction, and cel clarity, not generic shonen fight. Avoid martial-arts weapon focus, object-hit violence, copied character designs, school hallway default, readable SFX/text, cinematic blur, gritty texture, camera prop, or static pretty portrait.',
+    'SP05-325':
+      'A scratchy concrete-poetry anime style-card with one original restless youth silhouette in tilted urban drift, dry-ink scribble, cement grey, faded blue, rust orange, cracked paint, photocopy grain, and sacred-ugly wall texture. Reference lineage: Taiyo Matsumoto concrete-poetry adolescence, Tekkonkinkreet-era urban roughness, uneven hand-drawn proportion, and tactile civic sketch energy, without copying any franchise, artist asset, city, logo, or named character. Must read as Matsumoto-like rough urban poetry through scratchy line, tilted scale, and concrete texture, not polished street anime. Avoid glossy polish, perfect symmetry, fantasy ornament, readable graffiti/text, rooftop postcard, bike as hero, gang pose, camera prop, corridor/market/library drift, or generic pretty anime face.',
+    'SP05-326':
+      'A rubber-reality sprint anime style-card with one original runner-dancer character mid-morph: elastic limbs, melting perspective, acid cyan/orange/purple blocks, rough brush taper, warped dance curve, and explosive timing shapes. Reference lineage: Masaaki Yuasa kinetic expressionism, Mind Game / Ping Pong elastic motion language, Science SARU rough animation boil, and anti-model sakuga energy, without copying any franchise, artist asset, studio asset, logo, or named character. Must read as Yuasa-like rubber reality through anatomy distortion, color rupture, and velocity-first staging, not generic shonen speed art. Avoid still pose, clean model-sheet anatomy, generic power aura, sports arena, bike/skate prop, weapon, readable SFX/text, camera prop, corridor/market/library drift, gore, or over-detailed particle noise.',
+    'SP05-327':
+      'A postcard-memory freeze anime style-card with one original melodrama character locked in absolute emotional pause: sepia gold, crimson rose accents, royal blue shadow, diagonal glare streaks, soft film grain, aerographed cel bloom, and symbolic flower overlay. Reference lineage: Osamu Dezaki iconic postcard memories, 1970s-1980s shojo/sports melodrama freeze frames, dramatic highlight lines, and theatrical emotional close-up direction, without copying any franchise, artist asset, studio asset, costume, logo, or named character. Must read as Dezaki-like time-stop melodrama through freeze-frame composition, glare, grain, and concentrated feeling, not modern idol polish or magical-girl sparkle. Avoid casual snapshot, pink moon glamour, crystal jewelry overload, literal stage set, palace corridor, readable text, camera prop, flat documentary light, muddy color, or generic pretty anime portrait.',
+    'SP05-328':
+      'A retrofuture distance-melancholy anime style-card with one original noble spacefarer silhouette and vast star-distance framing: deep navy, brass gold, wine red, velvet cape flow, aged metal panels, long horizon line, and solemn backlight. Reference lineage: Leiji Matsumoto romantic space opera, Galaxy Express / Harlock-era elongated retrofuturism, noble travel melancholy, and cel-era cosmic scale, without copying any franchise, artist asset, ship design, train design, costume, logo, or named character. Must read as Matsumoto-like cosmic farewell through long forms, aged brass, star depth, and resigned heroism, not hard-sci-fi UI clutter. Avoid cockpit screen wall, photoreal spaceship, gun/weapon focus, copied pirate captain silhouette, literal train corridor, bright candy palette, contemporary streetwear, camera prop, readable insignia/text, or shallow generic space backdrop.',
+    'SP05-329':
+      'A spiral panic engraving anime style-card with one original retro horror face-and-clean-hand fragment filling the card, trapped against a flat optical spiral disc: bone-white skin shapes, pitch-black ink masses, sickly mint shadows, bruise-violet halftone, screentone rasp, and corrosive engraved line pressure. Reference lineage: Kazuo Umezz classic horror manga panic, high-contrast 1960s-1970s theatrical terror, obsessive line pattern, and printed nightmare texture, without copying any franchise, artist asset, page, logo, or named character. Must read as Umezz-like graphic panic through black-white pressure, spiral distortion, and terrified shape rhythm, not generic gore horror or corridor scene. Avoid any red marks, blood, wounds, cut wrist, hallway, corridor, tunnel, path, road, stairs, realistic blood, tears of blood, body horror closeup, monster attack scene, readable panels/text/SFX, cute mascot, polished modern anime face, camera prop, market/library drift, or dense fine-noise dirt.',
+    'SP05-330':
+      'A folkloric deadpan ink-catalog anime style-card with one original friendly-grotesque spirit and one tiny deadpan witness silhouette: sumi black, lantern orange as small accent only, moss green, mud brown, washi bleed, brushy vernacular contour, and pseudo-documentary spacing. Reference lineage: Shigeru Mizuki yokai folklore illustration, GeGeGe-era dry humor, earthy ink catalog framing, and nocturnal rural oddity, without copying any franchise, artist asset, creature design, logo, or named character. Must read as Mizuki-like folkloric catalog through brush ink, calm oddness, and friendly grotesque logic, not cute mascot fantasy. Avoid lantern as hero, shrine/corridor/market/library scene lock, parade crowd clutter, photoreal creature rendering, glossy digital polish, neon palette, readable labels/text, camera prop, empty flat background, or generic monster portrait.',
+    'SP05-331':
+      'A chrome impact spectacle anime style-card with one original heroic action figure in extreme foreshortening: crisp anatomy, chrome-like highlights, steel grey, explosion orange, hero red, electric cyan rim light, clean fracture arcs, and scale-shatter perspective. Reference lineage: Yusuke Murata hyperdefined manga action, One-Punch-era polish, surgical motion clarity, and premium editorial impact frames, without copying any franchise, artist asset, costume, logo, or named character. Must read as Murata-like spectacle through anatomy precision, force compression, and glossy impact readability, not generic shonen aura. Avoid bald cape likeness, superhero logo, punch-contact violence, city rubble panorama, weapon, gore, readable SFX/text, camera prop, corridor/market/library drift, excessive debris noise, or static model pose.',
+    'SP05-332':
+      'A ritual allegory icon-system anime style-card with two original ceremonial figures arranged in strict symbolic symmetry: rose-crimson icon shapes, candle gold, cathedral violet, shadow navy, velvet-black negative space, mirrored hand poses, and floating abstract emblems. Reference lineage: Kunihiko Ikuhara theatrical allegory, Revolutionary Girl Utena / Penguindrum symbolic staging, ceremonial repetition, and emotion-coded visual systems, without copying any franchise, artist asset, uniform, rose crest, logo, or named character. Must read as Ikuhara-like ritual symbolism through symmetry, icon repetition, and allegorical scale shifts, not generic fantasy altar. Avoid literal duel arena, train car, school uniform copy, altar/church corridor, random prop clutter, readable symbols/text, weapon focus, camera prop, market/library drift, or low-symbolism room scene.',
+    'SP05-333':
+      'A quiet human naturalism anime style-card with one original person in open overcast daylight, caught in a small believable microgesture: shifting weight, sleeve tug, lowered gaze, lived-in cotton, denim blue, soft beige, rainy grey, muted green, natural skin warmth, and restrained human-scale depth. Reference lineage: Hiroyuki Okiura grounded character animation, A Letter to Momo / Jin-Roh-level body weight, observational acting, and modest natural light realism, without copying any franchise, artist asset, costume, logo, or named character. Must read as Okiura-like quiet naturalism through posture, anatomy weight, and everyday materiality, not pretty anime portrait or indoor mood scene. Avoid interior room, window frame, lamp, kitchen, doorway pose, classroom/corridor/market/library scene lock, camera prop, glamour anatomy, action pose, fantasy effects, chibi simplification, neon spectacle, or plastic 3D render.',
+    'SP05-334':
+      'An emergency storyboard tension anime style-card with one original anxious figure and abstract machinery pressure reduced to rough production marks: pencil grey, photocopy black, alarm orange, warning red as small arrows only, smudged graphite, blank panel crops, unreadable margin ticks, and harsh emergency-angle framing. Reference lineage: Hideaki Anno raw storyboard tension, Evangelion-era operational anxiety, production-layout urgency, and emotionally diagrammed crisis composition, without copying any franchise, artist asset, mecha design, cockpit, logo, or named character. Must read as Anno-like emergency storyboard through unfinished marks, tactical framing, and anxious diagram energy, not finished mecha poster. Avoid readable notes/text, UI panels, missiles as hero, cockpit screen wall, giant robot silhouette, military insignia, weapon focus, corridor/market/library drift, camera prop, gore, or cluttered technical fetish.',
+    'SP05-335':
+      'A mineral void serenity anime style-card with one original fragile translucent figure standing in vast negative space: opal white, seafoam cyan, glacial blue, quartz pink, pale gold edge light, faceted limbs, clean crystal silhouette, and matte empty terrain. Reference lineage: Haruko Ichikawa mineral minimalism, Land of the Lustrous faceted melancholy, spacious posthuman figure design, and contemplative void composition, without copying any franchise, artist asset, gem body design, costume, logo, or named character. Must read as Ichikawa-like mineral serenity through translucency, sparse posture, and open-space isolation, not generic crystal fantasy. Avoid crowded landscape, cave/corridor/market/library drift, sword or weapon, school uniform, noisy maximalism, gritty horror texture, warm muddy palette, heavy cartoon outline, opaque plastic surfaces, camera prop, or empty abstract gemstone only.',
+    'SP05-336':
+      'A razorline velocity poster anime style-card with one original lunging human figure compressed into a red-black-chrome speed wedge: blade-sharp ink contours, racing red planes, toxic yellow slash accents, electric blue rim, asphalt violet shadows, lacquer shine, and poster-depth distortion. Reference lineage: Takeshi Koike neon-noir velocity illustration, Redline-era razor anatomy, pulp racing poster energy, and high-contrast screenprint action, without copying any franchise, artist asset, vehicle design, logo, or named character. Must read as Koike-like velocity through cutting silhouette, hard shadows, and impossible speed, not car poster or generic shonen sprint. Avoid car, motorcycle, cockpit, steering wheel, road, racetrack, pilot helmet, weapon, gore, readable title/text, camera prop, corridor/market/library drift, or static fashion pose.',
+    'SP05-337':
+      'A technomagic draftsmanship burst anime style-card with one original engineer-mage figure surrounded by readable magical hardware arcs: festival orange, cobalt blue, emerald sparks, parchment cream, ruby red joints, twilight purple shadow, confident construction lines, and joyful explosion timing. Reference lineage: Yoh Yoshinari dynamic fantasy draftsmanship, Little Witch Academia / BNA-era energetic drawing, complex but legible mechanical-magic forms, and celebratory animation design, without copying any franchise, artist asset, costume, logo, or named character. Must read as Yoshinari-like technomagic through precise drawing, engineered whimsy, and burst composition, not generic fantasy fireworks. Avoid festival crowd, fireworks-only card, workshop clutter, toolbench, readable runes/text, wand or weapon as hero, school uniform copy, camera prop, corridor/market/library drift, or noisy microdetail.',
+    'SP05-338':
+      'An angular combustion iconography anime style-card with one original street-goth character built from triangular flame rhythm: carbon black silhouette, fire orange geometry, bone-white accents, acid lime sparks, ember red underglow, toothlike graphic cuts, clean cel edges, and mischievous grin-led focal design. Reference lineage: Atsushi Ohkubo angular character design, Soul Eater / Fire Force-era graphic combustion language, sharp triangular posing, and clean dark contrast, without copying any franchise, artist asset, uniform, logo, weapon, or named character. Must read as Ohkubo-like angular combustion through grin geometry, flame icons, and hard diagonals, not generic fire mage. Avoid scythe, gun, sword, skull logo, copied uniforms, burning people, realistic fire disaster, readable symbols/text, camera prop, corridor/market/library drift, gore, or over-rendered sparks.',
+    'SP05-339':
+      'An adult suspense microgesture anime style-card with one original adult character in grounded public space, caught in tiny moral-pressure acting: muted khaki, asphalt grey, skin-warm taupe, rainy blue, burgundy pin accent, tired eyes, half-turned posture, hand pausing near coat seam, and restrained natural perspective. Reference lineage: Naoki Urasawa adult suspense manga, Monster / Pluto-era human realism, procedural moral tension, and unsentimental close-up acting, without copying any franchise, artist asset, costume, logo, or named character. Must read as Urasawa-like adult suspense through microexpression, ordinary materials, and ethical pressure, not detective stock scene. Avoid office wall, file folder as hero, gun, crime-scene gore, police badge, cigarette/smoke focus, neon cyberpunk, chibi, readable documents/text, camera prop, corridor/market/library drift, or melodramatic speed lines.',
+    'SP05-340':
+      'A velvet-lash refined tension anime style-card with one original elegant adult figure in classic old-cel close portrait: burgundy jacket plane, ivory collar, smoky mauve shadow, navy silk accent, gold trim as thin line, warm peach skin, lash-heavy eyes, swan-neck posture, and restrained velvet background gradient. Reference lineage: Akio Sugino refined beauty anime, The Rose of Versailles / Aim for the Ace-era classic elegance, luxurious 1970s-1980s linework, and mature romantic tension, without copying any franchise, artist asset, costume, logo, or named character. Must read as Sugino-like refined glamour through lashes, posture, old-cel softness, and velvet restraint, not generic modern fantasy beauty. Avoid exposed glamour pose, moon/garden backdrop, jewelry overload, literal curtain room, throne, palace corridor, school uniform copy, copied aristocrat costume, lamp/chair/studio setup, readable text, camera prop, neon glitch, chibi proportions, or plastic 3D polish.',
+    'SP05-341':
+      'A mechanical warmth ensemble anime style-card with two original workwear characters sharing practical machine repair in warm industrial light: steel blue, workwear brown, ember orange, cream cloth, engine red accents, soot grey, readable bolts, worn leather, grease marks, and humanist team chemistry. Reference lineage: Hiromu Arakawa mechanical-humanist manga, Fullmetal-era robust anatomy, practical engineering detail, and warm humor/grief ensemble energy, without copying any franchise, artist asset, automail design, uniform, logo, or named character. Must read as Arakawa-like mechanical warmth through sturdy figures, legible craft, and family-coded teamwork, not sterile machine render or flat workshop stock. Avoid weapon prosthetic focus, armor villain pose, glossy sci-fi UI, isolated product shot, generic workshop wall, alchemy circle copy, readable insignia/text, camera prop, corridor/market/library drift, or cynical grimdark tone.',
+    'SP05-342':
+      'A reality-slip reflection continuity anime style-card with one original adult performer-like figure in sober trench coat and scarf, fractured across offset poster-glass and street-window planes: cool steel, screen blue, neutral beige, shadow plum, skin peach, tiny crimson poster accent, precise anxious face acting, mismatched reflection expressions, and seamless impossible match-cut framing. Reference lineage: Satoshi Kon psychological cinema, Perfect Blue / Millennium Actress / Paprika-era identity slippage, polished adult realism, and reflection-continuity breakage, without copying any franchise, artist asset, costume, logo, scene, or named character. Must read as Kon-like reality slip through perceptual edits, performance-memory drift, and subtle identity fracture, not generic beauty mirror portrait. Avoid exposed shoulders, low neckline, wet hair glamour, bathroom/vanity mirror, jewelry/fashion ad, hallway/corridor scene lock, mirror as only subject, literal screen wall, idol costume copy, blunt horror gore, chaotic collage, readable UI/text, camera prop, market/library drift, fantasy ornament, or obvious symbolism.',
+    'SP05-141':
+      'A gothic resonance punk anime style-card with one original sharp-eyed vocalist or street performer caught mid-riff: black-crimson cel blocks, white sound-wave arcs, torn poster shapes without readable text, brass mic-stand silhouette as secondary rhythm only, and angular early-2000s punk energy. Reference lineage: Atsushi Ohkubo graphic gothic action, Nana/Ai Yazawa fashion attitude, and Bones-era clean edge polish, without copying any franchise, artist asset, costume, logo, or named character. Must read as music-body resonance and punk poise, not generic dark idol. Avoid stage spotlight idol setup, literal band photo, guitar-as-product, skull logo, school hallway, alley corridor, library, market, camera prop, overbusy microdetails, or object-only music gear.',
+    'SP05-145':
+      'A sky-surf romantic momentum anime style-card with one original airborne rider and one visible emotional counterbalance figure or far companion: turquoise sky, coral sunset rim, cream cloud planes, wind-torn scarf shape, boardlike silhouette as motion cue, and open romantic distance. Reference lineage: Eureka Seven aerial romance, Bones 2000s clean kinetic cel, and soft adventure shojo longing, without copying any franchise, artist asset, vehicle design, logo, or named character. Must read as skyborne romance through body lean, cloud depth, and tender momentum, not generic surfer poster. Avoid beach surf scene, skateboard ramp, cockpit, literal mecha, weapon, crowd, market/library/corridor drift, camera prop, same-face idol portrait, or empty sky abstraction.',
+    'SP05-156':
+      'A summer loop paranoia anime style-card with one original teen or young adult in bright heat haze, turning back as if time repeated: bleached yellow sunlight, cicada-green shadow, red thread-like accent, soft cute facial design under uneasy framing, and one repeated silhouette echo behind them. Reference lineage: Higurashi-era rural suspense mood, 2000s cute-horror contrast, and Satoshi Kon repetition anxiety as broad grammar, without copying any franchise, artist asset, costume, logo, or named character. Must read as intimate loop dread through warmth plus suspicion, not gore horror or village tourism. Avoid shrine, festival mask, knife, blood, school corridor, house hallway, camera prop, market/library drift, object-only talisman, excessive noise, or generic summer romance.',
+    'SP05-165':
+      'A spirit pressure rivalry anime style-card with two original rivals in a compressed 1990s confrontation: teal-black shadow, hot white aura edge, purple smoke plane, clenched stance, heavy cel ink, and eye-line pressure across the frame. Reference lineage: Yu Yu Hakusho tournament tension, Togashi rival body language, Dragon Ball Z power-up staging, and 1990s Toei/Madhouse cel contrast, without copying any franchise, artist asset, uniform, logo, attack pose, or named character. Must read as spirit rivalry through opposing silhouettes and pressure, not generic aura wallpaper. Avoid arena crowd, rubble field, punch contact, weapon, named attack graphics, readable SFX/text, corridor/market/library drift, camera prop, or same shonen face as neighboring cards.',
+    'SP05-281':
+      'A temporal memory cinema anime style-card with one original adult character stepping through overlapping ages of the same emotional moment: warm sepia, snow-blue glints, soft red scarf accent, filmic match-cut layers, handwritten-looking shapes with no readable text, and gentle face continuity across time. Reference lineage: Satoshi Kon Millennium Actress memory cinema, Mamoru Hosoda time-emotion softness, and art-anime montage grammar, without copying any franchise, artist asset, costume, logo, scene, or named character. Must read as cinematic memory folding, not generic dream collage. Avoid film camera prop, theater seats, literal timeline UI, school corridor, library, market, excessive fragments, object-only clock, or noisy fine pattern.',
+    'SP05-288':
+      'An elastic summer time anime style-card with one original running or floating youth in a playful impossible time skip: flat summer cyan, melon orange, cream highlights, elongated limbs, bending horizon, and one exaggerated shadow showing delayed motion. Reference lineage: Mamoru Hosoda summer adventure warmth, Masaaki Yuasa elastic timing, and Studio Chizu lightness cues, without copying any franchise, artist asset, costume, logo, or named character. Must read as youthful elastic time and regret-light momentum, not generic sky portrait. Avoid rooftop/school jump cliche, literal clock, classroom, hallway, market/library drift, camera prop, sports race literalism, over-rendered sparkles, or empty beach landscape.',
+    'SP05-298':
+      'A nocturnal social whirl anime style-card with three original adults in a warm chaotic encounter spiral: midnight blue, sake-amber glow without alcohol focus, magenta laugh streak, loose street-comedy body language, and circular composition that feels spontaneous. Reference lineage: Masaaki Yuasa night-comedy motion, The Night Is Short social whirl energy, and hand-drawn adult ensemble warmth, without copying any franchise, artist asset, costume, logo, city, or named character. Must read as social chance and nocturnal comedy, not bar advertisement. Avoid pub interior, alcohol bottle hero, crowd clutter, alley corridor, market/library drift, camera prop, object-only lanterns, readable signs/text, or generic party anime.',
+    'SP05-299':
+      'A dream invasion carnival anime style-card with one original dream-runner figure crossing a controlled carnival of morphing masks, ribbons, animal-shadow fragments, and stylized threat-red splashes as graphic color beats: saturated red, lemon yellow, electric cyan, violet shadow, crisp Kon-like montage cuts, and one readable human anchor. Reference lineage: Satoshi Kon Paprika dream invasion, 2000s Madhouse surreal cinema, and adult-anime color montage, without copying any franchise, artist asset, costume, logo, parade scene, or named character. Must read as mind-carnival intrusion through surreal edits, danger, and character reaction, not empty psychedelic pattern. Avoid parade crowd, toy clutter, literal bed/dreamer, market aisle, library aisle, camera prop, readable signs, mascot-only card, explicit gore, injury detail, or dense fine-noise confetti.',
+    'SP05-320':
+      'A charismatic space rogue pulp anime style-card with one original long-coated rogue leaning into danger with a crooked smile: wine-red coat plane, antique brass star-map light, black-violet starfield, teal rim, worn leather, and 1970s-1980s cel softness. Reference lineage: Leiji Matsumoto romantic space opera, Cobra-era pulp swagger, Tsukasa Hojo adult cool, and retro sci-fi magazine drama, without copying any franchise, artist asset, costume, logo, ship design, or named character. Must read as seductive space-pulp charisma through posture and star-noir palette, not generic astronaut. Avoid lounge/bar scene, glass prop, gun/laser, cockpit UI, spaceship product shot, camera prop, market/library/corridor drift, object-only compass, or over-detailed sci-fi panels.',
+    'SP05-345':
+      'A nineties physical rivalry sports anime style-card with two original athletes shoulder-to-shoulder in a close body-contact stare: warm gym wood color, red cream and black uniform blocks without numbers/logos, sweat highlights, thick 1990s cel anatomy, and narrow eye-line tension. Reference lineage: Takehiko Inoue sports anatomy, Slam Dunk-era competitive heat, and Production I.G motion clarity, without copying any franchise, artist asset, jersey, logo, team, or named character. Must read as physical rivalry through anatomy, proximity, and eye duel, not generic solo athlete. Avoid hoop, ball hero, scoreboard, numbered jersey, crowd, bench, camera prop, corridor/market/library drift, object-only sneakers, or glossy modern idol face.',
+    'SP05-350':
+      'An aquatic relay glow anime style-card with two original swimmers or water-athletes at the instant of handoff, seen half-submerged through glowing waterline: turquoise, cobalt, coral rim, refracted cel limbs, lane-like rhythm as abstract bands, and clean relay energy. Reference lineage: Kyoto Animation water acting, Free!-era liquid polish, and sports-anime handoff tension, without copying any franchise, artist asset, uniform, logo, pool design, or named character. Must read as aquatic transition and teamwork through hands and water movement, not swimsuit glamour. Avoid poolside pose, lane-number text, goggles product shot, crowd, podium, camera prop, corridor/market/library drift, object-only water, or noisy bubble texture.',
+    'SP05-352':
+      'A neon trick flow anime style-card with one original trick athlete frozen in a curved low-angle motion arc: cyan-magenta concrete glow, lime edge streak, loose streetwear silhouette, board or wheel implied only as motion geometry, and expressive confident grin. Reference lineage: Takeshi Koike speed poster anatomy, Studio 4C urban kinetic color, and 1990s-2000s trick-sport anime energy, without copying any franchise, artist asset, brand, logo, or named character. Must read as stylized trick flow through body arc and neon curve, not generic cyber portrait. Avoid skatepark ramp cliche, graffiti text, masked face, camera prop, market/library/corridor drift, vehicle hero, crowd, or empty neon abstraction.',
+    'SP05-354':
+      'A telemetry apex precision anime style-card with one original racer-athlete silhouette carving a precise wet-track apex line: titanium grey, cyan telemetry arcs without readable UI, amber brake-glow accent, reflective visor or focused eyes, gloved hand, and clean technical restraint. Reference lineage: Production I.G precision staging, cyber-anime layout discipline, and motorsport/cycling apex poster energy, without copying any franchise, artist asset, vehicle design, logo, or named character. Must read as data-guided control and apex precision, not car advertisement. Avoid full car hero, cockpit screen wall, dashboard UI, readable graphs/text, coast road scene, camera prop, corridor/market/library drift, object-only helmet, or microdetail overload.',
+    'SP05-355':
+      'A festive sprint idol energy anime style-card with one original runner-performer mid-stride, supported by broad ribbon bands and abstract cheering color blocks: hot pink, sunny yellow, aqua, white highlights, clean smile-through-effort acting, and celebratory speed. Reference lineage: sports festival anime rhythm, idol-anime color staging, and Kyoto Animation performance microacting, without copying any franchise, artist asset, costume, logo, team, or named character. Must read as competitive sprint spectacle, not stage idol pinup. Avoid idol stage, microphone, exposed glamour outfit, finish-line tape, numbered jersey, crowd faces, camera prop, market/library/corridor drift, confetti noise, or generic cute portrait.',
+    'SP05-356':
+      'A graphic impact duel anime style-card with two original opponents locked across a single huge impact curve: ultramarine court shadow, white speed slash, orange contact spark, crisp foreshortened arms, and paddle/racket shapes reduced to readable silhouettes. Reference lineage: Haikyuu!! / Ping Pong competition clarity, Production I.G body-language timing, and graphic sports poster composition, without copying any franchise, artist asset, uniform, logo, or named character. Must read as theatrical duel through trajectory and opposition, not tennis stock art. Avoid tennis baseline, ball as hero, literal scoreboard, crowd, weapon-like racket pose, camera prop, corridor/market/library drift, object-only equipment, or dense particles.',
+    'SP05-358':
+      'A comeback grit impact anime style-card with one original combat-sport athlete rising from fatigue, wrapped hands near chest, bruised but non-graphic determination, steel red and dirty white lighting, sweat as broad cel highlights, and one shadowed rival shape in back. Reference lineage: Ashita no Joe boxing melancholy, Hajime no Ippo comeback rhythm, and 1990s sports cel grit, without copying any franchise, artist asset, uniform, logo, ring design, or named character. Must read as comeback grit through posture and recovery, not violence spectacle. Avoid blood, gore, punch contact, ring ropes as main subject, coach bench, weapon, camera prop, corridor/market/library drift, object-only gloves, or overgritty noise.',
+    'SP05-360':
+      'A poetic reflex focus anime style-card with one original focused competitor lunging toward a small abstract target, held in near-silent negative space: tatami beige as flat field, ink navy hair/cloth, vermilion accent, soft hand motion blur, and memory-like light. Reference lineage: Chihayafuru poetic sports tension, Madhouse clean hand-action clarity, and Naoko Yamada microgesture restraint, without copying any franchise, artist asset, uniform, logo, card design, poem text, or named character. Must read as reflex plus emotion through hand, breath, and silence, not generic training pose. Avoid literal playing cards, readable poems/text, classroom clubroom, crowded tatami hall, camera prop, market/library/corridor drift, object-only target, or glossy idol face.',
+    'SP05-362':
+      'A glam precision rivalry anime style-card with one original elegant athlete in a controlled swing or aiming gesture, rival silhouette as distant counterpoint, emerald green, champagne gold, black lacquer shadow, magenta trajectory arc, and refined fashion-sport poise. Reference lineage: Ai Yazawa fashion linework, Tsukasa Hojo adult cool, and sports-anime precision staging, without copying any franchise, artist asset, luxury brand, logo, course, or named character. Must read as glamorous precision rivalry through pose and trajectory, not golf brochure. Avoid fairway postcard, golf club product shot, hole/flag focus, country-club crowd, casino glam, camera prop, corridor/market/library drift, object-only ball, or excessive sparkle noise.',
+    'SP06-022':
+      'An oil-pastel style-card showing one expressive human-scale silhouette and surrounding color motion built entirely from chunky wax pigment, scraped marks, pressure ridges, saturated nonblended blocks, and tactile paper drag. Keep it figurative enough to read, but do not show drawing tools, paper pads, classroom materials, a child-art setup, tabletop still life, hands holding crayons, lamps, studio furniture, or corridor/market/library staging.',
+    'SP06-023':
+      'A silverpoint style-card with one quiet original bust-like figure or sculptural animal form emerging from prepared warm ground through pale metal hairlines, sepia tarnish, irreversible contour discipline, and delicate value modeling. Keep it representative and refined; do not show the artist, hands, stylus, tools, museum framing, drapery study, religious scene, lamp, chair, wall-prop studio, corridor, market, or library.',
+    'SP06-024':
+      'A conte-crayon style-card with one classical full-body or bust figure suggested through sanguine, sepia, black, and white square-stick strokes on textured paper, warm value structure, and disciplined modeling. Let the material and pose carry the preset; do not show masks, still-life props, sketchbooks, tools, hands drawing, anatomy plates, lamps, curtains, chairs, staged studio corners, corridors, markets, or libraries.',
+    'SP06-025':
+      'A technical-pen style-card showing one original architectural-object hybrid or precise wearable/mechanical silhouette drawn with uniform black line hierarchy, measured hatching, vellum-smooth negative space, and schematic restraint. Keep it readable as a finished subject, not a blueprint sheet; do not show labels, annotations, grids of plans, drafting tools, rulers, compasses, pens, desks, machines-as-clutter, buildings as corridors, UI, logos, or readable text.',
+    'SP06-026':
+      'A Copic-marker style-card with one clean original character or product-like hero form rendered through translucent alcohol-ink layers, smooth gradients, reserved white highlights, soft edge bleed, and saturated marker-paper stain. Keep it illustrative and representative; do not show visible marker tools, product sketch boards, fashion plates, manga-face cliches, desks, studios, lamps, shelves, corridors, markets, libraries, logos, or readable text.',
+    'SP06-027':
+      'A chalk-dust style-card with one strong animal, dancer, or object silhouette drawn in powdery white marks on dark tooth, with dust halos, erased ghost trails, and rough handmade contrast. Keep the dark surface as material, not a classroom board; do not show written notes, menus, equations, classrooms, chalk sticks, hands drawing, cafe signage, blackboard frames, lamps, shelves, corridors, markets, libraries, or readable text.',
+    'SP06-028':
+      'A scratchboard style-card with one dramatic original animal or botanical form carved from black ground through white incised lines, excavated highlights, dense hatch cuts, and high-contrast tactile drama. Keep it subject-led and medium-led, with no secondary object. Do not show fantasy architecture, arches, doors, ruins, corridors, weapons, spears, blades, staffs, masks, compass, pocket watch, pendant, necklace, emblem, logo, text, engraving borders, tools, hands scratching, studio desks, markets, libraries, or empty black-card texture.',
+    'SP06-029':
+      'A silhouette style-card with one crisp dancer, animal, tree, or everyday object contour in solid black against clean pale space, using paper-edge sharpness, total shape reliance, and strong figure-ground design. Keep the subject immediately readable and calm; do not show heroic cliff poses, weapons, hammers, swords, staffs, capes, fantasy adventure scenes, sunset scenes, theatre screens, profile-portrait cliches, cut-paper tools, hands, lamps, curtains, rooms, corridors, markets, libraries, logos, or text.',
+    'SP06-030':
+      'A continuous-line style-card with one elegant readable figure, animal, or object built from a single unbroken black contour path, looping simplification, expressive detours, and minimal negative space. Keep it representative, not empty abstraction; do not show sketchbooks, cafe scenes, hands drawing, pens, desks, face-only cliches, framed prints, rooms, lamps, corridors, markets, libraries, logos, or readable text.',
+    'SP06-031':
+      'An etching style-card with one original animal, figure, or sculptural object rendered through acid-bitten copper lines, fuzzy ink grooves, plate-pressure emboss, fine crosshatching, and cream paper tone. Keep it antique but not literal; do not show old maps, buildings, botanical plates, portraits in frames, tools, press, workshop, labels, signatures, borders, corridors, markets, libraries, logos, or readable text.',
+    'SP06-032':
+      'A woodcut style-card with one bold original figure, animal, tree, or object cut from black ink and gouged white channels, visible wood grain, rough relief edges, and stark angular contrast. Keep it print-force first; do not show folk-scene cliches, waves, historical costumes, tools, carved block, press, workshop, weapon, corridor, market, library, logo, or readable text.',
+    'SP06-033':
+      'A linocut style-card with one clean original animal, figure, plant, or symbolic object built from smooth carved curves, bold negative-space cuts, flat ink planes, slight registration wobble, and hand-pulled pressure texture. Keep it graphic and representative; do not show protest posters, slogans, workshop tools, carved blocks, hands, desks, lamps, corridors, markets, libraries, logos, or readable text.',
+    'SP06-034':
+      'A lithography style-card with one soft original figure, animal, or object rendered through crayon-like stone grain, soft tonal transfer, paper pressure, and subtle speckled print texture. Keep it gentle and subject-led; do not show theatre bills, posters with text, edition marks, stones, tools, press, workshop, framed portraits, corridors, markets, libraries, logos, or readable text.',
+    'SP06-035':
+      'A screenprint style-card with one bold original figure, animal, flower, or object made from flat separated color passes, mesh-pulled ink, opaque poster planes, and deliberate registration offsets. Keep it commercial-pop and readable; do not show slogans, product ads, celebrity portraits, cans, packages, halftone text, tools, press, workshop, corridors, markets, libraries, logos, or readable text.',
+    'SP06-036':
+      'A monotype style-card with one ghostly original figure, animal, plant, or object softened by single-pull transfer, glass-plate smear, accidental blending, pressure blur, and unrepeatable painterly marks. Keep it representative, not an abstract plate; do not show studio tools, glass plates, presses, hands, botanical specimen sheets, edition marks, corridors, markets, libraries, logos, or readable text.',
+    'SP06-037':
+      'An aquatint style-card with one moody original figure, animal, or object emerging from granular rosin tone, acid-built darkness, stop-out highlights, particulate shadow, and atmospheric intaglio fields. Keep it tonal and representative; do not show landscapes as default, storm scenes, old plates, narrative illustration, tools, press, workshop, frames, corridors, markets, libraries, logos, or readable text.',
+    'SP06-038':
+      'A mezzotint style-card with one quiet original animal, bust-like figure, or sculptural object emerging from velvet black through burnished highlights, rocked-plate grain, smoky tonal transitions, and scraped light. Keep it nocturnal but not candle/interior cliche; do not show candles, old-master rooms, antique frames, tools, press, workshop, corridors, markets, libraries, logos, or readable text.',
+    'SP06-039':
+      'A Risograph style-card with one playful original figure, animal, flower, or object made from neon spot colors, soy-ink grain, dithered tonal fields, paper absorption, and charming misregistration. Keep it zine-like without becoming a flyer; do not show typography, posters, slogans, student-print tables, tools, press, workshop, corridors, markets, libraries, logos, or readable text.',
+    'SP06-040':
+      'A cyanotype style-card with one original animal, object, garment, or abstract-but-readable silhouette in Prussian blue monochrome, UV softness, paper fiber, contact-print whites, and rinsed edges. Keep it scientific and calm; do not show specimen-sheet layout, labels, blueprints, architecture plans, botanical requirement, catalog grids, borders, tools, corridors, markets, libraries, logos, or readable text.',
+    'SP06-041':
+      'A rubber-stamp style-card with one simple original animal, figure, flower, or object repeated as broken ink impressions, pressure gaps, alignment wobble, ink fatigue, and red/black/blue stamp texture. Keep it visual-only; do not show readable stamp text, office forms, postage, labels, logos, ink pads, stamp tools, desks, corridors, markets, libraries, or document layouts.',
+    'SP06-042':
+      'A newspaper-halftone style-card with one bold original figure, animal, object, or scene fragment reproduced through visible dot matrix, cheap yellowing paper, ink smudge, coarse grey spacing, and gritty mass-print texture. Keep it image-led; do not show headlines, captions, columns, newspaper layout, political figures, logos, readable text, desks, corridors, markets, or libraries.',
+    'SP06-043':
+      'A security-engraving style-card with one single original flower, animal, or sculptural object rendered through guilloche precision, ultra-fine parallel lines, anti-counterfeit hatch density, green-grey cotton-paper tone, and exact curvature. Use no secondary props. Keep official-detail without currency; do not show banknotes, certificates, seals, portraits, denominations, serial numbers, borders, jewelry, pendant, coin, compass, medallion, logos, readable text, desks, corridors, markets, or libraries.',
+    'SP06-044':
+      'A drypoint style-card with one original animal, figure, or object rendered through needle-scratched lines, burr-held ink halos, warm paper, plate-pressure softness, and fragile short-run wear. Keep it direct and intimate; do not show antique plates, landscapes, portraits in frames, tools, press, workshop, corridors, markets, libraries, logos, or readable text.',
+    'SP06-045':
+      'A collagraph style-card with one tactile original animal, figure, or object built from raised sand/glue/fiber relief, ink-filled valleys, irregular pressure, cardboard memory, and rough organic print texture. Keep it subject-readable, not empty abstraction; do not show literal collage scraps, recognizable found objects, landscape scenes, printing plates, tools, hands, workshop, corridors, markets, libraries, logos, or readable text.',
+    'SP06-046':
+      'A digital-painting style-card with one polished original outdoor character, creature, vehicle, or object rendered through pressure-sensitive brushwork, layer-corrected gradients, crisp focal edges, clean modern illustration polish, and open-air color depth. Keep it representative and finished; do not show studio setups, art desks, paint tools, lamps, vases, masks on pedestals, tablet UI, layer panels, concept-sheet grids, fantasy armor default, weapons, corridors, markets, libraries, logos, or readable text.',
+    'SP06-047':
+      'A speedpaint style-card with one dynamic original creature, vehicle, or abstract action silhouette in an open exterior or painterly motion field, blocked in broad gestural strokes, fast values, loose edges, compressed detail, and confident idea-first brushwork. Keep it energetic but readable; do not show humans at desks, tablets, screens, UI panels, process frames, YouTube UI, sketch borders, studios, desks, lamps, brushes, palettes, art tools, fantasy warrior default, weapons, corridors, markets, libraries, logos, or readable text.',
+    'SP06-048':
+      'A matte-painting-extension style-card with one grounded exterior environment fragment expanded by seamless phototexture integration: eroded cliff platform, coastal industrial edge, desert outpost, or weathered sci-fi landing area with painted continuity, atmospheric scale, and cinematic color matching. Use no foreground person. Keep it VFX-coherent without becoming generic vista; do not show people, weapons, held tools, hero poses, studio rooms, pedestals, tabletop objects, long corridors, fantasy halls, markets, libraries, plate-photo contact sheets, UI, labels, logos, readable text, or empty landscape-only composition.',
+    'SP06-049':
+      'A flat vector-art style-card with one clean original animal, figure, plant, or object built from precise Bezier contours, solid color fills, geometric hierarchy, and resolution-independent edges. Show one finished subject only on a plain graphic field. Do not show studio rooms, desks, tools, brushes, cups, palettes, swatches, reference sheets, pinned sketches, labels, logos, brand marks, app UI, infographic symbols, icons-only sheets, text, corridors, markets, libraries, or website-like layout.',
+    'SP06-050':
+      'A 16-bit pixel-art style-card with one original character, animal, object, or compact outdoor scene fragment built from intentional pixel placement, limited palette, crisp grid scale, dithered shade ramps, tile rhythm, and hard aliasing. Keep game-era construction without HUD; do not show computer screens, UI, health bars, menus, workstations, posters, cartridges, franchise sprite copies, readable text, corridors, markets, libraries, or generic level-map layout.',
+    'SP06-051':
+      'A low-poly style-card with one original animal, vehicle, object, or simple figure in a clean open exterior or abstract color field, formed from visible triangular facets, flat-shaded planes, simplified geometry, crisp ambient occlusion, and origami-like light breaks. Keep polygon beauty subject-led; do not show asset turntable, game terrain default, empty landscape, studio pedestal, lamps, work lights, UI, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-052':
+      'A voxel-art style-card with one original animal, vehicle, or harmless everyday object built from disciplined cube units, stepped curves, crevice ambient occlusion, and toy-like volumetric readability. Keep voxel grammar without Minecraft drift; do not show blocky humanoid warriors, weapons, swords, tools, pencils, work desks, pixel props, blocky buildings, landscapes, game dioramas, terrain maps, UI, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-053':
+      'A concept-art style-card with one original creature, vehicle, costume object, or environment fragment showing mood-first lighting, readable design intent, photobash-paint hybrid texture, production-ready shapes, and exploratory polish. Keep visual-direction utility; do not show callout sheets, model-sheet grids, UI, labels, fantasy warrior default, weapons, long corridors, markets, libraries, logos, or readable text.',
+    'SP06-054':
+      'An isometric style-card with one original object cluster, tiny vehicle, plant, animal, or compact structure fragment using parallel nonconverging lines, thirty-degree tilt, equal plane attention, stacked grid logic, and miniature dimensional clarity. Show one finished isometric subject only. Do not show concept sheets, taped sketches, callouts, swatches, rooms, full buildings, city blocks, world maps, playset dioramas, UI, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-055':
+      'A glitch-art style-card with one original animal, figure, object, or abstract-but-readable silhouette corrupted by RGB channel displacement, data tearing, compression blocks, scanline breaks, algorithmic offsets, and malfunction-as-medium structure. Keep it subject-led; do not show computer screens, hacker rooms, cyberpunk interiors, UI overlays, code panels, readable text, logos, corridors, markets, or libraries.',
+    'SP06-056':
+      'A synthwave style-card with one original animal, figure, or abstract chrome form on a plain retrofuturist graphic field, using magenta-cyan bloom, neon grid rhythm, scanline haze, reflective bands, and synthetic glow. Keep remembered-future energy without stock props; do not show desks, tabletop displays, lamps, light tubes, crystal pedestals, cars, roads, palm trees, suns/sunsets as main subject, city corridors, UI, logos, readable text, markets, or libraries.',
+    'SP06-057':
+      'A double-exposure style-card with one original animal, object, or non-profile silhouette on plain negative space, containing layered imagery through tonal masking, transparent overlap, additive density, and negative-space fusion. Keep layered-memory logic without a desk/studio scene; do not show tabletop displays, tools, hanging objects, human profile portraits, forests, mountains, birds-in-head cliche, readable text, logos, corridors, markets, or libraries.',
+    'SP06-058':
+      'A polygon-art style-card with one original animal, object, plant, or figure floating on a plain light graphic field, built from triangular facets, angular tonal decisions, low-resolution form memory, and flat geometric patchwork. Keep geometry as the whole art system. No desk, no tabletop, no tools, no pencil cup, no pen, no brush, no palette, no floor props, no screens, no monitors, no UI panels, no studio rooms, no pedestals, no background artwork, no stock low-poly mountains, no labels, logos, readable text, corridors, markets, or libraries.',
+    'SP06-059':
+      'A digital paper-cutout style-card with one original animal, plant, object, or figure on a clean paper field, built from layered flat paper planes, clean cut edges, soft drop shadows, staged depth, and machine-perfect craft illusion. Keep simulated handmade charm; do not show screens, tablet pads, glowing platforms, greeting cards, tabletop craft scenes, scissors, glue, hands, desks, labels, logos, readable text, corridors, markets, or libraries.',
+    'SP06-060':
+      'An ASCII-art style-card with one original animal, object, or simple figure on a plain dark terminal-like field, built from monospaced glyph density, symbol fields as tonal pixels, terminal-era spacing, low-resolution contrast, and character-set geometry. Keep text-as-image abstraction; do not show rooms, desks, tools, screens-with-UI, readable words, code snippets, UI windows, hacker desks, logos, captions, signatures, corridors, markets, or libraries.',
+    'SP06-061':
+      'An analog cut-paper collage style-card with one original animal, figure, object, or surreal emblem assembled from mismatched paper fragments, scissor edges, glue seams, scale jumps, and clashing print textures. Keep seams visible and subject readable; do not show craft tables, boards, hands, scissors, glue bottles, magazine text, readable clippings, fire, studio setup, corridors, markets, libraries, logos, or readable text.',
+    'SP06-062':
+      'A photomontage style-card with one uncanny original animal, object, or scene fragment blended through seamless photo-like scale shifts, transparent joins, unified grading, and plausible impossible relationships. Keep it composition-led; do not show passport-photo framing, face gags, city default, object-joke default, camera gear, UI, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-063':
+      'A decoupage style-card with one original animal, plant, object, or figure sealed under glossy varnished paper skin, softened torn edges, aged adhesive depth, crackle glaze, and surface-wrap palimpsest. Keep it material-led and readable; do not show decorative plates, craft-table scenes, scissors, glue, hands, readable printed motifs, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-064':
+      'An assemblage style-card with one sculptural found-material animal, figure, object, or emblem composed from rust, wood, glass, paper, and plastic-like fragments, using shadow depth and object-scale tension. Keep it one coherent focal subject; do not show boxed dioramas, literal collections, shelves, cabinets, craft tables, tools, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-065':
+      'A scrapbook-layer style-card with one original animal, object, plant, or memory emblem made from layered ephemera-like papers, tape edges, stickers, torn corners, soft shadows, and pastel/vintage paper rhythm. Keep nostalgia material, not literal notes; do not show tickets, readable handwriting, flowers as requirement, people photos, desks, craft tables, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-066':
+      'A trash-polka style-card with one original animal, object, figure silhouette, or aggressive emblem colliding black realism shards, red vector strikes, splatter, smear, stencil blocks, and high-contrast graphic tension. Keep it dangerous through contrast, not gore; do not show tattoos on skin, arms, blood, weapons, skull piles, readable lettering, logos, corridors, markets, libraries, or readable text.',
+    'SP06-067':
+      'A mixed-media canvas style-card with one original plant, abstract figure, object, or creature built from thick paint, grit, fibers, paper relief, sand texture, and layered pigment. Keep material relief and subject readable; do not show readable newspaper, fabric as required prop, literal canvas on easel, craft table, tools, hands, studio setup, corridors, markets, libraries, logos, or readable text.',
+    'SP06-068':
+      'A zine-aesthetic style-card with one original animal, object, plant, or punk emblem flattened through Xerox contrast, toner grain, tape shadows, rough crop edges, repeated-copy degradation, and black-white paper burn. Keep DIY reproduction without slogans; do not show booklets, staples, pages with text, readable slogans, posters, hands, desks, corridors, markets, libraries, logos, or readable text.',
+    'SP06-069':
+      'A moodboard color-story style-card with one coherent abstract object cluster or material emblem built from coordinated color fragments, swatches, texture samples, spacing rhythm, and provisional design logic. Keep palette as subject; do not show literal photo collections, captions, pinned boards, labels, notes, readable text, desks, craft tables, corridors, markets, libraries, logos, or UI.',
+    'SP06-070':
+      'A pinned planning-board style-card with one original abstract route/emblem/object system made from cork-like texture, pins, thread arcs, tape fragments, and clustered relationship lines. Keep planning grammar visual-only; do not show conspiracy boards, readable goals, maps, labels, clippings, photos, hand-written notes, craft tables, studio setup, corridors, markets, libraries, logos, or readable text.',
+    'SP06-071':
+      'A torn-paper mosaic style-card with one original plant, animal, object, or figure assembled from torn paper tesserae, fiber edges, print residue, color scraps, and distance-read coherence. Keep scrap material visible; do not show readable typography, advertisements, magazine headlines, school craft scene, craft table, hands, tools, corridors, markets, libraries, logos, or readable text.',
+    'SP06-072':
+      'A tape-art style-card with one original geometric animal, object, plant, or figure constructed from straight adhesive strips, masking/duct tape color, matte-gloss catches, layered tape edges, and installation-like precision. Keep tape as medium; do not show wall murals as requirement, street context, craft table, tape rolls, hands, scissors, tools, boards, corridors, markets, libraries, logos, or readable text.',
+    'SP06-073':
+      'An embroidery-on-photo style-card with one original plant, animal, object, or figure silhouette altered by visible thread stitches, needle-hole dots, floss accents, matte thread over flat print texture, and tactile mend geometry. Keep stitch-over-image logic without literal memory photo; do not show portraits, family snapshots, frames, sewing tools, needles, hands, hoops, craft tables, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-074':
+      'A paint-over-photo style-card with one original animal, object, plant, or figure partly obscured by thick acrylic strokes, smeared opacity, scraped gesture, and printed-surface friction. Keep overpainted-print tension; do not show literal photo realism, portrait default, brushes, palettes, hands, easels, studio setup, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-075':
+      'A digital-collage style-card with one original surreal object cluster, animal, or figure assembled from clean cut-screen edges, layer logic, impossible scale play, and vibrant screen-native composite polish. Keep cut-and-paste logic visible; do not show software UI, transform handles, app windows, vaporwave props, desktop/workstation scenes, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-076':
+      'A fumage smoke-art style-card with one ghostly original animal, plant, object, or figure emerging from soot residue, airflow gradients, carbon haze, soft smoke trails, and delicate black-on-light surface. Keep smoke-drawn materiality; do not show visible flames, candles, torches, burners, fire, studio setup, craft table, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-077':
+      'A coffee-painting style-card with one original plant, animal, object, or figure rendered through sepia stains, absorbent paper blooms, brown tide marks, granules, and fluid organic pigment. Keep stained warmth without beverage props; do not show mugs, cups, saucers, kitchens, cafe tables, coffee beans, ring-only compositions, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-078':
+      'A gold-leaf art style-card with one original plant, animal, object, or ornamental figure made from black/gold flat areas, metallic foil cracks, reflective leaf patches, and precious material radiance. Keep gilding material-led; do not show religious icons, halos as literal saint imagery, craft tables, foil tools, hands, frames, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-079':
+      'A paper-marbling style-card with one original plant, animal, object, or abstract-but-readable emblem submerged in suminagashi/ebru fluid swirls, oil-slick pigment veins, combed turbulence, and single-pull paper transfer texture. Keep liquid pattern as medium; do not show trays, comb tools, hands, craft table, boards, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-080':
+      'A stencil-art style-card with one bold original animal, object, plant, or figure silhouette made from hard cut bridges, spray-edge urgency, simplified repeatable shapes, black/red/white contrast, and visible stencil logic. Keep it graphic and reproducible; do not show street walls, protest scenes, slogans, letters, spray cans, hands, craft table, corridors, markets, libraries, logos, or readable text.',
+    'SP06-081':
+      'A Game Boy green-monochrome style-card with one original animal, object, or compact scene fragment reduced to four olive-green values, chunky 8x8 tile masses, LCD pixel gaps, passive-matrix ghosting, and pocket-screen nostalgia. Keep it image-led; do not show HUD, menus, game UI, cartridge, console hardware, logos, readable text, modern color, corridors, markets, or libraries.',
+    'SP06-082':
+      'A SNES Mode 7 style-card with one original abstract vehicle, creature, object, or emblem warped across an affine-transformed flat plane with scaled sprite depth, scanline artifacts, banded 16-bit color, and pseudo-3D hardware trickery. Keep Mode 7 transform as subject; do not show literal racing track, cars as requirement, HUD, lap UI, maps, menus, logos, readable text, modern 3D, corridors, markets, or libraries.',
+    'SP06-083':
+      'A vector-arcade-wireframe style-card with one original animal, ship-like object, abstract vehicle, or geometric creature drawn only from glowing phosphor vector lines on black, wireframe contours, line-intersection bloom, and electron-beam afterglow. Keep pure line display; do not show UI panels, cockpit screens, filled surfaces, raster pixels, text, logos, score numbers, corridors, markets, or libraries.',
+    'SP06-084':
+      'An FMV pre-rendered-sprite style-card with one original creature, vehicle, object, or compact character baked from chunky 90s CGI into a 2D sprite-plane, with 256-color quantization, dithered gradient banding, baked highlights, and compression ghosts. Keep cartridge-compressed pre-render charm. Do not show monitors, screens, arcade cabinets, UI, sprite sheet grid, text, logos, corridors, markets, libraries, modern glossy render, or clean high-resolution output.',
+    'SP06-085':
+      'A visual-novel-screen style-card with one quiet original object, animal, or non-school figure in cel-clean ADV composite grammar: softened support layer, translucent lower-third glass panel with no markings, gentle vignette, and emotional stillness. Keep interface framing abstract. Do not show monitors, computer screens, control rooms, readable dialogue, choice text, school classroom, dating-sim cliches, UI buttons with symbols, logos, corridors, markets, libraries, or readable text.',
+    'SP06-086':
+      'An RPG-Maker-chibi-tileworld style-card with one compact original animal, object, or tiny character rebuilt from top-down 16x16 tile grammar, grid-snapped modules, chibi scale, and cozy indie-RPG color. Keep it one miniature scene fragment; do not show dialogue boxes, HUD, menus, map labels, full dungeon map, franchise sprites, logos, corridors, markets, libraries, or readable text.',
+    'SP06-087':
+      'A GBA tactical-pixel style-card with one compact original unit, object, or terrain-emblem on a clean tactical grid, using bright handheld palette, small-sprite readability, isometric/top-down tile logic, and turn-based calm. Keep tactical clarity as image, not interface. Do not show decorative frames, badges, menu panels, readable UI windows, stats, portraits with text, battle HUD, weapon foreground, logos, corridors, markets, libraries, or readable text.',
+    'SP06-088':
+      'A PSX-vertex-wobble style-card with one original creature, object, vehicle, or simple figure in unstable low-poly planes, affine texture swim, dithered fog, chunky unfiltered textures, and 32-bit console wobble. Keep PSX instability; do not show horror corridors, hospital hallways, UI, inventory screens, weapon foreground, logos, readable text, markets, libraries, or modern clean 3D.',
+    'SP06-089':
+      'A text-mode-roguelike ANSI style-card with one original creature, object, or symbolic room fragment built from fixed-width glyph cells, CP437-like symbols, 16-color ANSI palette, terminal glow, and symbolic dungeon logic. Keep glyphs as image; do not show readable words, code lines, menus, command prompts, UI window chrome, logos, corridors, markets, libraries, or modern graphical sprites.',
+    'SP06-090':
+      'A voxel-block-sprites style-card with one original harmless animal, vehicle, plant, or object built from visible cube units, block-stepped contours, isometric grid alignment, ambient-occlusion block edges, and bright toy-block colors on plain neutral space. Keep cube construction; do not show display capsules, glowing frames, UI cards, Minecraft branding, blocky warriors, weapons, full terrain maps, labels, corridors, markets, libraries, logos, or readable text.',
+    'SP06-091':
+      'A Vectrex-vector-display style-card with one original animal, ship-like object, abstract vehicle, or geometric creature drawn only as pure white glowing vector lines on black, CRT phosphor bloom, plastic overlay tint, wireframe transparency, and electron-beam persistence. Keep one-color beam drawing; do not show UI panels, score text, cabinet hardware, filled surfaces, raster pixels, logos, corridors, markets, libraries, or readable text.',
+    'SP06-092':
+      'A C64 Commodore-palette style-card with one original animal, object, vehicle, or compact scene fragment forced through C64 16-color muted palette, fat 8x8 character blocks, wide-pixel aspect, dither value shifts, and CRT composite blur. Keep home-computer pixel warmth as the image itself; do not show computers, keyboards, cassette tapes, hardware, BASIC screens, readable text, UI menus, game HUD, logos, corridors, markets, libraries, modern smooth pixels, or high-color output.',
+    'SP06-093':
+      'An MSX2 Japanese-computer style-card with one original animal, object, vehicle, or compact scene fragment compressed into bright Japanese 8-bit pixels, SCREEN-mode layering, compact 256x212 proportions, vivid emerald/red/blue/yellow palette, and character-cell texture without words. Do not show UI menus, readable Japanese text, cartridge/console hardware, logos, corridors, markets, libraries, modern smooth pixels, or franchise copies.',
+    'SP06-094':
+      'An Atari-2600 extreme-limitation style-card with one original animal, object, vehicle, or primitive scene fragment reduced to 40-fat-pixel forms, scanline color stripes, blocky playfield logic, sprite flicker, black background, and TIA hardware artifacts. Keep impossible memory pressure visible; do not show UI, score numbers, cartridge/console hardware, detailed maps, logos, corridors, markets, libraries, readable text, or rich modern palette.',
+    'SP06-095':
+      'A Sega-Genesis dither-heavy style-card with one original creature, vehicle, object, or compact scene fragment using crunchy 16-bit sprite logic, heavy checkerboard dithering, 64-color grit, parallax bands, scanlines, and composite-video blur. Keep dither as signature; do not show consoles, controllers, cartridges, hardware props, Sonic-like mascot copies, beat-em-up franchise scenes, HUD, UI, score text, logos, corridors, markets, libraries, or smooth modern gradients.',
+    'SP06-096':
+      'A Neo-Geo sprite-king style-card with one original large arcade-sprite creature, vehicle, object, or non-weapon fighter-like silhouette using lavish pixel detail, rich arcade palette, dense animation-frame implication, background parallax, and premium sprite polish. Keep peak pixel art without franchise imitation; do not show swords, blades, weapons, fighting-game duel scene, readable HUD, lifebars, UI, logos, corridors, markets, libraries, readable text, or modern HD illustration.',
+    'SP06-097':
+      'An Amiga DeluxePaint HAM style-card with one original animal, vehicle, object, or compact scene fragment rendered as 80s workstation art: 4096-color HAM shimmer, magenta-cyan fringing, copper-list rainbow gradients, PAL texture, and DeluxePaint brush-pattern logic. Keep color-machine artifact as image; do not show Workbench windows, software UI, computer hardware, video toaster gear, readable text, logos, corridors, markets, or libraries.',
+    'SP06-098':
+      'A TurboGrafx/PC-Engine style-card with one original creature, vehicle, object, or compact scene fragment in bright compact Japanese console pixels, HuCard restraint, CD-ROM2 richness, 482-color brightness, and clean sprite confidence. Keep alternate-history console mood; do not show HuCard/CD hardware, console, UI, HUD, franchise copies, logos, readable text, corridors, markets, or libraries.',
+    'SP06-099':
+      'A DS Flipnote Studio style-card with one original animal, object, or simple figure drawn in crude black stylus lines on white, with jittery flipbook marks, memo-grid texture, low-res LCD compression, and homemade animation charm. Keep drawing-only charm; do not show DS hardware, app UI, toolbar icons, readable text, logos, screens-with-frame, corridors, markets, or libraries.',
+    'SP06-100':
+      'A Game Boy Camera thermal-print style-card with one original animal, object, or simple figure rendered in four-shade greyscale, 128x112 CMOS grain, thermal printer dot matrix, fisheye distortion, stamp-tile hint, and fading paper chemistry. Keep print artifact as image; do not show Game Boy hardware, printer hardware, UI, photo booth, readable text, logos, corridors, markets, or libraries.',
+    'SP06-101':
+      'A JRPG pixel-diorama style-card with one original compact object, creature, tiny vehicle, or environment fragment in 16-bit isometric diorama grammar, warm limited ramps, tidy grid rhythm, blocky cast shadows, and charm-first simplification. Show one finished card, not a hero scene. Do not show swords, weapons, armed characters, frame grids, UI, HUD, NPC crowds, literal town requirement, readable text, logos, corridors, markets, or libraries.',
+    'SP06-102':
+      'A roguelike tile-glyph-system style-card with one original symbolic object, safe creature, or tile cluster in stark glyph silhouettes, strict modular grid, black gutters, low-count palette, chipped pixel edges, and harsh tactical readability. Show one finished card, not a sprite sheet. Do not show icon sheets, inventory icons, swords, weapons, armed characters, frame grids, UI, command prompts, readable text, literal dungeon corridor, monster requirement, logos, markets, or libraries.',
+    'SP06-103':
+      'A Metroidvania parallax-gloom style-card with one original side-view explorer silhouette, creature, relic, or compact biome fragment using layered foreground/midground/background planes, cool shadow depth, toxic accent glow, moss-mineral pixel clusters, and traversal-readable shape rhythm. Show one finished atmospheric card, not a level mockup. Do not show literal cavern corridors, door/platform layouts, HUD, UI, maps, weapons, readable text, logos, markets, or libraries.',
+    'SP06-104':
+      'A cyberpunk diegetic-HUD-glow style-card with one original hovering drone core, sealed vehicle fragment, or abstract device nucleus wrapped in translucent tactical glow, scanline grime, cyan-magenta glass layers, target brackets, and signal haze. Keep it as cinematic key art with non-readable graphic strata, not a software screen. Do not show people, hands, weapons, readable interface copy, city street, hacker workstation, cameras, monitors-as-subject, logos, text, markets, libraries, or corridors.',
+    'SP06-105':
+      'A retro fighting-game-select style-card with one original animal mascot, armored object, creature bust, or non-weapon character emblem in 90s arcade pixel paint, saturated impact gradients, chunky anti-aliasing, diagonal energy slashes, and bold selectable presence. Keep it characterful and representational without turning into UI. Do not show selection grids, character names, lifebars, versus screens, arena fights, weapons, readable text, logos, markets, libraries, or corridors.',
+    'SP06-106':
+      'An isometric strategy-tile-language style-card with one original tiny settlement fragment, resource machine, creature habitat, or modular object cluster built from crisp 2:1 isometric blocks, bevel highlights, contact shadows, walkable-vs-blocked value logic, and repeatable tile seams. Show one composed card, not a tile atlas. Do not show people, soldiers, weapons, armies, bases, maps, grid overlays, UI panels, frame sheets, readable text, logos, markets, libraries, or corridors.',
+    'SP06-107':
+      'A MOBA splash-rendering style-card with one original creature, elemental guardian, vehicle-beast hybrid, or non-weapon champion-like focal form in cinematic digital paint, dramatic ability-color lighting, sculpted silhouette, energy trails, and polished poster crop. Keep epic but not franchise-like. Do not show battle scenes, arenas, swords, guns, weapons, UI, title text, logos, markets, libraries, corridors, or generic fantasy hallway staging.',
+    'SP06-108':
+      'A visual-novel neon-backdrop-wash style-card with one original intimate story moment: quiet character silhouette, small storefront corner, train-window glow, rainlit object, or compact street detail painted in clean anime background style with neon emotional grading, dialogue-safe negative space, and soft colored rim light. Keep scene readable, not empty abstraction. Do not show dialogue boxes, UI chrome, classrooms, desks, students, readable signs/text, logos, markets, libraries, or corridors.',
+    'SP06-109':
+      'A Soulslike tarnished-atmosphere style-card with one original eroded relic, monumental gate fragment, burdened stone idol, or ancient creature silhouette in ash-gray, old gold, bruised umber, dust, soot, corroded metal, and thin sacred backlight. Keep decayed grandeur and material poetry, not a boss poster. Do not show swords, guns, weapons, armored knight portraits, castles, throne rooms, fantasy corridors, boss fights, readable text, logos, markets, or libraries.',
+    'SP06-110':
+      'A chibi platformer-sprite-bounce style-card with one original cute creature, toy vehicle, fruit mascot, or compact object posed as a single polished sprite, using squashy proportions, candy palette, rounded pixel outlines, tiny highlight caps, and bouncy silhouette rhythm. Show one finished card, not a sprite sheet. Do not show frame grids, multiple animation frames, platforms, UI, HUD, costumes, readable text, logos, markets, libraries, or corridors.',
+    'SP06-111':
+      'A battle-royale compression-colorway style-card with one original supply capsule, mascot creature, signal beacon, or terrain-safe focal object under cyan-violet pressure glow, warm danger accents, vivid live-service polish, stormlike color gradient, and high-visibility silhouette separation. Keep competitive energy without shooter props. Do not show guns, weapons, soldiers, players, vehicles, arena map, literal storm wall, HUD, UI labels, readable text, logos, markets, libraries, or corridors.',
+    'SP06-112':
+      'A sci-fi arsenal-icon-kit style-card with one original non-weapon equipment object: energy shield core, med capsule, scanner puck, field pack, drone battery, or alien tool rendered as a single collectible hard-surface icon with gunmetal bevels, blue emissive seams, rarity trim, and clean thumbnail silhouette. Show one finished card, not an icon sheet. Do not show guns, ammo, blades, soldiers, weapon racks, frame grids, UI labels, readable text, logos, markets, libraries, or corridors.',
+    'SP06-113':
+      'A fantasy MMO parchment-interface style-card with one original symbolic parchment artifact: quest medallion, route knot, relic diagram, sealed lore fragment, or ornamental top-down token using fibrous paper grain, sepia ink, wax-red accents, burned borders, fold marks, and cartographic line rhythm. Keep game-UI material read without legible UI. Do not show readable map labels, continents, compass roses, castles, text, UI windows, menus, markets, libraries, or corridors.',
+    'SP06-114':
+      'An anime gacha-foil-frame style-card with one original magical creature, charm object, small spirit, or collectible centerpiece inside iridescent foil border, rarity glow, opal-gold accents, prismatic highlights, clean anime contours, and controlled sparkle density. Keep premium card feel without stats. Do not show readable card text, numbers, UI stats, weapons, generic character portrait, school uniform, logos, markets, libraries, corridors, or cluttered interface.',
+    'SP06-115':
+      'A survival-horror save-room-lighting style-card with one original safe-but-uneasy object cluster: worn storage case, herbarium tin, old radio shell, ritual key box, or low-poly chair silhouette under weak warm lamp-pool lighting, greenish blacks, tobacco browns, dusty cream highlights, PS2 grime, and off-frame darkness. Keep dread through lighting and restraint. Do not show monsters, gore, readable text, typewriter, literal room formula, corridor, weapon, camera, logos, markets, or libraries.',
+    'SP06-116':
+      'A stealth-game shadow-readability style-card with one original quiet object, rooftop vent form, small drone shadow, or architectural occluder study split into blue-black safe shadows, sodium detection-light pools, sharp visibility contrast, and silent tactical composition. Keep readable concealment zones without guards. Do not show guards, soldiers, weapons, city rooftop cliché, security camera prop, UI markers, readable text, logos, markets, libraries, or corridors.',
+    'SP06-117':
+      'An arcade-racing velocity-neon style-card with one original sleek hover object, aerodynamic creature silhouette, route marker, or abstract vehicle-fragment pushed through magenta-cyan-lime speed trails, glossy reflections, diagonal lane rhythm, and forward momentum. Keep racing energy without needing a car. Do not show readable billboards, UI overlays, city street cliché, cockpit, guns, text, logos, markets, libraries, or corridors.',
+    'SP06-118':
+      'An RPG pixel-inventory-icon-system style-card with one original non-weapon loot object: seed charm, sealed food tin, tiny lantern, weathered boot, rune stone, or crafting gem rendered as a single crisp pixel icon with earthy ramps, jewel accent, top-left glints, compact silhouette, and tiny material storytelling. Show one finished card, not an icon sheet. Do not show swords, guns, weapons, potions, bags, frame grids, UI labels, readable text, logos, markets, libraries, or corridors.',
+    'SP06-119':
+      'A cozy-sim seasonal-palette style-card with one original friendly modular object or tiny scenelet: tea cart, seed calendar token, knitted mailbox, garden tool bundle without blade, seasonal basket, or cute house-shaped charm in soft pixel warmth, four-season palette logic, honey highlights, gentle contact shadows, and handmade pattern accents. Show one finished card, not a sprite sheet. Do not show farm/crop/animal requirement, frame grids, UI labels, readable text, logos, markets, libraries, or corridors.',
+    'SP06-120':
+      'A boss-encounter key-art-tension style-card with one original ominous non-weapon threat form: colossal sealed door, ancient machine beast, shadow idol, volcanic relic, or huge creature silhouette under severe backlight, menacing accent hue, volumetric haze, and asymmetrical scale pressure. Keep cinematic challenge without combat. Do not show swords, guns, weapons, heroes, active fight scene, arena UI, title text, logos, markets, libraries, corridors, or recognizable game boss.',
+  };
+  return overrides[preset.id];
+}
+
+function pack06SubjectVarietyPrompt(key: string) {
+  if (!key.startsWith('pack_06__')) return '';
+  const shared =
+    'Subject variety: do not solve the card with birds, ravens, owls, wing shapes, feathered silhouettes, or repeated animal icons by default. If nearby SP06 cards already used an avian or animal silhouette, choose a non-avian anchor instead. Animals are allowed only when they are clearly preset-specific, not as the generic thumbnail shortcut.';
+  const byCategory: Record<string, string> = {
+    pack_06__traditional_painting:
+      'Rotate toward original figures, still-life objects, fabric/ceramic/metal forms, landscape fragments, architectural details, botanical arrangements, or symbolic material subjects.',
+    pack_06__drawing_and_sketching:
+      'Rotate toward figure studies without hand/tool staging, garment folds, vehicles, plants, mineral forms, masks, shoes, furniture fragments, or object construction studies.',
+    pack_06__printmaking:
+      'Rotate toward bold emblems, vessels, plants, masks, machines, architectural cuts, landscape fragments, invented creatures, or object silhouettes with carved/etched mark logic.',
+    pack_06__digital_art:
+      'Rotate toward original characters, devices, vehicles, creatures, environment slices, material props, or graphic icons chosen for the preset rather than generic workstation or bird motifs.',
+    pack_06__mixed_media:
+      'Rotate toward human/garment fragments, torn-color blocks, botanical pressings, mask pieces, vehicle scraps, architectural paper, fabric swatches, ticket-like shapes without readable text, and material specimens; avoid bird collage as the recurring mixed-media answer.',
+    pack_06__retro_game_visual_systems:
+      'Rotate toward sprites, vehicles, tiles, creatures, props, platform chunks, color palettes, machines, and era-specific display constraints; avoid bird sprites unless the preset clearly asks for them.',
+    pack_06__game_art_directions_and_ui:
+      'Rotate toward playable silhouettes, vehicles, relics, arenas, interface-adjacent motifs, environment landmarks, and non-weapon props; avoid default winged or bird boss silhouettes.',
+  };
+  return `\n${shared} ${byCategory[key] ?? ''}`.trimEnd();
 }
 
 function categoryBasePrompt(
@@ -2638,96 +3691,130 @@ function categoryBasePrompt(
   preset?: StyleRuntimePreset,
 ) {
   const key = styleCategoryImageKey(pack.id, category);
+  const presetBaseOverride = presetBasePromptOverride(preset);
+  const pack16BaseOverride = pack16AnimeBasePromptOverride(pack, preset);
   const base =
-    preset?.id === 'SP04-080'
+    presetBaseOverride ??
+    pack16BaseOverride ??
+    (preset?.id === 'SP04-080'
       ? 'A finished brush-pen ink style-card on clean absorbent paper: one standalone creature, object, or abstract material subject made from broad expressive ink strokes, dry-brush skips, wash blooms, wet pooling, and strong negative space. No studio, workshop, table, print block, plate, press, brayer, tray, person, hand, brush prop, calligraphy text, scroll, bamboo, or landscape.'
       : preset?.id === 'SP04-085'
-        ? 'A mood color-script style-card made from broad palette blocks, atmosphere bands, value keys, and time-of-day color progression across one abstract environment fragment. No person, hero, character, body, face, weapon, cape, cliff pose, castle, fantasy landscape painting, panel grid, storyboard frames, text, or finished render.'
-      : preset?.id === 'SP04-082'
-        ? 'A photobash-paintover style-card with one non-human object, creature fragment, vehicle fragment, or environment slice built from visible collage seams, photo-texture patches, lasso-cut shapes, painted integration strokes, and unified color grade. No full character portrait, heroic pose, weapon, fantasy cliff scene, clean final illustration, before-after layout, UI, text, labels, or tutorial board.'
-        : preset?.id === 'SP04-088'
-          ? 'A rough environment-pass style-card focused on macro-shape blockout, atmospheric recession, large painterly strokes, value grouping, and scale mood in one environment fragment. No person, hero, character, body, cape, weapon, cliff pose, corridor, hallway, finished fantasy vista, detailed landscape painting, or tiny render detail.'
-          : preset?.id === 'SP04-092'
-            ? 'A costume exploration style-card focused on abstract garment language: textile swatches, sleeves, cuffs, trims, folds, color strips, silhouettes cropped as fragments, material patches, and accessory rhythm. No full posed model, face, body-first portrait, fashion catalog page, runway scene, lingerie read, readable labels, or single finished outfit.'
-            : preset?.id === 'SP04-093'
-              ? 'A lighting scenario style-card showing the same simple non-human object or abstract structure relit across several mood passes: rim light, bounce color, exposure bands, shadow temperature, and haze variation. No person, hero, character, face, body, cape, weapon, fantasy vista, cliff pose, single scene, readable text, or UI.'
-              : preset?.id === 'SP04-096'
-                ? 'An equipment-tier progression style-card showing one non-weapon equipment/object family evolving across 3-4 versions with material rarity, silhouette complexity, ornament deltas, and modular upgrades. No blade, gun, combat weapon, held item, arm/hand, inventory UI, readable labels, single artifact, or violent object.'
-                : preset?.id === 'SP04-097'
-                  ? 'A composition thumbnail grid style-card made of rough grayscale value blocks and crop studies for one abstract scene or object idea. Multiple mini compositions with framing rectangles, focal masses, perspective alternates, and value grouping only. No brayer, roller, printmaking tool, hand, person, readable notes, storyboard story, film scene, polished render, or single prop repeated.'
-                  : preset?.id === 'SP05-021'
-                    ? 'An original shonen-adventure style-card built from motion scarf ribbons, training-charms, cel-shaded fabric folds, impact arcs, and a cropped non-famous costume/hand/boot fragment rather than a face. No forehead band, metal plate, spiral mark, orange jumpsuit, ninja village, kunai, shuriken, copied hairstyle, boy hero portrait, or recognizable franchise composition.'
-                  : preset?.id === 'SP05-023'
-                    ? 'An original elastic-adventure style-card built from nautical color blocks, rope arcs, exaggerated glove/boot/cloth fragments, sky-blue freedom energy, and one invented emblem-like costume crop rather than a face. No straw hat, red open vest, scar under eye, pirate skull flag, named-crew likeness, ship mast hero pose, exposed torso focus, or recognizable franchise composition.'
-                  : preset?.id === 'SP05-028'
-                    ? 'An original lo-fi rhythm-action style-card built from beat-synced cloth arcs, ink-brush movement, turntable-like motion rings, worn paper texture, and cropped sneaker/jacket/object fragments on a flat graphic outdoor backdrop. No person face, room, interior, lamp, window, chair, table, studio, sword, katana, blade, samurai outfit, dead bodies, duel pose, highway warrior portrait, named-series likeness, or weapon-first composition.'
-                  : preset?.id === 'SP05-032'
-                    ? 'An original urban-occult style-card made from abstract curse-pressure geometry, gloved hand crop, jacket fragments, cyan-violet aura ribbons, concrete texture, and symbolic energy planes. No weapon, sword, blade, katana, full hero portrait, school uniform, alley fight, monster gore, readable sigil, franchise face, or corridor scene.'
-                  : preset?.id === 'SP05-036'
-                    ? 'An original colossal-war-drama style-card made from ruined mechanized silhouettes, smoke planes, torn banners, institutional geometry, armor fragments, and scale contrast around architecture rather than a warrior. No weapon, sword, spear, gun, full hero portrait, giant humanoid, battlefield gore, real-world uniform, fascist insignia, or propaganda poster.'
-                  : preset?.id === 'SP05-055'
-                    ? 'An original gothic tech dread style-card focused on sacred industrial architecture and machine-shell fragments: black-metal towers, bio-synthetic cables, hollow vertical shafts, ritualized panel seams, and restrained cyan glow. No person, hero, full body, face, blade, spear, weapon, giant robot, exposed organs, gore, religious icon copy, hospital tube body, or franchise silhouette.'
-                  : preset?.id === 'SP05-058'
-                    ? 'An original remote command grief style-card focused on distant control environment and machine silhouettes: cold command table shapes, drone-like shadows as abstract machines, muted blue-gray panels without readable UI, and emotional distance through empty space. No person foreground, full body, readable screens, maps with labels, guns, missiles, drone strike, real military insignia, child soldier, or franchise uniform.'
-                  : preset?.id === 'SP05-061'
-                    ? 'An original crosshatched doom-weight style-card focused on cursed armor fragments, cracked stone emblems, eclipse-black negative space, and dense ink hatching. No person, face, body, cloak hero, famous swordsman likeness, giant sword, weapon, ruined warrior portrait, gore, torture, skull pile, or readable occult text.'
-                  : preset?.id === 'SP05-062'
-                    ? 'An original crimson metamorphosis style-card focused on a split mask/emblem still life: broken lacquer mask halves, translucent membrane planes, sealed shadow voids, desaturated graphite, and restrained crimson pressure. No person, face, body, humanoid silhouette, robe, hand, weapon, sword, red blade, ribbon crossing a body, gothic ruin, cathedral, corridor, organs, gore, realistic blood, teeth-mouth focus, famous ghoul mask likeness, attack scene, or body-horror closeup.'
-                  : preset?.id === 'SP05-064'
-                    ? 'An original wind-scoured redemption style-card focused on weathered cloth fragments, eroded stone, sparse horizon bands, dry abrasion, and moral weight in object/environment form. No person, face, kneeling hero, samurai likeness, katana, duel pose, blood, battlefield, revenge scene, or historical flag.'
-                  : preset?.id === 'SP05-065'
-                    ? 'An original pale threshold horror style-card focused on porcelain threshold slabs, ash-matte ground, silver edge glints, moonlit negative space, and severe silhouette order without characters. No person, hunter, prey, monster, weapon, chase, blood, gore, corridor, doorway scene, confrontation, or literal horror event.'
-                  : preset?.id === 'SP05-066'
-                    ? 'An original invasive thriller style-card focused on ceramic-botanical seam geometry: clean pale panels, petal-like fractures, clinical graphite voids, restrained crimson stress, and abstract organic strategy. No person, face, body, anatomy, flesh, organs, skin, hands, surgical table, creature, gore, realistic blood, or body-horror closeup.'
-                  : preset?.id === 'SP05-067'
-                    ? 'An original lush abyssal toll style-card focused on bioluminescent mineral bloom, damp relic patina, layered vertical pressure, mossy velvet darks, and beautiful unsafe depth. No explorer, cave tunnel, corridor, market, library, fantasy hallway, monster, map, lantern, lamp, rope, or expedition gear.'
-                  : preset?.id === 'SP05-068'
-                    ? 'An original grimy sorcery collision style-card focused on soot clouds, scraped enamel shards, warped circular crop interruptions, illegible occult-industrial stains, tar grime, and absurd menace through texture. No protagonist, mask portrait, readable sigils, readable text, weapon, alley, corridor, wizard likeness, franchise cue, or logo.'
-                  : preset?.id === 'SP05-069'
-                    ? 'An original procedural low-fantasy grit style-card focused on worn stone slabs, scuffed dirty metal plates, smoky shadow wedges, narrow practical light slices, and tactical severity as abstract material arrangement. No corridor, dungeon hallway, adventurer, enemy, torch, lamp, weapon, shield, blood, dry blood stain, dice, card, map, or game UI.'
-                  : preset?.id === 'SP05-070'
-                    ? 'An original neon tragic metamorphosis style-card focused on blacklight glass shards, elastic smoke ribbons, acid magenta/cyan smears, bruised violet voids, and abstract silhouette pressure without a body. No franchise likeness, demon body, nude body, face, anatomy, gore, blood, club scene, crowd, attack, wings, horns, or readable text.'
-                  : preset?.id === 'SP05-091'
-                    ? 'An original glowing virtual-fantasy style-card focused on crystalline portal depth, cyan atmospheric planes, soft romantic scale, and tactile digital light around a non-famous silhouette or relic. No named VR franchise likeness, readable HUD, UI panel, icon, menu, sword foreground, logo, or costume copy.'
-                  : preset?.id === 'SP05-092'
-                    ? 'An original reset-loop dark fantasy style-card focused on violet-silver spiral pressure, fragile relic ribbons, repeated light echoes, ornate dread, and emotional recursion. No named character likeness, mansion copy, market scene, death scene, gore, maid/cat-ear costume cue, franchise color pairing, or readable text.'
-                  : preset?.id === 'SP05-093'
-                    ? 'An original wandering mage chronicle style-card focused on weathered travel relic, mana contour lines, parchment grain, mineral sky, and patient geographic wonder. No readable map labels, staff-wielding protagonist, school uniform, harem cue, road party, UI, logo, or text.'
-                  : preset?.id === 'SP05-094'
-                    ? 'An original party-quest comedy style-card focused on bright anticlimax magic burst, elastic prop fragments, cheerful fantasy color, and comic timing in one readable anchor. No fixed group, tavern interior, readable sign, lewd gag, canon costume, franchise party likeness, or text.'
-                  : preset?.id === 'SP05-095'
-                    ? 'An original afterquest melancholy fantasy style-card focused on relic meadow memory motes, soft horizon light, quiet spell traces, weathered keepsake, and time-softened grief. No named elf mage likeness, party lineup, road scene, ritual circle, staff pose, franchise costume copy, or text.'
-                  : preset?.id === 'SP05-096'
-                    ? 'An original hyper-saturated strategy fantasy style-card focused on candy-neon arena geometry, floating rule planes, impossible perspective folds, and confident color logic. No cards, chess pieces, dice, numbers, readable symbols, game UI, sibling character likeness, logo, or text.'
-                  : preset?.id === 'SP05-097'
-                    ? 'An original dark dominion style-card focused on bone-ivory monolith, baroque symmetry, cold magical dust, black stone mass, and oppressive authority. No skeletal ruler, literal throne, army, skull pile, cathedral copy, Nazi/fascist insignia, franchise likeness, or readable crest.'
-                  : preset?.id === 'SP05-098'
-                    ? 'An original optimistic civic fantasy style-card focused on rounded growth motifs, gel-like blue accents, clean timber/stone harmony, sunlit cooperative brightness, and modular settlement energy. No literal slime creature, banners with symbols, kingdom crowd, named ruler likeness, franchise species cue, or readable signs.'
-                  : preset?.id === 'SP05-099'
-                    ? 'An original defensive underdog fantasy style-card focused on concentric barrier geometry, scarred bronze/stone relic, compressed forward pressure, and hard-earned protective glow. No literal shield, hero portrait, weapon, slave/collar cue, revenge scene, franchise likeness, or readable emblem.'
-                  : preset?.id === 'SP05-100'
-                    ? 'An original luminous ascent fantasy style-card focused on warm crystal well, vertical mineral depth, hopeful glow, darkness shaped by amber light, and mythic smallness. No dungeon corridor, lantern prop, adventurer, goddess/canon costume, monster, weapon, hallway perspective, or readable sign.'
-                  : preset?.id === 'SP05-121'
-                    ? 'An original lantern-elemental motion style-card focused on patterned warmth, breathlike luminous arcs, winter-blue/amber contrast, ceremonial pause, and tenderness in motion around a non-famous original silhouette or emblem. Keep it non-graphic and non-derivative; no famous costume copy, blade-forward pose, or readable text.'
-                  : preset?.id === 'SP05-122'
-                    ? 'An original grimy contract-panic action style-card focused on industrial grime, fluorescent fatigue, jagged impact rhythm, broken concrete planes, and deadpan absurdity. Keep it non-graphic and non-derivative; no tool-headed character, famous uniform copy, blade-forward pose, or readable sign.'
-                  : preset?.id === 'SP05-123'
-                    ? 'An original ceremonial inferno action style-card focused on ember halos, sacred heat geometry, black silhouette cuts, emergency brightness, and stained-glass color as abstract light. No famous uniform copy, literal chapel interior, icon copy, injury scene, or readable insignia.'
-                  : preset?.id === 'SP05-124'
-                    ? 'An original predator-ego sports intensity style-card focused on electric-blue field-line abstractions, pressure zones, target-lock geometry, acid accents, and competitive focus. No named soccer character, team logo, readable numbers, stadium crowd, ball closeup, violent assault, or readable text.'
-                  : preset?.id === 'SP05-125'
-                    ? 'An original civic colossal-response action style-card focused on municipal hazard color, infrastructure scale markers, response-grid clarity, concrete/steel texture, and resilient order. No famous creature copy, monster face closeup, armed squad, readable signage, destruction aftermath, or logo.'
-                  : preset?.id === 'SP05-126'
-                    ? 'An original paranormal turbo comedy style-card focused on ghostly teal/hot pink collision, elastic reaction marks, alien-lime absurdity, speed-line warmth, and romantic recoil energy. No famous duo copy, readable glyphs, school corridor, creature attack, crude joke, or logo.'
-      : preset && PACK_01_TRANSFERABLE_PRESET_IDS.has(preset.id)
-      ? 'A neutral transferable photography-treatment demo with one simple subject or material arrangement, plain background planes, readable surface behavior, controlled light, and no narrative location.'
-      : preset && isPack02CartoonMediaPreset(pack, preset)
-        ? 'A clean cartoon-media style specimen with one simple original graphic anchor: a non-famous cartoon figure, expressive silhouette, creature/object fragment, mascot-like shape, symbolic form, or small scene cue. Keep the anchor thumbnail-readable and style-led. Avoid real person, celebrity, franchise character, camera equipment, readable text, logo, or repeated stock prop sets; rooms, walls, floors, cast shadows, corners, horizon lines, lamps, curtains, fabric, markets, libraries, hallways, or fantasy locations are allowed when they clarify this preset instead of becoming filler.'
-        : preset && isPack02NonPortraitLightingPreset(pack, preset)
-          ? 'A grounded non-portrait cinematic lighting study using architectural planes, glass, fabric, metal, water, haze, or shadow geometry as the subject, with no human model, chair, curtain, cyclorama, camera equipment, or studio-session setup.'
-          : CATEGORY_BASE_PROMPTS[key] ||
-            'A vertical scene with one clear original subject, foreground detail, midground context, background depth, varied materials, and no text.';
-  return `Base: ${base}
+        ? 'A mood color-script style-card made from broad palette blocks, atmosphere bands, value keys, and time-of-day color progression across one readable environment beat such as harbor, forest clearing, canyon gate, industrial dock, or storm-lit road. No person, hero, character, body, face, weapon, cape, cliff pose, castle, fantasy landscape painting, panel grid, storyboard frames, text, or finished render.'
+        : preset?.id === 'SP04-082'
+          ? 'A photobash-paintover style-card with one readable non-human concept: creature fragment, vehicle chunk, field kit, crashed pod, or material-heavy environment slice built from visible collage seams, photo-texture patches, lasso-cut shapes, painted integration strokes, and unified color grade. No fantasy gate, stone portal, corridor, full character portrait, heroic pose, weapon, fantasy cliff scene, clean final illustration, before-after layout, UI, text, labels, or tutorial board.'
+          : preset?.id === 'SP04-088'
+            ? 'A rough environment-pass style-card focused on macro-shape blockout, atmospheric recession, large painterly strokes, value grouping, and scale mood in one readable wide place such as canyon gate, industrial dock, forest shrine silhouette, alien plain, or coastal ruins. No person, hero, character, body, cape, weapon, cliff pose, corridor, hallway, finished fantasy vista, detailed landscape painting, or tiny render detail.'
+            : preset?.id === 'SP04-092'
+              ? 'A costume exploration style-card focused on readable garment language through cropped fragments only: textile swatches, sleeves, cuffs, collars, trims, folds, belts, color strips, material patches, and accessory rhythm. No full posed model, face, body, figure lineup, weapon, sword, staff, fashion catalog page, runway scene, lingerie read, readable labels, or single finished outfit.'
+              : preset?.id === 'SP04-093'
+                ? 'A lighting scenario style-card showing the same readable non-human subject relit across several mood passes: mask, small shrine, vehicle shell, creature statue, or object silhouette with rim light, bounce color, exposure bands, shadow temperature, and haze variation. No person, hero, character, face, body, cape, weapon, fantasy vista, cliff pose, single scene, readable text, or UI.'
+                : preset?.id === 'SP04-096'
+                  ? 'An equipment-tier progression style-card showing one non-weapon equipment/object family such as lanterns, field packs, masks, boots, or courier containers evolving across 3-4 versions with material rarity, silhouette complexity, ornament deltas, and modular upgrades. No blade, gun, axe, spear, combat weapon, held item, arm/hand, inventory UI, readable labels, single artifact, or violent object.'
+                  : preset?.id === 'SP04-097'
+                    ? 'A composition thumbnail grid style-card made of rough grayscale value blocks and crop studies for one readable scene or object idea such as vehicle wreck, harbor gate, creature nest, shrine, or road bend. Multiple mini compositions with framing rectangles, focal masses, perspective alternates, and value grouping only. No brayer, roller, printmaking tool, hand, person, readable notes, storyboard story, film scene, polished render, or single prop repeated.'
+                    : preset?.id === 'SP05-021'
+                      ? 'An original shonen-adventure style-card built from motion scarf ribbons, training-charms, cel-shaded fabric folds, impact arcs, and a cropped non-famous costume/hand/boot fragment rather than a face. No forehead band, metal plate, spiral mark, orange jumpsuit, ninja village, kunai, shuriken, copied hairstyle, boy hero portrait, or recognizable franchise composition.'
+                      : preset?.id === 'SP05-023'
+                        ? 'An original elastic-adventure style-card built from nautical color blocks, rope arcs, exaggerated glove/boot/cloth fragments, sky-blue freedom energy, and one invented emblem-like costume crop rather than a face. No straw hat, red open vest, scar under eye, pirate skull flag, named-crew likeness, ship mast hero pose, exposed torso focus, or recognizable franchise composition.'
+                        : preset?.id === 'SP05-028'
+                          ? 'An original lo-fi rhythm-action style-card built from beat-synced cloth arcs, ink-brush movement, turntable-like motion rings, worn paper texture, and cropped sneaker/jacket/object fragments on a flat graphic outdoor backdrop. No person face, room, interior, lamp, window, chair, table, studio, sword, katana, blade, samurai outfit, dead bodies, duel pose, highway warrior portrait, named-series likeness, or weapon-first composition.'
+                          : preset?.id === 'SP05-055'
+                            ? 'An original gothic tech dread style-card focused on sacred industrial architecture and machine-shell fragments: black-metal towers, bio-synthetic cables, hollow vertical shafts, ritualized panel seams, and restrained cyan glow. No person, hero, full body, face, blade, spear, weapon, giant robot, exposed organs, gore, religious icon copy, hospital tube body, or franchise silhouette.'
+                            : preset?.id === 'SP05-058'
+                              ? 'An original remote command grief style-card focused on distant control environment and machine silhouettes: cold command table shapes, drone-like shadows as abstract machines, muted blue-gray panels without readable UI, and emotional distance through empty space. No person foreground, full body, readable screens, maps with labels, guns, missiles, drone strike, real military insignia, child soldier, or franchise uniform.'
+                              : preset?.id === 'SP05-061'
+                                ? 'An original crosshatched doom-weight style-card focused on cursed armor fragments, cracked stone emblems, eclipse-black negative space, and dense ink hatching. No person, face, body, cloak hero, famous swordsman likeness, giant sword, weapon, ruined warrior portrait, gore, torture, skull pile, or readable occult text.'
+                                : preset?.id === 'SP05-062'
+                                  ? 'An original crimson metamorphosis style-card focused on a split mask/emblem still life: broken lacquer mask halves, translucent membrane planes, sealed shadow voids, desaturated graphite, and restrained crimson pressure. No person, face, body, humanoid silhouette, robe, hand, weapon, sword, red blade, ribbon crossing a body, gothic ruin, cathedral, corridor, organs, gore, realistic blood, teeth-mouth focus, famous ghoul mask likeness, attack scene, or body-horror closeup.'
+                                  : preset?.id === 'SP05-064'
+                                    ? 'An original wind-scoured redemption style-card focused on weathered cloth fragments, eroded stone, sparse horizon bands, dry abrasion, and moral weight in object/environment form. No person, face, kneeling hero, samurai likeness, katana, duel pose, blood, battlefield, revenge scene, or historical flag.'
+                                    : preset?.id === 'SP05-065'
+                                      ? 'An original pale threshold horror style-card focused on porcelain threshold slabs, ash-matte ground, silver edge glints, moonlit negative space, and severe silhouette order without characters. No person, hunter, prey, monster, weapon, chase, blood, gore, corridor, doorway scene, confrontation, or literal horror event.'
+                                      : preset?.id === 'SP05-066'
+                                        ? 'An original invasive thriller style-card focused on ceramic-botanical seam geometry: clean pale panels, petal-like fractures, clinical graphite voids, restrained crimson stress, and abstract organic strategy. No person, face, body, anatomy, flesh, organs, skin, hands, surgical table, creature, gore, realistic blood, or body-horror closeup.'
+                                        : preset?.id === 'SP05-067'
+                                          ? 'An original lush abyssal toll style-card focused on a close mineral-bloom specimen: bioluminescent crystal petals, damp relic patina, mossy velvet darks, layered vertical pressure, and beautiful unsafe depth. No ruins, arches, cathedral, courtyard, architecture, explorer, cave tunnel, corridor, market, library, fantasy hallway, monster, map, lantern, lamp, rope, or expedition gear.'
+                                          : preset?.id === 'SP05-068'
+                                            ? 'An original grimy sorcery collision style-card focused on soot clouds, scraped enamel shards, warped circular crop interruptions, illegible occult-industrial stains, tar grime, and absurd menace through texture. No protagonist, mask portrait, readable sigils, readable text, weapon, alley, corridor, wizard likeness, franchise cue, or logo.'
+                                            : preset?.id === 'SP05-069'
+                                              ? 'An original procedural low-fantasy grit style-card focused on worn stone slabs, scuffed dirty metal plates, smoky shadow wedges, narrow practical light slices, and tactical severity as abstract material arrangement. No corridor, dungeon hallway, adventurer, enemy, torch, lamp, weapon, shield, blood, dry blood stain, dice, card, map, or game UI.'
+                                              : preset?.id === 'SP05-070'
+                                                ? 'An original neon tragic metamorphosis style-card focused on blacklight glass shards, elastic smoke ribbons, acid magenta/cyan smears, bruised violet voids, and abstract silhouette pressure without a body. No franchise likeness, demon body, nude body, face, anatomy, gore, blood, club scene, crowd, attack, wings, horns, or readable text.'
+                                                : preset?.id === 'SP05-091'
+                                                  ? 'An original glowing virtual-fantasy style-card focused on crystalline portal depth, cyan atmospheric planes, soft romantic scale, and tactile digital light around a non-famous silhouette or relic. No named VR franchise likeness, readable HUD, UI panel, icon, menu, sword foreground, logo, or costume copy.'
+                                                  : preset?.id === 'SP05-092'
+                                                    ? 'An original reset-loop dark fantasy style-card focused on violet-silver spiral pressure, fragile relic ribbons, repeated light echoes, ornate dread, and emotional recursion. No named character likeness, mansion copy, market scene, death scene, gore, maid/cat-ear costume cue, franchise color pairing, or readable text.'
+                                                    : preset?.id === 'SP05-093'
+                                                      ? 'An original wandering mage chronicle style-card focused on weathered travel relic, mana contour lines, parchment grain, mineral sky, and patient geographic wonder. No readable map labels, staff-wielding protagonist, school uniform, harem cue, road party, UI, logo, or text.'
+                                                      : preset?.id === 'SP05-094'
+                                                        ? 'An original party-quest comedy style-card focused on bright anticlimax magic burst, elastic prop fragments, cheerful fantasy color, and comic timing in one readable anchor. No fixed group, tavern interior, readable sign, lewd gag, canon costume, franchise party likeness, or text.'
+                                                        : preset?.id === 'SP05-095'
+                                                          ? 'An original afterquest melancholy fantasy style-card focused on relic meadow memory motes, soft horizon light, quiet spell traces, weathered keepsake, and time-softened grief. No named elf mage likeness, party lineup, road scene, ritual circle, staff pose, franchise costume copy, or text.'
+                                                          : preset?.id === 'SP05-096'
+                                                            ? 'An original hyper-saturated strategy fantasy style-card focused on candy-neon arena geometry, floating rule planes, impossible perspective folds, and confident color logic. No cards, chess pieces, dice, numbers, readable symbols, game UI, sibling character likeness, logo, or text.'
+                                                            : preset?.id === 'SP05-097'
+                                                              ? 'An original dark dominion style-card focused on bone-ivory monolith, baroque symmetry, cold magical dust, black stone mass, and oppressive authority. No skeletal ruler, literal throne, army, skull pile, cathedral copy, Nazi/fascist insignia, franchise likeness, or readable crest.'
+                                                              : preset?.id === 'SP05-098'
+                                                                ? 'An original optimistic civic fantasy style-card focused on rounded growth motifs, gel-like blue accents, clean timber/stone harmony, sunlit cooperative brightness, and modular settlement energy. No literal slime creature, banners with symbols, kingdom crowd, named ruler likeness, franchise species cue, or readable signs.'
+                                                                : preset?.id === 'SP05-099'
+                                                                  ? 'An original defensive underdog fantasy style-card focused on concentric barrier geometry, scarred bronze/stone relic, compressed forward pressure, and hard-earned protective glow. No literal shield, hero portrait, weapon, slave/collar cue, revenge scene, franchise likeness, or readable emblem.'
+                                                                  : preset?.id === 'SP05-100'
+                                                                    ? 'An original luminous ascent fantasy style-card focused on warm crystal well, vertical mineral depth, hopeful glow, darkness shaped by amber light, and mythic smallness. No dungeon corridor, lantern prop, adventurer, goddess/canon costume, monster, weapon, hallway perspective, or readable sign.'
+                                                                    : preset?.id === 'SP05-121'
+                                                                      ? 'An original lantern-elemental motion style-card focused on patterned warmth, breathlike luminous arcs, winter-blue/amber contrast, ceremonial pause, and tenderness in motion around a non-famous original silhouette or emblem. Keep it non-graphic and non-derivative; no famous costume copy, blade-forward pose, or readable text.'
+                                                                      : preset?.id === 'SP05-122'
+                                                                        ? 'An original grimy contract-panic action style-card focused on industrial grime, fluorescent fatigue, jagged impact rhythm, broken concrete planes, and deadpan absurdity. Keep it non-graphic and non-derivative; no tool-headed character, famous uniform copy, blade-forward pose, or readable sign.'
+                                                                        : preset?.id === 'SP05-123'
+                                                                          ? 'An original ceremonial inferno action style-card focused on ember halos, sacred heat geometry, black silhouette cuts, emergency brightness, flat heat panels, and scorched material seams. No stained glass, windows, chapel, cathedral, famous uniform copy, icon copy, injury scene, or readable insignia.'
+                                                                          : preset?.id ===
+                                                                              'SP05-124'
+                                                                            ? 'An original predator-ego sports intensity style-card focused on electric-blue field-line abstractions, pressure zones, target-lock geometry, acid accents, and competitive focus as a non-figurative sports-pressure graphic. No person, athlete, body, face, hair, limbs, named soccer character, team logo, readable numbers, stadium crowd, ball closeup, violent assault, or readable text.'
+                                                                            : preset?.id ===
+                                                                                'SP05-125'
+                                                                              ? 'An original civic colossal-response action style-card focused on municipal hazard color, infrastructure scale markers, response-grid clarity, concrete/steel texture, and resilient order. No famous creature copy, monster face closeup, armed squad, readable signage, destruction aftermath, or logo.'
+                                                                              : preset?.id ===
+                                                                                  'SP05-126'
+                                                                                ? 'An original paranormal turbo comedy style-card focused on ghostly teal/hot pink collision, elastic reaction marks, alien-lime absurdity, speed-line warmth, and romantic recoil energy. No famous duo copy, readable glyphs, school corridor, creature attack, crude joke, or logo.'
+                                                                                : preset?.id ===
+                                                                                    'SP05-129'
+                                                                                  ? 'An original deadpan prestige impact satire style-card focused on pristine block forms, absurd scale contrast, flat reaction space, polished impact rings, and clean comic timing. No fighter, hero portrait, city destruction, bald hero copy, fist foreground, weapon, rubble panorama, crowd, or readable text.'
+                                                                                  : preset?.id ===
+                                                                                      'SP05-133'
+                                                                                    ? 'An original deadpan magic-force comedy style-card focused on ornate spell curls, blunt blocky interruption, clean color planes, absurd force geometry, and comic pause spacing. No fighter, uniformed student, school hallway, classroom, readable crest, readable magic circle, weapon, brawl, or franchise likeness.'
+                                                                                    : preset?.id ===
+                                                                                        'SP05-137'
+                                                                                      ? 'An original science-blueprint optimism style-card focused on a handmade invention fragment, chalk-schematic non-text marks, mineral sunlight, discovery glow, and practical material detail. No fighter, inventor portrait, lab classroom, readable formulas, tool pile, weapon, camera, desk clutter, or franchise likeness.'
+                                                                                      : preset &&
+                                                                                          PACK_01_TRANSFERABLE_PRESET_IDS.has(
+                                                                                            preset.id,
+                                                                                          )
+                                                                                        ? 'A neutral transferable photography-treatment demo with one simple subject or material arrangement, plain background planes, readable surface behavior, controlled light, and no narrative location.'
+                                                                                        : preset &&
+                                                                                            isPack02CartoonMediaPreset(
+                                                                                              pack,
+                                                                                              preset,
+                                                                                            )
+                                                                                          ? 'A clean cartoon-media style specimen with one simple original graphic anchor: a non-famous cartoon figure, expressive silhouette, creature/object fragment, mascot-like shape, symbolic form, or small scene cue. Keep the anchor thumbnail-readable and style-led. Avoid real person, celebrity, franchise character, camera equipment, readable text, logo, or repeated stock prop sets; rooms, walls, floors, cast shadows, corners, horizon lines, lamps, curtains, fabric, markets, libraries, hallways, or fantasy locations are allowed when they clarify this preset instead of becoming filler.'
+                                                                                          : preset &&
+                                                                                              isPack02NonPortraitLightingPreset(
+                                                                                                pack,
+                                                                                                preset,
+                                                                                              )
+                                                                                            ? 'A grounded non-portrait cinematic lighting study using architectural planes, glass, fabric, metal, water, haze, or shadow geometry as the subject, with no human model, chair, curtain, cyclorama, camera equipment, or studio-session setup.'
+                                                                                            : CATEGORY_BASE_PROMPTS[
+                                                                                                key
+                                                                                              ] ||
+                                                                                              'A vertical scene with one clear original subject, foreground detail, midground context, background depth, varied materials, and no text.');
+  const subjectVariety = pack06SubjectVarietyPrompt(key);
+  const pack13Identity = pack13AnimeIdentityRule(pack, preset);
+  const pack16Identity = pack16AnimeIdentityRule(pack, preset);
+  if (pack.id === 'pack_12') {
+    return `Base: ${base}
+Anchor: ${categorySceneAnchor(pack, category, seed, preset)}
+Fit pack "${pack.name}" and category "${category}". Finished in-engine gameplay screencap, not a vertical card, reference sheet, concept sheet, poster, key art, or promo illustration. Landscape 16:9 game-camera frame, output 1536x1024. No text, labels, logos, watermark, HUD, menu, or UI.`;
+  }
+  return `Base: ${base}${subjectVariety}
+${[pack13Identity, pack16Identity].filter(Boolean).join('\n')}
 Anchor: ${categorySceneAnchor(pack, category, seed, preset)}
 Fit pack "${pack.name}" and category "${category}". Finished style-card image, not a reference sheet. Portrait 2:3, usable in a 3:4 card crop. No text, labels, logos, watermark, or UI.`;
 }
@@ -2827,6 +3914,16 @@ function familyVariant(map: Record<string, string[]>, family: string, seed: stri
   return source[Math.abs(hashString(seed)) % source.length];
 }
 
+function pack12GameplayRule(pack: StyleRuntimePack, preset: StyleRuntimePreset) {
+  if (pack.id !== 'pack_12') return '';
+  return [
+    'VIDEO GAME CARD RULE: render this as a plausible in-engine gameplay screencap or playable frame, not concept art, key art, promo art, poster art, character sheet, asset render, or menu screen.',
+    'Show camera/gameplay evidence: route, cover, lane, interactable, weak point, objective, hazard, timing window, puzzle state, match state, resource pressure, or traversal decision tied to this preset.',
+    'No visible HUD, UI overlay, readable interface, labels, logos, marketing layout, model-sheet grid, title-safe poster composition, or isolated asset showcase.',
+    `Differentiate this preset by its own loop and camera from neighboring pack_12 cards: ${sanitizeStylePromptName(preset.name).toLowerCase()}.`,
+  ].join(' ');
+}
+
 function buildStylePrompt(
   pack: StyleRuntimePack,
   preset: StyleRuntimePreset,
@@ -2875,170 +3972,1123 @@ function buildStylePrompt(
       ? 'Ethereal gothic fantasy anime with elongated silhouettes, ornamental drapery, moonlit melancholy, gilded accents, celestial voids, and weightless dreamlike elegance'
       : imagegenSafeDna
         ? imagegenSafeDna.aesthetic
-      : cartoonSafeDna
-        ? cartoonSafeDna.aesthetic
-        : valueOf(preset.style, 'aesthetic');
+        : cartoonSafeDna
+          ? cartoonSafeDna.aesthetic
+          : valueOf(preset.style, 'aesthetic');
   const styleSubject = isGuroPreset
     ? 'Distorted human or creature silhouette, shadowed anatomy, unsettling posture, and a clear horror read without explicit graphic detail'
     : isAmanoPreset
       ? 'Elegant fantasy figure with elongated silhouette, feather-light gesture, ornamental costume logic, and a strong card-readable profile'
       : imagegenSafeDna
         ? imagegenSafeDna.subject
-      : cartoonSafeDna
-        ? pack02CartoonRepresentativeSubject(preset)
-        : valueOf(preset.style, 'subject_treatment', 'form_and_line');
+        : cartoonSafeDna
+          ? pack02CartoonRepresentativeSubject(preset)
+          : valueOf(preset.style, 'subject_treatment', 'form_and_line');
   const styleColor = isGuroPreset
     ? 'Sickly crimson accents, bruise-spectrum shadows, bone-white contrast, deep black voids, and restrained biological color cues'
     : isAmanoPreset
       ? 'Ivory, antique gold, moon-silver, abyssal indigo, pale orchid haze, and restrained gothic jewel tones'
       : imagegenSafeDna
         ? imagegenSafeDna.color
-      : cartoonSafeDna
-        ? cartoonSafeDna.color
-        : valueOf(preset.style, 'color_and_tone', 'color_palette');
+        : cartoonSafeDna
+          ? cartoonSafeDna.color
+          : valueOf(preset.style, 'color_and_tone', 'color_palette');
   const styleLighting = isGuroPreset
     ? 'Clinical single-source lighting, hard shadow edges, wet sheen highlights, and deep contrast that keeps the image eerie but readable'
     : isAmanoPreset
       ? 'Moonlit haze, diffuse celestial glow, soft metallic gleam, and spectral backlighting that preserves silhouette clarity'
       : imagegenSafeDna
         ? imagegenSafeDna.light
-      : cartoonSafeDna
-        ? cartoonSafeDna.light
-        : valueOf(preset.style, 'lighting_and_shadow', 'lighting_setup');
+        : cartoonSafeDna
+          ? cartoonSafeDna.light
+          : valueOf(preset.style, 'lighting_and_shadow', 'lighting_setup');
   const styleTexture = isGuroPreset
     ? 'Organic membrane textures, slick surfaces, faint muscle-like striations, and corrupted biological surfaces without explicit gore'
     : isAmanoPreset
       ? 'Silk translucency, feathered ink edges, gilded ornament hints, velvet void gradients, and airbrushed dream textures'
       : imagegenSafeDna
         ? imagegenSafeDna.texture
-      : cartoonSafeDna
-        ? cartoonSafeDna.texture
-        : valueOf(preset.style, 'texture_and_material', 'material_texture');
+        : cartoonSafeDna
+          ? cartoonSafeDna.texture
+          : valueOf(preset.style, 'texture_and_material', 'material_texture');
   const styleCamera = isGuroPreset
     ? 'Tight vertical framing, oppressive perspective, and silhouette-first composition that preserves card readability'
     : isAmanoPreset
       ? 'Tight vertical framing, floating negative space, graceful elongation, and silhouette-first composition for immediate card recognition'
       : imagegenSafeDna
         ? imagegenSafeDna.camera
-      : cartoonSafeDna
-        ? pack02CartoonRepresentativeCamera()
-        : valueOf(preset.style, 'camera_and_composition', 'spatial_distortion');
+        : cartoonSafeDna
+          ? pack02CartoonRepresentativeCamera()
+          : valueOf(preset.style, 'camera_and_composition', 'spatial_distortion');
   const styleMood = isGuroPreset
     ? 'Horrifying, transgressive, darkly beautiful, mesmerizing, and intentionally non-graphic'
     : isAmanoPreset
       ? 'Ethereal, sorrowful, celestial, dreamlike, and quietly majestic'
       : imagegenSafeDna
         ? imagegenSafeDna.mood
-      : cartoonSafeDna
-        ? cartoonSafeDna.mood
-        : valueOf(preset.style, 'atmosphere_and_mood', 'atmosphere');
+        : cartoonSafeDna
+          ? cartoonSafeDna.mood
+          : valueOf(preset.style, 'atmosphere_and_mood', 'atmosphere');
   const styleRender = isGuroPreset
     ? 'Nightmare-poetry anime rendering with unsettling precision, high detail, and no explicit gore'
     : isAmanoPreset
       ? 'Delicate fantasy-anime rendering with ornamental precision, dreamy softness, elegant detail, and no copyrighted character identity'
       : imagegenSafeDna
         ? imagegenSafeDna.render
-      : cartoonSafeDna
-        ? cartoonSafeDna.render
-        : valueOf(preset.style, 'rendering_and_quality', 'render_quality');
+        : cartoonSafeDna
+          ? cartoonSafeDna.render
+          : valueOf(preset.style, 'rendering_and_quality', 'render_quality');
   const styleFeatures = isGuroPreset
     ? 'Distorted anatomy, organic corruption, spiral contamination motifs, shadowed transformation cues, and horror atmosphere without exposed organs or blood spray'
     : isAmanoPreset
       ? 'Elongated figures, ornamental drapery, moonlit voids, feather-light motion, gilded detail accents, and ethereal gothic fantasy poise'
       : imagegenSafeDna
         ? imagegenSafeDna.features
-      : cartoonSafeDna
-        ? cartoonSafeDna.features
-        : valueOf(preset.style, 'key_features');
+        : cartoonSafeDna
+          ? cartoonSafeDna.features
+          : pack.id === 'pack_12'
+            ? `${sanitizeStylePromptName(preset.name)} gameplay loop; ${valueOf(preset.style, 'camera_and_composition', 'spatial_distortion')}; ${valueOf(preset.style, 'rendering_and_quality', 'render_quality')}`
+            : valueOf(preset.style, 'key_features');
   const safeCompatibilityNote = isGuroPreset
     ? 'Keep it horror-forward but non-graphic: no exposed organs, no blood spray, no dismemberment, no explicit gore. Favor implication, distortion, shadow, and atmospheric unease.'
     : isAmanoPreset
       ? 'Keep it original and non-derivative: no recognizable franchise characters, no copyrighted costume designs, and no direct imitation of any named artist. Favor broad ethereal gothic fantasy language instead.'
       : '';
-  const objectOnlyPromptOverrides: Record<string, { hero: string; environment: string; action: string }> = {
+  const pack12Rule = pack12GameplayRule(pack, preset);
+
+  if (pack.id === 'pack_12') {
+    return appendImagegenDenoiseDirective(`Generate one in-engine gameplay screenshot.
+TARGET GAME LOOK: ${targetStyleLabel}
+PACK: ${pack.name}
+CATEGORY: ${category}
+${sessionKey ? `SESSION: ${sessionKey}\n` : ''}MODE: text-to-image
+MODEL: ${IMAGEGEN_MODEL}, ${IMAGEGEN_REASONING_EFFORT}
+
+${categoryBasePrompt(pack, category, `${variantSeed}:anchor`, preset)}
+
+GAMEPLAY SCREENSHOT CONTRACT:
+Render as a plausible playable screencap from an original video game, not as concept art, key art, promo art, poster art, splash art, character sheet, asset render, loading screen, menu screen, or portfolio illustration.
+Use landscape 16:9 game-camera composition. If later cropped into a card, keep the main gameplay state readable in the center.
+Show a real play state: route, cover, lane, interactable, weak point, objective, hazard, timing window, puzzle state, match state, resource pressure, traversal decision, enemy spacing, or squad/vehicle position tied to ${sanitizeStylePromptName(preset.name).toLowerCase()}.
+Use a game camera suitable to the preset: third-person, isometric, top-down, side-view, racing chase cam, fixed adventure cam, tactical overview, or over-the-shoulder. Pick one; do not use cinematic poster framing.
+No visible HUD, UI overlay, readable interface, minimap, health bars, subtitles, labels, logos, title text, marketing layout, model-sheet grid, or isolated asset showcase.
+No pixel art, voxel art, retro 8-bit, or low-res sprite rendering unless this exact preset identity explicitly requires it.
+Stylized blood, violence, weapons, threat, or horror intensity are allowed when the gameplay genre needs them; avoid explicit gore, dismemberment, torture detail, or shock imagery.
+
+STYLE DNA: aesthetic=${styleAesthetic}; subject=${styleSubject}; color=${styleColor}; light=${styleLighting}; texture=${styleTexture}; camera=${styleCamera}; mood=${styleMood}; render=${styleRender}; gameplay-features=${styleFeatures}.
+
+DIFFERENTIATION:
+Do not reuse another pack_12 prompt composition. Make this screenshot distinct through camera angle, gameplay loop, environment affordance, color script, threat/objective type, and scale.
+Avoid generic fantasy corridor, market aisle, library aisle, camera prop, studio setup, concept-art hero pose, centered character pinup, or pretty environment postcard unless it is clearly playable and preset-specific.
+
+Output only the image, 1536x1024 landscape gameplay screencap.${negative}`);
+  }
+  const objectOnlyPromptOverrides: Record<
+    string,
+    {
+      hero: string;
+      environment: string;
+      detail: string;
+      feeling: string;
+      cameraFocus: string;
+      action: string;
+    }
+  > = {
     'SP05-062': {
       hero: 'No character hero. Focal anchor is a split mask/emblem still life with fractured lacquer, membrane planes, and sealed shadow voids.',
-      environment: 'Use shallow abstract darkness or simple material planes only; no ruin, cathedral, corridor, street, room, or fantasy location.',
-      action: 'No action scene. Show quiet metamorphic tension through fracture, pressure, and membrane stretch.',
+      environment:
+        'Use shallow abstract darkness or simple material planes only; no ruin, cathedral, corridor, street, room, or fantasy location.',
+      detail:
+        'Secondary detail must be material-only: fracture edge, membrane tension, lacquer chip, or shadow seam.',
+      feeling:
+        'Emotion comes from pressure, fracture, restraint, and sealed darkness, not from a face, posture, or body.',
+      cameraFocus:
+        'Prioritize the mask/emblem material read and silhouette hierarchy; no facial angle, no body pose.',
+      action:
+        'No action scene. Show quiet metamorphic tension through fracture, pressure, and membrane stretch.',
     },
     'SP05-065': {
       hero: 'No character hero. Focal anchor is pale threshold slabs, ash-matte planes, silver edge cuts, and moonlit negative space.',
-      environment: 'Use abstract exterior void and material planes only; no doorway scene, corridor, ruin, castle, person, monster, or chase setting.',
-      action: 'No action scene. Build dread through stillness, spacing, and severe silhouette geometry.',
+      environment:
+        'Use abstract exterior void and material planes only; no doorway scene, corridor, ruin, castle, person, monster, or chase setting.',
+      detail:
+        'Secondary detail must be a broad material cue: ash grain, silver edge, porcelain crack, or cold shadow cut.',
+      feeling:
+        'Dread comes from still spacing and severe figure-ground tension, not from faces, posture, bodies, monsters, or events.',
+      cameraFocus:
+        'Focus on slab geometry, edge light, and negative-space hierarchy; no facial angle, no prop hero.',
+      action:
+        'No action scene. Build dread through stillness, spacing, and severe silhouette geometry.',
     },
     'SP05-066': {
       hero: 'No character hero. Focal anchor is ceramic-botanical seam geometry: clean pale panels, petal fractures, and restrained crimson stress.',
-      environment: 'Use clinical abstract voids or simple tabletop-like material depth only; no cathedral, garden, body, laboratory, corridor, or room.',
-      action: 'No action scene. Show invasive pressure through seams, splits, and controlled organic growth.',
+      environment:
+        'Use clinical abstract voids or simple tabletop-like material depth only; no cathedral, garden, body, laboratory, corridor, or room.',
+      detail:
+        'Secondary detail must be seam-only: petal fracture, ceramic split, graphite void, or restrained crimson stress line.',
+      feeling:
+        'Paranoia comes from invasive geometry and controlled seams, not from face, posture, body, surgery, or creature drama.',
+      cameraFocus:
+        'Focus on ceramic planes and seam hierarchy; no facial angle, no anatomical closeup, no body crop.',
+      action:
+        'No action scene. Show invasive pressure through seams, splits, and controlled organic growth.',
     },
     'SP05-067': {
       hero: 'No character hero. Focal anchor is bioluminescent mineral bloom, relic patina, and layered vertical depth.',
-      environment: 'Use compressed abstract abyssal depth only; no explorer, cave tunnel, corridor, lantern, map, rope, or expedition scene.',
+      environment:
+        'Use macro specimen depth or compressed abstract abyssal darkness only; no ruin, arch, cathedral, courtyard, architecture, explorer, cave tunnel, corridor, lantern, map, rope, or expedition scene.',
+      detail:
+        'Secondary detail must be environmental material: mineral bloom, damp patina, mossy edge, or pressure layer.',
+      feeling:
+        'Wonder and danger come from glow, depth, and material pressure, not from face, posture, character, or monster.',
+      cameraFocus:
+        'Focus on foreground-to-depth material relation; no facial angle, no figure, no expedition prop.',
       action: 'No action scene. Let glow, pressure, and depth imply costly wonder.',
     },
     'SP05-068': {
       hero: 'No character hero. Focal anchor is soot, scraped enamel shards, warped circular crop interruptions, and illegible occult-industrial stains.',
-      environment: 'Use smoky abstract grime field only; no alley, corridor, cathedral, mask portrait, wizard, weapon, or readable sigil wall.',
-      action: 'No action scene. Make collision readable through overlapping frames, stains, and warped crop cuts.',
+      environment:
+        'Use smoky abstract grime field only; no alley, corridor, cathedral, mask portrait, wizard, weapon, or readable sigil wall.',
+      detail:
+        'Secondary detail must be texture-only: soot smear, enamel shard, warped crop edge, or illegible stain.',
+      feeling:
+        'Absurd menace comes from collision, grime, and warped framing, not from face, posture, wizard, mask portrait, or weapon.',
+      cameraFocus:
+        'Focus on overlapping frames and texture collision; no facial angle, no character pose, no wall scene.',
+      action:
+        'No action scene. Make collision readable through overlapping frames, stains, and warped crop cuts.',
     },
     'SP05-069': {
       hero: 'No character hero. Focal anchor is worn stone slabs, scuffed dirty metal plates, smoky shadow wedges, and narrow practical light slices.',
-      environment: 'Use abstract material arrangement only; no dungeon hallway, corridor, adventurer, enemy, torch, lamp, shield, weapon, or game board.',
-      action: 'No action scene. Suggest procedural severity through ordered fragments and constrained light.',
+      environment:
+        'Use abstract material arrangement only; no dungeon hallway, corridor, adventurer, enemy, torch, lamp, shield, weapon, or game board.',
+      detail:
+        'Secondary detail must be material-only: scuffed metal, chipped stone, smoke wedge, or narrow light slice.',
+      feeling:
+        'Severity comes from ordered fragments and constrained light, not from face, posture, adventurer, enemy, or combat.',
+      cameraFocus:
+        'Focus on material arrangement and light hierarchy; no facial angle, no held prop, no hallway perspective.',
+      action:
+        'No action scene. Suggest procedural severity through ordered fragments and constrained light.',
+    },
+    'SP05-123': {
+      hero: 'No character hero. Focal anchor is ceremonial inferno material: ember halos, black silhouette cuts, heat-buckled panels, flat orange-cyan heat fields, and scorched seams.',
+      environment:
+        'Use shallow graphic heat space only; no stained glass, window, chapel interior, cathedral, corridor, uniformed person, injury scene, icon wall, or emergency crew.',
+      detail:
+        'Secondary detail must be heat/material-only: ember rim, soot edge, scorched panel seam, or heat-buckled surface.',
+      feeling:
+        'Urgency comes from heat geometry and contrast, not from face, posture, uniform, injury, or action scene.',
+      cameraFocus:
+        'Focus on heat-material hierarchy and silhouette cuts; no facial angle, no body pose, no heroic figure.',
+      action: 'No action scene. Show pressure through ember flow, black cuts, and heat distortion.',
+    },
+    'SP05-124': {
+      hero: 'No character hero. Focal anchor is electric-blue sports pressure geometry: field-line fragments, target-lock arcs, acid accents, and compressed competitive zones.',
+      environment:
+        'Use abstract field-plane depth only; no person, athlete, body, face, hair, limbs, stadium crowd, soccer player, ball closeup, locker room, scoreboard, numbers, or team logo.',
+      detail:
+        'Secondary detail must be graphic: field-line scratch, pressure zone edge, target arc, or acid accent shard.',
+      feeling:
+        'Competitive intensity comes from line pressure and spatial compression, not from athlete face, posture, team scene, or assault.',
+      cameraFocus:
+        'Focus on field-line geometry and color hierarchy; no facial angle, no sports portrait, no body crop, no ball hero.',
+      action:
+        'No action scene. Suggest motion through line convergence, pressure zones, and target geometry.',
+    },
+    'SP05-125': {
+      hero: 'No character hero. Focal anchor is civic-scale response material: concrete/steel fragments, hazard color blocks, infrastructure markers, and response-grid clarity.',
+      environment:
+        'Use abstract municipal infrastructure slices only; no monster, armed squad, destruction aftermath, signage, city disaster panorama, or logo.',
+      detail:
+        'Secondary detail must be scale/material-only: steel edge, concrete crack, hazard stripe, or response-grid block.',
+      feeling:
+        'Resilience comes from ordered infrastructure and hazard color, not from faces, squads, monsters, or disaster action.',
+      cameraFocus:
+        'Focus on infrastructure scale markers and material hierarchy; no facial angle, no creature closeup, no squad pose.',
+      action:
+        'No action scene. Suggest colossal scale through grid spacing, hard shadows, and concrete/steel contrast.',
+    },
+    'SP05-127': {
+      hero: 'Focal anchor may include one restrained original figure or mask-like silhouette, but the real subject is poison-garden material: lotus bloom, toxic pollen haze, lacquered black ink cuts, and ceremonial petal geometry.',
+      environment:
+        'Use lush botanical depth or shallow sacred garden fragments only; no corridor, temple hall, throne room, weapon closeup, execution scene, gore, camera, market aisle, or library aisle.',
+      detail:
+        'Secondary detail must be botanical/material: petal translucency, jade tendril, pollen mist, lacquer edge, or wet ink seam.',
+      feeling:
+        'Danger comes from beauty under poison pressure, not from explicit violence, body horror, face drama, or weapon action.',
+      cameraFocus:
+        'Focus on floral-horror hierarchy and ceremonial color blocks; if a figure appears, keep it small/supporting, not portrait hero.',
+      action:
+        'No fight scene. Suggest fatal calm through bloom density, toxic color, and sharp negative space.',
+    },
+    'SP05-128': {
+      hero: 'No weapon hero. Focal anchor is black ink/marble spiritual opera: sweeping black cloth-like forms, white marble planes, red accent cuts, and explosive calligraphic energy.',
+      environment:
+        'Use abstract stage depth or marble light planes only; no palace corridor, throne hall, sword closeup, battle pose, readable symbols, logo, or full armored hero.',
+      detail:
+        'Secondary detail must be graphic/material: ink stroke, marble edge, red seal-like accent, violet particle dust, or white-black light split.',
+      feeling:
+        'Authority comes from contrast, pageantry, and calligraphic force, not from a recognizable warrior, blade, face, or combat scene.',
+      cameraFocus:
+        'Focus on vertical black-white composition and energy hierarchy; no facial angle, no held prop.',
+      action:
+        'No action scene. Show spiritual opera through sweeping ink force and marble-light contrast.',
+    },
+    'SP05-129': {
+      hero: 'No character hero. Focal anchor is deadpan impact geometry: pristine block forms, absurd scale contrast, flat reaction space, and polished impact rings.',
+      environment:
+        'Use clean abstract impact space only; no city destruction, bald hero, fist foreground, street fight, rubble panorama, weapon, or crowd.',
+      detail:
+        'Secondary detail must be comic-timing geometry: dust ring, cracked block, offset shadow, or flat reaction gap.',
+      feeling:
+        'Comedy comes from timing and scale mismatch, not from character dynamics, face, punch, or battle scene.',
+      cameraFocus:
+        'Focus on blocky impact hierarchy and negative space; no facial angle, no punch pose, no hero body.',
+      action: 'No action scene. Show aftermath through one clean impact mark and deadpan spacing.',
+    },
+    'SP05-131': {
+      hero: 'Focal anchor may include one original street-protector silhouette, but avoid face portrait and fight pose. Emphasize wind-shear jacket shapes, scuffed fabric, neon grit, and protector momentum.',
+      environment:
+        'Use open streetlight atmosphere or graphic asphalt planes only; no alley corridor, market aisle, school hallway, gang lineup, camera, weapon, readable signs, or storefront wall.',
+      detail:
+        'Secondary detail must be motion/material: wind streak, pavement grit, jacket edge, bruise-color glow, or neon rim accent.',
+      feeling:
+        'Swagger comes from motion and loyalty, not from assault, weapon threat, full-body hero posing, or literal brawl.',
+      cameraFocus:
+        'Focus on diagonal movement and streetlight color hierarchy; keep any figure integrated with motion, not centered portrait.',
+      action:
+        'No fight scene. Suggest protector rush through wind pressure, scuffed texture, and neon edge light.',
+    },
+    'SP05-132': {
+      hero: 'Focal anchor may include one small original silhouette, but the subject is violet-black shadow ascension: aura crown, shadow swarm, rank-glow shards, and vertical power pressure.',
+      environment:
+        'Use abstract portal depth or smoky stage void only; no dungeon corridor, throne hall, raid party lineup, weapon, monster, city, or recognizable armor hero.',
+      detail:
+        'Secondary detail must be aura/material: violet rim, black smoke grain, silver rank glint, or shadow shard.',
+      feeling:
+        'Dominance comes from vertical pressure and shadow multiplication, not from face, weapon, body pose, or battle scene.',
+      cameraFocus:
+        'Focus on aura hierarchy and upward silhouette scale; keep any figure subordinate to shadow mass.',
+      action:
+        'No fight scene. Suggest rank-up through glow tiers, shadow depth, and calm pressure.',
+    },
+    'SP05-134': {
+      hero: 'Focal anchor may include one calm original action silhouette, but the subject is mundane-action velocity: clean stunt vectors, product-color blocks, tile shine, and dead-calm timing.',
+      environment:
+        'Use graphic retail-light planes only; no supermarket aisle, shelf corridor, product labels, readable packaging, camera, gun, knife, crowd, storefront, or convenience-store literal interior.',
+      detail:
+        'Secondary detail must be abstract mundane material: glossy color block, tile reflection, motion streak, or yellow action cut.',
+      feeling:
+        'Comedy comes from calm precision inside everyday brightness, not from literal shopping scene or weapon threat.',
+      cameraFocus:
+        'Focus on action lanes and clean negative space; no face portrait, no aisle perspective.',
+      action:
+        'No combat scene. Suggest velocity through snapped perspective, motion lines, and bright mundane geometry.',
+    },
+    'SP05-135': {
+      hero: 'No character hero. Focal anchor is rule-logic impact material: cause-effect arrows, unlucky rebound arcs, pop-symbol bursts, and fractured clean panels.',
+      environment:
+        'Use shallow graphic impact space only; no bodies, gore, hospital, street fight, weapon, readable symbols, text, or couple portrait.',
+      detail:
+        'Secondary detail must be conceptual: arrow fragment, rebound curve, pop burst, hazard green accent, or cracked panel edge.',
+      feeling:
+        'Chaos comes from rules breaking and domino timing, not from injury, face drama, violence, or romance pose.',
+      cameraFocus:
+        'Focus on cause-effect rhythm and readable panel hierarchy; no facial angle, no body crop.',
+      action: 'No action scene. Show chain reaction through arrows, rebounds, and impact geometry.',
+    },
+    'SP05-136': {
+      hero: 'Focal anchor may include a grimoire-like object or small squad rhythm silhouettes, but the subject is thunder page-glow force and scrappy underdog energy.',
+      environment:
+        'Use abstract spell-light depth only; no classroom, castle hall, library aisle, bookshop, weapon, full team lineup, readable runes, or logo.',
+      detail:
+        'Secondary detail must be material: parchment grain, torn cloth edge, thunder arc, rough stone dust, or page-glow seam.',
+      feeling:
+        'Determination comes from loud magical force and rough edges, not from shouting face, sword pose, or squad portrait.',
+      cameraFocus: 'Focus on page-glow/thunder hierarchy; keep figures small if present.',
+      action:
+        'No fight scene. Suggest underdog force through page flashes, thunder diagonals, and ragged motion.',
+    },
+    'SP05-133': {
+      hero: 'No character hero. Focal anchor is deadpan magic-force material: ornate spell curls, blunt blocky interruption, clean color planes, and absurd force geometry.',
+      environment:
+        'Use shallow graphic academy-color space only; no school hallway, classroom, uniformed student, crest, readable magic circle, weapon, or brawl.',
+      detail:
+        'Secondary detail must be abstract magic/material: curl edge, block impact, glow seam, or comic pause mark.',
+      feeling:
+        'Comedy comes from magical force interrupted by blunt geometry, not from faces, character dynamics, or fight choreography.',
+      cameraFocus:
+        'Focus on spell geometry and block collision hierarchy; no facial angle, no body pose, no corridor.',
+      action:
+        'No action scene. Suggest force through curls, block interruption, and clean spacing.',
+    },
+    'SP05-137': {
+      hero: 'No character hero. Focal anchor is optimistic science-invention material: handmade machine fragment, chalk-schematic non-text marks, mineral sunlight, and discovery glow.',
+      environment:
+        'Use abstract workshop-light planes without a workshop set; no lab classroom, tool pile, readable formulas, inventor portrait, weapon, camera, or desk clutter.',
+      detail:
+        'Secondary detail must be invention/material-only: brass edge, chalk line, mineral glow, or handmade joint.',
+      feeling:
+        'Optimism comes from discovery light and handmade structure, not from face, posture, classroom scene, or tool pile.',
+      cameraFocus:
+        'Focus on invention fragment and light hierarchy; no facial angle, no person, no readable board.',
+      action:
+        'No action scene. Suggest discovery through glow, schematic rhythm, and material contrast.',
+    },
+    'SP05-138': {
+      hero: 'Focal anchor may include one restrained original silhouette, but no sword hero. Emphasize neon rain, oathlike stillness, wet asphalt color, and blade-like light cuts as graphic energy.',
+      environment:
+        'Use open rain field or abstract noir planes only; no alley corridor, street duel, weapon closeup, camera, shopfront, readable signs, or full face portrait.',
+      detail:
+        'Secondary detail must be weather/light: rain streak, cyan rim, red accent cut, wet reflection, or occult particle edge.',
+      feeling:
+        'Severity comes from restraint and rain-light pressure, not from visible violence, weapon pose, or revenge tableau.',
+      cameraFocus:
+        'Focus on rain-layer hierarchy and silhouette restraint; no facial angle, no held blade.',
+      action:
+        'No fight scene. Suggest oath tension through stillness, rain diagonals, and narrow light cuts.',
+    },
+    'SP05-139': {
+      hero: 'No character hero. Focal anchor is colossal rupture scale: cracked wall planes, dust shafts, tether-vector diagonals, smoke pressure, and tiny scale markers.',
+      environment:
+        'Use abstract breached-wall mass only; no giant humanoid, military squad portrait, city destruction panorama, weapon, gore, corridor, or recognizable uniform hero.',
+      detail:
+        'Secondary detail must be scale/material: cracked stone grain, dust cloud, cable sheen, falling-depth line, or cold sky gap.',
+      feeling:
+        'Desperation comes from scale and rupture, not from faces, monsters, soldiers, or battle choreography.',
+      cameraFocus:
+        'Focus on wall-scale hierarchy and dust-light depth; no facial angle, no creature closeup.',
+      action:
+        'No action scene. Suggest vertical terror through rupture geometry, dust, and tiny scale cues.',
+    },
+    'SP05-142': {
+      hero: 'Focal anchor may include one hardboiled original silhouette, but no gun or weapon. Emphasize humid noir heat, salt haze, gunmetal texture, smoke curls, and tropical teal-rust contrast.',
+      environment:
+        'Use shallow humid noir atmosphere only; no dock, boat, gun closeup, cigarette portrait, bar interior, market aisle, corridor, camera, or vehicle chase.',
+      detail:
+        'Secondary detail must be material/weather: salt haze, brushed metal, rust edge, smoke curl, sweat sheen, or oily black shadow.',
+      feeling:
+        'Danger comes from heat, grit, and noir compression, not from visible firearms, face drama, or action pose.',
+      cameraFocus:
+        'Focus on humidity/material hierarchy; keep any figure integrated with atmosphere, not centered weapon hero.',
+      action:
+        'No shootout. Suggest lawless grit through heat glare, smoke, and hard material cuts.',
+    },
+    'SP05-148': {
+      hero: 'Focal anchor may include overlapping original ensemble silhouettes, but no gang lineup or weapon display. Emphasize jazz-cut diagonals, brass glints, sepia motion, and nonlinear pulp rhythm.',
+      environment:
+        'Use abstract amber pulp space only; no train compartment, bar interior, corridor, stage, table scene, gun, camera, readable poster, or crowd row.',
+      detail:
+        'Secondary detail must be rhythm/material: brass glint, smoke grain, paper pulp edge, carriage-like stripe, or amber flash.',
+      feeling:
+        'Chaos comes from syncopated framing and ensemble rhythm, not from literal crime scene, weapon threat, or train setting.',
+      cameraFocus:
+        'Focus on overlapping angles and amber motion hierarchy; no face portrait, no prop hero.',
+      action:
+        'No action scene. Suggest momentum through diagonal cuts, smoke, and brass/sepia contrast.',
+    },
+    'SP05-221': {
+      hero: 'No idol or pilot portrait. Focal anchor is pop-signal engineered motion: concert-light arcs, contrail calligraphy, alloy panels, cyan-pink signal layers, and hopeful gold edge light.',
+      environment:
+        'Use abstract sky/stage-light depth only; no concert stage, cockpit, missile barrage, readable UI, performer, crowd, city, camera, or robot face closeup.',
+      detail:
+        'Secondary detail must be signal/material: contrail arc, panel seam, cyan-pink glow, alloy edge, or music-wave line.',
+      feeling:
+        'Romance comes from signal collision and motion, not from characters, cockpit drama, or literal performance.',
+      cameraFocus: 'Focus on signal layers and hard mechanical contours; no face, no UI panel.',
+      action:
+        'No battle scene. Suggest engineered emotion through contrails, lights, and alloy rhythm.',
+    },
+    'SP05-223': {
+      hero: 'Focal anchor may include an original chrome armor silhouette, but avoid face portrait and pinup pose. Emphasize segmented articulation, acid cyan-magenta voltage, graphite panels, and precision ornament.',
+      environment:
+        'Use abstract cyber-noir light planes only; no corridor, alley, lab, motorcycle, weapon, camera, readable UI, or full fashion photoshoot setup.',
+      detail:
+        'Secondary detail must be mechanical/material: chrome seam, graphite plate, electric violet spark, hatch accent, or magenta-cyan rim.',
+      feeling:
+        'Elegance comes from armor geometry and analog voltage, not from glamour pose, face, or weapon threat.',
+      cameraFocus:
+        'Focus on segmented armor/material hierarchy; keep figure as design read, not portrait.',
+      action:
+        'No action scene. Suggest noir voltage through rim light, seams, and hard contour rhythm.',
+    },
+    'SP05-224': {
+      hero: 'No character hero. Focal anchor is sterile arcology control geometry: ceramic panels, severe grid slices, exoshell segmentation, cold cyan glass, and warning-red restraint.',
+      environment:
+        'Use abstract control-space planes only; no corridor perspective, hospital room, lab desk, command center, readable UI, camera, person, robot, or hallway.',
+      detail:
+        'Secondary detail must be sterile material: ceramic edge, glass reflection, tactical gray seam, warning red block, or cyan specular plane.',
+      feeling:
+        'Pressure comes from control geometry and sterile surfaces, not from people, hallway depth, or tech clutter.',
+      cameraFocus:
+        'Focus on severe panel hierarchy and clean material contrast; no face, no room scene.',
+      action:
+        'No action scene. Suggest restraint through hard grids, glass planes, and cold light.',
+    },
+    'SP05-225': {
+      hero: 'Focal anchor may include compact scrap-mech force, but avoid humanoid chase hero. Emphasize rusted metal rhythm, spark-lit grit, stacked steel arcs, and resilient motion.',
+      environment:
+        'Use abstract workshop-dark or open spark field only; no corridor, alley chase, hangar tunnel, robot crouch, weapon, camera, readable signage, or market/mecha street.',
+      detail:
+        'Secondary detail must be material: rust edge, oil black plate, teal spark, bruised violet shadow, or scrap seam.',
+      feeling:
+        'Resilience comes from worn metal and motion pressure, not from chase scene, hero pose, or corridor depth.',
+      cameraFocus:
+        'Focus on scrap-metal arcs and spark hierarchy; no facial angle, no robot portrait.',
+      action: 'No chase. Suggest velocity through compact arcs, sparks, and stacked metal rhythm.',
+    },
+    'SP05-226': {
+      hero: 'No character hero. Focal anchor is cyber-goth concrete dread: black silhouette slabs, rain reflection, brutalist negative space, and cold machine glints.',
+      environment:
+        'Use shallow abstract concrete planes only; no mausoleum hall, corridor, chapel, throne room, person, camera, lamp, or readable signage.',
+      detail:
+        'Secondary detail must be material: wet concrete edge, black panel seam, rain reflection, cold cyan glint, or void shadow.',
+      feeling:
+        'Dread comes from emptiness and hard surfaces, not from faces, bodies, gothic props, or room staging.',
+      cameraFocus:
+        'Focus on slab hierarchy and negative space; no portrait, no hallway perspective.',
+      action:
+        'No action scene. Suggest anxiety through rain, concrete mass, and black-cyan restraint.',
+    },
+    'SP05-227': {
+      hero: 'No character hero. Focal anchor is rust-wire descent: oxidized cable diagonals, failing light, amputated geometry, and hard shadow cuts.',
+      environment:
+        'Use abstract pressure field only; no tunnel corridor, sewer, alley, person, robot crouch, camera, lamp, or industrial hallway.',
+      detail:
+        'Secondary detail must be material: rust wire, cable abrasion, failing light strip, oil black plate, or brutal panel cut.',
+      feeling:
+        'Nihilism comes from downward pressure and cable decay, not from body harm, chase, or tunnel scene.',
+      cameraFocus:
+        'Focus on wire/material hierarchy; no face, no full body, no tunnel vanishing point.',
+      action:
+        'No action scene. Suggest descent through diagonals, failing light, and oxidized pressure.',
+    },
+    'SP05-229': {
+      hero: 'No enforcement character. Focal anchor is punitive neon vice texture: warning-light blocks, analog surveillance mood, hard industrial etching, and black-red-cyan abrasion.',
+      environment:
+        'Use graphic industrial texture space only; no police portrait, camera prop, readable UI, city alley, corridor, weapon, dashboard, or control room.',
+      detail:
+        'Secondary detail must be texture/material: warning red strip, scratched metal, cyan scan glow, black ink edge, or analog noise block.',
+      feeling:
+        'Pressure comes from surveillance texture and warning discipline, not from people, guns, cameras, or interfaces.',
+      cameraFocus:
+        'Focus on abrasive panel composition; no face, no device closeup, no room scene.',
+      action:
+        'No action scene. Suggest punitive tech through warning color, etching, and dense shadow.',
+    },
+    'SP05-230': {
+      hero: 'No character hero. Focal anchor is terminal megastructure silence: recursive concrete slabs, tiny scale markers, sparse machine light, and terminal void geometry.',
+      environment:
+        'Use abstract megastructure scale only; no corridor tunnel, hallway, city street, bridge walkway, person portrait, vehicle, camera, or readable signage.',
+      detail:
+        'Secondary detail must be scale/material: concrete seam, small light marker, distant void cut, hard panel edge, or dust haze.',
+      feeling:
+        'Silence comes from scale and repetition, not from literal hallway exploration or sci-fi city vista.',
+      cameraFocus: 'Focus on scale hierarchy; tiny markers allowed, no central person.',
+      action:
+        'No action scene. Suggest civilization scale through recursive slabs and sparse lights.',
+    },
+    'SP05-231': {
+      hero: 'No humanoid hero. Focal anchor is coral resonance liturgy: coral tectonic curves, biomechanical panels, sacred scale, and sonic ring rhythm.',
+      environment:
+        'Use abstract sacred bio-mechanical field only; no cathedral corridor, temple hall, person, robot crouch, altar, camera, readable symbol, or market/library aisle.',
+      detail:
+        'Secondary detail must be coral/material: pink mineral curve, bio-panel seam, sonic ring, pearl glow, or ceremonial edge.',
+      feeling:
+        'Melancholy comes from sacred scale and resonance, not from humanoid drama or architecture.',
+      cameraFocus:
+        'Focus on coral-machine hierarchy and ring rhythm; no face, no hall perspective.',
+      action:
+        'No action scene. Suggest ritual through resonance arcs, coral forms, and quiet light.',
+    },
+    'SP05-232': {
+      hero: 'No soldier or pilot. Focal anchor is dustfront drone lament: low arthropod drone geometry, abrasive dust, functional joints, and horizontal tactical grief.',
+      environment:
+        'Use flat dusty horizon planes only; no battlefield squad, cockpit, war corridor, vehicle chase, weapon, camera, readable UI, or city ruins.',
+      detail:
+        'Secondary detail must be operational material: dust abrasion, joint hinge, low shadow, dull sensor glow, or sand-scored plate.',
+      feeling:
+        'Lament comes from austerity and dehumanized machinery, not from battle action, bodies, or explosions.',
+      cameraFocus: 'Focus on low drone silhouette and horizon pressure; no portrait, no pilot.',
+      action:
+        'No action scene. Suggest operational grief through dust, low geometry, and sparse light.',
+    },
+    'SP05-233': {
+      hero: 'No character hero. Focal anchor is closed-habitat survival: modular fortress blocks, sealed biotech membranes, airlock-like geometry, and cosmic negative space.',
+      environment:
+        'Use abstract vacuum-scale planes only; no spaceship corridor, control room, person, cockpit, camera, readable UI, or battle scene.',
+      detail:
+        'Secondary detail must be survival material: sealed panel, membrane seam, oxygen-blue glint, habitat block, or black void edge.',
+      feeling:
+        'Discipline comes from sealed structure and emptiness, not from crew drama or corridor exploration.',
+      cameraFocus: 'Focus on modular habitat hierarchy; no face, no hallway perspective.',
+      action: 'No action scene. Suggest hostile scale through closed forms and void pressure.',
+    },
+    'SP05-234': {
+      hero: 'No commander or screen operator. Focal anchor is extinction command pressure: alarm color blocks, hostile mass abstraction, layered vector panels, and hard tactical geometry.',
+      environment:
+        'Use abstract command-pressure field only; no readable UI, control room, person, cockpit, city attack, monster, weapon, or camera.',
+      detail:
+        'Secondary detail must be graphic/material: red alarm block, vector slice, black mass, cyan edge, or scratched panel.',
+      feeling:
+        'Apocalypse comes from geometry and pressure, not from literal screens, battle, or faces.',
+      cameraFocus: 'Focus on layered command composition; no text, no interface detail.',
+      action: 'No action scene. Suggest attrition through mass shapes, alarms, and hard layering.',
+    },
+    'SP05-235': {
+      hero: 'Focal anchor may include one tiny stylized youth silhouette, but the subject is pop-cyber simulation gloss: neon holography, glossy night surfaces, and concealed unease.',
+      environment:
+        'Use abstract glossy city-light planes only; no market aisle, storefront wall, readable sign, camera, phone, bedroom, or crowd.',
+      detail:
+        'Secondary detail must be simulation material: cyan-magenta reflection, holographic pane, chrome edge, scanline glow, or wet asphalt sheen.',
+      feeling:
+        'Freedom and unease come from glossy media layers, not from portrait, fashion pose, or literal city scene.',
+      cameraFocus:
+        'Focus on reflective layers and neon hierarchy; keep any figure small/supporting.',
+      action:
+        'No action scene. Suggest rebellion through color, speed lines, and simulation depth.',
+    },
+    'SP05-236': {
+      hero: 'No humanoid robot crouch. Focal anchor is compact attrition hardware: low armored block, mud, rust, minimal optics, and logistical wear.',
+      environment:
+        'Use plain muddy ground or abstract maintenance shadow only; no corridor, hangar tunnel, battlefield squad, person, weapon, camera, or hero mecha pose.',
+      detail:
+        'Secondary detail must be functional material: mud scrape, rust seam, armor plate, tiny optic, or worn hinge.',
+      feeling:
+        'Pressure comes from utility and wear, not from spectacle, chase, or humanoid drama.',
+      cameraFocus:
+        'Focus on compact hardware silhouette and surface wear; no face-like robot portrait.',
+      action: 'No action scene. Suggest attrition through weight, mud, and worn function.',
+    },
+    'SP05-237': {
+      hero: 'Focal anchor may include monumental abstract machine silhouette, not a character. Emphasize ignition plume, launch diagonals, luminous sacrifice, and rising scale.',
+      environment:
+        'Use abstract launch-light field only; no cockpit, pilot face, hangar corridor, weapon, crowd, readable markings, or city battle.',
+      detail:
+        'Secondary detail must be scale/material: ignition glow, heat plume, alloy edge, white-gold flare, or vertical pressure line.',
+      feeling:
+        'Heroism comes from rising scale and sacrifice light, not from posing, faces, or weapon action.',
+      cameraFocus: 'Focus on vertical launch hierarchy; no central person.',
+      action:
+        'No battle scene. Suggest sacrifice through ignition, upward motion, and luminous mass.',
+    },
+    'SP05-238': {
+      hero: 'Focal anchor may include a clean colossus-scale silhouette, but keep it graphic and original. Emphasize digital lattice, nostalgic signal light, and layered scale.',
+      environment:
+        'Use abstract grid-scale atmosphere only; no city fight, tokusatsu street set, weapon, cockpit, camera, readable UI, or hero pose.',
+      detail:
+        'Secondary detail must be signal/material: digital lattice, clean rim, scale marker, cyan grid, or nostalgic glow.',
+      feeling:
+        'Melancholy comes from scale and signal light, not from monster fight or literal suit staging.',
+      cameraFocus: 'Focus on scale layering and lattice rhythm; no face, no action tableau.',
+      action:
+        'No action scene. Suggest heroic scale through lattice overlays and clean silhouette geometry.',
+    },
+    'SP05-240': {
+      hero: 'No character hero. Focal anchor is tricolor ignition geometry: cyan-magenta-yellow fire blocks, protest-poster diagonals, flat heat facets, and black shock cuts.',
+      environment:
+        'Use abstract poster space only; no street riot, crowd, police, camera, weapon, readable sign, wall mural, market, or city corridor.',
+      detail:
+        'Secondary detail must be graphic/material: heat facet, chroma collision, black cut, white thermal flash, or diagonal flame edge.',
+      feeling:
+        'Intensity comes from formal chaos and color collision, not from literal protest scene or people.',
+      cameraFocus: 'Focus on poster hierarchy and bold shapes; no face, no scene perspective.',
+      action: 'No action scene. Suggest ignition through color blocks and diagonal pressure.',
+    },
+    'SP05-241': {
+      hero: 'No mandatory character. Focal anchor is systemic cooperation fantasy: modular civic grid, arcane administration glow, emblem-like roles, and map-social clarity.',
+      environment:
+        'Use abstract civic map/table planes only; no tavern, market aisle, library, office, readable UI, document text, crowd, camera, or council room.',
+      detail:
+        'Secondary detail must be system/material: polished stone block, wood tabular plane, arcane cyan node, emerald admin line, or warm amber role marker.',
+      feeling:
+        'Hope comes from visible cooperation and structure, not from literal bureaucracy or group portrait.',
+      cameraFocus: 'Focus on modular hierarchy and warm-cool role contrast; no text/UI detail.',
+      action:
+        'No action scene. Suggest society working through grids, nodes, and clear material layers.',
+    },
+    'SP05-242': {
+      hero: 'A small vulnerable original figure or pair may appear, but the subject is smoke-mud survival: wet cloth, repaired leather, weak firelight, and humble defensive spacing.',
+      environment:
+        'Use shallow muddy camp/field atmosphere only; no marketplace, library, fantasy hall, weapon hero, monster, camera, tent corridor, or dramatic castle vista.',
+      detail:
+        'Secondary detail must be material: mud smear, patched leather, damp cloth, ember glow, unpolished metal, or low fog.',
+      feeling:
+        'Vulnerability comes from scale and worn materials, not from hero pose, melodrama, or epic battle.',
+      cameraFocus:
+        'Focus on human-scale fragility and material wear; keep figures quiet, not portrait heroes.',
+      action: 'No action scene. Suggest survival through stillness, weak light, and repaired gear.',
+    },
+    'SP05-243': {
+      hero: 'A small noble adventurer silhouette may appear, but avoid hero lineup. Focal anchor is classic OVA tapestry: heraldic fabric, old stone, sapphire-gold depth, and tabletop quest hierarchy.',
+      environment:
+        'Use abstract tapestry/landscape depth only; no castle corridor, market town, tavern, weapon closeup, camera, crowd, or readable banner.',
+      detail:
+        'Secondary detail must be mythic material: embroidered textile, heraldic color block, old stone edge, leather strap, or warm dawn rim.',
+      feeling:
+        'Adventure comes from timeless composition and noble material, not from generic fantasy hero posing.',
+      cameraFocus:
+        'Focus on tapestry hierarchy and classic color; figures must support, not dominate.',
+      action: 'No action scene. Suggest quest through layered emblem, fabric, and horizon depth.',
+    },
+    'SP05-244': {
+      hero: 'A ceremonial original figure may appear, but the subject is imperial destiny: jade-cinnabar authority, lacquered ritual planes, heavy silk folds, and vertical mandate geometry.',
+      environment:
+        'Use abstract court-ritual space only; no palace corridor, throne room, market, library, readable talisman text, weapon, camera, or crowd.',
+      detail:
+        'Secondary detail must be ceremonial material: lacquer edge, jade plane, bronze ornament, silk fold, mist-blue rim, or cinnabar block.',
+      feeling:
+        'Authority comes from hierarchy and ritual weight, not from portrait, throne staging, or costume display alone.',
+      cameraFocus: 'Focus on vertical power geometry and material weight; no face closeup.',
+      action: 'No action scene. Suggest mandate through symmetry, folds, and restrained ornament.',
+    },
+    'SP05-245': {
+      hero: 'A romantic original silhouette may appear, but no tarot card text or mecha battle. Focal anchor is windblown prophecy: crimson dusk, arcane gold facets, swept cloth, and angular fate geometry.',
+      environment:
+        'Use abstract wind/sky prophecy space only; no market town, castle corridor, readable cards, cockpit, weapon, camera, or full battle vista.',
+      detail:
+        'Secondary detail must be prophecy material: wind-swept cloth, faceted glow, silver edge, crimson haze, or angular relic form.',
+      feeling:
+        'Romance and fate come from wind, color, and geometry, not from literal tarot card, face drama, or fantasy town.',
+      cameraFocus:
+        'Focus on diagonal wind hierarchy and crimson-blue contrast; keep figures secondary.',
+      action:
+        'No action scene. Suggest destiny through wind diagonals, relic light, and atmospheric tension.',
+    },
+    'SP05-246': {
+      hero: 'A small caravan silhouette may appear, but the subject is amber-turquoise arabesque adventure: jewel facets, brass ornament, warm dust, and layered labyrinth curves.',
+      environment:
+        'Use abstract ornamental travel space only; no market aisle, bazaar stall, palace corridor, crowd, readable sign, weapon, camera, or treasure-room scene.',
+      detail:
+        'Secondary detail must be ornamental material: embroidered textile, brass edge, turquoise crystal, warm dust, limestone plane, or arabesque curve.',
+      feeling:
+        'Adventure comes from mobile ornament and jewel magic, not from shopping, market props, or hero pose.',
+      cameraFocus: 'Focus on jewel/ornament hierarchy; keep figures secondary.',
+      action: 'No action scene. Suggest travel through layered curves, dust, and warm-cool facets.',
+    },
+    'SP05-247': {
+      hero: 'A quiet original figure or strange familiar may appear, but avoid portrait. Focal anchor is thorn-cottage enchantment: moss, bone-black curves, wet stone, old wood, and intimate ritual glow.',
+      environment:
+        'Use shallow garden/cottage material atmosphere only; no room interior, chair, curtain, lamp focus, library, market, corridor, readable parchment, camera, or gothic mansion scene.',
+      detail:
+        'Secondary detail must be domestic-occult material: moss fiber, wet stone, old wood, porcelain chip, thorn curl, or candlelike glow.',
+      feeling:
+        'Tender mystery comes from small ritual materials, not from furniture set dressing or dramatic portrait.',
+      cameraFocus: 'Focus on intimate material hierarchy; no full room staging.',
+      action: 'No action scene. Suggest enchantment through moss, bone, and low warm light.',
+    },
+    'SP05-248': {
+      hero: 'No chef portrait. Focal anchor is functional fantasy cuisine: cast iron, herb green, broth gold, worked stone, and practical circular preparation rhythm.',
+      environment:
+        'Use abstract cooking surface or camp-kitchen close material only; no dungeon corridor, market stall, restaurant, kitchen room, monster body, camera, readable labels, or food hero closeup alone.',
+      detail:
+        'Secondary detail must be culinary material: iron rim, broth steam, herb edge, grease shine, stone texture, or spice-red accent.',
+      feeling:
+        'Humor and appetite come from process and materials, not from literal meal scene or group portrait.',
+      cameraFocus: 'Focus on process geometry and warm material read; no face, no room scene.',
+      action:
+        'No action scene. Suggest cooking through circular rhythm, steam, and practical tools.',
+    },
+    'SP05-249': {
+      hero: 'No child portrait. Focal anchor is printing/craft devotion: paper pulp, ink blue, wooden press geometry, metal type texture, and warm low reading light.',
+      environment:
+        'Use abstract craft table planes only; no library aisle, bookstore, classroom, office, readable text, stack-wall of books, camera, or cozy room scene.',
+      detail:
+        'Secondary detail must be craft material: vellum edge, ink stain, wood grain, press screw, metal type block, or red wax accent.',
+      feeling:
+        'Devotion comes from patient material process, not from bookshelves, documents, or portrait.',
+      cameraFocus: 'Focus on paper/press hierarchy; no readable letters or UI.',
+      action: 'No action scene. Suggest invention through steps, texture, and warm craft light.',
+    },
+    'SP05-250': {
+      hero: 'A small vow-like pilgrim silhouette may appear, but no paladin portrait. Focal anchor is quiet sacred stone fantasy: dawn gold, vow-white cloth, eroded stone, and restrained relic glow.',
+      environment:
+        'Use abstract sanctuary-stone atmosphere only; no temple corridor, church interior, throne room, weapon, armor hero, camera, readable symbol, or city vista.',
+      detail:
+        'Secondary detail must be sacred material: eroded stone, blessed metal edge, travel cloth, dust mote, dawn shaft, or relic glow.',
+      feeling:
+        'Devotion comes from restraint and ethical clarity, not from religious set dressing or heroic combat.',
+      cameraFocus: 'Focus on stone/light hierarchy; keep figure secondary if present.',
+      action: 'No action scene. Suggest vow through vertical light, quiet stone, and worn cloth.',
+    },
+    'SP05-251': {
+      hero: 'A tiny aerial mage marker may appear, but no child soldier portrait. Focal anchor is aerial war doctrine: cold command vectors, steel gray planes, red mandate marks, and restrained arcane rings.',
+      environment:
+        'Use abstract sky-map command space only; no battlefield, trench, airplane cockpit, uniform portrait, readable map text, weapon, camera, or explosion scene.',
+      detail:
+        'Secondary detail must be tactical material: steel plane, red vector, icy blue ring, dark leather strip, map-paper texture, or faceted amber calculation glow.',
+      feeling:
+        'Severity comes from command geometry and cold calculation, not from violence, uniforms, or war spectacle.',
+      cameraFocus: 'Focus on vectors and ring hierarchy; no face, no cockpit.',
+      action:
+        'No action scene. Suggest doctrine through aerial vectors, cold light, and compressed composition.',
+    },
+    'SP05-255': {
+      hero: 'A small cooperative team silhouette may appear, but avoid hero lineup. Focal anchor is gem-engine magic: ruby/cobalt/emerald roles, angular rune energy, polished mineral, and bright rescue momentum.',
+      environment:
+        'Use abstract gem-engine fantasy space only; no town street, palace hall, cockpit, weapon, readable rune text, camera, or full team portrait.',
+      detail:
+        'Secondary detail must be gem/material: polished mineral, enchanted metal edge, ruby-blue-green flare, angular rune shard, or white energy seam.',
+      feeling:
+        'Cooperation comes from color roles and rescue geometry, not from character lineup or battle scene.',
+      cameraFocus: 'Focus on jewel-engine hierarchy; figures secondary if present.',
+      action:
+        'No action scene. Suggest rescue through rising color, gem light, and cooperative geometry.',
+    },
+    'SP05-256': {
+      hero: 'A small threshold-romance silhouette may appear, but no shrine portrait or combat pose. Focal anchor is folklore threshold: moss green, crimson dusk, talisman ivory, spiritual purple, and temporal portal tension.',
+      environment:
+        'Use abstract shrine-well/forest-threshold atmosphere only; no market town, corridor, shrine room, weapon, camera, readable talisman text, or full action chase.',
+      detail:
+        'Secondary detail must be folklore material: ritual fiber, talisman paper without text, worn metal, pigment earth, moss edge, or spirit particle.',
+      feeling:
+        'Romance and pursuit come from threshold tension, not from literal chase, face drama, or town scene.',
+      cameraFocus: 'Focus on portal/threshold hierarchy; keep figures secondary.',
+      action:
+        'No action scene. Suggest pursuit through wind, threshold light, and opposing era materials.',
+    },
+    'SP05-258': {
+      hero: 'A small practical helper silhouette may appear, but no hero portrait. Focal anchor is utility craft: toolbox geometry, rope green, worn leather, dull steel, warm work light, and careful competence.',
+      environment:
+        'Use abstract work-surface/adventure-material space only; no workshop room, market stall, dungeon corridor, tool pile clutter, camera, readable labels, or fantasy tavern.',
+      detail:
+        'Secondary detail must be functional material: braided fiber, dull metal, used leather, mineral dust, small latch, or warm portable light.',
+      feeling:
+        'Charm comes from competence and utility, not from spectacle, prop clutter, or group portrait.',
+      cameraFocus: 'Focus on tools/material hierarchy; no face, no room staging.',
+      action: 'No action scene. Suggest support through precise modules and warm work highlights.',
+    },
+    'SP05-261': {
+      hero: 'No character hero. Focal anchor is eclipse scar weight: black crescent mass, scarred mineral planes, abraded hide texture, dried crimson stain, and heavy ink density.',
+      environment:
+        'Use abstract shadow/material field only; no warrior portrait, sword, cathedral, corridor, battlefield, monster, camera, or gore.',
+      detail:
+        'Secondary detail must be material: crosshatch scar, cracked mineral matte, black patina, dried red edge, or dusty midtone grain.',
+      feeling:
+        'Tragedy comes from burden and ink weight, not from violence, body, face, or weapon.',
+      cameraFocus: 'Focus on dark mass hierarchy and scar texture; no portrait, no body crop.',
+      action:
+        'No action scene. Suggest fate pressure through eclipse shape, scars, and compressed shadow.',
+    },
+    'SP05-262': {
+      hero: 'No character hero. Focal anchor is moral suspicion realism as flat still-life surface: overlapping paper-dry planes, sterile matte fragments, faint grime, and one ambiguous warm trace.',
+      environment:
+        'Use tabletop-like abstract surface space only; no hallway corridor, door, doorway, vertical door panel, classroom, office, hospital room, person, smiling face, camera, readable paper, or domestic furniture.',
+      detail:
+        'Secondary detail must be surface-only: brushed plane, paper grain, cold seam, faint grime, small tape edge, or restrained warm mark.',
+      feeling:
+        'Suspicion comes from ordinary surfaces and absence, not from portrait, room staging, or horror object.',
+      cameraFocus:
+        'Focus on low flat surface hierarchy and negative space; no face, no readable document, no upright door-like form.',
+      action:
+        'No action scene. Suggest unease through restrained surfaces and small ambiguous traces.',
+    },
+    'SP05-263': {
+      hero: 'No character hero. Focal anchor is black signal nihilism: glossy void object, fluorescent rule lines, scratched glass, black polymer sheen, and synthetic dust.',
+      environment:
+        'Use abstract void/signal field only; no game arena, hallway, room, person, weapon, camera, readable UI, screen, or domestic set.',
+      detail:
+        'Secondary detail must be signal/material: fluorescent scan haze, black gloss edge, scratched glass, polymer seam, or synthetic dust.',
+      feeling:
+        'Nihilism comes from rules pressure and void objects, not from survival action or portrait drama.',
+      cameraFocus: 'Focus on glossy object/signal hierarchy; no face, no screen text.',
+      action:
+        'No action scene. Suggest survival logic through black forms, fluorescent lines, and cold precision.',
+    },
+    'SP05-264': {
+      hero: 'No character hero. Focal anchor is clinical rupture still-life: soft pastel shard, sterile white plane, cracked memory fragment, and invisible-force stress lines.',
+      environment:
+        'Use abstract clinical surface only; no hospital room, hallway, bed, child, doll, gore, camera, readable note, or domestic/studio furniture.',
+      detail:
+        'Secondary detail must be material: porcelain crack, paper-white plane, pastel smear, cold seam, or tiny red stress mark.',
+      feeling: 'Sadness comes from rupture and absence, not from bodies, injury, or room staging.',
+      cameraFocus:
+        'Focus on low surface hierarchy and negative space; no portrait, no door, no room.',
+      action: 'No action scene. Suggest trauma through fractured planes and restrained color.',
+    },
+    'SP05-265': {
+      hero: 'No aristocrat portrait. Focal anchor is rose-black baroque material: lacquered black curves, rose petal pressure, moonlit ornament, and decayed gold machinery.',
+      environment:
+        'Use abstract gothic ornament field only; no cathedral, corridor, throne room, weapon, cape hero, camera, rose garden scene, or palace interior.',
+      detail:
+        'Secondary detail must be ornamental material: lacquer curve, rose-black petal, tarnished gold edge, moonlit filigree, or dark velvet plane.',
+      feeling:
+        'Decadence comes from ornament and pressure, not from character glamour or architecture.',
+      cameraFocus: 'Focus on baroque material hierarchy; no face, no hallway perspective.',
+      action: 'No action scene. Suggest predatory romance through curves, petals, and shadow.',
+    },
+    'SP05-266': {
+      hero: 'No fugitive portrait. Focal anchor is black particle tension: matte spectral fragments, institutional pressure grids, identity-erasure haze, and cold black dust.',
+      environment:
+        'Use abstract system-stress space only; no corridor, chase, police, lab room, person, camera, readable UI, or city alley.',
+      detail:
+        'Secondary detail must be material: black particle cloud, matte shard, cold grid edge, institutional gray plane, or spectral smear.',
+      feeling: 'Terror comes from erasure and pressure, not from pursuit scene or face drama.',
+      cameraFocus: 'Focus on particles and system geometry; no person, no room.',
+      action: 'No action scene. Suggest fugitive stress through dispersion and hard grid pressure.',
+    },
+    'SP05-267': {
+      hero: 'No character hero. Focal anchor is blood-ink severance rhythm as abstract print material: blunt torn paper islands, dried red ink stains, weathered brush blocks, and period-grit abrasion.',
+      environment:
+        'Use abstract ink/material field only; no person, portrait, hair, face, sword, blade silhouette, spear, staff, long pointed shape, weapon-like prop, battlefield, castle corridor, samurai pose, gore, camera, or landscape duel.',
+      detail:
+        'Secondary detail must be mark/material: blunt brush block, dried red stain, torn fiber patch, smoke-gray wash, or grit abrasion.',
+      feeling:
+        'Revenge pressure comes from ink rhythm and endurance, not from weapon action or body violence.',
+      cameraFocus:
+        'Focus on blunt collage hierarchy and paper/ink texture; no portrait, no body, no held object, no sharp weapon silhouette.',
+      action: 'No action scene. Suggest severance through cut marks and red-black rhythm.',
+    },
+    'SP05-268': {
+      hero: 'No character caricature. Focal anchor is neon despair pressure: fluorescent sweat-like gloss, jagged debt geometry, cheap green-pink light, and unflattering black gaps.',
+      environment:
+        'Use abstract pressure-board space only; no casino, gambling table, office, alley, person, camera, readable numbers, cards, chips, or signage.',
+      detail:
+        'Secondary detail must be graphic/material: neon smear, jagged line, cheap paper grain, black gap, or oily highlight.',
+      feeling:
+        'Financial despair comes from pressure geometry, not from literal gambling props or portraits.',
+      cameraFocus: 'Focus on jagged composition and neon stress; no text, no face.',
+      action: 'No action scene. Suggest ruin through compressed lines and ugly light.',
+    },
+    'SP05-269': {
+      hero: 'No strategist portrait. Focal anchor is smoke-filled calculation: ash-gray planes, ritual risk tokens without text, predatory shadow, and slow smoke curls.',
+      environment:
+        'Use abstract tabletop/smoke material space only; no casino room, office, bar, chair, lamp focus, person, camera, readable cards, or game board.',
+      detail:
+        'Secondary detail must be material: smoke curl, ash grain, black token, worn paper edge, low amber glint, or shadow seam.',
+      feeling:
+        'Menace comes from patience and calculation, not from gambling scene, face, or props overload.',
+      cameraFocus: 'Focus on smoke/material hierarchy; no room staging, no readable symbols.',
+      action: 'No action scene. Suggest risk through tokens, smoke, and restrained shadow.',
+    },
+    'SP05-270': {
+      hero: 'No character hero. Focal anchor is cursed compassion material: muddy cloth fragments, broken folk charm, warm ember trace, and fractured-wholeness seams.',
+      environment:
+        'Use abstract folk-horror material field only; no village, corridor, battlefield, monster, person, weapon, camera, gore, or shrine room.',
+      detail:
+        'Secondary detail must be material: mud smear, frayed cloth, cracked charm, warm ember, bone-cream shard, or red-brown seam.',
+      feeling:
+        'Compassion comes from warmth inside damage, not from bodies, violence, or heroic suffering.',
+      cameraFocus: 'Focus on broken material hierarchy; no portrait, no figure, no held object.',
+      action: 'No action scene. Suggest severance through seams and repaired fragments.',
+    },
+    'SP05-271': {
+      hero: 'No character hero. Focal anchor is sun-reclaimed concrete mystery: cracked institutional concrete, soft grass invasion, bleach sunlight, and quiet existential residue.',
+      environment:
+        'Use abstract concrete/growth planes only; no school hallway, corridor, room, person, camera, readable signage, city street, or abandoned building vista.',
+      detail:
+        'Secondary detail must be material: concrete crack, grass sprout, sun stain, rust mark, chalky edge, or pale dust.',
+      feeling: 'Unease comes from bright quiet and remnants, not from exploration scene or figure.',
+      cameraFocus: 'Focus on concrete/growth hierarchy; no hallway perspective.',
+      action: 'No action scene. Suggest mystery through sun, concrete, and softened remnants.',
+    },
+    'SP05-272': {
+      hero: 'No android portrait. Focal anchor is machine mourning noir as close material still-life: rain-polished alloy plates, black glass fragments, humane white light, forensic seams, and restrained grief geometry.',
+      environment:
+        'Use abstract rain/noir material field only; no street, alley, city corridor, detective scene, robot face, person, camera, readable UI, vehicle, lab room, lamp post, or architectural background.',
+      detail:
+        'Secondary detail must be material: alloy seam, rain bead, black glass plane, cold white edge, or muted red trace.',
+      feeling:
+        'Mourning comes from polished restraint and ethical weight, not from portrait or sci-fi scene.',
+      cameraFocus:
+        'Focus on close machine surface hierarchy; no face, no room, no corridor, no street depth.',
+      action: 'No action scene. Suggest grief through rain, seams, and quiet light.',
+    },
+    'SP05-273': {
+      hero: 'No character hero. Focal anchor is luminous natural cycle calm: pale moss, moonlit medicine glow, soft ecological ring, and living haze.',
+      environment:
+        'Use abstract natural material field only; no forest path corridor, cottage, healer portrait, animal, monster, camera, shrine, or fantasy vista.',
+      detail:
+        'Secondary detail must be ecological material: moss grain, pale leaf, fungal glow, moonlit mist, damp stone, or soft root curve.',
+      feeling: 'Calm comes from cycle and ecology, not from character scene or creature focus.',
+      cameraFocus: 'Focus on organic material hierarchy; no face, no path perspective.',
+      action: 'No action scene. Suggest healing through rings, moss, and moon haze.',
+    },
+    'SP05-274': {
+      hero: 'No character hero. Focal anchor is winter guilt suspicion: frost-soft paper fragments, cold domestic cloth, faded memory stain, and protective dread shadow.',
+      environment:
+        'Use abstract winter surface field only; no bedroom, living room, chair, curtain, lamp, hallway, person, camera, readable note, or family scene.',
+      detail:
+        'Secondary detail must be surface/material: frost edge, worn cloth, cold paper, faded stain, pale wood grain, or blue-gray shadow.',
+      feeling:
+        'Suspicion comes from ordinary softness under threat, not from room staging or portrait.',
+      cameraFocus: 'Focus on winter material stillness; no furniture, no room perspective.',
+      action: 'No action scene. Suggest guilt through cold fragments and memory traces.',
+    },
+    'SP05-275': {
+      hero: 'No character hero. Focal anchor is civic rumor breakdown: warped poster layers without readable text, public-surface scratches, panic color smear, and dream-logic distortion.',
+      environment:
+        'Use abstract civic surface field only; no street crowd, market, subway corridor, TV screen, camera, readable media, face, school hallway, city scene, window, cathedral, church glass, or room architecture.',
+      detail:
+        'Secondary detail must be material/graphic: torn poster edge, smear, halftone noise, civic paint layer, bent grid, or anxious red accent.',
+      feeling:
+        'Panic comes from collective pressure in surfaces, not from people, news screens, or literal crowd.',
+      cameraFocus:
+        'Focus on poster/surface hierarchy; no readable words, no face, no window-like frame.',
+      action: 'No action scene. Suggest rumor through warped civic layers and pressure marks.',
+    },
+    'SP05-276': {
+      hero: 'No character hero. Focal anchor is sun-bleached discipline material: heat-stripped stone, severe hierarchy blocks, dry cloth edge, and irreversible-motion tension.',
+      environment:
+        'Use abstract sun-baked material field only; no desert soldiers, courtyard, corridor, weapon, person, camera, palace, or execution scene.',
+      detail:
+        'Secondary detail must be material: bleached stone, dust edge, dry fabric strip, hard shadow, rust-red mark, or cracked hierarchy line.',
+      feeling:
+        'Cruelty comes from austere pressure and silence, not from people, weapons, or scene violence.',
+      cameraFocus: 'Focus on harsh material hierarchy; no portrait, no room, no body.',
+      action: 'No action scene. Suggest discipline through heat, blocks, and hard shadows.',
+    },
+    'SP05-277': {
+      hero: 'No adolescent portrait. Focal anchor is rusted neon dread: broken timeline fragments, violet-night stains, rusted metal, and ordinary damage under unreal glow.',
+      environment:
+        'Use abstract night-surface field only; no bedroom, school hallway, street alley, person, camera, phone, readable poster, or domestic furniture.',
+      detail:
+        'Secondary detail must be material: rust scratch, violet glow, cracked plastic, damp concrete, torn paper, or soft red edge.',
+      feeling:
+        'Dread comes from fractured chronology and damaged surfaces, not from face drama or room staging.',
+      cameraFocus: 'Focus on neon/rust hierarchy; no portrait, no corridor.',
+      action: 'No action scene. Suggest broken youth memory through fragments and violet haze.',
+    },
+    'SP05-278': {
+      hero: 'No character hero. Focal anchor is mineral loneliness: crystalline fracture, pale void, sharp mineral planes, and stripped luminous ecosystem texture.',
+      environment:
+        'Use abstract mineral void only; no cave corridor, cathedral, person, monster, camera, fantasy ruins, or landscape journey.',
+      detail:
+        'Secondary detail must be mineral/material: crystal edge, chalk dust, pale glow, sharp plane, fracture seam, or sparse moss grain.',
+      feeling: 'Isolation comes from crystalline emptiness, not from figures or scene scale.',
+      cameraFocus: 'Focus on fracture hierarchy and negative space; no path perspective.',
+      action: 'No action scene. Suggest loneliness through mineral planes and pale light.',
+    },
+    'SP05-279': {
+      hero: 'No character hero. Focal anchor is red-optic security noir as machine still-life: single red lens module, oppressive black metal plates, smoke-dense panels, and one buried warm trace.',
+      environment:
+        'Use abstract security-machine field only; no soldier, humanoid silhouette, gun, balcony, platform, building, hallway, checkpoint, camera prop, CCTV screen, readable UI, city street, or vehicle.',
+      detail:
+        'Secondary detail must be material: red optic, black metal seam, smoke grain, matte armor plate, small warm trace, or cable shadow.',
+      feeling: 'Political dread comes from machinery and smoke, not from tactical character scene.',
+      cameraFocus:
+        'Focus on close red optic/material hierarchy; no face, no weapon, no corridor, no architecture.',
+      action: 'No action scene. Suggest oppression through red lens and dense machine planes.',
+    },
+    'SP05-280': {
+      hero: 'No executioner portrait. Focal anchor is lantern retribution ritual: warm lantern glow, crimson floral omen, folded ceremonial paper, and quiet midnight pressure.',
+      environment:
+        'Use abstract ritual surface only; no temple corridor, shrine room, person, weapon, camera, hanging lantern row, readable letter, or gothic interior.',
+      detail:
+        'Secondary detail must be ritual material: lantern amber, crimson petal, folded paper edge, black ink stain, waxy glow, or midnight cloth.',
+      feeling: 'Retribution comes from quiet ceremony, not from violence, face, or room staging.',
+      cameraFocus: 'Focus on lantern/paper/floral hierarchy; no portrait, no hallway.',
+      action:
+        'No action scene. Suggest fatal correspondence through still objects and warm shadow.',
+    },
+    'SP05-097': {
+      hero: 'No skeletal monarch, throne portrait, or shrine form. Focal anchor is dark dominion material as close abstract still-life: bone-ivory crown fragments, royal black slabs, grave violet glow, antique gold seams, and frozen authority.',
+      environment:
+        'Use abstract material space only; no cathedral, throne room, corridor, skeleton figure, cape hero, lantern, hanging lamp, shrine, window, weapon, camera, readable sigil, palace interior, or tall architectural silhouette.',
+      detail:
+        'Secondary detail must be dominion material: bone arch shard, black lacquer plane, violet rim, antique gold edge, cold emerald point, or crimson authority seam.',
+      feeling:
+        'Regality comes from hierarchy and material pressure, not from character, throne, or architecture.',
+      cameraFocus:
+        'Focus on close material hierarchy; no face, no room, no hallway, no architecture.',
+      action:
+        'No action scene. Suggest dominion through symmetry, bone-black contrast, and cold light.',
     },
   };
   const promptOverride = objectOnlyPromptOverrides[preset.id];
+  const sp05178NoCorridor = preset.id === 'SP05-178';
   const heroLine = promptOverride
     ? promptOverride.hero
     : cartoonMediaCard
-    ? `A flat representational cartoon-media specimen: ${pack02CartoonRepresentativeHeroCue(preset)}.`
-    : familyVariant(HERO_VARIANTS, family, `${variantSeed}:hero`);
+      ? `A flat representational cartoon-media specimen: ${pack02CartoonRepresentativeHeroCue(preset)}.`
+      : familyVariant(HERO_VARIANTS, family, `${variantSeed}:hero`);
   const environmentLine = promptOverride
     ? promptOverride.environment
+    : sp05178NoCorridor
+      ? 'Use shallow layered broken-facade panels, invasive-shadow shapes, and wet asphalt texture fragments around the character; no walkable street, alley, hallway, road, sidewalk, shrine corridor, room, market, library, or long depth lane.'
+      : cartoonMediaCard
+        ? 'Environment optional: use a flat graphic field by default, or a simple concrete setting if it makes this preset easier to read. Do not repeat the same wall, lamp, shelf, corridor, studio, market, library, or furniture formula across cards.'
+        : familyVariant(ENVIRONMENT_VARIANTS, family, `${variantSeed}:environment`);
+  const compositionLine = sp05178NoCorridor
+    ? 'Close-to-mid emergency-poster crop with compressed shallow layers, empty hands visible, occult hazard geometry behind the shoulder, and no vanishing-point lane or navigable corridor.'
     : cartoonMediaCard
-    ? 'Environment optional: use a flat graphic field by default, or a simple concrete setting if it makes this preset easier to read. Do not repeat the same wall, lamp, shelf, corridor, studio, market, library, or furniture formula across cards.'
-    : familyVariant(ENVIRONMENT_VARIANTS, family, `${variantSeed}:environment`);
-  const compositionLine = cartoonMediaCard
-    ? 'Poster-readable composition, one simple graphic anchor plus supporting marks, generous crop-safe negative space; perspective, floor contact, cast shadow, or a simple setting can appear when they make the preset more legible.'
-    : pickVariant(COMPOSITION_VARIANTS, `${variantSeed}:composition`);
+      ? 'Poster-readable composition, one simple graphic anchor plus supporting marks, generous crop-safe negative space; perspective, floor contact, cast shadow, or a simple setting can appear when they make the preset more legible.'
+      : pickVariant(COMPOSITION_VARIANTS, `${variantSeed}:composition`);
   const materialLine = cartoonMediaCard
     ? 'Let paper tooth, cel paint, ink, wax, marker, collage edge, or print texture carry the style; physical props or scene objects are useful only when they are a representative cue, not filler.'
-    : pickVariant(MATERIAL_VARIANTS, `${variantSeed}:material`);
+    : sp05178NoCorridor
+      ? 'Use costume cloth, wet asphalt texture fragments, botanical silhouettes, talisman-gold lines, painted cel shadows, and hazard glow; no centered prop, sword, staff, wand, blade, weapon, or handheld object.'
+      : promptOverride
+        ? 'Use broad graphic/material surfaces tied to this preset; do not introduce skin, clothing, portrait, body, or lifestyle texture unless the override explicitly asks for it.'
+        : pickVariant(MATERIAL_VARIANTS, `${variantSeed}:material`);
   const lightingLine = cartoonMediaCard
     ? 'Prefer graphic color, paper/cel texture, and style-specific mark contrast; realistic lighting is fine only when it is a deliberate representative cue.'
     : pickVariant(LIGHT_VARIANTS, `${variantSeed}:light`);
   const detailLine = cartoonMediaCard
     ? 'Details must be broad style marks and readable from thumbnail size; avoid tiny noisy micro-detail, repeated props, signs, labels, or stock room clutter.'
-    : pickVariant(DETAIL_VARIANTS, `${variantSeed}:detail`);
+    : promptOverride
+      ? promptOverride.detail
+      : pickVariant(DETAIL_VARIANTS, `${variantSeed}:detail`);
   const feelingLine = cartoonMediaCard
     ? 'Mood comes from line rhythm, deformation, crude pressure, color clash, texture, and anchor silhouette, not from a literal scene, celebrity likeness, prop, or known character.'
-    : pickVariant(FEELING_VARIANTS, `${variantSeed}:feeling`);
+    : promptOverride
+      ? promptOverride.feeling
+      : pickVariant(FEELING_VARIANTS, `${variantSeed}:feeling`);
   const cameraFocusLine = cartoonMediaCard
     ? 'No camera logic: prioritize silhouette, line behavior, and texture rhythm as a flat graphic card.'
-    : pickVariant(CAMERA_FOCUS_VARIANTS, `${variantSeed}:focus`);
+    : sp05178NoCorridor
+      ? 'Focus on the original face, empty hands, shoulder contour, and occult hazard geometry; do not focus down an alley, road, hallway, corridor, or handheld object.'
+      : promptOverride
+        ? promptOverride.cameraFocus
+        : pickVariant(CAMERA_FOCUS_VARIANTS, `${variantSeed}:focus`);
+  const representationRuleLine = promptOverride
+    ? 'Object/material safety exception: include one readable object, material specimen, symbolic focal form, or environment motif. Do not output an empty abstract-only field, but do not add characters, faces, bodies, portraits, or literal action scenes.'
+    : representativeAnchorRule(pack, category, preset);
   const actionLine = promptOverride
     ? promptOverride.action
     : cartoonMediaCard
-    ? 'No action scene: imply motion through anchor deformation, smear marks, elastic curves, repeated lines, or scribble pressure.'
-    : pickVariant(ACTION_VARIANTS, `${variantSeed}:action`);
+      ? 'No action scene: imply motion through anchor deformation, smear marks, elastic curves, repeated lines, or scribble pressure.'
+      : sp05178NoCorridor
+        ? 'Imply a paused defensive reaction with empty hands and wind-tension only; no chase, weapon swing, attack pose, battle lane, or street confrontation.'
+        : pickVariant(ACTION_VARIANTS, `${variantSeed}:action`);
 
-  if (imagegenSafeDna) {
+  const animeSafeCharacterCard =
+    imagegenSafeDna &&
+    (pack.id === 'pack_05' || pack.id === 'pack_13' || pack.id === 'pack_16') &&
+    !promptOverride;
+
+  if (imagegenSafeDna && !promptOverride) {
     return appendImagegenDenoiseDirective(`Generate one portrait default style-card image.
-TARGET STYLE: ${safeImagegenLabel.replace(/\bANIME\b/g, 'ILLUSTRATED').replace(/\bACTION\b/g, 'MOTION')}
+TARGET STYLE: ${safeImagegenLabel}
 MODE: text-to-image
 MODEL: ${IMAGEGEN_MODEL}, ${IMAGEGEN_REASONING_EFFORT}
 
-Create an original, clean, text-free illustrated style-card. Use one readable representative anchor: emblem, relic, material specimen, light motif, or environment fragment. Keep it non-graphic, non-derivative, polished, card-readable, and distinct from neighboring presets.
+Create an original, clean, text-free illustrated style-card. ${
+      animeSafeCharacterCard
+        ? 'Use one full readable original anime protagonist as the primary anchor: face/pose/acting/costume silhouette must carry the preset identity. Props, relics, emblems, light motifs, and environment fragments support the character; they must not replace the character.'
+        : 'Use one readable representative anchor: emblem, relic, material specimen, light motif, or environment fragment.'
+    } Keep it non-graphic, non-derivative, polished, card-readable, and distinct from neighboring presets.
 
-STYLE DNA: aesthetic=${styleAesthetic}; color=${styleColor}; light=${styleLighting}; texture=${styleTexture}; composition=${styleCamera}; features=${styleFeatures}.
+STYLE DNA: aesthetic=${styleAesthetic}; subject=${styleSubject}; color=${styleColor}; light=${styleLighting}; texture=${styleTexture}; camera=${styleCamera}; mood=${styleMood}; render=${styleRender}; features=${styleFeatures}.
 
-COMPOSITION: Central readable anchor with offset secondary planes and crop-safe negative space.
+${
+  animeSafeCharacterCard
+    ? `HERO: ${heroLine}
+ENVIRONMENT: ${environmentLine}
+FEELING: ${feelingLine}
+ACTION: ${actionLine}
+`
+    : ''
+}REPRESENTATION RULE: ${representationRuleLine}
+CONSTRAINT SEMANTICS: ${constraintSemantics()}
+${pack12Rule ? `VIDEO GAME GAMEPLAY RULE: ${pack12Rule}\n` : ''}COMPOSITION: Central readable anchor with offset secondary planes and crop-safe negative space.
 MATERIAL: ${materialLine}
 LIGHTING: ${lightingLine}
 DETAIL: ${detailLine}
 COLOR SEPARATION: ${pickVariant(COLOR_SEPARATION_VARIANTS, `${variantSeed}:color`)}
 
-Output only image, 1024x1536 portrait. No text, labels, logos, watermark.`);
+Make it immediately recognizable as ${recognitionLabel}. Distinct motif to avoid cross-pack convergence: ${presetMotifForPrompt(pack, category, preset)}. No franchise, brand, logo, or copyrighted identity.${avoidRepeatedLibrary} Output only image, 1024x1536 portrait. No text, labels, logos, watermark.${negative}`);
   }
 
   return appendImagegenDenoiseDirective(`Generate one portrait default style-card image.
@@ -3059,15 +5109,20 @@ FEELING: ${feelingLine}
 CAMERA FOCUS: ${cameraFocusLine}
 ACTION: ${actionLine}
 COLOR SEPARATION: ${pickVariant(COLOR_SEPARATION_VARIANTS, `${variantSeed}:color`)}
-REPRESENTATION RULE: ${representativeAnchorRule(pack, category, preset)}
+REPRESENTATION RULE: ${representationRuleLine}
 CONSTRAINT SEMANTICS: ${constraintSemantics()}
+${pack12Rule ? `VIDEO GAME GAMEPLAY RULE: ${pack12Rule}` : ''}
 ${safeCompatibilityNote ? `\nCOMPATIBILITY NOTE: ${safeCompatibilityNote}` : ''}
 ${guardrails ? `\nSCENE GUARDRAILS: ${guardrails}` : ''}
 ${repeatedGuardrails ? `\nREPEATED-SCENE GUARDRAILS: ${repeatedGuardrails}` : ''}
 
 Style DNA: aesthetic=${styleAesthetic}; subject=${styleSubject}; color=${styleColor}; light=${styleLighting}; texture=${styleTexture}; camera=${styleCamera}; mood=${styleMood}; render=${styleRender}; features=${styleFeatures}.
 
-VISUAL RESET: ${visualResetRule()}
+VISUAL RESET: ${
+    promptOverride
+      ? 'If any earlier phrase sounds abstract-only, reinterpret it as anti-cliche guidance. The final card still needs one readable representative object, material form, symbolic focal form, or environment motif. Do not add a character, face, body, portrait, or literal scene when the override says object/material-first.'
+      : visualResetRule()
+  }
 
 Make it immediately recognizable as ${recognitionLabel}. Keep the anchor, but do not reuse generic staging from neighboring presets in this category; vary subject design, environment read, action cue, and color identity for this preset specifically. Apply the style through rendering, mood, materials, optical framing, and treatment, not by adding literal camera equipment. Distinct motif to avoid cross-pack convergence: ${presetMotifForPrompt(pack, category, preset)}. No franchise, brand, character, logo, or copyrighted identity.${avoidRepeatedLibrary} Output only the image, 1024x1536 portrait.${negative}`);
 }

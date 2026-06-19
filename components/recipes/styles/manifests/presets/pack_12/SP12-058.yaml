@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Cristal resonante, roca húmeda, metal fino y membranas vibrantes.
   camera_and_composition: Nodos sonoros, conexiones curvas y ritmo de resolución sin exigir caverna.
   atmosphere_and_mood: Musical, misteriosa y de descubrimiento progresivo.
-  rendering_and_quality: Puzzle design clarity-first con pistas visuales robustas y ritmo de resolución.
+  rendering_and_quality: "Sound-puzzle gameplay screencap: echo cues, chamber rhythm, solution path, resonance state readable."
 avoidRules:
   - watermark
   - text
   - logo
   - combat-chaos
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-058.webp
 taxonomy:

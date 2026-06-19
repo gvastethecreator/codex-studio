@@ -21,11 +21,11 @@ visualDna:
   texture_and_material: Seda, mármol pulido, acero ornamentado y cortinajes densos de cobertura visual.
   camera_and_composition: Tableau con capas de foreground, line-of-sight y rutas silenciosas; corte, ópera o gala son anclas opcionales.
   atmosphere_and_mood: Elegancia letal, paranoia social y tensión ritualizada.
-  rendering_and_quality: Faction key-art orientado a sandbox sistémico, lectura de sospecha y agencia del jugador.
+  rendering_and_quality: "Stealth sandbox screencap: suspicion states, disguise routes, social access cues readable."
   creative_brief: >-
     Aplica Shadow Opera Assassin Court como gramatica original de videojuego sobre cualquier input: conserva su sistema
     de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
-    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece
+    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece
     fijo.
 avoidRules:
   - watermark
@@ -33,6 +33,15 @@ avoidRules:
   - logo
   - sci-fi-ui
   - flat-colors
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-016.webp
 taxonomy:

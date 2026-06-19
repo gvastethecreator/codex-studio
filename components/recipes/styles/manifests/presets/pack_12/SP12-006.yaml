@@ -17,23 +17,32 @@ visualDna:
     Eleva el input a boss, avatar conjurado o artefacto controlador; si aparece grimorio, debe reforzar fase y weak
     points, no fijar una biblioteca.
   color_and_tone: Violeta profundo, oro gastado y negro tinta para separar cast windows y estados de fase.
-  lighting_and_shadow: Círculos rúnicos como UI diegética, iluminación por patrón de ataque y sombras de lectura circular.
+  lighting_and_shadow: Círculos rúnicos como señalética diegética, iluminación por patrón de ataque y sombras de lectura circular.
   texture_and_material: Pergamino cuarteado, mármol húmedo, metal ancestral y partículas de polvo ritual en suspensión.
   camera_and_composition: >-
     Composición radial o axial con centro mecánico, perímetro de evasión y lanes de party sugeridos sin requerir arena
     cerrada.
   atmosphere_and_mood: Solemnidad peligrosa, descubrimiento mecánico y presión de ejecución.
-  rendering_and_quality: Encounter concept orientado a boss readability, telegraphing claro y jerarquía de amenazas.
+  rendering_and_quality: "Boss-arena gameplay frame: spell telegraphs, threat hierarchy, dodge lanes visible."
   creative_brief: >-
     Aplica Arcane Library Boss Arena como gramatica original de videojuego sobre cualquier input: conserva su sistema de
     genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
-    o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.
+    o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.
 avoidRules:
   - watermark
   - text
   - logo
   - cartoon
   - flat
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-006.webp
 taxonomy:

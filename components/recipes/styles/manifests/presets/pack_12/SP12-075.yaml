@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Aleación recubierta, polímero marcado por impacto, piso deportivo gomado y hormigón de muelle.
   camera_and_composition: Objetivo central, lanes tácticos y lectura de posesión sin exigir docks o arena-bowl.
   atmosphere_and_mood: Rival, cinética y de adrenalina sostenida.
-  rendering_and_quality: Esports-grade gameplay key-art con claridad superior de posesión, rotación y presión de equipo.
+  rendering_and_quality: "Mechball esports gameplay frame: possession, rotations, team pressure, goal lane readable."
 avoidRules:
   - watermark
   - text
   - logo
   - gritty-horror
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-075.webp
 taxonomy:

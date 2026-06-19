@@ -14,18 +14,27 @@ tags:
 visualDna:
   aesthetic: Gramática pixel-RPG social de 16-bit con loops de quest, comercio, descanso narrativo y tileset cálido.
   subject_treatment: Convierte el input en NPC, item, menú diegético o espacio tileable; arquetipos quest/vendor/lore son anclas opcionales.
-  color_and_tone: Madera cálida, cobre, velas y acentos de UI diegética para POIs.
+  color_and_tone: Madera cálida, cobre, velas y acentos de señalética diegética para POIs.
   lighting_and_shadow: Iluminación interior suave en banding de píxel, con contraste suficiente para navegación.
   texture_and_material: Clusters limpios, dithering controlado y tiles modulares sin ruido ambiguo.
   camera_and_composition: Side-view o isométrica simple con circulación clara entre interacción, crafting y salida de mapa sin exigir taberna.
   atmosphere_and_mood: Acogedora, social y curiosa, con sensación de progreso seguro.
-  rendering_and_quality: Pixel pipeline de alta legibilidad con tileset reusable y jerarquía visual por interacción.
+  rendering_and_quality: "Pixel in-game frame: tile readability, quest hub interactables, warm POI hierarchy."
 avoidRules:
   - watermark
   - text
   - logo
   - anti-aliased-blur
   - noisy
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-012.webp
 taxonomy:

@@ -4,6 +4,7 @@ Generated bases: 45/99
 Missing bases: 54/99
 
 Objective slice `pack_08..pack_11`:
+
 - Fashion & Costume (pack_08): 5/5 generated
 - Texture & Materiality (pack_09): 5/5 generated
 - Abstract & Experimental (pack_10): 5/5 generated

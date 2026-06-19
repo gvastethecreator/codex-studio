@@ -16,16 +16,25 @@ visualDna:
   subject_treatment: Convierte el input en silueta cívico-militar, vehículo, estación parcial, señal de control o módulo de mantenimiento.
   color_and_tone: Cian eléctrico, blanco clínico, lila difuso y neutros acero con acentos de alerta.
   lighting_and_shadow: Luminarias distribuidas, rebotes en marquesinas y glow holográfico para navegación por capas.
-  texture_and_material: Smart-glass facetado, aleación cepillada, compuestos antideslizantes y artefactos volumétricos UI.
+  texture_and_material: Smart-glass facetado, aleación cepillada, compuestos antideslizantes y artefactos volumétricos de navegación ambiental.
   camera_and_composition: Hub radial, vectores de circulación y sightlines tácticas limpias sin exigir metro o hoverline literal.
   atmosphere_and_mood: Ordenada, veloz y con tensión de seguridad contenida.
-  rendering_and_quality: AAA environment concept gameplay-first con legibilidad robusta de rutas, accesos y estado operativo.
+  rendering_and_quality: "Urban transit gameplay screencap: hoverline routes, access points, platform state, navigation cues clear."
 avoidRules:
   - watermark
   - text
   - logo
   - medieval
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-048.webp
 taxonomy:

@@ -23,11 +23,11 @@ visualDna:
   texture_and_material: Compuestos erosionados por arena, aleaciones bruñidas y desgaste mecánico por fricción constante.
   camera_and_composition: Apex, líneas de trayectoria y rutas de adelantamiento como ritmo visual; no exigir copa, desierto o circuito fijo.
   atmosphere_and_mood: Rivalidad ritual, intensidad técnica y presión climática permanente.
-  rendering_and_quality: Key-art gameplay-first con jerarquía clara de vehículos, equipos y lectura de circuito.
+  rendering_and_quality: "Drift-race gameplay frame: vehicle hierarchy, team colors, checkpoints, sandstorm pacing clear."
   creative_brief: >-
     Aplica Drift Kingdom Sandstorm Cup como gramatica original de videojuego sobre cualquier input: conserva su sistema
     de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
-    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece
+    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece
     fijo.
 avoidRules:
   - watermark
@@ -35,6 +35,15 @@ avoidRules:
   - logo
   - muddy
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-021.webp
 taxonomy:

@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Acero mojado, madera envejecida, cristal urbano y superficies de atraque.
   camera_and_composition: Diagonales líquidas, rutas múltiples y sightlines de emboscada sin exigir distrito o canal literal.
   atmosphere_and_mood: Elegante, criminalmente tensa y viva.
-  rendering_and_quality: Premium environment gameplay-first con navegación clara por agua y altura.
+  rendering_and_quality: "Open-world patrol gameplay screencap: canal routes, ambush sightlines, POIs, neon water navigation clear."
 avoidRules:
   - watermark
   - text
   - logo
   - medieval
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-062.webp
 taxonomy:

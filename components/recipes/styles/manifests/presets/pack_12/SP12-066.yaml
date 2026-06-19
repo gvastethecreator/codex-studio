@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Acero salinizado, vidrio con condensación, fijaciones corroídas y suelo húmedo continuo.
   camera_and_composition: Sightlines cerradas, choke-points, oclusiones y fuga ansiosa de profundidad sin exigir vagón.
   atmosphere_and_mood: Claustrofóbica, paranoica y de urgencia extrema.
-  rendering_and_quality: Survival-horror gameplay art con control fino de tensión y lectura ambiental del miedo.
+  rendering_and_quality: "Survival-horror transit gameplay screencap: carriage routes, abyss pressure, fear cues readable."
 avoidRules:
   - watermark
   - text
   - logo
   - cheerful
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-066.webp
 taxonomy:

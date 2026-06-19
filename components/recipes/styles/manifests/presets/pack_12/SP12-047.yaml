@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Piedra vítrea, metal forjado, arena abrasiva y grietas activas por energía.
   camera_and_composition: Foco en duelistas, límites de ring y hazards periféricos sin exigir coliseo físico.
   atmosphere_and_mood: Brutal, honorable y ancestralmente espectacular.
-  rendering_and_quality: Boss-trial key-art gameplay-first con cues nítidas de fase, telegraph y oportunidad.
+  rendering_and_quality: "Champion-trial gameplay frame: boss phase, telegraph, counter window, arena spacing readable."
 avoidRules:
   - watermark
   - text
   - logo
   - modern-guns
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-047.webp
 taxonomy:

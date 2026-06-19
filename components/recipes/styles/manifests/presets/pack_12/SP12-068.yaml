@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Escamas tratadas, remaches aeronáuticos, cuero reforzado y herrajes térmicos.
   camera_and_composition: Puntos de despliegue, logística y líneas aéreas sin exigir dock o plataforma concreta.
   atmosphere_and_mood: Épica, preparatoria y de anticipación bélica.
-  rendering_and_quality: Premium faction gameplay art con claridad de logística, equipamiento y salida táctica.
+  rendering_and_quality: "Dragon-dock gameplay screencap: logistics, gear staging, launch route, faction readiness clear."
 avoidRules:
   - watermark
   - text
   - logo
   - underwater
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-068.webp
 taxonomy:

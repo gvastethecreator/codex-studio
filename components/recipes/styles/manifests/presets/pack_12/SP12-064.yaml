@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Suelo húmedo, metal oxidado, follaje utilitario y maquinaria agrícola reforzada.
   camera_and_composition: Carriles convergentes y nodos de upgrade visibles sin exigir granero u orchard.
   atmosphere_and_mood: Cooperativa, resistente y de presión sostenida.
-  rendering_and_quality: Tactical stage gameplay-first con legibilidad de pathing, alcance y prioridades.
+  rendering_and_quality: "Tactical defense gameplay screencap: pathing, range, orchard-machine waves, priority targets clear."
 avoidRules:
   - watermark
   - text
   - logo
   - futuristic-city
   - noisy
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-064.webp
 taxonomy:

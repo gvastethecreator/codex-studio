@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Metal pintado gastado, cuerdas húmedas, asfalto aceitado y herrumbre industrial.
   camera_and_composition: Sightlines cruzadas, rutas altas/bajas, puntos ciegos y nodos de botín sin exigir puerto.
   atmosphere_and_mood: Nerviosa, oportunista y al borde del fallo.
-  rendering_and_quality: Infiltration map gameplay-first con landmarks inequívocos y lectura de sigilo por capas.
+  rendering_and_quality: "Infiltration gameplay screencap: layered stealth routes, patrol landmarks, smuggler objective clear."
 avoidRules:
   - watermark
   - text
   - logo
   - daylight
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-032.webp
 taxonomy:

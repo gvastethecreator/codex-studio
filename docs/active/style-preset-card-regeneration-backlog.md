@@ -100,6 +100,819 @@ Criterion note: titles, IP names, or work names may stay as a stylistic anchor. 
     - real missing defaults in `pack_01` / `pack_02`;
     - stale-by-semantic-change defaults in `pack_08` after the recent audit miniwaves.
 
+## Current verification - 2026-06-18 (semantic close pack_07 / pack_08)
+
+- Residual semantic cleanup completed for `pack_07` / `pack_08`; only code change in this checkpoint was `SP07-075` mojibake cleanup while preserving the impossible-paradox style anchor.
+- Closeout checks:
+  - `bun run styles:validate -- --pack=pack_07` -> ok.
+  - `bun run styles:validate -- --pack=pack_08` -> ok.
+  - `bun run styles:quality:audit` -> ok, no redundancy above threshold.
+  - `bun run styles:runtime:check` -> ok.
+- Visual priority remains evidence-based:
+  - `pack_14` and `pack_15` remain closed for stale/missing default-card debt;
+  - next stale visual debt should target packs still reported stale by coverage, not `pack_14` / `pack_15` unless fresh semantic edits land there.
+
+## Visual correction checkpoint - 2026-06-18 (anime identity regression)
+
+- User QA flagged anime cards around `SP05-031+` as too generic, too same-style, too noisy, and sometimes object-first when anime should show characters.
+- Root cause accepted:
+  - prompts overcorrected against IP/weapon/scene drift;
+  - `object/material-first` was applied too broadly;
+  - several prompts converged on the same shonen/forest/ruin visual grammar.
+- New rule for anime visual debt:
+  - default to character/pose/acting + preset-specific identity;
+  - use object/material-first only for explicit safety/IP/weapon/gore risk;
+  - keep cel readability, broad value/color shapes, and controlled detail density;
+  - avoid dense forest, ruin corridor, market/library/camera drift, and noisy microdetail.
+- Generator prompt checkpoint:
+  - `SP05-031..040` ID-scoped prompt text updated;
+  - object/material-first category overrides removed for `SP05-032` and `SP05-036`.
+- Follow-up audit checkpoint:
+  - manifests `pack_05` still carry strong identity; loss happened in `scripts/generate-style-defaults.ts`.
+  - `safeImagegenStyleDna` was an identity-squashing early-return: it skipped `HERO`, `ENVIRONMENT`, `ACTION`, motif, negative prompt, and constraint semantics.
+  - safe branch now keeps `ANIME`/`ACTION`, includes subject/mood/render, restores character-led anime anchors when no explicit object-only override exists, and preserves motif + negative prompt.
+  - `pack_05__anime_style_spectrum` now uses its own broad prompt family instead of `anime_masterpieces`.
+  - generic detail variant now asks for broad thumbnail-readable detail, not micro-detail.
+- Override policy from now on:
+  - `character-led`: default for anime style cards;
+  - `scene-led`: allowed when setting/world is the style identity;
+  - `object-only safety exception`: allowed only when character-led generation creates IP, gore, weapon, exploitative, or unsafe drift.
+- Visual queue:
+  - pause further anime generation until `SP05-031..040` are triaged against current assets, backup primaries, and existing variants.
+
+## Visual correction checkpoint - 2026-06-18 (`pack_06` bird/animal repetition)
+
+- User QA flagged that some `SP06` cards overused birds/avian silhouettes.
+- Current coverage remains closed: `pack_06 availableDefaultImages=120/120`, `staleDefaultImages=0`, `missingDefaultImages=0`.
+- No assets regenerated or restored in this checkpoint.
+- Generator guardrail strengthened for future `pack_06` retries: do not solve cards with birds, ravens, owls, wing shapes, feathered silhouettes, or repeated animal icons by default.
+- The guardrail now rotates positive anchor choices by category; `mixed-media` specifically prefers garment/human fragments, torn-color blocks, botanical pressings, mask pieces, vehicle scraps, architectural paper, fabric swatches, ticket-like shapes without readable text, or material specimens instead of recurring bird collage.
+- Operational rule: if the user deletes specific `SP06` bird-heavy cards, retry only those IDs; do not reopen the whole pack.
+
+## Current verification - 2026-06-18 (visual debt checkpoint)
+
+- Semantic gates rechecked:
+  - `bun run styles:validate -- --pack=pack_07` -> ok.
+  - `bun run styles:validate -- --pack=pack_08` -> ok.
+  - `bun run styles:quality:audit` -> ok, `redundancy: none above threshold`.
+  - `bun run styles:runtime:check` -> ok, runtime current.
+- Priority visual packs rechecked:
+  - `pack_14`: `availableDefaultImages=123/123`, `staleDefaultImages=0`, `missingDefaultImages=0`.
+  - `pack_15`: `availableDefaultImages=137/137`, `staleDefaultImages=0`, `missingDefaultImages=0`.
+- Remaining visual debt outside closed priority packs:
+  - `pack_13`: `availableDefaultImages=6/132`, `staleDefaultImages=126`, `missingDefaultImages=0`.
+  - `pack_16`: `availableDefaultImages=0/140`, `staleDefaultImages=140`, `missingDefaultImages=0`.
+- Operational hold:
+  - pause broad generation while manual QA/deletion continues on `SP05` and `SP06`;
+  - regenerate only user-deleted/rejected IDs, or resume primary stale waves with `pack_13` then `pack_16` after manual QA settles.
+
+## Prompt correction checkpoint - 2026-06-18 (`SP13-021..025` in `pack_05`)
+
+- `SP13-021..025` are `pack_05` action-category presets, not `pack_13` presets.
+- They still had object-only prompt overrides (`No character hero` / `No shonen hero`) that would produce abstract energy/action cards.
+- Generator correction:
+  - removed object-only overrides for `SP13-021..025`;
+  - added `pack_05__action` base and anchor text that makes future retries character-led;
+  - kept anti-franchise, anti-weapon-first, anti-corridor/market/library/camera/noisy-rubble guardrails.
+- Verification:
+  - `bun run scripts\generate-style-defaults.ts --pack=pack_05 --preset=SP13-021 --print-prompts --force` prints a character-led action prompt;
+  - `bun run check -- scripts\generate-style-defaults.ts` -> ok.
+- No assets regenerated.
+- Existing primaries for `SP13-021..025` were previously accepted as action-energy abstraction; superseded by current QA direction. Treat them as selective retry candidates even if pack coverage still reports them available.
+
+## Prompt correction checkpoint - 2026-06-18 (`pack_13` anime card bases)
+
+- `pack_13` still has large visual debt: `availableDefaultImages=6/132`, `staleDefaultImages=126`, `missingDefaultImages=0`.
+- Prompt dry-run for `SP13-007..012` showed `pack_13` was falling back to a generic vertical-scene base instead of anime-specific character-led bases.
+- Root cause: `CATEGORY_SCENE_ANCHORS` had stale keys like `pack_13__anime`; current taxonomy emits keys such as `pack_13__core_anime`.
+- Generator correction:
+  - added real `pack_13__core_anime`, `pack_13__slice_of_life_school_music`, `pack_13__shojo_magical_girl_and_visionary_classics`, `pack_13__slice_of_life_and_moe`, and `pack_13__anime_style_spectrum` base prompts;
+  - added matching current-key anchors so future `pack_13` retries are character-led and not generic room/corridor/prop staging;
+  - extended safe anime character handling from `pack_05` to `pack_13`;
+  - added `SP13-011` override to keep labyrinth-glow as character + bio-glow/stones/crystals/mist, not literal dungeon corridor/tunnel hallway.
+- Verification:
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> ok, same debt counts above;
+  - `bun run check -- scripts\generate-style-defaults.ts` -> ok;
+  - `bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP13-007|SP13-008|SP13-009|SP13-010|SP13-011|SP13-012" --print-prompts --force` -> dry-run prompts are character-led.
+- Generation wave:
+  - backup before retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave2_retry_007_012_20260618-120531`;
+  - first 6-up command timed out after producing `SP13-007|SP13-008|SP13-009`, so the leftover process was stopped before continuing;
+  - `SP13-010|SP13-011` were regenerated in a 2-up retry;
+  - `SP13-012` was regenerated as a 1-up retry.
+- QA:
+  - accepted: `SP13-007`, `SP13-008`, `SP13-009`, `SP13-010`, `SP13-012`;
+  - provisional accepted/watchlist: `SP13-011` because it represents labyrinth glow with character + crystals, but still carries a lantern prop and strong dungeon environment.
+- Backlog action: removed `SP13-007..012` from the stale table; rerun `bun run styles:runtime` after this edit so coverage can drop.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=12/132`, `staleDefaultImages=120`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP13-007..012` no longer appear in `lib/staleStyleDefaultImages.generated.ts`.
+- Next safe visual wave: continue with `SP13-013..016`.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 3, `SP13-013..016`)
+
+- Backup before retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave3_013_016_20260618-123154`.
+- Generated: `SP13-013|SP13-014|SP13-015|SP13-016`.
+- QA:
+  - accepted: `SP13-013`, `SP13-015`, `SP13-016`;
+  - accepted/watchlist: `SP13-014` because it now represents Ronin Alley Duel, but it is still alley/sword/lantern-heavy by nature of the preset.
+- Backlog action: removed `SP13-013..016` from the stale table; rerun `bun run styles:runtime` after this edit so coverage can drop.
+- Next safe visual wave: continue with `SP13-017..020` after runtime/coverage.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 4, `SP13-017..020`)
+
+- Backup before retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave4_017_020_20260618-124259`.
+- Generated: `SP13-017|SP13-018|SP13-019|SP13-020`.
+- QA:
+  - accepted: `SP13-017`, `SP13-018`, `SP13-019`, `SP13-020`;
+  - note: these keep concrete preset-specific anchors (evidence, lantern festival, courier letter, skyline finale) without camera, market/library corridor, generic studio wall, or excessive fine-noise drift.
+- Backlog action: removed `SP13-017..020` from the stale table; rerun `bun run styles:runtime` after this edit so coverage can drop.
+- Next safe visual wave: continue with the next `pack_13` stale IDs after runtime/coverage.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 5, `SP05-013|SP05-019|SP05-020|SP05-041`)
+
+- Backup before retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave5_sp05_013_019_020_041_20260618-125300`.
+- Generated: `SP05-013|SP05-019|SP05-020|SP05-041`.
+- QA:
+  - accepted: `SP05-013`, `SP05-019`, `SP05-020`, `SP05-041`;
+  - note: character-led and style-distinct. `SP05-019` keeps glitch/clock/candle atmosphere; `SP05-041` keeps palace drapery/candle/crown cues. Both are accepted as preset-specific, not generic studio or corridor drift.
+- Backlog action: removed these IDs from the stale table; rerun `bun run styles:runtime` after this edit so coverage can drop.
+- Next safe visual wave: continue with the next `pack_13` stale rows after runtime/coverage.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 6, `SP05-042..045`)
+
+- Backup before retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave6_sp05_042_045_20260618-130450`.
+- Generated: `SP05-042|SP05-043|SP05-044|SP05-045`.
+- QA:
+  - accepted: `SP05-044`, `SP05-045`;
+  - accepted/watchlist: `SP05-042` because it uses a literal sword, but the preset is theatrical duel symbolism and the frame is stage/rose-symbolic, not generic fantasy corridor weapon drift;
+  - accepted/watchlist: `SP05-043` because it uses cozy room props, but they support healing ensemble and do not read as repeated studio-chair/curtain/lamp staging.
+- Backlog action: removed `SP05-042..045` from the stale table; rerun `bun run styles:runtime` after this edit so coverage can drop.
+- Next safe visual wave: continue with the next `pack_13` stale rows after runtime/coverage.
+
+## Rejected retry - 2026-06-18 (`pack_13` wave 7, `SP05-046..050`)
+
+- Initial retry generated `SP05-046|SP05-047|SP05-048|SP05-049|SP05-050`, but QA rejected the wave because the shojo/anime base over-generalized the set into similar faces, palace/gothic mood, and repeated prop staging.
+- Rejected images backed up at `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave7_rejects_sp05_046_050_20260618-133100`.
+- Restored current assets from `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave7_sp05_046_050_20260618-132000`.
+- Prompt correction added per-preset overrides for `SP05-046..050`: epistolary sepia letter, airy daylight first-love, outdoor crimson quest, dark gothic-only entry, and hand-led winter sign-language romance.
+- Follow-up test: regenerated and accepted `SP05-047` only. It now reads daylight/airy first-love with blue-cream palette, open air, and hesitant gesture instead of gothic/palace drift.
+- Follow-up 2-up: regenerated and accepted `SP05-046|SP05-048`.
+  - `SP05-046` now reads sepia/amber epistolary drama with sealed letter and restrained period romance staging.
+  - `SP05-048` now reads outdoor crimson quest romance with horizon/wind, jewel green/crimson palette, and no palace/corridor drift.
+- Backup before accepted retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave8_sp05_046_048_before_20260618-135600`.
+- Backlog action: removed `SP05-046|SP05-047|SP05-048`; keep `SP05-049|SP05-050` stale until regenerated sets prove visual separation.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 9, `SP05-049..050`)
+
+- Backup before retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave9_sp05_049_050_before_20260618-140500`.
+- Generated and accepted: `SP05-049|SP05-050`.
+- QA:
+  - `SP05-049`: accepted as velvet gothic academy, dark lace/moon/black-shape mood, no corridor/library/camera drift.
+  - `SP05-050`: accepted as cozy sign-language romance, readable hand gesture, knit/winter texture, blue/cream palette, not generic pastel face.
+- Backlog action: removed `SP05-049|SP05-050`; next stale row starts at `SP05-081`.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 10, `SP05-081..082`)
+
+- Prompt correction: added per-preset overrides before generation because the default slice-of-life base flattened both presets into the same cozy anime prompt.
+- Backup before retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave10_sp05_081_082_before_20260618-140900`.
+- Generated and accepted: `SP05-081|SP05-082`.
+- QA:
+  - `SP05-081`: accepted as shared-warmth microacting, ensemble social beat, warm cream/mint palette, no solo glamour.
+  - `SP05-082`: accepted/watchlist as deadpan-explosion comedy timing; kitchen/toaster/lamp are present, but the elastic gag and blank-face reaction carry the preset and there is no text/camera/library/market corridor drift.
+- Backlog action: removed `SP05-081|SP05-082`; next stale row starts at `SP05-083`.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 11, `SP05-083..084`)
+
+- Prompt correction: added per-preset overrides before generation because the default slice-of-life base again flattened both prompts into generic cozy anime.
+- Backup before retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave11_sp05_083_084_before_20260618-141300`.
+- Generated and accepted: `SP05-083|SP05-084`.
+- QA:
+  - `SP05-083`: accepted as low-stakes banter flatness, talk-circle composition, flat pastel rhythm, otaku-banter prop cue without prop dominance.
+  - `SP05-084`: accepted/watchlist as ordinary-cosmic whimsy pivot; portal/anomaly and ensemble reactions carry the preset. Phone/table/plants are present but not UI, text, market, library, or corridor drift.
+- Backlog action: removed `SP05-083|SP05-084`; next stale row starts at `SP05-085`.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 12, `SP05-085..090`)
+
+- Prompt correction: added explicit reference-lineage overrides for `SP05-087..090` after QA showed the default slice-of-life base still made nearby anime cards read too similar.
+- Existing `SP05-085|SP05-086` lineage overrides were preserved; the full wave now separates anxiety-glitch, outdoor restorative comfort, pastoral stillness, domestic-fantasy scale comedy, soft-surreal deadpan, and memory-washed melodrama.
+- Backup before retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave12_sp05_085_090_before_20260618-142243`.
+- Generated and accepted: `SP05-085|SP05-086|SP05-087|SP05-088|SP05-089|SP05-090`.
+- QA:
+  - `SP05-085`: accepted as anxiety-glitch catharsis, mixed-media panic inserts, magenta/black-white rupture, character-led.
+  - `SP05-086`: accepted as cold-warm restorative comfort, mountain dusk, ember thermal key, practical outdoor warmth.
+  - `SP05-087`: accepted as pastoral breathing-room stillness, rural child gesture, large warm sky/grass spacing.
+  - `SP05-088`: accepted as domestic-fantasy scale chaos, oversized friendly creature plus routine household action.
+  - `SP05-089`: accepted as soft-surreal deadpan drift, calm character plus impossible kettle/cloud/fish-shadow event.
+  - `SP05-090`: accepted/watchlist as memory-washed melodrama; train-platform rain light and vulnerable close shot work, but it remains closest to generic pretty-anime territory.
+- Backlog action: removed `SP05-085..090`; next stale row starts at `SP05-101`.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 13, `SP05-101..106`)
+
+- Prompt correction: added explicit reference-lineage overrides for `SP05-101..106`; the default style-spectrum base was too shared for this anime block.
+- Backup before retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave13_sp05_101_106_before_20260618-143628`.
+- Generated and accepted: `SP05-101|SP05-102|SP05-103|SP05-104|SP05-105|SP05-106`.
+- QA:
+  - `SP05-101`: accepted as fluid painterly anime, watercolor/ink wash, readable character silhouette, no empty pigment-only card.
+  - `SP05-102`: accepted as gritty realist seinen, adult face, concrete/fluorescent wear, no cute/moe drift.
+  - `SP05-103`: accepted/watchlist as neon hyperpop anime; idol-glam read is strong, but saturation/RGB/holographic language matches preset.
+  - `SP05-104`: accepted as minimalist indie quiet, tiny figure, off-white negative space, one accent line.
+  - `SP05-105`: accepted/watchlist as textured hand-drawn rough; fantasy prop remains, but pencil/genga/rough-paper treatment is dominant.
+  - `SP05-106`: accepted as deco geometric anime, faceted jewel planes, gold/lapis/ruby geometry, no generic palace corridor.
+- Backlog action: removed `SP05-101..106`; next stale row starts at `SP05-107`.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 14, `SP05-107..112`)
+
+- Prompt correction: added explicit reference-lineage overrides for `SP05-107..112`; `SP05-107` stayed non-graphic horror.
+- Backup before retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave14_sp05_107_112_before_20260618-144746`.
+- Generated and accepted: `SP05-107|SP05-108|SP05-109|SP05-110|SP05-111|SP05-112`.
+- QA:
+  - `SP05-107`: accepted/watchlist as non-graphic visceral horror; strong organic body-horror read, but no gore, blood, injury detail, or text.
+  - `SP05-108`: accepted as fairy-tale storybook soft, illuminated border, pastel/gold watercolor, character-led.
+  - `SP05-109`: accepted as kinetic impact-line choreography, clear motion burst, no weapon-first or readable SFX.
+  - `SP05-110`: accepted as surreal dream logic, floating door/fish-moon/stair symbols, character anchor remains readable.
+  - `SP05-111`: accepted as ukiyo-e woodblock anime, rain/washi/flat indigo-vermillion planes, no readable text.
+  - `SP05-112`: accepted/watchlist as spray-drip wildstyle anime; wall/graffiti energy is intense, but no readable tag/text.
+- Backlog action: removed `SP05-107..112`; next stale row starts at `SP05-113`.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 15, `SP05-113..118`)
+
+- Prompt correction: added explicit reference-lineage overrides for `SP05-113..120` plus a `pack_13` anime identity rule so style-spectrum prompts cannot collapse into generic glossy anime, same-face moe, object-only still life, or shared modern TV-anime rendering.
+- Backup before retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave15_sp05_113_118_before_20260618-150415`.
+- Generated and accepted: `SP05-113|SP05-114|SP05-115|SP05-116|SP05-117|SP05-118`.
+- QA:
+  - `SP05-113`: accepted as leaded jewel-light segmentation, stained-glass panes/rosette framing and character mask read clearly.
+  - `SP05-114`: accepted as threadbare textile patchwork, plush/fabric character, sashiko/boro stitching, no sewing-room still life.
+  - `SP05-115`: accepted as ice-crystal refractive, faceted guardian figure, prism/ice planes, no generic ice-princess corridor.
+  - `SP05-116`: accepted as sumi-e impact brushstroke, one-breath ink silhouette, negative space, vermillion accent, no readable calligraphy.
+  - `SP05-117`: accepted as phosphor sensor-vision grain, green intensifier/scope treatment with silhouette; no camera prop, readable HUD text, soldiers, or weapons.
+  - `SP05-118`: accepted as backlit contour longing, sky-led sunset silhouette, posture emotion, no detailed-face romance or repeated train platform.
+- Backlog action: removed `SP05-113..118`; next stale row starts at `SP05-119`.
+- Audit note: sub-agent read-only audit flagged `SP05-162|SP05-168|SP05-171|SP05-172|SP05-176..178|SP05-181..200` as high-risk for shojo/magical convergence if generated without per-preset lineage overrides.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=61/132`, `staleDefaultImages=71`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-113..118` no longer appear in `lib/staleStyleDefaultImages.generated.ts`.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 16, `SP05-119|SP05-120|SP05-162|SP05-168|SP05-171|SP05-172`)
+
+- Prompt correction: preserved `SP05-119..120` overrides and added explicit reference-lineage overrides for high-risk shojo/magical IDs `SP05-162|SP05-168|SP05-171|SP05-172` before generation.
+- Backup before retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave16_sp05_119_120_162_168_171_172_before_20260618-151429`.
+- Generated and accepted: `SP05-119|SP05-120|SP05-162|SP05-168|SP05-171|SP05-172`.
+- QA:
+  - `SP05-119`: accepted as chalk-dust slate sketch, powder/erasure character silhouette, no readable classroom writing.
+  - `SP05-120`: accepted as thermal-heat-signature vision, false-color figure/creature heat read, no readable UI or camera prop.
+  - `SP05-162`: accepted/watchlist as moonlit ribbon justice; strong magical-girl language, but no exact sailor collar, twin-bun cue, logo, readable text, or wand copy.
+  - `SP05-168`: accepted as red-alert psychological biomecha, isolated figure, diagnostic pressure, no readable UI text or specific mecha copy.
+  - `SP05-171`: accepted as arcane chaos roadtrip, 90s fantasy-comedy reaction, spell burst, no fixed party lineup or readable glyphs.
+  - `SP05-172`: accepted as tarot mecha fantasy, romantic shojo/mecha silhouette, jewel sky, ornate frame, no cockpit, battlefield, or readable tarot labels.
+- Backlog action: removed `SP05-119|SP05-120|SP05-162|SP05-168|SP05-171|SP05-172`; next `pack_13` stale rows start at `SP05-176..178`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=67/132`, `staleDefaultImages=65`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-119|SP05-120|SP05-162|SP05-168|SP05-171|SP05-172` no longer appear in `lib/staleStyleDefaultImages.generated.ts`.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 17, `SP05-176|SP05-177|SP05-178|SP05-181|SP05-182|SP05-183`)
+
+- Prompt correction: added explicit reference-lineage overrides for `SP05-176|SP05-177|SP05-178|SP05-181|SP05-182|SP05-183`; `SP05-178` also received a preset-specific no-prop/no-corridor composition override after retries kept introducing weapons and street-lane staging.
+- Backup before first 6-up: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave17_sp05_176_178_181_183_before_20260618-152622`.
+- Rejected retry backups:
+  - `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave17_rejects_sp05_178_183_20260618-153338`;
+  - `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave17_retry_current_sp05_178_183_before_20260618-153630`;
+  - `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave17_retry2_current_sp05_178_before_20260618-154206`;
+  - `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave17_retry3_current_sp05_178_before_20260618-154828`.
+- Generated and accepted: `SP05-176|SP05-177|SP05-178|SP05-181|SP05-182|SP05-183`.
+- QA:
+  - `SP05-176`: accepted/watchlist as jewel-armor quest, distinct CLAMP-like line/jewel language, no generic anime.
+  - `SP05-177`: accepted/watchlist as bridge-deck mecha comedy, ensemble/console glow; small emblem-like shapes present but no readable text.
+  - `SP05-178`: accepted after retry3 as empty-handed occult emergency poster, hazard geometry + invasive green pressure, no weapon, landmark, camera prop, or street-corridor lane.
+  - `SP05-181`: accepted/watchlist as warm zodiac grief, gentle healing figure, specific soft-shojo warmth.
+  - `SP05-182`: accepted/watchlist as adult black-lace fashion heartbreak; interior props present but preset-specific.
+  - `SP05-183`: accepted/watchlist as shy daylight romance with off-frame hand/social distance; avoids solo glamour face.
+- Backlog action: removed `SP05-176|SP05-177|SP05-178|SP05-181|SP05-182|SP05-183`; next `pack_13` stale rows start at `SP05-184`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=73/132`, `staleDefaultImages=59`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-176|SP05-177|SP05-178|SP05-181|SP05-182|SP05-183` no longer appear in `lib/staleStyleDefaultImages.generated.ts`.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 18, `SP05-184..189`)
+
+- Prompt correction: added explicit reference-lineage overrides for `SP05-184|SP05-185|SP05-186|SP05-187|SP05-188|SP05-189` plus a motif override so the wave uses body-language/costume/light/framing cues instead of generic handheld props.
+- Backup before first 6-up: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave18_sp05_184_189_before_20260618-155713`.
+- Rejected retry backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave18_rejects_sp05_186_188_20260618-160452`.
+- Generated and accepted: `SP05-184|SP05-185|SP05-186|SP05-187|SP05-188|SP05-189`.
+- QA:
+  - `SP05-184`: accepted as theatrical host-club comedy, greeter + reaction silhouettes, no readable text/camera.
+  - `SP05-185`: accepted/watchlist as punk-luxe backstage fashion drama; makeup bulbs/interior are preset-specific, not generic lamp drift.
+  - `SP05-186`: accepted after retry as same-age height-gap banter, casual clothes, strong scale contrast, no idol/magical-ribbon drift.
+  - `SP05-187`: accepted/watchlist as showbiz persona-theater with mask/spotlight; stage context is specific to preset.
+  - `SP05-188`: accepted after retry as rain/status-pressure confrontation, no palace/gothic castle/rose-brooch drift.
+  - `SP05-189`: accepted as dusk time-memory regret with unreadable sealed letter, no station/classroom/hallway default.
+- Backlog action: removed `SP05-184|SP05-185|SP05-186|SP05-187|SP05-188|SP05-189`; next `pack_13` stale row starts at `SP05-190`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=79/132`, `staleDefaultImages=53`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-184|SP05-185|SP05-186|SP05-187|SP05-188|SP05-189` no longer appear in `lib/staleStyleDefaultImages.generated.ts`.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 19, `SP05-190..195`)
+
+- Prompt correction: added explicit reference-lineage overrides for `SP05-190|SP05-191|SP05-192|SP05-193|SP05-194|SP05-195`; `SP05-192` received a stricter retry prompt to avoid literal maid outfit/cafe/changing-room drift.
+- Backup before first 6-up: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave19_sp05_190_195_before_20260618-161446`.
+- Rejected retry backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave19_reject_sp05_192_20260618-162529`.
+- Generated and accepted: `SP05-190|SP05-191|SP05-192|SP05-193|SP05-194|SP05-195`.
+- QA:
+  - `SP05-190`: accepted as airy blue-sky near-miss romance, clean negative space, no hallway/classroom.
+  - `SP05-191`: accepted/watchlist as grounded night intimacy; street context present but supports night-walk preset and avoids umbrella/rain-confession.
+  - `SP05-192`: accepted/watchlist after retry as hidden-persona romcom; service-room/silhouette cue remains but character is not literal maid-outfit/cafe glamour.
+  - `SP05-193`: accepted/watchlist as botanical herbalist fantasy; herb/vial props are preset-specific, not object-only.
+  - `SP05-194`: accepted/watchlist as vintage operatic revolutionary shojo; ornate architecture is specific to the preset lineage.
+  - `SP05-195`: accepted/watchlist as DIY street-fashion identity; craft/accessory density is representative but should be watched for clutter.
+- Backlog action: removed `SP05-190|SP05-191|SP05-192|SP05-193|SP05-194|SP05-195`; next `pack_13` stale row starts at `SP05-196`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=85/132`, `staleDefaultImages=47`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-190|SP05-191|SP05-192|SP05-193|SP05-194|SP05-195` no longer appear in `lib/staleStyleDefaultImages.generated.ts`.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 20, `SP05-196..200`)
+
+- Prompt correction: added explicit reference-lineage overrides for `SP05-196|SP05-197|SP05-198|SP05-199|SP05-200` and extended the body-language/costume/light/framing motif guard to this block.
+- Backup before 5-up: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave20_sp05_196_200_before_20260618-164658`.
+- Generated and accepted: `SP05-196|SP05-197|SP05-198|SP05-199|SP05-200`.
+- QA:
+  - `SP05-196`: accepted as quiet art-school melancholy, watercolor/sketch figure, no tool-only still life.
+  - `SP05-197`: accepted/watchlist as yokai-romcom folklore; shrine lantern/mask are strong but preset-specific.
+  - `SP05-198`: accepted/watchlist as jellyfish-fashion makeover; dense frill/clutter remains controlled and character-led.
+  - `SP05-199`: accepted as crimson folk-fantasy journey, traveler + dusk sandstone, no sword/battlefield.
+  - `SP05-200`: accepted/watchlist as rainy confession, shared umbrella/hand hesitation, distinct from dry night-walk.
+- Backlog action: removed `SP05-196|SP05-197|SP05-198|SP05-199|SP05-200`; next `pack_13` stale row starts at `SP05-201`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=90/132`, `staleDefaultImages=42`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-196|SP05-197|SP05-198|SP05-199|SP05-200` no longer appear in `lib/staleStyleDefaultImages.generated.ts`.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 21, `SP05-201..205`)
+
+- Prompt correction: added explicit reference-lineage overrides for `SP05-201|SP05-202|SP05-203|SP05-204|SP05-205`, keeping anime identity anchored by recognizable lineage, character posture, color, and composition rather than generic anime polish.
+- Backup before 5-up: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave21_sp05_201_205_before_20260618-170049`.
+- Rejected retry backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave21_reject_sp05_205_20260618-170837`.
+- Generated and accepted: `SP05-201|SP05-202|SP05-203|SP05-204|SP05-205`.
+- QA:
+  - `SP05-201`: accepted/watchlist as quiet observational mystery, tea/window stillness remains figure-led, no library/book/camera/text.
+  - `SP05-202`: accepted as neighborhood community warmth, character-led festival/community read, no market aisle/signage.
+  - `SP05-203`: accepted as youth expedition, sky/mountain resolve, no map/compass/station/gear pile.
+  - `SP05-204`: accepted/watchlist as serene iyashikei water-light, figure-led canal/water calm, not empty water abstraction.
+  - `SP05-205`: first candidate rejected for calligraphy/kanji-like sheets; retry accepted as island-summer creative restart with abstract ink edges, no glyphs/text.
+- Backlog action: removed `SP05-201|SP05-202|SP05-203|SP05-204|SP05-205`; next `pack_13` stale row starts at `SP05-206`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=95/132`, `staleDefaultImages=37`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-201|SP05-202|SP05-203|SP05-204|SP05-205` no longer appear in `lib/staleStyleDefaultImages.generated.ts`; `SP05-206` is the next stale id.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 22, `SP05-206..210`)
+
+- Prompt correction: added explicit artist/studio/director lineage overrides for `SP05-206|SP05-207|SP05-208|SP05-209|SP05-210`, replacing the generic cozy-anime base with five distinct slice-of-life reads.
+- Backup before 5-up: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave22_sp05_206_210_before_20260618-172100`.
+- Rejected retry backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave22_reject_sp05_210_20260618-173200`.
+- Generated and accepted: `SP05-206|SP05-207|SP05-208|SP05-209|SP05-210`.
+- QA:
+  - `SP05-206`: accepted as everyday-care gesture intimacy, two-figure hand-care moment, no text or object-only drift.
+  - `SP05-207`: accepted/watchlist as deadline workflow density; desk/paper clutter is high but preset-specific and character-led.
+  - `SP05-208`: accepted as beginner-made DIY glow, character + wood/fabric process, no tool foreground or workshop aisle.
+  - `SP05-209`: accepted/watchlist as sugar-cotton hospitality miniature; dessert clutter is high but character-led and not teacup-only.
+  - `SP05-210`: first candidate rejected for cozy-room/mug/lamp/plush formula; retry accepted/watchlist as sunshine-scribble soft geometry with paper blocks and character anchor.
+- Backlog action: removed `SP05-206|SP05-207|SP05-208|SP05-209|SP05-210`; next `pack_13` stale row starts at `SP05-211`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=100/132`, `staleDefaultImages=32`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-206|SP05-207|SP05-208|SP05-209|SP05-210` no longer appear in `lib/staleStyleDefaultImages.generated.ts`; `SP05-211` is the next stale id.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 23, `SP05-211..215`)
+
+- Prompt correction: added explicit artist/studio/director lineage overrides for `SP05-211|SP05-212|SP05-213|SP05-214|SP05-215`, separating utility freedom, social-jitter, shift-comedy, breeze inertia, and looped healing.
+- Backup before 5-up: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave23_sp05_211_215_before_20260618-173900`.
+- Rejected retry backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave23_reject_sp05_215_20260618-174800`.
+- Generated and accepted: `SP05-211|SP05-212|SP05-213|SP05-214|SP05-215`.
+- QA:
+  - `SP05-211`: accepted/watchlist as utilitarian quiet-freedom minimalism, spare outdoor utility framing, no bike ad or road postcard.
+  - `SP05-212`: accepted/watchlist as social-jitter comedy; close pretty-anime read is still generic-adjacent, but expression, gesture, and negative space carry the preset.
+  - `SP05-213`: accepted as shift-comedy choreography warmth, clear handoff/ensemble workplace rhythm.
+  - `SP05-214`: accepted as breeze-drift beautiful inertia, airy low-energy pause, no classroom/bed/couch drift.
+  - `SP05-215`: first candidate rejected for garden/knitting/craft drift; retry accepted as looped waterside routine with cast-line gesture.
+- Backlog action: removed `SP05-211|SP05-212|SP05-213|SP05-214|SP05-215`; next `pack_13` stale row starts at `SP05-216`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=105/132`, `staleDefaultImages=27`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-211|SP05-212|SP05-213|SP05-214|SP05-215` no longer appear in `lib/staleStyleDefaultImages.generated.ts`; `SP05-216` is the next stale id.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 24, `SP05-216..220`)
+
+- Prompt correction: added explicit artist/studio/director lineage overrides for `SP05-216|SP05-217|SP05-218|SP05-219|SP05-220`, separating bundled warmth, rough ideation, ascent confidence, deadpan absurdism, and watercolor noticing.
+- Backup before 5-up: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave24_sp05_216_220_before_20260618-175800`.
+- Generated and accepted: `SP05-216|SP05-217|SP05-218|SP05-219|SP05-220`.
+- QA:
+  - `SP05-216`: accepted as bundled warmth pocket, cold/warm textile read, no tent/stove/postcard drift.
+  - `SP05-217`: accepted as rough-ideation motion overlay, character + cutaway boxes/arrows, no readable text/UI.
+  - `SP05-218`: accepted/watchlist as incremental-ascent confidence; trail/mountain read is strong but character/upward-progress identity is clear.
+  - `SP05-219`: accepted as mundane absurdist theater, deadpan cone gag and plain stage, no text.
+  - `SP05-220`: accepted/watchlist as observational watercolor drift; teacup/window literal, but watercolor noticing read remains clear and character-led.
+- Backlog action: removed `SP05-216|SP05-217|SP05-218|SP05-219|SP05-220`; next `pack_13` stale row starts after this slice-of-life block.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=110/132`, `staleDefaultImages=22`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-216|SP05-217|SP05-218|SP05-219|SP05-220` no longer appear in `lib/staleStyleDefaultImages.generated.ts`; `SP05-321` is the next `pack_13` stale id.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 25, `SP05-321..325`)
+
+- Prompt correction: added explicit artist/director/style lineage overrides for `SP05-321|SP05-322|SP05-323|SP05-324|SP05-325`, then retried `SP05-322|SP05-323` because the first pair still collapsed into moon/jewel shojo sameness.
+- Backup before 5-up: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave25_sp05_321_325_before_20260618-181300`.
+- Backup before rejected retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave25_reject_sp05_322_323_before_20260618-182013`.
+- Generated and accepted: `SP05-321|SP05-322|SP05-323|SP05-324|SP05-325`.
+- QA:
+  - `SP05-321`: accepted as Amano-like ether-wisp gothic ornament, elongated spectral figure, gold void, no cathedral/camera/text drift.
+  - `SP05-322`: first attempt rejected for sharing moon/crystal vocabulary with `SP05-323`; retry accepted as CLAMP-like vertical black-white-red ornament with two elongated figures and graphic negative space.
+  - `SP05-323`: first attempt rejected for matching `SP05-322` too closely; retry accepted as Takeuchi-like prism glamour, pink/navy fashion heroine, cleaner aura field, no giant moon or stage/card UI.
+  - `SP05-324`: accepted as Rumiko Takahashi-like elastic rom-com slapstick, two-character cel comedy, no weapon/fight/readable SFX drift.
+  - `SP05-325`: accepted as Taiyo Matsumoto-like concrete-poetry adolescence, scratchy urban line, no polished generic anime face.
+- Backlog action: removed `SP05-321|SP05-322|SP05-323|SP05-324|SP05-325`; next `pack_13` stale row starts at `SP05-326`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=115/132`, `staleDefaultImages=17`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-321|SP05-322|SP05-323|SP05-324|SP05-325` no longer appear in `lib/staleStyleDefaultImages.generated.ts`; `SP05-326` is the next `pack_13` stale id.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 26, `SP05-326..330`)
+
+- Prompt correction: added explicit artist/director/style lineage overrides for `SP05-326|SP05-327|SP05-328|SP05-329|SP05-330`, separating Yuasa rubber motion, Dezaki postcard freeze, Leiji Matsumoto distance melancholy, Umezz spiral panic, and Mizuki deadpan folklore.
+- Backup before 5-up: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave26_sp05_326_330_before_20260618-183017`.
+- Backup before rejected `SP05-329` retry 1: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave26_reject_sp05_329_before_20260618-183348`.
+- Backup before rejected `SP05-329` retry 2: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave26_reject2_sp05_329_before_20260618-183649`.
+- Generated and accepted: `SP05-326|SP05-327|SP05-328|SP05-329|SP05-330`.
+- QA:
+  - `SP05-326`: accepted as Yuasa-like rubber-reality sprint, elastic figure and acid poster blocks, no generic shonen speed/object drift.
+  - `SP05-327`: accepted as Dezaki-like postcard memory freeze, sepia/crimson/glare melodrama and film grain, no magical-girl sparkle drift.
+  - `SP05-328`: accepted/watchlist as Leiji Matsumoto-like cosmic farewell, noble retrofuture figure and star scale; close to captain silhouette but no copied insignia/weapon/UI.
+  - `SP05-329`: first attempt rejected for spiral path/corridor read, second rejected for red wrist wound; final accepted as Umezz-like flat spiral panic with clean hand, no red/blood/corridor.
+  - `SP05-330`: accepted as Mizuki-like folkloric deadpan ink catalog, friendly-grotesque spirit and rural ink texture, no cute mascot/UI/text drift.
+- Backlog action: removed `SP05-326|SP05-327|SP05-328|SP05-329|SP05-330`; next `pack_13` stale row starts at `SP05-331`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=120/132`, `staleDefaultImages=12`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-326|SP05-327|SP05-328|SP05-329|SP05-330` no longer appear in `lib/staleStyleDefaultImages.generated.ts`; `SP05-331` is the next `pack_13` stale id.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 27, `SP05-331..335`)
+
+- Prompt correction: added explicit artist/director/style lineage overrides for `SP05-331|SP05-332|SP05-333|SP05-334|SP05-335`, separating Murata chrome impact, Ikuhara ritual allegory, Okiura quiet naturalism, Anno emergency storyboard, and Ichikawa mineral void.
+- Backup before 5-up: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave27_sp05_331_335_before_20260618-184303`.
+- Backup before rejected `SP05-333` retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave27_reject_sp05_333_before_20260618-184524`.
+- Generated and accepted: `SP05-331|SP05-332|SP05-333|SP05-334|SP05-335`.
+- QA:
+  - `SP05-331`: accepted as Murata-like chrome impact spectacle, foreshortened figure, metal highlights, clean force arcs; no logo/gore/readable SFX drift.
+  - `SP05-332`: accepted/watchlist as Ikuhara-like ritual allegory, mirrored figures and symbolic geometry; ornate robe/ceremony is close to fantasy altar but symmetry/icon system is readable.
+  - `SP05-333`: first attempt rejected for interior window/lamp formula; retry accepted/watchlist as Okiura-like quiet human naturalism with sleeve microgesture and rain daylight. Minor streetlight remains background-only.
+  - `SP05-334`: accepted as Anno-like emergency storyboard tension, rough pencil panels and warning marks, no readable notes/UI.
+  - `SP05-335`: accepted as Ichikawa-like mineral void serenity, translucent figure, open negative space, no cave/crowd/weapon drift.
+- Backlog action: removed `SP05-331|SP05-332|SP05-333|SP05-334|SP05-335`; next `pack_13` stale row starts at `SP05-336`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=125/132`, `staleDefaultImages=7`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-331|SP05-332|SP05-333|SP05-334|SP05-335` no longer appear in `lib/staleStyleDefaultImages.generated.ts`; `SP05-336` is the next `pack_13` stale id.
+
+## Primary default cards - 2026-06-18 (`pack_13` wave 28, `SP05-336..342`)
+
+- Prompt correction: added explicit artist/director/style lineage overrides for `SP05-336|SP05-337|SP05-338|SP05-339|SP05-340|SP05-341|SP05-342`, separating Koike razor velocity, Yoshinari technomagic, Ohkubo angular combustion, Urasawa adult suspense, Sugino velvet-lash tension, Arakawa mechanical warmth, and Kon reality-slip reflection.
+- Backup before 7-up: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave28_sp05_336_342_before_20260618-185153`.
+- Backup before rejected `SP05-340|SP05-342` retry: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave28_reject_sp05_340_342_before_20260618-185524`.
+- Backup before rejected `SP05-342` retry 2: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave28_reject2_sp05_342_before_20260618-185724`.
+- Generated and accepted: `SP05-336|SP05-337|SP05-338|SP05-339|SP05-340|SP05-341|SP05-342`.
+- QA:
+  - `SP05-336`: accepted as Koike-like razorline velocity poster, red/black/chrome wedge, no vehicle/road/camera drift.
+  - `SP05-337`: accepted/watchlist as Yoshinari-like technomagic burst; ornate hardware density is high but character, joyful draftsmanship, and engineered magic read clearly.
+  - `SP05-338`: accepted as Ohkubo-like angular combustion iconography, triangular fire shapes and grin geometry, no weapon/logo/readable text drift.
+  - `SP05-339`: accepted as Urasawa-like adult suspense microgesture, rainy grounded adult tension, no file/gun/crime-scene stock drift.
+  - `SP05-340`: first attempt rejected for modern fantasy glamour; retry accepted/watchlist as Sugino-like old-cel velvet-lash portrait. Minor lamp-like background accent remains non-dominant.
+  - `SP05-341`: accepted/watchlist as Arakawa-like mechanical warmth ensemble, legible repair teamwork; workshop literal but useful for this preset and not a sterile product shot.
+  - `SP05-342`: first attempt rejected for beauty-mirror generic read, second rejected for exposed glamour pose; final accepted as Kon-like sober reflection continuity with trench/scarf, mismatched expressions, and no beauty-ad drift.
+- Backlog action: removed `SP05-336|SP05-337|SP05-338|SP05-339|SP05-340|SP05-341|SP05-342`; `pack_13` should have no remaining stale rows after runtime regeneration.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=132/132`, `staleDefaultImages=0`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` -> ok;
+  - `SP05-336|SP05-337|SP05-338|SP05-339|SP05-340|SP05-341|SP05-342` no longer appear in `lib/staleStyleDefaultImages.generated.ts`; `pack_13` has no remaining stale default rows.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 1, `SP05-007..012`)
+
+- Root cause confirmed by local audit and subagent audit: `pack_16` had no `pack_16__*` anime bases or identity rule in `scripts/generate-style-defaults.ts`, so most presets fell back to generic `A vertical scene...` prompts.
+- Generator correction:
+  - added `pack_16` anime-prestige fallback with artist/studio/director/era lineage as broad visual grammar, not literal copying;
+  - extended character-led anime safe branch to `pack_16`;
+  - added `pack_16` motif guard against generic anime face, repeated aura, rubble, corridor, market/library aisle, camera/lamp setup, object-only card, and empty abstraction;
+  - added exact lineage anchors for `SP05-007..012` and rule-based fallback lineages for the rest of `pack_16`.
+- Generated accepted primary defaults: `SP05-007|SP05-008|SP05-009|SP05-010|SP05-011|SP05-012`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-007|SP05-008|SP05-009|SP05-010|SP05-011|SP05-012" --parallel=6 --session-suffix=primary_p16_sp05_007_012_lineage_fix_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave_sp05_007_012_before_20260618-191422`.
+- QA note: first `SP05-007`, `SP05-011`, and `SP05-012` results were briefly retried as too literal, but user approved the first versions; restored them and kept the retry images only as historical alternates.
+- Restored accepted versions from: `D:\codex-studio-backups\style-defaults-rejected\pack_16_sp05_007_011_012_literal_reject_20260618-191819`.
+- Retry backup kept at: `D:\codex-studio-backups\style-defaults-rejected\pack_16_sp05_007_011_012_retry_kept_as_backup_20260618-192102`.
+- Backlog action: removed `SP05-007|SP05-008|SP05-009|SP05-010|SP05-011|SP05-012`.
+- Expected next runtime: `pack_16 availableDefaultImages=6/140`, `staleDefaultImages=134`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-001|SP05-002|SP05-003|SP05-004|SP05-005|SP05-006`, which already have targeted prompt overrides prepared. After that, continue with `SP05-014|SP05-015|SP05-016|SP05-017|SP05-018|SP05-024`, or jump to subagent-prioritized `SP05-301..312` if the user wants to address the `SP05-30+` identity concern first.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 2, `SP05-001..006`)
+
+- Prompt state: reused targeted lineage overrides already prepared for `SP05-001..006`, plus the new `pack_16` anime-prestige identity rule and denoise contract.
+- Dry-run: `bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-001|SP05-002|SP05-003|SP05-004|SP05-005|SP05-006" --dry-run --print-prompts --force` -> `prompts=6 skipped=134`.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave2_sp05_001_006_before_20260618-193208`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-001|SP05-002|SP05-003|SP05-004|SP05-005|SP05-006" --parallel=6 --session-suffix=primary_p16_sp05_001_006_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-001`: retro pioneer hero, clean Tezuka/Toei-like optimism, no text/UI/camera.
+  - `SP05-002`: vintage super-robot grandeur, readable 70s mechanical mass. Literal, but useful for this preset.
+  - `SP05-003`: jazzy rogue caper, strong adult-cool silhouette and night palette, no readable signage.
+  - `SP05-004`: astral opera melancholy, Matsumoto-like scale/drape/space mood, no cockpit/train corridor.
+  - `SP05-005`: grounded tactical machinery, functional utilitarian mecha read, no weapon foreground or UI.
+  - `SP05-006`: pop transformable aerial spectacle, glossy Macross-like pop-tech performance read, no literal concert/cockpit.
+- Backlog action: removed `SP05-001|SP05-002|SP05-003|SP05-004|SP05-005|SP05-006`.
+- Expected next runtime: `pack_16 availableDefaultImages=12/140`, `staleDefaultImages=128`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-014|SP05-015|SP05-016|SP05-017|SP05-018|SP05-024`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 3, accepted existing `SP05-014..018|024`)
+
+- User QA approved the current existing cards: `SP05-014|SP05-015|SP05-016|SP05-017|SP05-018|SP05-024`.
+- No generation was run and no primary image was overwritten in this wave.
+- Backlog action: removed `SP05-014|SP05-015|SP05-016|SP05-017|SP05-018|SP05-024` from stale debt because the user explicitly accepted them as representative.
+- Expected next runtime: `pack_16 availableDefaultImages=18/140`, `staleDefaultImages=122`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-026|SP05-027|SP05-030|SP05-071|SP05-072|SP05-073`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 4, `SP05-026|027|030|071|072|073`)
+
+- Prompt state: dry-run showed explicit anime lineage, character-led representative subjects, no generic vertical-scene fallback, and the strong denoise/post-processing contract at the end.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave4_sp05_026_073_before_20260618-195012`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-026|SP05-027|SP05-030|SP05-071|SP05-072|SP05-073" --parallel=6 --session-suffix=primary_p16_sp05_026_073_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-026`: operatic rebellion strategy, black/crimson/gold command drama and chesslike composition; literal but representative.
+  - `SP05-027`: spiral overdrive bravado, explosive upward scale, hero/mecha energy, strong orange/blue read.
+  - `SP05-030`: gothic soul-pop action, angular skull-pop silhouette and black/red moonlit rhythm.
+  - `SP05-071`: warm liminal reverie fantasy, handcrafted amber setting, soft creature companion, readable wonder.
+  - `SP05-072`: eco-mythic conflict epic, nature guardian mass vs industrial distance, strong moral-scale silhouette.
+  - `SP05-073`: wandering clockwork hearth, bright steampunk traveler, warm mechanical core, skyward adventure mood.
+- Backlog action: removed `SP05-026|SP05-027|SP05-030|SP05-071|SP05-072|SP05-073`.
+- Expected next runtime: `pack_16 availableDefaultImages=24/140`, `staleDefaultImages=116`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-074|SP05-075|SP05-076|SP05-077|SP05-078|SP05-079`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 5, `SP05-074..079`)
+
+- Prompt state: dry-run showed separated Studio Masterpieces lineages for skyglow longing, rainlight romance, cinematic dream-collapse, mirror identity thriller, Otomo light-trail collapse, and hyperkinetic cosmic velocity.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave5_sp05_074_079_before_20260618-195704`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-074|SP05-075|SP05-076|SP05-077|SP05-078|SP05-079" --parallel=6 --session-suffix=primary_p16_sp05_074_079_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-074`: skyglow longing drama, broad sunset sky, small pilot-like figure, clean emotional horizon.
+  - `SP05-075`: rainlight threshold romance, wet glass, blue-white longing, clear weather-emotion read.
+  - `SP05-076`: cinematic dream-collapse surrealism, fragmented mask geometry and saturated symbolic collage.
+  - `SP05-077`: mirror identity collapse thriller, cracked reflection and private/public anxiety; watchlist for glamour but representative.
+  - `SP05-078`: Otomo light-trail collapse, red-coat cyber-apocalypse, infrastructure mass, electric urban ruin.
+  - `SP05-079`: hyperkinetic cosmic velocity, razor speed tunnel, vehicle/driver silhouette, bold red/cyan motion.
+- Backlog action: removed `SP05-074|SP05-075|SP05-076|SP05-077|SP05-078|SP05-079`.
+- Expected next runtime: `pack_16 availableDefaultImages=30/140`, `staleDefaultImages=110`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-080|SP05-141|SP05-145|SP05-146|SP05-147|SP05-149`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 6, `SP05-080|141|145|146|147|149`)
+
+- Prompt state: dry-run showed character-led representative subjects, explicit lineage cues, no generic vertical-scene fallback, and the strong denoise/post-processing contract at the end.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave6_sp05_080_149_before_20260618-200838`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-080|SP05-141|SP05-145|SP05-146|SP05-147|SP05-149" --parallel=6 --session-suffix=primary_p16_sp05_080_149_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-080`: cosmic ocean lyrical, underwater figure, blue bioluminescent water-light, contemplative ocean/cosmos read.
+  - `SP05-141`: gothic resonance punk, purple/orange moon, striped punk-goth silhouette; watchlist for glamour but representative.
+  - `SP05-145`: sky-surf romantic momentum, bright aerial lift, board/rider silhouette, cyan-magenta horizon.
+  - `SP05-146`: velvet covenant gothic, ceremonial black/red gothic portrait, mask and candlelit metal detail; watchlist for gothic glamour.
+  - `SP05-147`: winter friction romance, cold/warm microacting, snow and scarf gesture, clear romcom friction.
+  - `SP05-149`: clan comedy escalation, shonen gag-to-solemnity contrast and clan-emblem energy; watchlist for emblem/logo-like shapes but no readable text.
+- Backlog action: removed `SP05-080|SP05-141|SP05-145|SP05-146|SP05-147|SP05-149`.
+- Expected next runtime: `pack_16 availableDefaultImages=36/140`, `staleDefaultImages=104`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-150|SP05-151|SP05-152|SP05-153|SP05-154|SP05-155`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 7, `SP05-150..155`)
+
+- Prompt state: compact dry-run archived at `logs\style-prompts-pack16-wave7-sp05-150-155-20260618-201941.txt`; prompts were character-led, had explicit lineage/style DNA, no generic vertical-scene fallback, and ended with the strong denoise/post-processing contract.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave7_sp05_150_155_before_20260618-202002`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-150|SP05-151|SP05-152|SP05-153|SP05-154|SP05-155" --parallel=6 --session-suffix=primary_p16_sp05_150_155_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-150`: crimson threshold embers, red/blue occult threshold and strong character anchor; watchlist for filigree mark near bottom.
+  - `SP05-151`: pop reality bend, bright everyday room ruptured by cosmic wall, playful low-threshold surrealism.
+  - `SP05-152`: anachronistic deadpan mayhem, deadpan lead, mascot/props, flat comic timing.
+  - `SP05-153`: techno-gothic exorcism, sacro-industrial figure, black/white/red machinery and cathedral-tech pressure.
+  - `SP05-154`: clinical nocturne tactics, glass/medical nocturne, cold tactical restraint, no weapon foreground.
+  - `SP05-155`: noble arcane romcom, pink/blue arcane noble pose and mascot cue; watchlist for generic fantasy-romcom polish.
+- Backlog action: removed `SP05-150|SP05-151|SP05-152|SP05-153|SP05-154|SP05-155`.
+- Expected next runtime: `pack_16 availableDefaultImages=42/140`, `staleDefaultImages=98`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-156|SP05-157|SP05-158|SP05-159|SP05-160|SP05-161`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 8, `SP05-156..161`)
+
+- Prompt state: compact dry-run archived at `logs\style-prompts-pack16-wave8-sp05-156-161-20260618-203033.txt`; prompts were character-led, had explicit lineage/style DNA, avoided generic fallback, and ended with the strong denoise/post-processing contract.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave8_sp05_156_161_before_20260618-203053`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-156|SP05-157|SP05-158|SP05-159|SP05-160|SP05-161" --parallel=6 --session-suffix=primary_p16_sp05_156_161_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted by user:
+  - `SP05-156`: summer loop paranoia, warm threshold, uneasy character-led summer-horror read.
+  - `SP05-157`: vertical speed rebellion, upward urban velocity and strong action silhouette.
+  - `SP05-158`: ecological whisper healing, soft organic stream, healing gesture, gentle supernatural ecology.
+  - `SP05-159`: black-lipstick melodrama punk, adult punk glamour and nocturnal magazine-anime mood.
+  - `SP05-160`: rose elite comedy, ornate rose-host comedy and elite excess.
+  - `SP05-161`: planetary aura impact, cosmic gold/blue aura and 90s energy impact read.
+- Backlog action: removed `SP05-156|SP05-157|SP05-158|SP05-159|SP05-160|SP05-161`.
+- Expected next runtime: `pack_16 availableDefaultImages=48/140`, `staleDefaultImages=92`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-163|SP05-164|SP05-165|SP05-166|SP05-167|SP05-169`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 9, `SP05-163|164|165|166|167|169`)
+
+- Prompt state: compact dry-run archived at `logs\style-prompts-pack16-wave9-sp05-163-169-20260618-204138.txt`; prompts were character-led, had explicit lineage/style DNA, avoided generic fallback, and ended with the strong denoise/post-processing contract.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave9_sp05_163_169_before_20260618-204138`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-163|SP05-164|SP05-165|SP05-166|SP05-167|SP05-169" --parallel=6 --session-suffix=primary_p16_sp05_163_169_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-163`: smoke-jazz noir cool, sax-led rain-noir character; watchlist for literal saxophone, but preset-specific.
+  - `SP05-164`: wet techno-noir consciousness, rain/cybernetics and clinical blue-orange identity tension.
+  - `SP05-165`: spirit pressure rivalry, strong delinquent posture, purple spirit pressure and clear rival energy.
+  - `SP05-166`: redemption restraint, restrained wanderer silhouette, sunset ethical-drama read, no weapon focus.
+  - `SP05-167`: engine-trail outlaw adventure, engine/launchpad momentum and orange-blue outlaw silhouette; watchlist for strong handheld tech prop.
+  - `SP05-169`: wired identity dissolution, CRT/cable identity fade, terminal-specific without generic object-only card.
+- Backlog action: removed `SP05-163|SP05-164|SP05-165|SP05-166|SP05-167|SP05-169`.
+- Expected next runtime: `pack_16 availableDefaultImages=54/140`, `staleDefaultImages=86`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-170|SP05-173|SP05-174|SP05-175|SP05-179|SP05-180`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 10, `SP05-170|173|174|175|179|180`)
+
+- Prompt state: compact dry-run archived at `logs\style-prompts-pack16-wave10-sp05-170-180-20260618-205117.txt`; prompts were character-led, had explicit lineage/style DNA, avoided generic fallback, and ended with the strong denoise/post-processing contract.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave10_sp05_170_180_before_20260618-205117`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-170|SP05-173|SP05-174|SP05-175|SP05-179|SP05-180" --parallel=6 --session-suffix=primary_p16_sp05_170_180_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-170`: storybook seal magic, bright magical-girl read with seal gesture; watchlist for literal 90s magical-girl similarity, but representative.
+  - `SP05-173`: dust-warm pacifist melancholy, red cloak, tired kindness, warm dust and companion cue.
+  - `SP05-174`: iron ruin tragedy, dark machine ruin, heavy silhouette and mournful industrial weight.
+  - `SP05-175`: rose ritual symbolism, theatrical rose ritual with curtain/mirror elements justified by preset-specific symbolism.
+  - `SP05-179`: warm rivalry portrait, athletic sweat/microacting and warm sports-rivalry body language.
+  - `SP05-180`: precision action cel, rooftop technical-action silhouette, vehicle/machine context and controlled hard light.
+- Backlog action: removed `SP05-170|SP05-173|SP05-174|SP05-175|SP05-179|SP05-180`.
+- Expected next runtime: `pack_16 availableDefaultImages=60/140`, `staleDefaultImages=80`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-281|SP05-282|SP05-283|SP05-284|SP05-285|SP05-286`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 11, `SP05-281..286`)
+
+- Prompt state: compact dry-run archived at `logs\style-prompts-pack16-wave11-sp05-281-286-20260618-210112.txt`; prompts were character-led, had explicit Studio Masterpieces lineage/style DNA, avoided generic fallback, and ended with the strong denoise/post-processing contract.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave11_sp05_281_286_before_20260618-210112`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-281|SP05-282|SP05-283|SP05-284|SP05-285|SP05-286" --parallel=6 --session-suffix=primary_p16_sp05_281_286_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-281`: temporal memory cinema, layered snow/mask/memory staging; watchlist for high ornament, but clearly temporal-cinema specific.
+  - `SP05-282`: social humanist warmth, winter street kindness and warm microgesture.
+  - `SP05-283`: metaphysical mourning, quiet interior threshold, veiled fabric and soft grief atmosphere.
+  - `SP05-284`: airborne wonder adventure, bright sky scale, retro airship and explorer silhouette.
+  - `SP05-285`: eco-prophetic wind, windborne ecology, symbolic mask and ruined living landscape.
+  - `SP05-286`: seasonal intimacy realism, rain-village intimacy, protective posture and quiet seasonal travel.
+- Backlog action: removed `SP05-281|SP05-282|SP05-283|SP05-284|SP05-285|SP05-286`.
+- Expected next runtime: `pack_16 availableDefaultImages=66/140`, `staleDefaultImages=74`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-287|SP05-288|SP05-289|SP05-290|SP05-291|SP05-292`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 12, `SP05-287..292`)
+
+- Prompt state: compact dry-run archived at `logs\style-prompts-pack16-wave12-sp05-287-292-20260618-211136.txt`; prompts were character-led, had explicit Studio Masterpieces lineage/style DNA, avoided generic fallback, and ended with the strong denoise/post-processing contract.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave12_sp05_287_292_before_20260618-211136`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-287|SP05-288|SP05-289|SP05-290|SP05-291|SP05-292" --parallel=6 --session-suffix=primary_p16_sp05_287_292_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-287`: digital pop opera, astral performer silhouette, luminous interface/space-opera scale.
+  - `SP05-288`: elastic summer time, bright coastal movement, airborne summer gesture and small time-creature cue.
+  - `SP05-289`: ascetic gothic silence, dark ornamental poise, symbolic mask/mirror and quiet water depth.
+  - `SP05-290`: paramilitary melancholy, restrained tactical figure, red/charcoal mass and worn mecha pressure.
+  - `SP05-291`: delicate reconciliation, soft everyday microgesture, rainlit garden threshold and humanist restraint.
+  - `SP05-292`: historical glam punk performance, theatrical punk vocalist, red/purple stage rhythm and ornate costume identity.
+- Backlog action: removed `SP05-287|SP05-288|SP05-289|SP05-290|SP05-291|SP05-292`.
+- Expected next runtime: `pack_16 availableDefaultImages=72/140`, `staleDefaultImages=68`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-293|SP05-294|SP05-295|SP05-296|SP05-297|SP05-298`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 13, `SP05-293..298`)
+
+- Prompt state: compact dry-run archived at `logs\style-prompts-pack16-wave13-sp05-293-298-20260618-212009.txt`; prompts were character-led, had explicit Studio Masterpieces lineage/style DNA, avoided generic fallback, and ended with the strong denoise/post-processing contract.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave13_sp05_293_298_before_20260618-212009`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-293|SP05-294|SP05-295|SP05-296|SP05-297|SP05-298" --parallel=6 --session-suffix=primary_p16_sp05_293_298_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-293`: rough mythic density, masked survivor, chipped metal/paint texture and compact feral totem read.
+  - `SP05-294`: mutating psychedelic, fractured character silhouette, bold cyan/magenta/orange graphic mutation.
+  - `SP05-295`: quiet musical distance, restrained music-case interior, soft distance and warm/cool silence.
+  - `SP05-296`: humanist art deco retrofuture, human/android civic scale, deco brass/green monumental architecture.
+  - `SP05-297`: hyperobserved rain intimacy, rain-threshold gesture, wet pavement/reflection and quiet observation.
+  - `SP05-298`: nocturnal social whirl, warm festival-like social swirl, mask-creature cue and lively night motion.
+- Backlog action: removed `SP05-293|SP05-294|SP05-295|SP05-296|SP05-297|SP05-298`.
+- Expected next runtime: `pack_16 availableDefaultImages=78/140`, `staleDefaultImages=62`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-299|SP05-300|SP05-301|SP05-302|SP05-303|SP05-304`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 14, `SP05-299..304` plus `SP05-287` repair)
+
+- Prompt state: compact dry-run archived at `logs\style-prompts-pack16-wave14-sp05-299-304-repair-287-20260618-212821.txt`; prompts were character-led, had explicit lineage/style DNA, avoided generic fallback, and ended with the strong denoise/post-processing contract.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave14_sp05_299_304_repair287_before_20260618-212821`. `SP05-287` was missing before repair; the backup folder includes a marker note and the earlier stale copy remains in `pack_16_wave12_sp05_287_292_before_20260618-211136`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-287|SP05-299|SP05-300|SP05-301|SP05-302|SP05-303|SP05-304" --parallel=6 --session-suffix=primary_p16_sp05_299_304_repair287_lineage_x7 --force` -> `generated=7 attempted=7 skipped=133 failed=0`.
+- QA accepted:
+  - `SP05-287`: repaired missing digital pop opera card, astral masked performer, magenta/cyan star-stage scale.
+  - `SP05-299`: dream invasion carnival, fractured carnival masks, symbolic red/blue stage tension.
+  - `SP05-300`: hypergraphic chromatic action, saturated hero pose, bold cyan/magenta/orange action geometry.
+  - `SP05-301`: analog space opera command, retro officer silhouette, ship scale and star-command read.
+  - `SP05-302`: melancholic space corsair, long cloak silhouette, moonlit outlaw solitude.
+  - `SP05-303`: celestial journey melancholy, astral pilgrim profile, gold orbital frame and farewell mood.
+  - `SP05-304`: baroque insurgent melodrama, ornamental shojo command figure; watchlist for strong baroque-aristocratic cue, accepted as preset-specific.
+- Backlog action: repaired missing `SP05-287`; removed `SP05-299|SP05-300|SP05-301|SP05-302|SP05-303|SP05-304`.
+- Expected next runtime: `pack_16 availableDefaultImages=84/140`, `staleDefaultImages=56`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-305|SP05-306|SP05-307|SP05-308|SP05-309|SP05-310`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 15, `SP05-305..310`)
+
+- Prompt state: compact dry-run archived at `logs\style-prompts-pack16-wave15-sp05-305-310-20260618-213633.txt`; prompts were character-led, had explicit 70s/80s retro anime lineage/style DNA, avoided generic fallback, and ended with the strong denoise/post-processing contract.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave15_sp05_305_310_before_20260618-213633`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-305|SP05-306|SP05-307|SP05-308|SP05-309|SP05-310" --parallel=6 --session-suffix=primary_p16_sp05_305_310_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-305`: neon sci-fi slapstick rom-com, bright retro gag pose; user approved original card after over-strict retry, original restored from `pack_16_wave15_reject_sp05_305_20260618-214113`.
+  - `SP05-306`: adult domestic warmth, sunset kitchen routine and lived-in TV-era warmth.
+  - `SP05-307`: summer sports melodrama, athlete pause, sweat/sunset and late-summer competition mood.
+  - `SP05-308`: eighties neon precision noir, rain-neon confidence pose and hard city light.
+  - `SP05-309`: explosive space glam action, glam sci-fi figure, magenta/white space-opera action scale.
+  - `SP05-310`: competent space pulp, practical space pilot, hangar craft and orange/blue pulp utility.
+- Backlog action: removed `SP05-305|SP05-306|SP05-307|SP05-308|SP05-309|SP05-310`.
+- Expected next runtime: `pack_16 availableDefaultImages=90/140`, `staleDefaultImages=50`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-311|SP05-312|SP05-313|SP05-314|SP05-315|SP05-316`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 16, `SP05-311..316`)
+
+- Prompt state: compact dry-run archived at `logs\style-prompts-pack16-wave16-sp05-311-316-20260618-214805.txt`; prompts were character-led, had explicit 70s/80s retro anime lineage/style DNA, avoided generic fallback, and ended with the strong denoise/post-processing contract.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave16_sp05_311_316_before_20260618-214805`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-311|SP05-312|SP05-313|SP05-314|SP05-315|SP05-316" --parallel=6 --session-suffix=primary_p16_sp05_311_316_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-311`: rusted eco hope adventure, character-led coastal ruin, ivy/rust/blue-sky optimism.
+  - `SP05-312`: elegant eighties heist glam, feline thief silhouette, marble noir and red/black jewel tension.
+  - `SP05-313`: zodiac cosmic heroism, celestial cape portrait, gold constellations and heroic retro space scale.
+  - `SP05-314`: monumental formation sacrifice, young mecha pilot before orbital monolith, orange beacon and solemn resolve.
+  - `SP05-315`: angular institutional tragedy, clean cel portrait, hard red/black geometry and fractured reflection.
+  - `SP05-316`: biomorphic mist ritual, masked organic-tech figure, misty ritual world and luminous spores; denoise acceptable for preset.
+- Backlog action: removed `SP05-311|SP05-312|SP05-313|SP05-314|SP05-315|SP05-316`.
+- Expected next runtime: `pack_16 availableDefaultImages=96/140`, `staleDefaultImages=44`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-317|SP05-318|SP05-319|SP05-320|SP05-343|SP05-344`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 17, `SP05-317..320|343..344`)
+
+- Prompt state: compact dry-run archived at `logs\style-prompts-pack16-wave17-sp05-317-320-343-344-20260618-215620.txt`; prompts were character-led, kept distinct retro/sports lineage, avoided generic object-only fallbacks, and ended with the strong denoise/post-processing contract.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave17_sp05_317_320_343_344_before_20260618-215620`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-317|SP05-318|SP05-319|SP05-320|SP05-343|SP05-344" --parallel=6 --session-suffix=primary_p16_sp05_317_320_343_344_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-317`: arcade techno-rebellion, neon rain rider, motorcycle/city cues intentional for retro-tech rebellion.
+  - `SP05-318`: psychedelic demonic horror, non-graphic transformation portrait, strong red/violet horror read.
+  - `SP05-319`: strategic pop duality, retro space-performance officer, tactical/pop scale split.
+  - `SP05-320`: charismatic space rogue pulp, lounge-noir rogue with red coat and cosmic pulp staging.
+  - `SP05-343`: vertical team rally energy, sports jump/rally pose, orange/blue team-energy read.
+  - `SP05-344`: ego pressure breakout, crouched predator sprint geometry, blue/acid/red pressure palette.
+- Backlog action: removed `SP05-317|SP05-318|SP05-319|SP05-320|SP05-343|SP05-344`.
+- Expected next runtime: `pack_16 availableDefaultImages=102/140`, `staleDefaultImages=38`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-345|SP05-346|SP05-347|SP05-348|SP05-349|SP05-350`.
+
+## Primary default cards - 2026-06-18 (`pack_16` wave 18, `SP05-345..350`)
+
+- Prompt state: compact dry-run archived at `logs\style-prompts-pack16-wave18-sp05-345-350-20260618-220403.txt`; prompts were sports/performance character-led, avoided generic object-only fallback, and ended with the strong denoise/post-processing contract.
+- Backup before generation: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave18_sp05_345_350_before_20260618-220403`.
+- Generation command:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_16 "--preset=SP05-345|SP05-346|SP05-347|SP05-348|SP05-349|SP05-350" --parallel=6 --session-suffix=primary_p16_sp05_345_350_lineage_x6 --force` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA accepted:
+  - `SP05-345`: nineties physical rivalry, close athletic stare, red/white uniform, sweat and wooden court read.
+  - `SP05-346`: phantom teamplay speed, blue/cyan sprint pose, ghost trail and tactical motion clarity.
+  - `SP05-347`: uphill endurance breakaway, mountain climb runner, slope pressure and endurance push.
+  - `SP05-348`: summer precision duel, tennis-like precision action accepted as intentional sports-duel cue, sunny red/blue palette.
+  - `SP05-349`: generational sports resolve, night-court resolve portrait, legacy/maturity mood and worn uniform.
+  - `SP05-350`: aquatic relay glow, swimmer handoff, blue caustics and fluid relay motion.
+- Backlog action: removed `SP05-345|SP05-346|SP05-347|SP05-348|SP05-349|SP05-350`.
+- Expected next runtime: `pack_16 availableDefaultImages=108/140`, `staleDefaultImages=32`, `missingDefaultImages=0`.
+- Next safe `pack_16` wave by stale order: `SP05-351|SP05-352|SP05-353|SP05-354|SP05-355|SP05-356`.
+
 ### Suggested next visual batches
 
 Run the missing defaults first, in small `2x2` waves:
@@ -963,38 +1776,8 @@ Nota 2026-06-17 variants carousel: generadas `SP04-001-01` a `SP04-008-01` en `a
 
 ### pack_03
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP03-051 | `components/recipes/styles/manifests/presets/pack_03/SP03-051.yaml` | `assets/recipes/styles/defaults/SP03-051.webp` |
-| SP03-052 | `components/recipes/styles/manifests/presets/pack_03/SP03-052.yaml` | `assets/recipes/styles/defaults/SP03-052.webp` |
-| SP03-053 | `components/recipes/styles/manifests/presets/pack_03/SP03-053.yaml` | `assets/recipes/styles/defaults/SP03-053.webp` |
-| SP03-054 | `components/recipes/styles/manifests/presets/pack_03/SP03-054.yaml` | `assets/recipes/styles/defaults/SP03-054.webp` |
-| SP03-055 | `components/recipes/styles/manifests/presets/pack_03/SP03-055.yaml` | `assets/recipes/styles/defaults/SP03-055.webp` |
-| SP03-056 | `components/recipes/styles/manifests/presets/pack_03/SP03-056.yaml` | `assets/recipes/styles/defaults/SP03-056.webp` |
-| SP03-057 | `components/recipes/styles/manifests/presets/pack_03/SP03-057.yaml` | `assets/recipes/styles/defaults/SP03-057.webp` |
-| SP03-058 | `components/recipes/styles/manifests/presets/pack_03/SP03-058.yaml` | `assets/recipes/styles/defaults/SP03-058.webp` |
-| SP03-059 | `components/recipes/styles/manifests/presets/pack_03/SP03-059.yaml` | `assets/recipes/styles/defaults/SP03-059.webp` |
-| SP03-060 | `components/recipes/styles/manifests/presets/pack_03/SP03-060.yaml` | `assets/recipes/styles/defaults/SP03-060.webp` |
-| SP03-061 | `components/recipes/styles/manifests/presets/pack_03/SP03-061.yaml` | `assets/recipes/styles/defaults/SP03-061.webp` |
-| SP03-062 | `components/recipes/styles/manifests/presets/pack_03/SP03-062.yaml` | `assets/recipes/styles/defaults/SP03-062.webp` |
-| SP03-063 | `components/recipes/styles/manifests/presets/pack_03/SP03-063.yaml` | `assets/recipes/styles/defaults/SP03-063.webp` |
-| SP03-064 | `components/recipes/styles/manifests/presets/pack_03/SP03-064.yaml` | `assets/recipes/styles/defaults/SP03-064.webp` |
-| SP03-065 | `components/recipes/styles/manifests/presets/pack_03/SP03-065.yaml` | `assets/recipes/styles/defaults/SP03-065.webp` |
-| SP03-066 | `components/recipes/styles/manifests/presets/pack_03/SP03-066.yaml` | `assets/recipes/styles/defaults/SP03-066.webp` |
-| SP03-067 | `components/recipes/styles/manifests/presets/pack_03/SP03-067.yaml` | `assets/recipes/styles/defaults/SP03-067.webp` |
-| SP03-068 | `components/recipes/styles/manifests/presets/pack_03/SP03-068.yaml` | `assets/recipes/styles/defaults/SP03-068.webp` |
-| SP03-069 | `components/recipes/styles/manifests/presets/pack_03/SP03-069.yaml` | `assets/recipes/styles/defaults/SP03-069.webp` |
-| SP03-070 | `components/recipes/styles/manifests/presets/pack_03/SP03-070.yaml` | `assets/recipes/styles/defaults/SP03-070.webp` |
-| SP03-071 | `components/recipes/styles/manifests/presets/pack_03/SP03-071.yaml` | `assets/recipes/styles/defaults/SP03-071.webp` |
-| SP03-072 | `components/recipes/styles/manifests/presets/pack_03/SP03-072.yaml` | `assets/recipes/styles/defaults/SP03-072.webp` |
-| SP03-073 | `components/recipes/styles/manifests/presets/pack_03/SP03-073.yaml` | `assets/recipes/styles/defaults/SP03-073.webp` |
-| SP03-074 | `components/recipes/styles/manifests/presets/pack_03/SP03-074.yaml` | `assets/recipes/styles/defaults/SP03-074.webp` |
-| SP03-075 | `components/recipes/styles/manifests/presets/pack_03/SP03-075.yaml` | `assets/recipes/styles/defaults/SP03-075.webp` |
-| SP03-076 | `components/recipes/styles/manifests/presets/pack_03/SP03-076.yaml` | `assets/recipes/styles/defaults/SP03-076.webp` |
-| SP03-077 | `components/recipes/styles/manifests/presets/pack_03/SP03-077.yaml` | `assets/recipes/styles/defaults/SP03-077.webp` |
-| SP03-078 | `components/recipes/styles/manifests/presets/pack_03/SP03-078.yaml` | `assets/recipes/styles/defaults/SP03-078.webp` |
-| SP03-079 | `components/recipes/styles/manifests/presets/pack_03/SP03-079.yaml` | `assets/recipes/styles/defaults/SP03-079.webp` |
-| SP03-080 | `components/recipes/styles/manifests/presets/pack_03/SP03-080.yaml` | `assets/recipes/styles/defaults/SP03-080.webp` |
+| Preset | Manifest | Default card |
+| ------ | -------- | ------------ |
 
 Nota 2026-06-17 primary wave 1: regeneradas y aprobadas `SP03-003|SP03-004|SP03-005|SP03-006|SP03-007|SP03-008|SP03-009|SP03-010` con guardrails contra bust/personaje, UI/text, product-table, corridor/market/library y abstraccion vacia. QA visual: `SP03-003`, `SP03-006`, `SP03-007` pasan fuerte; `SP03-004`, `SP03-005`, `SP03-008`, `SP03-009`, `SP03-010` quedan watchlist por material-board/swatch cues aceptables para lookdev renderer. `SP03-003|004|005|006|008|009|010` requirieron retry no-bust. Pendientes esperados tras runtime: 70 stale.
 
@@ -1008,381 +1791,110 @@ Nota 2026-06-17 primary wave 5: regeneradas y aprobadas `SP03-035|SP03-036|SP03-
 
 Nota 2026-06-17 primary wave 6: regeneradas y aprobadas `SP03-043|SP03-044|SP03-045|SP03-046|SP03-047|SP03-048|SP03-049|SP03-050` como primarias nuevas. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave6_20260617-235244`. QA visual: pasan las ocho. Watchlist aceptado: `SP03-047` por archviz room/material slice y `SP03-049` por T-pose robot, excepcion representativa del preset; sin humano real/texto/UI dominante. Pendientes esperados tras runtime: 30 stale.
 
+Nota 2026-06-18 primary wave 7: regeneradas y aprobadas `SP03-051|SP03-052|SP03-053|SP03-054|SP03-055|SP03-056|SP03-057|SP03-058` como primarias nuevas. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave7_20260618-000529`. Rechazadas preservadas: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave7_rejects_20260618-001227`. QA visual: pasan `SP03-051`, `SP03-052`, `SP03-053`, `SP03-054`, `SP03-056`, `SP03-057`, `SP03-058`; `SP03-055` queda watchlist aceptado por sci-fi VR room/module ya sin fantasy landscape/corridor/person/UI/texto. Retries: `SP03-052` por full car/front-ad y `SP03-055` por floating-island/fantasy landscape. Pendientes esperados tras runtime: 22 stale.
+
+Nota 2026-06-18 primary wave 8: regeneradas y aprobadas `SP03-059|SP03-060|SP03-061|SP03-062|SP03-063|SP03-064|SP03-065|SP03-066` como primarias nuevas. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave8_20260618-001834`. Rechazadas preservadas: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave8_rejects_20260618-002454`. QA visual: pasan `SP03-059`, `SP03-061`, `SP03-063`, `SP03-064`, `SP03-065`, `SP03-066`; `SP03-060` queda watchlist por fondo landscape pero sujeto modular/material-board claro; `SP03-062` queda watchlist por suelo organico, sin humano/bust/gore/texto. Retries: `SP03-060` por ruina/fantasy hall, `SP03-062` por bosque/root scene y `SP03-066` por glyph/numero. Pendientes esperados tras runtime: 14 stale.
+
+Nota 2026-06-18 primary wave 9: regeneradas y aprobadas `SP03-067|SP03-068|SP03-069|SP03-070|SP03-071|SP03-072|SP03-073|SP03-074` como primarias nuevas. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave9_20260618-003342`. Rechazada preservada: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave9_rejects_20260618-004023`. QA visual: pasan `SP03-068`, `SP03-069`, `SP03-070`, `SP03-071`, `SP03-072`, `SP03-073`, `SP03-074`; `SP03-067` pasa tras retry off-body/prosthetic module. Watchlist aceptado: `SP03-073` por papercraft creature bust, representativo del preset. Retry: `SP03-067` por cuerpo/fetish-frame. Pendientes esperados tras runtime: 6 stale.
+
+Nota 2026-06-18 primary wave 10 + representativity redo: regeneradas y aprobadas `SP03-075|SP03-076|SP03-077|SP03-078|SP03-079|SP03-080` como primarias finales, con redo adicional de `SP03-060|SP03-066|SP03-067` para corregir abstraccion/deriva. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave10_plus_redo_20260618-004851`. Rechazada preservada: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave10_rejects_20260618-005611`. QA visual: `SP03-060` pasa como environment-design playable terrain card; `SP03-066` pasa tras retry como full-frame abstract background sin objeto central; `SP03-067` pasa como modulo/protesis off-body; `SP03-075..080` pasan como material/style cards representativas. Watchlist aceptado: `SP03-077` por robot toy-brick character y `SP03-080` por marble creature statue, ambos representativos del preset. Pendientes esperados tras runtime: 0 stale.
+
 ### pack_04
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP04-001 | `components/recipes/styles/manifests/presets/pack_04/SP04-001.yaml` | `assets/recipes/styles/defaults/SP04-001.webp` |
-| SP04-002 | `components/recipes/styles/manifests/presets/pack_04/SP04-002.yaml` | `assets/recipes/styles/defaults/SP04-002.webp` |
-| SP04-003 | `components/recipes/styles/manifests/presets/pack_04/SP04-003.yaml` | `assets/recipes/styles/defaults/SP04-003.webp` |
-| SP04-004 | `components/recipes/styles/manifests/presets/pack_04/SP04-004.yaml` | `assets/recipes/styles/defaults/SP04-004.webp` |
-| SP04-005 | `components/recipes/styles/manifests/presets/pack_04/SP04-005.yaml` | `assets/recipes/styles/defaults/SP04-005.webp` |
-| SP04-006 | `components/recipes/styles/manifests/presets/pack_04/SP04-006.yaml` | `assets/recipes/styles/defaults/SP04-006.webp` |
-| SP04-007 | `components/recipes/styles/manifests/presets/pack_04/SP04-007.yaml` | `assets/recipes/styles/defaults/SP04-007.webp` |
-| SP04-008 | `components/recipes/styles/manifests/presets/pack_04/SP04-008.yaml` | `assets/recipes/styles/defaults/SP04-008.webp` |
-| SP04-009 | `components/recipes/styles/manifests/presets/pack_04/SP04-009.yaml` | `assets/recipes/styles/defaults/SP04-009.webp` |
-| SP04-010 | `components/recipes/styles/manifests/presets/pack_04/SP04-010.yaml` | `assets/recipes/styles/defaults/SP04-010.webp` |
-| SP04-011 | `components/recipes/styles/manifests/presets/pack_04/SP04-011.yaml` | `assets/recipes/styles/defaults/SP04-011.webp` |
-| SP04-012 | `components/recipes/styles/manifests/presets/pack_04/SP04-012.yaml` | `assets/recipes/styles/defaults/SP04-012.webp` |
-| SP04-013 | `components/recipes/styles/manifests/presets/pack_04/SP04-013.yaml` | `assets/recipes/styles/defaults/SP04-013.webp` |
-| SP04-014 | `components/recipes/styles/manifests/presets/pack_04/SP04-014.yaml` | `assets/recipes/styles/defaults/SP04-014.webp` |
-| SP04-015 | `components/recipes/styles/manifests/presets/pack_04/SP04-015.yaml` | `assets/recipes/styles/defaults/SP04-015.webp` |
-| SP04-016 | `components/recipes/styles/manifests/presets/pack_04/SP04-016.yaml` | `assets/recipes/styles/defaults/SP04-016.webp` |
-| SP04-017 | `components/recipes/styles/manifests/presets/pack_04/SP04-017.yaml` | `assets/recipes/styles/defaults/SP04-017.webp` |
-| SP04-018 | `components/recipes/styles/manifests/presets/pack_04/SP04-018.yaml` | `assets/recipes/styles/defaults/SP04-018.webp` |
-| SP04-019 | `components/recipes/styles/manifests/presets/pack_04/SP04-019.yaml` | `assets/recipes/styles/defaults/SP04-019.webp` |
-| SP04-020 | `components/recipes/styles/manifests/presets/pack_04/SP04-020.yaml` | `assets/recipes/styles/defaults/SP04-020.webp` |
-| SP04-021 | `components/recipes/styles/manifests/presets/pack_04/SP04-021.yaml` | `assets/recipes/styles/defaults/SP04-021.webp` |
-| SP04-022 | `components/recipes/styles/manifests/presets/pack_04/SP04-022.yaml` | `assets/recipes/styles/defaults/SP04-022.webp` |
-| SP04-023 | `components/recipes/styles/manifests/presets/pack_04/SP04-023.yaml` | `assets/recipes/styles/defaults/SP04-023.webp` |
-| SP04-024 | `components/recipes/styles/manifests/presets/pack_04/SP04-024.yaml` | `assets/recipes/styles/defaults/SP04-024.webp` |
-| SP04-025 | `components/recipes/styles/manifests/presets/pack_04/SP04-025.yaml` | `assets/recipes/styles/defaults/SP04-025.webp` |
-| SP04-026 | `components/recipes/styles/manifests/presets/pack_04/SP04-026.yaml` | `assets/recipes/styles/defaults/SP04-026.webp` |
-| SP04-027 | `components/recipes/styles/manifests/presets/pack_04/SP04-027.yaml` | `assets/recipes/styles/defaults/SP04-027.webp` |
-| SP04-028 | `components/recipes/styles/manifests/presets/pack_04/SP04-028.yaml` | `assets/recipes/styles/defaults/SP04-028.webp` |
-| SP04-029 | `components/recipes/styles/manifests/presets/pack_04/SP04-029.yaml` | `assets/recipes/styles/defaults/SP04-029.webp` |
-| SP04-030 | `components/recipes/styles/manifests/presets/pack_04/SP04-030.yaml` | `assets/recipes/styles/defaults/SP04-030.webp` |
-| SP04-031 | `components/recipes/styles/manifests/presets/pack_04/SP04-031.yaml` | `assets/recipes/styles/defaults/SP04-031.webp` |
-| SP04-032 | `components/recipes/styles/manifests/presets/pack_04/SP04-032.yaml` | `assets/recipes/styles/defaults/SP04-032.webp` |
-| SP04-033 | `components/recipes/styles/manifests/presets/pack_04/SP04-033.yaml` | `assets/recipes/styles/defaults/SP04-033.webp` |
-| SP04-034 | `components/recipes/styles/manifests/presets/pack_04/SP04-034.yaml` | `assets/recipes/styles/defaults/SP04-034.webp` |
-| SP04-035 | `components/recipes/styles/manifests/presets/pack_04/SP04-035.yaml` | `assets/recipes/styles/defaults/SP04-035.webp` |
-| SP04-036 | `components/recipes/styles/manifests/presets/pack_04/SP04-036.yaml` | `assets/recipes/styles/defaults/SP04-036.webp` |
-| SP04-037 | `components/recipes/styles/manifests/presets/pack_04/SP04-037.yaml` | `assets/recipes/styles/defaults/SP04-037.webp` |
-| SP04-038 | `components/recipes/styles/manifests/presets/pack_04/SP04-038.yaml` | `assets/recipes/styles/defaults/SP04-038.webp` |
-| SP04-039 | `components/recipes/styles/manifests/presets/pack_04/SP04-039.yaml` | `assets/recipes/styles/defaults/SP04-039.webp` |
-| SP04-040 | `components/recipes/styles/manifests/presets/pack_04/SP04-040.yaml` | `assets/recipes/styles/defaults/SP04-040.webp` |
-| SP04-041 | `components/recipes/styles/manifests/presets/pack_04/SP04-041.yaml` | `assets/recipes/styles/defaults/SP04-041.webp` |
-| SP04-042 | `components/recipes/styles/manifests/presets/pack_04/SP04-042.yaml` | `assets/recipes/styles/defaults/SP04-042.webp` |
-| SP04-043 | `components/recipes/styles/manifests/presets/pack_04/SP04-043.yaml` | `assets/recipes/styles/defaults/SP04-043.webp` |
-| SP04-044 | `components/recipes/styles/manifests/presets/pack_04/SP04-044.yaml` | `assets/recipes/styles/defaults/SP04-044.webp` |
-| SP04-045 | `components/recipes/styles/manifests/presets/pack_04/SP04-045.yaml` | `assets/recipes/styles/defaults/SP04-045.webp` |
-| SP04-046 | `components/recipes/styles/manifests/presets/pack_04/SP04-046.yaml` | `assets/recipes/styles/defaults/SP04-046.webp` |
-| SP04-047 | `components/recipes/styles/manifests/presets/pack_04/SP04-047.yaml` | `assets/recipes/styles/defaults/SP04-047.webp` |
-| SP04-048 | `components/recipes/styles/manifests/presets/pack_04/SP04-048.yaml` | `assets/recipes/styles/defaults/SP04-048.webp` |
-| SP04-049 | `components/recipes/styles/manifests/presets/pack_04/SP04-049.yaml` | `assets/recipes/styles/defaults/SP04-049.webp` |
-| SP04-050 | `components/recipes/styles/manifests/presets/pack_04/SP04-050.yaml` | `assets/recipes/styles/defaults/SP04-050.webp` |
-| SP04-051 | `components/recipes/styles/manifests/presets/pack_04/SP04-051.yaml` | `assets/recipes/styles/defaults/SP04-051.webp` |
-| SP04-052 | `components/recipes/styles/manifests/presets/pack_04/SP04-052.yaml` | `assets/recipes/styles/defaults/SP04-052.webp` |
-| SP04-053 | `components/recipes/styles/manifests/presets/pack_04/SP04-053.yaml` | `assets/recipes/styles/defaults/SP04-053.webp` |
-| SP04-054 | `components/recipes/styles/manifests/presets/pack_04/SP04-054.yaml` | `assets/recipes/styles/defaults/SP04-054.webp` |
-| SP04-055 | `components/recipes/styles/manifests/presets/pack_04/SP04-055.yaml` | `assets/recipes/styles/defaults/SP04-055.webp` |
-| SP04-056 | `components/recipes/styles/manifests/presets/pack_04/SP04-056.yaml` | `assets/recipes/styles/defaults/SP04-056.webp` |
-| SP04-057 | `components/recipes/styles/manifests/presets/pack_04/SP04-057.yaml` | `assets/recipes/styles/defaults/SP04-057.webp` |
-| SP04-058 | `components/recipes/styles/manifests/presets/pack_04/SP04-058.yaml` | `assets/recipes/styles/defaults/SP04-058.webp` |
-| SP04-059 | `components/recipes/styles/manifests/presets/pack_04/SP04-059.yaml` | `assets/recipes/styles/defaults/SP04-059.webp` |
-| SP04-060 | `components/recipes/styles/manifests/presets/pack_04/SP04-060.yaml` | `assets/recipes/styles/defaults/SP04-060.webp` |
-| SP04-061 | `components/recipes/styles/manifests/presets/pack_04/SP04-061.yaml` | `assets/recipes/styles/defaults/SP04-061.webp` |
-| SP04-062 | `components/recipes/styles/manifests/presets/pack_04/SP04-062.yaml` | `assets/recipes/styles/defaults/SP04-062.webp` |
-| SP04-063 | `components/recipes/styles/manifests/presets/pack_04/SP04-063.yaml` | `assets/recipes/styles/defaults/SP04-063.webp` |
-| SP04-064 | `components/recipes/styles/manifests/presets/pack_04/SP04-064.yaml` | `assets/recipes/styles/defaults/SP04-064.webp` |
-| SP04-065 | `components/recipes/styles/manifests/presets/pack_04/SP04-065.yaml` | `assets/recipes/styles/defaults/SP04-065.webp` |
-| SP04-066 | `components/recipes/styles/manifests/presets/pack_04/SP04-066.yaml` | `assets/recipes/styles/defaults/SP04-066.webp` |
-| SP04-067 | `components/recipes/styles/manifests/presets/pack_04/SP04-067.yaml` | `assets/recipes/styles/defaults/SP04-067.webp` |
-| SP04-068 | `components/recipes/styles/manifests/presets/pack_04/SP04-068.yaml` | `assets/recipes/styles/defaults/SP04-068.webp` |
-| SP04-069 | `components/recipes/styles/manifests/presets/pack_04/SP04-069.yaml` | `assets/recipes/styles/defaults/SP04-069.webp` |
-| SP04-070 | `components/recipes/styles/manifests/presets/pack_04/SP04-070.yaml` | `assets/recipes/styles/defaults/SP04-070.webp` |
-| SP04-071 | `components/recipes/styles/manifests/presets/pack_04/SP04-071.yaml` | `assets/recipes/styles/defaults/SP04-071.webp` |
-| SP04-072 | `components/recipes/styles/manifests/presets/pack_04/SP04-072.yaml` | `assets/recipes/styles/defaults/SP04-072.webp` |
-| SP04-073 | `components/recipes/styles/manifests/presets/pack_04/SP04-073.yaml` | `assets/recipes/styles/defaults/SP04-073.webp` |
-| SP04-074 | `components/recipes/styles/manifests/presets/pack_04/SP04-074.yaml` | `assets/recipes/styles/defaults/SP04-074.webp` |
-| SP04-075 | `components/recipes/styles/manifests/presets/pack_04/SP04-075.yaml` | `assets/recipes/styles/defaults/SP04-075.webp` |
-| SP04-076 | `components/recipes/styles/manifests/presets/pack_04/SP04-076.yaml` | `assets/recipes/styles/defaults/SP04-076.webp` |
-| SP04-077 | `components/recipes/styles/manifests/presets/pack_04/SP04-077.yaml` | `assets/recipes/styles/defaults/SP04-077.webp` |
-| SP04-078 | `components/recipes/styles/manifests/presets/pack_04/SP04-078.yaml` | `assets/recipes/styles/defaults/SP04-078.webp` |
-| SP04-079 | `components/recipes/styles/manifests/presets/pack_04/SP04-079.yaml` | `assets/recipes/styles/defaults/SP04-079.webp` |
-| SP04-080 | `components/recipes/styles/manifests/presets/pack_04/SP04-080.yaml` | `assets/recipes/styles/defaults/SP04-080.webp` |
-| SP04-081 | `components/recipes/styles/manifests/presets/pack_04/SP04-081.yaml` | `assets/recipes/styles/defaults/SP04-081.webp` |
-| SP04-082 | `components/recipes/styles/manifests/presets/pack_04/SP04-082.yaml` | `assets/recipes/styles/defaults/SP04-082.webp` |
-| SP04-083 | `components/recipes/styles/manifests/presets/pack_04/SP04-083.yaml` | `assets/recipes/styles/defaults/SP04-083.webp` |
-| SP04-084 | `components/recipes/styles/manifests/presets/pack_04/SP04-084.yaml` | `assets/recipes/styles/defaults/SP04-084.webp` |
-| SP04-085 | `components/recipes/styles/manifests/presets/pack_04/SP04-085.yaml` | `assets/recipes/styles/defaults/SP04-085.webp` |
-| SP04-086 | `components/recipes/styles/manifests/presets/pack_04/SP04-086.yaml` | `assets/recipes/styles/defaults/SP04-086.webp` |
-| SP04-087 | `components/recipes/styles/manifests/presets/pack_04/SP04-087.yaml` | `assets/recipes/styles/defaults/SP04-087.webp` |
-| SP04-088 | `components/recipes/styles/manifests/presets/pack_04/SP04-088.yaml` | `assets/recipes/styles/defaults/SP04-088.webp` |
-| SP04-089 | `components/recipes/styles/manifests/presets/pack_04/SP04-089.yaml` | `assets/recipes/styles/defaults/SP04-089.webp` |
-| SP04-090 | `components/recipes/styles/manifests/presets/pack_04/SP04-090.yaml` | `assets/recipes/styles/defaults/SP04-090.webp` |
-| SP04-091 | `components/recipes/styles/manifests/presets/pack_04/SP04-091.yaml` | `assets/recipes/styles/defaults/SP04-091.webp` |
-| SP04-092 | `components/recipes/styles/manifests/presets/pack_04/SP04-092.yaml` | `assets/recipes/styles/defaults/SP04-092.webp` |
-| SP04-093 | `components/recipes/styles/manifests/presets/pack_04/SP04-093.yaml` | `assets/recipes/styles/defaults/SP04-093.webp` |
-| SP04-094 | `components/recipes/styles/manifests/presets/pack_04/SP04-094.yaml` | `assets/recipes/styles/defaults/SP04-094.webp` |
-| SP04-095 | `components/recipes/styles/manifests/presets/pack_04/SP04-095.yaml` | `assets/recipes/styles/defaults/SP04-095.webp` |
-| SP04-096 | `components/recipes/styles/manifests/presets/pack_04/SP04-096.yaml` | `assets/recipes/styles/defaults/SP04-096.webp` |
-| SP04-097 | `components/recipes/styles/manifests/presets/pack_04/SP04-097.yaml` | `assets/recipes/styles/defaults/SP04-097.webp` |
-| SP04-098 | `components/recipes/styles/manifests/presets/pack_04/SP04-098.yaml` | `assets/recipes/styles/defaults/SP04-098.webp` |
-| SP04-099 | `components/recipes/styles/manifests/presets/pack_04/SP04-099.yaml` | `assets/recipes/styles/defaults/SP04-099.webp` |
-| SP04-100 | `components/recipes/styles/manifests/presets/pack_04/SP04-100.yaml` | `assets/recipes/styles/defaults/SP04-100.webp` |
+| Preset | Manifest | Default card |
+| ------ | -------- | ------------ |
+
+Nota 2026-06-18 primary `pack_04` wave 1: regeneradas y aprobadas `SP04-001|SP04-002|SP04-003|SP04-004|SP04-005|SP04-006|SP04-007|SP04-008|SP04-009|SP04-010` como primarias nuevas. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave1_20260618-010658`. Rechazadas preservadas: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave1_rejects_20260618-011604` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave1_rejects2_20260618-012117`. QA visual: pasan `SP04-001`, `SP04-002`, `SP04-003`, `SP04-004`, `SP04-005`, `SP04-006`, `SP04-007`, `SP04-008`, `SP04-009`, `SP04-010`; retries `SP04-006` por face/full-body/fantasy-object drift, `SP04-007` por boy/bike/lamp, `SP04-008` por detective literal, `SP04-010` por body/cape/city tableau. Pendientes esperados tras runtime: 90 stale.
 
 ### pack_05
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP05-021 | `components/recipes/styles/manifests/presets/pack_05/SP05-021.yaml` | `assets/recipes/styles/defaults/SP05-021.webp` |
-| SP05-022 | `components/recipes/styles/manifests/presets/pack_05/SP05-022.yaml` | `assets/recipes/styles/defaults/SP05-022.webp` |
-| SP05-023 | `components/recipes/styles/manifests/presets/pack_05/SP05-023.yaml` | `assets/recipes/styles/defaults/SP05-023.webp` |
-| SP05-025 | `components/recipes/styles/manifests/presets/pack_05/SP05-025.yaml` | `assets/recipes/styles/defaults/SP05-025.webp` |
-| SP05-028 | `components/recipes/styles/manifests/presets/pack_05/SP05-028.yaml` | `assets/recipes/styles/defaults/SP05-028.webp` |
-| SP05-029 | `components/recipes/styles/manifests/presets/pack_05/SP05-029.yaml` | `assets/recipes/styles/defaults/SP05-029.webp` |
-| SP05-031 | `components/recipes/styles/manifests/presets/pack_05/SP05-031.yaml` | `assets/recipes/styles/defaults/SP05-031.webp` |
-| SP05-032 | `components/recipes/styles/manifests/presets/pack_05/SP05-032.yaml` | `assets/recipes/styles/defaults/SP05-032.webp` |
-| SP05-033 | `components/recipes/styles/manifests/presets/pack_05/SP05-033.yaml` | `assets/recipes/styles/defaults/SP05-033.webp` |
-| SP05-034 | `components/recipes/styles/manifests/presets/pack_05/SP05-034.yaml` | `assets/recipes/styles/defaults/SP05-034.webp` |
-| SP05-035 | `components/recipes/styles/manifests/presets/pack_05/SP05-035.yaml` | `assets/recipes/styles/defaults/SP05-035.webp` |
-| SP05-036 | `components/recipes/styles/manifests/presets/pack_05/SP05-036.yaml` | `assets/recipes/styles/defaults/SP05-036.webp` |
-| SP05-037 | `components/recipes/styles/manifests/presets/pack_05/SP05-037.yaml` | `assets/recipes/styles/defaults/SP05-037.webp` |
-| SP05-038 | `components/recipes/styles/manifests/presets/pack_05/SP05-038.yaml` | `assets/recipes/styles/defaults/SP05-038.webp` |
-| SP05-039 | `components/recipes/styles/manifests/presets/pack_05/SP05-039.yaml` | `assets/recipes/styles/defaults/SP05-039.webp` |
-| SP05-040 | `components/recipes/styles/manifests/presets/pack_05/SP05-040.yaml` | `assets/recipes/styles/defaults/SP05-040.webp` |
-| SP05-051 | `components/recipes/styles/manifests/presets/pack_05/SP05-051.yaml` | `assets/recipes/styles/defaults/SP05-051.webp` |
-| SP05-052 | `components/recipes/styles/manifests/presets/pack_05/SP05-052.yaml` | `assets/recipes/styles/defaults/SP05-052.webp` |
-| SP05-053 | `components/recipes/styles/manifests/presets/pack_05/SP05-053.yaml` | `assets/recipes/styles/defaults/SP05-053.webp` |
-| SP05-054 | `components/recipes/styles/manifests/presets/pack_05/SP05-054.yaml` | `assets/recipes/styles/defaults/SP05-054.webp` |
-| SP05-055 | `components/recipes/styles/manifests/presets/pack_05/SP05-055.yaml` | `assets/recipes/styles/defaults/SP05-055.webp` |
-| SP05-056 | `components/recipes/styles/manifests/presets/pack_05/SP05-056.yaml` | `assets/recipes/styles/defaults/SP05-056.webp` |
-| SP05-057 | `components/recipes/styles/manifests/presets/pack_05/SP05-057.yaml` | `assets/recipes/styles/defaults/SP05-057.webp` |
-| SP05-058 | `components/recipes/styles/manifests/presets/pack_05/SP05-058.yaml` | `assets/recipes/styles/defaults/SP05-058.webp` |
-| SP05-059 | `components/recipes/styles/manifests/presets/pack_05/SP05-059.yaml` | `assets/recipes/styles/defaults/SP05-059.webp` |
-| SP05-060 | `components/recipes/styles/manifests/presets/pack_05/SP05-060.yaml` | `assets/recipes/styles/defaults/SP05-060.webp` |
-| SP05-061 | `components/recipes/styles/manifests/presets/pack_05/SP05-061.yaml` | `assets/recipes/styles/defaults/SP05-061.webp` |
-| SP05-062 | `components/recipes/styles/manifests/presets/pack_05/SP05-062.yaml` | `assets/recipes/styles/defaults/SP05-062.webp` |
-| SP05-063 | `components/recipes/styles/manifests/presets/pack_05/SP05-063.yaml` | `assets/recipes/styles/defaults/SP05-063.webp` |
-| SP05-064 | `components/recipes/styles/manifests/presets/pack_05/SP05-064.yaml` | `assets/recipes/styles/defaults/SP05-064.webp` |
-| SP05-065 | `components/recipes/styles/manifests/presets/pack_05/SP05-065.yaml` | `assets/recipes/styles/defaults/SP05-065.webp` |
-| SP05-066 | `components/recipes/styles/manifests/presets/pack_05/SP05-066.yaml` | `assets/recipes/styles/defaults/SP05-066.webp` |
-| SP05-067 | `components/recipes/styles/manifests/presets/pack_05/SP05-067.yaml` | `assets/recipes/styles/defaults/SP05-067.webp` |
-| SP05-068 | `components/recipes/styles/manifests/presets/pack_05/SP05-068.yaml` | `assets/recipes/styles/defaults/SP05-068.webp` |
-| SP05-069 | `components/recipes/styles/manifests/presets/pack_05/SP05-069.yaml` | `assets/recipes/styles/defaults/SP05-069.webp` |
-| SP05-070 | `components/recipes/styles/manifests/presets/pack_05/SP05-070.yaml` | `assets/recipes/styles/defaults/SP05-070.webp` |
-| SP05-091 | `components/recipes/styles/manifests/presets/pack_05/SP05-091.yaml` | `assets/recipes/styles/defaults/SP05-091.webp` |
-| SP05-092 | `components/recipes/styles/manifests/presets/pack_05/SP05-092.yaml` | `assets/recipes/styles/defaults/SP05-092.webp` |
-| SP05-093 | `components/recipes/styles/manifests/presets/pack_05/SP05-093.yaml` | `assets/recipes/styles/defaults/SP05-093.webp` |
-| SP05-094 | `components/recipes/styles/manifests/presets/pack_05/SP05-094.yaml` | `assets/recipes/styles/defaults/SP05-094.webp` |
-| SP05-095 | `components/recipes/styles/manifests/presets/pack_05/SP05-095.yaml` | `assets/recipes/styles/defaults/SP05-095.webp` |
-| SP05-096 | `components/recipes/styles/manifests/presets/pack_05/SP05-096.yaml` | `assets/recipes/styles/defaults/SP05-096.webp` |
-| SP05-097 | `components/recipes/styles/manifests/presets/pack_05/SP05-097.yaml` | `assets/recipes/styles/defaults/SP05-097.webp` |
-| SP05-098 | `components/recipes/styles/manifests/presets/pack_05/SP05-098.yaml` | `assets/recipes/styles/defaults/SP05-098.webp` |
-| SP05-099 | `components/recipes/styles/manifests/presets/pack_05/SP05-099.yaml` | `assets/recipes/styles/defaults/SP05-099.webp` |
-| SP05-100 | `components/recipes/styles/manifests/presets/pack_05/SP05-100.yaml` | `assets/recipes/styles/defaults/SP05-100.webp` |
-| SP05-121 | `components/recipes/styles/manifests/presets/pack_05/SP05-121.yaml` | `assets/recipes/styles/defaults/SP05-121.webp` |
-| SP05-122 | `components/recipes/styles/manifests/presets/pack_05/SP05-122.yaml` | `assets/recipes/styles/defaults/SP05-122.webp` |
-| SP05-123 | `components/recipes/styles/manifests/presets/pack_05/SP05-123.yaml` | `assets/recipes/styles/defaults/SP05-123.webp` |
-| SP05-124 | `components/recipes/styles/manifests/presets/pack_05/SP05-124.yaml` | `assets/recipes/styles/defaults/SP05-124.webp` |
-| SP05-125 | `components/recipes/styles/manifests/presets/pack_05/SP05-125.yaml` | `assets/recipes/styles/defaults/SP05-125.webp` |
-| SP05-126 | `components/recipes/styles/manifests/presets/pack_05/SP05-126.yaml` | `assets/recipes/styles/defaults/SP05-126.webp` |
-| SP05-127 | `components/recipes/styles/manifests/presets/pack_05/SP05-127.yaml` | `assets/recipes/styles/defaults/SP05-127.webp` |
-| SP05-128 | `components/recipes/styles/manifests/presets/pack_05/SP05-128.yaml` | `assets/recipes/styles/defaults/SP05-128.webp` |
-| SP05-129 | `components/recipes/styles/manifests/presets/pack_05/SP05-129.yaml` | `assets/recipes/styles/defaults/SP05-129.webp` |
-| SP05-130 | `components/recipes/styles/manifests/presets/pack_05/SP05-130.yaml` | `assets/recipes/styles/defaults/SP05-130.webp` |
-| SP05-131 | `components/recipes/styles/manifests/presets/pack_05/SP05-131.yaml` | `assets/recipes/styles/defaults/SP05-131.webp` |
-| SP05-132 | `components/recipes/styles/manifests/presets/pack_05/SP05-132.yaml` | `assets/recipes/styles/defaults/SP05-132.webp` |
-| SP05-133 | `components/recipes/styles/manifests/presets/pack_05/SP05-133.yaml` | `assets/recipes/styles/defaults/SP05-133.webp` |
-| SP05-134 | `components/recipes/styles/manifests/presets/pack_05/SP05-134.yaml` | `assets/recipes/styles/defaults/SP05-134.webp` |
-| SP05-135 | `components/recipes/styles/manifests/presets/pack_05/SP05-135.yaml` | `assets/recipes/styles/defaults/SP05-135.webp` |
-| SP05-136 | `components/recipes/styles/manifests/presets/pack_05/SP05-136.yaml` | `assets/recipes/styles/defaults/SP05-136.webp` |
-| SP05-137 | `components/recipes/styles/manifests/presets/pack_05/SP05-137.yaml` | `assets/recipes/styles/defaults/SP05-137.webp` |
-| SP05-138 | `components/recipes/styles/manifests/presets/pack_05/SP05-138.yaml` | `assets/recipes/styles/defaults/SP05-138.webp` |
-| SP05-139 | `components/recipes/styles/manifests/presets/pack_05/SP05-139.yaml` | `assets/recipes/styles/defaults/SP05-139.webp` |
-| SP05-140 | `components/recipes/styles/manifests/presets/pack_05/SP05-140.yaml` | `assets/recipes/styles/defaults/SP05-140.webp` |
-| SP05-142 | `components/recipes/styles/manifests/presets/pack_05/SP05-142.yaml` | `assets/recipes/styles/defaults/SP05-142.webp` |
-| SP05-143 | `components/recipes/styles/manifests/presets/pack_05/SP05-143.yaml` | `assets/recipes/styles/defaults/SP05-143.webp` |
-| SP05-144 | `components/recipes/styles/manifests/presets/pack_05/SP05-144.yaml` | `assets/recipes/styles/defaults/SP05-144.webp` |
-| SP05-148 | `components/recipes/styles/manifests/presets/pack_05/SP05-148.yaml` | `assets/recipes/styles/defaults/SP05-148.webp` |
-| SP05-221 | `components/recipes/styles/manifests/presets/pack_05/SP05-221.yaml` | `assets/recipes/styles/defaults/SP05-221.webp` |
-| SP05-222 | `components/recipes/styles/manifests/presets/pack_05/SP05-222.yaml` | `assets/recipes/styles/defaults/SP05-222.webp` |
-| SP05-223 | `components/recipes/styles/manifests/presets/pack_05/SP05-223.yaml` | `assets/recipes/styles/defaults/SP05-223.webp` |
-| SP05-224 | `components/recipes/styles/manifests/presets/pack_05/SP05-224.yaml` | `assets/recipes/styles/defaults/SP05-224.webp` |
-| SP05-225 | `components/recipes/styles/manifests/presets/pack_05/SP05-225.yaml` | `assets/recipes/styles/defaults/SP05-225.webp` |
-| SP05-226 | `components/recipes/styles/manifests/presets/pack_05/SP05-226.yaml` | `assets/recipes/styles/defaults/SP05-226.webp` |
-| SP05-227 | `components/recipes/styles/manifests/presets/pack_05/SP05-227.yaml` | `assets/recipes/styles/defaults/SP05-227.webp` |
-| SP05-228 | `components/recipes/styles/manifests/presets/pack_05/SP05-228.yaml` | `assets/recipes/styles/defaults/SP05-228.webp` |
-| SP05-229 | `components/recipes/styles/manifests/presets/pack_05/SP05-229.yaml` | `assets/recipes/styles/defaults/SP05-229.webp` |
-| SP05-230 | `components/recipes/styles/manifests/presets/pack_05/SP05-230.yaml` | `assets/recipes/styles/defaults/SP05-230.webp` |
-| SP05-231 | `components/recipes/styles/manifests/presets/pack_05/SP05-231.yaml` | `assets/recipes/styles/defaults/SP05-231.webp` |
-| SP05-232 | `components/recipes/styles/manifests/presets/pack_05/SP05-232.yaml` | `assets/recipes/styles/defaults/SP05-232.webp` |
-| SP05-233 | `components/recipes/styles/manifests/presets/pack_05/SP05-233.yaml` | `assets/recipes/styles/defaults/SP05-233.webp` |
-| SP05-234 | `components/recipes/styles/manifests/presets/pack_05/SP05-234.yaml` | `assets/recipes/styles/defaults/SP05-234.webp` |
-| SP05-235 | `components/recipes/styles/manifests/presets/pack_05/SP05-235.yaml` | `assets/recipes/styles/defaults/SP05-235.webp` |
-| SP05-236 | `components/recipes/styles/manifests/presets/pack_05/SP05-236.yaml` | `assets/recipes/styles/defaults/SP05-236.webp` |
-| SP05-237 | `components/recipes/styles/manifests/presets/pack_05/SP05-237.yaml` | `assets/recipes/styles/defaults/SP05-237.webp` |
-| SP05-238 | `components/recipes/styles/manifests/presets/pack_05/SP05-238.yaml` | `assets/recipes/styles/defaults/SP05-238.webp` |
-| SP05-239 | `components/recipes/styles/manifests/presets/pack_05/SP05-239.yaml` | `assets/recipes/styles/defaults/SP05-239.webp` |
-| SP05-240 | `components/recipes/styles/manifests/presets/pack_05/SP05-240.yaml` | `assets/recipes/styles/defaults/SP05-240.webp` |
-| SP05-241 | `components/recipes/styles/manifests/presets/pack_05/SP05-241.yaml` | `assets/recipes/styles/defaults/SP05-241.webp` |
-| SP05-242 | `components/recipes/styles/manifests/presets/pack_05/SP05-242.yaml` | `assets/recipes/styles/defaults/SP05-242.webp` |
-| SP05-243 | `components/recipes/styles/manifests/presets/pack_05/SP05-243.yaml` | `assets/recipes/styles/defaults/SP05-243.webp` |
-| SP05-244 | `components/recipes/styles/manifests/presets/pack_05/SP05-244.yaml` | `assets/recipes/styles/defaults/SP05-244.webp` |
-| SP05-245 | `components/recipes/styles/manifests/presets/pack_05/SP05-245.yaml` | `assets/recipes/styles/defaults/SP05-245.webp` |
-| SP05-246 | `components/recipes/styles/manifests/presets/pack_05/SP05-246.yaml` | `assets/recipes/styles/defaults/SP05-246.webp` |
-| SP05-247 | `components/recipes/styles/manifests/presets/pack_05/SP05-247.yaml` | `assets/recipes/styles/defaults/SP05-247.webp` |
-| SP05-248 | `components/recipes/styles/manifests/presets/pack_05/SP05-248.yaml` | `assets/recipes/styles/defaults/SP05-248.webp` |
-| SP05-249 | `components/recipes/styles/manifests/presets/pack_05/SP05-249.yaml` | `assets/recipes/styles/defaults/SP05-249.webp` |
-| SP05-250 | `components/recipes/styles/manifests/presets/pack_05/SP05-250.yaml` | `assets/recipes/styles/defaults/SP05-250.webp` |
-| SP05-251 | `components/recipes/styles/manifests/presets/pack_05/SP05-251.yaml` | `assets/recipes/styles/defaults/SP05-251.webp` |
-| SP05-252 | `components/recipes/styles/manifests/presets/pack_05/SP05-252.yaml` | `assets/recipes/styles/defaults/SP05-252.webp` |
-| SP05-253 | `components/recipes/styles/manifests/presets/pack_05/SP05-253.yaml` | `assets/recipes/styles/defaults/SP05-253.webp` |
-| SP05-254 | `components/recipes/styles/manifests/presets/pack_05/SP05-254.yaml` | `assets/recipes/styles/defaults/SP05-254.webp` |
-| SP05-255 | `components/recipes/styles/manifests/presets/pack_05/SP05-255.yaml` | `assets/recipes/styles/defaults/SP05-255.webp` |
-| SP05-256 | `components/recipes/styles/manifests/presets/pack_05/SP05-256.yaml` | `assets/recipes/styles/defaults/SP05-256.webp` |
-| SP05-257 | `components/recipes/styles/manifests/presets/pack_05/SP05-257.yaml` | `assets/recipes/styles/defaults/SP05-257.webp` |
-| SP05-258 | `components/recipes/styles/manifests/presets/pack_05/SP05-258.yaml` | `assets/recipes/styles/defaults/SP05-258.webp` |
-| SP05-259 | `components/recipes/styles/manifests/presets/pack_05/SP05-259.yaml` | `assets/recipes/styles/defaults/SP05-259.webp` |
-| SP05-260 | `components/recipes/styles/manifests/presets/pack_05/SP05-260.yaml` | `assets/recipes/styles/defaults/SP05-260.webp` |
-| SP05-261 | `components/recipes/styles/manifests/presets/pack_05/SP05-261.yaml` | `assets/recipes/styles/defaults/SP05-261.webp` |
-| SP05-262 | `components/recipes/styles/manifests/presets/pack_05/SP05-262.yaml` | `assets/recipes/styles/defaults/SP05-262.webp` |
-| SP05-263 | `components/recipes/styles/manifests/presets/pack_05/SP05-263.yaml` | `assets/recipes/styles/defaults/SP05-263.webp` |
-| SP05-264 | `components/recipes/styles/manifests/presets/pack_05/SP05-264.yaml` | `assets/recipes/styles/defaults/SP05-264.webp` |
-| SP05-265 | `components/recipes/styles/manifests/presets/pack_05/SP05-265.yaml` | `assets/recipes/styles/defaults/SP05-265.webp` |
-| SP05-266 | `components/recipes/styles/manifests/presets/pack_05/SP05-266.yaml` | `assets/recipes/styles/defaults/SP05-266.webp` |
-| SP05-267 | `components/recipes/styles/manifests/presets/pack_05/SP05-267.yaml` | `assets/recipes/styles/defaults/SP05-267.webp` |
-| SP05-268 | `components/recipes/styles/manifests/presets/pack_05/SP05-268.yaml` | `assets/recipes/styles/defaults/SP05-268.webp` |
-| SP05-269 | `components/recipes/styles/manifests/presets/pack_05/SP05-269.yaml` | `assets/recipes/styles/defaults/SP05-269.webp` |
-| SP05-270 | `components/recipes/styles/manifests/presets/pack_05/SP05-270.yaml` | `assets/recipes/styles/defaults/SP05-270.webp` |
-| SP05-271 | `components/recipes/styles/manifests/presets/pack_05/SP05-271.yaml` | `assets/recipes/styles/defaults/SP05-271.webp` |
-| SP05-272 | `components/recipes/styles/manifests/presets/pack_05/SP05-272.yaml` | `assets/recipes/styles/defaults/SP05-272.webp` |
-| SP05-273 | `components/recipes/styles/manifests/presets/pack_05/SP05-273.yaml` | `assets/recipes/styles/defaults/SP05-273.webp` |
-| SP05-274 | `components/recipes/styles/manifests/presets/pack_05/SP05-274.yaml` | `assets/recipes/styles/defaults/SP05-274.webp` |
-| SP05-275 | `components/recipes/styles/manifests/presets/pack_05/SP05-275.yaml` | `assets/recipes/styles/defaults/SP05-275.webp` |
-| SP05-276 | `components/recipes/styles/manifests/presets/pack_05/SP05-276.yaml` | `assets/recipes/styles/defaults/SP05-276.webp` |
-| SP05-277 | `components/recipes/styles/manifests/presets/pack_05/SP05-277.yaml` | `assets/recipes/styles/defaults/SP05-277.webp` |
-| SP05-278 | `components/recipes/styles/manifests/presets/pack_05/SP05-278.yaml` | `assets/recipes/styles/defaults/SP05-278.webp` |
-| SP05-279 | `components/recipes/styles/manifests/presets/pack_05/SP05-279.yaml` | `assets/recipes/styles/defaults/SP05-279.webp` |
-| SP05-280 | `components/recipes/styles/manifests/presets/pack_05/SP05-280.yaml` | `assets/recipes/styles/defaults/SP05-280.webp` |
-| SP13-021 | `components/recipes/styles/manifests/presets/pack_05/SP13-021.yaml` | `assets/recipes/styles/defaults/SP13-021.webp` |
-| SP13-022 | `components/recipes/styles/manifests/presets/pack_05/SP13-022.yaml` | `assets/recipes/styles/defaults/SP13-022.webp` |
-| SP13-023 | `components/recipes/styles/manifests/presets/pack_05/SP13-023.yaml` | `assets/recipes/styles/defaults/SP13-023.webp` |
-| SP13-024 | `components/recipes/styles/manifests/presets/pack_05/SP13-024.yaml` | `assets/recipes/styles/defaults/SP13-024.webp` |
-| SP13-025 | `components/recipes/styles/manifests/presets/pack_05/SP13-025.yaml` | `assets/recipes/styles/defaults/SP13-025.webp` |
+Nota 2026-06-18 primary `pack_05` wave 1: promovidas variants ya auditadas a primarias sin gastar imagegen nuevo. Promovidas `SP05-021|SP05-022|SP05-023|SP05-025|SP05-028|SP05-029|SP05-031|SP05-032|SP05-033|SP05-034|SP05-035|SP05-036|SP05-037|SP05-038|SP05-039|SP05-040|SP05-051|SP05-052|SP05-053|SP05-054|SP05-055|SP05-056|SP05-057|SP05-058|SP05-059|SP05-060|SP05-061|SP05-062|SP05-063|SP05-064|SP05-070`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_promote_variants_wave1_20260618-042230`. Se dejaron fuera de promocion las variants marcadas solo como watchlist o demasiado dudosas.
+
+Nota 2026-06-18 primary `pack_05` wave 2: regeneradas y aprobadas `SP05-065|SP05-066|SP05-067|SP05-068|SP05-069` como primarias object/material-first. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave2_065_069_20260618-042604`. Reject preservado: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave2_rejects_20260618-043038`. QA: pasan `SP05-065`, `SP05-066`, `SP05-068`, `SP05-069`; `SP05-067` pasa con watchlist por sombra arquitectonica secundaria, pero el foco queda mineral/macro y no corredor dominante.
+
+Nota 2026-06-18 primary `pack_05` wave 3: promovidas variants fuertes ya auditadas a primarias para `SP05-094|SP05-095|SP05-096|SP05-121|SP05-122|SP05-126|SP05-130|SP05-140|SP05-143|SP05-144|SP05-222|SP05-228|SP05-239|SP05-254`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_promote_variants_wave3_20260618-044242`. Se omitieron candidates watchlist alto (`SP05-123`, `SP05-124`, `SP05-125`, `SP05-129`, `SP05-133`, `SP05-137`, `SP05-148`, `SP05-225`, `SP05-231`, `SP05-236`, `SP05-248`, `SP05-256`) hasta retry object/material-first.
+
+Nota 2026-06-18 primary `pack_05` wave 4: regeneradas y aprobadas `SP05-123|SP05-124|SP05-125|SP05-129|SP05-133|SP05-137` con prompts object/material-first. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave4_watchlist_retry_20260618-044751`. Rejects preservados: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave4_rejects_20260618-045416`. QA: `SP05-123` y `SP05-124` requirieron retry por cathedral/athlete; finales pasan. `SP05-125`, `SP05-129`, `SP05-133` pasan fuerte; `SP05-137` pasa con watchlist por marcas blueprint, sin texto legible ni persona.
+
+Nota 2026-06-18 primary `pack_05` wave 5: promovidas variants representativas ya auditadas para `SP05-098|SP05-099|SP05-100|SP05-252|SP05-253|SP05-257|SP05-259|SP05-260`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_promote_variants_wave5_20260618080246`. QA de plancha: pasan por personaje/escena clara sin volver a abstraccion vacia; se dejaron fuera `SP05-097`, `SP05-148`, `SP05-225` y otros watchlist por corredor/hereo oscuro/fantasy-cliche dominante.
+
+Nota 2026-06-18 primary `pack_05` wave 6: regeneradas y aprobadas `SP05-091|SP05-092|SP05-093|SP05-127|SP05-128|SP05-131` con safe/object prompts. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave6_091_131_20260618-050521`. QA: pasan sin camara, market/library, studio-chair/curtain/lamp. `SP05-128` y `SP05-131` quedan personaje-fuertes pero representativos; mejor que abstraccion vacia para estos presets.
+
+Nota 2026-06-18 primary `pack_05` wave 7: regeneradas y aprobadas `SP05-132|SP05-134|SP05-135|SP05-136|SP05-138|SP05-139` con overrides anti-cliche. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave7_132_139_20260618-051353`. QA: pasan; `SP05-136` y `SP05-138` quedan watchlist por personaje/noir fuerte, aceptados por representacion clara y sin market/library/camera/studio drift.
+
+Nota 2026-06-18 primary `pack_05` wave 8: regeneradas y aprobadas `SP05-142|SP05-148|SP05-221|SP05-223|SP05-224|SP05-225` con overrides anti-arma/pasillo/chase. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave8_142_225_20260618-052142`. QA: pasan; `SP05-142` y `SP05-148` quedan personaje-fuertes sin arma/camara/pasillo literal, `SP05-224` y `SP05-225` corrigen hacia asset/mecha material.
+
+Nota 2026-06-18 primary `pack_05` wave 9: regeneradas y aprobadas `SP05-226|SP05-227|SP05-229|SP05-230|SP05-231|SP05-232` con overrides object/material. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave9_226_232_20260618-052822`. QA: pasan; `SP05-229` y `SP05-230` quedan watchlist por depth urbano/megastructure, sin market/library/camara/personaje y con lectura de asset/mecha clara.
+
+Nota 2026-06-18 primary `pack_05` wave 10: regeneradas y aprobadas `SP05-233|SP05-234|SP05-235|SP05-236|SP05-237|SP05-238` con overrides object/material. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave10_233_238_20260618-053646`. QA: pasan; `SP05-234`, `SP05-235` y `SP05-238` quedan watchlist por figura fuerte, sin camara/market/library/texto legible/pasillo literal. `SP05-236` pasa fuerte como compact hardware.
+
+Nota 2026-06-18 primary `pack_05` wave 11: regeneradas y aprobadas `SP05-240|SP05-241|SP05-242|SP05-243|SP05-244|SP05-245` con overrides anti-UI/market/corridor. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave11_240_245_20260618-054325`. QA: pasan; `SP05-241..245` usan figura/escena para representar fantasy sin abstraccion vacia. `SP05-244` queda watchlist por interior ceremonial, no pasillo repetido.
+
+Nota 2026-06-18 primary `pack_05` wave 12: regeneradas y aprobadas `SP05-246|SP05-247|SP05-248|SP05-249|SP05-250|SP05-251` con overrides anti-market/library/text/corridor. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave12_246_251_20260618-055401`. QA: pasan; `SP05-247` queda watchlist por cottage/luz calida permitida por preset, `SP05-249` por mesa craft/personaje sin texto legible.
+
+Nota 2026-06-18 primary `pack_05` wave 13: regeneradas y aprobadas `SP05-255|SP05-256|SP05-258|SP05-261|SP05-262|SP05-263` con overrides object/material en dark fantasy. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave13_255_263_20260618-060222`. Reject preservado: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave13_rejects_sp05_262_20260618-060646`. QA: `SP05-262` requirio retry por puerta/corredor; final pasa como still-life surface. `SP05-258` queda watchlist por lampara/herramienta, aceptada por preset utility.
+
+Nota 2026-06-18 primary `pack_05` wave 14: regeneradas y aprobadas `SP05-264|SP05-265|SP05-266|SP05-267|SP05-268|SP05-269` con dark object/material-first. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave14_264_269_20260618-061246`. Rejects preservados: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave14_rejects_sp05_267_20260618-061706` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave14_rejects_sp05_267b_20260618-062117`. QA: `SP05-267` requirio dos retries por retrato/arma y luego blade-like; final pasa como collage/print material. `SP05-268` queda watchlist por profundidad vertical, sin persona/camara/texto.
+
+Nota 2026-06-18 primary `pack_05` wave 15: regeneradas y aprobadas `SP05-270|SP05-271|SP05-272|SP05-273|SP05-274|SP05-275` con dark object/material-first. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave15_270_275_20260618-062939`. Rejects preservados: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave15_rejects_272_275_20260618-063426`. QA: `SP05-272` y `SP05-275` requirieron retry por street/corridor y window/cathedral vibe; finales pasan como material/object cards.
+
+Nota 2026-06-18 primary `pack_05` wave 16: regeneradas y aprobadas `SP05-276|SP05-277|SP05-278|SP05-279|SP05-280` con dark object/material-first. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave16_276_280_20260618-064049`. Reject preservado: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave16_rejects_sp05_279_20260618-064652`. QA: `SP05-279` requirio retry por personaje/arquitectura; final pasa como red-optic machine still-life. `SP05-280` pasa con lantern ritual permitida por preset, no studio-lamp.
+
+Nota 2026-06-18 primary `pack_05` wave 17 close: regeneradas y aprobadas las 6 stale finales `SP05-097|SP13-021|SP13-022|SP13-023|SP13-024|SP13-025`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave17_close_20260618-065333`. Reject preservado: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave17_rejects_sp05_097_20260618-065752`. QA: `SP05-097` requirio retry por cathedral/lantern; final pasa como bone/black dominion material emblem. `SP13-021..025` pasan como action-energy abstraction sin persona/camara/pasillo.
+
+| Preset | Manifest | Default card |
+| ------ | -------- | ------------ |
 
 ### pack_06
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP06-001 | `components/recipes/styles/manifests/presets/pack_06/SP06-001.yaml` | `assets/recipes/styles/defaults/SP06-001.webp` |
-| SP06-002 | `components/recipes/styles/manifests/presets/pack_06/SP06-002.yaml` | `assets/recipes/styles/defaults/SP06-002.webp` |
-| SP06-003 | `components/recipes/styles/manifests/presets/pack_06/SP06-003.yaml` | `assets/recipes/styles/defaults/SP06-003.webp` |
-| SP06-004 | `components/recipes/styles/manifests/presets/pack_06/SP06-004.yaml` | `assets/recipes/styles/defaults/SP06-004.webp` |
-| SP06-005 | `components/recipes/styles/manifests/presets/pack_06/SP06-005.yaml` | `assets/recipes/styles/defaults/SP06-005.webp` |
-| SP06-006 | `components/recipes/styles/manifests/presets/pack_06/SP06-006.yaml` | `assets/recipes/styles/defaults/SP06-006.webp` |
-| SP06-007 | `components/recipes/styles/manifests/presets/pack_06/SP06-007.yaml` | `assets/recipes/styles/defaults/SP06-007.webp` |
-| SP06-008 | `components/recipes/styles/manifests/presets/pack_06/SP06-008.yaml` | `assets/recipes/styles/defaults/SP06-008.webp` |
-| SP06-009 | `components/recipes/styles/manifests/presets/pack_06/SP06-009.yaml` | `assets/recipes/styles/defaults/SP06-009.webp` |
-| SP06-010 | `components/recipes/styles/manifests/presets/pack_06/SP06-010.yaml` | `assets/recipes/styles/defaults/SP06-010.webp` |
-| SP06-011 | `components/recipes/styles/manifests/presets/pack_06/SP06-011.yaml` | `assets/recipes/styles/defaults/SP06-011.webp` |
-| SP06-012 | `components/recipes/styles/manifests/presets/pack_06/SP06-012.yaml` | `assets/recipes/styles/defaults/SP06-012.webp` |
-| SP06-013 | `components/recipes/styles/manifests/presets/pack_06/SP06-013.yaml` | `assets/recipes/styles/defaults/SP06-013.webp` |
-| SP06-014 | `components/recipes/styles/manifests/presets/pack_06/SP06-014.yaml` | `assets/recipes/styles/defaults/SP06-014.webp` |
-| SP06-015 | `components/recipes/styles/manifests/presets/pack_06/SP06-015.yaml` | `assets/recipes/styles/defaults/SP06-015.webp` |
-| SP06-016 | `components/recipes/styles/manifests/presets/pack_06/SP06-016.yaml` | `assets/recipes/styles/defaults/SP06-016.webp` |
-| SP06-017 | `components/recipes/styles/manifests/presets/pack_06/SP06-017.yaml` | `assets/recipes/styles/defaults/SP06-017.webp` |
-| SP06-018 | `components/recipes/styles/manifests/presets/pack_06/SP06-018.yaml` | `assets/recipes/styles/defaults/SP06-018.webp` |
-| SP06-019 | `components/recipes/styles/manifests/presets/pack_06/SP06-019.yaml` | `assets/recipes/styles/defaults/SP06-019.webp` |
-| SP06-020 | `components/recipes/styles/manifests/presets/pack_06/SP06-020.yaml` | `assets/recipes/styles/defaults/SP06-020.webp` |
-| SP06-021 | `components/recipes/styles/manifests/presets/pack_06/SP06-021.yaml` | `assets/recipes/styles/defaults/SP06-021.webp` |
-| SP06-022 | `components/recipes/styles/manifests/presets/pack_06/SP06-022.yaml` | `assets/recipes/styles/defaults/SP06-022.webp` |
-| SP06-023 | `components/recipes/styles/manifests/presets/pack_06/SP06-023.yaml` | `assets/recipes/styles/defaults/SP06-023.webp` |
-| SP06-024 | `components/recipes/styles/manifests/presets/pack_06/SP06-024.yaml` | `assets/recipes/styles/defaults/SP06-024.webp` |
-| SP06-025 | `components/recipes/styles/manifests/presets/pack_06/SP06-025.yaml` | `assets/recipes/styles/defaults/SP06-025.webp` |
-| SP06-026 | `components/recipes/styles/manifests/presets/pack_06/SP06-026.yaml` | `assets/recipes/styles/defaults/SP06-026.webp` |
-| SP06-027 | `components/recipes/styles/manifests/presets/pack_06/SP06-027.yaml` | `assets/recipes/styles/defaults/SP06-027.webp` |
-| SP06-028 | `components/recipes/styles/manifests/presets/pack_06/SP06-028.yaml` | `assets/recipes/styles/defaults/SP06-028.webp` |
-| SP06-029 | `components/recipes/styles/manifests/presets/pack_06/SP06-029.yaml` | `assets/recipes/styles/defaults/SP06-029.webp` |
-| SP06-030 | `components/recipes/styles/manifests/presets/pack_06/SP06-030.yaml` | `assets/recipes/styles/defaults/SP06-030.webp` |
-| SP06-031 | `components/recipes/styles/manifests/presets/pack_06/SP06-031.yaml` | `assets/recipes/styles/defaults/SP06-031.webp` |
-| SP06-032 | `components/recipes/styles/manifests/presets/pack_06/SP06-032.yaml` | `assets/recipes/styles/defaults/SP06-032.webp` |
-| SP06-033 | `components/recipes/styles/manifests/presets/pack_06/SP06-033.yaml` | `assets/recipes/styles/defaults/SP06-033.webp` |
-| SP06-034 | `components/recipes/styles/manifests/presets/pack_06/SP06-034.yaml` | `assets/recipes/styles/defaults/SP06-034.webp` |
-| SP06-035 | `components/recipes/styles/manifests/presets/pack_06/SP06-035.yaml` | `assets/recipes/styles/defaults/SP06-035.webp` |
-| SP06-036 | `components/recipes/styles/manifests/presets/pack_06/SP06-036.yaml` | `assets/recipes/styles/defaults/SP06-036.webp` |
-| SP06-037 | `components/recipes/styles/manifests/presets/pack_06/SP06-037.yaml` | `assets/recipes/styles/defaults/SP06-037.webp` |
-| SP06-038 | `components/recipes/styles/manifests/presets/pack_06/SP06-038.yaml` | `assets/recipes/styles/defaults/SP06-038.webp` |
-| SP06-039 | `components/recipes/styles/manifests/presets/pack_06/SP06-039.yaml` | `assets/recipes/styles/defaults/SP06-039.webp` |
-| SP06-040 | `components/recipes/styles/manifests/presets/pack_06/SP06-040.yaml` | `assets/recipes/styles/defaults/SP06-040.webp` |
-| SP06-041 | `components/recipes/styles/manifests/presets/pack_06/SP06-041.yaml` | `assets/recipes/styles/defaults/SP06-041.webp` |
-| SP06-042 | `components/recipes/styles/manifests/presets/pack_06/SP06-042.yaml` | `assets/recipes/styles/defaults/SP06-042.webp` |
-| SP06-043 | `components/recipes/styles/manifests/presets/pack_06/SP06-043.yaml` | `assets/recipes/styles/defaults/SP06-043.webp` |
-| SP06-044 | `components/recipes/styles/manifests/presets/pack_06/SP06-044.yaml` | `assets/recipes/styles/defaults/SP06-044.webp` |
-| SP06-045 | `components/recipes/styles/manifests/presets/pack_06/SP06-045.yaml` | `assets/recipes/styles/defaults/SP06-045.webp` |
-| SP06-046 | `components/recipes/styles/manifests/presets/pack_06/SP06-046.yaml` | `assets/recipes/styles/defaults/SP06-046.webp` |
-| SP06-047 | `components/recipes/styles/manifests/presets/pack_06/SP06-047.yaml` | `assets/recipes/styles/defaults/SP06-047.webp` |
-| SP06-048 | `components/recipes/styles/manifests/presets/pack_06/SP06-048.yaml` | `assets/recipes/styles/defaults/SP06-048.webp` |
-| SP06-049 | `components/recipes/styles/manifests/presets/pack_06/SP06-049.yaml` | `assets/recipes/styles/defaults/SP06-049.webp` |
-| SP06-050 | `components/recipes/styles/manifests/presets/pack_06/SP06-050.yaml` | `assets/recipes/styles/defaults/SP06-050.webp` |
-| SP06-051 | `components/recipes/styles/manifests/presets/pack_06/SP06-051.yaml` | `assets/recipes/styles/defaults/SP06-051.webp` |
-| SP06-052 | `components/recipes/styles/manifests/presets/pack_06/SP06-052.yaml` | `assets/recipes/styles/defaults/SP06-052.webp` |
-| SP06-053 | `components/recipes/styles/manifests/presets/pack_06/SP06-053.yaml` | `assets/recipes/styles/defaults/SP06-053.webp` |
-| SP06-054 | `components/recipes/styles/manifests/presets/pack_06/SP06-054.yaml` | `assets/recipes/styles/defaults/SP06-054.webp` |
-| SP06-055 | `components/recipes/styles/manifests/presets/pack_06/SP06-055.yaml` | `assets/recipes/styles/defaults/SP06-055.webp` |
-| SP06-056 | `components/recipes/styles/manifests/presets/pack_06/SP06-056.yaml` | `assets/recipes/styles/defaults/SP06-056.webp` |
-| SP06-057 | `components/recipes/styles/manifests/presets/pack_06/SP06-057.yaml` | `assets/recipes/styles/defaults/SP06-057.webp` |
-| SP06-058 | `components/recipes/styles/manifests/presets/pack_06/SP06-058.yaml` | `assets/recipes/styles/defaults/SP06-058.webp` |
-| SP06-059 | `components/recipes/styles/manifests/presets/pack_06/SP06-059.yaml` | `assets/recipes/styles/defaults/SP06-059.webp` |
-| SP06-060 | `components/recipes/styles/manifests/presets/pack_06/SP06-060.yaml` | `assets/recipes/styles/defaults/SP06-060.webp` |
-| SP06-061 | `components/recipes/styles/manifests/presets/pack_06/SP06-061.yaml` | `assets/recipes/styles/defaults/SP06-061.webp` |
-| SP06-062 | `components/recipes/styles/manifests/presets/pack_06/SP06-062.yaml` | `assets/recipes/styles/defaults/SP06-062.webp` |
-| SP06-063 | `components/recipes/styles/manifests/presets/pack_06/SP06-063.yaml` | `assets/recipes/styles/defaults/SP06-063.webp` |
-| SP06-064 | `components/recipes/styles/manifests/presets/pack_06/SP06-064.yaml` | `assets/recipes/styles/defaults/SP06-064.webp` |
-| SP06-065 | `components/recipes/styles/manifests/presets/pack_06/SP06-065.yaml` | `assets/recipes/styles/defaults/SP06-065.webp` |
-| SP06-066 | `components/recipes/styles/manifests/presets/pack_06/SP06-066.yaml` | `assets/recipes/styles/defaults/SP06-066.webp` |
-| SP06-067 | `components/recipes/styles/manifests/presets/pack_06/SP06-067.yaml` | `assets/recipes/styles/defaults/SP06-067.webp` |
-| SP06-068 | `components/recipes/styles/manifests/presets/pack_06/SP06-068.yaml` | `assets/recipes/styles/defaults/SP06-068.webp` |
-| SP06-069 | `components/recipes/styles/manifests/presets/pack_06/SP06-069.yaml` | `assets/recipes/styles/defaults/SP06-069.webp` |
-| SP06-070 | `components/recipes/styles/manifests/presets/pack_06/SP06-070.yaml` | `assets/recipes/styles/defaults/SP06-070.webp` |
-| SP06-071 | `components/recipes/styles/manifests/presets/pack_06/SP06-071.yaml` | `assets/recipes/styles/defaults/SP06-071.webp` |
-| SP06-072 | `components/recipes/styles/manifests/presets/pack_06/SP06-072.yaml` | `assets/recipes/styles/defaults/SP06-072.webp` |
-| SP06-073 | `components/recipes/styles/manifests/presets/pack_06/SP06-073.yaml` | `assets/recipes/styles/defaults/SP06-073.webp` |
-| SP06-074 | `components/recipes/styles/manifests/presets/pack_06/SP06-074.yaml` | `assets/recipes/styles/defaults/SP06-074.webp` |
-| SP06-075 | `components/recipes/styles/manifests/presets/pack_06/SP06-075.yaml` | `assets/recipes/styles/defaults/SP06-075.webp` |
-| SP06-076 | `components/recipes/styles/manifests/presets/pack_06/SP06-076.yaml` | `assets/recipes/styles/defaults/SP06-076.webp` |
-| SP06-077 | `components/recipes/styles/manifests/presets/pack_06/SP06-077.yaml` | `assets/recipes/styles/defaults/SP06-077.webp` |
-| SP06-078 | `components/recipes/styles/manifests/presets/pack_06/SP06-078.yaml` | `assets/recipes/styles/defaults/SP06-078.webp` |
-| SP06-079 | `components/recipes/styles/manifests/presets/pack_06/SP06-079.yaml` | `assets/recipes/styles/defaults/SP06-079.webp` |
-| SP06-080 | `components/recipes/styles/manifests/presets/pack_06/SP06-080.yaml` | `assets/recipes/styles/defaults/SP06-080.webp` |
-| SP06-081 | `components/recipes/styles/manifests/presets/pack_06/SP06-081.yaml` | `assets/recipes/styles/defaults/SP06-081.webp` |
-| SP06-082 | `components/recipes/styles/manifests/presets/pack_06/SP06-082.yaml` | `assets/recipes/styles/defaults/SP06-082.webp` |
-| SP06-083 | `components/recipes/styles/manifests/presets/pack_06/SP06-083.yaml` | `assets/recipes/styles/defaults/SP06-083.webp` |
-| SP06-084 | `components/recipes/styles/manifests/presets/pack_06/SP06-084.yaml` | `assets/recipes/styles/defaults/SP06-084.webp` |
-| SP06-085 | `components/recipes/styles/manifests/presets/pack_06/SP06-085.yaml` | `assets/recipes/styles/defaults/SP06-085.webp` |
-| SP06-086 | `components/recipes/styles/manifests/presets/pack_06/SP06-086.yaml` | `assets/recipes/styles/defaults/SP06-086.webp` |
-| SP06-087 | `components/recipes/styles/manifests/presets/pack_06/SP06-087.yaml` | `assets/recipes/styles/defaults/SP06-087.webp` |
-| SP06-088 | `components/recipes/styles/manifests/presets/pack_06/SP06-088.yaml` | `assets/recipes/styles/defaults/SP06-088.webp` |
-| SP06-089 | `components/recipes/styles/manifests/presets/pack_06/SP06-089.yaml` | `assets/recipes/styles/defaults/SP06-089.webp` |
-| SP06-090 | `components/recipes/styles/manifests/presets/pack_06/SP06-090.yaml` | `assets/recipes/styles/defaults/SP06-090.webp` |
-| SP06-091 | `components/recipes/styles/manifests/presets/pack_06/SP06-091.yaml` | `assets/recipes/styles/defaults/SP06-091.webp` |
-| SP06-092 | `components/recipes/styles/manifests/presets/pack_06/SP06-092.yaml` | `assets/recipes/styles/defaults/SP06-092.webp` |
-| SP06-093 | `components/recipes/styles/manifests/presets/pack_06/SP06-093.yaml` | `assets/recipes/styles/defaults/SP06-093.webp` |
-| SP06-094 | `components/recipes/styles/manifests/presets/pack_06/SP06-094.yaml` | `assets/recipes/styles/defaults/SP06-094.webp` |
-| SP06-095 | `components/recipes/styles/manifests/presets/pack_06/SP06-095.yaml` | `assets/recipes/styles/defaults/SP06-095.webp` |
-| SP06-096 | `components/recipes/styles/manifests/presets/pack_06/SP06-096.yaml` | `assets/recipes/styles/defaults/SP06-096.webp` |
-| SP06-097 | `components/recipes/styles/manifests/presets/pack_06/SP06-097.yaml` | `assets/recipes/styles/defaults/SP06-097.webp` |
-| SP06-098 | `components/recipes/styles/manifests/presets/pack_06/SP06-098.yaml` | `assets/recipes/styles/defaults/SP06-098.webp` |
-| SP06-099 | `components/recipes/styles/manifests/presets/pack_06/SP06-099.yaml` | `assets/recipes/styles/defaults/SP06-099.webp` |
-| SP06-100 | `components/recipes/styles/manifests/presets/pack_06/SP06-100.yaml` | `assets/recipes/styles/defaults/SP06-100.webp` |
-| SP06-101 | `components/recipes/styles/manifests/presets/pack_06/SP06-101.yaml` | `assets/recipes/styles/defaults/SP06-101.webp` |
-| SP06-102 | `components/recipes/styles/manifests/presets/pack_06/SP06-102.yaml` | `assets/recipes/styles/defaults/SP06-102.webp` |
-| SP06-103 | `components/recipes/styles/manifests/presets/pack_06/SP06-103.yaml` | `assets/recipes/styles/defaults/SP06-103.webp` |
-| SP06-104 | `components/recipes/styles/manifests/presets/pack_06/SP06-104.yaml` | `assets/recipes/styles/defaults/SP06-104.webp` |
-| SP06-105 | `components/recipes/styles/manifests/presets/pack_06/SP06-105.yaml` | `assets/recipes/styles/defaults/SP06-105.webp` |
-| SP06-106 | `components/recipes/styles/manifests/presets/pack_06/SP06-106.yaml` | `assets/recipes/styles/defaults/SP06-106.webp` |
-| SP06-107 | `components/recipes/styles/manifests/presets/pack_06/SP06-107.yaml` | `assets/recipes/styles/defaults/SP06-107.webp` |
-| SP06-108 | `components/recipes/styles/manifests/presets/pack_06/SP06-108.yaml` | `assets/recipes/styles/defaults/SP06-108.webp` |
-| SP06-109 | `components/recipes/styles/manifests/presets/pack_06/SP06-109.yaml` | `assets/recipes/styles/defaults/SP06-109.webp` |
-| SP06-110 | `components/recipes/styles/manifests/presets/pack_06/SP06-110.yaml` | `assets/recipes/styles/defaults/SP06-110.webp` |
-| SP06-111 | `components/recipes/styles/manifests/presets/pack_06/SP06-111.yaml` | `assets/recipes/styles/defaults/SP06-111.webp` |
-| SP06-112 | `components/recipes/styles/manifests/presets/pack_06/SP06-112.yaml` | `assets/recipes/styles/defaults/SP06-112.webp` |
-| SP06-113 | `components/recipes/styles/manifests/presets/pack_06/SP06-113.yaml` | `assets/recipes/styles/defaults/SP06-113.webp` |
-| SP06-114 | `components/recipes/styles/manifests/presets/pack_06/SP06-114.yaml` | `assets/recipes/styles/defaults/SP06-114.webp` |
-| SP06-115 | `components/recipes/styles/manifests/presets/pack_06/SP06-115.yaml` | `assets/recipes/styles/defaults/SP06-115.webp` |
-| SP06-116 | `components/recipes/styles/manifests/presets/pack_06/SP06-116.yaml` | `assets/recipes/styles/defaults/SP06-116.webp` |
-| SP06-117 | `components/recipes/styles/manifests/presets/pack_06/SP06-117.yaml` | `assets/recipes/styles/defaults/SP06-117.webp` |
-| SP06-118 | `components/recipes/styles/manifests/presets/pack_06/SP06-118.yaml` | `assets/recipes/styles/defaults/SP06-118.webp` |
-| SP06-119 | `components/recipes/styles/manifests/presets/pack_06/SP06-119.yaml` | `assets/recipes/styles/defaults/SP06-119.webp` |
-| SP06-120 | `components/recipes/styles/manifests/presets/pack_06/SP06-120.yaml` | `assets/recipes/styles/defaults/SP06-120.webp` |
+Nota 2026-06-18 primary `pack_06` wave 1: regeneradas y aprobadas `SP06-001|SP06-002|SP06-003|SP06-004|SP06-005|SP06-006`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave1_001_006_20260618-070425`. QA: pasan como traditional painting material/style reads. Watchlist: `SP06-004` por estudio/ventana y `SP06-005` por figura devocional, aceptados por representar gouache/tempera sin camera/market/library/corridor drift.
+
+Nota 2026-06-18 primary `pack_06` wave 2: regeneradas y aprobadas `SP06-007|SP06-008|SP06-009|SP06-010|SP06-011|SP06-012`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave2_007_012_20260618-071339`. QA: pasan como reads claros de fresco/sumi-e/impressionism/pointillism/palette-knife/aerosol. Watchlist: `SP06-009` por banquito/ventana y `SP06-012` por figura con spray, aceptados por representar tecnica sin camera/market/library/corridor drift.
+
+Nota 2026-06-18 primary `pack_06` wave 3: regeneradas y aprobadas `SP06-013|SP06-014|SP06-015|SP06-016|SP06-017|SP06-018`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave3_013_018_20260618-072508`. QA: pasan como reads claros de airbrush/casein/black-velvet/graphite/charcoal/pen-ink. Watchlist: `SP06-016` y `SP06-018` por figura/atelier, aceptados por representar dibujo academico sin camera/market/library/corridor drift.
+
+Nota 2026-06-18 primary `pack_06` wave 4: regeneradas y aprobadas `SP06-019|SP06-020|SP06-021|SP06-022|SP06-023|SP06-024`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave4_019_024_20260618-073421`. Rejects reemplazados: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave4_rejects_022_024_20260618-074241`. QA: pasan como reads claros de ballpoint/colored-pencil/soft-pastel/oil-pastel/silverpoint/conte. `SP06-022|SP06-023|SP06-024` requirieron override por studio/props/tools; finales quedan representativos, no abstractos vacios, sin camera/market/library/corridor drift.
+
+Nota 2026-06-18 primary `pack_06` wave 5: regeneradas y aprobadas `SP06-025|SP06-026|SP06-027|SP06-028|SP06-029|SP06-030`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave5_025_030_20260618-075124`. Rejects reemplazados: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave5_rejects_028_029_20260618-075527` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave5_reject_sp06_028b_20260618-075910`. QA: pasan como reads claros de technical-pen/copic/chalk/scratchboard/silhouette/continuous-line. `SP06-028` requirio dos retries por fantasy/weapon y luego compass/pendant; final queda animal scratchboard puro.
+
+Nota 2026-06-18 primary `pack_06` wave 6: regeneradas y aprobadas `SP06-031|SP06-032|SP06-033|SP06-034|SP06-035|SP06-036`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave6_031_036_20260618-080543`. QA: pasan como reads claros de etching/woodcut/linocut/lithography/screenprint/monotype. Watchlist aceptado: `SP06-031` usa plate mark y `SP06-034` usa arquitectura minima, ambos como soporte de print/litho sin camera/market/library/corridor drift.
+
+Nota 2026-06-18 primary `pack_06` wave 7: regeneradas y aprobadas `SP06-037|SP06-038|SP06-039|SP06-040|SP06-041|SP06-042`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave7_037_042_20260618-081123`. QA: pasan como reads claros de aquatint/mezzotint/risograph/cyanotype/rubber-stamp/halftone. Watchlist aceptado: `SP06-041` usa paraguas como silueta stamped y `SP06-042` usa maleta/ciudad halftone, sin texto/camera/market/library/corridor drift.
+
+Nota 2026-06-18 primary `pack_06` wave 8: regeneradas y aprobadas `SP06-043|SP06-044|SP06-045|SP06-046|SP06-047|SP06-048`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave8_043_048_20260618-081726`. Rejects reemplazados: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave8_rejects_043_046_048_20260618-082154` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave8_rejects_047_048b_20260618-082620`. QA: pasan como reads claros de security-engraving/drypoint/collagraph/digital-painting/speedpaint/matte-extension. Retries: `SP06-043` por pendant/secondary prop, `SP06-046|SP06-047` por studio/tools/UI-like drift, `SP06-048` por foreground figure/tool; finales sin camera/market/library/corridor drift.
+
+Nota 2026-06-18 primary `pack_06` wave 9: regeneradas y aprobadas `SP06-049|SP06-050|SP06-051|SP06-052|SP06-053|SP06-054`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave9_049_054_20260618-083229`. Rejects reemplazados: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave9_rejects_049_052_054_20260618-083905` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave9_reject_sp06_049b_20260618-084323`. QA: pasan como reads claros de flat-vector/pixel/low-poly/voxel/concept-art/isometric. Retries: `SP06-049` por studio/tools/palette, `SP06-050` por UI/screens, `SP06-051` por pedestal/lamp, `SP06-052` por Minecraft/weapon/tool drift, `SP06-054` por concept-sheet/callouts. Watchlist aceptado: `SP06-050|SP06-052` por pedestal/display minimo, representativos sin texto/UI/camera/market/library/corridor drift.
+
+Nota 2026-06-18 primary `pack_06` wave 10: regeneradas y aprobadas `SP06-055|SP06-056|SP06-057|SP06-058|SP06-059|SP06-060`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave10_055_060_20260618-084953`. Rejects reemplazados: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave10_rejects_056_060_20260618-085639`, `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave10_reject_sp06_058b_20260618-090312` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave10_reject_sp06_058c_20260618-090738`. QA: pasan como reads claros de glitch/synthwave/double-exposure/polygon/paper-cutout/ascii. Retries: `SP06-056..060` por studio/tools/screens/UI/text drift; `SP06-058` tuvo retries extra por UI y luego herramientas. Watchlist aceptado: `SP06-058|SP06-059` por pedestal/display minimo, sin UI/tools/text/camera/market/library/corridor drift.
+
+Nota 2026-06-18 primary `pack_06` wave 11: regeneradas y aprobadas `SP06-061|SP06-062|SP06-063|SP06-064|SP06-065|SP06-066`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave11_061_066_20260618-091406`. QA: pasan como reads claros de analog collage/photomontage/decoupage/assemblage/scrapbook/trash-polka. Watchlist aceptado: repeticion de sujetos aviares en mixed-media, pero con materialidad diferenciada y sin texto/camera/market/library/corridor/craft-table drift.
+
+Nota 2026-06-18 primary `pack_06` wave 12: regeneradas y aprobadas `SP06-067|SP06-068|SP06-069|SP06-070|SP06-071|SP06-072`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave12_067_072_20260618-092502`. QA: pasan como reads claros de mixed-media-canvas/zine/moodboard/planning-board/torn-paper/tape-art. Watchlist aceptado: aves repetidas en `SP06-067|SP06-071|SP06-072`, pero con tecnica diferenciada; `SP06-070` usa pins/thread sin texto/conspiracy drift.
+
+Nota 2026-06-18 primary `pack_06` wave 13: regeneradas y aprobadas `SP06-073|SP06-074|SP06-075|SP06-076|SP06-077|SP06-078`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave13_073_078_20260618-093129`. QA: pasan como reads claros de embroidery/photo-overpaint/digital-collage/fumage/coffee/gold-leaf. Watchlist aceptado: `SP06-075` usa rostro en collage digital, `SP06-077` usa objeto colgante minimo; sin UI/text/camera/market/library/corridor/craft-table drift.
+
+Nota 2026-06-18 primary `pack_06` wave 14: regeneradas y aprobadas `SP06-079|SP06-080|SP06-081|SP06-082|SP06-083|SP06-084`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave14_079_084_20260618-093956`. Reject reemplazado: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave14_reject_sp06_084_20260618-094412`. QA: pasan como reads claros de paper-marbling/stencil/Game-Boy/Mode-7/vector-arcade/FMV-pre-rendered. Retry: `SP06-084` por pantalla/UI de fondo; final queda interior sci-fi sin UI/pantalla y con pre-rendered sprite read.
+
+Nota 2026-06-18 primary `pack_06` wave 15: regeneradas y aprobadas `SP06-085|SP06-086|SP06-087|SP06-088|SP06-089|SP06-090`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave15_085_090_20260618-095149`. Rejects reemplazados: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave15_rejects_085_087_090_20260618-095831`. QA: pasan como reads claros de visual-novel/RPG-Maker/GBA-tactical/PSX/ANSI/voxel. Retries: `SP06-085` por screens/UI, `SP06-087` por frame/UI/badge, `SP06-090` por display/capsule/UI. Watchlist aceptado: `SP06-086` conserva monitor como tileworld background sin UI/texto.
+
+Nota 2026-06-18 primary `pack_06` wave 16: regeneradas y aprobadas `SP06-091|SP06-092|SP06-093|SP06-094|SP06-095|SP06-096`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave16_091_096_20260618-100757`. Rejects reemplazados: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave16_rejects_092_095_096_20260618-101402`. QA: pasan como reads claros de Vectrex/C64/MSX2/Atari2600/Genesis/NeoGeo. Retries: `SP06-092` por computer/cassette hardware, `SP06-095` por console/controller, `SP06-096` por sword/fighting-scene drift. Finales sin UI/text/camera/market/library/corridor drift.
+
+Nota 2026-06-18 primary `pack_06` wave 17: regeneradas y aprobadas `SP06-097|SP06-098|SP06-099|SP06-100|SP06-101|SP06-102`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave17_097_102_20260618-102049`. Rejects reemplazados: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave17_rejects_101_102_20260618-102718`. QA: pasan como reads claros de Amiga-HAM/TurboGrafx/Flipnote/Game-Boy-Camera/JRPG-diorama/roguelike-glyph. Retries: `SP06-101|SP06-102` por sword/hero y sprite-sheet/icon/weapon drift. Finales sin armas, UI, texto, camera/market/library/corridor drift.
+
+Nota 2026-06-18 primary `pack_06` wave 18: regeneradas y aprobadas `SP06-103|SP06-104|SP06-105|SP06-106|SP06-107|SP06-108`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave18_103_108_20260618-103549`. Rejects reemplazados: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave18_rejects_104_106_20260618-104216`. QA: pasan como reads claros de Metroidvania parallax/cyberpunk diegetic HUD/retro select/isometric strategy/MOBA splash/VN neon backdrop. Retries: `SP06-104` por figura/weapon-like y exceso de UI dura; `SP06-106` por personaje armado. Finales quedan representativos sin armas, UI legible, sprite-sheet, texto, camera/market/library/corridor drift.
+
+Nota 2026-06-18 primary `pack_06` wave 19: regeneradas y aprobadas `SP06-109|SP06-110|SP06-111|SP06-112|SP06-113|SP06-114`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave19_109_114_20260618-104902`. Sin rejects. QA: pasan como reads claros de Soulslike tarnished/chibi platformer/battle-royale colorway/sci-fi icon/parchment interface/gacha foil frame. Watchlist aceptado: `SP06-109` por figura/relic shrouded con ruina, representativo del preset y sin arma/UI/knight-portrait claro. Finales sin texto, HUD legible, sprite-sheet, camera/market/library/corridor drift.
+
+Nota 2026-06-18 primary `pack_06` wave 20 close: regeneradas y aprobadas `SP06-115|SP06-116|SP06-117|SP06-118|SP06-119|SP06-120`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave20_115_120_20260618-105635`. Sin rejects. QA: pasan como reads claros de survival-horror save-room/stealth shadow/arcade racing/RPG inventory/cozy sim/boss encounter key art. Watchlist aceptado: `SP06-116` por figura stealth escondida y `SP06-119` por mano parcial; ambas refuerzan lectura sin armas, UI, texto, sprite-sheet, camera/market/library/corridor drift.
+
+| Preset | Manifest | Default card |
+| ------ | -------- | ------------ |
 
 ### pack_07
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-Nota 2026-06-17 primary wave 1: regeneradas y aprobadas `SP07-003|SP07-015|SP07-032|SP07-035|SP07-038|SP07-054` con guardrails contra formula de studio/chair/curtain/lamp/corridor/library/market/fantasy hall/camera prop. QA visual: `SP07-003`, `SP07-015`, `SP07-032`, `SP07-038`, `SP07-054` pasan; `SP07-035` pasa con watchlist leve por puerta/corredor monumental. Pendientes esperados tras runtime: 74 stale.
+| Preset                                                            | Manifest | Default card |
+| ----------------------------------------------------------------- | -------- | ------------ | -------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nota 2026-06-17 primary wave 1: regeneradas y aprobadas `SP07-003 | SP07-015 | SP07-032     | SP07-035 | SP07-038 | SP07-054`con guardrails contra formula de studio/chair/curtain/lamp/corridor/library/market/fantasy hall/camera prop. QA visual:`SP07-003`, `SP07-015`, `SP07-032`, `SP07-038`, `SP07-054`pasan;`SP07-035` pasa con watchlist leve por puerta/corredor monumental. Pendientes esperados tras runtime: 74 stale. |
 
 Nota 2026-06-17 primary wave 2: regeneradas y aprobadas `SP07-039|SP07-043|SP07-047|SP07-052|SP07-055|SP07-060` con guardrails de ancla concreta y sin corridor/market/library/camera/empty abstract. QA visual: las seis pasan; `SP07-052` y `SP07-055` quedan watchlist leve por fantasy hall/castle-like, pero representan bien el preset. Pendientes esperados tras runtime: 68 stale.
 
@@ -1406,9 +1918,9 @@ Nota 2026-06-17 primary wave 11: regeneradas y aprobadas `SP07-070|SP07-071|SP07
 
 ### pack_08
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-Nota 2026-06-17 queue 4: tras regenerar primarias para `SP08-002|SP08-026|SP08-027|SP08-035` y sacar esas filas de la cola markdown autoritativa, quedaron pendientes `SP08-037|SP08-038|SP08-040|SP08-065`.
+| Preset                                                           | Manifest | Default card |
+| ---------------------------------------------------------------- | -------- | ------------ | ------------------------------------------------------------------------------------------ | -------- | -------- | ---------- |
+| Nota 2026-06-17 queue 4: tras regenerar primarias para `SP08-002 | SP08-026 | SP08-027     | SP08-035`y sacar esas filas de la cola markdown autoritativa, quedaron pendientes`SP08-037 | SP08-038 | SP08-040 | SP08-065`. |
 
 Nota 2026-06-17 primary close: regeneradas primarias `SP08-037|SP08-038|SP08-040|SP08-065` con guardrails garment-first/material-first. QA visual: `SP08-038` y `SP08-065` pasan; `SP08-037` pasa con interior contextual frontier, sin rostro/arma; `SP08-040` pasa con watchlist por patch-like/lunar-ish pero sin logo real. Cola `pack_08` queda sin filas stale; requiere runtime para reflejar `availableDefaultImages=80/80 staleDefaultImages=0`.
 
@@ -1436,140 +1948,10 @@ Nota 2026-06-17 variants carousel: generadas `SP08-002-01|SP08-026-01|SP08-027-0
 
 ### pack_13
 
-| Preset   | Manifest                                                            | Default card                                   |
-| -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP05-013 | `components/recipes/styles/manifests/presets/pack_13/SP05-013.yaml` | `assets/recipes/styles/defaults/SP05-013.webp` |
-| SP05-019 | `components/recipes/styles/manifests/presets/pack_13/SP05-019.yaml` | `assets/recipes/styles/defaults/SP05-019.webp` |
-| SP05-020 | `components/recipes/styles/manifests/presets/pack_13/SP05-020.yaml` | `assets/recipes/styles/defaults/SP05-020.webp` |
-| SP05-041 | `components/recipes/styles/manifests/presets/pack_13/SP05-041.yaml` | `assets/recipes/styles/defaults/SP05-041.webp` |
-| SP05-042 | `components/recipes/styles/manifests/presets/pack_13/SP05-042.yaml` | `assets/recipes/styles/defaults/SP05-042.webp` |
-| SP05-043 | `components/recipes/styles/manifests/presets/pack_13/SP05-043.yaml` | `assets/recipes/styles/defaults/SP05-043.webp` |
-| SP05-044 | `components/recipes/styles/manifests/presets/pack_13/SP05-044.yaml` | `assets/recipes/styles/defaults/SP05-044.webp` |
-| SP05-045 | `components/recipes/styles/manifests/presets/pack_13/SP05-045.yaml` | `assets/recipes/styles/defaults/SP05-045.webp` |
-| SP05-046 | `components/recipes/styles/manifests/presets/pack_13/SP05-046.yaml` | `assets/recipes/styles/defaults/SP05-046.webp` |
-| SP05-047 | `components/recipes/styles/manifests/presets/pack_13/SP05-047.yaml` | `assets/recipes/styles/defaults/SP05-047.webp` |
-| SP05-048 | `components/recipes/styles/manifests/presets/pack_13/SP05-048.yaml` | `assets/recipes/styles/defaults/SP05-048.webp` |
-| SP05-049 | `components/recipes/styles/manifests/presets/pack_13/SP05-049.yaml` | `assets/recipes/styles/defaults/SP05-049.webp` |
-| SP05-050 | `components/recipes/styles/manifests/presets/pack_13/SP05-050.yaml` | `assets/recipes/styles/defaults/SP05-050.webp` |
-| SP05-081 | `components/recipes/styles/manifests/presets/pack_13/SP05-081.yaml` | `assets/recipes/styles/defaults/SP05-081.webp` |
-| SP05-082 | `components/recipes/styles/manifests/presets/pack_13/SP05-082.yaml` | `assets/recipes/styles/defaults/SP05-082.webp` |
-| SP05-083 | `components/recipes/styles/manifests/presets/pack_13/SP05-083.yaml` | `assets/recipes/styles/defaults/SP05-083.webp` |
-| SP05-084 | `components/recipes/styles/manifests/presets/pack_13/SP05-084.yaml` | `assets/recipes/styles/defaults/SP05-084.webp` |
-| SP05-085 | `components/recipes/styles/manifests/presets/pack_13/SP05-085.yaml` | `assets/recipes/styles/defaults/SP05-085.webp` |
-| SP05-086 | `components/recipes/styles/manifests/presets/pack_13/SP05-086.yaml` | `assets/recipes/styles/defaults/SP05-086.webp` |
-| SP05-087 | `components/recipes/styles/manifests/presets/pack_13/SP05-087.yaml` | `assets/recipes/styles/defaults/SP05-087.webp` |
-| SP05-088 | `components/recipes/styles/manifests/presets/pack_13/SP05-088.yaml` | `assets/recipes/styles/defaults/SP05-088.webp` |
-| SP05-089 | `components/recipes/styles/manifests/presets/pack_13/SP05-089.yaml` | `assets/recipes/styles/defaults/SP05-089.webp` |
-| SP05-090 | `components/recipes/styles/manifests/presets/pack_13/SP05-090.yaml` | `assets/recipes/styles/defaults/SP05-090.webp` |
-| SP05-101 | `components/recipes/styles/manifests/presets/pack_13/SP05-101.yaml` | `assets/recipes/styles/defaults/SP05-101.webp` |
-| SP05-102 | `components/recipes/styles/manifests/presets/pack_13/SP05-102.yaml` | `assets/recipes/styles/defaults/SP05-102.webp` |
-| SP05-103 | `components/recipes/styles/manifests/presets/pack_13/SP05-103.yaml` | `assets/recipes/styles/defaults/SP05-103.webp` |
-| SP05-104 | `components/recipes/styles/manifests/presets/pack_13/SP05-104.yaml` | `assets/recipes/styles/defaults/SP05-104.webp` |
-| SP05-105 | `components/recipes/styles/manifests/presets/pack_13/SP05-105.yaml` | `assets/recipes/styles/defaults/SP05-105.webp` |
-| SP05-106 | `components/recipes/styles/manifests/presets/pack_13/SP05-106.yaml` | `assets/recipes/styles/defaults/SP05-106.webp` |
-| SP05-107 | `components/recipes/styles/manifests/presets/pack_13/SP05-107.yaml` | `assets/recipes/styles/defaults/SP05-107.webp` |
-| SP05-108 | `components/recipes/styles/manifests/presets/pack_13/SP05-108.yaml` | `assets/recipes/styles/defaults/SP05-108.webp` |
-| SP05-109 | `components/recipes/styles/manifests/presets/pack_13/SP05-109.yaml` | `assets/recipes/styles/defaults/SP05-109.webp` |
-| SP05-110 | `components/recipes/styles/manifests/presets/pack_13/SP05-110.yaml` | `assets/recipes/styles/defaults/SP05-110.webp` |
-| SP05-111 | `components/recipes/styles/manifests/presets/pack_13/SP05-111.yaml` | `assets/recipes/styles/defaults/SP05-111.webp` |
-| SP05-112 | `components/recipes/styles/manifests/presets/pack_13/SP05-112.yaml` | `assets/recipes/styles/defaults/SP05-112.webp` |
-| SP05-113 | `components/recipes/styles/manifests/presets/pack_13/SP05-113.yaml` | `assets/recipes/styles/defaults/SP05-113.webp` |
-| SP05-114 | `components/recipes/styles/manifests/presets/pack_13/SP05-114.yaml` | `assets/recipes/styles/defaults/SP05-114.webp` |
-| SP05-115 | `components/recipes/styles/manifests/presets/pack_13/SP05-115.yaml` | `assets/recipes/styles/defaults/SP05-115.webp` |
-| SP05-116 | `components/recipes/styles/manifests/presets/pack_13/SP05-116.yaml` | `assets/recipes/styles/defaults/SP05-116.webp` |
-| SP05-117 | `components/recipes/styles/manifests/presets/pack_13/SP05-117.yaml` | `assets/recipes/styles/defaults/SP05-117.webp` |
-| SP05-118 | `components/recipes/styles/manifests/presets/pack_13/SP05-118.yaml` | `assets/recipes/styles/defaults/SP05-118.webp` |
-| SP05-119 | `components/recipes/styles/manifests/presets/pack_13/SP05-119.yaml` | `assets/recipes/styles/defaults/SP05-119.webp` |
-| SP05-120 | `components/recipes/styles/manifests/presets/pack_13/SP05-120.yaml` | `assets/recipes/styles/defaults/SP05-120.webp` |
-| SP05-162 | `components/recipes/styles/manifests/presets/pack_13/SP05-162.yaml` | `assets/recipes/styles/defaults/SP05-162.webp` |
-| SP05-168 | `components/recipes/styles/manifests/presets/pack_13/SP05-168.yaml` | `assets/recipes/styles/defaults/SP05-168.webp` |
-| SP05-171 | `components/recipes/styles/manifests/presets/pack_13/SP05-171.yaml` | `assets/recipes/styles/defaults/SP05-171.webp` |
-| SP05-172 | `components/recipes/styles/manifests/presets/pack_13/SP05-172.yaml` | `assets/recipes/styles/defaults/SP05-172.webp` |
-| SP05-176 | `components/recipes/styles/manifests/presets/pack_13/SP05-176.yaml` | `assets/recipes/styles/defaults/SP05-176.webp` |
-| SP05-177 | `components/recipes/styles/manifests/presets/pack_13/SP05-177.yaml` | `assets/recipes/styles/defaults/SP05-177.webp` |
-| SP05-178 | `components/recipes/styles/manifests/presets/pack_13/SP05-178.yaml` | `assets/recipes/styles/defaults/SP05-178.webp` |
-| SP05-181 | `components/recipes/styles/manifests/presets/pack_13/SP05-181.yaml` | `assets/recipes/styles/defaults/SP05-181.webp` |
-| SP05-182 | `components/recipes/styles/manifests/presets/pack_13/SP05-182.yaml` | `assets/recipes/styles/defaults/SP05-182.webp` |
-| SP05-183 | `components/recipes/styles/manifests/presets/pack_13/SP05-183.yaml` | `assets/recipes/styles/defaults/SP05-183.webp` |
-| SP05-184 | `components/recipes/styles/manifests/presets/pack_13/SP05-184.yaml` | `assets/recipes/styles/defaults/SP05-184.webp` |
-| SP05-185 | `components/recipes/styles/manifests/presets/pack_13/SP05-185.yaml` | `assets/recipes/styles/defaults/SP05-185.webp` |
-| SP05-186 | `components/recipes/styles/manifests/presets/pack_13/SP05-186.yaml` | `assets/recipes/styles/defaults/SP05-186.webp` |
-| SP05-187 | `components/recipes/styles/manifests/presets/pack_13/SP05-187.yaml` | `assets/recipes/styles/defaults/SP05-187.webp` |
-| SP05-188 | `components/recipes/styles/manifests/presets/pack_13/SP05-188.yaml` | `assets/recipes/styles/defaults/SP05-188.webp` |
-| SP05-189 | `components/recipes/styles/manifests/presets/pack_13/SP05-189.yaml` | `assets/recipes/styles/defaults/SP05-189.webp` |
-| SP05-190 | `components/recipes/styles/manifests/presets/pack_13/SP05-190.yaml` | `assets/recipes/styles/defaults/SP05-190.webp` |
-| SP05-191 | `components/recipes/styles/manifests/presets/pack_13/SP05-191.yaml` | `assets/recipes/styles/defaults/SP05-191.webp` |
-| SP05-192 | `components/recipes/styles/manifests/presets/pack_13/SP05-192.yaml` | `assets/recipes/styles/defaults/SP05-192.webp` |
-| SP05-193 | `components/recipes/styles/manifests/presets/pack_13/SP05-193.yaml` | `assets/recipes/styles/defaults/SP05-193.webp` |
-| SP05-194 | `components/recipes/styles/manifests/presets/pack_13/SP05-194.yaml` | `assets/recipes/styles/defaults/SP05-194.webp` |
-| SP05-195 | `components/recipes/styles/manifests/presets/pack_13/SP05-195.yaml` | `assets/recipes/styles/defaults/SP05-195.webp` |
-| SP05-196 | `components/recipes/styles/manifests/presets/pack_13/SP05-196.yaml` | `assets/recipes/styles/defaults/SP05-196.webp` |
-| SP05-197 | `components/recipes/styles/manifests/presets/pack_13/SP05-197.yaml` | `assets/recipes/styles/defaults/SP05-197.webp` |
-| SP05-198 | `components/recipes/styles/manifests/presets/pack_13/SP05-198.yaml` | `assets/recipes/styles/defaults/SP05-198.webp` |
-| SP05-199 | `components/recipes/styles/manifests/presets/pack_13/SP05-199.yaml` | `assets/recipes/styles/defaults/SP05-199.webp` |
-| SP05-200 | `components/recipes/styles/manifests/presets/pack_13/SP05-200.yaml` | `assets/recipes/styles/defaults/SP05-200.webp` |
-| SP05-201 | `components/recipes/styles/manifests/presets/pack_13/SP05-201.yaml` | `assets/recipes/styles/defaults/SP05-201.webp` |
-| SP05-202 | `components/recipes/styles/manifests/presets/pack_13/SP05-202.yaml` | `assets/recipes/styles/defaults/SP05-202.webp` |
-| SP05-203 | `components/recipes/styles/manifests/presets/pack_13/SP05-203.yaml` | `assets/recipes/styles/defaults/SP05-203.webp` |
-| SP05-204 | `components/recipes/styles/manifests/presets/pack_13/SP05-204.yaml` | `assets/recipes/styles/defaults/SP05-204.webp` |
-| SP05-205 | `components/recipes/styles/manifests/presets/pack_13/SP05-205.yaml` | `assets/recipes/styles/defaults/SP05-205.webp` |
-| SP05-206 | `components/recipes/styles/manifests/presets/pack_13/SP05-206.yaml` | `assets/recipes/styles/defaults/SP05-206.webp` |
-| SP05-207 | `components/recipes/styles/manifests/presets/pack_13/SP05-207.yaml` | `assets/recipes/styles/defaults/SP05-207.webp` |
-| SP05-208 | `components/recipes/styles/manifests/presets/pack_13/SP05-208.yaml` | `assets/recipes/styles/defaults/SP05-208.webp` |
-| SP05-209 | `components/recipes/styles/manifests/presets/pack_13/SP05-209.yaml` | `assets/recipes/styles/defaults/SP05-209.webp` |
-| SP05-210 | `components/recipes/styles/manifests/presets/pack_13/SP05-210.yaml` | `assets/recipes/styles/defaults/SP05-210.webp` |
-| SP05-211 | `components/recipes/styles/manifests/presets/pack_13/SP05-211.yaml` | `assets/recipes/styles/defaults/SP05-211.webp` |
-| SP05-212 | `components/recipes/styles/manifests/presets/pack_13/SP05-212.yaml` | `assets/recipes/styles/defaults/SP05-212.webp` |
-| SP05-213 | `components/recipes/styles/manifests/presets/pack_13/SP05-213.yaml` | `assets/recipes/styles/defaults/SP05-213.webp` |
-| SP05-214 | `components/recipes/styles/manifests/presets/pack_13/SP05-214.yaml` | `assets/recipes/styles/defaults/SP05-214.webp` |
-| SP05-215 | `components/recipes/styles/manifests/presets/pack_13/SP05-215.yaml` | `assets/recipes/styles/defaults/SP05-215.webp` |
-| SP05-216 | `components/recipes/styles/manifests/presets/pack_13/SP05-216.yaml` | `assets/recipes/styles/defaults/SP05-216.webp` |
-| SP05-217 | `components/recipes/styles/manifests/presets/pack_13/SP05-217.yaml` | `assets/recipes/styles/defaults/SP05-217.webp` |
-| SP05-218 | `components/recipes/styles/manifests/presets/pack_13/SP05-218.yaml` | `assets/recipes/styles/defaults/SP05-218.webp` |
-| SP05-219 | `components/recipes/styles/manifests/presets/pack_13/SP05-219.yaml` | `assets/recipes/styles/defaults/SP05-219.webp` |
-| SP05-220 | `components/recipes/styles/manifests/presets/pack_13/SP05-220.yaml` | `assets/recipes/styles/defaults/SP05-220.webp` |
-| SP05-321 | `components/recipes/styles/manifests/presets/pack_13/SP05-321.yaml` | `assets/recipes/styles/defaults/SP05-321.webp` |
-| SP05-322 | `components/recipes/styles/manifests/presets/pack_13/SP05-322.yaml` | `assets/recipes/styles/defaults/SP05-322.webp` |
-| SP05-323 | `components/recipes/styles/manifests/presets/pack_13/SP05-323.yaml` | `assets/recipes/styles/defaults/SP05-323.webp` |
-| SP05-324 | `components/recipes/styles/manifests/presets/pack_13/SP05-324.yaml` | `assets/recipes/styles/defaults/SP05-324.webp` |
-| SP05-325 | `components/recipes/styles/manifests/presets/pack_13/SP05-325.yaml` | `assets/recipes/styles/defaults/SP05-325.webp` |
-| SP05-326 | `components/recipes/styles/manifests/presets/pack_13/SP05-326.yaml` | `assets/recipes/styles/defaults/SP05-326.webp` |
-| SP05-327 | `components/recipes/styles/manifests/presets/pack_13/SP05-327.yaml` | `assets/recipes/styles/defaults/SP05-327.webp` |
-| SP05-328 | `components/recipes/styles/manifests/presets/pack_13/SP05-328.yaml` | `assets/recipes/styles/defaults/SP05-328.webp` |
-| SP05-329 | `components/recipes/styles/manifests/presets/pack_13/SP05-329.yaml` | `assets/recipes/styles/defaults/SP05-329.webp` |
-| SP05-330 | `components/recipes/styles/manifests/presets/pack_13/SP05-330.yaml` | `assets/recipes/styles/defaults/SP05-330.webp` |
-| SP05-331 | `components/recipes/styles/manifests/presets/pack_13/SP05-331.yaml` | `assets/recipes/styles/defaults/SP05-331.webp` |
-| SP05-332 | `components/recipes/styles/manifests/presets/pack_13/SP05-332.yaml` | `assets/recipes/styles/defaults/SP05-332.webp` |
-| SP05-333 | `components/recipes/styles/manifests/presets/pack_13/SP05-333.yaml` | `assets/recipes/styles/defaults/SP05-333.webp` |
-| SP05-334 | `components/recipes/styles/manifests/presets/pack_13/SP05-334.yaml` | `assets/recipes/styles/defaults/SP05-334.webp` |
-| SP05-335 | `components/recipes/styles/manifests/presets/pack_13/SP05-335.yaml` | `assets/recipes/styles/defaults/SP05-335.webp` |
-| SP05-336 | `components/recipes/styles/manifests/presets/pack_13/SP05-336.yaml` | `assets/recipes/styles/defaults/SP05-336.webp` |
-| SP05-337 | `components/recipes/styles/manifests/presets/pack_13/SP05-337.yaml` | `assets/recipes/styles/defaults/SP05-337.webp` |
-| SP05-338 | `components/recipes/styles/manifests/presets/pack_13/SP05-338.yaml` | `assets/recipes/styles/defaults/SP05-338.webp` |
-| SP05-339 | `components/recipes/styles/manifests/presets/pack_13/SP05-339.yaml` | `assets/recipes/styles/defaults/SP05-339.webp` |
-| SP05-340 | `components/recipes/styles/manifests/presets/pack_13/SP05-340.yaml` | `assets/recipes/styles/defaults/SP05-340.webp` |
-| SP05-341 | `components/recipes/styles/manifests/presets/pack_13/SP05-341.yaml` | `assets/recipes/styles/defaults/SP05-341.webp` |
-| SP05-342 | `components/recipes/styles/manifests/presets/pack_13/SP05-342.yaml` | `assets/recipes/styles/defaults/SP05-342.webp` |
-| SP13-001 | `components/recipes/styles/manifests/presets/pack_13/SP13-001.yaml` | `assets/recipes/styles/defaults/SP13-001.webp` |
-| SP13-002 | `components/recipes/styles/manifests/presets/pack_13/SP13-002.yaml` | `assets/recipes/styles/defaults/SP13-002.webp` |
-| SP13-003 | `components/recipes/styles/manifests/presets/pack_13/SP13-003.yaml` | `assets/recipes/styles/defaults/SP13-003.webp` |
-| SP13-004 | `components/recipes/styles/manifests/presets/pack_13/SP13-004.yaml` | `assets/recipes/styles/defaults/SP13-004.webp` |
-| SP13-005 | `components/recipes/styles/manifests/presets/pack_13/SP13-005.yaml` | `assets/recipes/styles/defaults/SP13-005.webp` |
-| SP13-006 | `components/recipes/styles/manifests/presets/pack_13/SP13-006.yaml` | `assets/recipes/styles/defaults/SP13-006.webp` |
-| SP13-007 | `components/recipes/styles/manifests/presets/pack_13/SP13-007.yaml` | `assets/recipes/styles/defaults/SP13-007.webp` |
-| SP13-008 | `components/recipes/styles/manifests/presets/pack_13/SP13-008.yaml` | `assets/recipes/styles/defaults/SP13-008.webp` |
-| SP13-009 | `components/recipes/styles/manifests/presets/pack_13/SP13-009.yaml` | `assets/recipes/styles/defaults/SP13-009.webp` |
-| SP13-010 | `components/recipes/styles/manifests/presets/pack_13/SP13-010.yaml` | `assets/recipes/styles/defaults/SP13-010.webp` |
-| SP13-011 | `components/recipes/styles/manifests/presets/pack_13/SP13-011.yaml` | `assets/recipes/styles/defaults/SP13-011.webp` |
-| SP13-012 | `components/recipes/styles/manifests/presets/pack_13/SP13-012.yaml` | `assets/recipes/styles/defaults/SP13-012.webp` |
-| SP13-013 | `components/recipes/styles/manifests/presets/pack_13/SP13-013.yaml` | `assets/recipes/styles/defaults/SP13-013.webp` |
-| SP13-014 | `components/recipes/styles/manifests/presets/pack_13/SP13-014.yaml` | `assets/recipes/styles/defaults/SP13-014.webp` |
-| SP13-015 | `components/recipes/styles/manifests/presets/pack_13/SP13-015.yaml` | `assets/recipes/styles/defaults/SP13-015.webp` |
-| SP13-016 | `components/recipes/styles/manifests/presets/pack_13/SP13-016.yaml` | `assets/recipes/styles/defaults/SP13-016.webp` |
-| SP13-017 | `components/recipes/styles/manifests/presets/pack_13/SP13-017.yaml` | `assets/recipes/styles/defaults/SP13-017.webp` |
-| SP13-018 | `components/recipes/styles/manifests/presets/pack_13/SP13-018.yaml` | `assets/recipes/styles/defaults/SP13-018.webp` |
-| SP13-019 | `components/recipes/styles/manifests/presets/pack_13/SP13-019.yaml` | `assets/recipes/styles/defaults/SP13-019.webp` |
-| SP13-020 | `components/recipes/styles/manifests/presets/pack_13/SP13-020.yaml` | `assets/recipes/styles/defaults/SP13-020.webp` |
+Nota 2026-06-18 primary `pack_13` wave 1: regeneradas y aprobadas `SP13-001|SP13-002|SP13-003|SP13-004|SP13-005|SP13-006`. Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave1_001_006_20260618-111134`. Sin rejects. QA: pasan como reads claros de cel heroic dawn/neon city vigil/soft shojo spring/mecha hangar/rainy slice-of-life/spirit shrine twilight. Watchlist aceptado: `SP13-004` por figura + mecha hangar, representativo del preset. Finales sin texto, UI legible, camera/market/library/corridor drift.
+
+| Preset | Manifest | Default card |
+| ------ | -------- | ------------ |
 
 ### pack_14
 
@@ -1772,114 +2154,6 @@ Regeneration note 2026-06-09 (ola 12):
 
 | Preset   | Manifest                                                            | Default card                                   |
 | -------- | ------------------------------------------------------------------- | ---------------------------------------------- |
-| SP05-001 | `components/recipes/styles/manifests/presets/pack_16/SP05-001.yaml` | `assets/recipes/styles/defaults/SP05-001.webp` |
-| SP05-002 | `components/recipes/styles/manifests/presets/pack_16/SP05-002.yaml` | `assets/recipes/styles/defaults/SP05-002.webp` |
-| SP05-003 | `components/recipes/styles/manifests/presets/pack_16/SP05-003.yaml` | `assets/recipes/styles/defaults/SP05-003.webp` |
-| SP05-004 | `components/recipes/styles/manifests/presets/pack_16/SP05-004.yaml` | `assets/recipes/styles/defaults/SP05-004.webp` |
-| SP05-005 | `components/recipes/styles/manifests/presets/pack_16/SP05-005.yaml` | `assets/recipes/styles/defaults/SP05-005.webp` |
-| SP05-006 | `components/recipes/styles/manifests/presets/pack_16/SP05-006.yaml` | `assets/recipes/styles/defaults/SP05-006.webp` |
-| SP05-007 | `components/recipes/styles/manifests/presets/pack_16/SP05-007.yaml` | `assets/recipes/styles/defaults/SP05-007.webp` |
-| SP05-008 | `components/recipes/styles/manifests/presets/pack_16/SP05-008.yaml` | `assets/recipes/styles/defaults/SP05-008.webp` |
-| SP05-009 | `components/recipes/styles/manifests/presets/pack_16/SP05-009.yaml` | `assets/recipes/styles/defaults/SP05-009.webp` |
-| SP05-010 | `components/recipes/styles/manifests/presets/pack_16/SP05-010.yaml` | `assets/recipes/styles/defaults/SP05-010.webp` |
-| SP05-011 | `components/recipes/styles/manifests/presets/pack_16/SP05-011.yaml` | `assets/recipes/styles/defaults/SP05-011.webp` |
-| SP05-012 | `components/recipes/styles/manifests/presets/pack_16/SP05-012.yaml` | `assets/recipes/styles/defaults/SP05-012.webp` |
-| SP05-014 | `components/recipes/styles/manifests/presets/pack_16/SP05-014.yaml` | `assets/recipes/styles/defaults/SP05-014.webp` |
-| SP05-015 | `components/recipes/styles/manifests/presets/pack_16/SP05-015.yaml` | `assets/recipes/styles/defaults/SP05-015.webp` |
-| SP05-016 | `components/recipes/styles/manifests/presets/pack_16/SP05-016.yaml` | `assets/recipes/styles/defaults/SP05-016.webp` |
-| SP05-017 | `components/recipes/styles/manifests/presets/pack_16/SP05-017.yaml` | `assets/recipes/styles/defaults/SP05-017.webp` |
-| SP05-018 | `components/recipes/styles/manifests/presets/pack_16/SP05-018.yaml` | `assets/recipes/styles/defaults/SP05-018.webp` |
-| SP05-024 | `components/recipes/styles/manifests/presets/pack_16/SP05-024.yaml` | `assets/recipes/styles/defaults/SP05-024.webp` |
-| SP05-026 | `components/recipes/styles/manifests/presets/pack_16/SP05-026.yaml` | `assets/recipes/styles/defaults/SP05-026.webp` |
-| SP05-027 | `components/recipes/styles/manifests/presets/pack_16/SP05-027.yaml` | `assets/recipes/styles/defaults/SP05-027.webp` |
-| SP05-030 | `components/recipes/styles/manifests/presets/pack_16/SP05-030.yaml` | `assets/recipes/styles/defaults/SP05-030.webp` |
-| SP05-071 | `components/recipes/styles/manifests/presets/pack_16/SP05-071.yaml` | `assets/recipes/styles/defaults/SP05-071.webp` |
-| SP05-072 | `components/recipes/styles/manifests/presets/pack_16/SP05-072.yaml` | `assets/recipes/styles/defaults/SP05-072.webp` |
-| SP05-073 | `components/recipes/styles/manifests/presets/pack_16/SP05-073.yaml` | `assets/recipes/styles/defaults/SP05-073.webp` |
-| SP05-074 | `components/recipes/styles/manifests/presets/pack_16/SP05-074.yaml` | `assets/recipes/styles/defaults/SP05-074.webp` |
-| SP05-075 | `components/recipes/styles/manifests/presets/pack_16/SP05-075.yaml` | `assets/recipes/styles/defaults/SP05-075.webp` |
-| SP05-076 | `components/recipes/styles/manifests/presets/pack_16/SP05-076.yaml` | `assets/recipes/styles/defaults/SP05-076.webp` |
-| SP05-077 | `components/recipes/styles/manifests/presets/pack_16/SP05-077.yaml` | `assets/recipes/styles/defaults/SP05-077.webp` |
-| SP05-078 | `components/recipes/styles/manifests/presets/pack_16/SP05-078.yaml` | `assets/recipes/styles/defaults/SP05-078.webp` |
-| SP05-079 | `components/recipes/styles/manifests/presets/pack_16/SP05-079.yaml` | `assets/recipes/styles/defaults/SP05-079.webp` |
-| SP05-080 | `components/recipes/styles/manifests/presets/pack_16/SP05-080.yaml` | `assets/recipes/styles/defaults/SP05-080.webp` |
-| SP05-141 | `components/recipes/styles/manifests/presets/pack_16/SP05-141.yaml` | `assets/recipes/styles/defaults/SP05-141.webp` |
-| SP05-145 | `components/recipes/styles/manifests/presets/pack_16/SP05-145.yaml` | `assets/recipes/styles/defaults/SP05-145.webp` |
-| SP05-146 | `components/recipes/styles/manifests/presets/pack_16/SP05-146.yaml` | `assets/recipes/styles/defaults/SP05-146.webp` |
-| SP05-147 | `components/recipes/styles/manifests/presets/pack_16/SP05-147.yaml` | `assets/recipes/styles/defaults/SP05-147.webp` |
-| SP05-149 | `components/recipes/styles/manifests/presets/pack_16/SP05-149.yaml` | `assets/recipes/styles/defaults/SP05-149.webp` |
-| SP05-150 | `components/recipes/styles/manifests/presets/pack_16/SP05-150.yaml` | `assets/recipes/styles/defaults/SP05-150.webp` |
-| SP05-151 | `components/recipes/styles/manifests/presets/pack_16/SP05-151.yaml` | `assets/recipes/styles/defaults/SP05-151.webp` |
-| SP05-152 | `components/recipes/styles/manifests/presets/pack_16/SP05-152.yaml` | `assets/recipes/styles/defaults/SP05-152.webp` |
-| SP05-153 | `components/recipes/styles/manifests/presets/pack_16/SP05-153.yaml` | `assets/recipes/styles/defaults/SP05-153.webp` |
-| SP05-154 | `components/recipes/styles/manifests/presets/pack_16/SP05-154.yaml` | `assets/recipes/styles/defaults/SP05-154.webp` |
-| SP05-155 | `components/recipes/styles/manifests/presets/pack_16/SP05-155.yaml` | `assets/recipes/styles/defaults/SP05-155.webp` |
-| SP05-156 | `components/recipes/styles/manifests/presets/pack_16/SP05-156.yaml` | `assets/recipes/styles/defaults/SP05-156.webp` |
-| SP05-157 | `components/recipes/styles/manifests/presets/pack_16/SP05-157.yaml` | `assets/recipes/styles/defaults/SP05-157.webp` |
-| SP05-158 | `components/recipes/styles/manifests/presets/pack_16/SP05-158.yaml` | `assets/recipes/styles/defaults/SP05-158.webp` |
-| SP05-159 | `components/recipes/styles/manifests/presets/pack_16/SP05-159.yaml` | `assets/recipes/styles/defaults/SP05-159.webp` |
-| SP05-160 | `components/recipes/styles/manifests/presets/pack_16/SP05-160.yaml` | `assets/recipes/styles/defaults/SP05-160.webp` |
-| SP05-161 | `components/recipes/styles/manifests/presets/pack_16/SP05-161.yaml` | `assets/recipes/styles/defaults/SP05-161.webp` |
-| SP05-163 | `components/recipes/styles/manifests/presets/pack_16/SP05-163.yaml` | `assets/recipes/styles/defaults/SP05-163.webp` |
-| SP05-164 | `components/recipes/styles/manifests/presets/pack_16/SP05-164.yaml` | `assets/recipes/styles/defaults/SP05-164.webp` |
-| SP05-165 | `components/recipes/styles/manifests/presets/pack_16/SP05-165.yaml` | `assets/recipes/styles/defaults/SP05-165.webp` |
-| SP05-166 | `components/recipes/styles/manifests/presets/pack_16/SP05-166.yaml` | `assets/recipes/styles/defaults/SP05-166.webp` |
-| SP05-167 | `components/recipes/styles/manifests/presets/pack_16/SP05-167.yaml` | `assets/recipes/styles/defaults/SP05-167.webp` |
-| SP05-169 | `components/recipes/styles/manifests/presets/pack_16/SP05-169.yaml` | `assets/recipes/styles/defaults/SP05-169.webp` |
-| SP05-170 | `components/recipes/styles/manifests/presets/pack_16/SP05-170.yaml` | `assets/recipes/styles/defaults/SP05-170.webp` |
-| SP05-173 | `components/recipes/styles/manifests/presets/pack_16/SP05-173.yaml` | `assets/recipes/styles/defaults/SP05-173.webp` |
-| SP05-174 | `components/recipes/styles/manifests/presets/pack_16/SP05-174.yaml` | `assets/recipes/styles/defaults/SP05-174.webp` |
-| SP05-175 | `components/recipes/styles/manifests/presets/pack_16/SP05-175.yaml` | `assets/recipes/styles/defaults/SP05-175.webp` |
-| SP05-179 | `components/recipes/styles/manifests/presets/pack_16/SP05-179.yaml` | `assets/recipes/styles/defaults/SP05-179.webp` |
-| SP05-180 | `components/recipes/styles/manifests/presets/pack_16/SP05-180.yaml` | `assets/recipes/styles/defaults/SP05-180.webp` |
-| SP05-281 | `components/recipes/styles/manifests/presets/pack_16/SP05-281.yaml` | `assets/recipes/styles/defaults/SP05-281.webp` |
-| SP05-282 | `components/recipes/styles/manifests/presets/pack_16/SP05-282.yaml` | `assets/recipes/styles/defaults/SP05-282.webp` |
-| SP05-283 | `components/recipes/styles/manifests/presets/pack_16/SP05-283.yaml` | `assets/recipes/styles/defaults/SP05-283.webp` |
-| SP05-284 | `components/recipes/styles/manifests/presets/pack_16/SP05-284.yaml` | `assets/recipes/styles/defaults/SP05-284.webp` |
-| SP05-285 | `components/recipes/styles/manifests/presets/pack_16/SP05-285.yaml` | `assets/recipes/styles/defaults/SP05-285.webp` |
-| SP05-286 | `components/recipes/styles/manifests/presets/pack_16/SP05-286.yaml` | `assets/recipes/styles/defaults/SP05-286.webp` |
-| SP05-287 | `components/recipes/styles/manifests/presets/pack_16/SP05-287.yaml` | `assets/recipes/styles/defaults/SP05-287.webp` |
-| SP05-288 | `components/recipes/styles/manifests/presets/pack_16/SP05-288.yaml` | `assets/recipes/styles/defaults/SP05-288.webp` |
-| SP05-289 | `components/recipes/styles/manifests/presets/pack_16/SP05-289.yaml` | `assets/recipes/styles/defaults/SP05-289.webp` |
-| SP05-290 | `components/recipes/styles/manifests/presets/pack_16/SP05-290.yaml` | `assets/recipes/styles/defaults/SP05-290.webp` |
-| SP05-291 | `components/recipes/styles/manifests/presets/pack_16/SP05-291.yaml` | `assets/recipes/styles/defaults/SP05-291.webp` |
-| SP05-292 | `components/recipes/styles/manifests/presets/pack_16/SP05-292.yaml` | `assets/recipes/styles/defaults/SP05-292.webp` |
-| SP05-293 | `components/recipes/styles/manifests/presets/pack_16/SP05-293.yaml` | `assets/recipes/styles/defaults/SP05-293.webp` |
-| SP05-294 | `components/recipes/styles/manifests/presets/pack_16/SP05-294.yaml` | `assets/recipes/styles/defaults/SP05-294.webp` |
-| SP05-295 | `components/recipes/styles/manifests/presets/pack_16/SP05-295.yaml` | `assets/recipes/styles/defaults/SP05-295.webp` |
-| SP05-296 | `components/recipes/styles/manifests/presets/pack_16/SP05-296.yaml` | `assets/recipes/styles/defaults/SP05-296.webp` |
-| SP05-297 | `components/recipes/styles/manifests/presets/pack_16/SP05-297.yaml` | `assets/recipes/styles/defaults/SP05-297.webp` |
-| SP05-298 | `components/recipes/styles/manifests/presets/pack_16/SP05-298.yaml` | `assets/recipes/styles/defaults/SP05-298.webp` |
-| SP05-299 | `components/recipes/styles/manifests/presets/pack_16/SP05-299.yaml` | `assets/recipes/styles/defaults/SP05-299.webp` |
-| SP05-300 | `components/recipes/styles/manifests/presets/pack_16/SP05-300.yaml` | `assets/recipes/styles/defaults/SP05-300.webp` |
-| SP05-301 | `components/recipes/styles/manifests/presets/pack_16/SP05-301.yaml` | `assets/recipes/styles/defaults/SP05-301.webp` |
-| SP05-302 | `components/recipes/styles/manifests/presets/pack_16/SP05-302.yaml` | `assets/recipes/styles/defaults/SP05-302.webp` |
-| SP05-303 | `components/recipes/styles/manifests/presets/pack_16/SP05-303.yaml` | `assets/recipes/styles/defaults/SP05-303.webp` |
-| SP05-304 | `components/recipes/styles/manifests/presets/pack_16/SP05-304.yaml` | `assets/recipes/styles/defaults/SP05-304.webp` |
-| SP05-305 | `components/recipes/styles/manifests/presets/pack_16/SP05-305.yaml` | `assets/recipes/styles/defaults/SP05-305.webp` |
-| SP05-306 | `components/recipes/styles/manifests/presets/pack_16/SP05-306.yaml` | `assets/recipes/styles/defaults/SP05-306.webp` |
-| SP05-307 | `components/recipes/styles/manifests/presets/pack_16/SP05-307.yaml` | `assets/recipes/styles/defaults/SP05-307.webp` |
-| SP05-308 | `components/recipes/styles/manifests/presets/pack_16/SP05-308.yaml` | `assets/recipes/styles/defaults/SP05-308.webp` |
-| SP05-309 | `components/recipes/styles/manifests/presets/pack_16/SP05-309.yaml` | `assets/recipes/styles/defaults/SP05-309.webp` |
-| SP05-310 | `components/recipes/styles/manifests/presets/pack_16/SP05-310.yaml` | `assets/recipes/styles/defaults/SP05-310.webp` |
-| SP05-311 | `components/recipes/styles/manifests/presets/pack_16/SP05-311.yaml` | `assets/recipes/styles/defaults/SP05-311.webp` |
-| SP05-312 | `components/recipes/styles/manifests/presets/pack_16/SP05-312.yaml` | `assets/recipes/styles/defaults/SP05-312.webp` |
-| SP05-313 | `components/recipes/styles/manifests/presets/pack_16/SP05-313.yaml` | `assets/recipes/styles/defaults/SP05-313.webp` |
-| SP05-314 | `components/recipes/styles/manifests/presets/pack_16/SP05-314.yaml` | `assets/recipes/styles/defaults/SP05-314.webp` |
-| SP05-315 | `components/recipes/styles/manifests/presets/pack_16/SP05-315.yaml` | `assets/recipes/styles/defaults/SP05-315.webp` |
-| SP05-316 | `components/recipes/styles/manifests/presets/pack_16/SP05-316.yaml` | `assets/recipes/styles/defaults/SP05-316.webp` |
-| SP05-317 | `components/recipes/styles/manifests/presets/pack_16/SP05-317.yaml` | `assets/recipes/styles/defaults/SP05-317.webp` |
-| SP05-318 | `components/recipes/styles/manifests/presets/pack_16/SP05-318.yaml` | `assets/recipes/styles/defaults/SP05-318.webp` |
-| SP05-319 | `components/recipes/styles/manifests/presets/pack_16/SP05-319.yaml` | `assets/recipes/styles/defaults/SP05-319.webp` |
-| SP05-320 | `components/recipes/styles/manifests/presets/pack_16/SP05-320.yaml` | `assets/recipes/styles/defaults/SP05-320.webp` |
-| SP05-343 | `components/recipes/styles/manifests/presets/pack_16/SP05-343.yaml` | `assets/recipes/styles/defaults/SP05-343.webp` |
-| SP05-344 | `components/recipes/styles/manifests/presets/pack_16/SP05-344.yaml` | `assets/recipes/styles/defaults/SP05-344.webp` |
-| SP05-345 | `components/recipes/styles/manifests/presets/pack_16/SP05-345.yaml` | `assets/recipes/styles/defaults/SP05-345.webp` |
-| SP05-346 | `components/recipes/styles/manifests/presets/pack_16/SP05-346.yaml` | `assets/recipes/styles/defaults/SP05-346.webp` |
-| SP05-347 | `components/recipes/styles/manifests/presets/pack_16/SP05-347.yaml` | `assets/recipes/styles/defaults/SP05-347.webp` |
-| SP05-348 | `components/recipes/styles/manifests/presets/pack_16/SP05-348.yaml` | `assets/recipes/styles/defaults/SP05-348.webp` |
-| SP05-349 | `components/recipes/styles/manifests/presets/pack_16/SP05-349.yaml` | `assets/recipes/styles/defaults/SP05-349.webp` |
-| SP05-350 | `components/recipes/styles/manifests/presets/pack_16/SP05-350.yaml` | `assets/recipes/styles/defaults/SP05-350.webp` |
 | SP05-351 | `components/recipes/styles/manifests/presets/pack_16/SP05-351.yaml` | `assets/recipes/styles/defaults/SP05-351.webp` |
 | SP05-352 | `components/recipes/styles/manifests/presets/pack_16/SP05-352.yaml` | `assets/recipes/styles/defaults/SP05-352.webp` |
 | SP05-353 | `components/recipes/styles/manifests/presets/pack_16/SP05-353.yaml` | `assets/recipes/styles/defaults/SP05-353.webp` |
@@ -4342,6 +4616,246 @@ Interpretation:
 - `pack_14` and `pack_15` remain closed for stale/missing default-card debt.
 - Do not prioritize new visual generation there unless a fresh semantic edit lands on specific IDs.
 - Current visual debt remains concentrated in packs with stale defaults: `pack_03`, `pack_04`, `pack_05`, `pack_06`, `pack_07`, `pack_13`, `pack_16`.
+
+### Primary defaults - 2026-06-18 - `pack_04` wave 2
+
+Regeneradas y aprobadas como primarias nuevas:
+
+- `SP04-011|SP04-012|SP04-013|SP04-014|SP04-015|SP04-016|SP04-017|SP04-018|SP04-019|SP04-020`.
+
+Backups:
+
+- Base previa: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave2_20260618-012855`.
+- Rejects x6: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave2_rejects_20260618-013942`.
+- Reject `SP04-020`: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave2_rejects_sp04_020_20260618-014340`.
+
+Commands:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-011|SP04-012|SP04-013|SP04-014|SP04-015|SP04-016|SP04-017|SP04-018|SP04-019|SP04-020" --parallel=10 --session-suffix=primary_p04_wave2_x10 --force` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-012|SP04-014|SP04-016|SP04-018|SP04-019|SP04-020" --parallel=6 --session-suffix=primary_p04_wave2_retry_x6 --force` -> `generated=6 attempted=6 skipped=94 failed=0`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-020" --parallel=1 --session-suffix=primary_p04_wave2_retry_sp04_020 --force` -> `generated=1 attempted=1 skipped=99 failed=0`.
+
+QA:
+
+- Pasan: `SP04-011`, `SP04-012`, `SP04-013`, `SP04-014`, `SP04-015`, `SP04-016`, `SP04-017`, `SP04-018`, `SP04-019`, `SP04-020`.
+- Retries: `SP04-012` por humanoide/traveler, `SP04-014` por humano/rooftop, `SP04-016` por humanoide/device, `SP04-018` por child/person, `SP04-019` por child/fantasy hero y `SP04-020` por vehicle/rocket drift.
+- Watchlist aceptado: `SP04-014` usa escena pixel vertical y `SP04-018` usa ave con rama, pero ambos son representativos y no caen en persona/UI/texto/camara/pasillo de mercado.
+
+Next stale primary IDs:
+
+- `SP04-021` a `SP04-030`.
+
+### Primary defaults - 2026-06-18 - `pack_04` wave 3
+
+Regeneradas y aprobadas como primarias nuevas:
+
+- `SP04-021|SP04-022|SP04-023|SP04-024|SP04-025|SP04-026|SP04-027|SP04-028|SP04-029|SP04-030`.
+
+Backups:
+
+- Base previa: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave3_20260618-015209`.
+- Rejects x3: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave3_rejects_20260618-020001`.
+
+Commands:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-021|SP04-022|SP04-023|SP04-024|SP04-025|SP04-026|SP04-027|SP04-028|SP04-029|SP04-030" --parallel=10 --session-suffix=primary_p04_wave3_x10 --force` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-024|SP04-025|SP04-029" --parallel=3 --session-suffix=primary_p04_wave3_retry_x3 --force` -> `generated=3 attempted=3 skipped=97 failed=0`.
+
+QA:
+
+- Pasan: `SP04-021`, `SP04-022`, `SP04-023`, `SP04-024`, `SP04-025`, `SP04-026`, `SP04-027`, `SP04-028`, `SP04-029`, `SP04-030`.
+- Retries: `SP04-024` por humano/espada/fantasy path, `SP04-025` por portrait humano y `SP04-029` por humanoide sticker con prop.
+- Watchlist aceptado: `SP04-022` y `SP04-028` son criaturas fantasy/animal-forward, pero representan bien colored-pencil/chalk-pastel sin texto/UI/camara/pasillo.
+
+Next stale primary IDs:
+
+- `SP04-031` a `SP04-040`.
+
+### Primary defaults - 2026-06-18 - `pack_04` wave 4
+
+Regeneradas y aprobadas como primarias nuevas:
+
+- `SP04-031|SP04-032|SP04-033|SP04-034|SP04-035|SP04-036|SP04-037|SP04-038|SP04-039|SP04-040`.
+
+Backups:
+
+- Base previa: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave4_20260618-020652`.
+- Rejects x2: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave4_rejects_20260618-021306`.
+
+Commands:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-031|SP04-032|SP04-033|SP04-034|SP04-035|SP04-036|SP04-037|SP04-038|SP04-039|SP04-040" --parallel=10 --session-suffix=primary_p04_wave4_x10 --force` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-036|SP04-040" --parallel=2 --session-suffix=primary_p04_wave4_retry_x2 --force` -> `generated=2 attempted=2 skipped=98 failed=0`.
+
+QA:
+
+- Pasan: `SP04-031`, `SP04-032`, `SP04-033`, `SP04-034`, `SP04-035`, `SP04-036`, `SP04-037`, `SP04-038`, `SP04-039`, `SP04-040`.
+- Retries: `SP04-036` por lente/camara-like, `SP04-040` por backpack/product-dashboard demasiado literal.
+- Watchlist aceptado: `SP04-035` y `SP04-039` usan personaje/escena porque el preset lo pide; no se consideran drift si venden mejor Minimalist Vector / Movie Poster.
+
+Next stale primary IDs:
+
+- `SP04-041` a `SP04-050`.
+
+### Primary defaults - 2026-06-18 - `pack_04` wave 5
+
+Regeneradas y aprobadas como primarias nuevas:
+
+- `SP04-041|SP04-042|SP04-043|SP04-044|SP04-045|SP04-046|SP04-047|SP04-048|SP04-049|SP04-050`.
+
+Backups:
+
+- Base previa: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave5_20260618-022328`.
+- Rejects x2: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave5_rejects_20260618-023019`.
+
+Commands:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-041|SP04-042|SP04-043|SP04-044|SP04-045|SP04-046|SP04-047|SP04-048|SP04-049|SP04-050" --parallel=10 --session-suffix=primary_p04_wave5_x10 --force` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-042|SP04-043" --parallel=2 --session-suffix=primary_p04_wave5_retry_x2 --force` -> `generated=2 attempted=2 skipped=98 failed=0`.
+
+QA:
+
+- Pasan: `SP04-041`, `SP04-042`, `SP04-043`, `SP04-044`, `SP04-045`, `SP04-046`, `SP04-047`, `SP04-048`, `SP04-049`, `SP04-050`.
+- Retries: `SP04-042` por fashion/portrait drift, `SP04-043` por detective + playing card/text.
+- Watchlist aceptado: `SP04-044`, `SP04-046`, `SP04-047`, `SP04-049` usan personaje/escena porque estos presets dependen de escena, mood y escala.
+
+Next stale primary IDs:
+
+- `SP04-051` a `SP04-060`.
+
+### Primary defaults - 2026-06-18 - `pack_04` wave 6
+
+Regeneradas y aprobadas como primarias nuevas:
+
+- `SP04-051|SP04-052|SP04-053|SP04-054|SP04-055|SP04-056|SP04-057|SP04-058|SP04-059|SP04-060`.
+
+Backups:
+
+- Base previa: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave6_20260618-024147`.
+- Reject `SP04-060`: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave6_rejects_20260618-025027`.
+
+Commands:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-051|SP04-052|SP04-053|SP04-054|SP04-055|SP04-056|SP04-057|SP04-058|SP04-059|SP04-060" --parallel=10 --session-suffix=primary_p04_wave6_x10 --force` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-060" --parallel=1 --session-suffix=primary_p04_wave6_retry_sp04_060 --force` -> `generated=1 attempted=1 skipped=99 failed=0`.
+
+QA:
+
+- Pasan: `SP04-051`, `SP04-052`, `SP04-053`, `SP04-054`, `SP04-055`, `SP04-056`, `SP04-057`, `SP04-058`, `SP04-059`, `SP04-060`.
+- Retry: `SP04-060` por arma literal en pasillo/market alley.
+- Watchlist aceptado: `SP04-052`, `SP04-055`, `SP04-056`, `SP04-058` usan personaje/escena porque venden mejor isometric/keyframe/photobash/low-poly; `SP04-060` queda concept-sheet legible sin pasillo ni personaje.
+
+Next stale primary IDs:
+
+- `SP04-061` a `SP04-070`.
+
+### Primary defaults - 2026-06-18 - `pack_04` wave 7
+
+Regeneradas y aprobadas como primarias nuevas:
+
+- `SP04-061|SP04-062|SP04-063|SP04-064|SP04-065|SP04-066|SP04-067|SP04-068|SP04-069|SP04-070`.
+
+Backups:
+
+- Base previa: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave7_20260618-030307`.
+- Rejects `SP04-062|SP04-067|SP04-068|SP04-069|SP04-070`: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave7_rejects_20260618-030910`.
+- Reject `SP04-068`: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave7_rejects2_20260618-031403`.
+
+Commands:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-061|SP04-062|SP04-063|SP04-064|SP04-065|SP04-066|SP04-067|SP04-068|SP04-069|SP04-070" --parallel=10 --session-suffix=primary_p04_wave7_x10 --force` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-062|SP04-067|SP04-068|SP04-069|SP04-070" --parallel=5 --session-suffix=primary_p04_wave7_retry_x5 --force` -> `generated=5 attempted=5 skipped=95 failed=0`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 --preset=SP04-068 --parallel=1 --session-suffix=primary_p04_wave7_retry2_sp04_068 --force` -> `generated=1 attempted=1 skipped=99 failed=0`.
+
+QA:
+
+- Pasan: `SP04-061`, `SP04-062`, `SP04-063`, `SP04-064`, `SP04-065`, `SP04-066`, `SP04-067`, `SP04-068`, `SP04-069`, `SP04-070`.
+- Retry: `SP04-062` por prensa/taller/documento botánico; `SP04-067` por corredor/persona; `SP04-068` por fantasy hero/arma y luego por humano fantasy; `SP04-069` por hero/castillo; `SP04-070` por cuchillo/religioso/gothic portrait.
+- Watchlist aceptado: `SP04-066` usa personaje central porque vende serigraph/pop; `SP04-067` queda paisaje monotype, pero con textura de transferencia clara.
+
+Next stale primary IDs:
+
+- `SP04-071` a `SP04-080`.
+
+### Primary defaults - 2026-06-18 - `pack_04` wave 8
+
+Regeneradas y aprobadas como primarias nuevas:
+
+- `SP04-071|SP04-072|SP04-073|SP04-074|SP04-075|SP04-076|SP04-077|SP04-078|SP04-079|SP04-080`.
+
+Backups:
+
+- Base previa: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave8_20260618-032435`.
+- Rejects `SP04-071|SP04-073|SP04-077`: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave8_rejects_20260618-033011`.
+- Reject `SP04-077`: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave8_rejects2_20260618-033446`.
+
+Commands:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-071|SP04-072|SP04-073|SP04-074|SP04-075|SP04-076|SP04-077|SP04-078|SP04-079|SP04-080" --parallel=10 --session-suffix=primary_p04_wave8_x10 --force` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-071|SP04-073|SP04-077" --parallel=3 --session-suffix=primary_p04_wave8_retry_x3 --force` -> `generated=3 attempted=3 skipped=97 failed=0`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 --preset=SP04-077 --parallel=1 --session-suffix=primary_p04_wave8_retry2_sp04_077 --force` -> `generated=1 attempted=1 skipped=99 failed=0`.
+
+QA:
+
+- Pasan: `SP04-071`, `SP04-072`, `SP04-073`, `SP04-074`, `SP04-075`, `SP04-076`, `SP04-077`, `SP04-078`, `SP04-079`, `SP04-080`.
+- Retry: `SP04-071` por gothic ruin/figura armada; `SP04-073` por fantasy hero con espada; `SP04-077` por muro/arma fantasy y luego por muro/arquitectura.
+- Watchlist aceptado: `SP04-071` conserva figura/barca en niebla pero sin ruina dominante; `SP04-076` tiene creature/tag agresivo; `SP04-078` usa figura stencil, apropiada al preset.
+
+Next stale primary IDs:
+
+- `SP04-081` a `SP04-090`.
+
+### Primary defaults - 2026-06-18 - `pack_04` wave 9
+
+Regeneradas y aprobadas como primarias nuevas:
+
+- `SP04-081|SP04-082|SP04-083|SP04-084|SP04-085|SP04-086|SP04-087|SP04-088|SP04-089|SP04-090`.
+
+Backups:
+
+- Base previa: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave9_20260618-034659`.
+- Rejects `SP04-081|SP04-082|SP04-086|SP04-087`: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave9_rejects_20260618-035347`.
+
+Commands:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-081|SP04-082|SP04-083|SP04-084|SP04-085|SP04-086|SP04-087|SP04-088|SP04-089|SP04-090" --parallel=10 --session-suffix=primary_p04_wave9_x10 --force` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-081|SP04-082|SP04-086|SP04-087" --parallel=4 --session-suffix=primary_p04_wave9_retry_x4 --force` -> `generated=4 attempted=4 skipped=96 failed=0`.
+
+QA:
+
+- Pasan: `SP04-081`, `SP04-082`, `SP04-083`, `SP04-084`, `SP04-085`, `SP04-086`, `SP04-087`, `SP04-088`, `SP04-089`, `SP04-090`.
+- Retry: `SP04-081` por cliff hero/arma; `SP04-082` por fantasy gate/corridor; `SP04-086` por full armored hero; `SP04-087` por single hero pose.
+- Watchlist aceptado: `SP04-082` queda photobash shell/pod costero, `SP04-085` mantiene color-script grid, `SP04-088` mantiene environment vista pero sin personaje/arma/corredor.
+
+Next stale primary IDs:
+
+- `SP04-091` a `SP04-100`.
+
+### Primary defaults - 2026-06-18 - `pack_04` wave 10
+
+Regeneradas y aprobadas como primarias nuevas:
+
+- `SP04-091|SP04-092|SP04-093|SP04-094|SP04-095|SP04-096|SP04-097|SP04-098|SP04-099|SP04-100`.
+
+Backups:
+
+- Base previa: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave10_20260618-040303`.
+- Rejects `SP04-092|SP04-095|SP04-099`: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave10_rejects_20260618-041006`.
+
+Commands:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-091|SP04-092|SP04-093|SP04-094|SP04-095|SP04-096|SP04-097|SP04-098|SP04-099|SP04-100" --parallel=10 --session-suffix=primary_p04_wave10_x10 --force` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_04 "--preset=SP04-092|SP04-095|SP04-099" --parallel=3 --session-suffix=primary_p04_wave10_retry_x3 --force` -> `generated=3 attempted=3 skipped=97 failed=0`.
+
+QA:
+
+- Pasan: `SP04-091`, `SP04-092`, `SP04-093`, `SP04-094`, `SP04-095`, `SP04-096`, `SP04-097`, `SP04-098`, `SP04-099`, `SP04-100`.
+- Retry: `SP04-092` por full models/weapons; `SP04-095` por forest creature scene; `SP04-099` por face/UI-heavy layout.
+- Watchlist aceptado: `SP04-095` queda foliage focal mas que kit perfecto, pero sin humano/mercado/corredor/texto; `SP04-096` tiene object progression fuerte sin arma.
+
+Next stale primary IDs:
+
+- `pack_04` cerrado visualmente; siguiente deuda grande: `pack_05`, `pack_13`, `pack_16`, `pack_06`.
 
 ### Semantic-only wave - 2026-06-17 - `pack_08` residual P2
 

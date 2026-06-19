@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Agua turbia, raíces vivas, piedra húmeda y tótems de canalización.
   camera_and_composition: Anillos de hechizo, choke-points tácticos y conexiones de terreno sin exigir pantano o arena.
   atmosphere_and_mood: Arcana, peligrosa y teatralmente agresiva.
-  rendering_and_quality: Fantasy-combat stage gameplay-first con legibilidad de áreas, cooldown y prioridad.
+  rendering_and_quality: "Fantasy-combat gameplay frame: area spells, cooldown danger, witch arena priority readable."
 avoidRules:
   - watermark
   - text
   - logo
   - sci-fi-neon
   - lowres
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-053.webp
 taxonomy:

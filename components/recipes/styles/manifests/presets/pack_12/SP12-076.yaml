@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Placas de hielo talladas por viento, mampostería escarchada y hierro marcado por impacto.
   camera_and_composition: Multi-tier, vectores de ataque y zonas de repliegue sin exigir bastión concreto.
   atmosphere_and_mood: Heroica, urgente y de resistencia extrema.
-  rendering_and_quality: Warfront gameplay key-art con claridad de clase, ruta y tempo de asedio.
+  rendering_and_quality: "Warfront gameplay screencap: class roles, siege route, aurora pressure, tempo clear."
 avoidRules:
   - watermark
   - text
   - logo
   - tropical
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-076.webp
 taxonomy:

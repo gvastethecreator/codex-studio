@@ -19,13 +19,22 @@ visualDna:
   texture_and_material: Pergaminos, madera tallada, gemas facetadas y vitrinas rituales.
   camera_and_composition: Opciones en abanico, foco central y navegación de build sin exigir bazaar o hub literal.
   atmosphere_and_mood: Curiosa, estratégica y de riesgo calculado.
-  rendering_and_quality: Run-selection hub gameplay-first con claridad de rutas de build y economía.
+  rendering_and_quality: "Deckbuilder run-selection in-game frame: build paths, relic choices, economy cues staged inside play space."
 avoidRules:
   - watermark
   - text
   - logo
   - bland-ui
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-051.webp
 taxonomy:

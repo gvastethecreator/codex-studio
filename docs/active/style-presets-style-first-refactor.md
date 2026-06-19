@@ -15471,6 +15471,80 @@ Siguiente pack_08 primary wave:
 
 - `SP08-037`, `SP08-038`, `SP08-040`, `SP08-065`.
 
+## Tanda 2026-06-18 - primary promotion `pack_05` wave 1
+
+Se aplico ruta token-eficiente para no regenerar imagenes ya auditadas: se promovieron variants aceptadas de carousel a primary defaults para `SP05-021|SP05-022|SP05-023|SP05-025|SP05-028|SP05-029|SP05-031|SP05-032|SP05-033|SP05-034|SP05-035|SP05-036|SP05-037|SP05-038|SP05-039|SP05-040|SP05-051|SP05-052|SP05-053|SP05-054|SP05-055|SP05-056|SP05-057|SP05-058|SP05-059|SP05-060|SP05-061|SP05-062|SP05-063|SP05-064|SP05-070`.
+
+Backup previo:
+
+- `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_promote_variants_wave1_20260618-042230`
+
+Promociones usadas:
+
+- `SP05-021-03`, `SP05-022-02`, `SP05-023-03`, `SP05-025-02`, `SP05-028-04`, `SP05-029-02`.
+- `SP05-031-01`, `SP05-032-02`, `SP05-033-01`, `SP05-034-01`, `SP05-035-01`, `SP05-036-02`.
+- `SP05-037-01`, `SP05-038-01`, `SP05-039-01`, `SP05-040-01`, `SP05-051-01`, `SP05-052-01`.
+- `SP05-053-01`, `SP05-054-01`, `SP05-055-02`, `SP05-056-01`, `SP05-057-01`, `SP05-058-02`.
+- `SP05-059-01`, `SP05-060-01`, `SP05-061-02`, `SP05-062-03`, `SP05-063-01`, `SP05-064-02`, `SP05-070-01`.
+
+Se dejaron pendientes `SP05-065|SP05-066|SP05-067|SP05-068|SP05-069` porque las notas previas los marcaban solo como watchlist/dudosos para primary; mejor retry object/material-first antes de promover.
+
+## Tanda 2026-06-18 - primary generation `pack_05` wave 2
+
+Se regeneraron los cinco pendientes dudosos de dark-fantasy/seinen con prompt object/material-first, evitando protagonista, anatomia, gore, armas, corredor, dungeon/fantasy hallway, lamparas y arquitectura dominante.
+
+Generacion:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-065|SP05-066|SP05-067|SP05-068|SP05-069" --parallel=5 --session-suffix=primary_p05_065_069_object_x5 --force` -> `generated=5 attempted=5 skipped=130 failed=0 packs=pack_05`.
+- Retry `SP05-067` con prompt mineral/macro: `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 --preset=SP05-067 --parallel=1 --session-suffix=primary_p05_067_retry_mineral --force` -> `generated=1 attempted=1 skipped=134 failed=0 packs=pack_05`.
+
+Backups:
+
+- Previos: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave2_065_069_20260618-042604`.
+- Reject: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave2_rejects_20260618-043038`.
+
+QA:
+
+- `SP05-065`: pasa; pale threshold slabs, sin personaje/corredor/arma.
+- `SP05-066`: pasa fuerte; ceramic-botanical seam geometry, sin body horror.
+- `SP05-067`: retry pasa con watchlist; foco mineral/macro, sombra arquitectonica secundaria no dominante.
+- `SP05-068`: pasa; collision texture, sin personaje/texto/corredor.
+- `SP05-069`: pasa; material grit, sin dungeon hallway ni aventurero.
+
+## Tanda 2026-06-18 - primary promotion `pack_05` wave 3
+
+Se promovieron variants fuertes ya auditadas a primarias sin generacion nueva:
+`SP05-094|SP05-095|SP05-096|SP05-121|SP05-122|SP05-126|SP05-130|SP05-140|SP05-143|SP05-144|SP05-222|SP05-228|SP05-239|SP05-254`.
+
+Backup previo:
+
+- `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_promote_variants_wave3_20260618-044242`
+
+Se dejaron como pendientes `SP05-123`, `SP05-124`, `SP05-125`, `SP05-129`, `SP05-133`, `SP05-137`, `SP05-148`, `SP05-225`, `SP05-231`, `SP05-236`, `SP05-248`, `SP05-256` porque las notas previas los marcaban watchlist alto; necesitan retry object/material-first antes de primary.
+
+## Tanda 2026-06-18 - primary generation `pack_05` wave 4
+
+Se regeneraron `SP05-123|SP05-124|SP05-125|SP05-129|SP05-133|SP05-137` con overrides object/material-first para bajar hero/face/cathedral/corridor/action drift.
+
+Generacion:
+
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-123|SP05-124|SP05-125|SP05-129|SP05-133|SP05-137" --parallel=6 --session-suffix=primary_p05_watchlist_wave4_x6 --force` -> `generated=6 attempted=6 skipped=129 failed=0 packs=pack_05`; `SP05-124` tuvo `needs_review` en primer job y retry interno.
+- `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts/generate-style-defaults.ts --pack=pack_05 "--preset=SP05-123|SP05-124" --parallel=2 --session-suffix=primary_p05_wave4_retry_123_124 --force` -> `generated=2 attempted=2 skipped=133 failed=0 packs=pack_05`.
+
+Backups:
+
+- Previos: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave4_watchlist_retry_20260618-044751`.
+- Rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave4_rejects_20260618-045416`.
+
+QA:
+
+- `SP05-123`: retry pasa; ceremonial inferno sin stained-glass/cathedral dominante ni personaje.
+- `SP05-124`: retry pasa; field-pressure graphic sin atleta.
+- `SP05-125`: pasa; infraestructura/hazard, sin monstruo/personaje.
+- `SP05-129`: pasa fuerte; impacto deadpan sin personaje.
+- `SP05-133`: pasa; magia/comedia y bloque, sin corredor/personaje.
+- `SP05-137`: pasa con watchlist; blueprint marks no legibles, sin persona.
+
 ## Tanda 2026-06-17 - cierre visual primary `pack_07`
 
 Se cerraron las dos ultimas waves stale de `pack_07` con primarias nuevas, QA visual y backups externos:
@@ -15575,3 +15649,1378 @@ QA:
 
 - Pasan las ocho.
 - Watchlist aceptado: `SP03-047` por archviz room/material slice y `SP03-049` por T-pose robot, excepcion representativa del preset; sin humano real/texto/UI dominante.
+
+## Tanda 2026-06-18 - primary default cards `pack_03` wave 7
+
+Se avanzo otra tanda de primarias reales de `pack_03`:
+
+- IDs: `SP03-051|SP03-052|SP03-053|SP03-054|SP03-055|SP03-056|SP03-057|SP03-058`.
+- Generacion base: `primary_p03_wave7_x8` -> `generated=8 attempted=8 skipped=72 failed=0`.
+- Retries selectivos: `SP03-052` por deriva a full car/front-ad y `SP03-055` por deriva a floating-island/fantasy landscape.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave7_20260618-000529`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave7_rejects_20260618-001227`.
+
+QA:
+
+- Pasan: `SP03-051`, `SP03-052`, `SP03-053`, `SP03-054`, `SP03-056`, `SP03-057`, `SP03-058`.
+- Watchlist aceptado: `SP03-055` por sci-fi VR room/module; ya sin fantasy landscape, corridor, person, headset, UI, texto ni camera prop dominante.
+
+## Tanda 2026-06-18 - primary default cards `pack_03` wave 8
+
+Se avanzo otra tanda de primarias reales de `pack_03`:
+
+- IDs: `SP03-059|SP03-060|SP03-061|SP03-062|SP03-063|SP03-064|SP03-065|SP03-066`.
+- Generacion base: `primary_p03_wave8_x8` -> `generated=8 attempted=8 skipped=72 failed=0`.
+- Retries selectivos: `SP03-060` por ruina/fantasy hall, `SP03-062` por bosque/root scene y `SP03-066` por glyph/numero en vez de background.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave8_20260618-001834`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave8_rejects_20260618-002454`.
+
+QA:
+
+- Pasan: `SP03-059`, `SP03-061`, `SP03-063`, `SP03-064`, `SP03-065`, `SP03-066`.
+- Watchlist aceptado: `SP03-060` por fondo landscape con sujeto modular/material-board claro y `SP03-062` por suelo organico; sin humano/bust/gore/texto/UI/camara dominante.
+
+## Tanda 2026-06-18 - primary default cards `pack_03` wave 9
+
+Se avanzo otra tanda de primarias reales de `pack_03`:
+
+- IDs: `SP03-067|SP03-068|SP03-069|SP03-070|SP03-071|SP03-072|SP03-073|SP03-074`.
+- Generacion base: `primary_p03_wave9_x8` -> `generated=8 attempted=8 skipped=72 failed=0`.
+- Retry selectivo: `SP03-067` por cuerpo/fetish-frame; se reescribio como modulo/protesis off-body.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave9_20260618-003342`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave9_rejects_20260618-004023`.
+
+QA:
+
+- Pasan: `SP03-067`, `SP03-068`, `SP03-069`, `SP03-070`, `SP03-071`, `SP03-072`, `SP03-073`, `SP03-074`.
+- Watchlist aceptado: `SP03-073` por papercraft creature bust, representativo del preset; sin humano real/texto/UI/camara dominante.
+
+## Tanda 2026-06-18 - primary default cards `pack_03` wave 10 + representativity redo
+
+Se cerro visualmente `pack_03` y se corrigio abstraccion/deriva reciente:
+
+- IDs finales: `SP03-075|SP03-076|SP03-077|SP03-078|SP03-079|SP03-080`.
+- Redo adicional: `SP03-060|SP03-066|SP03-067`.
+- Generacion: `primary_p03_wave10_plus_redo_x9` -> `generated=9 attempted=9 skipped=71 failed=0`.
+- Retry selectivo: `SP03-066` por objeto central; se reescribio como full-frame abstract background.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave10_plus_redo_20260618-004851`.
+- Backup reject: `D:\codex-studio-backups\style-defaults-primary-backup\pack_03_wave10_rejects_20260618-005611`.
+
+QA:
+
+- Pasan: `SP03-060`, `SP03-066`, `SP03-067`, `SP03-075`, `SP03-076`, `SP03-078`, `SP03-079`.
+- Watchlist aceptado: `SP03-077` por robot toy-brick character y `SP03-080` por marble creature statue, ambos representativos del preset.
+
+## Tanda 2026-06-18 - primary default cards `pack_04` wave 1
+
+Se empezo deuda visual real de `pack_04` con criterio corregido: representatividad primero, negativos contra drift concreto despues.
+
+- IDs: `SP04-001|SP04-002|SP04-003|SP04-004|SP04-005|SP04-006|SP04-007|SP04-008|SP04-009|SP04-010`.
+- Generacion base: `primary_p04_wave1_x10` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- Retries: `SP04-006`, `SP04-007`, `SP04-008`, `SP04-010`; `SP04-006` requirio segundo retry para aterrizar webtoon vertical real.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave1_20260618-010658`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave1_rejects_20260618-011604` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave1_rejects2_20260618-012117`.
+
+QA:
+
+- Pasan las diez.
+- Watchlist aceptado: `SP04-003` por costume/body crop y `SP04-010` por symbolic mask face; ambos representan preset sin texto/UI/franchise dominante.
+
+## Tanda 2026-06-18 - primary default cards `pack_04` wave 2
+
+Se continuo `pack_04` con la misma regla: tarjetas legibles y representativas, sin convertir todo en abstraccion vacia.
+
+- IDs: `SP04-011|SP04-012|SP04-013|SP04-014|SP04-015|SP04-016|SP04-017|SP04-018|SP04-019|SP04-020`.
+- Generacion base: `primary_p04_wave2_x10` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- Retries selectivos: `SP04-012`, `SP04-014`, `SP04-016`, `SP04-018`, `SP04-019`, `SP04-020`; retry extra de `SP04-020`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave2_20260618-012855`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave2_rejects_20260618-013942` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave2_rejects_sp04_020_20260618-014340`.
+
+QA:
+
+- Pasan las diez.
+- Watchlist aceptado: `SP04-014` por escena pixel vertical y `SP04-018` por ave con rama; representan bien el preset y no tienen persona/UI/texto/camara dominante.
+- Drift corregido: humanoide/traveler, rooftop humano, device/persona tech-noir, child/person, fantasy hero y vehicle/rocket educativo.
+
+## Tanda 2026-06-18 - primary default cards `pack_04` wave 3
+
+Se avanzo otra tanda visual de `pack_04`, manteniendo anclas concretas por preset y retries solo donde aparecio hero/person drift.
+
+- IDs: `SP04-021|SP04-022|SP04-023|SP04-024|SP04-025|SP04-026|SP04-027|SP04-028|SP04-029|SP04-030`.
+- Generacion base: `primary_p04_wave3_x10` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- Retry selectivo: `SP04-024`, `SP04-025`, `SP04-029`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave3_20260618-015209`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave3_rejects_20260618-020001`.
+
+QA:
+
+- Pasan las diez.
+- Watchlist aceptado: `SP04-022` y `SP04-028` por criatura/animal central; son representativas del medio y no tienen texto/UI/camara/pasillo.
+- Drift corregido: clay humano con espada, marker portrait humano y sticker humanoide con prop.
+
+## Tanda 2026-06-18 - primary default cards `pack_04` wave 4
+
+Se avanzo `SP04-031..040` con criterio mixto corregido: poster/vector/movie pueden usar personaje o escena cuando eso hace legible el preset.
+
+- IDs: `SP04-031|SP04-032|SP04-033|SP04-034|SP04-035|SP04-036|SP04-037|SP04-038|SP04-039|SP04-040`.
+- Generacion base: `primary_p04_wave4_x10` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- Retry selectivo: `SP04-036`, `SP04-040`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave4_20260618-020652`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave4_rejects_20260618-021306`.
+
+QA:
+
+- Pasan las diez.
+- Watchlist aceptado: `SP04-035` y `SP04-039` usan personaje/escena de forma representativa; no se fuerza abstraccion.
+- Drift corregido: `SP04-036` lente/camara-like y `SP04-040` backpack/product-dashboard.
+
+## Tanda 2026-06-18 - primary default cards `pack_04` wave 5
+
+Se avanzo `SP04-041..050` usando personajes/escenas donde el preset los necesita para destacarse.
+
+- IDs: `SP04-041|SP04-042|SP04-043|SP04-044|SP04-045|SP04-046|SP04-047|SP04-048|SP04-049|SP04-050`.
+- Generacion base: `primary_p04_wave5_x10` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- Retry selectivo: `SP04-042`, `SP04-043`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave5_20260618-022328`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave5_rejects_20260618-023019`.
+
+QA:
+
+- Pasan las diez.
+- Watchlist aceptado: `SP04-044`, `SP04-046`, `SP04-047`, `SP04-049` usan personaje/escena como lectura de poster/concept/matte/env; no se fuerza abstraccion.
+- Drift corregido: `SP04-042` fashion/portrait y `SP04-043` detective + playing card/text.
+
+## Tanda 2026-06-18 - primary default cards `pack_04` wave 6
+
+Se avanzo `SP04-051..060` con foco en production/concept assets: permitir personaje/escena donde el preset lo pide, pero cortar arma literal/pasillo cuando aparece.
+
+- IDs: `SP04-051|SP04-052|SP04-053|SP04-054|SP04-055|SP04-056|SP04-057|SP04-058|SP04-059|SP04-060`.
+- Generacion base: `primary_p04_wave6_x10` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- Retry selectivo: `SP04-060`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave6_20260618-024147`.
+- Backup reject: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave6_rejects_20260618-025027`.
+
+QA:
+
+- Pasan las diez.
+- Watchlist aceptado: `SP04-052`, `SP04-055`, `SP04-056`, `SP04-058` usan personaje/escena porque venden mejor isometric/keyframe/photobash/low-poly; `SP04-060` queda como concept-sheet legible.
+- Drift corregido: `SP04-060` arma literal en pasillo/market alley.
+
+## Tanda 2026-06-18 - primary default cards `pack_04` wave 7
+
+Se avanzo `SP04-061..070` con ajuste de criterio: printmaking no debe volverse abstracto vacio, pero tampoco caer en taller/documento/oficina ni hero fantasy por defecto.
+
+- IDs: `SP04-061|SP04-062|SP04-063|SP04-064|SP04-065|SP04-066|SP04-067|SP04-068|SP04-069|SP04-070`.
+- Generacion base: `primary_p04_wave7_x10` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- Retries selectivos: `SP04-062`, `SP04-067`, `SP04-068`, `SP04-069`, `SP04-070`; segundo retry de `SP04-068`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave7_20260618-030307`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave7_rejects_20260618-030910` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave7_rejects2_20260618-031403`.
+
+QA:
+
+- Pasan las diez.
+- Watchlist aceptado: `SP04-066` usa personaje central porque vende serigraph/pop; `SP04-067` queda paisaje monotype, pero con transferencia/ghosting claro.
+- Drift corregido: `SP04-062` prensa/taller/documento, `SP04-067` corredor/persona, `SP04-068` fantasy hero/arma/humano, `SP04-069` hero/castillo y `SP04-070` cuchillo/religioso/gothic portrait.
+
+## Tanda 2026-06-18 - primary default cards `pack_04` wave 8
+
+Se avanzo `SP04-071..080`, manteniendo sujetos legibles para ink/graffiti/calligrafia sin caer en texto, muro, taller o hero fantasy.
+
+- IDs: `SP04-071|SP04-072|SP04-073|SP04-074|SP04-075|SP04-076|SP04-077|SP04-078|SP04-079|SP04-080`.
+- Generacion base: `primary_p04_wave8_x10` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- Retries selectivos: `SP04-071`, `SP04-073`, `SP04-077`; segundo retry de `SP04-077`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave8_20260618-032435`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave8_rejects_20260618-033011` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave8_rejects2_20260618-033446`.
+
+QA:
+
+- Pasan las diez.
+- Watchlist aceptado: `SP04-071` conserva figura/barca en niebla, `SP04-076` creature/tag agresivo y `SP04-078` figura stencil; todos representan mejor que abstraccion vacia.
+- Drift corregido: `SP04-071` gothic ruin/figura armada, `SP04-073` fantasy hero con espada y `SP04-077` muro/arma fantasy.
+
+## Tanda 2026-06-18 - primary default cards `pack_04` wave 9
+
+Se avanzo `SP04-081..090`, con foco en production-design sheets legibles sin caer en grid/UI/texto ni hero fantasy.
+
+- IDs: `SP04-081|SP04-082|SP04-083|SP04-084|SP04-085|SP04-086|SP04-087|SP04-088|SP04-089|SP04-090`.
+- Generacion base: `primary_p04_wave9_x10` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- Retries selectivos: `SP04-081`, `SP04-082`, `SP04-086`, `SP04-087`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave9_20260618-034659`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave9_rejects_20260618-035347`.
+
+QA:
+
+- Pasan las diez.
+- Watchlist aceptado: `SP04-082` queda photobash shell/pod costero, `SP04-085` mantiene color-script grid y `SP04-088` environment vista sin personaje/arma/corredor.
+- Drift corregido: `SP04-081` cliff hero/arma, `SP04-082` fantasy gate/corridor, `SP04-086` full armored hero y `SP04-087` single hero pose.
+
+## Tanda 2026-06-18 - primary default cards `pack_04` wave 10
+
+Se cerro `SP04-091..100` y con esto `pack_04` queda visualmente completo como primarias actuales.
+
+- IDs: `SP04-091|SP04-092|SP04-093|SP04-094|SP04-095|SP04-096|SP04-097|SP04-098|SP04-099|SP04-100`.
+- Generacion base: `primary_p04_wave10_x10` -> `generated=10 attempted=10 skipped=90 failed=0`.
+- Retries selectivos: `SP04-092`, `SP04-095`, `SP04-099`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave10_20260618-040303`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_04_wave10_rejects_20260618-041006`.
+
+QA:
+
+- Pasan las diez.
+- Watchlist aceptado: `SP04-095` queda foliage focal mas que kit perfecto, pero sin humano/mercado/corredor/texto; `SP04-096` tiene progression fuerte sin arma.
+- Drift corregido: `SP04-092` full models/weapons, `SP04-095` forest creature scene y `SP04-099` face/UI-heavy layout.
+
+## Tanda 2026-06-18 - primary promotion `pack_05` wave 5
+
+Se recuperaron cards faltantes/deletadas usando variants ya auditadas, sin gastar imagegen nuevo.
+
+- IDs: `SP05-098|SP05-099|SP05-100|SP05-252|SP05-253|SP05-257|SP05-259|SP05-260`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_promote_variants_wave5_20260618080246`.
+- QA: pasan por personaje/escena clara y lectura de preset; no son abstraccion vacia.
+- Excluidas de esta promocion: `SP05-097`, `SP05-148`, `SP05-225` y otros watchlist por corredor/hero oscuro/fantasy-cliche dominante.
+
+## Tanda 2026-06-18 - primary default cards `pack_05` wave 6
+
+Se avanzo con safe/object prompts para recuperar IDs isekai/action sin repetir pasillo, mercado, camara, estudio o hero-cliche innecesario.
+
+- IDs: `SP05-091|SP05-092|SP05-093|SP05-127|SP05-128|SP05-131`.
+- Generacion: `primary_p05_wave6_091_131_x6` -> `generated=6 attempted=6 skipped=129 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave6_091_131_20260618-050521`.
+- QA: pasan las seis. `SP05-128` y `SP05-131` son personaje-fuertes, aceptados porque representan mejor el preset que una card abstracta.
+
+## Tanda 2026-06-18 - primary default cards `pack_05` wave 7
+
+Se avanzo con overrides anti-cliche para accion moderna: permitir personaje cuando vende el preset, pero bloquear pasillo/mercado/camara/weapon closeup.
+
+- IDs: `SP05-132|SP05-134|SP05-135|SP05-136|SP05-138|SP05-139`.
+- Generacion: `primary_p05_wave7_132_139_x6` -> `generated=6 attempted=6 skipped=129 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave7_132_139_20260618-051353`.
+- QA: pasan las seis. Watchlist aceptado: `SP05-136` por personaje fuerte y `SP05-138` por noir urbano fuerte; ambos representan mejor que abstraccion vacia.
+
+## Tanda 2026-06-18 - primary default cards `pack_05` wave 8
+
+Se avanzo sobre noir/jazz/mecha con overrides anti-arma, anti-pasillo, anti-chase.
+
+- IDs: `SP05-142|SP05-148|SP05-221|SP05-223|SP05-224|SP05-225`.
+- Generacion: `primary_p05_wave8_142_225_x6` -> `generated=6 attempted=6 skipped=129 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave8_142_225_20260618-052142`.
+- QA: pasan las seis. `SP05-142` y `SP05-148` son personaje-fuertes pero sin arma/camara/pasillo literal; `SP05-224` y `SP05-225` quedan mas asset/mecha material que corredor/chase.
+
+## Tanda 2026-06-18 - primary default cards `pack_05` wave 9
+
+Se avanzo mecha/cyberpunk austero con overrides object/material para cortar humano, camara, corredor y UI legible.
+
+- IDs: `SP05-226|SP05-227|SP05-229|SP05-230|SP05-231|SP05-232`.
+- Generacion: `primary_p05_wave9_226_232_x6` -> `generated=6 attempted=6 skipped=129 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave9_226_232_20260618-052822`.
+- QA: pasan las seis. Watchlist aceptado: `SP05-229` y `SP05-230` por depth urbano/megastructure, sin market/library/camara/personaje.
+
+## Tanda 2026-06-18 - primary default cards `pack_05` wave 10
+
+Se avanzo mecha/cyberpunk `SP05-233..238` con prompts object/material y criterio representativo, no abstracto vacio.
+
+- IDs: `SP05-233|SP05-234|SP05-235|SP05-236|SP05-237|SP05-238`.
+- Generacion: `primary_p05_wave10_233_238_x6` -> `generated=6 attempted=6 skipped=129 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave10_233_238_20260618-053646`.
+- QA: pasan las seis. Watchlist aceptado: `SP05-234`, `SP05-235` y `SP05-238` por figura fuerte; `SP05-236` pasa fuerte como compact hardware.
+
+## Tanda 2026-06-18 - primary default cards `pack_05` wave 11
+
+Se avanzo `SP05-240..245`, mezclando cyberpunk/fantasy con figuras donde ayudan a leer el preset.
+
+- IDs: `SP05-240|SP05-241|SP05-242|SP05-243|SP05-244|SP05-245`.
+- Generacion: `primary_p05_wave11_240_245_x6` -> `generated=6 attempted=6 skipped=129 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave11_240_245_20260618-054325`.
+- QA: pasan las seis. Watchlist aceptado: `SP05-244` por interior ceremonial; no hay camara, mercado, libreria, texto legible ni pasillo repetido.
+
+## Tanda 2026-06-18 - primary default cards `pack_05` wave 12
+
+Se avanzo `SP05-246..251` con foco fantasy representativo y controles anti-market/library/text/corridor.
+
+- IDs: `SP05-246|SP05-247|SP05-248|SP05-249|SP05-250|SP05-251`.
+- Generacion: `primary_p05_wave12_246_251_x6` -> `generated=6 attempted=6 skipped=129 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave12_246_251_20260618-055401`.
+- QA: pasan las seis. Watchlist aceptado: `SP05-247` por cottage/luz calida permitida por preset, `SP05-249` por mesa craft/personaje sin texto legible.
+
+## Tanda 2026-06-18 - primary default cards `pack_05` wave 13
+
+Se avanzo fantasy/dark fantasy con object/material-first en los dark para evitar corredor, puerta y portrait horror.
+
+- IDs: `SP05-255|SP05-256|SP05-258|SP05-261|SP05-262|SP05-263`.
+- Generacion: `primary_p05_wave13_255_263_x6` -> `generated=6 attempted=6 skipped=129 failed=0`.
+- Retry: `SP05-262` tras reject por puerta/corredor.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave13_255_263_20260618-060222`.
+- Backup reject: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave13_rejects_sp05_262_20260618-060646`.
+- QA: pasan las seis. `SP05-258` queda watchlist por lampara/herramienta aceptada por utility preset; `SP05-262` final pasa como still-life surface.
+
+## Tanda 2026-06-18 - primary default cards `pack_05` wave 14
+
+Se avanzo dark fantasy/seinen con object/material-first. `SP05-267` necesito endurecer prompt para cortar retrato/arma.
+
+- IDs: `SP05-264|SP05-265|SP05-266|SP05-267|SP05-268|SP05-269`.
+- Generacion: `primary_p05_wave14_264_269_x6` -> `generated=6 attempted=6 skipped=129 failed=0`.
+- Retries: `SP05-267` dos veces.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave14_264_269_20260618-061246`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave14_rejects_sp05_267_20260618-061706` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave14_rejects_sp05_267b_20260618-062117`.
+- QA: pasan las seis. Watchlist aceptado: `SP05-268` por profundidad vertical y `SP05-267` por emblema/ruina secundaria, sin persona/camara/texto.
+
+## Tanda 2026-06-18 - primary default cards `pack_05` wave 15
+
+Se avanzo dark fantasy/seinen `SP05-270..275` con object/material-first y retries selectivos contra corridor/window drift.
+
+- IDs: `SP05-270|SP05-271|SP05-272|SP05-273|SP05-274|SP05-275`.
+- Generacion: `primary_p05_wave15_270_275_x6` -> `generated=6 attempted=6 skipped=129 failed=0`.
+- Retry: `SP05-272|SP05-275`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave15_270_275_20260618-062939`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave15_rejects_272_275_20260618-063426`.
+- QA: pasan las seis. `SP05-272` y `SP05-275` finales pasan como material/object cards sin street/corridor/window/cathedral.
+
+## Tanda 2026-06-18 - primary default cards `pack_05` wave 16
+
+Se avanzo `SP05-276..280`, cierre parcial del bloque dark fantasy/seinen antes de los IDs restantes cruzados.
+
+- IDs: `SP05-276|SP05-277|SP05-278|SP05-279|SP05-280`.
+- Generacion: `primary_p05_wave16_276_280_x5` -> `generated=5 attempted=5 skipped=130 failed=0`.
+- Retry: `SP05-279`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave16_276_280_20260618-064049`.
+- Backup reject: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave16_rejects_sp05_279_20260618-064652`.
+- QA: pasan las cinco. `SP05-279` final pasa como red-optic machine still-life; `SP05-280` usa lantern ritual permitida por preset, no studio-lamp.
+
+## Tanda 2026-06-18 - primary default cards `pack_05` wave 17 close
+
+Se cerraron los 6 stale finales de `pack_05`.
+
+- IDs: `SP05-097|SP13-021|SP13-022|SP13-023|SP13-024|SP13-025`.
+- Generacion: `primary_p05_wave17_close_x6` -> `generated=6 attempted=6 skipped=129 failed=0`.
+- Retry: `SP05-097`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave17_close_20260618-065333`.
+- Backup reject: `D:\codex-studio-backups\style-defaults-primary-backup\pack_05_wave17_rejects_sp05_097_20260618-065752`.
+- QA: pasan las seis. `SP05-097` final pasa como bone/black dominion material emblem; `SP13-021..025` pasan como action-energy abstraction sin persona/camara/pasillo.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 1
+
+Se inicio `pack_06` con traditional painting, priorizando lectura de tecnica/material sobre abstraccion vacia.
+
+- IDs: `SP06-001|SP06-002|SP06-003|SP06-004|SP06-005|SP06-006`.
+- Generacion: `primary_p06_wave1_001_006_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave1_001_006_20260618-070425`.
+- QA: pasan las seis. Watchlist aceptado: `SP06-004` por estudio/ventana y `SP06-005` por figura devocional; ambos representan la tecnica sin camera/market/library/corridor drift.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 2
+
+Se avanzo traditional painting `SP06-007..012`, manteniendo sujeto/escena cuando ayuda a leer tecnica.
+
+- IDs: `SP06-007|SP06-008|SP06-009|SP06-010|SP06-011|SP06-012`.
+- Generacion: `primary_p06_wave2_007_012_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave2_007_012_20260618-071339`.
+- QA: pasan las seis. Watchlist aceptado: `SP06-009` por banquito/ventana y `SP06-012` por figura con spray; ambos representan tecnica sin camera/market/library/corridor drift.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 3
+
+Se avanzo `SP06-013..018`, cruzando traditional painting y drawing/sketching.
+
+- IDs: `SP06-013|SP06-014|SP06-015|SP06-016|SP06-017|SP06-018`.
+- Generacion: `primary_p06_wave3_013_018_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave3_013_018_20260618-072508`.
+- QA: pasan las seis. Watchlist aceptado: `SP06-016` y `SP06-018` por figura/atelier, utiles para representar dibujo academico.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 4
+
+Se avanzo drawing/sketching `SP06-019..024`. Se rechazaron los primeros `SP06-022|SP06-023|SP06-024` por caer en tool/studio/prop staging y se agregaron overrides representativos, no abstractos.
+
+- IDs: `SP06-019|SP06-020|SP06-021|SP06-022|SP06-023|SP06-024`.
+- Generacion base: `primary_p06_wave4_019_024_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Retry: `primary_p06_wave4_022_024_retry_x3` -> `generated=3 attempted=3 skipped=117 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave4_019_024_20260618-073421`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave4_rejects_022_024_20260618-074241`.
+- QA: pasan las seis. `SP06-020` queda watchlist por fondo interior, aceptado por lectura colored-pencil sin camera/market/library/corridor. `SP06-022|SP06-023|SP06-024` finales corrigen mesa/herramienta/mascara y mantienen sujeto representativo.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 5
+
+Se avanzo drawing/sketching `SP06-025..030` con overrides preventivos para evitar blueprint/text/tools/chalkboard/cafe/cliff-hero.
+
+- IDs: `SP06-025|SP06-026|SP06-027|SP06-028|SP06-029|SP06-030`.
+- Generacion base: `primary_p06_wave5_025_030_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Retry 1: `primary_p06_wave5_028_029_retry_x2` -> `generated=2 attempted=2 skipped=118 failed=0`.
+- Retry 2: `primary_p06_wave5_sp06_028_retry2` -> `generated=1 attempted=1 skipped=119 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave5_025_030_20260618-075124`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave5_rejects_028_029_20260618-075527` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave5_reject_sp06_028b_20260618-075910`.
+- QA: pasan las seis. `SP06-028` final queda animal scratchboard sin fantasy arch/weapon/compass; `SP06-029` final queda silueta animal limpia, sin cliff hero ni arma.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 6
+
+Se avanzo printmaking `SP06-031..036` con overrides preventivos para evitar mapas antiguos, talleres, herramientas, slogans y texto legible.
+
+- IDs: `SP06-031|SP06-032|SP06-033|SP06-034|SP06-035|SP06-036`.
+- Generacion: `primary_p06_wave6_031_036_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave6_031_036_20260618-080543`.
+- QA: pasan las seis. Watchlist aceptado: `SP06-031` conserva plate mark, `SP06-034` usa arquitectura minima como soporte litho; no hay camara, mercado, libreria, texto legible ni pasillo repetido.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 7
+
+Se avanzo printmaking `SP06-037..042` con overrides preventivos para evitar landscape/weather defaults, candles/interiors, flyers/text, specimen sheets, stamp text y newspaper layout.
+
+- IDs: `SP06-037|SP06-038|SP06-039|SP06-040|SP06-041|SP06-042`.
+- Generacion: `primary_p06_wave7_037_042_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave7_037_042_20260618-081123`.
+- QA: pasan las seis. Watchlist aceptado: `SP06-041` con paraguas como silueta stamped y `SP06-042` con maleta/ciudad halftone; no hay texto legible, camara, mercado, libreria ni pasillo repetido.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 8
+
+Se avanzo cierre printmaking e inicio digital art `SP06-043..048`. Hubo retries selectivos para cortar secondary props, studio/tools/UI-like drift y foreground figure/tool en matte extension.
+
+- IDs: `SP06-043|SP06-044|SP06-045|SP06-046|SP06-047|SP06-048`.
+- Generacion base: `primary_p06_wave8_043_048_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Retry 1: `primary_p06_wave8_043_046_048_retry_x4` -> `generated=4 attempted=4 skipped=116 failed=0`.
+- Retry 2: `primary_p06_wave8_047_048_retry2_x2` -> `generated=2 attempted=2 skipped=118 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave8_043_048_20260618-081726`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave8_rejects_043_046_048_20260618-082154` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave8_rejects_047_048b_20260618-082620`.
+- QA: pasan las seis. `SP06-047` final queda object-led con superficie minima, aceptado por speedpaint; `SP06-048` final queda matte exterior sin foreground person/weapon.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 9
+
+Se avanzo digital art `SP06-049..054`, con retries contra studio/tools, UI/screens, pedestal/lamp, Minecraft/weapon/tool drift y concept-sheet/callouts.
+
+- IDs: `SP06-049|SP06-050|SP06-051|SP06-052|SP06-053|SP06-054`.
+- Generacion base: `primary_p06_wave9_049_054_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Retry 1: `primary_p06_wave9_049_052_054_retry_x5` -> `generated=5 attempted=5 skipped=115 failed=0`.
+- Retry 2: `primary_p06_wave9_sp06_049_retry2` -> `generated=1 attempted=1 skipped=119 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave9_049_054_20260618-083229`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave9_rejects_049_052_054_20260618-083905` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave9_reject_sp06_049b_20260618-084323`.
+- QA: pasan las seis. Watchlist aceptado: `SP06-050|SP06-052` por pedestal/display minimo, representativos sin texto/UI/camera/market/library/corridor.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 10
+
+Se avanzo digital art `SP06-055..060`, con retries contra studio/tools/screens/UI/text drift.
+
+- IDs: `SP06-055|SP06-056|SP06-057|SP06-058|SP06-059|SP06-060`.
+- Generacion base: `primary_p06_wave10_055_060_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Retry 1: `primary_p06_wave10_056_060_retry_x5` -> `generated=5 attempted=5 skipped=115 failed=0`.
+- Retry 2: `primary_p06_wave10_sp06_058_retry2` -> `generated=1 attempted=1 skipped=119 failed=0`.
+- Retry 3: `primary_p06_wave10_sp06_058_retry3` -> `generated=1 attempted=1 skipped=119 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave10_055_060_20260618-084953`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave10_rejects_056_060_20260618-085639`, `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave10_reject_sp06_058b_20260618-090312` y `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave10_reject_sp06_058c_20260618-090738`.
+- QA: pasan las seis. Watchlist aceptado: `SP06-058|SP06-059` por pedestal/display minimo, sin UI/tools/text/camera/market/library/corridor.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 11
+
+Se avanzo mixed-media `SP06-061..066` con overrides preventivos contra craft-table, clippings/text, literal collections, scrapbook tickets/handwriting y tattoo/gore drift.
+
+- IDs: `SP06-061|SP06-062|SP06-063|SP06-064|SP06-065|SP06-066`.
+- Generacion: `primary_p06_wave11_061_066_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave11_061_066_20260618-091406`.
+- QA: pasan las seis. Watchlist aceptado: sujetos aviares repetidos en mixed-media, pero cada card lee materialidad distinta y evita texto/camera/market/library/corridor/craft-table.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 12
+
+Se avanzo mixed-media `SP06-067..072` con overrides preventivos contra readable text, literal photo/caption/moodboard drift, conspiracy board y craft-table.
+
+- IDs: `SP06-067|SP06-068|SP06-069|SP06-070|SP06-071|SP06-072`.
+- Generacion: `primary_p06_wave12_067_072_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave12_067_072_20260618-092502`.
+- QA: pasan las seis. Watchlist aceptado: aves repetidas en `SP06-067|SP06-071|SP06-072`, pero tecnicas distintas; `SP06-070` mantiene pins/thread sin texto/conspiracy drift.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 13
+
+Se avanzo cierre mixed-media `SP06-073..078` con overrides preventivos contra literal photo/portrait, software UI, fire, mugs/kitchen y religious-icon drift.
+
+- IDs: `SP06-073|SP06-074|SP06-075|SP06-076|SP06-077|SP06-078`.
+- Generacion: `primary_p06_wave13_073_078_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave13_073_078_20260618-093129`.
+- QA: pasan las seis. Watchlist aceptado: `SP06-075` usa rostro dentro de collage digital, `SP06-077` usa objeto colgante minimo; sin UI/text/camera/market/library/corridor/craft-table.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 14
+
+Se avanzo cierre mixed-media e inicio retro game visual systems `SP06-079..084`.
+
+- IDs: `SP06-079|SP06-080|SP06-081|SP06-082|SP06-083|SP06-084`.
+- Generacion base: `primary_p06_wave14_079_084_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Retry: `primary_p06_wave14_sp06_084_retry` -> `generated=1 attempted=1 skipped=119 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave14_079_084_20260618-093956`.
+- Backup reject: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave14_reject_sp06_084_20260618-094412`.
+- QA: pasan las seis. `SP06-084` final mantiene interior sci-fi, aceptado porque no hay UI/pantalla y lee pre-rendered sprite.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 15
+
+Se avanzo retro game visual systems `SP06-085..090` con retries contra screens/UI, decorative frame/badge y display/capsule UI.
+
+- IDs: `SP06-085|SP06-086|SP06-087|SP06-088|SP06-089|SP06-090`.
+- Generacion base: `primary_p06_wave15_085_090_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Retry: `primary_p06_wave15_085_087_090_retry_x3` -> `generated=3 attempted=3 skipped=117 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave15_085_090_20260618-095149`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave15_rejects_085_087_090_20260618-095831`.
+- QA: pasan las seis. Watchlist aceptado: `SP06-086` conserva monitor como background tileworld sin UI/texto; `SP06-087` tiene tactical grid sin paneles.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 16
+
+Se avanzo retro game visual systems `SP06-091..096` con retries contra hardware props y weapon/fighting-scene drift.
+
+- IDs: `SP06-091|SP06-092|SP06-093|SP06-094|SP06-095|SP06-096`.
+- Generacion base: `primary_p06_wave16_091_096_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Retry: `primary_p06_wave16_092_095_096_retry_x3` -> `generated=3 attempted=3 skipped=117 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave16_091_096_20260618-100757`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave16_rejects_092_095_096_20260618-101402`.
+- QA: pasan las seis. `SP06-095` conserva chest pero no consola/UI; `SP06-096` final no tiene arma y lee NeoGeo sprite.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 17
+
+Se avanzo cierre retro-game e inicio game-art directions `SP06-097..102`, con retries contra hero/weapon y sprite-sheet/icon drift.
+
+- IDs: `SP06-097|SP06-098|SP06-099|SP06-100|SP06-101|SP06-102`.
+- Generacion base: `primary_p06_wave17_097_102_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Retry: `primary_p06_wave17_101_102_retry_x2` -> `generated=2 attempted=2 skipped=118 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave17_097_102_20260618-102049`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave17_rejects_101_102_20260618-102718`.
+- QA: pasan las seis. `SP06-101|SP06-102` finales sin armas ni sprite-sheet; `SP06-102` conserva marco decorativo minimo, no UI/texto.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 18
+
+Se avanzo game-art directions `SP06-103..108`, corrigiendo prompt hacia card unica representativa sin HUD legible, armas ni sprite-sheet drift.
+
+- IDs: `SP06-103|SP06-104|SP06-105|SP06-106|SP06-107|SP06-108`.
+- Generacion base: `primary_p06_wave18_103_108_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Retry: `primary_p06_wave18_104_106_retry_x2` -> `generated=2 attempted=2 skipped=118 failed=0`.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave18_103_108_20260618-103549`.
+- Backup rejects: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave18_rejects_104_106_20260618-104216`.
+- QA: pasan las seis. `SP06-104` final queda device-core cyberpunk sin figura/weapon-like; `SP06-106` final queda isometric tile cluster sin personaje/arma.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 19
+
+Se avanzo game-art directions `SP06-109..114`, manteniendo cards representativas sin convertirlas en UI, sheet o arma.
+
+- IDs: `SP06-109|SP06-110|SP06-111|SP06-112|SP06-113|SP06-114`.
+- Generacion base: `primary_p06_wave19_109_114_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Retry: ninguno.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave19_109_114_20260618-104902`.
+- QA: pasan las seis. Watchlist aceptado: `SP06-109` figura/relic shrouded con ruina, representativo de Soulslike sin arma/UI/knight-portrait claro.
+
+## Tanda 2026-06-18 - primary default cards `pack_06` wave 20 close
+
+Se cerro deuda visual primaria de `pack_06` con los ultimos game-art directions `SP06-115..120`.
+
+- IDs: `SP06-115|SP06-116|SP06-117|SP06-118|SP06-119|SP06-120`.
+- Generacion base: `primary_p06_wave20_115_120_x6` -> `generated=6 attempted=6 skipped=114 failed=0`.
+- Retry: ninguno.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_06_wave20_115_120_20260618-105635`.
+- QA: pasan las seis. Watchlist aceptado: `SP06-116` figura stealth escondida y `SP06-119` mano parcial; ambas mantienen lectura sin armas/UI/texto/sprite-sheet.
+
+## Tanda 2026-06-18 - cierre semantico `pack_07` / `pack_08`
+
+Se cerro el pendiente semantico residual de `pack_07` / `pack_08` con una limpieza puntual de `SP07-075`: se reemplazo el mojibake interno por visual DNA en ingles style-first, preservando el anchor de paradoja optica imposible sin referencia autoral/persona ni escena fija.
+
+- Editado: `components/recipes/styles/manifests/presets/pack_07/SP07-075.yaml`.
+- `bun run styles:validate -- --pack=pack_07` -> ok (`selected=80`).
+- `bun run styles:validate -- --pack=pack_08` -> ok (`selected=80`).
+- `bun run styles:quality:audit` -> ok, `redundancy: none above threshold`.
+- `bun run styles:runtime` -> ok, `packs=16 presets=1662`.
+- `bun run styles:runtime:check` -> ok, runtime current.
+- Riesgo residual: no queda P1 semantico conocido en `pack_07` / `pack_08`; si aparece feedback visual nuevo, tratarlo como QA puntual, no reabrir barrido completo.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 1
+
+Se empezo deuda visual real de `pack_13` despues de confirmar coverage vivo: `pack_13 availableDefaultImages=0/132 staleDefaultImages=132`; `pack_14/15` siguen cerrados.
+
+- IDs: `SP13-001|SP13-002|SP13-003|SP13-004|SP13-005|SP13-006`.
+- Generacion base: `primary_p13_wave1_001_006_x6` -> `generated=6 attempted=6 skipped=126 failed=0`.
+- Retry: ninguno.
+- Backup base: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave1_001_006_20260618-111134`.
+- QA: pasan las seis. Watchlist aceptado: `SP13-004` por figura + mecha hangar, representativo del preset; no hay texto/UI legible/camera/market/library/corridor drift.
+
+## Tanda 2026-06-18 - correccion de rumbo anime `SP05-031..040`
+
+Se pauso generacion anime tras feedback visual: varios defaults `SP05-031..040` perdieron identidad y convergieron a shonen generico con bosque/ruina, exceso de microdetalle y ruido. Correccion aplicada al generador, sin crear nuevas imagenes:
+
+- Regla corregida: en anime, personaje/pose/acting vuelve a ser anchor principal salvo preset material/objeto explicito.
+- `object/material-first` queda como escape puntual para gore, weapon, IP/franchise o safety risk; no como default de pack anime.
+- Se reescribieron prompts ID-scoped `SP05-031..040` para recuperar identidad por preset y bajar ruido: clean cel shapes, broad color blocks, controlled detail density, no dense forest/ruin/corridor formula.
+- Se eliminaron overrides object/material-first para `SP05-032` y `SP05-036`, porque borraban personaje e identidad anime.
+- No se restauraron assets borrados por el usuario ni se regeneraron cards en esta tanda.
+- Pendiente visual: revisar/restaurar/regenerar selectivamente `SP05-031..040` desde backups/variants antes de continuar anime `pack_13`.
+
+## Tanda 2026-06-18 - diagnostico de sobre-generalizacion anime
+
+Subagentes de auditoria confirmaron que los manifests `pack_05` conservan identidad fuerte; la perdida ocurria en el generador.
+
+- Causa raiz: `safeImagegenStyleDna` hacia early-return y salteaba `categoryBasePrompt`, `HERO`, `ENVIRONMENT`, `ACTION`, `presetMotifForPrompt`, `negativePrompt`, `CONSTRAINT SEMANTICS` y parte del Style DNA.
+- Esa rama degradaba `ANIME`/`ACTION` a terminos mas genericos y pedia anchors tipo `emblem/relic/material/environment fragment`, por eso muchos anime terminaron como objetos o abstracciones similares.
+- `objectOnlyPromptOverrides` se expandio demasiado en `SP05`; debe seguir existiendo para safety/IP/gore/weapon, pero no ser modo default de anime representativo.
+- `pack_05__anime_style_spectrum` heredaba familia `anime_masterpieces`, empujando todos a la misma logica lirica/personaje quieto.
+- Correccion aplicada: safe DNA anime sin object-only vuelve a ser character-led con protagonista original, `subject`, `mood`, `render`, `HERO`, `ENVIRONMENT`, `FEELING`, `ACTION`, motif distintivo y `negativePrompt`.
+- Correccion aplicada: `TARGET STYLE` deja de reemplazar `ANIME`/`ACTION`; `anime_style_spectrum` usa familia propia; `DETAIL_VARIANTS` deja de pedir microdetalle y pasa a detalle amplio legible desde thumbnail.
+- Siguiente criterio: clasificar overrides anime como `character-led`, `scene-led` u `object-only safety exception`; regenerar solo despues de revisar candidatos actuales/backups/variants.
+
+## Tanda 2026-06-18 - ajuste QA `pack_06` anti-bird drift
+
+Feedback visual nuevo: varias cards `SP06` tendieron demasiado a aves/siluetas aviares. No se tocaron assets en esta tanda porque el usuario sigue inspeccionando y borrando selectivamente.
+
+- Coverage actual verificado: `pack_06 availableDefaultImages=120/120`, `staleDefaultImages=0`, `missingDefaultImages=0`.
+- Se fortalecio guardrail solo para futuros prompts `pack_06`: no resolver cards con birds/ravens/owls/wing shapes/feathered silhouettes/repeated animal icons por default.
+- La alternativa recomendada ahora rota por categoria; `mixed-media` debe preferir fragmentos humanos/garment, torn-color blocks, botanical pressings, mask pieces, vehicle scraps, architectural paper, fabric swatches, ticket-like shapes sin texto legible o material specimens antes que bird collage.
+- Proxima accion: si el usuario elimina IDs concretos de `SP06`, regenerar solo esos IDs con `--print-prompts` primero.
+
+## Tanda 2026-06-18 - ajuste QA `pack_13` anime bases
+
+No se generaron assets. Se preparo la siguiente tanda visual de `pack_13` corrigiendo prompts antes de ejecutar.
+
+- Coverage actual: `pack_13 availableDefaultImages=6/132`, `staleDefaultImages=126`, `missingDefaultImages=0`.
+- Problema detectado: `SP13-007..012` usaban base generica porque los anchors existentes (`pack_13__anime`, etc.) no matcheaban las keys reales de taxonomy (`pack_13__core_anime`, etc.).
+- Correccion aplicada: bases y anchors actuales para `pack_13__core_anime`, `pack_13__slice_of_life_school_music`, `pack_13__shojo_magical_girl_and_visionary_classics`, `pack_13__slice_of_life_and_moe`, `pack_13__anime_style_spectrum`.
+- Se extendio safe anime character-led a `pack_13`, no solo `pack_05`.
+- `SP13-011` queda con override puntual: personaje + bio-glow/piedra/cristal/mist; no literal dungeon corridor/tunnel hallway.
+- Verificacion: `bun run check -- scripts\generate-style-defaults.ts` ok; dry-run `SP13-007|SP13-008|SP13-009|SP13-010|SP13-011|SP13-012` imprime prompts character-led.
+- Generacion:
+  - backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave2_retry_007_012_20260618-120531`;
+  - comando 6-up tuvo timeout tras producir `SP13-007|SP13-008|SP13-009`; proceso residual detenido;
+  - `SP13-010|SP13-011` generadas en retry 2-up;
+  - `SP13-012` generada en retry 1-up.
+- QA visual:
+  - aceptadas `SP13-007|SP13-008|SP13-009|SP13-010|SP13-012`;
+  - `SP13-011` queda aceptada provisional/watchlist por linterna/ambiente dungeon fuerte, aunque representa bien labyrinth glow.
+- Runtime/coverage:
+  - `bun run styles:runtime` ok;
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=12/132`, `staleDefaultImages=120`, `missingDefaultImages=0`;
+  - `bun run styles:runtime:check` ok;
+  - `SP13-007..012` ya no aparecen en `lib/staleStyleDefaultImages.generated.ts`.
+- Proxima accion segura: `SP13-013..016`.
+
+## Tanda 2026-06-18 - ajuste QA `pack_16` anime prestige bases
+
+Se corrigio la sobre-generalizacion de `pack_16` antes de seguir generando en masa.
+
+- Causa raiz: `pack_16` no tenia bases `pack_16__*`, ni regla anime-prestige propia, ni safe-branch character-led. Caia en `A vertical scene...` y anchors genericos.
+- Correccion aplicada:
+  - fallback anime-prestige para `pack_16` con linaje de artista/estudio/director/epoca como gramatica visual, no copia literal;
+  - `animeSafeCharacterCard` ahora incluye `pack_16`;
+  - `presetMotifForPrompt` tiene guardrail `pack_16` contra generic anime face, aura/rubble/corridor/market/library/camera/lamp/object-only/empty abstraction;
+  - exact lineages para `SP05-007..012` y reglas por nombre/categoria para el resto de `pack_16`.
+- Generacion aceptada: `SP05-007|SP05-008|SP05-009|SP05-010|SP05-011|SP05-012`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave_sp05_007_012_before_20260618-191422`.
+- Nota QA: `SP05-007|SP05-011|SP05-012` se reintentaron brevemente por mi criterio de "demasiado literal", pero el usuario aprobo las primeras versiones. Se restauraron como primarias y las retries quedaron como backup historico.
+- Backup de versiones aprobadas restauradas: `D:\codex-studio-backups\style-defaults-rejected\pack_16_sp05_007_011_012_literal_reject_20260618-191819`.
+- Backup de retries conservadas: `D:\codex-studio-backups\style-defaults-rejected\pack_16_sp05_007_011_012_retry_kept_as_backup_20260618-192102`.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=6/140`, `staleDefaultImages=134`, `missingDefaultImages=0`.
+- Siguiente opcion: continuar stale order con `SP05-001..006`, que ya tienen prompt overrides preparados; despues seguir con `SP05-014..018|SP05-024` o priorizar `SP05-301..312`, que subagente marco como bloque P0 para identidad `SP05-30+`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 2
+
+- IDs: `SP05-001|SP05-002|SP05-003|SP05-004|SP05-005|SP05-006`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave2_sp05_001_006_before_20260618-193208`.
+- Dry-run: prompts con lineage overrides preparados, regla anime-prestige `pack_16`, no fallback generico.
+- Generacion: `primary_p16_sp05_001_006_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-001`: retro pioneer hero, optimismo cel 70s/80s.
+  - `SP05-002`: vintage mechanical grandeur, super-robot literal pero representativo.
+  - `SP05-003`: jazzy rogue heist rhythm, adulto/caper nocturno claro.
+  - `SP05-004`: melancholy astral opera, scale/drape/cosmos sin cockpit/train corridor.
+  - `SP05-005`: grounded tactical machinery, maquina funcional sin weapon/UI foreground.
+  - `SP05-006`: pop transformable aerial spectacle, pop-tech performance sin concert/cockpit literal.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=12/140`, `staleDefaultImages=128`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-014|SP05-015|SP05-016|SP05-017|SP05-018|SP05-024`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 3 accepted existing
+
+- IDs: `SP05-014|SP05-015|SP05-016|SP05-017|SP05-018|SP05-024`.
+- Decision QA: usuario aprobo las cards actuales y pidio no rechazarlas.
+- Generacion: no ejecutada; no se sobreescribieron imagenes.
+- Backlog: removidos de deuda stale por aceptacion explicita.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=18/140`, `staleDefaultImages=122`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-026|SP05-027|SP05-030|SP05-071|SP05-072|SP05-073`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 4
+
+- IDs: `SP05-026|SP05-027|SP05-030|SP05-071|SP05-072|SP05-073`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave4_sp05_026_073_before_20260618-195012`.
+- Dry-run: prompts character-led con lineage explicito y denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_026_073_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-026`: operatic rebellion strategy, black/crimson/gold y tablero politico; literal pero representativo.
+  - `SP05-027`: spiral overdrive bravado, escala ascendente, hero/mecha y naranja/azul fuerte.
+  - `SP05-030`: gothic soul-pop action, silueta angular skull-pop y ritmo negro/rojo.
+  - `SP05-071`: warm liminal reverie fantasy, setting ambar artesanal y criatura amable.
+  - `SP05-072`: eco-mythic conflict epic, guardian natural contra industria al fondo.
+  - `SP05-073`: wandering clockwork hearth, viajero steampunk luminoso y nucleo mecanico calido.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=24/140`, `staleDefaultImages=116`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-074|SP05-075|SP05-076|SP05-077|SP05-078|SP05-079`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 5
+
+- IDs: `SP05-074|SP05-075|SP05-076|SP05-077|SP05-078|SP05-079`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave5_sp05_074_079_before_20260618-195704`.
+- Dry-run: lineages separados para skyglow longing, rainlight romance, Kon dream/thriller, Otomo collapse y Koike velocity.
+- Generacion: `primary_p16_sp05_074_079_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-074`: skyglow longing drama, cielo amplio y figura pequena contra horizonte emocional.
+  - `SP05-075`: rainlight threshold romance, lluvia/vidrio y blue-white longing claros.
+  - `SP05-076`: cinematic dream-collapse surrealism, mascara fragmentada y collage simbolico saturado.
+  - `SP05-077`: mirror identity collapse thriller, reflejo roto y ansiedad privada/publica; watchlist por glamour.
+  - `SP05-078`: Otomo light-trail collapse, cyber-apocalipsis rojo, masa infraestructural y ruina electrica.
+  - `SP05-079`: hyperkinetic cosmic velocity, tunel de velocidad, piloto/vehiculo y motion rojo/cian.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=30/140`, `staleDefaultImages=110`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-080|SP05-141|SP05-145|SP05-146|SP05-147|SP05-149`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 6
+
+- IDs: `SP05-080|SP05-141|SP05-145|SP05-146|SP05-147|SP05-149`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave6_sp05_080_149_before_20260618-200838`.
+- Dry-run: prompts character-led con lineage explicito, sin fallback generico, con denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_080_149_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-080`: cosmic ocean lyrical, figura submarina y agua-luz azul bioluminiscente.
+  - `SP05-141`: gothic resonance punk, luna naranja, silueta punk-goth; watchlist por glamour.
+  - `SP05-145`: sky-surf romantic momentum, lift aereo y rider/board cyan-magenta.
+  - `SP05-146`: velvet covenant gothic, retrato ceremonial negro/rojo con mascara; watchlist por gothic glamour.
+  - `SP05-147`: winter friction romance, microacting frio/calido, nieve y gesto de bufanda.
+  - `SP05-149`: clan comedy escalation, energia shonen clan/gag; watchlist por emblemas tipo logo sin texto legible.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=36/140`, `staleDefaultImages=104`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-150|SP05-151|SP05-152|SP05-153|SP05-154|SP05-155`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 7
+
+- IDs: `SP05-150|SP05-151|SP05-152|SP05-153|SP05-154|SP05-155`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave7_sp05_150_155_before_20260618-202002`.
+- Dry-run: `logs\style-prompts-pack16-wave7-sp05-150-155-20260618-201941.txt`, prompts character-led con lineage/style DNA, sin fallback generico, con denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_150_155_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-150`: crimson threshold embers, umbral occult rojo/azul; watchlist por filigrana casi firma.
+  - `SP05-151`: pop reality bend, habitacion cotidiana rota por cosmos pop.
+  - `SP05-152`: anachronistic deadpan mayhem, lead deadpan, mascota y timing plano comico.
+  - `SP05-153`: techno-gothic exorcism, sacro-industrial black/white/red y presion cathedral-tech.
+  - `SP05-154`: clinical nocturne tactics, glass/medical nocturne y restraint frio.
+  - `SP05-155`: noble arcane romcom, nobleza arcana rosa/azul; watchlist por polish fantasy-romcom generico.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=42/140`, `staleDefaultImages=98`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-156|SP05-157|SP05-158|SP05-159|SP05-160|SP05-161`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 8
+
+- IDs: `SP05-156|SP05-157|SP05-158|SP05-159|SP05-160|SP05-161`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave8_sp05_156_161_before_20260618-203053`.
+- Dry-run: `logs\style-prompts-pack16-wave8-sp05-156-161-20260618-203033.txt`, prompts character-led con lineage/style DNA, sin fallback generico, con denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_156_161_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada por usuario:
+  - `SP05-156`: summer loop paranoia, umbral calido y personaje con tension de horror veraniego.
+  - `SP05-157`: vertical speed rebellion, velocidad urbana vertical y silueta de accion.
+  - `SP05-158`: ecological whisper healing, stream organico, gesto sanador y supernatural ecology suave.
+  - `SP05-159`: black-lipstick melodrama punk, punk glamour adulto y nocturno magazine-anime.
+  - `SP05-160`: rose elite comedy, anfitrion rose elite y exceso ornamental especifico.
+  - `SP05-161`: planetary aura impact, aura gold/blue y energia cosmica 90s.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=48/140`, `staleDefaultImages=92`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-163|SP05-164|SP05-165|SP05-166|SP05-167|SP05-169`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 9
+
+- IDs: `SP05-163|SP05-164|SP05-165|SP05-166|SP05-167|SP05-169`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave9_sp05_163_169_before_20260618-204138`.
+- Dry-run: `logs\style-prompts-pack16-wave9-sp05-163-169-20260618-204138.txt`, prompts character-led con lineage/style DNA, sin fallback generico, con denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_163_169_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-163`: smoke-jazz noir cool, character rain-noir con saxo; watchlist por literalidad, pero especifico del preset.
+  - `SP05-164`: wet techno-noir consciousness, lluvia/cybernetics y tension identitaria blue-orange.
+  - `SP05-165`: spirit pressure rivalry, postura delinquent fuerte y energia espiritual purpura.
+  - `SP05-166`: redemption restraint, wanderer contenido, sunset y drama etico sin foco de arma.
+  - `SP05-167`: engine-trail outlaw adventure, motor/launchpad y silueta outlaw orange-blue; watchlist por prop tecnico fuerte.
+  - `SP05-169`: wired identity dissolution, CRT/cables y fade de identidad, terminal especifico sin object-only generico.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=54/140`, `staleDefaultImages=86`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-170|SP05-173|SP05-174|SP05-175|SP05-179|SP05-180`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 10
+
+- IDs: `SP05-170|SP05-173|SP05-174|SP05-175|SP05-179|SP05-180`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave10_sp05_170_180_before_20260618-205117`.
+- Dry-run: `logs\style-prompts-pack16-wave10-sp05-170-180-20260618-205117.txt`, prompts character-led con lineage/style DNA, sin fallback generico, con denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_170_180_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-170`: storybook seal magic, magical-girl clara; watchlist por similitud noventera literal, pero representativa.
+  - `SP05-173`: dust-warm pacifist melancholy, red cloak, bondad cansada y companion cue.
+  - `SP05-174`: iron ruin tragedy, maquina rota, peso industrial oscuro y tragedia corporal.
+  - `SP05-175`: rose ritual symbolism, teatro de rosas/cortina/espejo especifico del preset.
+  - `SP05-179`: warm rivalry portrait, sweat/microacting deportivo y energia de rivalidad calida.
+  - `SP05-180`: precision action cel, rooftop tecnico, maquina/vehiculo y hard light controlada.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=60/140`, `staleDefaultImages=80`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-281|SP05-282|SP05-283|SP05-284|SP05-285|SP05-286`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 11
+
+- IDs: `SP05-281|SP05-282|SP05-283|SP05-284|SP05-285|SP05-286`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave11_sp05_281_286_before_20260618-210112`.
+- Dry-run: `logs\style-prompts-pack16-wave11-sp05-281-286-20260618-210112.txt`, prompts character-led con Studio Masterpieces lineage/style DNA, sin fallback generico, con denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_281_286_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-281`: temporal memory cinema, nieve/mask/memory staging; watchlist por ornamento alto, pero especifico.
+  - `SP05-282`: social humanist warmth, winter street kindness y microgesto calido.
+  - `SP05-283`: metaphysical mourning, umbral interior, tela velada y duelo suave.
+  - `SP05-284`: airborne wonder adventure, sky scale, retro airship y explorer silhouette.
+  - `SP05-285`: eco-prophetic wind, ecologia ventosa, mask simbolica y paisaje vivo/ruina.
+  - `SP05-286`: seasonal intimacy realism, rain-village intimacy y gesto protector.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=66/140`, `staleDefaultImages=74`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-287|SP05-288|SP05-289|SP05-290|SP05-291|SP05-292`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 12
+
+- IDs: `SP05-287|SP05-288|SP05-289|SP05-290|SP05-291|SP05-292`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave12_sp05_287_292_before_20260618-211136`.
+- Dry-run: `logs\style-prompts-pack16-wave12-sp05-287-292-20260618-211136.txt`, prompts character-led con Studio Masterpieces lineage/style DNA, sin fallback generico, con denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_287_292_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-287`: digital pop opera, performer astral, interfaz luminosa y escala space-opera.
+  - `SP05-288`: elastic summer time, movimiento costero, gesto veraniego y criatura temporal pequena.
+  - `SP05-289`: ascetic gothic silence, ornamento oscuro, mask/mirror simbolico y profundidad acuosa.
+  - `SP05-290`: paramilitary melancholy, figura tactica contenida, rojo/carbon y presion mecha gastada.
+  - `SP05-291`: delicate reconciliation, microgesto cotidiano, umbral lluvioso/jardin y restraint humanista.
+  - `SP05-292`: historical glam punk performance, vocalist punk teatral, ritmo rojo/purpura y costume ornate.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=72/140`, `staleDefaultImages=68`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-293|SP05-294|SP05-295|SP05-296|SP05-297|SP05-298`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 13
+
+- IDs: `SP05-293|SP05-294|SP05-295|SP05-296|SP05-297|SP05-298`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave13_sp05_293_298_before_20260618-212009`.
+- Dry-run: `logs\style-prompts-pack16-wave13-sp05-293-298-20260618-212009.txt`, prompts character-led con Studio Masterpieces lineage/style DNA, sin fallback generico, con denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_293_298_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-293`: rough mythic density, survivor mask, metal/paint chipped y totem feral compacto.
+  - `SP05-294`: mutating psychedelic, silueta fracturada, cyan/magenta/orange y mutacion grafica.
+  - `SP05-295`: quiet musical distance, interior con case musical, distancia suave y silencio warm/cool.
+  - `SP05-296`: humanist art deco retrofuture, escala human/android, deco brass/green y arquitectura civica.
+  - `SP05-297`: hyperobserved rain intimacy, gesto bajo lluvia, wet pavement/reflection y observacion quieta.
+  - `SP05-298`: nocturnal social whirl, swirl social nocturno, mask-creature cue y calidez viva.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=78/140`, `staleDefaultImages=62`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-299|SP05-300|SP05-301|SP05-302|SP05-303|SP05-304`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 14
+
+- IDs: repair `SP05-287` + stale wave `SP05-299|SP05-300|SP05-301|SP05-302|SP05-303|SP05-304`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave14_sp05_299_304_repair287_before_20260618-212821`.
+- Dry-run: `logs\style-prompts-pack16-wave14-sp05-299-304-repair-287-20260618-212821.txt`, prompts character-led con lineage/style DNA, sin fallback generico, con denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_299_304_repair287_lineage_x7` -> `generated=7 attempted=7 skipped=133 failed=0`.
+- QA aceptada:
+  - `SP05-287`: reparada missing card, digital pop opera, performer astral con mask y magenta/cyan stage scale.
+  - `SP05-299`: dream invasion carnival, masks fracturadas y tension escenica roja/azul.
+  - `SP05-300`: hypergraphic chromatic action, hero pose saturado y geometria cyan/magenta/orange.
+  - `SP05-301`: analog space opera command, officer retro, nave y mando estelar.
+  - `SP05-302`: melancholic space corsair, capa larga, moonlit outlaw solitude.
+  - `SP05-303`: celestial journey melancholy, pilgrim astral, gold orbital frame y despedida.
+  - `SP05-304`: baroque insurgent melodrama, shojo command ornamental; watchlist por cue aristocratico fuerte, aceptada por preset.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=84/140`, `staleDefaultImages=56`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-305|SP05-306|SP05-307|SP05-308|SP05-309|SP05-310`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 15
+
+- IDs: `SP05-305|SP05-306|SP05-307|SP05-308|SP05-309|SP05-310`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave15_sp05_305_310_before_20260618-213633`.
+- Dry-run: `logs\style-prompts-pack16-wave15-sp05-305-310-20260618-213633.txt`, prompts character-led con retro anime lineage/style DNA, sin fallback generico, con denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_305_310_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-305`: neon sci-fi slapstick rom-com; usuario aprobo la original y se restauro tras retry demasiado estricto.
+  - `SP05-306`: adult domestic warmth, rutina de cocina al atardecer y calidez vivida.
+  - `SP05-307`: summer sports melodrama, pausa atletica, sudor/sunset y competencia tardia.
+  - `SP05-308`: eighties neon precision noir, pose segura y ciudad de lluvia/neon.
+  - `SP05-309`: explosive space glam action, glam sci-fi, magenta/white y escala espacial.
+  - `SP05-310`: competent space pulp, piloto practico, hangar craft y utilidad pulp orange/blue.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=90/140`, `staleDefaultImages=50`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-311|SP05-312|SP05-313|SP05-314|SP05-315|SP05-316`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 16
+
+- IDs: `SP05-311|SP05-312|SP05-313|SP05-314|SP05-315|SP05-316`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave16_sp05_311_316_before_20260618-214805`.
+- Dry-run: `logs\style-prompts-pack16-wave16-sp05-311-316-20260618-214805.txt`, prompts character-led con retro anime lineage/style DNA, sin fallback generico, con denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_311_316_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-311`: rusted eco hope adventure, ruina costera, ivy/rust y optimismo azul.
+  - `SP05-312`: elegant eighties heist glam, ladrona felina, marble noir y tension rojo/negro.
+  - `SP05-313`: zodiac cosmic heroism, retrato celeste, constelaciones doradas y escala retro espacial.
+  - `SP05-314`: monumental formation sacrifice, piloto joven, monolito orbital y beacon naranja.
+  - `SP05-315`: angular institutional tragedy, cel limpio, geometria roja/negra y reflejo fracturado.
+  - `SP05-316`: biomorphic mist ritual, mascara organic-tech, niebla ritual y spores luminosos; aceptada por preset.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=96/140`, `staleDefaultImages=44`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-317|SP05-318|SP05-319|SP05-320|SP05-343|SP05-344`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 17
+
+- IDs: `SP05-317|SP05-318|SP05-319|SP05-320|SP05-343|SP05-344`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave17_sp05_317_320_343_344_before_20260618-215620`.
+- Dry-run: `logs\style-prompts-pack16-wave17-sp05-317-320-343-344-20260618-215620.txt`, prompts character-led con lineage retro/sports distinto, sin fallback object-only generico, con denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_317_320_343_344_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-317`: arcade techno-rebellion, rider nocturno, neon rain y tension retro-tech.
+  - `SP05-318`: psychedelic demonic horror, transformacion no-grafica, rojo/violeta y presion horror.
+  - `SP05-319`: strategic pop duality, oficial retro-space, division tactical/pop.
+  - `SP05-320`: charismatic space rogue pulp, rogue lounge-noir, rojo/cosmico y carisma pulp.
+  - `SP05-343`: vertical team rally energy, salto deportivo y energia de equipo orange/blue.
+  - `SP05-344`: ego pressure breakout, sprint depredador, geometria de presion azul/acido/rojo.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=102/140`, `staleDefaultImages=38`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-345|SP05-346|SP05-347|SP05-348|SP05-349|SP05-350`.
+
+## Tanda 2026-06-18 - primary default cards `pack_16` wave 18
+
+- IDs: `SP05-345|SP05-346|SP05-347|SP05-348|SP05-349|SP05-350`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_wave18_sp05_345_350_before_20260618-220403`.
+- Dry-run: `logs\style-prompts-pack16-wave18-sp05-345-350-20260618-220403.txt`, prompts sports/performance character-led, sin fallback object-only generico, con denoise/post-processing al final.
+- Generacion: `primary_p16_sp05_345_350_lineage_x6` -> `generated=6 attempted=6 skipped=134 failed=0`.
+- QA aceptada:
+  - `SP05-345`: nineties physical rivalry, mirada atletica cercana, rojo/blanco, sudor y cancha.
+  - `SP05-346`: phantom teamplay speed, sprint azul/cian, ghost trail y motion tactico.
+  - `SP05-347`: uphill endurance breakaway, runner de ascenso, pendiente y presion de resistencia.
+  - `SP05-348`: summer precision duel, accion tipo tennis aceptada como precision-duel intencional.
+  - `SP05-349`: generational sports resolve, retrato nocturno de resolve, legado/madurez.
+  - `SP05-350`: aquatic relay glow, handoff acuatico, caustics azules y motion fluido.
+- Resultado esperado tras runtime: `pack_16 availableDefaultImages=108/140`, `staleDefaultImages=32`, `missingDefaultImages=0`.
+- Siguiente stale order: `SP05-351|SP05-352|SP05-353|SP05-354|SP05-355|SP05-356`.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 3
+
+- IDs: `SP13-013|SP13-014|SP13-015|SP13-016`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave3_013_016_20260618-123154`.
+- QA visual:
+  - aceptadas `SP13-013|SP13-015|SP13-016`;
+  - `SP13-014` aceptada/watchlist: representa Ronin Alley Duel, pero conserva alley/sword/lantern fuerte. Backup previo era peor para el preset porque leia como idol/backstage.
+- Backlog: removidas `SP13-013..016` de stale table; pendiente runtime/coverage.
+- Proxima accion segura: `SP13-017..020` tras runtime.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 4
+
+- IDs: `SP13-017|SP13-018|SP13-019|SP13-020`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave4_017_020_20260618-124259`.
+- QA visual:
+  - aceptadas `SP13-017|SP13-018|SP13-019|SP13-020`;
+  - nota: conservan anclas concretas del preset (evidencia noir, festival de linternas, carta de courier, skyline final) sin camara, mercado/libreria/pasillo, pared-estudio generica ni ruido fino excesivo.
+- Backlog: removidas `SP13-017..020` de stale table; pendiente runtime/coverage.
+- Proxima accion segura: siguiente bloque stale de `pack_13` tras runtime.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 5
+
+- IDs: `SP05-013|SP05-019|SP05-020|SP05-041`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave5_sp05_013_019_020_041_20260618-125300`.
+- QA visual:
+  - aceptadas `SP05-013|SP05-019|SP05-020|SP05-041`;
+  - `SP05-019` aceptada con atmosfera glitch/reloj/vela; `SP05-041` aceptada con palacio/cortina/candelabro/corona. Son cues especificos del preset, no drift generico de estudio/pasillo.
+- Backlog: removidas estas filas de stale table; pendiente runtime/coverage.
+- Proxima accion segura: siguiente bloque stale de `pack_13` tras runtime.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 6
+
+- IDs: `SP05-042|SP05-043|SP05-044|SP05-045`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave6_sp05_042_045_20260618-130450`.
+- QA visual:
+  - aceptadas `SP05-044|SP05-045`;
+  - `SP05-042` aceptada/watchlist por espada literal, justificada por duel symbolism y sin corridor/weapon-cliche generico;
+  - `SP05-043` aceptada/watchlist por props de habitacion cozy, justificados por healing ensemble y sin silla/cortina/lampara de estudio repetida.
+- Backlog: removidas `SP05-042..045` de stale table; pendiente runtime/coverage.
+- Proxima accion segura: siguiente bloque stale de `pack_13` tras runtime.
+
+## Tanda 2026-06-18 - rejected retry `pack_13` wave 7
+
+- IDs rechazados: `SP05-046|SP05-047|SP05-048|SP05-049|SP05-050`.
+- Motivo: la base shojo/anime sobre-generalizo la tanda; demasiada cara similar, mood palace/gothic y props repetidos.
+- Reject backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave7_rejects_sp05_046_050_20260618-133100`.
+- Restore aplicado desde: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave7_sp05_046_050_20260618-132000`.
+- Prompt fix: overrides por preset para separar epistolary sepia letter, airy daylight first-love, outdoor crimson quest, velvet gothic-only, y hand-led winter sign-language romance.
+- Follow-up test: `SP05-047` regenerado y aceptado como daylight/airy first-love; ya no cae en gothic/palace drift.
+- Follow-up 2-up: `SP05-046|SP05-048` regenerados y aceptados.
+  - `SP05-046`: sepia/amber epistolary drama, carta sellada, gesto period romance.
+  - `SP05-048`: outdoor crimson quest romance, horizonte/viento, palette crimson/green.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave8_sp05_046_048_before_20260618-135600`.
+- Stale: removidos `SP05-046|SP05-047|SP05-048`; `SP05-049|SP05-050` siguen pendientes.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 9
+
+- IDs: `SP05-049|SP05-050`.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave9_sp05_049_050_before_20260618-140500`.
+- QA visual:
+  - `SP05-049` aceptada como velvet gothic academy: dark lace/moon/black-shape mood, sin corridor/library/camera drift.
+  - `SP05-050` aceptada como cozy sign-language romance: manos legibles, knit/winter texture, palette blue/cream, no generic pastel face.
+- Stale: removidos `SP05-049|SP05-050`; siguiente fila stale de `pack_13`: `SP05-081`.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 10
+
+- IDs: `SP05-081|SP05-082`.
+- Prompt fix: overrides por preset antes de generar; el base slice-of-life estaba volviendo ambos prompts demasiado cozy/genericos.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave10_sp05_081_082_before_20260618-140900`.
+- QA visual:
+  - `SP05-081` aceptada como shared-warmth microacting: ensemble social beat, cream/mint warmth, no solo glamour.
+  - `SP05-082` aceptada/watchlist como deadpan-explosion timing: cocina/tostadora/lampara presentes, pero el gag elastico + reaction deadpan sostienen el preset y no hay texto/camara/library/market corridor drift.
+- Stale: removidos `SP05-081|SP05-082`; siguiente fila stale de `pack_13`: `SP05-083`.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 11
+
+- IDs: `SP05-083|SP05-084`.
+- Prompt fix: overrides por preset antes de generar; el base slice-of-life seguia demasiado cozy/generico.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave11_sp05_083_084_before_20260618-141300`.
+- QA visual:
+  - `SP05-083` aceptada como low-stakes banter flatness: talk-circle, flat pastel rhythm, prop otaku sin dominio.
+  - `SP05-084` aceptada/watchlist como ordinary-cosmic whimsy pivot: anomaly/portal + ensemble reaction claros; telefono/mesa/plantas no leen como UI/text/library/market/corridor drift.
+- Stale: removidos `SP05-083|SP05-084`; siguiente fila stale de `pack_13`: `SP05-085`.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 12
+
+- IDs: `SP05-085|SP05-086|SP05-087|SP05-088|SP05-089|SP05-090`.
+- Prompt fix: se agregaron linajes explicitos para `SP05-087..090`; `SP05-085|SP05-086` ya tenian linaje. La regla ahora es usar nombres de obras/artistas/estudios como referencia de produccion amplia, sin copiar personajes, assets o frames.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave12_sp05_085_090_before_20260618-142243`.
+- Generacion: `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-085|SP05-086|SP05-087|SP05-088|SP05-089|SP05-090" --parallel=6 --session-suffix=primary_p13_wave12_sp05_085_090_artistline_x6 --force` -> `generated=6 attempted=6 skipped=126 failed=0`.
+- QA visual:
+  - `SP05-085` aceptada como anxiety-glitch catharsis, character-led, panic inserts y ruptura magenta/black-white.
+  - `SP05-086` aceptada como cold-warm restorative comfort, montana/dusk, ember thermal key y outdoor utility.
+  - `SP05-087` aceptada como pastoral breathing-room stillness, nina rural, gesto pequeno y gran espacio de cielo/pasto.
+  - `SP05-088` aceptada como domestic-fantasy scale chaos, criatura friendly sobredimensionada en rutina domestica.
+  - `SP05-089` aceptada como soft-surreal deadpan drift, personaje calmo con kettle/cloud/fish-shadow imposible.
+  - `SP05-090` aceptada/watchlist: vende memory-washed melodrama con tren/lluvia/vulnerabilidad, pero es la mas cercana a pretty-anime generico.
+- Stale: removidos `SP05-085..090`; siguiente fila stale de `pack_13`: `SP05-101`.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 13
+
+- IDs: `SP05-101|SP05-102|SP05-103|SP05-104|SP05-105|SP05-106`.
+- Prompt fix: se agregaron linajes explicitos para todo el bloque anime style-spectrum; el base compartido era demasiado generico para estos presets.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave13_sp05_101_106_before_20260618-143628`.
+- Generacion: `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-101|SP05-102|SP05-103|SP05-104|SP05-105|SP05-106" --parallel=6 --session-suffix=primary_p13_wave13_sp05_101_106_artistline_x6 --force` -> `generated=6 attempted=6 skipped=126 failed=0`.
+- QA visual:
+  - `SP05-101` aceptada como fluid painterly anime, watercolor/ink wash y figura legible.
+  - `SP05-102` aceptada como gritty realist seinen, adulto/cemento/fluorescente, sin cute/moe.
+  - `SP05-103` aceptada/watchlist: hyperpop fuerte con idol-glam, pero saturacion/RGB/holographic match.
+  - `SP05-104` aceptada como minimalist indie quiet, figura pequena y gran espacio negativo.
+  - `SP05-105` aceptada/watchlist: prop fantasy presente, pero domina rough-genga/pencil paper.
+  - `SP05-106` aceptada como deco geometric anime, facetas gold/lapis/ruby sin corredor/palacio generico.
+- Stale: removidos `SP05-101..106`; siguiente fila stale de `pack_13`: `SP05-107`.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 14
+
+- IDs: `SP05-107|SP05-108|SP05-109|SP05-110|SP05-111|SP05-112`.
+- Prompt fix: se agregaron linajes explicitos para todo el bloque; `SP05-107` quedo horror no-grafico con veto fuerte a gore.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave14_sp05_107_112_before_20260618-144746`.
+- Generacion: `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-107|SP05-108|SP05-109|SP05-110|SP05-111|SP05-112" --parallel=6 --session-suffix=primary_p13_wave14_sp05_107_112_artistline_x6 --force` -> `generated=6 attempted=6 skipped=126 failed=0`.
+- QA visual:
+  - `SP05-107` aceptada/watchlist como non-graphic visceral horror; fuerte body-horror organico, sin gore/sangre/injury/texto.
+  - `SP05-108` aceptada como fairy-tale storybook soft, borde iluminado, pastel/gold watercolor, personaje claro.
+  - `SP05-109` aceptada como kinetic impact-line choreography, motion burst claro sin weapon-first ni SFX legible.
+  - `SP05-110` aceptada como surreal dream logic, puerta flotante/fish-moon/escalera, character anchor legible.
+  - `SP05-111` aceptada como ukiyo-e woodblock anime, lluvia/washi/planos indigo-vermillion sin texto legible.
+  - `SP05-112` aceptada/watchlist como spray-drip wildstyle anime; pared/graffiti fuerte, sin tag/texto legible.
+- Stale: removidos `SP05-107..112`; siguiente fila stale de `pack_13`: `SP05-113`.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 15
+
+- IDs: `SP05-113|SP05-114|SP05-115|SP05-116|SP05-117|SP05-118`.
+- Prompt fix: se agregaron linajes explicitos para `SP05-113..120` y regla `pack_13` anime identity para evitar generic glossy anime, same-face moe, object-only still life y shared modern TV-anime rendering.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave15_sp05_113_118_before_20260618-150415`.
+- Generacion: `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-113|SP05-114|SP05-115|SP05-116|SP05-117|SP05-118" --parallel=6 --session-suffix=primary_p13_wave15_sp05_113_118_artistline_x6 --force` -> `generated=6 attempted=6 skipped=126 failed=0`.
+- QA visual:
+  - `SP05-113` aceptada como stained-glass anime segmentation con personaje/mascara, rosette y panes jewel; no patron vacio ni chapel corridor.
+  - `SP05-114` aceptada como textile patchwork anime, personaje plush/boro/sashiko, no sewing-room still life.
+  - `SP05-115` aceptada como ice-crystal refractive, guardian faceteado/prisma, no generic ice princess.
+  - `SP05-116` aceptada como sumi-e impact, silueta ink/negative space/vermilion accent, sin caligrafia legible.
+  - `SP05-117` aceptada como phosphor sensor-vision, green intensifier silhouette, sin camera prop/HUD text/soldiers/weapons.
+  - `SP05-118` aceptada como backlit contour longing, sunset sky/silhouette/posture emotion, sin detailed-face romance.
+- Auditoria paralela: riesgo alto siguiente en `SP05-162|SP05-168|SP05-171|SP05-172|SP05-176..178|SP05-181..200`; antes de generar esos shojo/magical, agregar overrides/linaje por preset.
+- Stale: removidos `SP05-113..118`; siguiente fila stale de `pack_13`: `SP05-119`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=61/132`, `staleDefaultImages=71`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 16
+
+- IDs: `SP05-119|SP05-120|SP05-162|SP05-168|SP05-171|SP05-172`.
+- Prompt fix: se conservaron overrides de `SP05-119..120` y se agregaron overrides con linaje explicito para `SP05-162|SP05-168|SP05-171|SP05-172` antes de generar; objetivo: evitar convergencia shojo/magical glow generica.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave16_sp05_119_120_162_168_171_172_before_20260618-151429`.
+- Generacion: `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-119|SP05-120|SP05-162|SP05-168|SP05-171|SP05-172" --parallel=6 --session-suffix=primary_p13_wave16_sp05_119_120_162_168_171_172_artistline_x6 --force` -> `generated=6 attempted=6 skipped=126 failed=0`.
+- QA visual:
+  - `SP05-119` aceptada como chalk-dust slate sketch, polvo/erasure/personaje, sin texto de aula.
+  - `SP05-120` aceptada como thermal heat-signature, figura/creature false-color, sin UI legible ni camera prop.
+  - `SP05-162` aceptada/watchlist como moonlit ribbon justice; fuerte magical-girl, sin sailor collar exacto, twin-bun cue, logo, texto ni wand copy.
+  - `SP05-168` aceptada como red-alert psychological biomecha, figura aislada/diagnostic pressure, sin UI text ni mecha copy especifico.
+  - `SP05-171` aceptada como arcane chaos roadtrip, 90s fantasy-comedy reaction, spell burst, sin party lineup ni glyphs legibles.
+  - `SP05-172` aceptada como tarot mecha fantasy, shojo/mecha romantico, jewel sky, ornate frame, sin cockpit/battlefield/tarot labels.
+- Stale: removidos `SP05-119|SP05-120|SP05-162|SP05-168|SP05-171|SP05-172`; siguientes filas stale de `pack_13`: `SP05-176..178`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=67/132`, `staleDefaultImages=65`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 17
+
+- IDs: `SP05-176|SP05-177|SP05-178|SP05-181|SP05-182|SP05-183`.
+- Prompt fix: overrides con linaje explicito por preset; `SP05-178` recibio override adicional de motif/composicion para evitar armas, props centrados y calle/pasillo con vanishing point.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave17_sp05_176_178_181_183_before_20260618-152622`.
+- Reject/retry backups:
+  - `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave17_rejects_sp05_178_183_20260618-153338`;
+  - `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave17_retry_current_sp05_178_183_before_20260618-153630`;
+  - `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave17_retry2_current_sp05_178_before_20260618-154206`;
+  - `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave17_retry3_current_sp05_178_before_20260618-154828`.
+- Generacion:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-176|SP05-177|SP05-178|SP05-181|SP05-182|SP05-183" --parallel=6 --session-suffix=primary_p13_wave17_sp05_176_178_181_183_artistline_x6 --force` -> `generated=6 attempted=6 skipped=126 failed=0`.
+  - `SP05-178|SP05-183` retry 2-up -> `generated=2 attempted=2 skipped=130 failed=0`.
+  - `SP05-178` retry2/retry3 singles -> `generated=1 attempted=1 skipped=131 failed=0` each.
+- QA visual:
+  - `SP05-176` aceptada/watchlist como jewel-armor quest, line/jewel language distintivo.
+  - `SP05-177` aceptada/watchlist como bridge-deck mecha comedy; paneles/emblemas no legibles.
+  - `SP05-178` aceptada tras retry3: guardiana con manos vacias, hazard geometry, green occult pressure, sin arma, landmark, camera prop o street-corridor lane.
+  - `SP05-181` aceptada/watchlist como warm zodiac grief con gesto healing.
+  - `SP05-182` aceptada/watchlist como black-lace adult fashion heartbreak; interior especifico, no generic shojo.
+  - `SP05-183` aceptada/watchlist como shy daylight romance con social distance/off-frame hand; no solo glamour face.
+- Stale: removidos `SP05-176|SP05-177|SP05-178|SP05-181|SP05-182|SP05-183`; siguiente fila stale de `pack_13`: `SP05-184`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=73/132`, `staleDefaultImages=59`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 18
+
+- IDs: `SP05-184|SP05-185|SP05-186|SP05-187|SP05-188|SP05-189`.
+- Prompt fix: overrides con linaje explicito por preset y motif override para que la identidad salga de body-language/costume/light/framing, no de props genericos.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave18_sp05_184_189_before_20260618-155713`.
+- Reject backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave18_rejects_sp05_186_188_20260618-160452`.
+- Generacion:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-184|SP05-185|SP05-186|SP05-187|SP05-188|SP05-189" --parallel=6 --session-suffix=primary_p13_wave18_sp05_184_189_artistline_x6 --force` -> `generated=6 attempted=6 skipped=126 failed=0`.
+  - `SP05-186|SP05-188` retry 2-up -> `generated=2 attempted=2 skipped=130 failed=0`.
+- QA visual:
+  - `SP05-184` aceptada como theatrical host-club comedy: greeter + reaction silhouettes, sin texto/camara.
+  - `SP05-185` aceptada/watchlist como punk-luxe backstage fashion drama; bulbs/interior son cue especifico del preset.
+  - `SP05-186` aceptada tras retry como same-age height-gap banter, casual, escala clara, sin idol/magical-ribbon drift.
+  - `SP05-187` aceptada/watchlist como showbiz persona-theater con mask/spotlight.
+  - `SP05-188` aceptada tras retry como rain/status-pressure confrontation, sin palace/gothic castle/rose-brooch drift.
+  - `SP05-189` aceptada como dusk time-memory regret con sealed unreadable letter, sin station/classroom/hallway default.
+- Stale: removidos `SP05-184|SP05-185|SP05-186|SP05-187|SP05-188|SP05-189`; siguiente fila stale de `pack_13`: `SP05-190`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=79/132`, `staleDefaultImages=53`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 19
+
+- IDs: `SP05-190|SP05-191|SP05-192|SP05-193|SP05-194|SP05-195`.
+- Prompt fix: overrides con linaje explicito por preset; `SP05-192` tuvo retry para evitar literal maid outfit/cafe/changing-room drift.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave19_sp05_190_195_before_20260618-161446`.
+- Reject backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave19_reject_sp05_192_20260618-162529`.
+- Generacion:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-190|SP05-191|SP05-192|SP05-193|SP05-194|SP05-195" --parallel=6 --session-suffix=primary_p13_wave19_sp05_190_195_artistline_x6 --force` -> `generated=6 attempted=6 skipped=126 failed=0`.
+  - `SP05-192` retry single -> `generated=1 attempted=1 skipped=131 failed=0`.
+- QA visual:
+  - `SP05-190` aceptada como airy blue-sky near-miss romance, no hallway/classroom.
+  - `SP05-191` aceptada/watchlist como grounded night intimacy; street context soporta night-walk y evita umbrella/rain-confession.
+  - `SP05-192` aceptada/watchlist tras retry como hidden-persona romcom; cue de servicio queda en silueta/room, no en maid outfit literal.
+  - `SP05-193` aceptada/watchlist como botanical herbalist fantasy; vial/herbs especificos.
+  - `SP05-194` aceptada/watchlist como vintage operatic revolutionary shojo; ornamento/arquitectura son propios del linaje.
+  - `SP05-195` aceptada/watchlist como DIY street-fashion identity; vigilar clutter de accesorios.
+- Stale: removidos `SP05-190|SP05-191|SP05-192|SP05-193|SP05-194|SP05-195`; siguiente fila stale de `pack_13`: `SP05-196`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=85/132`, `staleDefaultImages=47`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 20
+
+- IDs: `SP05-196|SP05-197|SP05-198|SP05-199|SP05-200`.
+- Prompt fix: overrides con linaje explicito por preset y motif guard extendido para sostener identidad por personaje/body-language/costume/light/framing.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave20_sp05_196_200_before_20260618-164658`.
+- Generacion:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-196|SP05-197|SP05-198|SP05-199|SP05-200" --parallel=5 --session-suffix=primary_p13_wave20_sp05_196_200_artistline_x5 --force` -> `generated=5 attempted=5 skipped=127 failed=0`.
+- QA visual:
+  - `SP05-196` aceptada como quiet art-school melancholy, figura watercolor/sketch, sin tool-only still life.
+  - `SP05-197` aceptada/watchlist como yokai-romcom folklore; shrine lantern/mask fuertes pero especificos.
+  - `SP05-198` aceptada/watchlist como jellyfish-fashion makeover; frill/clutter denso pero character-led.
+  - `SP05-199` aceptada como crimson folk-fantasy journey, traveler + sandstone dusk, sin sword/battlefield.
+  - `SP05-200` aceptada/watchlist como rainy confession, shared umbrella/hand hesitation, distinta de dry night-walk.
+- Stale: removidos `SP05-196|SP05-197|SP05-198|SP05-199|SP05-200`; siguiente fila stale de `pack_13`: `SP05-201`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=90/132`, `staleDefaultImages=42`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 21
+
+- IDs: `SP05-201|SP05-202|SP05-203|SP05-204|SP05-205`.
+- Prompt fix: overrides con linaje explicito por preset y motif guard extendido para sostener identidad anime diferenciada sin caer en generic anime, object-only cards, texto, pasillos, mercado/libreria/camara ni abstraccion vacia.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave21_sp05_201_205_before_20260618-170049`.
+- Retry backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave21_reject_sp05_205_20260618-170837`.
+- Generacion:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-201|SP05-202|SP05-203|SP05-204|SP05-205" --parallel=5 --session-suffix=primary_p13_wave21_sp05_201_205_artistline_x5 --force` -> `generated=5 attempted=5 skipped=127 failed=0`.
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-205" --parallel=1 --session-suffix=primary_p13_wave21_retry_sp05_205_no_text --force` -> `generated=1 attempted=1 skipped=131 failed=0`.
+- QA visual:
+  - `SP05-201` aceptada/watchlist como quiet observational mystery, tea/window stillness figure-led, sin library/book/camera/text.
+  - `SP05-202` aceptada como neighborhood community warmth, comunidad/festival calido, sin market aisle/signage.
+  - `SP05-203` aceptada como youth expedition, sky/mountain resolve, sin map/compass/station/gear pile.
+  - `SP05-204` aceptada/watchlist como iyashikei water-light, figura serena con canal/water calm, no empty water abstraction.
+  - `SP05-205` primer intento rechazado por caligrafia/kanji-like sheets; retry aceptado como island-summer creative restart con ink edges abstractos, sin glyphs/text.
+- Stale: removidos `SP05-201|SP05-202|SP05-203|SP05-204|SP05-205`; siguiente fila stale de `pack_13`: `SP05-206`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=95/132`, `staleDefaultImages=37`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 22
+
+- IDs: `SP05-206|SP05-207|SP05-208|SP05-209|SP05-210`.
+- Prompt fix: overrides con linaje explicito de artista/estudio/direccion para separar everyday-care, workflow deadline, DIY, hospitality miniature y soft geometry sin volverlos generic cozy anime.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave22_sp05_206_210_before_20260618-172100`.
+- Retry backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave22_reject_sp05_210_20260618-173200`.
+- Generacion:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-206|SP05-207|SP05-208|SP05-209|SP05-210" --parallel=5 --session-suffix=primary_p13_wave22_sp05_206_210_artistline_x5 --force` -> `generated=5 attempted=5 skipped=127 failed=0`.
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-210" --parallel=1 --session-suffix=primary_p13_wave22_retry_sp05_210_flat_geometry --force` -> `generated=1 attempted=1 skipped=131 failed=0`.
+- QA visual:
+  - `SP05-206` aceptada como everyday-care gesture intimacy, dos figuras + gesto de cuidado, sin text/object-only drift.
+  - `SP05-207` aceptada/watchlist como deadline workflow density; clutter alto pero preset-specific y character-led.
+  - `SP05-208` aceptada como beginner-made DIY glow, personaje + madera/tela/proceso, sin tool foreground.
+  - `SP05-209` aceptada/watchlist como sugar-cotton hospitality miniature; dessert clutter alto pero no teacup-only.
+  - `SP05-210` primer intento rechazado por cozy-room/mug/lamp/plush; retry aceptado/watchlist como sunshine-scribble soft geometry con paper blocks y character anchor.
+- Stale: removidos `SP05-206|SP05-207|SP05-208|SP05-209|SP05-210`; siguiente fila stale de `pack_13`: `SP05-211`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=100/132`, `staleDefaultImages=32`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 23
+
+- IDs: `SP05-211|SP05-212|SP05-213|SP05-214|SP05-215`.
+- Prompt fix: overrides con linaje explicito para separar utilitarian quiet freedom, social-jitter comedy, shift-comedy choreography, breeze inertia y looped-routine healing.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave23_sp05_211_215_before_20260618-173900`.
+- Retry backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave23_reject_sp05_215_20260618-174800`.
+- Generacion:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-211|SP05-212|SP05-213|SP05-214|SP05-215" --parallel=5 --session-suffix=primary_p13_wave23_sp05_211_215_artistline_x5 --force` -> `generated=5 attempted=5 skipped=127 failed=0`.
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-215" --parallel=1 --session-suffix=primary_p13_wave23_retry_sp05_215_loop_water --force` -> `generated=1 attempted=1 skipped=131 failed=0`.
+- QA visual:
+  - `SP05-211` aceptada/watchlist como utilitarian quiet-freedom minimalism; exterior utility fuerte pero no bike ad/road postcard.
+  - `SP05-212` aceptada/watchlist como social-jitter comedy; close pretty-anime generic-adjacent, pero gesto/expresion/negative space sostienen preset.
+  - `SP05-213` aceptada como shift-comedy choreography warmth, handoff/ensemble workplace claro.
+  - `SP05-214` aceptada como breeze-drift beautiful inertia, airy low-energy pause, sin classroom/bed/couch drift.
+  - `SP05-215` primer intento rechazado por garden/knitting/craft drift; retry aceptado como looped waterside routine con cast-line gesture.
+- Stale: removidos `SP05-211|SP05-212|SP05-213|SP05-214|SP05-215`; siguiente fila stale de `pack_13`: `SP05-216`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=105/132`, `staleDefaultImages=27`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 24
+
+- IDs: `SP05-216|SP05-217|SP05-218|SP05-219|SP05-220`.
+- Prompt fix: overrides con linaje explicito para separar bundled warmth, rough ideation, ascent confidence, mundane absurdism y observational watercolor.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave24_sp05_216_220_before_20260618-175800`.
+- Generacion:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-216|SP05-217|SP05-218|SP05-219|SP05-220" --parallel=5 --session-suffix=primary_p13_wave24_sp05_216_220_artistline_x5 --force` -> `generated=5 attempted=5 skipped=127 failed=0`.
+- QA visual:
+  - `SP05-216` aceptada como bundled warmth pocket, cold/warm textile, sin tent/stove/postcard drift.
+  - `SP05-217` aceptada como rough-ideation motion overlay, character + cutaway boxes/arrows, sin readable text/UI.
+  - `SP05-218` aceptada/watchlist como incremental-ascent confidence; trail/mountain fuerte pero character/upward-progress claro.
+  - `SP05-219` aceptada como mundane absurdist theater, cone gag deadpan, sin text.
+  - `SP05-220` aceptada/watchlist como observational watercolor drift; teacup/window literal pero watercolor noticing claro.
+- Stale: removidos `SP05-216|SP05-217|SP05-218|SP05-219|SP05-220`; siguiente fila stale de `pack_13`: `SP05-321`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=110/132`, `staleDefaultImages=22`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 25
+
+- IDs: `SP05-321|SP05-322|SP05-323|SP05-324|SP05-325`.
+- Prompt fix: overrides con linaje explicito para separar Amano-like gothic ornament, CLAMP vertical ornament, Naoko Takeuchi prism glamour, Rumiko Takahashi rom-com elasticity y Taiyo Matsumoto concrete-poetry roughness.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave25_sp05_321_325_before_20260618-181300`.
+- Backup retry rechazado: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave25_reject_sp05_322_323_before_20260618-182013`.
+- Generacion:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-321|SP05-322|SP05-323|SP05-324|SP05-325" --parallel=5 --session-suffix=primary_p13_wave25_sp05_321_325_artistline_x5 --force` -> `generated=5 attempted=5 skipped=127 failed=0`.
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-322|SP05-323" --parallel=2 --session-suffix=primary_p13_wave25_sp05_322_323_artistline_retry_x2 --force` -> `generated=2 attempted=2 skipped=130 failed=0`.
+- QA visual:
+  - `SP05-321` aceptada como Amano-like ether-wisp gothic ornament, spectral figure y gold void, sin cathedral/camera/text drift.
+  - `SP05-322` primer intento rechazado por moon/crystal sameness; retry aceptado como CLAMP-like vertical black-white-red ornament con dos figuras elongadas.
+  - `SP05-323` primer intento rechazado por similitud con `SP05-322`; retry aceptado como Takeuchi-like prism glamour rosa/navy, aura mas limpia y sparkle controlado.
+  - `SP05-324` aceptada como Rumiko Takahashi-like rom-com slapstick, dos personajes, cel comedy clara.
+  - `SP05-325` aceptada como Taiyo Matsumoto-like concrete-poetry adolescence, scratchy urban roughness.
+- Stale: removidos `SP05-321|SP05-322|SP05-323|SP05-324|SP05-325`; siguiente fila stale de `pack_13`: `SP05-326`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=115/132`, `staleDefaultImages=17`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 26
+
+- IDs: `SP05-326|SP05-327|SP05-328|SP05-329|SP05-330`.
+- Prompt fix: overrides con linaje explicito para separar Yuasa rubber motion, Dezaki postcard freeze, Leiji Matsumoto distance melancholy, Umezz spiral panic y Mizuki deadpan folklore.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave26_sp05_326_330_before_20260618-183017`.
+- Backups retry rechazado: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave26_reject_sp05_329_before_20260618-183348`; `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave26_reject2_sp05_329_before_20260618-183649`.
+- Generacion:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-326|SP05-327|SP05-328|SP05-329|SP05-330" --parallel=5 --session-suffix=primary_p13_wave26_sp05_326_330_artistline_x5 --force` -> `generated=5 attempted=5 skipped=127 failed=0`.
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-329" --parallel=1 --session-suffix=primary_p13_wave26_sp05_329_artistline_retry_x1 --force` -> `generated=1 attempted=1 skipped=131 failed=0`.
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-329" --parallel=1 --session-suffix=primary_p13_wave26_sp05_329_no_red_retry_x1 --force` -> `generated=1 attempted=1 skipped=131 failed=0`.
+- QA visual:
+  - `SP05-326` aceptada como Yuasa-like rubber-reality sprint, elastic figure y acid poster blocks.
+  - `SP05-327` aceptada como Dezaki-like postcard memory freeze, sepia/crimson/glare melodrama.
+  - `SP05-328` aceptada/watchlist como Leiji Matsumoto-like cosmic farewell; close captain silhouette pero sin insignia/weapon/UI copiados.
+  - `SP05-329` dos retries: se rechazo corredor espiral y luego herida roja; final aceptado con espiral plana, mano limpia, sin red/blood/corridor.
+  - `SP05-330` aceptada como Mizuki-like folkloric deadpan ink catalog, spirit grotesco amable y tinta rural.
+- Stale: removidos `SP05-326|SP05-327|SP05-328|SP05-329|SP05-330`; siguiente fila stale de `pack_13`: `SP05-331`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=120/132`, `staleDefaultImages=12`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 27
+
+- IDs: `SP05-331|SP05-332|SP05-333|SP05-334|SP05-335`.
+- Prompt fix: overrides con linaje explicito para separar Murata chrome impact, Ikuhara ritual allegory, Okiura quiet naturalism, Anno emergency storyboard e Ichikawa mineral void.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave27_sp05_331_335_before_20260618-184303`.
+- Backup retry rechazado: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave27_reject_sp05_333_before_20260618-184524`.
+- Generacion:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-331|SP05-332|SP05-333|SP05-334|SP05-335" --parallel=5 --session-suffix=primary_p13_wave27_sp05_331_335_artistline_x5 --force` -> `generated=5 attempted=5 skipped=127 failed=0`.
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-333" --parallel=1 --session-suffix=primary_p13_wave27_sp05_333_no_lamp_retry_x1 --force` -> `generated=1 attempted=1 skipped=131 failed=0`.
+- QA visual:
+  - `SP05-331` aceptada como Murata-like chrome impact spectacle, foreshortened figure y metal highlights.
+  - `SP05-332` aceptada/watchlist como Ikuhara-like ritual allegory; ceremonia ornate cerca de fantasy altar, pero sistema simetrico/iconico claro.
+  - `SP05-333` primer intento rechazado por interior window/lamp formula; retry aceptado/watchlist como Okiura-like quiet naturalism con sleeve microgesture y rain daylight.
+  - `SP05-334` aceptada como Anno-like emergency storyboard tension, pencil panels y warning marks sin readable notes/UI.
+  - `SP05-335` aceptada como Ichikawa-like mineral void serenity, figura translucida y negative space limpio.
+- Stale: removidos `SP05-331|SP05-332|SP05-333|SP05-334|SP05-335`; siguiente fila stale de `pack_13`: `SP05-336`.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=125/132`, `staleDefaultImages=7`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - primary default cards `pack_13` wave 28 close
+
+- IDs: `SP05-336|SP05-337|SP05-338|SP05-339|SP05-340|SP05-341|SP05-342`.
+- Prompt fix: overrides con linaje explicito para separar Koike razor velocity, Yoshinari technomagic, Ohkubo angular combustion, Urasawa adult suspense, Sugino velvet-lash tension, Arakawa mechanical warmth y Kon reality-slip reflection.
+- Backup previo: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave28_sp05_336_342_before_20260618-185153`.
+- Backups retry rechazado: `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave28_reject_sp05_340_342_before_20260618-185524`; `D:\codex-studio-backups\style-defaults-primary-backup\pack_13_wave28_reject2_sp05_342_before_20260618-185724`.
+- Generacion:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-336|SP05-337|SP05-338|SP05-339|SP05-340|SP05-341|SP05-342" --parallel=7 --session-suffix=primary_p13_wave28_sp05_336_342_artistline_x7 --force` -> `generated=7 attempted=7 skipped=125 failed=0`.
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-340|SP05-342" --parallel=2 --session-suffix=primary_p13_wave28_sp05_340_342_retry_x2 --force` -> `generated=2 attempted=2 skipped=130 failed=0`.
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-342" --parallel=1 --session-suffix=primary_p13_wave28_sp05_342_sober_retry_x1 --force` -> `generated=1 attempted=1 skipped=131 failed=0`.
+- QA visual:
+  - `SP05-336` aceptada como Koike-like razorline velocity poster, red/black/chrome wedge sin vehicle/road/camera drift.
+  - `SP05-337` aceptada/watchlist como Yoshinari-like technomagic burst; hardware denso pero personaje, draftsmanship y magic engineering claros.
+  - `SP05-338` aceptada como Ohkubo-like angular combustion iconography, triangular fire y grin geometry.
+  - `SP05-339` aceptada como Urasawa-like adult suspense microgesture, rainy adult tension sin file/gun/crime-scene stock.
+  - `SP05-340` primer intento rechazado por modern fantasy glamour; retry aceptado/watchlist como Sugino-like old-cel velvet-lash portrait.
+  - `SP05-341` aceptada/watchlist como Arakawa-like mechanical warmth ensemble, repair teamwork literal pero util.
+  - `SP05-342` dos retries: se rechazo beauty-mirror y exposed glamour; final aceptado como Kon-like sober reflection continuity con trench/scarf y expresiones desfasadas.
+- Stale: removidos `SP05-336|SP05-337|SP05-338|SP05-339|SP05-340|SP05-341|SP05-342`; `pack_13` queda pendiente de runtime para confirmar cero stale.
+- Runtime/coverage close:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_13 --coverage` -> `availableDefaultImages=132/132`, `staleDefaultImages=0`, `missingDefaultImages=0`.
+  - `bun run styles:runtime:check` -> ok.
+
+## Tanda 2026-06-18 - checkpoint objetivo style presets
+
+Revalidacion sin generar imagenes:
+
+- `bun run styles:validate -- --pack=pack_07` -> ok (`selected=80`).
+- `bun run styles:validate -- --pack=pack_08` -> ok (`selected=80`).
+- `bun run styles:quality:audit` -> ok, `redundancy: none above threshold`.
+- `bun run styles:runtime:check` -> ok, `packs=16 presets=1662`, runtime current.
+- `bun run styles:validate -- --pack=pack_14 --coverage` -> `pack_14 availableDefaultImages=123/123`, `staleDefaultImages=0`, `missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_15 --coverage` -> `pack_15 availableDefaultImages=137/137`, `staleDefaultImages=0`, `missingDefaultImages=0`.
+- Category bases objetivo `pack_08..pack_11`: 20 archivos fisicos presentes en `assets/recipes/styles/category-bases`.
+
+Estado residual:
+
+- `pack_07/pack_08` semantica sigue cerrada.
+- `pack_14/pack_15` visual stale/missing sigue cerrado.
+- Deuda visual viva fuera del objetivo prioritario original: `pack_13 staleDefaultImages=126`, `pack_16 staleDefaultImages=140`.
+- Generacion pausada mientras el usuario inspecciona/borra `SP05` y `SP06`; proxima tanda segura debe regenerar solo IDs borrados/rechazados o retomar `pack_13/pack_16` cuando QA manual cierre.
+
+## Tanda 2026-06-18 - limpieza preventiva anime action `SP13-021..025`
+
+Se detecto que `SP13-021..025` viven dentro de `pack_05` y aun tenian overrides object-only heredados (`No character hero` / `No shonen hero`). Eso repetia la regresion anime: tarjetas abstractas de energia en vez de accion con personaje.
+
+- Se eliminaron esos overrides object-only para `SP13-021..025`.
+- Se agrego base y anchor especifico `pack_05__action`: anime action character-led, motion arcs, clean cel silhouette, soporte simple, sin weapon-first, franchise likeness, corridor/market/library/camera/noisy-rubble defaults.
+- Preview sin generar: `bun run scripts\generate-style-defaults.ts --pack=pack_05 --preset=SP13-021 --print-prompts --force` -> prompt character-led.
+- Check focal: `bun run check -- scripts\generate-style-defaults.ts` -> ok.
+- No se tocaron assets.
+- Nota QA: las primarias existentes `SP13-021..025` habian sido aceptadas como action-energy abstraction; ese criterio queda superseded. Si se revisa `pack_05`, regenerar esos cinco como retry selectivo con personaje.

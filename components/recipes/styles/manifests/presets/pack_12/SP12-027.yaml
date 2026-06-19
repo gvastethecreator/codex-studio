@@ -19,11 +19,11 @@ visualDna:
   texture_and_material: Roca fracturada, polvo mineral denso, acero rugoso y marcas de perforación reciente.
   camera_and_composition: Objetivos a distancia, rutas de retorno y zonas de emboscada legibles; túnel o mina son anclas opcionales.
   atmosphere_and_mood: Labor extrema, camaradería funcional y riesgo continuo.
-  rendering_and_quality: Mission visual gameplay-first con claridad de objetivo, amenaza y ruta de extracción.
+  rendering_and_quality: "Co-op extraction gameplay frame: objective marker, threat direction, tunnel route, team gear clear."
   creative_brief: >-
     Aplica Deep Mine Co-op Extraction como gramatica original de videojuego sobre cualquier input: conserva su sistema
     de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
-    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece
+    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece
     fijo.
 avoidRules:
   - watermark
@@ -31,6 +31,15 @@ avoidRules:
   - logo
   - clean-lab
   - low-detail
+  - concept-art
+  - key-art
+  - poster
+  - character-sheet
+  - asset-render
+  - promotional-art
+  - menu-ui
+  - visible-hud
+  - readable-interface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-027.webp
 taxonomy:
