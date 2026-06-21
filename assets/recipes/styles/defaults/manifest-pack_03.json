@@ -34,12 +34,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-003.webp",
-    "jobId": "be4a804e-940b-4ef9-a84a-4b6343647a42",
+    "jobId": "501afe1d-579a-473b-a985-957429eaaf8c",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-003.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:21:38.528Z"
+    "generatedAt": "2026-06-20T11:23:32.974Z"
   },
   {
     "presetId": "SP03-004",
@@ -48,12 +48,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-004.webp",
-    "jobId": "2e29895e-32fc-4172-89f3-3d1f2b75a6b1",
+    "jobId": "c5feec6c-3bcb-454e-9f0e-809f0215fab7",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-004.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:22:09.494Z"
+    "generatedAt": "2026-06-20T11:35:39.587Z"
   },
   {
     "presetId": "SP03-005",
@@ -62,12 +62,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-005.webp",
-    "jobId": "e550af3e-c34c-40fe-a744-65bf3a91138f",
+    "jobId": "cf7ea11a-6619-48d4-9587-ee1be9c37e08",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-005.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:22:05.399Z"
+    "generatedAt": "2026-06-20T11:38:23.295Z"
   },
   {
     "presetId": "SP03-006",
@@ -76,12 +76,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-006.webp",
-    "jobId": "b81c999f-eb5e-46bd-b297-bc6dc76ac263",
+    "jobId": "45068fe1-69f6-4b4d-856b-92227385d002",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-006.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:21:50.912Z"
+    "generatedAt": "2026-06-20T11:25:00.369Z"
   },
   {
     "presetId": "SP03-007",
@@ -90,12 +90,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-007.webp",
-    "jobId": "c3d4eeda-8358-4245-8570-0ede4a26669c",
+    "jobId": "4993081d-b9eb-4198-86a4-6c2443a5df4b",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-007.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:11:45.969Z"
+    "generatedAt": "2026-06-20T11:26:30.071Z"
   },
   {
     "presetId": "SP03-008",
@@ -104,12 +104,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-008.webp",
-    "jobId": "b91995bc-4088-47aa-b97f-5be9098cef94",
+    "jobId": "2060a567-d563-41c1-8fad-044fcb353719",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-008.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:21:58.950Z"
+    "generatedAt": "2026-06-20T11:31:11.114Z"
   },
   {
     "presetId": "SP03-009",
@@ -118,12 +118,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-009.webp",
-    "jobId": "c336d373-69e8-4464-ab76-b6bce0e734fb",
+    "jobId": "72dd8f11-42b9-4aa4-8d2d-ab8dffb06b27",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-009.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:22:08.680Z"
+    "generatedAt": "2026-06-20T11:34:12.325Z"
   },
   {
     "presetId": "SP03-010",
@@ -132,12 +132,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-010.webp",
-    "jobId": "2a21b042-8237-4038-91eb-e43f2cb13de6",
+    "jobId": "976e41ca-6b4d-462b-94c3-ec730754f681",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-010.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:22:11.152Z"
+    "generatedAt": "2026-06-20T11:29:45.400Z"
   },
   {
     "presetId": "SP03-011",
@@ -146,12 +146,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-011.webp",
-    "jobId": "71471973-7095-4db1-9341-18366bdd9f8b",
+    "jobId": "f11db9b1-9587-4b20-ba44-b750268a6dc8",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-011.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:40:31.717Z"
+    "generatedAt": "2026-06-20T10:31:35.247Z"
   },
   {
     "presetId": "SP03-012",
@@ -160,12 +160,12 @@
     "packName": "3D & CGI Rendering",
     "category": "2. Organic And Character Cgi",
     "file": "assets/recipes/styles/defaults/SP03-012.webp",
-    "jobId": "4226424a-45bc-4a72-88fb-c8ae60d7f1d7",
+    "jobId": "94c03a2f-a531-49a2-b0f1-60b6c3e2e012",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-012.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:39:48.563Z"
+    "generatedAt": "2026-06-20T10:09:25.472Z"
   },
   {
     "presetId": "SP03-013",
@@ -174,12 +174,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-013.webp",
-    "jobId": "a60362b9-1f3a-4341-b5b8-f031bd9a1c78",
+    "jobId": "df289aaf-2b03-4fa4-b48d-925b73f8cb26",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-013.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:44:22.669Z"
+    "generatedAt": "2026-06-20T10:28:35.822Z"
   },
   {
     "presetId": "SP03-014",
@@ -202,12 +202,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-015.webp",
-    "jobId": "af15cf94-fb56-4d69-81d8-ea030607153f",
+    "jobId": "9e40dde0-e675-4144-a22f-0e29b6277459",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-015.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:48:55.619Z"
+    "generatedAt": "2026-06-20T10:27:38.347Z"
   },
   {
     "presetId": "SP03-016",
@@ -216,12 +216,12 @@
     "packName": "3D & CGI Rendering",
     "category": "2. Organic And Character Cgi",
     "file": "assets/recipes/styles/defaults/SP03-016.webp",
-    "jobId": "a2849313-2a2c-4f45-b3bc-aca6e7cab24b",
+    "jobId": "31602c50-73cc-4a14-bda4-8cfdba8eb104",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-016.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:39:27.500Z"
+    "generatedAt": "2026-06-20T10:10:44.128Z"
   },
   {
     "presetId": "SP03-017",
@@ -230,12 +230,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-017.webp",
-    "jobId": "edd31d39-fe1b-4223-bd03-d9a158fb615d",
+    "jobId": "65bea03d-d340-4815-bb23-86d242c13a41",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-017.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:40:01.028Z"
+    "generatedAt": "2026-06-20T10:32:31.069Z"
   },
   {
     "presetId": "SP03-018",
@@ -244,12 +244,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-018.webp",
-    "jobId": "ec52c7cb-1218-42c8-b027-73e848e96f94",
+    "jobId": "d4afe1dc-d614-43aa-b155-f5c99a34a0b6",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-018.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:39:54.359Z"
+    "generatedAt": "2026-06-20T10:36:18.747Z"
   },
   {
     "presetId": "SP03-019",
@@ -258,12 +258,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-019.webp",
-    "jobId": "cd342ff1-5d87-484e-b863-cc98427dc9da",
+    "jobId": "4e76747a-69b0-4e23-9e5a-5420adbe3ce6",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-019.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:57:50.408Z"
+    "generatedAt": "2026-06-20T10:33:26.091Z"
   },
   {
     "presetId": "SP03-020",
@@ -272,12 +272,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-020.webp",
-    "jobId": "e616348b-773e-490c-958e-8db3e50a6238",
+    "jobId": "972c0766-f8ae-44b4-bcc9-39c8dec828d2",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-020.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:57:59.308Z"
+    "generatedAt": "2026-06-20T10:35:00.154Z"
   },
   {
     "presetId": "SP03-021",
@@ -286,12 +286,12 @@
     "packName": "3D & CGI Rendering",
     "category": "5. Stylized 3d",
     "file": "assets/recipes/styles/defaults/SP03-021.webp",
-    "jobId": "e0ab8806-5076-4eca-ba94-18bd5742b7a0",
+    "jobId": "a8642a0f-7473-4c21-a3af-7d8dc1667c63",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-021.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:57:35.678Z"
+    "generatedAt": "2026-06-21T06:25:07.813Z"
   },
   {
     "presetId": "SP03-022",
@@ -300,12 +300,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-022.webp",
-    "jobId": "e618f57a-696f-4a8c-89c9-39f5b99b4c8d",
+    "jobId": "5fdc98b8-d6f3-4654-bd06-d25709942f81",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-022.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:03:26.507Z"
+    "generatedAt": "2026-06-20T10:53:31.453Z"
   },
   {
     "presetId": "SP03-023",
@@ -314,12 +314,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-023.webp",
-    "jobId": "f4a83441-b3e6-4f7f-8bc7-ea2a952ca1fb",
+    "jobId": "b758e063-5836-42e4-bf63-f9e8dad4c8bc",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-023.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:07:46.373Z"
+    "generatedAt": "2026-06-20T10:51:02.619Z"
   },
   {
     "presetId": "SP03-024",
@@ -342,12 +342,12 @@
     "packName": "3D & CGI Rendering",
     "category": "1. Hard Surface And Industrial Cgi",
     "file": "assets/recipes/styles/defaults/SP03-025.webp",
-    "jobId": "e7cf01c8-20e0-4d4c-af21-4a20d8d38f48",
+    "jobId": "17a7a28f-5b0d-4f4c-b394-e93b882b0d4a",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-025.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T01:58:24.538Z"
+    "generatedAt": "2026-06-20T10:05:38.761Z"
   },
   {
     "presetId": "SP03-026",
@@ -356,12 +356,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-026.webp",
-    "jobId": "42e49547-30f8-40b8-bece-a36cc13d818d",
+    "jobId": "9026edfd-8089-471a-9487-c51a9a094ff9",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-026.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:13:02.833Z"
+    "generatedAt": "2026-06-20T10:49:49.898Z"
   },
   {
     "presetId": "SP03-027",
@@ -398,12 +398,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-029.webp",
-    "jobId": "722c58eb-ace9-432d-bf11-b2039aebe217",
+    "jobId": "6fc62872-fec9-4e13-8f76-f84280117d56",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-029.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:25:39.047Z"
+    "generatedAt": "2026-06-20T10:52:01.687Z"
   },
   {
     "presetId": "SP03-030",
@@ -412,12 +412,12 @@
     "packName": "3D & CGI Rendering",
     "category": "2. Organic And Character Cgi",
     "file": "assets/recipes/styles/defaults/SP03-030.webp",
-    "jobId": "3fb06e35-0852-42dd-b4c9-b4fc3f8e89c1",
+    "jobId": "9850c6bf-c471-400b-9bcc-3629346026ae",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-030.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:30:46.659Z"
+    "generatedAt": "2026-06-20T10:13:56.949Z"
   },
   {
     "presetId": "SP03-031",
@@ -454,12 +454,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-033.webp",
-    "jobId": "98f31fd8-a443-49a6-acd3-ed9b188200b8",
+    "jobId": "5fb85751-924d-434d-99dd-c6660617f99a",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-033.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:30:46.681Z"
+    "generatedAt": "2026-06-20T10:46:06.124Z"
   },
   {
     "presetId": "SP03-034",
@@ -468,12 +468,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-034.webp",
-    "jobId": "39747202-22f1-441a-acff-3a77503ee47c",
+    "jobId": "35552e3d-f937-49e9-af50-9c145b0ec9ee",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-034.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:30:35.073Z"
+    "generatedAt": "2026-06-20T10:37:28.290Z"
   },
   {
     "presetId": "SP03-035",
@@ -482,12 +482,12 @@
     "packName": "3D & CGI Rendering",
     "category": "3. Environment And Worldbuilding",
     "file": "assets/recipes/styles/defaults/SP03-035.webp",
-    "jobId": "c8a81e7f-098e-4da3-9344-4407c9a25ffe",
+    "jobId": "3be94035-b2af-43ab-8c0e-23db56dff2be",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-035.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:41:56.946Z"
+    "generatedAt": "2026-06-20T10:17:00.124Z"
   },
   {
     "presetId": "SP03-036",
@@ -496,12 +496,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-036.webp",
-    "jobId": "27be3f59-5162-47a8-b338-58e8a57dced3",
+    "jobId": "fcb094d0-93f0-4a07-ac25-0cd46115263e",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-036.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:42:14.959Z"
+    "generatedAt": "2026-06-20T10:40:52.260Z"
   },
   {
     "presetId": "SP03-037",
@@ -510,12 +510,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-037.webp",
-    "jobId": "8cc0143f-0538-496a-b4f2-50f7a5d0677c",
+    "jobId": "83253f47-ff56-41f2-927a-b5008d20c8e7",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-037.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:42:19.671Z"
+    "generatedAt": "2026-06-20T10:42:18.554Z"
   },
   {
     "presetId": "SP03-038",
@@ -524,12 +524,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-038.webp",
-    "jobId": "9c6aac30-72f5-4df5-be4b-510ca739c3ba",
+    "jobId": "f2c978ca-d5a1-4879-8bde-f183562b5880",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-038.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:41:57.844Z"
+    "generatedAt": "2026-06-20T10:39:52.493Z"
   },
   {
     "presetId": "SP03-039",
@@ -552,12 +552,12 @@
     "packName": "3D & CGI Rendering",
     "category": "5. Stylized 3d",
     "file": "assets/recipes/styles/defaults/SP03-040.webp",
-    "jobId": "8462a811-76fe-4f37-82ce-0eff30ea3096",
+    "jobId": "1999eeef-3139-4bc9-9070-278d0ad946f2",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-040.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:47:38.727Z"
+    "generatedAt": "2026-06-21T06:24:38.774Z"
   },
   {
     "presetId": "SP03-041",
@@ -566,12 +566,12 @@
     "packName": "3D & CGI Rendering",
     "category": "3. Environment And Worldbuilding",
     "file": "assets/recipes/styles/defaults/SP03-041.webp",
-    "jobId": "ea60dcaa-bf76-4997-b44f-cf93f126d9d6",
+    "jobId": "5d36b434-d231-4f4e-9c52-10d4853ec08c",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-041.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:41:52.908Z"
+    "generatedAt": "2026-06-20T10:19:20.204Z"
   },
   {
     "presetId": "SP03-042",
@@ -580,12 +580,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-042.webp",
-    "jobId": "3bd4215e-4528-4b79-b1ed-d6985d92b598",
+    "jobId": "a6237f7e-f026-48f5-87f1-7b0cfef59934",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-042.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:42:40.139Z"
+    "generatedAt": "2026-06-20T10:43:24.836Z"
   },
   {
     "presetId": "SP03-043",
@@ -636,12 +636,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-046.webp",
-    "jobId": "69f677f8-df82-4109-b5e1-7d61567bb6d0",
+    "jobId": "d6ee5c3d-201c-4593-86e6-f67952b5bcc9",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-046.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:58:31.587Z"
+    "generatedAt": "2026-06-20T11:22:04.840Z"
   },
   {
     "presetId": "SP03-047",
@@ -650,12 +650,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-047.webp",
-    "jobId": "b1487600-43ae-4165-9463-c24610468ec8",
+    "jobId": "01af4668-94ea-4c15-be2f-cf10474a352f",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-047.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:58:02.854Z"
+    "generatedAt": "2026-06-20T10:54:46.612Z"
   },
   {
     "presetId": "SP03-048",
@@ -664,12 +664,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-048.webp",
-    "jobId": "5d229ae4-4306-4508-9172-166499b2c488",
+    "jobId": "315f351b-82d4-4693-81c9-d0c30a430553",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-048.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:58:05.267Z"
+    "generatedAt": "2026-06-20T10:57:30.145Z"
   },
   {
     "presetId": "SP03-049",
@@ -678,12 +678,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-049.webp",
-    "jobId": "5002ad4c-fff2-47e7-9fc4-1ad55d3bf8f3",
+    "jobId": "c24bff53-5599-47e3-bb7b-777c4a48b3bf",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-049.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:58:22.013Z"
+    "generatedAt": "2026-06-20T11:20:28.707Z"
   },
   {
     "presetId": "SP03-050",
@@ -692,12 +692,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-050.webp",
-    "jobId": "f669f9f3-1d26-4629-988b-aa507fe55438",
+    "jobId": "fbfdcaaf-0acc-4153-b9ab-463b4e393374",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-050.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T02:58:27.105Z"
+    "generatedAt": "2026-06-20T11:19:06.373Z"
   },
   {
     "presetId": "SP03-051",
@@ -720,12 +720,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-052.webp",
-    "jobId": "04e0141f-0a17-4a38-b815-8072f6f3bae3",
+    "jobId": "cd7534da-25a2-4fd6-9784-4407ffe57833",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-052.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:15:46.369Z"
+    "generatedAt": "2026-06-20T10:58:50.284Z"
   },
   {
     "presetId": "SP03-053",
@@ -734,12 +734,12 @@
     "packName": "3D & CGI Rendering",
     "category": "3. Environment And Worldbuilding",
     "file": "assets/recipes/styles/defaults/SP03-053.webp",
-    "jobId": "2cbc6af0-f705-41d9-b9ad-b9f3e2fef152",
+    "jobId": "1daa29d9-4c6e-46c7-a225-53cc5812baa7",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-053.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:11:33.646Z"
+    "generatedAt": "2026-06-20T10:22:26.256Z"
   },
   {
     "presetId": "SP03-054",
@@ -748,12 +748,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-054.webp",
-    "jobId": "8b5b905a-c716-4394-ad55-2ff55c81674d",
+    "jobId": "f09fe38b-86fd-45e5-84cb-95b8f6561d4b",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-054.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:11:19.904Z"
+    "generatedAt": "2026-06-20T11:16:10.676Z"
   },
   {
     "presetId": "SP03-055",
@@ -762,12 +762,12 @@
     "packName": "3D & CGI Rendering",
     "category": "3. Environment And Worldbuilding",
     "file": "assets/recipes/styles/defaults/SP03-055.webp",
-    "jobId": "8353242f-a33d-47bc-9309-d169e30f3d34",
+    "jobId": "44344714-acc5-470d-b361-b9f2ca313ac5",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-055.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:16:09.909Z"
+    "generatedAt": "2026-06-20T10:21:01.917Z"
   },
   {
     "presetId": "SP03-056",
@@ -804,12 +804,12 @@
     "packName": "3D & CGI Rendering",
     "category": "2. Organic And Character Cgi",
     "file": "assets/recipes/styles/defaults/SP03-058.webp",
-    "jobId": "6258abd2-2eba-4743-952f-681f51b732a6",
+    "jobId": "992bb227-9c8a-4748-aba8-1406e485a7e7",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-058.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:11:08.499Z"
+    "generatedAt": "2026-06-20T10:15:12.094Z"
   },
   {
     "presetId": "SP03-059",
@@ -818,12 +818,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-059.webp",
-    "jobId": "ef8848db-ee0f-44ba-a9ba-d962e5f4e8a5",
+    "jobId": "63b401b3-e605-4209-8a33-93f8820b1b8e",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-059.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:24:10.119Z"
+    "generatedAt": "2026-06-20T11:00:10.362Z"
   },
   {
     "presetId": "SP03-060",
@@ -832,12 +832,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-060.webp",
-    "jobId": "0ffccf55-d54d-41e4-a6f4-4ae27e8c87bb",
+    "jobId": "1924c0c8-a0a9-45df-bc01-fd651e62a11c",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-060.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:54:47.889Z"
+    "generatedAt": "2026-06-20T11:09:10.337Z"
   },
   {
     "presetId": "SP03-061",
@@ -846,12 +846,12 @@
     "packName": "3D & CGI Rendering",
     "category": "1. Hard Surface And Industrial Cgi",
     "file": "assets/recipes/styles/defaults/SP03-061.webp",
-    "jobId": "af3e8649-d78b-40e3-8509-6c8f6dc55032",
+    "jobId": "b4b2d51d-6a11-4f0f-9873-977c4269a0d2",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-061.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:24:06.025Z"
+    "generatedAt": "2026-06-20T10:07:36.543Z"
   },
   {
     "presetId": "SP03-062",
@@ -874,12 +874,12 @@
     "packName": "3D & CGI Rendering",
     "category": "3. Environment And Worldbuilding",
     "file": "assets/recipes/styles/defaults/SP03-063.webp",
-    "jobId": "563cea65-1fe4-4a87-bc14-ea2280703f38",
+    "jobId": "6ba10b96-40c3-4249-8a7d-641c7d0b4fb7",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-063.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:24:03.596Z"
+    "generatedAt": "2026-06-20T10:23:53.063Z"
   },
   {
     "presetId": "SP03-064",
@@ -902,12 +902,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-065.webp",
-    "jobId": "34b11cf5-c18f-432b-8631-0d75f4dac5ff",
+    "jobId": "925a7582-2478-49ef-b7b9-eaf85b3a93be",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-065.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:24:02.619Z"
+    "generatedAt": "2026-06-20T11:03:45.613Z"
   },
   {
     "presetId": "SP03-066",
@@ -930,12 +930,12 @@
     "packName": "3D & CGI Rendering",
     "category": "1. Hard Surface And Industrial Cgi",
     "file": "assets/recipes/styles/defaults/SP03-067.webp",
-    "jobId": "5487c8c1-d290-4878-8571-602cc51102ee",
+    "jobId": "a4468306-9488-469c-8713-1d1f7b3a0af9",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-067.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:54:50.957Z"
+    "generatedAt": "2026-06-20T10:08:37.090Z"
   },
   {
     "presetId": "SP03-068",
@@ -944,12 +944,12 @@
     "packName": "3D & CGI Rendering",
     "category": "3. Environment And Worldbuilding",
     "file": "assets/recipes/styles/defaults/SP03-068.webp",
-    "jobId": "f5db3da5-8a49-41e4-b9b9-725e772acc8a",
+    "jobId": "e579153f-537d-42c9-a2ef-1d1b714c0534",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-068.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:39:33.085Z"
+    "generatedAt": "2026-06-20T10:20:07.676Z"
   },
   {
     "presetId": "SP03-069",
@@ -958,12 +958,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-069.webp",
-    "jobId": "aab1b4ed-5dd5-4c6b-a6f3-a9c25ca36ebe",
+    "jobId": "57b286de-5191-40df-92c8-caed96c08a03",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-069.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:39:38.622Z"
+    "generatedAt": "2026-06-20T11:04:36.351Z"
   },
   {
     "presetId": "SP03-070",
@@ -972,12 +972,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-070.webp",
-    "jobId": "30e2f392-1e1f-4996-9657-734ae1879785",
+    "jobId": "abb81625-0b06-4089-800f-04b71660e533",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-070.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:39:31.847Z"
+    "generatedAt": "2026-06-20T11:10:26.224Z"
   },
   {
     "presetId": "SP03-071",
@@ -986,12 +986,12 @@
     "packName": "3D & CGI Rendering",
     "category": "1. Hard Surface And Industrial Cgi",
     "file": "assets/recipes/styles/defaults/SP03-071.webp",
-    "jobId": "9ba527e0-7465-40f0-8680-2fba36aefb9e",
+    "jobId": "1f2e38a6-0c55-4208-bb8e-4fdd30dbf8e1",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-071.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:39:25.067Z"
+    "generatedAt": "2026-06-20T10:06:22.949Z"
   },
   {
     "presetId": "SP03-072",
@@ -1000,12 +1000,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-072.webp",
-    "jobId": "ce28fafa-35b2-4874-bcc8-c598bce4be59",
+    "jobId": "f1664d34-4ebd-484e-a002-355b3fd07e36",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-072.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:39:16.154Z"
+    "generatedAt": "2026-06-20T11:11:29.986Z"
   },
   {
     "presetId": "SP03-073",
@@ -1014,12 +1014,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-073.webp",
-    "jobId": "88d3dd01-bfb8-4aa3-ae9f-b89ffd2fea40",
+    "jobId": "e868e673-d39c-47da-8c21-3ac2914793ba",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-073.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:39:39.205Z"
+    "generatedAt": "2026-06-20T11:07:30.636Z"
   },
   {
     "presetId": "SP03-074",
@@ -1042,12 +1042,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-075.webp",
-    "jobId": "4b960e9c-2894-42d9-b76d-428dd9978e78",
+    "jobId": "fb8beb84-f4e4-46cd-ac03-724b35546204",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-075.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:55:04.333Z"
+    "generatedAt": "2026-06-20T11:12:57.325Z"
   },
   {
     "presetId": "SP03-076",
@@ -1070,12 +1070,12 @@
     "packName": "3D & CGI Rendering",
     "category": "4. Lookdev And Render Pipelines",
     "file": "assets/recipes/styles/defaults/SP03-077.webp",
-    "jobId": "9e3b645b-668e-4243-9c18-a12b01cea153",
+    "jobId": "d9c3134e-f5f6-41ae-b032-d6b4597f886f",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-077.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:55:06.599Z"
+    "generatedAt": "2026-06-20T11:14:30.313Z"
   },
   {
     "presetId": "SP03-078",
@@ -1084,12 +1084,12 @@
     "packName": "3D & CGI Rendering",
     "category": "2. Organic And Character Cgi",
     "file": "assets/recipes/styles/defaults/SP03-078.webp",
-    "jobId": "71af5b51-714f-4594-ad2b-de8d352bc9c7",
+    "jobId": "18fb944c-5062-4362-9530-891963c7092c",
     "sourceAsset": "assets/recipes/styles/defaults/SP03-078.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T03:55:17.810Z"
+    "generatedAt": "2026-06-20T10:16:08.528Z"
   },
   {
     "presetId": "SP03-079",

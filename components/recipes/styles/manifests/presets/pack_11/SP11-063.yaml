@@ -25,10 +25,14 @@ visualDna:
     Emphasize corrosion aesthetics through oxide blooms, paint blistering, and layered substrate exposure under grazing light. Keep entropy, patina, and material aging as reusable style anchors across industrial surfaces.
 avoidRules:
   - clean
+  - eye
+  - iris
+  - pupil
+  - lens
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-063.webp
 attributes:
-  negativePrompt: clean
+  negativePrompt: clean, eye, iris, pupil, lens
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

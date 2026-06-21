@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-044
 packId: pack_15
-name: Civic Fallout Museum
-category: 8. Corepunk — Atompunk
+name: Scrapbike Courier Yard
+category: 6. Street, Riot & DIY Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - atompunk
+  - punk-spectrum-vault
+  - street-riot-and-diy-punks
+  - junkpunk
+  - courier
 visualDna:
-  aesthetic: Atomic memory style where institutional calm, fallout guilt, and public evidence are arranged with terrifying politeness.
-  form_and_line: Monumental slab planes, recessed evidence frames, corridor-like axes, archive-grid panels, and reactor diagrams cut like autopsy drawings.
-  color_palette: Slate, brushed brass, archival ivory, faded warning orange, and cold exhibit glass blue.
-  lighting_setup: Museum wash light, precise exhibit spots, brass label glints, and low shadow bands under heavy concrete.
-  material_texture: Board-formed concrete, brushed brass plaques, archival glass, paper labels, matte stone, and preserved control-room fragments.
-  render_quality: Documentary concept scene with controlled hierarchy, no melodrama, and clear evidence staging.
-  spatial_distortion: Processional depth forces subjects through evidence frames, confession walls, and policy diagrams.
-  atmosphere: Civic introspection, cautionary optimism, historical weight, and quiet institutional shame.
-  key_features: Reactor cross-section graphics, policy mural slabs, testimony-wave panels, preserved-switch motifs, and brass date markers.
-  creative_brief: 'Exhibit the input like public evidence after the blast: archival ivory panels, brushed brass markers, slab shadows, policy diagrams, and cold glass restraint should make guilt polite. Museums or archives can anchor the read; the style is civic memory staged with terrifying calm. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: junkpunk courier culture as a flat graphic digital-illustration card built around a courier yard full of scrapbikes, welded cargo racks, blank route-map shapes, helmets, and repair crews.
+  form_and_line: Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges. Core composition uses scrapbikes, cargo racks, maps, welding crews, chain silhouettes.
+  color_palette: rust orange, tire black, courier yellow, oil blue
+  lighting_setup: yard floodlights, welding sparks, late-sky rim light
+  material_texture: scrap metal blocks, tire rubber shapes, oil color planes, chain arcs, patched helmet silhouettes
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: fast, improvised, grimy, practical
+  key_features: scrapbikes, cargo racks, maps, welding crews, chain silhouettes
+  creative_brief: 'Junkpunk with transport function: bikes, racks, repair, crews, and city logistics, not random trash sculpture. Keep it representative through practical courier repair yard, scrapbike silhouettes, welded cargo racks, mechanic/courier figure, blank route-map board as abstract color planes, chain arcs, and one flat welding glow. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - comedic
-  - fantasy-castle
-  - neon-club
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-044.webp
 attributes:
-  negativePrompt: photoreal, comedic, fantasy-castle, neon-club, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, readable maps, text labels, brand logos, motorcycle pinup, weapon biker gang, random junk pile, alley corridor, photoreal welding sparks, dense chain clutter, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-atompunk
-  categoryName: 8. Corepunk — Atompunk
+  packName: Punk Spectrum Vault
+  categoryId: street-riot-and-diy-punks
+  categoryName: 6. Street, Riot & DIY Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - atompunk
+    - punk-spectrum-vault
+    - street-riot-and-diy-punks
+    - junkpunk
+    - courier
   supportedTasks:
     - image_generate
     - image_edit

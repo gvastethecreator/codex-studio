@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Pétalos, piedra pulida, bronce fino y superficies reflectantes calibrables.
   camera_and_composition: Trazado geométrico, metas visuales y nodos encadenados sin exigir palacio o jardín literal.
   atmosphere_and_mood: Serena, refinada y cognitivamente desafiante.
-  rendering_and_quality: "Puzzle-garden gameplay frame: visual clues, garden mechanisms, route logic, ambiguity minimized."
+  rendering_and_quality: 'Puzzle-garden gameplay frame: visual clues, garden mechanisms, route logic, ambiguity minimized.'
 avoidRules:
   - watermark
   - text

@@ -26,6 +26,974 @@ From this correction onward, that sentence should be read as "remove the IP as a
 mandatory visual requirement when it blocks the preset's freedom", not as a
 general rule for deleting titles.
 
+## 2026-06-21 - category bases global wave 1
+
+Se avanzo la deuda global de category bases fuera del slice objetivo anterior.
+
+- Estado antes: `45/102` generated, `57/102` missing.
+- Generadas: `pack_04__printmaking_and_ink`,
+  `pack_04__fantasy_and_concept_illustration`, `pack_05__action`,
+  `pack_13__shojo_magical_girl_and_visionary_classics`,
+  `pack_13__slice_of_life_and_moe`, `pack_13__anime_style_spectrum`,
+  `pack_13__core_anime`, `pack_13__slice_of_life_school_music`.
+- Retry: `pack_13__anime_style_spectrum` y `pack_13__core_anime` se
+  reemplazaron una vez tras QA por parecido excesivo entre si; backup previo:
+  `D:\codex-studio-backups\style-category-bases\20260621-pack13-wave02-retry\previous`.
+- Ajuste minimo de script: `scripts/generate-style-category-bases.ts` acepta
+  `--force` y agrega guardrail anti samey black-haired balcony/city para bases
+  anime; no cambia el flujo ni el formato de manifest.
+- QA visual: `.tmp\category-bases-wave01-contact.webp` y
+  `.tmp\category-bases-wave02-contact-retry.webp`. Las 8 quedan usables como
+  bases; `anime_style_spectrum` y `core_anime` siguen en watchlist por skyline/
+  solo-protagonist, asi que no conviene seguir generando bases anime sin
+  reforzar mas el prompt.
+- Estado despues: `53/102` generated, `49/102` missing.
+
+## 2026-06-21 - objective completion audit
+
+Se hizo un cierre fresco contra el objetivo activo, usando el estado actual del
+repo como fuente de verdad.
+
+- Semantica `pack_07` / `pack_08`: los diffs vivos son polish alineado con
+  style-first (`SP07-057`, `SP07-069` y 11 ajustes puntuales de `pack_08`);
+  no reabren P1. El detector de mojibake sobre ambos packs no devuelve hits.
+- `pack_07`: `bun run styles:validate -- --pack=pack_07 --coverage` -> ok,
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `pack_08`: `bun run styles:validate -- --pack=pack_08 --coverage` -> ok,
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `pack_14`: `bun run styles:validate -- --pack=pack_14 --coverage` -> ok,
+  `availableDefaultImages=123/123`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `pack_15`: `bun run styles:validate -- --pack=pack_15 --coverage` -> ok,
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- Cierre semantico/catalogo: `bun run styles:quality:audit` -> ok,
+  `presets=1649`, `redundancy: none above threshold`.
+- Runtime: `bun run styles:runtime:check` -> current, `packs=17`,
+  `presets=1649`.
+- Category bases: `bun run scripts\audit-style-category-bases.ts` regenero
+  `docs/active/style-category-bases-audit.md`; global `45/102`, slice objetivo
+  `pack_08..pack_11` completo `20/20`.
+- Deuda residual fuera de este cierre: solo nuevos borrados/feedback visual del
+  usuario deberian reabrir `pack_07`, `pack_08`, `pack_14` o `pack_15`.
+
+## 2026-06-21 - semantic/category verification checkpoint
+
+Se revalido el alcance del objetivo despues de cerrar `pack_05` missing.
+
+- `pack_07`: `bun run styles:validate -- --pack=pack_07 --coverage` -> ok,
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `pack_08`: `bun run styles:validate -- --pack=pack_08 --coverage` -> ok,
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `pack_14`: `bun run styles:validate -- --pack=pack_14 --coverage` -> ok,
+  `availableDefaultImages=123/123`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `pack_15`: `bun run styles:validate -- --pack=pack_15 --coverage` -> ok,
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- Cierre semantico: `bun run styles:quality:audit` -> `presets=1649`,
+  coverage reporta `pack_07 presets=80 categories=7` y
+  `pack_08 presets=80 categories=5`; `redundancy: none above threshold`.
+- Runtime: `bun run styles:runtime:check` -> current, `packs=17`,
+  `presets=1649`.
+- Category bases: `bun run scripts\audit-style-category-bases.ts` regenero
+  `docs/active/style-category-bases-audit.md`; global `45/102` generated,
+  `57/102` missing, pero el slice objetivo sigue completo:
+  `pack_08 5/5`, `pack_09 5/5`, `pack_10 5/5`, `pack_11 5/5`.
+- Riesgo residual: este checkpoint prueba semantica, coverage y bases; no
+  sustituye QA visual del usuario sobre tarjetas que decida borrar o marcar.
+
+## 2026-06-21 - `pack_05` missing defaults wave 9 closeout
+
+Se cerro la deuda visual medible restante de `pack_05`.
+
+- Estado antes validado: `pack_05 availableDefaultImages=130/135`,
+  `staleDefaultImages=0`, `missingDefaultImages=5`.
+- IDs generados: `SP05-069|SP05-067|SP13-021|SP13-022|SP13-025`.
+- Scope gate:
+  `bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-069|SP05-067|SP13-021|SP13-022|SP13-025" --audit-style-scope --force`
+  -> `targets=5 issues=0`.
+- Correccion previa: `SP05-067` y `SP05-069` dejaron object/material-only y
+  pasaron a character-led con ambiente; los tres `SP13` se revisaron contra
+  same-face/generic action.
+- Dry-run usado:
+  `.tmp\sp05-missing-wave09-dryrun2.txt`; 5 prompts con `ANATOMY QA`,
+  `apply heavy denoise to the image`, y sin `Object/material safety exception`.
+- Generacion inicial:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave09-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-069|SP05-067|SP13-021|SP13-022|SP13-025" --parallel=2 --force --session-suffix=sp05_missing_wave09_closeout`
+  -> `generated=5 attempted=5 skipped=130 failed=0`.
+- QA rechazo/retry parcial: `SP13-021|SP13-022|SP13-025` eran demasiado
+  parecidos como black-haired crouching action. Se agregaron overrides de
+  silueta/paleta/camara: rush rojo-blanco, cruce aereo cyan-naranja y ascenso
+  electrico azul-blanco.
+- Retry action:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave09-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP13-021|SP13-022|SP13-025" --parallel=2 --force --session-suffix=sp05_missing_wave09_action_retry`
+  -> `generated=3 attempted=3 skipped=132 failed=0`.
+- QA visual final: `.tmp\sp05-missing-wave09-contact-final.webp`.
+  Aceptadas las 5. Watchlist suave: `SP05-069` por bloque arquitectonico
+  dominante, aunque lee low-fantasy grit con sujeto/ambiente.
+- Backup/current:
+  `D:\codex-studio-backups\style-default-cards\sp05-missing-wave09-archive\current`.
+- Estado despues validado:
+  `pack_05 availableDefaultImages=135/135`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- Checks:
+  `bun run check:fix -- scripts\generate-style-defaults.ts` -> ok;
+  `bun run styles:validate -- --pack=pack_05 --coverage` -> ok;
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`.
+
+## 2026-06-21 - `pack_05` missing defaults wave 8
+
+Se avanzo otra tanda de deuda visual real en `pack_05`, despues de agregar la
+compuerta `--audit-style-scope`.
+
+- Estado antes validado: `pack_05 availableDefaultImages=126/135`,
+  `staleDefaultImages=0`, `missingDefaultImages=9`.
+- IDs regenerados: `SP05-268|SP05-270|SP05-272|SP05-280`.
+- Correccion previa: los cuatro overrides dejaron de ser object/material-only
+  y pasaron a `Prompt override character rule` con sujeto integrado a ambiente.
+- Dry-runs:
+  `.tmp\sp05-missing-wave08-dryrun-after-format.txt`; prompts con
+  `ANATOMY QA`, `apply heavy denoise to the image`, sin
+  `Object/material safety exception`.
+- Scope gate:
+  `bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-268|SP05-270|SP05-272|SP05-280" --audit-style-scope --force`
+  -> `targets=4 issues=0`.
+- Primer intento generado:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave08-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-268|SP05-270|SP05-272|SP05-280" --parallel=2 --force --session-suffix=sp05_missing_wave08`
+  -> `generated=4 attempted=4 skipped=131 failed=0`.
+- QA rechazo el primer intento como demasiado convergente: joven oscuro,
+  pelo negro, lluvia/noir/gotico; `SP05-270` rozaba silueta de arma.
+- Retry prompt: se agrego anti `black-haired brooding young man`, anti
+  `long dark coat`, anti corredor/arma y variacion explicita de edad, genero,
+  crop y paleta.
+- Retry generado:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave08-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-268|SP05-270|SP05-272|SP05-280" --parallel=2 --force --session-suffix=sp05_missing_wave08_retry_subject_diversity`
+  -> `generated=4 attempted=4 skipped=131 failed=0`.
+- QA visual final: `.tmp\sp05-missing-wave08-contact-retry.webp`.
+  Aceptadas: `SP05-268|SP05-270|SP05-280`. `SP05-272` queda watchlist suave
+  por ambiente noir vertical, pero ya no es object-only ni generic pretty anime.
+- Backup/current:
+  `D:\codex-studio-backups\style-default-cards\sp05-missing-wave08-archive\current`.
+- Estado despues validado:
+  `pack_05 availableDefaultImages=130/135`, `staleDefaultImages=0`,
+  `missingDefaultImages=5`; faltan
+  `SP05-069|SP05-067|SP13-021|SP13-022|SP13-025`.
+- Checks:
+  `bun run check:fix -- scripts\generate-style-defaults.ts` -> ok;
+  `bun run styles:validate -- --pack=pack_05 --coverage` -> ok;
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`.
+
+## 2026-06-21 - prompt scope audit gate
+
+Se freno la generacion por feedback del usuario: varias cards no-anime habian
+derivado a acabado anime o character-card generico. Se agrego una compuerta
+minima al generador para auditar los prompts planificados antes de generar.
+
+- Nuevo flag: `bun run scripts\generate-style-defaults.ts --pack=<pack_id> --audit-style-scope --force`.
+- Criterio: presets no-anime deben incluir `NON-ANIME STYLE LOCK`; `pack_06`
+  no-anime tambien exige `SP06 NON-ANIME SCOPE` y
+  `SP06 NON-ANIME MEDIUM LOCK`; frases positivas tipo
+  `anime protagonist`, `SP06 ANIME-ALLOWED SCOPE` o `Pack 06 anime-allowed rule`
+  fallan si el preset no permite anime.
+- Checks ejecutados:
+  `pack_06` -> `targets=120 issues=0`;
+  `pack_05 SP05-268|SP05-270|SP05-272|SP05-280` -> `targets=4 issues=0`;
+  `pack_07` -> `targets=80 issues=0`;
+  `pack_08` -> `targets=80 issues=0`.
+- Checks de packs visuales priorizados:
+  `pack_14` -> `targets=123 issues=0`;
+  `pack_15` -> `targets=80 issues=0`.
+- Validacion de estado objetivo:
+  `bun run styles:validate -- --pack=pack_07 --coverage` ->
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`;
+  `bun run styles:validate -- --pack=pack_08 --coverage` ->
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- Check focal: `bun run check -- scripts\generate-style-defaults.ts` -> ok.
+- Regla operativa: antes de cualquier nueva wave visual, correr
+  `--audit-style-scope` en el pack o IDs exactos. La auditoria de prompt no
+  reemplaza QA visual; solo evita gastar generaciones cuando el prompt ya esta
+  mal orientado.
+
+## 2026-06-21 - `pack_05` missing defaults wave 7
+
+Se avanzo otra tanda chica de deuda visual real en `pack_05`. La tanda empezo
+con los cuatro prompts en object/material fallback y se corrigio antes de
+generar para preservar sujeto legible en dark fantasy/seinen.
+
+- Estado antes validado: `pack_05 availableDefaultImages=122/135`,
+  `staleDefaultImages=0`, `missingDefaultImages=13`.
+- IDs regenerados: `SP05-262|SP05-264|SP05-265|SP05-267`.
+- Ajuste minimo de prompt: los cuatro dejaron de usar object/material fallback
+  y pasaron a sujeto/silueta legible integrada con atmosfera dark fantasy.
+- Dry-run usado:
+  `.tmp\sp05-missing-wave07-dryrun2.txt`; los cuatro prompts incluyen
+  `ANATOMY QA`, `apply heavy denoise to the image`, y no incluyen
+  `Object/material safety exception`.
+- Generacion inicial:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave07-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-262|SP05-264|SP05-265|SP05-267" --parallel=2 --force --session-suffix=sp05_missing_wave07`
+  -> `generated=4 attempted=4 skipped=131 failed=0`.
+- Retry parcial: `SP05-262` se regenero con anti `black cloak` y anti ruinas
+  porque el primer resultado leia demasiado como silueta negra en ruina dark
+  fantasy.
+- Retry command:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave07-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 --preset=SP05-262 --parallel=1 --force --session-suffix=sp05_missing_wave07_retry`
+  -> `generated=1 attempted=1 skipped=134 failed=0`.
+- QA visual final: `.tmp\sp05-missing-wave07-contact.webp`; aceptadas las 4.
+  `SP05-262` queda como moral suspense noir, `SP05-264` como clinical rupture,
+  `SP05-265` como rose-black gothic y `SP05-267` como blood-ink severance.
+- Backup/current:
+  `D:\codex-studio-backups\style-default-cards\sp05-missing-wave07-archive\current`.
+- Estado despues validado:
+  `pack_05 availableDefaultImages=126/135`, `staleDefaultImages=0`,
+  `missingDefaultImages=9`.
+- Checks:
+  `bun run check:fix -- scripts\generate-style-defaults.ts` -> ok;
+  `bun run styles:validate -- --pack=pack_05 --coverage` -> ok;
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`.
+
+## 2026-06-21 - `pack_05` missing defaults wave 6
+
+Se avanzo otra tanda chica de deuda visual real en `pack_05`. La tanda tuvo
+retry parcial porque el primer QA visual de `SP05-255` y `SP05-251` convergia
+demasiado en el arquetipo de joven con capa oscura en entorno fantasy.
+
+- Estado antes validado: `pack_05 availableDefaultImages=118/135`,
+  `staleDefaultImages=0`, `missingDefaultImages=17`.
+- IDs regenerados: `SP05-253|SP05-254|SP05-255|SP05-251`.
+- Ajuste minimo de prompt: `SP05-255` y `SP05-251` pasaron de fallback
+  objeto/material a sujeto legible; luego se agrego anti-sameness contra
+  `black-haired cloaked fantasy traveler`, `castle terrace` y variantes de
+  balcon/ciudad fantasy.
+- Dry-runs usados:
+  `.tmp\sp05-missing-wave06-dryrun2.txt` y
+  `.tmp\sp05-missing-wave06-retry-dryrun.txt`; los prompts finales incluyen
+  `ANATOMY QA`, `apply heavy denoise to the image`, y no incluyen
+  `Object/material safety exception`.
+- Generacion inicial:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave06-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-253|SP05-254|SP05-255|SP05-251" --parallel=2 --force --session-suffix=sp05_missing_wave06`
+  -> `generated=4 attempted=4 skipped=131 failed=0`.
+- Retry parcial:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave06-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-255|SP05-251" --parallel=2 --force --session-suffix=sp05_missing_wave06_retry`
+  -> `generated=2 attempted=2 skipped=133 failed=0`.
+- QA visual final: `.tmp\sp05-missing-wave06-contact.webp`; aceptadas las 4.
+  `SP05-255` queda mas gem-engine/roles cromaticos y `SP05-251` mas doctrina
+  aerea fria. Watchlist suave: `SP05-254` mantiene composicion fantasy traveler,
+  pero representa bien romance celestial/portal.
+- Backup/current:
+  `D:\codex-studio-backups\style-default-cards\sp05-missing-wave06-archive\current`.
+- Estado despues validado:
+  `pack_05 availableDefaultImages=122/135`, `staleDefaultImages=0`,
+  `missingDefaultImages=13`.
+- Checks:
+  `bun run check:fix -- scripts\generate-style-defaults.ts` -> ok;
+  `bun run styles:validate -- --pack=pack_05 --coverage` -> ok;
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`.
+
+## 2026-06-21 - `pack_05` missing defaults wave 5
+
+Se avanzo otra tanda chica de deuda visual real en `pack_05`, con correccion
+previa porque el dry-run inicial resolvia tres presets como object/material.
+
+- Estado antes validado: `pack_05 availableDefaultImages=114/135`,
+  `staleDefaultImages=0`, `missingDefaultImages=21`.
+- IDs regenerados: `SP05-259|SP05-241|SP05-243|SP05-245`.
+- Ajuste minimo de prompt: `SP05-241`, `SP05-243` y `SP05-245` pasaron de
+  fallback objeto/material a personaje/silueta legible integrada con mundo
+  isekai/fantasy.
+- Dry-run usado:
+  `.tmp\sp05-missing-wave05-dryrun2.txt`; los cuatro prompts incluyen
+  `ANATOMY QA`, `apply heavy denoise to the image`, y ya no incluyen
+  `Object/material safety exception`.
+- Generacion:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave05-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-259|SP05-241|SP05-243|SP05-245" --parallel=2 --force --session-suffix=sp05_missing_wave05`
+  -> `generated=4 attempted=4 skipped=131 failed=0`.
+- QA visual: `.tmp\sp05-missing-wave05-contact.webp`; aceptadas las 4.
+  `SP05-241` queda como estratega sobre grilla arcana, `SP05-243` como
+  tapestry/OVA con figura principal, y `SP05-245` como profecia romantica con
+  silueta; ninguna queda object-only.
+- Backup/current:
+  `D:\codex-studio-backups\style-default-cards\sp05-missing-wave05-archive\current`.
+- Estado despues validado:
+  `pack_05 availableDefaultImages=118/135`, `staleDefaultImages=0`,
+  `missingDefaultImages=17`.
+- Checks:
+  `bun run check:fix -- scripts\generate-style-defaults.ts` -> ok;
+  `bun run styles:validate -- --pack=pack_05 --coverage` -> ok;
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`.
+
+## 2026-06-21 - `pack_05` missing defaults wave 4
+
+Se avanzo otra tanda chica de deuda visual real en `pack_05`, frenando antes de
+generar cuando el dry-run mostro `Object/material safety exception` en dos
+presets de mecha.
+
+- Estado antes validado: `pack_05 availableDefaultImages=110/135`,
+  `staleDefaultImages=0`, `missingDefaultImages=25`.
+- IDs regenerados: `SP05-051|SP05-223|SP05-237|SP05-257`.
+- Ajuste minimo de prompt: `SP05-223` y `SP05-237` pasaron de fallback
+  objeto/material a sujeto legible integrado con mundo mecha/cyberpunk.
+- Dry-run usado:
+  `.tmp\sp05-missing-wave04-dryrun2.txt`; los cuatro prompts incluyen
+  `ANATOMY QA`, `apply heavy denoise to the image`, y ya no incluyen
+  `Object/material safety exception`.
+- Generacion:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave04-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-051|SP05-223|SP05-237|SP05-257" --parallel=2 --force --session-suffix=sp05_missing_wave04`
+  -> `generated=4 attempted=4 skipped=131 failed=0`.
+- QA visual: `.tmp\sp05-missing-wave04-contact.webp`; aceptadas las 4.
+  `SP05-257` usa farol/escena nocturna como soporte tematico, no como formula
+  repetida; `SP05-223` y `SP05-237` quedan sujeto+mundo, no object-only.
+- Backup/current:
+  `D:\codex-studio-backups\style-default-cards\sp05-missing-wave04-archive\current`.
+- Estado despues validado:
+  `pack_05 availableDefaultImages=114/135`, `staleDefaultImages=0`,
+  `missingDefaultImages=21`.
+- Checks:
+  `bun run check:fix -- scripts\generate-style-defaults.ts` -> ok;
+  `bun run styles:validate -- --pack=pack_05 --coverage` -> ok;
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`.
+
+## 2026-06-21 - `pack_05` missing defaults wave 3
+
+Se avanzo otra tanda chica de deuda visual real en `pack_05`. Esta tanda es
+anime legitima (`Anime 01`), no un caso de spillover hacia presets no-anime.
+
+- Estado antes validado: `pack_05 availableDefaultImages=106/135`,
+  `staleDefaultImages=0`, `missingDefaultImages=29`.
+- IDs regenerados: `SP05-125|SP05-133|SP05-134|SP05-221`.
+- Dry-run usado:
+  `.tmp\sp05-missing-wave03-dryrun-current.txt`; los cuatro prompts son
+  character-led, con `ANATOMY QA`, sin object/material fallback y con
+  `apply heavy denoise to the image`.
+- Generacion:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave03-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-125|SP05-133|SP05-134|SP05-221" --parallel=2 --force --session-suffix=sp05_missing_wave03`
+  -> `generated=4 attempted=4 skipped=131 failed=0`.
+- QA visual: `.tmp\sp05-missing-wave03-contact.webp`; aceptadas las 4.
+  Watchlist suave: `SP05-125` prioriza infraestructura/escala mas que monstruo
+  visible, pero evita pasillo generico, object-only y anatomia rota.
+- Backup/current:
+  `D:\codex-studio-backups\style-default-cards\sp05-missing-wave03-archive\current`.
+- Estado despues validado:
+  `pack_05 availableDefaultImages=110/135`, `staleDefaultImages=0`,
+  `missingDefaultImages=25`.
+- Checks:
+  `bun run styles:validate -- --pack=pack_05 --coverage` -> ok;
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`.
+
+## 2026-06-21 - `pack_05` missing defaults wave 2
+
+Se avanzo otra tanda chica de deuda visual real en `pack_05`, manteniendo gate
+de prompts antes de generar y QA visual posterior.
+
+- Estado antes: `pack_05 availableDefaultImages=102/135`,
+  `staleDefaultImages=0`, `missingDefaultImages=33`.
+- IDs regenerados: `SP05-095|SP05-096|SP05-100|SP05-121`.
+- Ajuste minimo de prompt: `SP05-100` ya no bloquea `adventurer` como palabra
+  generica; ahora evita `generic corridor adventurer` y `lantern-as-only-prop`
+  para no empujar la card hacia objeto/escena vacia.
+- Dry-run usado:
+  `.tmp\sp05-missing-wave02-redo-dryrun2.txt`; los cuatro prompts son
+  character-led, con `ANATOMY QA`, sin UI/texto y con
+  `apply heavy denoise to the image`.
+- Generacion:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave02-redo-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-095|SP05-096|SP05-100|SP05-121" --parallel=2 --force --session-suffix=sp05_missing_wave02_redo`
+  -> `generated=4 attempted=4 skipped=131 failed=0`.
+- QA visual: `.tmp\sp05-missing-wave02-redo-contact.webp`; aceptadas las 4.
+  Watchlist: `SP05-096` por lectura muy gacha/glossy pero correcta para
+  hipersaturado estrategico; `SP05-121` por ir mas ceremonial/linterna que
+  combate, aunque evita blade-forward/copia y mantiene anatomia limpia.
+- Backup/current:
+  `D:\codex-studio-backups\style-default-cards\sp05-missing-wave02-redo-archive\current`.
+- Estado despues validado:
+  `pack_05 availableDefaultImages=106/135`, `staleDefaultImages=0`,
+  `missingDefaultImages=29`.
+- Checks:
+  `bun run check:fix -- scripts\generate-style-defaults.ts` -> ok;
+  `bun run styles:validate -- --pack=pack_05 --coverage` -> ok;
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`.
+
+## 2026-06-21 - `pack_06` non-anime correction wave 01
+
+Se corrigio una tanda focal tras detectar que varios `SP06` no-anime seguian
+leyendo como anime/gacha/digital character-card aunque el prompt ya tenia locks.
+
+- IDs regenerados: `SP06-095|SP06-096|SP06-110|SP06-112`.
+- Dry-run:
+  `.tmp\sp06-non-anime-correction-01-dryrun.txt`; los cuatro prompts incluyen
+  `NON-ANIME STYLE LOCK`, `SP06 NON-ANIME MEDIUM LOCK` y
+  `apply heavy denoise to the image`.
+- Generacion:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp06-non-anime-correction-01 bun run scripts\generate-style-defaults.ts --pack=pack_06 "--preset=SP06-095|SP06-096|SP06-110|SP06-112" --parallel=2 --force --session-suffix=sp06_non_anime_correction_01`
+  -> `generated=4 attempted=4 skipped=116 failed=0`.
+- QA visual: `.tmp\sp06-non-anime-correction-01-contact.webp`. Aceptadas
+  `SP06-095`, `SP06-110` y `SP06-112` como correccion clara de anime spillover;
+  `SP06-096` queda pass/watchlist porque ya no lee anime, pero podria necesitar
+  una segunda iteracion si se exige lectura Neo-Geo sprite mas fuerte.
+- Backup/current:
+  `D:\codex-studio-backups\style-default-cards\sp06-non-anime-correction-01\current`
+  y previas en
+  `D:\codex-studio-backups\style-default-cards\sp06-non-anime-correction-01\previous`.
+- Checks:
+  `bun run styles:validate -- --pack=pack_06 --coverage` -> ok,
+  `availableDefaultImages=120/120`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`; `bun run styles:runtime` -> ok, `packs=17`,
+  `presets=1649`; `bun run styles:runtime:check` -> current.
+
+## 2026-06-21 - `pack_05` missing defaults wave 1
+
+Se avanzo la deuda visual real de `pack_05` con una tanda chica, evitando los
+presets que el dry-run mostro como object/material-only para no repetir el
+exceso de abstraccion.
+
+- Estado antes: `pack_05 availableDefaultImages=98/135`,
+  `staleDefaultImages=0`, `missingDefaultImages=37`.
+- Dry-run inicial descartado para esta tanda:
+  `.tmp\sp05-missing-wave01-dryrun.txt`; `SP05-067|SP05-069` quedaron
+  object/material-only y se posponen para revision especifica.
+- Dry-run usado:
+  `.tmp\sp05-missing-wave01-isekai-dryrun.txt` para
+  `SP05-091|SP05-092|SP05-093|SP05-094`; los cuatro prompts son
+  character-led, sin UI/texto y terminan con `apply heavy denoise to the image`.
+- Generacion:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave01-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-091|SP05-092|SP05-093|SP05-094" --parallel=2 --session-suffix=sp05_missing_wave01_isekai`
+  -> `generated=4 attempted=4 skipped=131 failed=0`.
+- QA visual: `.tmp\sp05-missing-wave01-contact.webp`; aceptadas las 4 como
+  isekai/fantasy anime diferenciadas, sin texto/UI, corridor/library/market
+  drift ni anatomia rota evidente. Watchlist suave: `SP05-091` por arquetipo
+  VR fantasy masculino cercano, aunque sin copia directa visible, HUD ni
+  espada/dual-sword focus.
+- Backup/current:
+  `D:\codex-studio-backups\style-default-cards\sp05-missing-wave01-archive\current\SP05-091.webp`,
+  `SP05-092.webp`, `SP05-093.webp`, `SP05-094.webp`.
+- Estado despues validado:
+  `pack_05 availableDefaultImages=102/135`, `staleDefaultImages=0`,
+  `missingDefaultImages=33`.
+- Checks:
+  `bun run styles:validate -- --pack=pack_05 --coverage` -> ok;
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`;
+  `bun run styles:runtime:check` -> current.
+
+## 2026-06-21 - objective refresh: `pack_07` / `pack_08`
+
+Se retomo el objetivo principal con estado actual del repo antes de seguir
+generando:
+
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> ok:
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> ok:
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- Manifests semanticos aun modificados en esta rama:
+  `SP07-057|SP07-069` y
+  `SP08-008|SP08-009|SP08-012|SP08-016|SP08-017|SP08-026|SP08-033|SP08-057|SP08-060|SP08-075|SP08-077`.
+- `bun run styles:validate -- --coverage` -> ok; deuda visual por coverage:
+  solo `pack_05` con `missingDefaultImages=37`. `pack_14` y `pack_15`
+  quedan sin stale/missing.
+- `bun run scripts/audit-style-category-bases.ts` regenero
+  `docs/active/style-category-bases-audit.md`; el auditor actual usa claves de
+  categorias vivas, no archivos sueltos de categorias antiguas. Slice objetivo
+  `pack_08..pack_11`: `20/20`.
+
+## 2026-06-21 - `pack_06` anime spillover correction
+
+Se respondio al QA visual de usuario: el problema no era solo que algunas
+cards salieran flojas, sino que presets no-anime de `SP06` estaban heredando
+acabado anime/JRPG/character-card aunque el preset debia ser medium-first o
+game-system-first.
+
+- Auditoria visual focal: `SP06-112` actual falla por meter un helper/mechanic
+  anime-adjacent al lado del icon-kit. `SP06-097` queda en watchlist por
+  mascota/staff y lectura Amiga todavia discutible.
+- Cambio en `scripts/generate-style-defaults.ts`: `SP06 NON-ANIME MEDIUM LOCK`
+  aclara que `game-art`, `JRPG`, `fighting-game`, `chibi`, `sprite` o
+  `Japanese-computer` no autorizan automaticamente caras anime, pelo cel,
+  visual-novel busts, shonen poses ni gacha framing.
+- Override especifico `SP06-112`: brief, `HERO`, `ENVIRONMENT` y
+  `REPRESENTATION RULE` ahora exigen icon-kit coherente de 3-5 dispositivos
+  no-armamentisticos, sin personas, humanoides, mascot helpers, anime mechanics
+  ni escena de operador.
+- Dry-runs guardados:
+  `.tmp\sp06-anime-boundary-after-lock-patch.txt` y
+  `.tmp\sp06-112-final-prompt-check.txt`.
+- Estado: no se genero ninguna card nueva en este checkpoint. La imagen actual
+  de `SP06-112` queda como rechazada/obsoleta para regenerar con el prompt
+  corregido antes de continuar tandas grandes.
+
+## 2026-06-21 - `pack_06` visual audit follow-up: anime boundary
+
+Se freno la generacion porque la auditoria visual completa de `SP06` mostro
+que el control anterior era correcto en prompts de muestra, pero demasiado chico
+para la escala real del pack. El problema no era solo missing/stale: varias
+cards actuales no-anime todavia leen como anime-adjacent, digital character-card
+o game/RPG splash generico.
+
+- QA visual creada:
+  `.tmp\sp06-audit-001-030.webp`,
+  `.tmp\sp06-audit-031-060.webp`,
+  `.tmp\sp06-audit-061-090.webp`,
+  `.tmp\sp06-audit-091-120.webp`.
+- Allowlist anime real para `SP06`:
+  `SP06-085|SP06-108|SP06-114`. Todo lo demas debe ser medium-first,
+  game-system-first, print/collage/vector/pixel-first o non-anime figure si
+  necesita persona.
+- Watchlist visual ampliada para re-auditar/regenerar en tandas chicas:
+  `SP06-046|SP06-050|SP06-051|SP06-053|SP06-056|SP06-063|SP06-066|SP06-068|SP06-069|SP06-071|SP06-080|SP06-084|SP06-095|SP06-096|SP06-104|SP06-105|SP06-107|SP06-109|SP06-111|SP06-119`.
+  No todos fallan por la misma razon: unos tienen anime spillover, otros se
+  volvieron generic RPG/anime concept-card, y otros necesitan mejor lectura del
+  medio/sistema.
+- Ajuste en `scripts/generate-style-defaults.ts`:
+  `presetAllowsAnimeGrammar()` para `pack_06` ya no infiere permiso anime por
+  palabras sueltas del manifiesto; usa solo la allowlist explicita.
+- Ajuste de lenguaje SP06 no-anime:
+  se reemplazo `protagonist` por `non-anime designed figure`, `medium-led
+  figure`, `human-scale scenelet` o `game-useful focal idea`, especialmente en
+  digital art, concept art, vector, moodboard color story y cozy sim.
+- Dry-run de frontera posterior al patch:
+  `.tmp\sp06-anime-boundary-recheck-after-patch.txt` con
+  `SP06-046|SP06-050|SP06-053|SP06-056|SP06-069|SP06-084|SP06-095|SP06-104|SP06-105|SP06-107|SP06-119|SP06-085|SP06-108|SP06-114`.
+- Evidencia prompt:
+  14 prompts, 11 `NON-ANIME STYLE LOCK`, 11 `SP06 NON-ANIME SCOPE`, 11
+  `SP06 NON-ANIME MEDIUM LOCK`, 3 `SP06 ANIME-ALLOWED SCOPE`, 0 apariciones de
+  `one original protagonist` y 0 de `original protagonist, vehicle`.
+- Estado:
+  no se generaron nuevas cards en este checkpoint. La proxima tanda de `SP06`
+  debe salir de la watchlist visual y pasar QA con contact sheet antes de
+  aceptarse.
+
+## 2026-06-21 - `pack_06` no-anime medium gate
+
+Se pauso la generacion despues de revisar la contact sheet completa de `SP06`:
+el riesgo activo no era coverage, sino que algunos presets no-anime podian
+resolverse como character-card/anime-adjacent.
+
+- Cambio minimo en `scripts/generate-style-defaults.ts`: `SP06 NON-ANIME
+  MEDIUM LOCK` se inyecta solo si el preset no esta en la allowlist
+  `SP06-085|SP06-108|SP06-114`.
+- Regla ajustada: en `pack_06` no-anime, el medio/sistema visual debe leerse
+  antes que cualquier personaje; figuras permitidas solo como painted/drawn/
+  printed/collaged/vector/sprite/voxel/game-art, no anime character-card.
+- Dry-run de prueba:
+  `.tmp\sp06-non-anime-medium-lock-probe.txt` con
+  `SP06-001|SP06-004|SP06-049|SP06-085|SP06-108|SP06-114`.
+- Evidencia: 3 `SP06 NON-ANIME MEDIUM LOCK`, 3 `SP06 ANIME-ALLOWED SCOPE`, 3
+  `SP06 NON-ANIME SCOPE`, y 6 `apply heavy denoise to the image`.
+- Check focal:
+  `bun run check:fix -- scripts\generate-style-defaults.ts` -> ok.
+- Validacion:
+  `bun run styles:validate -- --pack=pack_06 --coverage` -> ok;
+  `availableDefaultImages=120/120`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- Cierre focal:
+  `bun run styles:runtime:check` -> current;
+  `bun run styles:validate -- --coverage` -> ok. Deuda visual global viva:
+  `pack_05=37`, `pack_13=13`; todos los demas packs, incluyendo `pack_06`,
+  `pack_07`, `pack_08`, `pack_11`, `pack_14` y `pack_15`, quedan en
+  `missingDefaultImages=0`.
+
+Proxima regla operativa:
+
+- No generar nuevas cards de packs mixtos sin dry-run que confirme si el preset
+  es anime-allowed o non-anime medium-first.
+
+## 2026-06-21 - `pack_13` missing anime identity wave 03
+
+Se avanzo otra tanda chica de `pack_13` usando el gate posterior a la pausa de
+anime/no-anime.
+
+- Regeneradas:
+  `SP05-178|SP05-190|SP05-197|SP05-198|SP05-203|SP05-208`.
+- Antes: `pack_13 availableDefaultImages=119/132`, `staleDefaultImages=0`,
+  `missingDefaultImages=13`.
+- Dry-run:
+  `.tmp\sp13-wave03-dryrun.txt` con 6 prompts, 6 `ANIME IDENTITY RULE`, 6
+  `ANATOMY QA` y 6 `apply heavy denoise to the image`.
+- Generacion:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp13-missing-wave03-anime-identity bun run scripts\generate-style-defaults.ts --pack=pack_13 "--preset=SP05-178|SP05-190|SP05-197|SP05-198|SP05-203|SP05-208" --parallel=2 --session-suffix=sp13_missing_wave03_anime_identity --force`
+  -> `generated=6 attempted=6 skipped=126 failed=0`.
+- QA visual:
+  `.tmp\sp13-wave03-contact.webp`; aceptadas las 6. Watchlist suave:
+  `SP05-208` usa escena de mesa/DIY, pero representa bien
+  `Beginner-Made DIY Glow` y no lee como objeto-only.
+- Backup:
+  `D:\codex-studio-backups\style-default-cards\sp13-missing-wave03-anime-identity\current`.
+- Despues: `pack_13 availableDefaultImages=125/132`, `staleDefaultImages=0`,
+  `missingDefaultImages=7`.
+- Checks:
+  `bun run styles:validate -- --pack=pack_13 --coverage` -> ok;
+  `bun run styles:quality:audit` -> `redundancy: none above threshold`;
+  `bun run styles:runtime` -> ok;
+  `bun run styles:runtime:check` -> current;
+  `bun run styles:validate -- --coverage` -> ok.
+- Coverage global actual queda en `44` manifests without default image:
+  `pack_05=37`, `pack_13=7`; sin stale reportado.
+- Proxima tanda recomendada para cerrar `pack_13`:
+  `SP05-213|SP05-323|SP05-331|SP05-337|SP13-001|SP13-009|SP13-020`.
+
+## 2026-06-21 - `pack_13` missing anime identity wave 02
+
+Se avanzo otra tanda chica de `pack_13`, manteniendo separacion por linaje y
+evitando soltar demasiadas generaciones anime sin QA visual.
+
+- Regeneradas:
+  `SP05-109|SP05-115|SP05-162|SP05-171|SP05-172|SP05-176`.
+- Antes: `pack_13 availableDefaultImages=113/132`, `staleDefaultImages=0`,
+  `missingDefaultImages=19`.
+- Despues: `pack_13 availableDefaultImages=119/132`, `staleDefaultImages=0`,
+  `missingDefaultImages=13`.
+- QA de prompts: `.tmp\sp13-wave02-dryrun.txt`; confirma
+  `ANIME IDENTITY RULE`, `ANATOMY QA`, anti `generic glossy anime` /
+  `same-face` y denoise fuerte.
+- QA visual: `.tmp\sp13-wave02-contact.webp`; aceptadas las 6. Watchlist
+  suave: `SP05-115` queda mas guardian/mask silhouette que personaje completo,
+  pero el preset lo permitia y se distingue bien.
+- Backup: `D:\codex-studio-backups\style-default-cards\sp13-missing-wave02-anime-identity\current`.
+- Checks:
+  `bun run styles:validate -- --pack=pack_13 --coverage` -> ok;
+  `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- Coverage global actual queda en `50` missing default images:
+  `pack_05=37`, `pack_13=13`; sin stale reportado.
+- Proxima tanda recomendada:
+  `SP05-178|SP05-190|SP05-197|SP05-198|SP05-203|SP05-208`.
+
+## 2026-06-21 - `pack_13` missing anime identity wave 01
+
+Se avanzo `pack_13` con una tanda chica para mantener control visual y evitar
+otra deriva a anime generico/same-face.
+
+- Regeneradas:
+  `SP05-020|SP05-042|SP05-043|SP05-048|SP05-049|SP05-106`.
+- Antes: `pack_13 availableDefaultImages=107/132`, `staleDefaultImages=0`,
+  `missingDefaultImages=25`.
+- Despues: `pack_13 availableDefaultImages=113/132`, `staleDefaultImages=0`,
+  `missingDefaultImages=19`.
+- Nota de estado: `pack_13` incluye manifests `SP05-*`; para listar deuda real
+  se usa `id:` dentro del YAML y no un rango numerico `SP13-*`.
+- QA de prompts: `.tmp\sp13-wave01-dryrun.txt`; confirma
+  `ANIME IDENTITY RULE`, `ANATOMY QA`, anti `generic glossy anime` /
+  `same-face` y denoise fuerte.
+- QA visual: `.tmp\sp13-wave01-contact.webp`; aceptadas las 6 con separacion
+  clara entre dream card, theatrical duel, healing ensemble, crimson quest,
+  gothic academy y deco geometric anime.
+- Backup: `D:\codex-studio-backups\style-default-cards\sp13-missing-wave01-anime-identity\current`.
+- Checks:
+  `bun run styles:validate -- --pack=pack_13 --coverage` -> ok;
+  `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- Coverage global actual queda en `56` missing default images:
+  `pack_05=37`, `pack_13=19`; sin stale reportado.
+- Proxima tanda recomendada:
+  `SP05-109|SP05-115|SP05-162|SP05-171|SP05-172|SP05-176`.
+
+## 2026-06-21 - `pack_02` missing cinematic/media closeout
+
+Se cerro la deuda visual missing de `pack_02` y se probo el lock anti-anime en
+un pack mixto: 8 presets no-anime y 1 preset anime explicito.
+
+- Regeneradas:
+  `SP02-001|SP02-004|SP02-007|SP02-009|SP02-014|SP02-033|SP02-037|SP02-038|SP02-039`.
+- Antes: `pack_02 availableDefaultImages=119/128`, `staleDefaultImages=0`,
+  `missingDefaultImages=9`.
+- Despues: `pack_02 availableDefaultImages=128/128`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- QA de prompts: `.tmp\sp02-missing-scope-dryrun.txt`; 8 presets no-anime con
+  `NON-ANIME STYLE LOCK`; `SP02-037` queda anime porque el preset lo pide.
+- QA visual: `.tmp\sp02-missing-close-contact.webp`; aceptadas tras corregir
+  `SP02-038`. `SP02-014` queda como horror/giallo con sangre estilizada
+  permitida por el preset.
+- Correccion puntual: `SP02-038` inicial fallo por drift anime/romance urbano.
+  Se guardo en
+  `D:\codex-studio-backups\style-default-cards\sp02-missing-close-cinematic-media\rejected-before-sp02-038-comic-offset-fix\SP02-038.webp`
+  y se agrego override por ID para comic-offset 3D: halftone, CMYK/RGB
+  misregistration, ink contours, 3D simplificado, sin anime/franchise.
+- Backup: `D:\codex-studio-backups\style-default-cards\sp02-missing-close-cinematic-media\current`.
+- Checks:
+  `bun run styles:validate -- --pack=pack_02 --coverage` -> ok;
+  `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- Coverage global actual queda en `62` missing default images:
+  `pack_05=37`, `pack_13=25`; sin stale reportado.
+- Proxima tanda recomendada: `pack_13` por bloque anime mas acotado que
+  `pack_05`, con dry-run previo para evitar sobre-generalizacion.
+
+## 2026-06-21 - `pack_04` missing illustration closeout + no-anime audit
+
+Se cerro la deuda visual missing de `pack_04` despues de pausar la generacion
+para revisar el drift anime en presets no-anime.
+
+- Regeneradas: `SP04-052|SP04-058|SP04-059|SP04-096`.
+- Antes: `pack_04 availableDefaultImages=96/100`, `staleDefaultImages=0`,
+  `missingDefaultImages=4`.
+- Despues: `pack_04 availableDefaultImages=100/100`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- Ajuste de generador: `NON-ANIME STYLE LOCK` en
+  `scripts/generate-style-defaults.ts` ahora explicita que el lock overridea
+  broad prompt families, labels genericos y sesgo del modelo; en prompts
+  no-anime, anime/manga/gacha/VN solo pueden aparecer como negativos.
+- QA de prompts:
+  `.tmp\sp04-anime-scope-after-lock.txt` confirma lock no-anime y denoise
+  fuerte en los 4 faltantes. Muestra SP06 en
+  `.tmp\sp06-anime-scope-after-lock.txt`: presets no-anime mantienen
+  `SP06 NON-ANIME SCOPE`; solo `Visual Novel` usa `SP06 ANIME-ALLOWED SCOPE`
+  porque el preset lo pide explicitamente.
+- QA visual: `.tmp\sp04-missing-close-contact.webp`; aceptadas `SP04-052`
+  isometric game art, `SP04-058` low-poly concept, `SP04-059` UI/HUD style
+  sin texto legible ni anime, y `SP04-096` tras regeneracion como progresion
+  de armas estilizadas.
+- Correccion puntual: `SP04-096` inicial parecia backpacks/equipment por un
+  guardrail demasiado restrictivo. Se guardo en
+  `D:\codex-studio-backups\style-default-cards\sp04-missing-close\rejected-before-sp04-096-weapon-fix\SP04-096.webp`
+  y se regenero con armas estilizadas sin combate/persona/gore/UI/texto.
+- Backup: `D:\codex-studio-backups\style-default-cards\sp04-missing-close\current`.
+- Checks:
+  `bun run styles:validate -- --pack=pack_04 --coverage` -> ok;
+  `bun run styles:runtime:check` -> current tras `styles:runtime`;
+  `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- Coverage global actual queda en `71` missing default images:
+  `pack_02=9`, `pack_05=37`, `pack_13=25`; sin stale reportado.
+- Proxima tanda recomendada: `pack_02` por ser el cierre no-anime mas chico
+  antes de volver a los bloques grandes anime `pack_05/13`.
+
+## 2026-06-21 - `pack_01` missing photography closeout
+
+Se cerro la deuda visual missing de `pack_01` con cuatro primarias fotograficas
+faltantes.
+
+- Regeneradas: `SP01-015|SP01-047|SP01-060|SP01-069`.
+- Antes: `pack_01 availableDefaultImages=83/87`, `staleDefaultImages=0`,
+  `missingDefaultImages=4`.
+- Despues: `pack_01 availableDefaultImages=87/87`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- QA visual: `.tmp\sp01-missing-close-contact.webp`; aceptadas las 4.
+  `SP01-060` lee documental duro sin gore/armas/persona explicita; `SP01-069`
+  resuelve boudoir como tela/luz/objeto intimo sin cuerpo ni explicitud.
+- Backup: `D:\codex-studio-backups\style-default-cards\sp01-missing-close-photo\current`.
+- Checks:
+  `bun run styles:validate -- --pack=pack_01 --coverage` -> ok;
+  `bun run styles:runtime:check` -> current tras `styles:runtime`;
+  `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- Coverage global actual queda en `75` missing default images:
+  `pack_02=9`, `pack_04=4`, `pack_05=37`, `pack_13=25`; sin stale reportado.
+- Proxima tanda recomendada: `pack_04`, porque son solo `4` missing y permite
+  otro cierre completo antes de entrar en los bloques grandes `pack_05/13`.
+
+## 2026-06-21 - `pack_03` missing stylized 3D closeout
+
+Se cerro la deuda visual missing de `pack_03` con las dos primarias faltantes.
+
+- Regeneradas: `SP03-021|SP03-040`.
+- Antes: `pack_03 availableDefaultImages=78/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=2`.
+- Despues: `pack_03 availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- QA visual: `.tmp\sp03-missing-close-contact.webp`; `SP03-021` pasa como
+  low-poly limpio; `SP03-040` pasa como toon/cel shader con objeto focal y
+  entorno estilizado, sin UI/texto ni personaje anime generico.
+- Backup: `D:\codex-studio-backups\style-default-cards\sp03-missing-close-stylized3d\current`.
+- Checks:
+  `bun run styles:validate -- --pack=pack_03 --coverage` -> ok;
+  `bun run styles:runtime:check` -> current tras `styles:runtime`;
+  `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- Coverage global actual queda en `79` missing default images:
+  `pack_01=4`, `pack_02=9`, `pack_04=4`, `pack_05=37`, `pack_13=25`;
+  sin stale reportado.
+- Proxima tanda recomendada: `pack_01` o `pack_04`, ambos con `4` missing.
+  Preferencia operativa: `pack_01` para seguir cerrando packs historicos en
+  orden.
+
+## 2026-06-21 - `pack_09` missing material cards closeout
+
+Se cerro la deuda visual missing de `pack_09` con una tanda material-first y
+scope anti-anime verificado por dry-run.
+
+- Regeneradas:
+  `SP09-002|SP09-011|SP09-013|SP09-021|SP09-023|SP09-046|SP09-054`.
+- Antes: `pack_09 availableDefaultImages=73/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=7`.
+- Despues: `pack_09 availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- QA visual: `.tmp\sp09-missing-close-contact.webp`; aceptadas las 7 como
+  material-first, sin anime/personaje/cara y sin pasillo/mercado/biblioteca.
+- Backup: `D:\codex-studio-backups\style-default-cards\sp09-missing-close-material-noanime\current`.
+- Checks:
+  `bun run styles:validate -- --pack=pack_09 --coverage` -> ok;
+  `bun run styles:runtime:check` -> current tras `styles:runtime`;
+  `bun run styles:quality:audit` -> `redundancy: none above threshold`.
+- Coverage global actual queda en `81` missing default images:
+  `pack_01=4`, `pack_02=9`, `pack_03=2`, `pack_04=4`, `pack_05=37`,
+  `pack_13=25`; sin stale reportado.
+- Proxima tanda recomendada: `pack_03` por ser el cierre mas chico (`2`
+  missing), o `pack_01` si preferimos cerrar packs historicos en orden.
+
+## 2026-06-21 - anti-anime scope review before continuing
+
+Feedback nuevo: algunas cards no-anime estaban siendo llevadas a acabado anime.
+Se pauso la generacion y se reviso el generador antes de seguir.
+
+- `scripts/style-default-utils.ts` ya contiene el sufijo global que bloquea
+  anime/manga/gacha/visual-novel como fallback para presets no-anime.
+- `pack_06`, `pack_09` y `pack_15` ya tienen locks especificos; se mantiene la
+  regla de clasificar cada tanda antes de generar.
+- Correccion aplicada ahora: `pack_12__speed_sport_and_competitive_arenas`
+  dejo de mapear a `anime_sports` y usa `gameplay_competition`.
+- Dry-run de `SP12-008|SP12-017|SP12-021` confirma lenguaje de gameplay
+  screencap, `NON-ANIME STYLE LOCK`, contrato sin HUD/UI/texto y denoise fuerte.
+- Validado con `bun run styles:validate -- --pack=pack_12 --coverage` y
+  `bun run styles:runtime:check`.
+
+## 2026-06-19 - `pack_15` visual prompt correction
+
+`Punk Spectrum Vault` no debe resolverse como photoreal/AAA concept art ni como
+digital painting hiper-detallado. Se ajusto el generador y los 80 manifests del
+pack para pedir ilustracion 2D controlada: clean graphic-novel card art,
+controlled stylized digital painting, cel-shaded poster art, gouache-poster
+color blocking, formas grandes, contornos dibujados, pocas zonas claras de
+color/valor, caras/manos simplificadas cuando aparezcan personas, textura
+moderada y denoise fuerte.
+
+- `scripts/generate-style-defaults.ts` ahora tiene base prompts y scene anchors
+  textuales para las 10 categorias de `pack_15`.
+- Los manifests `SP15-001..080` bloquean photoreal/hyperreal/semi-realistic game
+  concept art, PBR material simulation, microdetail, realistic uniform portrait,
+  foreground guard portrait, detailed tattoo focus, dense machinery wallpaper y
+  drift repetido market/library/corridor/studio/chair/curtain/lamp.
+- `SP15-001` recibio correccion puntual hacia illustrated civic poster, workers
+  simplificados, open shape areas y maquinaria en clusters grandes.
+- `SP15-002` recibio correccion puntual y override ID-specific: rail signal
+  poster con locomotive silhouettes, semaphore gantries y rail-switch diagram
+  shapes; humanos solo tiny background silhouettes, sin foreground
+  person/officer/lantern/flag hero.
+- QA smoke vigente: `SP15-001` usable provisional y `SP15-002` corregida en
+  `logs\qa-pack15-illustration-control-001-002-2026-06-19T07-27-15-719Z.webp`.
+- Segunda tanda `SP15-003..006`: manifests ajustados antes de generar para no
+  volver a filigree overload, military convoy, political flag hero, readable
+  slogans, work-lamp hero o cluttered print desk. `SP15-004` recibio override
+  ID-specific despues de un rechazo por guard/flag/lantern drift; resultado
+  final aceptado como radio hardware/signal coordination poster.
+- QA sheet segunda tanda:
+  `logs\qa-pack15-screenprint-003-006-2026-06-19T07-43-23-251Z.webp`.
+- Tercera tanda `SP15-007..010`: el usuario rechazo el giro todavia demasiado
+  realista/concept-art. El contrato vigente queda mas duro: flat-to-painterly
+  editorial illustration, gouache-like poster, clean graphic-novel card y
+  stylized animation-background card art; evitar painterly realism, rendered
+  metal, volumetric fog realism, mirror-wet realism, dense cable lattice,
+  panel-grid overload y tiny black linework. QA provisional aceptable:
+  `logs\qa-pack15-007-010-flat-painterly-2026-06-19T08-22-40-629Z.webp`.
+- Cuarta tanda `SP15-011..014`: overrides puntuales para rooftop relay,
+  cooperative firewall, black-ice courier y signal substation antes de generar.
+  Primer intento fallo por `ConnectionRefused` en `:17223`; tras levantar
+  `bun run dev:server`, la tanda cerro en `generated=4`. QA:
+  `logs\qa-pack15-011-014-flat-painterly-2026-06-19T08-41-10-474Z.webp`.
+- Quinta tanda `SP15-015..018`: se corrigieron drone graffiti, neon clinic y
+  los dos solarpunk permitidos. `SP15-017`/`SP15-018` tuvieron retry por
+  solarpunk generico e iconos tipo leaf-logo; QA final:
+  `logs\qa-pack15-015-018-flat-painterly-final-2026-06-19T08-55-21-337Z.webp`.
+- Sexta tanda `SP15-019..022`: repair union, windcatcher roofs, seed archive y
+  desert condensers. Se bloquearon clutter de mercado, text labels, fantasy sky
+  city/oasis y dust photoreal. QA:
+  `logs\qa-pack15-019-022-flat-painterly-2026-06-19T09-04-33-800Z.webp`.
+- Septima tanda `SP15-023..026`: rain choir, mangrove lift, mycelial transit y
+  symbiont market. `SP15-023`/`SP15-024` tuvieron retry por logo-like symbols;
+  `SP15-025`/`SP15-026` quedan pass/watchlist por detalle organico. QA final:
+  `logs\qa-pack15-023-026-flat-painterly-final-2026-06-19T09-17-53-801Z.webp`.
+- Octava tanda `SP15-027..030`: se pivoteo el contrato de pack_15 hacia
+  ilustracion digital plana/controlada, cel-poster y comic editorial para evitar
+  realism/concept-art drift. Primer retry rechazado por demasiado concept art;
+  retry final:
+  `logs\qa-pack15-027-030-flat-graphic-retry-2026-06-19T09-44-46-696Z.webp`.
+- Novena tanda `SP15-031..034`: flesh circuit conservatory, chloroplast housing,
+  coral circuit marina y tideglass subway generados con contrato flat graphic.
+  `SP15-031` queda pass/watchlist por posible fashion/goth drift; QA:
+  `logs\qa-pack15-031-034-flat-graphic-2026-06-19T09-54-37-524Z.webp`.
+- Decima tanda `SP15-035..038`: kelp arcade, shell metro pier, icebreaker town y
+  glacier server refuge. `SP15-037`/`SP15-038` tuvieron retry por emblemas
+  snowflake/heraldic; `SP15-038` tuvo retry extra por exterior bunker. QA final:
+  `logs\qa-pack15-035-038-flat-graphic-final2-2026-06-19T10-11-18-509Z.webp`.
+- Undecima tanda `SP15-039..042`: salt flats kite foundry, swamp radio
+  stiltworks, zine wall safehouse y skatepark generator crew. `SP15-040` queda
+  pass/watchlist por oscuridad/noir, sin fantasy corridor. QA:
+  `logs\qa-pack15-039-042-flat-graphic-2026-06-19T10-22-54-707Z.webp`.
+- Duodecima tanda `SP15-043..046`: basement synth barricade, scrapbike courier,
+  sticker bomb signal booth y warehouse rave clinic. `SP15-045`/`SP15-046`
+  tuvieron retry por iconos logo-like; QA final:
+  `logs\qa-pack15-043-046-flat-graphic-final-2026-06-19T10-35-46-257Z.webp`.
+- Decimotercera tanda `SP15-047..050`: se corrigio el rumbo visual hacia
+  ilustracion/pintura digital controlada y menos realismo. `SP15-048` tuvo
+  retry por bandera/simbolo logo-like; QA final:
+  `logs\qa-pack15-047-050-illustration-controlled-final-2026-06-19T10-51-24-511Z.webp`.
+- Decimocuarta tanda `SP15-051..054`: cassette weather, pirate TV, CRT prayer
+  booth y glitch kiosk. `SP15-052` tuvo dos retries por skull/flag y luego
+  camera/softbox hero; `SP15-054` retry por market/screen-wall drift. QA final:
+  `logs\qa-pack15-051-054-illustration-controlled-final2-2026-06-19T11-07-14-274Z.webp`.
+- Decimoquinta tanda `SP15-055..058`: se corrigio el drift hacia realismo y
+  concept-art, llevando la wave a flat graphic illustration, gouache/cel-poster
+  shapes y controlled digital painting. `SP15-057`/`SP15-058` tuvieron retry
+  selectivo por costume/symbol drift; QA final:
+  `logs\qa-pack15-055-058-flat-illustration-final-2026-06-19T11-35-25-498Z.webp`.
+- Decimosexta tanda `SP15-059..062`: goth relay, bone lime signal cairn,
+  necrophone repair y shrine engine procession. `SP15-060..062` tuvieron retry
+  selectivo por flag/emblem/crescent/symbol drift; QA final:
+  `logs\qa-pack15-059-062-flat-illustration-final-2026-06-19T11-52-08-337Z.webp`.
+- Decimoseptima tanda `SP15-063..066`: vampire data salon, folk horror
+  transformer, neon isotope plaza y reactor promenade. Se reforzaron bloqueos
+  contra blood/fangs/UI, scarecrow/gore/cult symbols, radiation trefoil,
+  readable signs y hard-surface render. QA:
+  `logs\qa-pack15-063-066-flat-illustration-2026-06-19T12-03-03-718Z.webp`.
+- Decimoctava tanda `SP15-067..070`: orbit diner strip, rocket chapel outpost,
+  comet salvage yard y plasma rail commons. Se reforzaron bloqueos contra
+  signs/logos/text, chapel/religious drift, cockpit UI, spaceship hero,
+  hazard/NASA-like logos y long transit corridor. QA:
+  `logs\qa-pack15-067-070-flat-illustration-2026-06-19T12-13-50-194Z.webp`.
+- Decimonovena tanda `SP15-071..074`: el usuario corrigio el rumbo por exceso de
+  worker-crew/workshop cards. Nuevo contrato `pack_15`: personaje principal
+  destacable + fondo tematico, con secundarios atras si ayudan, evitando
+  trabajadores anonimos imprimiendo/reparando como formula. `SP15-071` se
+  reoriento a lunar orchard signal-keeper, `SP15-072` a crater choir conductor,
+  `SP15-073` a basalt gearwright y `SP15-074` a flint engine trader-inventor.
+  QA:
+  `logs\qa-pack15-071-074-character-led-final-2026-06-19T13-38-04-594Z.webp`.
+- Fix de tooling en la misma tanda: `writeRepoWebpAsset` escribe via
+  `.tmp.webp` + rename y `generate-style-defaults` no borra source assets que
+  ya apuntan al repo, evitando defaults missing tras cleanup.
+- Tooling pack-scoped: `generate-style-defaults --pack=<id>` y
+  `styles:validate -- --pack=<id>` pueden cargar solo el pack pedido para no
+  quedar bloqueados por manifests WIP de otro pack.
+
+- Vigesima correccion de direccion `SP15-075..080`: el contrato
+  `character-led` habia sobrecorregido hacia tarjetas tipo RPG/adventure
+  occidental, con protagonistas full-body, pouches/botas/capas, paleta
+  beige/azul y rostros/posturas demasiado similares. La tanda queda rechazada
+  como direccion estetica aunque haya generado imagenes.
+- Nuevo pivot `pack_15`: usar speculative poster/artbook plate,
+  folk-modernist shape language, editorial poster/Eastern European
+  animation/Japanese environment-art/Latin American poster grammar como
+  referencias amplias. Los personajes siguen permitidos, pero integrados como
+  figura-dispositivo, silueta, escala humana, crop parcial o world fragment; no
+  como centered full-body fantasy adventurer ni American RPG/sourcebook hero.
+- `scripts/generate-style-defaults.ts` y manifests `SP15-075..080` bloquean
+  American fantasy RPG hero, YA adventure cover, young rugged protagonist,
+  leather pouches, belts/boots/capes/cloaks, worker-crew repetition y tan/blue
+  cloak palette.
+- Tanda visual corregida `SP15-075..080`: se genero primero piloto
+  `SP15-075|SP15-079`, luego `SP15-076|SP15-077|SP15-078|SP15-080`, y retry
+  selectivo de `SP15-078` por marcas de pared tipo signage. QA final:
+  `logs\qa-pack15-075-080-artbook-plate-final2-2026-06-19T14-54-40-354Z.webp`.
+  Resultado: mucho menos RPG generico; `SP15-075`, `SP15-076`, `SP15-077`,
+  `SP15-078`, `SP15-079` y `SP15-080` quedan pass/watchlist por iconos
+  decorativos/oscuridad/personaje-forward, no por worker-crew ni full-body hero
+  drift.
+- Tanda correctiva `SP15-061..064`: se aplico el pivot artbook/poster a presets
+  occult/myth/gothic faltantes. `SP15-061` queda como necrophone/receiver focal,
+  `SP15-062` como shrine-engine cart publico, `SP15-063` como velvet terminal
+  salon con figura parcial y `SP15-064` como transformer-pole folk horror. QA:
+  `logs\qa-pack15-061-064-artbook-plate-2026-06-19T15-08-53-630Z.webp`.
+  Coverage vivo posterior: `pack_15 availableDefaultImages=15/80`,
+  `staleDefaultImages=0`, `missingDefaultImages=65`.
+
 ## Implementación completada (Phase 1)
 
 Se refactorizaron manualmente estos 10 presets críticos:
@@ -17024,3 +17992,2818 @@ Se detecto que `SP13-021..025` viven dentro de `pack_05` y aun tenian overrides 
 - Check focal: `bun run check -- scripts\generate-style-defaults.ts` -> ok.
 - No se tocaron assets.
 - Nota QA: las primarias existentes `SP13-021..025` habian sido aceptadas como action-energy abstraction; ese criterio queda superseded. Si se revisa `pack_05`, regenerar esos cinco como retry selectivo con personaje.
+
+## Tanda 2026-06-19 - `pack_12` gameplay screencap reset
+
+Se reformulo `pack_12` para cortar la regresion de cards tipo concept art,
+poster, asset sheet, menu/HUD o pixel-art generico. El contrato actual exige
+captura jugable: camara de videojuego, estado de gameplay, ruta/objetivo/peligro
+legible y preset diferenciable por loop/camara.
+
+- Manifests: `SP12-001..SP12-080` auditados para `rendering_and_quality` como
+  screencap/in-game frame y avoid rules anti concept/key/promo/menu/HUD.
+- Generator: `scripts/generate-style-defaults.ts` agrega path especial para
+  `pack_12`, bases por categoria como gameplay, anchors por loop jugable y
+  guardrail contra `concept art`, `poster`, `key art`, `asset render`, `menu`,
+  `HUD`, `UI`, `pixel/voxel/8-bit` generico.
+- Ajuste posterior: se retiro la frase `16:9` porque conflictuaba con output
+  `1536x1024`; queda `landscape game-camera composition`.
+- Permiso controlado: sangre/violencia estilizada permitida cuando el genero lo
+  necesita; se mantiene bloqueo de gore explicito, dismemberment, torture detail
+  y shock imagery.
+
+Generacion:
+
+- Rehechas/validadas `SP12-001..060`.
+- Regeneradas por borrado manual: `SP12-027`, `SP12-033`, `SP12-035`,
+  `SP12-037`, `SP12-039`, `SP12-040`, `SP12-044`, `SP12-045`, `SP12-046`.
+- Generadas `SP12-061..080`.
+
+QA visual:
+
+- Contact sheets: `logs\qa-pack12-true-screencap-*`.
+- Backup final externo:
+  `D:\codex-studio-backups\style-defaults-primary-backup\pack_12_true_screencap_close_20260619-014933`
+  (`80` cards + `22` QA sheets).
+- Resultado aceptado: variedad entre stealth, racing, tower defense, platform,
+  boss run, tactical overview, co-op extraction, beast hunt, arena duel y puzzle
+  chamber sin volver a tarjetas abstractas ni concept sheets.
+- Watchlist: `SP12-080` cinematic boss-adjacent, aceptado por mantener avatar,
+  ruta y playable-frame read.
+
+Checks:
+
+- Missing real pack_12: `0/80`.
+- `bun run styles:validate -- --pack=pack_12 --coverage` -> ok;
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+
+## Tanda 2026-06-19 - primary default cards `pack_15` missing `SP15-113..118`
+
+Coverage vivo contradijo notas viejas: `pack_15` no estaba cerrado tras borrados
+manuales; estado inicial de ronda `availableDefaultImages=114/137`,
+`missingDefaultImages=23`. Se regenero la primera tanda real faltante.
+
+- IDs: `SP15-113|SP15-114|SP15-115|SP15-116|SP15-117|SP15-118`.
+- Prompt fix: `SP15-116` y `SP15-117` bajan microdetalle con broad readable
+  forms, denoised glow/surfaces, restrained bloom y sin glitter/coral filigree
+  denso.
+- Generacion:
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_15 "--preset=SP15-113|SP15-114|SP15-115|SP15-116|SP15-117|SP15-118" --parallel=3 --session-suffix=primary_p15_missing_113_118_rerun --force` -> `generated=6 attempted=6 skipped=131 failed=0`.
+  - `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_15 "--preset=SP15-116|SP15-117" --parallel=2 --session-suffix=primary_p15_missing_116_117_denoise_retry --force` -> `generated=2 attempted=2 skipped=135 failed=0`.
+- QA visual:
+  - `SP15-113`, `SP15-114`, `SP15-115`, `SP15-118` aceptadas en primera pasada.
+  - `SP15-116` y `SP15-117` retry por exceso de neon/microdetalle; retry aceptado.
+  - Watchlist: `SP15-116` sigue ornamental/neon-heavy, pero ya no cae tan fuerte en ultra-fine noise.
+- Backup: `D:\codex-studio-backups\style-defaults-primary-backup\pack_15_missing_113_118_20260619-020505`.
+- Runtime/coverage:
+  - `bun run styles:runtime` -> ok.
+  - `bun run styles:validate -- --pack=pack_15 --coverage` -> `availableDefaultImages=120/137`, `staleDefaultImages=0`, `missingDefaultImages=17`.
+- Proxima tanda recomendada: `SP15-119..124`.
+
+## Tanda 2026-06-19 - `pack_15` manual reset desde cero
+
+El pack anterior `Solarpunk Dreamscapes Vault` fue eliminado y reemplazado de
+forma manual por `Punk Spectrum Vault`. La decision corta la deriva anterior:
+solarpunk ya no es el paraguas del pack y queda limitado a dos presets reales.
+
+- Backup pre-reset:
+  `D:\codex-studio-backups\style-pack-backups\pack_15_before_manual_rebuild_20260619-022517`.
+- Manifiesto nuevo: `components/recipes/styles/manifests/packs/pack_15.yaml`.
+- Presets nuevos: `SP15-001..SP15-080`, `80` total, `10` categorias x `8`.
+- Categorias nuevas:
+  `Classic Industrial`, `Neon/Net/Signal`, `Eco/Repair/Climate`,
+  `Bio/Myco/Body`, `Ocean/Ice/Terrain`, `Street/Riot/DIY`,
+  `Media/Vapor/Glitch`, `Occult/Myth/Gothic`, `Space/Atomic/Ray`,
+  `Primitive/Stone/Salvage`.
+- `solarpunk` aparece solo en `SP15-017` y `SP15-018`.
+- `manifest-pack_15.json` viejo eliminado; no se generaron cards en esta ronda.
+- `docs/active/style-category-bases-audit.md` fue regenerado con el auditor y
+  ahora lista las `10` bases faltantes del nuevo pack.
+
+Checks:
+
+- `bun run styles:validate -- --pack=pack_15 --coverage` -> ok;
+  `taxonomy=80/80`, `availableDefaultImages=0/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=80`.
+- `bun run styles:runtime` -> ok.
+
+## Tanda 2026-06-19 - `pack_15` primary defaults `SP15-001..004`
+
+Primera tanda visual del nuevo `Punk Spectrum Vault`.
+
+- Generadas `SP15-001..004` con batch `--parallel=2`.
+- Resultado generator: `generated=4 attempted=4 skipped=76 failed=0`.
+- QA sheet: `logs\qa-pack15-rebuild-001-004-20260619T055938.webp`.
+- QA: aceptadas; `SP15-002` y `SP15-004` quedan emparentadas por dieselpunk, pero no duplicadas. `SP15-003` conserva microdetalle de lace/automata sin ruido roto.
+- `bun run styles:taxonomy -- --pack=pack_15` -> `updated=80 skipped=1549`.
+- `bun run styles:runtime` -> ok.
+- `bun run styles:validate -- --pack=pack_15 --coverage` -> `availableDefaultImages=4/80`, `staleDefaultImages=0`, `missingDefaultImages=76`.
+- Proxima tanda recomendada: `SP15-005..008`.
+
+## Checkpoint 2026-06-19 - pausa visual `pack_15` y re-auditoria `pack_07/pack_08`
+
+Se pauso la generacion visual de `pack_15`: la direccion reciente cayo en
+cards insulsas/genericas por sobrecorreccion, negativos demasiado largos y
+hero-card occidental repetida. No se deben lanzar nuevas tandas de `pack_15`
+sin reset de brief, criterios de aceptacion y muestras revisadas.
+
+Re-auditoria semantica viva de `pack_07` / `pack_08`:
+
+- `pack_07` y `pack_08` siguen validando schema.
+- No aparecio deuda P1 nueva por escena fija positiva; la mayoria de hits
+  `studio`, `chair`, `curtain`, `camera`, `corridor`, `library` estan en
+  guardrails/negativePrompt y no deben borrarse a ciegas.
+- Correccion aplicada: `SP07-057` y `SP07-069` tenian mojibake en `visualDna`;
+  se reemplazo por DNA ASCII en ingles, manteniendo identidad style-first.
+- Detector de mojibake sobre `pack_07` / `pack_08` queda sin hits.
+
+Coverage vivo:
+
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> ok;
+  `availableDefaultImages=41/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=39`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> ok;
+  `availableDefaultImages=15/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=65`.
+
+Lectura:
+
+- La deuda principal actual en `pack_07` / `pack_08` es visual/missing, no un
+  barrido semantico masivo.
+- Antes de generar esas missing, rehacer contrato de cards: representativas,
+  no abstractas vacias, sin default staging repetido, denoise fuerte, y con
+  sujeto/escena/material segun lo pida cada preset.
+
+### Follow-up 2026-06-19 - `pack_08` P2/P3 semantic polish
+
+Auditoria read-only paralela confirmo cero P1 y `pack_07` semanticamente
+cerrado. Se aplico polish P2/P3 en `pack_08` para quitar palabras que
+empujaban rol, pose o escena aunque el propio brief las negaba:
+
+- `SP08-008`: `Mohawk hair` -> silueta punk dentada.
+- `SP08-009`: `Steampunk Inventor` -> `Steampunk Engineering Attire`.
+- `SP08-012`: `Stiff posture` -> arquitectura de prenda rigidizada.
+- `SP08-016`: baja referencia `sitcom`.
+- `SP08-017`: `auditorium backlight` -> `keynote backlight`.
+- `SP08-026`: `Biker Gang` -> `Road-Worn Biker Leather`.
+- `SP08-033`: `temple-relief` / `temple-shadow` -> relieve tallado /
+  contraste de relieve.
+- `SP08-057`: `low study warmth` -> `low wool-warmth`.
+- `SP08-060`: baja `smoking-jacket` / `smoking-room`.
+- `SP08-075`: baja `living-statue` / `temple-treasure` en campos positivos.
+- `SP08-077`: baja museo/pedestal/plinth en campos positivos.
+
+No se generaron imagenes en esta mini-tanda.
+
+## Checkpoint 2026-06-19 - category bases y reset prompt `pack_15`
+
+Se verifico el slice objetivo de category bases:
+
+- `bun run scripts/audit-style-category-bases.ts` regenero
+  `docs/active/style-category-bases-audit.md`.
+- Estado global: `Generated bases: 45/102`, `Missing bases: 57/102`.
+- Objetivo `pack_08..pack_11`: `pack_08 5/5`, `pack_09 5/5`,
+  `pack_10 5/5`, `pack_11 5/5`.
+
+Coverage visual vivo para packs priorizados:
+
+- `bun run styles:validate -- --pack=pack_14 --coverage` -> ok;
+  `availableDefaultImages=19/123`, `staleDefaultImages=0`,
+  `missingDefaultImages=104`.
+- `bun run styles:validate -- --pack=pack_15 --coverage` -> ok;
+  `availableDefaultImages=11/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=69`.
+
+Reset prompt `pack_15` aplicado en `scripts/generate-style-defaults.ts` sin
+generar imagenes:
+
+- Se reemplazo el bucket generico `operator/guardian/rider/hacker/...` por
+  protagonista disenado desde el preset exacto.
+- Se cambio `worker-scale focal action` a `character-scale figure-device
+action`.
+- Se bajo `visible community labor` a relacion personal con el sistema.
+- Se reforzo `figure-device pairing`: personaje caracteristico + dispositivo,
+  maquina, criatura, reliquia o mundo tematico; no worker crew, no RPG hero, no
+  poster propaganda, no objeto-only.
+
+No se generaron imagenes en este checkpoint.
+
+## Tanda 2026-06-19 - `pack_14` missing cards resume
+
+Se congela `pack_15` para trabajo aparte y se retoma la cola principal de
+default cards faltantes fuera de ese pack.
+
+Cambio de prompt:
+
+- `scripts/generate-style-defaults.ts` ahora tiene guardrail especifico para
+  `pack_14`: evitar que mythic-noir colapse en la misma card de santo
+  encapuchado, halo circular, altar/table, candles/chalice o gothic arch.
+- Para `pack_14`, la anchor debe ser preset-specific: figura, partial figure,
+  objeto + gesto, material specimen o scene fragment segun el preset.
+- Se pide variar crop, accion, mundo y relacion sujeto-objeto entre presets
+  vecinos, con detail medio, denoise fuerte y sin photoreal/microdetail
+  ornamental.
+
+Generacion visual:
+
+- `SP14-002|SP14-003|SP14-004|SP14-005|SP14-006|SP14-007`
+- `SP14-009|SP14-011|SP14-012|SP14-013|SP14-014|SP14-015`
+- `SP14-016|SP14-017|SP14-018|SP14-019|SP14-020|SP14-021`
+- `SP14-022|SP14-023|SP14-024|SP14-025|SP14-027|SP14-028`
+
+QA visual:
+
+- `logs\qa-pack14-missing-002-007-2026-06-19T17-03-34-414Z.webp`
+- `logs\qa-pack14-missing-009-015-2026-06-19T17-12-59-646Z.webp`
+- `logs\qa-pack14-missing-016-021-2026-06-19T17-24-27-164Z.webp`
+- `logs\qa-pack14-missing-022-028-2026-06-19T17-35-15-135Z.webp`
+
+Estado:
+
+- `bun run styles:validate -- --pack=pack_14 --coverage` -> ok;
+  `availableDefaultImages=43/123`, `staleDefaultImages=0`,
+  `missingDefaultImages=80`.
+- Siguiente cola `pack_14`: `SP14-029|SP14-030|SP14-031|SP14-032|SP14-033|SP14-034`.
+
+## Tanda 2026-06-19 - `pack_14` deleted/missing resume
+
+El usuario borro cards que no gustaron. Se retomo desde filesystem vivo:
+`pack_14` cayo a `availableDefaultImages=32/123`, `missingDefaultImages=91`.
+`pack_15` sigue excluido.
+
+Cambios:
+
+- Fix en `scripts/generate-style-defaults.ts`: `visualResetLine` ya no lee
+  `promptOverride` antes de su declaracion.
+- Guardrail `pack_14` refuerza Greek Epics para evitar repetir el mismo joven
+  helenico de perfil con laurel; variar edad, genero, rol, objeto civico,
+  contexto naval/rio/corte y postura por preset.
+
+Generacion:
+
+- `SP14-001|SP14-003|SP14-004|SP14-005|SP14-007|SP14-008`
+- `SP14-009|SP14-010|SP14-013|SP14-015|SP14-016|SP14-018`
+- `SP14-021|SP14-023|SP14-027|SP14-028|SP14-036|SP14-038`
+- `SP14-039|SP14-040|SP14-047|SP14-048|SP14-050|SP14-051`
+
+QA:
+
+- `logs\qa-pack14-deleted-missing-001-008-2026-06-19T18-59-59-619Z.webp`
+- `logs\qa-pack14-deleted-missing-009-018-2026-06-19T19-22-44-943Z.webp`
+- `logs\qa-pack14-deleted-missing-021-038-2026-06-19T19-42-37-473Z.webp`
+- `logs\qa-pack14-deleted-missing-039-051-final-2026-06-19T20-08-10-702Z.webp`
+
+Estado:
+
+- `bun run styles:validate -- --pack=pack_14 --coverage` -> ok;
+  `availableDefaultImages=56/123`, `staleDefaultImages=0`,
+  `missingDefaultImages=67`.
+- Siguiente cola `pack_14`:
+  `SP14-052|SP14-053|SP14-054|SP14-055|SP14-056|SP14-057|SP14-058|SP14-059|SP14-060|SP14-061|SP14-062|SP14-063`.
+
+## Tanda 2026-06-19 - `pack_14` missing `SP14-052..069`
+
+Continuacion visual de `pack_14`; `pack_15` queda fuera.
+
+Cambios:
+
+- Guardrail `pack_14` refuerza Greek Epics: Helios, memorial, academy, law,
+  strategy y river no deben resolverse todos como jovenes public speakers con
+  laurel; usar beacon keepers, elder jurists, ferrymen, relief fragments,
+  council tables, naval omens, weathered shields o partial figures cuando
+  separen mejor.
+
+Generacion:
+
+- `SP14-052|SP14-053|SP14-054|SP14-055|SP14-056|SP14-057`
+- `SP14-058|SP14-059|SP14-060|SP14-061|SP14-062|SP14-063`
+- `SP14-064|SP14-065|SP14-066|SP14-067|SP14-068|SP14-069`
+
+QA:
+
+- `logs\qa-pack14-missing-052-057-final-2026-06-19T20-29-52-177Z.webp`
+- `logs\qa-pack14-missing-058-063-2026-06-19T20-45-02-148Z.webp`
+- `logs\qa-pack14-missing-064-069-2026-06-19T20-58-03-514Z.webp`
+
+Estado:
+
+- `bun run styles:validate -- --pack=pack_14 --coverage` -> ok;
+  `availableDefaultImages=74/123`, `staleDefaultImages=0`,
+  `missingDefaultImages=49`.
+- Siguiente cola `pack_14`:
+  `SP14-070|SP14-071|SP14-072|SP14-073|SP14-074|SP14-075|SP14-076|SP14-077|SP14-078|SP14-079|SP14-080|SP14-081`.
+
+## Tanda 2026-06-19 - `pack_14` missing `SP14-070..081`
+
+Continuacion visual de `pack_14`; `pack_15` queda fuera.
+
+Cambios:
+
+- Guardrail `pack_14` refuerza Norse Sagas para no repetir joven viajero con
+  capa de piel y luz azul-gris; variar elder skalds, map stones, ravens como
+  anchors primarios, ship prows, rune instruments, shield fragments, spirit
+  departure silhouettes y weather-scale compositions.
+
+Generacion:
+
+- `SP14-070|SP14-071|SP14-072|SP14-073|SP14-074|SP14-075`
+- `SP14-076|SP14-077|SP14-078|SP14-079|SP14-080|SP14-081`
+
+QA:
+
+- `logs\qa-pack14-missing-070-075-final-2026-06-19T21-23-21-241Z.webp`
+- `logs\qa-pack14-missing-076-081-2026-06-19T21-36-49-172Z.webp`
+
+Estado:
+
+- `bun run styles:validate -- --pack=pack_14 --coverage` -> ok;
+  `availableDefaultImages=84/123`, `staleDefaultImages=0`,
+  `missingDefaultImages=39`.
+- Siguiente cola `pack_14`:
+  `SP14-040|SP14-047|SP14-082|SP14-083|SP14-084|SP14-085|SP14-086|SP14-087|SP14-088|SP14-089|SP14-090|SP14-091`.
+
+## Tanda 2026-06-19 - `pack_14` missing `SP14-040/047/082..091`
+
+Continuacion visual de `pack_14`; `pack_15` queda fuera.
+
+Generacion:
+
+- `SP14-040|SP14-047|SP14-082|SP14-083|SP14-084|SP14-085`
+- `SP14-086|SP14-087|SP14-088|SP14-089|SP14-090|SP14-091`
+
+QA:
+
+- `logs\qa-pack14-missing-040-085-2026-06-19T21-48-57-314Z.webp`
+- `logs\qa-pack14-missing-086-091-2026-06-19T22-01-55-265Z.webp`
+
+Estado:
+
+- `bun run styles:validate -- --pack=pack_14 --coverage` -> ok;
+  `availableDefaultImages=96/123`, `staleDefaultImages=0`,
+  `missingDefaultImages=27`.
+- Siguiente cola `pack_14`:
+  `SP14-092|SP14-093|SP14-094|SP14-095|SP14-096|SP14-097|SP14-098|SP14-099|SP14-100|SP14-101|SP14-102|SP14-104`.
+
+## Tanda 2026-06-19 - `pack_14` cierre visual `SP14-092..123` + regeneracion por rechazo
+
+Continuacion visual de `pack_14`; `pack_15` queda fuera. Durante la ronda el
+usuario borro assets que no gustaron; esos faltantes se tomaron como rechazo y
+se regeneraron, no se restauraron desde backup.
+
+Cambios:
+
+- Guardrail `pack_14` ampliado para cosmology, symbolism, ritual y pantheon:
+  evitar joven robed centrado, sigilo circular, relic-on-altar y dark temple
+  interior como formula por defecto.
+- Overrides puntuales para `SP14-081|082|083|089|090|094|095|098|099|101|102`
+  y `SP14-107..123`, con sujeto/crop/contexto mas especifico y cierre explicito
+  de denoise/no ultra-fine noise.
+
+Generacion:
+
+- `SP14-092|SP14-093|SP14-094|SP14-095|SP14-096|SP14-097`
+- `SP14-098|SP14-099|SP14-100|SP14-101|SP14-102|SP14-104`
+- `SP14-106|SP14-107|SP14-108|SP14-109|SP14-110|SP14-111`
+- Retry `SP14-107|SP14-108|SP14-109|SP14-110|SP14-111` por sameness de robed
+  youth / dark temple.
+- `SP14-112|SP14-113|SP14-116|SP14-117|SP14-118|SP14-120`
+- `SP14-121|SP14-122|SP14-123`
+- Regeneracion de borrados:
+  `SP14-081|SP14-082|SP14-083|SP14-089|SP14-090|SP14-094`
+- Regeneracion de borrados:
+  `SP14-095|SP14-098|SP14-099|SP14-101|SP14-102`
+- Regeneracion de borrado tardio: `SP14-104`
+
+QA:
+
+- `logs\qa-pack14-missing-092-097-2026-06-19T22-15-38-917Z.webp`
+- `logs\qa-pack14-missing-098-104-2026-06-19T22-27-12-104Z.webp`
+- `logs\qa-pack14-missing-106-111-final-2026-06-19T22-46-40-311Z.webp`
+- `logs\qa-pack14-missing-112-120-2026-06-19T22-56-37-836Z.webp`
+- `logs\qa-pack14-missing-121-123-2026-06-19T23-01-47-386Z.webp`
+- `logs\qa-pack14-regen-081-094-2026-06-19T23-12-12-423Z.webp`
+- `logs\qa-pack14-regen-095-102-2026-06-19T23-19-19-073Z.webp`
+
+Backups:
+
+- `D:\codex-studio-backups\style-defaults-primary-backup\pack_14_missing_092_104_20260619-192732`
+- `D:\codex-studio-backups\style-defaults-primary-backup\pack_14_reject_ritual_robed_sameness_107_111_20260619-193917`
+- `D:\codex-studio-backups\style-defaults-primary-backup\pack_14_missing_106_123_20260619-200217`
+- `D:\codex-studio-backups\style-defaults-primary-backup\pack_14_regen_user_deleted_081_102_20260619-201941`
+- `D:\codex-studio-backups\style-defaults-primary-backup\pack_14_regen_user_deleted_104_20260619-214659`
+
+Estado:
+
+- `bun run styles:validate -- --pack=pack_14 --coverage` -> ok;
+  `availableDefaultImages=123/123`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `pack_14` queda cerrado visualmente en esta ronda, sujeto a nuevos borrados o
+  rechazos manuales.
+
+## Tanda 2026-06-20 - `pack_16` cierre visual `SP05-351..372` + `SP13-026..035`
+
+Continuacion visual despues de `pack_14`; `pack_15` queda fuera. Se cerraron los
+stale/missing restantes de `pack_16` y se regeneraron los IDs borrados durante QA
+manual en vivo.
+
+Cambios:
+
+- Overrides puntuales para `SP05-363|365|366|367|371|372` y
+  `SP13-026|027|028`, evitando solo performer glamour, anime generico, red cloak
+  samurai y heraldic/logo plate.
+- Filas activas de `pack_16` removidas del stale table en
+  `docs/active/style-preset-card-regeneration-backlog.md`.
+
+Generacion:
+
+- `SP05-351|SP05-352|SP05-353|SP05-354|SP05-355|SP05-356`
+- `SP05-357|SP05-358|SP05-359|SP05-360|SP05-361|SP05-362`
+- `SP05-369|SP13-030|SP13-031|SP13-032`
+- Retry post-borrado: `SP05-363|SP05-365|SP05-366|SP05-367|SP05-371|SP05-372`
+- Retry post-borrado: `SP13-026|SP13-027|SP13-028`
+
+QA:
+
+- `logs\qa-pack16-stale-sports-351-356-2026-06-20T00-03-17-415Z.webp`
+- `logs\qa-pack16-stale-sports-357-362-2026-06-20T00-12-48-237Z.webp`
+- `logs\qa-pack16-stale-tail-369-030-032-2026-06-20T00-22-00-612Z.webp`
+- `logs\qa-pack16-regen-performance-2026-06-20T00-35-28-294Z.webp`
+- `logs\qa-pack16-regen-samurai-2026-06-20T00-41-13-674Z.webp`
+- `logs\qa-pack16-samurai-horror-b-2026-06-19T23-50-52-506Z.webp`
+
+Backup:
+
+- `D:\codex-studio-backups\style-defaults-primary-backup\pack_16_closed_20260620_20260619-214147`
+
+Estado:
+
+- `bun run styles:validate -- --pack=pack_16 --coverage` -> ok;
+  `availableDefaultImages=140/140`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+
+## Tanda 2026-06-20 - `pack_06` reframe visual por rechazo de calidad
+
+`pack_06` se reabrio porque varias cards estaban pobres/genericas: paletas
+debilitadas, aves repetidas, object-only/craft-table drift y anchors viejos que
+empujaban workstation/dev-studio/presentation-board.
+
+Cambios de prompt:
+
+- `pack06ArtDirectionPrompt` ahora exige color script deliberado, acento raro,
+  jerarquia foreground/midground/background y objetos como hero artifacts con
+  mundo/contexto.
+- Los anchors de digital art, retro game visual systems y game art/UI ya no
+  inyectan desks, screens, hardware props, UI boards ni marketing layouts.
+- Overrides actualizados para `SP06-012|032|035|039|041|047|048|061|063|064|067|070|071|073|088|091|118|119`.
+
+Generacion y QA:
+
+- Generadas/regeneradas las 18 faltantes/rechazadas:
+  `SP06-012|032|035|039|041|047|048|061|063|064|067|070|071|073|088|091|118|119`.
+- Retries individuales: `SP06-012` por ave/plumas, `SP06-071` por feather
+  headdress, `SP06-118` por render conceptual no-pixel.
+- QA final:
+  `logs\qa-pack06-reframe-final-all18-2026-06-20T03-09-36-880Z.webp`.
+
+Estado:
+
+- `bun run styles:validate -- --pack=pack_06 --coverage` -> ok;
+  `availableDefaultImages=120/120`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- Watchlist aceptado: `SP06-012` por pared/caps pequenos de aerosol y
+  `SP06-047` por concept-art/speedpaint mas marcado que el resto.
+
+## Tanda 2026-06-20 - `pack_07` visual missing interiors/architecture A-B
+
+Reconfirmacion previa:
+
+- `pack_07` / `pack_08` no muestran P1 semantico nuevo; hits actuales son
+  negativos/guardrails.
+- La deuda activa es visual/missing. `pack_15` sigue pausado.
+
+Cambio de prompt:
+
+- Se agregaron aliases reales de categorias `pack_07` en
+  `CATEGORY_BASE_PROMPTS`: `interior_design_systems`,
+  `architectural_movements_and_vernaculars`,
+  `civic_infrastructure_and_specialty_spaces`,
+  `landscape_and_garden_systems`, `fantasy_and_mythic_architecture`,
+  `toy_craft_and_miniature_architecture`, `megastructure_and_impossible_space`.
+- Motivo: antes `pack_07` caia al fallback generico `vertical scene`; los
+  overrides de preset entraban como motif, pero la base era demasiado debil.
+
+Generacion:
+
+- Interiors A: `SP07-001|SP07-002|SP07-003|SP07-004|SP07-005|SP07-008`.
+- Interiors/architecture B:
+  `SP07-007|SP07-009|SP07-010|SP07-011|SP07-014|SP07-016`.
+
+QA:
+
+- `logs\qa-pack07-missing-interiors-a-2026-06-20T03-17-59-779Z.webp`.
+- `logs\qa-pack07-missing-interiors-arch-b-2026-06-20T03-24-41-290Z.webp`.
+- Watchlist aceptado: `SP07-002` por escalera industrial, `SP07-014` por
+  clutter/apartment, `SP07-016` por figura secundaria.
+
+Estado:
+
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> ok;
+  `availableDefaultImages=53/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=27`.
+
+## Tanda 2026-06-20 - `pack_06` quality reframe por color pobre/generico
+
+Feedback nuevo invalida el cierre visual anterior de `pack_06`: aunque la
+cobertura estaba cerrada, muchas cards seguian pobres/genericas, con paletas
+beige/azul/gris/neon default, bustos academicos repetidos, object-only,
+board/workstation drift y poco aprovechamiento del preset.
+
+Auditoria:
+
+- Se genero plancha completa previa:
+  `logs\qa-sp06-current-2026-06-20T03-53-58-414Z.webp`.
+- Subagente `Bohr` audito patrones visuales sin editar archivos y priorizo
+  drawing/sketching, printmaking murky, digital workstation drift, mixed-media
+  boards y retro/game system weak reads.
+
+Cambios de prompt:
+
+- `pack_06` ahora tiene `pack06HeroPrompt` y `pack06EnvironmentPrompt` propios.
+- El prompt final usa contrato SP06 especifico: medio + sujeto/scenelet +
+  paleta deliberada + contexto, no tecnica-demo ni objeto centrado.
+- `SP06-026`, `SP06-050` y `SP06-084` recibieron overrides mas estrictos por
+  fallos en tanda: Copic object-only, 16-bit no-pixel y FMV low-poly/neon.
+
+Generadas/regeneradas:
+
+- Piloto: `SP06-025|SP06-026|SP06-034|SP06-048|SP06-067|SP06-088`.
+- Drawing/print: `SP06-026|SP06-027|SP06-029|SP06-030|SP06-036|SP06-038`.
+- Digital/mixed: `SP06-037|SP06-050|SP06-053|SP06-069|SP06-070|SP06-073`.
+- Mixed/retro: `SP06-050|SP06-074|SP06-079|SP06-084|SP06-091|SP06-099`.
+- Final retro/game: `SP06-084|SP06-100|SP06-115|SP06-116`.
+
+QA sheets:
+
+- `logs\qa-pack06-quality-reframe-pilot-2026-06-20T04-03-15-103Z.webp`.
+- `logs\qa-pack06-drawing-print-reframe-2026-06-20T04-07-47-235Z.webp`.
+- `logs\qa-pack06-digital-mixed-reframe-2026-06-20T04-13-12-826Z.webp`.
+- `logs\qa-pack06-mixed-retro-reframe-2026-06-20T04-21-43-319Z.webp`.
+- `logs\qa-pack06-final-retro-game-reframe-2026-06-20T04-26-08-614Z.webp`.
+- Plancha completa post-reframe:
+  `logs\qa-sp06-current-post-reframe-2026-06-20T04-27-05-178Z.webp`.
+
+Backups:
+
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_poor_color_generic_pilot_20260620-005848`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_drawing_print_reframe_20260620-010358`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_digital_mixed_reframe_20260620-010811`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_mixed_retro_reframe_20260620-011353`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_final_retro_game_reframe_20260620-012216`.
+
+QA visual:
+
+- Mejora general: menos tecnica-demo y mas medium-led subject/scenelet.
+- Watchlist: `SP06-050` queda pixel-art mas legible pero aun con lectura
+  ilustrada; revisar en UI a tamano real. `SP06-084` queda mas sprite-FMV que
+  la version previa, pero sigue como watchlist por ambiente de juego alrededor.
+- Proxima accion: si el usuario borra mas `SP06`, regenerar solo esos IDs con
+  el contrato nuevo; no reabrir automaticamente los 120.
+
+## Tanda 2026-06-20 - `pack_06` color/identidad rework dirigido
+
+Feedback nuevo: `pack_06` seguia siendo el pack mas problematico aunque tuviera
+coverage completo. La causa principal no era missing/stale, sino pobreza de
+paleta, bustos academicos repetidos, animales/mascotas como shortcut, props
+aislados y falta de diferencia real entre presets cercanos.
+
+Auditoria paralela:
+
+- Subagente visual `James`: marco prioridad alta en bustos `SP06-016..024`,
+  animales/mascotas repetidos, props aislados y murky/generic reads.
+- Subagente generador `Goodall`: confirmo que `pack_06` tenia contrato propio,
+  pero pintura/dibujo/print/mixed aun caian demasiado en anchors genericos y
+  varios overrides permitian bustos, animales u objetos centrados.
+
+Cambios de prompt:
+
+- Se agrego `pack06DiversityLockPrompt` con paleta concreta, valor/crop route,
+  subject route y reset temprano para `SP06-001..024`.
+- Se agregaron `PACK_SCENE_ANCHORS` propios para
+  `pack_06__traditional_painting`, `drawing_and_sketching`, `printmaking` y
+  `mixed_media`.
+- Se agregaron locks puntuales para
+  `SP06-006|007|015|016|017|020|021|022|023|024|027|028|031|036|037|038`.
+- Correcciones explicitas: evitar busto/fashion torso, animal/ave/beak,
+  mask-head, shield/warrior, object-only y paletas beige/blue/neon genericas.
+
+Generadas/regeneradas:
+
+- Color/bustos A:
+  `SP06-001|SP06-016|SP06-018|SP06-020|SP06-021|SP06-022`.
+- Retry anti torso repetido: `SP06-016|SP06-020|SP06-021|SP06-022`.
+- Bust/animal rework:
+  `SP06-015|SP06-017|SP06-023|SP06-024|SP06-027|SP06-028`.
+- Retry `SP06-024` por shield/warrior drift.
+- Murky/animal rework:
+  `SP06-006|SP06-007|SP06-031|SP06-036|SP06-037|SP06-038`.
+- Retry `SP06-031|SP06-038` por bird/beak/mask-head read.
+
+QA sheets:
+
+- `logs\qa-pack06-quality-color-busts-rework-2026-06-20T04-43-31-010Z.webp`
+  rechazado parcialmente por torso/fashion repetition.
+- `logs\qa-pack06-quality-color-busts-retry-2026-06-20T04-50-15-351Z.webp`
+  aceptado/watchlist.
+- `logs\qa-pack06-quality-bust-animal-rework-2026-06-20T04-58-09-559Z.webp`
+  rechazado parcialmente por `SP06-024` shield drift.
+- `logs\qa-pack06-quality-bust-animal-rework-final-2026-06-20T05-02-56-561Z.webp`
+  aceptado/watchlist.
+- `logs\qa-pack06-quality-murky-animal-rework-2026-06-20T05-10-45-418Z.webp`
+  rechazado parcialmente por `SP06-031|SP06-038` bird/mask read.
+- `logs\qa-pack06-quality-murky-animal-rework-final-nolabel-2026-06-20T05-15-03-539Z.webp`
+  aceptado/watchlist; sin labels por crash Bun/libvips/Pango al renderizar SVG
+  text labels.
+
+Backups:
+
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_quality_color_busts_before_20260620-013609`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_quality_color_torso_retry_before_20260620-014433`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_quality_bust_animal_rework_before_20260620-015053`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_quality_sp06_024_shield_retry_before_20260620-015832`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_quality_murky_animal_rework_before_20260620-020332`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_quality_birdmask_retry_before_20260620-021110`.
+
+QA visual:
+
+- Mejoraron color, diferencia de silueta y representatividad en la primera mitad
+  de `pack_06`.
+- Watchlist actual: `SP06-015` por shrine/icon read, `SP06-020` por object-led,
+  `SP06-006` por face/mask surreal, todos mejores que sus versiones previas.
+- Siguiente cola sugerida si el usuario sigue rechazando `SP06`:
+  `SP06-040|042|043|044|049|051|054|056|057|058|059|060`, luego
+  `SP06-065|068|072|076|077|078|080|083|084|090|091|094|098|099`.
+
+## Checkpoint 2026-06-20 - objetivo packs `07/08/14/15` y category bases
+
+Revalidacion de estado real despues del rework `SP06`:
+
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> ok;
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> ok;
+  `availableDefaultImages=15/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=65`.
+- `bun run styles:validate -- --pack=pack_14 --coverage` -> ok;
+  `availableDefaultImages=123/123`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_15 --coverage` -> ok;
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`; queda watchlist por
+  `taxonomy/default-image mismatches=10`, sin bloquear coverage.
+- `bun run styles:quality:audit` -> ok, `redundancy: none above threshold`.
+- `bun run styles:runtime:check` -> ok, `components/recipes/styleRuntimeData.generated.ts is current`.
+- `bun run scripts\audit-style-category-bases.ts` regenero
+  `docs/active/style-category-bases-audit.md`; slice objetivo
+  `pack_08..pack_11` sigue completo: `20/20`.
+
+Decision operativa:
+
+- `pack_07` semantica y visual quedan cerradas salvo nuevos borrados.
+- `pack_08` semantica sigue cerrada; deuda activa es visual/missing.
+- `pack_14` queda cerrado por coverage.
+- `pack_15` no debe recibir nuevas tandas visuales sin direccion explicita del
+  usuario; esta cerrado por coverage y sigue pausado por calidad/direccion.
+- Proxima tanda recomendada: empezar `pack_08` missing con
+  `SP08-001|SP08-003|SP08-004|SP08-005|SP08-017|SP08-018`.
+
+## Tanda 2026-06-20 - `pack_06` subject/color reframe P0/P1
+
+Nueva auditoria visual despues del feedback del usuario: `SP06` seguia
+generando el mayor ruido cualitativo por color pobre/generico, demasiados
+animales/aves/criaturas, props u objetos aislados y varias cards que no
+representaban el preset como escena/sujeto terminado.
+
+Auditoria paralela:
+
+- Subagente `Kant` audito las tres laminas completas de `SP06` y priorizo
+  `P0`: `SP06-018|023|025|042|044|045|046|056|057|058|059|060|062|065|072|076|080|084|098|100|105|111|116`.
+- Tambien marco `P1` si habia segunda tanda:
+  `SP06-006|012|016|020|027|038|043|049|054|073|074|077|078|081|083|086|090|093|097|099|107|114`.
+
+Cambios de prompt:
+
+- `pack06SubjectVarietyPrompt` ahora bloquea animales/objetos como shortcut por
+  defecto, no solo aves.
+- `pack06ArtDirectionPrompt`, `pack06HeroPrompt`, `pack06EnvironmentPrompt` y
+  `pack06DiversityLockPrompt` refuerzan sujeto/scenelet, paleta concreta,
+  presencia y contexto.
+- Nuevo `PACK06_PRESENCE_LOCKS`: protagonista, silueta humana, vehiculo en
+  accion, landmark con escala o scenelet como default; objeto-only queda como
+  excepcion con contexto.
+- Locks puntuales agregados para
+  `SP06-004|010|018|025|040|042|043|044|045|046|049|054|055|056|057|058|059|060|062|065|072|076|077|078|080|081|083|084|086|090|098|100|105|111|116`.
+- `SP06-049` recibio hero override humano obligatorio porque el lock de calidad
+  seguia derivando a criatura/animal.
+
+Generadas/regeneradas:
+
+- Wave 1:
+  `SP06-042|SP06-044|SP06-045|SP06-046|SP06-057|SP06-058`.
+- Wave 2:
+  `SP06-018|SP06-023|SP06-025|SP06-056|SP06-059|SP06-060`; retry
+  `SP06-059` por fox/cute-animal drift.
+- Wave 3:
+  `SP06-062|SP06-065|SP06-072|SP06-076|SP06-080|SP06-084`.
+- Wave 4:
+  `SP06-072|SP06-098|SP06-100|SP06-105|SP06-111|SP06-116`; retry
+  `SP06-105|SP06-111` por animal-headed fighter/tower drift; retry final
+  `SP06-111` por object/tower dominance.
+- P1 animal/object cleanup:
+  `SP06-049|SP06-054|SP06-081|SP06-083|SP06-086|SP06-090`; retry
+  `SP06-049|SP06-054|SP06-090`; retry final `SP06-049` con hero humano.
+
+QA sheets:
+
+- Baseline de auditoria:
+  `logs\qa-pack06-full-current-01-2026-06-20T05-32-03-882Z.webp`,
+  `logs\qa-pack06-full-current-02-2026-06-20T05-32-03-882Z.webp`,
+  `logs\qa-pack06-full-current-03-2026-06-20T05-32-03-882Z.webp`.
+- Before/after principales:
+  `logs\qa-pack06-color-subject-reframe-wave1-before-after-2026-06-20T05-45-00-860Z.webp`,
+  `logs\qa-pack06-color-subject-reframe-wave2-before-after-2026-06-20T05-53-52-424Z.webp`,
+  `logs\qa-pack06-color-subject-reframe-wave3-before-after-2026-06-20T06-07-38-217Z.webp`,
+  `logs\qa-pack06-color-subject-reframe-wave4-before-after-2026-06-20T06-15-08-730Z.webp`,
+  `logs\qa-pack06-p1-animal-object-reframe-before-after-2026-06-20T06-32-50-171Z.webp`.
+- Retries:
+  `logs\qa-pack06-retry-105-111-before-after-2026-06-20T06-19-30-086Z.webp`,
+  `logs\qa-pack06-retry-049-054-090-before-after-2026-06-20T06-37-01-945Z.webp`.
+- Full final:
+  `logs\qa-pack06-full-final-after-subject-color-reframe-01-2026-06-20T06-41-50-218Z.webp`,
+  `logs\qa-pack06-full-final-after-subject-color-reframe-02-2026-06-20T06-41-50-218Z.webp`,
+  `logs\qa-pack06-full-final-after-subject-color-reframe-03-2026-06-20T06-41-50-218Z.webp`.
+
+Backups:
+
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_color_subject_reframe_wave1_before_20260620-023718`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_color_subject_reframe_wave2_before_20260620-024605`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_wave2_reject_sp06_059_fox_before_20260620-025420`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_color_subject_reframe_wave3_before_20260620-030002`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_color_subject_reframe_wave4_before_20260620-030810`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_wave4_reject_105_111_before_20260620-031536`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_retry_reject_sp06_111_tower_before_20260620-031953`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_p1_animal_object_reframe_before_20260620-032546`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_p1_retry_reject_049_054_090_before_20260620-033321`.
+- `D:\codex-studio-backups\style-defaults-rejected\pack_06_retry_reject_sp06_049_creature_before_20260620-033729`.
+
+QA visual:
+
+- Mejora fuerte en la zona `SP06-042..060`, donde antes habia raven/fox/deer,
+  cute mascot, flower icon y object-only. Ahora predominan sujetos, scenelets y
+  paletas mas separadas.
+- `SP06-072`, `SP06-105`, `SP06-111` y `SP06-049` necesitaron retries por
+  desobedecer el contrato (torso/garment, animal-headed fighter, tower/object,
+  creature). Las versiones finales quedan aceptables/watchlist.
+- Watchlist remanente si el usuario sigue filtrando `SP06`:
+  `SP06-043|SP06-047|SP06-055|SP06-077|SP06-078|SP06-093|SP06-097|SP06-099|SP06-107|SP06-114|SP06-115|SP06-118`.
+  No regenerar todos automaticamente: esperar borrados/rechazos concretos o
+  una tanda dirigida.
+
+## Tanda 2026-06-20 - `pack_08` missing fashion cards B/C/D
+
+Objetivo: avanzar deuda visual real de `pack_08`, que tenia semantica cerrada
+pero `missingDefaultImages` altos. No se tocaron presets ni `pack_15`; solo se
+generaron assets faltantes para manifests que ya apuntaban a
+`assets/recipes/styles/defaults/<id>.webp`.
+
+Estado antes:
+
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> ok;
+  `availableDefaultImages=21/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=59`.
+
+Generadas:
+
+- Wave B:
+  `SP08-006|SP08-007|SP08-009|SP08-010|SP08-012|SP08-013`.
+- Wave C:
+  `SP08-014|SP08-015|SP08-016|SP08-019|SP08-020|SP08-022`.
+- Wave D:
+  `SP08-024|SP08-025|SP08-026|SP08-029|SP08-032|SP08-033`.
+
+QA sheets:
+
+- Estado previo disponible:
+  `logs\qa-pack08-current-available-2026-06-20T06-46-42-238Z.webp`.
+- `logs\qa-pack08-missing-fashion-b-2026-06-20T07-01-00-806Z.webp`.
+- `logs\qa-pack08-missing-fashion-c-2026-06-20T07-13-03-851Z.webp`.
+- `logs\qa-pack08-missing-fashion-d-2026-06-20T07-23-31-681Z.webp`.
+- Full actual despues de B/C/D:
+  `logs\qa-pack08-current-39-after-waves-bcd-2026-06-20T07-24-45-221Z.webp`.
+
+QA visual:
+
+- Wave B/C/D aceptadas: fashion subject visible, garment-first silhouette,
+  anatomia sin fallos obvios, sin object-only/mannequin/catalog flat lay.
+- Watchlist suave: `SP08-007` por dark value, `SP08-024` por car context,
+  `SP08-029` por posible academia-generic, pero todas cumplen mejor que
+  missing/default ausente.
+
+Estado despues:
+
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> ok;
+  `availableDefaultImages=39/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=41`.
+- Siguiente cola recomendada:
+  `SP08-034|SP08-036|SP08-037|SP08-039|SP08-040|SP08-041`, luego
+  `SP08-042|SP08-043|SP08-044|SP08-046|SP08-047|SP08-048`.
+
+## Tanda 2026-06-20 - `pack_08` missing fashion cards E/F
+
+Objetivo: continuar deuda visual/missing de `pack_08` sin reabrir semantica.
+Se hizo ajuste minimo en overrides existentes antes de generar:
+
+- `SP08-037` ya no pide `headless/mannequin/torso`; ahora exige figura adulta
+  completa garment-first.
+- `SP08-065` queda corregido preventivamente para futura tanda: figura adulta
+  completa, no mannequin/torso-only.
+
+Estado antes:
+
+- `pack_08 availableDefaultImages=39/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=41`.
+
+Generadas:
+
+- Wave E:
+  `SP08-034|SP08-036|SP08-037|SP08-039|SP08-040|SP08-041`.
+- Wave F:
+  `SP08-042|SP08-043|SP08-044|SP08-046|SP08-047|SP08-048`.
+
+QA sheets:
+
+- `logs\qa-pack08-missing-fashion-e-2026-06-20T07-39-03-465Z.webp`.
+- `logs\qa-pack08-missing-fashion-f-2026-06-20T07-47-01-934Z.webp`.
+- Full actual despues de E/F:
+  `logs\qa-pack08-current-51-after-waves-ef-2026-06-20T07-47-35-612Z.webp`.
+
+QA visual:
+
+- Wave E/F aceptadas: figura adulta, garment-first, sin weapon-focus, sin gore,
+  sin object-only/mannequin.
+- Watchlist general de pack: muchas poses verticales de modelo joven/runway-like;
+  siguiente tanda debe variar mas edad/cuerpo/crop cuando el preset lo permita.
+
+Estado despues:
+
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> ok;
+  `availableDefaultImages=51/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=29`.
+- Siguiente cola recomendada:
+  `SP08-049|SP08-050|SP08-051|SP08-052|SP08-053|SP08-054`, luego
+  `SP08-055|SP08-056|SP08-057|SP08-058|SP08-059|SP08-060`.
+
+## Tanda 2026-06-20 - `pack_08` missing fashion cards G
+
+Objetivo: continuar deuda visual/missing de `pack_08` en fabric/texture focus y
+fantasy sci-fi costume, manteniendo figura adulta y garment-first.
+
+Estado antes:
+
+- `pack_08 availableDefaultImages=51/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=29`.
+
+Generadas:
+
+- Wave G:
+  `SP08-049|SP08-050|SP08-051|SP08-052|SP08-053|SP08-054`.
+
+QA sheets:
+
+- `logs\qa-pack08-missing-fashion-g-2026-06-20T08-01-39-772Z.webp`.
+- Full actual despues de G:
+  `logs\qa-pack08-current-57-after-wave-g-2026-06-20T08-02-13-577Z.webp`.
+
+QA visual:
+
+- Wave G aceptada: figura/garment manda; no texture-only ni object-only.
+- Watchlist suave: `SP08-054` lleva helmet prop secundario, pero chainmail
+  garment sigue siendo lectura principal.
+
+Estado despues:
+
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> ok;
+  `availableDefaultImages=57/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=23`.
+- Siguiente cola recomendada:
+  `SP08-055|SP08-056|SP08-057|SP08-058|SP08-059|SP08-060`, luego
+  `SP08-061|SP08-062|SP08-063|SP08-064|SP08-065|SP08-066`.
+
+## Tanda 2026-06-20 - `pack_06` color/subject repair parcial
+
+Objetivo: corregir la direccion visual pobre/generica de `SP06`, sobre todo
+paleta pobre, animal/object shortcuts, bustos academicos, cards oscuras sin
+lectura y estilos que parecian concept art generico.
+
+Cambios de prompt/generador:
+
+- `PACK 06 QUALITY LOCK` ahora distingue paletas curadas vs paletas tecnicas
+  historicas. Monocromo/vector/pixel ya no reciben una paleta externa de 5
+  colores cuando el preset exige restricciones propias.
+- Se agrego `Thumbnail readability` para evitar blacks aplastados, beige/blue
+  haze, detalle fino como unica identidad y cards que solo se leen por textura.
+- `ANATOMY QA` aplica tambien a `pack_06` cuando aparezcan figuras.
+- Se reforzaron overrides para `SP06-023`, `047`, `048`, `053`, `063`, `064`,
+  `065`, `066`, `067`, `068`, `073`, `074`, `089`, `091`, `094`, `109`, `115`
+  y `120`.
+
+Generadas/reparadas:
+
+- Piloto:
+  `SP06-007|SP06-020|SP06-040|SP06-055|SP06-078|SP06-083`.
+- Wave B:
+  `SP06-016|SP06-019|SP06-023|SP06-025|SP06-030|SP06-046`.
+- Retry B:
+  `SP06-023`, rechazando animal-head/silverpoint shortcut.
+- Wave C:
+  `SP06-047|SP06-048|SP06-053|SP06-054|SP06-063|SP06-064`.
+- Retry C:
+  `SP06-063`, rechazando mask/bust decoupage.
+- Wave D:
+  `SP06-065|SP06-066|SP06-067|SP06-068|SP06-073|SP06-074`.
+- Wave E:
+  `SP06-089|SP06-091|SP06-094|SP06-109|SP06-115|SP06-120`.
+
+QA sheets:
+
+- Inicial actual:
+  `logs\qa-sp06-current-all-2026-06-20T08-06-40-984Z.webp`.
+- Backup 20260615:
+  `logs\qa-sp06-backup-20260615-all-2026-06-20T08-07-29-243Z.webp`.
+- Piloto vs backup:
+  `logs\qa-sp06-palette-repair-pilot-vs-backup-2026-06-20T08-17-47-038Z.webp`.
+- Wave B:
+  `logs\qa-sp06-palette-repair-wave-b-vs-prev-2026-06-20T08-26-17-058Z.webp`.
+- Retry `SP06-023`:
+  `logs\qa-sp06-023-retry-2026-06-20T08-30-47-785Z.webp`.
+- Wave C:
+  `logs\qa-sp06-palette-repair-wave-c-vs-prev-2026-06-20T08-40-15-416Z.webp`.
+- Retry `SP06-063`:
+  `logs\qa-sp06-063-retry-2026-06-20T08-46-46-942Z.webp`.
+- Wave D:
+  `logs\qa-sp06-palette-repair-wave-d-vs-prev-2026-06-20T08-55-53-061Z.webp`.
+- Wave E:
+  `logs\qa-sp06-palette-repair-wave-e-vs-prev-2026-06-20T09-04-24-663Z.webp`.
+- Full actual despues:
+  `logs\qa-sp06-current-after-palette-repair-2026-06-20T09-04-57-967Z.webp`.
+
+Backups locales:
+
+- `D:\codex-studio-backups\style-default-cards\20260620-051841\pre-sp06-repair-wave-b`.
+- `D:\codex-studio-backups\style-default-cards\20260620-051841\rejected-sp06-repair-wave-b`.
+- `D:\codex-studio-backups\style-default-cards\20260620-053108\pre-sp06-repair-wave-c`.
+- `D:\codex-studio-backups\style-default-cards\20260620-053108\rejected-sp06-repair-wave-c`.
+- `D:\codex-studio-backups\style-default-cards\20260620-054708\pre-sp06-repair-wave-d`.
+- `D:\codex-studio-backups\style-default-cards\20260620-055609\pre-sp06-repair-wave-e`.
+
+QA visual:
+
+- Aceptadas: mejoras claras en paleta y lectura para `SP06-007`, `016`, `019`,
+  `020`, `023`, `025`, `030`, `040`, `053`, `054`, `055`, `063`, `064`,
+  `065`, `066`, `068`, `089`, `091`, `094`, `109`, `115` y `120`.
+- Aceptadas con watchlist suave: `SP06-047`, `048`, `067`, `073`, `074`.
+- Ronda no cierra `SP06` completo. Watchlist siguiente:
+  `SP06-021|031|032|033|036|037|038|042|043|057|058|059|060|069|070|071|072|084|088|095|099|102|104|108|116|118`.
+
+Estado despues:
+
+- `pack_06` sigue con coverage completo: `120/120`, sin stale ni missing.
+- Esta ronda fue reparacion cualitativa, no generacion por cobertura.
+
+## Tanda 2026-06-20 - `pack_08` missing fashion cards H
+
+Objetivo: continuar deuda missing de `pack_08` en fabric/texture focus,
+manteniendo figura adulta, lectura garment-first y sin object-only/mannequin.
+
+Estado antes:
+
+- `pack_08 availableDefaultImages=57/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=23`.
+
+Generadas:
+
+- Wave H:
+  `SP08-055|SP08-056|SP08-057|SP08-058|SP08-059|SP08-060`.
+
+QA sheets:
+
+- `logs\qa-pack08-missing-fashion-h-2026-06-20T09-18-04-768Z.webp`.
+- Full actual despues de H:
+  `logs\qa-pack08-current-63-after-wave-h-2026-06-20T09-18-30-496Z.webp`.
+
+QA visual:
+
+- Wave H aceptada: todas con figura adulta y garment/material como foco.
+- Watchlist suave: repeticion de modelo joven/editorial vertical en parte del
+  pack; no bloquea esta tanda, pero siguiente wave debe variar mas silueta,
+  edad/cuerpo/crop si el preset lo permite.
+
+Estado despues:
+
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> ok;
+  `availableDefaultImages=63/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=17`.
+- Siguiente cola recomendada:
+  `SP08-061|SP08-062|SP08-063|SP08-064|SP08-065|SP08-066`, luego
+  `SP08-067|SP08-068|SP08-069|SP08-070|SP08-073|SP08-074`.
+
+## Tanda 2026-06-20 - `pack_08` missing fashion cards I
+
+Objetivo: continuar deuda missing de `pack_08` en fabric/texture focus y
+fantasy sci-fi costume, evitando object-only, mannequin, prop-first y
+weapon-first.
+
+Cambio minimo de prompt:
+
+- `PACK 08 FASHION LOCK` ahora evita weapon/tool/handheld gadget/prop-first.
+- `SP08-064` tiene cue especifico burlap/rags: manos vacias o gesto natural,
+  sin blade/weapon/tool/survival prop.
+
+Estado antes:
+
+- `pack_08 availableDefaultImages=63/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=17`.
+
+Generadas:
+
+- Wave I:
+  `SP08-061|SP08-062|SP08-063|SP08-064|SP08-065|SP08-066`.
+- Retry:
+  `SP08-064`, rechazando version con blade/held prop.
+
+QA sheets:
+
+- Inicial wave I:
+  `logs\qa-pack08-missing-fashion-i-2026-06-20T09-30-10-126Z.webp`.
+- Retry `SP08-064`:
+  `logs\qa-sp08-064-retry-2026-06-20T09-34-52-196Z.webp`.
+- Final wave I:
+  `logs\qa-pack08-missing-fashion-i-final-2026-06-20T09-35-28-074Z.webp`.
+- Full actual despues de I:
+  `logs\qa-pack08-current-69-after-wave-i-2026-06-20T09-35-30-016Z.webp`.
+
+Backups locales:
+
+- `D:\codex-studio-backups\style-default-cards\20260620-062124\pre-pack08-wave-i`.
+- `D:\codex-studio-backups\style-default-cards\20260620-062124\rejected-pack08-wave-i`.
+
+QA visual:
+
+- Wave I final aceptada: figura adulta y garment-first en todos.
+- `SP08-064` retry corrige prop/weapon distraction; burlap/rags queda como
+  outfit principal.
+- Watchlist suave: `SP08-063` usa feather cloak muy literal, aceptado porque
+  preset es feather material y garment sigue siendo la lectura principal.
+
+Estado despues:
+
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> ok;
+  `availableDefaultImages=69/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=11`.
+- Siguiente cola recomendada:
+  `SP08-067|SP08-068|SP08-069|SP08-070|SP08-073|SP08-074`, luego
+  `SP08-075|SP08-076|SP08-078|SP08-079|SP08-080`.
+
+## Tanda 2026-06-20 - `pack_06` P0 color/subject rework
+
+Feedback nuevo: `SP06` seguia siendo el bloque mas problematico. El problema
+ya no era cobertura tecnica (`120/120`, sin stale/missing), sino calidad visual:
+paletas pobres/genericas, objetos aislados, cards tipo demo de medio, animales
+o props como shortcut, y varios presets retro/game que no leian como escena o
+style-card representativa.
+
+Auditoria:
+
+- Subagente visual `Hooke` audito la lamina completa
+  `logs\qa-sp06-current-after-palette-repair-2026-06-20T09-04-57-967Z.webp`.
+- P0 sugerido por subagente:
+  `SP06-004|010|016|017|019|020|021|023|025|027|028|030|032|038|043|048|054|060|066|069|077|078|083|085|089|091|094|099|102|106|109|112|113|114|115|116|117|118`.
+- Criterio nuevo: sujeto representativo grande, accion/escena clara,
+  entorno especifico y paleta de dos dominantes + acento raro. Object-only solo
+  cuando el preset realmente lo pide.
+
+Cambios de prompt/generador:
+
+- `SP06` deja de usar la rama compacta de `safeImagegenStyleDna` para no perder
+  `PACK 06 QUALITY LOCK`; ahora entra por el prompt largo con locks de color,
+  sujeto, presencia, crop, anatomia y denoise.
+- `PACK06_PALETTE_LOCKS` y `PACK06_VALUE_LOCKS` tienen paletas mas editoriales,
+  menos beige/azul, menos teal-orange generico y mas separacion de valor.
+- Se agregaron/reforzaron locks especificos para:
+  `SP06-016|017|019|021|023|025|027|028|030|031|032|033|036|037|038|048|057|058|060|069|070|071|077|083|085|088|095|099|102|104|106|108|112|113|114|116|117|118`.
+
+Generadas/reparadas:
+
+- Wave1: `SP06-004|010|016|017|019|020`.
+- Retry wave1: `SP06-016|017|020` por objeto/monster/dark relic.
+- Wave2: `SP06-021|023|025|027|028|030`.
+- Retry wave2: `SP06-023` por shell/object-only.
+- Wave3: `SP06-032|038|043|048|054|060`.
+- Retry wave3: `SP06-048|060` por vista/concept-art y weapon/pole drift.
+- Wave4: `SP06-066|069|077|078|083|085`.
+- Retry wave4: `SP06-069|077|083|085`; retry final `SP06-085` por dialogue
+  box/UI.
+- Wave5: `SP06-089|091|094|099|102|106`.
+- Wave6: `SP06-109|112|113|114`; retry `SP06-112` por product-render/object
+  hero.
+- Wave7: `SP06-115|116|117|118`.
+
+QA sheets:
+
+- Wave1 final:
+  `logs\qa-sp06-p0-wave1-final-before-after-2026-06-20T10-04-00-000Z.webp`.
+- Wave2:
+  `logs\qa-sp06-p0-wave2-before-after-2026-06-20T10-16-00-000Z.webp`.
+- Wave3:
+  `logs\qa-sp06-p0-wave3-before-after-2026-06-20T10-25-00-000Z.webp`.
+- Wave4:
+  `logs\qa-sp06-p0-wave4-before-after-2026-06-20T10-36-00-000Z.webp`.
+- Wave5:
+  `logs\qa-sp06-p0-wave5-before-after-2026-06-20T10-49-00-000Z.webp`.
+- Full actual despues:
+  `logs\qa-sp06-current-after-p0-rework-2026-06-20T11-00-00-000Z.webp`.
+
+Backups locales:
+
+- Previos y rechazos de esta ronda:
+  `D:\codex-studio-backups\style-default-cards\20260620-064401`.
+- Archive automatico adicional:
+  `D:\codex-studio-backups\style-cards\pack_06`.
+
+QA visual:
+
+- Mejoras fuertes: `SP06-004`, `010`, `016`, `017`, `019`, `020`, `021`,
+  `023`, `025`, `027`, `030`, `032`, `043`, `054`, `066`, `069`, `077`,
+  `085`, `094`, `099`, `112`, `115`, `116`, `117`.
+- Aceptadas con watchlist suave: `SP06-038` por oscuridad, `SP06-048` por
+  matte vista aun dominante, `SP06-083|091` por enemy/vehicle shapes, `SP06-102`
+  por lectura oscura, `SP06-114` por gacha/foil creature, `SP06-118` por
+  icono boot object permitido por inventario.
+- `SP06` queda mucho mas consistente que antes, pero no se declara perfecto:
+  siguiente pasada recomendada P1:
+  `SP06-031|052|055|057|065|068|070|073|074|076|082|088|097|101|103|107|108|110|120`.
+
+Estado despues:
+
+- `pack_06` mantiene coverage completo: `120/120`, sin stale ni missing antes
+  de checks finales.
+
+### 2026-06-20 - `pack_06` medium-lock follow-up
+
+Ronda focal por feedback del usuario: `SP06` seguia leyendo pobre/generico aun
+con coverage completo. El problema principal era que varias cards priorizaban
+tema/personaje/concept-art antes que tecnica del medio.
+
+Cambios:
+
+- `scripts/style-default-utils.ts` permite un sufijo de denoise custom.
+- `scripts/generate-style-defaults.ts` usa `SP06 MEDIUM OVERRIDE` para preservar
+  el medio exacto antes del denoise y evitar que grabado, dibujo, voxel, ASCII,
+  vector o retro-game se conviertan en pintura digital generica.
+- `PACK06_STYLE_TASTE_LOCKS` agrega criterio de gusto por categoria.
+- Locks reforzados para `SP06-023|029|052|055|057|060`.
+- `SP06-052` manifesto: negativo cambia de `3d render` a
+  `smooth generic 3d render` para no bloquear voxel art.
+
+Generacion:
+
+- Wave A: `SP06-031|052|055|057|065|068`; retries
+  `SP06-052|055|057`; retry final `SP06-052`.
+- Wave B: `SP06-016|017|023|029|030|099`; retry `SP06-023`.
+- Wave C: `SP06-027|028|036|037|060|076`; retry `SP06-060`.
+- Wave D: `SP06-025|033|034|038|083|089`.
+- Wave E: `SP06-091|101|106|112|113|117`.
+
+QA:
+
+- Full sheet actual:
+  `logs\qa-sp06-current-after-medium-lock-wave-e-2026-06-20T12-24-00-000Z.webp`.
+- Mejoras fuertes: `SP06-052`, `060`, `099`, `033`, `034`, `089`, `091`,
+  `117`.
+- Watchlist restante:
+  `SP06-070|073|074|082|088|097|103|107|108|110|120`, mas tarjetas que el
+  usuario borre manualmente.
+
+### 2026-06-20 - `pack_06` color identity wave F
+
+Ronda focal por feedback del usuario: las cards de `SP06` seguian leyendo
+pobres/genericas, especialmente por combinaciones de color flojas y resultados
+objeto/concept-art que no representaban bien el preset.
+
+Cambios:
+
+- `scripts/generate-style-defaults.ts` refuerza paletas y locks ID-scoped para
+  `SP06-070|073|074|097|112|113|120`.
+- `SP06-070` pasa a exigir personaje/archivista/courier primario dentro de la
+  logica de tablero; se prohibe resolverlo como barco, emblema u objeto.
+- `SP06-097` corrige la contradiccion HAM/Amiga: debe leerse como screen-space
+  DeluxePaint/HAM con pixel edges, fringing y copper gradients, no retrato/tunel
+  neon moderno.
+- `SP06-112` exige kit no-armamentistico con escala/uso en mundo y ghost-icons
+  secundarios, no producto centrado.
+- `SP06-073|074` eliminan la negacion directa de `photo` porque el estilo
+  necesita foto impresa/overpaint, manteniendo bloqueo de fotorealismo.
+- `SP06-097` elimina negativos contradictorios `blocky/simple/chunky`; `SP06-112`
+  cambia `background scene` por `cluttered background`.
+
+Generacion:
+
+- Wave F: `SP06-070|073|074|097|112|120`.
+- Retry: `SP06-070|097|112`.
+
+QA:
+
+- Sheet final:
+  `logs\qa-sp06-color-identity-wave-f-final-2026-06-20T12-46-22-682166Z.webp`.
+- Aceptadas: `SP06-070|073|074|112|120`.
+- Watchlist suave: `SP06-097` por necesitar aun mas lectura HAM/Amiga-pixel.
+- Watchlist restante para siguiente pasada:
+  `SP06-082|088|097|103|107|108|110`, mas tarjetas que el usuario borre
+  manualmente.
+
+## Checkpoint 2026-06-20 - revalidacion semantica `pack_07` / `pack_08`
+
+Barrido vivo sobre manifests actuales de `pack_07` y `pack_08`:
+
+- `pack_07`: 80/80 presets; sin P1 semantico nuevo por escena fija positiva,
+  sujeto obligatorio o brief formulaico.
+- `pack_08`: 80/80 presets; sin P1 semantico nuevo. El unico hit fuerte
+  detectado fue una clausula negativa de `SP08-078` (`must not require...`),
+  no deuda positiva.
+- Los hits P2 actuales son mayormente guardrails o frases `without requiring`;
+  no se editaron porque borrar esas defensas reabriria drift visual.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> ok;
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> ok;
+  `availableDefaultImages=69/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=11`.
+- `bun run styles:quality:audit` -> ok; redundancy none above threshold.
+- `bun run styles:runtime` y `bun run styles:runtime:check` -> current.
+
+Lectura:
+
+- El cierre semantico de `pack_07` / `pack_08` queda revalidado.
+- La deuda viva en `pack_08` es visual/missing, no semantica.
+
+## Tanda 2026-06-20 - `pack_08` missing fashion cards J/K
+
+Objetivo: cerrar deuda visual/missing restante de `pack_08` tras revalidar
+semantica.
+
+Estado antes:
+
+- `pack_08 availableDefaultImages=69/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=11`.
+- Missing reales:
+  `SP08-067|SP08-068|SP08-069|SP08-070|SP08-073|SP08-074|SP08-075|SP08-076|SP08-078|SP08-079|SP08-080`.
+
+Generacion:
+
+- Wave J: `SP08-067|SP08-068|SP08-069|SP08-070|SP08-073|SP08-074`.
+- Wave K: `SP08-075|SP08-076|SP08-078|SP08-079|SP08-080`.
+
+Backups:
+
+- `D:\codex-studio-backups\style-default-cards\20260620-095342\pre-pack08-missing-wave-j`.
+- `D:\codex-studio-backups\style-default-cards\20260620-101124\pre-pack08-missing-wave-k`.
+
+QA:
+
+- Wave J:
+  `logs\qa-pack08-missing-wave-j-2026-06-20T13-11-08-101948Z.webp`.
+- Waves J/K actual:
+  `logs\qa-pack08-missing-waves-jk-current-2026-06-20T13-17-37-270593Z.webp`.
+- Aceptadas: las 11; lectura fashion/material-first con figura, sin
+  object-only.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> ok;
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `bun run styles:runtime` ejecutado tras generar defaults.
+
+Category bases:
+
+- `bun run scripts/audit-style-category-bases.ts` actualizo
+  `docs/active/style-category-bases-audit.md`.
+- Objetivo `pack_08..pack_11` sigue completo: 20/20.
+
+## Tanda 2026-06-20 - `pack_09` missing material cards A
+
+Objetivo: empezar deuda visual/missing posterior a packs priorizados ya
+cerrados (`pack_14` y `pack_15` validan 0 missing / 0 stale).
+
+Estado antes:
+
+- `pack_09 availableDefaultImages=9/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=71`.
+
+Generacion:
+
+- Wave A: `SP09-001|SP09-002|SP09-003|SP09-004|SP09-005|SP09-007`.
+- Backup:
+  `D:\codex-studio-backups\style-default-cards\20260620-102018\pre-pack09-missing-wave-a`.
+
+QA:
+
+- Sheet: `logs\qa-pack09-missing-wave-a-2026-06-20T13-25-17-275367Z.webp`.
+- Aceptadas las seis como material-led; watchlist suave `SP09-004` por
+  plinth/product-shot, pero lectura granite/polish clara.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> ok;
+  `availableDefaultImages=15/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=65`.
+- `bun run styles:runtime` ejecutado tras generar defaults.
+
+Proxima tanda recomendada:
+
+- Continuar `pack_09` missing con `SP09-008|SP09-009|SP09-010|SP09-011|SP09-012|SP09-013`.
+
+## Tanda 2026-06-20 - `pack_06` SP06 palette/P0 recovery G-H
+
+Objetivo: corregir deuda cualitativa de `SP06` marcada por el usuario:
+paletas pobres/genericas, exceso de viajero/capa/ruina/arco y cards sin sujeto
+representativo.
+
+Runtime:
+
+- Primer retry `SP06-041` quedo colgado 20 min; habia 5 jobs SP06 stuck mas
+  un job ajeno `Afterquest`.
+- Se marcaron `cancelled` solo los jobs SP06 colgados en
+  `D:\AI-Studio-Library\.studio\studio.sqlite`; no se cancelo `Afterquest`.
+- Reinicio minimo de `bun apps/local-server/src/index.ts` y `codex app-server`;
+  health posterior: worker `activeWorkerCount=1`, `trackedJobs=1`.
+
+Patch generator:
+
+- `PACK06_PALETTE_FAILURE_BREAKERS` para cortar teal/orange, coral/cream/teal,
+  beige/blue, gray/brown y violet/cyan genericos.
+- Paletas especificas para `SP06-041|042|108|110`.
+- Locks reforzados para `SP06-031|034|048|109|116` por auditoria visual
+  focal.
+
+Generacion/QA:
+
+- Wave G2 aceptadas: `SP06-082|097|103|107`; `SP06-088` queda watchlist
+  suave.
+- Wave G4 aceptadas: `SP06-041|042|110`; `SP06-108` retry B queda watchlist
+  suave por seguir cerca de estacion/personaje lateral.
+- Wave H aceptadas: `SP06-031|034|048|109|116`.
+- Rechazos guardados:
+  `D:\codex-studio-backups\style-default-cards\20260620-103802\rejected-sp06-wave-g1`,
+  `D:\codex-studio-backups\style-default-cards\20260620-103802\rejected-sp06-wave-g4`,
+  `D:\codex-studio-backups\style-default-cards\20260620-164500\rejected-sp06-p0-wave-h1`,
+  `D:\codex-studio-backups\style-default-cards\20260620-164500\rejected-sp06-p0-wave-h2`.
+- QA sheets:
+  `logs\qa-sp06-watchlist-wave-g2-before-after.webp`,
+  `logs\qa-sp06-041-042-palette-retry.webp`,
+  `logs\qa-sp06-108-retry-b.webp`,
+  `logs\qa-sp06-p0-wave-h3-before-after.webp`.
+
+Estado:
+
+- P0 visibles de esta ronda bajan a watchlist suave.
+- Watchlist recomendada: `SP06-048|088|097|108|109|116` y cualquier card que
+  el usuario borre manualmente.
+
+Validacion:
+
+- `bun run styles:runtime` -> ok; `packs=17`, `presets=1649`.
+- `bun run styles:validate -- --pack=pack_06 --coverage` -> ok;
+  `availableDefaultImages=120/120`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `bun run styles:quality:audit` -> ok; redundancy none above threshold.
+- `bun run styles:runtime:check` -> ok; runtime current.
+
+## Tanda 2026-06-20 - `pack_09` missing material wave B
+
+Objetivo: continuar deuda visual/missing de `pack_09` con tanda material-led.
+
+Estado vivo antes:
+
+- `pack_09 availableDefaultImages=20/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=60`.
+- Missing elegidos:
+  `SP09-009|SP09-014|SP09-015|SP09-016|SP09-017|SP09-018`.
+
+Generacion:
+
+- Wave B: `SP09-009|SP09-014|SP09-015|SP09-016|SP09-017|SP09-018`.
+- Backup/trazabilidad:
+  `D:\codex-studio-backups\style-default-cards\20260620-170600\pre-pack09-missing-wave-b`.
+- QA sheet: `logs\qa-pack09-missing-wave-b.webp`.
+
+QA:
+
+- Aceptadas las 6 como material-led.
+- Watchlist suave: `SP09-017` por plinth/product-shot, aunque brushed aluminum
+  lee claro.
+
+Validacion:
+
+- `bun run styles:runtime` -> ok; `packs=17`, `presets=1649`.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> ok;
+  `availableDefaultImages=26/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=54`.
+- `bun run styles:quality:audit` -> ok; redundancy none above threshold.
+- `bun run styles:runtime:check` -> ok; runtime current.
+
+Proxima tanda recomendada:
+
+- `SP09-019|SP09-020|SP09-021|SP09-022|SP09-023|SP09-024`.
+
+## Tanda 2026-06-20 - `pack_09` missing material wave C
+
+Objetivo: continuar deuda visual/missing de `pack_09`.
+
+Estado vivo antes:
+
+- `pack_09 availableDefaultImages=26/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=54`.
+- Missing elegidos:
+  `SP09-019|SP09-020|SP09-021|SP09-022|SP09-023|SP09-024`.
+
+Generacion:
+
+- Wave C: `SP09-019|SP09-020|SP09-021|SP09-022|SP09-023|SP09-024`.
+- Backup/trazabilidad:
+  `D:\codex-studio-backups\style-default-cards\20260620-171000\pre-pack09-missing-wave-c`.
+- QA sheet: `logs\qa-pack09-missing-wave-c.webp`.
+
+QA:
+
+- Aceptadas las 6 como material-led.
+- Watchlist suave: `SP09-019|SP09-021` por plinth/product-art y `SP09-024`
+  por forma tipo aleta, aunque el material lee.
+
+Validacion:
+
+- `bun run styles:runtime` -> ok; `packs=17`, `presets=1649`.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> ok;
+  `availableDefaultImages=32/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=48`.
+- `bun run styles:quality:audit` -> ok; redundancy none above threshold.
+- `bun run styles:runtime:check` -> ok; runtime current.
+
+Proxima tanda recomendada:
+
+- `SP09-025|SP09-027|SP09-028|SP09-029|SP09-030|SP09-031`.
+
+## Tanda 2026-06-20 - `pack_06` quality/palette recovery I
+
+Objetivo: corregir la deuda cualitativa persistente de `SP06` sin abrir otra
+regeneracion masiva: paletas pobres/genericas, figuras de espalda con capa,
+escenas de puerto/agua/arco, object demos y atajos animales.
+
+Auditoria:
+
+- Se revisaron contact sheets completas:
+  `logs\qa-pack06-current-001-040.webp`,
+  `logs\qa-pack06-current-041-080.webp`,
+  `logs\qa-pack06-current-081-120.webp`.
+- Subagente visual priorizo fallos por cloaks/backshots, object demos,
+  birds/animals y medium/palette debil.
+- Subagente de prompt detecto que las paletas vagas del manifest y los locks
+  tardios diluian la identidad de preset.
+
+Patch generator:
+
+- `pack_06` ahora penaliza explicitamente el resultado "medio correcto pero
+  pobre".
+- Las paletas vagas dejan paso a value zones, ink/display states y contrastes
+  concretos para medios restringidos.
+- `PACK06_PRESET_QUALITY_LOCKS` se mueve arriba del prompt y se agrega
+  `PRESET BRIEF` para preservar identidad por preset.
+- Reset generico ampliado contra agua/puerto/arco/gate/ruina y figura de
+  espalda.
+- Locks puntuales reforzados para
+  `SP06-017|021|028|034|036|037|044|048|051|077|088|108|113`.
+
+Generacion:
+
+- Unicos regenerados:
+  `SP06-004|017|021|028|034|036|037|038|044|048|051|065|067|077|088|108|113`.
+- Retries selectivos:
+  `SP06-021|028|034|036|037` y `SP06-044|077|108`.
+- QA sheets:
+  `logs\qa-pack06-quality-pilot-2026-06-20T17-37-49-400Z.webp`,
+  `logs\qa-pack06-quality-wave-2-retry-2026-06-20T17-58-15-977Z.webp`,
+  `logs\qa-pack06-quality-wave-3-retry-2026-06-20T18-14-36-822Z.webp`.
+
+Estado:
+
+- Aceptadas/provisionales: `SP06-004|017|021|036|037|044|051|065|067|108|113`.
+- Watchlist suave: `SP06-028|034|038|048|077|088`.
+- Cola siguiente si se reabre SP06:
+  `SP06-001|006|014|024|027|045|052|057|059|064|073|083|091|096|097|100|109|116`.
+
+Validacion:
+
+- `bun run check -- scripts/generate-style-defaults.ts` -> ok tras format.
+- `bun run styles:runtime` -> ok; `packs=17`, `presets=1649`.
+- `bun run styles:runtime:check` -> ok; runtime current.
+- `bun run styles:validate -- --pack=pack_06 --coverage` -> ok;
+  `availableDefaultImages=120/120`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `bun run styles:quality:audit` -> ok; redundancy none above threshold.
+
+## Checkpoint 2026-06-20 - `pack_15` taxonomy/default-image cleanup
+
+Objetivo: cerrar mismatch barato antes de seguir generando.
+
+- `pack_15` tenia `availableDefaultImages=80/80`, pero `SP15-071..080`
+  conservaban taxonomy/default-image mismatch.
+- Se ejecuto `bun run styles:taxonomy -- --pack=pack_15`.
+- `bun run styles:validate -- --pack=pack_15 --coverage` -> ok;
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`, sin mismatches.
+- `bun run styles:runtime` -> ok; `packs=17`, `presets=1649`.
+- `bun run styles:runtime:check` -> ok; runtime current.
+
+## Tanda 2026-06-20 - `pack_09` missing material wave D
+
+Objetivo: continuar deuda visual/missing de default cards, despues de verificar
+que `pack_07`, `pack_08`, `pack_14` y `pack_15` estan cerrados por coverage.
+
+Estado vivo antes:
+
+- `pack_09 availableDefaultImages=37/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=43`.
+- Missing elegidos:
+  `SP09-031|SP09-033|SP09-034|SP09-035|SP09-036|SP09-037`.
+
+Generacion:
+
+- Wave D: `SP09-031|SP09-033|SP09-034|SP09-035|SP09-036|SP09-037`.
+- Sin backup previo: eran archivos `.webp` ausentes.
+- QA sheet: `logs\qa-pack09-missing-wave-d.webp`.
+
+QA:
+
+- Aceptadas las 6 como material/surface cards.
+- Watchlist suave: `SP09-031` y `SP09-037` por object/material demo, aunque el
+  material lee.
+
+Validacion parcial:
+
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> ok;
+  `availableDefaultImages=43/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=37`.
+- `bun run styles:quality:audit` -> ok; redundancy none above threshold.
+- `bun run styles:runtime:check` -> ok; runtime current.
+
+Proxima tanda recomendada:
+
+- `SP09-038|SP09-039|SP09-040|SP09-041|SP09-042|SP09-044`.
+
+## Tanda 2026-06-20 - `pack_09` missing material wave E
+
+Objetivo: continuar deuda visual/missing de `pack_09` con otra tanda chica.
+
+Estado vivo antes:
+
+- `pack_09 availableDefaultImages=43/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=37`.
+- Missing elegidos:
+  `SP09-038|SP09-039|SP09-040|SP09-041|SP09-042|SP09-044`.
+
+Generacion:
+
+- Wave E: `SP09-038|SP09-039|SP09-040|SP09-041|SP09-042|SP09-044`.
+- Sin backup previo: eran archivos `.webp` ausentes.
+- QA sheet: `logs\qa-pack09-missing-wave-e.webp`.
+
+QA:
+
+- Aceptadas las 6 como material/surface cards.
+- Watchlist suave: `SP09-038` por mano/gesto de demo, `SP09-041` por
+  taller/objeto-demo y `SP09-044` por objeto de playa; los tres leen el
+  material.
+
+Validacion parcial:
+
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> ok;
+  `availableDefaultImages=49/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=31`.
+- `bun run styles:runtime` -> ok; `packs=17`, `presets=1649`.
+- `bun run styles:quality:audit` -> ok; redundancy none above threshold.
+- `bun run styles:runtime:check` -> ok; runtime current.
+
+Proxima tanda recomendada:
+
+- `SP09-045|SP09-046|SP09-047|SP09-048|SP09-049|SP09-050`.
+
+## Attempt paused 2026-06-20 - `pack_09` missing material wave F
+
+Intento no aceptado:
+
+- IDs intentados:
+  `SP09-045|SP09-046|SP09-047|SP09-048|SP09-049|SP09-050`.
+- El comando con `--parallel=3` y session suffix `pack09_missing_wave_f`
+  excedio el timeout externo y no escribio assets.
+- `assets\recipes\styles\defaults\failures-pack_09.json` registro timeouts de
+  `SP09-046` y `SP09-049`.
+- Se cancelaron en SQLite solo los 6 jobs de `pack09_missing_wave_f`; no se
+  toco un job anime ajeno que seguia `running`.
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> ok;
+  `availableDefaultImages=49/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=31`.
+
+Riesgo / proxima accion:
+
+- El worker local aun reporta `trackedJobs=7` en memoria; no se reinicio para no
+  interferir con el job ajeno.
+- Reintentar `SP09-045|SP09-046|SP09-047|SP09-048|SP09-049|SP09-050` cuando el
+  worker este limpio, preferentemente con `--parallel=1` o `--parallel=2`.
+
+## Checkpoint 2026-06-20 - revalidacion sin generacion por worker cargado
+
+Objetivo: avanzar sin lanzar nuevas imagenes mientras el worker conserva jobs
+colgados en memoria.
+
+Estado runtime:
+
+- `GET /api/health` en `localhost:17223` -> ok.
+- Worker: `activeWorkerCount=7`, `queuedJobs=0`, `trackedJobs=7`.
+- Se mantiene el riesgo documentado de `pack09_missing_wave_f`; no se reinicio
+  el servidor porque habia un job anime ajeno todavia `running`.
+
+Revalidacion semantica `pack_07` / `pack_08`:
+
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> ok;
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> ok;
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- Barrido textual actual sobre manifests `pack_07`/`pack_08`:
+  `formulaicPortable=0` en ambos packs.
+- Hits de `mandatory/required` restantes son guardrails negativos, no escena
+  fija positiva ni sujeto obligatorio nuevo.
+
+Category bases:
+
+- `bun run scripts/audit-style-category-bases.ts` regenero
+  `docs/active/style-category-bases-audit.md`.
+- Slice objetivo `pack_08..pack_11` queda completo:
+  `pack_08 5/5`, `pack_09 5/5`, `pack_10 5/5`, `pack_11 5/5`.
+- Conteo global actual: `Generated bases=45/102`, `Missing bases=57/102`.
+
+Checks:
+
+- `bun run styles:quality:audit` -> ok; redundancy none above threshold.
+- `bun run styles:runtime:check` -> ok; runtime current.
+
+Proxima accion segura:
+
+- Si el worker baja `trackedJobs`, reintentar `pack_09` wave F
+  `SP09-045|SP09-046|SP09-047|SP09-048|SP09-049|SP09-050` con `--parallel=1`
+  o `--parallel=2`.
+- Si el job ajeno sigue colgado y el usuario autoriza reset operativo, reiniciar
+  server/app-server antes de generar mas.
+
+## Blocked checkpoint 2026-06-20 - visual generation worker still dirty
+
+Tercer turno consecutivo con el mismo bloqueo operativo:
+
+- Health `localhost:17223` -> ok, pero worker sigue con
+  `activeWorkerCount=7`, `queuedJobs=0`, `trackedJobs=7`.
+- SQLite ya solo muestra 1 job `running` ajeno:
+  `PRISM-GLAMOUR TRANSFORMATION POLISH` (`Anime 02`).
+- Los 6 jobs propios de `pack09_missing_wave_f` siguen cancelados en SQLite,
+  pero el worker conserva estado en memoria.
+
+Cobertura global actual:
+
+- `pack_01`: `availableDefaultImages=84/87`, `missingDefaultImages=3`.
+- `pack_02`: `119/128`, `missing=9`.
+- `pack_03`: `80/80`, `missing=0`.
+- `pack_04`: `100/100`, `missing=0`.
+- `pack_05`: `115/135`, `missing=20`.
+- `pack_06`: `120/120`, `missing=0`.
+- `pack_07`: `80/80`, `missing=0`.
+- `pack_08`: `80/80`, `missing=0`.
+- `pack_09`: `49/80`, `missing=31`.
+- `pack_10`: `14/80`, `missing=66`.
+- `pack_11`: `16/80`, `missing=64`.
+- `pack_12`: `80/80`, `missing=0`.
+- `pack_13`: `117/132`, `missing=15`.
+- `pack_14`: `123/123`, `missing=0`.
+- `pack_15`: `80/80`, `missing=0`.
+- `pack_16`: `140/140`, `missing=0`.
+- `pack_17`: `44/44`, `missing=0`.
+- Total validator report: `208` manifests without default image.
+
+Checks:
+
+- `bun run styles:validate -- --coverage` -> ok.
+- `bun run styles:quality:audit` -> ok; redundancy none above threshold.
+- `bun run styles:runtime:check` -> ok; runtime current.
+
+Blocked next action:
+
+- Need user/external action before honest visual progress: either let the
+  running anime job finish, authorize cancelling it, or authorize restarting
+  local-server/app-server. Then retry `pack_09` wave F with `--parallel=1` or
+  `--parallel=2`.
+
+## Tanda 2026-06-20 - `pack_09` missing material wave F retry
+
+Objetivo: destrabar la cola visual y continuar `pack_09` con baja concurrencia.
+
+Runtime cleanup:
+
+- El job stale `Anime 02` seguia `running`; se marco `cancelled` en SQLite.
+- Se reinicio solo `local-server`; health posterior ok y worker bajo a
+  `trackedJobs=1`.
+
+Generacion:
+
+- Wave F retry:
+  `SP09-045|SP09-046|SP09-047|SP09-048|SP09-049|SP09-050`.
+- Comando con `--parallel=1` y session suffix
+  `pack09_missing_wave_f_retry_p1` -> `generated=6 attempted=6 skipped=74 failed=0`.
+- QA sheet: `logs\qa-pack09-missing-wave-f-retry-p1.webp`.
+
+QA:
+
+- Aceptadas las 6 como material/surface cards.
+- Watchlist suave: `SP09-045`, `SP09-047`, `SP09-050` por mascot/personaje
+  fuerte, pero el material lee.
+
+Validacion parcial:
+
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> ok;
+  `availableDefaultImages=55/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=25`.
+
+Proxima tanda recomendada:
+
+- `SP09-051|SP09-052|SP09-053|SP09-054|SP09-055|SP09-056`.
+
+## Tanda 2026-06-20 - `pack_09` missing material wave G
+
+Objetivo: documentar y auditar visualmente la tanda ya generada de `pack_09`.
+
+Generacion:
+
+- Wave G:
+  `SP09-051|SP09-052|SP09-053|SP09-054|SP09-055|SP09-056`.
+- Comando usado con `--parallel=1` y session suffix
+  `pack09_missing_wave_g` -> `generated=6 attempted=6 skipped=74 failed=0`.
+- Nota: `SP09-053` tuvo un `needs_review` intermedio y retry, pero el asset
+  final existe.
+
+QA:
+
+- QA sheet: `logs\qa-pack09-missing-wave-g.webp`.
+- Revision posterior: `SP09-053` fue rechazado. La imagen leia como figura
+  encapuchada/anime-fantasy en vez de Smoke/Fog material-first.
+- Aceptadas de esta tanda: `SP09-051`, `SP09-052`, `SP09-054`, `SP09-055`,
+  `SP09-056`. `SP09-053` se corrige en la tanda material correction J.
+
+Validacion parcial:
+
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> ok;
+  `availableDefaultImages=61/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=19`.
+
+Proxima tanda recomendada:
+
+- `SP09-057|SP09-058|SP09-059|SP09-061|SP09-062|SP09-063`.
+
+## Tanda 2026-06-20 - `pack_09` material correction J
+
+Objetivo: corregir contaminacion de anime/personaje y objetos fantasticos en
+presets de textura/materialidad.
+
+Prompt/refactor:
+
+- Se endurecio `pack09MaterialLockPrompt()` en `scripts/generate-style-defaults.ts`.
+- Nuevo criterio: `pack_09` debe leerse como material/superficie/particula/fluido/
+  volumen/FX; no como anime, personaje, mascota, criatura, emblema, relicario,
+  herramienta o escena de fantasia.
+- Tambien se neutralizo el `Distinct motif` para `pack_09`: la diferenciacion
+  ahora sale del comportamiento material, no de glifos/emblemas.
+
+Backups:
+
+- Pre-regeneracion: `D:\codex-studio-backups\style-default-cards\2026-06-20-pack09-material-correction-pre-regen`.
+- Version intermedia con drift de emblema: `D:\codex-studio-backups\style-default-cards\2026-06-20-pack09-material-correction-v1-emblem-drift`.
+
+Generacion:
+
+- Corregidos:
+  `SP09-053|SP09-058|SP09-061|SP09-062|SP09-063`.
+- Comando final:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_09 "--preset=SP09-053|SP09-058|SP09-061|SP09-062|SP09-063" --parallel=1 --session-suffix=pack09_material_correction_j --force`
+  -> `generated=5 attempted=5 skipped=75 failed=0`.
+
+QA:
+
+- QA sheet final: `logs\qa-pack09-material-correction-j.webp`.
+- Aprobadas visualmente: `SP09-053` Smoke/Fog, `SP09-058` Sparks,
+  `SP09-061` Dry Ice Fog, `SP09-062` Confetti, `SP09-063` Cobweb.
+- Resultado: material/FX-first, sin anime/personaje, sin emblema protagonista y
+  con denoise/control de detalle adecuado.
+
+## Tanda 2026-06-20 - `pack_09` missing material cards K
+
+Objetivo: continuar deuda visual/missing de `pack_09` con el lock
+material-first ya corregido.
+
+Estado antes:
+
+- Missing reales:
+  `SP09-031|SP09-065|SP09-066|SP09-068|SP09-069|SP09-070|SP09-071|SP09-072|SP09-073|SP09-075|SP09-076|SP09-077|SP09-078|SP09-080`.
+- Health local ok; worker vivo con `activeWorkerCount=1`, `queuedJobs=0`,
+  `trackedJobs=1`, por eso se genero con `--parallel=1`.
+
+Generacion:
+
+- Wave K: `SP09-031|SP09-065|SP09-066|SP09-068|SP09-069|SP09-070`.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_09 "--preset=SP09-031|SP09-065|SP09-066|SP09-068|SP09-069|SP09-070" --parallel=1 --session-suffix=pack09_missing_wave_k --force`
+  -> `generated=6 attempted=6 skipped=74 failed=0`.
+- Backup pre-wave: `D:\codex-studio-backups\style-default-cards\2026-06-20-pack09-missing-wave-k-pre`
+  quedo vacio porque eran missing reales sin asset actual.
+
+QA:
+
+- QA sheet: `logs\qa-pack09-missing-wave-k.webp`.
+- Aceptadas: las 6. `SP09-066` queda watchlist suave por leer mas como
+  superficie/paisaje de arena que macro-material, pero sin personaje ni escena
+  desviada.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> ok;
+  `availableDefaultImages=72/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=8`.
+
+Proxima tanda recomendada:
+
+- `SP09-071|SP09-072|SP09-073|SP09-075|SP09-076|SP09-077`.
+
+## Tanda 2026-06-20 - `pack_09` missing material cards L
+
+Objetivo: continuar cierre visual/missing de `pack_09` sin reabrir drift a
+personaje, anime, emblema u objeto fantastico.
+
+Generacion:
+
+- Wave L: `SP09-071|SP09-072|SP09-073|SP09-075|SP09-076|SP09-077`.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_09 "--preset=SP09-071|SP09-072|SP09-073|SP09-075|SP09-076|SP09-077" --parallel=1 --session-suffix=pack09_missing_wave_l --force`
+  -> `generated=6 attempted=6 skipped=74 failed=0`.
+
+QA:
+
+- QA sheet: `logs\qa-pack09-missing-wave-l.webp`.
+- Aceptadas: las 6. Lectura material/superficie clara: plywood, OSB,
+  linoleum, astroturf, chain-link fence y barbed wire.
+- Watchlist suave: `SP09-077` por escena/fence fragment mas que macro puro,
+  aunque el material oxidado domina y no hay personaje ni fantasia.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> ok;
+  `availableDefaultImages=78/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=2`.
+
+Proxima tanda recomendada:
+
+- `SP09-078|SP09-080`.
+
+## Tanda 2026-06-20 - `pack_09` missing material cards M / cierre
+
+Objetivo: cerrar los 2 missing finales de `pack_09`.
+
+Generacion:
+
+- Wave M: `SP09-078|SP09-080`.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_09 "--preset=SP09-078|SP09-080" --parallel=1 --session-suffix=pack09_missing_wave_m --force`
+  -> `generated=2 attempted=2 skipped=78 failed=0`.
+
+QA:
+
+- QA sheet: `logs\qa-pack09-missing-wave-m.webp`.
+- Aceptadas: `SP09-078` Solar Panel y `SP09-080` Dragon Scale.
+- Lectura: superficie/material-first, sin personaje, sin anime y sin criatura
+  protagonista.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_09 --coverage` -> ok;
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `bun run styles:runtime` -> ok; `packs=17`, `presets=1649`.
+- `bun run styles:runtime:check` -> ok; runtime current.
+- `bun run styles:quality:audit` -> ok; redundancy none above threshold.
+- `bun run styles:validate -- --coverage` -> ok; global missing baja a `170`.
+
+Estado:
+
+- `pack_09` queda cerrado por coverage visual.
+- Siguiente deuda real por coverage: `pack_10` (`14/80`, missing `66`) y
+  `pack_11` (`16/80`, missing `64`), con deuda menor en `pack_05` (`20`),
+  `pack_02` (`9`), `pack_13` (`8`) y `pack_01` (`3`).
+
+## Tanda 2026-06-20 - `pack_06` color/taste recovery J
+
+Objetivo: responder al feedback de que `SP06` seguia concentrando las cards mas
+pobres, con paletas genericas y caida recurrente en fantasia/aventurero/capa.
+
+Patch generator:
+
+- `scripts/generate-style-defaults.ts` agrega `PACK06_COLOR_TASTE_RESET`.
+- Se reforzaron locks para `SP06-001|006|014|024|027|045|059|064|073`.
+- El criterio nuevo exige paleta de direccion artistica, medio reconocible en
+  thumbnail, y rechazo de resultado "medio correcto pero pobre".
+
+Generacion/QA:
+
+- Wave 1:
+  `SP06-001|SP06-006|SP06-014|SP06-024|SP06-027|SP06-045`.
+- Retry wave 1:
+  `SP06-001|SP06-006|SP06-027` por arco/capa/costa/oscuridad.
+- Wave 2:
+  `SP06-052|SP06-057|SP06-059|SP06-064|SP06-073|SP06-083`.
+- Retry wave 2:
+  `SP06-059|SP06-064|SP06-073` por capa/armadura/hooded-train drift.
+- Retry final wave 2:
+  `SP06-064|SP06-073`, aceptadas tras hard retry.
+
+Backups:
+
+- `D:\codex-studio-backups\style-default-cards\20260620-190938\pre-sp06-color-quality-j-wave1`.
+- `D:\codex-studio-backups\style-default-cards\20260620-190938\rejected-sp06-color-quality-j-wave1`.
+- `D:\codex-studio-backups\style-default-cards\20260620-190938\pre-sp06-color-quality-j-wave2`.
+- `D:\codex-studio-backups\style-default-cards\20260620-190938\rejected-sp06-color-quality-j-wave2`.
+- `D:\codex-studio-backups\style-default-cards\20260620-190938\rejected-sp06-color-quality-j-wave2-retry`.
+
+QA sheets:
+
+- `logs\qa-sp06-color-quality-j-wave1-before-after.webp`.
+- `logs\qa-sp06-color-quality-j-wave1-retry.webp`.
+- `logs\qa-sp06-color-quality-j-wave2-before-after.webp`.
+- `logs\qa-sp06-color-quality-j-wave2-retry.webp`.
+- `logs\qa-sp06-color-quality-j-wave2-retry2.webp`.
+- `logs\qa-sp06-color-quality-j-final.webp`.
+
+Estado:
+
+- Aceptadas: `SP06-001|006|014|024|027|045|052|057|059|064|073|083`.
+- Watchlist suave: `SP06-057` por seguir usando silueta/agua como doble
+  exposicion, aunque lee el preset; `SP06-064` por ser objeto/vehiculo
+  ensamblado y menos personaje, pero evita la capa/armadura.
+- Siguiente cola recomendada si se reabre `SP06`:
+  `SP06-091|096|097|100|109|116`, mas cualquier card que el usuario borre.
+
+Validacion:
+
+- `bun run check -- scripts/generate-style-defaults.ts` -> ok.
+- `bun run styles:validate -- --pack=pack_06 --coverage` -> ok;
+  `availableDefaultImages=120/120`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `bun run styles:quality:audit` -> ok; redundancy none above threshold.
+- `bun run styles:runtime` -> ok; `packs=17`, `presets=1649`.
+- `bun run styles:runtime:check` -> ok; runtime current.
+
+## Tanda 2026-06-20 - `pack_10` missing abstract cards A
+
+Objetivo: iniciar deuda visual/missing de `pack_10` despues del cierre de
+`pack_09`, probando la ruta existente sin tocar prompts.
+
+Estado antes:
+
+- `pack_10 availableDefaultImages=14/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=66`.
+- Missing wave A:
+  `SP10-001|SP10-002|SP10-004|SP10-006|SP10-007|SP10-008`.
+
+Generacion:
+
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_10 "--preset=SP10-001|SP10-002|SP10-004|SP10-006|SP10-007|SP10-008" --parallel=1 --session-suffix=pack10_missing_wave_a --force`
+  -> `generated=6 attempted=6 skipped=74 failed=0`.
+
+QA:
+
+- QA sheet: `logs\qa-pack10-missing-wave-a.webp`.
+- Aceptadas visualmente: `SP10-001` Cubism, `SP10-002` Bauhaus Style,
+  `SP10-004` Op Art, `SP10-006` Fractal Geometry, `SP10-007` Low Poly
+  Abstract, `SP10-008` Suprematism.
+- Watchlist suave: `SP10-006` por lectura de objeto/plinth, aunque la
+  estructura fractal domina.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_10 --coverage` -> ok;
+  `availableDefaultImages=20/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=60`.
+
+Proxima tanda recomendada:
+
+- Antes de generar mas, aplicar gate anti-anime/global-style-scope descrito
+  abajo.
+- Si el gate pasa: `SP10-009|SP10-010|SP10-011|SP10-012|SP10-013|SP10-014`.
+
+## Tanda 2026-06-20 - correccion de alcance anti-anime global
+
+Motivo: feedback del usuario: varias cards no-anime estaban cayendo en cara,
+pose o acabado anime por inercia del generador. La revision visual de
+`logs\qa-sp06-001-030.webp`, `logs\qa-sp06-031-060.webp`,
+`logs\qa-sp06-061-090.webp` y `logs\qa-sp06-091-120.webp` confirma drift en
+`SP06` fuera de presets explicitamente anime.
+
+Hallazgos:
+
+- Sospechosas por anime spillover o digital-anime no pedido:
+  `SP06-002`, `SP06-020`, `SP06-026`, `SP06-055`, `SP06-104`.
+- Condicionales: `SP06-105` puede aceptar arcade/fighting-game stylization,
+  pero no debe volverse generic anime si se regenera.
+- Permitidas por identidad del preset: `SP06-085`, `SP06-108`, `SP06-114`
+  porque son Visual Novel / Anime Gacha / anime-game framing explicito.
+
+Patch:
+
+- `scripts/style-default-utils.ts`: el sufijo global ya no recomienda
+  `semi-real anime-inspired illustration when useful`.
+- Nueva regla: no introducir anime, manga, big-eye cel faces, visual-novel
+  polish, gacha framing o generic anime character grammar salvo que el preset,
+  pack o categoria lo pidan explicitamente.
+- `scripts/style-default-utils.test.ts`: test focal para evitar que anime
+  vuelva como fallback global.
+
+Nuevo gate antes de continuar:
+
+- Clasificar cada tanda como `anime-allowed`, `anime-forbidden`,
+  `cartoon/animation-non-anime`, `gameplay/screencap`, `material/abstract` o
+  `character-led non-anime`.
+- No generar si la categoria no tiene scope visual claro.
+- Si una card no-anime sale con cara/pose/acabado anime, se rechaza aunque la
+  miniatura sea atractiva.
+
+Estado:
+
+- La primera generacion posterior al ajuste fue `pack_10` wave B, clasificada
+  como `material/abstract` y auditada abajo.
+- Pendiente: correr test/check al cierre de la ronda y regenerar
+  selectivamente las sospechosas que el usuario decida conservar como deuda.
+
+## Tanda 2026-06-20 - `pack_10` missing abstract cards B
+
+Objetivo: continuar deuda visual/missing de `pack_10` con el gate anti-anime
+activo. Scope visual: `material/abstract`; anime/personajes quedan rechazados.
+
+Estado antes:
+
+- `pack_10 availableDefaultImages=20/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=60`.
+
+Generacion:
+
+- Wave B:
+  `SP10-009|SP10-010|SP10-011|SP10-012|SP10-013|SP10-014`.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_10 "--preset=SP10-009|SP10-010|SP10-011|SP10-012|SP10-013|SP10-014" --parallel=1 --session-suffix=pack10_missing_wave_b --force`
+  -> `generated=6 attempted=6 skipped=74 failed=0`.
+
+QA:
+
+- QA sheet: `logs\qa-pack10-missing-wave-b.webp`.
+- Aceptadas: `SP10-009` Islamic Geometric, `SP10-010` Voronoi Pattern,
+  `SP10-011` Alcohol Ink, `SP10-012` Smoke Photography, `SP10-013` Oil Slick,
+  `SP10-014` Macro Bubble.
+- No hay anime/personaje/cara. Watchlist suave: `SP10-012` por spire/pedestal
+  en smoke y `SP10-013` por gota central, pero el material domina.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_10 --coverage` -> ok;
+  `availableDefaultImages=26/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=54`.
+
+Proxima tanda recomendada:
+
+- `SP10-015|SP10-016|SP10-017|SP10-019|SP10-020|SP10-021`, manteniendo scope
+  `material/abstract` y rechazando personajes/anime.
+
+## Tanda 2026-06-20 - `pack_10` missing abstract cards C
+
+Objetivo: continuar deuda visual/missing de `pack_10` con scope
+`material/abstract` y `digital glitch`, manteniendo anime/personajes fuera salvo
+soporte visual no-anime claro.
+
+Estado antes:
+
+- `pack_10 availableDefaultImages=26/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=54`.
+
+Generacion:
+
+- Wave C:
+  `SP10-015|SP10-016|SP10-017|SP10-019|SP10-020|SP10-021`.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_10 "--preset=SP10-015|SP10-016|SP10-017|SP10-019|SP10-020|SP10-021" --parallel=1 --session-suffix=pack10_missing_wave_c --force`
+  -> `generated=6 attempted=6 skipped=74 failed=0`.
+- Nota: `SP10-019` tuvo un primer job `needs_review`, pero retry genero asset.
+
+QA:
+
+- QA sheet: `logs\qa-pack10-missing-wave-c.webp`.
+- Aceptadas: `SP10-015` Mycelium Network, `SP10-016` Ferrofluid,
+  `SP10-017` Acrylic Pour, `SP10-019` Cymatics, `SP10-020` Nebula Cloud,
+  `SP10-021` Datamosh.
+- No hay anime. Watchlist suave: `SP10-017` por soporte/canvas fisico y
+  `SP10-021` por busto humano como soporte del glitch, pero el efecto/preset
+  domina.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_10 --coverage` -> ok;
+  `availableDefaultImages=32/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=48`.
+
+Proxima tanda recomendada:
+
+- Continuar con missing de `pack_10` desde el siguiente bloque real de coverage:
+  `SP10-047|SP10-048|SP10-049|SP10-050|SP10-056|SP10-059` o listar primero
+  los missing ordenados si se prefiere respetar orden taxonomico.
+
+## Tanda 2026-06-20 - `pack_10` missing digital glitch cards D
+
+Objetivo: avanzar `pack_10` en `digital-glitch-and-noise`, permitiendo figura
+u objeto solo como soporte de glitch/print/signal, no como retrato anime ni UI
+legible.
+
+Estado antes:
+
+- `pack_10 availableDefaultImages=32/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=48`.
+
+Generacion:
+
+- Wave D inicial:
+  `SP10-022|SP10-023|SP10-024|SP10-025|SP10-026|SP10-029`.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_10 "--preset=SP10-022|SP10-023|SP10-024|SP10-025|SP10-026|SP10-029" --parallel=1 --session-suffix=pack10_missing_wave_d --force`
+  -> `generated=6 attempted=6 skipped=74 failed=0`.
+- Rechazo/retry puntual: `SP10-025` salio como hooded-hacker demasiado
+  cliche. Se agrego override id-specific en `scripts/generate-style-defaults.ts`
+  para ASCII Art sin persona/hooded hacker/UI, y se regenero solo `SP10-025`.
+- Retry:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_10 "--preset=SP10-025" --parallel=1 --session-suffix=pack10_missing_wave_d_sp10_025_retry --force`
+  -> `generated=1 attempted=1 skipped=79 failed=0`.
+
+QA:
+
+- QA sheet: `logs\qa-pack10-missing-wave-d.webp`.
+- Aceptadas: `SP10-022` Pixel Sorting, `SP10-023` VHS Glitch,
+  `SP10-024` CRT Monitor, `SP10-025` ASCII Art retry, `SP10-026` JPEG
+  Artifacts, `SP10-029` Halftone Pattern.
+- No hay anime ni UI/texto legible. Watchlist suave: `SP10-023` y `SP10-024`
+  usan figura como soporte, pero el signal/glitch domina; `SP10-025` quedo
+  corregida sin persona.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_10 --coverage` -> ok;
+  `availableDefaultImages=38/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=42`.
+
+Proxima tanda recomendada:
+
+- Listar missing ordenados y continuar con siguiente bloque de 6; coverage
+  ordenado actual empieza por `SP10-032|SP10-035|SP10-036|SP10-037|SP10-038|SP10-039`.
+
+## Tanda 2026-06-20 - `pack_10` missing surreal cards E
+
+Objetivo: avanzar `pack_10` en `Surrealism & Dream` sin volver a contaminar
+presets no-anime con acabado anime/global-character-card.
+
+Estado antes:
+
+- `pack_10 availableDefaultImages=38/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=42`.
+
+Generacion:
+
+- Wave E:
+  `SP10-032|SP10-035|SP10-036|SP10-037|SP10-038|SP10-039`.
+- Dry-run: `--dry-run` queda aceptado como alias seguro de
+  `--dry-run-prompts`; los prompts solo mencionan anime como restriccion
+  negativa.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_10 "--preset=SP10-032|SP10-035|SP10-036|SP10-037|SP10-038|SP10-039" --parallel=1 --session-suffix=pack10_missing_wave_e --force`
+  -> `generated=6 attempted=6 skipped=74 failed=0`.
+- Nota: `SP10-038` tuvo un primer job `needs_review`, pero retry genero asset.
+- Retry: `SP10-032` se regenero con override id-specific porque el primer
+  resultado incluia figura humana pese a `avoidRules: people, life`.
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_10 --preset=SP10-032 --parallel=1 --session-suffix=pack10_missing_wave_e_sp10_032_retry --force`
+  -> `generated=1 attempted=1 skipped=79 failed=0`.
+
+QA:
+
+- QA sheet: `logs\qa-pack10-missing-wave-e.webp`.
+- Aceptadas: `SP10-032` Liminal Space retry, `SP10-035` Magical Realism,
+  `SP10-036` Double Exposure, `SP10-037` Escher Style, `SP10-038` Vaporwave,
+  `SP10-039` Biomechanical.
+- No hay anime global. Watchlist suave: `SP10-035` por personaje mistico
+  dominante, pero todavia representa Magical Realism.
+
+Validacion:
+
+- `bun run check -- scripts/generate-style-defaults.ts` -> ok.
+- `bun run styles:validate -- --pack=pack_10 --coverage` -> ok;
+  `availableDefaultImages=44/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=36`.
+
+Proxima tanda recomendada:
+
+- Continuar `pack_10` con:
+  `SP10-040|SP10-041|SP10-042|SP10-044|SP10-046|SP10-047`.
+
+## Tanda 2026-06-20 - `pack_10` missing surreal/pattern cards F
+
+Objetivo: avanzar `pack_10` en el cierre de `Surrealism & Dream` y entrar en
+`Pattern & Texture`, evitando que los patrones se vuelvan personajes o rooms.
+
+Estado antes:
+
+- `pack_10 availableDefaultImages=44/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=36`.
+
+Generacion:
+
+- Wave F:
+  `SP10-040|SP10-041|SP10-042|SP10-044|SP10-046|SP10-047`.
+- Se agregaron overrides puntuales para `SP10-046` Paisley Pattern y
+  `SP10-047` Damask Pattern: textil/material-first, sin personaje, sin
+  habitacion/showroom.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_10 "--preset=SP10-040|SP10-041|SP10-042|SP10-044|SP10-046|SP10-047" --parallel=1 --session-suffix=pack10_missing_wave_f --force`
+  -> `generated=6 attempted=6 skipped=74 failed=0`.
+- Nota: `SP10-040` tuvo un primer job `needs_review`, pero retry genero asset.
+
+QA:
+
+- QA sheet: `logs\qa-pack10-missing-wave-f.webp`.
+- Aceptadas: `SP10-040` Collage Surrealism, `SP10-041` Metaphysical Art,
+  `SP10-042` Lowbrow Pop Surrealism, `SP10-044` Solarpunk, `SP10-046`
+  Paisley Pattern, `SP10-047` Damask Pattern.
+- No hay anime global. `SP10-046` y `SP10-047` quedaron sin personaje.
+  Watchlist suave: `SP10-044` usa figura central, pero la identidad
+  botanica/tech domina.
+
+Validacion:
+
+- `bun run check -- scripts/generate-style-defaults.ts` -> ok.
+- `bun run styles:validate -- --pack=pack_10 --coverage` -> ok;
+  `availableDefaultImages=54/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=26`.
+- Nota de concurrencia: el coverage actual incluye assets que aparecieron
+  durante la ronda fuera del comando wave F (`SP10-048`, `SP10-049`,
+  `SP10-056`, `SP10-070`).
+
+Proxima tanda recomendada:
+
+- Continuar `pack_10` con:
+  `SP10-050|SP10-051|SP10-053|SP10-054|SP10-055|SP10-057`.
+
+## Tanda 2026-06-20 - `pack_10` missing pattern cards G
+
+Objetivo: continuar `pack_10` `Pattern & Texture` sin volver a empujar
+presets no-anime hacia personaje/anime ni hacia product still-life.
+
+Estado antes:
+
+- `pack_10 availableDefaultImages=57/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=23`.
+
+Generacion:
+
+- Wave G:
+  `SP10-053|SP10-054|SP10-055|SP10-057|SP10-058`.
+- Se agrego guard category-level para `pack_10` `Pattern & Texture`:
+  sufijo `SP10 PATTERN/TEXTURE OVERRIDE`, `DETAIL` material-scale y
+  `CAMERA FOCUS` material hierarchy; anime/manga queda solo como prohibicion.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_10 "--preset=SP10-053|SP10-054|SP10-055|SP10-057|SP10-058" --parallel=1 --session-suffix=pack10_missing_wave_g --force`
+  -> `generated=5 attempted=5 skipped=75 failed=0`.
+- Retry `SP10-055`: primer resultado era bowl/sphere/product still-life; se
+  agrego override wood-grain surface y se regenero -> `generated=1 attempted=1
+  skipped=79 failed=0`.
+- Retry `SP10-057`: primer resultado era objeto/mascota tejida; se agrego
+  override knitted textile surface y se regenero -> `generated=1 attempted=1
+  skipped=79 failed=0`.
+
+QA:
+
+- QA sheet: `logs\qa-pack10-missing-wave-g.webp`.
+- Aceptadas: `SP10-053` Tie Dye, `SP10-054` Marble Texture, `SP10-055`
+  Wood Grain retry, `SP10-057` Knitted Texture retry, `SP10-058` Denim
+  Texture.
+- No hay anime ni personajes. Watchlist suave: `SP10-054` y `SP10-058`
+  incluyen objeto/edge de soporte, pero la lectura principal sigue siendo
+  material/textura.
+
+Validacion:
+
+- `bun run check -- scripts/generate-style-defaults.ts` -> ok.
+- `bun run styles:validate -- --pack=pack_10 --coverage` -> ok;
+  `availableDefaultImages=65/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=15`.
+- Nota de concurrencia: el coverage final incluye assets que aparecieron fuera
+  del comando wave G (`SP10-060`, `SP10-062`, `SP10-063`).
+
+Proxima tanda recomendada:
+
+- Continuar `pack_10` con:
+  `SP10-064|SP10-065|SP10-066|SP10-067|SP10-069|SP10-071`.
+
+## Tanda 2026-06-20 - `pack_10` missing pattern cards H
+
+Objetivo: continuar el cierre de `pack_10` `Pattern & Texture`, regenerando
+tambien defaults que reaparecieron como faltantes tras borrado/rechazo
+(`SP10-037`, `SP10-051`) sin contaminar con anime/personajes.
+
+Estado antes:
+
+- `pack_10 availableDefaultImages=66/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=14`.
+
+Generacion:
+
+- Wave H:
+  `SP10-037|SP10-051|SP10-065|SP10-066|SP10-067|SP10-069`.
+- Se reforzo `pack_10` `Pattern & Texture`: anchors propios material-first,
+  `CONSTRAINT SEMANTICS` estricto contra personas/rooms/product staging,
+  feeling material-first y motif material-first.
+- Se agrego override id-specific para `SP10-037` Escher: geometria imposible,
+  sin personaje ni escena de sala/corredor.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_10 "--preset=SP10-037|SP10-051|SP10-065|SP10-066|SP10-067|SP10-069" --parallel=1 --session-suffix=pack10_missing_wave_h --force`
+  -> `generated=6 attempted=6 skipped=74 failed=0`.
+
+QA:
+
+- QA sheet: `logs\qa-pack10-missing-wave-h.webp`.
+- Aceptadas: `SP10-037` Escher Style, `SP10-051` Polka Dot, `SP10-065`
+  Basket Weave, `SP10-066` Honeycomb, `SP10-067` Circuit Board, `SP10-069`
+  QR Code Style.
+- No hay anime ni personajes. Watchlist suave: `SP10-069` mantiene lectura
+  QR-like por preset, pero sin UI/logo/texto visible.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_10 --coverage` -> ok;
+  `availableDefaultImages=77/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=3`.
+- Nota de concurrencia: el coverage final incluye assets que aparecieron fuera
+  del comando wave H (`SP10-071`, `SP10-072`, `SP10-074`, `SP10-075`,
+  `SP10-077`).
+
+Proxima tanda recomendada:
+
+- Cerrar los ultimos missing de `pack_10`:
+  `SP10-076|SP10-078|SP10-079`.
+
+## Tanda 2026-06-20 - `pack_10` missing pattern cards I
+
+Objetivo: cerrar los ultimos missing de `pack_10` manteniendo el criterio
+material/pattern-first y evitando texto/UI/logos.
+
+Estado antes:
+
+- `pack_10 availableDefaultImages=77/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=3`.
+
+Generacion:
+
+- Wave I:
+  `SP10-076|SP10-078|SP10-079`.
+- Dry-run: los prompts quedaron material/pattern-first, sin personaje, sin
+  room/product staging y con prohibicion de texto/logos/UI.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 bun run scripts\generate-style-defaults.ts --pack=pack_10 "--preset=SP10-076|SP10-078|SP10-079" --parallel=1 --session-suffix=pack10_missing_wave_i --force`
+  -> `generated=3 attempted=3 skipped=77 failed=0`.
+
+QA:
+
+- QA sheet: `logs\qa-pack10-missing-wave-i.webp`.
+- Aceptadas: `SP10-076` Blueprint, `SP10-078` Neon Light Lines, `SP10-079`
+  Foil Stamping.
+- No hay anime ni personajes. `SP10-076` no tiene texto legible, `SP10-078`
+  queda como lineas neon abstractas y `SP10-079` no deriva a logo/UI/product
+  shot.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_10 --coverage` -> ok;
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+
+Proxima tanda recomendada:
+
+- `pack_10` queda cerrado visualmente. Volver al objetivo principal:
+  auditoria/refactor semantico pendiente en `pack_07`/`pack_08`, o deuda visual
+  prioritaria `pack_14`/`pack_15` si seguimos el tramo de cards.
+
+## Tanda 2026-06-20 - `SP06` anti-anime scope follow-up
+
+Motivo: feedback del usuario: algunas cards no-anime de `SP06` seguian
+leyendo como anime o character-card digital aunque los prompts ya negaban
+anime como fallback global.
+
+Verificacion:
+
+- Contact sheet actual generada/revisada:
+  `logs\qa-sp06-anime-scope-suspects-current.webp`.
+- Confirmadas como no confiables por spillover anime/digital-anime no pedido:
+  `SP06-002`, `SP06-020`, `SP06-026`, `SP06-055`, `SP06-104`.
+- `SP06-105` queda condicional: puede usar fighting-game stylization, pero no
+  generic anime.
+- Permitidas por identidad explicita: `SP06-085`, `SP06-108`, `SP06-114`
+  (Visual Novel / Anime Gacha / anime-game framing).
+
+Patch:
+
+- `scripts/generate-style-defaults.ts` agrega scope locks para `pack_06`:
+  `SP06 NON-ANIME SCOPE` por defecto y `SP06 ANIME-ALLOWED SCOPE` solo para
+  `SP06-085`, `SP06-108`, `SP06-114`.
+- El `Presence route` no-anime ya no empuja a "protagonist" generico como
+  fallback; ahora pide figura/escena medium-led no-anime.
+- `ANATOMY QA` ya no trata `humans/anime figures` como categoria neutra;
+  anime-style anatomy queda permitido solo cuando el preset lo pide.
+
+Checks:
+
+- Dry-run prompts:
+  `bun run scripts\generate-style-defaults.ts --pack=pack_06 "--preset=SP06-002|SP06-020|SP06-026|SP06-055|SP06-104|SP06-105|SP06-085|SP06-108|SP06-114" --print-prompts --force`
+  confirma `NON-ANIME SCOPE` en los no-anime y `ANIME-ALLOWED SCOPE` en los
+  permitidos.
+- `bun run check -- scripts\generate-style-defaults.ts scripts\style-default-utils.ts scripts\style-default-utils.test.ts`
+  -> ok.
+
+Siguiente paso:
+
+- No continuar generacion masiva hasta regenerar/revisar las sospechosas
+  rechazadas con este scope activo, en una tanda chica y con QA visual.
+
+## Tanda 2026-06-20 - `SP06` non-anime scope retry
+
+Objetivo: corregir las cards `SP06` no-anime que habian derivado a anime o
+digital character-card, usando el `SP06 NON-ANIME SCOPE` activo.
+
+Estado antes:
+
+- `pack_06 availableDefaultImages=120/120`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- Dry-run confirmo scope no-anime en:
+  `SP06-002|SP06-020|SP06-026|SP06-055|SP06-104`.
+
+Backups:
+
+- Pre-wave:
+  `D:\codex-studio-backups\style-default-cards\20260620-231756\pre-sp06-non-anime-scope-retry`.
+- Rechazadas durante retry `SP06-104`:
+  `D:\codex-studio-backups\style-default-cards\20260620-232846\rejected-sp06-104-object-core`,
+  `D:\codex-studio-backups\style-default-cards\20260620-233121\rejected-sp06-104-drone-camera-prop`,
+  `D:\codex-studio-backups\style-default-cards\20260620-233145\rejected-sp06-104-pre-base-align`.
+
+Generacion:
+
+- Wave:
+  `SP06-002|SP06-020|SP06-026|SP06-055|SP06-104`.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp06-non-anime-scope-retry-archive bun run scripts\generate-style-defaults.ts --pack=pack_06 "--preset=SP06-002|SP06-020|SP06-026|SP06-055|SP06-104" --parallel=1 --session-suffix=sp06_non_anime_scope_retry --force`
+  -> `generated=5 attempted=5 skipped=115 failed=0`.
+- `SP06-104` primer retry quedo object-core; se endurecio el lock.
+- `SP06-104` segundo retry quedo con dispositivo/camera-drone; se alineo tambien
+  el base prompt para prohibir drone/camera/tripod y pedir courier no-anime.
+- Retry final:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp06-non-anime-scope-retry-archive bun run scripts\generate-style-defaults.ts --pack=pack_06 --preset=SP06-104 --parallel=1 --session-suffix=sp06_104_non_anime_no_drone --force`
+  -> `generated=1 attempted=1 skipped=119 failed=0`.
+
+QA:
+
+- Before/after sheet:
+  `logs\qa-sp06-non-anime-scope-retry-before-after.webp`.
+- Final sheet:
+  `logs\qa-sp06-non-anime-scope-retry-final.webp`.
+- Aceptadas: `SP06-002`, `SP06-020`, `SP06-026`, `SP06-104`.
+- `SP06-055`: pass/watchlist; ya no lee anime, pero queda en watchlist por
+  resolver con animal/fox glitch en vez de otro sujeto menos recurrente.
+
+Validacion:
+
+- `bun run styles:validate -- --pack=pack_06 --coverage` -> ok;
+  `availableDefaultImages=120/120`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `bun run styles:runtime:check` -> current.
+- `bun run check:fix -- scripts\generate-style-defaults.ts` -> ok.
+- `bun run check -- scripts\generate-style-defaults.ts` -> ok.
+
+Proxima tanda recomendada:
+
+- Volver al objetivo principal con auditoria/refactor semantico de
+  `pack_07`/`pack_08`.
+
+## Checkpoint 2026-06-21 - estado real del objetivo `pack_07` / `pack_08`
+
+Se releyo el estado actual tras la correccion `SP06` y se contrasto con los
+docs previos. Lectura actual:
+
+- `pack_07` y `pack_08` siguen semanticamente cerrados; los diffs actuales en
+  manifests son polish ya alineado con el objetivo: quitar mojibake, escena
+  positiva demasiado fija o wording que fuerza persona/set cuando no hace falta.
+- `pack_07` coverage: `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `pack_08` coverage: `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `pack_14` y `pack_15` tambien siguen cerrados por coverage, asi que no se
+  reabren salvo nuevos borrados o feedback visual puntual.
+- Category bases del slice objetivo `pack_08..pack_11` siguen cubiertas segun
+  doc activa previa: `20/20`.
+
+Checks:
+
+- `bun run styles:validate -- --coverage` -> ok; deuda visual global actual:
+  `pack_01 missing=4`, `pack_02 missing=9`, `pack_03 missing=2`,
+  `pack_04 missing=4`, `pack_05 missing=37`, `pack_09 missing=7`,
+  `pack_11 missing=64`, `pack_13 missing=25`; todos los demas packs relevantes
+  del objetivo estan en `0` missing/stale.
+- `bun run styles:quality:audit` -> ok; redundancy none above threshold.
+- `bun run styles:runtime:check` -> current.
+
+Proxima tanda recomendada:
+
+- Como `pack_14`/`pack_15` ya estan cerrados y `pack_07`/`pack_08` no tienen
+  P1 semantico vivo, el siguiente avance visual mas eficiente es `pack_11`
+  missing en ondas chicas con QA visual.
+
+## Checkpoint 2026-06-21 - avance visual `pack_11` wave 1
+
+Se avanzo sobre la deuda visual siguiente sin reabrir semantica de
+`pack_07`/`pack_08`:
+
+- Tanda generada: `SP11-001|SP11-002|SP11-004|SP11-005`.
+- Criterio aplicado antes de generar: prompt efectivo sin anime por defecto,
+  identidad toy/material clara, y post-procesado con denoise fuerte.
+- QA visual aceptada: brick-build, vinyl collectible, papercraft y amigurumi
+  leen como presets distintos y no como anime generico.
+- `bun run styles:validate -- --pack=pack_11 --coverage` -> ok;
+  `availableDefaultImages=22/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=58`.
+
+Proxima tanda recomendada:
+
+- Continuar `pack_11` con `SP11-007|SP11-008|SP11-009|SP11-010`, manteniendo
+  dry-run de prompts y QA visual antes de aceptar cada tanda.
+
+## Checkpoint 2026-06-21 - avance visual `pack_11` wave 2
+
+Se completo otra tanda visual de `pack_11` sin tocar la semantica ya cerrada de
+`pack_07`/`pack_08`:
+
+- Tanda aceptada: `SP11-007|SP11-008|SP11-009|SP11-010`.
+- Criterio aplicado: dry-run de prompts sin anime por defecto, QA visual por
+  card, y retry solo para la card que fallo identidad.
+- `SP11-009` tuvo un primer resultado rechazado por pixel-art/arcade; el retry
+  final lee como glossy emoji/icon 3D.
+- `bun run styles:validate -- --pack=pack_11 --coverage` -> ok;
+  `availableDefaultImages=34/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=46`.
+- Trazabilidad: la cobertura subio mas que esta tanda porque tambien aparecen
+  presentes `SP11-020..025`, `SP11-061` y `SP11-065`, no reportados por los
+  comandos de esta wave.
+
+Proxima tanda recomendada:
+
+- Continuar `pack_11` con `SP11-011|SP11-012|SP11-013|SP11-014`.
+
+## Checkpoint 2026-06-21 - avance visual `pack_11` wave 3
+
+Se completo otra tanda visual de `pack_11`:
+
+- Tanda aceptada: `SP11-011|SP11-012|SP11-013|SP11-014`.
+- `SP11-012` y `SP11-013` necesitaron override puntual en
+  `scripts/generate-style-defaults.ts` porque el prompt general seguia
+  resolviendo `Solarpunk` como personaje anime y `Dieselpunk` como retrato
+  AAA/concept-art oscuro.
+- QA visual final: `SP11-012` quedo como infraestructura solarpunk sin
+  personaje; `SP11-013` quedo como maquina dieselpunk sin retrato humano.
+- `bun run styles:validate -- --pack=pack_11 --coverage` -> ok;
+  `availableDefaultImages=47/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=33`.
+- Trazabilidad: la cobertura subio mas que esta tanda porque tambien aparecen
+  presentes `SP11-027`, `SP11-029`, `SP11-034`, `SP11-046`, `SP11-047`,
+  `SP11-049`, `SP11-053`, `SP11-054` y `SP11-055`, no reportados por los
+  comandos de esta wave.
+
+Proxima tanda recomendada:
+
+- Continuar `pack_11` con `SP11-015|SP11-019|SP11-026|SP11-030`.
+
+## Checkpoint 2026-06-21 - guardrail no-anime antes de wave 4
+
+Se pauso la generacion de `pack_11` antes de la wave 4 porque el usuario
+marco una desviacion real: varios presets mixtos se estaban resolviendo como
+anime aunque no lo pedian.
+
+- Ajuste aplicado: `scripts/generate-style-defaults.ts` ahora agrega
+  `NON-ANIME STYLE LOCK` arriba del prompt cuando el pack/preset no pide
+  explicitamente anime/manga/visual-novel/gacha/shonen/shojo/seinen/josei/moe/
+  isekai.
+- La ruta generica no-anime ya no empuja `protagonist`, `facial angle` o
+  `face/pose` como default; usa anclas de material, objeto, ambiente, proceso o
+  figura no-anime solo si el preset lo necesita.
+- Ajuste global: `scripts/style-default-utils.ts` ya no usa `cel animation`
+  como permiso amplio para introducir anime.
+- Dry-run de `SP11-015|SP11-019|SP11-026|SP11-030` revisado: el lock aparece
+  al inicio del prompt y se mantiene el denoise fuerte.
+- `bun run check:fix -- scripts\generate-style-defaults.ts scripts\style-default-utils.ts`
+  -> ok.
+- Estado validado despues de la pausa:
+  `bun run styles:validate -- --pack=pack_11 --coverage` -> ok;
+  `availableDefaultImages=49/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=31`. La siguiente cola real sigue iniciando en
+  `SP11-015|SP11-019|SP11-026|SP11-030`.
+
+Proxima tanda recomendada:
+
+- Generar `SP11-015|SP11-019|SP11-026|SP11-030` con QA visual estricta contra
+  anime no pedido, texto/UI y concept-art generico.
+
+## Checkpoint 2026-06-21 - avance visual `pack_11` wave 4
+
+Se genero la wave no-anime posterior al guardrail:
+
+- Tanda aceptada: `SP11-015|SP11-019|SP11-026|SP11-030`.
+- Criterio aplicado: dry-run final con `NON-ANIME STYLE LOCK`, ancla
+  no-anime y denoise fuerte antes de generar.
+- QA visual final: `SP11-015` dark academia relic/object scene; `SP11-019`
+  felt broadcast object/set; `SP11-026` aerosol layering aceptada con watchlist
+  menor por product/object-render; `SP11-030` sand-art bottle clara.
+- `bun run styles:validate -- --pack=pack_11 --coverage` -> ok;
+  `availableDefaultImages=58/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=22`.
+- Trazabilidad: la cobertura subio mas que esta tanda porque tambien aparecen
+  presentes `SP11-056`, `SP11-058`, `SP11-071` y `SP11-072`, no reportados por
+  los comandos de esta wave.
+
+Proxima tanda recomendada:
+
+- Continuar `pack_11` con `SP11-031|SP11-032|SP11-033|SP11-035`.
+
+## Checkpoint 2026-06-21 - avance visual `pack_11` wave 5
+
+Se genero otra wave no-anime de novelty/material:
+
+- Tanda aceptada: `SP11-031|SP11-032|SP11-033|SP11-035`.
+- Criterio aplicado: dry-run final con `NON-ANIME STYLE LOCK`, ancla
+  no-anime y denoise fuerte antes de generar.
+- QA visual final: `SP11-031` ice carving aceptada con watchlist menor por
+  escenario palaciego/hielo; `SP11-032` latte art clara; `SP11-033` blueprint
+  clara con marcas tecnicas no legibles; `SP11-035` thermal vision clara.
+- `bun run styles:validate -- --pack=pack_11 --coverage` -> ok;
+  `availableDefaultImages=66/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=14`.
+- Trazabilidad: la cobertura subio mas que esta tanda porque tambien aparecen
+  presentes `SP11-068`, `SP11-073` y `SP11-074`, no reportados por los comandos
+  de esta wave.
+
+Proxima tanda recomendada:
+
+- Continuar `pack_11` con `SP11-042|SP11-048|SP11-052|SP11-057`.
+
+## Checkpoint 2026-06-21 - avance visual `pack_11` wave 6
+
+Se cerro la siguiente tanda de `pack_11` despues de revisar la deriva anime:
+
+- Tanda aceptada: `SP11-042|SP11-048|SP11-052|SP11-057`.
+- Criterio aplicado: dry-run con `NON-ANIME STYLE LOCK`, ancla no-anime y
+  `apply heavy denoise to the image`; QA visual en
+  `.tmp/sp11-wave6-contact.webp`.
+- Ajuste de prompt global: `scripts/style-default-utils.ts` ya no confunde
+  `non-anime` con prohibir fotografia/material/macro/game-art; preserva el
+  lenguaje nativo del preset y bloquea solo anime no solicitado.
+- QA visual final: `SP11-042` Frutiger Aero glossy/aqua; `SP11-048` sushi
+  platter claro; `SP11-052` fruit explosion dinamica; `SP11-057` insect eye
+  macro/material. Ninguna cae en anime.
+- `bun run styles:validate -- --pack=pack_07 --coverage` -> ok;
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_08 --coverage` -> ok;
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- `bun run styles:validate -- --pack=pack_11 --coverage` -> ok;
+  `availableDefaultImages=71/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=9`.
+- Trazabilidad: la cobertura subio mas que esta tanda porque tambien aparece
+  presente `SP11-066`, no reportado por el comando de wave 6.
+
+Proxima tanda recomendada:
+
+- Continuar `pack_11` con `SP11-060|SP11-062|SP11-063|SP11-064`, manteniendo
+  dry-run y QA visual antes de aceptar.
+
+## Checkpoint 2026-06-21 - avance visual `pack_11` wave 7
+
+Se completo otra tanda macro/material de `pack_11`:
+
+- Tanda aceptada: `SP11-060|SP11-062|SP11-063|SP11-064`.
+- Dry-run: `.tmp/sp11-wave7-dryrun.txt`; sin anime por defecto, con medio
+  nativo fotografico/material/macro permitido y denoise fuerte.
+- QA inicial: `SP11-063` fallo por contamination de `Iris/Eye Macro`.
+- Correccion minima: `SP11-063` suma `eye`, `iris`, `pupil`, `lens` en
+  `avoidRules` y `negativePrompt`; retry 1x1 aceptado.
+- QA final: `.tmp/sp11-wave7-contact-final.webp`; `SP11-060` circuit board,
+  `SP11-062` fabric macro, `SP11-063` rust/decay macro y `SP11-064` iris macro
+  quedan distinguibles, sin deriva anime.
+- `bun run styles:validate -- --pack=pack_11 --coverage` -> ok;
+  `availableDefaultImages=75/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=5`.
+- `bun run styles:runtime` -> ok; `packs=17`, `presets=1649`.
+- `bun run styles:runtime:check` -> current.
+
+Proxima tanda recomendada:
+
+- Cerrar `pack_11` con `SP11-067|SP11-070|SP11-075|SP11-079|SP11-080` en
+  tanda chica con QA visual.
+
+## Checkpoint 2026-06-21 - `pack_15` anti-anime prompt gate
+
+Se corrigio el scope antes de continuar generando: `pack_15` no debe usar
+anime como acabado por defecto.
+
+- Cambio minimo:
+  - los 80 manifests `SP15-001..080` ya no tienen la frase permisiva de anime;
+  - `scripts/generate-style-defaults.ts` agrega `NON-ANIME STYLE LOCK` tambien
+    en el branch especial de `pack_15`;
+  - hard avoid explicito para anime face, manga face, gacha framing,
+    visual-novel bust crop, glossy cel hair y generic anime protagonist.
+- Dry-run:
+  `.tmp\pack15-non-anime-guardrail-dryrun.txt` con
+  `SP15-001|SP15-017|SP15-055|SP15-080` -> `prompts=4 skipped=76`, todos con
+  lock no-anime y `apply heavy denoise to the image`.
+- Validacion:
+  `bun run styles:validate -- --pack=pack_15 --coverage` -> ok,
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- Runtime:
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`.
+
+Proxima tanda recomendada:
+
+- Retomar `pack_11` faltante solo despues de levantar/verificar server local y
+  mantener dry-run + QA visual antes de aceptar imagenes.
+
+## Checkpoint 2026-06-21 - cierre visual `pack_11` wave 8
+
+Se cerro la cobertura visual de `pack_11`:
+
+- Estado antes: `availableDefaultImages=75/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=5`.
+- Tanda aceptada: `SP11-067|SP11-070|SP11-075|SP11-079|SP11-080`.
+- Incidencia runtime: jobs stale de `sp11_wave8_close_native_media` quedaron
+  en `codex.started` sin turn/transcript/asset; se limpiaron solo esos jobs y
+  stales antiguos de `pack_11`, luego se reinicio server/app-server local.
+  Health final: `activeWorkerCount=0`, `queuedJobs=0`, `trackedJobs=0`.
+- Comandos exitosos:
+  - `SP11-070` probe 1x1 -> `generated=1 attempted=1 skipped=79 failed=0`;
+  - `SP11-067|SP11-075|SP11-079|SP11-080` -> `generated=4 attempted=4 skipped=76 failed=0`.
+- QA visual: `.tmp/sp11-wave8-contact.webp`; pasan feather macro, ink in
+  water, sponge, carbon fiber y dandelion seed. Sin deriva anime.
+- Validacion:
+  `bun run styles:validate -- --pack=pack_11 --coverage` -> ok,
+  `availableDefaultImages=80/80`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`.
+- Runtime/quality:
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`;
+  `bun run styles:quality:audit` -> ok, `redundancy: none above threshold`.
+
+Proxima tanda recomendada:
+
+- Recalcular la cola global de default cards faltantes/stale antes de generar
+  mas; no asumir faltantes por memoria.

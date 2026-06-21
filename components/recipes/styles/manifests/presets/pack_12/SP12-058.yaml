@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Cristal resonante, roca húmeda, metal fino y membranas vibrantes.
   camera_and_composition: Nodos sonoros, conexiones curvas y ritmo de resolución sin exigir caverna.
   atmosphere_and_mood: Musical, misteriosa y de descubrimiento progresivo.
-  rendering_and_quality: "Sound-puzzle gameplay screencap: echo cues, chamber rhythm, solution path, resonance state readable."
+  rendering_and_quality: 'Sound-puzzle gameplay screencap: echo cues, chamber rhythm, solution path, resonance state readable.'
 avoidRules:
   - watermark
   - text

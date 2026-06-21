@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-020
+packId: pack_17
+name: Techno Crusader Armor
+category: 4. Futuristic Medieval & Rune Tech
+domain: futuristic medieval
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - futuristic-medieval-and-rune-tech
+  - techno-crusader
+visualDna:
+  aesthetic: Futuristic crusader armor with medieval plate grammar, lit sigils, modular joints, and ritual tech.
+  subject_treatment: A sealed rune-tech paladin suit with servo joints, relic battery pack, tabard planes, and oath hardware, treated as armor design rather than face or weapon.
+  color_and_tone: Black steel, off-white cloth, red seal accents, amber LEDs, and cold blue edge light.
+  lighting_and_shadow: Hard rim light and simple seam glow define armor planes while keeping all major details visible.
+  texture_and_material: Ceramic plating, scratched steel, woven tabards, rubberized joints, enamel symbols, and dusty circuitry.
+  camera_and_composition: Three-quarter armor showcase, low angle, centered shield or helm shape, and strong heraldic symmetry.
+  atmosphere_and_mood: Disciplined, militant, sacred, and technological.
+  rendering_and_quality: Armored fantasy illustration with clean silhouette, defined linework, tactile materials, and limited VFX.
+  creative_brief: Reusable armor language for future knights, guards, saints, pilots, relic carriers, or war machines.
+avoidRules:
+  - generic space marine
+  - smooth plastic suit
+  - superhero spandex
+  - bright fantasy paladin
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-020.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: futuristic-medieval-and-rune-tech
+  categoryName: 4. Futuristic Medieval & Rune Tech
+  domain: futuristic medieval
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - futuristic-medieval-and-rune-tech
+    - techno-crusader
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

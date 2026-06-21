@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Asfalto mojado PBR, metal cepillado, vidrio sucio y holografía ambiental de baja persistencia.
   camera_and_composition: Composición third-person táctica con profundidad legible, rutas sugeridas, cobertura abstracta y puntos de interacción reconocibles.
   atmosphere_and_mood: Tensión operativa, vigilancia constante y ritmo de incursión de alto riesgo.
-  rendering_and_quality: "In-game third-person screencap AAA: stealth routes, interactables, objective contrast, neon threat readability."
+  rendering_and_quality: 'In-game third-person screencap AAA: stealth routes, interactables, objective contrast, neon threat readability.'
 avoidRules:
   - watermark
   - text

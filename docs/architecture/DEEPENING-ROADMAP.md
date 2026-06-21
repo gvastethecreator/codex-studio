@@ -2,7 +2,7 @@
 
 Esta hoja de ruta sigue refactors que convierten módulos superficiales en módulos más profundos, con mejor locality, leverage y testabilidad. Las decisiones relacionadas viven en `docs/adr/`.
 
-Current findings index: `docs/architecture/architecture-review-2026-05-31.md`.
+Current findings index: `docs/architecture/architecture-review-2026-06-19-front-performance.md`.
 
 ## Conceptos
 
@@ -35,6 +35,23 @@ Execution order for this batch:
 4. Deepen `Command Center` projection policy.
 5. Add direct test surface for `createStudioApp` composition seam.
 6. Deepen `Local Studio Sync` refresh policy semantics.
+
+## Accepted review batch - 2026-06-19
+
+The current front-performance batch comes from `docs/architecture/architecture-review-2026-06-19-front-performance.md`.
+
+Execution order for this batch:
+
+1. Fix Browser Queue terminal outcome ownership. Done.
+2. Deepen Catalog Page / Gallery pagination. Partial: page state and load-more reached the grid; backend full-scope bulk commands remain.
+3. Give Local Studio Sync one runtime event ownership seam. Partial: browser SSE streams are shared with ref-counted leases; job waiting still needs the full sync seam.
+4. Align Demand-Mounted Surface behavior with data loading and errors. Partial: lazy surfaces now show loading/error states, and Settings heavy reads run on open.
+5. Make Command Center commands capability-aware and responsive. Partial: compact runtime/queue/settings commands remain reachable below `xl`, and dashboard no-op commands were removed.
+6. Reduce Studio Shell high-churn surfaces. Partial: settings domains are memoized and dead operations-rail props were removed.
+7. Split Style Browser session from style application behavior. Pending, blocked for now by active style worktree churn.
+8. Put Composer and Browser Queue persistence on a payload budget. Partial: inline recovery budget implemented; Local Asset refs remain future work.
+9. Consolidate Studio Readiness and Codex model freshness. Partial: Codex model catalog fetch is now owned by generation config and passed into Toolbar.
+10. Close source-audit temp-file hygiene. Done.
 
 ## Seguimiento de trabajo
 

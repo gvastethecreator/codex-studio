@@ -1,48 +1,53 @@
 schemaVersion: 1
 id: SP15-055
 packId: pack_15
-name: Brass Garden Atrium
-category: 9. Corepunk — Decopunk
+name: Mall Fountain Uplink
+category: 7. Media, Vapor & Glitch Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - decopunk
+  - punk-spectrum-vault
+  - media-vapor-and-glitch-punks
+  - mallsoft
+  - uplink
 visualDna:
-  aesthetic: Botanical decopunk where nature is staged, polished, humid, and ruled by brass geometry.
-  form_and_line: Geometric planter blocks, vaulted glass ribs, stepped terrace bands, balcony rings, and clipped leaf silhouettes.
-  color_palette: Emerald, brass, cream, wet leaf black-green, and fountain white.
-  lighting_setup: Filtered daylight, uplighted fountain nodes, humid sparkle on brass lattice, and soft green bounce from dense leaves.
-  material_texture: Brass lattice, marble, humid glass panes, waxy leaves, polished fountain stone, and condensation beads.
-  render_quality: High-fidelity lifestyle concept with botanical density constrained by clear deco structure.
-  spatial_distortion: Atrium-like depth rises through balcony rings, fountain axes, clipped plant geometry, and greenhouse sightlines.
-  atmosphere: Refined calm, curated abundance, luxury ecology, and controlled indoor weather.
-  key_features: Geometric fountain motifs, brass pergola lines, greenhouse rings, clipped ornamental planting, and misting-nozzle patterns.
-  creative_brief: 'Discipline the input with botanical decopunk luxury: clipped emerald silhouettes, brass pergola lines, condensation beads, marble fountain axes, and humid glass sparkle should make nature feel staged. Atriums or gardens can appear, but the style is curated abundance ruled by geometry. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: mallsoft network ritual built around an emptying mall fountain turned into an uplink with teens, coins, plants, fiber cables, and pastel storefront glow.
+  form_and_line: CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital slippage. Core composition uses fountain uplink, teen crew, fiber cables, coins, storefront glow.
+  color_palette: mall pink, fountain blue, beige tile, fiber cyan
+  lighting_setup: skylight wash, fountain reflection, storefront neon, fiber glints
+  material_texture: tile, water, plastic plants, fiber cable, chrome benches
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: melancholy, social, softly uncanny, retro
+  key_features: fountain uplink, teen crew, fiber cables, coins, storefront glow
+  creative_brief: 'Mallsoft meets network ritual: a cropped mall fountain, simplified people, cables, and nostalgia, avoiding faceless corridor repetition. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - rustic-farm
-  - cyber-grunge
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-055.webp
 attributes:
-  negativePrompt: photoreal, rustic-farm, cyber-grunge, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, detailed streetwear patches, readable hoodie graphics, readable storefront signs, brand logos, long mall hallway, escalator depth hero, atrium depth hero, retail aisle, coin clutter carpet, realistic water caustics, luxury mall render, empty fountain postcard, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-decopunk
-  categoryName: 9. Corepunk — Decopunk
+  packName: Punk Spectrum Vault
+  categoryId: media-vapor-and-glitch-punks
+  categoryName: 7. Media, Vapor & Glitch Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - decopunk
+    - punk-spectrum-vault
+    - media-vapor-and-glitch-punks
+    - mallsoft
+    - uplink
   supportedTasks:
     - image_generate
     - image_edit

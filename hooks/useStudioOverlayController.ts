@@ -35,6 +35,11 @@ interface StudioOverlayDebugPanelContext {
   close: StudioSystemOverlaysProps['closeDebugPanel'];
 }
 
+interface StudioOverlayChatPanelContext {
+  isOpen: StudioSystemOverlayFlags['isChatPanelOpen'];
+  close: StudioSystemOverlaysProps['closeChatPanel'];
+}
+
 interface StudioOverlayDashboardContext {
   isOpen: StudioSystemOverlayFlags['isDashboardModalOpen'];
   close: StudioSystemOverlaysProps['closeDashboard'];
@@ -52,7 +57,6 @@ interface StudioOverlayActivityContext {
 
 interface StudioOverlayVaultContext {
   handleExportLegacyVisualBatchSnapshot: StudioSystemOverlaysProps['handleExportLegacyVisualBatchSnapshot'];
-  handleDeepScan: StudioSystemOverlaysProps['handleDeepScan'];
 }
 
 interface StudioOverlayOnboardingContext {
@@ -91,6 +95,7 @@ interface StudioOverlayWorkspaceActions {
 
 interface StudioShellOverlayChromeContext {
   debugPanel: StudioOverlayDebugPanelContext;
+  chatPanel: StudioOverlayChatPanelContext;
   dashboard: StudioOverlayDashboardContext;
 }
 
@@ -114,6 +119,7 @@ export interface BuildStudioOverlayControllerArgs {
   image: StudioOverlayImageContext;
   editor: StudioOverlayEditorContext;
   debugPanel: StudioOverlayDebugPanelContext;
+  chatPanel: StudioOverlayChatPanelContext;
   dashboard: StudioOverlayDashboardContext;
   activity: StudioOverlayActivityContext;
   vault: StudioOverlayVaultContext;
@@ -149,6 +155,7 @@ export function buildStudioOverlayController({
   image,
   editor,
   debugPanel,
+  chatPanel,
   dashboard,
   activity,
   vault,
@@ -182,6 +189,7 @@ export function buildStudioOverlayController({
       flags: {
         isDebugPanelOpen: debugPanel.isOpen,
         isDashboardModalOpen: dashboard.isOpen,
+        isChatPanelOpen: chatPanel.isOpen,
         isLoadingSelectedJob: activity.isLoadingSelectedJob,
         isCheckingOnboarding: onboarding.isChecking,
         isDesktopRuntime: onboarding.isDesktopRuntime,
@@ -196,6 +204,7 @@ export function buildStudioOverlayController({
         isResettingStudio: settingsModule.isResettingStudio,
       },
       closeDebugPanel: debugPanel.close,
+      closeChatPanel: chatPanel.close,
       mergedLogs: activity.mergedLogs,
       closeDashboard: dashboard.close,
       visualGroupsCount: workspace.catalogVisualGroupCount,
@@ -206,8 +215,10 @@ export function buildStudioOverlayController({
       onInspectJob: activity.onInspectJob,
       onClearSelectedJob: activity.onClearSelectedJob,
       onRetryJob: activity.onRetryJob,
+      handleGenerate: image.handleGenerate,
+      isGenerating: image.activeGenerationConfig !== null,
+      activeProviderId: settingsModule.settingsDomain.settings?.defaultProviderId ?? 'codex',
       handleExportLegacyVisualBatchSnapshot: vault.handleExportLegacyVisualBatchSnapshot,
-      handleDeepScan: vault.handleDeepScan,
       apiBase: onboarding.apiBase,
       onboardingError: onboarding.error,
       onboardingHealth: onboarding.health,
@@ -260,6 +271,7 @@ export function buildStudioShellOverlayController({
     image,
     editor,
     debugPanel: chrome.debugPanel,
+    chatPanel: chrome.chatPanel,
     dashboard: chrome.dashboard,
     activity: {
       mergedLogs: runtime.mergedLogs,

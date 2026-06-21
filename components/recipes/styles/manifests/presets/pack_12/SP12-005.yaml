@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Titanio cepillado, escarcha interior, juntas de caucho técnico y condensación por despresurización.
   camera_and_composition: Profundidad claustrofóbica con compuertas, etapas de reparación y rutas de fuga sugeridas sin exigir corredor lunar.
   atmosphere_and_mood: Claustrofobia operativa, urgencia técnica y heroísmo de contingencia.
-  rendering_and_quality: "In-game level screencap: breach alarm routes, pressure doors, hazards, objectives readable."
+  rendering_and_quality: 'In-game level screencap: breach alarm routes, pressure doors, hazards, objectives readable.'
 avoidRules:
   - watermark
   - text

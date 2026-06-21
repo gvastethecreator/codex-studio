@@ -1,48 +1,53 @@
 schemaVersion: 1
 id: SP15-079
 packId: pack_15
-name: Moonwater Clinic Arcade
-category: 11. Corepunk — Lunarpunk
+name: Salvage Sail Commons
+category: 10. Primitive, Stone & Salvage Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - lunarpunk
+  - punk-spectrum-vault
+  - primitive-stone-and-salvage-punks
+  - salvagepunk
+  - sailpunk
 visualDna:
-  aesthetic: Abstract moonwater care style with transparent softness, public-health clarity, and calm hydrothermic trust.
-  form_and_line: Arcade-like ribs, basin curves, pod ovals, kiosk-like rectangles, and water-channel thresholds.
-  color_palette: Moonwater aqua, clinic white, rose beige, algae-glass green, and soft textile gray.
-  lighting_setup: Diffused health light, reflective water highlights, gentle status glows, and calm wayfinding beacons.
-  material_texture: Sterile ceramic matte, algae-glass transparency, soft textile panels, non-slip stone texture, and privacy membrane haze.
-  render_quality: Human-centered clean render with clear service zoning, approachable surfaces, and civic transparency.
-  spatial_distortion: Courtyard-like layering around water channels makes care access visible without forcing a clinic scene.
-  atmosphere: Care, trust, shared resilience, public dignity, and clean lunar humidity.
-  key_features: Aqua basin curves, pod ovals, transparent green partitions, rose-beige softness, and public-care wayfinding.
-  creative_brief: 'Care for the input through moonwater public health design: aqua basin curves, rose-beige softness, algae-glass partitions, pod ovals, and clean civic beacons make any subject feel transparent, water-cooled, and trustworthy.'
+  aesthetic: coastal sailpunk salvage identity led by one wind-pulled salvage sailwright-captain, with patched sails, reused hull curves, rope winches, and communal wind rigs behind.
+  form_and_line: Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses one main sailwright-captain, salvage sails, patched hulls, rope winches, coastal rigs.
+  color_palette: canvas white, rust, sea blue, tar gray
+  lighting_setup: coastal sunlight, sail translucency, welding glints, water bounce
+  material_texture: canvas, drift metal, rope, tar, patched hulls, salt wood
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: windy, communal, rough, optimistic
+  key_features: main sailwright-captain, salvage sails, patched hulls, rope winches, coastal rigs
+  creative_brief: 'Salvagepunk with wind and community without pirate/adventure hero styling: make the sail geometry, hull curves, rope line, and one integrated sailwright figure form a maritime craft poster. Vary crop and composition; avoid centered full-body adventurer poses, crew-only staging, random junk collage, harbor market, pirate costume portrait, or object-only boat render. Favor folk-modernist poster structure, controlled digital painting, clean matte shapes, and handmade material poetry over American RPG/sourcebook illustration, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - dystopian-lab
-  - cyber-grime
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-079.webp
 attributes:
-  negativePrompt: photoreal, dystopian-lab, cyber-grime, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero, sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged protagonist, cloak and pouches, leather belt costume, boots hero pose, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card, workers-only composition, anonymous worker crew, crew-only staging, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random junk collage, pirate costume portrait, harbor market, crowded dock, flags, banners, skull emblem, pirate logo, readable sail marks, weapons, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rope clutter, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-lunarpunk
-  categoryName: 11. Corepunk — Lunarpunk
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - lunarpunk
+    - punk-spectrum-vault
+    - primitive-stone-and-salvage-punks
+    - salvagepunk
+    - sailpunk
   supportedTasks:
     - image_generate
     - image_edit

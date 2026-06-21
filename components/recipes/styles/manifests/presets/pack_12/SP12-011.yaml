@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Cristal fisurado, biofilm, juntas húmedas y panelado industrial saturado por agua.
   camera_and_composition: Rutas de evacuación, nodos de reparación y hazards de ruptura como composición funcional sin exigir pasarela o instalación concreta.
   atmosphere_and_mood: Ansiedad de cuenta regresiva, claustrofobia acuática y disciplina operativa.
-  rendering_and_quality: "Campaign gameplay screencap: collapse state, routes, system objectives, pressure cues clear."
+  rendering_and_quality: 'Campaign gameplay screencap: collapse state, routes, system objectives, pressure cues clear.'
 avoidRules:
   - watermark
   - text

@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-034
+packId: pack_17
+name: Medieval Ink Fantasy Plate
+category: 6. Monochrome Tarot & Bestiary Plates
+domain: monochrome medieval fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - monochrome-tarot-and-bestiary-plates
+  - ink-fantasy
+visualDna:
+  aesthetic: Clean black and white medieval fantasy plate illustration with knights, castle fragments, relics, banners, and beasts.
+  subject_treatment: A black-ink fortress gate dominated by a bridge troll lord with shield-sized hands, key relic on a chain, and tiny knights below for scale, drawn as a clean sourcebook plate.
+  color_and_tone: Ivory ground, black ink, soft gray wash, and generous negative space.
+  lighting_and_shadow: Simple value grouping, open shadows, and clear foreground-background separation.
+  texture_and_material: Crisp pen lines, smooth wash, flat cloth, stone, and armor planes with minimal scratch texture.
+  camera_and_composition: Editorial plate crop, centered focal silhouette, small support motifs, and readable contour hierarchy.
+  atmosphere_and_mood: Ancient, adventurous, sober, and mythic without oppressive darkness.
+  rendering_and_quality: Traditional ink illustration translated into clean digital line art with no noisy micro-detail.
+  creative_brief: Reusable black and white fantasy illustration style for medieval characters, monsters, relics, or locations.
+avoidRules:
+  - photoreal grayscale
+  - dense scratch shading
+  - chainmail mesh
+  - muddy charcoal fields
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-034.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: monochrome-tarot-and-bestiary-plates
+  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  domain: monochrome medieval fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - monochrome-tarot-and-bestiary-plates
+    - ink-fantasy
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

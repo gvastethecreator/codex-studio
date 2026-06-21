@@ -82,6 +82,7 @@ describe('startQueuedJobExecution', () => {
         expect(options?.signal).toBe(execution.controller.signal);
 
         options?.onJobCreated?.(createStudioJob());
+        return { status: 'completed' };
       },
       onJobCreated: (studioJob) => {
         calls.push(`serverJob:${studioJob.id}`);
@@ -118,6 +119,7 @@ describe('startQueuedJobExecution', () => {
             reject(error);
           });
         });
+        return { status: 'completed' };
       },
     });
 
@@ -148,6 +150,49 @@ describe('startQueuedJobExecution', () => {
       status: 'failed',
       error: 'Backend exploded',
       serverJobId: null,
+    });
+  });
+
+  it('maps resolved failed generation outcomes to a failed result', async () => {
+    const job = createQueueJob(
+      'A neon alley',
+      { ...DEFAULT_GENERATION_CONFIG, prompt: 'Original prompt' },
+      'workspace-1',
+    );
+    const execution = startQueuedJobExecution(job, {
+      executeGeneration: async (_config, options) => {
+        options?.onJobCreated?.(createStudioJob());
+        return { status: 'failed', message: 'Provider returned no assets' };
+      },
+    });
+
+    const result = await execution.run();
+
+    expect(result).toEqual({
+      status: 'failed',
+      error: 'Provider returned no assets',
+      serverJobId: 'server-job-1',
+    });
+  });
+
+  it('maps resolved cancelled generation outcomes to a cancelled result', async () => {
+    const job = createQueueJob(
+      'A neon alley',
+      { ...DEFAULT_GENERATION_CONFIG, prompt: 'Original prompt' },
+      'workspace-1',
+    );
+    const execution = startQueuedJobExecution(job, {
+      executeGeneration: async (_config, options) => {
+        options?.onJobCreated?.(createStudioJob());
+        return { status: 'cancelled', message: 'Job cancelled' };
+      },
+    });
+
+    const result = await execution.run();
+
+    expect(result).toEqual({
+      status: 'cancelled',
+      serverJobId: 'server-job-1',
     });
   });
 });

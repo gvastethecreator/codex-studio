@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-022
+packId: pack_17
+name: Mecha Reliquary Knight
+category: 4. Futuristic Medieval & Rune Tech
+domain: futuristic medieval
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - futuristic-medieval-and-rune-tech
+  - mecha-reliquary
+visualDna:
+  aesthetic: Mecha-medieval reliquary style where knight forms become walking shrines of armor, machinery, and sacred cores.
+  subject_treatment: A bulky reliquary mech-saint with chest shrine, banner antennae, halo hardware, and heavy ceremonial limbs, no visible human face.
+  color_and_tone: Dark gunmetal, oxidized bronze, bone enamel, altar gold, red wax, and cool reactor light.
+  lighting_and_shadow: Internal core glow lights armor seams while large external shadows keep the form monumental.
+  texture_and_material: Riveted plates, cracked enamel, sacred glass, pistons, incense residue, wax seals, and scratched metal.
+  camera_and_composition: Low-angle mecha icon, central chest relic, massive limbs, and cathedral-scale negative space.
+  atmosphere_and_mood: Sacred, heavy, ancient-future, and intimidating.
+  rendering_and_quality: Detailed digital illustration with readable mechanical joints, defined lines, and medieval reliquary ornament.
+  creative_brief: A compact style language for future knights, machines, shrines, constructs, or armored monsters.
+avoidRules:
+  - sleek anime robot
+  - toy-like plastic
+  - spaceship cockpit
+  - clean lab aesthetic
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-022.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: futuristic-medieval-and-rune-tech
+  categoryName: 4. Futuristic Medieval & Rune Tech
+  domain: futuristic medieval
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - futuristic-medieval-and-rune-tech
+    - mecha-reliquary
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

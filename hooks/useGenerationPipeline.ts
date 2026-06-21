@@ -3,6 +3,7 @@ import type {
   Attachment,
   ImageGenerationConfig,
   GeneratedImageWithConfig,
+  GenerationExecutionOutcome,
   RecipeId,
 } from '../types';
 import type { Job as StudioJob } from '../packages/shared/src';
@@ -80,6 +81,13 @@ function reportGenerationError({
   log(`Generation Error: ${message}`);
 }
 
+function buildFailedGenerationExecutionOutcome(error: unknown): GenerationExecutionOutcome {
+  return {
+    status: 'failed',
+    message: error instanceof Error ? error.message : String(error),
+  };
+}
+
 function handleNonCompletedGenerationOutcome({
   outcome,
   addToast,
@@ -155,7 +163,10 @@ export const useGenerationPipeline = ({
   }, []);
 
   const executeGeneration = useCallback(
-    async (configOverrides: Partial<ImageGenerationConfig>, options?: GenerationOptions) => {
+    async (
+      configOverrides: Partial<ImageGenerationConfig>,
+      options?: GenerationOptions,
+    ): Promise<GenerationExecutionOutcome> => {
       const configToUse = { ...generationConfig, ...configOverrides };
       beginRun(configToUse);
       const recipeId = configToUse.recipeId ?? activeRecipe;
@@ -176,11 +187,17 @@ export const useGenerationPipeline = ({
         });
 
         if (handleNonCompletedGenerationOutcome({ outcome, addToast, log })) {
-          return;
+          if (outcome.status === 'cancelled') {
+            return { status: 'cancelled', message: outcome.message };
+          }
+
+          if (outcome.status === 'failed') {
+            return { status: 'failed', message: outcome.message };
+          }
         }
 
         if (!isCompletedGenerationOutcome(outcome)) {
-          return;
+          return { status: 'failed', message: 'Generation ended without a terminal outcome.' };
         }
 
         const result = outcome.result;
@@ -205,8 +222,10 @@ export const useGenerationPipeline = ({
           `Generation complete: ${generatedCount} asset${generatedCount === 1 ? '' : 's'} ready in ${duration}s`,
           'success',
         );
+        return { status: 'completed' };
       } catch (error) {
         reportGenerationError({ error, addToast, log });
+        return buildFailedGenerationExecutionOutcome(error);
       } finally {
         finishRun();
       }

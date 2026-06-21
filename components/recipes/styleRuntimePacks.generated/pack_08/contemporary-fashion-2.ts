@@ -110,7 +110,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Simple silhouette, columnar torso, unbranded minimalism, bracelet-length sleeve',
       color_palette: 'Black, Grey, Navy, charcoal, midnight navy, washed black, graphite',
       lighting_setup:
-        'Controlled product-launch spotlight, soft auditorium backlight, keynote-grade haze',
+        'Controlled product-launch spotlight, soft keynote backlight, keynote-grade haze',
       material_texture:
         'Cotton jersey, merino knit, selvedge denim, unbranded suede, brushed cashmere',
       render_quality: 'Minimal, rich, billionaire-casual precision, uniform dressing philosophy',
@@ -178,7 +178,7 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flashy, expensive',
     style: {
       aesthetic:
-        '90s sitcom normcore, everyday New York casual, dad-denim anti-fashion, nothing-to-prove comfort',
+        '90s everyday normcore, casual anti-fashion, dad-denim ease, nothing-to-prove comfort',
       form_and_line: 'Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape',
       color_palette:
         'Grey, Blue denim, heathered oatmeal, faded navy, stonewash, light-wash indigo',

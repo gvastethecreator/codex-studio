@@ -24,7 +24,7 @@ avoidRules:
   - motion blur
   - inconsistent proportions
   - changing costume
-  - background scene
+  - cluttered background
   - gun requirement
   - soldier requirement
   - watermark
@@ -32,7 +32,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-112.webp
 attributes:
-  negativePrompt: motion blur, inconsistent proportions, changing costume, background scene, gun requirement, soldier requirement, watermark, text
+  negativePrompt: motion blur, inconsistent proportions, changing costume, cluttered background, gun requirement, soldier requirement, watermark, text
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2

@@ -23,7 +23,6 @@ visualDna:
   key_features: Thread texture
   creative_brief: Thread pierces an image surface, adding texture to captured light or flat print, the stitch becoming a third dimension over a two-dimensional base. Needle holes, floss color, and matte thread turn the substrate into a tactile field. The visible mend becomes the art without requiring portraits, memories, or literal photographs.
 avoidRules:
-  - photo
   - realistic
   - photorealistic
   - 3d render
@@ -43,7 +42,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-073.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, portrait requirement, literal memory photo
+  negativePrompt: realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, portrait requirement, literal memory photo
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

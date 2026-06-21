@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-029
 packId: pack_15
-name: Selenite Commons
-category: 11. Corepunk — Lunarpunk
+name: Living Bridge District
+category: 4. Bio, Myco & Body Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - lunarpunk
+  - punk-spectrum-vault
+  - bio-myco-and-body-punks
+  - bioarchitecture
+  - living-bridge
 visualDna:
-  aesthetic: Cooperative lunarpunk craft language focused on care, fabrication, and soft infrastructure.
-  form_and_line: Dome clusters, radial commons rings, vertical greenhouse shafts, and hand-built modular seams.
-  color_palette: Frost white, pale cyan, and soft coral accents.
-  lighting_setup: Diffused dome glow and reflected rimlight from regolith plains.
-  material_texture: Crystalline composites, woven habitat textiles, and matte ceramic panels.
-  render_quality: Refined concept style with readable social micro-scenes.
-  spatial_distortion: Curved communal-center perspective with gentle radial gravity.
-  atmosphere: Mutual aid, creative craft, and patient technological optimism.
-  key_features: Woven habitat texture, fab-grid patterning, coral care accents, and crystalline seam highlights.
-  creative_brief: 'Make the input feel hand-built for mutual aid on the moon: frost-white dome logic, woven habitat texture, coral care accents, crystalline seams, and soft radial commons geometry. Domes or districts can appear, but the style is patient craft, shared survival, and lunar tenderness. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: bioarchitecture city bridge as a stylized digital-painting card built around a usable city bridge grown from living ribs, root cables, repair pods, and pedestrians crossing at dusk.
+  form_and_line: Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses root cables, pedestrians, repair pods, rib arches, sap-lit seams.
+  color_palette: root brown, bone ivory, leaf green, evening blue
+  lighting_setup: dusk rim color, warm pod accent blocks, soft bioluminescent seam shapes
+  material_texture: living bark planes, bone-like rib blocks, sap-glass color accents, stone shapes, woven railing arcs
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: majestic, civic, alive, calm
+  key_features: root cables, pedestrians, repair pods, rib arches, sap-lit seams
+  creative_brief: 'Bioarchitecture as usable city fabric: bridge, people, maintenance pods, and living structure, avoiding empty fantasy palace imagery, rib-cage horror, wet organic gore, or realistic environment concept art. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - militarism
-  - dystopian-surveillance
-  - heavy-neon
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-029.webp
 attributes:
-  negativePrompt: photoreal, militarism, dystopian-surveillance, heavy-neon, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, realistic environment concept art, deep cinematic vista, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, palace bridge, empty monumental architecture, rib-cage horror, wet organic gore, photoreal bark texture, dense root spaghetti, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-lunarpunk
-  categoryName: 11. Corepunk — Lunarpunk
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - lunarpunk
+    - punk-spectrum-vault
+    - bio-myco-and-body-punks
+    - bioarchitecture
+    - living-bridge
   supportedTasks:
     - image_generate
     - image_edit

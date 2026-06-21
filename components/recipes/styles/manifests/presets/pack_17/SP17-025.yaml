@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-025
+packId: pack_17
+name: Mud-Cathedral Crusade
+category: 5. Apocalyptic Wargame & Inked Dungeon
+domain: apocalyptic medieval
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - apocalyptic-wargame-and-inked-dungeon
+  - trench-crusade-adjacent
+visualDna:
+  aesthetic: Apocalyptic medieval trench crusade with mud-choked cathedrals, black powder smoke, reliquary armor, and martyr banners.
+  subject_treatment: A mud-cathedral altar crawler, trench reliquary cart, or bell machine with two tiny penitents, keeping crusade identity without another central knight.
+  color_and_tone: Mud brown, ash black, candle gold, oxidized brass, bone white, and one restrained crimson or teal accent.
+  lighting_and_shadow: Simple candle slices, smoke-filtered daylight, and clean battlefield haze separate silhouettes without crushing the darks.
+  texture_and_material: Mud, wet wool, tarnished brass, chipped enamel, soot, cracked stone, and controlled etched grime.
+  camera_and_composition: Low vertical war-icon framing, shrine-like negative space, banner diagonals, and readable miniature-like silhouette hierarchy.
+  atmosphere_and_mood: Fanatical, mournful, siege-bound, sacred, and brutal without gore.
+  rendering_and_quality: Painterly-ink hybrid with denoised darks, clean silhouette masses, and readable battlefield materials.
+  creative_brief: Original trench-cathedral crusade aesthetic for knights, warbands, relics, siege priests, or apocalyptic fortresses.
+avoidRules:
+  - copied franchise armor
+  - readable insignia
+  - modern guns as hero objects
+  - excessive black noise
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-025.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: apocalyptic-wargame-and-inked-dungeon
+  categoryName: 5. Apocalyptic Wargame & Inked Dungeon
+  domain: apocalyptic medieval
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - apocalyptic-wargame-and-inked-dungeon
+    - trench-crusade-adjacent
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

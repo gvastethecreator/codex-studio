@@ -1,46 +1,53 @@
 schemaVersion: 1
 id: SP15-005
 packId: pack_15
-name: Sun Reservoir Commons
-category: 1. Corepunk — Solarpunk
+name: Clocktower Strike Assembly
+category: 1. Classic Industrial Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - solarpunk-dreamscapes
+  - punk-spectrum-vault
+  - classic-industrial-punks
+  - clockpunk
+  - labor-rally
 visualDna:
-  aesthetic: Hydrological solarpunk commons where storage, cooling, and gathering merge as one calm civic pattern.
-  form_and_line: Concentric reservoir-like rings, stepped edge rhythms, and radial circulation paths.
-  color_palette: Solar sand, aquifer blue, and herbaceous soft green.
-  lighting_setup: High-angle sun with mirrored highlights and cool under-canopy shade pools.
-  material_texture: Porous pale stone, evaporative ceramic fins, brushed alloy rails, and laminar water films.
-  render_quality: Editorial-grade civic solarpunk concept art with clean public-system readability.
-  spatial_distortion: Amphitheater-like basin depth emphasizing a multifunctional water-energy core without requiring a plaza.
-  atmosphere: Collective comfort, thermal relief, and visible ecological stewardship.
-  key_features: Thermal battery basins, refill-node motifs, mist-pergola rhythm, and mixed-use civic occupancy cues.
-  creative_brief: 'Recast the input as a cooling civic hydrology object: concentric aquifer rings, mist-pergola shadows, pale porous stone, and blue thermal relief highlights. Basins, kiosks, crowds, or commons may support the read, but the style should travel as calm water governance and sun-tempered geometry.'
+  aesthetic: clockpunk civic assembly poster built around a clocktower mechanism, guild workers, exposed escapements, and unreadable graphic placard shapes.
+  form_and_line: Mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses escapement symbols, unreadable poster blocks, clock shadows, guild coat silhouettes, and stepped civic geometry.
+  color_palette: aged ivory, blue-charcoal ink, brass, brick red
+  lighting_setup: late-afternoon civic color blocks, clock-face shadows, warm placard glow
+  material_texture: paper poster blocks, brass escapements, wool coat silhouettes, brick planes, ink texture
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: defiant, clever, civic, rhythmic
+  key_features: escapement symbols, strike posters, clock shadows, guild coats, public stairs
+  creative_brief: 'Turn clockpunk into social motion: synchronized gears, civic assembly, unreadable placard shapes, and handmade devices, avoiding sterile clock diagrams, political flag hero shots, or readable slogans. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor screenprint poster, risograph poster, cel-shaded graphic-novel card art, flat-to-painterly digital illustration, or gouache poster aesthetics over realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - militarized
-  - dirty-chaos
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-005.webp
 attributes:
-  negativePrompt: photoreal, militarized, dirty-chaos, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-solarpunk
-  categoryName: 1. Corepunk — Solarpunk
+  packName: Punk Spectrum Vault
+  categoryId: classic-industrial-punks
+  categoryName: 1. Classic Industrial Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - solarpunk-dreamscapes
+    - punk-spectrum-vault
+    - classic-industrial-punks
+    - clockpunk
+    - labor-rally
   supportedTasks:
     - image_generate
     - image_edit

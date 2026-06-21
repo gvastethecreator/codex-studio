@@ -7,7 +7,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP12-003',
     name: 'Desert Mech Convoy',
     category: '3. Sci-Fi Frontiers & Mech Zones',
-    negativePrompt: 'watermark, text, logo, oversaturated, low-detail',
+    negativePrompt:
+      'watermark, text, logo, oversaturated, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática vehicular-combat postapocalíptica con desgaste logístico, siluetas mech/convoy y lectura de largo alcance.',
@@ -24,16 +25,17 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Supervivencia mecanizada, desgaste continuo y disciplina de avance bajo presión.',
       rendering_and_quality:
-        'Estilo faction-keyart con realismo estilizado y claridad de sistemas de movilidad/combate.',
+        'In-engine convoy gameplay frame: readable mech scale, dust lanes, mobility-combat systems.',
       creative_brief:
-        'Aplica Desert Mech Convoy como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Desert Mech Convoy como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-005',
     name: 'Moonbase Breach Alarm',
     category: '3. Sci-Fi Frontiers & Mech Zones',
-    negativePrompt: 'watermark, text, logo, warm-sunlight, lowres',
+    negativePrompt:
+      'watermark, text, logo, warm-sunlight, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática sci-fi survival/maintenance con alarma roja, crisis de sistemas, sellado modular y respuesta cooperativa.',
@@ -49,14 +51,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Profundidad claustrofóbica con compuertas, etapas de reparación y rutas de fuga sugeridas sin exigir corredor lunar.',
       atmosphere_and_mood: 'Claustrofobia operativa, urgencia técnica y heroísmo de contingencia.',
       rendering_and_quality:
-        'Background de nivel con estándares de readability para hazards, rutas y objetivos de interacción.',
+        'In-game level screencap: breach alarm routes, pressure doors, hazards, objectives readable.',
     },
   },
   {
     id: 'SP12-011',
     name: 'Underwater Research Collapse',
     category: '3. Sci-Fi Frontiers & Mech Zones',
-    negativePrompt: 'watermark, text, logo, dry-environment, low-detail',
+    negativePrompt:
+      'watermark, text, logo, dry-environment, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática survival sci-fi submarina con presión estructural, reparación crítica, contención y extracción.',
@@ -73,14 +76,15 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Ansiedad de cuenta regresiva, claustrofobia acuática y disciplina operativa.',
       rendering_and_quality:
-        'Estilo campaign-gameplay con lectura clara de objetivos, rutas y estados de sistema.',
+        'Campaign gameplay screencap: collapse state, routes, system objectives, pressure cues clear.',
     },
   },
   {
     id: 'SP12-018',
     name: 'Storm Citadel Defense Grid',
     category: '3. Sci-Fi Frontiers & Mech Zones',
-    negativePrompt: 'watermark, text, logo, chaotic-ui, low-contrast',
+    negativePrompt:
+      'watermark, text, logo, chaotic-ui, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática tower-defense arcanotecnológica con control de rutas, sinergias modulares, rayos y nodos conductores.',
@@ -96,14 +100,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Isométrica limpia con rutas, nodos y áreas de upgrade claras sin exigir bastión físico.',
       atmosphere_and_mood: 'Estratégica, tensa y metódica.',
       rendering_and_quality:
-        'Gameplay-first visual con readability de pathing, timing y economía de defensa.',
+        'Tower-defense gameplay screencap: pathing, timing, grid pressure, defense economy clear.',
     },
   },
   {
     id: 'SP12-023',
     name: 'Orbital Garden Colony Builder',
     category: '3. Sci-Fi Frontiers & Mech Zones',
-    negativePrompt: 'watermark, text, logo, grimdark, noisy',
+    negativePrompt:
+      'watermark, text, logo, grimdark, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática colony-builder orbital biofílica con producción modular, sostenibilidad, salud sistémica y expansión legible.',
@@ -112,7 +117,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Verdes vivos, blanco clínico y azul espacial para lectura de salud sistémica.',
       lighting_and_shadow:
-        'Luz difusa de domo con reflejos suaves que facilitan lectura de overlays estratégicos.',
+        'Luz difusa de domo con reflejos suaves que facilitan lectura de estado estratégico ambiental.',
       texture_and_material:
         'Paneles solares, vidrio curvo, sustrato húmedo y estructura compuesta de alta eficiencia.',
       camera_and_composition:
@@ -120,14 +125,15 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Optimismo técnico, crecimiento metódico y gestión de riesgo controlada.',
       rendering_and_quality:
-        'Visual city-builder UI-friendly con claridad de cadenas productivas y estados de colonia.',
+        'Colony-builder in-game frame: production chains, module health, logistics nodes visible as diegetic structures.',
     },
   },
   {
     id: 'SP12-033',
     name: 'Robot Orchard Defense',
     category: '3. Sci-Fi Frontiers & Mech Zones',
-    negativePrompt: 'watermark, text, logo, grimdark, overfog',
+    negativePrompt:
+      'watermark, text, logo, grimdark, overfog, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática tower-defense rural sci-fi con carriles vivos, automatización agrícola y economía de recursos.',
@@ -143,16 +149,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Lanes defensivos, choke-points y nodos de upgrade; orchard y cultivo son anclas opcionales.',
       atmosphere_and_mood: 'Ingenio comunitario, urgencia agrícola y resistencia cooperativa.',
       rendering_and_quality:
-        'Tower-defense visual fresco con legibilidad alta de oleadas, rango y estado estructural.',
+        'Tower-defense gameplay frame: wave direction, orchard range, robot state, structure health readable.',
       creative_brief:
-        'Aplica Robot Orchard Defense como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Robot Orchard Defense como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-042',
     name: 'Quantum Laboratory Rift',
     category: '3. Sci-Fi Frontiers & Mech Zones',
-    negativePrompt: 'watermark, text, logo, fantasy-castle, muddy',
+    negativePrompt:
+      'watermark, text, logo, fantasy-castle, muddy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática sci-fi incident-response con contención cuántica, sellado, anomalías y protocolos de crisis.',
@@ -168,14 +175,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Núcleo, anillos de contención y rutas de intervención como estructura visual sin exigir laboratorio.',
       atmosphere_and_mood: 'Tensa, científica y caótica bajo protocolo.',
       rendering_and_quality:
-        'Critical-incident gameplay art con claridad de niveles de amenaza, ruta y objetivo.',
+        'Lab-incident gameplay screencap: rift threat level, route choice, objective state, hazard timing clear.',
     },
   },
   {
     id: 'SP12-045',
     name: 'Alloy Forest Mech Hunt',
     category: '3. Sci-Fi Frontiers & Mech Zones',
-    negativePrompt: 'watermark, text, logo, clean-lab, low-detail',
+    negativePrompt:
+      'watermark, text, logo, clean-lab, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática mech-hunt táctica con rastreo de firmas, sigilo, captura selectiva y biomasa metálica viva.',
@@ -191,14 +199,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Acecho, presa, rodeo y ventana de ataque como composición sin exigir bosque.',
       atmosphere_and_mood: 'Silenciosa, precisa y de tensión incremental.',
       rendering_and_quality:
-        'Hunting gameplay concept con claridad de firma objetivo, cobertura y ventana de ataque.',
+        'Mech-hunt gameplay frame: target signature, cover pockets, attack window, alloy forest routes clear.',
     },
   },
   {
     id: 'SP12-046',
     name: 'Solar Rail Nomad Camp',
     category: '3. Sci-Fi Frontiers & Mech Zones',
-    negativePrompt: 'watermark, text, logo, neon-city, noisy',
+    negativePrompt:
+      'watermark, text, logo, neon-city, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática open-world nomad-sci-fi con logística móvil, ruta solar, tecnología recuperada y comunidad itinerante.',
@@ -214,16 +223,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Circulación, abastecimiento, taller y guardia como zonas visuales; campamento y riel son opcionales.',
       atmosphere_and_mood: 'Esperanzada, austera y resiliente.',
       rendering_and_quality:
-        'Faction-worldbuilding gameplay art con lectura de circulación, abastecimiento y seguridad.',
+        'Nomad logistics gameplay screencap: supply flow, security lanes, rail camp circulation visible.',
       creative_brief:
-        'Aplica Solar Rail Nomad Camp como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Solar Rail Nomad Camp como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-068',
     name: 'Skyforge Dragon Dock',
     category: '3. Sci-Fi Frontiers & Mech Zones',
-    negativePrompt: 'watermark, text, logo, underwater, lowres',
+    negativePrompt:
+      'watermark, text, logo, underwater, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática skyforge prep-hub con monturas dracónicas, loadout, mantenimiento y salida aérea.',
@@ -238,7 +248,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Puntos de despliegue, logística y líneas aéreas sin exigir dock o plataforma concreta.',
       atmosphere_and_mood: 'Épica, preparatoria y de anticipación bélica.',
       rendering_and_quality:
-        'Premium faction gameplay art con claridad de logística, equipamiento y salida táctica.',
+        'Dragon-dock gameplay screencap: logistics, gear staging, launch route, faction readiness clear.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

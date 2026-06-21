@@ -26,6 +26,9 @@ describe('buildGenerationToolbarProps', () => {
         onFilesDrop: () => calls.push('filesDrop'),
         onRemoveAttachment: (id) => calls.push(`removeAttachment:${id}`),
         maxAttachments: 4,
+        codexModelCatalog: null,
+        isLoadingCodexModelCatalog: false,
+        codexModelCatalogError: null,
       },
       actions: {
         onGenerate: () => calls.push('generate'),

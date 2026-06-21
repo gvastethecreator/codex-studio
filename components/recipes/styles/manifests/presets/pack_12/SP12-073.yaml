@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Corteza gigante, savia espesa, placas mecánicas y anclajes de ascenso.
   camera_and_composition: Escala extrema y puntos de ascenso sin exigir huerto titánico.
   atmosphere_and_mood: Asombrosa, peligrosa y cooperativamente épica.
-  rendering_and_quality: "Colossus-hunt gameplay frame: phase telegraph, climb route, weak point, finishing window readable."
+  rendering_and_quality: 'Colossus-hunt gameplay frame: phase telegraph, climb route, weak point, finishing window readable.'
 avoidRules:
   - watermark
   - text

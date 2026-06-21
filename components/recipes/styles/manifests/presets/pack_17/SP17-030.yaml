@@ -1,0 +1,49 @@
+schemaVersion: 1
+id: SP17-030
+packId: pack_17
+name: Hexenwood Witch-Knight Covenant
+category: 5. Apocalyptic Wargame & Inked Dungeon
+domain: folk horror medieval
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - apocalyptic-wargame-and-inked-dungeon
+  - folk-horror
+visualDna:
+  aesthetic: Folk-horror medieval covenant with witch-knights, thorn chapels, bone charms, black woods, and candlelit oath armor.
+  subject_treatment: An antlered witch-knight covenant icon with living root standard, mask, chapel charm, and forest relic shapes, ritual but not generic.
+  color_and_tone: Pine black, bone white, candle amber, dried berry red, moss green, and cold moon gray.
+  lighting_and_shadow: Moonlight and candles make clean cutout silhouettes against dark woods without noisy black texture.
+  texture_and_material: Bark, bone, wool, tarnished armor, wax, moss, thorn, and smooth denoised shadow planes.
+  camera_and_composition: Tall forest-card framing, shrine-center composition, thorn arcs, and crisp silhouette against pale fog.
+  atmosphere_and_mood: Ominous, folkloric, ritualistic, secretive, and elegant.
+  rendering_and_quality: Clean dark folk-fantasy illustration with controlled texture, no mud, and readable card contrast.
+  creative_brief: Original witch-knight folk horror aesthetic for covenants, monsters, relics, forest shrines, and medieval occult scenes.
+avoidRules:
+  - generic witch hat cliche
+  - cartoon Halloween look
+  - unreadable forest noise
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-030.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: apocalyptic-wargame-and-inked-dungeon
+  categoryName: 5. Apocalyptic Wargame & Inked Dungeon
+  domain: folk horror medieval
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - apocalyptic-wargame-and-inked-dungeon
+    - folk-horror
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

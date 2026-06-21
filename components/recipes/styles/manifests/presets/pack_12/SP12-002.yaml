@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Corteza húmeda, hojas translúcidas, barro pesado y fluidos vegetales reactivos al movimiento.
   camera_and_composition: Capas de cobertura orgánica, líneas de visión quebradas, diagonales de emboscada y ventanas de extracción sugeridas.
   atmosphere_and_mood: Cacería silenciosa, paranoia ambiental y descubrimiento biológico de alto riesgo.
-  rendering_and_quality: "Gameplay screencap from active jungle raid: terrain reads, target priority, co-op encounter cues."
+  rendering_and_quality: 'Gameplay screencap from active jungle raid: terrain reads, target priority, co-op encounter cues.'
 avoidRules:
   - watermark
   - text

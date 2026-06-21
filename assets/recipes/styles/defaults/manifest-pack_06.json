@@ -6,12 +6,12 @@
     "packName": "Essential Art Styles",
     "category": "1. Traditional Painting",
     "file": "assets/recipes/styles/defaults/SP06-001.webp",
-    "jobId": "e24df65d-eb4b-4b35-aed7-66f753264332",
+    "jobId": "91d2cefd-dd40-485c-bb3e-a75c55aeac34",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-001.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:10:04.853Z"
+    "generatedAt": "2026-06-20T22:23:45.657Z"
   },
   {
     "presetId": "SP06-002",
@@ -20,12 +20,12 @@
     "packName": "Essential Art Styles",
     "category": "1. Traditional Painting",
     "file": "assets/recipes/styles/defaults/SP06-002.webp",
-    "jobId": "8bc27a38-90fc-4583-bffc-03719c3217a9",
+    "jobId": "c1c19fbd-ecd2-4f5a-b7df-e61d7840b2d6",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-002.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:11:33.255Z"
+    "generatedAt": "2026-06-21T02:22:21.386Z"
   },
   {
     "presetId": "SP06-003",
@@ -34,12 +34,12 @@
     "packName": "Essential Art Styles",
     "category": "1. Traditional Painting",
     "file": "assets/recipes/styles/defaults/SP06-003.webp",
-    "jobId": "8ea00998-c9b7-417e-a7f0-cf7556df4989",
+    "jobId": "c63e4593-3cfd-4013-91d9-965f709959aa",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-003.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:10:00.722Z"
+    "generatedAt": "2026-06-20T02:35:55.061Z"
   },
   {
     "presetId": "SP06-004",
@@ -48,12 +48,12 @@
     "packName": "Essential Art Styles",
     "category": "1. Traditional Painting",
     "file": "assets/recipes/styles/defaults/SP06-004.webp",
-    "jobId": "8278e79f-8776-4669-8563-0f77c5ab039b",
+    "jobId": "12baebfb-ab23-4053-aa60-417da6946675",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-004.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:09:54.946Z"
+    "generatedAt": "2026-06-20T17:41:48.291Z"
   },
   {
     "presetId": "SP06-005",
@@ -76,12 +76,12 @@
     "packName": "Essential Art Styles",
     "category": "1. Traditional Painting",
     "file": "assets/recipes/styles/defaults/SP06-006.webp",
-    "jobId": "81bdc3c0-7c2c-4cf0-81cb-17f97a2b5964",
+    "jobId": "026cd283-883d-46f2-a4bf-3c99cf1c51db",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-006.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:10:07.227Z"
+    "generatedAt": "2026-06-20T22:24:27.649Z"
   },
   {
     "presetId": "SP06-007",
@@ -90,12 +90,12 @@
     "packName": "Essential Art Styles",
     "category": "1. Traditional Painting",
     "file": "assets/recipes/styles/defaults/SP06-007.webp",
-    "jobId": "0b1f31e4-31d6-44f4-8fad-1dfe250605b0",
+    "jobId": "c1a38878-6dda-4e13-8eb5-a6adedcad9bc",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-007.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:20:22.713Z"
+    "generatedAt": "2026-06-20T08:13:36.567Z"
   },
   {
     "presetId": "SP06-008",
@@ -132,12 +132,12 @@
     "packName": "Essential Art Styles",
     "category": "1. Traditional Painting",
     "file": "assets/recipes/styles/defaults/SP06-010.webp",
-    "jobId": "05f0afa1-e0e5-47ec-9df2-b1ebd3d7a888",
+    "jobId": "69ed7050-5779-4801-9503-86ef36bdbe86",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-010.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:22:17.908Z"
+    "generatedAt": "2026-06-20T09:47:26.432Z"
   },
   {
     "presetId": "SP06-011",
@@ -160,12 +160,12 @@
     "packName": "Essential Art Styles",
     "category": "1. Traditional Painting",
     "file": "assets/recipes/styles/defaults/SP06-012.webp",
-    "jobId": "712b47c1-67cf-4114-97fe-433b9f45957c",
+    "jobId": "b2b51563-795f-46b7-a93e-0bc19fcce9d3",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-012.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:20:05.621Z"
+    "generatedAt": "2026-06-20T02:51:31.131Z"
   },
   {
     "presetId": "SP06-013",
@@ -188,12 +188,12 @@
     "packName": "Essential Art Styles",
     "category": "1. Traditional Painting",
     "file": "assets/recipes/styles/defaults/SP06-014.webp",
-    "jobId": "c47ac2f3-4bf4-4519-9f41-dbf5e97e7497",
+    "jobId": "269cb3bf-7192-4385-9b41-85b7fa056c7f",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-014.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:30:43.462Z"
+    "generatedAt": "2026-06-20T22:15:06.479Z"
   },
   {
     "presetId": "SP06-015",
@@ -202,12 +202,12 @@
     "packName": "Essential Art Styles",
     "category": "1. Traditional Painting",
     "file": "assets/recipes/styles/defaults/SP06-015.webp",
-    "jobId": "40a04b2d-f8c7-4678-888c-aaa566c05a4b",
+    "jobId": "1f59b400-4877-4f87-a0d5-c60d963bbcd8",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-015.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:29:03.464Z"
+    "generatedAt": "2026-06-20T04:54:15.196Z"
   },
   {
     "presetId": "SP06-016",
@@ -216,12 +216,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-016.webp",
-    "jobId": "e59ef7a0-9f86-4c51-bddc-4b98fe71258e",
+    "jobId": "d6446548-72e2-4e28-9558-05917dac2c50",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-016.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:30:40.474Z"
+    "generatedAt": "2026-06-20T11:39:32.581Z"
   },
   {
     "presetId": "SP06-017",
@@ -230,12 +230,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-017.webp",
-    "jobId": "9714634e-ce57-44ea-b0ec-70fda698a54e",
+    "jobId": "84e20a37-795f-4796-ad9c-d319733d5c88",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-017.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:30:59.002Z"
+    "generatedAt": "2026-06-20T17:32:51.122Z"
   },
   {
     "presetId": "SP06-018",
@@ -244,12 +244,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-018.webp",
-    "jobId": "40c89811-4cd2-42d6-8d00-2d9d366504fa",
+    "jobId": "4e9c13e4-f35d-48c8-9639-583942e20f98",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-018.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:30:48.465Z"
+    "generatedAt": "2026-06-20T05:50:46.145Z"
   },
   {
     "presetId": "SP06-019",
@@ -258,12 +258,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-019.webp",
-    "jobId": "799b4e07-99ec-4803-afe4-3863aa36d396",
+    "jobId": "00e435a0-7189-4664-bfcf-330c411b0025",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-019.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:39:52.005Z"
+    "generatedAt": "2026-06-20T09:52:53.002Z"
   },
   {
     "presetId": "SP06-020",
@@ -272,12 +272,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-020.webp",
-    "jobId": "c359919c-4560-416c-8bad-7caa052aa571",
+    "jobId": "85b9446f-075e-4e09-9306-210e882e2583",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-020.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:41:05.826Z"
+    "generatedAt": "2026-06-21T02:25:32.682Z"
   },
   {
     "presetId": "SP06-021",
@@ -286,12 +286,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-021.webp",
-    "jobId": "96e1b6f2-5974-4db2-bcad-d83493837832",
+    "jobId": "1fef1bf9-82bc-4517-a942-31ade68ad25c",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-021.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:39:48.652Z"
+    "generatedAt": "2026-06-20T17:52:27.276Z"
   },
   {
     "presetId": "SP06-022",
@@ -300,12 +300,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-022.webp",
-    "jobId": "c505bc6c-1f33-4157-95ec-a0d5e3ffb1c1",
+    "jobId": "a14bedd3-67c6-4ef8-805b-e660d7e1610a",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-022.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:48:59.666Z"
+    "generatedAt": "2026-06-20T04:49:59.150Z"
   },
   {
     "presetId": "SP06-023",
@@ -314,12 +314,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-023.webp",
-    "jobId": "403f5b93-9a88-42ab-9b49-66608db9a140",
+    "jobId": "7c6ee004-618c-4e7f-b406-7f4be191e21b",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-023.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:48:31.305Z"
+    "generatedAt": "2026-06-20T11:49:19.781Z"
   },
   {
     "presetId": "SP06-024",
@@ -328,12 +328,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-024.webp",
-    "jobId": "11d34351-628e-437c-a48b-528f5706e08f",
+    "jobId": "4ce0f2c0-7b4e-406c-9e56-13a93af2954b",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-024.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:48:32.127Z"
+    "generatedAt": "2026-06-20T22:19:31.193Z"
   },
   {
     "presetId": "SP06-025",
@@ -342,12 +342,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-025.webp",
-    "jobId": "dde4e97f-95c0-48dd-9a04-419cfb1a92d8",
+    "jobId": "175225bb-88a7-4cec-8e9a-9086fcc1025a",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-025.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:54:43.717Z"
+    "generatedAt": "2026-06-20T12:06:15.822Z"
   },
   {
     "presetId": "SP06-026",
@@ -356,12 +356,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-026.webp",
-    "jobId": "a98bbf36-e442-47b9-b2d3-1a065d2a17ed",
+    "jobId": "1e0d440d-7a49-4fca-9dc9-386d0298ccf5",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-026.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:54:51.079Z"
+    "generatedAt": "2026-06-21T02:23:49.273Z"
   },
   {
     "presetId": "SP06-027",
@@ -370,12 +370,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-027.webp",
-    "jobId": "1d92db3b-c609-462b-b136-8e461012cc2f",
+    "jobId": "1f985bb8-c082-45ce-8e33-ed76284d962e",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-027.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:54:17.237Z"
+    "generatedAt": "2026-06-20T22:25:17.176Z"
   },
   {
     "presetId": "SP06-028",
@@ -384,12 +384,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-028.webp",
-    "jobId": "1c6fdcae-8186-4076-9193-972bca2f2b20",
+    "jobId": "cfb794f9-05bd-4c32-a551-91dd230c444f",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-028.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:03:02.510Z"
+    "generatedAt": "2026-06-20T17:52:27.841Z"
   },
   {
     "presetId": "SP06-029",
@@ -398,12 +398,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-029.webp",
-    "jobId": "f7ef368b-b448-4981-ab3c-0d25b0a4f35c",
+    "jobId": "42d27a8e-5ecf-4d4d-ad4a-6caf439fab02",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-029.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:58:10.991Z"
+    "generatedAt": "2026-06-20T11:39:10.610Z"
   },
   {
     "presetId": "SP06-030",
@@ -412,12 +412,12 @@
     "packName": "Essential Art Styles",
     "category": "2. Drawing & Sketching",
     "file": "assets/recipes/styles/defaults/SP06-030.webp",
-    "jobId": "c8905c2e-a774-483a-8dcc-5fd4a4c9e5c3",
+    "jobId": "d3a93184-53ce-42bb-a4f0-0711545098f9",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-030.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T10:54:38.648Z"
+    "generatedAt": "2026-06-20T11:40:28.485Z"
   },
   {
     "presetId": "SP06-031",
@@ -426,12 +426,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-031.webp",
-    "jobId": "ed13d8e6-808f-4a04-8e27-039beeef65b4",
+    "jobId": "26f06694-2ec3-4fe9-8bfd-e3473bc9c320",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-031.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:09:00.696Z"
+    "generatedAt": "2026-06-20T16:59:37.449Z"
   },
   {
     "presetId": "SP06-032",
@@ -440,12 +440,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-032.webp",
-    "jobId": "480a6be4-758d-4081-9e39-2f45cb0286fc",
+    "jobId": "4ba0ddad-fa22-4a03-b3d2-a556cd4d4974",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-032.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:09:04.697Z"
+    "generatedAt": "2026-06-20T10:22:04.695Z"
   },
   {
     "presetId": "SP06-033",
@@ -454,12 +454,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-033.webp",
-    "jobId": "0caf3bfa-8c7a-40d9-a003-fadabc98c892",
+    "jobId": "7641697e-14e6-4138-8345-eff5d0705915",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-033.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:09:07.969Z"
+    "generatedAt": "2026-06-20T12:06:15.823Z"
   },
   {
     "presetId": "SP06-034",
@@ -468,12 +468,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-034.webp",
-    "jobId": "3cb6d571-67ac-4c82-b67f-cf719c7e26a2",
+    "jobId": "9f092184-ade3-4f19-8fe6-c37f6c1f68ba",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-034.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:09:02.281Z"
+    "generatedAt": "2026-06-20T17:57:54.493Z"
   },
   {
     "presetId": "SP06-035",
@@ -482,12 +482,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-035.webp",
-    "jobId": "465b26cb-4df3-4f57-8b55-14eaee38214f",
+    "jobId": "a937f425-5e18-43d3-a0d1-2682b21e5426",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-035.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:09:04.618Z"
+    "generatedAt": "2026-06-20T02:45:21.949Z"
   },
   {
     "presetId": "SP06-036",
@@ -496,12 +496,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-036.webp",
-    "jobId": "1e94cbe9-3cd9-477e-8b29-1cee4c635633",
+    "jobId": "dda144f8-eb4a-4d42-bc7c-cb0ab3ef54ab",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-036.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:09:14.397Z"
+    "generatedAt": "2026-06-20T17:53:45.281Z"
   },
   {
     "presetId": "SP06-037",
@@ -510,12 +510,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-037.webp",
-    "jobId": "57f36fa9-65fe-410f-b01b-6a536098275e",
+    "jobId": "9e943f27-afeb-4b96-89ae-c92e8dcb5dda",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-037.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:14:45.528Z"
+    "generatedAt": "2026-06-20T17:55:10.301Z"
   },
   {
     "presetId": "SP06-038",
@@ -524,12 +524,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-038.webp",
-    "jobId": "7aeeeecb-3c99-422d-bdb8-0630332ecccb",
+    "jobId": "d52caa67-2519-4853-ab14-cf0d365c2f2c",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-038.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:14:41.317Z"
+    "generatedAt": "2026-06-20T18:04:50.493Z"
   },
   {
     "presetId": "SP06-039",
@@ -538,12 +538,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-039.webp",
-    "jobId": "3e35839e-9b29-4566-812f-239f6fa4f0f1",
+    "jobId": "e168decf-b476-45dd-90b8-3a9e91020c42",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-039.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:15:15.545Z"
+    "generatedAt": "2026-06-20T03:04:09.080Z"
   },
   {
     "presetId": "SP06-040",
@@ -552,12 +552,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-040.webp",
-    "jobId": "068e79ef-783e-48f4-b718-e81cd7ccf227",
+    "jobId": "8c695cc8-207c-4234-9408-4f90c121334a",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-040.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:14:48.753Z"
+    "generatedAt": "2026-06-20T08:16:08.747Z"
   },
   {
     "presetId": "SP06-041",
@@ -566,12 +566,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-041.webp",
-    "jobId": "ed371fd8-70c6-4bd6-b24d-b36a73ca89e9",
+    "jobId": "fdffd901-35be-416c-86d3-2872c208dfcc",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-041.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:14:39.147Z"
+    "generatedAt": "2026-06-20T16:46:48.075Z"
   },
   {
     "presetId": "SP06-042",
@@ -580,12 +580,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-042.webp",
-    "jobId": "4594fa06-0d7a-4372-933d-a859e061875d",
+    "jobId": "955482a8-3ffd-403e-9c02-418952b0376f",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-042.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:14:26.148Z"
+    "generatedAt": "2026-06-20T16:46:40.008Z"
   },
   {
     "presetId": "SP06-043",
@@ -594,12 +594,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-043.webp",
-    "jobId": "744b4c7e-d118-4a91-a96d-e333b4aba266",
+    "jobId": "5d15febd-aff5-43ed-b873-265584a9a679",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-043.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:25:11.597Z"
+    "generatedAt": "2026-06-20T10:24:39.772Z"
   },
   {
     "presetId": "SP06-044",
@@ -608,12 +608,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-044.webp",
-    "jobId": "91369823-1f05-4f5e-aaf0-865fbbc8694f",
+    "jobId": "6a8392e6-2722-4682-a377-aa060a20b212",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-044.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:20:49.279Z"
+    "generatedAt": "2026-06-20T18:12:23.469Z"
   },
   {
     "presetId": "SP06-045",
@@ -622,12 +622,12 @@
     "packName": "Essential Art Styles",
     "category": "3. Printmaking",
     "file": "assets/recipes/styles/defaults/SP06-045.webp",
-    "jobId": "b2c777c4-8b53-4f0b-987d-ed49e1513419",
+    "jobId": "2f6cb40b-f798-4b1d-93fb-24d257f846a3",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-045.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:20:53.466Z"
+    "generatedAt": "2026-06-20T22:20:42.675Z"
   },
   {
     "presetId": "SP06-046",
@@ -636,12 +636,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-046.webp",
-    "jobId": "d2664cc4-3d0c-49e7-a3b2-761ae6e39135",
+    "jobId": "e6531daa-b685-421f-b6a2-995998bb7016",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-046.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:25:26.655Z"
+    "generatedAt": "2026-06-20T08:22:10.474Z"
   },
   {
     "presetId": "SP06-047",
@@ -650,12 +650,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-047.webp",
-    "jobId": "f28a8527-1775-4847-b447-300800d9f089",
+    "jobId": "a7a12d6c-8e4c-4066-80d0-cc9c2112d4ae",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-047.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:29:23.959Z"
+    "generatedAt": "2026-06-20T08:36:20.450Z"
   },
   {
     "presetId": "SP06-048",
@@ -664,12 +664,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-048.webp",
-    "jobId": "788152db-e67c-488d-b70d-38b5eafac765",
+    "jobId": "cbd0fec9-ed99-4dec-8566-cc7326e0e74b",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-048.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:29:48.408Z"
+    "generatedAt": "2026-06-20T17:31:29.404Z"
   },
   {
     "presetId": "SP06-049",
@@ -678,12 +678,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-049.webp",
-    "jobId": "f025f5f9-e5cf-4cc7-b86a-d3ec81a63884",
+    "jobId": "8d1f7f5d-f514-4c35-a554-1db8b5e67205",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-049.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:47:22.887Z"
+    "generatedAt": "2026-06-20T06:41:17.593Z"
   },
   {
     "presetId": "SP06-050",
@@ -692,12 +692,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-050.webp",
-    "jobId": "38975c19-2bdd-46b7-9cbd-3d7b30fc237d",
+    "jobId": "8c2377fc-a56c-4ea9-b6c9-85627bf2f8ad",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-050.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:42:21.654Z"
+    "generatedAt": "2026-06-20T04:17:18.061Z"
   },
   {
     "presetId": "SP06-051",
@@ -706,12 +706,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-051.webp",
-    "jobId": "9572f07d-7559-4119-a33e-29379386f14c",
+    "jobId": "2332a2dd-58ed-499a-ba9f-55e0678bc332",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-051.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:42:28.873Z"
+    "generatedAt": "2026-06-20T17:31:26.670Z"
   },
   {
     "presetId": "SP06-052",
@@ -720,12 +720,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-052.webp",
-    "jobId": "a313aad3-0ab7-41e5-add6-3f94f699cab9",
+    "jobId": "e79800a4-f089-40f4-ad0f-2a572008153b",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-052.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:42:32.986Z"
+    "generatedAt": "2026-06-20T22:29:57.542Z"
   },
   {
     "presetId": "SP06-053",
@@ -734,12 +734,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-053.webp",
-    "jobId": "e34c021b-7eeb-447b-8d9c-0a2ed6c29cb0",
+    "jobId": "adc508f7-701c-4a3f-8d9c-a4d16c11732d",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-053.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:38:14.807Z"
+    "generatedAt": "2026-06-20T08:35:53.697Z"
   },
   {
     "presetId": "SP06-054",
@@ -748,12 +748,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-054.webp",
-    "jobId": "f7d29e55-8b9e-4a15-bb75-23b3ba92c31a",
+    "jobId": "70ebf860-4a89-4212-b9d5-4fb0c0ce46b8",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-054.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:42:22.390Z"
+    "generatedAt": "2026-06-20T10:20:31.184Z"
   },
   {
     "presetId": "SP06-055",
@@ -762,12 +762,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-055.webp",
-    "jobId": "d72f95ff-4795-40ae-9e24-64ca5f5f413e",
+    "jobId": "1d1026db-239b-4c9f-885e-a616d392dfeb",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-055.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T11:55:52.271Z"
+    "generatedAt": "2026-06-21T02:20:21.086Z"
   },
   {
     "presetId": "SP06-056",
@@ -776,12 +776,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-056.webp",
-    "jobId": "781c84f4-d50a-44f2-855a-c0727e647c57",
+    "jobId": "d7843709-48af-4162-b7cd-2ff5d001616e",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-056.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:02:32.307Z"
+    "generatedAt": "2026-06-20T05:49:24.154Z"
   },
   {
     "presetId": "SP06-057",
@@ -790,12 +790,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-057.webp",
-    "jobId": "65ba5490-68ed-4506-b537-7614ade10dd8",
+    "jobId": "258b1ac3-64f3-4101-8fde-24e5cc9214e1",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-057.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:02:29.770Z"
+    "generatedAt": "2026-06-20T22:27:34.022Z"
   },
   {
     "presetId": "SP06-058",
@@ -804,12 +804,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-058.webp",
-    "jobId": "e91c5956-433a-4467-b018-da4c80053b92",
+    "jobId": "006ac192-a13f-4927-9ff3-5dfaebc3c868",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-058.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:11:19.001Z"
+    "generatedAt": "2026-06-20T05:40:55.654Z"
   },
   {
     "presetId": "SP06-059",
@@ -818,12 +818,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-059.webp",
-    "jobId": "f5af7756-80fb-4771-a91d-5ea356b80484",
+    "jobId": "e16453f5-64bb-459f-bfa9-99dd9d000b5b",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-059.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:02:33.155Z"
+    "generatedAt": "2026-06-20T22:36:47.224Z"
   },
   {
     "presetId": "SP06-060",
@@ -832,12 +832,12 @@
     "packName": "Essential Art Styles",
     "category": "4. Digital Art",
     "file": "assets/recipes/styles/defaults/SP06-060.webp",
-    "jobId": "4ab67b5d-ea6e-443c-b9fe-30629e62f076",
+    "jobId": "903dab78-e4e9-48b1-b915-d41279b08ca2",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-060.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:02:33.232Z"
+    "generatedAt": "2026-06-20T12:02:35.888Z"
   },
   {
     "presetId": "SP06-061",
@@ -846,12 +846,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-061.webp",
-    "jobId": "9b3a75a4-8b01-4259-b020-8351d185b74f",
+    "jobId": "c672b618-6c97-456d-8b20-46670e7966c6",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-061.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:22:13.052Z"
+    "generatedAt": "2026-06-20T02:55:14.914Z"
   },
   {
     "presetId": "SP06-062",
@@ -860,12 +860,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-062.webp",
-    "jobId": "5e6b2b34-37a2-4e97-9a30-6280f9d2a47e",
+    "jobId": "391eb43d-dcb9-44d8-aeba-df73e18a7bed",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-062.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:22:04.743Z"
+    "generatedAt": "2026-06-20T06:04:44.607Z"
   },
   {
     "presetId": "SP06-063",
@@ -874,12 +874,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-063.webp",
-    "jobId": "74af50fd-2e76-41d9-ae6b-ce9b99dd6767",
+    "jobId": "cd393a7d-c3bd-44fb-8344-3d1e72a209b3",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-063.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:22:04.039Z"
+    "generatedAt": "2026-06-20T08:46:28.247Z"
   },
   {
     "presetId": "SP06-064",
@@ -888,12 +888,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-064.webp",
-    "jobId": "055aad09-df31-423d-b0c5-c4487c04ada6",
+    "jobId": "281673dd-a5e7-4f51-bc4a-76b18ac97930",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-064.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:21:48.454Z"
+    "generatedAt": "2026-06-20T22:41:54.581Z"
   },
   {
     "presetId": "SP06-065",
@@ -902,12 +902,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-065.webp",
-    "jobId": "14bfbce2-d57d-4536-b58a-3bb0775d2fc4",
+    "jobId": "f8231a2d-a77e-4f44-a66c-1956abe20411",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-065.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:21:46.152Z"
+    "generatedAt": "2026-06-20T18:00:02.055Z"
   },
   {
     "presetId": "SP06-066",
@@ -916,12 +916,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-066.webp",
-    "jobId": "3359e247-581b-46b2-a52c-fcfcfc7e6ff2",
+    "jobId": "592d9e6f-8453-4636-abf7-ec631643185e",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-066.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:22:00.869Z"
+    "generatedAt": "2026-06-20T10:32:56.354Z"
   },
   {
     "presetId": "SP06-067",
@@ -930,12 +930,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-067.webp",
-    "jobId": "bc3ff11d-63be-4b9b-a708-59e8f963c39c",
+    "jobId": "95e46430-ca00-4818-b23a-9c5a838727f9",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-067.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:28:23.148Z"
+    "generatedAt": "2026-06-20T18:03:35.074Z"
   },
   {
     "presetId": "SP06-068",
@@ -944,12 +944,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-068.webp",
-    "jobId": "e102c3c1-d55a-48a2-934a-ad4b853735cb",
+    "jobId": "06d4c48b-5631-4fba-b3cc-befe15bb702e",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-068.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:28:34.728Z"
+    "generatedAt": "2026-06-20T11:22:00.686Z"
   },
   {
     "presetId": "SP06-069",
@@ -958,12 +958,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-069.webp",
-    "jobId": "4df287e5-f511-423f-8c77-1c3ef1c3b335",
+    "jobId": "7be464a3-24b2-40d9-a63a-dfbadf5e0917",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-069.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:28:40.937Z"
+    "generatedAt": "2026-06-20T10:40:57.810Z"
   },
   {
     "presetId": "SP06-070",
@@ -972,12 +972,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-070.webp",
-    "jobId": "adf5c028-5eac-4632-9d63-7ecf8772529f",
+    "jobId": "b339bfbc-3f38-4910-b458-dc504ac4c5cb",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-070.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:28:40.421Z"
+    "generatedAt": "2026-06-20T12:44:40.084Z"
   },
   {
     "presetId": "SP06-071",
@@ -986,12 +986,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-071.webp",
-    "jobId": "ffbd49eb-5e7e-4900-aaf5-4ee4431f5b4d",
+    "jobId": "d06d99fe-3778-4da8-a25e-a862c88b502e",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-071.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:28:29.833Z"
+    "generatedAt": "2026-06-20T03:00:00.155Z"
   },
   {
     "presetId": "SP06-072",
@@ -1000,12 +1000,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-072.webp",
-    "jobId": "25687beb-cd61-40fd-9481-12c9511ddcd5",
+    "jobId": "bd14d151-36e2-416f-bcec-37fe8e821492",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-072.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:28:35.841Z"
+    "generatedAt": "2026-06-20T06:11:27.548Z"
   },
   {
     "presetId": "SP06-073",
@@ -1014,12 +1014,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-073.webp",
-    "jobId": "35868605-bda2-4fe1-a051-6ec1e4264434",
+    "jobId": "d50275ab-f630-43a8-90eb-b09e0f9a6f63",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-073.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:36:50.836Z"
+    "generatedAt": "2026-06-20T22:43:19.779Z"
   },
   {
     "presetId": "SP06-074",
@@ -1028,12 +1028,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-074.webp",
-    "jobId": "87beb7ba-a41f-4950-bbb9-f50632a9bcba",
+    "jobId": "e31a904e-de6a-4a41-b592-bbb423684177",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-074.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:37:04.987Z"
+    "generatedAt": "2026-06-20T12:35:11.360Z"
   },
   {
     "presetId": "SP06-075",
@@ -1056,12 +1056,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-076.webp",
-    "jobId": "c5d2915a-f2f8-4f02-a85f-9b147f91062e",
+    "jobId": "99c1973b-6d38-4b4e-a327-feb4378a017b",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-076.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:37:00.114Z"
+    "generatedAt": "2026-06-20T11:55:29.347Z"
   },
   {
     "presetId": "SP06-077",
@@ -1070,12 +1070,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-077.webp",
-    "jobId": "01dcfd6b-bff8-41ec-b756-c46bb9c3ef26",
+    "jobId": "ce5a20a2-bc59-4e60-be0b-ae6d64667ad5",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-077.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:37:01.723Z"
+    "generatedAt": "2026-06-20T18:14:16.383Z"
   },
   {
     "presetId": "SP06-078",
@@ -1084,12 +1084,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-078.webp",
-    "jobId": "74e197ff-9b63-4ee5-9c4c-7b615c79a6ec",
+    "jobId": "bb70bba1-867e-4235-a1f8-bfb43da1c8e6",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-078.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:36:59.130Z"
+    "generatedAt": "2026-06-20T10:34:16.133Z"
   },
   {
     "presetId": "SP06-079",
@@ -1098,12 +1098,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-079.webp",
-    "jobId": "1fda8182-8163-4f28-b2e2-34d95e4cf2f7",
+    "jobId": "35356833-b115-4c01-8a3a-535907877111",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-079.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:43:26.613Z"
+    "generatedAt": "2026-06-20T04:21:15.882Z"
   },
   {
     "presetId": "SP06-080",
@@ -1112,12 +1112,12 @@
     "packName": "Essential Art Styles",
     "category": "5. Mixed Media",
     "file": "assets/recipes/styles/defaults/SP06-080.webp",
-    "jobId": "3e7bbde0-b06b-4682-be49-803d140df973",
+    "jobId": "8f6d6441-e130-4f0a-a9e5-0840ee40758f",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-080.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:43:02.762Z"
+    "generatedAt": "2026-06-20T06:03:29.300Z"
   },
   {
     "presetId": "SP06-081",
@@ -1126,12 +1126,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-081.webp",
-    "jobId": "1462310a-f01f-4f03-b7ee-074175520f93",
+    "jobId": "dd6d273c-8dec-4a9d-8129-7c51ec6f432d",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-081.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:43:26.481Z"
+    "generatedAt": "2026-06-20T06:30:16.421Z"
   },
   {
     "presetId": "SP06-082",
@@ -1140,12 +1140,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-082.webp",
-    "jobId": "9aec7652-967d-49a6-8335-1d3185eda224",
+    "jobId": "608b702c-59fd-4644-82dc-dfb7b5679b06",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-082.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:43:31.973Z"
+    "generatedAt": "2026-06-20T13:47:29.199Z"
   },
   {
     "presetId": "SP06-083",
@@ -1154,12 +1154,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-083.webp",
-    "jobId": "a58b5063-3875-4bd9-8e63-0ce1082cd7c6",
+    "jobId": "8cb9b118-441d-467f-afa5-3eb7c4d7e694",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-083.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:43:14.712Z"
+    "generatedAt": "2026-06-20T22:34:36.325Z"
   },
   {
     "presetId": "SP06-084",
@@ -1168,12 +1168,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-084.webp",
-    "jobId": "ec2fb015-0a7b-4bac-8f0f-b25b4071aac9",
+    "jobId": "101b5a3d-7878-49bb-83bf-688a442a036b",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-084.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:48:05.536Z"
+    "generatedAt": "2026-06-20T06:07:21.119Z"
   },
   {
     "presetId": "SP06-085",
@@ -1182,12 +1182,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-085.webp",
-    "jobId": "d575dc0c-0c09-489c-8e1e-d68273fb5c92",
+    "jobId": "8d175228-0eaa-4227-a9b5-81e620db3335",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-085.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:04:42.504Z"
+    "generatedAt": "2026-06-20T10:47:17.046Z"
   },
   {
     "presetId": "SP06-086",
@@ -1196,12 +1196,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-086.webp",
-    "jobId": "1c7f8da0-c2b9-4eba-a773-a47bb9bf712c",
+    "jobId": "0351b190-cd55-41e3-87d3-445e6abc7fe7",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-086.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:57:30.595Z"
+    "generatedAt": "2026-06-20T06:29:08.623Z"
   },
   {
     "presetId": "SP06-087",
@@ -1224,12 +1224,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-088.webp",
-    "jobId": "d41d5ce6-6173-4c68-9bef-961bbc986637",
+    "jobId": "eeafa87b-b3f1-4209-84fc-200d0817932a",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-088.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:57:21.665Z"
+    "generatedAt": "2026-06-20T17:35:36.313Z"
   },
   {
     "presetId": "SP06-089",
@@ -1238,12 +1238,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-089.webp",
-    "jobId": "12c055fe-9562-470e-99b0-5dd8ccdecb60",
+    "jobId": "1d45db6c-9773-4400-9dde-45424f39cdb4",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-089.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T12:57:35.492Z"
+    "generatedAt": "2026-06-20T12:08:45.582Z"
   },
   {
     "presetId": "SP06-090",
@@ -1252,12 +1252,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-090.webp",
-    "jobId": "19082ffe-89aa-48c6-baa0-282cde737ba3",
+    "jobId": "56f0be45-fb97-4b76-8a15-bfb6d586ccf1",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-090.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:04:19.898Z"
+    "generatedAt": "2026-06-20T06:36:48.904Z"
   },
   {
     "presetId": "SP06-091",
@@ -1266,12 +1266,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-091.webp",
-    "jobId": "b29b8c49-cfdd-4c3e-8fc3-f702f1ae86bb",
+    "jobId": "12e66c8b-2254-4cd7-b20d-61a01c975206",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-091.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:11:06.990Z"
+    "generatedAt": "2026-06-20T12:14:14.945Z"
   },
   {
     "presetId": "SP06-092",
@@ -1308,12 +1308,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-094.webp",
-    "jobId": "246d7867-634b-47a5-aaf9-6fc3468f9b2d",
+    "jobId": "f8a70f3e-e45c-471b-8c1a-57605dd922cf",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-094.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:11:34.413Z"
+    "generatedAt": "2026-06-20T10:50:56.730Z"
   },
   {
     "presetId": "SP06-095",
@@ -1322,12 +1322,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-095.webp",
-    "jobId": "a8db6399-c024-4574-ae27-77a556912905",
+    "jobId": "ac3fac33-e8f8-44d7-a4f1-b7180a17b510",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-095.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:17:36.932Z"
+    "generatedAt": "2026-06-21T08:40:21.374Z"
   },
   {
     "presetId": "SP06-096",
@@ -1336,12 +1336,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-096.webp",
-    "jobId": "30be4796-5e8e-4fd4-bb68-d40a35760720",
+    "jobId": "2f33be39-9b5e-4ce8-8a11-2d25cf4a21eb",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-096.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:17:28.826Z"
+    "generatedAt": "2026-06-21T08:40:43.385Z"
   },
   {
     "presetId": "SP06-097",
@@ -1350,12 +1350,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-097.webp",
-    "jobId": "3967989e-2068-4268-9c56-009ae981ff74",
+    "jobId": "63c7940b-4ce2-40e4-b1f6-1f6313a6b35a",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-097.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:26:21.292Z"
+    "generatedAt": "2026-06-20T13:47:24.409Z"
   },
   {
     "presetId": "SP06-098",
@@ -1364,12 +1364,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-098.webp",
-    "jobId": "f73b48a3-bdea-4f82-b13d-9e373ef2f27d",
+    "jobId": "e517b5ed-008b-47fa-ad14-b9210ea5ccb0",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-098.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:26:33.188Z"
+    "generatedAt": "2026-06-20T06:11:21.548Z"
   },
   {
     "presetId": "SP06-099",
@@ -1378,12 +1378,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-099.webp",
-    "jobId": "1775392b-c7bd-41cc-825d-603b93fa5232",
+    "jobId": "85c7d4f3-96e8-45ec-b9fd-0cbe98e54b18",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-099.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:26:10.496Z"
+    "generatedAt": "2026-06-20T11:44:44.446Z"
   },
   {
     "presetId": "SP06-100",
@@ -1392,12 +1392,12 @@
     "packName": "Essential Art Styles",
     "category": "6. Retro Game Visual Systems",
     "file": "assets/recipes/styles/defaults/SP06-100.webp",
-    "jobId": "f9fc7b5d-d57a-4f51-b089-4fa90bf0b6d6",
+    "jobId": "9c4513f7-cc01-4e8c-b133-2a36cf6ece8b",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-100.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:25:48.748Z"
+    "generatedAt": "2026-06-20T06:11:42.194Z"
   },
   {
     "presetId": "SP06-101",
@@ -1406,12 +1406,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-101.webp",
-    "jobId": "5672cb7e-050b-4acf-83a4-423a4d8ac935",
+    "jobId": "b77d0596-f022-4abe-84ab-878e9fca5f02",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-101.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:31:01.926Z"
+    "generatedAt": "2026-06-20T12:14:32.933Z"
   },
   {
     "presetId": "SP06-102",
@@ -1420,12 +1420,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-102.webp",
-    "jobId": "14a688c8-b67c-4cc4-808e-71c4753b10b4",
+    "jobId": "0b6b877f-9146-481e-adeb-e77a6e0aa3c5",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-102.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:30:49.782Z"
+    "generatedAt": "2026-06-20T10:53:14.325Z"
   },
   {
     "presetId": "SP06-103",
@@ -1434,12 +1434,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-103.webp",
-    "jobId": "187c5413-e817-4682-9d87-88319116276d",
+    "jobId": "da15cadd-504a-4c56-ba87-2e314f0a8f5f",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-103.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:41:30.384Z"
+    "generatedAt": "2026-06-20T13:41:36.749Z"
   },
   {
     "presetId": "SP06-104",
@@ -1448,12 +1448,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-104.webp",
-    "jobId": "ab29ae8a-98f5-4a0e-ba32-6139d49be412",
+    "jobId": "92485db1-f990-45c8-9e43-53773c6c2deb",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-104.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:45:51.439Z"
+    "generatedAt": "2026-06-21T02:34:12.922Z"
   },
   {
     "presetId": "SP06-105",
@@ -1462,12 +1462,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-105.webp",
-    "jobId": "85e858f1-55bc-40ef-87d2-b85cf0c11b93",
+    "jobId": "dce82f5d-a806-47f0-b172-6326a0905767",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-105.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:41:46.820Z"
+    "generatedAt": "2026-06-20T06:19:17.952Z"
   },
   {
     "presetId": "SP06-106",
@@ -1476,12 +1476,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-106.webp",
-    "jobId": "71b3d1c2-242a-4daa-a99a-2b2f0fbc9622",
+    "jobId": "e37ef6bc-2fbb-4d35-bbda-ebd1f0d4b59e",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-106.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:45:53.094Z"
+    "generatedAt": "2026-06-20T12:14:28.945Z"
   },
   {
     "presetId": "SP06-107",
@@ -1490,12 +1490,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-107.webp",
-    "jobId": "4f50d58b-bb4e-481c-bbe9-c5bb2973a6a1",
+    "jobId": "10d475b3-5b50-4f48-b8dd-37c005ffb0f9",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-107.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:41:18.473Z"
+    "generatedAt": "2026-06-20T13:49:32.272Z"
   },
   {
     "presetId": "SP06-108",
@@ -1504,12 +1504,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-108.webp",
-    "jobId": "50a35312-8913-4c2f-b458-3db248e55a95",
+    "jobId": "ac9a11c9-1526-4fc1-988f-622507affd3e",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-108.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:41:21.525Z"
+    "generatedAt": "2026-06-20T18:13:58.905Z"
   },
   {
     "presetId": "SP06-109",
@@ -1518,12 +1518,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-109.webp",
-    "jobId": "a1ad0e44-531d-4998-82c3-7eddc29b452c",
+    "jobId": "dae0fd71-e9ec-4763-94f3-f25a20412c7e",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-109.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:52:25.203Z"
+    "generatedAt": "2026-06-20T17:02:06.467Z"
   },
   {
     "presetId": "SP06-110",
@@ -1532,12 +1532,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-110.webp",
-    "jobId": "e6c07680-1bc8-4123-9afc-09deb619d8f2",
+    "jobId": "a1d095ac-608b-4f85-949c-eb5e97f8c830",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-110.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:52:50.316Z"
+    "generatedAt": "2026-06-21T08:41:37.888Z"
   },
   {
     "presetId": "SP06-111",
@@ -1546,12 +1546,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-111.webp",
-    "jobId": "7f6d7ae3-dfe9-4b9e-a8ba-bfced29eab62",
+    "jobId": "2a5e6703-35bc-4883-b57b-b9789798ba6a",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-111.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:52:39.050Z"
+    "generatedAt": "2026-06-20T06:23:57.943Z"
   },
   {
     "presetId": "SP06-112",
@@ -1560,12 +1560,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-112.webp",
-    "jobId": "7d7773bb-d3e9-46d0-ae10-1a4fb42c2257",
+    "jobId": "d76e1cf4-8648-45cd-b533-619dd3866452",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-112.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:52:22.067Z"
+    "generatedAt": "2026-06-21T08:43:00.447Z"
   },
   {
     "presetId": "SP06-113",
@@ -1574,12 +1574,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-113.webp",
-    "jobId": "c8e1bdc6-d5e2-4408-9d34-14dfd2fca2cf",
+    "jobId": "55bdaf19-3ddd-49bf-be8b-045f229c3b3e",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-113.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:52:32.044Z"
+    "generatedAt": "2026-06-20T17:37:18.269Z"
   },
   {
     "presetId": "SP06-114",
@@ -1588,12 +1588,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-114.webp",
-    "jobId": "e2e1d0eb-207a-49de-a079-430e8e1e406b",
+    "jobId": "8eb26c55-7cea-45a0-875b-d87ac4c178a0",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-114.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T13:54:12.559Z"
+    "generatedAt": "2026-06-20T11:00:24.426Z"
   },
   {
     "presetId": "SP06-115",
@@ -1602,12 +1602,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-115.webp",
-    "jobId": "f1e1c08f-3435-4471-b5ab-01b3515f4716",
+    "jobId": "3856956f-4bfd-4682-9f32-cc87ae7a4597",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-115.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T14:03:10.544Z"
+    "generatedAt": "2026-06-20T11:08:41.914Z"
   },
   {
     "presetId": "SP06-116",
@@ -1616,12 +1616,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-116.webp",
-    "jobId": "a3d514af-efdb-4de6-9642-08fd856f0dc1",
+    "jobId": "226281ea-3be3-4d4f-b24b-bc2486fa7bc2",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-116.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T14:03:11.963Z"
+    "generatedAt": "2026-06-20T17:01:59.786Z"
   },
   {
     "presetId": "SP06-117",
@@ -1630,12 +1630,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-117.webp",
-    "jobId": "35c53be7-ef72-4c4c-aabf-61e8531790a3",
+    "jobId": "38e5aea4-1a32-4c20-bc58-2bdce9e825b7",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-117.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T14:03:04.696Z"
+    "generatedAt": "2026-06-20T12:18:27.467Z"
   },
   {
     "presetId": "SP06-118",
@@ -1644,12 +1644,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-118.webp",
-    "jobId": "3d58c345-e3bb-4290-9fd0-376867c03a10",
+    "jobId": "034cd5df-de9d-419e-85d6-d78327c7039e",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-118.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T14:03:36.439Z"
+    "generatedAt": "2026-06-20T11:08:19.944Z"
   },
   {
     "presetId": "SP06-119",
@@ -1658,12 +1658,12 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-119.webp",
-    "jobId": "3ced65fc-0671-4795-abaf-df068da7b1dd",
+    "jobId": "7dda1fa2-67f5-420d-b0ae-4b650570b683",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-119.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T14:03:12.863Z"
+    "generatedAt": "2026-06-20T02:45:27.457Z"
   },
   {
     "presetId": "SP06-120",
@@ -1672,11 +1672,11 @@
     "packName": "Essential Art Styles",
     "category": "7. Game Art Directions & UI",
     "file": "assets/recipes/styles/defaults/SP06-120.webp",
-    "jobId": "649844f7-f82f-4f2a-a67f-8b7b312756b8",
+    "jobId": "54c84a2c-7e8b-4862-b1a4-adb6cae6b907",
     "sourceAsset": "assets/recipes/styles/defaults/SP06-120.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T14:03:11.383Z"
+    "generatedAt": "2026-06-20T12:39:35.545Z"
   }
 ]

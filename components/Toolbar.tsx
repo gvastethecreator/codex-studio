@@ -43,7 +43,6 @@ import type {
   CodexModelCatalogResponse,
   CodexServiceTier,
 } from '../packages/shared/src';
-import { getCodexModelCatalog } from '../services/localStudioService';
 import type {
   AspectRatio,
   Attachment,
@@ -82,6 +81,9 @@ export interface ToolbarProps {
   onSelectKey: () => Promise<void>;
   maxAttachments: number;
   interactionScope?: string;
+  codexModelCatalog: CodexModelCatalogResponse | null;
+  isLoadingCodexModelCatalog: boolean;
+  codexModelCatalogError: string | null;
 }
 
 const AspectRatioIcon: React.FC<{ ratio: AspectRatio }> = ({ ratio }) => {
@@ -162,6 +164,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     onSelectKey,
     maxAttachments,
     interactionScope,
+    codexModelCatalog,
+    isLoadingCodexModelCatalog,
+    codexModelCatalogError,
   }) => {
     const { addToast } = useGlobal();
     const containerRef = useRef<HTMLDivElement>(null);
@@ -186,12 +191,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
     const [magicInstruction, setMagicInstruction] = useState('');
     const [isRefactoring, setIsRefactoring] = useState(false);
-    const [codexModelCatalog, setCodexModelCatalog] = useState<CodexModelCatalogResponse | null>(
-      null,
-    );
-    const [isLoadingCodexModelCatalog, setIsLoadingCodexModelCatalog] = useState(true);
-    const [codexModelCatalogError, setCodexModelCatalogError] = useState<string | null>(null);
-
     const [elapsedTick, setElapsedTick] = useState(0);
     const [scrambleTick, setScrambleTick] = useState(0);
 
@@ -257,32 +256,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       void elapsedTick;
       return ((Date.now() - generationStartTime) / 1000).toFixed(1);
     }, [isGenerating, generationStartTime, elapsedTick]);
-
-    useEffect(() => {
-      let isCancelled = false;
-
-      void getCodexModelCatalog()
-        .then((catalog) => {
-          if (isCancelled) return;
-          setCodexModelCatalog(catalog);
-          setCodexModelCatalogError(catalog.error);
-        })
-        .catch((error) => {
-          if (isCancelled) return;
-          setCodexModelCatalogError(
-            error instanceof Error ? error.message : 'Unable to read the Codex model catalog.',
-          );
-        })
-        .finally(() => {
-          if (!isCancelled) {
-            setIsLoadingCodexModelCatalog(false);
-          }
-        });
-
-      return () => {
-        isCancelled = true;
-      };
-    }, []);
 
     const handleSelectExecutionModel = useCallback(
       (model: CodexModel) => {
@@ -422,7 +395,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const currentSizes = PRO_SIZES;
 
     const btnClass =
-      'h-11 flex items-center gap-2 px-4 rounded-2xl bg-white/5 hover:bg-white/10 text-[9px] font-black tracking-widest transition-all active:scale-95 text-zinc-400 hover:text-white disabled:opacity-30 uppercase group border border-transparent hover:border-white/5 whitespace-nowrap cursor-pointer';
+      'h-10 sm:h-11 flex items-center gap-2 px-3 sm:px-4 rounded-xl sm:rounded-2xl bg-white/5 hover:bg-white/10 text-[9px] font-black tracking-widest transition-all active:scale-95 text-zinc-400 hover:text-white disabled:opacity-30 uppercase group border border-transparent hover:border-white/5 whitespace-nowrap cursor-pointer';
     const iconBtnClass =
       'size-8 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/5 text-zinc-500 hover:text-white hover:bg-white/10 transition-all active:scale-90 relative cursor-pointer disabled:cursor-not-allowed';
     const activeIconBtnClass =
@@ -448,9 +421,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         className="w-full flex flex-col justify-end z-50 transition-colors duration-700 ease-in-out relative"
       >
         {/* Fixed height background that doesn't expand with the textarea */}
-        <div className="absolute inset-x-0 bottom-0 h-[68px] pointer-events-none bg-black/80 backdrop-blur-sm transition-colors duration-700 ease-in-out" />
+        <div className="absolute inset-x-0 bottom-0 h-[116px] pointer-events-none bg-black/80 backdrop-blur-sm transition-colors duration-700 ease-in-out sm:h-[68px]" />
 
-        <div className="w-full max-w-[1920px] mx-auto flex items-end gap-3 px-6 py-3 relative z-10">
+        <div className="relative z-10 mx-auto flex w-full max-w-[1920px] flex-col items-stretch gap-2 px-4 py-3 sm:flex-row sm:items-end sm:gap-3 sm:px-6">
           <input
             type="file"
             ref={fileInputRef}
@@ -465,7 +438,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           <div className="flex-1 relative min-w-0">
             {/* Input Container */}
             <div
-              className={`flex items-end gap-2 rounded-2xl p-1.5 px-3 min-h-[44px] shadow-lg transition-colors duration-300 bg-zinc-900/50 border border-white/5 ${quickStartError ? 'quick-start-error-frame' : ''}`}
+              className={`flex min-h-[44px] items-end gap-2 rounded-2xl border border-white/5 bg-zinc-900/50 p-1.5 px-2 shadow-lg transition-colors duration-300 sm:px-3 ${quickStartError ? 'quick-start-error-frame' : ''}`}
             >
               {showQuickStartErrorText && (
                 <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[9px] font-black uppercase tracking-[0.18em] text-red-200 animate-in fade-in-0 slide-in-from-bottom-1 duration-150">
@@ -566,12 +539,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 }}
                 placeholder="Describe what you want to create..."
                 rows={1}
-                className={`flex-1 bg-transparent border-none outline-none text-[13px] text-zinc-200 placeholder-zinc-700 font-medium tracking-tight resize-none py-[6px] leading-normal custom-scrollbar min-w-[100px] px-3 self-end max-h-[400px] overflow-y-auto ${isEnhancingPrompt || isRefactoring ? 'font-mono text-accent-400 opacity-80' : ''}`}
+                className={`custom-scrollbar max-h-[400px] min-w-0 flex-1 self-end overflow-y-auto resize-none border-none bg-transparent px-2 py-[6px] text-[13px] font-medium leading-normal tracking-tight text-zinc-200 outline-none placeholder-zinc-700 sm:min-w-[100px] sm:px-3 ${isEnhancingPrompt || isRefactoring ? 'font-mono text-accent-400 opacity-80' : ''}`}
                 style={{ minHeight: '32px' }}
               />
 
               {/* LOGIC AI TOOLS */}
-              <div className="flex items-center gap-2">
+              <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
                 {/* 1. NEGATIVE (Exclude) */}
                 <div className="relative">
                   <Tooltip content="Negative Prompt (Exclude)">
@@ -698,7 +671,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           </div>
 
           {/* CONTROLS ROW */}
-          <div className="flex items-end gap-2 pointer-events-auto">
+          <div className="pointer-events-auto flex w-full min-w-0 items-end justify-between gap-1.5 sm:w-auto sm:justify-start sm:gap-2">
             {/* Aspect Ratio */}
             <div className="relative">
               <button
@@ -1017,7 +990,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               type="button"
               onClick={handleTriggerGenerate}
               className={`
-                    group relative h-11 px-6 rounded-2xl flex items-center justify-center gap-2.5 ml-2 overflow-hidden
+                    group relative h-10 px-4 sm:h-11 sm:px-6 rounded-xl sm:rounded-2xl flex items-center justify-center gap-2.5 sm:ml-2 overflow-hidden
                     text-[10px] tracking-[0.2em] font-black uppercase transition-all cursor-pointer
                     ${
                       isGenerating

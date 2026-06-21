@@ -13,6 +13,9 @@ interface GenerationToolbarConfigContext {
   onFilesDrop: ToolbarProps['onFilesDrop'];
   onRemoveAttachment: ToolbarProps['onRemoveAttachment'];
   maxAttachments: ToolbarProps['maxAttachments'];
+  codexModelCatalog: ToolbarProps['codexModelCatalog'];
+  isLoadingCodexModelCatalog: ToolbarProps['isLoadingCodexModelCatalog'];
+  codexModelCatalogError: ToolbarProps['codexModelCatalogError'];
 }
 
 interface GenerationToolbarActions {
@@ -70,6 +73,9 @@ export function buildGenerationToolbarProps({
     onFileSelect: config.onFileSelect,
     onFilesDrop: config.onFilesDrop,
     onRemoveAttachment: config.onRemoveAttachment,
+    codexModelCatalog: config.codexModelCatalog,
+    isLoadingCodexModelCatalog: config.isLoadingCodexModelCatalog,
+    codexModelCatalogError: config.codexModelCatalogError,
     isEnhancingPrompt: actions.isEnhancingPrompt,
     onEnhancePrompt: actions.onEnhancePrompt,
     setPreviewRatio: ui.setPreviewRatio,

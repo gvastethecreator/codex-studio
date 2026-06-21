@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Piedra erosionada, caucho de alto desgaste, metal reforzado y escombro activo.
   camera_and_composition: Checkpoints, atajos y zonas de choque sin exigir catedrales.
   atmosphere_and_mood: Ruidosa, veloz y de conquista territorial.
-  rendering_and_quality: "Rally-raid gameplay screencap: pacing, route conquest, dust hazards, control segment clear."
+  rendering_and_quality: 'Rally-raid gameplay screencap: pacing, route conquest, dust hazards, control segment clear.'
 avoidRules:
   - watermark
   - text

@@ -34,18 +34,18 @@ graph TD
 - `hooks/useStudioShell.ts`: materializes the `Studio Shell` by composing deeper shell-facing seams instead of owning catalog, page, and command wiring inline.
 - `hooks/useStudioViewState.ts`: groups shell-local queue, editor, preview, and overlay visibility state so `useStudioShell.ts` can cross smaller view-state surfaces instead of a flat list of UI setters.
 - `hooks/useStudioNavigation.ts`: groups recipe, modal, editor, and shell navigation concerns so route synchronization and overlay closing rules cross one deeper navigation seam instead of another flat argument list.
-- `hooks/useStudioSettings.ts`: groups editable `Studio Settings`, provider capability/runtime-preflight reads, and External Output Source loading/import commands behind one shell-facing data surface instead of a wider spread of settings fields and callbacks.
+- `hooks/useStudioSettings.ts`: groups editable `Studio Settings`, provider capability/runtime-preflight reads, and External Output Source loading/import commands behind one shell-facing data surface. Startup reads only the lightweight settings summary; full provider/output-source data refreshes when the Settings surface opens.
 - `hooks/useStudioActivitySession.ts`: groups selected-job inspection state and debug-panel toggling so shell activity wiring crosses focused `selection` and `debugPanel` surfaces instead of another flat list of runtime-detail props.
-- `hooks/useCatalog.ts`: exposes the `Image Catalog` read seam plus `useStudioCatalogController()` for catalog mutations, queue-result previews, trash grouping, and refresh choreography.
+- `hooks/useCatalog.ts`: exposes the `Image Catalog` read seam plus `Catalog Page` state (`total`, `hasMore`, loading, error, load more) and `useStudioCatalogController()` for catalog mutations, queue-result previews, trash grouping, and refresh choreography.
 - `hooks/useStudioGenerationSession.ts`: groups queue and generation-action surfaces so the `Studio Shell` no longer consumes another flat spread of generation-session fields.
 - `services/studioRuntime.ts`: resolves the backend API base and runtime metadata without coupling the renderer to Electron.
 - `hooks/useStudioRuntime.ts`: aggregates sync, onboarding, diagnostics, readiness, and session verification for shell consumers.
-- `lib/queueStateMachine.ts`: centralizes queue slot selection, abort classification, and per-job queue execution results so `useQueueManager.ts` can stay focused on queue orchestration instead of owning the full execution lifecycle inline.
-- `hooks/useLocalStudioSync.ts`: performs HTTP catch-up, subscribes to `GET /api/events`, mirrors backend jobs/logs, and refreshes the catalog.
+- `lib/queueStateMachine.ts`: centralizes queue slot selection, abort classification, and per-job queue execution results from explicit generation outcomes so `useQueueManager.ts` can stay focused on queue orchestration instead of owning the full execution lifecycle inline.
+- `hooks/useLocalStudioSync.ts`: performs HTTP catch-up, subscribes to the shared `GET /api/events` stream, mirrors backend jobs/logs, and refreshes the catalog.
 - `services/localGenerationRun.ts`: creates Generation Task jobs, waits for terminal states with `watchJob()`, queries `/api/catalog?job_id=...`, and returns catalog-derived local result data.
 - `services/localGenerationVisualBatchCompat.ts`: builds the legacy Visual Batch only at the compatibility edge.
 - `services/localStudioService.ts`: the UI's single HTTP adapter to the local backend.
-- `services/studioEventSource.ts`: shared SSE adapter for jobs, assets, logs, and connection state.
+- `services/studioEventSource.ts`: shared SSE adapter for jobs, assets, logs, and connection state. Browser consumers receive ref-counted stream leases so the shell and generation runs do not open duplicate EventSource connections.
 - `lib/studioCatalogView.ts`: pure Catalog Entry read model. It groups and filters catalog data without depending on Visual Batches or IndexedDB.
 - `lib/studioCatalogImageAdapter.ts`: materializes UI images from Catalog Entries.
 - `lib/studioLegacyVisualSnapshotExport.ts`: builds legacy `GenerationBatch[]` snapshots only for export compatibility.
@@ -53,6 +53,7 @@ graph TD
 - `lib/buildStudioHeaderToolbarProps.ts`: concentrates `Command Center` and header-toolbar transitions, runtime status derivation, queue counts, and provider fallback in one seam.
 - `hooks/useStudioOverlayController.ts`: keeps the lower-level overlay controller seam and now also exposes a deeper shell-overlay seam that derives `Studio Settings` library fallback and background-toggle choreography from runtime/settings modules, then publishes grouped `settingsModule` data into `StudioSystemOverlays` instead of widening a flat settings prop surface.
 - `lib/studioReadiness.ts` and `lib/studioDiagnostics.ts`: pure builders for onboarding, header status, and system panels.
+- `hooks/useGenerationConfig.ts`: owns the Codex model catalog read for generation defaults and passes the catalog to the Toolbar instead of letting the Toolbar fetch model freshness separately.
 - `apps/local-server/src/settingsRoutes.ts`: groups editable `Studio Settings` read/patch HTTP behavior so `appFactory.ts` keeps runtime composition concerns.
 - `apps/local-server/src/codexRoutes.ts`: groups Local Codex Session and model/account route behavior (`/api/codex/*`) behind one backend seam.
 - `apps/local-server/src/librariesRoutes.ts`: groups Studio Library list/create/default/remove HTTP behavior (`/api/libraries/*`) behind one backend seam.
@@ -84,7 +85,7 @@ graph TD
 - SQLite is the local source of truth for jobs, cataloged assets, libraries, projects, settings, job events, and system logs.
 - The Studio Library is an external local folder. By default it lives under the user's home directory, for example `%USERPROFILE%\AI-Studio-Library` on Windows.
 - Internal state lives under `.studio/`; generated outputs, thumbnails, exports, and trash assets live under `outputs/`.
-- The Browser Queue is an IndexedDB-backed UI execution buffer. Pending browser-only items survive refresh; jobs that already reached the backend remain durable as Persistent Jobs and are tracked in the backend session list to avoid duplicate execution.
+- The Browser Queue is an IndexedDB-backed UI execution buffer. Pending browser-only items survive refresh within a bounded inline-reference payload budget; jobs that already reached the backend remain durable as Persistent Jobs and are tracked in the backend session list to avoid duplicate execution.
 - IndexedDB no longer persists the active visual cache. Legacy keys such as `catalog-cache` and `catalog-trash` remain recovery-only compatibility surfaces.
 - `LegacyVisualBatchContext` stores only lightweight refs for recovery dedupe and generated append compatibility.
 - External Output Sources are read-only candidates until selected files are explicitly imported as Local Assets into the Studio Library.

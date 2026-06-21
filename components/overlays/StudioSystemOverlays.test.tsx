@@ -10,6 +10,7 @@ describe('StudioSystemOverlays', () => {
         isDashboardModalOpen: false,
         isOnboardingOpen: false,
         isSettingsModalOpen: false,
+        isChatPanelOpen: false,
       }),
     ).toEqual([]);
 
@@ -19,7 +20,8 @@ describe('StudioSystemOverlays', () => {
         isDashboardModalOpen: false,
         isOnboardingOpen: true,
         isSettingsModalOpen: false,
+        isChatPanelOpen: true,
       }),
-    ).toEqual(['debug', 'onboarding']);
+    ).toEqual(['debug', 'onboarding', 'chat']);
   });
 });

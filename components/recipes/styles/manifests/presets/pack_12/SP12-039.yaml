@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Madera lacada desgastada, terciopelo comprimido, latón oxidado y niebla particulada.
   camera_and_composition: Framing de ritmo con hotspots de tempo y lanes visibles; teatro/proscenio son anclas opcionales.
   atmosphere_and_mood: Teatral, urgente y ceremonialmente competitiva.
-  rendering_and_quality: "Rhythm-battle gameplay frame: timing cues, combo pressure, stage phase, spectral beats readable."
+  rendering_and_quality: 'Rhythm-battle gameplay frame: timing cues, combo pressure, stage phase, spectral beats readable.'
   creative_brief: >-
     Aplica Phantom Theater Rhythm Battle como gramatica original de videojuego sobre cualquier input: conserva su
     sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,

@@ -342,12 +342,32 @@
   {
     "packId": "pack_04",
     "packName": "Illustration & Graphic Novel",
+    "category": "5. Fantasy And Concept Illustration",
+    "key": "pack_04__fantasy_and_concept_illustration",
+    "file": "assets/recipes/styles/category-bases/pack_04__fantasy_and_concept_illustration.webp",
+    "jobId": "088b1909-5042-4ad4-a423-4178e16961be",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_04__fantasy_and_concept_illustration.webp",
+    "generatedAt": "2026-06-21T16:03:15.771Z"
+  },
+  {
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
     "category": "5. Ink & Print",
     "key": "pack_04__ink_and_print",
     "file": "assets/recipes/styles/category-bases/pack_04__ink_and_print.webp",
     "jobId": "883a8143-957f-405f-87ea-9bb3188fedd7",
     "sourceAsset": "assets/recipes/styles/category-bases/pack_04__ink_and_print.webp",
     "generatedAt": "2026-05-05T20:50:40.520Z"
+  },
+  {
+    "packId": "pack_04",
+    "packName": "Illustration & Graphic Novel",
+    "category": "4. Printmaking And Ink",
+    "key": "pack_04__printmaking_and_ink",
+    "file": "assets/recipes/styles/category-bases/pack_04__printmaking_and_ink.webp",
+    "jobId": "21ede13a-45c6-44b1-b91f-e627226608f3",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_04__printmaking_and_ink.webp",
+    "generatedAt": "2026-06-21T16:01:56.836Z"
   },
   {
     "packId": "pack_05",
@@ -378,6 +398,16 @@
     "jobId": "ec33f973-2a5d-49b4-be21-2f2a7fb10c6f",
     "sourceAsset": "assets/recipes/styles/category-bases/pack_05__90s_golden_era.webp",
     "generatedAt": "2026-05-05T20:55:08.907Z"
+  },
+  {
+    "packId": "pack_05",
+    "packName": "Anime 01 — Anime Battle & Worlds",
+    "category": "3. Action",
+    "key": "pack_05__action",
+    "file": "assets/recipes/styles/category-bases/pack_05__action.webp",
+    "jobId": "69a18173-dc54-4ff2-b0d1-044d06ec4b76",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_05__action.webp",
+    "generatedAt": "2026-06-21T16:04:58.643Z"
   },
   {
     "packId": "pack_05",
@@ -738,5 +768,55 @@
     "jobId": "1a306bad-5541-4f8e-8bd8-30fc1472e208",
     "sourceAsset": "assets/recipes/styles/category-bases/pack_11__toys_and_miniatures.webp",
     "generatedAt": "2026-06-09T05:52:37.328Z"
+  },
+  {
+    "packId": "pack_13",
+    "packName": "Anime 02 — Anime Character & Lifestyle",
+    "category": "12. Anime Style Spectrum",
+    "key": "pack_13__anime_style_spectrum",
+    "file": "assets/recipes/styles/category-bases/pack_13__anime_style_spectrum.webp",
+    "jobId": "db690736-f0cc-423a-a701-7caab1132a52",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_13__anime_style_spectrum.webp",
+    "generatedAt": "2026-06-21T16:18:19.096Z"
+  },
+  {
+    "packId": "pack_13",
+    "packName": "Anime 02 — Anime Character & Lifestyle",
+    "category": "1. Core Anime",
+    "key": "pack_13__core_anime",
+    "file": "assets/recipes/styles/category-bases/pack_13__core_anime.webp",
+    "jobId": "77ad96d8-820f-4c1e-b5b6-42e1dd693eb1",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_13__core_anime.webp",
+    "generatedAt": "2026-06-21T16:21:34.810Z"
+  },
+  {
+    "packId": "pack_13",
+    "packName": "Anime 02 — Anime Character & Lifestyle",
+    "category": "4. Shojo, Magical Girl & Visionary Classics",
+    "key": "pack_13__shojo_magical_girl_and_visionary_classics",
+    "file": "assets/recipes/styles/category-bases/pack_13__shojo_magical_girl_and_visionary_classics.webp",
+    "jobId": "1363e4c6-e0d7-4c62-adb1-bb1a21f4ddf6",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_13__shojo_magical_girl_and_visionary_classics.webp",
+    "generatedAt": "2026-06-21T16:06:31.280Z"
+  },
+  {
+    "packId": "pack_13",
+    "packName": "Anime 02 — Anime Character & Lifestyle",
+    "category": "5. Slice of Life & Moe",
+    "key": "pack_13__slice_of_life_and_moe",
+    "file": "assets/recipes/styles/category-bases/pack_13__slice_of_life_and_moe.webp",
+    "jobId": "58cdee55-56c2-418f-8180-f2d3eda40732",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_13__slice_of_life_and_moe.webp",
+    "generatedAt": "2026-06-21T16:09:16.220Z"
+  },
+  {
+    "packId": "pack_13",
+    "packName": "Anime 02 — Anime Character & Lifestyle",
+    "category": "2. Slice of Life / School / Music",
+    "key": "pack_13__slice_of_life_school_music",
+    "file": "assets/recipes/styles/category-bases/pack_13__slice_of_life_school_music.webp",
+    "jobId": "01dfcc0f-6095-4bff-b622-da8fdb107b6e",
+    "sourceAsset": "assets/recipes/styles/category-bases/pack_13__slice_of_life_school_music.webp",
+    "generatedAt": "2026-06-21T16:14:04.820Z"
   }
 ]

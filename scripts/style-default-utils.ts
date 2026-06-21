@@ -1,4 +1,4 @@
-import { copyFile, mkdir, stat } from 'node:fs/promises';
+import { copyFile, mkdir, rename, rm, stat } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
@@ -22,7 +22,7 @@ export const defaultsDir = path.join(recipeStylesDir, 'defaults');
 export const previewsDir = path.join(recipeStylesDir, 'previews');
 export const RECIPE_ASSET_EXTENSION = '.webp';
 export const IMAGEGEN_DENOISE_SUFFIX =
-  'Apply a strong denoise pass. Use controlled grain only when it helps the preset. Avoid noisy grain, oversharpening, crunchy micro-contrast, excessive ultra-fine noise, ultra-fine detail clutter, repeated camera-in-hand, library or market corridor, fantasy hallway, studio chair, curtain, and lamp filler. Favor cleaner large shapes, smoother tonal transitions, controlled texture, readable forms, and one clear representative subject, object, material, or scene fragment.';
+  'Preserve the preset native rendering language: photographic, material, macro, painting, illustration, game-art, cartoon, fashion, architecture, graphic, or abstract media are all allowed when they match the preset visual DNA. Do not convert a non-anime preset into anime, manga, big-eye cel faces, visual-novel polish, gacha framing, or generic anime character grammar unless the preset, pack, or category explicitly calls for anime, manga, visual novel, gacha, shonen, shojo, seinen, josei, moe, or isekai. Use controlled grain only when it helps the preset. Avoid noisy grain, dirty dark-color artifact buildup, crushed black blotches, flat black fill, oversharpening, crunchy micro-contrast, excessive ultra-fine noise, ugly texture chatter, low-light compression artifacts, dense mesh artifacts, chainmail-like filler texture, dense cross-hatching carpets, dirty monochrome grain, muddy black ink fields, repeated camera-in-hand, library or market corridor, fantasy hallway, studio chair, curtain, and lamp filler. Favor cleaner large shapes, smoother tonal transitions, controlled material behavior, readable forms, and one clear representative subject, object, material, character, environment, or scene fragment. When a preset asks for people, the character plus environment requirement overrides object/material fallback: keep one clear character integrated with an environment/background, and vary age, body type, crop distance, pose, role, and render lineage across neighboring cards. For human figures, including anime only when explicitly requested, prioritize readable anatomy over spectacle: clean hand count, believable fingers, stable feet, clear joints, head-neck-shoulder alignment, no fused limbs, no melted hands, no tangled instruments, no extra limbs, and simplified secondary figures when action or ensemble staging becomes complex.';
 export const defaultStudioLibraryDir = path.join(homeDir, 'AI-Studio-Library');
 export const defaultCodexHome = path.join(homeDir, '.codex');
 
@@ -51,7 +51,20 @@ export async function writeRepoWebpAsset(sourcePath: string, destinationPath: st
     await copyFile(finalDestination, path.join(previousDir, `${presetName}.${timestamp}.webp`));
   }
 
-  await sharp(sourcePath).webp({ quality: 92, effort: 6 }).toFile(finalDestination);
+  const parsedDestination = path.parse(finalDestination);
+  const tempDestination = path.join(
+    parsedDestination.dir,
+    `${parsedDestination.name}.${Date.now()}.tmp${parsedDestination.ext}`,
+  );
+
+  try {
+    await sharp(sourcePath).webp({ quality: 92, effort: 6 }).toFile(tempDestination);
+    await rm(finalDestination, { force: true });
+    await rename(tempDestination, finalDestination);
+  } catch (error) {
+    await rm(tempDestination, { force: true }).catch(() => {});
+    throw error;
+  }
 
   const destinationStats = await stat(finalDestination).catch(() => null);
   if (!destinationStats || destinationStats.size <= 0) {
@@ -107,25 +120,46 @@ export function subjectForCategory(category: string) {
   return 'a vertical scene with one clear subject, foreground detail, midground context, background depth, varied materials, and no text';
 }
 
-async function loadPacksFromGranularManifests() {
-  const { packManifests, presetManifests, graph } = await loadStyleManifestGraph();
+function graphErrorsForPack(errors: string[], packFilter: string) {
+  return errors.filter(
+    (error) =>
+      error.includes(` ${packFilter}:`) ||
+      error.includes(`for ${packFilter}:`) ||
+      error.includes(`for ${packFilter} `) ||
+      error.includes(`${packFilter}/`) ||
+      error.includes(`"${packFilter}"`) ||
+      error.includes(`'${packFilter}'`),
+  );
+}
 
-  if (packManifests.length === 0 || presetManifests.length === 0) {
+async function loadPacksFromGranularManifests(packFilter?: string) {
+  const { packManifests, presetManifests, graph } = await loadStyleManifestGraph(packFilter);
+  const selectedPackManifests = packFilter
+    ? packManifests.filter((manifest) => manifest.id === packFilter)
+    : packManifests;
+  const selectedPresetManifests = packFilter
+    ? presetManifests.filter((manifest) => manifest.packId === packFilter)
+    : presetManifests;
+
+  if (selectedPackManifests.length === 0 || selectedPresetManifests.length === 0) {
     throw new Error('Style Preset Manifests are required; legacy pack YAML is retired.');
   }
 
   if (!graph.valid) {
-    throw new Error(`Invalid Style Preset Manifest graph:\n${graph.errors.join('\n')}`);
+    const relevantErrors = packFilter ? graphErrorsForPack(graph.errors, packFilter) : graph.errors;
+    if (relevantErrors.length > 0) {
+      throw new Error(`Invalid Style Preset Manifest graph:\n${relevantErrors.join('\n')}`);
+    }
   }
 
   return composeStyleRuntimePacksFromManifests(
-    packManifests.sort((a, b) => compareStylePackIdsForDisplay(a.id, b.id)),
-    presetManifests.sort((a, b) => a.id.localeCompare(b.id)),
+    selectedPackManifests.sort((a, b) => compareStylePackIdsForDisplay(a.id, b.id)),
+    selectedPresetManifests.sort((a, b) => a.id.localeCompare(b.id)),
   );
 }
 
-export async function loadPacks() {
-  return loadPacksFromGranularManifests();
+export async function loadPacks(packFilter?: string) {
+  return loadPacksFromGranularManifests(packFilter);
 }
 
 export async function request<T>(pathName: string, init?: RequestInit): Promise<T> {
@@ -160,8 +194,11 @@ export function dataUrlFromBytes(bytes: Uint8Array, mimeType = 'image/png') {
   return `data:${mimeType};base64,${Buffer.from(bytes).toString('base64')}`;
 }
 
-export function appendImagegenDenoiseDirective(prompt: string) {
-  return `${prompt.trim()}\n\nPOST-PROCESSING:\n${IMAGEGEN_DENOISE_SUFFIX}`;
+export function appendImagegenDenoiseDirective(
+  prompt: string,
+  denoiseSuffix = IMAGEGEN_DENOISE_SUFFIX,
+) {
+  return `${prompt.trim()}\n\nPOST-PROCESSING:\n${denoiseSuffix}\n\napply heavy denoise to the image`;
 }
 
 const STYLE_PROMPT_NAME_REPLACEMENTS: Array<[RegExp, string]> = [

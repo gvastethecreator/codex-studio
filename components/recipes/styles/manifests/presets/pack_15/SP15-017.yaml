@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-017
 packId: pack_15
-name: Iron Convoy Commons
-category: 7. Corepunk — Dieselpunk
+name: Solar Orchard Commons
+category: 3. Eco, Repair & Climate Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - dieselpunk
+  - punk-spectrum-vault
+  - eco-repair-and-climate-punks
+  - solarpunk
+  - civic-agriculture
 visualDna:
-  aesthetic: Post-war dieselpunk rebuilt as cooperative freight logic, repair culture, and practical reconstruction grit.
-  form_and_line: Heavy chassis geometry, elevated fuel-line vectors, and robust workshop-like framing.
-  color_palette: Oxide red, soot gray, and signal amber.
-  lighting_setup: Smoky afternoon backlight with hard industrial highlights.
-  material_texture: Riveted steel, grease-dark rubber, weathered concrete, and canvas utility tarps.
-  render_quality: Rugged cinematic dieselpunk concept art with strong mass readability and mechanical detail.
-  spatial_distortion: Convoy-lane depth perspective ending at a civic repair focal mass.
-  atmosphere: Gritty solidarity, practical endurance, and collective reconstruction.
-  key_features: Diesel-hauler motifs, communal machine-shop rhythm, fuel reclamation towers, and worker-solidarity cues.
-  creative_brief: 'Weight the input with cooperative diesel endurance: oxide-red chassis geometry, grease-dark repair marks, amber signal lamps, tarped utility surfaces, and reclaimed fuel logic. Trucks, hangars, workers, or convoys may appear, but the style is solidarity through rugged maintained mass. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: grounded solarpunk orchard commons as a flat-to-painterly poster card built around shared solar shade panels, gardeners, repair ladders, and food-growing civic paths.
+  form_and_line: Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses solar canopy, gardeners, ladders, edible plants, communal paths.
+  color_palette: leaf green, warm solar gold, clay red, soft sky blue
+  lighting_setup: flat sun-through-panel blocks, leaf color bounce, clear afternoon shadow shapes
+  material_texture: solar panel planes, broad fruit-tree shapes, clay water jar blocks, seed crates without logos, recycled metal accents, linen workwear color fields
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: hopeful, practical, social, grounded
+  key_features: solar canopy, gardeners, ladders, edible plants, communal paths
+  creative_brief: 'Use solarpunk once as grounded civic agriculture: people repair and grow food under solar shade, no glass utopia monoculture and no leaf-logo green branding. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - pristine-utopia
-  - neon-cyber
-  - magical-fantasy
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-017.webp
 attributes:
-  negativePrompt: photoreal, pristine-utopia, neon-cyber, magical-fantasy, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, leaf-logo emblem, eco badge, green branding symbol, luxury eco resort, endless greenhouse, generic glass city, empty landscape postcard, photoreal garden render, market aisle, tiny leaf clutter, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-dieselpunk
-  categoryName: 7. Corepunk — Dieselpunk
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - dieselpunk
+    - punk-spectrum-vault
+    - eco-repair-and-climate-punks
+    - solarpunk
+    - civic-agriculture
   supportedTasks:
     - image_generate
     - image_edit

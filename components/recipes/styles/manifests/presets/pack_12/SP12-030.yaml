@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Esmalte cuarteado, lona con moho, mecánica oxidada y grasa envejecida en nodos críticos.
   camera_and_composition: Choke-points, revelación escalonada y funnels de presión sin exigir parque, showdown o arena fija.
   atmosphere_and_mood: Macabra, burlona y crecientemente impredecible.
-  rendering_and_quality: "Boss-showdown gameplay screencap: phase hazards, grotesque arena beats, dodge space readable."
+  rendering_and_quality: 'Boss-showdown gameplay screencap: phase hazards, grotesque arena beats, dodge space readable.'
 avoidRules:
   - watermark
   - text

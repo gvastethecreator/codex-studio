@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 import type {
   EditableStudioSettings,
@@ -87,6 +87,28 @@ export function useStudioSettings({
     return () => {
       isMountedRef.current = false;
     };
+  }, []);
+
+  const refreshSettingsSummary = useCallback(async () => {
+    setIsLoading(true);
+    setError(null);
+
+    try {
+      const nextSettings = await getEditableStudioSettings();
+      if (isMountedRef.current) {
+        setSettings(nextSettings);
+      }
+    } catch (refreshError) {
+      const message =
+        refreshError instanceof Error ? refreshError.message : 'Unable to load Studio Settings';
+      if (isMountedRef.current) {
+        setError(message);
+      }
+    } finally {
+      if (isMountedRef.current) {
+        setIsLoading(false);
+      }
+    }
   }, []);
 
   const refreshOutputSources = useCallback(async () => {
@@ -276,35 +298,57 @@ export function useStudioSettings({
   );
 
   useEffect(() => {
-    void refreshSettings();
-  }, [refreshSettings]);
+    void refreshSettingsSummary();
+  }, [refreshSettingsSummary]);
 
-  return {
-    data: {
-      settingsDomain: {
-        settings,
-        isLoading,
-        isSaving,
-        error,
-        refresh: refreshSettings,
-        update: updateSettings,
+  return useMemo(
+    () => ({
+      data: {
+        settingsDomain: {
+          settings,
+          isLoading,
+          isSaving,
+          error,
+          refresh: refreshSettings,
+          update: updateSettings,
+        },
+        providerDomain: {
+          capabilities: providerCapabilities,
+          runtimePreflight: providerRuntimePreflight,
+        },
+        outputSourcesDomain: {
+          outputSources,
+          outputSourceFiles,
+          isLoadingOutputSources,
+          loadingOutputSourceFiles,
+          isRegisteringOutputSource,
+          importingOutputSources,
+          refreshOutputSources,
+          registerOutputSource,
+          loadOutputSourceFiles,
+          importOutputSourceFiles,
+        },
       },
-      providerDomain: {
-        capabilities: providerCapabilities,
-        runtimePreflight: providerRuntimePreflight,
-      },
-      outputSourcesDomain: {
-        outputSources,
-        outputSourceFiles,
-        isLoadingOutputSources,
-        loadingOutputSourceFiles,
-        isRegisteringOutputSource,
-        importingOutputSources,
-        refreshOutputSources,
-        registerOutputSource,
-        loadOutputSourceFiles,
-        importOutputSourceFiles,
-      },
-    },
-  };
+    }),
+    [
+      error,
+      importOutputSourceFiles,
+      importingOutputSources,
+      isLoading,
+      isLoadingOutputSources,
+      isRegisteringOutputSource,
+      isSaving,
+      loadOutputSourceFiles,
+      loadingOutputSourceFiles,
+      outputSourceFiles,
+      outputSources,
+      providerCapabilities,
+      providerRuntimePreflight,
+      refreshOutputSources,
+      refreshSettings,
+      registerOutputSource,
+      settings,
+      updateSettings,
+    ],
+  );
 }

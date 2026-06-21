@@ -1,5 +1,14 @@
 import React from 'react';
-import { Trash2, ArrowLeft, Home, Activity, Layers, Settings, Server } from 'lucide-react';
+import {
+  Trash2,
+  ArrowLeft,
+  Home,
+  Activity,
+  Layers,
+  MessageSquare,
+  Settings,
+  Server,
+} from 'lucide-react';
 import Tooltip from './Tooltip';
 import Logo from './Logo';
 import { TopToolbar } from './ui/TopToolbar';
@@ -26,6 +35,7 @@ export interface HeaderToolbarProps {
   onCloseRecipe: () => void;
   onOpenDashboard: () => void;
   onOpenOnboarding: () => void;
+  onOpenChat: () => void;
   onOpenTrash: () => void;
   trashCount: number;
   onToggleDebug: () => void;
@@ -66,6 +76,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   activeRecipe,
   onCloseRecipe,
   onOpenOnboarding,
+  onOpenChat,
   onOpenDashboard,
   onOpenTrash,
   trashCount,
@@ -91,10 +102,10 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
         : 'border-rose-500/20 bg-rose-500/8 text-rose-200';
 
   return (
-    <TopToolbar className="w-full h-14 bg-black/80 backdrop-blur-sm flex items-center px-6 z-40 shrink-0 border-b border-white/5">
-      <div className="w-full max-w-480 mx-auto flex items-center justify-between gap-4 relative z-50">
-        <div className="flex min-w-0 items-center gap-6">
-          <div className="flex items-center gap-2">
+    <TopToolbar className="w-full min-h-14 bg-black/80 backdrop-blur-sm flex items-center px-3 py-2 sm:px-6 sm:py-0 z-40 shrink-0 border-b border-white/5">
+      <div className="w-full max-w-480 mx-auto flex flex-wrap items-center justify-between gap-2 sm:gap-4 relative z-50">
+        <div className="flex min-w-0 flex-1 flex-wrap items-center gap-2 lg:gap-6">
+          <div className="flex shrink-0 items-center gap-2">
             <Logo isGenerating={isGenerating} />
             <Tooltip content="Help & setup" position="bottom">
               <button
@@ -131,7 +142,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
           </div>
 
           {activeRecipeData ? (
-            <div className="flex items-center gap-4">
+            <div className="order-3 flex basis-full items-center gap-4 sm:order-none sm:basis-auto">
               <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-500">
                 <button
                   type="button"
@@ -159,7 +170,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               </div>
             </div>
           ) : (
-            <div className="flex items-center gap-2 p-1 bg-white/5 rounded-xl border border-white/5">
+            <div className="order-3 flex basis-full items-center gap-2 rounded-xl border border-white/5 bg-white/5 p-1 sm:order-none sm:basis-auto">
               <button
                 type="button"
                 onClick={() => onViewChange('studio')}
@@ -179,29 +190,31 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
             </div>
           )}
 
-          <WorkspaceStrip
-            workspaces={workspaces}
-            activeWorkspaceId={activeWorkspaceId}
-            onSwitchWorkspace={onSwitchWorkspace}
-            onAddWorkspace={onAddWorkspace}
-            onDeleteWorkspace={onDeleteWorkspace}
-            onRenameWorkspace={onRenameWorkspace}
-          />
+          <div className="hidden min-w-0 sm:block">
+            <WorkspaceStrip
+              workspaces={workspaces}
+              activeWorkspaceId={activeWorkspaceId}
+              onSwitchWorkspace={onSwitchWorkspace}
+              onAddWorkspace={onAddWorkspace}
+              onDeleteWorkspace={onDeleteWorkspace}
+              onRenameWorkspace={onRenameWorkspace}
+            />
+          </div>
         </div>
 
-        <div className="ml-auto flex shrink-0 items-center gap-2">
+        <div className="ml-auto flex shrink-0 items-center gap-1 sm:gap-2">
           <UsageStatusCard usage={usage} onOpenDashboard={onOpenDashboard} />
 
-          <div className="hidden shrink-0 items-center gap-2 xl:flex">
+          <div className="flex shrink-0 items-center gap-2">
             <Tooltip content={`Runtime status: ${runtimeStatus.label}`} position="bottom">
               <button
                 type="button"
                 onClick={onOpenDashboard}
                 aria-label={`Open runtime status: ${runtimeStatus.label}`}
-                className={`flex h-10 items-center gap-2 rounded-xl border px-3 transition-all hover:border-white/20 hover:bg-white/8 ${runtimeToneClass}`}
+                className={`flex size-10 items-center justify-center gap-2 rounded-xl border transition-all hover:border-white/20 hover:bg-white/8 xl:w-auto xl:px-3 ${runtimeToneClass}`}
               >
                 <Server size={15} />
-                <span className="text-[10px] font-black uppercase tracking-widest">
+                <span className="hidden text-[10px] font-black uppercase tracking-widest xl:inline">
                   {runtimeStatus.label}
                 </span>
               </button>
@@ -211,9 +224,9 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenSettings}
                 aria-label={`Open provider settings for ${activeProviderId}`}
-                className="flex h-10 items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 text-zinc-300 transition-all hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
+                className="hidden h-10 max-w-28 items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 text-zinc-300 transition-all hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white lg:flex"
               >
-                <span className="text-[10px] font-black uppercase tracking-widest">
+                <span className="truncate text-[10px] font-black uppercase tracking-widest">
                   {activeProviderId}
                 </span>
               </button>
@@ -223,11 +236,11 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onToggleQueue}
                 aria-label="Toggle generation queue"
-                className={`flex h-10 items-center gap-2 rounded-xl border px-3 transition-all ${isQueueOpen ? 'border-accent-500/30 bg-accent-500/12 text-white' : 'border-white/10 bg-white/5 text-zinc-300 hover:border-white/20 hover:bg-white/8 hover:text-white'}`}
+                className={`flex h-10 min-w-10 items-center justify-center gap-2 rounded-xl border px-2 transition-all xl:px-3 ${isQueueOpen ? 'border-accent-500/30 bg-accent-500/12 text-white' : 'border-white/10 bg-white/5 text-zinc-300 hover:border-white/20 hover:bg-white/8 hover:text-white'}`}
               >
                 <Layers size={15} />
                 {hasQueueResultPreviews && (
-                  <div className="flex items-center [&>*+*]:-ml-2">
+                  <div className="hidden items-center sm:flex [&>*+*]:-ml-2">
                     {queueResultPreviews.slice(0, 3).map((preview) => (
                       <span
                         key={preview.id}
@@ -247,6 +260,16 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 <span className="text-[10px] font-black uppercase tracking-widest">
                   {queueCount}
                 </span>
+              </button>
+            </Tooltip>
+            <Tooltip content="Codex chat" position="bottom">
+              <button
+                type="button"
+                onClick={onOpenChat}
+                aria-label="Open Codex chat"
+                className="flex size-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition-all hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
+              >
+                <MessageSquare size={16} />
               </button>
             </Tooltip>
             <Tooltip content="Studio settings" position="bottom">

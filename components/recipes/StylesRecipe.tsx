@@ -194,13 +194,19 @@ const PACK_THEMES: Record<string, { color: string; bg: string; border: string; t
     bg: 'bg-teal-500',
     border: 'border-teal-500',
     text: 'text-teal-400',
-  }, // Solarpunk Dreamscapes Vault
+  }, // Punk Spectrum Vault
   pack_16: {
     color: 'rose',
     bg: 'bg-rose-500',
     border: 'border-rose-500',
     text: 'text-rose-400',
   }, // Anime Classics & Prestige
+  pack_17: {
+    color: 'green',
+    bg: 'bg-green-500',
+    border: 'border-green-500',
+    text: 'text-green-400',
+  }, // Medieval Fantasy & Dungeon Zine
 };
 
 interface CategoryVisualIdentity {
@@ -931,6 +937,8 @@ function getPackIcon(id: string): React.ReactNode {
       return <Wand2 size={size} />;
     case 'pack_16':
       return <Star size={size} />;
+    case 'pack_17':
+      return <BookOpen size={size} />;
     default:
       return <Layers size={size} />;
   }

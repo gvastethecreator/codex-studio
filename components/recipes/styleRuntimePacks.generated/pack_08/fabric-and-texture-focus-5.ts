@@ -9,19 +9,19 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'flesh',
     style: {
-      aesthetic: 'Living statue, museum-come-alive fantasy, petrified-elegance awe',
+      aesthetic: 'Sculptural stone material, petrified elegance, carved-surface awe',
       form_and_line:
-        'Chisel marks, sculpted-drapery fold, classical massing, rigid carved contour, pedestal-like stillness',
+        'Chisel marks, sculpted-drapery fold, classical massing, rigid carved contour, grounded stillness',
       color_palette:
         'Grey Marble, Carrara-white, Pentelic-cream, veined-grey, Parian-snow, weathered-ivory, shadow-grey recess',
       lighting_setup:
-        'Gallery-spot precision, overhead directional drama, marble-subsurface scatter, pedestal-like shadow',
+        'Gallery-grade material light, overhead directional drama, marble-subsurface scatter, grounded shadow',
       material_texture:
         'Stone, fine-grain marble, crystalline-sparkle, chisel-tool mark, weathered-surface, polished-high, dust-settled crevice',
-      render_quality: 'Classic, cold, Bernini-marble realism, gallery-plinth gravitas',
+      render_quality: 'Classic, cold, carved-marble realism, gallery-grade material clarity',
       spatial_distortion: 'Rigid',
       atmosphere: 'Timeless, still, sculptural-permanence awe, stone-silence eternity',
-      key_features: 'Marble, veining, chisel marks, sculpted drapery, pedestal cues',
+      key_features: 'Marble, veining, chisel marks, sculpted drapery, base-weight cues',
       creative_brief:
         'Petrify the input into stone-statue material: Carrara grain, grey veining, chisel marks, sculpted drapery folds, rigid carved contour and gallery-like spot light. Keep living-statue wonder without requiring contrapposto figure, museum, pedestal, body or classical portrait bust.',
     },
@@ -181,7 +181,7 @@ export const GENERATED_STYLE_PRESETS = [
       form_and_line:
         'Herringbone pattern flow, structured drape, notch-lapel angle, three-roll-two logic, tailored break rhythm',
       color_palette: 'Brown, Green, loden, chestnut, olive-herringbone, barley-corn, moss',
-      lighting_setup: 'Rainy grey softness, low study warmth, flat wool-revealing light',
+      lighting_setup: 'Rainy grey softness, low wool-warmth, flat wool-revealing light',
       material_texture:
         'Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining',
       render_quality: 'Classic, textured, heritage-tailoring precision, wool-depth authenticity',
@@ -362,13 +362,13 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Evening jacket, after-dark luxury, candlelit-sophistication',
       form_and_line:
-        'Soft highlights, shawl-collar wrap, smoking-jacket taper, jacquard-relief silhouette, silk-faced lapel roll',
+        'Soft highlights, shawl-collar wrap, soft tailored taper, jacquard-relief silhouette, silk-faced lapel roll',
       color_palette: 'Deep Blue, Burgundy, midnight, amethyst, forest, oxblood, cognac',
       lighting_setup:
         'Soft edge glow, candle-halo warmth, dim amber ambience, nap-revealing side light',
       material_texture:
         'Plush velvet pile, crushed velvet, silk-velvet devoré, jacquard weave, satin-faced lapel, grosgrain trim',
-      render_quality: 'Rich, soft, smoking-room luxury, velvet-pile depth',
+      render_quality: 'Rich, soft, after-dark velvet luxury, velvet-pile depth',
       spatial_distortion: 'None',
       atmosphere: 'Luxury, night, after-hours refinement, aged-whiskey warmth, quiet exclusivity',
       key_features: 'Soft sheen, pile-direction gleam, satin lapel, jacquard pattern, frog closure',
@@ -574,7 +574,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fabric & Texture Focus',
     negativePrompt: 'dull',
     style: {
-      aesthetic: 'Covered in gold, gilded-divinity fantasy, living-statue opulence',
+      aesthetic: 'Covered in gold, gilded-divinity fantasy, gilded-surface opulence',
       form_and_line:
         'Flakes, surface-conforming foil, gilded-contour highlight, seamless-metallic shell, layered-leaf overlap',
       color_palette:
@@ -583,10 +583,11 @@ export const GENERATED_STYLE_PRESETS = [
         'Reflection, rim-light gold-bounce, warm-specular highlights, gallery-spot gleam, candlelight-warmth reflection',
       material_texture:
         "Metal foil, gold leaf, composition-gold sheet, gilder's-clay base, burnished-surface, mica-flake, gold-dust",
-      render_quality: 'Expensive, statue, Secessionist gilded pattern luxury, gilded-age opulence',
+      render_quality:
+        'Expensive, luminous, Secessionist gilded pattern luxury, gilded-age opulence',
       spatial_distortion: 'None',
       atmosphere:
-        'Divine, rich, alchemical-wonder awe, temple-treasure sanctity, immortal-beauty stillness',
+        'Divine, rich, alchemical-wonder awe, reliquary-treasure sanctity, immortal-beauty stillness',
       key_features:
         'Leafing seams, burnished reflection, flake edges, gilded contour, mica-gold dust',
       creative_brief:

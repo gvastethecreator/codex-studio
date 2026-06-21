@@ -76,12 +76,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "1. Comics And Graphic Novel",
     "file": "assets/recipes/styles/defaults/SP04-006.webp",
-    "jobId": "f4e76282-15a2-4e31-b6c3-7b06df227a05",
+    "jobId": "26b37b06-bc73-457c-bb46-ba13a4d89074",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-006.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T04:25:31.124Z"
+    "generatedAt": "2026-06-20T11:44:44.285Z"
   },
   {
     "presetId": "SP04-007",
@@ -160,12 +160,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "1. Comics And Graphic Novel",
     "file": "assets/recipes/styles/defaults/SP04-012.webp",
-    "jobId": "3c86bb6a-368b-4075-8805-415cf0fb1e0a",
+    "jobId": "5bd1bab6-3da5-4458-b9c5-3922b421097e",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-012.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T04:42:57.323Z"
+    "generatedAt": "2026-06-20T11:48:06.299Z"
   },
   {
     "presetId": "SP04-013",
@@ -244,12 +244,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "3. Childrens And Educational",
     "file": "assets/recipes/styles/defaults/SP04-018.webp",
-    "jobId": "d2463a86-88db-4e69-82c3-bc031bc5b5f2",
+    "jobId": "b7a1cb68-a9a8-4387-be49-79480e43a3e8",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-018.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T04:42:54.655Z"
+    "generatedAt": "2026-06-20T11:57:55.186Z"
   },
   {
     "presetId": "SP04-019",
@@ -258,12 +258,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-019.webp",
-    "jobId": "15ebbf6d-cc94-4a3a-af24-98b9fa37ec88",
+    "jobId": "d300bd5d-7bca-4c70-bc1e-2635a3061b2a",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-019.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T04:43:01.451Z"
+    "generatedAt": "2026-06-20T12:09:24.583Z"
   },
   {
     "presetId": "SP04-020",
@@ -272,12 +272,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "3. Childrens And Educational",
     "file": "assets/recipes/styles/defaults/SP04-020.webp",
-    "jobId": "4757dc56-d99b-4b59-bb91-fcca0d463eee",
+    "jobId": "f0480cc6-1ab4-4788-b07e-a7a496283f83",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-020.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T04:47:28.727Z"
+    "generatedAt": "2026-06-20T12:01:24.817Z"
   },
   {
     "presetId": "SP04-021",
@@ -426,12 +426,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-031.webp",
-    "jobId": "30fff00f-835b-4fe0-b48f-d535716a9a41",
+    "jobId": "6dffa02b-dd7d-42e2-b607-5df4009182da",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-031.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:10:42.657Z"
+    "generatedAt": "2026-06-20T12:13:05.102Z"
   },
   {
     "presetId": "SP04-032",
@@ -482,12 +482,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-035.webp",
-    "jobId": "f31ac850-aafe-410d-bd74-1c4c7c94c78e",
+    "jobId": "f2f3fca2-e90e-4142-bdaf-572feccf2074",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-035.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:10:30.840Z"
+    "generatedAt": "2026-06-20T12:17:06.817Z"
   },
   {
     "presetId": "SP04-036",
@@ -496,12 +496,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-036.webp",
-    "jobId": "edf1ccc6-7dba-4ce1-a471-9c772fc35237",
+    "jobId": "3de662e4-b7a8-44a7-b4cb-fda6371612d7",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-036.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:16:32.577Z"
+    "generatedAt": "2026-06-20T12:15:52.707Z"
   },
   {
     "presetId": "SP04-037",
@@ -510,12 +510,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-037.webp",
-    "jobId": "4860b796-4d4e-471a-b9d8-8e9748ba37a0",
+    "jobId": "506ae341-1ce8-43dd-a0c0-445d6e44ba3f",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-037.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:10:53.489Z"
+    "generatedAt": "2026-06-20T12:14:13.056Z"
   },
   {
     "presetId": "SP04-038",
@@ -580,12 +580,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "2. Editorial Illustration",
     "file": "assets/recipes/styles/defaults/SP04-042.webp",
-    "jobId": "3a187287-0111-4d75-beac-de7cec1210b3",
+    "jobId": "1ee47012-e179-47dc-89e3-2725f3fa363c",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-042.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:33:45.512Z"
+    "generatedAt": "2026-06-20T11:53:31.171Z"
   },
   {
     "presetId": "SP04-043",
@@ -594,12 +594,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "2. Editorial Illustration",
     "file": "assets/recipes/styles/defaults/SP04-043.webp",
-    "jobId": "bee5f5a8-dcdc-4a75-b292-dea08e438027",
+    "jobId": "2da51258-beda-4fba-bcb7-64f6513f0d86",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-043.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:35:00.121Z"
+    "generatedAt": "2026-06-20T11:52:20.713Z"
   },
   {
     "presetId": "SP04-044",
@@ -608,12 +608,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-044.webp",
-    "jobId": "3dc022e9-b777-444a-b5f7-221bd5c77271",
+    "jobId": "0e633232-fcb4-460a-9cbf-9ab940af98f5",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-044.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:28:59.734Z"
+    "generatedAt": "2026-06-20T12:10:36.778Z"
   },
   {
     "presetId": "SP04-045",
@@ -664,12 +664,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "2. Editorial Illustration",
     "file": "assets/recipes/styles/defaults/SP04-048.webp",
-    "jobId": "addd283d-1dbe-4f9c-8ab3-2fabf0102fad",
+    "jobId": "30f2c88e-bf36-49f2-bfe2-93fd74a650f8",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-048.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:29:07.784Z"
+    "generatedAt": "2026-06-20T11:56:44.662Z"
   },
   {
     "presetId": "SP04-049",
@@ -692,12 +692,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "1. Comics And Graphic Novel",
     "file": "assets/recipes/styles/defaults/SP04-050.webp",
-    "jobId": "2f411fdc-0e48-43dc-86ce-edca092ab2a1",
+    "jobId": "f8571e26-ac44-41be-81a5-c1530a5e5e60",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-050.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:28:58.658Z"
+    "generatedAt": "2026-06-20T11:49:22.380Z"
   },
   {
     "presetId": "SP04-051",
@@ -720,12 +720,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-052.webp",
-    "jobId": "1e67a0ce-6a3f-4de6-a4d5-ecb002f06d73",
+    "jobId": "6ce89231-6349-423b-a008-26eda5c997ad",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-052.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:49:29.520Z"
+    "generatedAt": "2026-06-21T06:45:15.321Z"
   },
   {
     "presetId": "SP04-053",
@@ -762,12 +762,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-055.webp",
-    "jobId": "7d53115a-5a26-4685-b446-36f0c7bcdfff",
+    "jobId": "2490d6d0-348b-4e8c-af68-b1e00f24cff5",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-055.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:47:59.287Z"
+    "generatedAt": "2026-06-20T12:22:25.271Z"
   },
   {
     "presetId": "SP04-056",
@@ -776,12 +776,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-056.webp",
-    "jobId": "b77e7ea3-b5da-4a7e-b20d-03a2be8bba88",
+    "jobId": "ed40b72c-fc2f-48a2-bb82-6d837461f5ab",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-056.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:47:59.288Z"
+    "generatedAt": "2026-06-20T12:24:37.330Z"
   },
   {
     "presetId": "SP04-057",
@@ -804,12 +804,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-058.webp",
-    "jobId": "cd3e9db7-9184-4293-8377-5af6c9c964f0",
+    "jobId": "f3c6d8c4-9bf2-4c12-8f4f-08904c992fc2",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-058.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:47:58.374Z"
+    "generatedAt": "2026-06-21T06:43:44.538Z"
   },
   {
     "presetId": "SP04-059",
@@ -818,12 +818,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-059.webp",
-    "jobId": "9082f2ba-960d-4fc0-93b6-5fe817dfba5c",
+    "jobId": "28e8aef6-bc52-4888-a691-a5793060d317",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-059.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:47:59.321Z"
+    "generatedAt": "2026-06-21T06:44:06.448Z"
   },
   {
     "presetId": "SP04-060",
@@ -832,12 +832,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "2. Editorial Illustration",
     "file": "assets/recipes/styles/defaults/SP04-060.webp",
-    "jobId": "68bca7ca-11c9-420c-aa93-47caef4d9972",
+    "jobId": "33083d47-91d0-469d-bff5-3f02dc83f0be",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-060.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T05:54:26.299Z"
+    "generatedAt": "2026-06-20T11:55:27.093Z"
   },
   {
     "presetId": "SP04-061",
@@ -860,12 +860,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "4. Printmaking And Ink",
     "file": "assets/recipes/styles/defaults/SP04-062.webp",
-    "jobId": "0a419262-ab9d-48f2-813f-6ffd91cbe38d",
+    "jobId": "deedbc14-4b3b-4808-9afe-a850a4d82424",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-062.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T06:13:31.550Z"
+    "generatedAt": "2026-06-20T12:07:59.521Z"
   },
   {
     "presetId": "SP04-063",
@@ -916,12 +916,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-066.webp",
-    "jobId": "a17d02c9-6524-4e9c-923b-496992c521c0",
+    "jobId": "93102e9e-2b6f-4bb5-8dad-db101f5895fd",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-066.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T06:07:33.250Z"
+    "generatedAt": "2026-06-20T12:46:23.880Z"
   },
   {
     "presetId": "SP04-067",
@@ -1042,12 +1042,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "3. Childrens And Educational",
     "file": "assets/recipes/styles/defaults/SP04-075.webp",
-    "jobId": "ae43a266-6247-490b-8e07-bf780d107561",
+    "jobId": "4a5b45ee-b99d-405b-a6af-275597a19aa7",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-075.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T06:28:48.347Z"
+    "generatedAt": "2026-06-20T12:05:04.543Z"
   },
   {
     "presetId": "SP04-076",
@@ -1070,12 +1070,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-077.webp",
-    "jobId": "9186a99f-fdab-48db-a928-427402f0800e",
+    "jobId": "b136ca46-d959-43d1-a797-0efde193e3ae",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-077.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T06:39:49.156Z"
+    "generatedAt": "2026-06-20T12:47:48.985Z"
   },
   {
     "presetId": "SP04-078",
@@ -1140,12 +1140,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-082.webp",
-    "jobId": "0d36b066-20b3-4a04-bf0f-83dc828a1183",
+    "jobId": "fa8da7a7-5ede-4290-b351-d68d3d1494cf",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-082.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T06:58:19.051Z"
+    "generatedAt": "2026-06-20T12:18:57.767Z"
   },
   {
     "presetId": "SP04-083",
@@ -1168,12 +1168,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "3. Childrens And Educational",
     "file": "assets/recipes/styles/defaults/SP04-084.webp",
-    "jobId": "92f46aea-6317-467a-852c-93252d7012f4",
+    "jobId": "77f1ffe8-4ba2-495c-9dba-dcf86489cded",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-084.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T06:51:07.262Z"
+    "generatedAt": "2026-06-20T12:02:54.081Z"
   },
   {
     "presetId": "SP04-085",
@@ -1182,12 +1182,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-085.webp",
-    "jobId": "0f7488a3-3a25-49fc-a367-96838e2e98a9",
+    "jobId": "88a37038-a212-4276-a507-a56c5bfd99ec",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-085.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T06:50:51.677Z"
+    "generatedAt": "2026-06-20T12:38:00.730Z"
   },
   {
     "presetId": "SP04-086",
@@ -1196,12 +1196,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-086.webp",
-    "jobId": "6ae64b38-7761-45ad-9c2a-38eec62db92f",
+    "jobId": "71675e4c-655d-492c-a87b-b52b2372ad5f",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-086.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T06:58:26.178Z"
+    "generatedAt": "2026-06-20T12:43:12.552Z"
   },
   {
     "presetId": "SP04-087",
@@ -1252,12 +1252,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-090.webp",
-    "jobId": "5d2ab80a-fa73-4b66-947a-70e0cafef88e",
+    "jobId": "0d966cf6-7fe2-45c1-af8c-53048aa180d0",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-090.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T06:51:12.998Z"
+    "generatedAt": "2026-06-20T12:28:53.280Z"
   },
   {
     "presetId": "SP04-091",
@@ -1280,12 +1280,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-092.webp",
-    "jobId": "14d8ce50-f70d-4e6c-b14e-5d6f0841d24e",
+    "jobId": "b6d58527-11e4-464b-9542-91a26077ca4d",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-092.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T07:14:47.827Z"
+    "generatedAt": "2026-06-20T12:32:30.678Z"
   },
   {
     "presetId": "SP04-093",
@@ -1294,12 +1294,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-093.webp",
-    "jobId": "5abb197e-a10c-4f2a-8b92-fc61276dc26e",
+    "jobId": "df6d6a5a-d326-4f1c-8cb0-1d77c4a91725",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-093.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T07:08:47.670Z"
+    "generatedAt": "2026-06-20T12:34:20.722Z"
   },
   {
     "presetId": "SP04-094",
@@ -1336,12 +1336,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "5. Fantasy And Concept Illustration",
     "file": "assets/recipes/styles/defaults/SP04-096.webp",
-    "jobId": "9f860e3e-8390-44eb-8a18-46bbbb1a3e58",
+    "jobId": "1d8d0359-f55c-4d09-99b3-5cbe50bcfed7",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-096.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T07:08:51.940Z"
+    "generatedAt": "2026-06-21T06:49:06.137Z"
   },
   {
     "presetId": "SP04-097",
@@ -1378,12 +1378,12 @@
     "packName": "Illustration & Graphic Novel",
     "category": "4. Printmaking And Ink",
     "file": "assets/recipes/styles/defaults/SP04-099.webp",
-    "jobId": "6c408941-0441-40f5-8074-31d3bdb60206",
+    "jobId": "28041ee9-905f-4aa7-8834-fc19b597de7a",
     "sourceAsset": "assets/recipes/styles/defaults/SP04-099.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T07:14:43.065Z"
+    "generatedAt": "2026-06-20T12:06:35.979Z"
   },
   {
     "presetId": "SP04-100",

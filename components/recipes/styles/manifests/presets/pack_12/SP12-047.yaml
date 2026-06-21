@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Piedra vítrea, metal forjado, arena abrasiva y grietas activas por energía.
   camera_and_composition: Foco en duelistas, límites de ring y hazards periféricos sin exigir coliseo físico.
   atmosphere_and_mood: Brutal, honorable y ancestralmente espectacular.
-  rendering_and_quality: "Champion-trial gameplay frame: boss phase, telegraph, counter window, arena spacing readable."
+  rendering_and_quality: 'Champion-trial gameplay frame: boss phase, telegraph, counter window, arena spacing readable.'
 avoidRules:
   - watermark
   - text

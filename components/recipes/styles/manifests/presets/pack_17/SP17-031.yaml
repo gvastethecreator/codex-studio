@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-031
+packId: pack_17
+name: Bone-Script Monastery Siege
+category: 5. Apocalyptic Wargame & Inked Dungeon
+domain: siege monastery fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - apocalyptic-wargame-and-inked-dungeon
+  - monastery-siege
+visualDna:
+  aesthetic: Siege-monastery fantasy with bone-script ornament, barricaded cloisters, armored scribes, and ritual defense engines.
+  subject_treatment: A bone-script monastery siege door or giant siege bell with armored monks as small support shapes and non-readable carved markings.
+  color_and_tone: Limestone gray, bone white, black ink, old gold, oxblood cloth, and smoky blue shadow.
+  lighting_and_shadow: Bell-tower light, candle rows, and smoke beams keep stone planes readable without dark artifact buildup.
+  texture_and_material: Chipped limestone, vellum-like cloth, bone inlay, hammered metal, wax, dust, and clean ink seams.
+  camera_and_composition: Architectural verticals, barricade foreground, central holy object, and strong silhouette separation.
+  atmosphere_and_mood: Besieged, scholarly, sacred, tense, and stoic.
+  rendering_and_quality: Detailed medieval fantasy illustration card with denoised darks, defined linework, crisp stone detail, and non-readable decorative marks.
+  creative_brief: Original monastery-siege aesthetic for fortress interiors, ritual defenders, relic doors, grim scholars, and holy machines.
+avoidRules:
+  - readable script
+  - book stack default
+  - library room cliche
+  - muddy stone noise
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-031.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: apocalyptic-wargame-and-inked-dungeon
+  categoryName: 5. Apocalyptic Wargame & Inked Dungeon
+  domain: siege monastery fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - apocalyptic-wargame-and-inked-dungeon
+    - monastery-siege
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

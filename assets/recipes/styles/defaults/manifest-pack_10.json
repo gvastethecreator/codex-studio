@@ -6,12 +6,12 @@
     "packName": "Abstract & Experimental",
     "category": "1. Geometric Abstraction",
     "file": "assets/recipes/styles/defaults/SP10-001.webp",
-    "jobId": "fd0ffe4a-e1a9-44dd-a52c-9c6c5c6aa185",
+    "jobId": "663a14b2-f1f6-4e68-a05c-bc341937e91e",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-001.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T04:50:44.476Z"
+    "generatedAt": "2026-06-21T00:58:33.336Z"
   },
   {
     "presetId": "SP10-002",
@@ -20,12 +20,12 @@
     "packName": "Abstract & Experimental",
     "category": "1. Geometric Abstraction",
     "file": "assets/recipes/styles/defaults/SP10-002.webp",
-    "jobId": "41389373-149a-4661-b401-eb10795a8690",
+    "jobId": "9445af0a-46a2-4f23-8823-7b358c27baea",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-002.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T04:50:33.005Z"
+    "generatedAt": "2026-06-21T00:59:32.564Z"
   },
   {
     "presetId": "SP10-003",
@@ -48,12 +48,12 @@
     "packName": "Abstract & Experimental",
     "category": "1. Geometric Abstraction",
     "file": "assets/recipes/styles/defaults/SP10-004.webp",
-    "jobId": "70273f1d-d705-491c-8cb5-4859fa265463",
+    "jobId": "04765e85-d497-49b1-b304-a1d0de61fe18",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-004.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T04:57:44.207Z"
+    "generatedAt": "2026-06-21T01:00:39.855Z"
   },
   {
     "presetId": "SP10-005",
@@ -76,12 +76,12 @@
     "packName": "Abstract & Experimental",
     "category": "1. Geometric Abstraction",
     "file": "assets/recipes/styles/defaults/SP10-006.webp",
-    "jobId": "1db07ce5-10a2-4015-a89f-2562806a7b81",
+    "jobId": "6656cc06-dcc6-4de9-9bcf-7d8cd7a5ebd1",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-006.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:05:09.253Z"
+    "generatedAt": "2026-06-21T01:06:50.273Z"
   },
   {
     "presetId": "SP10-007",
@@ -90,12 +90,12 @@
     "packName": "Abstract & Experimental",
     "category": "1. Geometric Abstraction",
     "file": "assets/recipes/styles/defaults/SP10-007.webp",
-    "jobId": "b17801e5-44cf-49c3-8be0-285312911f6b",
+    "jobId": "d92023bc-38a8-4b8e-bfc9-412572a12136",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-007.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:14:47.765Z"
+    "generatedAt": "2026-06-21T01:05:25.916Z"
   },
   {
     "presetId": "SP10-008",
@@ -104,12 +104,12 @@
     "packName": "Abstract & Experimental",
     "category": "1. Geometric Abstraction",
     "file": "assets/recipes/styles/defaults/SP10-008.webp",
-    "jobId": "843d866a-f949-4a57-98e2-cc67933add26",
+    "jobId": "927759af-0f65-44e9-8ada-e9fc0ec5e023",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-008.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:13:54.705Z"
+    "generatedAt": "2026-06-21T01:01:57.642Z"
   },
   {
     "presetId": "SP10-009",
@@ -118,12 +118,12 @@
     "packName": "Abstract & Experimental",
     "category": "1. Geometric Abstraction",
     "file": "assets/recipes/styles/defaults/SP10-009.webp",
-    "jobId": "5b96acd9-c943-437c-b408-97586d66e89b",
+    "jobId": "379954f9-f4cb-4672-9ac6-1853573e87eb",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-009.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:22:15.278Z"
+    "generatedAt": "2026-06-21T01:03:13.167Z"
   },
   {
     "presetId": "SP10-010",
@@ -132,12 +132,12 @@
     "packName": "Abstract & Experimental",
     "category": "1. Geometric Abstraction",
     "file": "assets/recipes/styles/defaults/SP10-010.webp",
-    "jobId": "cb3c868f-b510-4bb3-b2d9-c18a4f0cf38c",
+    "jobId": "cc28478b-5861-4dc6-996a-f47b0a0499fd",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-010.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:22:12.691Z"
+    "generatedAt": "2026-06-21T01:04:42.934Z"
   },
   {
     "presetId": "SP10-011",
@@ -146,12 +146,12 @@
     "packName": "Abstract & Experimental",
     "category": "2. Fluid & Organic",
     "file": "assets/recipes/styles/defaults/SP10-011.webp",
-    "jobId": "78133140-e991-4274-bd67-5b449b259e85",
+    "jobId": "cd0763ba-ad56-4b0c-adfd-423070066f50",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-011.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:29:31.838Z"
+    "generatedAt": "2026-06-21T01:14:13.648Z"
   },
   {
     "presetId": "SP10-012",
@@ -160,12 +160,12 @@
     "packName": "Abstract & Experimental",
     "category": "2. Fluid & Organic",
     "file": "assets/recipes/styles/defaults/SP10-012.webp",
-    "jobId": "a3643fd5-99ae-4d27-bfc3-eee6b7ec036f",
+    "jobId": "ee9d332c-07e1-489d-b8f1-6cca2ddd468f",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-012.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:29:53.682Z"
+    "generatedAt": "2026-06-21T01:08:15.242Z"
   },
   {
     "presetId": "SP10-013",
@@ -174,12 +174,12 @@
     "packName": "Abstract & Experimental",
     "category": "2. Fluid & Organic",
     "file": "assets/recipes/styles/defaults/SP10-013.webp",
-    "jobId": "05507a49-d6ad-4412-8c32-221d73c5c458",
+    "jobId": "caf060df-62bc-47a8-a591-a8030218f1e6",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-013.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:37:14.820Z"
+    "generatedAt": "2026-06-21T01:18:27.936Z"
   },
   {
     "presetId": "SP10-014",
@@ -188,12 +188,12 @@
     "packName": "Abstract & Experimental",
     "category": "2. Fluid & Organic",
     "file": "assets/recipes/styles/defaults/SP10-014.webp",
-    "jobId": "879d9bcf-571d-4a4c-9d20-0ff1cbc7b70b",
+    "jobId": "ee90d838-d931-4e6b-ba23-48a046f6e238",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-014.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:37:14.720Z"
+    "generatedAt": "2026-06-21T01:15:34.576Z"
   },
   {
     "presetId": "SP10-015",
@@ -202,12 +202,12 @@
     "packName": "Abstract & Experimental",
     "category": "2. Fluid & Organic",
     "file": "assets/recipes/styles/defaults/SP10-015.webp",
-    "jobId": "2e0d58fa-9700-4ee6-975d-8b2c91e502cc",
+    "jobId": "90af050f-009c-4e9a-acd7-7fe7f85a0b89",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-015.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:44:31.799Z"
+    "generatedAt": "2026-06-21T01:16:59.567Z"
   },
   {
     "presetId": "SP10-016",
@@ -216,12 +216,12 @@
     "packName": "Abstract & Experimental",
     "category": "2. Fluid & Organic",
     "file": "assets/recipes/styles/defaults/SP10-016.webp",
-    "jobId": "b5bad7df-359c-4497-be98-b70c223a53ca",
+    "jobId": "7c5f1d28-7936-4456-ab34-a58e26918856",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-016.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:44:25.162Z"
+    "generatedAt": "2026-06-21T01:09:28.905Z"
   },
   {
     "presetId": "SP10-017",
@@ -230,12 +230,12 @@
     "packName": "Abstract & Experimental",
     "category": "2. Fluid & Organic",
     "file": "assets/recipes/styles/defaults/SP10-017.webp",
-    "jobId": "81b9b04d-bce0-44d8-8958-aefd1e46c200",
+    "jobId": "56621e47-706d-451a-842b-283c461f5618",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-017.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:52:08.842Z"
+    "generatedAt": "2026-06-21T01:11:17.364Z"
   },
   {
     "presetId": "SP10-018",
@@ -258,12 +258,12 @@
     "packName": "Abstract & Experimental",
     "category": "2. Fluid & Organic",
     "file": "assets/recipes/styles/defaults/SP10-019.webp",
-    "jobId": "a6ded431-2d64-41bf-960e-af473dd010c2",
+    "jobId": "025c29e1-6742-405c-a36b-900f27560d83",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-019.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:59:53.248Z"
+    "generatedAt": "2026-06-21T01:12:13.470Z"
   },
   {
     "presetId": "SP10-020",
@@ -272,12 +272,12 @@
     "packName": "Abstract & Experimental",
     "category": "2. Fluid & Organic",
     "file": "assets/recipes/styles/defaults/SP10-020.webp",
-    "jobId": "cdc92cd3-37db-4f0a-8407-c3db7a0d0320",
+    "jobId": "81ef591f-c3a0-451a-b386-e7f4d735330e",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-020.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:59:45.761Z"
+    "generatedAt": "2026-06-21T01:13:08.716Z"
   },
   {
     "presetId": "SP10-021",
@@ -286,12 +286,12 @@
     "packName": "Abstract & Experimental",
     "category": "3. Digital Glitch & Noise",
     "file": "assets/recipes/styles/defaults/SP10-021.webp",
-    "jobId": "bdf35762-cc95-435f-9613-18a942509698",
+    "jobId": "712c1956-543e-4048-973b-19d942af9c77",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-021.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T06:07:03.881Z"
+    "generatedAt": "2026-06-21T02:34:37.383Z"
   },
   {
     "presetId": "SP10-022",
@@ -300,12 +300,12 @@
     "packName": "Abstract & Experimental",
     "category": "3. Digital Glitch & Noise",
     "file": "assets/recipes/styles/defaults/SP10-022.webp",
-    "jobId": "a7e581f8-ae0e-472c-858c-a0d7b6369163",
+    "jobId": "ef40fa26-2f79-4139-b3ee-3d4e77f547bf",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-022.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T06:06:58.178Z"
+    "generatedAt": "2026-06-21T02:36:09.010Z"
   },
   {
     "presetId": "SP10-023",
@@ -314,12 +314,12 @@
     "packName": "Abstract & Experimental",
     "category": "3. Digital Glitch & Noise",
     "file": "assets/recipes/styles/defaults/SP10-023.webp",
-    "jobId": "a18b9f21-66b2-412b-aca2-09ceef263fcc",
+    "jobId": "717189f3-edbd-46ba-8df7-bf7234dec770",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-023.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T06:14:15.719Z"
+    "generatedAt": "2026-06-21T02:39:53.614Z"
   },
   {
     "presetId": "SP10-024",
@@ -328,12 +328,12 @@
     "packName": "Abstract & Experimental",
     "category": "3. Digital Glitch & Noise",
     "file": "assets/recipes/styles/defaults/SP10-024.webp",
-    "jobId": "4e635f14-e55e-4ea3-8e86-2fade6a14d2f",
+    "jobId": "9cf0bdd6-5316-49ee-b2f7-bc380cb9b432",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-024.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T06:14:08.192Z"
+    "generatedAt": "2026-06-21T02:41:42.110Z"
   },
   {
     "presetId": "SP10-025",
@@ -342,12 +342,12 @@
     "packName": "Abstract & Experimental",
     "category": "3. Digital Glitch & Noise",
     "file": "assets/recipes/styles/defaults/SP10-025.webp",
-    "jobId": "3108a06a-3ec6-4b34-97a2-495292f03f7a",
+    "jobId": "c5a546d6-44a1-4bab-a164-564558802577",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-025.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T06:21:33.841Z"
+    "generatedAt": "2026-06-21T02:37:15.371Z"
   },
   {
     "presetId": "SP10-026",
@@ -356,12 +356,12 @@
     "packName": "Abstract & Experimental",
     "category": "3. Digital Glitch & Noise",
     "file": "assets/recipes/styles/defaults/SP10-026.webp",
-    "jobId": "254cd623-99e4-4506-a257-483d52e60b99",
+    "jobId": "4f96bb7c-805c-4760-8ee9-8605e512899b",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-026.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T06:21:39.768Z"
+    "generatedAt": "2026-06-21T02:38:37.352Z"
   },
   {
     "presetId": "SP10-027",
@@ -398,12 +398,12 @@
     "packName": "Abstract & Experimental",
     "category": "3. Digital Glitch & Noise",
     "file": "assets/recipes/styles/defaults/SP10-029.webp",
-    "jobId": "d2ab719e-7cd3-47cf-bf86-29f3fe17580f",
+    "jobId": "58e3790e-de31-4f44-95a0-7858cd966e71",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-029.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T06:36:56.987Z"
+    "generatedAt": "2026-06-21T02:42:56.670Z"
   },
   {
     "presetId": "SP10-030",
@@ -440,12 +440,12 @@
     "packName": "Abstract & Experimental",
     "category": "4. Surrealism & Dream",
     "file": "assets/recipes/styles/defaults/SP10-032.webp",
-    "jobId": "258ae155-bfcd-48ca-9854-301bf4510acb",
+    "jobId": "33b7c497-243f-42bf-88e0-de4e06abecf8",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-032.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T06:44:25.024Z"
+    "generatedAt": "2026-06-21T02:19:46.163Z"
   },
   {
     "presetId": "SP10-033",
@@ -482,12 +482,12 @@
     "packName": "Abstract & Experimental",
     "category": "4. Surrealism & Dream",
     "file": "assets/recipes/styles/defaults/SP10-035.webp",
-    "jobId": "0643a892-06c4-4fab-8f6b-f34993b88881",
+    "jobId": "d5e8cae8-8508-4327-83af-ac7dc4669377",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-035.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T07:02:47.124Z"
+    "generatedAt": "2026-06-21T02:12:00.269Z"
   },
   {
     "presetId": "SP10-036",
@@ -496,12 +496,12 @@
     "packName": "Abstract & Experimental",
     "category": "4. Surrealism & Dream",
     "file": "assets/recipes/styles/defaults/SP10-036.webp",
-    "jobId": "e220a1d4-147d-4daf-84bc-e7868644c838",
+    "jobId": "fa6a13e1-b028-4dbb-8b29-80b57175a8f2",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-036.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T07:02:49.632Z"
+    "generatedAt": "2026-06-21T02:21:42.163Z"
   },
   {
     "presetId": "SP10-037",
@@ -510,12 +510,12 @@
     "packName": "Abstract & Experimental",
     "category": "4. Surrealism & Dream",
     "file": "assets/recipes/styles/defaults/SP10-037.webp",
-    "jobId": "a65ff5a3-bdfb-49b8-b158-980fe82ca924",
+    "jobId": "5c6be80b-5ec6-414e-ac3a-a3baa710d3c7",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-037.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T07:12:04.813Z"
+    "generatedAt": "2026-06-21T02:24:39.468Z"
   },
   {
     "presetId": "SP10-038",
@@ -524,12 +524,12 @@
     "packName": "Abstract & Experimental",
     "category": "4. Surrealism & Dream",
     "file": "assets/recipes/styles/defaults/SP10-038.webp",
-    "jobId": "a8550793-73d7-4cf5-a6f3-51b68a74808f",
+    "jobId": "6ca8be2d-9c1f-42f6-809f-2f4f36919bdd",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-038.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T07:10:29.076Z"
+    "generatedAt": "2026-06-21T02:15:49.957Z"
   },
   {
     "presetId": "SP10-039",
@@ -538,12 +538,12 @@
     "packName": "Abstract & Experimental",
     "category": "4. Surrealism & Dream",
     "file": "assets/recipes/styles/defaults/SP10-039.webp",
-    "jobId": "47622595-d0fc-4266-a0ba-757b954f7e2d",
+    "jobId": "b7c782e0-5e9a-40b9-8f19-7c6c26af1bc8",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-039.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T07:21:05.965Z"
+    "generatedAt": "2026-06-21T02:18:00.171Z"
   },
   {
     "presetId": "SP10-040",
@@ -552,12 +552,12 @@
     "packName": "Abstract & Experimental",
     "category": "4. Surrealism & Dream",
     "file": "assets/recipes/styles/defaults/SP10-040.webp",
-    "jobId": "9f834e2d-c843-4fb2-976d-c5ee869fa57b",
+    "jobId": "e400c474-aa76-4bde-a415-8821ccaf2550",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-040.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T07:22:24.458Z"
+    "generatedAt": "2026-06-21T02:29:12.333Z"
   },
   {
     "presetId": "SP10-041",
@@ -566,12 +566,12 @@
     "packName": "Abstract & Experimental",
     "category": "4. Surrealism & Dream",
     "file": "assets/recipes/styles/defaults/SP10-041.webp",
-    "jobId": "ea51797f-14db-4c00-9a1c-27530d6a94f2",
+    "jobId": "6f1b3c11-d280-46ce-8902-962865c57bc7",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-041.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T07:30:31.183Z"
+    "generatedAt": "2026-06-21T02:31:54.743Z"
   },
   {
     "presetId": "SP10-042",
@@ -580,12 +580,12 @@
     "packName": "Abstract & Experimental",
     "category": "4. Surrealism & Dream",
     "file": "assets/recipes/styles/defaults/SP10-042.webp",
-    "jobId": "a9738276-05a3-4390-bd66-504bb8df9704",
+    "jobId": "d2dcfc0d-00f6-414c-a64b-76931e2fb00b",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-042.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T07:30:08.440Z"
+    "generatedAt": "2026-06-21T02:13:49.910Z"
   },
   {
     "presetId": "SP10-043",
@@ -608,12 +608,12 @@
     "packName": "Abstract & Experimental",
     "category": "4. Surrealism & Dream",
     "file": "assets/recipes/styles/defaults/SP10-044.webp",
-    "jobId": "cf923a68-84b8-4697-8fc9-4738955793f0",
+    "jobId": "bf1e1ac3-7b24-4207-b1dd-05d85817b995",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-044.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T07:39:41.689Z"
+    "generatedAt": "2026-06-21T02:26:41.215Z"
   },
   {
     "presetId": "SP10-045",
@@ -636,12 +636,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-046.webp",
-    "jobId": "2f19e057-6cd4-4d10-897d-524894d7178a",
+    "jobId": "1e407cf9-e570-42a0-a295-9a23f2522be4",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-046.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T07:46:51.586Z"
+    "generatedAt": "2026-06-21T01:34:02.758Z"
   },
   {
     "presetId": "SP10-047",
@@ -650,12 +650,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-047.webp",
-    "jobId": "025a2b38-e8de-479a-aeba-ac9232cd6a08",
+    "jobId": "4a5b100f-d287-434e-9933-a490f1199aa2",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-047.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T07:56:02.653Z"
+    "generatedAt": "2026-06-21T01:21:02.496Z"
   },
   {
     "presetId": "SP10-048",
@@ -664,12 +664,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-048.webp",
-    "jobId": "5bb10784-7e6b-4649-9ceb-a47953886d76",
+    "jobId": "45f95e2c-31cd-4e2a-8a5b-47c31a7e948c",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-048.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T07:55:27.599Z"
+    "generatedAt": "2026-06-21T01:24:00.937Z"
   },
   {
     "presetId": "SP10-049",
@@ -678,12 +678,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-049.webp",
-    "jobId": "33415345-ac14-4ef3-95ec-dd5c46e59036",
+    "jobId": "d060f07e-0e6e-4270-89c8-5f6fe7cb18be",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-049.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T08:04:22.751Z"
+    "generatedAt": "2026-06-21T01:22:31.661Z"
   },
   {
     "presetId": "SP10-050",
@@ -692,12 +692,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-050.webp",
-    "jobId": "c9428ef6-aa85-425b-ae65-a0e866d432c0",
+    "jobId": "a3ba50bd-6f20-40f3-aebc-32a333120b80",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-050.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T08:03:50.817Z"
+    "generatedAt": "2026-06-21T01:26:52.899Z"
   },
   {
     "presetId": "SP10-051",
@@ -706,12 +706,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-051.webp",
-    "jobId": "8dc7b248-cb81-4f8a-a961-f32b5b765617",
+    "jobId": "afff4c69-f5b5-4600-8f18-11675c68f693",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-051.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T08:12:19.307Z"
+    "generatedAt": "2026-06-21T02:07:54.301Z"
   },
   {
     "presetId": "SP10-052",
@@ -734,12 +734,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-053.webp",
-    "jobId": "ccb5bdda-4239-4547-9a4a-744620886462",
+    "jobId": "3f81bdda-e8c8-4b79-9a76-bdea7cea175d",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-053.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T08:20:24.183Z"
+    "generatedAt": "2026-06-21T01:36:09.044Z"
   },
   {
     "presetId": "SP10-054",
@@ -748,12 +748,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-054.webp",
-    "jobId": "6918ff02-36f7-4d4e-8efe-c94b2b3d4195",
+    "jobId": "c78892ed-675e-455d-a6bf-9b86e7067329",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-054.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T08:20:07.571Z"
+    "generatedAt": "2026-06-21T01:37:54.011Z"
   },
   {
     "presetId": "SP10-055",
@@ -762,12 +762,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-055.webp",
-    "jobId": "07126bf0-e138-4aa7-8523-1306a9c6112a",
+    "jobId": "72108881-e254-4d3b-89f7-0ad2b68c355c",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-055.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T08:28:13.067Z"
+    "generatedAt": "2026-06-21T01:39:34.986Z"
   },
   {
     "presetId": "SP10-056",
@@ -776,12 +776,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-056.webp",
-    "jobId": "ff22c924-acde-4884-9834-4d568ae0df51",
+    "jobId": "e73b6931-b059-4ac0-9f2f-62a0aabe033f",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-056.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T08:28:06.462Z"
+    "generatedAt": "2026-06-21T01:25:09.872Z"
   },
   {
     "presetId": "SP10-057",
@@ -790,12 +790,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-057.webp",
-    "jobId": "20bd5def-605e-4bb0-8d13-74bb252d7d72",
+    "jobId": "93ff3a93-4242-44c6-be49-185296b6fcf1",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-057.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T08:36:34.409Z"
+    "generatedAt": "2026-06-21T01:41:56.103Z"
   },
   {
     "presetId": "SP10-058",
@@ -804,12 +804,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-058.webp",
-    "jobId": "5db6f6a9-5a9d-4c98-b98e-66de2b813acd",
+    "jobId": "d9cd4ec9-d073-4ca2-8a9a-fe4ae04e1cd9",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-058.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T08:36:49.044Z"
+    "generatedAt": "2026-06-21T01:43:14.221Z"
   },
   {
     "presetId": "SP10-059",
@@ -818,12 +818,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-059.webp",
-    "jobId": "b5a590d7-e79a-481c-a4ba-2367beb482c8",
+    "jobId": "79c94143-b7c3-421a-a456-87b1c67056f8",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-059.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T08:44:20.498Z"
+    "generatedAt": "2026-06-21T01:28:29.700Z"
   },
   {
     "presetId": "SP10-060",
@@ -832,12 +832,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-060.webp",
-    "jobId": "a73dbccf-d0dc-4bac-93b9-1e91f1794e37",
+    "jobId": "b7c04bf3-ff8a-4225-9c3f-8f70aeb49fa1",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-060.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T08:44:39.485Z"
+    "generatedAt": "2026-06-21T01:44:26.218Z"
   },
   {
     "presetId": "SP10-061",
@@ -860,12 +860,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-062.webp",
-    "jobId": "989269ec-0d91-4279-8134-1c0a940aae22",
+    "jobId": "4eb4d601-6c03-432e-8f3d-565e8a6eda08",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-062.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T08:53:18.721Z"
+    "generatedAt": "2026-06-21T01:45:11.241Z"
   },
   {
     "presetId": "SP10-063",
@@ -874,12 +874,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-063.webp",
-    "jobId": "a4608e4c-e1b3-4776-89cf-638540a116c7",
+    "jobId": "955893ef-62ba-4b7d-8739-c76697a1184b",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-063.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T09:03:57.766Z"
+    "generatedAt": "2026-06-21T01:46:20.134Z"
   },
   {
     "presetId": "SP10-064",
@@ -888,12 +888,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-064.webp",
-    "jobId": "95566a13-218d-4324-8572-8707a320d596",
+    "jobId": "120f41b8-5d33-4831-8b03-555ddf18a51e",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-064.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T09:04:00.194Z"
+    "generatedAt": "2026-06-21T01:47:41.821Z"
   },
   {
     "presetId": "SP10-065",
@@ -902,12 +902,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-065.webp",
-    "jobId": "89218805-e9d3-4c11-ac21-16748c8dd196",
+    "jobId": "521bf8f2-2956-496b-b564-d425b0369165",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-065.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T09:11:37.505Z"
+    "generatedAt": "2026-06-21T01:49:08.992Z"
   },
   {
     "presetId": "SP10-066",
@@ -916,12 +916,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-066.webp",
-    "jobId": "a8932467-0c3c-489b-ae2e-41e407428c2b",
+    "jobId": "c3b5e9a6-d4d6-4b52-8305-4b4a2a1c87a0",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-066.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T09:11:34.038Z"
+    "generatedAt": "2026-06-21T01:50:17.388Z"
   },
   {
     "presetId": "SP10-067",
@@ -930,12 +930,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-067.webp",
-    "jobId": "e9fec050-c5da-4325-92b2-997ee76cbb28",
+    "jobId": "8dfe0402-91ba-4847-91ae-2bf6c3417b95",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-067.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T09:19:22.967Z"
+    "generatedAt": "2026-06-21T01:51:32.307Z"
   },
   {
     "presetId": "SP10-068",
@@ -958,12 +958,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-069.webp",
-    "jobId": "bc6f28cd-37f6-4ab2-95ad-2d6ad26ede82",
+    "jobId": "ede8a88b-c7ef-4113-bc3e-dc35cac867a0",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-069.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T09:30:40.846Z"
+    "generatedAt": "2026-06-21T01:53:08.851Z"
   },
   {
     "presetId": "SP10-070",
@@ -972,12 +972,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-070.webp",
-    "jobId": "cc2a9c39-4883-40d9-9730-ebd7c3623f69",
+    "jobId": "834755ef-f255-4263-a65c-93d2f10f2c1a",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-070.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T09:30:29.685Z"
+    "generatedAt": "2026-06-21T01:19:34.763Z"
   },
   {
     "presetId": "SP10-071",
@@ -986,12 +986,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-071.webp",
-    "jobId": "e709924d-e431-4a49-ae01-6880afec6fae",
+    "jobId": "b113cbe8-486a-4469-a5b8-968a554ed296",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-071.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T09:38:47.574Z"
+    "generatedAt": "2026-06-21T01:54:54.241Z"
   },
   {
     "presetId": "SP10-072",
@@ -1000,12 +1000,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-072.webp",
-    "jobId": "377d4028-6f57-46c5-81e2-b1ee79ccc9bb",
+    "jobId": "1de30ebc-1240-4b3c-97f9-101cefa65688",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-072.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T09:38:22.603Z"
+    "generatedAt": "2026-06-21T01:56:27.722Z"
   },
   {
     "presetId": "SP10-073",
@@ -1014,12 +1014,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-073.webp",
-    "jobId": "21ac9cf7-8466-49ee-adc4-98c510b5fea1",
+    "jobId": "c012205f-7e72-404e-a67f-2da735cd2d12",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-073.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T09:47:42.502Z"
+    "generatedAt": "2026-06-21T01:31:53.876Z"
   },
   {
     "presetId": "SP10-074",
@@ -1028,12 +1028,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-074.webp",
-    "jobId": "af0e5ab2-9488-49d8-8df3-b40792e970b7",
+    "jobId": "e0a82372-795c-4bfd-97bc-4cfcbecc2643",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-074.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T09:47:44.921Z"
+    "generatedAt": "2026-06-21T01:57:48.088Z"
   },
   {
     "presetId": "SP10-075",
@@ -1042,12 +1042,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-075.webp",
-    "jobId": "828499bb-8e50-4794-9deb-02642f0076b6",
+    "jobId": "b46331e1-3f8d-4ab6-a514-9e10e486b309",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-075.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T09:55:14.250Z"
+    "generatedAt": "2026-06-21T01:59:29.243Z"
   },
   {
     "presetId": "SP10-076",
@@ -1056,12 +1056,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-076.webp",
-    "jobId": "ca74797e-868e-42ab-9745-fba023042e64",
+    "jobId": "6df07c9a-b0e3-4c58-9b9c-381d819a0f56",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-076.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T09:55:12.564Z"
+    "generatedAt": "2026-06-21T02:09:51.249Z"
   },
   {
     "presetId": "SP10-077",
@@ -1070,12 +1070,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-077.webp",
-    "jobId": "3345086a-e29e-43c9-9661-0509e6c4a408",
+    "jobId": "732dcb17-8ac4-4940-9440-6fce7e380f7c",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-077.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:02:59.234Z"
+    "generatedAt": "2026-06-21T02:01:21.243Z"
   },
   {
     "presetId": "SP10-078",
@@ -1084,12 +1084,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-078.webp",
-    "jobId": "37386d4b-a593-440e-b984-cf33fe64aeed",
+    "jobId": "d859a065-e912-4927-850c-7c56691366bb",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-078.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:02:23.044Z"
+    "generatedAt": "2026-06-21T02:04:00.653Z"
   },
   {
     "presetId": "SP10-079",
@@ -1098,12 +1098,12 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-079.webp",
-    "jobId": "8db6c98a-5ce9-4d76-af8e-234614f0d9e4",
+    "jobId": "28db1661-3588-4520-b6f9-9a603a87c9fe",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-079.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:10:09.075Z"
+    "generatedAt": "2026-06-21T02:05:48.294Z"
   },
   {
     "presetId": "SP10-080",
@@ -1112,11 +1112,11 @@
     "packName": "Abstract & Experimental",
     "category": "5. Pattern & Texture",
     "file": "assets/recipes/styles/defaults/SP10-080.webp",
-    "jobId": "7ebf2f0a-56b1-4db1-9467-7ba5e4269dfb",
+    "jobId": "562045a9-e3ff-4801-a565-6d7939aaf6d5",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-080.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:10:00.908Z"
+    "generatedAt": "2026-06-21T01:30:16.809Z"
   }
 ]

@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-031
 packId: pack_15
-name: Basalt Gear Sanctuary
-category: 12. Corepunk — Stonepunk
+name: Flesh Circuit Conservatory
+category: 4. Bio, Myco & Body Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - stonepunk
+  - punk-spectrum-vault
+  - bio-myco-and-body-punks
+  - biopunk
+  - body-horror
 visualDna:
-  aesthetic: Stonepunk sacred machinery where gravity, labor chants, and basalt mass feel like technology older than language.
-  form_and_line: Cyclopean arch-jaw rhythm, slow gear halos, stepped load paths, rope-tension diagonals, and monolith silhouettes.
-  color_palette: Basalt charcoal, copper-oxide green, ember orange, ash beige, and blackened handprint marks.
-  lighting_setup: Hearth-core glow buried inside stone teeth, hard skylight shafts, and sparks catching dust around rotating mass.
-  material_texture: Chiseled basalt, rope-burn fibers, hammered copper seams, packed clay, soot-polished wear, and carved tally grooves.
-  render_quality: Heavy tactile stonepunk concept art where every mechanism reads as buildable, brutal, and devotional.
-  spatial_distortion: Vertical pressure composition where weight stacks downward while gear circles pull the eye into ritual labor.
-  atmosphere: Elemental endurance, communal strain, ancient ingenuity, and engineering as worship.
-  key_features: Stone gear halos, counterweight shafts, rope-burn joints, monolith work-bay cues, ember pits, and carved maintenance-prayer marks.
-  creative_brief: 'Crush the input into devotional stone machinery: basalt teeth, counterweight shafts, rope-burn fibers, ember pits, and carved tally marks should make technology feel older than speech. Sanctuaries, workers, or ritual sites may appear, but the style is weight, labor, and sacred mass. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: elegant unsettling biotech as a flat graphic digital-illustration conservatory card where organic circuits and soft red membrane patterns integrate with glasshouse machinery.
+  form_and_line: Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses organic circuit veins, glasshouse ribs, membrane curtains, gold traces, careful figures.
+  color_palette: deep crimson, pale ivory, black green, gold trace lines
+  lighting_setup: greenhouse shafts, red membrane glow, gold circuit glints
+  material_texture: abstract membrane panels, brass tracework, glasshouse ribs, matte leaves, polished bone shapes
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: beautiful, unsettling, lush, controlled
+  key_features: organic circuit veins, glasshouse ribs, membrane curtains, gold traces, careful figures
+  creative_brief: 'Allow body-horror mood without explicit gore: elegant organic circuits, unsettling beauty, and controlled biotech atmosphere. Keep it representative through conservatory structure, careful worker figures, glasshouse ribs, and abstract membrane panels, not realistic flesh. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - high-tech-glass-only
-  - neon-city
-  - cute-cartoon
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-031.webp
 attributes:
-  negativePrompt: photoreal, high-tech-glass-only, neon-city, cute-cartoon, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, exposed organs, bloody membrane, fleshy body parts, wet horror wall, erotic body-horror pose, realistic greenhouse render, glasshouse archviz, corridor, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-stonepunk
-  categoryName: 12. Corepunk — Stonepunk
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - stonepunk
+    - punk-spectrum-vault
+    - bio-myco-and-body-punks
+    - biopunk
+    - body-horror
   supportedTasks:
     - image_generate
     - image_edit

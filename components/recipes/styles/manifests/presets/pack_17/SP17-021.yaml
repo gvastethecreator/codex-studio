@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-021
+packId: pack_17
+name: Synth Castle Prophecy
+category: 4. Futuristic Medieval & Rune Tech
+domain: futuristic medieval
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - futuristic-medieval-and-rune-tech
+  - synth-castle
+visualDna:
+  aesthetic: Dreamlike synth-medieval fantasy with castles, prophecy light, analog glow, and retro-future mysticism.
+  subject_treatment: A synth-medieval oracle beast shaped like a glass stag-dragon, antlers holding a miniature castle moon, one robed astronomer silhouette kneeling far below for scale.
+  color_and_tone: Deep indigo, soft violet, electric cyan glass, pale gold star marks, muted magenta horizon, and clean black only for thin silhouettes.
+  lighting_and_shadow: Luminous antler moon and cyan glass body light the scene; smooth gradient sky, no harsh neon clutter.
+  texture_and_material: Translucent glass hide, enamel scales, velvet sky, polished stone plinth, clean analog bloom, and soft poster texture.
+  camera_and_composition: Centered creature icon, huge antler arc, tiny astronomer below, floating castle moon above, and wide simple color planes.
+  atmosphere_and_mood: Prophetic, wondrous, eerie, and retro-futurist.
+  rendering_and_quality: Polished fantasy illustration with synthwave restraint, medieval shapes, and soft luminous finish.
+  creative_brief: Applies retro-future prophecy and luminous castle grammar to people, places, artifacts, or creatures.
+avoidRules:
+  - cyberpunk city
+  - chrome overload
+  - flat vector poster
+  - cute cartoon
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-021.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: futuristic-medieval-and-rune-tech
+  categoryName: 4. Futuristic Medieval & Rune Tech
+  domain: futuristic medieval
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - futuristic-medieval-and-rune-tech
+    - synth-castle
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

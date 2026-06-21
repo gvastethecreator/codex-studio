@@ -6,12 +6,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "1. Toys And Miniatures",
     "file": "assets/recipes/styles/defaults/SP11-001.webp",
-    "jobId": "8dd1dc7b-e5be-4559-966f-bc7fd14ebcc7",
+    "jobId": "d8e0abf8-9448-4676-b83e-c7a62d877901",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-001.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:18:16.797Z"
+    "generatedAt": "2026-06-21T02:48:38.419Z"
   },
   {
     "presetId": "SP11-002",
@@ -20,12 +20,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "1. Toys And Miniatures",
     "file": "assets/recipes/styles/defaults/SP11-002.webp",
-    "jobId": "85afccad-3d02-40f3-b4e9-8423f6c4f6ba",
+    "jobId": "c1cb9afc-111e-4076-9401-011adbc8948d",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-002.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:17:48.127Z"
+    "generatedAt": "2026-06-21T02:50:03.737Z"
   },
   {
     "presetId": "SP11-003",
@@ -48,12 +48,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-004.webp",
-    "jobId": "ad64b748-310e-4858-891b-5aca11f89c2d",
+    "jobId": "38da894c-b6c2-45cd-bb70-43a58717b736",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-004.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:26:17.806Z"
+    "generatedAt": "2026-06-21T03:57:55.021Z"
   },
   {
     "presetId": "SP11-005",
@@ -62,12 +62,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "1. Toys And Miniatures",
     "file": "assets/recipes/styles/defaults/SP11-005.webp",
-    "jobId": "6940b27a-4c83-4bae-a792-386151ad7ed5",
+    "jobId": "091bae6e-7ff5-4478-a781-dbb89da29f14",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-005.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:34:05.896Z"
+    "generatedAt": "2026-06-21T02:58:50.554Z"
   },
   {
     "presetId": "SP11-006",
@@ -90,12 +90,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-007.webp",
-    "jobId": "f3da093f-0fd2-460b-874c-7643e22adc94",
+    "jobId": "dfbeb5aa-9dbe-4be0-9c75-5d33853d619c",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-007.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:42:43.643Z"
+    "generatedAt": "2026-06-21T04:05:41.120Z"
   },
   {
     "presetId": "SP11-008",
@@ -104,12 +104,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-008.webp",
-    "jobId": "3f2c8523-0528-4958-8e64-b01970d967c9",
+    "jobId": "edce37b9-4e66-4748-8a4b-c82c1a485bd1",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-008.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:41:24.324Z"
+    "generatedAt": "2026-06-21T03:59:33.262Z"
   },
   {
     "presetId": "SP11-009",
@@ -118,12 +118,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "2. Food And Commercial Fun",
     "file": "assets/recipes/styles/defaults/SP11-009.webp",
-    "jobId": "60b74b60-2504-4674-8c46-dce524a91631",
+    "jobId": "c9dfb0d4-60ce-48c0-b726-eca9a611c92a",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-009.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:50:16.418Z"
+    "generatedAt": "2026-06-21T03:16:57.626Z"
   },
   {
     "presetId": "SP11-010",
@@ -132,12 +132,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "4. Retro Pop And Kitsch",
     "file": "assets/recipes/styles/defaults/SP11-010.webp",
-    "jobId": "35811a65-1956-4a25-9711-7b84060c5f4d",
+    "jobId": "3fed92e7-dffb-46a6-a14d-0f78de909bbf",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-010.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:50:30.426Z"
+    "generatedAt": "2026-06-21T03:50:42.433Z"
   },
   {
     "presetId": "SP11-011",
@@ -146,12 +146,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "4. Retro Pop And Kitsch",
     "file": "assets/recipes/styles/defaults/SP11-011.webp",
-    "jobId": "e45c48fc-86d9-4dda-9a21-f74fb820df65",
+    "jobId": "b7693613-2cca-44c7-b7f1-97a6d4093eb0",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-011.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:58:17.030Z"
+    "generatedAt": "2026-06-21T03:52:08.338Z"
   },
   {
     "presetId": "SP11-012",
@@ -160,12 +160,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-012.webp",
-    "jobId": "40d21e30-acaf-4b23-a44b-dd65566a674f",
+    "jobId": "cffc67c8-b939-450c-ab1c-4213814b458d",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-012.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T10:58:00.678Z"
+    "generatedAt": "2026-06-21T03:24:08.888Z"
   },
   {
     "presetId": "SP11-013",
@@ -174,12 +174,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-013.webp",
-    "jobId": "7c856620-542b-496b-ba60-dee5d297fa17",
+    "jobId": "ff5daa3c-4918-44f6-bd64-f64ee77dec47",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-013.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T11:05:55.476Z"
+    "generatedAt": "2026-06-21T03:26:09.029Z"
   },
   {
     "presetId": "SP11-014",
@@ -188,12 +188,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-014.webp",
-    "jobId": "aba5c8ff-43f4-46ee-aeb4-0787d4f17578",
+    "jobId": "455a8ab9-db2e-412f-a1ba-88242786f43a",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-014.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T11:05:58.011Z"
+    "generatedAt": "2026-06-21T05:57:18.812Z"
   },
   {
     "presetId": "SP11-015",
@@ -202,12 +202,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-015.webp",
-    "jobId": "321d9136-2e7d-4e4d-a6b0-1f39ee69aa7b",
+    "jobId": "1a898284-2221-4ad0-a34d-48a34503fd48",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-015.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T11:14:44.246Z"
+    "generatedAt": "2026-06-21T04:15:58.268Z"
   },
   {
     "presetId": "SP11-016",
@@ -230,12 +230,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "1. Toys And Miniatures",
     "file": "assets/recipes/styles/defaults/SP11-017.webp",
-    "jobId": "2e4df2b4-3fae-4fd7-a484-f5d0f1e72d31",
+    "jobId": "e167d639-d634-4b28-b235-2c470da5a861",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-017.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T11:24:05.764Z"
+    "generatedAt": "2026-06-21T02:46:54.152Z"
   },
   {
     "presetId": "SP11-018",
@@ -258,12 +258,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "4. Retro Pop And Kitsch",
     "file": "assets/recipes/styles/defaults/SP11-019.webp",
-    "jobId": "915c404d-56a0-44f1-84e0-f1722cf3edce",
+    "jobId": "f2ad418a-b4fe-40a1-92ce-d61c571dae65",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-019.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T11:32:02.999Z"
+    "generatedAt": "2026-06-21T03:46:45.082Z"
   },
   {
     "presetId": "SP11-020",
@@ -272,12 +272,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "1. Toys And Miniatures",
     "file": "assets/recipes/styles/defaults/SP11-020.webp",
-    "jobId": "b6e00a37-dbf8-4651-8f4e-fa30d6b983e3",
+    "jobId": "cabae3b9-493d-476d-a1bc-bcc24960f22b",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-020.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T11:34:07.944Z"
+    "generatedAt": "2026-06-21T03:00:12.643Z"
   },
   {
     "presetId": "SP11-021",
@@ -286,12 +286,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "1. Toys And Miniatures",
     "file": "assets/recipes/styles/defaults/SP11-021.webp",
-    "jobId": "2eac4e04-cd0c-4dfb-803f-3c7d3eab931c",
+    "jobId": "5754dfd5-0efc-44c9-b9bb-13b61ae7972e",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-021.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T11:41:31.845Z"
+    "generatedAt": "2026-06-21T03:03:38.077Z"
   },
   {
     "presetId": "SP11-022",
@@ -300,12 +300,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "1. Toys And Miniatures",
     "file": "assets/recipes/styles/defaults/SP11-022.webp",
-    "jobId": "84725dc4-e238-4f4d-b265-38377c4247d1",
+    "jobId": "ec8fde74-5fbc-45e0-8cb8-455f9cef1daa",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-022.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T11:42:08.714Z"
+    "generatedAt": "2026-06-21T02:51:27.228Z"
   },
   {
     "presetId": "SP11-023",
@@ -314,12 +314,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "1. Toys And Miniatures",
     "file": "assets/recipes/styles/defaults/SP11-023.webp",
-    "jobId": "f9fda550-f801-41a8-9fbc-5a53324acdfa",
+    "jobId": "414d6c6d-ac34-4086-8c24-e068304baf70",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-023.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T11:49:56.921Z"
+    "generatedAt": "2026-06-21T02:52:57.251Z"
   },
   {
     "presetId": "SP11-024",
@@ -328,12 +328,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "1. Toys And Miniatures",
     "file": "assets/recipes/styles/defaults/SP11-024.webp",
-    "jobId": "437565fc-715c-4d1b-be82-9a856da8bdbc",
+    "jobId": "14d2f98f-5886-4af1-a1fc-06f466cd7aaf",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-024.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T11:50:02.674Z"
+    "generatedAt": "2026-06-21T02:55:35.235Z"
   },
   {
     "presetId": "SP11-025",
@@ -342,12 +342,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "1. Toys And Miniatures",
     "file": "assets/recipes/styles/defaults/SP11-025.webp",
-    "jobId": "a2678171-8225-4b66-8e87-d9539e17c503",
+    "jobId": "f8ea7abf-3caa-49d4-bba9-55ff10c46ac0",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-025.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T11:57:32.060Z"
+    "generatedAt": "2026-06-21T03:02:08.772Z"
   },
   {
     "presetId": "SP11-026",
@@ -356,12 +356,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "4. Retro Pop And Kitsch",
     "file": "assets/recipes/styles/defaults/SP11-026.webp",
-    "jobId": "86839a05-a6e5-4c2d-ad83-5c25213d7849",
+    "jobId": "e7983c0d-25ac-4ee6-ae7d-f7f2f3f08c06",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-026.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T11:57:49.612Z"
+    "generatedAt": "2026-06-21T03:47:44.084Z"
   },
   {
     "presetId": "SP11-027",
@@ -370,12 +370,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-027.webp",
-    "jobId": "cac4fcb9-3827-4fcc-ad08-ce89410bf6d5",
+    "jobId": "efc6495b-1e16-41c1-9293-d8c7debdc5f6",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-027.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T12:05:46.369Z"
+    "generatedAt": "2026-06-21T03:18:17.409Z"
   },
   {
     "presetId": "SP11-028",
@@ -398,12 +398,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-029.webp",
-    "jobId": "4decc926-b1ed-4863-a13a-5faaaff2fe37",
+    "jobId": "0dbea3c9-50fb-4968-a88c-85837ba9b614",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-029.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T12:13:40.482Z"
+    "generatedAt": "2026-06-21T03:20:49.430Z"
   },
   {
     "presetId": "SP11-030",
@@ -412,12 +412,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-030.webp",
-    "jobId": "b3642518-05d4-42ed-bb75-6769f164007c",
+    "jobId": "ad220736-8e21-4e7b-ba5d-02fbd076307c",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-030.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T12:13:37.675Z"
+    "generatedAt": "2026-06-21T04:02:31.211Z"
   },
   {
     "presetId": "SP11-031",
@@ -426,12 +426,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-031.webp",
-    "jobId": "563307ac-251e-41d5-ac3e-2d7de5d998e7",
+    "jobId": "23fc3ffa-e828-4a8f-88e4-ff744ce1aa78",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-031.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T12:22:10.515Z"
+    "generatedAt": "2026-06-21T04:04:02.358Z"
   },
   {
     "presetId": "SP11-032",
@@ -440,12 +440,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-032.webp",
-    "jobId": "2d29ba17-e249-4d9e-bb87-46bf65e7e7f8",
+    "jobId": "ea30f30f-02de-42d7-b9f3-b85c9c0e3d4c",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-032.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T12:22:25.953Z"
+    "generatedAt": "2026-06-21T04:01:05.044Z"
   },
   {
     "presetId": "SP11-033",
@@ -454,12 +454,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-033.webp",
-    "jobId": "6560304d-26ff-4441-88ab-a4ef0b91db64",
+    "jobId": "9af036b4-5a72-4681-9c65-dd631722c49c",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-033.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T12:30:21.661Z"
+    "generatedAt": "2026-06-21T04:09:19.970Z"
   },
   {
     "presetId": "SP11-034",
@@ -468,12 +468,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-034.webp",
-    "jobId": "4efaa0f7-4bde-4dc9-8d2c-419ba824636a",
+    "jobId": "48ecc548-50e6-43b4-a9a7-3f4663d15c52",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-034.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T12:30:23.818Z"
+    "generatedAt": "2026-06-21T03:22:27.182Z"
   },
   {
     "presetId": "SP11-035",
@@ -510,12 +510,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-037.webp",
-    "jobId": "efe29bf0-fb59-4e92-ad17-84698a204914",
+    "jobId": "6590c038-805a-4e2f-8c9c-5d1c18bc5540",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-037.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T12:49:08.010Z"
+    "generatedAt": "2026-06-21T03:28:04.913Z"
   },
   {
     "presetId": "SP11-038",
@@ -538,12 +538,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-039.webp",
-    "jobId": "31689114-5e20-4c8b-9b6b-8b63f942bfdb",
+    "jobId": "29788025-337d-4135-8e44-9a7e040be5e8",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-039.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T12:57:11.314Z"
+    "generatedAt": "2026-06-21T03:30:42.740Z"
   },
   {
     "presetId": "SP11-040",
@@ -636,12 +636,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "2. Food And Commercial Fun",
     "file": "assets/recipes/styles/defaults/SP11-046.webp",
-    "jobId": "04f97578-7426-4441-b294-8310185cc162",
+    "jobId": "8d4274cc-5490-41d8-ba4f-212cc696c158",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-046.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T13:24:23.829Z"
+    "generatedAt": "2026-06-21T03:08:44.852Z"
   },
   {
     "presetId": "SP11-047",
@@ -650,12 +650,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "2. Food And Commercial Fun",
     "file": "assets/recipes/styles/defaults/SP11-047.webp",
-    "jobId": "403d9cde-10eb-4642-903a-0a85f9f45789",
+    "jobId": "9a058fa0-8af9-4b22-820f-157f224f6bb6",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-047.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T13:35:39.087Z"
+    "generatedAt": "2026-06-21T03:14:33.688Z"
   },
   {
     "presetId": "SP11-048",
@@ -664,12 +664,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-048.webp",
-    "jobId": "8d746b8f-9474-4b1d-91eb-ebe04b9737d1",
+    "jobId": "bb7fc60b-5fa8-40fb-9f78-1794efe16699",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-048.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T13:36:13.475Z"
+    "generatedAt": "2026-06-21T03:56:31.534Z"
   },
   {
     "presetId": "SP11-049",
@@ -678,12 +678,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "2. Food And Commercial Fun",
     "file": "assets/recipes/styles/defaults/SP11-049.webp",
-    "jobId": "8e9efc48-c3bd-4f2c-99b8-89e0b6182192",
+    "jobId": "95c690b1-5aa2-4187-b37c-2e4c74593ce3",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-049.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T13:47:03.338Z"
+    "generatedAt": "2026-06-21T03:07:29.344Z"
   },
   {
     "presetId": "SP11-050",
@@ -692,12 +692,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "1. Toys And Miniatures",
     "file": "assets/recipes/styles/defaults/SP11-050.webp",
-    "jobId": "fbf39241-e57d-4309-ba62-7bbea2a60eab",
+    "jobId": "483fc77d-f80c-42f2-902b-650f18365825",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-050.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T13:47:20.381Z"
+    "generatedAt": "2026-06-21T02:45:33.537Z"
   },
   {
     "presetId": "SP11-051",
@@ -720,12 +720,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-052.webp",
-    "jobId": "a7f1a54f-caa2-4d33-a525-ea1de9f04ef8",
+    "jobId": "d17c3dde-7290-428c-ad10-760d23ddb8c9",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-052.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T13:58:41.743Z"
+    "generatedAt": "2026-06-21T03:54:47.881Z"
   },
   {
     "presetId": "SP11-053",
@@ -734,12 +734,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "2. Food And Commercial Fun",
     "file": "assets/recipes/styles/defaults/SP11-053.webp",
-    "jobId": "8c21d01f-e9a2-41bf-9280-3d399c05640f",
+    "jobId": "d75accc7-5bc9-461c-b857-e989a0ff39ee",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-053.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T14:08:14.648Z"
+    "generatedAt": "2026-06-21T03:11:57.656Z"
   },
   {
     "presetId": "SP11-054",
@@ -748,12 +748,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "2. Food And Commercial Fun",
     "file": "assets/recipes/styles/defaults/SP11-054.webp",
-    "jobId": "5e3ad3cc-d12d-4c53-a780-424935ebf4c2",
+    "jobId": "1892d79c-6c4e-4608-94a8-65c8f7139a99",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-054.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T14:08:53.141Z"
+    "generatedAt": "2026-06-21T03:13:20.832Z"
   },
   {
     "presetId": "SP11-055",
@@ -762,12 +762,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "2. Food And Commercial Fun",
     "file": "assets/recipes/styles/defaults/SP11-055.webp",
-    "jobId": "948272cf-04a9-4b38-87ec-b02868aea70f",
+    "jobId": "3b82019a-f018-4f7c-ab01-7e68a38ceb90",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-055.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T14:16:50.184Z"
+    "generatedAt": "2026-06-21T03:10:19.876Z"
   },
   {
     "presetId": "SP11-056",
@@ -776,12 +776,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-056.webp",
-    "jobId": "45799852-865a-4b1a-8a33-4af85facccc2",
+    "jobId": "cf4baf94-feeb-4519-989d-70ba2f51f6a7",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-056.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T14:17:09.850Z"
+    "generatedAt": "2026-06-21T03:36:26.992Z"
   },
   {
     "presetId": "SP11-057",
@@ -790,12 +790,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-057.webp",
-    "jobId": "c09b4791-abe5-409b-ba22-962a462ad887",
+    "jobId": "be13d2de-8c6b-4998-82fe-b7f306fa81c4",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-057.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T14:25:23.096Z"
+    "generatedAt": "2026-06-21T05:58:35.284Z"
   },
   {
     "presetId": "SP11-058",
@@ -804,12 +804,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-058.webp",
-    "jobId": "8febd49a-4ca7-4370-8138-110910798b9a",
+    "jobId": "cefbbbfb-278a-40ba-90c8-84e6cdba93f7",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-058.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T14:25:10.101Z"
+    "generatedAt": "2026-06-21T03:38:57.480Z"
   },
   {
     "presetId": "SP11-059",
@@ -818,12 +818,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-059.webp",
-    "jobId": "9fadc0f3-2d99-4894-9572-74bcca01aeab",
+    "jobId": "e6c8317e-b72a-4b04-8be4-a798c4e1e9d4",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-059.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T16:18:06.530Z"
+    "generatedAt": "2026-06-21T03:33:00.341Z"
   },
   {
     "presetId": "SP11-060",
@@ -832,12 +832,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-060.webp",
-    "jobId": "16273dc3-debc-4cdb-9125-d27866fa8c06",
+    "jobId": "b774aec7-6cb0-4bad-b9d8-b86f00041dbc",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-060.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T16:17:46.791Z"
+    "generatedAt": "2026-06-21T06:03:20.509Z"
   },
   {
     "presetId": "SP11-061",
@@ -846,12 +846,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "1. Toys And Miniatures",
     "file": "assets/recipes/styles/defaults/SP11-061.webp",
-    "jobId": "6e376a25-6dbc-4c47-92cc-363d94861181",
+    "jobId": "9b30a11e-60d3-43e8-90da-dece58cbca92",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-061.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T16:28:47.566Z"
+    "generatedAt": "2026-06-21T03:04:32.022Z"
   },
   {
     "presetId": "SP11-062",
@@ -874,12 +874,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-063.webp",
-    "jobId": "3e772ed4-94be-4f6d-922a-d7f3dc395854",
+    "jobId": "b19bfbe3-e958-48ff-9b1f-0a3e5fd05d07",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-063.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T16:38:35.990Z"
+    "generatedAt": "2026-06-21T06:01:25.181Z"
   },
   {
     "presetId": "SP11-064",
@@ -888,12 +888,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "5. Oddities And Novelty",
     "file": "assets/recipes/styles/defaults/SP11-064.webp",
-    "jobId": "cc55dc9a-fcf1-42b4-bcfd-6af4fc069fc4",
+    "jobId": "e3ef3c1e-3d0b-4c8c-8ab4-8b4ea3447756",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-064.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T16:38:28.625Z"
+    "generatedAt": "2026-06-21T06:00:15.172Z"
   },
   {
     "presetId": "SP11-065",
@@ -902,12 +902,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "1. Toys And Miniatures",
     "file": "assets/recipes/styles/defaults/SP11-065.webp",
-    "jobId": "6d135aa8-67bf-4e1b-8603-1383b75a2e19",
+    "jobId": "af33577e-0032-47e1-84a7-78ac78c39f38",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-065.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T16:49:13.377Z"
+    "generatedAt": "2026-06-21T03:05:59.379Z"
   },
   {
     "presetId": "SP11-066",
@@ -916,12 +916,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "4. Retro Pop And Kitsch",
     "file": "assets/recipes/styles/defaults/SP11-066.webp",
-    "jobId": "c9d2e3af-262f-400d-8bda-b7cc18ece976",
+    "jobId": "34bbd19b-ef55-4a12-988a-f8a78a74c48d",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-066.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T16:49:54.759Z"
+    "generatedAt": "2026-06-21T03:53:39.294Z"
   },
   {
     "presetId": "SP11-067",
@@ -944,12 +944,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-068.webp",
-    "jobId": "07729ee6-9607-48b2-9ac4-d0f9c962ab80",
+    "jobId": "50b161f0-9166-46ac-8212-452cdac7423b",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-068.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T17:00:46.229Z"
+    "generatedAt": "2026-06-21T03:45:31.997Z"
   },
   {
     "presetId": "SP11-069",
@@ -958,12 +958,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-069.webp",
-    "jobId": "745a1c2e-9e3c-4e28-bc93-66bf7fa8c271",
+    "jobId": "787a7f27-3322-4501-acc5-44677da7e1dc",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-069.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T17:10:21.554Z"
+    "generatedAt": "2026-06-21T03:40:50.985Z"
   },
   {
     "presetId": "SP11-070",
@@ -986,12 +986,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-071.webp",
-    "jobId": "1d3207d3-9cac-4ac8-953d-f70d4ebb6cf4",
+    "jobId": "3397d044-5163-412c-bfb1-f78cdbf771c2",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-071.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T17:21:57.947Z"
+    "generatedAt": "2026-06-21T03:35:21.956Z"
   },
   {
     "presetId": "SP11-072",
@@ -1000,12 +1000,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-072.webp",
-    "jobId": "c802ac2a-8f88-4f3d-a7a0-e9573eabd721",
+    "jobId": "608ab095-1a6d-400a-a1e5-9d35f271e622",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-072.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T17:22:05.285Z"
+    "generatedAt": "2026-06-21T03:37:36.931Z"
   },
   {
     "presetId": "SP11-073",
@@ -1014,12 +1014,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-073.webp",
-    "jobId": "62873a4c-3357-4c09-b6ed-68a2c163719f",
+    "jobId": "c6e223a7-f2e9-4a09-b40e-8700697c900a",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-073.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T17:33:09.611Z"
+    "generatedAt": "2026-06-21T03:43:42.602Z"
   },
   {
     "presetId": "SP11-074",
@@ -1028,12 +1028,12 @@
     "packName": "Miscellaneous & Fun",
     "category": "3. Science And Bio Curiosities",
     "file": "assets/recipes/styles/defaults/SP11-074.webp",
-    "jobId": "3ab0ebf7-2e0b-4434-8fa0-4ebb19379ca5",
+    "jobId": "f46b9f36-29fc-4fd7-bc88-bb97689329ca",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-074.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T17:33:17.859Z"
+    "generatedAt": "2026-06-21T03:42:15.096Z"
   },
   {
     "presetId": "SP11-075",

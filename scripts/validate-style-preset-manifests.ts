@@ -12,7 +12,7 @@ const presetFilter = argValue('preset');
 const strictTaxonomy = process.argv.includes('--strict-taxonomy');
 const showCoverage = process.argv.includes('--coverage');
 
-const { graph, catalog } = await loadStyleManifestGraph();
+const { graph, catalog } = await loadStyleManifestGraph(packFilter);
 
 const selectedEntries = catalog.presets.filter((entry) => {
   if (packFilter && entry.taxonomy.packId !== packFilter) return false;

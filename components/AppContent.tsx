@@ -6,7 +6,9 @@ import { HeaderToolbar } from './HeaderToolbar';
 import { StudioOperationsRail } from './studio/StudioOperationsRail';
 import { StudioGenerationDock } from './shell/StudioGenerationDock';
 import { StudioViewport } from './shell/StudioViewport';
+import { ErrorBoundary } from './ErrorBoundary';
 import ToastContainer from './ToastContainer';
+import { LazySurfaceFallback } from './ui/LazySurfaceFallback';
 
 const AppOverlays = React.lazy(() =>
   import('./AppOverlays').then((m) => ({ default: m.AppOverlays })),
@@ -41,9 +43,18 @@ export const AppContent: React.FC<AppContentProps> = () => {
 
       <StudioGenerationDock {...shell.generationDock} />
 
-      <Suspense fallback={null}>
-        <AppOverlays controller={shell.overlays} />
-      </Suspense>
+      <ErrorBoundary fallbackMessage="Could not load studio overlays.">
+        <Suspense
+          fallback={
+            <LazySurfaceFallback
+              label="Loading overlays"
+              className="pointer-events-none fixed inset-0 z-50 grid place-items-center bg-black/20 text-zinc-400"
+            />
+          }
+        >
+          <AppOverlays controller={shell.overlays} />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
 };

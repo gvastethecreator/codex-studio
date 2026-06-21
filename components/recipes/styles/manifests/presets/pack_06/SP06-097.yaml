@@ -24,19 +24,17 @@ visualDna:
   creative_brief: Hold-and-Modify mode makes any prompt shimmer through borrowed neighbor colors. Copper-list gradients, HAM fringing and DeluxePaint brush logic turn the image into 80s workstation art where color abundance still shows its machine trick.
 avoidRules:
   - limited palette
-  - blocky
-  - simple
   - modern
   - smooth gradient
-  - dither
+  - generic dither
   - PC
   - low color
   - '256'
-  - chunky
+  - chunky modern pixel art
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-097.webp
 attributes:
-  negativePrompt: limited palette, blocky, simple, modern, smooth gradient, dither, PC, low color, 256, chunky
+  negativePrompt: limited palette, modern, smooth gradient, generic dither, PC, low color, 256, chunky modern pixel art
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

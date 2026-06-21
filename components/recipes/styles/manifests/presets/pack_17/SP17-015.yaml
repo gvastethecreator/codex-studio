@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-015
+packId: pack_17
+name: Neon Risograph Necromancy
+category: 3. Acid Dungeon Zine
+domain: dungeon zine
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - acid-dungeon-zine
+  - risograph
+visualDna:
+  aesthetic: Two- or three-color risograph necromancy with medieval symbols, heavy ink, and fluorescent occult energy.
+  subject_treatment: A neon skull-candle totem with one clawed necromancer silhouette beneath it, reduced to bold ritual shapes and simplified armor.
+  color_and_tone: Black ink plus fluorescent magenta, lime, violet, cyan, or acid orange on pale tinted paper.
+  lighting_and_shadow: Flat print color replaces light, with shadow delivered by clean black plates and controlled overprint.
+  texture_and_material: Controlled Riso grain, clean ink density, misregistration, tidy stippled fills, and paper tooth.
+  camera_and_composition: Centered poster icon, thick border, large simple shapes, and strong negative space.
+  atmosphere_and_mood: Occult, loud, handmade, mischievous, and dungeon-punk.
+  rendering_and_quality: Print-art finish with crisp shapes, intentional imperfections, and high thumbnail impact.
+  creative_brief: Applies fluorescent riso print logic to fantasy subjects while preserving black silhouette dominance.
+avoidRules:
+  - full-color realism
+  - smooth airbrush
+  - glossy 3d render
+  - soft watercolor
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-015.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: acid-dungeon-zine
+  categoryName: 3. Acid Dungeon Zine
+  domain: dungeon zine
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - acid-dungeon-zine
+    - risograph
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

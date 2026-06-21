@@ -48,6 +48,11 @@ export interface StudioViewStateController {
       open: () => void;
       close: () => void;
     };
+    chat: {
+      isOpen: boolean;
+      open: () => void;
+      close: () => void;
+    };
   };
   actions: {
     handleDownloadAndClear: () => Promise<boolean>;
@@ -64,6 +69,7 @@ export function useStudioViewState({
   const [isDashboardModalOpen, setIsDashboardModalOpen] = useState(false);
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
   const [isTrashModalOpen, setIsTrashModalOpen] = useState(false);
+  const [isChatPanelOpen, setIsChatPanelOpen] = useState(false);
 
   const openDashboard = useCallback(() => {
     startViewTransition(() => setIsDashboardModalOpen(true));
@@ -87,6 +93,14 @@ export function useStudioViewState({
 
   const closeTrash = useCallback(() => {
     startViewTransition(() => setIsTrashModalOpen(false));
+  }, []);
+
+  const openChat = useCallback(() => {
+    startViewTransition(() => setIsChatPanelOpen(true));
+  }, []);
+
+  const closeChat = useCallback(() => {
+    startViewTransition(() => setIsChatPanelOpen(false));
   }, []);
 
   const openEditor = useCallback((attachment: Attachment, openEditorRoute: () => void) => {
@@ -114,6 +128,7 @@ export function useStudioViewState({
     setIsDashboardModalOpen(false);
     setIsSettingsModalOpen(false);
     setIsTrashModalOpen(false);
+    setIsChatPanelOpen(false);
   }, []);
 
   const setEditorIsOpen = useCallback((value: React.SetStateAction<boolean>) => {
@@ -167,6 +182,11 @@ export function useStudioViewState({
         isOpen: isTrashModalOpen,
         open: openTrash,
         close: closeTrash,
+      },
+      chat: {
+        isOpen: isChatPanelOpen,
+        open: openChat,
+        close: closeChat,
       },
     },
     actions: {

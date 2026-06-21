@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Piedra tallada, cobre conductor, runas activas y superficies quemadas por descarga.
   camera_and_composition: Isométrica limpia con rutas, nodos y áreas de upgrade claras sin exigir bastión físico.
   atmosphere_and_mood: Estratégica, tensa y metódica.
-  rendering_and_quality: "Tower-defense gameplay screencap: pathing, timing, grid pressure, defense economy clear."
+  rendering_and_quality: 'Tower-defense gameplay screencap: pathing, timing, grid pressure, defense economy clear.'
 avoidRules:
   - watermark
   - text

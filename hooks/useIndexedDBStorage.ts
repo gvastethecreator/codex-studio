@@ -20,9 +20,11 @@ interface IDBState<T> {
 function useIndexedDBStorage<T>(
   key: string,
   initialValue: T,
+  options: { prepareForPersist?: (value: T) => T } = {},
 ): [T, (value: T | ((val: T) => T)) => void] {
   const [state, setState] = useState<IDBState<T>>({ value: initialValue, initialized: false });
   const timeoutRef = useRef<number | null>(null);
+  const prepareForPersist = options.prepareForPersist;
 
   useEffect(() => {
     let isMounted = true;
@@ -66,7 +68,8 @@ function useIndexedDBStorage<T>(
       clearTimeout(timeoutRef.current);
     }
     timeoutRef.current = window.setTimeout(() => {
-      set(key, state.value).catch((error) => {
+      const value = prepareForPersist ? prepareForPersist(state.value) : state.value;
+      set(key, value).catch((error) => {
         runtimeLogger.error(`Error setting IndexedDB key "${key}"`, error);
       });
     }, 300);
@@ -76,7 +79,7 @@ function useIndexedDBStorage<T>(
         clearTimeout(timeoutRef.current);
       }
     };
-  }, [key, state.value, state.initialized]);
+  }, [key, prepareForPersist, state.value, state.initialized]);
 
   return [state.value, setValue];
 }

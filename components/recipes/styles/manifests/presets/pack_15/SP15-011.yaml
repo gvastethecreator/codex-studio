@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-011
 packId: pack_15
-name: Biolumina Night Grid
-category: 3. Corepunk — Biopunk
+name: Pirate Mesh Relay
+category: 2. Neon, Net & Signal Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - biopunk
+  - punk-spectrum-vault
+  - neon-net-and-signal-punks
+  - netpunk
+  - pirate-radio
 visualDna:
-  aesthetic: Community biopunk night grammar where engineered organisms provide light, data, and care as a living civic pattern.
-  form_and_line: Bio-reactor terrace rhythm, vascular conduit arcs, and pod-like community node geometry.
-  color_palette: Fluorescent cyan, chlorophyll green, and deep midnight indigo.
-  lighting_setup: Pulsed bioluminescent emissions with damp ground reflections and moon spill.
-  material_texture: Gel membranes, porous bioceramics, wet stone, and mycelial conduits.
-  render_quality: Atmospheric biopunk concept art with crisp biotech legibility and safe-path readability.
-  spatial_distortion: Layered vertical depth linked by glowing metabolic corridors without requiring a district.
-  atmosphere: Nurturing experimentation, civic trust, and living-system intelligence.
-  key_features: Gene-lit path motifs, communal wetlab cues, symbiotic canopy nodes, and bio-signal geometry.
-  creative_brief: 'Make the input glow like a trusted living circuit: cyan metabolic pulses, mycelial conduits, wet bioceramic pores, and safe-path light logic should organize the image. Streets, labs, kiosks, or neighborhood cues may appear, but the transferable style is civic biotech that illuminates by breathing.'
+  aesthetic: netpunk rooftop relay as a flat-to-painterly poster card built around crews building pirate mesh relays from antennas, batteries, and improvised repeaters.
+  form_and_line: Sharp but simplified network geometry, non-readable signal rhythm, a few thick cable paths, matte rooftop planes, and hacker-era silhouettes. Core composition uses antenna arrays, battery crates, rooftop crews, signal beams, taped hardware.
+  color_palette: night blue, hazard orange, bare aluminum, monitor cyan
+  lighting_setup: flat moonlit roof edges, hazard-orange signal arcs, tower beacon color dots, simple spark blocks
+  material_texture: antenna rods, duct tape, battery packs, concrete, windbreaker nylon
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: DIY, illegal, windy, focused
+  key_features: antenna arrays, battery crates, rooftop crews, signal beams, taped hardware
+  creative_brief: 'Netpunk as infrastructure rebellion: one rooftop network runner, visible skyline hardware, and improvised networks, no corporate chrome showroom. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - cyberpunk-grime
-  - violent-neon
-  - blackout-chaos
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-011.webp
 attributes:
-  negativePrompt: photoreal, cyberpunk-grime, violent-neon, blackout-chaos, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, laptop hero, readable screen, surveillance camera, realistic rooftop scene, dense cable spiderweb, HDR lens realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-biopunk
-  categoryName: 3. Corepunk — Biopunk
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - biopunk
+    - punk-spectrum-vault
+    - neon-net-and-signal-punks
+    - netpunk
+    - pirate-radio
   supportedTasks:
     - image_generate
     - image_edit

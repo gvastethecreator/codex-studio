@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-011
+packId: pack_17
+name: Fogbound Witch Trial
+category: 2. Hunter Gothic & Plague Courts
+domain: gothic fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - hunter-gothic-and-plague-courts
+  - witch-trial
+visualDna:
+  aesthetic: Fogbound medieval witch-trial fantasy with rough timber, hooded crowds, and occult uncertainty.
+  subject_treatment: A massive fogbound witch-trial inquisitor with bell-shaped iron mask, rope mantle, torch halo, and veiled witnesses reduced to small silhouettes around the figure.
+  color_and_tone: Damp gray, charred black, torch orange, dirty linen, and muted forest green.
+  lighting_and_shadow: Torches create simple halos and long silhouettes while keeping fog smooth and shadow edges readable.
+  texture_and_material: Wet timber, rough rope, wool cloaks, muddy ground, smoke, ash, and hand-cut charms.
+  camera_and_composition: Circular crowd staging, low fog layers, off-center accused figures, and claustrophobic village space.
+  atmosphere_and_mood: Suspicious, cold, communal, and supernatural.
+  rendering_and_quality: Historical fantasy illustration with smooth atmospheric fog, tactile props, defined lines, and clean low light.
+  creative_brief: Reusable medieval paranoia style for villages, rituals, characters, creatures, or mystery scenes.
+avoidRules:
+  - modern courtroom
+  - clean costume pageant
+  - bright magic effects
+  - cartoon witch
+  - explicit violence
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-011.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: hunter-gothic-and-plague-courts
+  categoryName: 2. Hunter Gothic & Plague Courts
+  domain: gothic fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - hunter-gothic-and-plague-courts
+    - witch-trial
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

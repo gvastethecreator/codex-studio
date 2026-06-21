@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-009
+packId: pack_17
+name: Crimson Moon Alley Gothic
+category: 2. Hunter Gothic & Plague Courts
+domain: gothic fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - hunter-gothic-and-plague-courts
+  - crimson-moon
+visualDna:
+  aesthetic: Gothic fantasy noir under a crimson moon, mixing medieval alleys, wrought iron, and supernatural fog.
+  subject_treatment: A crimson-moon court matriarch with tall moth wings and a crown of iron keys stepping from a balcony shrine, one clawed hand lifting a lantern, alley beasts reduced to small masks below.
+  color_and_tone: Moonlit lavender gray, bruised burgundy, dusty rose highlights, black iron contours, old brick red, and one warm lantern core.
+  lighting_and_shadow: Crimson moon backlight forms a clean halo, lantern glow opens the torso, and shadows stay broad instead of murky.
+  texture_and_material: Wet brick, velvet cloak, moth-wing powder, iron keys, carved balcony stone, and smooth graphic fog.
+  camera_and_composition: Upward balcony framing, large wing silhouette, crescent moon negative space, tiny street masks below, and no corridor depth.
+  atmosphere_and_mood: Aristocratic, nocturnal, predatory, and gothic-illustrative.
+  rendering_and_quality: Stylized gothic illustration with strong silhouettes, clean dark gradients, defined lines, and controlled red accents.
+  creative_brief: Use when the subject needs gothic street tension, moon symbolism, and noir medieval atmosphere.
+avoidRules:
+  - neon cyberpunk
+  - modern streetwear
+  - clean daylight
+  - cute cartoon
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-009.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: hunter-gothic-and-plague-courts
+  categoryName: 2. Hunter Gothic & Plague Courts
+  domain: gothic fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - hunter-gothic-and-plague-courts
+    - crimson-moon
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

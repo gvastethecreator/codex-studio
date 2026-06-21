@@ -6,12 +6,12 @@
     "packName": "Fashion & Costume",
     "category": "1. Contemporary Fashion",
     "file": "assets/recipes/styles/defaults/SP08-001.webp",
-    "jobId": "059e4f63-93fb-49b7-8563-ce642f88c8cd",
+    "jobId": "3047b381-ac00-4976-bd39-ab1b1373ca1c",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-001.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:20:19.359Z"
+    "generatedAt": "2026-06-20T05:26:39.635Z"
   },
   {
     "presetId": "SP08-002",
@@ -34,12 +34,12 @@
     "packName": "Fashion & Costume",
     "category": "1. Contemporary Fashion",
     "file": "assets/recipes/styles/defaults/SP08-003.webp",
-    "jobId": "fdfddd73-be5f-4dcc-8aec-362fce10f699",
+    "jobId": "36f6d1db-96a1-4a72-bd2b-ceb8cfce3c53",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-003.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:26:36.827Z"
+    "generatedAt": "2026-06-20T05:30:13.253Z"
   },
   {
     "presetId": "SP08-004",
@@ -48,12 +48,12 @@
     "packName": "Fashion & Costume",
     "category": "2. Subcultures",
     "file": "assets/recipes/styles/defaults/SP08-004.webp",
-    "jobId": "90abf24a-976c-4739-9319-8058ad942fba",
+    "jobId": "183c52d9-de31-403f-940f-9b7c397194fd",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-004.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:26:44.374Z"
+    "generatedAt": "2026-06-20T05:26:38.931Z"
   },
   {
     "presetId": "SP08-005",
@@ -62,26 +62,26 @@
     "packName": "Fashion & Costume",
     "category": "1. Contemporary Fashion",
     "file": "assets/recipes/styles/defaults/SP08-005.webp",
-    "jobId": "5e6dd3f4-aa7e-4e1b-9205-5767b7c395db",
+    "jobId": "ada8ea2b-3aa7-4a18-a742-70a2c25b73ac",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-005.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:32:45.750Z"
+    "generatedAt": "2026-06-20T05:25:04.413Z"
   },
   {
     "presetId": "SP08-006",
-    "presetName": "Cyberpunk Techwear",
+    "presetName": "Technical Modular Outerwear",
     "packId": "pack_08",
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-006.webp",
-    "jobId": "00b5842f-a25e-49ec-9f0e-504c52d21b05",
+    "jobId": "da1648d5-1d47-482d-b4e0-6154feda88a8",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-006.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:32:59.623Z"
+    "generatedAt": "2026-06-20T22:41:30.314Z"
   },
   {
     "presetId": "SP08-007",
@@ -90,12 +90,12 @@
     "packName": "Fashion & Costume",
     "category": "2. Subcultures",
     "file": "assets/recipes/styles/defaults/SP08-007.webp",
-    "jobId": "f5e056ab-0bf7-4b7d-901e-2a4f2bc39fa0",
+    "jobId": "c9da8371-e4a9-4d19-b4fc-84a472db5cdf",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-007.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:45:30.713Z"
+    "generatedAt": "2026-06-20T22:38:20.032Z"
   },
   {
     "presetId": "SP08-008",
@@ -113,17 +113,17 @@
   },
   {
     "presetId": "SP08-009",
-    "presetName": "Steampunk Inventor",
+    "presetName": "Steampunk Engineering Attire",
     "packId": "pack_08",
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-009.webp",
-    "jobId": "c42c2bb0-c377-4dc6-ab64-0c39bb880976",
+    "jobId": "65679c74-5901-4565-a3a2-545e8b9c478f",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-009.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:52:50.829Z"
+    "generatedAt": "2026-06-20T22:35:07.930Z"
   },
   {
     "presetId": "SP08-010",
@@ -132,12 +132,12 @@
     "packName": "Fashion & Costume",
     "category": "1. Contemporary Fashion",
     "file": "assets/recipes/styles/defaults/SP08-010.webp",
-    "jobId": "7c3b47b2-a03b-408b-a52b-7aa6890fb25e",
+    "jobId": "d8f92b67-7a4f-4637-b6da-217434cae788",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-010.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:52:22.210Z"
+    "generatedAt": "2026-06-20T22:28:27.774Z"
   },
   {
     "presetId": "SP08-011",
@@ -160,12 +160,12 @@
     "packName": "Fashion & Costume",
     "category": "3. Historical & Fantasy",
     "file": "assets/recipes/styles/defaults/SP08-012.webp",
-    "jobId": "c00c36ab-6ef1-4ce7-ad45-b34ed75a5d5f",
+    "jobId": "a723485b-3fa2-41db-841f-2231d2fa69b9",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-012.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:59:59.526Z"
+    "generatedAt": "2026-06-20T22:17:22.213Z"
   },
   {
     "presetId": "SP08-013",
@@ -174,40 +174,40 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-013.webp",
-    "jobId": "e65c8ad1-8f6a-4657-99ef-480c8792b54b",
+    "jobId": "a174921e-958a-45fa-b269-630eb6508bf4",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-013.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:57:32.639Z"
+    "generatedAt": "2026-06-20T22:22:40.490Z"
   },
   {
     "presetId": "SP08-014",
-    "presetName": "Military Surplus",
+    "presetName": "Field Utility Textile",
     "packId": "pack_08",
     "packName": "Fashion & Costume",
     "category": "2. Subcultures",
     "file": "assets/recipes/styles/defaults/SP08-014.webp",
-    "jobId": "b8983bd1-3a71-4a84-a4a1-3f841530f843",
+    "jobId": "b7967ea5-74bd-4b9d-b60f-3d9cfaf515f8",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-014.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T08:13:29.654Z"
+    "generatedAt": "2026-06-20T22:25:40.168Z"
   },
   {
     "presetId": "SP08-015",
-    "presetName": "Cosplay Anime",
+    "presetName": "Convention Craft Costume",
     "packId": "pack_08",
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-015.webp",
-    "jobId": "66e30838-86b4-488a-8908-4dfb3c655c8e",
+    "jobId": "d7945b85-d39d-4e24-af34-0dc711fc7074",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-015.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T06:14:34.159Z"
+    "generatedAt": "2026-06-20T22:18:33.380Z"
   },
   {
     "presetId": "SP08-016",
@@ -216,12 +216,12 @@
     "packName": "Fashion & Costume",
     "category": "1. Contemporary Fashion",
     "file": "assets/recipes/styles/defaults/SP08-016.webp",
-    "jobId": "50ab93ca-127e-4b47-90bf-e8f9488c4f45",
+    "jobId": "602cfd45-fb9a-497e-bc4f-8feb82b57469",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-016.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T08:11:37.127Z"
+    "generatedAt": "2026-06-20T22:10:17.741Z"
   },
   {
     "presetId": "SP08-017",
@@ -230,12 +230,12 @@
     "packName": "Fashion & Costume",
     "category": "1. Contemporary Fashion",
     "file": "assets/recipes/styles/defaults/SP08-017.webp",
-    "jobId": "d6ef66ac-80bf-4193-b9ec-4178f33a3909",
+    "jobId": "54567d4e-89fb-4166-8540-887479410636",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-017.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T08:20:33.685Z"
+    "generatedAt": "2026-06-20T05:27:40.574Z"
   },
   {
     "presetId": "SP08-018",
@@ -244,12 +244,12 @@
     "packName": "Fashion & Costume",
     "category": "1. Contemporary Fashion",
     "file": "assets/recipes/styles/defaults/SP08-018.webp",
-    "jobId": "bebba28d-fc3b-4ba5-ad7f-e75cc5d187a8",
+    "jobId": "4edac663-1ab9-4dc3-abda-404c08888130",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-018.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T08:21:35.781Z"
+    "generatedAt": "2026-06-20T05:29:01.062Z"
   },
   {
     "presetId": "SP08-019",
@@ -258,12 +258,12 @@
     "packName": "Fashion & Costume",
     "category": "1. Contemporary Fashion",
     "file": "assets/recipes/styles/defaults/SP08-019.webp",
-    "jobId": "a96af002-31c3-48d3-98e7-cff8144f615e",
+    "jobId": "c38f2c2f-9255-402a-bdbe-653cd44b5ede",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-019.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T08:28:09.465Z"
+    "generatedAt": "2026-06-20T22:09:14.697Z"
   },
   {
     "presetId": "SP08-020",
@@ -272,12 +272,12 @@
     "packName": "Fashion & Costume",
     "category": "1. Contemporary Fashion",
     "file": "assets/recipes/styles/defaults/SP08-020.webp",
-    "jobId": "ffdb79f1-0bed-4b40-b46f-e235009cc0f2",
+    "jobId": "2f1c690c-374c-4ea5-8804-4efa856efd09",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-020.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T06:22:56.666Z"
+    "generatedAt": "2026-06-20T22:08:11.791Z"
   },
   {
     "presetId": "SP08-021",
@@ -300,12 +300,12 @@
     "packName": "Fashion & Costume",
     "category": "2. Subcultures",
     "file": "assets/recipes/styles/defaults/SP08-022.webp",
-    "jobId": "aa7ff889-5e40-4a6d-a797-5b2d9e401feb",
+    "jobId": "e655de1b-8714-45b7-8f1b-cb595ae9a487",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-022.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T08:34:21.805Z"
+    "generatedAt": "2026-06-20T22:39:55.549Z"
   },
   {
     "presetId": "SP08-023",
@@ -328,12 +328,12 @@
     "packName": "Fashion & Costume",
     "category": "2. Subcultures",
     "file": "assets/recipes/styles/defaults/SP08-024.webp",
-    "jobId": "4e28051d-6f92-4de5-9bcd-0c8fef721668",
+    "jobId": "0f892a72-153b-4a72-8a3e-7a2ceeb31370",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-024.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T08:44:08.854Z"
+    "generatedAt": "2026-06-20T22:31:03.445Z"
   },
   {
     "presetId": "SP08-025",
@@ -342,26 +342,26 @@
     "packName": "Fashion & Costume",
     "category": "2. Subcultures",
     "file": "assets/recipes/styles/defaults/SP08-025.webp",
-    "jobId": "8d933326-53f0-493b-b4dc-7de48515a107",
+    "jobId": "5aac5481-3e95-413c-a317-648ca8095d74",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-025.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T08:39:32.944Z"
+    "generatedAt": "2026-06-20T22:36:50.224Z"
   },
   {
     "presetId": "SP08-026",
-    "presetName": "Biker Gang",
+    "presetName": "Road-Worn Biker Leather",
     "packId": "pack_08",
     "packName": "Fashion & Costume",
     "category": "2. Subcultures",
     "file": "assets/recipes/styles/defaults/SP08-026.webp",
-    "jobId": "9d1d5184-f0cd-4c31-b993-16aafa793db4",
+    "jobId": "afd37ecd-1668-4ebf-ba7e-83834c34e508",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-026.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T22:42:00.027Z"
+    "generatedAt": "2026-06-20T22:33:46.237Z"
   },
   {
     "presetId": "SP08-027",
@@ -398,12 +398,12 @@
     "packName": "Fashion & Costume",
     "category": "2. Subcultures",
     "file": "assets/recipes/styles/defaults/SP08-029.webp",
-    "jobId": "2a93fb50-5ca6-427f-a9ab-ad76f09d84b4",
+    "jobId": "664b11d8-cdba-4fe9-bc93-2e0c24f30da3",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-029.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T09:05:50.132Z"
+    "generatedAt": "2026-06-20T22:32:19.560Z"
   },
   {
     "presetId": "SP08-030",
@@ -440,12 +440,12 @@
     "packName": "Fashion & Costume",
     "category": "3. Historical & Fantasy",
     "file": "assets/recipes/styles/defaults/SP08-032.webp",
-    "jobId": "94f5b7e8-c5a4-42c1-982f-82e7fc82c7ba",
+    "jobId": "6ffdcfcd-a2c7-464b-a8ef-a8e61882257e",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-032.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T09:12:46.989Z"
+    "generatedAt": "2026-06-20T22:19:48.639Z"
   },
   {
     "presetId": "SP08-033",
@@ -454,26 +454,26 @@
     "packName": "Fashion & Costume",
     "category": "3. Historical & Fantasy",
     "file": "assets/recipes/styles/defaults/SP08-033.webp",
-    "jobId": "8674bce0-4c11-47af-af95-a072e185e784",
+    "jobId": "399ffd94-56d8-4fff-82ed-aa6ac91fda69",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-033.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T09:19:58.637Z"
+    "generatedAt": "2026-06-20T22:12:41.934Z"
   },
   {
     "presetId": "SP08-034",
-    "presetName": "Roman Gladiator",
+    "presetName": "Roman Ceremonial Regalia",
     "packId": "pack_08",
     "packName": "Fashion & Costume",
     "category": "3. Historical & Fantasy",
     "file": "assets/recipes/styles/defaults/SP08-034.webp",
-    "jobId": "a3180a21-df12-43ce-b6d9-dc8e599b25b0",
+    "jobId": "d0568486-4f94-4333-b121-5f6dcd3456aa",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-034.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T06:29:30.941Z"
+    "generatedAt": "2026-06-20T22:21:07.312Z"
   },
   {
     "presetId": "SP08-035",
@@ -491,17 +491,17 @@
   },
   {
     "presetId": "SP08-036",
-    "presetName": "Viking Warrior",
+    "presetName": "Norse Seafaring Regalia",
     "packId": "pack_08",
     "packName": "Fashion & Costume",
     "category": "3. Historical & Fantasy",
     "file": "assets/recipes/styles/defaults/SP08-036.webp",
-    "jobId": "6964dafb-768f-445a-83a7-f715e77d24bf",
+    "jobId": "243b9927-d0b9-4459-8904-0ea2fb2fb67e",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-036.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-09T06:14:15.344Z"
+    "generatedAt": "2026-06-20T22:27:05.201Z"
   },
   {
     "presetId": "SP08-037",
@@ -510,12 +510,12 @@
     "packName": "Fashion & Costume",
     "category": "3. Historical & Fantasy",
     "file": "assets/recipes/styles/defaults/SP08-037.webp",
-    "jobId": "501150eb-53e8-4bff-88ca-aaf2d1decca8",
+    "jobId": "c777c6aa-869c-43e2-8b8e-c62960d96b77",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-037.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T22:54:26.428Z"
+    "generatedAt": "2026-06-20T22:13:54.766Z"
   },
   {
     "presetId": "SP08-038",
@@ -538,12 +538,12 @@
     "packName": "Fashion & Costume",
     "category": "3. Historical & Fantasy",
     "file": "assets/recipes/styles/defaults/SP08-039.webp",
-    "jobId": "f3832fdc-9d4e-49ab-b7df-d00ded4df303",
+    "jobId": "d9b7120d-cbea-47fd-bea3-684155256636",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-039.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T09:30:01.034Z"
+    "generatedAt": "2026-06-20T22:23:59.769Z"
   },
   {
     "presetId": "SP08-040",
@@ -552,12 +552,12 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-040.webp",
-    "jobId": "6f18f526-4bf5-468f-9915-d1462a110b95",
+    "jobId": "139447a1-7416-4b21-af30-f28a277989d1",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-040.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T22:53:13.301Z"
+    "generatedAt": "2026-06-20T22:15:15.037Z"
   },
   {
     "presetId": "SP08-041",
@@ -566,12 +566,12 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-041.webp",
-    "jobId": "91b40417-67e3-4856-a86c-9022378de512",
+    "jobId": "b7a0cd84-8737-427a-a248-79301ad83388",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-041.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-09T06:43:32.868Z"
+    "generatedAt": "2026-06-20T23:39:04.783Z"
   },
   {
     "presetId": "SP08-042",
@@ -580,12 +580,12 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-042.webp",
-    "jobId": "32308797-b6f7-4757-87a3-c70a28cd7737",
+    "jobId": "27543e46-3801-4863-8684-098fe48973f3",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-042.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T09:39:39.667Z"
+    "generatedAt": "2026-06-20T23:33:52.225Z"
   },
   {
     "presetId": "SP08-043",
@@ -594,12 +594,12 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-043.webp",
-    "jobId": "73b65ea9-a2ed-40ec-8875-f336340aee2c",
+    "jobId": "286cce7c-e627-498c-a461-bea504f2081e",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-043.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T09:51:17.883Z"
+    "generatedAt": "2026-06-20T23:30:00.394Z"
   },
   {
     "presetId": "SP08-044",
@@ -608,12 +608,12 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-044.webp",
-    "jobId": "55e4d66b-d634-46e2-9487-8a842bc386c2",
+    "jobId": "abad6277-80ad-4c57-84ef-a301bb2ab04b",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-044.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-09T06:38:08.726Z"
+    "generatedAt": "2026-06-20T23:26:14.906Z"
   },
   {
     "presetId": "SP08-045",
@@ -636,12 +636,12 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-046.webp",
-    "jobId": "cfe4c0fd-b14b-43c8-b306-7b63f5903cc9",
+    "jobId": "a13f3bf4-1e5e-4b88-9601-294bba80ab06",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-046.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T09:48:51.681Z"
+    "generatedAt": "2026-06-20T23:37:48.653Z"
   },
   {
     "presetId": "SP08-047",
@@ -650,12 +650,12 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-047.webp",
-    "jobId": "7163cd5b-059f-4985-8e5d-a1c81fe5f1b7",
+    "jobId": "6e6ec03c-c775-4c96-a092-2b881b592b34",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-047.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T09:57:19.907Z"
+    "generatedAt": "2026-06-20T23:34:57.835Z"
   },
   {
     "presetId": "SP08-048",
@@ -664,12 +664,12 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-048.webp",
-    "jobId": "8d2c0cd6-448b-4413-bc98-0388afbc4cfe",
+    "jobId": "7fe0998c-1678-458b-a8be-e3e192eab69e",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-048.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-09T06:41:04.899Z"
+    "generatedAt": "2026-06-20T23:28:07.985Z"
   },
   {
     "presetId": "SP08-049",
@@ -678,12 +678,12 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-049.webp",
-    "jobId": "57d59af8-02b2-4108-bc53-ca898b7edaf1",
+    "jobId": "625f9015-cace-4377-8250-e096a22a24b0",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-049.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T09:59:30.616Z"
+    "generatedAt": "2026-06-20T23:40:24.956Z"
   },
   {
     "presetId": "SP08-050",
@@ -692,12 +692,12 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-050.webp",
-    "jobId": "51affa42-e635-4b0d-a5a1-c4cc7a25c359",
+    "jobId": "f1027caa-8889-442a-b04d-cc46e6522102",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-050.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-09T06:28:32.865Z"
+    "generatedAt": "2026-06-20T23:31:51.087Z"
   },
   {
     "presetId": "SP08-051",
@@ -706,12 +706,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-051.webp",
-    "jobId": "2a415e3d-3b05-4012-8b39-721eff95b6cf",
+    "jobId": "2936bbe9-527b-4bf6-ad77-d9944596e167",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-051.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T13:35:27.009Z"
+    "generatedAt": "2026-06-20T22:44:48.818Z"
   },
   {
     "presetId": "SP08-052",
@@ -720,12 +720,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-052.webp",
-    "jobId": "4f426ebf-c793-4a0a-b4ae-b9be7e99a5f7",
+    "jobId": "42823251-ace2-43be-b442-1d76e3649767",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-052.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T13:31:34.622Z"
+    "generatedAt": "2026-06-20T22:42:55.457Z"
   },
   {
     "presetId": "SP08-053",
@@ -734,12 +734,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-053.webp",
-    "jobId": "120e85ff-bb6a-45c6-85fe-949f76c95ca7",
+    "jobId": "a91adc47-d01f-4ab4-a427-877863845242",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-053.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T13:41:51.966Z"
+    "generatedAt": "2026-06-20T22:46:26.864Z"
   },
   {
     "presetId": "SP08-054",
@@ -748,12 +748,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-054.webp",
-    "jobId": "51be8475-bc6f-410b-912e-e491b49c6184",
+    "jobId": "bb8c5713-d5de-44ab-a74b-31f49eb97bf2",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-054.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T13:41:51.355Z"
+    "generatedAt": "2026-06-20T23:01:17.211Z"
   },
   {
     "presetId": "SP08-055",
@@ -762,12 +762,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-055.webp",
-    "jobId": "514d0d41-25be-4244-9ff8-6c73f70e4c59",
+    "jobId": "d2035f14-5ff6-4949-845d-780f4a34d8ea",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-055.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T13:50:27.044Z"
+    "generatedAt": "2026-06-20T23:02:39.875Z"
   },
   {
     "presetId": "SP08-056",
@@ -776,12 +776,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-056.webp",
-    "jobId": "b248736c-6eba-461b-b1fe-ee78a7358cb7",
+    "jobId": "ad2fb1cc-bd90-44b5-aaf9-ce23833f6ca9",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-056.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T13:50:27.791Z"
+    "generatedAt": "2026-06-20T22:48:07.158Z"
   },
   {
     "presetId": "SP08-057",
@@ -790,12 +790,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-057.webp",
-    "jobId": "637fb044-6261-4880-99a2-93b3728167db",
+    "jobId": "f36dcdeb-c530-4152-81ab-51d3bfca3e2f",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-057.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T06:46:55.095Z"
+    "generatedAt": "2026-06-20T22:53:36.000Z"
   },
   {
     "presetId": "SP08-058",
@@ -804,12 +804,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-058.webp",
-    "jobId": "61d1a463-f990-47ab-afbe-b279025257e7",
+    "jobId": "e9f4f3c2-4fdc-42ed-a834-ecbe2e4cef88",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-058.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T14:05:17.246Z"
+    "generatedAt": "2026-06-20T23:14:59.754Z"
   },
   {
     "presetId": "SP08-059",
@@ -818,12 +818,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-059.webp",
-    "jobId": "5671367a-4ee0-4f50-afbf-bbd6d670b5bb",
+    "jobId": "a2956e6f-2dbc-4ea5-a23d-501c14fe9ba7",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-059.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T13:57:05.335Z"
+    "generatedAt": "2026-06-20T22:50:04.873Z"
   },
   {
     "presetId": "SP08-060",
@@ -832,12 +832,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-060.webp",
-    "jobId": "09fd2685-6773-4406-a491-d5a2a8580734",
+    "jobId": "97754524-a0fe-4b9e-aaab-c90a41895dc3",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-060.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T21:55:32.752Z"
+    "generatedAt": "2026-06-20T23:03:59.218Z"
   },
   {
     "presetId": "SP08-061",
@@ -846,12 +846,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-061.webp",
-    "jobId": "945ffdb2-a4d3-4768-9ce4-ec6471eb99ee",
+    "jobId": "8c1bcd0d-8230-4b30-878f-de568f35ef14",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-061.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T21:55:11.794Z"
+    "generatedAt": "2026-06-20T23:00:02.612Z"
   },
   {
     "presetId": "SP08-062",
@@ -860,12 +860,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-062.webp",
-    "jobId": "ddef9c01-4940-47a9-ab6f-48150ba6dee7",
+    "jobId": "4b7a0a09-4303-405e-9d9a-5ea82a828bb5",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-062.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T06:56:01.844Z"
+    "generatedAt": "2026-06-20T22:54:44.841Z"
   },
   {
     "presetId": "SP08-063",
@@ -874,12 +874,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-063.webp",
-    "jobId": "b6135b47-4e33-4abe-9d05-e4ba3eda913e",
+    "jobId": "f8305926-7133-4be5-9279-460e227daa6c",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-063.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T06:34:19.103Z"
+    "generatedAt": "2026-06-20T23:16:40.879Z"
   },
   {
     "presetId": "SP08-064",
@@ -888,12 +888,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-064.webp",
-    "jobId": "c8108d84-942c-4341-a8f4-eb15723c51f8",
+    "jobId": "fb1f09d7-997c-481a-b46a-74d77e5c021c",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-064.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T06:46:38.826Z"
+    "generatedAt": "2026-06-20T22:58:31.860Z"
   },
   {
     "presetId": "SP08-065",
@@ -902,12 +902,12 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-065.webp",
-    "jobId": "59f9fa77-f42b-490a-9798-07e1c4123a88",
+    "jobId": "51e1abba-44df-4b4e-a778-1c13253e1638",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-065.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T22:54:17.294Z"
+    "generatedAt": "2026-06-20T23:06:44.705Z"
   },
   {
     "presetId": "SP08-066",
@@ -916,12 +916,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-066.webp",
-    "jobId": "763d1a38-fd3d-4cf5-83df-498568e9eca8",
+    "jobId": "80426bd7-c16c-4f70-a340-51da6783258b",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-066.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T06:51:09.456Z"
+    "generatedAt": "2026-06-20T23:08:04.988Z"
   },
   {
     "presetId": "SP08-067",
@@ -930,12 +930,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-067.webp",
-    "jobId": "1a78defe-5a3b-4424-86ec-6ab7eee751e4",
+    "jobId": "9530051f-4d41-419c-b74a-2f884a28d3fd",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-067.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:08:52.430Z"
+    "generatedAt": "2026-06-20T23:18:16.457Z"
   },
   {
     "presetId": "SP08-068",
@@ -944,12 +944,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-068.webp",
-    "jobId": "0f8a0615-bad9-4082-b533-76b278860de8",
+    "jobId": "6b49692b-cd5f-4437-a29e-6b375243ebfe",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-068.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T06:58:54.016Z"
+    "generatedAt": "2026-06-20T23:09:34.140Z"
   },
   {
     "presetId": "SP08-069",
@@ -958,12 +958,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-069.webp",
-    "jobId": "78dc331e-59ba-4496-82cf-0a41b8bf6e01",
+    "jobId": "8caf7995-367d-4699-acfb-95774dbfb159",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-069.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:04:31.206Z"
+    "generatedAt": "2026-06-20T23:24:30.679Z"
   },
   {
     "presetId": "SP08-070",
@@ -972,12 +972,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-070.webp",
-    "jobId": "916dad4e-53a6-40b3-8201-6c2161298546",
+    "jobId": "df514ab0-f392-4cd4-af91-8cef8e6f1457",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-070.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T06:33:50.505Z"
+    "generatedAt": "2026-06-20T23:21:20.393Z"
   },
   {
     "presetId": "SP08-071",
@@ -1014,12 +1014,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-073.webp",
-    "jobId": "8cd851a2-1c07-4c7d-8f85-05066ceb9743",
+    "jobId": "0beaef08-2ce2-450f-b248-08a78a2d8c99",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-073.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:03:32.987Z"
+    "generatedAt": "2026-06-20T22:52:26.960Z"
   },
   {
     "presetId": "SP08-074",
@@ -1028,12 +1028,12 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-074.webp",
-    "jobId": "9e0569cf-0231-4cbc-872b-aab639abe903",
+    "jobId": "711abbf3-57b0-4c30-ae7f-92f7de7ec6fb",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-074.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:03:15.733Z"
+    "generatedAt": "2026-06-20T22:55:56.271Z"
   },
   {
     "presetId": "SP08-075",
@@ -1042,26 +1042,26 @@
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-075.webp",
-    "jobId": "cc978387-afa5-402d-8f22-37014488f4f9",
+    "jobId": "445acb59-16b2-4470-9a9d-70fc2037d148",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-075.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:03:27.045Z"
+    "generatedAt": "2026-06-20T23:22:45.425Z"
   },
   {
     "presetId": "SP08-076",
-    "presetName": "Slime/Goo",
+    "presetName": "Viscous Gel Couture",
     "packId": "pack_08",
     "packName": "Fashion & Costume",
     "category": "5. Fabric & Texture Focus",
     "file": "assets/recipes/styles/defaults/SP08-076.webp",
-    "jobId": "fc9e948d-a16c-477a-aa27-6a27a6402d2a",
+    "jobId": "8f7ab406-10ca-4c6e-9145-5db3da94eae2",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-076.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:08:14.759Z"
+    "generatedAt": "2026-06-20T23:10:52.756Z"
   },
   {
     "presetId": "SP08-077",
@@ -1084,26 +1084,26 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-078.webp",
-    "jobId": "b12906ba-6f78-4f3e-92dc-3e39a7786ac8",
+    "jobId": "173e3ef7-5e31-4161-992d-44b09485ee6c",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-078.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T07:13:19.039Z"
+    "generatedAt": "2026-06-20T23:11:58.387Z"
   },
   {
     "presetId": "SP08-079",
-    "presetName": "Invisibility Cloak",
+    "presetName": "Refractive Concealment Veil",
     "packId": "pack_08",
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-079.webp",
-    "jobId": "5353d957-bdf7-4348-aae9-22fa7fdc6909",
+    "jobId": "905acbce-5917-43be-9cd2-ad2996f556ea",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-079.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:08:22.095Z"
+    "generatedAt": "2026-06-20T22:57:11.630Z"
   },
   {
     "presetId": "SP08-080",
@@ -1112,11 +1112,11 @@
     "packName": "Fashion & Costume",
     "category": "4. Fantasy Sci-Fi Costume",
     "file": "assets/recipes/styles/defaults/SP08-080.webp",
-    "jobId": "1939e1af-9ceb-42a7-9800-07a63c0ef0a5",
+    "jobId": "b49186ee-4f24-454d-b9dd-c8297e621d68",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-080.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:13:50.339Z"
+    "generatedAt": "2026-06-20T23:13:20.098Z"
   }
 ]

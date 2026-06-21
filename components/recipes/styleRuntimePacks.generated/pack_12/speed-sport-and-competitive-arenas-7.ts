@@ -7,7 +7,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP12-008',
     name: 'Holographic Grand Prix Night',
     category: '5. Speed, Sport & Competitive Arenas',
-    negativePrompt: 'watermark, text, logo, static-scene, muddy-colors',
+    negativePrompt:
+      'watermark, text, logo, static-scene, muddy-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática arcade-racer futurista de alta velocidad con boost feedback, trazas holográficas y lectura de trayectoria.',
@@ -23,21 +24,22 @@ export const GENERATED_STYLE_PRESETS = [
         'Curvas, apex, carriles y capas de obstáculo como abstracción de velocidad; no requiere pista urbana ni grand prix.',
       atmosphere_and_mood: 'Adrenalina limpia, espectáculo competitivo y precisión de conducción.',
       rendering_and_quality:
-        'Marketing key art gameplay-driven con claridad de trayectoria, boost economy y lectura de rival.',
+        'Racing gameplay screencap: track apex, boost economy, rival spacing, speed feedback readable.',
     },
   },
   {
     id: 'SP12-017',
     name: 'Lava Skate Arena',
     category: '5. Speed, Sport & Competitive Arenas',
-    negativePrompt: 'watermark, text, logo, static-pose, lowres',
+    negativePrompt:
+      'watermark, text, logo, static-pose, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática arcade-sport extrema con velocidad, plataformas dinámicas, hazards térmicos y feedback de mastery.',
       subject_treatment:
         'Si hay personaje, usar arquetipos speed/control/trick; si hay objeto, darle equipamiento termo-reactivo, marcas de agarre y energía de truco.',
       color_and_tone:
-        'Rojo magma, negro basalto y cian HUD para separar riesgo ambiental y estado del jugador.',
+        'Rojo magma, negro basalto y cian de estado diegético para separar riesgo ambiental y posición del jugador.',
       lighting_and_shadow:
         'Glow de lava + focos arena para alternar visibilidad de ruta y zonas de castigo.',
       texture_and_material:
@@ -46,14 +48,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Líneas de circuito, jumps y bifurcaciones como ritmo visual competitivo sin exigir arena literal.',
       atmosphere_and_mood: 'Vertiginosa, espectacular y frenética.',
       rendering_and_quality:
-        'Promo de modo competitivo con feedback visual fuerte de ritmo, riesgo y mastery.',
+        'Competitive arena gameplay frame: lava risk, trick timing, rhythm, mastery feedback visible.',
     },
   },
   {
     id: 'SP12-021',
     name: 'Drift Kingdom Sandstorm Cup',
     category: '5. Speed, Sport & Competitive Arenas',
-    negativePrompt: 'watermark, text, logo, muddy, lowres',
+    negativePrompt:
+      'watermark, text, logo, muddy, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática racing-arcade ceremonial con derrape sostenido, rivalidad de escuderías, polvo térmico y lectura de trayectoria.',
@@ -69,16 +72,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Apex, líneas de trayectoria y rutas de adelantamiento como ritmo visual; no exigir copa, desierto o circuito fijo.',
       atmosphere_and_mood: 'Rivalidad ritual, intensidad técnica y presión climática permanente.',
       rendering_and_quality:
-        'Key-art gameplay-first con jerarquía clara de vehículos, equipos y lectura de circuito.',
+        'Drift-race gameplay frame: vehicle hierarchy, team colors, checkpoints, sandstorm pacing clear.',
       creative_brief:
-        'Aplica Drift Kingdom Sandstorm Cup como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Drift Kingdom Sandstorm Cup como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-031',
     name: 'Astral Chess Battlefield',
     category: '5. Speed, Sport & Competitive Arenas',
-    negativePrompt: 'watermark, text, logo, clutter, noisy-palette',
+    negativePrompt:
+      'watermark, text, logo, clutter, noisy-palette, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática auto-battler astral con tablero implícito, economía de unidades, sinergias y posicionamiento previo.',
@@ -94,14 +98,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Top-down suave, cuadrícula implícita y espacios limpios para lectura sistémica sin exigir ajedrez literal.',
       atmosphere_and_mood: 'Calma cerebral, cálculo estratégico y anticipación táctica.',
       rendering_and_quality:
-        'Strategy art de reglas claras con telemetría visual de sinergia, amenaza y tempo.',
+        'Strategy gameplay frame: board rules, synergy threats, tempo lanes, astral pieces readable.',
     },
   },
   {
     id: 'SP12-039',
     name: 'Phantom Theater Rhythm Battle',
     category: '5. Speed, Sport & Competitive Arenas',
-    negativePrompt: 'watermark, text, logo, static, muddy-colors',
+    negativePrompt:
+      'watermark, text, logo, static, muddy-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática rhythm-battle gótica con timing estricto, carriles musicales, spotlight pulsado y coreografía espectral.',
@@ -117,16 +122,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Framing de ritmo con hotspots de tempo y lanes visibles; teatro/proscenio son anclas opcionales.',
       atmosphere_and_mood: 'Teatral, urgente y ceremonialmente competitiva.',
       rendering_and_quality:
-        'Key-art competitivo de rhythm-game con cues visuales precisas de timing, combo y fase.',
+        'Rhythm-battle gameplay frame: timing cues, combo pressure, stage phase, spectral beats readable.',
       creative_brief:
-        'Aplica Phantom Theater Rhythm Battle como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Phantom Theater Rhythm Battle como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-047',
     name: 'Obsidian Arena Champion Trial',
     category: '5. Speed, Sport & Competitive Arenas',
-    negativePrompt: 'watermark, text, logo, modern-guns, lowres',
+    negativePrompt:
+      'watermark, text, logo, modern-guns, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática arena-combat ritual con obsidiana viva, duelos por fases, telegraph y lectura de patrón.',
@@ -142,14 +148,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Foco en duelistas, límites de ring y hazards periféricos sin exigir coliseo físico.',
       atmosphere_and_mood: 'Brutal, honorable y ancestralmente espectacular.',
       rendering_and_quality:
-        'Boss-trial key-art gameplay-first con cues nítidas de fase, telegraph y oportunidad.',
+        'Champion-trial gameplay frame: boss phase, telegraph, counter window, arena spacing readable.',
     },
   },
   {
     id: 'SP12-059',
     name: 'Prismatic Arena Hero Draft',
     category: '5. Speed, Sport & Competitive Arenas',
-    negativePrompt: 'watermark, text, logo, muddy-palette, low-detail',
+    negativePrompt:
+      'watermark, text, logo, muddy-palette, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática hero-draft esports con selección estratégica, counterpicks, roster instantáneo y presentación broadcast.',
@@ -164,14 +171,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Presentación frontal, jerarquía de picks y composición de equipo sin exigir arena.',
       atmosphere_and_mood: 'Competitiva, hypeada y visualmente precisa.',
       rendering_and_quality:
-        'Draft-phase promotional art con legibilidad superior de roles, counters y narrativa competitiva.',
+        'Hero-draft gameplay frame: roles, counters, team pressure, readable picks staged as arena silhouettes.',
     },
   },
   {
     id: 'SP12-063',
     name: 'Obelisk Desert Relic Race',
     category: '5. Speed, Sport & Competitive Arenas',
-    negativePrompt: 'watermark, text, logo, rainy-city, lowres',
+    negativePrompt:
+      'watermark, text, logo, rainy-city, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática racing-event arqueológica con velocidad, relic pickup, landmarks monumentales y navegación por riesgo.',
@@ -186,14 +194,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Ruta serpenteante, hitos y atajos de alto riesgo sin exigir desierto u obeliscos.',
       atmosphere_and_mood: 'Competitiva, feroz y cargada de misterio histórico.',
       rendering_and_quality:
-        'Seasonal-race gameplay art con claridad de checkpoints, reliquias y pacing.',
+        'Relic-race gameplay frame: checkpoints, pacing, obelisk obstacles, competitive route choices readable.',
     },
   },
   {
     id: 'SP12-065',
     name: 'Crystal Crown Duel Hall',
     category: '5. Speed, Sport & Competitive Arenas',
-    negativePrompt: 'watermark, text, logo, grunge, low-detail',
+    negativePrompt:
+      'watermark, text, logo, grunge, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática duel-arena real cristalina con 1v1 técnico, spacing, feints y castigo preciso.',
@@ -209,14 +218,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Simetría frontal, límites de arena y zonas neutrales claras sin exigir hall o cúpula.',
       atmosphere_and_mood: 'Noble, rival y extremadamente precisa.',
       rendering_and_quality:
-        'Competitive stage gameplay-first con legibilidad impecable de alcance, timing y ventaja.',
+        'Duel-hall gameplay frame: reach, timing, advantage state, crystal arena spacing readable.',
     },
   },
   {
     id: 'SP12-075',
     name: 'Cobalt Docks Mechball League',
     category: '5. Speed, Sport & Competitive Arenas',
-    negativePrompt: 'watermark, text, logo, gritty-horror, lowres',
+    negativePrompt:
+      'watermark, text, logo, gritty-horror, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática mechball esports con objetivo central, rotaciones rápidas, posesión y juego de equipo de alta energía.',
@@ -232,7 +242,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Objetivo central, lanes tácticos y lectura de posesión sin exigir docks o arena-bowl.',
       atmosphere_and_mood: 'Rival, cinética y de adrenalina sostenida.',
       rendering_and_quality:
-        'Esports-grade gameplay key-art con claridad superior de posesión, rotación y presión de equipo.',
+        'Mechball esports gameplay frame: possession, rotations, team pressure, goal lane readable.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

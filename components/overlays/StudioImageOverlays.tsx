@@ -1,6 +1,8 @@
 import React, { Suspense } from 'react';
 
+import { ErrorBoundary } from '../ErrorBoundary';
 import ImageCarousel from '../ImageCarousel';
+import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
 import type { StudioImageOverlaysProps } from './types';
 
 const ImageEditorModal = React.lazy(() =>
@@ -53,15 +55,24 @@ export const StudioImageOverlays: React.FC<StudioImageOverlaysProps> = ({
         />
       )}
       {isEditorOpen && (
-        <Suspense fallback={null}>
-          <ImageEditorModal
-            isOpen={isEditorOpen}
-            onClose={closeEditor}
-            image={imageToEdit}
-            onGenerate={handleExecuteEdit}
-            isGenerating={isEditingImage}
-          />
-        </Suspense>
+        <ErrorBoundary fallbackMessage="Could not load the image editor.">
+          <Suspense
+            fallback={
+              <LazySurfaceFallback
+                label="Loading editor"
+                className="fixed inset-0 z-50 grid place-items-center bg-black/60 text-zinc-400"
+              />
+            }
+          >
+            <ImageEditorModal
+              isOpen={isEditorOpen}
+              onClose={closeEditor}
+              image={imageToEdit}
+              onGenerate={handleExecuteEdit}
+              isGenerating={isEditingImage}
+            />
+          </Suspense>
+        </ErrorBoundary>
       )}
     </>
   );

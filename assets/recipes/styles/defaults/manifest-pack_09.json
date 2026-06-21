@@ -6,12 +6,12 @@
     "packName": "Texture & Materiality",
     "category": "2. Organic And Bio Materials",
     "file": "assets/recipes/styles/defaults/SP09-001.webp",
-    "jobId": "b9c0fe11-11b9-43ec-adc7-2763ff81eef7",
+    "jobId": "88a53afd-3b8f-428e-8b7f-e647b2a6c647",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-001.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:18:32.359Z"
+    "generatedAt": "2026-06-21T00:25:02.094Z"
   },
   {
     "presetId": "SP09-002",
@@ -20,12 +20,12 @@
     "packName": "Texture & Materiality",
     "category": "2. Organic And Bio Materials",
     "file": "assets/recipes/styles/defaults/SP09-002.webp",
-    "jobId": "c0d3ac0c-e037-41c5-b311-aef60a1f97b1",
+    "jobId": "a56dedf2-2dab-4f55-bddc-95cab48f38c1",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-002.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:18:50.324Z"
+    "generatedAt": "2026-06-21T06:15:22.633Z"
   },
   {
     "presetId": "SP09-003",
@@ -34,12 +34,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-003.webp",
-    "jobId": "990aab2c-c411-4666-a662-9aa64996c3c4",
+    "jobId": "a544c27e-449c-43dd-8617-58db35a2da1d",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-003.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:23:33.799Z"
+    "generatedAt": "2026-06-20T23:41:41.226Z"
   },
   {
     "presetId": "SP09-004",
@@ -48,12 +48,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-004.webp",
-    "jobId": "9e6793c6-374f-4875-880c-177f81315e43",
+    "jobId": "ec54ebf8-f292-44f2-bcce-60f1048d62ab",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-004.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:23:10.852Z"
+    "generatedAt": "2026-06-20T23:42:32.553Z"
   },
   {
     "presetId": "SP09-005",
@@ -62,12 +62,12 @@
     "packName": "Texture & Materiality",
     "category": "5. Fx And Procedural Materiality",
     "file": "assets/recipes/styles/defaults/SP09-005.webp",
-    "jobId": "a8f4760f-b5d6-443c-b856-b9dd15cf9216",
+    "jobId": "ad603559-1b14-4103-bd39-e409d129b3c1",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-005.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:28:45.708Z"
+    "generatedAt": "2026-06-21T00:41:58.775Z"
   },
   {
     "presetId": "SP09-006",
@@ -90,12 +90,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-007.webp",
-    "jobId": "d435561d-8f81-40df-83ff-e40c0cf34f89",
+    "jobId": "58b15686-bffa-4233-8ceb-841fee79b906",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-007.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:33:39.984Z"
+    "generatedAt": "2026-06-20T23:43:15.910Z"
   },
   {
     "presetId": "SP09-008",
@@ -104,12 +104,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-008.webp",
-    "jobId": "ef34faf2-9ec1-44b7-a097-d8641cb3469c",
+    "jobId": "bf853c94-3ff4-4b01-bd8f-badbe9d53b9e",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-008.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:33:32.765Z"
+    "generatedAt": "2026-06-20T23:44:04.893Z"
   },
   {
     "presetId": "SP09-009",
@@ -118,12 +118,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-009.webp",
-    "jobId": "15fb3f92-dbfa-4681-a0ab-4bdcb35460be",
+    "jobId": "1343f7b5-cba6-41d3-a5d7-8f458fc355cd",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-009.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:38:39.107Z"
+    "generatedAt": "2026-06-20T23:44:57.728Z"
   },
   {
     "presetId": "SP09-010",
@@ -132,12 +132,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-010.webp",
-    "jobId": "6557dc15-f1be-4a14-8ab2-626341d71477",
+    "jobId": "b86ef058-f4b3-4e3d-a4a8-2003c40fa63a",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-010.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:38:50.672Z"
+    "generatedAt": "2026-06-20T23:46:37.878Z"
   },
   {
     "presetId": "SP09-011",
@@ -146,12 +146,12 @@
     "packName": "Texture & Materiality",
     "category": "5. Fx And Procedural Materiality",
     "file": "assets/recipes/styles/defaults/SP09-011.webp",
-    "jobId": "cfb1046c-c039-48e3-accb-76056a8a87e3",
+    "jobId": "b1d16518-8fd2-448e-a0d5-39e5d1cf46ab",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-011.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:43:52.937Z"
+    "generatedAt": "2026-06-21T06:16:05.572Z"
   },
   {
     "presetId": "SP09-012",
@@ -160,12 +160,12 @@
     "packName": "Texture & Materiality",
     "category": "2. Organic And Bio Materials",
     "file": "assets/recipes/styles/defaults/SP09-012.webp",
-    "jobId": "9b490c0f-5c79-46db-aa31-7bb65791337f",
+    "jobId": "7323a229-4fc1-4805-8f85-8170dc4cdf54",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-012.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:43:43.716Z"
+    "generatedAt": "2026-06-21T00:26:57.744Z"
   },
   {
     "presetId": "SP09-013",
@@ -174,12 +174,12 @@
     "packName": "Texture & Materiality",
     "category": "5. Fx And Procedural Materiality",
     "file": "assets/recipes/styles/defaults/SP09-013.webp",
-    "jobId": "7aae1731-1238-4cd6-bd44-c16866576fd0",
+    "jobId": "64cf6c4d-b087-4235-a369-fdcd2fab4bb4",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-013.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:49:03.899Z"
+    "generatedAt": "2026-06-21T06:17:17.725Z"
   },
   {
     "presetId": "SP09-014",
@@ -188,12 +188,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-014.webp",
-    "jobId": "db81b9fb-6fd3-4f0d-befe-9a76ac69abd9",
+    "jobId": "b794a2e6-0190-4493-87f8-4978755e7518",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-014.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:47:41.342Z"
+    "generatedAt": "2026-06-20T23:47:54.989Z"
   },
   {
     "presetId": "SP09-015",
@@ -202,12 +202,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-015.webp",
-    "jobId": "e56a06f0-5a42-4866-b872-75fb755f6aab",
+    "jobId": "540d882f-9d36-40d8-aa9a-1cb54d9fcd59",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-015.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:52:50.459Z"
+    "generatedAt": "2026-06-20T23:48:51.829Z"
   },
   {
     "presetId": "SP09-016",
@@ -216,12 +216,12 @@
     "packName": "Texture & Materiality",
     "category": "4. Surface Wear And Aging",
     "file": "assets/recipes/styles/defaults/SP09-016.webp",
-    "jobId": "181997e8-9d05-49a2-a719-f54d1f1b6ef5",
+    "jobId": "de785727-7bdf-4eeb-98d0-344b35fb6d22",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-016.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:53:32.173Z"
+    "generatedAt": "2026-06-21T00:38:41.010Z"
   },
   {
     "presetId": "SP09-017",
@@ -230,12 +230,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-017.webp",
-    "jobId": "42a6196e-fc75-468d-b4b1-08f4b40f61d3",
+    "jobId": "b8a3f384-4519-423f-839e-6050734ff99e",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-017.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:57:21.514Z"
+    "generatedAt": "2026-06-20T23:51:52.405Z"
   },
   {
     "presetId": "SP09-018",
@@ -244,12 +244,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-018.webp",
-    "jobId": "4ee529b9-5128-4df0-b1c0-d9d0d94e5c5f",
+    "jobId": "7fb7a9f9-6047-4bc2-901c-ee839887ff61",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-018.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T22:57:20.726Z"
+    "generatedAt": "2026-06-20T23:53:08.712Z"
   },
   {
     "presetId": "SP09-019",
@@ -258,12 +258,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-019.webp",
-    "jobId": "dfb7d80a-065f-40fc-8df8-bea8bf965494",
+    "jobId": "9694fbfb-67b2-48cb-96f8-38b63f73baa7",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-019.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:01:27.326Z"
+    "generatedAt": "2026-06-20T23:49:55.196Z"
   },
   {
     "presetId": "SP09-020",
@@ -272,12 +272,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-020.webp",
-    "jobId": "4ddf53cc-3aac-4679-84a2-bf909ec15765",
+    "jobId": "1848cb8f-6454-4831-9805-b1f08956b9b3",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-020.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:01:43.881Z"
+    "generatedAt": "2026-06-20T23:50:54.613Z"
   },
   {
     "presetId": "SP09-021",
@@ -286,12 +286,12 @@
     "packName": "Texture & Materiality",
     "category": "5. Fx And Procedural Materiality",
     "file": "assets/recipes/styles/defaults/SP09-021.webp",
-    "jobId": "2dddc5d2-b9fc-4d2f-8753-f152886ffe72",
+    "jobId": "4dc4e43b-6f48-40b3-a882-49e5b71c9610",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-021.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:06:05.346Z"
+    "generatedAt": "2026-06-21T06:18:05.919Z"
   },
   {
     "presetId": "SP09-022",
@@ -314,12 +314,12 @@
     "packName": "Texture & Materiality",
     "category": "5. Fx And Procedural Materiality",
     "file": "assets/recipes/styles/defaults/SP09-023.webp",
-    "jobId": "6455fc3d-b23a-4eae-a3d3-54fdc4f1274b",
+    "jobId": "9d7420fb-06b8-4ad1-8b02-bd1bdab850fd",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-023.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:09:59.151Z"
+    "generatedAt": "2026-06-21T06:19:30.567Z"
   },
   {
     "presetId": "SP09-024",
@@ -328,12 +328,12 @@
     "packName": "Texture & Materiality",
     "category": "2. Organic And Bio Materials",
     "file": "assets/recipes/styles/defaults/SP09-024.webp",
-    "jobId": "7230d030-5953-4a40-9a2f-ade945f82c84",
+    "jobId": "5ac19721-2132-4bda-8948-040d30453e72",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-024.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:10:12.929Z"
+    "generatedAt": "2026-06-21T00:30:12.240Z"
   },
   {
     "presetId": "SP09-025",
@@ -342,12 +342,12 @@
     "packName": "Texture & Materiality",
     "category": "2. Organic And Bio Materials",
     "file": "assets/recipes/styles/defaults/SP09-025.webp",
-    "jobId": "a9c4705f-85bc-4e8d-aba6-8754cbddaec8",
+    "jobId": "11f07468-60b5-44e9-a199-15d852739512",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-025.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:15:17.437Z"
+    "generatedAt": "2026-06-21T00:28:10.647Z"
   },
   {
     "presetId": "SP09-026",
@@ -398,12 +398,12 @@
     "packName": "Texture & Materiality",
     "category": "3. Fabric And Soft Materials",
     "file": "assets/recipes/styles/defaults/SP09-029.webp",
-    "jobId": "c02a5bf4-da8e-48c7-b55f-0816a2e65332",
+    "jobId": "73df9294-925a-445a-b5d3-e8a6a7074103",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-029.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:24:23.337Z"
+    "generatedAt": "2026-06-21T00:35:52.014Z"
   },
   {
     "presetId": "SP09-030",
@@ -412,12 +412,12 @@
     "packName": "Texture & Materiality",
     "category": "4. Surface Wear And Aging",
     "file": "assets/recipes/styles/defaults/SP09-030.webp",
-    "jobId": "cd29b88b-1425-49d8-890c-691cb95205f7",
+    "jobId": "ccebe578-02fb-4894-804e-ef74d283d766",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-030.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:24:43.344Z"
+    "generatedAt": "2026-06-21T00:39:38.585Z"
   },
   {
     "presetId": "SP09-031",
@@ -426,12 +426,12 @@
     "packName": "Texture & Materiality",
     "category": "2. Organic And Bio Materials",
     "file": "assets/recipes/styles/defaults/SP09-031.webp",
-    "jobId": "5c34bd63-8c1a-40e0-afae-bc2abe009b16",
+    "jobId": "ab246b93-dc11-4aa3-819a-411131419121",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-031.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:35:55.755Z"
+    "generatedAt": "2026-06-21T00:29:23.434Z"
   },
   {
     "presetId": "SP09-032",
@@ -454,12 +454,12 @@
     "packName": "Texture & Materiality",
     "category": "2. Organic And Bio Materials",
     "file": "assets/recipes/styles/defaults/SP09-033.webp",
-    "jobId": "8f94de32-f795-4b35-b8f0-be60ba2f0ded",
+    "jobId": "358a30df-b322-405e-aa1c-cbca526f8a0b",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-033.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:40:24.690Z"
+    "generatedAt": "2026-06-21T00:31:27.669Z"
   },
   {
     "presetId": "SP09-034",
@@ -468,12 +468,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-034.webp",
-    "jobId": "c0306554-2525-479f-9cd6-86fc014fc9e2",
+    "jobId": "ca4f585d-2000-471b-b4f2-8b82130b558d",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-034.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:40:25.093Z"
+    "generatedAt": "2026-06-20T23:59:21.319Z"
   },
   {
     "presetId": "SP09-035",
@@ -482,12 +482,12 @@
     "packName": "Texture & Materiality",
     "category": "2. Organic And Bio Materials",
     "file": "assets/recipes/styles/defaults/SP09-035.webp",
-    "jobId": "6f81d086-b5d5-4c84-a492-7a3598079e07",
+    "jobId": "d3c0f107-92de-4bf1-950d-d226dad55260",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-035.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:46:55.100Z"
+    "generatedAt": "2026-06-21T00:32:41.458Z"
   },
   {
     "presetId": "SP09-036",
@@ -510,12 +510,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-037.webp",
-    "jobId": "75287e45-00ef-4c63-aa83-373fcc473b83",
+    "jobId": "7a99c273-9198-4b1e-b2dd-db6967562d7d",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-037.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:52:59.496Z"
+    "generatedAt": "2026-06-21T00:02:18.856Z"
   },
   {
     "presetId": "SP09-038",
@@ -538,12 +538,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-039.webp",
-    "jobId": "688f5776-ce06-46f1-b51e-279c9b19ef40",
+    "jobId": "28f28aca-e045-49b0-ba4a-322453215aa3",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-039.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:58:55.953Z"
+    "generatedAt": "2026-06-21T00:03:51.980Z"
   },
   {
     "presetId": "SP09-040",
@@ -552,12 +552,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-040.webp",
-    "jobId": "b06bbdb0-30e6-4d56-a1e8-c253f722f2f6",
+    "jobId": "c9cda0b1-54a0-43a4-84ec-b34c46cfe26a",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-040.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:58:59.194Z"
+    "generatedAt": "2026-06-21T00:00:44.868Z"
   },
   {
     "presetId": "SP09-041",
@@ -566,12 +566,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-041.webp",
-    "jobId": "e0118297-f209-4eb3-9196-1598bb69b3c9",
+    "jobId": "e50b6788-7860-4a32-8c3f-b17010adbd57",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-041.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T00:05:30.782Z"
+    "generatedAt": "2026-06-20T23:55:23.647Z"
   },
   {
     "presetId": "SP09-042",
@@ -608,12 +608,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-044.webp",
-    "jobId": "f1f4f44d-197e-47b5-8132-6fae7d57d5a9",
+    "jobId": "db0f2362-0dac-48c8-a50b-c3fe45baaee5",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-044.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T00:12:40.017Z"
+    "generatedAt": "2026-06-20T23:54:07.302Z"
   },
   {
     "presetId": "SP09-045",
@@ -622,12 +622,12 @@
     "packName": "Texture & Materiality",
     "category": "3. Fabric And Soft Materials",
     "file": "assets/recipes/styles/defaults/SP09-045.webp",
-    "jobId": "44480e8b-9372-426d-82d2-6a40209e8aaa",
+    "jobId": "bfe1ac15-2984-4ad1-a50f-d8c9f210f7cf",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-045.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T00:20:06.938Z"
+    "generatedAt": "2026-06-21T00:36:48.879Z"
   },
   {
     "presetId": "SP09-046",
@@ -636,12 +636,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-046.webp",
-    "jobId": "d7fb0edb-54f7-46a9-bcb3-8a7686654985",
+    "jobId": "da3cc1d1-0c41-451f-89d3-b16eed7e7b18",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-046.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T00:20:32.213Z"
+    "generatedAt": "2026-06-21T06:14:45.280Z"
   },
   {
     "presetId": "SP09-047",
@@ -678,12 +678,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-049.webp",
-    "jobId": "ea223318-8df0-4bce-b893-72b45eb5d614",
+    "jobId": "e3561e27-0596-4056-b6a3-573e26b2a62a",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-049.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T00:35:23.734Z"
+    "generatedAt": "2026-06-20T23:57:55.413Z"
   },
   {
     "presetId": "SP09-050",
@@ -706,12 +706,12 @@
     "packName": "Texture & Materiality",
     "category": "2. Organic And Bio Materials",
     "file": "assets/recipes/styles/defaults/SP09-051.webp",
-    "jobId": "fb49d90c-90a3-486f-b0a6-21ac56ae03ab",
+    "jobId": "40d480d7-e7da-4732-ac97-f82ce91dbfab",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-051.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T00:42:35.104Z"
+    "generatedAt": "2026-06-21T00:33:29.444Z"
   },
   {
     "presetId": "SP09-052",
@@ -748,12 +748,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-054.webp",
-    "jobId": "0cb8c262-f28d-417e-a434-0833bd4c80c4",
+    "jobId": "c0067d4a-3aed-468b-b688-630943fb318a",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-054.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T00:50:50.847Z"
+    "generatedAt": "2026-06-21T06:14:11.802Z"
   },
   {
     "presetId": "SP09-055",
@@ -762,12 +762,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-055.webp",
-    "jobId": "de3aeb77-e8b7-48b6-b420-02ee6f18e50a",
+    "jobId": "e9fac3fc-becc-4d38-a367-692cef15cb7c",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-055.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T01:00:26.149Z"
+    "generatedAt": "2026-06-21T00:07:07.372Z"
   },
   {
     "presetId": "SP09-056",
@@ -776,12 +776,12 @@
     "packName": "Texture & Materiality",
     "category": "5. Fx And Procedural Materiality",
     "file": "assets/recipes/styles/defaults/SP09-056.webp",
-    "jobId": "1d81564a-98f0-4218-9ae9-e4634ae3ecbf",
+    "jobId": "07489ff8-2c60-4db4-a202-4bfc1ff11018",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-056.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T01:00:04.005Z"
+    "generatedAt": "2026-06-21T00:54:28.335Z"
   },
   {
     "presetId": "SP09-057",
@@ -790,12 +790,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-057.webp",
-    "jobId": "0cbd6e61-ff64-42d6-9412-7e1ffb780b1a",
+    "jobId": "0c28b2c3-d757-473f-b365-d4b90bf30987",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-057.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T01:08:06.680Z"
+    "generatedAt": "2026-06-21T00:06:00.151Z"
   },
   {
     "presetId": "SP09-058",
@@ -804,12 +804,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-058.webp",
-    "jobId": "4a99ab2a-1ed2-42d3-9b45-c81f1f6e025a",
+    "jobId": "15a10f6f-9ce3-4bb0-a11b-103ed7b26f95",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-058.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T01:08:09.109Z"
+    "generatedAt": "2026-06-21T00:09:07.711Z"
   },
   {
     "presetId": "SP09-059",
@@ -818,12 +818,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-059.webp",
-    "jobId": "873c876f-12eb-4faf-b059-073a6949408f",
+    "jobId": "1c7aba0f-c70d-4980-a854-8fd359733eaf",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-059.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T02:40:24.394Z"
+    "generatedAt": "2026-06-21T00:10:28.613Z"
   },
   {
     "presetId": "SP09-060",
@@ -846,12 +846,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-061.webp",
-    "jobId": "5212fad7-4b7c-4a7f-ba42-affefea8ddbd",
+    "jobId": "1dcbbdc5-449d-475b-8cc9-ff54ff312a2d",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-061.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T02:52:26.103Z"
+    "generatedAt": "2026-06-21T00:12:26.450Z"
   },
   {
     "presetId": "SP09-062",
@@ -860,12 +860,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-062.webp",
-    "jobId": "743a9b71-f6cf-42bf-a2b0-7f20d51f8536",
+    "jobId": "1cc74a19-82b0-412a-b17d-632084bfa43a",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-062.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T02:52:23.732Z"
+    "generatedAt": "2026-06-21T00:14:09.087Z"
   },
   {
     "presetId": "SP09-063",
@@ -874,12 +874,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-063.webp",
-    "jobId": "d99271ad-726a-43a7-b8fa-d0d9b9983c56",
+    "jobId": "df38d8f0-887e-429d-9b05-dfa5edbef274",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-063.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T03:18:45.048Z"
+    "generatedAt": "2026-06-21T00:16:00.621Z"
   },
   {
     "presetId": "SP09-064",
@@ -902,12 +902,12 @@
     "packName": "Texture & Materiality",
     "category": "5. Fx And Procedural Materiality",
     "file": "assets/recipes/styles/defaults/SP09-065.webp",
-    "jobId": "c42dcdcf-5d7c-424c-bfb4-db7951f0ab62",
+    "jobId": "b9839a10-b52b-4837-afc3-aa308d721761",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-065.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T03:34:14.012Z"
+    "generatedAt": "2026-06-21T00:55:02.505Z"
   },
   {
     "presetId": "SP09-066",
@@ -916,12 +916,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-066.webp",
-    "jobId": "b257b4cf-818c-412f-ba24-ffc65a869844",
+    "jobId": "883e49a9-05ba-4fc4-9fec-220efc9e0a34",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-066.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T03:33:58.432Z"
+    "generatedAt": "2026-06-21T00:17:36.113Z"
   },
   {
     "presetId": "SP09-067",
@@ -944,12 +944,12 @@
     "packName": "Texture & Materiality",
     "category": "5. Fx And Procedural Materiality",
     "file": "assets/recipes/styles/defaults/SP09-068.webp",
-    "jobId": "f263e1db-d41b-4a1b-9afa-d25a439637d9",
+    "jobId": "5ab5c83c-240f-43d5-88a3-bd05ac370ad0",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-068.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T03:44:19.381Z"
+    "generatedAt": "2026-06-21T00:56:13.033Z"
   },
   {
     "presetId": "SP09-069",
@@ -958,12 +958,12 @@
     "packName": "Texture & Materiality",
     "category": "3. Fabric And Soft Materials",
     "file": "assets/recipes/styles/defaults/SP09-069.webp",
-    "jobId": "6a25db6b-23cb-4980-9307-fb217d55e7e6",
+    "jobId": "abf72c1d-9704-40ca-bcb1-a9de2eec2e1b",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-069.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T03:55:52.788Z"
+    "generatedAt": "2026-06-21T00:37:42.576Z"
   },
   {
     "presetId": "SP09-070",
@@ -972,12 +972,12 @@
     "packName": "Texture & Materiality",
     "category": "4. Surface Wear And Aging",
     "file": "assets/recipes/styles/defaults/SP09-070.webp",
-    "jobId": "95ffadbb-d8d6-425b-8a55-19570c6cc9dd",
+    "jobId": "ec84f89d-7c54-49c7-a7a1-752c8db8c5e1",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-070.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T03:53:40.120Z"
+    "generatedAt": "2026-06-21T00:40:40.171Z"
   },
   {
     "presetId": "SP09-071",
@@ -986,12 +986,12 @@
     "packName": "Texture & Materiality",
     "category": "2. Organic And Bio Materials",
     "file": "assets/recipes/styles/defaults/SP09-071.webp",
-    "jobId": "2ebc1a02-afbc-4b57-a2dd-f7f1182c31f5",
+    "jobId": "e41d2410-41cd-44fc-b07a-7862da84cf78",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-071.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T04:05:16.110Z"
+    "generatedAt": "2026-06-21T00:34:48.814Z"
   },
   {
     "presetId": "SP09-072",
@@ -1000,12 +1000,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-072.webp",
-    "jobId": "0dc8cfe7-9daa-4782-80e6-947ad9a2ee26",
+    "jobId": "018ff84e-9901-4468-8c89-9ef04b29663e",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-072.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T04:05:22.809Z"
+    "generatedAt": "2026-06-21T00:19:19.700Z"
   },
   {
     "presetId": "SP09-073",
@@ -1014,12 +1014,12 @@
     "packName": "Texture & Materiality",
     "category": "5. Fx And Procedural Materiality",
     "file": "assets/recipes/styles/defaults/SP09-073.webp",
-    "jobId": "0d24fe7f-54f1-4014-a02b-42b0524cb8cc",
+    "jobId": "affd8ac9-e338-415c-8da5-9b1fc510c145",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-073.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T04:14:28.058Z"
+    "generatedAt": "2026-06-21T00:57:21.091Z"
   },
   {
     "presetId": "SP09-074",
@@ -1056,12 +1056,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-076.webp",
-    "jobId": "8cf49d2a-b511-4de8-9238-74b5a9ca1f34",
+    "jobId": "46523aae-324a-4cc0-8b6f-e34718a96458",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-076.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T04:23:45.297Z"
+    "generatedAt": "2026-06-21T00:20:43.770Z"
   },
   {
     "presetId": "SP09-077",
@@ -1070,12 +1070,12 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-077.webp",
-    "jobId": "0cc002cf-04ad-4e22-bb72-75764c448130",
+    "jobId": "cf605162-7bce-4d42-8c37-0f901b6b1026",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-077.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T04:33:27.173Z"
+    "generatedAt": "2026-06-21T00:22:39.992Z"
   },
   {
     "presetId": "SP09-078",
@@ -1112,11 +1112,11 @@
     "packName": "Texture & Materiality",
     "category": "1. Metals And Minerals",
     "file": "assets/recipes/styles/defaults/SP09-080.webp",
-    "jobId": "1b2a0f26-78aa-4205-8e6d-69b85843147c",
+    "jobId": "53706a9d-aab5-468f-8e39-19401b1b0672",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-080.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T04:42:46.627Z"
+    "generatedAt": "2026-06-21T00:23:49.763Z"
   }
 ]

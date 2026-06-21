@@ -100,4 +100,26 @@ describe('browser queue persistence', () => {
     expect(persisted).toHaveLength(100);
     expect(persisted[0]?.id).toBe('job-1');
   });
+
+  it('marks jobs with oversized inline references as failed for recovery', () => {
+    const persisted = prepareBrowserQueueJobsForPersist([
+      createBrowserQueueJob({
+        config: {
+          ...DEFAULT_GENERATION_CONFIG,
+          attachments: [
+            {
+              id: 'large-ref',
+              name: 'large.png',
+              dataUrl: `data:image/png;base64,${'A'.repeat(600 * 1024)}`,
+              strength: 1,
+            },
+          ],
+        },
+      }),
+    ]);
+
+    expect(persisted[0]?.status).toBe('failed');
+    expect(persisted[0]?.config.attachments).toEqual([]);
+    expect(persisted[0]?.error).toContain('exceeded 512 KB');
+  });
 });

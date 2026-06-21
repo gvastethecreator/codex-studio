@@ -1,7 +1,6 @@
 import React from 'react';
 
 import type { StudioQueueResultPreview } from '../../lib/studioQueueResults';
-import type { StudioDiagnosticsSnapshot } from '../../lib/studioDiagnostics';
 import type { Job as StudioJob } from '../../packages/shared/src';
 import type { QueueJob } from '../../types';
 
@@ -24,17 +23,13 @@ export interface StudioOperationsRailProps {
   removeJob: (jobId: string) => void;
   clearCompleted: () => void;
   isResting: boolean;
-  exportLegacyVisualBatchSnapshot: () => void;
-  activeServerJobCount: number;
   onInspectJob: (jobId: string) => void;
-  diagnostics: StudioDiagnosticsSnapshot;
-  onResetStudio: () => void | Promise<void>;
-  isResettingStudio: boolean;
 }
 
 export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
   isModalOpen,
   isQueueOpen,
+  setIsQueueOpen,
   jobs,
   queueResults,
   studioJobs,
@@ -57,9 +52,9 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
   }
 
   return (
-    <div className="flex h-full shrink-0 overflow-hidden animate-in fade-in-0 slide-in-from-right-3 duration-200">
+    <div className="fixed inset-x-0 bottom-[116px] top-24 z-40 flex overflow-hidden animate-in fade-in-0 slide-in-from-right-3 duration-200 sm:static sm:h-full sm:shrink-0">
       <React.Suspense
-        fallback={<div className="h-full w-80 border-l border-white/10 bg-black/40" />}
+        fallback={<div className="h-full w-full border-l border-white/10 bg-black/40 sm:w-80" />}
       >
         <QueuePanel
           jobs={jobs}
@@ -74,6 +69,7 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
           onClearCompleted={clearCompleted}
           onInspectJob={onInspectJob}
           isResting={isResting}
+          onClose={() => setIsQueueOpen(false)}
         />
       </React.Suspense>
     </div>

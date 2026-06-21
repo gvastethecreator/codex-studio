@@ -1,48 +1,53 @@
 schemaVersion: 1
 id: SP15-059
 packId: pack_15
-name: Mirrorline Court Plaza
-category: 9. Corepunk — Decopunk
+name: Goth Relay Chapel
+category: 8. Occult, Myth & Gothic Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - decopunk
+  - punk-spectrum-vault
+  - occult-myth-and-gothic-punks
+  - gothpunk
+  - relay
 visualDna:
-  aesthetic: Judicial decopunk where symmetry acts like surveillance and polished reflection makes judgment feel already decided.
-  form_and_line: Symmetric court axes, mirror-wall planes, stepped forecourt logic, legal obelisk alignments, and tribunal chevrons.
-  color_palette: Stone white, brass, deep teal, mirror silver, and black shadow lines.
-  lighting_setup: Midday glare, colonnade shadow grids, hard mirror reflections, and brass plate highlights at eye level.
-  material_texture: Polished stone, mirrored steel, engraved brass, teal enamel seals, crisp stair edges, and cold door glass.
-  render_quality: High-clarity urban concept with severe focal order and institutional sharpness.
-  spatial_distortion: Axis perspective terminates at formal thresholds while mirror planes duplicate scrutiny on both sides.
-  atmosphere: Authority, scrutiny, polished intimidation, and ceremonial inevitability.
-  key_features: Mirror colonnades, legal obelisks, tribunal chevrons, ceremonial stair motifs, and engraved verdict plates.
-  creative_brief: 'Judge the input through mirrorline severity: doubled reflections, tribunal chevrons, brass verdict plates, polished stone axes, and cold teal seals should make scrutiny unavoidable. Court or plaza cues may appear, but the style is symmetry as surveillance and authority as reflection. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: gothpunk communications built around a gothic relay room with black lace cables, radio operators, pointed arches as silhouettes, and red indicator light.
+  form_and_line: Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses relay operators, pointed silhouettes, cable lace, red indicators, dark coats.
+  color_palette: charcoal, oxblood, cold white, tarnished silver
+  lighting_setup: red indicator lamps, cold moon cuts, radio glow, deep shadows
+  material_texture: black cable, lace-like mesh, tarnished metal, stone, velvet coats
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: romantic, severe, communicative, nocturnal
+  key_features: relay operators, pointed silhouettes, cable lace, red indicators, dark coats
+  creative_brief: 'Gothpunk communications: relay gear, radio mast, small operators, cable arches, and gothic shape language, not empty cathedral literalism. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - comedic
-  - cyberpunk-slum
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-059.webp
 attributes:
-  negativePrompt: photoreal, comedic, cyberpunk-slum, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, cross, religious icon, skull emblem, altar, chapel corridor, stained-glass text, readable symbols, lace microdetail, black-on-black costume portrait, foreground goth pinup, photoreal stone, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-decopunk
-  categoryName: 9. Corepunk — Decopunk
+  packName: Punk Spectrum Vault
+  categoryId: occult-myth-and-gothic-punks
+  categoryName: 8. Occult, Myth & Gothic Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - decopunk
+    - punk-spectrum-vault
+    - occult-myth-and-gothic-punks
+    - gothpunk
+    - relay
   supportedTasks:
     - image_generate
     - image_edit

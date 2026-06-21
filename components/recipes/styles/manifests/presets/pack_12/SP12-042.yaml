@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Vidrio blindado, cableado expuesto, holografía rota y módulos de confinamiento.
   camera_and_composition: Núcleo, anillos de contención y rutas de intervención como estructura visual sin exigir laboratorio.
   atmosphere_and_mood: Tensa, científica y caótica bajo protocolo.
-  rendering_and_quality: "Lab-incident gameplay screencap: rift threat level, route choice, objective state, hazard timing clear."
+  rendering_and_quality: 'Lab-incident gameplay screencap: rift threat level, route choice, objective state, hazard timing clear.'
 avoidRules:
   - watermark
   - text

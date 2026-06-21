@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Madera envejecida, acero remachado, tierra seca y humo de propulsión.
   camera_and_composition: Diagonal de movimiento con puntos de salto, abordaje y repliegue sin exigir tren literal.
   atmosphere_and_mood: Explosiva, audaz y narrativamente tensa.
-  rendering_and_quality: "Heist mission gameplay screencap: train objective, loot route, extraction timing, guard pressure clear."
+  rendering_and_quality: 'Heist mission gameplay screencap: train objective, loot route, extraction timing, guard pressure clear.'
 avoidRules:
   - watermark
   - text

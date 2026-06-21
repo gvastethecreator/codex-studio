@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-006
+packId: pack_17
+name: Ruined Tapestry Legend
+category: 1. Dark Fantasy Realms
+domain: medieval fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dark-fantasy-realms
+  - tapestry
+visualDna:
+  aesthetic: Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial space.
+  subject_treatment: A flattened tapestry hunt scene with a lion-bird monster, fallen tower, profile riders, patterned garments, and heraldic outlines.
+  color_and_tone: Faded wool reds, moss green, ochre, smoke blue, dark brown linework, and aged linen base.
+  lighting_and_shadow: Flat woven light with shadow described through thread density, border contrast, and dark pattern blocks.
+  texture_and_material: Visible fibers, worn edges, stitched contours, frayed borders, thread gaps, and softened pigment.
+  camera_and_composition: Frontal frieze layout, stacked scenes, ornamental borders, and iconic subject placement.
+  atmosphere_and_mood: Ancient, folkloric, mysterious, and ceremonial.
+  rendering_and_quality: High-resolution textile illustration preserving woven texture and crisp symbolic readability.
+  creative_brief: A portable medieval-tapestry style for battles, monsters, portraits, maps, rituals, or mythic objects.
+avoidRules:
+  - photorealism
+  - modern poster layout
+  - smooth digital gradients
+  - anime
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-006.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dark-fantasy-realms
+  categoryName: 1. Dark Fantasy Realms
+  domain: medieval fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dark-fantasy-realms
+    - tapestry
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

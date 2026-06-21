@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Mármol pulido, madera lacada, tela ceremonial y detalles de desgaste por entrenamiento.
   camera_and_composition: Simetría central, límites claros, zonas de presión y reset neutral sin exigir arena física.
   atmosphere_and_mood: Serena, tensa y honorable.
-  rendering_and_quality: "Duel-stage gameplay screencap: hitbox distance, advantage state, vertical calm, timing cues visible."
+  rendering_and_quality: 'Duel-stage gameplay screencap: hitbox distance, advantage state, vertical calm, timing cues visible.'
 avoidRules:
   - watermark
   - text

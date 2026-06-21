@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Coral poroso, escamas nacaradas, algas estructurales y arquitectura bio-mineral viva.
   camera_and_composition: Perspectiva amplia con corrientes, ascenso/descenso y jerarquía territorial; ciudad coralina es opcional.
   atmosphere_and_mood: Maravillosa, elegante y peligrosamente impredecible.
-  rendering_and_quality: "Underwater exploration gameplay frame: routes, territory, guardian threat, depth hierarchy readable."
+  rendering_and_quality: 'Underwater exploration gameplay frame: routes, territory, guardian threat, depth hierarchy readable.'
   creative_brief: >-
     Aplica Coral Reef Underkingdom como gramatica original de videojuego sobre cualquier input: conserva su sistema de
     genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura

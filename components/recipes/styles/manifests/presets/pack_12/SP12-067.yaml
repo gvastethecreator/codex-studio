@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Barro profundo, madera húmeda, placas metálicas y fortificaciones improvisadas.
   camera_and_composition: Líneas de avance, rutas de asalto y colapso defensivo sin exigir marisma o fortín.
   atmosphere_and_mood: Opresiva, militar y de desgaste prolongado.
-  rendering_and_quality: "War-campaign gameplay frame: advance lines, siege camp pressure, marsh cover, defense collapse readable."
+  rendering_and_quality: 'War-campaign gameplay frame: advance lines, siege camp pressure, marsh cover, defense collapse readable.'
 avoidRules:
   - watermark
   - text

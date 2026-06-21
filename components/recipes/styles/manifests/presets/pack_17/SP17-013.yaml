@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-013
+packId: pack_17
+name: Acid Dungeon Zine
+category: 3. Acid Dungeon Zine
+domain: dungeon zine
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - acid-dungeon-zine
+  - source-inspired
+visualDna:
+  aesthetic: High-contrast underground dungeon zine with clean black xerox ink, acid colors, occult symbols, and monster-card energy.
+  subject_treatment: A chunky goblin key-priest or skull-armored dungeon clerk, front-facing and iconic, with oversized key relic, claws, and staring eyes.
+  color_and_tone: Dominant black ink over neon lime, lavender, hot pink, poison green, and occasional cyan or red.
+  lighting_and_shadow: Light is graphic rather than realistic, built from flat color fields and black silhouette mass.
+  texture_and_material: Controlled photocopier texture, tidy halftone, restrained stipple, hand-inked hatching, clean paper tooth, and misregistered fills.
+  camera_and_composition: Poster-like centered monsters, boxed panels, tight crops, thick borders, and zine-collage pacing.
+  atmosphere_and_mood: Occult, punk, playful-dark, dungeon-crawling, and abrasive.
+  rendering_and_quality: Crisp screenprint-zine finish with heavy denoise, controlled print texture, and readable clean black shapes.
+  creative_brief: Style extracted from the supplied references, reusable for monsters, knights, castles, relics, icons, or card art.
+avoidRules:
+  - smooth digital painting
+  - photorealism
+  - pastel softness
+  - clean vector art
+  - polished fantasy realism
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-013.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: acid-dungeon-zine
+  categoryName: 3. Acid Dungeon Zine
+  domain: dungeon zine
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - acid-dungeon-zine
+    - source-inspired
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

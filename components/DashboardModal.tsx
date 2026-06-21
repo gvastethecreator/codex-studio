@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, User, Settings, Activity, Download, Database, Layers, HardDrive } from 'lucide-react';
+import { X, User, Download, Database, Layers, HardDrive } from 'lucide-react';
 import type { Workspace } from '../types';
 
 interface DashboardModalProps {
@@ -8,7 +8,6 @@ interface DashboardModalProps {
   imagesCount: number;
   workspaces: Workspace[];
   onExportLegacyVisualBatchSnapshot: () => void;
-  onDeepScan: () => void;
 }
 
 export const DashboardModal: React.FC<DashboardModalProps> = ({
@@ -17,7 +16,6 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
   imagesCount,
   workspaces,
   onExportLegacyVisualBatchSnapshot,
-  onDeepScan,
 }) => {
   if (!isOpen) return null;
 
@@ -109,24 +107,9 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
                 Export Legacy Snapshot
               </button>
             </div>
-            <button
-              type="button"
-              onClick={onDeepScan}
-              className="w-full flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-accent-500/5 hover:bg-accent-500/10 border border-accent-500/10 text-accent-400 hover:text-accent-300 transition-all text-[10px] font-black uppercase tracking-widest cursor-pointer group mt-2"
-            >
-              <Activity size={14} className="animate-pulse" />
-              Recover Saved Snapshots
-            </button>
           </div>
 
-          <div className="pt-4 border-t border-white/5 flex justify-between items-center">
-            <button
-              type="button"
-              className="flex items-center gap-2 px-4 py-2 rounded-xl hover:bg-white/5 text-zinc-500 hover:text-white transition-colors text-xs font-black uppercase tracking-widest cursor-pointer"
-            >
-              <Settings size={16} />
-              Settings
-            </button>
+          <div className="pt-4 border-t border-white/5 flex justify-end">
             <p className="text-[10px] text-zinc-700 font-bold uppercase tracking-widest">
               Codex Studio Preview
             </p>

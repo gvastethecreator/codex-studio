@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Hierro remachado, madera envejecida, cuero reforzado y mecanismos de artillería ritual.
   camera_and_composition: Perspectiva de avance con amenazas frontales/laterales y carriles modulares sin exigir tren literal.
   atmosphere_and_mood: Urgente, cooperativa y épica en movimiento constante.
-  rendering_and_quality: "Train-defense gameplay frame: wagon objectives, damage states, enemy priority, movement lanes clear."
+  rendering_and_quality: 'Train-defense gameplay frame: wagon objectives, damage states, enemy priority, movement lanes clear.'
 avoidRules:
   - watermark
   - text

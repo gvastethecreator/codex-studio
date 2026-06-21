@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-010
+packId: pack_17
+name: Surgical Reliquary Horror
+category: 2. Hunter Gothic & Plague Courts
+domain: gothic fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - hunter-gothic-and-plague-courts
+  - reliquary-horror
+visualDna:
+  aesthetic: Gothic reliquary horror mixing surgical precision, saintly display cases, and medieval ritual equipment.
+  subject_treatment: A tall surgical reliquary golem with glass chest shrine, long gloved arms, brass halo frame, and restrained ritual tools carried like sacred weapons, not a doctor portrait.
+  color_and_tone: Bone white, old brass, deep umber, oxidized green, black velvet, and minimal red seals.
+  lighting_and_shadow: Clear candle key light and cold window accents isolate instruments, faces, and relic silhouettes without murky shadows.
+  texture_and_material: Glass reliquaries, polished steel, wax seals, stained parchment, aged wood, and velvet dust.
+  camera_and_composition: Tabletop altar staging, symmetrical cabinets, close-up object clusters, and shallow depth.
+  atmosphere_and_mood: Clinical, sacred, tense, and taboo without graphic body horror.
+  rendering_and_quality: Gothic still-life illustration with precise objects, clean linework, visible details, and painterly shadow control.
+  creative_brief: Translates any subject into a surgical-gothic relic system of tools, glass, ritual, and restraint.
+avoidRules:
+  - graphic anatomy
+  - modern operating room
+  - sci-fi machinery
+  - plastic props
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-010.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: hunter-gothic-and-plague-courts
+  categoryName: 2. Hunter Gothic & Plague Courts
+  domain: gothic fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - hunter-gothic-and-plague-courts
+    - reliquary-horror
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

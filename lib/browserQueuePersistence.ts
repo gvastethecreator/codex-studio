@@ -1,8 +1,13 @@
 import type { QueueJob } from '../types';
+import {
+  filterPersistableInlineAttachments,
+  MAX_PERSISTED_INLINE_ATTACHMENT_BYTES,
+} from './browserPersistenceBudget';
 
 export const BROWSER_QUEUE_STORAGE_KEY = 'browser-queue-jobs';
 
 const MAX_RESTORED_BROWSER_QUEUE_JOBS = 100;
+const MAX_PERSISTED_INLINE_ATTACHMENT_KB = Math.round(MAX_PERSISTED_INLINE_ATTACHMENT_BYTES / 1024);
 
 function isQueueJob(value: unknown): value is QueueJob {
   if (!value || typeof value !== 'object') return false;
@@ -49,5 +54,18 @@ export function prepareBrowserQueueJobsForRestore(value: unknown): QueueJob[] {
 }
 
 export function prepareBrowserQueueJobsForPersist(jobs: QueueJob[]): QueueJob[] {
-  return jobs.slice(-MAX_RESTORED_BROWSER_QUEUE_JOBS);
+  return jobs.slice(-MAX_RESTORED_BROWSER_QUEUE_JOBS).map((job) => {
+    const attachments = filterPersistableInlineAttachments(job.config.attachments);
+    if (attachments.length === job.config.attachments.length) return job;
+
+    return {
+      ...job,
+      status: 'failed',
+      error: `Reference image omitted from browser queue recovery because it exceeded ${MAX_PERSISTED_INLINE_ATTACHMENT_KB} KB. Re-add the reference and retry.`,
+      config: {
+        ...job.config,
+        attachments,
+      },
+    };
+  });
 }

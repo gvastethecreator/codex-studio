@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-019
+packId: pack_17
+name: Futuristic Medieval Citadel
+category: 4. Futuristic Medieval & Rune Tech
+domain: futuristic medieval
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - futuristic-medieval-and-rune-tech
+  - future-citadel
+visualDna:
+  aesthetic: Futuristic medieval citadel style merging castle massing, rune light, brutalist metal, and sacred technology.
+  subject_treatment: A future-feudal oath knight riding a hovering ceramic destrier, carrying a transparent rune shield and folded banner drones, with citadel towers only as distant silhouettes.
+  color_and_tone: Warm stone gray, ceramic white, cold cyan runes, tarnished gold trim, muted navy, and restrained black contour lines.
+  lighting_and_shadow: Cool rune glow from shield and saddle plus soft daylight on armor plates; large simple shadow shapes keep tech readable.
+  texture_and_material: Ceramic armor, brushed metal joints, carved stone saddle, illuminated glass runes, worn oath cloth, and matte banner fabric.
+  camera_and_composition: Three-quarter mounted hero crop, destrier hovering over a bridge slab, distant vertical citadel shapes, and clean negative sky planes.
+  atmosphere_and_mood: Oath-bound, severe, ceremonial, and futuristic without becoming sleek cyberpunk.
+  rendering_and_quality: Futuristic medieval digital illustration with crisp architecture, readable tech motifs, defined lines, and medieval silhouette logic.
+  creative_brief: Makes any subject feel like part of a future-feudal order built on castles, vows, and rune technology.
+avoidRules:
+  - neon city cyberpunk
+  - spaceship cockpit
+  - glossy white sci-fi
+  - modern streetwear
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-019.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: futuristic-medieval-and-rune-tech
+  categoryName: 4. Futuristic Medieval & Rune Tech
+  domain: futuristic medieval
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - futuristic-medieval-and-rune-tech
+    - future-citadel
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

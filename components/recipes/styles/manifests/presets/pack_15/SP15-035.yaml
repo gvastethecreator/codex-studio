@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-035
 packId: pack_15
-name: Abyssal Neon Reef
-category: 13. Corepunk — Seapunk
+name: Kelp Arcade Boardwalk
+category: 5. Ocean, Ice & Terrain Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
+  - punk-spectrum-vault
+  - ocean-ice-and-terrain-punks
   - seapunk
+  - arcade
 visualDna:
-  aesthetic: Abyssal rave ecology where pressure architecture hides inside living neon reef and darkness becomes a material.
-  form_and_line: Pressure-dome curves, lock-ring collars, branching reef antennae, descending cable arcs, and bubble clusters.
-  color_palette: Abyss ultramarine, neon violet, electric cyan, black water, and pale mineral glow.
-  lighting_setup: Pulsing bioluminescent ribs, narrow submersible beams, sonar flashes, and particulate sparkle swallowed by darkness.
-  material_texture: Pressure glass, bio-resin shells, mineral-encrusted frames, wet luminous coral skins, and rubber seal bands.
-  render_quality: Cinematic underwater concept with clean pressure-depth layering and no generic aquarium prettiness.
-  spatial_distortion: Vertical descent composition stacks glow layers like pressure zones, making distance feel heavy and submerged.
-  atmosphere: Subaquatic nightlife, alien intimacy, adaptive resilience, and beautiful claustrophobia.
-  key_features: Neon coral arrays, pressure-lock collars, sonar rings, black-water voids, and submersible-scar detailing.
-  creative_brief: 'Sink the input into pressure-lit abyssal nightlife: black-water voids, sonar rings, pressure-lock collars, neon coral ribs, and mineral-encrusted glow should make darkness feel structural. Reefs or submersible cues may appear, but the style is resilient beauty under heavy water. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: playful seapunk arcade as a flat graphic digital-illustration card built around a coastal arcade boardwalk tangled with kelp cables, abstract neon fish lights, players, and salt-stained cabinets.
+  form_and_line: Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses kelp cables, arcade cabinets, players, neon fish shapes, boardwalk planks.
+  color_palette: kelp green, arcade pink, salt white, ocean blue
+  lighting_setup: arcade neon, sunset bounce, cabinet glow, wet-board reflections
+  material_texture: arcade plastic color blocks, broad kelp cable arcs, salt crust marks, painted wood planes, rain-jacket silhouettes
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: fun, strange, salty, energetic
+  key_features: kelp cables, arcade cabinets, players, neon fish shapes, boardwalk planks
+  creative_brief: 'A seapunk entertainment preset: one boardwalk arcade runner/player protagonist, machines, and kelp tech, not object-only cabinet still life. Keep it representative through a short coastal boardwalk corner, player silhouettes, chunky arcade cabinet shapes, broad kelp-cable arcs, and abstract neon fish lights without text. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - dry-desert-elements
-  - medieval-castle
-  - bland-neutral
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-035.webp
 attributes:
-  negativePrompt: photoreal, dry-desert-elements, medieval-castle, bland-neutral, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, readable screen UI, game title text, logos, mascot poster, object-only arcade cabinet, long boardwalk corridor, market pier, photoreal wet reflections, dense cable kelp spaghetti, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-seapunk
-  categoryName: 13. Corepunk — Seapunk
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
+    - punk-spectrum-vault
+    - ocean-ice-and-terrain-punks
     - seapunk
+    - arcade
   supportedTasks:
     - image_generate
     - image_edit

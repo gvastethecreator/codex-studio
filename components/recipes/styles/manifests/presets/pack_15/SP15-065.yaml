@@ -1,48 +1,53 @@
 schemaVersion: 1
 id: SP15-065
 packId: pack_15
-name: Pulp Observatory Ridge
-category: 10. Corepunk — Raypunk
+name: Neon Isotope Plaza
+category: 9. Space, Atomic & Ray Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - raypunk
+  - punk-spectrum-vault
+  - space-atomic-and-ray-punks
+  - atompunk
+  - civic-plaza
 visualDna:
-  aesthetic: Paranoid exploration style where observation equipment looks half scientific instrument, half warning shrine.
-  form_and_line: Clustered glass domes, needle scanning spires, ridge-like catwalk strokes, radar petal shapes, and horizon-measuring cables.
-  color_palette: Nebula night blue, aged amber, signal white, oxidized red, and cold moon gray.
-  lighting_setup: Telescope lens glow, cold moon edge light, blinking emergency beacons, and amber map-table pools.
-  material_texture: Painted alloy shells, scratched glass domes, cable mesh, wind-battered enamel, and taped paper star charts.
-  render_quality: Atmospheric exploration concept with tactical readability and poetic unease.
-  spatial_distortion: Ridge-to-sky composition where horizon lines stretch like threat vectors through instruments.
-  atmosphere: Curiosity, strategic vigilance, lonely weather, and discovery under siege.
-  key_features: Radar dish petals, chart-window grids, emergency beacon stacks, ridge-line silhouettes, and nebula route scars.
-  creative_brief: 'Make the input watch a beautiful threat: radar-petal silhouettes, scratched glass domes, emergency beacons, taped star charts, and horizon vectors should turn curiosity defensive. Ridge or observatory cues can appear, but the style is lonely vigilance under cosmic weather. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: atompunk civic neon built around one distinctive isotope-plaza protagonist, atomic fountain glow, blank isotope orbits, chrome curves, and polished midcentury surfaces.
+  form_and_line: Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses isotope-plaza protagonist, atomic fountain, blank isotope orbits, chrome curves, terrazzo patterns.
+  color_palette: uranium green, coral red, cream, chrome
+  lighting_setup: neon isotope glow, atomic fountain light, clean evening sky
+  material_texture: chrome, terrazzo, neon tubes, enamel panels, polished stone
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: bright, optimistic, strange, civic
+  key_features: isotope-plaza protagonist, isotope orbits, atomic fountain, chrome curves, terrazzo blocks
+  creative_brief: 'Atompunk as public life through a character: one distinctive isotope-plaza protagonist near an atomic fountain, blank isotope-orbit geometry, chrome curves, terrazzo blocks, and midcentury optimism with uneasy glow. The fountain and plaza support the protagonist; they must not become an object-only civic poster. Avoid crowd-as-subject, families/workers stock illustration, worker propaganda, science diagram, luxury mall, or empty plaza postcard. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - cyberpunk-noise
-  - medieval
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-065.webp
 attributes:
-  negativePrompt: photoreal, cyberpunk-noise, medieval, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, readable signs, radiation trefoil, hazard logo, flag emblem, brand logo, UI, numbers, text, luxury mall, photoreal chrome, glossy archviz, empty plaza postcard, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-raypunk
-  categoryName: 10. Corepunk — Raypunk
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - raypunk
+    - punk-spectrum-vault
+    - space-atomic-and-ray-punks
+    - atompunk
+    - civic-plaza
   supportedTasks:
     - image_generate
     - image_edit

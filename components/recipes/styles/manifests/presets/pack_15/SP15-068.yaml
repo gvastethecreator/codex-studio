@@ -1,48 +1,53 @@
 schemaVersion: 1
 id: SP15-068
 packId: pack_15
-name: Nebula Boarding Lounge
-category: 10. Corepunk — Raypunk
+name: Rocket Chapel Outpost
+category: 9. Space, Atomic & Ray Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
+  - punk-spectrum-vault
+  - space-atomic-and-ray-punks
   - raypunk
+  - outpost
 visualDna:
-  aesthetic: Luxurious departure myth where threshold design points toward impossible distance.
-  form_and_line: Crescent lounge arcs, translucent tube bands, gate-pylon crowns, pearl ribs, and cruiser silhouettes staged like idols.
-  color_palette: Nebula violet, ion cyan, pearl white, soft chrome, and tiny rose status lights.
-  lighting_setup: Soft terminal glow, nebula backlight through glass, under-seat cyan halos, and pearl rimlight on gate crowns.
-  material_texture: Gloss composites, polished rails, transparent membranes, padded travel leather, and frosted itinerary glass.
-  render_quality: Premium transit concept scene with elegant pacing and strong threshold design.
-  spatial_distortion: Gate-depth perspective leading through arcs, tubes, and glass toward mythic departure silhouettes.
-  atmosphere: Anticipation, interstellar sophistication, quiet anxiety, and expensive wonder.
-  key_features: Departure crescents, mission alcoves, launch constellations, tube membranes, and cruiser-idol views.
-  creative_brief: 'Polish the input into a departure threshold: pearl ribs, translucent gate membranes, nebula violet backlight, rose status lights, and crescent lounge arcs should make comfort face cosmic risk. Boarding lounge cues can appear, but the style is elegant anticipation before impossible distance. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: raypunk frontier outpost built around one distinctive outpost keeper protagonist, rocket fins, simple antenna arcs, desert dust, and sparse desert-night stars.
+  form_and_line: Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses outpost keeper protagonist, rocket fins, antenna arcs, desert dust, sparse star sky.
+  color_palette: rocket white, desert red, teal shadow, star gray
+  lighting_setup: sparse star dots, outpost glow, moonlit fins, teal shadow planes
+  material_texture: painted rocket metal, desert stone, canvas suits, antenna wire, dust
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: lonely, hopeful, frontier, symbolic
+  key_features: outpost keeper protagonist, rocket fins, antenna masts, desert dust planes, sparse star dots
+  creative_brief: 'Raypunk frontier with human scale through one character: a distinctive outpost keeper protagonist posed with rocket fins and simple antenna masts, dust planes, desert color blocks, and sparse star dots, not generic spaceship concept art or religious chapel staging. The outpost supports the protagonist; it must not become object-only rocket architecture. Avoid settler crowd as main subject, worker frontier poster, cockpit scene, weapon hero, religious iconography, or starfield wallpaper. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - medieval
-  - cyberpunk-grime
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-068.webp
 attributes:
-  negativePrompt: photoreal, medieval, cyberpunk-grime, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, cross antenna, religious icon, altar, chapel interior, readable insignia, rocket logo, cockpit glow, cockpit UI, starfield wallpaper, heroic spaceship poster, raygun, weapon hero, photoreal rocket metal, dusty realism, generic soldier hero, guard pin-up, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-raypunk
-  categoryName: 10. Corepunk — Raypunk
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
+    - punk-spectrum-vault
+    - space-atomic-and-ray-punks
     - raypunk
+    - outpost
   supportedTasks:
     - image_generate
     - image_edit

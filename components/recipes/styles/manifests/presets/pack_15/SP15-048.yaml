@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-048
 packId: pack_15
-name: Isotope Night Observatory
-category: 8. Corepunk — Atompunk
+name: Mutual Aid Food Printer
+category: 6. Street, Riot & DIY Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - atompunk
+  - punk-spectrum-vault
+  - street-riot-and-diy-punks
+  - commons-punk
+  - street-kitchen
 visualDna:
-  aesthetic: Quiet isotope astronomy where compact power keeps night sacred, instruments precise, and civic curiosity almost devotional.
-  form_and_line: Rotating dome shells, cantilever plates, radial instrument bays, telescope-ring halos, and star-chart coordinate lines.
-  color_palette: Deep navy, mint isotope glow, steel white, matte black, and faint amber notation marks.
-  lighting_setup: Low-light discipline, telescope ring luminance, mint battery glows, and soft horizon spill kept below stargazing threshold.
-  material_texture: Matte metal shells, anti-reflective glass, insulated deck panels, rubberized grips, and enamel star-chart plates.
-  render_quality: Precision concept balancing poetic darkness, instrument legibility, and quiet scientific drama.
-  spatial_distortion: Elevated dome-like composition aligns horizon, aperture, and instrument axis into a contemplative vector.
-  atmosphere: Wonder, collective curiosity, night restraint, and compact-power reverence.
-  key_features: Isotope telescope rings, astronomy pod modules, aperture lips, calibrated star charts, and low-glow warning tags.
-  creative_brief: 'Darken the input into disciplined isotope astronomy: mint power glows, anti-reflective black shells, telescope-ring halos, star-chart plates, and low-light restraint should protect wonder. Observatory cues can appear, but the style is compact power kept quiet under night. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: commons street tech built around a street kitchen using hacked food printers, crates, volunteers, queue lines, and steam in a hard city block.
+  form_and_line: Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges. Core composition uses food printers, volunteer line, crates, steam, street kitchen tables.
+  color_palette: tomato red, stainless steel, cardboard tan, street black
+  lighting_setup: steam glow, portable lamps, cloudy daylight, warm queue light
+  material_texture: cardboard, steel trays, food steam, aprons, cracked pavement
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: generous, busy, stubborn, practical
+  key_features: food printers, volunteer line, crates, steam, street kitchen tables
+  creative_brief: 'Commons punk should feed people: queues, hacked machines, volunteers, and city grit, not abstract utopian icons. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital painting, cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - bright-daylook
-  - medieval
-  - cyberpunk-noise
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-048.webp
 attributes:
-  negativePrompt: photoreal, bright-daylook, medieval, cyberpunk-noise, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, flag, banner, protest placard, fist symbol, spoon symbol, emblem, badge, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-atompunk
-  categoryName: 8. Corepunk — Atompunk
+  packName: Punk Spectrum Vault
+  categoryId: street-riot-and-diy-punks
+  categoryName: 6. Street, Riot & DIY Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - atompunk
+    - punk-spectrum-vault
+    - street-riot-and-diy-punks
+    - commons-punk
+    - street-kitchen
   supportedTasks:
     - image_generate
     - image_edit

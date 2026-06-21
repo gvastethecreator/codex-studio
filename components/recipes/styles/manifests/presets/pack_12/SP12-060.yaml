@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Escombro, mármol quebrado, acero dañado y restos de fortificación improvisada.
   camera_and_composition: Línea de defensa, flancos y puntos de colapso legibles sin exigir basílica o escalinata.
   atmosphere_and_mood: Heroica, sacrificial y al máximo de tensión.
-  rendering_and_quality: "Last-stand gameplay screencap: wave telegraphs, defended objective, survival distance, collapse points clear."
+  rendering_and_quality: 'Last-stand gameplay screencap: wave telegraphs, defended objective, survival distance, collapse points clear.'
 avoidRules:
   - watermark
   - text

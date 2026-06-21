@@ -47,6 +47,7 @@ export interface StudioImageOverlaysProps {
 export interface StudioSystemOverlayFlags {
   isDebugPanelOpen: boolean;
   isDashboardModalOpen: boolean;
+  isChatPanelOpen: boolean;
   isLoadingSelectedJob: boolean;
   isCheckingOnboarding: boolean;
   isDesktopRuntime: boolean;
@@ -64,6 +65,7 @@ export interface StudioSystemOverlayFlags {
 export interface StudioSystemOverlaysProps {
   flags: StudioSystemOverlayFlags;
   closeDebugPanel: () => void;
+  closeChatPanel: () => void;
   mergedLogs: LogEntry[];
   closeDashboard: () => void;
   visualGroupsCount: number;
@@ -74,8 +76,14 @@ export interface StudioSystemOverlaysProps {
   onInspectJob: (jobId: string) => void;
   onClearSelectedJob: () => void;
   onRetryJob?: (jobId: string) => void;
+  handleGenerate: (
+    promptOverride?: string,
+    configOverrides?: Partial<ImageGenerationConfig>,
+    options?: { force?: boolean; preventModal?: boolean; useCurrentAttachments?: boolean },
+  ) => void;
+  isGenerating: boolean;
+  activeProviderId: string;
   handleExportLegacyVisualBatchSnapshot: () => void;
-  handleDeepScan: () => void | Promise<void>;
   apiBase: string;
   onboardingError: string | null;
   onboardingHealth: HealthResponse | null;

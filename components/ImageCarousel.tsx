@@ -21,6 +21,7 @@ import ActionButton from './ui/ActionButton';
 import Logo from './Logo';
 import { downloadImage, generateSmartFilename } from '../utils/fileUtils';
 import { finishCarouselSlideState } from '../lib/imageCarouselState';
+import { buildCarouselThumbnailWindow } from '../lib/imageCarouselThumbnails';
 
 import { TopToolbar } from './ui/TopToolbar';
 import { BottomToolbar } from './ui/BottomToolbar';
@@ -391,7 +392,9 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
       onActiveImageChange(allImages[index].id);
 
       if (navScrollRef.current) {
-        const btn = navScrollRef.current.children[index] as HTMLElement;
+        const btn = navScrollRef.current.querySelector(
+          `[data-carousel-index="${index}"]`,
+        ) as HTMLElement | null;
         if (btn) btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
       }
     },
@@ -444,6 +447,10 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
 
   const currentImage =
     activeIndex >= 0 && activeIndex < allImages.length ? allImages[activeIndex] : activeImage;
+  const thumbnailWindow = useMemo(
+    () => buildCarouselThumbnailWindow(allImages, activeIndex),
+    [activeIndex, allImages],
+  );
 
   const executeDownload = async () => {
     if (!currentImage || isProcessingDownloadRef.current) return;
@@ -501,10 +508,11 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
             ref={navScrollRef}
             className="flex-1 flex items-center gap-2 overflow-x-auto custom-scrollbar p-1 snap-x justify-center"
           >
-            {allImages.map((img, idx) => (
+            {thumbnailWindow.map(({ item: img, index: idx }) => (
               <button
                 type="button"
                 key={img.id}
+                data-carousel-index={idx}
                 onClick={() => handleJumpTo(idx)}
                 className={`relative size-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-all duration-300
                             ${
@@ -519,6 +527,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
                   alt=""
                   className="size-full object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
                 {img.isFavorite && (
                   <div className="absolute top-1 right-1">

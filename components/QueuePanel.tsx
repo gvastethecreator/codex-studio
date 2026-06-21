@@ -33,6 +33,7 @@ interface QueuePanelProps {
   onInspectJob: (jobId: string) => void;
   onRetryServerJob?: (jobId: string) => void;
   onCancelServerJob: (jobId: string) => void;
+  onClose?: () => void;
 }
 
 const localStatusConfig: Record<
@@ -142,6 +143,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     onInspectJob,
     onRetryServerJob,
     onCancelServerJob,
+    onClose,
   }) => {
     const [isLocalQueueOpen, setIsLocalQueueOpen] = useState(true);
     const [isServerQueueOpen, setIsServerQueueOpen] = useState(true);
@@ -179,7 +181,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     const totalJobs = jobs.length + serverJobs.length;
 
     return (
-      <div className="flex h-full w-80 flex-col border-l border-white/10 bg-black/40 backdrop-blur-xl">
+      <div className="flex h-full w-full flex-col border-l border-white/10 bg-black/40 backdrop-blur-xl sm:w-80">
         <div className="flex items-center justify-between border-b border-white/10 bg-white/5 p-4">
           <div className="flex items-center gap-2">
             <div className="rounded-lg bg-accent-500/20 p-1.5 text-accent-400">
@@ -193,16 +195,28 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             </div>
           </div>
 
-          {(completedCount > 0 || jobs.some((job) => job.status === 'cancelled')) && (
-            <button
-              type="button"
-              onClick={onClearCompleted}
-              className="rounded-lg p-2 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
-              title="Clear completed"
-            >
-              <Trash2 size={16} />
-            </button>
-          )}
+          <div className="flex items-center gap-1">
+            {(completedCount > 0 || jobs.some((job) => job.status === 'cancelled')) && (
+              <button
+                type="button"
+                onClick={onClearCompleted}
+                className="rounded-lg p-2 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
+                title="Clear completed"
+              >
+                <Trash2 size={16} />
+              </button>
+            )}
+            {onClose ? (
+              <button
+                type="button"
+                onClick={onClose}
+                className="rounded-lg p-2 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
+                title="Close queue"
+              >
+                <XCircle size={16} />
+              </button>
+            ) : null}
+          </div>
         </div>
 
         <div className="grid grid-cols-4 gap-px border-b border-white/10 bg-white/10">

@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-039
+packId: pack_17
+name: Scholastic Marginalia Beasts
+category: 6. Monochrome Tarot & Bestiary Plates
+domain: medieval marginalia fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - monochrome-tarot-and-bestiary-plates
+  - marginalia-beasts
+visualDna:
+  aesthetic: Playful but eerie medieval marginalia with odd beasts, monkish diagrams, small grotesques, and clean parchment space.
+  subject_treatment: A scholastic marginalia scene led by a snail-knight, winged head, tiny demon, or scholar beast, playful and strange but textless.
+  color_and_tone: Parchment, dark brown ink, dull red, faded blue, olive green, and wide blank margins.
+  lighting_and_shadow: Flat manuscript light with simple object shadows only when useful.
+  texture_and_material: Pen outlines, small flat color fills, smooth parchment, and sparse decorative marks.
+  camera_and_composition: Asymmetrical manuscript margin crop, one large funny-strange creature, and small support motifs without words.
+  atmosphere_and_mood: Strange, witty, medieval, unsettling, and collectible.
+  rendering_and_quality: Clean line illustration with low detail density and generous negative space.
+  creative_brief: Original marginalia style for weird bestiary creatures, monk doodles, occult jokes, and medieval fantasy side-notes.
+avoidRules:
+  - readable manuscript text
+  - cluttered page full of drawings
+  - dense hatch texture
+  - modern cartoon look
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-039.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: monochrome-tarot-and-bestiary-plates
+  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  domain: medieval marginalia fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - monochrome-tarot-and-bestiary-plates
+    - marginalia-beasts
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

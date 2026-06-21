@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-015
 packId: pack_15
-name: Sunset Mall Mirage
-category: 5. Corepunk — Vaporpunk
+name: Drone Graffiti Overpass
+category: 2. Neon, Net & Signal Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - vaporpunk
+  - punk-spectrum-vault
+  - neon-net-and-signal-punks
+  - cyberpunk
+  - drone-graffiti
 visualDna:
-  aesthetic: Dreamy vaporpunk blending nostalgic consumer architecture, humid leisure, and climate-adaptive public softness.
-  form_and_line: Escalator-like ribbon diagonals, palm-grid rhythms, and mirrored geometric facade logic.
-  color_palette: Lavender pink, aqua cyan, and warm peach sunset.
-  lighting_setup: Soft neon dusk with glossy reflections on polished acrylic-like surfaces.
-  material_texture: Frosted acrylic, terrazzo tiles, reflective chrome, and humid foliage.
-  render_quality: Stylized high-fidelity vaporpunk treatment with crisp retro-futurist silhouette control.
-  spatial_distortion: Mirrored depth guiding toward a luminous civic leisure node.
-  atmosphere: Melancholic joy, ambient leisure, and curated digital nostalgia.
-  key_features: Retro signage monoliths, mirrored pool logic, synthetic palm silhouettes, and open social spacing.
-  creative_brief: 'Bathe the input in climate-adapted vaporpunk leisure: lavender acrylic reflections, aqua mirage depth, terrazzo softness, synthetic palm rhythm, and sunset chrome. Malls, fountains, signage blocks, palms, or plazas are optional anchors; the style is nostalgic public softness with humid glow. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: street drone cyberpunk as a flat-to-painterly poster card built around overpass crews painting abstract color fields with small tool-drones and hacked traffic-light dots.
+  form_and_line: Sharp but simplified network geometry, non-readable street rhythm, a few thick cable paths, matte concrete planes, and hacker-era silhouettes. Core composition uses paint drones, abstract spray blocks, overpass concrete, crew gestures, hacked lights.
+  color_palette: spray red, toxic green, concrete gray, black night
+  lighting_setup: drone LED color dots, flat projection color blocks, traffic-light cuts, underpass shadow planes
+  material_texture: abstract spray paint blocks, concrete planes, simple drone shells, matte dust, jacket color shapes
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: playful, illegal, kinetic, urban
+  key_features: paint drones, projection mist, overpass concrete, crew gestures, hacked lights
+  creative_brief: 'A street-tech preset: drones are tools in motion, not decorative birds or camera props held by subjects. Graffiti must be abstract color, never readable tags. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - gritty-realism
-  - warlike
-  - horror
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-015.webp
 attributes:
-  negativePrompt: photoreal, gritty-realism, warlike, horror, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, readable graffiti text, readable tags, logo tag, camera drone hero, bird-like drones, photoreal underpass, corridor tunnel, dense projection mist, HDR lens realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-vaporpunk
-  categoryName: 5. Corepunk — Vaporpunk
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - vaporpunk
+    - punk-spectrum-vault
+    - neon-net-and-signal-punks
+    - cyberpunk
+    - drone-graffiti
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-036
 packId: pack_15
-name: Tideglass Subway
-category: 13. Corepunk — Seapunk
+name: Shell Metro Pier
+category: 5. Ocean, Ice & Terrain Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
+  - punk-spectrum-vault
+  - ocean-ice-and-terrain-punks
   - seapunk
+  - pier
 visualDna:
-  aesthetic: Transparent velocity seapunk where engineered waves become an aquarium of motion.
-  form_and_line: Tideglass cylinders, wavebreaker fins, gasket rings, modular knots, and long ribbons bending through water.
-  color_palette: Aqua glass, coral pink, midnight blue, stainless salt gray, and pale kelp green.
-  lighting_setup: Moving caustic bands, linear LEDs, passing shadow silhouettes, and refracted station glow on wet walkways.
-  material_texture: Reinforced tideglass, anti-salt alloys, damp composite floors, condensation streaks, rubber seals, and algae-filter grates.
-  render_quality: Detailed infrastructure concept with kinetic framing and believable pressure-control logic.
-  spatial_distortion: Tube-like vanishing lines bend through refraction, motion blur, and fishlike silhouettes.
-  atmosphere: Fast coastal energy, civic fluidity, public wonder, and controlled pressure risk.
-  key_features: Tideglass bands, reef transfer knots, kelp-powered vents, wave-pressure seals, and caustic map-like patterns.
-  creative_brief: 'Bend the input through tideglass velocity: refracted tube lines, gasket rings, caustic bands, algae-filter grates, and controlled pressure seams should imply fast public motion. Subway or station cues are optional; the style is transparent coastal speed inside engineered waves. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: shell-built civic seapunk as a flat graphic digital-illustration card built around a metro pier grown from shell-like panels, ticket gates, ferry crowds, and tidal service machines.
+  form_and_line: Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses shell panels, ferry crowd, service machines, tidal gates, wet pier geometry.
+  color_palette: shell ivory, teal, rust orange, deep tide gray
+  lighting_setup: pier canopy light, tidal reflections, ticket-gate LEDs
+  material_texture: shell ceramic panels, salt metal blocks, simple ferry rope arcs, wet concrete planes, blank enamel shapes
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: busy, civic, brackish, architectural
+  key_features: shell panels, ferry crowd, service machines, tidal gates, wet pier geometry
+  creative_brief: 'Make seapunk civic and transport-heavy: one ferry-pier transit keeper or commuter protagonist framed by shell architecture and machines, not fantasy palace shells. Keep it representative through ferry-pier entrance, shell canopy panels, simple ticket-gate blocks, ferry crowd silhouettes, and tidal service machines. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - diesel-smog
-  - rural-medieval
-  - grim-warzone
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-036.webp
 attributes:
-  negativePrompt: photoreal, diesel-smog, rural-medieval, grim-warzone, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, fantasy palace shells, mall terminal, cathedral station hall, long pier corridor, readable signage, logo badges, luxury resort dock, photoreal wet concrete, overcrowded crowd texture, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-seapunk
-  categoryName: 13. Corepunk — Seapunk
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
+    - punk-spectrum-vault
+    - ocean-ice-and-terrain-punks
     - seapunk
+    - pier
   supportedTasks:
     - image_generate
     - image_edit

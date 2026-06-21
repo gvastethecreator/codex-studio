@@ -7,7 +7,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP12-016',
     name: 'Shadow Opera Assassin Court',
     category: '7. Heists, Horror & Underworld Runs',
-    negativePrompt: 'watermark, text, logo, sci-fi-ui, flat-colors',
+    negativePrompt:
+      'watermark, text, logo, sci-fi-ui, flat-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática immersive-sim barroca de infiltración social, sospecha faccional y ejecución silenciosa.',
@@ -23,16 +24,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Tableau con capas de foreground, line-of-sight y rutas silenciosas; corte, ópera o gala son anclas opcionales.',
       atmosphere_and_mood: 'Elegancia letal, paranoia social y tensión ritualizada.',
       rendering_and_quality:
-        'Faction key-art orientado a sandbox sistémico, lectura de sospecha y agencia del jugador.',
+        'Stealth sandbox screencap: suspicion states, disguise routes, social access cues readable.',
       creative_brief:
-        'Aplica Shadow Opera Assassin Court como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Shadow Opera Assassin Court como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-019',
     name: 'Forgotten Subway Mutation Zone',
     category: '7. Heists, Horror & Underworld Runs',
-    negativePrompt: 'watermark, text, logo, cheerful-light, clean-surfaces',
+    negativePrompt:
+      'watermark, text, logo, cheerful-light, clean-surfaces, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática survival-horror postindustrial con recursos escasos, stealth, proximidad y mutación húmeda.',
@@ -48,14 +50,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Profundidad estrecha, evasión lateral y visibilidad rota como tensión; no requiere metro ni pasillos concretos.',
       atmosphere_and_mood: 'Opresiva, incómoda y paranoica.',
       rendering_and_quality:
-        'Horror gameplay con tensión ambiental sostenida y telemetría visual de peligro.',
+        'Survival-horror gameplay frame: danger telemetry, escape route, mutation pressure readable.',
     },
   },
   {
     id: 'SP12-024',
     name: 'Temple Runner Trap Gauntlet',
     category: '7. Heists, Horror & Underworld Runs',
-    negativePrompt: 'watermark, text, logo, static, flat-light',
+    negativePrompt:
+      'watermark, text, logo, static, flat-light, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática runner-adventure de trampas mecánicas con timing, reflejos, memoria de patrón y telegraph inmediato.',
@@ -71,14 +74,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Perspectiva de fuga, lanes y puntos de salto inequívocos como estructura, sin exigir gauntlet o templo.',
       atmosphere_and_mood: 'Urgente, rítmica y punitiva, de riesgo constante.',
       rendering_and_quality:
-        'Entorno endless-runner gameplay-first con lectura instantánea de hazards y ritmo.',
+        'Runner gameplay screencap: trap rhythm, hazard spacing, dodge timing, traversal path readable.',
     },
   },
   {
     id: 'SP12-030',
     name: 'Cursed Carnival Showdown',
     category: '7. Heists, Horror & Underworld Runs',
-    negativePrompt: 'watermark, text, logo, clean-theme, low-contrast',
+    negativePrompt:
+      'watermark, text, logo, clean-theme, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática horror-action carnavalesca con telegraphs engañosos, zonas corruptas y espectáculo grotesco de boss.',
@@ -94,14 +98,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Choke-points, revelación escalonada y funnels de presión sin exigir parque, showdown o arena fija.',
       atmosphere_and_mood: 'Macabra, burlona y crecientemente impredecible.',
       rendering_and_quality:
-        'Encounter key-art de alto impacto con legibilidad de fases de boss y hazards ambientales grotescos.',
+        'Boss-showdown gameplay screencap: phase hazards, grotesque arena beats, dodge space readable.',
     },
   },
   {
     id: 'SP12-049',
     name: 'Thorn Castle Moon Raid',
     category: '7. Heists, Horror & Underworld Runs',
-    negativePrompt: 'watermark, text, logo, daylight, flat',
+    negativePrompt:
+      'watermark, text, logo, daylight, flat, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática dungeon-raid nocturna con espinas arcanas, asalto coordinado y capas defensivas.',
@@ -117,14 +122,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Punto de entrada claro, rutas secundarias y capas defensivas sin exigir castillo o murallas.',
       atmosphere_and_mood: 'Calculada, valiente y tensa en cooperación.',
       rendering_and_quality:
-        'Raid-opening gameplay art con claridad de acceso, amenaza y priorización táctica.',
+        'Raid-opening gameplay frame: moonlit access, threat layers, tactical priority, escape routes readable.',
     },
   },
   {
     id: 'SP12-050',
     name: 'Polar Signal Tower Outbreak',
     category: '7. Heists, Horror & Underworld Runs',
-    negativePrompt: 'watermark, text, logo, tropical, lowres',
+    negativePrompt:
+      'watermark, text, logo, tropical, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática survival-horror polar con reparación de sistemas, defensa de perímetro, baliza rota y aislamiento.',
@@ -140,14 +146,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Nodo central, rutas de acceso y puntos de fallo identificables sin exigir torre o estación.',
       atmosphere_and_mood: 'Aislada, paranoica y resistente.',
       rendering_and_quality:
-        'Survival gameplay visual con identidad fuerte y telemetría clara de riesgo operativo.',
+        'Survival-outbreak gameplay screencap: signal objective, infection risk, weather cover, route pressure clear.',
     },
   },
   {
     id: 'SP12-054',
     name: 'Copper Canyon Train Robbery',
     category: '7. Heists, Horror & Underworld Runs',
-    negativePrompt: 'watermark, text, logo, rainy-city, low-detail',
+    negativePrompt:
+      'watermark, text, logo, rainy-city, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática heist-western futurista con abordaje, saqueo, escape en movimiento y polvo cobrizo.',
@@ -161,14 +168,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Diagonal de movimiento con puntos de salto, abordaje y repliegue sin exigir tren literal.',
       atmosphere_and_mood: 'Explosiva, audaz y narrativamente tensa.',
       rendering_and_quality:
-        'Mission key-art gameplay-first con claridad de objetivo, botín y extracción.',
+        'Heist mission gameplay screencap: train objective, loot route, extraction timing, guard pressure clear.',
     },
   },
   {
     id: 'SP12-057',
     name: 'Verdigris Harbor Pirate Skies',
     category: '7. Heists, Horror & Underworld Runs',
-    negativePrompt: 'watermark, text, logo, modern-cars, low-detail',
+    negativePrompt:
+      'watermark, text, logo, modern-cars, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática sky-piracy aeronaval con abordaje aéreo, dominio de carriles, botín oportunista y pátina verdigris.',
@@ -184,14 +192,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Diagonal aérea, capas de altitud y trayectorias cruzadas sin exigir puerto o combate literal.',
       atmosphere_and_mood: 'Agressiva, codiciosa y espectacularmente tormentosa.',
       rendering_and_quality:
-        'Faction splash gameplay-first con lectura nítida de abordaje, flagship priority y escala aérea.',
+        'Airship boarding gameplay frame: flagship priority, approach vectors, pirate-sky scale readable.',
     },
   },
   {
     id: 'SP12-066',
     name: 'Abyss Rail Horror Transit',
     category: '7. Heists, Horror & Underworld Runs',
-    negativePrompt: 'watermark, text, logo, cheerful, lowres',
+    negativePrompt:
+      'watermark, text, logo, cheerful, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática transit-survival horror abisal con encierro, fallo sistémico y amenaza no visible.',
@@ -207,14 +216,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Sightlines cerradas, choke-points, oclusiones y fuga ansiosa de profundidad sin exigir vagón.',
       atmosphere_and_mood: 'Claustrofóbica, paranoica y de urgencia extrema.',
       rendering_and_quality:
-        'Survival-horror gameplay art con control fino de tensión y lectura ambiental del miedo.',
+        'Survival-horror transit gameplay screencap: carriage routes, abyss pressure, fear cues readable.',
     },
   },
   {
     id: 'SP12-069',
     name: 'Static Dune Radio Wars',
     category: '7. Heists, Horror & Underworld Runs',
-    negativePrompt: 'watermark, text, logo, fantasy-castle, low-detail',
+    negativePrompt:
+      'watermark, text, logo, fantasy-castle, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática objective-warfare de señal con captura, interferencia, estática eléctrica y control territorial.',
@@ -230,7 +240,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Objetivos dominantes, rutas de aproximación y zonas contestadas sin exigir dunas o torres literales.',
       atmosphere_and_mood: 'Estratégica, hostil y de supervivencia informacional.',
       rendering_and_quality:
-        'Dynamic objective-mode gameplay art con legibilidad de control de señal y prioridad táctica.',
+        'Objective-mode gameplay frame: signal control, dune cover, radio priority, tactical pressure readable.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

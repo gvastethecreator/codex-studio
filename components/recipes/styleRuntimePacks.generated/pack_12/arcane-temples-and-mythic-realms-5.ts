@@ -7,7 +7,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP12-006',
     name: 'Arcane Library Boss Arena',
     category: '2. Arcane Temples & Mythic Realms',
-    negativePrompt: 'watermark, text, logo, cartoon, flat',
+    negativePrompt:
+      'watermark, text, logo, cartoon, flat, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática boss-arena dark fantasy con telemetría arcana, fases legibles y símbolos como mecánica visual.',
@@ -16,23 +17,24 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Violeta profundo, oro gastado y negro tinta para separar cast windows y estados de fase.',
       lighting_and_shadow:
-        'Círculos rúnicos como UI diegética, iluminación por patrón de ataque y sombras de lectura circular.',
+        'Círculos rúnicos como señalética diegética, iluminación por patrón de ataque y sombras de lectura circular.',
       texture_and_material:
         'Pergamino cuarteado, mármol húmedo, metal ancestral y partículas de polvo ritual en suspensión.',
       camera_and_composition:
         'Composición radial o axial con centro mecánico, perímetro de evasión y lanes de party sugeridos sin requerir arena cerrada.',
       atmosphere_and_mood: 'Solemnidad peligrosa, descubrimiento mecánico y presión de ejecución.',
       rendering_and_quality:
-        'Encounter concept orientado a boss readability, telegraphing claro y jerarquía de amenazas.',
+        'Boss-arena gameplay frame: spell telegraphs, threat hierarchy, dodge lanes visible.',
       creative_brief:
-        'Aplica Arcane Library Boss Arena como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Arcane Library Boss Arena como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-013',
     name: 'Crystal Desert Shrine',
     category: '2. Arcane Temples & Mythic Realms',
-    negativePrompt: 'watermark, text, logo, urban-neon, lowres',
+    negativePrompt:
+      'watermark, text, logo, urban-neon, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática action-adventure mística con puzzle lumínico, refracción cristalina y orientación geométrica ritual.',
@@ -47,16 +49,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Gran angular con líneas guía, nodos puzzle y lectura ceremonial; escaleras o templos sólo si refuerzan la mecánica visual.',
       atmosphere_and_mood: 'Sagrada, silenciosa y analítica, de descubrimiento ritual.',
       rendering_and_quality:
-        'Zone-art premium con readability de mecánicas ópticas y landmarks de exploración.',
+        'Exploration gameplay screencap: optical mechanics, shrine landmarks, traversal decisions clear.',
       creative_brief:
-        'Aplica Crystal Desert Shrine como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Crystal Desert Shrine como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-015',
     name: 'Ancient Mecha Temple',
     category: '2. Arcane Temples & Mythic Realms',
-    negativePrompt: 'watermark, text, logo, clean-modern, flat-light',
+    negativePrompt:
+      'watermark, text, logo, clean-modern, flat-light, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática metroidvania tecno-arcana con gating, activación ancestral, escala monumental y mecha sagrado.',
@@ -72,16 +75,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Escala monumental, rutas bloqueadas y landmarks de progreso; templo o ruina pueden aparecer pero no son obligatorios.',
       atmosphere_and_mood: 'Reverente, misteriosa y arqueotecnológica.',
       rendering_and_quality:
-        'Matte gameplay concept con landmarks de navegación y jerarquía de interacción ambiental.',
+        'Exploration gameplay screencap: ancient mech landmarks, blocked paths, environmental interactions clear.',
       creative_brief:
-        'Aplica Ancient Mecha Temple como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Ancient Mecha Temple como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-020',
     name: 'Celestial Harbor Trade Wars',
     category: '2. Arcane Temples & Mythic Realms',
-    negativePrompt: 'watermark, text, logo, empty-scene, low-detail',
+    negativePrompt:
+      'watermark, text, logo, empty-scene, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática space-trade RPG con economía faccional, diplomacia armada, lujo logístico y rutas interestelares.',
@@ -97,16 +101,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Rutas de tránsito, negociación y disputa como lectura compositiva; no exigir hub, puerto ni muelle físico.',
       atmosphere_and_mood: 'Ambiciosa, diplomática y volátil.',
       rendering_and_quality:
-        'Worldbuilding key art orientado a sistemas de comercio, reputación y control de rutas.',
+        'Trade-RPG gameplay screencap: route control, cargo stakes, reputation pressure, faction economy visible.',
       creative_brief:
-        'Aplica Celestial Harbor Trade Wars como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Celestial Harbor Trade Wars como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-028',
     name: 'Sky Monastery Duel',
     category: '2. Arcane Temples & Mythic Realms',
-    negativePrompt: 'watermark, text, logo, grunge, chaotic-fx',
+    negativePrompt:
+      'watermark, text, logo, grunge, chaotic-fx, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática duel-fighter ceremonial con spacing limpio, timing estricto, neutral game y sobriedad marcial.',
@@ -122,14 +127,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Simetría central, límites claros, zonas de presión y reset neutral sin exigir arena física.',
       atmosphere_and_mood: 'Serena, tensa y honorable.',
       rendering_and_quality:
-        'PvP stage elegante con legibilidad de hitbox, distancia y estados de ventaja.',
+        'Duel-stage gameplay screencap: hitbox distance, advantage state, vertical calm, timing cues visible.',
     },
   },
   {
     id: 'SP12-044',
     name: 'Mirage Palace Stealth Gala',
     category: '2. Arcane Temples & Mythic Realms',
-    negativePrompt: 'watermark, text, logo, combat-chaos, lowres',
+    negativePrompt:
+      'watermark, text, logo, combat-chaos, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática social-stealth ilusoria con engaño, acceso por estatus, fuga limpia y prestigio peligroso.',
@@ -145,16 +151,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Rutas ocultas, vigilancia y extracción en planos reflectivos; palacio o gala son anclas opcionales.',
       atmosphere_and_mood: 'Glamorosa, engañosa y socialmente tensa.',
       rendering_and_quality:
-        'Stealth-playground de alta sofisticación con legibilidad de patrullas, cobertura y acceso.',
+        'Stealth-gala gameplay screencap: patrol loops, cover, access doors, illusion risks readable.',
       creative_brief:
-        'Aplica Mirage Palace Stealth Gala como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Mirage Palace Stealth Gala como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-053',
     name: 'Marsh Witch Coven Arena',
     category: '2. Arcane Temples & Mythic Realms',
-    negativePrompt: 'watermark, text, logo, sci-fi-neon, lowres',
+    negativePrompt:
+      'watermark, text, logo, sci-fi-neon, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática tactical-fantasy de coven con zonas de control, invocación, deny de terreno y ritual brumoso.',
@@ -169,14 +176,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Anillos de hechizo, choke-points tácticos y conexiones de terreno sin exigir pantano o arena.',
       atmosphere_and_mood: 'Arcana, peligrosa y teatralmente agresiva.',
       rendering_and_quality:
-        'Fantasy-combat stage gameplay-first con legibilidad de áreas, cooldown y prioridad.',
+        'Fantasy-combat gameplay frame: area spells, cooldown danger, witch arena priority readable.',
     },
   },
   {
     id: 'SP12-055',
     name: 'Orchid Palace Puzzle Gardens',
     category: '2. Arcane Temples & Mythic Realms',
-    negativePrompt: 'watermark, text, logo, combat-chaos, murky',
+    negativePrompt:
+      'watermark, text, logo, combat-chaos, murky, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática puzzle-garden refinada con luz redirigida, rotación, cadenas de activación y lectura espacial fina.',
@@ -192,14 +200,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Trazado geométrico, metas visuales y nodos encadenados sin exigir palacio o jardín literal.',
       atmosphere_and_mood: 'Serena, refinada y cognitivamente desafiante.',
       rendering_and_quality:
-        'Puzzle environment clarity-first con pistas visuales robustas y mínima ambigüedad.',
+        'Puzzle-garden gameplay frame: visual clues, garden mechanisms, route logic, ambiguity minimized.',
     },
   },
   {
     id: 'SP12-061',
     name: 'Jade Volcano Shrine Run',
     category: '2. Arcane Temples & Mythic Realms',
-    negativePrompt: 'watermark, text, logo, snow, lowres',
+    negativePrompt:
+      'watermark, text, logo, snow, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática endgame shrine-run volcánica con ascenso por fases, hazard térmico y combate ritual.',
@@ -213,14 +222,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Ascenso por fases, checkpoints y cuellos de botella sin exigir templo o volcán literal.',
       atmosphere_and_mood: 'Devocional, peligrosa y trascendente.',
       rendering_and_quality:
-        'Endgame-zone gameplay art con legibilidad alta de ruta, fase y prioridad táctica.',
+        'Endgame shrine gameplay frame: route, fire hazard phase, checkpoint priority, tactical read clear.',
     },
   },
   {
     id: 'SP12-070',
     name: 'Moonlit Shrine Archer Trials',
     category: '2. Arcane Temples & Mythic Realms',
-    negativePrompt: 'watermark, text, logo, daytime, clutter',
+    negativePrompt:
+      'watermark, text, logo, daytime, clutter, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática precision-trial de arquería mística con timing, trayectoria, control respiratorio y foco lunar.',
@@ -234,7 +244,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Trayectoria, impacto y dificultad progresiva sin exigir santuario o calle de tiro.',
       atmosphere_and_mood: 'Concentrada, calmada y extremadamente precisa.',
       rendering_and_quality:
-        'Challenge-stage gameplay art con legibilidad impecable de trayectoria, impacto y scoring.',
+        'Archer-trial gameplay screencap: trajectory, impact scoring, shrine spacing, target timing clear.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

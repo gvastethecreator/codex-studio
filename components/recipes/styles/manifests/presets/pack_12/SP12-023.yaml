@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Paneles solares, vidrio curvo, sustrato húmedo y estructura compuesta de alta eficiencia.
   camera_and_composition: Vista sectorial o modular con nodos de logística, energía y cultivo claramente jerarquizados sin exigir colonia visible.
   atmosphere_and_mood: Optimismo técnico, crecimiento metódico y gestión de riesgo controlada.
-  rendering_and_quality: "Colony-builder in-game frame: production chains, module health, logistics nodes visible as diegetic structures."
+  rendering_and_quality: 'Colony-builder in-game frame: production chains, module health, logistics nodes visible as diegetic structures.'
 avoidRules:
   - watermark
   - text

@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-018
+packId: pack_17
+name: Tape-Scanned Sword & Sorcery
+category: 3. Acid Dungeon Zine
+domain: dungeon zine
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - acid-dungeon-zine
+  - sword-and-sorcery
+visualDna:
+  aesthetic: Old sword-and-sorcery paperback art degraded through photocopy, tape scan, harsh ink, and lurid flat color.
+  subject_treatment: A rough sword-and-sorcery wanderer facing a serpent idol guardian or moss-cloaked monster, theatrical and print-damaged but clearly readable.
+  color_and_tone: Faded yellow paper, black crush, bruised purple, toxic green, dull red, and sun-baked orange.
+  lighting_and_shadow: Dramatic pulp shadows simplified into black slabs and scratchy hatch fields.
+  texture_and_material: Tape seams, clean scan streaks, controlled toner texture, cracked ink, cheap paper, and worn cover edges.
+  camera_and_composition: Paperback-cover staging, large foreground subject, dramatic diagonal weapon or monster shapes, and thick frame.
+  atmosphere_and_mood: Pulp, dangerous, handmade, lurid, and adventurous.
+  rendering_and_quality: Retro print illustration with readable forms, rough edges, controlled analog wear, and clean darks.
+  creative_brief: Converts any fantasy prompt into degraded pulp-zine illustration with sword-and-sorcery momentum.
+avoidRules:
+  - clean ebook cover
+  - glossy digital painting
+  - modern typography
+  - photorealism
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-018.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: acid-dungeon-zine
+  categoryName: 3. Acid Dungeon Zine
+  domain: dungeon zine
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - acid-dungeon-zine
+    - sword-and-sorcery
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

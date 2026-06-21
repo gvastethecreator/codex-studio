@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-033
 packId: pack_15
-name: Flint Engine Market
-category: 12. Corepunk — Stonepunk
+name: Coral Circuit Marina
+category: 5. Ocean, Ice & Terrain Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - stonepunk
+  - punk-spectrum-vault
+  - ocean-ice-and-terrain-punks
+  - seapunk
+  - marina
 visualDna:
-  aesthetic: Friction-age maker style where invention feels public, loud, dangerous, and half-bartered before sparks cool.
-  form_and_line: Sawtooth stall-front rhythm, pulley-canopy slashes, stepped trade-shelf geometry, spark-wheel circles, and squat workbench blocks.
-  color_palette: Clay red, smoke gray, amber firelight, hemp tan, and blackened bronze green.
-  lighting_setup: Torch strings under sagging awnings, forge sparks on faces, and hot rimlight from open friction wheels.
-  material_texture: Flint teeth, braided hemp, raw timber, blackened bronze, cracked clay counters, and powdery stone dust.
-  render_quality: Character-rich stonepunk concept art with tactile tools, readable commerce, and controlled clutter.
-  spatial_distortion: Compressed bazaar-like depth turns repair surfaces, barter trays, and test rigs into a single noisy machine.
-  atmosphere: Immediate invention, public risk, communal trade, and practical improvisation.
-  key_features: Spark-wheel modules, portable-anvil motifs, pit-forge mouths, barter-token marks, hemp pulley loops, and half-tested mechanisms.
-  creative_brief: 'Make the input look half-tested in a public friction-age workshop: flint teeth, hemp pulley loops, cracked clay counters, spark wheels, and barter marks should create noisy invention. Markets, benches, tokens, or makers can appear, but the style is communal improvisation and dangerous tactility. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: seapunk cyber-marina as a flat graphic digital-illustration card built around coral-like circuit pylons, divers, neon buoys, and wet boardwalk tech.
+  form_and_line: Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses coral pylons, divers, neon buoys, wet boardwalk, circuit reefs.
+  color_palette: coral pink, aqua, deep blue-gray water, pearl white
+  lighting_setup: underwater glow, buoy LEDs, wet deck reflections, sunset cyan
+  material_texture: coral ceramic shapes, simple rope arcs, neoprene silhouettes, LED buoy dots, flat dark boardwalk planes
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: playful, briny, luminous, technical
+  key_features: coral pylons, divers, neon buoys, wet boardwalk, circuit reefs
+  creative_brief: 'Seapunk with real marina function: one distinctive marina diver-technician protagonist, buoys, coral circuitry, and wet decks, not generic mermaid fantasy. Keep it representative through a compact working marina, coral-circuit pylons, diver/technician silhouettes, buoy dots, and circuit-reef arcs below the waterline. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - minimalist-cleanroom
-  - cyber-neon
-  - sterile-luxury
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-033.webp
 attributes:
-  negativePrompt: photoreal, minimalist-cleanroom, cyber-neon, sterile-luxury, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, mermaid, tropical resort, empty ocean postcard, cyberpunk nightclub pier, photoreal wet reflections, readable buoy labels, anchor logo, leaf logo, wave logo, dense rope clutter, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-stonepunk
-  categoryName: 12. Corepunk — Stonepunk
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - stonepunk
+    - punk-spectrum-vault
+    - ocean-ice-and-terrain-punks
+    - seapunk
+    - marina
   supportedTasks:
     - image_generate
     - image_edit

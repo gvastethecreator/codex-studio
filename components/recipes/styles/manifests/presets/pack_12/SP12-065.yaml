@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Cristal tallado, seda de gala, mármol pulido y detalles de desgaste controlado.
   camera_and_composition: Simetría frontal, límites de arena y zonas neutrales claras sin exigir hall o cúpula.
   atmosphere_and_mood: Noble, rival y extremadamente precisa.
-  rendering_and_quality: "Duel-hall gameplay frame: reach, timing, advantage state, crystal arena spacing readable."
+  rendering_and_quality: 'Duel-hall gameplay frame: reach, timing, advantage state, crystal arena spacing readable.'
 avoidRules:
   - watermark
   - text

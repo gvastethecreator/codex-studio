@@ -7,7 +7,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP12-004',
     name: 'Clockwork Sky Armada',
     category: '8. Puzzle Chambers & Adventure Setpieces',
-    negativePrompt: 'watermark, text, logo, modern-ui, plastic-look',
+    negativePrompt:
+      'watermark, text, logo, modern-ui, plastic-look, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática action-adventure steampunk aérea con verticalidad, mecanismos de abordaje y exploración por nodos flotantes.',
@@ -24,22 +25,23 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Aventura de alto riesgo, ambición imperial y dinamismo de frontera aérea.',
       rendering_and_quality:
-        'Splash art premium orientado a gameplay loops de vuelo, abordaje y puzzle de navegación.',
+        'Playable sky-armada screencap: flight paths, boarding vectors, navigation puzzle state clear.',
       creative_brief:
-        'Aplica Clockwork Sky Armada como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Clockwork Sky Armada como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-012',
     name: 'Pixel Tavern Quest Hub',
     category: '8. Puzzle Chambers & Adventure Setpieces',
-    negativePrompt: 'watermark, text, logo, anti-aliased-blur, noisy',
+    negativePrompt:
+      'watermark, text, logo, anti-aliased-blur, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática pixel-RPG social de 16-bit con loops de quest, comercio, descanso narrativo y tileset cálido.',
       subject_treatment:
         'Convierte el input en NPC, item, menú diegético o espacio tileable; arquetipos quest/vendor/lore son anclas opcionales.',
-      color_and_tone: 'Madera cálida, cobre, velas y acentos de UI diegética para POIs.',
+      color_and_tone: 'Madera cálida, cobre, velas y acentos de señalética diegética para POIs.',
       lighting_and_shadow:
         'Iluminación interior suave en banding de píxel, con contraste suficiente para navegación.',
       texture_and_material:
@@ -48,14 +50,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Side-view o isométrica simple con circulación clara entre interacción, crafting y salida de mapa sin exigir taberna.',
       atmosphere_and_mood: 'Acogedora, social y curiosa, con sensación de progreso seguro.',
       rendering_and_quality:
-        'Pixel pipeline de alta legibilidad con tileset reusable y jerarquía visual por interacción.',
+        'Pixel in-game frame: tile readability, quest hub interactables, warm POI hierarchy.',
     },
   },
   {
     id: 'SP12-036',
     name: 'Lunar Monolith Puzzle Chamber',
     category: '8. Puzzle Chambers & Adventure Setpieces',
-    negativePrompt: 'watermark, text, logo, clutter, low-contrast',
+    negativePrompt:
+      'watermark, text, logo, clutter, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática puzzle-chamber ancestral con rotación, sincronía, energía diferida y reglas visuales limpias.',
@@ -71,14 +74,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Simetría funcional, nodos de resolución y sombras geométricas sin exigir cámara lunar.',
       atmosphere_and_mood: 'Contemplativa, ingeniosa y enigmática.',
       rendering_and_quality:
-        'Puzzle-space clarity-first con telegraph nítido de reglas, progreso y solución.',
+        'Puzzle-chamber gameplay screencap: monolith rule, progress state, solution path, scale readable.',
     },
   },
   {
     id: 'SP12-037',
     name: 'Mushroom Kingdom Frontier',
     category: '8. Puzzle Chambers & Adventure Setpieces',
-    negativePrompt: 'watermark, text, logo, grimdark, photoreal-grain',
+    negativePrompt:
+      'watermark, text, logo, grimdark, photoreal-grain, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática platformer-exploration whimsical con rebote orgánico, momentum, rutas secretas y lectura amable.',
@@ -94,16 +98,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Verticalidad lúdica, checkpoints visuales y reward loops; hongos gigantes pueden reforzar pero no dominar.',
       atmosphere_and_mood: 'Maravillosa, aventurera y con humor ligero.',
       rendering_and_quality:
-        'Platformer world gameplay-first con identidad fuerte y legibilidad de salto/tránsito.',
+        'Platformer in-game frame: jump arcs, safe platforms, frontier landmarks, traversal route readable.',
       creative_brief:
-        'Aplica Mushroom Kingdom Frontier como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Mushroom Kingdom Frontier como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-051',
     name: 'Sapphire Bazaar Deckbuilder Hub',
     category: '8. Puzzle Chambers & Adventure Setpieces',
-    negativePrompt: 'watermark, text, logo, bland-ui, low-detail',
+    negativePrompt:
+      'watermark, text, logo, bland-ui, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática deckbuilder-roguelike arcana con draft, reliquias, preparación de run y rareza legible.',
@@ -117,14 +122,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Opciones en abanico, foco central y navegación de build sin exigir bazaar o hub literal.',
       atmosphere_and_mood: 'Curiosa, estratégica y de riesgo calculado.',
       rendering_and_quality:
-        'Run-selection hub gameplay-first con claridad de rutas de build y economía.',
+        'Deckbuilder run-selection in-game frame: build paths, relic choices, economy cues staged inside play space.',
     },
   },
   {
     id: 'SP12-058',
     name: 'Echo Cavern Sound Puzzle',
     category: '8. Puzzle Chambers & Adventure Setpieces',
-    negativePrompt: 'watermark, text, logo, combat-chaos, lowres',
+    negativePrompt:
+      'watermark, text, logo, combat-chaos, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática sound-puzzle con frecuencia, resonancia, desbloqueo acústico y feedback de armonía.',
@@ -138,14 +144,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Nodos sonoros, conexiones curvas y ritmo de resolución sin exigir caverna.',
       atmosphere_and_mood: 'Musical, misteriosa y de descubrimiento progresivo.',
       rendering_and_quality:
-        'Puzzle design clarity-first con pistas visuales robustas y ritmo de resolución.',
+        'Sound-puzzle gameplay screencap: echo cues, chamber rhythm, solution path, resonance state readable.',
     },
   },
   {
     id: 'SP12-072',
     name: 'Dust Cathedral Rally Raid',
     category: '8. Puzzle Chambers & Adventure Setpieces',
-    negativePrompt: 'watermark, text, logo, tropical, low-detail',
+    negativePrompt:
+      'watermark, text, logo, tropical, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática raid-racer motorizada con conquista de ruta, objetivos intermedios y ruina monumental polvorienta.',
@@ -160,14 +167,15 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition: 'Checkpoints, atajos y zonas de choque sin exigir catedrales.',
       atmosphere_and_mood: 'Ruidosa, veloz y de conquista territorial.',
       rendering_and_quality:
-        'Seasonal action-racer gameplay art con legibilidad robusta de pacing y control de tramo.',
+        'Rally-raid gameplay screencap: pacing, route conquest, dust hazards, control segment clear.',
     },
   },
   {
     id: 'SP12-074',
     name: 'Prism Alley Card Duel',
     category: '8. Puzzle Chambers & Adventure Setpieces',
-    negativePrompt: 'watermark, text, logo, medieval-castle, low-detail',
+    negativePrompt:
+      'watermark, text, logo, medieval-castle, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática card-duel clandestina con mindgame, presión psicológica, avatares holográficos y lectura de mano.',
@@ -183,14 +191,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Foco central, ventanas de jugada y presión de público sin exigir alley o mesa literal.',
       atmosphere_and_mood: 'Tensa, estilizada y de apuestas altas.',
       rendering_and_quality:
-        'Urban tactical PvP gameplay art con claridad de turno, ventaja y presión de crowd.',
+        'Card-duel gameplay screencap: turn pressure, crowd advantage, alley tactics, readable play space.',
     },
   },
   {
     id: 'SP12-077',
     name: 'Basilisk Quarry Escape',
     category: '8. Puzzle Chambers & Adventure Setpieces',
-    negativePrompt: 'watermark, text, logo, clean-futuristic, lowres',
+    negativePrompt:
+      'watermark, text, logo, clean-futuristic, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática escape-setpiece hostil con traversal vertical, riesgo ascendente y persecución de basilisco.',
@@ -206,14 +215,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Zigzag ascendente, capas de riesgo y chokepoints legibles sin exigir cantera.',
       atmosphere_and_mood: 'Pánica, ingeniosa y de estrés ascendente.',
       rendering_and_quality:
-        'Adventure-mission gameplay art con lógica de traversal clara y señalización territorial enemiga.',
+        'Escape mission gameplay frame: traversal logic, quarry threat, enemy territory, exit route readable.',
     },
   },
   {
     id: 'SP12-080',
     name: 'Endgame Eclipse Throne Room',
     category: '8. Puzzle Chambers & Adventure Setpieces',
-    negativePrompt: 'watermark, text, logo, comedic-style, lowres',
+    negativePrompt:
+      'watermark, text, logo, comedic-style, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática final-boss eclipse con duelo axial, fases, soberanía colapsada y halo de cierre de campaña.',
@@ -229,7 +239,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Dominio axial, carril de duelo y arquitectura de clímax sin exigir trono físico.',
       atmosphere_and_mood: 'Fatalista, resuelta y catastróficamente épica.',
       rendering_and_quality:
-        'Campaign-finale gameplay key-art con legibilidad decisiva de fase, distancia y cierre narrativo.',
+        'Final-boss gameplay screencap: phase distance, duel lane, eclipse silhouette, campaign closure readable.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

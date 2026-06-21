@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-039
 packId: pack_15
-name: Isotope School Campus
-category: 8. Corepunk — Atompunk
+name: Salt Flats Kite Foundry
+category: 5. Ocean, Ice & Terrain Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - atompunk
+  - punk-spectrum-vault
+  - ocean-ice-and-terrain-punks
+  - saltpunk
+  - wind-industry
 visualDna:
-  aesthetic: Atomic pedagogy style where cheerful diagrams explain a future nobody fully understands yet.
-  form_and_line: Sawtooth rhythms, corridor-like bands, atom-emblem fields, lab-grid repetition, and oversized instructional arrows.
-  color_palette: Sky cyan, lemon cream, steel gray, chalk white, and tiny reactor-glow green.
-  lighting_setup: Clean classroom daylight, contained exhibit glow, glass-case reflections, and bright diagram-wall bounce.
-  material_texture: Linoleum, ceramic tile, anodized rails, chalk dust, laminated posters, and polished classroom instruments.
-  render_quality: Bright illustrative concept with dense educational cues but clear child-scale readability.
-  spatial_distortion: Axis perspective links bands, diagrams, grids, and demonstration cues like a textbook spread.
-  atmosphere: Curious optimism, disciplined learning, soft propaganda, and future-facing ambition.
-  key_features: Demo-reactor silhouettes, atom mural geometry, isotope growth cues, diagram panels, and lab safety color bands.
-  creative_brief: 'Teach the input in atomic classroom language: sawtooth diagram bands, lemon-cream science graphics, chalk dust, atom emblems, and demo-reactor silhouettes should make the future feel freshly explained. Schools or campuses can appear, but the style is bright pedagogy and soft propaganda. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: saltpunk wind industry as a flat graphic digital-illustration card built around a salt-flat foundry using kite turbines, mirrored pans, mineral carts, and sun-armored workers.
+  form_and_line: Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses kite turbines, salt pans, workers, mineral carts, horizon lines.
+  color_palette: salt white, sky blue, rust, black shadow
+  lighting_setup: blinding sun, mirrored bounce, hard kite shadows, heat shimmer
+  material_texture: salt-crust planes, canvas kite triangles, mineral cart blocks, plain sun armor, rusted frame shapes
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: bright, severe, inventive, wind-driven
+  key_features: kite turbines, salt pans, workers, mineral carts, horizon lines
+  creative_brief: 'Terrain punk from salt and wind: vast brightness, kite machines, and labor, avoiding desert oasis or generic solar farms. Keep it representative through kite-turbine triangles, mineral cart, worker silhouettes, mirrored salt pans, rust frame blocks, and hard black kite shadows. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - dystopian-prison
-  - medieval
-  - neon-nightclub
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-039.webp
 attributes:
-  negativePrompt: photoreal, dystopian-prison, medieval, neon-nightclub, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, desert oasis, generic solar farm, empty salt landscape, foreground goggle portrait, kite festival, fantasy desert city, windmill farm wallpaper, photoreal glare, photoreal heat shimmer, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-atompunk
-  categoryName: 8. Corepunk — Atompunk
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - atompunk
+    - punk-spectrum-vault
+    - ocean-ice-and-terrain-punks
+    - saltpunk
+    - wind-industry
   supportedTasks:
     - image_generate
     - image_edit

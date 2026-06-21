@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-012
+packId: pack_17
+name: Candlelit Bestiary Court
+category: 2. Hunter Gothic & Plague Courts
+domain: gothic fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - hunter-gothic-and-plague-courts
+  - bestiary-court
+visualDna:
+  aesthetic: Gothic courtly fantasy where beasts, nobles, and scholars gather in candlelit bestiary drama.
+  subject_treatment: A goat-headed bestiary king seated high over the candlelit court, antler crown, clawed velvet robes, hound familiar at his feet, and nobles kept small around the throne.
+  color_and_tone: Candle gold, velvet black, parchment cream, muted jewel tones, and dark green shadows.
+  lighting_and_shadow: Candle groups create glowing faces, clean black corner shapes, and simple theatrical highlights.
+  texture_and_material: Fur trims, vellum pages, carved wood, wax, brocade, feathers, claws, and old ink.
+  camera_and_composition: Banquet or council layout, clustered figures, ornate frames, and readable symbolic props.
+  atmosphere_and_mood: Aristocratic, uncanny, theatrical, and secretive.
+  rendering_and_quality: Luxurious gothic illustration with sharp costume detail and candlelit material richness.
+  creative_brief: Converts subjects into courtly medieval-gothic tableaux with bestiary symbolism and refined unease.
+avoidRules:
+  - modern ballroom
+  - clean fantasy palace
+  - cute animal mascot
+  - flat lighting
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-012.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: hunter-gothic-and-plague-courts
+  categoryName: 2. Hunter Gothic & Plague Courts
+  domain: gothic fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - hunter-gothic-and-plague-courts
+    - bestiary-court
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

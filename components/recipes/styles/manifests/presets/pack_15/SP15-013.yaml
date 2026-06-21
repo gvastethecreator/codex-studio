@@ -1,47 +1,53 @@
 schemaVersion: 1
 id: SP15-013
 packId: pack_15
-name: Canopy Learning Spiral
-category: 1. Corepunk — Solarpunk
+name: Black Ice Courier Lane
+category: 2. Neon, Net & Signal Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - solarpunk-dreamscapes
+  - punk-spectrum-vault
+  - neon-net-and-signal-punks
+  - cyberpunk
+  - black-ice
 visualDna:
-  aesthetic: Educational solarpunk where climate literacy is embedded in visible systems, spiral movement, and canopy warmth.
-  form_and_line: Spiral learning-ramp rhythm, open-air classroom-like voids, and layered canopy rings.
-  color_palette: Fern green, chalk white, and warm sunlight amber.
-  lighting_setup: Soft midday daylight filtered through translucent bioplastic sunshades.
-  material_texture: Cross-laminated timber, recycled composite railings, cork flooring, and living vine screens.
-  render_quality: Clean editorial solarpunk concept with strong scale and pedagogical clarity.
-  spatial_distortion: Ascending spiral perspective linking ground-level inquiry cues to elevated garden-observatory motifs.
-  atmosphere: Curious optimism, civic care, and intergenerational collaboration.
-  key_features: Outdoor seminar-terrace rhythm, energy dashboard motifs, seed-library cues, and maker-learning nodes.
-  creative_brief: 'Convert the input into climate literacy in motion: spiral inquiry paths, translucent canopy rings, dashboard-like energy cues, and warm timber/cork surfaces. Campus, classrooms, students, or observatories may appear, but the style should read as curiosity embedded in visible ecological systems.'
+  aesthetic: high-contrast hacker courier as a flat-to-painterly poster card built around a courier cutting through black-ice data lanes, matte coat shapes, frozen interface shards, and hostile security light.
+  form_and_line: Sharp but simplified network geometry, non-readable lane rhythm, a few thick cable paths, matte dark planes, and hacker-era silhouettes. Core composition uses black ice shards, courier motion, red security beams, coat shape, data lane markings.
+  color_palette: blue black, white cyan, red alert, chrome gray
+  lighting_setup: hard cyan rim block, red alarm slabs, flat ice glow
+  material_texture: matte coat shapes, glass-shard silhouettes, flat chrome-gray accents, frost-like color blocks, black asphalt plane
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: dangerous, fast, cold, precise
+  key_features: black ice shards, courier motion, red security beams, reflective coat, data lane markings
+  creative_brief: 'Keep the black-ice metaphor visual and street-level: a moving courier in hostile data weather, not abstract cubes floating alone. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - dystopian
-  - sterile-corporate
-  - militarized
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-013.webp
 attributes:
-  negativePrompt: photoreal, dystopian, sterile-corporate, militarized, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, mirror-wet realism, empty corridor, realistic chase scene, weapon pose, foreground portrait, readable markings, dense shard noise, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-solarpunk
-  categoryName: 1. Corepunk — Solarpunk
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - solarpunk-dreamscapes
+    - punk-spectrum-vault
+    - neon-net-and-signal-punks
+    - cyberpunk
+    - black-ice
   supportedTasks:
     - image_generate
     - image_edit

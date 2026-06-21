@@ -1,46 +1,53 @@
 schemaVersion: 1
 id: SP15-007
 packId: pack_15
-name: Vertical Meadow Clinic
-category: 1. Corepunk — Solarpunk
+name: Smogline Airship Dock
+category: 1. Classic Industrial Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - solarpunk-dreamscapes
+  - punk-spectrum-vault
+  - classic-industrial-punks
+  - airship
+  - diesel-steam
 visualDna:
-  aesthetic: Therapeutic solarpunk integrated into vertical meadow softness, care logic, and warm clinical trust.
-  form_and_line: Layered therapeutic terrace rhythm, universal-access circulation loops, and soft curve-led wayfinding geometry.
-  color_palette: Clinical warm white, meadow chlorophyll greens, and calm sky-cyan accents.
-  lighting_setup: Broad daylight filtered through medicinal canopy strata with gentle bounce.
-  material_texture: Diffuse low-iron glass, therapeutic plant foliage, hygienic timber laminates, and matte bioceramic railings.
-  render_quality: Production-grade wellness concept balancing care clarity with emotionally reassuring spatial warmth.
-  spatial_distortion: Vertical sectional reveal linking treatment-like layers, recovery-garden cues, and restorative circulation terraces.
-  atmosphere: Care, calm, and technological trust without coldness.
-  key_features: Green facade logic, therapeutic terrace rhythm, serene circulation.
-  creative_brief: 'Render the input with therapeutic meadow logic: stacked chlorophyll veils, warm clinical whites, accessible loop geometry, and matte bioceramic calm. Clinics, patients, floors, or facades are optional; the transferable style is care infrastructure softened until it feels alive.'
+  aesthetic: diesel-steam airship infrastructure flat-to-painterly poster card built around a smoggy airship mooring dock with simplified ground crews, broad gantries, rope arcs, and cargo-signal beacons.
+  form_and_line: Mechanical silhouettes, clean drawn contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses mooring lines, beacon color dots, gantry silhouettes, small ground crew scale, and hazy airship mass.
+  color_palette: smog gray, brass ochre, black tar, cargo orange
+  lighting_setup: flat smog sun block, beacon color dots, silhouette backlight, simple illustrated glints
+  material_texture: canvas hull planes, tar rope shapes, broad gantry blocks, rain-dark dock planes, brass fittings
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: adventurous, heavy, atmospheric, practical
+  key_features: mooring lines, beacon dots, gantry silhouettes, ground crew scale, hazy airship mass
+  creative_brief: 'Show airship culture as logistics and weather: docks, crews, rigging, and mooring signals, not a fantasy castle corridor, floating palace, lamp hero, or airship-only postcard. Keep people simplified and secondary to the dock/airship silhouette. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - sterile-corporate
-  - dark-gloomy
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-007.webp
 attributes:
-  negativePrompt: photoreal, sterile-corporate, dark-gloomy, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, foreground dock worker, gas-mask worker hero, rope-pulling character closeup, realistic dock scene, dense scaffold grid, rendered metal realism, volumetric fog realism, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, floating palace, castle corridor, lamp hero, airship-only postcard, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-solarpunk
-  categoryName: 1. Corepunk — Solarpunk
+  packName: Punk Spectrum Vault
+  categoryId: classic-industrial-punks
+  categoryName: 1. Classic Industrial Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - solarpunk-dreamscapes
+    - punk-spectrum-vault
+    - classic-industrial-punks
+    - airship
+    - diesel-steam
   supportedTasks:
     - image_generate
     - image_edit

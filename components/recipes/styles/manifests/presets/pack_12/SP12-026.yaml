@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Mármol fracturado, follaje húmedo, tejido táctico y raíces estructurales activas.
   camera_and_composition: Isométrica limpia por tiles con alturas, cuellos de botella y líneas de avance evidentes sin exigir ruinas.
   atmosphere_and_mood: Estratégica, calculada y tensa.
-  rendering_and_quality: "Isometric tactical-RPG screencap: tiles, cover, range pressure, unit priority readable."
+  rendering_and_quality: 'Isometric tactical-RPG screencap: tiles, cover, range pressure, unit priority readable.'
 avoidRules:
   - watermark
   - text

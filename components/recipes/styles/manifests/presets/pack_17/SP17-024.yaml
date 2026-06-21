@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-024
+packId: pack_17
+name: Stained Glass Starforge
+category: 4. Futuristic Medieval & Rune Tech
+domain: futuristic medieval
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - futuristic-medieval-and-rune-tech
+  - stained-glass
+visualDna:
+  aesthetic: Futuristic stained-glass medieval fantasy with starforged geometry, black lead lines, and radiant cosmic color.
+  subject_treatment: A stained-glass starforge dragon, angelic smith, or haloed armor pane flattened into luminous cathedral geometry and symbolic forge gestures.
+  color_and_tone: Sapphire, ruby, emerald, solar gold, black leading, and luminous white star points.
+  lighting_and_shadow: Backlit glass glow dominates, with black outlines creating graphic shadow and sacred separation.
+  texture_and_material: Leaded glass, etched metal, prism bloom, tiny cracks, dust motes, and molten star-metal accents.
+  camera_and_composition: Frontal icon layout, radial halos, symmetrical panels, and cathedral-window framing.
+  atmosphere_and_mood: Sacred, cosmic, triumphant, and strange.
+  rendering_and_quality: Clean stained-glass illustration with crisp leadwork, luminous color, and fantasy-tech ornament.
+  creative_brief: Reusable for portraits, armor, relics, ships, monsters, or castles needing sacred cosmic-medieval design.
+avoidRules:
+  - photorealism
+  - soft oil painting
+  - flat clip art
+  - modern logo
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-024.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: futuristic-medieval-and-rune-tech
+  categoryName: 4. Futuristic Medieval & Rune Tech
+  domain: futuristic medieval
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - futuristic-medieval-and-rune-tech
+    - stained-glass
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

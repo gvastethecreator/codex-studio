@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-032
 packId: pack_15
-name: Megalith Transit Spine
-category: 12. Corepunk — Stonepunk
+name: Chloroplast Housing Stack
+category: 4. Bio, Myco & Body Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - stonepunk
+  - punk-spectrum-vault
+  - bio-myco-and-body-punks
+  - bio-urbanism
+  - chloroplast
 visualDna:
-  aesthetic: Megalith logistics style where travel feels carved into geology, slow as a glacier, and impossible to privatize.
-  form_and_line: Parallel stone grooves, pillar forests, sled-runner scars, hanging counterweight blocks, and distance markers cut like fossils.
-  color_palette: Sandstone beige, slate blue, iron rust, sun-bleached rope tan, and oxidized route-paint green.
-  lighting_setup: Harsh directional sun on exposed route edges, torch pockets under transfer arches, and long shadows from moving weights.
-  material_texture: Weathered stone blocks, braided cable ropes, bone-polished runners, rust-stained pins, and grit trapped in guide grooves.
-  render_quality: Expansive stonepunk infrastructure concept with every route, lift, and exchange point legible at civic scale.
-  spatial_distortion: Horizon compression stretches routes into monumental lines, making distance feel engineered by public effort.
-  atmosphere: Slow momentum, civic pragmatism, trade ritual, and old-world futurity.
-  key_features: Counterweight lift towers, stone-sled profiles, carved route glyphs, trade-gate frames, and rope-shadow grids.
-  creative_brief: 'Stretch the input into public geology in motion: carved route grooves, counterweight blocks, rope-shadow grids, fossil-like distance marks, and stone-sled scars. Roads, trade gates, towers, or sleds can anchor the idea, but the style is civic distance engineered through megalithic effort. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: plant-cell urban biotech as a flat graphic digital-illustration card built around dense housing blocks powered by chloroplast panels, algae windows, and resident maintenance balconies.
+  form_and_line: Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses chloroplast panels, balconies, residents, algae windows, maintenance pipes.
+  color_palette: algae green, concrete cream, sunlit yellow, shadow teal
+  lighting_setup: soft cellular glow, balcony daylight, filtered green reflections
+  material_texture: algae-glass color blocks, concrete planes, plant-cell panels, plain laundry rectangles, simple pipe loops
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: dense, useful, lived-in, bio-urban
+  key_features: chloroplast panels, balconies, residents, algae windows, maintenance pipes
+  creative_brief: 'This is biotech urbanism, not garden futurism: emphasize plant-cell hardware, dense housing, and maintenance life. Keep it representative through a vertical housing stack, resident-maintenance silhouettes, algae windows, and chunky chloroplast panel tiles, not luxury eco-architecture branding. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - cyber-neon
-  - whimsical-fantasy-only
-  - modern-asphalt-roads
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-032.webp
 attributes:
-  negativePrompt: photoreal, cyber-neon, whimsical-fantasy-only, modern-asphalt-roads, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, leaf-logo emblem, eco badge, generic glass utopia, greenhouse tower, resort balcony render, market aisle, photoreal facade, dense pipe spaghetti, luxury eco archviz, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-stonepunk
-  categoryName: 12. Corepunk — Stonepunk
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - stonepunk
+    - punk-spectrum-vault
+    - bio-myco-and-body-punks
+    - bio-urbanism
+    - chloroplast
   supportedTasks:
     - image_generate
     - image_edit

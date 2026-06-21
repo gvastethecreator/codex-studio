@@ -7,7 +7,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP12-002',
     name: 'Bioluminescent Jungle Raid',
     category: '6. Wilderness Hunts & Harsh Frontiers',
-    negativePrompt: 'watermark, text, logo, flat-light, lowres',
+    negativePrompt:
+      'watermark, text, logo, flat-light, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática extraction-shooter bioluminiscente con stealth orgánico, rastreo térmico y hostilidad alienígena nocturna.',
@@ -24,14 +25,15 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Cacería silenciosa, paranoia ambiental y descubrimiento biológico de alto riesgo.',
       rendering_and_quality:
-        'Concept gameplay con claridad de encounter design, lectura de terreno y prioridades de target.',
+        'Gameplay screencap from active jungle raid: terrain reads, target priority, co-op encounter cues.',
     },
   },
   {
     id: 'SP12-010',
     name: 'Volcanic Forge Dungeon',
     category: '6. Wilderness Hunts & Harsh Frontiers',
-    negativePrompt: 'watermark, text, logo, snow, pastel',
+    negativePrompt:
+      'watermark, text, logo, snow, pastel, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática dungeon-crawler infernal con riesgo térmico, crafting bélico, calor telegráfico y maquinaria ritual.',
@@ -47,14 +49,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Eje diagonal de progresión con crisoles, plataformas seguras y landmarks térmicos como anclas opcionales.',
       atmosphere_and_mood: 'Hostil, abrasiva y ceremonial, de supervivencia técnico-combativa.',
       rendering_and_quality:
-        'Entorno jugable de alta claridad sistémica para hazards, rutas, crafting nodes y encuentros.',
+        'Dungeon gameplay screencap: lava hazards, crafting nodes, routes, combat space readable.',
     },
   },
   {
     id: 'SP12-022',
     name: 'Frozen Bazaar Survival Night',
     category: '6. Wilderness Hunts & Harsh Frontiers',
-    negativePrompt: 'watermark, text, logo, tropical, low-detail',
+    negativePrompt:
+      'watermark, text, logo, tropical, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática survival sandbox ártica con refugio precario, crafting, trueque, expedición y contraste térmico.',
@@ -71,16 +74,17 @@ export const GENERATED_STYLE_PRESETS = [
       atmosphere_and_mood:
         'Refugio precario, cooperación tensa y supervivencia nocturna prolongada.',
       rendering_and_quality:
-        'Hub visual de alta legibilidad para economía de recursos y preparación de runs.',
+        'Survival hub screencap: resource economy, prep choices, trader-hunter roles, cold pressure readable.',
       creative_brief:
-        'Aplica Frozen Bazaar Survival Night como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Frozen Bazaar Survival Night como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-027',
     name: 'Deep Mine Co-op Extraction',
     category: '6. Wilderness Hunts & Harsh Frontiers',
-    negativePrompt: 'watermark, text, logo, clean-lab, low-detail',
+    negativePrompt:
+      'watermark, text, logo, clean-lab, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática co-op extraction shooter minera con objetivos, evacuación, polvo mineral y supervivencia de escuadra.',
@@ -96,16 +100,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Objetivos a distancia, rutas de retorno y zonas de emboscada legibles; túnel o mina son anclas opcionales.',
       atmosphere_and_mood: 'Labor extrema, camaradería funcional y riesgo continuo.',
       rendering_and_quality:
-        'Mission visual gameplay-first con claridad de objetivo, amenaza y ruta de extracción.',
+        'Co-op extraction gameplay frame: objective marker, threat direction, tunnel route, team gear clear.',
       creative_brief:
-        'Aplica Deep Mine Co-op Extraction como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Deep Mine Co-op Extraction como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-029',
     name: 'Coral Reef Underkingdom',
     category: '6. Wilderness Hunts & Harsh Frontiers',
-    negativePrompt: 'watermark, text, logo, murky-water, lowres',
+    negativePrompt:
+      'watermark, text, logo, murky-water, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática action-RPG submarina coralina con exploración vertical, patrullas, movilidad acuática y biominera viva.',
@@ -121,16 +126,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Perspectiva amplia con corrientes, ascenso/descenso y jerarquía territorial; ciudad coralina es opcional.',
       atmosphere_and_mood: 'Maravillosa, elegante y peligrosamente impredecible.',
       rendering_and_quality:
-        'Worldbuilding gameplay key-art con lectura clara de rutas, amenaza y jerarquía territorial.',
+        'Underwater exploration gameplay frame: routes, territory, guardian threat, depth hierarchy readable.',
       creative_brief:
-        'Aplica Coral Reef Underkingdom como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Coral Reef Underkingdom como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-034',
     name: 'Crimson Canyon Sniper Run',
     category: '6. Wilderness Hunts & Harsh Frontiers',
-    negativePrompt: 'watermark, text, logo, neon-city, lowres',
+    negativePrompt:
+      'watermark, text, logo, neon-city, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática tactical-shooter de largo alcance con control de líneas, ventaja de altura y exposición calculada.',
@@ -146,14 +152,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Profundidad extrema, rutas de flanqueo y ventanas de tiro como composición sin exigir cañón.',
       atmosphere_and_mood: 'Precisa, paciente y letal a distancia.',
       rendering_and_quality:
-        'Competitive map readability-first con claridad de sightlines, sniping nests y riesgo de cruce.',
+        'Competitive sniper-map screencap: sightlines, nests, crossing risk, canyon cover readable.',
     },
   },
   {
     id: 'SP12-040',
     name: 'Thunder Plains Beast Hunt',
     category: '6. Wilderness Hunts & Harsh Frontiers',
-    negativePrompt: 'watermark, text, logo, cityscape, low-detail',
+    negativePrompt:
+      'watermark, text, logo, cityscape, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática co-op monster-hunt eléctrica con rastreo, coordinación, ventanas de ejecución y telegraphs de tormenta.',
@@ -169,14 +176,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Escala amplia, rutas de cerco y líneas de escape visibles sin exigir llanura abierta.',
       atmosphere_and_mood: 'Épica, riesgosa y altamente coordinada.',
       rendering_and_quality:
-        'Hunting-season key-art gameplay-first con claridad de patrón, objetivo y recompensa táctica.',
+        'Monster-hunt gameplay screencap: storm telegraphs, weak points, pursuit routes, reward target clear.',
     },
   },
   {
     id: 'SP12-041',
     name: 'Emberwood Ranger Outpost',
     category: '6. Wilderness Hunts & Harsh Frontiers',
-    negativePrompt: 'watermark, text, logo, snow-theme, lowres',
+    negativePrompt:
+      'watermark, text, logo, snow-theme, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática frontier-defense RPG con brasas permanentes, patrulla, fortificación y caza reactiva.',
@@ -192,16 +200,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Líneas de defensa, alarma y accesos secundarios visibles; outpost o portón son anclas opcionales.',
       atmosphere_and_mood: 'Vigilante, resistente y tácticamente austera.',
       rendering_and_quality:
-        'Defensive-hub gameplay-first con legibilidad de patrulla, alarma y respuesta.',
+        'Defensive outpost gameplay frame: patrol paths, alarm states, ranger response, ember cues readable.',
       creative_brief:
-        'Aplica Emberwood Ranger Outpost como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Emberwood Ranger Outpost como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-067',
     name: 'Bronze Marsh Siege Camp',
     category: '6. Wilderness Hunts & Harsh Frontiers',
-    negativePrompt: 'watermark, text, logo, neon, low-detail',
+    negativePrompt:
+      'watermark, text, logo, neon, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática warfront-attrition con avance por trincheras, desgaste, suministros y barro metálico.',
@@ -217,14 +226,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Líneas de avance, rutas de asalto y colapso defensivo sin exigir marisma o fortín.',
       atmosphere_and_mood: 'Opresiva, militar y de desgaste prolongado.',
       rendering_and_quality:
-        'Tactical war-campaign art con legibilidad de líneas de avance y colapso defensivo.',
+        'War-campaign gameplay frame: advance lines, siege camp pressure, marsh cover, defense collapse readable.',
     },
   },
   {
     id: 'SP12-073',
     name: 'Titan Orchard Colossus Hunt',
     category: '6. Wilderness Hunts & Harsh Frontiers',
-    negativePrompt: 'watermark, text, logo, city-neon, lowres',
+    negativePrompt:
+      'watermark, text, logo, city-neon, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática colossus-hunt cooperativa con escalada táctica, derribo por fases y weak points biomecánicos.',
@@ -239,7 +249,7 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition: 'Escala extrema y puntos de ascenso sin exigir huerto titánico.',
       atmosphere_and_mood: 'Asombrosa, peligrosa y cooperativamente épica.',
       rendering_and_quality:
-        'Hunting-season gameplay key-art con telegraph claro de fase, ascenso y remate.',
+        'Colossus-hunt gameplay frame: phase telegraph, climb route, weak point, finishing window readable.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

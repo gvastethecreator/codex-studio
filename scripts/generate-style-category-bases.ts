@@ -151,6 +151,7 @@ ${presetExamples}
 
 Create ${subjectForCategory(`${packName} ${category}`)}.
 Use the preset list above to choose a more focused subject, environment, props, and composition that can represent the whole category.
+${categoryBaseGuidance(packName, category)}
 The result should be a neutral reference image, but it must still clearly belong to this pack/category.
 Portrait orientation, 2:3 vertical composition, designed for a 3:4 card crop.
 Use varied materials, readable foreground/midground/background, and a stable main subject.
@@ -173,10 +174,22 @@ function pipeSet(value?: string) {
   );
 }
 
+function categoryBaseGuidance(packName: string, category: string) {
+  const scope = `${packName} ${category}`.toLowerCase();
+  if (scope.includes('anime style spectrum')) {
+    return 'For this spectrum base, show a controlled ensemble of 3 clearly different anime visual eras/silhouettes in one coherent scene; do not default to one dark-haired balcony protagonist.';
+  }
+  if (scope.includes('anime')) {
+    return 'Avoid samey black-haired solo protagonist staging, balcony/window city views, generic school-room props, and glossy one-style anime collapse; make the category identity readable at thumbnail size.';
+  }
+  return '';
+}
+
 const limitArg = argValue('limit');
 const limit = limitArg ? Number(limitArg) : Number.POSITIVE_INFINITY;
 const packFilters = pipeSet(argValue('pack'));
 const categoryFilters = pipeSet(argValue('category'));
+const force = process.argv.includes('--force');
 
 await mkdir(categoryBasesDir, { recursive: true });
 const health = await request<{ ok: boolean }>('/api/health');
@@ -201,7 +214,7 @@ for (const pack of packs) {
 
     const key = styleCategoryImageKey(pack.id, category);
     const destination = path.join(categoryBasesDir, `${key}${RECIPE_ASSET_EXTENSION}`);
-    if (await exists(destination)) {
+    if (!force && (await exists(destination))) {
       skipped += 1;
       continue;
     }

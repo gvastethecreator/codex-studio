@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-024
 packId: pack_15
-name: Velvet Turbine Salon
-category: 9. Corepunk — Decopunk
+name: Mangrove Lift Cooperative
+category: 3. Eco, Repair & Climate Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - decopunk
+  - punk-spectrum-vault
+  - eco-repair-and-climate-punks
+  - mangrovepunk
+  - amphibious
 visualDna:
-  aesthetic: Intimate decopunk intrigue rendered through velvet, brass, and turbine geometry.
-  form_and_line: Curved islands, fan-pattern arcs, turbine insets, and nested alcove silhouettes.
-  color_palette: Burgundy velvet, onyx black, and antique gold.
-  lighting_setup: Low-key spot pools and brass glints shaping controlled pockets of secrecy.
-  material_texture: Velvet upholstery, embossed leather, polished brass, and smoked mirrors.
-  render_quality: Premium interior concept art with tactile richness and dramatic depth.
-  spatial_distortion: Layered close-range composition with nested private-depth pockets.
-  atmosphere: Confidential intrigue, aristocratic modernity, and hushed momentum.
-  key_features: Smoked mirror seams, fan-lamp halos, turbine reliefs, and velvet shadow gradients.
-  creative_brief: 'Compress the input into confidential decopunk opulence: burgundy velvet shadows, smoked mirror seams, turbine reliefs, brass fan halos, and nested secrecy pockets. Salons and interiors may appear as anchors, but the style should transfer as tactile intrigue and controlled private momentum. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: mangrovepunk amphibious commons as a flat-to-painterly poster card built around amphibious lifts and boardwalk workshops threaded through mangrove roots, boats, and maintenance crews.
+  form_and_line: Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses mangrove roots, lift platforms, small boats, boardwalk crews, brackish reflections.
+  color_palette: mangrove green, brackish brown, weathered teal, sun white
+  lighting_setup: dappled water color blocks, warm deck accent dots, leaf-filtered sun planes
+  material_texture: wet-wood color planes, mangrove root silhouettes, rope arcs, boat paint blocks, algae-stained metal accents
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: adaptive, humid, cooperative, rooted
+  key_features: mangrove roots, lift platforms, small boats, boardwalk crews, brackish reflections
+  creative_brief: 'Make climate adaptation place-specific: mangroves, lifts, boats, and workers, not generic green architecture, jungle fantasy, tourist boardwalk, or logo-like symbols on awnings/clothes/boats. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - minimalist-office
-  - cyberpunk-neon-overload
-  - cartoonish
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-024.webp
 attributes:
-  negativePrompt: photoreal, minimalist-office, cyberpunk-neon-overload, cartoonish, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, anchor logo, leaf icon, badge emblem, emblem on clothing, symbol on awning, symbol on boat, readable signage, generic green architecture, jungle fantasy, photoreal water reflection, deck-lamp hero, root spaghetti clutter, tourist resort boardwalk, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-decopunk
-  categoryName: 9. Corepunk — Decopunk
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - decopunk
+    - punk-spectrum-vault
+    - eco-repair-and-climate-punks
+    - mangrovepunk
+    - amphibious
   supportedTasks:
     - image_generate
     - image_edit

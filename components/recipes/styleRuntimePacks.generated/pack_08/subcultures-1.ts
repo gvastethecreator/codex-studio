@@ -159,7 +159,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Destroyed denim, cone studs, safety pins, painted leather, gaffer tape, abstract tartan patches',
       render_quality:
         'Rebellious boutique rawness, safety-pin couture abrasion, anti-polish finish',
-      spatial_distortion: 'Mohawk hair',
+      spatial_distortion: 'Jagged punk silhouette distortion',
       atmosphere: 'Loud, chaotic, abrasive, three-chord fury, DIY refusal',
       key_features:
         'DIY aesthetic, illegible scuffed-mark texture, padlock-necklace hardware, torn abstract patches',
@@ -193,7 +193,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-026',
-    name: 'Biker Gang',
+    name: 'Road-Worn Biker Leather',
     category: '2. Subcultures',
     negativePrompt: 'soft, readable insignia, gang identity, intimidation, road-club scene',
     style: {

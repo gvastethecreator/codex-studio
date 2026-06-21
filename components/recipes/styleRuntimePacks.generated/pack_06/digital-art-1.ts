@@ -302,7 +302,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Voxel Art',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, Minecraft branding, building requirement, landscape requirement',
+      'photo, realistic, photorealistic, smooth generic 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, Minecraft branding, building requirement, landscape requirement',
     style: {
       aesthetic: '3D cubes',
       form_and_line: 'Cubes',

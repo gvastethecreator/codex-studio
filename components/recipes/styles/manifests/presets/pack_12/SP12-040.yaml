@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Pelaje mojado, cuero blindado, barro pesado y marcas de zarpazo sobre terreno saturado.
   camera_and_composition: Escala amplia, rutas de cerco y líneas de escape visibles sin exigir llanura abierta.
   atmosphere_and_mood: Épica, riesgosa y altamente coordinada.
-  rendering_and_quality: "Monster-hunt gameplay screencap: storm telegraphs, weak points, pursuit routes, reward target clear."
+  rendering_and_quality: 'Monster-hunt gameplay screencap: storm telegraphs, weak points, pursuit routes, reward target clear.'
 avoidRules:
   - watermark
   - text

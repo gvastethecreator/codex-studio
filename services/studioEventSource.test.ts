@@ -4,6 +4,7 @@ import {
   JobWatchCancelledError,
   JobWatchTimeoutError,
   createJobTerminalStatusError,
+  createStudioEventStream,
   isTerminalStudioJobStatus,
   normalizeStudioEventReconnectPolicy,
   watchJob,
@@ -41,6 +42,57 @@ describe('studioEventSource', () => {
       initialDelayMs: 100,
       maxDelayMs: 100,
     });
+  });
+
+  it('shares one browser EventSource until all leases close', () => {
+    const previousEventSource = globalThis.EventSource;
+    const sources: Array<{ close: ReturnType<typeof vi.fn>; url: string }> = [];
+
+    class FakeEventSource {
+      static OPEN = 1;
+      close = vi.fn();
+      onopen: (() => void) | null = null;
+      onerror: (() => void) | null = null;
+      onmessage: ((event: MessageEvent) => void) | null = null;
+      readyState = FakeEventSource.OPEN;
+
+      constructor(public readonly url: string) {
+        sources.push(this);
+      }
+    }
+
+    Object.defineProperty(globalThis, 'EventSource', {
+      configurable: true,
+      value: FakeEventSource,
+    });
+
+    try {
+      const first = createStudioEventStream();
+      const second = createStudioEventStream();
+
+      expect(sources).toHaveLength(1);
+      expect(sources[0]?.url).toBe('http://127.0.0.1:4317/api/events');
+
+      first.close();
+      expect(sources[0]?.close).not.toHaveBeenCalled();
+
+      second.close();
+      expect(sources[0]?.close).toHaveBeenCalledTimes(1);
+
+      const third = createStudioEventStream();
+      expect(sources).toHaveLength(2);
+      third.close();
+      expect(sources[1]?.close).toHaveBeenCalledTimes(1);
+    } finally {
+      if (previousEventSource) {
+        Object.defineProperty(globalThis, 'EventSource', {
+          configurable: true,
+          value: previousEventSource,
+        });
+      } else {
+        Reflect.deleteProperty(globalThis, 'EventSource');
+      }
+    }
   });
 
   it('identifies terminal job statuses', () => {

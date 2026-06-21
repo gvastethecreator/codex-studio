@@ -52,6 +52,12 @@ describe('buildStudioPageController', () => {
         previewRatio: null,
         generationAspectRatio: '1:1',
         isInteractingWithToolbar: false,
+        catalogTotal: 250,
+        catalogHasMore: true,
+        isCatalogLoading: false,
+        catalogError: null,
+        loadMoreCatalog: () => {},
+        refreshCatalog: () => {},
       },
       operations: {
         isQueueOpen: true,
@@ -76,34 +82,15 @@ describe('buildStudioPageController', () => {
         removeJob: () => {},
         clearCompleted: () => {},
         isResting: false,
-        exportLegacyVisualBatchSnapshot: () => {},
-        activeServerJobCount: 1,
         onInspectJob: () => {},
-        diagnostics: {
-          health: null,
-          backendConnected: true,
-          hasFetchedDiagnostics: true,
-          localCodexSession: null,
-          statusItems: [],
-          usage: {
-            value: '120',
-            meta: 'ChatGPT Pro',
-            tooltip: 'Available usage for ChatGPT Pro',
-            unitLabel: 'credits',
-            limits: [],
-            tone: 'available',
-            isLoading: false,
-          },
-        },
-        onResetStudio: () => {},
-        isResettingStudio: false,
       },
     });
 
     expect(controller.debugPanel.isVisible).toBe(false);
     expect(controller.debugPanel.props.imagesCount).toBe(1);
     expect(controller.grid.isGenerating).toBe(true);
-    expect(controller.operations.activeServerJobCount).toBe(1);
+    expect(controller.grid.catalogHasMore).toBe(true);
+    expect(controller.grid.catalogTotal).toBe(250);
   });
 
   it('builds viewport and generation dock surfaces from one presentation seam', () => {
@@ -136,6 +123,12 @@ describe('buildStudioPageController', () => {
         previewRatio: null,
         generationAspectRatio: '1:1',
         isInteractingWithToolbar: false,
+        catalogTotal: 0,
+        catalogHasMore: false,
+        isCatalogLoading: false,
+        catalogError: null,
+        loadMoreCatalog: () => {},
+        refreshCatalog: () => {},
       },
       operations: {
         isQueueOpen: true,
@@ -151,27 +144,7 @@ describe('buildStudioPageController', () => {
         removeJob: () => {},
         clearCompleted: () => {},
         isResting: false,
-        exportLegacyVisualBatchSnapshot: () => {},
-        activeServerJobCount: 0,
         onInspectJob: () => {},
-        diagnostics: {
-          health: null,
-          backendConnected: true,
-          hasFetchedDiagnostics: true,
-          localCodexSession: null,
-          statusItems: [],
-          usage: {
-            value: '120',
-            meta: 'ChatGPT Pro',
-            tooltip: 'Available usage for ChatGPT Pro',
-            unitLabel: 'credits',
-            limits: [],
-            tone: 'available',
-            isLoading: false,
-          },
-        },
-        onResetStudio: () => {},
-        isResettingStudio: false,
       },
     });
 
@@ -218,6 +191,9 @@ describe('buildStudioPageController', () => {
           onOpenKeySelector: () => {},
           onSelectKey: async () => {},
           maxAttachments: 8,
+          codexModelCatalog: null,
+          isLoadingCodexModelCatalog: false,
+          codexModelCatalogError: null,
         },
       },
     });

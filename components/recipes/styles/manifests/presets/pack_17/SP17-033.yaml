@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-033
+packId: pack_17
+name: Bone Tarot Horror Arcana
+category: 6. Monochrome Tarot & Bestiary Plates
+domain: monochrome medieval horror
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - monochrome-tarot-and-bestiary-plates
+  - tarot-horror
+visualDna:
+  aesthetic: Black and white horror tarot card language with medieval bones, veils, crowns, moons, and quiet omen symbols.
+  subject_treatment: A bone-crowned moth saint, skeletal omen tower, or veiled beast arranged as one textless horror tarot icon with only a few support symbols.
+  color_and_tone: Warm ivory paper, clean black ink, open white space, and optional pale gray wash kept smooth and sparse.
+  lighting_and_shadow: Flat symbolic light, clean shadow blocks, and no realistic night lighting.
+  texture_and_material: Smooth paper, crisp ink, simple engraving marks, and tidy white gaps instead of dirty xerox grain.
+  camera_and_composition: Centered tarot-card symmetry, tall vertical frame, simple arch or moon shape, and no readable titles or numbers.
+  atmosphere_and_mood: Ominous, devotional, quiet, fatalistic, and non-graphic.
+  rendering_and_quality: Clean monochrome illustration with controlled line weight, large shapes, and limited mark density.
+  creative_brief: Original horror tarot visual system for medieval omens, relics, saints, beasts, or occult card imagery without text.
+avoidRules:
+  - readable tarot labels
+  - roman numerals
+  - dense cross-hatching
+  - dirty photocopy grain
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-033.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: monochrome-tarot-and-bestiary-plates
+  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  domain: monochrome medieval horror
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - monochrome-tarot-and-bestiary-plates
+    - tarot-horror
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

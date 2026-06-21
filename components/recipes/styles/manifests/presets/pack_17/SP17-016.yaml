@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-016
+packId: pack_17
+name: Blacklight Monster Manual
+category: 3. Acid Dungeon Zine
+domain: dungeon zine
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - acid-dungeon-zine
+  - monster-manual
+visualDna:
+  aesthetic: Blacklight fantasy monster manual where creature anatomy becomes bold ink, neon organs, and weird page-icon energy.
+  subject_treatment: A symmetrical many-eyed maw monster with bulbous horns, broad teeth, and simplified readable anatomy, staged like a blacklight manual icon.
+  color_and_tone: Black ink base with toxic green, violet, hot pink, and pale lavender paper fields.
+  lighting_and_shadow: Graphic black masses and fluorescent fills create a glowing blacklight illusion.
+  texture_and_material: Rough hatch marks, stippled membranes, controlled xerox texture, screenprint dots, and clean neon fill.
+  camera_and_composition: Tight specimen crop, centered mouth or eye focus, border frame, and little empty space.
+  atmosphere_and_mood: Weird, loud, gross-funny, occult, and tabletop-dungeon adjacent.
+  rendering_and_quality: High-impact zine illustration with clean silhouette logic, heavy denoise, and controlled print reproduction.
+  creative_brief: Reusable for creatures, helmets, relics, masks, or architecture that need monster-manual weirdness.
+avoidRules:
+  - realistic anatomy
+  - medical gore
+  - cute mascot
+  - smooth fantasy painting
+  - clean vector
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-016.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: acid-dungeon-zine
+  categoryName: 3. Acid Dungeon Zine
+  domain: dungeon zine
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - acid-dungeon-zine
+    - monster-manual
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

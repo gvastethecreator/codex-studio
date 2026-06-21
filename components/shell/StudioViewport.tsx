@@ -3,7 +3,9 @@ import React, { Suspense } from 'react';
 import type { AppPageView } from '../../hooks/useHashRouter';
 import type { StudioPageController } from '../../lib/buildStudioPageController';
 import type { RecipeId } from '../../types';
+import { ErrorBoundary } from '../ErrorBoundary';
 import type { RecipePageProps } from '../RecipePage';
+import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
 
 const RecipePage = React.lazy(() =>
   import('../RecipePage').then((module) => ({ default: module.RecipePage })),
@@ -61,16 +63,18 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
       : `${VIEWPORT_SURFACE_BASE_CLASS} ${transitionClassName}`;
 
   return (
-    <Suspense fallback={null}>
-      <div key={routeKey} className={surfaceClassName}>
-        {routeView === 'recipe' && activeRecipe ? (
-          <RecipePage activeRecipe={activeRecipe} {...recipePageProps} />
-        ) : routeView === 'studio' ? (
-          <StudioPage controller={studioPageController} />
-        ) : (
-          <RecipesView onSelectRecipe={onSelectRecipe} />
-        )}
-      </div>
-    </Suspense>
+    <ErrorBoundary fallbackMessage="Could not load this studio view.">
+      <Suspense fallback={<LazySurfaceFallback label="Loading view" />}>
+        <div key={routeKey} className={surfaceClassName}>
+          {routeView === 'recipe' && activeRecipe ? (
+            <RecipePage activeRecipe={activeRecipe} {...recipePageProps} />
+          ) : routeView === 'studio' ? (
+            <StudioPage controller={studioPageController} />
+          ) : (
+            <RecipesView onSelectRecipe={onSelectRecipe} />
+          )}
+        </div>
+      </Suspense>
+    </ErrorBoundary>
   );
 };

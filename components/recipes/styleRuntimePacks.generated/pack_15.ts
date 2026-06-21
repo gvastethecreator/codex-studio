@@ -3,28 +3,51 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () => import('./pack_15/corepunk-solarpunk-1').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_15/corepunk-clockpunk-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_15/corepunk-biopunk-3').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_15/corepunk-steampunk-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_15/corepunk-vaporpunk-5').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_15/corepunk-cyberpunk-6').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_15/corepunk-dieselpunk-7').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_15/corepunk-atompunk-8').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_15/corepunk-decopunk-9').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_15/corepunk-raypunk-10').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_15/corepunk-lunarpunk-11').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_15/corepunk-stonepunk-12').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_15/corepunk-seapunk-13').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_15/classic-industrial-punks-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_15/neon-net-and-signal-punks-2').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_15/eco-repair-and-climate-punks-3').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_15/bio-myco-and-body-punks-4').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_15/ocean-ice-and-terrain-punks-5').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_15/street-riot-and-diy-punks-6').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_15/media-vapor-and-glitch-punks-7').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_15/occult-myth-and-gothic-punks-8').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_15/space-atomic-and-ray-punks-9').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_15/primitive-stone-and-salvage-punks-10').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
   const categoryPresets = await Promise.all(CATEGORY_PRESET_LOADERS.map((loader) => loader()));
   return {
     id: 'pack_15',
-    name: 'Solarpunk Dreamscapes Vault',
+    name: 'Punk Spectrum Vault',
     description:
-      'A curated pack of luminous, sustainable, and poetically futuristic worlds with an optimistic, sophisticated direction.',
+      'A curated spectrum of punk visual languages: industrial retrofutures, network streets, climate repair, biotech mutation, ocean terrain, DIY rebellion, media ghosts, occult machinery, space age kitsch, and primitive salvage systems.',
     presets: categoryPresets.flat(),
   };
 }

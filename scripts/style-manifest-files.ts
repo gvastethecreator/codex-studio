@@ -121,11 +121,26 @@ export async function loadStylePresetManifestRecords(
   return records.sort((a, b) => a.manifest.id.localeCompare(b.manifest.id));
 }
 
-export async function loadStyleManifestGraph() {
-  const [packManifests, presetManifests] = await Promise.all([
-    loadStylePackManifests(),
-    loadStylePresetManifests(),
-  ]);
+async function loadStylePresetManifestsForPack(packId: string) {
+  const packPresetDir = path.join(stylePresetManifestsDir, packId);
+  const manifests: StylePresetManifest[] = [];
+
+  for (const fileName of await scanFlatYamlFiles(packPresetDir)) {
+    manifests.push(await readYamlFile<StylePresetManifest>(path.join(packPresetDir, fileName)));
+  }
+
+  return manifests.sort((a, b) => a.id.localeCompare(b.id));
+}
+
+export async function loadStyleManifestGraph(packFilter?: string) {
+  const [packManifests, presetManifests] = packFilter
+    ? await Promise.all([
+        readYamlFile<StylePackManifest>(
+          path.join(stylePackManifestsDir, `${packFilter}.yaml`),
+        ).then((manifest) => [manifest]),
+        loadStylePresetManifestsForPack(packFilter),
+      ])
+    : await Promise.all([loadStylePackManifests(), loadStylePresetManifests()]);
   const graph = validateStyleManifestGraph(packManifests, presetManifests);
   const catalog = createStylePresetCatalog(packManifests, presetManifests);
 

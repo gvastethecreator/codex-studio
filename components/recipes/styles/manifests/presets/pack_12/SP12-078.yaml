@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Agua espejo, piedra pulida húmeda, seda en movimiento y madera envejecida.
   camera_and_composition: Rutas elevadas, oclusión por capas y lectura stealth sin exigir puentes, lotus o azoteas.
   atmosphere_and_mood: Tensa, poética y disciplinadamente precisa.
-  rendering_and_quality: "Stealth-heist gameplay screencap: shadow route, objective, silent takedown spacing, escape plan clear."
+  rendering_and_quality: 'Stealth-heist gameplay screencap: shadow route, objective, silent takedown spacing, escape plan clear.'
 avoidRules:
   - watermark
   - text

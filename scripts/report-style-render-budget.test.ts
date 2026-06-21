@@ -10,7 +10,7 @@ describe('style render budget report', () => {
     expect(report.categoryInitialRenderLimit).toBe(4);
     expect(report.groupInitialRenderLimit).toBe(16);
     expect(report.expandedGroupRenderLimit).toBe(128);
-    expect(report.packs).toHaveLength(16);
+    expect(report.packs).toHaveLength(17);
     expect(
       Math.max(...report.packs.map((pack) => pack.initialRenderedCategories)),
     ).toBeLessThanOrEqual(4);

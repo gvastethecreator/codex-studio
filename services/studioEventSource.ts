@@ -166,15 +166,65 @@ class BrowserStudioEventStream implements StudioEventStream {
   }
 }
 
+class StudioEventStreamLease implements StudioEventStream {
+  private closed = false;
+
+  constructor(
+    private readonly stream: StudioEventStream,
+    private readonly release: () => void,
+  ) {}
+
+  onJobUpdate(jobIdOrWildcard: string, callback: Listener<Job>) {
+    return this.closed ? () => {} : this.stream.onJobUpdate(jobIdOrWildcard, callback);
+  }
+
+  onAssetAdded(callback: Listener<Asset>) {
+    return this.closed ? () => {} : this.stream.onAssetAdded(callback);
+  }
+
+  onLogAdded(callback: Listener<SystemLog>) {
+    return this.closed ? () => {} : this.stream.onLogAdded(callback);
+  }
+
+  onConnectionChange(callback: Listener<boolean>) {
+    return this.closed ? () => {} : this.stream.onConnectionChange(callback);
+  }
+
+  close() {
+    if (this.closed) return;
+    this.closed = true;
+    this.release();
+  }
+}
+
+const sharedStreams = new Map<string, { stream: BrowserStudioEventStream; refCount: number }>();
+
 /**
  * Create a live SSE stream for backend events. Consumers should reuse the same
  * instance when they need correlated job and asset updates.
  */
 export function createStudioEventStream(apiBase?: string): StudioEventStream {
-  return new BrowserStudioEventStream(
-    apiBase,
-    normalizeStudioEventReconnectPolicy(DEFAULT_STUDIO_EVENT_RECONNECT_POLICY),
-  );
+  const resolvedApiBase = apiBase ?? getStudioApiBase();
+  let entry = sharedStreams.get(resolvedApiBase);
+  if (!entry) {
+    entry = {
+      stream: new BrowserStudioEventStream(
+        resolvedApiBase,
+        normalizeStudioEventReconnectPolicy(DEFAULT_STUDIO_EVENT_RECONNECT_POLICY),
+      ),
+      refCount: 0,
+    };
+    sharedStreams.set(resolvedApiBase, entry);
+  }
+
+  entry.refCount += 1;
+
+  return new StudioEventStreamLease(entry.stream, () => {
+    entry.refCount -= 1;
+    if (entry.refCount > 0) return;
+    entry.stream.close();
+    sharedStreams.delete(resolvedApiBase);
+  });
 }
 
 /**

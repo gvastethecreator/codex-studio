@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Roca vitrificada, metal anodizado, humo denso y superficies antideslizantes quemadas.
   camera_and_composition: Líneas de circuito, jumps y bifurcaciones como ritmo visual competitivo sin exigir arena literal.
   atmosphere_and_mood: Vertiginosa, espectacular y frenética.
-  rendering_and_quality: "Competitive arena gameplay frame: lava risk, trick timing, rhythm, mastery feedback visible."
+  rendering_and_quality: 'Competitive arena gameplay frame: lava risk, trick timing, rhythm, mastery feedback visible.'
 avoidRules:
   - watermark
   - text

@@ -1,46 +1,53 @@
 schemaVersion: 1
 id: SP15-002
 packId: pack_15
-name: Wind Garden Monorail
-category: 1. Corepunk — Solarpunk
+name: Coal Fog Railworks
+category: 1. Classic Industrial Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - solarpunk-dreamscapes
+  - punk-spectrum-vault
+  - classic-industrial-punks
+  - dieselpunk
+  - rail-noir
 visualDna:
-  aesthetic: Civic mobility solarpunk where ribbon continuity, gardened flow, and public trust become the visual backbone.
-  form_and_line: Continuous ribbon trajectories, modular canopy-like arcs, and pedestrian-first circulation curves.
-  color_palette: Mint chlorophyll, sunlit limestone white, and saffron transit highlights.
-  lighting_setup: Clear noon exposure with reflective bounce under vegetated shade bands.
-  material_texture: Satin bio-composite panels, laminated glass fins, and dense hanging foliage mats.
-  render_quality: Production-ready solarpunk concept with strong wayfinding legibility.
-  spatial_distortion: S-curve continuity linking foreground detail to distant gardened depth without requiring trains or stations.
-  atmosphere: Efficient calm, civic trust, and everyday delight in shared infrastructure.
-  key_features: Quiet glide rhythm, pollinator-span motifs, open spacing, shade-rich promenade flow.
-  creative_brief: 'Turn the input into a quiet mobility ribbon: sweeping guide-lines, pollinator canopy arcs, satin bio-composite seams, and saffron wayfinding accents should make it feel shared, gliding, and civic. Rails, trains, or stations can reinforce the idea but should not become mandatory scenery.'
+  aesthetic: dieselpunk rail signal poster built around civilian rail logistics with locomotive silhouettes, semaphore gantries, small simplified switch crews, coal-fog shape blocks, and red signal geometry.
+  form_and_line: Broad mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses headlamp circles, rail silhouettes, semaphore blocks, heavy engine masses, small worker marks, and open charcoal planes.
+  color_palette: coal black, signal red, sodium amber, gunmetal gray
+  lighting_setup: posterized red signal blocks, amber fog planes, locomotive headlight circles, open charcoal midtones
+  material_texture: broad steel masses, flat coal-dust washes, canvas coat silhouettes, cracked enamel color blocks, sparse rail reflections
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: tense logistics, soot, late-night industrial pressure
+  key_features: headlamp cones, rail silhouettes, semaphore lights, heavy engines, worker clusters
+  creative_brief: 'Push dieselpunk through civilian transport signage and logistics: big engine silhouettes, semaphore signal logic, switch crews as small simplified working figures, soot planes, and rail geometry. No foreground station officer, no uniformed guard hero, no close portrait, no lantern-pinup, no military faction mood, no realistic noir protagonist. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor screenprint poster, risograph poster, cel-shaded graphic-novel card art, flat-to-painterly digital illustration, or gouache poster aesthetics over realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - cyberpunk-grime
-  - warlike
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-002.webp
 attributes:
-  negativePrompt: photoreal, cyberpunk-grime, warlike, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, skull emblem, faction insignia, political flag, handheld lantern hero, military staging, station officer portrait, rail guard portrait, close-up noir protagonist, foreground uniformed worker portrait, realistic military coat, realistic trenchcoat hero, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-solarpunk
-  categoryName: 1. Corepunk — Solarpunk
+  packName: Punk Spectrum Vault
+  categoryId: classic-industrial-punks
+  categoryName: 1. Classic Industrial Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - solarpunk-dreamscapes
+    - punk-spectrum-vault
+    - classic-industrial-punks
+    - dieselpunk
+    - rail-noir
   supportedTasks:
     - image_generate
     - image_edit

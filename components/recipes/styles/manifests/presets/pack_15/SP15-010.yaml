@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-010
 packId: pack_15
-name: Circular Maker Courtyard
-category: 2. Corepunk — Clockpunk
+name: Meshlight Night Market
+category: 2. Neon, Net & Signal Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - clockpunk
+  - punk-spectrum-vault
+  - neon-net-and-signal-punks
+  - cyberpunk
+  - mesh-network
 visualDna:
-  aesthetic: Civic clockpunk driven by precision mechanics, artisanal automation, and communal repair culture.
-  form_and_line: Gear-ring colonnade rhythm, pendulum-guided axes, and radial bench-like choreography.
-  color_palette: Polished brass, terracotta clay, and oxidized teal accents.
-  lighting_setup: Skylight shafts with warm lamp pools over escapement-like work surfaces.
-  material_texture: Brushed bronze gears, hardwood warmth, enamel dials, and oil-darkened leather.
-  render_quality: High-detail editorial concept art with precise mechanical readability.
-  spatial_distortion: Flywheel perspective radiating into timepiece micro-atelier depth without requiring a courtyard.
-  atmosphere: Patient mastery, communal ingenuity, and elegant mechanical rhythm.
-  key_features: Public gear-library motifs, escapement nodework, cooperative chronometer-forge rhythm, and canopy clockwork cues.
-  creative_brief: 'Rebuild the input as civic clockwork craft: radial escapement geometry, brass timing nodes, oil-dark leather touchpoints, and cooperative repair rhythm. Workshops, courtyards, benches, or clock towers are optional anchors; the style is patient public mechanics and precise communal ingenuity.'
+  aesthetic: street mesh cyberpunk poster built around a compact mesh-network exchange with antenna canopies, modded coats, and luminous barter tech.
+  form_and_line: Sharp but simplified network geometry, non-readable signal-panel rhythm, a few thick cable paths, wet reflections, and hacker-era silhouettes. Core composition uses mesh antennas, modded coats, canopy silhouettes, wearable/hanging nodes, and steam color layers.
+  color_palette: teal neon, hot pink, black tarp, warm noodle steam
+  lighting_setup: flat stall LED color blocks, hanging mesh-node glow, matte canopy color shapes
+  material_texture: tarp planes, plastic crate blocks, thick wet wire paths, warm steam layers, chrome mod accents
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: tactile, social, illicit, compressed
+  key_features: mesh antennas, modded coats, canopy silhouettes, wearable/hanging nodes, steam layers
+  creative_brief: 'A market is allowed here because it is the premise: make it cybernetic, compact, and signal-driven rather than a generic aisle, food-stall postcard, or phone/device demo. Keep barter tech as mesh nodes and antenna canopies, with no readable signs or UI. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - sterile-corporate
-  - dystopian-factory
-  - dark-gloom
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-010.webp
 attributes:
-  negativePrompt: photoreal, sterile-corporate, dystopian-factory, dark-gloom, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, foreground vendor portrait, device demo, phone, single machine stall hero, realistic bazaar scene, HDR lens realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, readable signage, readable UI, phone demo, handheld device hero, food-stall postcard, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, generic market aisle, unmotivated library aisle, fantasy corridor, dense cable lattice, cable spiderweb, tiny neon speckle field, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-clockpunk
-  categoryName: 2. Corepunk — Clockpunk
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - clockpunk
+    - punk-spectrum-vault
+    - neon-net-and-signal-punks
+    - cyberpunk
+    - mesh-network
   supportedTasks:
     - image_generate
     - image_edit

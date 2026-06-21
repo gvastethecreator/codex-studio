@@ -81,7 +81,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP08-009',
-    name: 'Steampunk Inventor',
+    name: 'Steampunk Engineering Attire',
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt: 'modern, plastic, digital',
     style: {

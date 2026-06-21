@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-028
+packId: pack_17
+name: Sepulcher Warband Engraving
+category: 5. Apocalyptic Wargame & Inked Dungeon
+domain: medieval engraving fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - apocalyptic-wargame-and-inked-dungeon
+  - engraving
+visualDna:
+  aesthetic: Old-world sepulcher warband engraving with carved linework, funeral armor, heraldic masses, and siege-icon composition.
+  subject_treatment: An engraved tomb wagon pulled by a skeletal ox with tiny standard bearers and tomb guards, reduced to bold cut lines and sepulcher rhythm.
+  color_and_tone: Ink black, bone paper, tarnished silver, sepia wash, oxidized green, and small wax-red accents.
+  lighting_and_shadow: Value comes from engraved hatching and broad paper-negative space rather than noisy dark gradients.
+  texture_and_material: Etched copperplate lines, dry paper, chipped marble, metal scratches, wax seals without readable marks, and clean ink edges.
+  camera_and_composition: Frontal heraldic grouping, triangular warband arrangement, tall banner shapes, and print-safe negative space.
+  atmosphere_and_mood: Funereal, disciplined, ancient, martial, and ceremonial.
+  rendering_and_quality: Crisp engraved fantasy print with heavy denoise, clean hatching, and no muddy texture chatter.
+  creative_brief: Original engraving style for warbands, tomb knights, sepulcher relics, bestiary entries, and medieval campaign cards.
+avoidRules:
+  - readable heraldic text
+  - modern logos
+  - gray noise mush
+  - smooth digital painting
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-028.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: apocalyptic-wargame-and-inked-dungeon
+  categoryName: 5. Apocalyptic Wargame & Inked Dungeon
+  domain: medieval engraving fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - apocalyptic-wargame-and-inked-dungeon
+    - engraving
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

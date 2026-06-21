@@ -1,48 +1,53 @@
 schemaVersion: 1
 id: SP15-069
 packId: pack_15
-name: Rocket Chapel Outpost
-category: 10. Corepunk — Raypunk
+name: Comet Salvage Yard
+category: 9. Space, Atomic & Ray Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - raypunk
+  - punk-spectrum-vault
+  - space-atomic-and-ray-punks
+  - space-salvage
+  - salvagepunk
 visualDna:
-  aesthetic: Rocket-age devotional style where engines, vows, and navigation icons merge into sacred preparation.
-  form_and_line: Rocket-arch nave profiles, nozzle altar shapes, hangar-rib prayers, star-icon triptychs, and capsule reliquary forms.
-  color_palette: Mission white, worn brass, cosmic blue, candle amber, and scorched launch gray.
-  lighting_setup: Narrow altar spot, hatchway rimlight, blue engine glow, and small votive reflections on polished metal.
-  material_texture: Painted steel, cloth mission banners, worn floor plating, heat-scarred brass, and paper blessing tags.
-  render_quality: Symbolic scene with strong silhouette hierarchy and tactile ritual objects.
-  spatial_distortion: Aisle-like perspective toward nozzle halos, with rocket geometry replacing religious architecture.
-  atmosphere: Faith, fear, mission resolve, and quiet mechanical tenderness.
-  key_features: Engine-blessing rig motifs, star icon panels, vow capsules, launch-candle marks, and prayer-tool racks.
-  creative_brief: 'Sanctify the input through launch risk: nozzle halos, mission-white steel, star triptychs, candle-amber engine glow, and paper blessing tags should fuse machinery with vow. Chapel or outpost cues may appear, but the style is devotional preparation for mechanical departure. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: space salvagepunk built around one distinctive tethered salvage captain protagonist, comet ice chunks, old satellites, welding sparks, and cable arcs.
+  form_and_line: Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses tethered salvage captain protagonist, comet ice, old satellites, welding sparks, cable lines.
+  color_palette: space black, ice cyan, hazard orange, dull aluminum
+  lighting_setup: broad welding glow, suit glow dots, comet rimlight, sparse cold stars
+  material_texture: satellite panels, suit fabric, ice, cables, scorched metal
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: dangerous, scrappy, orbital, cold
+  key_features: tethered salvage captain protagonist, comet ice, old satellites, welding sparks, cable lines
+  creative_brief: 'Space salvagepunk should show risk through one character: a distinctive tethered salvage captain cutting or claiming comet ice beside old satellite panels, thick cable arcs, and broad welding glow, not a heroic ship poster. The debris supports the protagonist; it must not become object-only salvage. Avoid crew lineup, worker crew, battle debris, cockpit UI, spaceship hero, or 3D space render. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - comedy
-  - cyberpunk-slum
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-069.webp
 attributes:
-  negativePrompt: photoreal, comedy, cyberpunk-slum, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, spaceship hero, cockpit UI, weapon, explosion, readable satellite labels, NASA-like logo, hazard symbols, dense cable spaghetti, starfield wallpaper, photoreal metal, PBR panels, tiny debris field, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-raypunk
-  categoryName: 10. Corepunk — Raypunk
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - raypunk
+    - punk-spectrum-vault
+    - space-atomic-and-ray-punks
+    - space-salvage
+    - salvagepunk
   supportedTasks:
     - image_generate
     - image_edit

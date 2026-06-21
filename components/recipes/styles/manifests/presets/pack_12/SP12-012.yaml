@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Clusters limpios, dithering controlado y tiles modulares sin ruido ambiguo.
   camera_and_composition: Side-view o isométrica simple con circulación clara entre interacción, crafting y salida de mapa sin exigir taberna.
   atmosphere_and_mood: Acogedora, social y curiosa, con sensación de progreso seguro.
-  rendering_and_quality: "Pixel in-game frame: tile readability, quest hub interactables, warm POI hierarchy."
+  rendering_and_quality: 'Pixel in-game frame: tile readability, quest hub interactables, warm POI hierarchy.'
 avoidRules:
   - watermark
   - text

@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-002
+packId: pack_17
+name: Gilded Rune Epic
+category: 1. Dark Fantasy Realms
+domain: medieval fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dark-fantasy-realms
+  - rune-epic
+visualDna:
+  aesthetic: Vast mythic medieval epic where gold sigils, ruined kingdoms, and divine weather dominate the frame.
+  subject_treatment: A gilded rune oracle bearing a floating oath tablet and stag-horn halo, elegant and legendary, with the figure secondary to glowing rune geometry.
+  color_and_tone: Weathered gold, storm blue, moss green, bone white, and blackened umber with radiant rune accents.
+  lighting_and_shadow: Holy rim light breaks through clouds, with long shadows and glowing inscriptions as secondary light sources.
+  texture_and_material: Engraved metal, mossy stone, torn banners, ancient parchment, and luminous etched rune lines.
+  camera_and_composition: Wide heroic landscapes, colossal scale cues, centered relics, and horizon lines that feel mythic.
+  atmosphere_and_mood: Grand, elegiac, haunted, and ancient, with wonder balanced by ruin.
+  rendering_and_quality: High-detail fantasy illustration with painterly polish, ornate surfaces, and readable silhouettes.
+  creative_brief: Use for any subject needing golden myth, divine ruin, and colossal medieval scale without copying a specific franchise.
+avoidRules:
+  - generic high fantasy
+  - shiny new armor
+  - cartoon magic
+  - sci-fi panels
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-002.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dark-fantasy-realms
+  categoryName: 1. Dark Fantasy Realms
+  domain: medieval fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dark-fantasy-realms
+    - rune-epic
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

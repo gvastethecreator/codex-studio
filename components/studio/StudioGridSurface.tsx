@@ -33,6 +33,12 @@ export interface StudioGridSurfaceProps {
   previewRatio: AspectRatio | null;
   generationAspectRatio: AspectRatio;
   isInteractingWithToolbar: boolean;
+  catalogTotal: number;
+  catalogHasMore: boolean;
+  isCatalogLoading: boolean;
+  catalogError: string | null;
+  loadMoreCatalog: () => void;
+  refreshCatalog: () => void;
 }
 
 export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
@@ -58,6 +64,12 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
   previewRatio,
   generationAspectRatio,
   isInteractingWithToolbar,
+  catalogTotal,
+  catalogHasMore,
+  isCatalogLoading,
+  catalogError,
+  loadMoreCatalog,
+  refreshCatalog,
 }) => {
   const handleGridRegenerate = useCallback(
     (config: GeneratedImageWithConfig['config']) => {
@@ -114,6 +126,12 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
             onDownloadAll={handleGridDownloadAll}
             onDeleteSelected={handleDeleteSelected}
             onClearWorkspace={handleGridClearWorkspace}
+            catalogTotal={catalogTotal}
+            hasMore={catalogHasMore}
+            isCatalogLoading={isCatalogLoading}
+            catalogError={catalogError}
+            onLoadMore={loadMoreCatalog}
+            onRetryCatalog={refreshCatalog}
           />
         </ErrorBoundary>
       </div>

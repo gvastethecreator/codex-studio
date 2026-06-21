@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Embroidery on Photo',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, portrait requirement, literal memory photo',
+      'realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, portrait requirement, literal memory photo',
     style: {
       aesthetic: 'Thread stitched over photo',
       form_and_line: 'Thread lines',
@@ -193,7 +193,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Paint over Photo',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal photo requirement, portrait requirement',
+      'realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal photo requirement, portrait requirement',
     style: {
       aesthetic: 'Acrylic strokes on photo',
       form_and_line: 'Brush strokes',

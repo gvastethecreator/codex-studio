@@ -18,16 +18,66 @@ import {
 } from '../lib/codexExecution';
 import { getCodexModelCatalog } from '../services/localStudioService';
 import type { CodexModel, CodexModelCatalogResponse } from '../packages/shared/src';
+import { filterPersistableInlineAttachments } from '../lib/browserPersistenceBudget';
 
 interface UseGenerationConfigProps {
   log: (message: string) => void;
+}
+
+export function prepareGenerationConfigForPersist(
+  config: ImageGenerationConfig,
+): ImageGenerationConfig {
+  return {
+    ...config,
+    attachments: filterPersistableInlineAttachments(config.attachments),
+  };
+}
+
+export function normalizeGenerationConfigForCodexModels(
+  config: ImageGenerationConfig,
+  codexModels: CodexModel[],
+): ImageGenerationConfig {
+  if (codexModels.length === 0) return config;
+
+  const preferredId = pickPreferredCodexModel(codexModels, config.executionModel);
+  const selectedModel =
+    codexModels.find((model) => model.id === config.executionModel) ??
+    codexModels.find((model) => model.id === preferredId) ??
+    null;
+
+  let next = config;
+
+  if (preferredId && preferredId !== config.executionModel) {
+    next = { ...next, executionModel: preferredId };
+  }
+
+  const normalizedReasoning = normalizeCodexReasoningEffort(
+    selectedModel,
+    next.executionReasoningEffort,
+  );
+  if (normalizedReasoning !== next.executionReasoningEffort) {
+    next = { ...next, executionReasoningEffort: normalizedReasoning };
+  }
+
+  const normalizedSpeed = normalizeCodexSpeed(selectedModel, next.executionSpeed);
+  if (normalizedSpeed !== next.executionSpeed) {
+    next = { ...next, executionSpeed: normalizedSpeed };
+  }
+
+  return next;
 }
 
 export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
   const [generationConfig, setGenerationConfig] = useIndexedDBStorage<ImageGenerationConfig>(
     'generation-config',
     DEFAULT_GENERATION_CONFIG,
+    { prepareForPersist: prepareGenerationConfigForPersist },
   );
+  const [codexModelCatalog, setCodexModelCatalog] = useState<CodexModelCatalogResponse | null>(
+    null,
+  );
+  const [isLoadingCodexModelCatalog, setIsLoadingCodexModelCatalog] = useState(true);
+  const [codexModelCatalogError, setCodexModelCatalogError] = useState<string | null>(null);
 
   const logRef = useRef(log);
   logRef.current = log;
@@ -96,38 +146,21 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
         if (cancelled) return;
 
         const codexModels = catalog?.models ?? [];
-        if (codexModels.length === 0) return;
-
-        setGenerationConfig((prev) => {
-          const preferredId = pickPreferredCodexModel(codexModels, prev.executionModel);
-          const selectedModel =
-            codexModels.find((m: CodexModel) => m.id === prev.executionModel) ??
-            codexModels.find((m: CodexModel) => m.id === preferredId) ??
-            null;
-
-          let next = prev;
-
-          if (preferredId && preferredId !== prev.executionModel) {
-            next = { ...next, executionModel: preferredId };
-          }
-
-          const normalizedReasoning = normalizeCodexReasoningEffort(
-            selectedModel,
-            next.executionReasoningEffort,
-          );
-          if (normalizedReasoning !== next.executionReasoningEffort) {
-            next = { ...next, executionReasoningEffort: normalizedReasoning };
-          }
-
-          const normalizedSpeed = normalizeCodexSpeed(selectedModel, next.executionSpeed);
-          if (normalizedSpeed !== next.executionSpeed) {
-            next = { ...next, executionSpeed: normalizedSpeed };
-          }
-
-          return next === prev ? prev : next;
-        });
+        setCodexModelCatalog(catalog);
+        setCodexModelCatalogError(catalog.error);
+        setGenerationConfig((prev) => normalizeGenerationConfigForCodexModels(prev, codexModels));
       })
-      .catch(() => {});
+      .catch((error) => {
+        if (cancelled) return;
+        setCodexModelCatalogError(
+          error instanceof Error ? error.message : 'Unable to read the Codex model catalog.',
+        );
+      })
+      .finally(() => {
+        if (!cancelled) {
+          setIsLoadingCodexModelCatalog(false);
+        }
+      });
 
     return () => {
       cancelled = true;
@@ -253,5 +286,8 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
     handleRemoveAttachment,
     handleAddToContext,
     maxAttachments,
+    codexModelCatalog,
+    isLoadingCodexModelCatalog,
+    codexModelCatalogError,
   };
 };

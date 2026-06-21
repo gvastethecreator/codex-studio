@@ -23,7 +23,7 @@ visualDna:
   texture_and_material: Remaches, latón aceitado, madera barnizada y lona de dirigible con desgaste funcional.
   camera_and_composition: Triangulación de objetivos visuales, verticalidad clara y flow de misión; nave, torre o ruta son anclas opcionales.
   atmosphere_and_mood: Aventura de alto riesgo, ambición imperial y dinamismo de frontera aérea.
-  rendering_and_quality: "Playable sky-armada screencap: flight paths, boarding vectors, navigation puzzle state clear."
+  rendering_and_quality: 'Playable sky-armada screencap: flight paths, boarding vectors, navigation puzzle state clear.'
   creative_brief: >-
     Aplica Clockwork Sky Armada como gramatica original de videojuego sobre cualquier input: conserva su sistema de
     genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura

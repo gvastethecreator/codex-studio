@@ -1,5 +1,5 @@
 import type { Job as StudioJob } from '../packages/shared/src';
-import type { ImageGenerationConfig, QueueJob } from '../types';
+import type { GenerationExecutionOutcome, ImageGenerationConfig, QueueJob } from '../types';
 
 export const MAX_CONCURRENT_JOBS = 3;
 export const TOTAL_MAX_CONCURRENT = 15;
@@ -53,7 +53,7 @@ export interface QueueJobExecuteGenerationOptions {
 export type QueueJobExecuteGeneration = (
   config: Partial<ImageGenerationConfig>,
   options?: QueueJobExecuteGenerationOptions,
-) => Promise<void>;
+) => Promise<GenerationExecutionOutcome>;
 
 export type QueueJobExecutionResult =
   | {
@@ -93,7 +93,7 @@ export function startQueuedJobExecution(
     controller,
     run: async () => {
       try {
-        await executeGeneration(job.config, {
+        const outcome = await executeGeneration(job.config, {
           preventModal: true,
           workspaceId: job.workspaceId,
           signal: controller.signal,
@@ -102,6 +102,21 @@ export function startQueuedJobExecution(
             onJobCreated?.(studioJob);
           },
         });
+
+        if (outcome.status === 'cancelled') {
+          return {
+            status: 'cancelled',
+            serverJobId,
+          };
+        }
+
+        if (outcome.status === 'failed') {
+          return {
+            status: 'failed',
+            error: outcome.message,
+            serverJobId,
+          };
+        }
 
         return {
           status: 'completed',

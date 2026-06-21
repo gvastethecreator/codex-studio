@@ -9,13 +9,13 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Historical & Fantasy',
     negativePrompt: 'contemporary tailoring dominance, generic modern streetwear',
     style: {
-      aesthetic: 'Ancient Egyptian regalia, Nile-divinity splendor, temple-relief majesty',
+      aesthetic: 'Ancient Egyptian regalia, Nile-divinity splendor, carved-relief majesty',
       form_and_line:
         'Pleated linen, columnar drape, usekh-collar spread, nemes-headdress frame, sheath-silhouette',
       color_palette:
         'White, Gold, Lapis Blue, turquoise, carnelian red, malachite green, ebony, electrum',
       lighting_setup:
-        'Desert-gold sun, temple-shadow contrast, torchlight flicker, lapis highlight',
+        'Desert-gold sun, relief-shadow contrast, torchlight flicker, lapis highlight',
       material_texture:
         'Fine linen, gold leaf, faience beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals',
       render_quality: 'Royal, ancient, tomb-painting precision, pharaonic grandeur',
@@ -91,7 +91,7 @@ export const GENERATED_STYLE_PRESETS = [
       material_texture:
         'Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul',
       render_quality: 'Historical museum-grade finish, painted-court realism, formal gravitas',
-      spatial_distortion: 'Stiff posture',
+      spatial_distortion: 'Stiffened garment architecture',
       atmosphere: 'Regal, serious, wealthy, courtly intrigue, absolute power, gilded formality',
       key_features:
         'Ornate details, neck ruff, jeweled bodice, structured court headwear, ceremonial trim',

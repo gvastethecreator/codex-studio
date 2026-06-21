@@ -7,7 +7,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP12-001',
     name: 'Neon Samurai District',
     category: '1. Neon Urban & Night Ops',
-    negativePrompt: 'watermark, text, logo, lowres, blurry',
+    negativePrompt:
+      'watermark, text, logo, lowres, blurry, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática action-RPG cyberpunk neo-noir con lectura táctica por silueta, neón diegético y tensión de infiltración nocturna.',
@@ -18,20 +19,21 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Iluminación diegética de neón con pockets de sombra para stealth readability y rim de detección.',
       texture_and_material:
-        'Asfalto mojado PBR, metal cepillado, vidrio sucio y holografía de baja persistencia tipo HUD-world.',
+        'Asfalto mojado PBR, metal cepillado, vidrio sucio y holografía ambiental de baja persistencia.',
       camera_and_composition:
         'Composición third-person táctica con profundidad legible, rutas sugeridas, cobertura abstracta y puntos de interacción reconocibles.',
       atmosphere_and_mood:
         'Tensión operativa, vigilancia constante y ritmo de incursión de alto riesgo.',
       rendering_and_quality:
-        'Key art AAA con pipeline de legibilidad gameplay-first, contraste de objetivo y nitidez de interacción.',
+        'In-game third-person screencap AAA: stealth routes, interactables, objective contrast, neon threat readability.',
     },
   },
   {
     id: 'SP12-014',
     name: 'Urban Parkour Rooftop Wars',
     category: '1. Neon Urban & Night Ops',
-    negativePrompt: 'watermark, text, logo, fog-heavy, muddy-contrast',
+    negativePrompt:
+      'watermark, text, logo, fog-heavy, muddy-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática hero-shooter de movilidad vertical con control de altura, rotación rápida y lectura de ruta en movimiento.',
@@ -47,14 +49,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Perspectiva dinámica con jump lines, flancos y high-ground abstracto como señal de navegación.',
       atmosphere_and_mood: 'Rítmica, competitiva y técnica, centrada en posicionamiento.',
       rendering_and_quality:
-        'PvP readability-first con layout claro de lanes, alturas y líneas de visión.',
+        'PvP parkour screencap: lanes, height changes, sightlines, chase pressure readable.',
     },
   },
   {
     id: 'SP12-025',
     name: 'Neon Underpass Brawler',
     category: '1. Neon Urban & Night Ops',
-    negativePrompt: 'watermark, text, logo, pastel, lowres',
+    negativePrompt:
+      'watermark, text, logo, pastel, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática beat-em-up neon-noir con combate por oleadas, control de espacio, hit-confirm claro y flow rítmico.',
@@ -70,14 +73,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Side-view clásico, capas activas y zonas de combo como lenguaje visual sin exigir underpass.',
       atmosphere_and_mood: 'Energía callejera, agresiva y cadenciosa.',
       rendering_and_quality:
-        'Stage-art jugable con legibilidad de hit confirms, crowd control y desplazamiento lateral.',
+        'Side-brawler gameplay frame: hit confirms, crowd control, neon stage depth, movement lanes clear.',
     },
   },
   {
     id: 'SP12-032',
     name: 'Harbor Smuggler Night Heist',
     category: '1. Neon Urban & Night Ops',
-    negativePrompt: 'watermark, text, logo, daylight, low-detail',
+    negativePrompt:
+      'watermark, text, logo, daylight, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática stealth-heist nocturna con infiltración modular, extracción silenciosa y rutas clandestinas.',
@@ -93,14 +97,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Sightlines cruzadas, rutas altas/bajas, puntos ciegos y nodos de botín sin exigir puerto.',
       atmosphere_and_mood: 'Nerviosa, oportunista y al borde del fallo.',
       rendering_and_quality:
-        'Infiltration map gameplay-first con landmarks inequívocos y lectura de sigilo por capas.',
+        'Infiltration gameplay screencap: layered stealth routes, patrol landmarks, smuggler objective clear.',
     },
   },
   {
     id: 'SP12-043',
     name: 'Harbor Kaiju Evacuation',
     category: '1. Neon Urban & Night Ops',
-    negativePrompt: 'watermark, text, logo, cute-style, low-detail',
+    negativePrompt:
+      'watermark, text, logo, cute-style, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática urban-disaster action con evacuación dinámica, amenaza colosal y contención por fases.',
@@ -116,14 +121,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Escala colosal, corredores de evacuación y puntos de defensa visibles sin exigir puerto.',
       atmosphere_and_mood: 'Abrumadora, urgente y de supervivencia colectiva.',
       rendering_and_quality:
-        'Event-scale gameplay key-art con legibilidad de rutas civiles, amenaza y objetivos de contención.',
+        'Evacuation event gameplay frame: civilian routes, kaiju scale, containment objectives readable.',
     },
   },
   {
     id: 'SP12-048',
     name: 'Crystal Metro Hoverline',
     category: '1. Neon Urban & Night Ops',
-    negativePrompt: 'watermark, text, logo, medieval, low-detail',
+    negativePrompt:
+      'watermark, text, logo, medieval, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática urban-action crystalpunk con tránsito masivo, movilidad por capas y seguridad cívica militarizada.',
@@ -134,19 +140,20 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Luminarias distribuidas, rebotes en marquesinas y glow holográfico para navegación por capas.',
       texture_and_material:
-        'Smart-glass facetado, aleación cepillada, compuestos antideslizantes y artefactos volumétricos UI.',
+        'Smart-glass facetado, aleación cepillada, compuestos antideslizantes y artefactos volumétricos de navegación ambiental.',
       camera_and_composition:
         'Hub radial, vectores de circulación y sightlines tácticas limpias sin exigir metro o hoverline literal.',
       atmosphere_and_mood: 'Ordenada, veloz y con tensión de seguridad contenida.',
       rendering_and_quality:
-        'AAA environment concept gameplay-first con legibilidad robusta de rutas, accesos y estado operativo.',
+        'Urban transit gameplay screencap: hoverline routes, access points, platform state, navigation cues clear.',
     },
   },
   {
     id: 'SP12-056',
     name: 'Carbon Megacity Rooftop Chase',
     category: '1. Neon Urban & Night Ops',
-    negativePrompt: 'watermark, text, logo, medieval, lowres',
+    negativePrompt:
+      'watermark, text, logo, medieval, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática mobility-action parkour con momentum, persecución, elección de ruta y superficies de carbono.',
@@ -161,14 +168,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Profundidad vertical, líneas de flujo y alternativas de escape sin exigir megaciudad o rooftop.',
       atmosphere_and_mood: 'Cinética, urgente y técnicamente precisa.',
       rendering_and_quality:
-        'Mobility scene gameplay-first con legibilidad de trayectorias, riesgo y timing.',
+        'Rooftop chase gameplay screencap: trajectory, risk gaps, checkpoint rhythm, timing clear.',
     },
   },
   {
     id: 'SP12-062',
     name: 'Neon Koi River District',
     category: '1. Neon Urban & Night Ops',
-    negativePrompt: 'watermark, text, logo, medieval, low-detail',
+    negativePrompt:
+      'watermark, text, logo, medieval, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática open-world cyberpunk fluvial con patrulla, contrabando, control de canales y reflejos neon líquidos.',
@@ -182,14 +190,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Diagonales líquidas, rutas múltiples y sightlines de emboscada sin exigir distrito o canal literal.',
       atmosphere_and_mood: 'Elegante, criminalmente tensa y viva.',
       rendering_and_quality:
-        'Premium environment gameplay-first con navegación clara por agua y altura.',
+        'Open-world patrol gameplay screencap: canal routes, ambush sightlines, POIs, neon water navigation clear.',
     },
   },
   {
     id: 'SP12-071',
     name: 'Verdant Metro Rebellion',
     category: '1. Neon Urban & Night Ops',
-    negativePrompt: 'watermark, text, logo, medieval, lowres',
+    negativePrompt:
+      'watermark, text, logo, medieval, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática urban-insurgency eco-tech con barricadas, control territorial y gear reciclado avanzado.',
@@ -205,14 +214,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Barricadas, rutas de flanco y nodos críticos visibles sin exigir metro o estación.',
       atmosphere_and_mood: 'Urgente, combativa y esperanzadamente política.',
       rendering_and_quality:
-        'Insurgent-faction gameplay art con legibilidad de lanes, puntos de presión y control territorial.',
+        'Rebellion gameplay frame: metro lanes, pressure points, territorial control, insurgent routes readable.',
     },
   },
   {
     id: 'SP12-078',
     name: 'Midnight Lotus Ninja Heist',
     category: '1. Neon Urban & Night Ops',
-    negativePrompt: 'watermark, text, logo, heavy-guns, low-detail',
+    negativePrompt:
+      'watermark, text, logo, heavy-guns, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática stealth-op shinobi nocturna con verticalidad, silencio, ejecución quirúrgica y rutas en sombra.',
@@ -228,7 +238,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Rutas elevadas, oclusión por capas y lectura stealth sin exigir puentes, lotus o azoteas.',
       atmosphere_and_mood: 'Tensa, poética y disciplinadamente precisa.',
       rendering_and_quality:
-        'Premium stealth gameplay key-art con comunicación limpia de ruta, objetivo y escape.',
+        'Stealth-heist gameplay screencap: shadow route, objective, silent takedown spacing, escape plan clear.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

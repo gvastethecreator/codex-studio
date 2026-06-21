@@ -71,6 +71,11 @@ export interface GeneratedImageWithConfig extends GeneratedImage {
   config: ImageGenerationConfig;
 }
 
+export type GenerationExecutionOutcome =
+  | { status: 'completed' }
+  | { status: 'cancelled'; message?: string }
+  | { status: 'failed'; message: string };
+
 export interface GenerationBatch {
   id: string;
   workspaceId: string; // Added link to workspace

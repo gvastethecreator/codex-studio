@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Lona resistente, paneles reparados, madera recompuesta y metal reciclado.
   camera_and_composition: Circulación, abastecimiento, taller y guardia como zonas visuales; campamento y riel son opcionales.
   atmosphere_and_mood: Esperanzada, austera y resiliente.
-  rendering_and_quality: "Nomad logistics gameplay screencap: supply flow, security lanes, rail camp circulation visible."
+  rendering_and_quality: 'Nomad logistics gameplay screencap: supply flow, security lanes, rail camp circulation visible.'
   creative_brief: >-
     Aplica Solar Rail Nomad Camp como gramatica original de videojuego sobre cualquier input: conserva su sistema de
     genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura

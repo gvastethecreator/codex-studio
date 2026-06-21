@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Basalto pulido, polvo lunar, cristal opaco y juntas de mecanismo antiguo.
   camera_and_composition: Simetría funcional, nodos de resolución y sombras geométricas sin exigir cámara lunar.
   atmosphere_and_mood: Contemplativa, ingeniosa y enigmática.
-  rendering_and_quality: "Puzzle-chamber gameplay screencap: monolith rule, progress state, solution path, scale readable."
+  rendering_and_quality: 'Puzzle-chamber gameplay screencap: monolith rule, progress state, solution path, scale readable.'
 avoidRules:
   - watermark
   - text

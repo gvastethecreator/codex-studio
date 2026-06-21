@@ -7,7 +7,8 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP12-007',
     name: 'Glacier Fortress Assault',
     category: '4. Sieges, Warfronts & Last Stands',
-    negativePrompt: 'watermark, text, logo, tropical-elements, low-detail',
+    negativePrompt:
+      'watermark, text, logo, tropical-elements, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática tactical-shooter polar con control por sectores, movilidad vertical, visibilidad térmica y clima como sistema.',
@@ -23,16 +24,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Vista oblicua sectorizada con rutas A/B/C, choke points y líneas de fuego como lectura táctica flexible.',
       atmosphere_and_mood: 'Resistencia extrema, precisión táctica y desgaste ambiental continuo.',
       rendering_and_quality:
-        'Operation key art con lectura topográfica, claridad de objetivos y flujo de asedio.',
+        'Assault mission screencap: topographic lanes, breach points, squad objective flow clear.',
       creative_brief:
-        'Aplica Glacier Fortress Assault como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Glacier Fortress Assault como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-009',
     name: 'Ruined Cathedral Co-op Siege',
     category: '4. Sieges, Warfronts & Last Stands',
-    negativePrompt: 'watermark, text, logo, modern-weapons, lowres',
+    negativePrompt:
+      'watermark, text, logo, modern-weapons, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática co-op siege medieval-fantasy con defensa por oleadas, presión escalada y ornamentación gótica funcional.',
@@ -48,16 +50,17 @@ export const GENERATED_STYLE_PRESETS = [
         'Objective hub, flancos activos y rutas de oleada telegráficas como composición; no exigir catedral ni nave central.',
       atmosphere_and_mood: 'Presión sostenida, heroísmo cooperativo y resistencia de último tramo.',
       rendering_and_quality:
-        'Raid-endgame visual con excelente readability de objetivos, flujos enemigos y ventanas de cooldown.',
+        'Co-op raid gameplay frame: objective layers, enemy flow, cooldown windows, party roles visible.',
       creative_brief:
-        'Aplica Ruined Cathedral Co-op Siege como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, UI, texto legible ni set-piece fijo.',
+        'Aplica Ruined Cathedral Co-op Siege como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
     },
   },
   {
     id: 'SP12-026',
     name: 'Verdant Ruins Tactical RPG',
     category: '4. Sieges, Warfronts & Last Stands',
-    negativePrompt: 'watermark, text, logo, cluttered-ui, blur',
+    negativePrompt:
+      'watermark, text, logo, cluttered-ui, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática tactical-RPG isométrica con posicionamiento, cobertura orgánica, turnos y tiles de ruina viva.',
@@ -73,14 +76,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Isométrica limpia por tiles con alturas, cuellos de botella y líneas de avance evidentes sin exigir ruinas.',
       atmosphere_and_mood: 'Estratégica, calculada y tensa.',
       rendering_and_quality:
-        'Battle-map readability-first con telemetría visual de alcance, cobertura y prioridad táctica.',
+        'Isometric tactical-RPG screencap: tiles, cover, range pressure, unit priority readable.',
     },
   },
   {
     id: 'SP12-035',
     name: 'Mythic Train Defense',
     category: '4. Sieges, Warfronts & Last Stands',
-    negativePrompt: 'watermark, text, logo, static-background, blur',
+    negativePrompt:
+      'watermark, text, logo, static-background, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática co-op defense móvil de fantasía bélica con progreso por módulos, asedio en movimiento y presión lateral.',
@@ -96,14 +100,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Perspectiva de avance con amenazas frontales/laterales y carriles modulares sin exigir tren literal.',
       atmosphere_and_mood: 'Urgente, cooperativa y épica en movimiento constante.',
       rendering_and_quality:
-        'Mission art gameplay-first con legibilidad de objetivos por vagón, daño y prioridad enemiga.',
+        'Train-defense gameplay frame: wagon objectives, damage states, enemy priority, movement lanes clear.',
     },
   },
   {
     id: 'SP12-038',
     name: 'Iron Reef Naval Skirmish',
     category: '4. Sieges, Warfronts & Last Stands',
-    negativePrompt: 'watermark, text, logo, landlocked, lowres',
+    negativePrompt:
+      'watermark, text, logo, landlocked, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática naval-tactics de escaramuza con maniobra, bloqueo de ruta, fuego cruzado y vectores de alcance.',
@@ -118,14 +123,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Vista amplia con corredores de flanqueo, bloqueo y emboscada sin exigir arrecife o mar literal.',
       atmosphere_and_mood: 'Tensa, táctica y dominada por control marítimo.',
       rendering_and_quality:
-        'Naval map strategy-first con legibilidad de vectores, alcance y prioridades de objetivo.',
+        'Naval strategy gameplay screencap: vectors, range bands, target priority, reef hazards visible.',
     },
   },
   {
     id: 'SP12-052',
     name: 'Rift Bridge Capture Point',
     category: '4. Sieges, Warfronts & Last Stands',
-    negativePrompt: 'watermark, text, logo, clutter, blur',
+    negativePrompt:
+      'watermark, text, logo, clutter, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática objective-PvP de captura con punto disputado, rotación de escuadras y energía interdimensional.',
@@ -139,14 +145,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Eje central contestado, flancos jugables y rutas de reconquista sin exigir puente.',
       atmosphere_and_mood: 'Frenética, competitiva y de control territorial.',
       rendering_and_quality:
-        'Objective-mode map con layout nítido de punto, cobertura y líneas de empuje.',
+        'Objective-mode gameplay screencap: capture point, flank lanes, bridge pressure, cover readable.',
     },
   },
   {
     id: 'SP12-060',
     name: 'Hollow Basilica Final Stand',
     category: '4. Sieges, Warfronts & Last Stands',
-    negativePrompt: 'watermark, text, logo, playful-style, lowres',
+    negativePrompt:
+      'watermark, text, logo, playful-style, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática last-stand siege con defensa escalonada, recursos finales, desgaste y climax heroico.',
@@ -161,14 +168,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Línea de defensa, flancos y puntos de colapso legibles sin exigir basílica o escalinata.',
       atmosphere_and_mood: 'Heroica, sacrificial y al máximo de tensión.',
       rendering_and_quality:
-        'Narrative-climax gameplay art con telegraph claro de oleadas, objetivo y supervivencia.',
+        'Last-stand gameplay screencap: wave telegraphs, defended objective, survival distance, collapse points clear.',
     },
   },
   {
     id: 'SP12-064',
     name: 'Iron Orchard Defense Night',
     category: '4. Sieges, Warfronts & Last Stands',
-    negativePrompt: 'watermark, text, logo, futuristic-city, noisy',
+    negativePrompt:
+      'watermark, text, logo, futuristic-city, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática tower-defense nocturna con plantación mecanizada, economía local y carriles convergentes.',
@@ -183,14 +191,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Carriles convergentes y nodos de upgrade visibles sin exigir granero u orchard.',
       atmosphere_and_mood: 'Cooperativa, resistente y de presión sostenida.',
       rendering_and_quality:
-        'Tactical stage gameplay-first con legibilidad de pathing, alcance y prioridades.',
+        'Tactical defense gameplay screencap: pathing, range, orchard-machine waves, priority targets clear.',
     },
   },
   {
     id: 'SP12-076',
     name: 'Aurora Bastion Siege',
     category: '4. Sieges, Warfronts & Last Stands',
-    negativePrompt: 'watermark, text, logo, tropical, low-detail',
+    negativePrompt:
+      'watermark, text, logo, tropical, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática polar-siege auroral con defensa por capas, ruptura de línea y fallback táctico.',
@@ -206,14 +215,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Multi-tier, vectores de ataque y zonas de repliegue sin exigir bastión concreto.',
       atmosphere_and_mood: 'Heroica, urgente y de resistencia extrema.',
       rendering_and_quality:
-        'Warfront gameplay key-art con claridad de clase, ruta y tempo de asedio.',
+        'Warfront gameplay screencap: class roles, siege route, aurora pressure, tempo clear.',
     },
   },
   {
     id: 'SP12-079',
     name: 'Radiant Citadel Co-op Hold',
     category: '4. Sieges, Warfronts & Last Stands',
-    negativePrompt: 'watermark, text, logo, grimdark, blur',
+    negativePrompt:
+      'watermark, text, logo, grimdark, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
         'Gramática co-op defense luminosa con sinergia de clases, múltiples accesos y sostén de línea.',
@@ -229,7 +239,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Ingresos ramificados, posiciones de equipo y foco objetivo por capas sin exigir citadel.',
       atmosphere_and_mood: 'Unida, urgente y épicamente esperanzada.',
       rendering_and_quality:
-        'Co-op warfront gameplay art de alta claridad con cues sólidos de pacing y control de línea.',
+        'Co-op hold gameplay frame: line control, team positions, pacing cues, radiant objective readable.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -35,6 +35,11 @@ Codex Studio debe sentirse como una herramienta creativa profesional: precisa, t
 - Atajos útiles (`Escape`, navegación de carrusel, comparación).
 - Confirmaciones destructivas con impacto y recuperación explicados.
 
+- Superficies demand-mounted con carga/error visibles; no usar huecos silenciosos.
+- Comandos visibles solo cuando tienen comportamiento real o una razÃ³n de bloqueo accionable.
+
+- El composer inferior debe mantener filas estables en mobile; los controles no deben montarse sobre el prompt ni crear overflow horizontal.
+
 ## Meta open-source
 
 - Copy comprensible para quien llega por primera vez.

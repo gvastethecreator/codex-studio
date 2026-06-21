@@ -500,7 +500,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP11-063',
     name: 'Rust/Decay Macro',
     category: '5. Oddities And Novelty',
-    negativePrompt: 'clean',
+    negativePrompt: 'clean, eye, iris, pupil, lens',
     style: {
       aesthetic: 'Corrosion zoom, oxidation-portrait, time-texture, rust-patina, wreck-beauty',
       form_and_line:

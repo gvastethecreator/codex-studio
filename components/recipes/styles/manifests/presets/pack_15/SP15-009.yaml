@@ -1,47 +1,53 @@
 schemaVersion: 1
 id: SP15-009
 packId: pack_15
-name: Desert Bloom Desalinatory
-category: 1. Corepunk — Solarpunk
+name: Rain Kernel Alleyglass
+category: 2. Neon, Net & Signal Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - solarpunk-dreamscapes
+  - punk-spectrum-vault
+  - neon-net-and-signal-punks
+  - cyberpunk
+  - rain-street
 visualDna:
-  aesthetic: Arid-region solarpunk built around elegant water-production, shade adaptation, and oasis-like resilience.
-  form_and_line: Terraced basin rhythm, thin solar-sail planes, and adaptive shade ribs.
-  color_palette: Sand gold, jade irrigation green, and clear cobalt accents.
-  lighting_setup: High desert sun softened by textile canopies and mist diffusion.
-  material_texture: Mineral concrete, woven shade membranes, and wet salt crystals.
-  render_quality: High-fidelity environmental concept art with clean engineering readability.
-  spatial_distortion: Cascading basin perspective from intake-like verticals toward productive oasis depth.
-  atmosphere: Resource intelligence, relief, and hopeful climatic resilience.
-  key_features: Desalination-tower motifs, brine-art channels, productive oasis-terrace rhythm.
-  creative_brief: 'Transform the input through arid-water elegance: cobalt intake accents, salt-crystal sparkle, solar-sail shade ribs, and jade irrigation pulses. Deserts, towers, gardens, or desalination plants may appear as useful cues, but the style should read as bloom-through-watercraft, not fixed location.'
+  aesthetic: wet cyberpunk digital-painting card built around rain-slick street-corner fragments reflected in black glass with courier silhouettes and non-readable kernel-code glow.
+  form_and_line: Sharp but simplified network geometry, non-readable signal-panel rhythm, a few thick cable paths, wet reflections, and hacker-era silhouettes. Core composition uses kernel glow, courier silhouettes, cable gutters, rain glass, and layered reflection blocks.
+  color_palette: acid green, black glass, magenta rain, sodium gold
+  lighting_setup: flat neon color blocks, non-readable code-panel glow, simple backlight, matte rain color shapes
+  material_texture: matte charcoal glass planes, wet-as-color asphalt blocks, acrylic signal panels, thick fiber cable paths, raincoat silhouettes
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: fast, paranoid, humid, data-soaked
+  key_features: kernel glow, courier silhouettes, cable gutters, rain glass, layered reflection blocks
+  creative_brief: 'Cyberpunk with readable street action: people, rain, data, and architecture working together, not an empty neon corridor, readable UI wall, hacker workstation, or phone/device portrait. Keep data as non-readable glow and panel rhythm. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - dystopian-drought
-  - dark-horror
-  - industrial-grime
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-009.webp
 attributes:
-  negativePrompt: photoreal, dystopian-drought, dark-horror, industrial-grime, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, kneeling figure, hooded tech priest, crystal hero, obelisk hero, single object hero, HDR lens realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, readable signage, readable UI, hacker workstation, phone portrait, handheld device hero, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, empty neon corridor, vanishing hallway, dense window-panel grid, cable lattice carpet, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-solarpunk
-  categoryName: 1. Corepunk — Solarpunk
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - solarpunk-dreamscapes
+    - punk-spectrum-vault
+    - neon-net-and-signal-punks
+    - cyberpunk
+    - rain-street
   supportedTasks:
     - image_generate
     - image_edit

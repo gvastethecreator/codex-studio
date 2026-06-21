@@ -6,11 +6,13 @@ Este documento registra deuda técnica activa mientras Codex Studio se prepara p
 
 Referencia de arquitectura aceptada:
 
+- `docs/architecture/architecture-review-2026-06-19-front-performance.md`
 - `docs/architecture/architecture-review-2026-05-29.md`
 - `docs/architecture/DEEPENING-ROADMAP.md`
 
 Cola de ejecución actual:
 
+0. Continuar el lote front-performance 2026-06-19: finish full Local Studio Sync job-waiting ownership, backend full-scope Catalog Page commands, Style Browser session split, and remaining Studio Readiness freshness.
 1. Profundizar orquestación de `Studio Shell`.
 2. Profundizar `Studio Generation Session`.
 3. Reducir traducción de overlays de sistema tras separar seams de `Studio Settings` por dominio operativo.
@@ -35,6 +37,9 @@ Recent progress in the `Studio Shell` track:
 - `useStudioGenerationSession()` now returns grouped `queue` / `actions` surfaces so `useStudioShell.ts` no longer consumes another spread of generation-session implementation detail.
 - `useStudioSettings()` now returns a grouped `data` surface so editable settings, provider preflight/capability reads, and External Output Source actions cross one shell-facing seam instead of another flat settings contract.
 - `useStudioActivitySession()` now returns grouped `selection` / `debugPanel` surfaces so job inspection state and debug-panel toggling stop leaking as another flat shell dependency list.
+- `useStudioSettings()` domain surfaces are memoized so broad shell projections do not invalidate on every render without data changes.
+- `StudioOperationsRail` no longer carries dashboard/reset/export props it does not render.
+- `StudioOperationsRail` exposes a real close action; on mobile it becomes a full-width overlay, and the bottom composer now wraps into stable rows instead of forcing controls into one crowded line.
 
 Recommended next steps:
 

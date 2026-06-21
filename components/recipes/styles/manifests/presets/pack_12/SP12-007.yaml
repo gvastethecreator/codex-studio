@@ -23,7 +23,7 @@ visualDna:
   texture_and_material: Hielo compacto, nieve pisada, escarcha en blindaje y superficies antideslizantes de combate.
   camera_and_composition: Vista oblicua sectorizada con rutas A/B/C, choke points y líneas de fuego como lectura táctica flexible.
   atmosphere_and_mood: Resistencia extrema, precisión táctica y desgaste ambiental continuo.
-  rendering_and_quality: "Assault mission screencap: topographic lanes, breach points, squad objective flow clear."
+  rendering_and_quality: 'Assault mission screencap: topographic lanes, breach points, squad objective flow clear.'
   creative_brief: >-
     Aplica Glacier Fortress Assault como gramatica original de videojuego sobre cualquier input: conserva su sistema de
     genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura

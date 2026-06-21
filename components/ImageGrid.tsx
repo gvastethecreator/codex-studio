@@ -256,6 +256,12 @@ interface ImageGridProps {
   onDownloadAll: () => void;
   onDeleteSelected: () => void;
   onClearWorkspace: () => void;
+  catalogTotal?: number;
+  hasMore?: boolean;
+  isCatalogLoading?: boolean;
+  catalogError?: string | null;
+  onLoadMore?: () => void;
+  onRetryCatalog?: () => void;
 }
 
 function subscribeViewportWidth(onStoreChange: () => void) {
@@ -304,6 +310,12 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     onDownloadAll,
     onDeleteSelected,
     onClearWorkspace,
+    catalogTotal,
+    hasMore = false,
+    isCatalogLoading = false,
+    catalogError = null,
+    onLoadMore,
+    onRetryCatalog,
   }) => {
     const [sortOrder, setSortOrder] = useState<SortOption>('desc');
     const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
@@ -314,6 +326,8 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     );
 
     const imageCount = images.length;
+    const totalCount = catalogTotal ?? imageCount;
+    const isPartialCatalog = hasMore || totalCount > imageCount;
     const selectedImageCount = selectedImageIds.length;
     const isAllSelected = imageCount > 0 && selectedImageCount === imageCount;
 
@@ -357,7 +371,27 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
       return buckets;
     }, [sortedImages, columnCount]);
 
-    if (images.length === 0) return <div className="w-full h-full" />;
+    if (images.length === 0) {
+      return (
+        <div className="flex h-full w-full items-center justify-center px-6 text-center">
+          {catalogError ? (
+            <div className="max-w-md rounded-xl border border-rose-500/20 bg-rose-950/20 p-4 text-sm text-rose-100">
+              <div className="font-semibold">Catalog failed to load</div>
+              <div className="mt-1 text-rose-200/70">{catalogError}</div>
+              {onRetryCatalog && (
+                <button
+                  type="button"
+                  onClick={onRetryCatalog}
+                  className="mt-3 rounded-lg border border-rose-300/20 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-rose-100 hover:bg-rose-300/10"
+                >
+                  Retry
+                </button>
+              )}
+            </div>
+          ) : null}
+        </div>
+      );
+    }
 
     return (
       <div className="w-full h-full relative">
@@ -379,7 +413,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                   tooltipPosition="bottom"
                 />
               )}
-              {selectedImageCount === 0 && imageCount > 0 && (
+              {selectedImageCount === 0 && imageCount > 0 && !isPartialCatalog && (
                 <>
                   <ActionButton
                     onClick={onDownloadAll}
@@ -526,6 +560,34 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
               );
             })}
           </div>
+          {(hasMore || isCatalogLoading || catalogError || totalCount > imageCount) && (
+            <div className="flex flex-col items-center gap-3 py-6 text-center">
+              <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                {imageCount} / {totalCount} loaded
+              </div>
+              {catalogError && <div className="max-w-lg text-xs text-rose-300">{catalogError}</div>}
+              {hasMore && onLoadMore && (
+                <button
+                  type="button"
+                  onClick={onLoadMore}
+                  disabled={isCatalogLoading}
+                  className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-[10px] font-black uppercase tracking-widest text-zinc-200 transition-colors hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  <RefreshCw size={14} className={isCatalogLoading ? 'animate-spin' : ''} />
+                  {isCatalogLoading ? 'Loading' : 'Load more'}
+                </button>
+              )}
+              {!hasMore && catalogError && onRetryCatalog && (
+                <button
+                  type="button"
+                  onClick={onRetryCatalog}
+                  className="rounded-xl border border-rose-300/20 bg-rose-500/10 px-4 py-2 text-[10px] font-black uppercase tracking-widest text-rose-100 hover:bg-rose-500/20"
+                >
+                  Retry
+                </button>
+              )}
+            </div>
+          )}
         </div>
       </div>
     );

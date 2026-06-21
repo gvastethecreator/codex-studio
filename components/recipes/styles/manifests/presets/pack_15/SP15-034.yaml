@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-034
 packId: pack_15
-name: Coral Circuit Marina
-category: 13. Corepunk — Seapunk
+name: Tideglass Subway
+category: 5. Ocean, Ice & Terrain Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
+  - punk-spectrum-vault
+  - ocean-ice-and-terrain-punks
   - seapunk
+  - transit
 visualDna:
-  aesthetic: Reef-circuit seapunk where party lighting, civic utility, and living coral pulse as one wet nervous system.
-  form_and_line: Buoyant cell clusters, branching reef towers, wavy circuit paths, pontoon seams, and current-drawn loops.
-  color_palette: Turquoise voltage, hot magenta, seafoam green, wet concrete gray, and pearly coral white.
-  lighting_setup: Bioluminescent reef pulses, humid sunset reflections, under-platform LEDs, and specular wet-edge flashes.
-  material_texture: Iridescent polymers, coral composites, wet concrete, translucent tubing, algae film, and salt-crusted handrails.
-  render_quality: Vibrant high-detail concept with nightlife color discipline and clear regenerative infrastructure.
-  spatial_distortion: Curvilinear waterline composition where circuit nodes drift yet stay connected.
-  atmosphere: Tidal rhythm, playful futurity, public experimentation, and ecological nightlife.
-  key_features: Reef-reactor nodes, algae power beads, luminous waterlines, coral cable junctions, and buoyant rhythm cells.
-  creative_brief: 'Rewire the input as a wet reef circuit: turquoise voltage, magenta pulses, coral cable junctions, algae power beads, buoyant rhythm cells, and salt-crusted wet edges. Marinas or platforms can appear as anchors; the style is tidal nightlife infrastructure with a living nervous system. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: submerged transit seapunk as a flat graphic digital-illustration card built around a tideglass subway platform where commuters move behind thick water windows and reef-lit tracks.
+  form_and_line: Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses tide windows, commuters, reef-lit tracks, wet tiles, pressure doors.
+  color_palette: sea glass green, subway chrome, deep blue, safety orange
+  lighting_setup: water-window caustics, platform strips, reef glow, train headlights
+  material_texture: thick glass color blocks, wet tile planes, simple rail strip, seaweed shadow shapes, rubber boot silhouettes
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: surreal, public, aquatic, contained
+  key_features: tide windows, commuters, reef-lit tracks, wet tiles, pressure doors
+  creative_brief: Make aquatic transit believable through one tideglass commuter or transit keeper protagonist in public space, not concept art of an empty tunnel. Keep it representative through a cropped platform, thick tideglass water window, commuter silhouettes, reef-lit track strip, pressure doors, and broad tile planes. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
-  - diesel-grime
-  - medieval-port
-  - bleak-militarized
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-034.webp
 attributes:
-  negativePrompt: photoreal, diesel-grime, medieval-port, bleak-militarized, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, long subway corridor, vanishing tunnel, empty platform, horror aquarium, underwater city vista, photoreal glass caustics, photoreal water caustics, readable station signage, UI map, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-seapunk
-  categoryName: 13. Corepunk — Seapunk
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
+    - punk-spectrum-vault
+    - ocean-ice-and-terrain-punks
     - seapunk
+    - transit
   supportedTasks:
     - image_generate
     - image_edit

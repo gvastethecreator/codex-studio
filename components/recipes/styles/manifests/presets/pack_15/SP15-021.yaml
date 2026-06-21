@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-021
 packId: pack_15
-name: Orbit Diner Strip
-category: 8. Corepunk — Atompunk
+name: Seed Vault Block Party
+category: 3. Eco, Repair & Climate Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - atompunk
+  - punk-spectrum-vault
+  - eco-repair-and-climate-punks
+  - seedpunk
+  - community-archive
 visualDna:
-  aesthetic: Nostalgic atomic-age consumer futurism with launch-night sparkle.
-  form_and_line: Starburst panels, tapered pylons, tailfin curves, and low-slung aerodynamic bands.
-  color_palette: Bubblegum pink, cyan, and brushed chrome.
-  lighting_setup: Twilight neon strips mixed with sodium amber and rocket-flare reflections.
-  material_texture: Vinyl sheen, polished chrome trim, terrazzo flecks, and ribbed glass.
-  render_quality: Stylized environmental art with vibrant era-authentic detailing.
-  spatial_distortion: Long receding rhythm of blank sign shapes, tailfins, and chrome repeats.
-  atmosphere: Cheerful futurism, consumer ritual, and launch-night anticipation.
-  key_features: Blank marquee panels, atom-age trim, chrome speedlines, and candy-color glow.
-  creative_brief: 'Dress the input in launch-night atomic consumer sparkle: tailfin curves, bubblegum-cyan chrome, blank marquee rhythm, vinyl sheen, and rocket-flare reflections. Diner strips or roadside cues may appear, but the style should function as cheerful orbit-age anticipation on any subject.'
+  aesthetic: seedpunk community archive as a flat-to-painterly poster card built around a block party with seed libraries, blank paper packets, planters, music shapes, and archival cabinets.
+  form_and_line: Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses seed drawers, planters, neighborhood crowd, paper packets, garden tools.
+  color_palette: seed brown, marigold, leafy green, faded poster pink
+  lighting_setup: golden-hour street blocks, small celebration color dots, soft plant shadow shapes
+  material_texture: blank seed-packet rectangles, wood cabinet silhouette, denim color blocks, soil plane, painted planter shapes
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: festive, archival, local, generous
+  key_features: seed drawers, planters, neighborhood crowd, paper packets, garden tools
+  creative_brief: 'Seedpunk as living archive: celebration, cabinets, gardeners, and seed exchange, no sterile lab, readable labels, or generic farmers market aisle. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - cyberpunk-gloom
-  - medieval
-  - grim-horror
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-021.webp
 attributes:
-  negativePrompt: photoreal, cyberpunk-gloom, medieval, grim-horror, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, readable packet labels, posters with text, product packaging, sterile lab, market stall row, farmers market aisle, huge crowd clutter, paper lantern fixation, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-atompunk
-  categoryName: 8. Corepunk — Atompunk
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - atompunk
+    - punk-spectrum-vault
+    - eco-repair-and-climate-punks
+    - seedpunk
+    - community-archive
   supportedTasks:
     - image_generate
     - image_edit

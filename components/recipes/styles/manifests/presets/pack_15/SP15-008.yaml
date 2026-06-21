@@ -1,46 +1,53 @@
 schemaVersion: 1
 id: SP15-008
 packId: pack_15
-name: Rooftop Rain Choir
-category: 1. Corepunk — Solarpunk
+name: Rivet Cathedral Workshop
+category: 1. Classic Industrial Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - solarpunk-dreamscapes
+  - punk-spectrum-vault
+  - classic-industrial-punks
+  - industrial-punk
+  - machine-ritual
 visualDna:
-  aesthetic: Pluvial-ritual solarpunk where civic acoustics and rain harvesting become a calm public visual rhythm.
-  form_and_line: Tiered chorus-like groupings, channeling roof geometries, and rhythmic cable spans.
-  color_palette: Storm blue, oxidized copper, and rain-saturated leaf green.
-  lighting_setup: Silver overcast with specular puddle highlights and translucent canopy glow.
-  material_texture: Ribbed catchment panels, tensioned waterproof textiles, wet moss edges, and ceramic gutter cues.
-  render_quality: Poetic production concept art balancing lyrical mood with infrastructural clarity.
-  spatial_distortion: Stepped catchment-chain perspective descending toward a central cistern-like focal basin.
-  atmosphere: Collective tenderness, climatic intelligence, and calm ceremonial focus.
-  key_features: Resonant cistern bowls, choir-tier rhythm, rainfall channels, and participatory water-meter motifs.
-  creative_brief: 'Score the input like rain infrastructure playing music: ribbed catchment panels, resonant cistern bowls, silver overcast glints, and repeating channel rhythms. Rooftops, singers, blocks, or choirs can appear as anchors, but the style is acoustic water literacy and soft pluvial ceremony. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: industrial sacred-machinery poster built around a tall workshop where riveted machines form monumental craft geometry without church literalism.
+  form_and_line: Mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm. Core composition uses vertical machine ribs, welding halos, broad rivet arcs, tool plinths, and small worker silhouettes.
+  color_palette: iron black, rust umber, wax gold, concrete gray
+  lighting_setup: flat overhead light blocks, welding halo, matte smoke shapes, shallow poster depth
+  material_texture: iron rib planes, broad rivet arcs, concrete blocks, waxed leather accents, welding slag marks
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: solemn craft, machine reverence, monumental labor
+  key_features: vertical machine ribs, welding halos, broad rivet arcs, tool plinths, worker silhouettes
+  creative_brief: Make industry feel ceremonial through scale and craft, not through literal stained glass, clergy, chapel corridor, altar room, or empty abstract shapes. Keep machinery as large readable ribs and halos; avoid packing every inch with rivets. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.
 avoidRules:
   - photoreal
-  - dystopian-smog
-  - aggressive-action
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-008.webp
 attributes:
-  negativePrompt: photoreal, dystopian-smog, aggressive-action, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, rendered metal realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, chapel corridor, literal church, stained glass hero, clergy, altar room, rivet carpet, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-solarpunk
-  categoryName: 1. Corepunk — Solarpunk
+  packName: Punk Spectrum Vault
+  categoryId: classic-industrial-punks
+  categoryName: 1. Classic Industrial Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - solarpunk-dreamscapes
+    - punk-spectrum-vault
+    - classic-industrial-punks
+    - industrial-punk
+    - machine-ritual
   supportedTasks:
     - image_generate
     - image_edit

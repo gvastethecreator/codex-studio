@@ -278,30 +278,35 @@ export async function runSingleCodexImagegenJob(options: {
 
   onProgress?.(`${providerId} job queued: ${createdJob.id}`);
   const stream = options.stream ?? createStudioEventStream();
-  const completedJob = await watchJob(stream, createdJob.id, signal);
-  const catalogPage = await queryCatalog({ jobId: completedJob.id, limit: 20 });
-  const jobAssets = catalogPage.images;
+  const shouldCloseStream = !options.stream;
+  try {
+    const completedJob = await watchJob(stream, createdJob.id, signal);
+    const catalogPage = await queryCatalog({ jobId: completedJob.id, limit: 20 });
+    const jobAssets = catalogPage.images;
 
-  if (jobAssets.length === 0) {
-    throw new Error(
-      `${providerId} job ${completedJob.id} completed without an imported image asset.`,
+    if (jobAssets.length === 0) {
+      throw new Error(
+        `${providerId} job ${completedJob.id} completed without an imported image asset.`,
+      );
+    }
+
+    const images = await Promise.all(
+      jobAssets.map(async (asset) => {
+        const fallbackThumbnail = asset.thumbnailUrl
+          ? undefined
+          : await createThumbnail(materializeCatalogEntryImage(asset, { batchId }).src);
+        return materializeCatalogEntryImage(asset, {
+          batchId,
+          createdAt: Date.now(),
+          thumbnail: fallbackThumbnail,
+        });
+      }),
     );
+
+    return images;
+  } finally {
+    if (shouldCloseStream) stream.close();
   }
-
-  const images = await Promise.all(
-    jobAssets.map(async (asset) => {
-      const fallbackThumbnail = asset.thumbnailUrl
-        ? undefined
-        : await createThumbnail(materializeCatalogEntryImage(asset, { batchId }).src);
-      return materializeCatalogEntryImage(asset, {
-        batchId,
-        createdAt: Date.now(),
-        thumbnail: fallbackThumbnail,
-      });
-    }),
-  );
-
-  return images;
 }
 
 /**

@@ -23,7 +23,7 @@ visualDna:
     Composición radial o axial con centro mecánico, perímetro de evasión y lanes de party sugeridos sin requerir arena
     cerrada.
   atmosphere_and_mood: Solemnidad peligrosa, descubrimiento mecánico y presión de ejecución.
-  rendering_and_quality: "Boss-arena gameplay frame: spell telegraphs, threat hierarchy, dodge lanes visible."
+  rendering_and_quality: 'Boss-arena gameplay frame: spell telegraphs, threat hierarchy, dodge lanes visible.'
   creative_brief: >-
     Aplica Arcane Library Boss Arena como gramatica original de videojuego sobre cualquier input: conserva su sistema de
     genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura

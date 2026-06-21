@@ -1,48 +1,53 @@
 schemaVersion: 1
 id: SP15-058
 packId: pack_15
-name: Goldline Archives Tower
-category: 9. Corepunk — Decopunk
+name: Tarot Circuit Foundry
+category: 8. Occult, Myth & Gothic Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - decopunk
+  - punk-spectrum-vault
+  - occult-myth-and-gothic-punks
+  - tarot-tech
+  - industrial-occult
 visualDna:
-  aesthetic: Bureaucratic decopunk monument where memory becomes vertical machinery, gold indexing, and controlled access.
-  form_and_line: Vertical fin stacks, archive-grid shelves, reading-hall rings, pneumatic tube diagonals, and filing-spine shafts.
-  color_palette: Brass gold, charcoal, parchment beige, dust brown, and red index-tab accents.
-  lighting_setup: Vertical slit lights, desk luminance, brass-mesh glints, and warm shafts inside catalog towers.
-  material_texture: Brass mesh, stone shelving, leather files, parchment labels, clockwork lift rails, and dusty glass catalog drawers.
-  render_quality: Detailed institutional concept with hierarchy, retrieval logic, and monumental record density.
-  spatial_distortion: Upward vertical perspective turns shelves, lifts, and tubes into a bureaucratic cliff face.
-  atmosphere: Bureaucratic majesty, controlled permanence, archival pressure, and reverence for stored power.
-  key_features: Pneumatic file tubes, index rotunda rings, clockwork elevator motifs, goldline catalog tabs, and locked desk geometry.
-  creative_brief: 'File the input into vertical bureaucratic power: gold index tabs, pneumatic tubes, parchment labels, brass mesh, and clockwork lift rails should make memory feel mechanical and controlled. Archives or towers can appear, but the style is indexed permanence and access pressure. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: tarot-tech industrial occult built around a foundry casting circuit-like tarot plates with workers, molten lines, and symbolic machine presses.
+  form_and_line: Ritual diagrams, gothic silhouettes, folk hardware, talismanic machines, and mythic street-level staging. Core composition uses tarot plates, machine presses, workers, molten traces, card geometry without readable text.
+  color_palette: burned gold, black iron, card cream, red ember
+  lighting_setup: molten gold lines, press shadows, ember glow, overhead smoke
+  material_texture: iron presses, card stock, molten metal, soot, engraved copper
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Switchyards, foundries, chapels, cairns, repair shops, salons, processions, and rural transformers. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: fateful, industrial, symbolic, heavy
+  key_features: tarot plates, machine presses, workers, molten traces, card geometry without readable text
+  creative_brief: 'Make tarot visual language physical and industrial: casting, a compact press as hero, blank card geometry, molten circuit traces, and small plain worker silhouettes with no clothing marks, with no readable card text. Keep the result representative rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and controlled digital painting over realism or generic concept art. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - minimalist
-  - cyberpunk-chaos
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-058.webp
 attributes:
-  negativePrompt: photoreal, minimalist, cyberpunk-chaos, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, foreground masked hero, realistic masked portrait, robe symbols, worker emblems, wall plaques with glyphs, readable card names, letters, zodiac signs, pentagram, cross, skull emblem, fortune-teller table, altar, cathedral corridor, foundry corridor, photoreal molten metal, tiny circuit filigree, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-decopunk
-  categoryName: 9. Corepunk — Decopunk
+  packName: Punk Spectrum Vault
+  categoryId: occult-myth-and-gothic-punks
+  categoryName: 8. Occult, Myth & Gothic Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - decopunk
+    - punk-spectrum-vault
+    - occult-myth-and-gothic-punks
+    - tarot-tech
+    - industrial-occult
   supportedTasks:
     - image_generate
     - image_edit

@@ -6,12 +6,12 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-001.webp",
-    "jobId": "8a0c0d5f-162c-4559-a313-d29f82be86f5",
+    "jobId": "6501b1e7-0045-461e-8504-fe09eb5d712a",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-001.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:07:49.512Z"
+    "generatedAt": "2026-06-20T03:17:09.889Z"
   },
   {
     "presetId": "SP07-002",
@@ -20,12 +20,12 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-002.webp",
-    "jobId": "d843d883-c301-4b38-9d09-599b15c6463d",
+    "jobId": "6832ea5d-7f3f-4435-a5ca-b2ffd315d5ca",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-002.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:18:03.902Z"
+    "generatedAt": "2026-06-20T03:17:41.924Z"
   },
   {
     "presetId": "SP07-003",
@@ -34,12 +34,12 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-003.webp",
-    "jobId": "cb2ef693-afea-4a41-b20a-72c6e844b30b",
+    "jobId": "041f14fd-6a89-49d3-b6eb-50dedf12bbed",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-003.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T22:57:52.912Z"
+    "generatedAt": "2026-06-20T03:17:39.231Z"
   },
   {
     "presetId": "SP07-004",
@@ -48,12 +48,12 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-004.webp",
-    "jobId": "492d345a-e07d-41d7-a1b0-5ffe2373c65e",
+    "jobId": "3dd4e7e7-a002-46fc-b88b-2228853a726c",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-004.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:18:02.302Z"
+    "generatedAt": "2026-06-20T03:17:35.167Z"
   },
   {
     "presetId": "SP07-005",
@@ -62,12 +62,12 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-005.webp",
-    "jobId": "54213d31-8b36-422c-9588-4a8f42f2909e",
+    "jobId": "fd9f0af2-60e3-4c49-9c74-937f1a7d08d2",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-005.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:17:41.322Z"
+    "generatedAt": "2026-06-20T03:17:46.077Z"
   },
   {
     "presetId": "SP07-006",
@@ -90,12 +90,12 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-007.webp",
-    "jobId": "7637a9f7-057f-43d9-9da0-b51f19eb37f1",
+    "jobId": "085d7d32-a9a3-40d5-b6c2-0d3eb1209d5b",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-007.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:18:01.561Z"
+    "generatedAt": "2026-06-20T03:24:28.158Z"
   },
   {
     "presetId": "SP07-008",
@@ -104,12 +104,12 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-008.webp",
-    "jobId": "7e18b131-1dd3-4010-9d07-a6e655f45ddc",
+    "jobId": "ef6005a5-7653-4fc0-add2-708c4c93bf24",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-008.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:17:47.565Z"
+    "generatedAt": "2026-06-20T03:17:39.268Z"
   },
   {
     "presetId": "SP07-009",
@@ -118,12 +118,12 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-009.webp",
-    "jobId": "e585c5e4-6b83-4a3f-98a1-851683a8d117",
+    "jobId": "15ad18db-711d-4715-887d-18f8ec3f66e2",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-009.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:18:03.262Z"
+    "generatedAt": "2026-06-20T03:24:17.694Z"
   },
   {
     "presetId": "SP07-010",
@@ -132,12 +132,12 @@
     "packName": "Architecture & Interior",
     "category": "7. Megastructure And Impossible Space",
     "file": "assets/recipes/styles/defaults/SP07-010.webp",
-    "jobId": "b8b3377e-2547-427d-b577-eb86dd470b02",
+    "jobId": "7e38927b-02fc-4723-b73e-6aac4714a397",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-010.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:18:06.313Z"
+    "generatedAt": "2026-06-20T03:23:53.150Z"
   },
   {
     "presetId": "SP07-011",
@@ -146,12 +146,12 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-011.webp",
-    "jobId": "ce25dc60-0278-4b57-9f7f-7ff01033e6f7",
+    "jobId": "4e8469f6-f8dc-4c79-a2e9-77c180669337",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-011.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:26:37.202Z"
+    "generatedAt": "2026-06-20T03:24:11.038Z"
   },
   {
     "presetId": "SP07-012",
@@ -188,12 +188,12 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-014.webp",
-    "jobId": "f3cb4bc7-5504-4428-bfc8-92e9f41fb44f",
+    "jobId": "19123d3a-91be-4c64-bbe8-3b3c8b208011",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-014.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:27:00.677Z"
+    "generatedAt": "2026-06-20T03:24:17.641Z"
   },
   {
     "presetId": "SP07-015",
@@ -216,12 +216,12 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-016.webp",
-    "jobId": "d5e34856-69d5-428e-bd03-cee59156a75b",
+    "jobId": "327f13b5-070e-483f-9cbb-2c956c41d3ad",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-016.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:26:29.795Z"
+    "generatedAt": "2026-06-20T03:24:06.080Z"
   },
   {
     "presetId": "SP07-017",
@@ -230,12 +230,12 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-017.webp",
-    "jobId": "9e370887-87d9-4046-ab07-4e2f6289bcb2",
+    "jobId": "c2f49a1b-0e84-423f-bbf1-5ab4bef6ce61",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-017.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:26:56.062Z"
+    "generatedAt": "2026-06-20T03:30:23.603Z"
   },
   {
     "presetId": "SP07-018",
@@ -244,12 +244,12 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-018.webp",
-    "jobId": "cdf249bb-d638-43bb-a218-4ba951008f92",
+    "jobId": "43eb7878-e653-4701-a546-3534d39e730d",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-018.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:30:40.650Z"
+    "generatedAt": "2026-06-20T03:29:56.750Z"
   },
   {
     "presetId": "SP07-019",
@@ -258,12 +258,12 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-019.webp",
-    "jobId": "8f3e0ba6-7286-4b04-ae58-a7fd6afe4249",
+    "jobId": "59435d4c-c0a0-4936-a15d-19245b0be2e2",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-019.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:26:36.479Z"
+    "generatedAt": "2026-06-20T03:30:01.770Z"
   },
   {
     "presetId": "SP07-020",
@@ -272,12 +272,12 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-020.webp",
-    "jobId": "6210b188-318a-43ae-9a63-542ab6bd4dee",
+    "jobId": "e302b9b6-1bc2-43b9-b530-acfe5f6b9c1a",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-020.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:46:01.482Z"
+    "generatedAt": "2026-06-20T03:29:42.779Z"
   },
   {
     "presetId": "SP07-021",
@@ -356,12 +356,12 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-026.webp",
-    "jobId": "314f8e9e-660c-4eec-a6f5-d350e2884d3b",
+    "jobId": "10613de3-d632-4888-bfca-b0a435636867",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-026.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:46:13.147Z"
+    "generatedAt": "2026-06-20T03:29:54.375Z"
   },
   {
     "presetId": "SP07-027",
@@ -398,12 +398,12 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-029.webp",
-    "jobId": "fc1b15e9-653a-4f52-a359-b1cd2b1112b5",
+    "jobId": "1650cd7a-0e2b-422f-9a60-7ea0aa306e43",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-029.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:03:13.107Z"
+    "generatedAt": "2026-06-20T03:30:01.771Z"
   },
   {
     "presetId": "SP07-030",
@@ -412,12 +412,12 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-030.webp",
-    "jobId": "3b33e127-7fc8-496a-b6be-a9335b1589d8",
+    "jobId": "507d9149-5c05-4977-a8fb-b42bfd0859ea",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-030.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:03:14.665Z"
+    "generatedAt": "2026-06-20T03:34:17.135Z"
   },
   {
     "presetId": "SP07-031",
@@ -496,12 +496,12 @@
     "packName": "Architecture & Interior",
     "category": "3. Civic Infrastructure And Specialty Spaces",
     "file": "assets/recipes/styles/defaults/SP07-036.webp",
-    "jobId": "4d06aa1d-4863-4f11-8fe7-4c71077c6f31",
+    "jobId": "fec5a6ed-7cbf-4fa4-9f28-ed4f14b401cd",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-036.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:12:01.985Z"
+    "generatedAt": "2026-06-20T03:34:14.687Z"
   },
   {
     "presetId": "SP07-037",
@@ -594,12 +594,12 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-043.webp",
-    "jobId": "65e592f4-01d5-45ae-b8b9-29693a5ed7b6",
+    "jobId": "bdbd9134-db96-4069-b7b3-e268283e16be",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-043.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:04:00.303Z"
+    "generatedAt": "2026-06-20T03:34:18.066Z"
   },
   {
     "presetId": "SP07-044",
@@ -622,12 +622,12 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-045.webp",
-    "jobId": "fb605ac9-5e79-4339-9dcd-efc4900336b2",
+    "jobId": "c531ba9a-b5c1-4c9c-9267-d0111f77ddc5",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-045.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:18:50.768Z"
+    "generatedAt": "2026-06-20T03:33:45.435Z"
   },
   {
     "presetId": "SP07-046",
@@ -636,12 +636,12 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-046.webp",
-    "jobId": "e26ccc1a-37bb-4715-81e2-28807975abc3",
+    "jobId": "d0513bea-db24-46f4-802d-199736751f98",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-046.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:24:46.269Z"
+    "generatedAt": "2026-06-20T03:34:16.295Z"
   },
   {
     "presetId": "SP07-047",
@@ -664,12 +664,12 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-048.webp",
-    "jobId": "cff5603e-e680-46d2-828f-008d5b010dde",
+    "jobId": "b8aa576a-aeec-40f3-ab80-9edeb8ec1f91",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-048.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:24:16.195Z"
+    "generatedAt": "2026-06-20T03:34:17.156Z"
   },
   {
     "presetId": "SP07-049",
@@ -692,12 +692,12 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-050.webp",
-    "jobId": "0128d0de-d67b-43c2-ae1d-1b417404aa40",
+    "jobId": "4ee86d05-b53f-451c-ae46-303e373d8b63",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-050.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:32:55.476Z"
+    "generatedAt": "2026-06-20T03:38:18.411Z"
   },
   {
     "presetId": "SP07-051",
@@ -748,12 +748,12 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-054.webp",
-    "jobId": "db7549e3-62d4-4408-af0f-fa0f65939003",
+    "jobId": "36e28487-e3f9-48db-a87e-204908dcd18a",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-054.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T22:58:24.079Z"
+    "generatedAt": "2026-06-20T03:38:19.913Z"
   },
   {
     "presetId": "SP07-055",
@@ -762,12 +762,12 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-055.webp",
-    "jobId": "9e5bc0cb-940e-49a3-9669-3cba43f289cd",
+    "jobId": "2093606c-5897-460d-848c-6ca848e00136",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-055.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:03:39.526Z"
+    "generatedAt": "2026-06-20T03:38:29.717Z"
   },
   {
     "presetId": "SP07-056",
@@ -776,12 +776,12 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-056.webp",
-    "jobId": "340b1f8a-8fca-4ee7-b531-e033672d1aa3",
+    "jobId": "8233e6d2-cb40-457c-90bf-865e5fbed163",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-056.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:33:18.524Z"
+    "generatedAt": "2026-06-20T03:38:24.821Z"
   },
   {
     "presetId": "SP07-057",
@@ -846,12 +846,12 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-061.webp",
-    "jobId": "88bf7ec8-0c6b-417f-8ac2-4dc1a2258298",
+    "jobId": "e0b59760-29a5-4d82-be9d-20f547adc355",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-061.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:32:46.947Z"
+    "generatedAt": "2026-06-20T03:38:22.371Z"
   },
   {
     "presetId": "SP07-062",
@@ -860,12 +860,12 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-062.webp",
-    "jobId": "5e887e27-5462-4529-b434-0de3e5a9c33b",
+    "jobId": "22bda510-1394-4dfd-a287-dbd1552f3ea3",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-062.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:44:53.761Z"
+    "generatedAt": "2026-06-20T03:38:41.166Z"
   },
   {
     "presetId": "SP07-063",
@@ -874,12 +874,12 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-063.webp",
-    "jobId": "156e6ca6-99a1-4e53-8959-f79b74bac0b4",
+    "jobId": "9547205c-d00f-4e03-9f3a-2fa521fa7942",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-063.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:45:02.568Z"
+    "generatedAt": "2026-06-20T03:45:12.127Z"
   },
   {
     "presetId": "SP07-064",
@@ -888,12 +888,12 @@
     "packName": "Architecture & Interior",
     "category": "7. Megastructure And Impossible Space",
     "file": "assets/recipes/styles/defaults/SP07-064.webp",
-    "jobId": "b1dff086-f6bf-4c0f-8470-f6bc00801864",
+    "jobId": "752373d4-d75f-4504-9293-193312a11bad",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-064.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:45:22.685Z"
+    "generatedAt": "2026-06-20T03:45:07.198Z"
   },
   {
     "presetId": "SP07-065",
@@ -902,12 +902,12 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-065.webp",
-    "jobId": "e59150da-06ce-4266-a102-736bad993727",
+    "jobId": "ba9e10bf-ae6b-4032-b90e-e75e1abe6919",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-065.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:44:52.691Z"
+    "generatedAt": "2026-06-20T03:45:06.337Z"
   },
   {
     "presetId": "SP07-066",
@@ -916,12 +916,12 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-066.webp",
-    "jobId": "b54ad28c-c838-48e5-918d-c8d723e1f2c7",
+    "jobId": "a3d95a09-d278-47a1-8d76-4470975a2310",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-066.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:44:55.074Z"
+    "generatedAt": "2026-06-20T03:45:11.213Z"
   },
   {
     "presetId": "SP07-067",
@@ -930,12 +930,12 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-067.webp",
-    "jobId": "42fb947a-b827-48cd-8fa4-81e621ab56ab",
+    "jobId": "dee1596f-7d7a-43d8-9c27-f13af47dcec6",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-067.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:44:55.258Z"
+    "generatedAt": "2026-06-20T03:45:11.359Z"
   },
   {
     "presetId": "SP07-068",
@@ -944,12 +944,12 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-068.webp",
-    "jobId": "1667690f-3e89-4eb5-af55-b582bad54ab5",
+    "jobId": "bca6adab-a31b-466b-aec2-9b486368a6ef",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-068.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:44:59.263Z"
+    "generatedAt": "2026-06-20T03:45:29.959Z"
   },
   {
     "presetId": "SP07-069",
@@ -972,12 +972,12 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-070.webp",
-    "jobId": "d532e67f-f06a-437c-b6f6-f63609bb1201",
+    "jobId": "17c17120-d5c7-46f6-98e1-1d36d96ef490",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-070.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:55:37.468Z"
+    "generatedAt": "2026-06-20T03:50:52.984Z"
   },
   {
     "presetId": "SP07-071",
@@ -1000,12 +1000,12 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-072.webp",
-    "jobId": "1a4e4f51-7c02-46c0-ade7-baabd4d1352e",
+    "jobId": "554a3315-f448-40b4-b113-f2e8f7bb264e",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-072.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:55:35.693Z"
+    "generatedAt": "2026-06-20T03:49:16.298Z"
   },
   {
     "presetId": "SP07-073",
@@ -1112,11 +1112,11 @@
     "packName": "Architecture & Interior",
     "category": "7. Megastructure And Impossible Space",
     "file": "assets/recipes/styles/defaults/SP07-080.webp",
-    "jobId": "009aad37-613f-437d-a813-2f60c1a3ec4b",
+    "jobId": "4fe0bfdb-ff7b-444c-b13f-31f637e7b4c2",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-080.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:07:56.994Z"
+    "generatedAt": "2026-06-20T03:49:20.656Z"
   }
 ]

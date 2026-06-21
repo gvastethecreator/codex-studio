@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-032
+packId: pack_17
+name: Astral Feudal Exorcists
+category: 5. Apocalyptic Wargame & Inked Dungeon
+domain: astral medieval fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - apocalyptic-wargame-and-inked-dungeon
+  - astral-exorcist
+visualDna:
+  aesthetic: Astral feudal exorcist fantasy with star-lit armor, monastery astronomers, demon-sealing geometry, and celestial battlefield calm.
+  subject_treatment: A star monk sealing an astral eel beast with an astrolabe banner and clean non-readable glyph shapes, cosmic but feudal.
+  color_and_tone: Midnight blue, silver, bone white, violet shadow, gold sparks, and pale cyan astral glow.
+  lighting_and_shadow: Moon rims, starfield backlight, and clean glowing geometry separate shapes without noisy dark speckles.
+  texture_and_material: Polished dark armor, embroidered cloth, vellum, silver inlay, smooth stone, and denoised night sky.
+  camera_and_composition: Symmetrical exorcism-card layout, circular celestial geometry, tall banners, and centered readable ritual silhouette.
+  atmosphere_and_mood: Sacred, cosmic, strategic, quiet, and ominous.
+  rendering_and_quality: Clean fantasy illustration with luminous accents, smooth dark gradients, and card-readable silhouette design.
+  creative_brief: Original astral-medieval aesthetic for exorcists, star relics, sealed monsters, ritual armor, and cosmic crusade scenes.
+avoidRules:
+  - readable magic circles
+  - generic wizard robe
+  - noisy starfield
+  - sci-fi spaceship look
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-032.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: apocalyptic-wargame-and-inked-dungeon
+  categoryName: 5. Apocalyptic Wargame & Inked Dungeon
+  domain: astral medieval fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - apocalyptic-wargame-and-inked-dungeon
+    - astral-exorcist
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -29,6 +29,7 @@ interface StudioHeaderToolbarWorkspaceContext {
 interface StudioHeaderToolbarOverlayContext {
   onOpenDashboard: HeaderToolbarProps['onOpenDashboard'];
   openOnboarding: () => void;
+  onOpenChat: HeaderToolbarProps['onOpenChat'];
   onOpenTrash: HeaderToolbarProps['onOpenTrash'];
   trashCount: HeaderToolbarProps['trashCount'];
   onToggleDebug: HeaderToolbarProps['onToggleDebug'];
@@ -110,6 +111,7 @@ export function buildStudioHeaderToolbarProps({
     onCloseRecipe: view.onCloseRecipe,
     onOpenDashboard: overlays.onOpenDashboard,
     onOpenOnboarding: () => startTransition(() => overlays.openOnboarding()),
+    onOpenChat: overlays.onOpenChat,
     onOpenTrash: overlays.onOpenTrash,
     trashCount: overlays.trashCount,
     onToggleDebug: overlays.onToggleDebug,

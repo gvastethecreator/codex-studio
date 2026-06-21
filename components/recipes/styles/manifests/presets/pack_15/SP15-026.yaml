@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-026
 packId: pack_15
-name: Rocket Cathedral Arcade
-category: 10. Corepunk — Raypunk
+name: Symbiont Market Canopy
+category: 4. Bio, Myco & Body Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - raypunk
+  - punk-spectrum-vault
+  - bio-myco-and-body-punks
+  - biopunk
+  - symbiont
 visualDna:
-  aesthetic: Monumental raypunk sacred-science design without literal worship staging.
-  form_and_line: Pointed rocket arches, ribbed tube vaults, cruciform vectors, and mission-mosaic grids.
-  color_palette: Ivory white, plasma blue, and brass orange.
-  lighting_setup: Volumetric skylight beams intersecting reactor lumen fixtures.
-  material_texture: Ceramic composites, ribbed steel, etched glass, and polished stone.
-  render_quality: Grand-scale environment concept with balanced symbolism and function.
-  spatial_distortion: Longitudinal sacred-tech depth with processional vector symmetry.
-  atmosphere: Triumphal curiosity, solemn innovation, and civic mythmaking.
-  key_features: Rocket-arch halos, plasma-blue ribs, mission-mosaic patterning, and brass-orange lumen seams.
-  creative_brief: 'Give the input sacred-science scale: rocket arches, plasma-blue ribs, mission-mosaic grids, ivory ceramic light, and processional launch symmetry. Cathedral or arcade cues may appear, but the style is civic mythmaking through monumental function, not worship staging. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: biopunk symbiotic commerce as a flat-to-painterly poster card built around a living canopy market where vendors trade stylized symbiont tools, seed pods, and crafted wearable graft objects.
+  form_and_line: Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses living canopy, symbiont tools, vendor gestures, wet pods, wearable graft displays.
+  color_palette: orchid magenta, chlorophyll green, warm amber, dark umber
+  lighting_setup: canopy-filtered glow blocks, bioluminescent stall accents, matte organic highlights
+  material_texture: living canopy planes, seed pod shapes, woven fiber blocks, smooth translucent color, damp wood accents
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: lush, transactional, uncanny, lively
+  key_features: living canopy, symbiont tools, vendor gestures, wet pods, wearable graft displays
+  creative_brief: 'A market is correct here because the style is biotech trade: make it living, tactile, and social, not gore, fetish body display, or generic aisle. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - dystopian-decay
-  - rustic-medieval
-  - grim-bunker-only
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-026.webp
 attributes:
-  negativePrompt: photoreal, dystopian-decay, rustic-medieval, grim-bunker-only, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, exposed organs, blood, surgery table, severed limbs, fetish body display, generic market aisle, readable labels, wet skin realism, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-raypunk
-  categoryName: 10. Corepunk — Raypunk
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - raypunk
+    - punk-spectrum-vault
+    - bio-myco-and-body-punks
+    - biopunk
+    - symbiont
   supportedTasks:
     - image_generate
     - image_edit

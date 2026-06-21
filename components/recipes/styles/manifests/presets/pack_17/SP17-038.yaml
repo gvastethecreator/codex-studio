@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-038
+packId: pack_17
+name: Illuminated Monster Codex
+category: 6. Monochrome Tarot & Bestiary Plates
+domain: illuminated medieval bestiary
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - monochrome-tarot-and-bestiary-plates
+  - illuminated-bestiary
+visualDna:
+  aesthetic: Illuminated manuscript bestiary style with clean parchment, jewel-like flat accents, gold margins, and strange medieval beasts.
+  subject_treatment: An illuminated manuscript creature, marginal demon, or holy beast with tiny knights only as scale marks, framed by ornament without readable letters.
+  color_and_tone: Parchment, black ink, muted lapis, red lake, dull gold, and soft green accents separated into flat planes.
+  lighting_and_shadow: Flat manuscript lighting, little cast shadow, and strong color separation.
+  texture_and_material: Smooth vellum, flat pigment, clean ink outlines, restrained gold ornament, and no smeared aged-paper noise.
+  camera_and_composition: Manuscript plate crop, creature centered in a simple frame, broad margins, and no readable annotations.
+  atmosphere_and_mood: Scholarly, magical, antique, and curious rather than grim.
+  rendering_and_quality: Clean illuminated illustration with crisp edges, low texture load, and visible shape design.
+  creative_brief: Medieval codex style for bestiary creatures, magical animals, relic diagrams, or manuscript fantasy scenes.
+avoidRules:
+  - readable marginal text
+  - over-aged parchment grime
+  - excessive filigree
+  - photoreal vellum
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-038.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: monochrome-tarot-and-bestiary-plates
+  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  domain: illuminated medieval bestiary
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - monochrome-tarot-and-bestiary-plates
+    - illuminated-bestiary
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

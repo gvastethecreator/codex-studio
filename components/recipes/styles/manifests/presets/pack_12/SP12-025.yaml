@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Hormigón mojado, graffiti táctico, tuberías metálicas y señalética decadente.
   camera_and_composition: Side-view clásico, capas activas y zonas de combo como lenguaje visual sin exigir underpass.
   atmosphere_and_mood: Energía callejera, agresiva y cadenciosa.
-  rendering_and_quality: "Side-brawler gameplay frame: hit confirms, crowd control, neon stage depth, movement lanes clear."
+  rendering_and_quality: 'Side-brawler gameplay frame: hit confirms, crowd control, neon stage depth, movement lanes clear.'
 avoidRules:
   - watermark
   - text

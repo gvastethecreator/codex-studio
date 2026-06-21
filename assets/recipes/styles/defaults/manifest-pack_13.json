@@ -34,12 +34,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "4. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-020.webp",
-    "jobId": "509f0d08-356a-4f50-8ef3-da3978337358",
+    "jobId": "3572c66a-5df0-43c8-aea7-4073e22b3802",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-020.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T15:58:04.149Z"
+    "generatedAt": "2026-06-21T07:11:55.202Z"
   },
   {
     "presetId": "SP05-041",
@@ -62,12 +62,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "4. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-042.webp",
-    "jobId": "6a52d34d-9b09-4858-a688-5b3e8ea95ec0",
+    "jobId": "c5b95755-cda8-4a26-b4ba-e1119d102015",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-042.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T16:05:54.689Z"
+    "generatedAt": "2026-06-21T07:12:17.875Z"
   },
   {
     "presetId": "SP05-043",
@@ -76,12 +76,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "4. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-043.webp",
-    "jobId": "7a21a141-fc3e-4130-a67d-5a261b96801d",
+    "jobId": "1844015c-abcb-4521-9ba9-5fa2ac11bbda",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-043.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T16:07:48.913Z"
+    "generatedAt": "2026-06-21T07:13:30.003Z"
   },
   {
     "presetId": "SP05-044",
@@ -146,12 +146,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "4. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-048.webp",
-    "jobId": "7f990804-aa4f-473b-9429-d9965a5db9b2",
+    "jobId": "ee91daeb-7791-4edd-8f86-594232cc58dc",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-048.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T16:53:43.548Z"
+    "generatedAt": "2026-06-21T07:15:09.696Z"
   },
   {
     "presetId": "SP05-049",
@@ -160,12 +160,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "4. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-049.webp",
-    "jobId": "05bee6dc-f92b-4f90-82a7-3d75ff3ebf75",
+    "jobId": "619447f6-4665-4163-94c2-9eb2fabb6496",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-049.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T16:59:36.315Z"
+    "generatedAt": "2026-06-21T07:16:42.209Z"
   },
   {
     "presetId": "SP05-050",
@@ -398,12 +398,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "12. Anime Style Spectrum",
     "file": "assets/recipes/styles/defaults/SP05-106.webp",
-    "jobId": "c922d3dd-8aed-4e19-9e42-9bc092638e34",
+    "jobId": "82837a69-1103-49c0-a7a1-e21f8019628d",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-106.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T17:41:41.939Z"
+    "generatedAt": "2026-06-21T07:18:39.337Z"
   },
   {
     "presetId": "SP05-107",
@@ -440,12 +440,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "12. Anime Style Spectrum",
     "file": "assets/recipes/styles/defaults/SP05-109.webp",
-    "jobId": "37e5a71d-ee7d-4e41-975c-5f33e82096a4",
+    "jobId": "80bfb980-4926-4caa-afca-a6d193bfad3d",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-109.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T17:53:47.500Z"
+    "generatedAt": "2026-06-21T07:27:37.687Z"
   },
   {
     "presetId": "SP05-110",
@@ -524,12 +524,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "12. Anime Style Spectrum",
     "file": "assets/recipes/styles/defaults/SP05-115.webp",
-    "jobId": "892e975f-fd89-4b8a-a1f5-e58a21051ba1",
+    "jobId": "d9405aa6-da21-4976-ad7f-2b6d1cafe56f",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-115.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T18:10:06.159Z"
+    "generatedAt": "2026-06-21T07:29:41.991Z"
   },
   {
     "presetId": "SP05-116",
@@ -608,12 +608,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "4. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-162.webp",
-    "jobId": "0348c270-fa73-4662-9262-73b716f96d05",
+    "jobId": "53adee06-a6f5-461e-91ef-78eede0c1e3b",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-162.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T18:20:00.552Z"
+    "generatedAt": "2026-06-21T07:25:24.971Z"
   },
   {
     "presetId": "SP05-168",
@@ -636,12 +636,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "4. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-171.webp",
-    "jobId": "f22ac593-0b9d-45c5-88c1-c260bd389fc4",
+    "jobId": "47cede8c-1460-43f6-9302-842ef8a35d67",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-171.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T18:21:27.731Z"
+    "generatedAt": "2026-06-21T07:23:36.337Z"
   },
   {
     "presetId": "SP05-172",
@@ -650,12 +650,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "4. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-172.webp",
-    "jobId": "9edb4717-3b0c-48b8-b484-75eb482318ca",
+    "jobId": "a5a1f73a-e416-422a-8762-cfb6d05df8c2",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-172.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T18:20:04.085Z"
+    "generatedAt": "2026-06-21T07:24:58.317Z"
   },
   {
     "presetId": "SP05-176",
@@ -664,12 +664,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "4. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-176.webp",
-    "jobId": "7f2f2a3c-9f15-4e78-9b10-81e5e52baaad",
+    "jobId": "f1754b20-0f63-4a16-950a-80b97777acc1",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-176.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T18:31:53.847Z"
+    "generatedAt": "2026-06-21T07:26:21.417Z"
   },
   {
     "presetId": "SP05-177",
@@ -692,12 +692,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "4. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-178.webp",
-    "jobId": "a240447a-f15d-40d0-9f11-56b7f091fbe2",
+    "jobId": "60c59f66-828d-4dc6-84f0-d7ea68da5149",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-178.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T18:52:44.644Z"
+    "generatedAt": "2026-06-21T07:41:43.012Z"
   },
   {
     "presetId": "SP05-181",
@@ -832,12 +832,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "4. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-190.webp",
-    "jobId": "d61dfce6-4c9f-4b28-887c-afa98acd729b",
+    "jobId": "ccf251d6-68f4-4d23-b95e-ba2e4bbf0fb4",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-190.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T19:21:18.916Z"
+    "generatedAt": "2026-06-21T07:43:00.010Z"
   },
   {
     "presetId": "SP05-191",
@@ -930,12 +930,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "4. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-197.webp",
-    "jobId": "66273614-6a03-4a4f-bbed-3bb81688ded6",
+    "jobId": "b23871a6-4dbc-4c00-aada-3a4e86527966",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-197.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T19:51:45.007Z"
+    "generatedAt": "2026-06-21T07:44:54.182Z"
   },
   {
     "presetId": "SP05-198",
@@ -944,12 +944,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "4. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-198.webp",
-    "jobId": "baf19402-ee8a-46f5-9aa3-3da21553322b",
+    "jobId": "5ee4bcb5-d914-48f7-8054-b81a46de459d",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-198.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T19:54:10.232Z"
+    "generatedAt": "2026-06-21T07:46:15.909Z"
   },
   {
     "presetId": "SP05-199",
@@ -1014,12 +1014,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "5. Slice of Life & Moe",
     "file": "assets/recipes/styles/defaults/SP05-203.webp",
-    "jobId": "9a0b5b4e-c99b-4b1f-ae1c-28c8826c1619",
+    "jobId": "c34f911d-f4fa-420e-8edc-7ed6f3abb593",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-203.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T20:07:48.714Z"
+    "generatedAt": "2026-06-21T07:49:00.916Z"
   },
   {
     "presetId": "SP05-204",
@@ -1084,12 +1084,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "5. Slice of Life & Moe",
     "file": "assets/recipes/styles/defaults/SP05-208.webp",
-    "jobId": "5e37e383-d7f8-4827-9d41-03d0626ed3a6",
+    "jobId": "38e3ef53-d336-4e17-917b-49f0b5d2a41b",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-208.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T20:27:12.468Z"
+    "generatedAt": "2026-06-21T07:47:43.735Z"
   },
   {
     "presetId": "SP05-209",
@@ -1140,12 +1140,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "5. Slice of Life & Moe",
     "file": "assets/recipes/styles/defaults/SP05-212.webp",
-    "jobId": "2b98096e-c31d-45e2-a5c1-d58c09fcbacb",
+    "jobId": "6b90bd6d-ed04-42d7-98b0-9ffef33b255d",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-212.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T20:45:25.175Z"
+    "generatedAt": "2026-06-20T18:27:58.943Z"
   },
   {
     "presetId": "SP05-213",
@@ -1154,12 +1154,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "5. Slice of Life & Moe",
     "file": "assets/recipes/styles/defaults/SP05-213.webp",
-    "jobId": "b3cd911a-21fb-40fb-9a9d-e2cabceab6dd",
+    "jobId": "3d3722e5-84b0-4540-b5ed-4de701a8c67e",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-213.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T20:45:48.874Z"
+    "generatedAt": "2026-06-21T07:54:27.600Z"
   },
   {
     "presetId": "SP05-214",
@@ -1224,12 +1224,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "5. Slice of Life & Moe",
     "file": "assets/recipes/styles/defaults/SP05-218.webp",
-    "jobId": "7854bc9f-8025-499b-9886-d0ee46cba9f5",
+    "jobId": "60ca9cc6-bccd-4389-be38-2f6ba062c057",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-218.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T21:05:00.824Z"
+    "generatedAt": "2026-06-20T18:32:41.242Z"
   },
   {
     "presetId": "SP05-219",
@@ -1294,12 +1294,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "12. Anime Style Spectrum",
     "file": "assets/recipes/styles/defaults/SP05-323.webp",
-    "jobId": "ceef89c0-1be1-4c22-83d3-3a56cbedce96",
+    "jobId": "02a85a5f-af03-4431-ae02-6e89d734b539",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-323.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T21:23:40.223Z"
+    "generatedAt": "2026-06-21T07:54:52.115Z"
   },
   {
     "presetId": "SP05-324",
@@ -1308,12 +1308,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "12. Anime Style Spectrum",
     "file": "assets/recipes/styles/defaults/SP05-324.webp",
-    "jobId": "16eb51d0-ba01-4e8f-91f1-39297636e398",
+    "jobId": "526d6739-9e11-463b-8ea5-986f765aadde",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-324.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T21:17:18.712Z"
+    "generatedAt": "2026-06-20T18:35:59.189Z"
   },
   {
     "presetId": "SP05-325",
@@ -1406,12 +1406,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "12. Anime Style Spectrum",
     "file": "assets/recipes/styles/defaults/SP05-331.webp",
-    "jobId": "37c85905-fbdd-4994-a843-160e2975ee07",
+    "jobId": "2a6b353d-a584-4a34-a785-7fbe1da0ed92",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-331.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T21:44:29.715Z"
+    "generatedAt": "2026-06-21T07:56:04.468Z"
   },
   {
     "presetId": "SP05-332",
@@ -1490,12 +1490,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "12. Anime Style Spectrum",
     "file": "assets/recipes/styles/defaults/SP05-337.webp",
-    "jobId": "c8670a13-2014-415c-8d83-8d72e7a46b3d",
+    "jobId": "7058ca25-ffe5-4a04-8e47-4d0aaaa5af02",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-337.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T21:53:20.967Z"
+    "generatedAt": "2026-06-21T07:57:30.380Z"
   },
   {
     "presetId": "SP05-338",
@@ -1574,12 +1574,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "1. Core Anime",
     "file": "assets/recipes/styles/defaults/SP13-001.webp",
-    "jobId": "6a7eb5ea-9034-41de-8bf0-d46521adc8be",
+    "jobId": "44d18c04-77a6-4ea6-b04a-30f256ee7c36",
     "sourceAsset": "assets/recipes/styles/defaults/SP13-001.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T14:17:53.666Z"
+    "generatedAt": "2026-06-21T07:58:46.535Z"
   },
   {
     "presetId": "SP13-002",
@@ -1686,12 +1686,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "1. Core Anime",
     "file": "assets/recipes/styles/defaults/SP13-009.webp",
-    "jobId": "10ffbbb9-07db-403d-84ae-f868e1c1ffdd",
+    "jobId": "3fa1ba59-d385-4227-a8fe-40dc4c66941c",
     "sourceAsset": "assets/recipes/styles/defaults/SP13-009.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T15:19:32.362Z"
+    "generatedAt": "2026-06-21T08:00:13.593Z"
   },
   {
     "presetId": "SP13-010",
@@ -1700,12 +1700,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "1. Core Anime",
     "file": "assets/recipes/styles/defaults/SP13-010.webp",
-    "jobId": "365bde01-e15a-4872-a259-eca452814222",
+    "jobId": "d2d2f541-a967-43bd-b1b1-cba5f3657e42",
     "sourceAsset": "assets/recipes/styles/defaults/SP13-010.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T15:24:45.923Z"
+    "generatedAt": "2026-06-20T22:02:26.318Z"
   },
   {
     "presetId": "SP13-011",
@@ -1714,12 +1714,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "1. Core Anime",
     "file": "assets/recipes/styles/defaults/SP13-011.webp",
-    "jobId": "e5fee08c-e560-4aa5-8f08-506fa1ddaabc",
+    "jobId": "f838839a-ccb2-454b-a4c3-76a242ef9a3c",
     "sourceAsset": "assets/recipes/styles/defaults/SP13-011.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T15:26:25.611Z"
+    "generatedAt": "2026-06-20T22:04:00.304Z"
   },
   {
     "presetId": "SP13-012",
@@ -1756,12 +1756,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "1. Core Anime",
     "file": "assets/recipes/styles/defaults/SP13-014.webp",
-    "jobId": "1a04747b-6b20-474e-93d8-271e7ab1a20a",
+    "jobId": "66692c8c-c007-479c-980b-abdb01c6fea8",
     "sourceAsset": "assets/recipes/styles/defaults/SP13-014.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T15:33:36.582Z"
+    "generatedAt": "2026-06-20T22:05:17.896Z"
   },
   {
     "presetId": "SP13-015",
@@ -1840,12 +1840,12 @@
     "packName": "Anime 02 — Anime Character & Lifestyle",
     "category": "1. Core Anime",
     "file": "assets/recipes/styles/defaults/SP13-020.webp",
-    "jobId": "f85298a8-86fd-4d28-8f6f-6b6e922eb0c8",
+    "jobId": "396d32ea-3dce-4dab-8eaa-6310f0376ff0",
     "sourceAsset": "assets/recipes/styles/defaults/SP13-020.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T15:47:57.685Z"
+    "generatedAt": "2026-06-21T08:02:09.256Z"
   },
   {
     "presetId": "SP13-022",

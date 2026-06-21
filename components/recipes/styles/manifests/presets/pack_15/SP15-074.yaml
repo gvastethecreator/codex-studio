@@ -1,48 +1,53 @@
 schemaVersion: 1
 id: SP15-074
 packId: pack_15
-name: Moonshade Library Spires
-category: 11. Corepunk — Lunarpunk
+name: Flint Engine Market
+category: 10. Primitive, Stone & Salvage Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - lunarpunk
+  - punk-spectrum-vault
+  - primitive-stone-and-salvage-punks
+  - stonepunk
+  - market
 visualDna:
-  aesthetic: Abstract moonshade archive style with vertical hush, low-lumen knowledge, and acoustically softened geometry.
-  form_and_line: Slender vertical stacks, radial quiet zones, bridge-like lattices, codex-slot ribs, and reed-thin silhouettes.
-  color_palette: Soft lilac, ivory ceramic, slate shadow, moonwash blue, and pale bookmark gold.
-  lighting_setup: Low-lumen pools, skylight moonwash, faint lamina glow, and restrained edge highlights.
-  material_texture: Ceramic composite matte, fabric acoustic softness, layered glass lamina, powder-coated rail detail, and page-like panels.
-  render_quality: Elegant contemplative render with spacious negative areas, vertical structure, and clear silence cues.
-  spatial_distortion: Upward composition and stacked transparency create a quiet sense of stored memory.
-  atmosphere: Reflection, study, collective memory, and acoustic hush.
-  key_features: Vertical archive rhythm, lilac moonwash, fabric-baffle softness, glass-lamina layering, and pale bookmark accents.
-  creative_brief: 'Index the input in moonshade quiet: stretch it into lilac vertical stacks, codex-slot ribs, glass-lamina layers, fabric acoustic baffles, and pale bookmark glints so the image feels stored, moonlit, and protected from noise. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: stonepunk trade mechanics built around a standout flint engine trader-inventor, compact engine stall, carved wheels, smoke, and leather tool rolls.
+  form_and_line: Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses flint engines, traders, leather tool rolls, smoke, carved wheels.
+  color_palette: flint gray, smoke black, ochre, hide brown
+  lighting_setup: firelight blocks, smoky daylight, polished flint highlights
+  material_texture: flint planes, hide-brown material blocks, clay pot shapes, wood wheels, blank pins
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: busy, primal, inventive, tactile
+  key_features: flint engine trader-inventor, engine stall, leather tool rolls, smoke, carved wheels
+  creative_brief: 'A market is correct here because it sells low-tech engines: one standout flint engine trader-inventor as the main character beside a compact engine stall, plus leather tool rolls, carved wheel blocks, smoke plume, ochre ground slab, blank cloth canopy, and hide-brown planes behind them, not generic bazaar aisles. Secondary traders may be tiny background silhouettes only. Keep the result representative rather than over-abstract; use non-photographic stylized illustration, editorial digital painting, ligne-claire adventure comic clarity, gouache-cel shapes, drawn contours, broad painted planes, and controlled color design over realism or generic concept art. Avoid workers-only composition. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - cyberpunk-noise
-  - military-tech
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-074.webp
 attributes:
-  negativePrompt: photoreal, cyberpunk-noise, military-tech, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, marketplace key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, realistic human anatomy, detailed face, workers-only composition, anonymous worker crew, lens blur, bokeh, depth-of-field photo look, deep perspective, scenic background, crowded marketplace, city alley, banner emblem, cloth symbols, shields, badges, jewelry-detail portrait, armored warrior, long market aisle, crowded bazaar corridor, readable price tags, signs, logos, skulls, real bones, gore, weapon stall, animal carcass, photoreal leather, dusty realism, realistic material render, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-lunarpunk
-  categoryName: 11. Corepunk — Lunarpunk
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - lunarpunk
+    - punk-spectrum-vault
+    - primitive-stone-and-salvage-punks
+    - stonepunk
+    - market
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-043
+packId: pack_17
+name: Anatomist Wyvern Field Guide
+category: 6. Monochrome Tarot & Bestiary Plates
+domain: fantasy field guide illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - monochrome-tarot-and-bestiary-plates
+  - field-guide-bestiary
+visualDna:
+  aesthetic: Medieval-naturalist field guide plate for wyverns, dungeon beasts, horns, wings, claws, eggs, and relic habitats.
+  subject_treatment: A single anatomist wyvern specimen with two or three clean unlabeled shape insets for wing, claw, or skull silhouette, never a crowded diagram sheet.
+  color_and_tone: Warm paper, black ink, sepia wash, moss green, muted blue, and small rust accents.
+  lighting_and_shadow: Clear studio-plate light, open shadows, and readable form planes.
+  texture_and_material: Smooth scientific ink, soft wash, parchment, horn, scale groups, and minimal stipple.
+  camera_and_composition: Creature side plate, one large specimen, 2-3 small non-text insets, and generous margins.
+  atmosphere_and_mood: Scholarly, dangerous, curious, and old-world.
+  rendering_and_quality: Clean fantasy field-guide illustration with controlled anatomy, simple shapes, and no dense scale mesh.
+  creative_brief: Bestiary field-guide style for medieval creatures, anatomy-like fantasy plates, relic habitats, and specimen cards.
+avoidRules:
+  - readable annotations
+  - anatomical gore
+  - dense scale texture
+  - crowded diagram sheet
+  - photoreal animal rendering
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-043.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: monochrome-tarot-and-bestiary-plates
+  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  domain: fantasy field guide illustration
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - monochrome-tarot-and-bestiary-plates
+    - field-guide-bestiary
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

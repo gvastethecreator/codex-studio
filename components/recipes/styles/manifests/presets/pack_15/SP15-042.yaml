@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-042
 packId: pack_15
-name: Helium Skyline Decks
-category: 8. Corepunk — Atompunk
+name: Skatepark Generator Crew
+category: 6. Street, Riot & DIY Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - atompunk
+  - punk-spectrum-vault
+  - street-riot-and-diy-punks
+  - skatepunk
+  - diy-power
 visualDna:
-  aesthetic: Buoyant civic atompunk where architecture looks held up by optimism, helium math, and beautifully visible tension.
-  form_and_line: Cantilever slices, pylon spines, helium-pod bellies, tensioned membrane curves, and hairline suspension cables.
-  color_palette: Powder blue, white metal, citrus yellow, cloud gray, and tiny red altitude markers.
-  lighting_setup: High-altitude sunlight, anti-glare deck strips, cloud bounce under platforms, and sharp cable highlights.
-  material_texture: Lightweight alloy skins, translucent membranes, anti-slip polymers, sealed rivet seams, and sun-warmed rubber joints.
-  render_quality: Architectural visualization with airy scale, crisp suspension logic, and no generic floating-city blur.
-  spatial_distortion: High-angle perspective opens negative space below every floating edge.
-  atmosphere: Lightness, vertigo, civic wonder, and absolute trust in optimistic infrastructure.
-  key_features: Helium lift forms, cloud-garden pods, reactor-fed linework, floating lips, and tension-gauge panels.
-  creative_brief: 'Suspend the input with visible optimism: helium pod bellies, hairline cables, powder-blue membranes, altitude ticks, and open negative space should make weight feel negotiated. Skyline decks can appear as anchors, but the style is buoyant civic trust and engineered vertigo. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: skatepunk power crew as a flat graphic digital-illustration card built around skaters wiring a generator rig into a concrete park with ramps, blank sticker shapes, cables, and sunset dust.
+  form_and_line: Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges. Core composition uses generator rig, skaters, ramps, cable trails, sticker clusters.
+  color_palette: concrete gray, sticker red, battery green, sunset orange
+  lighting_setup: low sunset, portable floodlights, battery LEDs, dust haze
+  material_texture: concrete planes, grip-tape shapes, patched denim silhouettes, battery-pack blocks, blank spray-paint color fields
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: kinetic, young, rough, inventive
+  key_features: generator rig, skaters, ramps, cable trails, sticker clusters
+  creative_brief: 'Skatepunk as motion and DIY power: crew, ramps, cables, and attitude, not a sterile product render of a board. Keep it representative through concrete skatepark corner, skater crew silhouettes, chunky generator rig, ramp curve, broad cable trails, battery glow blocks, and blank sticker-color clusters. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - dystopian-collapse
-  - medieval
-  - cyberpunk-grit
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-042.webp
 attributes:
-  negativePrompt: photoreal, dystopian-collapse, medieval, cyberpunk-grit, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, readable stickers, brand logos, skateboard-only still life, sterile generator render, underpass corridor, skate trick poster, weapon pose, photoreal dust, photoreal haze, dense cable nest, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-atompunk
-  categoryName: 8. Corepunk — Atompunk
+  packName: Punk Spectrum Vault
+  categoryId: street-riot-and-diy-punks
+  categoryName: 6. Street, Riot & DIY Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - atompunk
+    - punk-spectrum-vault
+    - street-riot-and-diy-punks
+    - skatepunk
+    - diy-power
   supportedTasks:
     - image_generate
     - image_edit

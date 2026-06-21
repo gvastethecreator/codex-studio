@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-005
+packId: pack_17
+name: Black Iron Crusade
+category: 1. Dark Fantasy Realms
+domain: medieval fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dark-fantasy-realms
+  - black-iron
+visualDna:
+  aesthetic: Severe crusader fantasy built from black iron, devotional symbols, and battle-worn austerity.
+  subject_treatment: A black-iron siege standard bearer built like a shield tower, faceless and angular, with relic scars and a massive tabard silhouette.
+  color_and_tone: Blackened steel, faded linen, bone white, rust red, and cold silver edge highlights.
+  lighting_and_shadow: Hard side light and simple rim accents define metal planes while keeping shadows clean and legible.
+  texture_and_material: Hammered iron, chain links, rough cloth crosses, scarred shields, ash dust, and old enamel.
+  camera_and_composition: Front-facing icon posture, shield-wall spacing, low horizon, and strong heraldic geometry.
+  atmosphere_and_mood: Zealous, austere, militant, and haunted.
+  rendering_and_quality: Detailed dark fantasy concept art with tactile armor, disciplined shapes, and restrained effects.
+  creative_brief: Turns subjects into severe medieval crusade imagery using iron mass, heraldry, and devotional menace.
+avoidRules:
+  - polished tournament armor
+  - bright paladin glow
+  - playful costume
+  - sci-fi soldier
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-005.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dark-fantasy-realms
+  categoryName: 1. Dark Fantasy Realms
+  domain: medieval fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dark-fantasy-realms
+    - black-iron
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

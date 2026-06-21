@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Smart-glass facetado, aleación cepillada, compuestos antideslizantes y artefactos volumétricos de navegación ambiental.
   camera_and_composition: Hub radial, vectores de circulación y sightlines tácticas limpias sin exigir metro o hoverline literal.
   atmosphere_and_mood: Ordenada, veloz y con tensión de seguridad contenida.
-  rendering_and_quality: "Urban transit gameplay screencap: hoverline routes, access points, platform state, navigation cues clear."
+  rendering_and_quality: 'Urban transit gameplay screencap: hoverline routes, access points, platform state, navigation cues clear.'
 avoidRules:
   - watermark
   - text

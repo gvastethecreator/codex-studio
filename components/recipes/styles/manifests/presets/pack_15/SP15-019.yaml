@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-019
 packId: pack_15
-name: Neon Isotope Plaza
-category: 8. Corepunk — Atompunk
+name: Riverbend Repair Union
+category: 3. Eco, Repair & Climate Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - atompunk
+  - punk-spectrum-vault
+  - eco-repair-and-climate-punks
+  - repairpunk
+  - riverside
 visualDna:
-  aesthetic: Retro-atomic graphic language where optimism carries visible scientific risk.
-  form_and_line: Boomerang silhouettes, orbit rings, radial burst geometry, and safety-icon curves.
-  color_palette: Mint teal, uranium chartreuse, and chrome silver.
-  lighting_setup: Irradiated sign glow and hard noon reflections on polished surfaces.
-  material_texture: Enamel panels, brushed aluminum, terrazzo speckle, and luminous glass brick.
-  render_quality: Crisp concept art with poster-like readability and worldbuilding detail.
-  spatial_distortion: Symmetric radial composition with controlled monument-scale depth.
-  atmosphere: Confident progress, latent risk, and mid-century spectacle.
-  key_features: Atom-halo badges, isotope glyph clusters, civic-poster framing, and controlled hazard accents.
-  creative_brief: 'Make the input a mid-century atomic warning poster come alive: isotope halos, boomerang cuts, uranium-chartreuse glow, enamel panels, chrome risk reflections, and radial civic spectacle. Plaza cues are optional; the style is optimistic science with a visible hazard pulse. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: repairpunk riverside workshop as a flat-to-painterly poster card built around a riverside commons fixing bicycles, turbines, boats, and small appliances under tarps.
+  form_and_line: Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core composition uses repair benches, turbines, patched boats, union patches, riverside tarps.
+  color_palette: river blue, rust orange, canvas tan, tool steel
+  lighting_setup: open shade blocks, flat river color, simple workbench glow, late sun shape
+  material_texture: canvas tarp planes, tool steel accents, patched boat silhouette, bicycle rubber arcs, weathered wood blocks
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: neighborly, capable, improvised, resilient
+  key_features: repair benches, turbines, patched boats, union patches, riverside tarps
+  creative_brief: 'Repairpunk should feel hands-on and local: repaired objects, people using tools, and civic usefulness without shiny utopia or market clutter. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - post-apocalypse-rust
-  - grimdark-gore
-  - medieval-elements
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-019.webp
 attributes:
-  negativePrompt: photoreal, post-apocalypse-rust, grimdark-gore, medieval-elements, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, readable union text, logo badge, work-lamp hero, crowded object pile, market aisle, photoreal river reflection, shiny utopia, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-atompunk
-  categoryName: 8. Corepunk — Atompunk
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - atompunk
+    - punk-spectrum-vault
+    - eco-repair-and-climate-punks
+    - repairpunk
+    - riverside
   supportedTasks:
     - image_generate
     - image_edit

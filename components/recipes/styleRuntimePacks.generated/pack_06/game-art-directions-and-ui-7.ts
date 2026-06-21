@@ -308,7 +308,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sci-Fi Arsenal Icon Kit',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, gun requirement, soldier requirement, watermark, text',
+      'motion blur, inconsistent proportions, changing costume, cluttered background, gun requirement, soldier requirement, watermark, text',
     style: {
       aesthetic:
         'Sci-fi inventory-icon style with hard-surface silhouette logic, technical accents, and clean arsenal readability.',

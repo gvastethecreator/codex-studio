@@ -1,48 +1,53 @@
 schemaVersion: 1
 id: SP15-071
 packId: pack_15
-name: Aurora Battle Deck
-category: 10. Corepunk — Raypunk
+name: Lunar Orchard Relay
+category: 9. Space, Atomic & Ray Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - raypunk
+  - punk-spectrum-vault
+  - space-atomic-and-ray-punks
+  - lunarpunk
+  - lunar-agriculture
 visualDna:
-  aesthetic: Abstract aurora-tactical raypunk render style with heroic pressure, alert-spectrum color, and decisive command hierarchy.
-  form_and_line: Tiered focal bands, panoramic arc framing, tactical rib lines, alert-channel stripes, and vector-like aim diagonals.
-  color_palette: Battle navy, aurora magenta, electric cyan, emergency red, and brushed steel gray.
-  lighting_setup: Instrument-style glow, strobing edge channels, aurora wash gradients, and hard rimlights on primary silhouettes.
-  material_texture: Brushed metal grain, curved glass sheen, ribbed rubber shadows, enamel signal marks, and worn control-surface detail.
-  render_quality: High-clarity action render with strong focus zones, crisp silhouettes, and controlled raypunk saturation.
-  spatial_distortion: Viewport-like depth and stacked foreground tiers compress the image toward urgent decisions.
-  atmosphere: Tactical urgency, heroic pressure, disciplined motion, and electric dread.
-  key_features: Aurora alert gradients, command-tier composition, cyan-magenta focus bands, hard tactical diagonals, and signal-stripe overlays.
-  creative_brief: 'Charge the input with aurora command pressure: stack cyan-magenta alert bands, hard tactical diagonals, brushed control-surface textures, and viewport compression so any subject reads as a decisive raypunk operation.'
+  aesthetic: lunarpunk relay agriculture built around a standout lunar orchard signal-keeper, dome orchard, relay dishes, black sky, and pale fruit trees.
+  form_and_line: Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic forms. Core composition uses dome orchard, suited gardeners, relay dishes, black sky, pale trees.
+  color_palette: moon white, silver, leaf green, vacuum black
+  lighting_setup: earthlight, flat dome glow, soft grow-lamp color blocks, dish rimlight
+  material_texture: lunar regolith, graphic glass dome, suit fabric, hydroponic tray slabs, silver dish shapes
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: quiet, fragile, lunar, cultivated
+  key_features: signal-keeper, dome orchard, relay dishes, black sky, pale trees
+  creative_brief: 'Lunarpunk here is lunar survival and signal work, not another garden city: one standout lunar orchard signal-keeper as the main character with simplified suit and broad glowing relay tool, plus dome orchard, relay dishes, hydroponic tray slabs, black sky, and earthlight glow behind them. Secondary gardeners may be tiny background shapes only. Keep the result representative rather than over-abstract; use non-photographic stylized illustration, editorial digital painting, ligne-claire sci-fi comic clarity, gouache-cel shapes, drawn contours, broad painted planes, and controlled color design over realism or generic concept art. Avoid workers-only composition. Use few bold color/value zones, large matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - medieval
-  - cyberpunk-slum
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-071.webp
 attributes:
-  negativePrompt: photoreal, medieval, cyberpunk-slum, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, realistic astronaut anatomy, detailed face, workers-only composition, anonymous worker crew, lens blur, bokeh, depth-of-field photo look, generic glass utopia, photoreal glass dome, realistic transparent glass, realistic reflections, luxury eco garden, UI panels, readable labels, logo, crowded greenhouse, market aisle, starfield wallpaper, PBR metal, hard-surface render, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, hyper-detailed concept art, watermark, text, generic style, over-abstract, interchangeable preset, duplicated motifs, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-raypunk
-  categoryName: 10. Corepunk — Raypunk
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - raypunk
+    - punk-spectrum-vault
+    - space-atomic-and-ray-punks
+    - lunarpunk
+    - lunar-agriculture
   supportedTasks:
     - image_generate
     - image_edit

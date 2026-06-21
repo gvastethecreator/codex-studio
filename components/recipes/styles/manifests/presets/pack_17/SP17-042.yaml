@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-042
+packId: pack_17
+name: Tapestry Creature Legend
+category: 6. Monochrome Tarot & Bestiary Plates
+domain: medieval tapestry fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - monochrome-tarot-and-bestiary-plates
+  - tapestry-creature
+visualDna:
+  aesthetic: Medieval tapestry creature legend with woven flat shapes, courtly beasts, decorative flora, and quiet narrative panels.
+  subject_treatment: 'A tapestry creature legend: unicorn-like hunt spirit, lion-bird, or wyvern crossing woven hills with small court hunters in profile.'
+  color_and_tone: Linen, faded red, moss green, muted blue, ochre, dark brown outline, and soft cream fields.
+  lighting_and_shadow: No cinematic light; use flat woven value and color contrast.
+  texture_and_material: Clean woven texture, broad thread-like color blocks, sparse floral details, and no fuzzy noise.
+  camera_and_composition: Tapestry panel crop, side-view creature, patterned ground, and decorative border without words.
+  atmosphere_and_mood: Legendary, courtly, archaic, and quietly uncanny.
+  rendering_and_quality: Clean textile-inspired illustration with simplified forms and controlled fabric texture.
+  creative_brief: Medieval tapestry style for creature legends, courtly monsters, hunts, relic beasts, and folklore scenes.
+avoidRules:
+  - fuzzy textile noise
+  - overcrowded floral carpet
+  - readable border text
+  - realistic forest depth
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-042.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: monochrome-tarot-and-bestiary-plates
+  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  domain: medieval tapestry fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - monochrome-tarot-and-bestiary-plates
+    - tapestry-creature
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

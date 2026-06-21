@@ -38,6 +38,7 @@ describe('buildStudioHeaderToolbarProps', () => {
       overlays: {
         onOpenDashboard: () => calls.push('openDashboard'),
         openOnboarding: () => calls.push('openOnboarding'),
+        onOpenChat: () => calls.push('openChat'),
         onOpenTrash: () => calls.push('openTrash'),
         trashCount: 2,
         onToggleDebug: () => calls.push('toggleDebug'),
@@ -77,6 +78,7 @@ describe('buildStudioHeaderToolbarProps', () => {
 
     props.onSwitchWorkspace('shots');
     props.onOpenOnboarding();
+    props.onOpenChat();
     props.onToggleQueue();
     props.onOpenSettings();
 
@@ -98,6 +100,7 @@ describe('buildStudioHeaderToolbarProps', () => {
       'view:studio',
       'transition',
       'openOnboarding',
+      'openChat',
       'toggleQueue:true',
       'openSettings',
     ]);

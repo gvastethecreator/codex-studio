@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-044
+packId: pack_17
+name: Moon Parchment Oracle Beasts
+category: 6. Monochrome Tarot & Bestiary Plates
+domain: oracle bestiary fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - monochrome-tarot-and-bestiary-plates
+  - oracle-bestiary
+visualDna:
+  aesthetic: Moonlit parchment oracle bestiary with quiet beasts, crescent shapes, omen stones, clean ink, and pale mystical accents.
+  subject_treatment: 'A moon parchment oracle beast: owl-wyrm familiar, omen bird, shrine fox, or dreamlike animal coiled around a small moon shrine.'
+  color_and_tone: Pale parchment, black ink, moon white, muted violet, soft blue gray, and tiny silver-like highlights.
+  lighting_and_shadow: Simple moon-glow halo, open shadows, and smooth tonal fields.
+  texture_and_material: Clean parchment, soft ink wash, smooth stone, fur or feathers simplified into large groups.
+  camera_and_composition: Centered oracle-card crop, circular moon geometry, one creature, and sparse support symbols without text.
+  atmosphere_and_mood: Quiet, magical, prophetic, eerie, and calm.
+  rendering_and_quality: Clean fantasy oracle illustration with low noise, broad shapes, and restrained decorative marks.
+  creative_brief: Original oracle-bestiary style for moon animals, omen creatures, medieval familiars, relic beasts, and mystical cards.
+avoidRules:
+  - readable runes
+  - astrology text
+  - overpacked symbols
+  - noisy night sky
+  - explicit gore
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-044.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: monochrome-tarot-and-bestiary-plates
+  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  domain: oracle bestiary fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - monochrome-tarot-and-bestiary-plates
+    - oracle-bestiary
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

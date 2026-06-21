@@ -1,4 +1,5 @@
 import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { composeStyleRuntimePacksFromManifests } from '../components/recipes/stylePresetManifests';
 import type {
@@ -22,23 +23,19 @@ const staleDefaultImagesBacklogPath = path.join(
   'active',
   'style-preset-card-regeneration-backlog.md',
 );
-const checkOutputPath = path.join(
-  rootDir,
-  'components',
-  'recipes',
-  `styleRuntimeData.generated.check.${process.pid}.${Date.now()}.tmp.ts`,
-);
+const checkRunId = `${process.pid}.${Date.now()}`;
+const checkTempRoot = path.join(tmpdir(), `codex-studio-style-runtime-check.${checkRunId}`);
+const checkOutputPath = path.join(checkTempRoot, 'styleRuntimeData.generated.check.tmp.ts');
 const checkStaleDefaultImagesOutputPath = path.join(
-  rootDir,
-  'lib',
-  `staleStyleDefaultImages.generated.check.${process.pid}.${Date.now()}.tmp.ts`,
+  checkTempRoot,
+  'staleStyleDefaultImages.generated.check.tmp.ts',
 );
 const checkStyleDefaultImagesOutputPath = path.join(
-  rootDir,
-  'lib',
-  `styleDefaultImages.generated.check.${process.pid}.${Date.now()}.tmp.ts`,
+  checkTempRoot,
+  'styleDefaultImages.generated.check.tmp.ts',
 );
-const checkPackFileSuffix = `.check.${process.pid}.${Date.now()}.tmp.ts`;
+const checkPackOutputDir = path.join(checkTempRoot, 'styleRuntimePacks.generated');
+const checkPackFileSuffix = '.check.tmp.ts';
 const checkMode = process.argv.includes('--check');
 const skipFormat = process.env.STYLE_RUNTIME_SKIP_FORMAT === '1';
 
@@ -308,7 +305,7 @@ async function formatGeneratedFiles(filePaths: string[]) {
   const batchSize = 20;
   for (let index = 0; index < filePaths.length; index += batchSize) {
     const batch = filePaths.slice(index, index + batchSize);
-    const formatter = Bun.spawn(['bunx', 'vp', 'check', '--fix', ...batch], {
+    const formatter = Bun.spawn(['bunx', 'vp', 'fmt', '--threads', '4', ...batch], {
       stdout: 'pipe',
       stderr: 'pipe',
     });
@@ -320,7 +317,9 @@ async function formatGeneratedFiles(filePaths: string[]) {
 
     if (stdout.trim()) console.log(stdout.trim());
     if (stderr.trim()) console.error(stderr.trim());
-    if (exitCode !== 0) process.exit(exitCode);
+    if (exitCode !== 0) {
+      throw new Error(`vp fmt exited with code ${exitCode}`);
+    }
   }
 }
 
@@ -357,32 +356,23 @@ async function readCheckFileWithRecovery(filePath: string, source: string) {
   return readFile(filePath, 'utf8');
 }
 
-async function safeRemoveTempFile(filePath: string) {
-  try {
-    await rm(filePath, { force: true });
-  } catch (error) {
-    const code =
-      error && typeof error === 'object' && 'code' in error ? String(error.code) : 'UNKNOWN';
-    if (code === 'ENOENT' || code === 'EFAULT') return;
-    throw error;
-  }
-}
-
 if (checkMode) {
   const packChunks = packs.flatMap((pack) =>
     categoryChunksForPack(pack).map((category) => ({ pack, category })),
   );
-  const checkPackPaths = packs.map((pack) => path.join(packOutputDir, `${pack.id}.check.tmp.ts`));
+  const checkPackPaths = packs.map((pack) =>
+    path.join(checkPackOutputDir, `${pack.id}.check.tmp.ts`),
+  );
   const checkCategoryPaths = packChunks.map(({ pack, category }) =>
-    path.join(packOutputDir, pack.id, `${category.id}${checkPackFileSuffix}`),
+    path.join(checkPackOutputDir, pack.id, `${category.id}${checkPackFileSuffix}`),
   );
   const [staleDefaultImageIds, styleDefaultImageIds, styleDefaultImageVariants] = await Promise.all(
     [loadStaleDefaultImageIds(), loadStyleDefaultImageIds(), loadStyleDefaultImageVariants()],
   );
   try {
-    await mkdir(packOutputDir, { recursive: true });
+    await mkdir(checkPackOutputDir, { recursive: true });
     await Promise.all(
-      packs.map((pack) => mkdir(path.join(packOutputDir, pack.id), { recursive: true })),
+      packs.map((pack) => mkdir(path.join(checkPackOutputDir, pack.id), { recursive: true })),
     );
     await Promise.all([
       writeFile(checkOutputPath, buildIndexSource(), 'utf8'),
@@ -398,14 +388,14 @@ if (checkMode) {
       ),
       ...packs.map((pack) =>
         writeFile(
-          path.join(packOutputDir, `${pack.id}.check.tmp.ts`),
+          path.join(checkPackOutputDir, `${pack.id}.check.tmp.ts`),
           buildPackSource(pack),
           'utf8',
         ),
       ),
       ...packChunks.map(({ pack, category }) =>
         writeFile(
-          path.join(packOutputDir, pack.id, `${category.id}${checkPackFileSuffix}`),
+          path.join(checkPackOutputDir, pack.id, `${category.id}${checkPackFileSuffix}`),
           buildCategorySource(category),
           'utf8',
         ),
@@ -460,7 +450,7 @@ if (checkMode) {
     let isStale = false;
     for (const pack of packs) {
       const actualPath = path.join(packOutputDir, `${pack.id}.ts`);
-      const expectedPath = path.join(packOutputDir, `${pack.id}.check.tmp.ts`);
+      const expectedPath = path.join(checkPackOutputDir, `${pack.id}.check.tmp.ts`);
       const expectedSource = buildPackSource(pack);
       await ensureCheckFilePresent(expectedPath, expectedSource);
       const [expected, actual] = await Promise.all([
@@ -478,7 +468,7 @@ if (checkMode) {
     for (const { pack, category } of packChunks) {
       const actualPath = path.join(packOutputDir, pack.id, `${category.id}.ts`);
       const expectedPath = path.join(
-        packOutputDir,
+        checkPackOutputDir,
         pack.id,
         `${category.id}${checkPackFileSuffix}`,
       );
@@ -498,12 +488,7 @@ if (checkMode) {
 
     if (isStale) process.exitCode = 1;
   } finally {
-    await safeRemoveTempFile(checkOutputPath);
-    await safeRemoveTempFile(checkStaleDefaultImagesOutputPath);
-    await safeRemoveTempFile(checkStyleDefaultImagesOutputPath);
-    await Promise.all(
-      [...checkPackPaths, ...checkCategoryPaths].map((filePath) => safeRemoveTempFile(filePath)),
-    );
+    await rm(checkTempRoot, { recursive: true, force: true });
   }
 
   if (process.exitCode) process.exit(process.exitCode);

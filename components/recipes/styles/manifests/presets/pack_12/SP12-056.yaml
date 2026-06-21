@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Fibra de carbono, vidrio estructural, hormigón técnico y superficies de agarre.
   camera_and_composition: Profundidad vertical, líneas de flujo y alternativas de escape sin exigir megaciudad o rooftop.
   atmosphere_and_mood: Cinética, urgente y técnicamente precisa.
-  rendering_and_quality: "Rooftop chase gameplay screencap: trajectory, risk gaps, checkpoint rhythm, timing clear."
+  rendering_and_quality: 'Rooftop chase gameplay screencap: trajectory, risk gaps, checkpoint rhythm, timing clear.'
 avoidRules:
   - watermark
   - text

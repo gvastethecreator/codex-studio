@@ -114,24 +114,24 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'hard edges',
     style: {
       aesthetic:
-        'Arquitectura blanda presurizada con masa neumÃ¡tica, color blocking festivo y espacialidad temporal.',
+        'Soft pressurized architecture with pneumatic mass, festive color blocking and temporary spatial logic.',
       form_and_line:
-        'Tubos neumÃ¡ticos abultados, segmentaciÃ³n soldada, lÃ³bulos redondeados modulares y geometrÃ­a de anclaje por manguera.',
+        'Bulging pneumatic tubes, welded segmentation, modular rounded lobes and hose-anchor geometry.',
       color_palette:
         'High-saturation vinyl pink, electric yellow, safety orange, cobalt blue, bright green, and neutral seam-strip accents',
       lighting_setup:
-        'Sol difuso exterior con especulares fuertes en vinilo, glow translÃºcido de panel y bloom suave en borde inflado.',
+        'Diffuse outdoor sun, strong vinyl speculars, translucent panel glow and soft bloom on inflated edges.',
       material_texture:
-        'Piel PVC glossy, crestas de soldadura tÃ©rmica, membranas tensas, arrugas en carga y herrajes de blower.',
+        'Glossy PVC skin, heat-weld ridges, tensioned membranes, load wrinkles and blower hardware.',
       render_quality:
-        'Render inflable legible y juguetÃ³n con fidelidad material alta y brillo controlado de instalaciÃ³n temporal.',
+        'Legible playful inflatable rendering with high material fidelity and controlled temporary-installation gloss.',
       spatial_distortion:
         'Soft-volume inflation bulge and pressure-rounded edge behavior across all masses',
-      atmosphere: 'EnergÃ©tica, cinÃ©tica y festiva, inequÃ­vocamente temporal.',
+      atmosphere: 'Energetic, kinetic and festive, unmistakably temporary.',
       key_features:
-        'Bastidor tubular presurizado, retÃ­cula de costura tÃ©rmica, zonificaciÃ³n vÃ­vida, paneles mesh y nodos de inflado visibles.',
+        'Pressurized tubular frame, heat-weld seam grid, vivid zoning, mesh panels and visible inflation nodes.',
       creative_brief:
-        'Aplica comportamiento de vinilo inflable cuando sea compatible: bordes redondeados por presion, soldaduras termicas, brillos PVC, costuras temporales y color safety-pop. El estilo debe sugerir presion, juego y temporalidad sin convertir todo sujeto en parque, castillo o volumen inflable literal.',
+        'Apply inflatable vinyl behavior when compatible: pressure-rounded edges, heat-weld seams, PVC highlights, temporary joints and safety-pop color. The style should suggest pressure, play and temporality without turning every subject into a park, castle or literal inflatable volume.',
     },
   },
   {

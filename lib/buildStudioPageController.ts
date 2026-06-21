@@ -62,6 +62,12 @@ interface StudioPageGridContext {
   previewRatio: StudioGridSurfaceProps['previewRatio'];
   generationAspectRatio: StudioGridSurfaceProps['generationAspectRatio'];
   isInteractingWithToolbar: StudioGridSurfaceProps['isInteractingWithToolbar'];
+  catalogTotal: StudioGridSurfaceProps['catalogTotal'];
+  catalogHasMore: StudioGridSurfaceProps['catalogHasMore'];
+  isCatalogLoading: StudioGridSurfaceProps['isCatalogLoading'];
+  catalogError: StudioGridSurfaceProps['catalogError'];
+  loadMoreCatalog: StudioGridSurfaceProps['loadMoreCatalog'];
+  refreshCatalog: StudioGridSurfaceProps['refreshCatalog'];
 }
 
 interface StudioPageOperationsContext {
@@ -78,12 +84,7 @@ interface StudioPageOperationsContext {
   removeJob: StudioOperationsRailProps['removeJob'];
   clearCompleted: StudioOperationsRailProps['clearCompleted'];
   isResting: StudioOperationsRailProps['isResting'];
-  exportLegacyVisualBatchSnapshot: StudioOperationsRailProps['exportLegacyVisualBatchSnapshot'];
-  activeServerJobCount: StudioOperationsRailProps['activeServerJobCount'];
   onInspectJob: NonNullable<LeftDebugPanelProps['onInspectJob']>;
-  diagnostics: StudioOperationsRailProps['diagnostics'];
-  onResetStudio: StudioOperationsRailProps['onResetStudio'];
-  isResettingStudio: StudioOperationsRailProps['isResettingStudio'];
 }
 
 export interface BuildStudioPageControllerArgs {
@@ -157,6 +158,12 @@ export function buildStudioPageController(
       previewRatio: args.grid.previewRatio,
       generationAspectRatio: args.grid.generationAspectRatio,
       isInteractingWithToolbar: args.grid.isInteractingWithToolbar,
+      catalogTotal: args.grid.catalogTotal,
+      catalogHasMore: args.grid.catalogHasMore,
+      isCatalogLoading: args.grid.isCatalogLoading,
+      catalogError: args.grid.catalogError,
+      loadMoreCatalog: args.grid.loadMoreCatalog,
+      refreshCatalog: args.grid.refreshCatalog,
     },
     operations: {
       isModalOpen: args.grid.isModalOpen,
@@ -173,12 +180,7 @@ export function buildStudioPageController(
       removeJob: args.operations.removeJob,
       clearCompleted: args.operations.clearCompleted,
       isResting: args.operations.isResting,
-      exportLegacyVisualBatchSnapshot: args.operations.exportLegacyVisualBatchSnapshot,
-      activeServerJobCount: args.operations.activeServerJobCount,
       onInspectJob: args.operations.onInspectJob,
-      diagnostics: args.operations.diagnostics,
-      onResetStudio: args.operations.onResetStudio,
-      isResettingStudio: args.operations.isResettingStudio,
     },
   };
 }

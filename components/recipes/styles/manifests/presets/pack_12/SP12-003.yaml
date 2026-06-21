@@ -23,7 +23,7 @@ visualDna:
     Encuadre ancho de ruta sugerida con lanes, flancos y amenazas de horizonte como lenguaje compositivo, no como
     desierto obligatorio.
   atmosphere_and_mood: Supervivencia mecanizada, desgaste continuo y disciplina de avance bajo presión.
-  rendering_and_quality: "In-engine convoy gameplay frame: readable mech scale, dust lanes, mobility-combat systems."
+  rendering_and_quality: 'In-engine convoy gameplay frame: readable mech scale, dust lanes, mobility-combat systems.'
   creative_brief: >-
     Aplica Desert Mech Convoy como gramatica original de videojuego sobre cualquier input: conserva su sistema de
     genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura

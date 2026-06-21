@@ -265,7 +265,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Amiga DeluxePaint HAM',
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'limited palette, blocky, simple, modern, smooth gradient, dither, PC, low color, 256, chunky',
+      'limited palette, modern, smooth gradient, generic dither, PC, low color, 256, chunky modern pixel art',
     style: {
       aesthetic:
         'Commodore-Amiga-DeluxePaint aesthetic, HAM-6 Hold-And-Modify mode 4096 colors, copper-list rainbow gradients, 80s-computer-art software, Defender of the Crown, Shadow of the Beast and Warhol Amiga as color anchors, video-toaster-workstation soul',

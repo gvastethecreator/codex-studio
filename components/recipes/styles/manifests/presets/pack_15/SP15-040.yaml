@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-040
 packId: pack_15
-name: Fission Fairgrounds
-category: 8. Corepunk — Atompunk
+name: Swamp Radio Stiltworks
+category: 5. Ocean, Ice & Terrain Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - atompunk
+  - punk-spectrum-vault
+  - ocean-ice-and-terrain-punks
+  - swamppunk
+  - radio
 visualDna:
-  aesthetic: Atomic carnival propaganda where family fun, policy messaging, and reactor demos share one glossy smile.
-  form_and_line: Pavilion circles, expo arch loops, kinetic blank-sign towers, carousel radial flow, and atom-orbit silhouettes.
-  color_palette: Candy mint, coral, polished aluminum, butter yellow, and small red slogan accents.
-  lighting_setup: Warm fair bulbs, controlled reactor-demo glow, sunset chrome reflections, and blinking atom marquee patterns.
-  material_texture: Painted metal frames, vinyl banner sheen, gloss enamel kiosks, molded plastic edges, and polished aluminum rails.
-  render_quality: Playful yet sophisticated environment concept with clear spectacle hierarchy and intentional propaganda polish.
-  spatial_distortion: Radial circulation spins subjects through demo-like zones, orbit motifs, and future-home display logic.
-  atmosphere: Festive optimism, civic persuasion, spectacle, and charming unease.
-  key_features: Reactor-demo domes, isotope ride motifs, future-home shapes, neon atom signs without text, and slogan-like ribbon arcs.
-  creative_brief: 'Sell the input as an atomic carnival demo: candy-mint expo loops, reactor-dome glow, aluminum rails, future-home silhouettes, and slogan-like ribbon arcs without readable text. Fairgrounds can appear, but the style is cheerful fission persuasion with a charmingly uneasy smile. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: swamppunk signal settlement as a flat graphic digital-illustration card built around a swamp stilt settlement with radio antennas, boat repair, moss, lanterns, and mud-splashed operators.
+  form_and_line: Terrain-specific silhouettes, waterline arcs, ice facets, salt grids, stilt structures, and wind-tensioned forms. Core composition uses stilt houses, radio antennas, boat repair, moss drape, lantern operators.
+  color_palette: moss green, muddy brown, lantern orange, radio black
+  lighting_setup: humid lantern glow, green water reflections, dusk haze
+  material_texture: wet wood planes, moss drape shapes, sparse radio wire arcs, boat-paint blocks, rubber boot silhouettes, flat mud planes
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Coasts, piers, marinas, glacier towns, salt flats, and swamps with strong environmental identity. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: humid, secretive, local, resilient
+  key_features: stilt houses, radio antennas, boat repair, moss drape, lantern operators
+  creative_brief: 'Swamppunk as signal and survival: stiltworks, radios, boats, and people, not fantasy swamp corridor. Keep it representative through compact stilt repair platform, plain radio mast, boat-repair operators, half-repaired skiff, moss drape, sparse radio wires, and lantern dots as support only. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - grimdark
-  - medieval
-  - cyber-slums
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-040.webp
 attributes:
-  negativePrompt: photoreal, grimdark, medieval, cyber-slums, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, fantasy swamp corridor, horror bayou monster, lantern hero, witch hut, dense vine curtain, dense moss curtain, long dock corridor, readable radio signage, logo badges, photoreal mud, photoreal water, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-atompunk
-  categoryName: 8. Corepunk — Atompunk
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - atompunk
+    - punk-spectrum-vault
+    - ocean-ice-and-terrain-punks
+    - swamppunk
+    - radio
   supportedTasks:
     - image_generate
     - image_edit

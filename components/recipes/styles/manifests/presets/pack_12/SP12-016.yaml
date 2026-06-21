@@ -21,7 +21,7 @@ visualDna:
   texture_and_material: Seda, mármol pulido, acero ornamentado y cortinajes densos de cobertura visual.
   camera_and_composition: Tableau con capas de foreground, line-of-sight y rutas silenciosas; corte, ópera o gala son anclas opcionales.
   atmosphere_and_mood: Elegancia letal, paranoia social y tensión ritualizada.
-  rendering_and_quality: "Stealth sandbox screencap: suspicion states, disguise routes, social access cues readable."
+  rendering_and_quality: 'Stealth sandbox screencap: suspicion states, disguise routes, social access cues readable.'
   creative_brief: >-
     Aplica Shadow Opera Assassin Court como gramatica original de videojuego sobre cualquier input: conserva su sistema
     de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,

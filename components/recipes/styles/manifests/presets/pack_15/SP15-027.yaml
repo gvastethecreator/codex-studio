@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-027
 packId: pack_15
-name: Ion Frontier Monorail
-category: 10. Corepunk — Raypunk
+name: Nerve Loom Clinic
+category: 4. Bio, Myco & Body Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - raypunk
+  - punk-spectrum-vault
+  - bio-myco-and-body-punks
+  - bodypunk
+  - clinic
 visualDna:
-  aesthetic: Raypunk frontier transit language built from suspended motion and expedition grit.
-  form_and_line: Elevated vector tracks, suspension arcs, aerodynamic pods, and beacon-like strokes.
-  color_palette: Desert peach, electric cyan, and graphite black.
-  lighting_setup: High desert sun with ion-trail glow and long shadow ribbons.
-  material_texture: Dust-coated alloy, translucent canopy polymers, and rugged composite decks.
-  render_quality: Action-oriented worldbuilding concept with strong travel narratives.
-  spatial_distortion: Sweeping vanishing vectors with layered horizon depth.
-  atmosphere: Exploratory momentum, frontier resilience, and optimistic engineering.
-  key_features: Ion-trail ribbons, suspended rail motifs, expedition hazard stripes, and cyan signal beacons.
-  creative_brief: 'Pull the input along ion-frontier vectors: cyan trail ribbons, elevated suspension arcs, desert-peach glare, graphite hazard stripes, and expedition beacon marks. Monorail or canyon cues can appear, but the style should read as suspended travel momentum and rugged optimistic engineering. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: bodypunk healing workshop as a stylized digital-painting clinic card where nerve-like fiber looms weave prosthetic sensation and careful body repairs.
+  form_and_line: Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation logic. Core composition uses nerve looms, caregivers, prosthetic hands, thread webs, compact monitors.
+  color_palette: nerve pink, surgical teal, graphite, soft white
+  lighting_setup: low clinical color blocks, broad fiber-optic arcs, warm caregiver light plane
+  material_texture: fiber-strand arcs, polymer prosthetic shapes, steel loom blocks, cotton sheet planes, smooth glass accents
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: careful, intimate, uncanny, compassionate
+  key_features: nerve looms, caregivers, prosthetic hands, thread webs, compact monitors
+  creative_brief: 'Bodypunk without cheap gore: focus on care, tactile repair, and nerve-fiber craft with characters present when useful, never surgery shock or fetish medical staging. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - post-apoc-rubble-only
-  - medieval-castles
-  - horror-gore
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-027.webp
 attributes:
-  negativePrompt: photoreal, post-apoc-rubble-only, medieval-castles, horror-gore, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic foreground portrait, anime glamour portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, surgery, blood, exposed tissue, severed hand, fetish medical pose, thread-web clutter, readable medical UI, photoreal skin, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-raypunk
-  categoryName: 10. Corepunk — Raypunk
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - raypunk
+    - punk-spectrum-vault
+    - bio-myco-and-body-punks
+    - bodypunk
+    - clinic
   supportedTasks:
     - image_generate
     - image_edit

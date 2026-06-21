@@ -1,48 +1,53 @@
 schemaVersion: 1
 id: SP15-077
 packId: pack_15
-name: Earthrise Commons Balcony
-category: 11. Corepunk — Lunarpunk
+name: Rope Bridge Generator
+category: 10. Primitive, Stone & Salvage Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - lunarpunk
+  - punk-spectrum-vault
+  - primitive-stone-and-salvage-punks
+  - low-tech-punk
+  - kinetic-power
 visualDna:
-  aesthetic: Abstract earthrise perspective style with shared horizon framing, reverent rimlight, and communal scale humility.
-  form_and_line: Wide arc bands, tiered seating-like contours, radial amphitheater curves, phase-lantern dots, and horizon-framing rails.
-  color_palette: Deep indigo, pearl white, soft gold, earthrise blue, and textile shadow violet.
-  lighting_setup: Earthrise-like rimlight, low lantern arrays, horizon glow, and soft gold along transparent edges.
-  material_texture: Smooth stone composite, textile softness, glass rail sheen, woven surface detail, and polished lantern shells.
-  render_quality: Poetic render with emotional clarity, clean horizon discipline, and precise communal sightline design.
-  spatial_distortion: Panoramic arc framing creates shared perspective and smallness without prescribing a balcony scene.
-  atmosphere: Reverence, community, humility, and planetary perspective.
-  key_features: Horizon arcs, earthrise blue rimlight, phase-lantern dots, textile-shadow warmth, and pearl-gold communal framing.
-  creative_brief: 'Reframe the input under earthrise humility: wide indigo horizon arcs, pearl communal rails, phase-lantern dots, gold rimlight, and textile-shadow warmth make any subject feel gathered around planetary perspective.'
+  aesthetic: low-tech kinetic power led by one rope-bridge runner-engineer, where walking motion, bridge tension, wooden generators, pulleys, and lantern lines become readable graphic mechanics.
+  form_and_line: Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses one main runner-engineer, rope bridge, wooden generators, pulley systems, lantern lines.
+  color_palette: rope tan, forest green, lantern amber, dark wood
+  lighting_setup: lantern strings, forest shafts, pulley highlights, mist glow
+  material_texture: rope, wood, leather sandals, pulley stones, woven baskets
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: clever, precarious, communal, kinetic
+  key_features: main runner-engineer, rope bridge, wooden generators, pulley systems, lantern lines
+  creative_brief: 'Low-tech power through motion without heroic adventure-card styling: use one distinctive runner-engineer protagonist mid-stride or moving across the bridge while the mechanism frames them, with bridge tension, pulleys, and generator wheel explaining the system around them. Vary crop and composition; avoid centered full-body adventurer poses, fantasy suspension corridor, scenic jungle bridge, empty rope texture, object-only cutaway, or workers-only staging. Favor folk-modernist poster structure, controlled digital painting, clean matte shapes, and handmade material poetry over American RPG/sourcebook illustration, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - militarized-tone
-  - cyberpunk-grit
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-077.webp
 attributes:
-  negativePrompt: photoreal, militarized-tone, cyberpunk-grit, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero, sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged protagonist, cloak and pouches, leather belt costume, boots hero pose, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card, workers-only composition, anonymous worker crew, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, long hallway perspective, endless bridge tunnel, fantasy temple, scenic jungle bridge, empty rope texture, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, photoreal rope fibers, tiny pulley clutter, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-lunarpunk
-  categoryName: 11. Corepunk — Lunarpunk
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - lunarpunk
+    - punk-spectrum-vault
+    - primitive-stone-and-salvage-punks
+    - low-tech-punk
+    - kinetic-power
   supportedTasks:
     - image_generate
     - image_edit

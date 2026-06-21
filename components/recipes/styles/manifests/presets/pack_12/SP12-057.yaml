@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Madera alquitranada, latón corroído, lona tensionada y planchas remachadas salinizadas.
   camera_and_composition: Diagonal aérea, capas de altitud y trayectorias cruzadas sin exigir puerto o combate literal.
   atmosphere_and_mood: Agressiva, codiciosa y espectacularmente tormentosa.
-  rendering_and_quality: "Airship boarding gameplay frame: flagship priority, approach vectors, pirate-sky scale readable."
+  rendering_and_quality: 'Airship boarding gameplay frame: flagship priority, approach vectors, pirate-sky scale readable.'
 avoidRules:
   - watermark
   - text

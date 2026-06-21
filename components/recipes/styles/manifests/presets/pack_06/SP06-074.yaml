@@ -23,7 +23,6 @@ visualDna:
   key_features: Smeared paint
   creative_brief: Thick acrylic strokes drag across an existing image surface, obscuring and revealing in the same gesture, paint acting as both veil and window. The brush risks the base layer through smear, opacity, and interruption. The image lives in friction between printed certainty and applied gesture, without requiring photographic realism.
 avoidRules:
-  - photo
   - realistic
   - photorealistic
   - 3d render
@@ -43,7 +42,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-074.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal photo requirement, portrait requirement
+  negativePrompt: realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal photo requirement, portrait requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

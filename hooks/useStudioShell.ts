@@ -1,4 +1,4 @@
-import { useCallback, useMemo } from 'react';
+import { useCallback, useEffect, useMemo } from 'react';
 
 import type { HeaderToolbarProps } from '../components/HeaderToolbar';
 import type { StudioOverlayController } from '../components/AppOverlays';
@@ -146,6 +146,12 @@ export function useStudioShell(): StudioShellController {
   });
 
   const viewState = useStudioViewState({ closeOverlay });
+  const refreshSettingsSurface = studioSettings.data.settingsDomain.refresh;
+
+  useEffect(() => {
+    if (!viewState.overlays.settings.isOpen) return;
+    void refreshSettingsSurface();
+  }, [refreshSettingsSurface, viewState.overlays.settings.isOpen]);
 
   const clearStudioUiState = useCallback(() => {
     recipe.setActiveRecipe(null);
@@ -334,6 +340,10 @@ export function useStudioShell(): StudioShellController {
             isOpen: isDebugPanelOpen,
             close: closeDebugPanel,
           },
+          chatPanel: {
+            isOpen: viewState.overlays.chat.isOpen,
+            close: viewState.overlays.chat.close,
+          },
           dashboard: {
             isOpen: viewState.overlays.dashboard.isOpen,
             close: viewState.overlays.dashboard.close,
@@ -369,7 +379,6 @@ export function useStudioShell(): StudioShellController {
         },
         vault: {
           handleExportLegacyVisualBatchSnapshot: exportLegacyVisualBatchSnapshot,
-          handleDeepScan: () => {},
         },
         isSettingsModalOpen: viewState.overlays.settings.isOpen,
         settingsModule: {
@@ -440,6 +449,8 @@ export function useStudioShell(): StudioShellController {
       isEditingImage,
       isDebugPanelOpen,
       closeDebugPanel,
+      viewState.overlays.chat.isOpen,
+      viewState.overlays.chat.close,
       viewState.overlays.dashboard.isOpen,
       viewState.overlays.dashboard.close,
       studioRuntime.activity.mergedLogs,
@@ -547,6 +558,12 @@ export function useStudioShell(): StudioShellController {
           previewRatio: viewState.preview.ratio,
           generationAspectRatio: config.generationConfig.aspectRatio,
           isInteractingWithToolbar: ui.isInteractingWithToolbar,
+          catalogTotal: activeCatalog.total,
+          catalogHasMore: activeCatalog.hasMore,
+          isCatalogLoading: activeCatalog.isLoading,
+          catalogError: activeCatalog.error?.message ?? null,
+          loadMoreCatalog: () => void activeCatalog.loadMore(),
+          refreshCatalog: () => void activeCatalog.refresh(),
         },
         operations: {
           isQueueOpen: viewState.queue.isOpen,
@@ -562,12 +579,7 @@ export function useStudioShell(): StudioShellController {
           removeJob,
           clearCompleted,
           isResting,
-          exportLegacyVisualBatchSnapshot,
-          activeServerJobCount: studioRuntime.activity.activeServerJobCount,
           onInspectJob: activitySession.selection.inspectJob,
-          diagnostics: studioRuntime.status.diagnostics,
-          onResetStudio: requestResetStudio,
-          isResettingStudio,
         },
       }),
     [
@@ -596,6 +608,12 @@ export function useStudioShell(): StudioShellController {
       viewState.preview.ratio,
       config.generationConfig.aspectRatio,
       ui.isInteractingWithToolbar,
+      activeCatalog.total,
+      activeCatalog.hasMore,
+      activeCatalog.isLoading,
+      activeCatalog.error,
+      activeCatalog.loadMore,
+      activeCatalog.refresh,
       viewState.queue.isOpen,
       viewState.queue.setIsOpen,
       jobs,
@@ -609,12 +627,7 @@ export function useStudioShell(): StudioShellController {
       removeJob,
       clearCompleted,
       isResting,
-      exportLegacyVisualBatchSnapshot,
-      studioRuntime.activity.activeServerJobCount,
       activitySession.selection.inspectJob,
-      studioRuntime.status.diagnostics,
-      requestResetStudio,
-      isResettingStudio,
     ],
   );
 
@@ -627,6 +640,9 @@ export function useStudioShell(): StudioShellController {
       onFilesDrop: config.handlePastedFiles,
       onRemoveAttachment: config.handleRemoveAttachment,
       maxAttachments: config.maxAttachments,
+      codexModelCatalog: config.codexModelCatalog,
+      isLoadingCodexModelCatalog: config.isLoadingCodexModelCatalog,
+      codexModelCatalogError: config.codexModelCatalogError,
     },
     actions: {
       onGenerate: handleGenerate,
@@ -704,6 +720,7 @@ export function useStudioShell(): StudioShellController {
         overlays: {
           onOpenDashboard: viewState.overlays.dashboard.open,
           openOnboarding: studioRuntime.onboarding.open,
+          onOpenChat: viewState.overlays.chat.open,
           onOpenTrash: viewState.overlays.trash.open,
           trashCount: catalogTrashGroups.length,
           onToggleDebug: activitySession.debugPanel.toggle,
@@ -740,6 +757,7 @@ export function useStudioShell(): StudioShellController {
       handleRenameWorkspace,
       viewState.overlays.dashboard.open,
       studioRuntime.onboarding.open,
+      viewState.overlays.chat.open,
       viewState.overlays.trash.open,
       catalogTrashGroups.length,
       activitySession.debugPanel.toggle,
@@ -765,6 +783,7 @@ export function useStudioShell(): StudioShellController {
     viewState.overlays.dashboard.isOpen ||
     viewState.overlays.settings.isOpen ||
     viewState.overlays.trash.isOpen ||
+    viewState.overlays.chat.isOpen ||
     studioRuntime.onboarding.isOpen;
 
   return useMemo(
@@ -797,7 +816,6 @@ export function useStudioShell(): StudioShellController {
       handleDrop,
       onMainClick,
       isUiChromeSuppressed,
-      pipeline.isGenerating,
       toasts,
       removeToast,
       headerToolbarProps,

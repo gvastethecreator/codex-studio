@@ -1,5 +1,7 @@
 import React, { Suspense } from 'react';
 
+import { ErrorBoundary } from '../ErrorBoundary';
+import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
 import type { StudioWorkspaceOverlaysProps } from './types';
 
 const TrashModal = React.lazy(() =>
@@ -17,16 +19,25 @@ export const StudioWorkspaceOverlays: React.FC<StudioWorkspaceOverlaysProps> = (
   return (
     <>
       {isTrashModalOpen && (
-        <Suspense fallback={null}>
-          <TrashModal
-            isOpen={isTrashModalOpen}
-            onClose={closeTrash}
-            trash={trash}
-            onRestore={restoreFromTrash}
-            onRestoreAll={restoreAllFromTrash}
-            onEmpty={emptyTrash}
-          />
-        </Suspense>
+        <ErrorBoundary fallbackMessage="Could not load archived images.">
+          <Suspense
+            fallback={
+              <LazySurfaceFallback
+                label="Loading archive"
+                className="fixed inset-0 z-50 grid place-items-center bg-black/60 text-zinc-400"
+              />
+            }
+          >
+            <TrashModal
+              isOpen={isTrashModalOpen}
+              onClose={closeTrash}
+              trash={trash}
+              onRestore={restoreFromTrash}
+              onRestoreAll={restoreAllFromTrash}
+              onEmpty={emptyTrash}
+            />
+          </Suspense>
+        </ErrorBoundary>
       )}
     </>
   );

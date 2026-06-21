@@ -30,7 +30,7 @@ avoidRules:
   - photo
   - realistic
   - photorealistic
-  - 3d render
+  - smooth generic 3d render
   - octane render
   - noise
   - blurry
@@ -48,7 +48,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-052.webp
 attributes:
-  negativePrompt: photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, Minecraft branding, building requirement, landscape requirement
+  negativePrompt: photo, realistic, photorealistic, smooth generic 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, Minecraft branding, building requirement, landscape requirement
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

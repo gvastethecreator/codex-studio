@@ -1,49 +1,53 @@
 schemaVersion: 1
 id: SP15-016
 packId: pack_15
-name: Meshlight Alley Protocol
-category: 6. Corepunk — Cyberpunk
+name: Neon Clinic Backdoor
+category: 2. Neon, Net & Signal Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - cyberpunk
+  - punk-spectrum-vault
+  - neon-net-and-signal-punks
+  - med-cyberpunk
+  - body-mod
 visualDna:
-  aesthetic: Civic cyberpunk with encrypted neighborhood infrastructure, humane data autonomy, and wet-night cooperative resilience.
-  form_and_line: Cable lattice overlays, modular kiosk-like blocks, and dense vertical signal rhythm.
-  color_palette: Electric blue, magenta pulse, and asphalt charcoal.
-  lighting_setup: Wet-night neon with selective AR-overlay glow.
-  material_texture: Carbon composites, rain-slick concrete, translucent OLED screens, and braided fiber conduits.
-  render_quality: High-contrast cyberpunk key art with precise wayfinding and edge clarity.
-  spatial_distortion: Narrow canyon perspective pulling into a secure community-data node.
-  atmosphere: Alert intelligence, cooperative resilience, and controlled nocturnal energy.
-  key_features: Mesh-router motifs, encrypted micro-market geometry, cooperative sensor cues, and coded mural-wall patterning.
-  creative_brief: 'Encrypt the input as humane night infrastructure: braided fiber conduits, wet carbon edges, magenta-blue mesh pulses, sensor glyph rhythm, and cooperative wayfinding light. Alleys, kiosks, drones, stalls, or signage can support the style, but the image should not depend on a street scene. Apply this corepunk genre grammar over any input: preserve the faction mood, material ecology, lighting system, infrastructure logic, and signature color tension while avoiding a required city, vehicle, room, character lineup, faction scene, readable signage, or fixed set-piece.'
+  aesthetic: underground med-cyberpunk as a flat-to-painterly clinic-threshold poster card built around humane caregivers, mod patients, simple tool trays, non-readable monitor glow, and rainlit entry color.
+  form_and_line: Sharp but simplified network geometry, non-readable clinic rhythm, a few thick cable paths, matte threshold planes, and hacker-era silhouettes. Core composition uses clinic door glow, flat tool trays, modded patients, compact monitors, rain threshold.
+  color_palette: surgical teal, black vinyl, blood red accent, white neon
+  lighting_setup: clinical neon color blocks, non-readable monitor glow, rainlit doorway shape, cold overhead strips as flat planes
+  material_texture: broad vinyl curtain plane, flat tool trays, wet coat shapes, polymer color accents, medical glass blocks
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: intimate, risky, precise, humane
+  key_features: clinic door glow, chrome trays, modded patients, compact monitors, rain threshold
+  creative_brief: 'Make underground medicine specific and human: a clinic threshold, caregivers, and tools, avoiding shock gore, fetish staging, or generic hallway horror. Keep the result representative rather than over-abstract; make one character in their environment the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - empty-streets
-  - military-oppression
-  - fantasy-medieval
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-016.webp
 attributes:
-  negativePrompt: photoreal, empty-streets, military-oppression, fantasy-medieval, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, gore, blood spill, exposed organs, surgery table closeup, syringe hero, fetish vinyl pose, horror corridor, readable medical UI, photoreal wet skin, HDR lens realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-cyberpunk
-  categoryName: 6. Corepunk — Cyberpunk
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - cyberpunk
+    - punk-spectrum-vault
+    - neon-net-and-signal-punks
+    - med-cyberpunk
+    - body-mod
   supportedTasks:
     - image_generate
     - image_edit

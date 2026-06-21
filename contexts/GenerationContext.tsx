@@ -1,5 +1,12 @@
 import React, { createContext, use, ReactNode, useMemo, useState } from 'react';
-import { ImageGenerationConfig, Attachment, GeneratedImageWithConfig, RecipeId } from '../types';
+import type { CodexModelCatalogResponse, Job as StudioJob } from '../packages/shared/src';
+import {
+  ImageGenerationConfig,
+  Attachment,
+  GeneratedImageWithConfig,
+  GenerationExecutionOutcome,
+  RecipeId,
+} from '../types';
 import { useGenerationConfig } from '../hooks/useGenerationConfig';
 import { useGenerationPipeline } from '../hooks/useGenerationPipeline';
 import { useGlobal } from './GlobalContext';
@@ -19,14 +26,22 @@ interface GenerationContextType {
     handleRemoveAttachment: (id: string) => void;
     handleAddToContext: (img: GeneratedImageWithConfig) => void;
     maxAttachments: number;
+    codexModelCatalog: CodexModelCatalogResponse | null;
+    isLoadingCodexModelCatalog: boolean;
+    codexModelCatalogError: string | null;
   };
   pipeline: {
     isGenerating: boolean;
     generationStartTime: number | null;
     executeGeneration: (
       configOverrides: Partial<ImageGenerationConfig>,
-      options?: { preventModal?: boolean; workspaceId?: string },
-    ) => Promise<void>;
+      options?: {
+        preventModal?: boolean;
+        workspaceId?: string;
+        signal?: AbortSignal;
+        onJobCreated?: (job: StudioJob) => void;
+      },
+    ) => Promise<GenerationExecutionOutcome>;
     executeEdit: (original: Attachment, mask: string, prompt: string) => Promise<void>;
     activeGenerationConfig: ImageGenerationConfig | null;
   };
@@ -100,6 +115,9 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
         handleRemoveAttachment: configHook.handleRemoveAttachment,
         handleAddToContext: configHook.handleAddToContext,
         maxAttachments: configHook.maxAttachments,
+        codexModelCatalog: configHook.codexModelCatalog,
+        isLoadingCodexModelCatalog: configHook.isLoadingCodexModelCatalog,
+        codexModelCatalogError: configHook.codexModelCatalogError,
       },
       pipeline: {
         isGenerating: pipelineHook.isGenerating,
@@ -139,6 +157,9 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
       configHook.handleRemoveAttachment,
       configHook.handleAddToContext,
       configHook.maxAttachments,
+      configHook.codexModelCatalog,
+      configHook.isLoadingCodexModelCatalog,
+      configHook.codexModelCatalogError,
       pipelineHook.isGenerating,
       pipelineHook.generationStartTime,
       pipelineHook.executeGeneration,

@@ -1,0 +1,50 @@
+schemaVersion: 1
+id: SP17-017
+packId: pack_17
+name: Punk Heraldry Dungeon Cards
+category: 3. Acid Dungeon Zine
+domain: dungeon zine
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - acid-dungeon-zine
+  - punk-heraldry
+visualDna:
+  aesthetic: Dungeon trading-card punk with medieval heraldry, spiked silhouettes, photocopied borders, and neon spot color.
+  subject_treatment: A punk heraldic dungeon goblin, skull shield stack, tattered banner, and horned mask, posed like an emblematic card figure with no polished hero stance.
+  color_and_tone: Clean black ink, aged white, magenta, acid green, violet, and occasional deep red print plate.
+  lighting_and_shadow: No realistic light, only flat fields, black hatching, and border-driven contrast.
+  texture_and_material: Controlled xerox texture, thick ink outlines, handmade stipple, rough panel borders, and light print scuffs.
+  camera_and_composition: Card-front portrait crop, centered heraldic symbol, chunky frame, and stacked graphic motifs.
+  atmosphere_and_mood: Loud, occult, collectible, unruly, and dungeon-club flavored.
+  rendering_and_quality: Screenprinted zine-card finish with strong icon design, heavy denoise, and controlled print texture.
+  creative_brief: Useful for turning any character, monster, artifact, or castle into a punchy dungeon card identity.
+avoidRules:
+  - readable letters
+  - logo design
+  - clean digital card UI
+  - realistic painting
+  - cute cartoon
+  - watermark
+  - text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-017.webp
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: acid-dungeon-zine
+  categoryName: 3. Acid Dungeon Zine
+  domain: dungeon zine
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - acid-dungeon-zine
+    - punk-heraldry
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

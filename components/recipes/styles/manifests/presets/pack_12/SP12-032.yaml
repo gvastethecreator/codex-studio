@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Metal pintado gastado, cuerdas húmedas, asfalto aceitado y herrumbre industrial.
   camera_and_composition: Sightlines cruzadas, rutas altas/bajas, puntos ciegos y nodos de botín sin exigir puerto.
   atmosphere_and_mood: Nerviosa, oportunista y al borde del fallo.
-  rendering_and_quality: "Infiltration gameplay screencap: layered stealth routes, patrol landmarks, smuggler objective clear."
+  rendering_and_quality: 'Infiltration gameplay screencap: layered stealth routes, patrol landmarks, smuggler objective clear.'
 avoidRules:
   - watermark
   - text

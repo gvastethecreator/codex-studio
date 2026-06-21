@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Piedra erosionada, cuero técnico, bronce antiguo y sedimento móvil.
   camera_and_composition: Ruta serpenteante, hitos y atajos de alto riesgo sin exigir desierto u obeliscos.
   atmosphere_and_mood: Competitiva, feroz y cargada de misterio histórico.
-  rendering_and_quality: "Relic-race gameplay frame: checkpoints, pacing, obelisk obstacles, competitive route choices readable."
+  rendering_and_quality: 'Relic-race gameplay frame: checkpoints, pacing, obelisk obstacles, competitive route choices readable.'
 avoidRules:
   - watermark
   - text

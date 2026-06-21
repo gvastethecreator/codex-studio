@@ -63,6 +63,10 @@ describe('buildStudioOverlayController', () => {
         isOpen: true,
         close: () => calls.push('closeDebug'),
       },
+      chatPanel: {
+        isOpen: true,
+        close: () => calls.push('closeChat'),
+      },
       dashboard: {
         isOpen: true,
         close: () => calls.push('closeDashboard'),
@@ -95,9 +99,6 @@ describe('buildStudioOverlayController', () => {
       vault: {
         handleExportLegacyVisualBatchSnapshot: () => {
           calls.push('exportLegacyVisualBatchSnapshot');
-        },
-        handleDeepScan: () => {
-          calls.push('deepScan');
         },
       },
       onboarding: {
@@ -222,6 +223,7 @@ describe('buildStudioOverlayController', () => {
 
     controller.systemOverlays.closeOnboarding();
     controller.systemOverlays.completeOnboarding();
+    controller.systemOverlays.closeChatPanel();
     controller.systemOverlays.refreshOnboardingHealth();
     controller.systemOverlays.ensureAppServer();
     controller.systemOverlays.settingsModule.close();
@@ -235,6 +237,7 @@ describe('buildStudioOverlayController', () => {
       'closeOnboarding',
       'transition',
       'completeOnboarding',
+      'closeChat',
       'refreshOnboardingHealth',
       'ensureAppServer',
       'closeSettings',
@@ -291,6 +294,12 @@ describe('buildStudioOverlayController', () => {
           isOpen: false,
           close: () => {
             calls.push('closeDebug');
+          },
+        },
+        chatPanel: {
+          isOpen: false,
+          close: () => {
+            calls.push('closeChat');
           },
         },
         dashboard: {
@@ -394,9 +403,6 @@ describe('buildStudioOverlayController', () => {
       vault: {
         handleExportLegacyVisualBatchSnapshot: () => {
           calls.push('exportLegacyVisualBatchSnapshot');
-        },
-        handleDeepScan: () => {
-          calls.push('deepScan');
         },
       },
       isSettingsModalOpen: true,

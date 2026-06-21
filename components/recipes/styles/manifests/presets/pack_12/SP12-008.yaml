@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Fibra de carbono, vidrio inteligente, asfaltos húmedos y señalética holográfica funcional.
   camera_and_composition: Curvas, apex, carriles y capas de obstáculo como abstracción de velocidad; no requiere pista urbana ni grand prix.
   atmosphere_and_mood: Adrenalina limpia, espectáculo competitivo y precisión de conducción.
-  rendering_and_quality: "Racing gameplay screencap: track apex, boost economy, rival spacing, speed feedback readable."
+  rendering_and_quality: 'Racing gameplay screencap: track apex, boost economy, rival spacing, speed feedback readable.'
 avoidRules:
   - watermark
   - text

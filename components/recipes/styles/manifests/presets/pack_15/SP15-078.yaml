@@ -1,48 +1,53 @@
 schemaVersion: 1
 id: SP15-078
 packId: pack_15
-name: Crater Choir Sanctuary
-category: 11. Corepunk — Lunarpunk
+name: Mud Brick Battery House
+category: 10. Primitive, Stone & Salvage Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - lunarpunk
+  - punk-spectrum-vault
+  - primitive-stone-and-salvage-punks
+  - earth-tech
+  - battery-house
 visualDna:
-  aesthetic: Abstract resonant lunarpunk style where silence, sound waves, and pale ritual geometry soften the image.
-  form_and_line: Concentric rings, sound-fin blades, suspended linework, echo-dish curves, and spiral tone paths.
-  color_palette: Pale lavender, brushed silver, charcoal dust, moonlit white, and faint harmonic blue.
-  lighting_setup: Gentle uplight, reflected lunar glow, thin edge lights, and soft highlights on ceramic resonant forms.
-  material_texture: Resonant ceramic matte, tension-wire gleam, moon-dust patina, felt acoustic softness, and polished tone-stone surfaces.
-  render_quality: Atmospheric render focused on visible acoustic form, quiet spacing, and ritual calm.
-  spatial_distortion: Spiral descent and concentric rhythm make depth feel audible and softened.
-  atmosphere: Serenity, resonance, ritual repair, and communal breath.
-  key_features: Harmonic rings, echo-dish curves, suspended linework, lavender-silver quiet, and acoustic fin rhythm.
-  creative_brief: 'Tune the input into crater resonance: lavender-silver harmonic rings, suspended wire lines, echo-dish curves, acoustic fins, and spiral tone paths visibly soften any subject with ritual sound geometry.'
+  aesthetic: earth-tech energy storage led by one mud-brick battery keeper, with ceramic cells, copper jars, shade-cooled courtyards, and clay geometry becoming the style grammar.
+  form_and_line: Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses one main battery keeper, ceramic batteries, mud-brick walls, copper jars, shade courtyard.
+  color_palette: clay red, copper green, shade blue, cream
+  lighting_setup: courtyard shade, copper cell glow, warm doorway light
+  material_texture: mud brick, ceramic cells, copper jars, woven mats, clay dust
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: grounded, warm, ingenious, communal
+  key_features: main battery keeper, ceramic batteries, mud-brick walls, copper jars, shade courtyard
+  creative_brief: 'Earth-tech as believable energy storage without desert fantasy hero styling: make the keeper, copper cell, ceramic batteries, mud-brick shade, and courtyard geometry feel like one warm craft-infrastructure poster. Vary crop and composition; avoid centered full-body adventurer poses, generic market scenes, pottery-shop still life, solarpunk glass utopia, or workers-only staging. Favor folk-modernist poster structure, controlled digital painting, clean matte shapes, and handmade material poetry over American RPG/sourcebook illustration, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - horror
-  - cyber-neon
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-078.webp
 attributes:
-  negativePrompt: photoreal, horror, cyber-neon, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero, sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged protagonist, cloak and pouches, leather belt costume, boots hero pose, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card, workers-only composition, anonymous worker crew, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, pottery shop still life, generic village market, crowded bazaar, readable jar labels, shop signs, wall signage, painted letters, number-like marks, geometric text panels, religious shrine, flags, symbols, logo-like battery icons, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny ceramic rows everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-lunarpunk
-  categoryName: 11. Corepunk — Lunarpunk
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - lunarpunk
+    - punk-spectrum-vault
+    - primitive-stone-and-salvage-punks
+    - earth-tech
+    - battery-house
   supportedTasks:
     - image_generate
     - image_edit

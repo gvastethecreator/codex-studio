@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Asfalto mojado, vidrio urbano, metal liviano y reflejos de interfaz holográfica.
   camera_and_composition: Foco central, ventanas de jugada y presión de público sin exigir alley o mesa literal.
   atmosphere_and_mood: Tensa, estilizada y de apuestas altas.
-  rendering_and_quality: "Card-duel gameplay screencap: turn pressure, crowd advantage, alley tactics, readable play space."
+  rendering_and_quality: 'Card-duel gameplay screencap: turn pressure, crowd advantage, alley tactics, readable play space.'
 avoidRules:
   - watermark
   - text

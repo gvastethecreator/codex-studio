@@ -1,10 +1,9 @@
 # Style Category Bases Audit
 
-Generated bases: 45/99
-Missing bases: 54/99
+Generated bases: 53/102
+Missing bases: 49/102
 
 Objective slice `pack_08..pack_11`:
-
 - Fashion & Costume (pack_08): 5/5 generated
 - Texture & Materiality (pack_09): 5/5 generated
 - Abstract & Experimental (pack_10): 5/5 generated
@@ -172,6 +171,26 @@ Representative presets: Chibi Style, Risograph Print, Watercolor Storybook, Pape
 
 Review: PENDING
 
+### Illustration & Graphic Novel / 4. Printmaking And Ink
+
+Key: `pack_04__printmaking_and_ink`
+
+![pack_04__printmaking_and_ink](../../assets/recipes/styles/category-bases/pack_04__printmaking_and_ink.webp)
+
+Representative presets: Scratchboard, Composition Thumbnail Grid, UI/HUD Wireframe Concept, Creature Design Iteration, Etching (Engraving), Lithograph, Monotype, Linocut Print, Hokusai Woodcut (Floating World), Brush Pen Ink
+
+Review: PENDING
+
+### Illustration & Graphic Novel / 5. Fantasy And Concept Illustration
+
+Key: `pack_04__fantasy_and_concept_illustration`
+
+![pack_04__fantasy_and_concept_illustration](../../assets/recipes/styles/category-bases/pack_04__fantasy_and_concept_illustration.webp)
+
+Representative presets: Felt Tip Marker, Pop-Up Book, Chalk Pastel, Crayon Drawing, Colored Pencil, Claymation Style, Sticker Art, Movie Poster (Painted), Travel Poster (Vintage), Art Deco Poster, Mucha Art Nouveau Poster, Propaganda Poster
+
+Review: PENDING
+
 ### Anime 01 — Anime Battle & Worlds / 1. Modern Shonen & Action
 
 Key: `pack_05__modern_shonen_and_action`
@@ -209,6 +228,66 @@ Key: `pack_05__dark_fantasy_and_seinen`
 ![pack_05__dark_fantasy_and_seinen](../../assets/recipes/styles/category-bases/pack_05__dark_fantasy_and_seinen.webp)
 
 Representative presets: Mineral Loneliness Fracture Style, Eclipse Scar Weight Style, Moral Suspicion Realism Style, Black Signal Nihilism Style, Clinical Innocence Rupture Style, Rose-Black Baroque Decadence Style, Black Particle Fugitive Style, Blood-Ink Severance Style, Neon Despair Pressure Style, Smoke-Filled Calculation Style, Cursed Severance Compassion Style, Sun-Reclaimed Concrete Mystery Style
+
+Review: PENDING
+
+### Anime 01 — Anime Battle & Worlds / 3. Action
+
+Key: `pack_05__action`
+
+![pack_05__action](../../assets/recipes/styles/category-bases/pack_05__action.webp)
+
+Representative presets: Action Burst Alley Rush, Vertigo Energy Cross Style, Neon Vector Discharge Style, Monumental Impact Burst Style, Upward Thunder Momentum Style
+
+Review: PENDING
+
+### Anime 02 — Anime Character & Lifestyle / 4. Shojo, Magical Girl & Visionary Classics
+
+Key: `pack_13__shojo_magical_girl_and_visionary_classics`
+
+![pack_13__shojo_magical_girl_and_visionary_classics](../../assets/recipes/styles/category-bases/pack_13__shojo_magical_girl_and_visionary_classics.webp)
+
+Representative presets: Psychological Biomech Drama, Sailor Moon - Moonlit Ribbon Justice, Neon Genesis Evangelion - Red Alert Psychological Collapse, Slayers - Arcane Chaos Roadtrip, The Vision of Escaflowne - Tarot Mecha Fantasy, Magic Knight Rayearth - Jewel Armor Quest, Martian Successor Nadesico - Cheerful Bridge-Deck Mecha, Blue Seed - Mythic Tokyo Purge, Wired Existential Glitch, Dream Card Enchanter, Kimi ni Todoke - Shy Hallway Bloom, Ao Haru Ride - Clean Uniform Reunion Ache
+
+Review: PENDING
+
+### Anime 02 — Anime Character & Lifestyle / 5. Slice of Life & Moe
+
+Key: `pack_13__slice_of_life_and_moe`
+
+![pack_13__slice_of_life_and_moe](../../assets/recipes/styles/category-bases/pack_13__slice_of_life_and_moe.webp)
+
+Representative presets: KyoAni Shared-Warmth Microacting, Market-Festival Community Softness, Beginner-Made DIY Glow, Cold-Warm Restorative Comfort, Deadline-Cheer Workflow Density, Utilitarian Quiet-Freedom Minimalism, Looped-Routine Healing Pastel, Bundled Warmth Pocket, Rough-Ideation Motion Overlay, Deadpan-Explosion Absurd Timing, Low-Stakes Banter Flatness, Ordinary-Cosmic Whimsy Pivot
+
+Review: PENDING
+
+### Anime 02 — Anime Character & Lifestyle / 12. Anime Style Spectrum
+
+Key: `pack_13__anime_style_spectrum`
+
+![pack_13__anime_style_spectrum](../../assets/recipes/styles/category-bases/pack_13__anime_style_spectrum.webp)
+
+Representative presets: Elastic Rom-Com Slapstick Timing, Prism-Glamour Transformation Polish, Chrome Impact Spectacle, Emergency Storyboard Tension, Adult Suspense Microgesture, Reality-Slip Reflection Continuity, Hiroyuki Okiura - Quiet Human Naturalism, Haruko Ichikawa - Mineral Void Serenity, Hiromu Arakawa - Mechanical Warmth Ensemble, Retrofuture Distance Melancholy, Kinetic Impact-Line Choreography, Takeshi Koike - Razorline Velocity Poster
+
+Review: PENDING
+
+### Anime 02 — Anime Character & Lifestyle / 1. Core Anime
+
+Key: `pack_13__core_anime`
+
+![pack_13__core_anime](../../assets/recipes/styles/category-bases/pack_13__core_anime.webp)
+
+Representative presets: Cel Heroic Dawn, Neon City Vigil, Mecha Hangar Ignition, Spirit Shrine Twilight, Sports Climax Arena, Gothic Vampire Manor, Magical Girl Prism Burst, Isekai Forest Caravan, Meikyuu Dungeon Glow, Retro Mecha VHS Grain, Ronin Alley Duel, Battle Mage Stormcast
+
+Review: PENDING
+
+### Anime 02 — Anime Character & Lifestyle / 2. Slice of Life / School / Music
+
+Key: `pack_13__slice_of_life_school_music`
+
+![pack_13__slice_of_life_school_music](../../assets/recipes/styles/category-bases/pack_13__slice_of_life_school_music.webp)
+
+Representative presets: Soft Shojo Spring, Rainy Slice of Life, Rainy Idol Backstage, Dessert Cafe Comedy, Festival Lantern Summer
 
 Review: PENDING
 
@@ -268,7 +347,7 @@ Key: `pack_08__subcultures`
 
 ![pack_08__subcultures](../../assets/recipes/styles/category-bases/pack_08__subcultures.webp)
 
-Representative presets: Boho Festival, Streetwear Hypebeast, Military Surplus, Cottagecore, Rockabilly, Pastel Goth, Punk Rock, Dark Academia, Biker Gang, Skater Style, Raver (90s), Lolita Fashion
+Representative presets: Boho Festival, Streetwear Hypebeast, Field Utility Textile, Cottagecore, Rockabilly, Pastel Goth, Punk Rock, Dark Academia, Road-Worn Biker Leather, Skater Style, Raver (90s), Lolita Fashion
 
 Review: PENDING
 
@@ -288,7 +367,7 @@ Key: `pack_08__historical_and_fantasy`
 
 ![pack_08__historical_and_fantasy](../../assets/recipes/styles/category-bases/pack_08__historical_and_fantasy.webp)
 
-Representative presets: Ancient Egyptian, Wild West Cowboy, Samurai Armor, Renaissance Royal, Victorian Mourning, Vintage 1950s, Roaring 20s (Flapper), Roman Gladiator, Disco (70s), French Revolution, Viking Warrior
+Representative presets: Ancient Egyptian, Frontier Workwear, Samurai Armor, Renaissance Royal, Victorian Mourning, Vintage 1950s, Roaring 20s (Flapper), Roman Ceremonial Regalia, Disco (70s), French Revolution, Norse Seafaring Regalia
 
 Review: PENDING
 
@@ -298,7 +377,7 @@ Key: `pack_08__fantasy_sci_fi_costume`
 
 ![pack_08__fantasy_sci_fi_costume](../../assets/recipes/styles/category-bases/pack_08__fantasy_sci_fi_costume.webp)
 
-Representative presets: Space Suit (Retro), Cosplay Anime, Ethereal Fantasy, Steampunk Inventor, Cyberpunk Techwear, Invisibility Cloak, Neon Light Suit, Hologram, Shadow Form, Wizard Robes, Zombie Survivor, Space Opera Royal
+Representative presets: Space Suit (Retro), Convention Craft Costume, Ethereal Fantasy, Steampunk Engineering Attire, Technical Modular Outerwear, Refractive Concealment Veil, Neon Light Suit, Hologram, Shadow Form, Wizard Robes, Zombie Survivor, Space Opera Royal
 
 Review: PENDING
 
@@ -464,14 +543,6 @@ Review: PENDING
 
 ## Missing
 
-- Illustration & Graphic Novel / 4. Printmaking And Ink -> `pack_04__printmaking_and_ink.webp`
-- Illustration & Graphic Novel / 5. Fantasy And Concept Illustration -> `pack_04__fantasy_and_concept_illustration.webp`
-- Anime 01 — Anime Battle & Worlds / 3. Action -> `pack_05__action.webp`
-- Anime 02 — Anime Character & Lifestyle / 4. Shojo, Magical Girl & Visionary Classics -> `pack_13__shojo_magical_girl_and_visionary_classics.webp`
-- Anime 02 — Anime Character & Lifestyle / 5. Slice of Life & Moe -> `pack_13__slice_of_life_and_moe.webp`
-- Anime 02 — Anime Character & Lifestyle / 12. Anime Style Spectrum -> `pack_13__anime_style_spectrum.webp`
-- Anime 02 — Anime Character & Lifestyle / 1. Core Anime -> `pack_13__core_anime.webp`
-- Anime 02 — Anime Character & Lifestyle / 2. Slice of Life / School / Music -> `pack_13__slice_of_life_school_music.webp`
 - Anime 03 — Anime Classics & Prestige / 2. 2000s Classics -> `pack_16__2000s_classics.webp`
 - Anime 03 — Anime Classics & Prestige / 3. 90s Golden Era -> `pack_16__90s_golden_era.webp`
 - Anime 03 — Anime Classics & Prestige / 6. Sports, Competition & Performance -> `pack_16__sports_competition_and_performance.webp`
@@ -505,16 +576,19 @@ Review: PENDING
 - Mythic Noir Curated Vault / 7. Mythic — Japanese Yokai & Kami -> `pack_14__mythic_japanese_yokai_and_kami.webp`
 - Mythic Noir Curated Vault / 8. Mythic — Norse Sagas -> `pack_14__mythic_norse_sagas.webp`
 - Mythic Noir Curated Vault / 9. Mythic — Mesoamerican Suns -> `pack_14__mythic_mesoamerican_suns.webp`
-- Solarpunk Dreamscapes Vault / 1. Corepunk — Solarpunk -> `pack_15__corepunk_solarpunk.webp`
-- Solarpunk Dreamscapes Vault / 2. Corepunk — Clockpunk -> `pack_15__corepunk_clockpunk.webp`
-- Solarpunk Dreamscapes Vault / 3. Corepunk — Biopunk -> `pack_15__corepunk_biopunk.webp`
-- Solarpunk Dreamscapes Vault / 4. Corepunk — Steampunk -> `pack_15__corepunk_steampunk.webp`
-- Solarpunk Dreamscapes Vault / 5. Corepunk — Vaporpunk -> `pack_15__corepunk_vaporpunk.webp`
-- Solarpunk Dreamscapes Vault / 6. Corepunk — Cyberpunk -> `pack_15__corepunk_cyberpunk.webp`
-- Solarpunk Dreamscapes Vault / 7. Corepunk — Dieselpunk -> `pack_15__corepunk_dieselpunk.webp`
-- Solarpunk Dreamscapes Vault / 8. Corepunk — Atompunk -> `pack_15__corepunk_atompunk.webp`
-- Solarpunk Dreamscapes Vault / 9. Corepunk — Decopunk -> `pack_15__corepunk_decopunk.webp`
-- Solarpunk Dreamscapes Vault / 10. Corepunk — Raypunk -> `pack_15__corepunk_raypunk.webp`
-- Solarpunk Dreamscapes Vault / 11. Corepunk — Lunarpunk -> `pack_15__corepunk_lunarpunk.webp`
-- Solarpunk Dreamscapes Vault / 12. Corepunk — Stonepunk -> `pack_15__corepunk_stonepunk.webp`
-- Solarpunk Dreamscapes Vault / 13. Corepunk — Seapunk -> `pack_15__corepunk_seapunk.webp`
+- Punk Spectrum Vault / 1. Classic Industrial Punks -> `pack_15__classic_industrial_punks.webp`
+- Punk Spectrum Vault / 2. Neon, Net & Signal Punks -> `pack_15__neon_net_and_signal_punks.webp`
+- Punk Spectrum Vault / 3. Eco, Repair & Climate Punks -> `pack_15__eco_repair_and_climate_punks.webp`
+- Punk Spectrum Vault / 4. Bio, Myco & Body Punks -> `pack_15__bio_myco_and_body_punks.webp`
+- Punk Spectrum Vault / 5. Ocean, Ice & Terrain Punks -> `pack_15__ocean_ice_and_terrain_punks.webp`
+- Punk Spectrum Vault / 6. Street, Riot & DIY Punks -> `pack_15__street_riot_and_diy_punks.webp`
+- Punk Spectrum Vault / 7. Media, Vapor & Glitch Punks -> `pack_15__media_vapor_and_glitch_punks.webp`
+- Punk Spectrum Vault / 8. Occult, Myth & Gothic Punks -> `pack_15__occult_myth_and_gothic_punks.webp`
+- Punk Spectrum Vault / 9. Space, Atomic & Ray Punks -> `pack_15__space_atomic_and_ray_punks.webp`
+- Punk Spectrum Vault / 10. Primitive, Stone & Salvage Punks -> `pack_15__primitive_stone_and_salvage_punks.webp`
+- Medieval Fantasy & Dungeon Zine / 1. Dark Fantasy Realms -> `pack_17__dark_fantasy_realms.webp`
+- Medieval Fantasy & Dungeon Zine / 2. Hunter Gothic & Plague Courts -> `pack_17__hunter_gothic_and_plague_courts.webp`
+- Medieval Fantasy & Dungeon Zine / 3. Acid Dungeon Zine -> `pack_17__acid_dungeon_zine.webp`
+- Medieval Fantasy & Dungeon Zine / 4. Futuristic Medieval & Rune Tech -> `pack_17__futuristic_medieval_and_rune_tech.webp`
+- Medieval Fantasy & Dungeon Zine / 5. Apocalyptic Wargame & Inked Dungeon -> `pack_17__apocalyptic_wargame_and_inked_dungeon.webp`
+- Medieval Fantasy & Dungeon Zine / 6. Monochrome Tarot & Bestiary Plates -> `pack_17__monochrome_tarot_and_bestiary_plates.webp`

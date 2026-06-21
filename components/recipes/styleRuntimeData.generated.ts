@@ -115,10 +115,17 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
   },
   {
     id: 'pack_15',
-    name: 'Solarpunk Dreamscapes Vault',
+    name: 'Punk Spectrum Vault',
     description:
-      'A curated pack of luminous, sustainable, and poetically futuristic worlds with an optimistic, sophisticated direction.',
-    presetCount: 137,
+      'A curated spectrum of punk visual languages: industrial retrofutures, network streets, climate repair, biotech mutation, ocean terrain, DIY rebellion, media ghosts, occult machinery, space age kitsch, and primitive salvage systems.',
+    presetCount: 80,
+  },
+  {
+    id: 'pack_17',
+    name: 'Medieval Fantasy & Dungeon Zine',
+    description:
+      'Medieval fantasy representation styles spanning grimdark kingdoms, hunter gothic horror, acid dungeon zines, rune-tech futures, apocalyptic crusades, gothic wargame fronts, inked dungeon drama, monochrome tarot, and bestiary plates.',
+    presetCount: 44,
   },
 ] as GeneratedStyleRuntimePackSummary[];
 
@@ -185,6 +192,10 @@ const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRu
     ),
   pack_15: () =>
     import('./styleRuntimePacks.generated/pack_15').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_17: () =>
+    import('./styleRuntimePacks.generated/pack_17').then((module) =>
       module.loadGeneratedStyleRuntimePack(),
     ),
 };

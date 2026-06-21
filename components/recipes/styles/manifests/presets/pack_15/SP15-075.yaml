@@ -1,48 +1,53 @@
 schemaVersion: 1
 id: SP15-075
 packId: pack_15
-name: Tidal Crater Transit Hub
-category: 11. Corepunk — Lunarpunk
+name: Obsidian Water Clock
+category: 10. Primitive, Stone & Salvage Punks
 version: 1
 supportedTasks:
   - image_generate
   - image_edit
   - style_preset_card
 tags:
-  - solarpunk-dreamscapes-vault
-  - corepunk
-  - lunarpunk
+  - punk-spectrum-vault
+  - primitive-stone-and-salvage-punks
+  - stonepunk
+  - water-clock
 visualDna:
-  aesthetic: Abstract low-gravity mobility style with basin depth, soft circular routing, and amber civic wayfinding.
-  form_and_line: Circular platform bands, rope-tension drops, glide-lane ribbons, basin arcs, and crescent docking-like lips.
-  color_palette: Moon gray, basin aqua, lantern amber, dust white, and low-g signal blue.
-  lighting_setup: Path beacons, reflected basin light, amber node glows, and soft under-surface illumination.
-  material_texture: Composite deck finish, tension cable lines, dust-treated glass, flexible grip surfaces, and powder-soft edges.
-  render_quality: Functional clean render with calm motion clarity and low-gravity accessibility cues.
-  spatial_distortion: Bowl-depth composition wraps movement around a center without forcing a specific transit scene.
-  atmosphere: Calm mobility, civic coordination, low-gravity patience, and shared timing.
-  key_features: Bowl composition, low-g rope lines, glide-lane ribbons, amber beacon paths, and soft circular wayfinding.
-  creative_brief: 'Route the input through low-gravity civic motion: bowl-depth arcs, glide-lane ribbons, tension-cable drops, basin aqua reflections, and amber beacon nodes make any subject feel timed, accessible, and crater-shaped.'
+  aesthetic: stone-age precision identity led by one obsidian water-clock timekeeper, with ceremonial water timing translated into bold graphic channels, reflective bowls, and firelit stone geometry.
+  form_and_line: Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade engineering. Core composition uses one main timekeeper, obsidian channels, drip bowls, carved stone slabs, reflected fire.
+  color_palette: obsidian gray-black, water blue, chalk white, fire amber
+  lighting_setup: water reflections, low firelight, glossy obsidian glints
+  material_texture: obsidian, water, carved stone, clay bowls, woven cloth
+  render_quality: Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity, moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material simulation, or hyper-detail.
+  spatial_distortion: Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials. Keep depth legible and avoid default hallway, aisle, or empty studio staging.
+  atmosphere: precise, ritual, reflective, ancient
+  key_features: main timekeeper, obsidian channels, drip bowls, carved stone slabs, reflected fire
+  creative_brief: 'Make precision low-tech and human without falling into fantasy RPG hero art: use a curated poster/artbook character-world composition where the timekeeper stands within water-clock architecture, obsidian channels, and firelit geometry as one designed environment. Vary crop and silhouette; avoid centered full-body adventurer poses, worker-crew staging, cave still life, shrine corridor, or abstract texture-only cards. Favor folk-modernist poster structure, controlled digital painting, clean matte shapes, and handmade material poetry over American RPG/sourcebook illustration, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.'
 avoidRules:
   - photoreal
-  - dystopian-chaos
-  - cyber-neon
   - watermark
   - text
   - logo
+  - generic-style
+  - over-abstract
+  - repeated-props
+  - excessive-noise
+  - ultra-fine-detail
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-075.webp
 attributes:
-  negativePrompt: photoreal, dystopian-chaos, cyber-neon, watermark, text, logo
+  negativePrompt: photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero, sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged protagonist, cloak and pouches, leather belt costume, boots hero pose, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card, workers-only composition, anonymous worker crew, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, cave still life, shrine corridor, altar hero, readable runes, wall glyphs, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny carved marks everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art
 taxonomy:
   packId: pack_15
-  packName: Solarpunk Dreamscapes Vault
-  categoryId: corepunk-lunarpunk
-  categoryName: 11. Corepunk — Lunarpunk
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
   tags:
-    - solarpunk-dreamscapes-vault
-    - corepunk
-    - lunarpunk
+    - punk-spectrum-vault
+    - primitive-stone-and-salvage-punks
+    - stonepunk
+    - water-clock
   supportedTasks:
     - image_generate
     - image_edit

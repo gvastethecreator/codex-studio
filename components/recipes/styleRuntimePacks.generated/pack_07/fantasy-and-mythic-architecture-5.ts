@@ -171,23 +171,23 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean energy',
     style: {
       aesthetic:
-        'GramÃ¡tica retroindustrial neo-victoriana de vapor, latÃ³n y presiÃ³n mecÃ¡nica especulativa.',
+        'Neo-Victorian retroindustrial steam grammar, brass pressure systems and speculative mechanical utility.',
       form_and_line:
-        'Redes de tuberÃ­a remachada, ritmos de venteo vertical, nodos de engranaje y arcos estructurales de carga.',
+        'Riveted pipe networks, vertical venting rhythms, gear nodes and load-bearing structural arches.',
       color_palette:
         'Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright',
       lighting_setup:
-        'Gaslight Ã¡mbar, glow difuso en smog, chispas mecÃ¡nicas y ventilaciÃ³n de vapor visible.',
+        'Amber gaslight, diffuse smog glow, mechanical sparks and visible steam venting.',
       material_texture:
-        'Metal y ladrillo, cobre remachado, panel de madera, cuero y depÃ³sito de hollÃ­n en superficie.',
+        'Metal and brick, riveted copper, wood paneling, leather and soot deposits across surfaces.',
       render_quality:
-        'Steampunk de detalle alto con plausibilidad mecÃ¡nica y legibilidad retroindustrial.',
+        'High-detail steampunk with mechanical plausibility and retroindustrial legibility.',
       spatial_distortion: 'None',
-      atmosphere: 'Impulso industrial, ambiciÃ³n ahumada y tensiÃ³n de progreso mecÃ¡nico ansioso.',
+      atmosphere: 'Industrial momentum, smoky ambition and anxious mechanical progress.',
       key_features:
-        'Ritmo de venteo, conducciones de latÃ³n, superficies clockwork, nodos de caldera y jerarquÃ­as de presiÃ³n visibles.',
+        'Venting rhythm, brass conduits, clockwork surfaces, boiler nodes and visible pressure hierarchies.',
       creative_brief:
-        'Aplica una gramÃ¡tica neo-victoriana de vapor a cualquier input: articulaciones de latÃ³n, remaches funcionales, tuberÃ­as legibles, hollÃ­n material y glow gaslight. La utilidad mecÃ¡nica debe sentirse plausible y jerÃ¡rquica sin requerir skyline, vehÃ­culo o sistema de trÃ¡nsito especÃ­fico.',
+        'Apply a Neo-Victorian steam grammar to any input: brass articulations, functional rivets, legible pipework, material soot and gaslight glow. Mechanical utility should feel plausible and hierarchical without requiring a skyline, vehicle or specific transit system.',
     },
   },
   {

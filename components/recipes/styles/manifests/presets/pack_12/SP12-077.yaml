@@ -19,7 +19,7 @@ visualDna:
   texture_and_material: Frentes de cantera fracturados, cadenas tensadas, surcos de arcilla y borde de escombro afilado.
   camera_and_composition: Zigzag ascendente, capas de riesgo y chokepoints legibles sin exigir cantera.
   atmosphere_and_mood: Pánica, ingeniosa y de estrés ascendente.
-  rendering_and_quality: "Escape mission gameplay frame: traversal logic, quarry threat, enemy territory, exit route readable."
+  rendering_and_quality: 'Escape mission gameplay frame: traversal logic, quarry threat, enemy territory, exit route readable.'
 avoidRules:
   - watermark
   - text
