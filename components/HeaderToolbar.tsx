@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Trash2,
   ArrowLeft,
+  CircleHelp,
   Home,
   Activity,
   Briefcase,
@@ -126,38 +127,6 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
         <div className="flex min-w-0 flex-1 flex-wrap items-center gap-2 lg:gap-6">
           <div className="flex shrink-0 items-center gap-2">
             <Logo isGenerating={isGenerating} />
-            <Tooltip content="Help & setup" position="bottom">
-              <button
-                type="button"
-                onClick={onOpenOnboarding}
-                className="rounded-lg border border-white/10 bg-white/5 px-2.5 py-1 text-[9px] font-black uppercase tracking-widest text-zinc-400 transition-colors hover:border-accent-500/30 hover:bg-accent-500/10 hover:text-white cursor-pointer"
-              >
-                Help
-              </button>
-            </Tooltip>
-            <Tooltip content="Studio activity" position="bottom">
-              <button
-                type="button"
-                onClick={onToggleDebug}
-                aria-label="Open studio activity"
-                className="p-1.5 rounded-lg text-zinc-500 hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
-              >
-                <Activity size={16} />
-              </button>
-            </Tooltip>
-            <Tooltip content="Archived images" position="bottom">
-              <button
-                type="button"
-                onClick={onOpenTrash}
-                aria-label="Open archived images"
-                className={`p-1.5 rounded-lg transition-colors cursor-pointer relative ${trashCount > 0 ? 'text-red-400 hover:text-red-300 hover:bg-red-500/10' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
-              >
-                <Trash2 size={16} />
-                {trashCount > 0 && (
-                  <span className="absolute -top-0.5 -right-0.5 size-2 bg-red-500 rounded-full border border-black animate-pulse" />
-                )}
-              </button>
-            </Tooltip>
             <div ref={mobileWorkspaceRef} className="relative sm:hidden">
               <Tooltip content="Workspaces" position="bottom">
                 <button
@@ -311,6 +280,39 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 <span className="text-[10px] font-black tabular-nums uppercase tracking-widest">
                   {queueCount}
                 </span>
+              </button>
+            </Tooltip>
+            <Tooltip content="Help & setup" position="bottom">
+              <button
+                type="button"
+                onClick={onOpenOnboarding}
+                aria-label="Open help and setup"
+                className="flex size-10 cursor-pointer items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
+              >
+                <CircleHelp size={16} />
+              </button>
+            </Tooltip>
+            <Tooltip content="Studio activity" position="bottom">
+              <button
+                type="button"
+                onClick={onToggleDebug}
+                aria-label="Open studio activity"
+                className="flex size-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
+              >
+                <Activity size={16} />
+              </button>
+            </Tooltip>
+            <Tooltip content="Archived images" position="bottom">
+              <button
+                type="button"
+                onClick={onOpenTrash}
+                aria-label="Open archived images"
+                className={`relative flex size-10 items-center justify-center rounded-xl border transition-[color,background-color,border-color,opacity,transform] ${trashCount > 0 ? 'border-red-500/20 bg-red-500/10 text-red-300 hover:border-red-400/30 hover:bg-red-500/15 hover:text-red-200' : 'border-white/10 bg-white/5 text-zinc-300 hover:border-white/20 hover:bg-white/8 hover:text-white'}`}
+              >
+                <Trash2 size={16} />
+                {trashCount > 0 && (
+                  <span className="absolute right-2 top-2 size-2 rounded-full border border-black bg-red-500 animate-pulse" />
+                )}
               </button>
             </Tooltip>
             <Tooltip content="Codex chat" position="bottom">

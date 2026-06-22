@@ -1,5 +1,6 @@
 import React from 'react';
-import { Plus, X } from 'lucide-react';
+import { Plus, Trash2 } from 'lucide-react';
+import { isDefaultWorkspace } from '../../lib/workspaceLifecycle';
 import type { Workspace } from '../../types';
 import Tooltip from '../Tooltip';
 
@@ -49,23 +50,35 @@ export function WorkspaceStrip({
 }: WorkspaceStripProps) {
   const [editingWorkspaceId, setEditingWorkspaceId] = React.useState<string | null>(null);
   const [editingName, setEditingName] = React.useState('');
+  const [contextMenuWorkspaceId, setContextMenuWorkspaceId] = React.useState<string | null>(null);
   const workspacesContainerRef = React.useRef<HTMLDivElement>(null);
   const isCompact = layout === 'compact';
 
   React.useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
       if (
-        editingWorkspaceId &&
+        (editingWorkspaceId || contextMenuWorkspaceId) &&
         workspacesContainerRef.current &&
         !workspacesContainerRef.current.contains(event.target as Node)
       ) {
         setEditingWorkspaceId(null);
+        setContextMenuWorkspaceId(null);
+      }
+    };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setEditingWorkspaceId(null);
+        setContextMenuWorkspaceId(null);
       }
     };
 
     document.addEventListener('mousedown', handleOutsideClick);
-    return () => document.removeEventListener('mousedown', handleOutsideClick);
-  }, [editingWorkspaceId]);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [contextMenuWorkspaceId, editingWorkspaceId]);
 
   const handleRenameSubmit = (id: string) => {
     if (editingName.trim()) {
@@ -84,6 +97,7 @@ export function WorkspaceStrip({
         const gradientClass = getWorkspaceGradient(index);
         const isActive = activeWorkspaceId === workspace.id;
         const workspaceName = workspace.name || `Workspace ${label}`;
+        const canDeleteWorkspace = workspaces.length > 1 && !isDefaultWorkspace(workspace.id);
         const tooltipContent = `${workspaceName} · created ${new Date(workspace.createdAt).toLocaleDateString()}`;
         const workspaceButtonClassName = `size-10 rounded-xl border-2 transition-[color,background-color,border-color,opacity,transform,box-shadow] overflow-hidden relative flex items-center justify-center cursor-pointer ${
           isActive
@@ -93,21 +107,40 @@ export function WorkspaceStrip({
 
         return (
           <div key={workspace.id} className="relative group shrink-0">
-            <Tooltip content={tooltipContent} position="bottom">
+            <Tooltip
+              content={tooltipContent}
+              contentClassName={contextMenuWorkspaceId === workspace.id ? 'hidden' : ''}
+              position="bottom"
+            >
               <button
                 type="button"
                 aria-current={isActive ? 'page' : undefined}
+                aria-expanded={contextMenuWorkspaceId === workspace.id ? true : undefined}
+                aria-haspopup="menu"
                 aria-label={
                   isActive
                     ? `Rename workspace ${workspaceName}`
                     : `Switch to workspace ${workspaceName}`
                 }
                 onClick={() => {
+                  setContextMenuWorkspaceId(null);
                   if (isActive) {
                     setEditingWorkspaceId(workspace.id);
                     setEditingName(workspaceName);
                   } else {
                     onSwitchWorkspace(workspace.id);
+                  }
+                }}
+                onContextMenu={(event) => {
+                  event.preventDefault();
+                  setEditingWorkspaceId(null);
+                  setContextMenuWorkspaceId(workspace.id);
+                }}
+                onKeyDown={(event) => {
+                  if (event.key === 'ContextMenu' || (event.shiftKey && event.key === 'F10')) {
+                    event.preventDefault();
+                    setEditingWorkspaceId(null);
+                    setContextMenuWorkspaceId(workspace.id);
                   }
                 }}
                 className={workspaceButtonClassName}
@@ -147,18 +180,28 @@ export function WorkspaceStrip({
                 />
               </div>
             )}
-            {workspaces.length > 1 && (
-              <button
-                type="button"
-                onClick={(event) => {
-                  event.stopPropagation();
-                  onDeleteWorkspace(workspace.id);
-                }}
-                aria-label={`Delete workspace ${workspaceName}`}
-                className="absolute -top-2.5 -right-2.5 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-red-500 text-white opacity-0 shadow-sm transition-opacity group-hover:opacity-100 group-focus-within:opacity-100 focus-visible:opacity-100 hover:bg-red-400"
+            {contextMenuWorkspaceId === workspace.id && (
+              <div
+                role="menu"
+                aria-label={`Workspace actions for ${workspaceName}`}
+                className="absolute top-full left-1/2 z-50 mt-2 min-w-44 -translate-x-1/2 rounded-xl border border-white/10 bg-zinc-950/95 p-1 shadow-2xl backdrop-blur-md animate-in fade-in zoom-in duration-150"
               >
-                <X size={13} strokeWidth={3} />
-              </button>
+                <button
+                  type="button"
+                  role="menuitem"
+                  disabled={!canDeleteWorkspace}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    if (!canDeleteWorkspace) return;
+                    setContextMenuWorkspaceId(null);
+                    onDeleteWorkspace(workspace.id);
+                  }}
+                  className="flex w-full items-center gap-2 rounded-lg px-2.5 py-2 text-left text-[11px] font-black uppercase tracking-widest text-red-300 transition-colors hover:bg-red-500/10 hover:text-red-200 disabled:cursor-not-allowed disabled:text-zinc-600 disabled:hover:bg-transparent"
+                >
+                  <Trash2 size={13} />
+                  <span>{canDeleteWorkspace ? 'Delete workspace' : 'Default locked'}</span>
+                </button>
+              </div>
             )}
           </div>
         );
@@ -166,7 +209,10 @@ export function WorkspaceStrip({
       <Tooltip content="Create workspace" position="bottom">
         <button
           type="button"
-          onClick={onAddWorkspace}
+          onClick={() => {
+            setContextMenuWorkspaceId(null);
+            onAddWorkspace();
+          }}
           aria-label="Create workspace"
           className="flex size-10 cursor-pointer items-center justify-center rounded-xl border border-dashed border-white/10 bg-white/5 text-zinc-600 transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-zinc-200"
         >
