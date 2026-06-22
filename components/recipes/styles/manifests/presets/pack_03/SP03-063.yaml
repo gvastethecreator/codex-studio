@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-063
 packId: pack_03
 name: 3D Map
-category: 3. Environment And Worldbuilding
+category: 7. Environment And Worldbuilding
 version: 1
 supportedTasks:
   - image_generate
@@ -36,7 +36,7 @@ taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
   categoryId: environment-and-worldbuilding
-  categoryName: 3. Environment And Worldbuilding
+  categoryName: 7. Environment And Worldbuilding
   tags:
     - 3d-and-cgi-rendering
     - environment-and-worldbuilding

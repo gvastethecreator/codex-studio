@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-059
 packId: pack_11
 name: Snowflake
-category: 3. Science And Bio Curiosities
+category: 5. Micro Macro
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - science-and-bio-curiosities
+  - micro-macro
 visualDna:
   aesthetic: Ice crystal macro, frozen-star, winter-hexagon, snowflake-photography, dendrite-sculpture
   form_and_line: Fractal symmetry, six-fold-branching, fern-dendrite, plate-plane, needle-spike extension
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: science-and-bio-curiosities
-  categoryName: 3. Science And Bio Curiosities
+  categoryId: micro-macro
+  categoryName: 5. Micro Macro
   tags:
     - miscellaneous-and-fun
-    - science-and-bio-curiosities
+    - micro-macro
   supportedTasks:
     - image_generate
     - image_edit

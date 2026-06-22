@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-069
 packId: pack_04
 name: Rubber Stamp
-category: 5. Fantasy And Concept Illustration
+category: 5. Ink And Print
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - fantasy-and-concept-illustration
+  - ink-and-print
 visualDna:
   aesthetic: >-
     Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue
@@ -37,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: fantasy-and-concept-illustration
-  categoryName: 5. Fantasy And Concept Illustration
+  categoryId: ink-and-print
+  categoryName: 5. Ink And Print
   tags:
     - illustration-and-graphic-novel
-    - fantasy-and-concept-illustration
+    - ink-and-print
   supportedTasks:
     - image_generate
     - image_edit

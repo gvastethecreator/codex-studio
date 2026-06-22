@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-073
 packId: pack_11
 name: Vinyl Record Grooves
-category: 3. Science And Bio Curiosities
+category: 5. Micro Macro
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - science-and-bio-curiosities
+  - micro-macro
 visualDna:
   aesthetic: Microscope record, groove-landscape, vinyl-macro, analog-waveform, LP-surface
   form_and_line: Parallel waves, groove-modulation, lateral-cut curve, silent-groove spacing, lead-in-spiral
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: science-and-bio-curiosities
-  categoryName: 3. Science And Bio Curiosities
+  categoryId: micro-macro
+  categoryName: 5. Micro Macro
   tags:
     - miscellaneous-and-fun
-    - science-and-bio-curiosities
+    - micro-macro
   supportedTasks:
     - image_generate
     - image_edit

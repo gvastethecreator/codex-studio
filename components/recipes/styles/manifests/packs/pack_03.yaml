@@ -3,179 +3,185 @@ id: pack_03
 name: 3D & CGI Rendering
 description: A comprehensive collection of 80+ 3D rendering pipelines, visual looks, and material simulations.
 categories:
-  - id: hard-surface-and-industrial-cgi
-    name: 1. Hard Surface And Industrial Cgi
+  - id: render-engines
+    name: 1. Render Engines
     presetRefs:
-      - pack_03/SP03-043.yaml
-      - pack_03/SP03-028.yaml
-      - pack_03/SP03-025.yaml
-      - pack_03/SP03-071.yaml
-      - pack_03/SP03-074.yaml
-      - pack_03/SP03-061.yaml
-      - pack_03/SP03-067.yaml
-  - id: organic-and-character-cgi
-    name: 2. Organic And Character Cgi
+      - pack_03/SP03-001.yaml
+      - pack_03/SP03-002.yaml
+      - pack_03/SP03-003.yaml
+      - pack_03/SP03-004.yaml
+      - pack_03/SP03-005.yaml
+      - pack_03/SP03-006.yaml
+      - pack_03/SP03-007.yaml
+      - pack_03/SP03-008.yaml
+      - pack_03/SP03-009.yaml
+      - pack_03/SP03-010.yaml
+  - id: materials
+    name: 2. Materials
     presetRefs:
-      - pack_03/SP03-012.yaml
-      - pack_03/SP03-016.yaml
-      - pack_03/SP03-031.yaml
-      - pack_03/SP03-032.yaml
-      - pack_03/SP03-039.yaml
-      - pack_03/SP03-027.yaml
-      - pack_03/SP03-030.yaml
-      - pack_03/SP03-057.yaml
-      - pack_03/SP03-058.yaml
-      - pack_03/SP03-064.yaml
-      - pack_03/SP03-076.yaml
-      - pack_03/SP03-078.yaml
-      - pack_03/SP03-051.yaml
-      - pack_03/SP03-062.yaml
-  - id: environment-and-worldbuilding
-    name: 3. Environment And Worldbuilding
-    presetRefs:
-      - pack_03/SP03-014.yaml
-      - pack_03/SP03-035.yaml
-      - pack_03/SP03-041.yaml
-      - pack_03/SP03-068.yaml
-      - pack_03/SP03-055.yaml
-      - pack_03/SP03-053.yaml
-      - pack_03/SP03-063.yaml
-  - id: lookdev-and-render-pipelines
-    name: 4. Lookdev And Render Pipelines
-    presetRefs:
-      - pack_03/SP03-015.yaml
-      - pack_03/SP03-013.yaml
       - pack_03/SP03-011.yaml
+      - pack_03/SP03-012.yaml
+      - pack_03/SP03-013.yaml
+      - pack_03/SP03-014.yaml
+      - pack_03/SP03-016.yaml
       - pack_03/SP03-017.yaml
+      - pack_03/SP03-018.yaml
       - pack_03/SP03-019.yaml
       - pack_03/SP03-020.yaml
-      - pack_03/SP03-018.yaml
-      - pack_03/SP03-034.yaml
-      - pack_03/SP03-038.yaml
       - pack_03/SP03-036.yaml
-      - pack_03/SP03-037.yaml
-      - pack_03/SP03-042.yaml
-      - pack_03/SP03-033.yaml
-      - pack_03/SP03-045.yaml
+      - pack_03/SP03-043.yaml
       - pack_03/SP03-044.yaml
-      - pack_03/SP03-026.yaml
-      - pack_03/SP03-023.yaml
-      - pack_03/SP03-029.yaml
+      - pack_03/SP03-075.yaml
+      - pack_03/SP03-079.yaml
+      - pack_03/SP03-080.yaml
+  - id: lighting-and-atmosphere
+    name: 3. Lighting And Atmosphere
+    presetRefs:
+      - pack_03/SP03-031.yaml
+      - pack_03/SP03-032.yaml
+      - pack_03/SP03-034.yaml
+      - pack_03/SP03-035.yaml
+      - pack_03/SP03-037.yaml
+      - pack_03/SP03-038.yaml
+      - pack_03/SP03-041.yaml
+      - pack_03/SP03-042.yaml
+  - id: 3d-styles
+    name: 4. 3D Styles
+    presetRefs:
+      - pack_03/SP03-015.yaml
+      - pack_03/SP03-021.yaml
       - pack_03/SP03-022.yaml
+      - pack_03/SP03-023.yaml
       - pack_03/SP03-024.yaml
+      - pack_03/SP03-026.yaml
+      - pack_03/SP03-027.yaml
+      - pack_03/SP03-028.yaml
+      - pack_03/SP03-029.yaml
+      - pack_03/SP03-030.yaml
+      - pack_03/SP03-040.yaml
+      - pack_03/SP03-045.yaml
+      - pack_03/SP03-050.yaml
+      - pack_03/SP03-058.yaml
+      - pack_03/SP03-065.yaml
+      - pack_03/SP03-070.yaml
+      - pack_03/SP03-072.yaml
+      - pack_03/SP03-073.yaml
+      - pack_03/SP03-077.yaml
+      - pack_03/SP03-078.yaml
+  - id: hard-surface-and-product-cgi
+    name: 5. Hard Surface And Product CGI
+    presetRefs:
+      - pack_03/SP03-025.yaml
+      - pack_03/SP03-046.yaml
       - pack_03/SP03-047.yaml
       - pack_03/SP03-048.yaml
       - pack_03/SP03-052.yaml
-      - pack_03/SP03-059.yaml
-      - pack_03/SP03-065.yaml
-      - pack_03/SP03-069.yaml
-      - pack_03/SP03-073.yaml
-      - pack_03/SP03-060.yaml
-      - pack_03/SP03-070.yaml
-      - pack_03/SP03-079.yaml
-      - pack_03/SP03-080.yaml
-      - pack_03/SP03-072.yaml
-      - pack_03/SP03-075.yaml
-      - pack_03/SP03-077.yaml
-      - pack_03/SP03-054.yaml
-      - pack_03/SP03-050.yaml
-      - pack_03/SP03-056.yaml
-      - pack_03/SP03-049.yaml
-      - pack_03/SP03-046.yaml
-      - pack_03/SP03-066.yaml
-      - pack_03/SP03-003.yaml
-      - pack_03/SP03-006.yaml
-      - pack_03/SP03-007.yaml
-      - pack_03/SP03-001.yaml
-      - pack_03/SP03-010.yaml
-      - pack_03/SP03-002.yaml
-      - pack_03/SP03-008.yaml
-      - pack_03/SP03-009.yaml
-      - pack_03/SP03-004.yaml
-      - pack_03/SP03-005.yaml
-  - id: stylized-3d
-    name: 5. Stylized 3d
+      - pack_03/SP03-053.yaml
+      - pack_03/SP03-061.yaml
+      - pack_03/SP03-064.yaml
+      - pack_03/SP03-067.yaml
+      - pack_03/SP03-071.yaml
+      - pack_03/SP03-074.yaml
+  - id: organic-character-and-bio-cgi
+    name: 6. Organic Character And Bio CGI
     presetRefs:
-      - pack_03/SP03-040.yaml
-      - pack_03/SP03-021.yaml
+      - pack_03/SP03-049.yaml
+      - pack_03/SP03-051.yaml
+      - pack_03/SP03-054.yaml
+      - pack_03/SP03-057.yaml
+      - pack_03/SP03-059.yaml
+      - pack_03/SP03-062.yaml
+      - pack_03/SP03-076.yaml
+  - id: environment-and-worldbuilding
+    name: 7. Environment And Worldbuilding
+    presetRefs:
+      - pack_03/SP03-033.yaml
+      - pack_03/SP03-039.yaml
+      - pack_03/SP03-055.yaml
+      - pack_03/SP03-056.yaml
+      - pack_03/SP03-060.yaml
+      - pack_03/SP03-063.yaml
+      - pack_03/SP03-066.yaml
+      - pack_03/SP03-068.yaml
+      - pack_03/SP03-069.yaml
 presetRefs:
-  - pack_03/SP03-043.yaml
-  - pack_03/SP03-028.yaml
-  - pack_03/SP03-025.yaml
-  - pack_03/SP03-071.yaml
-  - pack_03/SP03-074.yaml
-  - pack_03/SP03-061.yaml
-  - pack_03/SP03-067.yaml
-  - pack_03/SP03-012.yaml
-  - pack_03/SP03-016.yaml
-  - pack_03/SP03-031.yaml
-  - pack_03/SP03-032.yaml
-  - pack_03/SP03-039.yaml
-  - pack_03/SP03-027.yaml
-  - pack_03/SP03-030.yaml
-  - pack_03/SP03-057.yaml
-  - pack_03/SP03-058.yaml
-  - pack_03/SP03-064.yaml
-  - pack_03/SP03-076.yaml
-  - pack_03/SP03-078.yaml
-  - pack_03/SP03-051.yaml
-  - pack_03/SP03-062.yaml
-  - pack_03/SP03-014.yaml
-  - pack_03/SP03-035.yaml
-  - pack_03/SP03-041.yaml
-  - pack_03/SP03-068.yaml
-  - pack_03/SP03-055.yaml
-  - pack_03/SP03-053.yaml
-  - pack_03/SP03-063.yaml
-  - pack_03/SP03-015.yaml
-  - pack_03/SP03-013.yaml
+  - pack_03/SP03-001.yaml
+  - pack_03/SP03-002.yaml
+  - pack_03/SP03-003.yaml
+  - pack_03/SP03-004.yaml
+  - pack_03/SP03-005.yaml
+  - pack_03/SP03-006.yaml
+  - pack_03/SP03-007.yaml
+  - pack_03/SP03-008.yaml
+  - pack_03/SP03-009.yaml
+  - pack_03/SP03-010.yaml
   - pack_03/SP03-011.yaml
+  - pack_03/SP03-012.yaml
+  - pack_03/SP03-013.yaml
+  - pack_03/SP03-014.yaml
+  - pack_03/SP03-016.yaml
   - pack_03/SP03-017.yaml
+  - pack_03/SP03-018.yaml
   - pack_03/SP03-019.yaml
   - pack_03/SP03-020.yaml
-  - pack_03/SP03-018.yaml
-  - pack_03/SP03-034.yaml
-  - pack_03/SP03-038.yaml
   - pack_03/SP03-036.yaml
-  - pack_03/SP03-037.yaml
-  - pack_03/SP03-042.yaml
-  - pack_03/SP03-033.yaml
-  - pack_03/SP03-045.yaml
+  - pack_03/SP03-043.yaml
   - pack_03/SP03-044.yaml
-  - pack_03/SP03-026.yaml
-  - pack_03/SP03-023.yaml
-  - pack_03/SP03-029.yaml
+  - pack_03/SP03-075.yaml
+  - pack_03/SP03-079.yaml
+  - pack_03/SP03-080.yaml
+  - pack_03/SP03-031.yaml
+  - pack_03/SP03-032.yaml
+  - pack_03/SP03-034.yaml
+  - pack_03/SP03-035.yaml
+  - pack_03/SP03-037.yaml
+  - pack_03/SP03-038.yaml
+  - pack_03/SP03-041.yaml
+  - pack_03/SP03-042.yaml
+  - pack_03/SP03-015.yaml
+  - pack_03/SP03-021.yaml
   - pack_03/SP03-022.yaml
+  - pack_03/SP03-023.yaml
   - pack_03/SP03-024.yaml
+  - pack_03/SP03-026.yaml
+  - pack_03/SP03-027.yaml
+  - pack_03/SP03-028.yaml
+  - pack_03/SP03-029.yaml
+  - pack_03/SP03-030.yaml
+  - pack_03/SP03-040.yaml
+  - pack_03/SP03-045.yaml
+  - pack_03/SP03-050.yaml
+  - pack_03/SP03-058.yaml
+  - pack_03/SP03-065.yaml
+  - pack_03/SP03-070.yaml
+  - pack_03/SP03-072.yaml
+  - pack_03/SP03-073.yaml
+  - pack_03/SP03-077.yaml
+  - pack_03/SP03-078.yaml
+  - pack_03/SP03-025.yaml
+  - pack_03/SP03-046.yaml
   - pack_03/SP03-047.yaml
   - pack_03/SP03-048.yaml
   - pack_03/SP03-052.yaml
-  - pack_03/SP03-059.yaml
-  - pack_03/SP03-065.yaml
-  - pack_03/SP03-069.yaml
-  - pack_03/SP03-073.yaml
-  - pack_03/SP03-060.yaml
-  - pack_03/SP03-070.yaml
-  - pack_03/SP03-079.yaml
-  - pack_03/SP03-080.yaml
-  - pack_03/SP03-072.yaml
-  - pack_03/SP03-075.yaml
-  - pack_03/SP03-077.yaml
-  - pack_03/SP03-054.yaml
-  - pack_03/SP03-050.yaml
-  - pack_03/SP03-056.yaml
+  - pack_03/SP03-053.yaml
+  - pack_03/SP03-061.yaml
+  - pack_03/SP03-064.yaml
+  - pack_03/SP03-067.yaml
+  - pack_03/SP03-071.yaml
+  - pack_03/SP03-074.yaml
   - pack_03/SP03-049.yaml
-  - pack_03/SP03-046.yaml
+  - pack_03/SP03-051.yaml
+  - pack_03/SP03-054.yaml
+  - pack_03/SP03-057.yaml
+  - pack_03/SP03-059.yaml
+  - pack_03/SP03-062.yaml
+  - pack_03/SP03-076.yaml
+  - pack_03/SP03-033.yaml
+  - pack_03/SP03-039.yaml
+  - pack_03/SP03-055.yaml
+  - pack_03/SP03-056.yaml
+  - pack_03/SP03-060.yaml
+  - pack_03/SP03-063.yaml
   - pack_03/SP03-066.yaml
-  - pack_03/SP03-003.yaml
-  - pack_03/SP03-006.yaml
-  - pack_03/SP03-007.yaml
-  - pack_03/SP03-001.yaml
-  - pack_03/SP03-010.yaml
-  - pack_03/SP03-002.yaml
-  - pack_03/SP03-008.yaml
-  - pack_03/SP03-009.yaml
-  - pack_03/SP03-004.yaml
-  - pack_03/SP03-005.yaml
-  - pack_03/SP03-040.yaml
-  - pack_03/SP03-021.yaml
+  - pack_03/SP03-068.yaml
+  - pack_03/SP03-069.yaml

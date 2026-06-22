@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-126
 packId: pack_02
 name: Late Night Infomercial Gloss
-category: 3. Broadcast And Tv Look
+category: 2. TV And Broadcast
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - broadcast-and-tv-look
+  - tv-and-broadcast
 visualDna:
   aesthetic: Late-night infomercial broadcast, overlit demonstration gloss, cheap miracle-product persuasion, callout graphics without readable text
   form_and_line: Before-after split logic, pointing callout shapes, product-demo center framing, exaggerated benefit composition
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: broadcast-and-tv-look
-  categoryName: 3. Broadcast And Tv Look
+  categoryId: tv-and-broadcast
+  categoryName: 2. TV And Broadcast
   tags:
     - cinematic-and-media
-    - broadcast-and-tv-look
+    - tv-and-broadcast
   supportedTasks:
     - image_generate
     - image_edit

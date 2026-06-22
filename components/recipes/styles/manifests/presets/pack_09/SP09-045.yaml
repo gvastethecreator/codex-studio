@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-045
 packId: pack_09
 name: Felt Fabric
-category: 3. Fabric And Soft Materials
+category: 4. Tactile Surfaces
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - fabric-and-soft-materials
+  - tactile-surfaces
 visualDna:
   aesthetic: Compressed wool
   form_and_line: Fuzzy edge
@@ -39,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: fabric-and-soft-materials
-  categoryName: 3. Fabric And Soft Materials
+  categoryId: tactile-surfaces
+  categoryName: 4. Tactile Surfaces
   tags:
     - texture-and-materiality
-    - fabric-and-soft-materials
+    - tactile-surfaces
   supportedTasks:
     - image_generate
     - image_edit

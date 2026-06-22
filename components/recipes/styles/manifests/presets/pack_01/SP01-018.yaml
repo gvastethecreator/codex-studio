@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-018
 packId: pack_01
 name: Wet Plate Collodion
-category: 2. Lighting Techniques
+category: 3. Film And Analog Process
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting-techniques
+  - film-and-analog-process
 visualDna:
   aesthetic: 19th century tintype
   form_and_line: Extremely shallow focus
@@ -33,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting-techniques
-  categoryName: 2. Lighting Techniques
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
   tags:
     - photography-and-realism
-    - lighting-techniques
+    - film-and-analog-process
   supportedTasks:
     - image_generate
     - image_edit

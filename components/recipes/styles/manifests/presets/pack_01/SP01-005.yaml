@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-005
 packId: pack_01
 name: Cinematic Close-up
-category: 3. Film And Analog Process
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - film-and-analog-process
+  - portrait-and-studio
 visualDna:
   aesthetic: Cinematic movie still close-up, dramatic film photography
   subject_treatment: Extremely shallow depth of field, sharp focus on the primary detail, soft out-of-focus background
@@ -47,11 +47,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: film-and-analog-process
-  categoryName: 3. Film And Analog Process
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - film-and-analog-process
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-005
 packId: pack_02
 name: French New Wave
-category: 1. Cinematic Lighting And Lenses
+category: 1. Film Genres
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - cinematic-lighting-and-lenses
+  - film-genres
 visualDna:
   aesthetic: Jump-cut nouvelle vague cinema, Godard film energy, natural light rebellion, existential cool
   form_and_line: None
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: cinematic-lighting-and-lenses
-  categoryName: 1. Cinematic Lighting And Lenses
+  categoryId: film-genres
+  categoryName: 1. Film Genres
   tags:
     - cinematic-and-media
-    - cinematic-lighting-and-lenses
+    - film-genres
   supportedTasks:
     - image_generate
     - image_edit

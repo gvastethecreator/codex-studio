@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-039
 packId: pack_03
 name: Bioluminescent Forest
-category: 2. Organic And Character Cgi
+category: 7. Environment And Worldbuilding
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - organic-and-character-cgi
+  - environment-and-worldbuilding
 visualDna:
   aesthetic: Bioluminescent alien ecology, Avatar/Pandora-style wonder, connected organic glow
   form_and_line: Glowing organic silhouettes, spore halos, branching luminous networks
@@ -37,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: organic-and-character-cgi
-  categoryName: 2. Organic And Character Cgi
+  categoryId: environment-and-worldbuilding
+  categoryName: 7. Environment And Worldbuilding
   tags:
     - 3d-and-cgi-rendering
-    - organic-and-character-cgi
+    - environment-and-worldbuilding
   supportedTasks:
     - image_generate
     - image_edit

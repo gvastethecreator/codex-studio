@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-010
 packId: pack_11
 name: Indexed Pixel Constraint
-category: 4. Retro Pop And Kitsch
+category: 3. Aesthetics
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - retro-pop-and-kitsch
+  - aesthetics
 visualDna:
   aesthetic: Strict retro raster system with tile logic, hard pixel edges, indexed palettes, and low-resolution silhouette discipline
   form_and_line: Square-grid clusters, stair-step diagonals, one-pixel outlines, chunky negative shapes, tile-aligned contours
@@ -34,11 +34,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: retro-pop-and-kitsch
-  categoryName: 4. Retro Pop And Kitsch
+  categoryId: aesthetics
+  categoryName: 3. Aesthetics
   tags:
     - miscellaneous-and-fun
-    - retro-pop-and-kitsch
+    - aesthetics
   supportedTasks:
     - image_generate
     - image_edit

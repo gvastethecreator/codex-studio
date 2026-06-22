@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-040
 packId: pack_11
 name: Kawaii Pastel
-category: 2. Food And Commercial Fun
+category: 3. Aesthetics
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - food-and-commercial-fun
+  - aesthetics
 visualDna:
   aesthetic: Kawaii pastel mascot illustration language with high-cute stylization
   form_and_line: Thick soft lines, rounded-rubber-hose curves, marshmallow-contours, plushie-silhouette
@@ -37,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: food-and-commercial-fun
-  categoryName: 2. Food And Commercial Fun
+  categoryId: aesthetics
+  categoryName: 3. Aesthetics
   tags:
     - miscellaneous-and-fun
-    - food-and-commercial-fun
+    - aesthetics
   supportedTasks:
     - image_generate
     - image_edit

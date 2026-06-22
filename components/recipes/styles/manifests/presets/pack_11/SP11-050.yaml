@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-050
 packId: pack_11
 name: Cocktail Macro
-category: 1. Toys And Miniatures
+category: 4. Food And Drink
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-miniatures
+  - food-and-drink
 visualDna:
   aesthetic: Liquid refraction glamour, mixology material art, chilled glass optics, cocktail-macro polish
   form_and_line: Glass rim, coupe-bowl curve, highball-column, garnish-skewer line, citrus-peel spiral
@@ -35,11 +35,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-miniatures
-  categoryName: 1. Toys And Miniatures
+  categoryId: food-and-drink
+  categoryName: 4. Food And Drink
   tags:
     - miscellaneous-and-fun
-    - toys-and-miniatures
+    - food-and-drink
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-061
 packId: pack_11
 name: Water Drop Reflection
-category: 1. Toys And Miniatures
+category: 5. Micro Macro
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-miniatures
+  - micro-macro
 visualDna:
   aesthetic: Refraction in drop, lens-drop, optical-sphere, rain-jewel, surface-tension optic
   form_and_line: Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-miniatures
-  categoryName: 1. Toys And Miniatures
+  categoryId: micro-macro
+  categoryName: 5. Micro Macro
   tags:
     - miscellaneous-and-fun
-    - toys-and-miniatures
+    - micro-macro
   supportedTasks:
     - image_generate
     - image_edit

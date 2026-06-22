@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-041
 packId: pack_11
 name: Grimdark
-category: 5. Oddities And Novelty
+category: 3. Aesthetics
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - oddities-and-novelty
+  - aesthetics
 visualDna:
   aesthetic: Grimdark cathedral-industrial war fantasy with oppressive futurism
   form_and_line: Heavy, dirty, ceramite-plate contours, purity-seal ribbons, chainsword-teeth, servo-skull profiles
@@ -37,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: oddities-and-novelty
-  categoryName: 5. Oddities And Novelty
+  categoryId: aesthetics
+  categoryName: 3. Aesthetics
   tags:
     - miscellaneous-and-fun
-    - oddities-and-novelty
+    - aesthetics
   supportedTasks:
     - image_generate
     - image_edit

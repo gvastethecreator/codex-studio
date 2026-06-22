@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-127
 packId: pack_02
 name: Interlaced Music Video Glow
-category: 3. Broadcast And Tv Look
+category: 2. TV And Broadcast
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - broadcast-and-tv-look
+  - tv-and-broadcast
 visualDna:
   aesthetic: 90s cable music-video broadcast, interlaced glamour, blown color gels, soft-focus performance glow, analog video dream
   form_and_line: Rhythmic crop, layered silhouettes, diagonal stage-like composition, motion smear trails
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: broadcast-and-tv-look
-  categoryName: 3. Broadcast And Tv Look
+  categoryId: tv-and-broadcast
+  categoryName: 2. TV And Broadcast
   tags:
     - cinematic-and-media
-    - broadcast-and-tv-look
+    - tv-and-broadcast
   supportedTasks:
     - image_generate
     - image_edit

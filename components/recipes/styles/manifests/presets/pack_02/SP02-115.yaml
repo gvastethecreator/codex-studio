@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-115
 packId: pack_02
 name: Home Movies - Marker-Edge Improvised Sitcom
-category: 3. Broadcast And Tv Look
+category: 2. TV And Broadcast
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - broadcast-and-tv-look
+  - tv-and-broadcast
 visualDna:
   aesthetic: Improvised marker-edge sitcom cartoon, dry marker linework, awkward anti-slick timing, homemade creativity, hand-drawn TV softness
   form_and_line: Dry marker outlines, awkward hand wobble, simple blocking, improv-timing spacing
@@ -39,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: broadcast-and-tv-look
-  categoryName: 3. Broadcast And Tv Look
+  categoryId: tv-and-broadcast
+  categoryName: 2. TV And Broadcast
   tags:
     - cinematic-and-media
-    - broadcast-and-tv-look
+    - tv-and-broadcast
   supportedTasks:
     - image_generate
     - image_edit

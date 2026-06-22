@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-057
 packId: pack_11
 name: Insect Eye
-category: 5. Oddities And Novelty
+category: 5. Micro Macro
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - oddities-and-novelty
+  - micro-macro
 visualDna:
   aesthetic: Compound eye macro, insect-vision, ommatidial-array, arthropod-portrait, nature-engineering
   form_and_line: Hexagonal grid, ommatidia-honeycomb, dome-curvature, lens-facet edges, bristle-between-lenses
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: oddities-and-novelty
-  categoryName: 5. Oddities And Novelty
+  categoryId: micro-macro
+  categoryName: 5. Micro Macro
   tags:
     - miscellaneous-and-fun
-    - oddities-and-novelty
+    - micro-macro
   supportedTasks:
     - image_generate
     - image_edit

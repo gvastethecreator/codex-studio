@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-012
 packId: pack_11
 name: Solarpunk
-category: 3. Science And Bio Curiosities
+category: 3. Aesthetics
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - science-and-bio-curiosities
+  - aesthetics
 visualDna:
   aesthetic: >-
     Regenerative eco-futurist style with biophilic infrastructure language, clean-tech optimism, and balanced
@@ -48,11 +48,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: science-and-bio-curiosities
-  categoryName: 3. Science And Bio Curiosities
+  categoryId: aesthetics
+  categoryName: 3. Aesthetics
   tags:
     - miscellaneous-and-fun
-    - science-and-bio-curiosities
+    - aesthetics
   supportedTasks:
     - image_generate
     - image_edit

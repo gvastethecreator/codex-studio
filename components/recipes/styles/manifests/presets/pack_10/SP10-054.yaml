@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-054
 packId: pack_10
 name: Marble Texture
-category: 5. Pattern & Texture
+category: 6. Material Surface Textures
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - abstract-and-experimental
-  - pattern-and-texture
+  - material-surface-textures
 visualDna:
   aesthetic: Stone veins
   form_and_line: Random veins
@@ -35,11 +35,11 @@ attributes:
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
-  categoryId: pattern-and-texture
-  categoryName: 5. Pattern & Texture
+  categoryId: material-surface-textures
+  categoryName: 6. Material Surface Textures
   tags:
     - abstract-and-experimental
-    - pattern-and-texture
+    - material-surface-textures
   supportedTasks:
     - image_generate
     - image_edit

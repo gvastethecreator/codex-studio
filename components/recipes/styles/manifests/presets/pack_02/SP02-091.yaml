@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-091
 packId: pack_02
 name: Office Whiteboard Doodle
-category: 1. Cinematic Lighting And Lenses
+category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - cinematic-lighting-and-lenses
+  - caricature-and-cartoon-styles
 visualDna:
   aesthetic: Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, strategy-diagram absurdity
   form_and_line: Squeaky dry-erase marker strokes, variable thickness from marker angle, eraser-smear ghost trails, hasty unsteady linework, arrow-heavy composition
@@ -40,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: cinematic-lighting-and-lenses
-  categoryName: 1. Cinematic Lighting And Lenses
+  categoryId: caricature-and-cartoon-styles
+  categoryName: 6. Caricature And Cartoon Styles
   tags:
     - cinematic-and-media
-    - cinematic-lighting-and-lenses
+    - caricature-and-cartoon-styles
   supportedTasks:
     - image_generate
     - image_edit

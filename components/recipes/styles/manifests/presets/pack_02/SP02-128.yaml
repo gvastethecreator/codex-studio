@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-128
 packId: pack_02
 name: Emergency Broadcast Signal Break
-category: 3. Broadcast And Tv Look
+category: 2. TV And Broadcast
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - broadcast-and-tv-look
+  - tv-and-broadcast
 visualDna:
   aesthetic: Emergency broadcast interruption, signal-break abstraction, color bars, warning geometry without readable text, hostile analog tone made visual
   form_and_line: Horizontal bands, test-pattern blocks, centered warning geometry, scanline fracture, hard rectangular cuts
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: broadcast-and-tv-look
-  categoryName: 3. Broadcast And Tv Look
+  categoryId: tv-and-broadcast
+  categoryName: 2. TV And Broadcast
   tags:
     - cinematic-and-media
-    - broadcast-and-tv-look
+    - tv-and-broadcast
   supportedTasks:
     - image_generate
     - image_edit

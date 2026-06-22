@@ -3,15 +3,11 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () => import('./pack_11/toys-and-miniatures-1').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_11/food-and-commercial-fun-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_11/science-and-bio-curiosities-3').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () => import('./pack_11/retro-pop-and-kitsch-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_11/oddities-and-novelty-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_11/toys-and-crafts-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_11/artistic-mediums-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_11/aesthetics-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_11/food-and-drink-4').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_11/micro-macro-5').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

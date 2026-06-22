@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-039
 packId: pack_11
 name: Gothic Horror
-category: 3. Science And Bio Curiosities
+category: 3. Aesthetics
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - science-and-bio-curiosities
+  - aesthetics
 visualDna:
   aesthetic: Gothic horror romanticism with ornamental decay, aristocratic gloom, and vertical menace
   form_and_line: Spiky vertical silhouettes, flying-buttress rhythm, tombstone-contours, wrought-iron flourishes
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: science-and-bio-curiosities
-  categoryName: 3. Science And Bio Curiosities
+  categoryId: aesthetics
+  categoryName: 3. Aesthetics
   tags:
     - miscellaneous-and-fun
-    - science-and-bio-curiosities
+    - aesthetics
   supportedTasks:
     - image_generate
     - image_edit

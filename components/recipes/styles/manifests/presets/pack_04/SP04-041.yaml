@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-041
 packId: pack_04
 name: Fashion Illustration
-category: 2. Editorial Illustration
+category: 3. Editorial And Poster
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-illustration
+  - editorial-and-poster
 visualDna:
   aesthetic: Runway sketch
   form_and_line: Loose, gestural
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-illustration
-  categoryName: 2. Editorial Illustration
+  categoryId: editorial-and-poster
+  categoryName: 3. Editorial And Poster
   tags:
     - illustration-and-graphic-novel
-    - editorial-illustration
+    - editorial-and-poster
   supportedTasks:
     - image_generate
     - image_edit

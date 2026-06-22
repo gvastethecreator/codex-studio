@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-014
 packId: pack_03
 name: Chrome & Metal
-category: 3. Environment And Worldbuilding
+category: 2. Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - environment-and-worldbuilding
+  - materials
 visualDna:
   aesthetic: Highly reflective surface
   form_and_line: Sharp reflections
@@ -37,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: environment-and-worldbuilding
-  categoryName: 3. Environment And Worldbuilding
+  categoryId: materials
+  categoryName: 2. Materials
   tags:
     - 3d-and-cgi-rendering
-    - environment-and-worldbuilding
+    - materials
   supportedTasks:
     - image_generate
     - image_edit

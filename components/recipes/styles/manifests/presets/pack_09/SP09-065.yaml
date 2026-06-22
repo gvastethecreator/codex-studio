@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-065
 packId: pack_09
 name: Tar
-category: 5. Fx And Procedural Materiality
+category: 3. Weathering And Decay
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - fx-and-procedural-materiality
+  - weathering-and-decay
 visualDna:
   aesthetic: Sticky black goo
   form_and_line: Thick drips
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: fx-and-procedural-materiality
-  categoryName: 5. Fx And Procedural Materiality
+  categoryId: weathering-and-decay
+  categoryName: 3. Weathering And Decay
   tags:
     - texture-and-materiality
-    - fx-and-procedural-materiality
+    - weathering-and-decay
   supportedTasks:
     - image_generate
     - image_edit

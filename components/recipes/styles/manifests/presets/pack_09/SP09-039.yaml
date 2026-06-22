@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-039
 packId: pack_09
 name: Frozen/Frosted
-category: 1. Metals And Minerals
+category: 4. Tactile Surfaces
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - metals-and-minerals
+  - tactile-surfaces
 visualDna:
   aesthetic: Freezer burn
   form_and_line: Ice crystals
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: metals-and-minerals
-  categoryName: 1. Metals And Minerals
+  categoryId: tactile-surfaces
+  categoryName: 4. Tactile Surfaces
   tags:
     - texture-and-materiality
-    - metals-and-minerals
+    - tactile-surfaces
   supportedTasks:
     - image_generate
     - image_edit

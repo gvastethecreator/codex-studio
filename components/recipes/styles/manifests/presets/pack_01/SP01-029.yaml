@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-029
 packId: pack_01
 name: Microscope (SEM)
-category: 3. Film And Analog Process
+category: 7. Technical And Specialist Imaging
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - film-and-analog-process
+  - technical-and-specialist-imaging
 visualDna:
   aesthetic: Electron microscope scan
   form_and_line: Incredible texture detail
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: film-and-analog-process
-  categoryName: 3. Film And Analog Process
+  categoryId: technical-and-specialist-imaging
+  categoryName: 7. Technical And Specialist Imaging
   tags:
     - photography-and-realism
-    - film-and-analog-process
+    - technical-and-specialist-imaging
   supportedTasks:
     - image_generate
     - image_edit

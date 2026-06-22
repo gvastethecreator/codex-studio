@@ -4,88 +4,6 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP01-005',
-    name: 'Cinematic Close-up',
-    category: '3. Film And Analog Process',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic: 'Cinematic movie still close-up, dramatic film photography',
-      subject_treatment:
-        'Extremely shallow depth of field, sharp focus on the primary detail, soft out-of-focus background',
-      color_and_tone:
-        'Cinematic color grading, teal and orange split toning, rich cinematic contrast',
-      lighting_and_shadow: 'Dramatic Rembrandt lighting, strong directional light, deep shadows',
-      texture_and_material:
-        'Cinematic film grain, detailed surface texture, anamorphic lens flares',
-      camera_and_composition:
-        'Shot on anamorphic lens, beautiful bokeh background, tight emotional framing',
-      atmosphere_and_mood: 'Emotional, dramatic, intense, narrative, moody',
-      rendering_and_quality: '4K cinematic render, filmic look, high production value',
-      creative_brief:
-        'Apply cinematic close-up language to any subject: shallow focus, anamorphic flares, teal-orange tension, tight emotional framing, and film-still drama without requiring eyes or a human close-up.',
-    },
-  },
-  {
-    id: 'SP01-014',
-    name: 'Cinestill 800T',
-    category: '3. Film And Analog Process',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic: 'Night photography film',
-      form_and_line: 'Halation around lights',
-      color_palette: 'Cool tungsten balance',
-      lighting_setup: 'Artificial light',
-      material_texture: 'Medium grain',
-      render_quality: 'Cinematic, moody',
-      spatial_distortion: 'Red halation glow',
-      atmosphere: 'Nocturnal, moody',
-      key_features: 'Red halos',
-      creative_brief:
-        'Tungsten-balanced darkness with red halation blooming around every hard light source. Highlights bleed like crimson chemical halos into cool shadow, while medium grain keeps image tactile and cinematic. The style is nocturnal sensor poetry, not a requirement for city streets. Apply this photographic look over any input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.',
-    },
-  },
-  {
-    id: 'SP01-013',
-    name: 'Ilford HP5 Plus',
-    category: '3. Film And Analog Process',
-    negativePrompt: 'color, chromatic aberration',
-    style: {
-      aesthetic: 'Black and White film',
-      form_and_line: 'Medium contrast',
-      color_palette: 'Greyscale',
-      lighting_setup: 'Versatile',
-      material_texture: 'Visible grain',
-      render_quality: 'Documentary film',
-      spatial_distortion: 'None',
-      atmosphere: 'Classic, gritty',
-      key_features: 'Monochrome',
-      creative_brief:
-        "Stripped of chroma's distraction, the image reduces to structure: light wrestling shadow, midtone grain carrying documentary urgency, edges honest rather than polished. Use silver-gelatin grit and flexible HP5 contrast on any subject; no street, stranger, or human detail required.",
-    },
-  },
-  {
-    id: 'SP01-015',
-    name: 'Kodachrome 64',
-    category: '3. Film And Analog Process',
-    negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
-    style: {
-      aesthetic: 'Vintage slide film',
-      form_and_line: 'Sharp, archival',
-      color_palette: 'Rich reds, realistic',
-      lighting_setup: 'Clean direct light',
-      material_texture: 'Fine grain',
-      render_quality: 'Archival documentary slide',
-      spatial_distortion: 'High contrast',
-      atmosphere: 'Historic, vivid',
-      key_features: 'Red pop',
-      creative_brief:
-        'Apply Kodachrome archival permanence to the input: rich reds, clean direct light, crisp microdetail, dense dye-layer contrast, and believable vintage vividness should preserve any subject without requiring travel or mid-century staging.',
-    },
-  },
-  {
     id: 'SP01-011',
     name: 'Kodak Portra 400',
     category: '3. Film And Analog Process',
@@ -123,6 +41,65 @@ export const GENERATED_STYLE_PRESETS = [
       key_features: 'Magenta bias',
       creative_brief:
         'Apply Fujifilm Velvia 50 slide-film intensity to the input: jewel greens, saturated blues and reds, crisp edges, compressed blacks, and vivid chrome contrast should energize any subject without requiring landscape or nature.',
+    },
+  },
+  {
+    id: 'SP01-013',
+    name: 'Ilford HP5 Plus',
+    category: '3. Film And Analog Process',
+    negativePrompt: 'color, chromatic aberration',
+    style: {
+      aesthetic: 'Black and White film',
+      form_and_line: 'Medium contrast',
+      color_palette: 'Greyscale',
+      lighting_setup: 'Versatile',
+      material_texture: 'Visible grain',
+      render_quality: 'Documentary film',
+      spatial_distortion: 'None',
+      atmosphere: 'Classic, gritty',
+      key_features: 'Monochrome',
+      creative_brief:
+        "Stripped of chroma's distraction, the image reduces to structure: light wrestling shadow, midtone grain carrying documentary urgency, edges honest rather than polished. Use silver-gelatin grit and flexible HP5 contrast on any subject; no street, stranger, or human detail required.",
+    },
+  },
+  {
+    id: 'SP01-014',
+    name: 'Cinestill 800T',
+    category: '3. Film And Analog Process',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
+    style: {
+      aesthetic: 'Night photography film',
+      form_and_line: 'Halation around lights',
+      color_palette: 'Cool tungsten balance',
+      lighting_setup: 'Artificial light',
+      material_texture: 'Medium grain',
+      render_quality: 'Cinematic, moody',
+      spatial_distortion: 'Red halation glow',
+      atmosphere: 'Nocturnal, moody',
+      key_features: 'Red halos',
+      creative_brief:
+        'Tungsten-balanced darkness with red halation blooming around every hard light source. Highlights bleed like crimson chemical halos into cool shadow, while medium grain keeps image tactile and cinematic. The style is nocturnal sensor poetry, not a requirement for city streets. Apply this photographic look over any input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.',
+    },
+  },
+  {
+    id: 'SP01-015',
+    name: 'Kodachrome 64',
+    category: '3. Film And Analog Process',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
+    style: {
+      aesthetic: 'Vintage slide film',
+      form_and_line: 'Sharp, archival',
+      color_palette: 'Rich reds, realistic',
+      lighting_setup: 'Clean direct light',
+      material_texture: 'Fine grain',
+      render_quality: 'Archival documentary slide',
+      spatial_distortion: 'High contrast',
+      atmosphere: 'Historic, vivid',
+      key_features: 'Red pop',
+      creative_brief:
+        'Apply Kodachrome archival permanence to the input: rich reds, clean direct light, crisp microdetail, dense dye-layer contrast, and believable vintage vividness should preserve any subject without requiring travel or mid-century staging.',
     },
   },
   {
@@ -166,6 +143,25 @@ export const GENERATED_STYLE_PRESETS = [
     },
   },
   {
+    id: 'SP01-018',
+    name: 'Wet Plate Collodion',
+    category: '3. Film And Analog Process',
+    negativePrompt: 'color, modern, digital',
+    style: {
+      aesthetic: '19th century tintype',
+      form_and_line: 'Extremely shallow focus',
+      color_palette: 'Sepia, silver',
+      lighting_setup: 'Long exposure',
+      material_texture: 'Chemical pours, scratches',
+      render_quality: 'Antique, haunting',
+      spatial_distortion: 'Blurry edges (Petzval)',
+      atmosphere: 'Ghostly, ancient',
+      key_features: 'Chemical artifacts',
+      creative_brief:
+        'Silver and patience translated into tintype atmosphere: shallow focus, Petzval edge falloff, sepia-silver tonality, chemical pours, scratches, and exposure tremor. Any subject should feel summoned onto a fragile plate, antique without requiring sitters or period portraiture.',
+    },
+  },
+  {
     id: 'SP01-019',
     name: 'Infrared Film',
     category: '3. Film And Analog Process',
@@ -206,25 +202,6 @@ export const GENERATED_STYLE_PRESETS = [
     },
   },
   {
-    id: 'SP01-064',
-    name: 'Concert Photography',
-    category: '3. Film And Analog Process',
-    negativePrompt: 'quiet, bright',
-    style: {
-      aesthetic: 'Concert-stage lighting',
-      form_and_line: 'Silhouettes in beam fog',
-      color_palette: 'Stage lights (Red/Blue)',
-      lighting_setup: 'Beams, spots',
-      material_texture: 'Fog, heat sheen, grain',
-      render_quality: 'Loud live-event realism',
-      spatial_distortion: 'None',
-      atmosphere: 'Energetic, loud',
-      key_features: 'Beam-and-fog energy',
-      creative_brief:
-        'Concert photography translates any subject through red/blue stage beams, fog volume, hard spotlights, grainy darkness, and loud silhouette energy. Keep live-event intensity without requiring band, crowd hands, instruments, stage performers, or music venue.',
-    },
-  },
-  {
     id: 'SP01-021',
     name: 'Large Format (4x5)',
     category: '3. Film And Analog Process',
@@ -245,22 +222,42 @@ export const GENERATED_STYLE_PRESETS = [
     },
   },
   {
-    id: 'SP01-029',
-    name: 'Microscope (SEM)',
+    id: 'SP01-022',
+    name: 'Disposable Camera',
     category: '3. Film And Analog Process',
-    negativePrompt: 'color, macro',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
-      aesthetic: 'Electron microscope scan',
-      form_and_line: 'Incredible texture detail',
-      color_palette: 'Greyscale',
-      lighting_setup: 'Directional electron beam',
-      material_texture: 'Fractal patterns',
-      render_quality: 'Scientific, alien',
-      spatial_distortion: 'Extreme magnification',
-      atmosphere: 'Scientific, alien',
-      key_features: 'B&W depth',
+      aesthetic: 'Cheap plastic lens photo',
+      form_and_line: 'Soft corners',
+      color_palette: 'High contrast, cheap flash',
+      lighting_setup: 'Direct flash',
+      material_texture: 'Grainy',
+      render_quality: 'Casual flash snapshot',
+      spatial_distortion: 'Chromatic aberration',
+      atmosphere: 'Fun, cheap',
+      key_features: 'Flash falloff',
       creative_brief:
-        'Electron-beam realism at extreme magnification: monochrome depth, directional micro-shadowing, fractal texture, and scale ambiguity that makes any surface feel alien. Reveal subject as microscopic terrain without requiring pollen, biology, cathedral metaphors, or macro photography.',
+        'Cheap plastic optics with priceless accident energy: direct flash falloff, softened corners, harsh contrast, chromatic fringe, and grainy consumer-film texture. Make any subject feel caught by a disposable camera, immediate and unpolished, without forcing faces, rooms, or party context.',
+    },
+  },
+  {
+    id: 'SP01-026',
+    name: 'Pinhole Camera',
+    category: '3. Film And Analog Process',
+    negativePrompt: 'sharp, lens flare',
+    style: {
+      aesthetic: 'Lensless photography',
+      form_and_line: 'Soft everywhere',
+      color_palette: 'Vignetted',
+      lighting_setup: 'Long exposure motion blur',
+      material_texture: 'Diffraction blur',
+      render_quality: 'Dreamy, experimental',
+      spatial_distortion: 'Infinite depth of field (soft)',
+      atmosphere: 'Surreal, time passing',
+      key_features: 'Soft focus',
+      creative_brief:
+        "Vision stripped of optics, where light seeps through a needle's wound and time pools on the surface. Edges dissolve into dreaming, the world seen as if through memory rather than glass. Every frame exhales the patience of a long exposure, moments bleeding into one another like watercolor on wet paper. Apply this photographic look over any input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-069
 packId: pack_11
 name: Skin Pores
-category: 3. Science And Bio Curiosities
+category: 5. Micro Macro
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - science-and-bio-curiosities
+  - micro-macro
 visualDna:
   aesthetic: Dermatology zoom, skin-terrain, pore-landscape, human-surface, epidermal-topography
   form_and_line: Micro wrinkles, Langer's-line contours, sulcus-cutis furrow, crista-cutis ridge, fingerprint-ridge
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: science-and-bio-curiosities
-  categoryName: 3. Science And Bio Curiosities
+  categoryId: micro-macro
+  categoryName: 5. Micro Macro
   tags:
     - miscellaneous-and-fun
-    - science-and-bio-curiosities
+    - micro-macro
   supportedTasks:
     - image_generate
     - image_edit

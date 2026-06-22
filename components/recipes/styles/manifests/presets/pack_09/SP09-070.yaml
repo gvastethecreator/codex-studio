@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-070
 packId: pack_09
 name: Polystyrene (Styrofoam)
-category: 4. Surface Wear And Aging
+category: 2. Man-Made Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - surface-wear-and-aging
+  - man-made-materials
 visualDna:
   aesthetic: Packing foam
   form_and_line: Beads
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: surface-wear-and-aging
-  categoryName: 4. Surface Wear And Aging
+  categoryId: man-made-materials
+  categoryName: 2. Man-Made Materials
   tags:
     - texture-and-materiality
-    - surface-wear-and-aging
+    - man-made-materials
   supportedTasks:
     - image_generate
     - image_edit

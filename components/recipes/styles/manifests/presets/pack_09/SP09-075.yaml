@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-075
 packId: pack_09
 name: Astroturf
-category: 5. Fx And Procedural Materiality
+category: 4. Tactile Surfaces
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - fx-and-procedural-materiality
+  - tactile-surfaces
 visualDna:
   aesthetic: Fake grass
   form_and_line: Plastic blades
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: fx-and-procedural-materiality
-  categoryName: 5. Fx And Procedural Materiality
+  categoryId: tactile-surfaces
+  categoryName: 4. Tactile Surfaces
   tags:
     - texture-and-materiality
-    - fx-and-procedural-materiality
+    - tactile-surfaces
   supportedTasks:
     - image_generate
     - image_edit

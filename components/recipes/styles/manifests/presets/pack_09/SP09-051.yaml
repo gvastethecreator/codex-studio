@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-051
 packId: pack_09
 name: Fire & Magma
-category: 2. Organic And Bio Materials
+category: 5. Elemental And FX
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - organic-and-bio-materials
+  - elemental-and-fx
 visualDna:
   aesthetic: Lava flow
   form_and_line: Crust cracks
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: organic-and-bio-materials
-  categoryName: 2. Organic And Bio Materials
+  categoryId: elemental-and-fx
+  categoryName: 5. Elemental And FX
   tags:
     - texture-and-materiality
-    - organic-and-bio-materials
+    - elemental-and-fx
   supportedTasks:
     - image_generate
     - image_edit

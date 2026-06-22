@@ -3,19 +3,12 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
+  () => import('./pack_04/comic-book-styles-1').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_04/comics-and-graphic-novel-1').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_04/editorial-illustration-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_04/childrens-and-educational-3').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () => import('./pack_04/printmaking-and-ink-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_04/fantasy-and-concept-illustration-5').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
+    import('./pack_04/children-s-illustration-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_04/editorial-and-poster-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_04/concept-art-4').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_04/ink-and-print-5').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

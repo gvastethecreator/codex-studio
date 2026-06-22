@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-121
 packId: pack_02
 name: Analog Sitcom Multicam
-category: 3. Broadcast And Tv Look
+category: 2. TV And Broadcast
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - broadcast-and-tv-look
+  - tv-and-broadcast
 visualDna:
   aesthetic: 90s multicam sitcom broadcast, flat studio blocking, laugh-track rhythm, tape-soft comedy timing, live audience warmth
   form_and_line: Center-weighted staging, readable blocking, broad silhouette spacing, proscenium-like composition
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: broadcast-and-tv-look
-  categoryName: 3. Broadcast And Tv Look
+  categoryId: tv-and-broadcast
+  categoryName: 2. TV And Broadcast
   tags:
     - cinematic-and-media
-    - broadcast-and-tv-look
+    - tv-and-broadcast
   supportedTasks:
     - image_generate
     - image_edit

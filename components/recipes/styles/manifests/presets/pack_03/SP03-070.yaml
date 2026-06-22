@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-070
 packId: pack_03
 name: Retro CGI (90s)
-category: 4. Lookdev And Render Pipelines
+category: 4. 3D Styles
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lookdev-and-render-pipelines
+  - 3d-styles
 visualDna:
   aesthetic: Reboot/Toy Story 1 early feature-era CGI, pioneer polygons, awkward charm
   form_and_line: Simple geometry
@@ -39,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lookdev-and-render-pipelines
-  categoryName: 4. Lookdev And Render Pipelines
+  categoryId: 3d-styles
+  categoryName: 4. 3D Styles
   tags:
     - 3d-and-cgi-rendering
-    - lookdev-and-render-pipelines
+    - 3d-styles
   supportedTasks:
     - image_generate
     - image_edit

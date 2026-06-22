@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-064
 packId: pack_01
 name: Concert Photography
-category: 3. Film And Analog Process
+category: 4. Documentary And Street
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - film-and-analog-process
+  - documentary-and-street
 visualDna:
   aesthetic: Concert-stage lighting
   form_and_line: Silhouettes in beam fog
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: film-and-analog-process
-  categoryName: 3. Film And Analog Process
+  categoryId: documentary-and-street
+  categoryName: 4. Documentary And Street
   tags:
     - photography-and-realism
-    - film-and-analog-process
+    - documentary-and-street
   supportedTasks:
     - image_generate
     - image_edit

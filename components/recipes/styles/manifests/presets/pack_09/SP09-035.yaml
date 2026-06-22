@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-035
 packId: pack_09
 name: Burnt Wood (Shou Sugi Ban)
-category: 2. Organic And Bio Materials
+category: 3. Weathering And Decay
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - organic-and-bio-materials
+  - weathering-and-decay
 visualDna:
   aesthetic: Charred timber
   form_and_line: Deep cracks (alligator skin)
@@ -39,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: organic-and-bio-materials
-  categoryName: 2. Organic And Bio Materials
+  categoryId: weathering-and-decay
+  categoryName: 3. Weathering And Decay
   tags:
     - texture-and-materiality
-    - organic-and-bio-materials
+    - weathering-and-decay
   supportedTasks:
     - image_generate
     - image_edit

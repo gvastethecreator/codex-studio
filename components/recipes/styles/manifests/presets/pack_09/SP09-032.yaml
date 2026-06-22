@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-032
 packId: pack_09
 name: Cardboard
-category: 2. Organic And Bio Materials
+category: 2. Man-Made Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - organic-and-bio-materials
+  - man-made-materials
 visualDna:
   aesthetic: Shipping box
   form_and_line: Corrugation lines
@@ -39,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: organic-and-bio-materials
-  categoryName: 2. Organic And Bio Materials
+  categoryId: man-made-materials
+  categoryName: 2. Man-Made Materials
   tags:
     - texture-and-materiality
-    - organic-and-bio-materials
+    - man-made-materials
   supportedTasks:
     - image_generate
     - image_edit

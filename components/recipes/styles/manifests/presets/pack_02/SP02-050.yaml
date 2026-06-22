@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-050
 packId: pack_02
 name: Polaroid (Instant)
-category: 1. Cinematic Lighting And Lenses
+category: 4. Photography Eras
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - cinematic-lighting-and-lenses
+  - photography-eras
 visualDna:
   aesthetic: Instant film
   form_and_line: None
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: cinematic-lighting-and-lenses
-  categoryName: 1. Cinematic Lighting And Lenses
+  categoryId: photography-eras
+  categoryName: 4. Photography Eras
   tags:
     - cinematic-and-media
-    - cinematic-lighting-and-lenses
+    - photography-eras
   supportedTasks:
     - image_generate
     - image_edit

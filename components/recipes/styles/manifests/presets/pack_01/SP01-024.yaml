@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-024
 packId: pack_01
 name: Drone Aerial
-category: 6. Nature And Wildlife
+category: 4. Documentary And Street
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - nature-and-wildlife
+  - documentary-and-street
 visualDna:
   aesthetic: Top-down view
   form_and_line: Top-down geometry
@@ -52,11 +52,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: nature-and-wildlife
-  categoryName: 6. Nature And Wildlife
+  categoryId: documentary-and-street
+  categoryName: 4. Documentary And Street
   tags:
     - photography-and-realism
-    - nature-and-wildlife
+    - documentary-and-street
   supportedTasks:
     - image_generate
     - image_edit

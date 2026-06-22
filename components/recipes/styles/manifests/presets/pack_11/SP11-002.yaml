@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-002
 packId: pack_11
 name: Funko Pop Vinyl Collectible Figure
-category: 1. Toys And Miniatures
+category: 1. Toys And Crafts
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-miniatures
+  - toys-and-crafts
 visualDna:
   aesthetic: Designer-vinyl collectible style with iconic simplification, shelf-display charisma, and fandom-object polish
   form_and_line: >-
@@ -41,11 +41,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-miniatures
-  categoryName: 1. Toys And Miniatures
+  categoryId: toys-and-crafts
+  categoryName: 1. Toys And Crafts
   tags:
     - miscellaneous-and-fun
-    - toys-and-miniatures
+    - toys-and-crafts
   supportedTasks:
     - image_generate
     - image_edit

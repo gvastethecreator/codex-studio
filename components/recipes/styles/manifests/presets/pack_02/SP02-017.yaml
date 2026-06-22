@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-017
 packId: pack_02
 name: 90s Sitcom
-category: 1. Cinematic Lighting And Lenses
+category: 2. TV And Broadcast
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - cinematic-lighting-and-lenses
+  - tv-and-broadcast
 visualDna:
   aesthetic: Cozy multi-camera sitcom warmth, laugh-track comfort, 90s broadcast vibe
   form_and_line: None
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: cinematic-lighting-and-lenses
-  categoryName: 1. Cinematic Lighting And Lenses
+  categoryId: tv-and-broadcast
+  categoryName: 2. TV And Broadcast
   tags:
     - cinematic-and-media
-    - cinematic-lighting-and-lenses
+    - tv-and-broadcast
   supportedTasks:
     - image_generate
     - image_edit

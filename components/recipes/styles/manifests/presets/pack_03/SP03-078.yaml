@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-078
 packId: pack_03
 name: Origami 3D
-category: 2. Organic And Character Cgi
+category: 4. 3D Styles
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - organic-and-character-cgi
+  - 3d-styles
 visualDna:
   aesthetic: Folded paper model
   form_and_line: Sharp creases
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: organic-and-character-cgi
-  categoryName: 2. Organic And Character Cgi
+  categoryId: 3d-styles
+  categoryName: 4. 3D Styles
   tags:
     - 3d-and-cgi-rendering
-    - organic-and-character-cgi
+    - 3d-styles
   supportedTasks:
     - image_generate
     - image_edit

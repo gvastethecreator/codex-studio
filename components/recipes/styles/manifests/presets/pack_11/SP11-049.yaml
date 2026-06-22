@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-049
 packId: pack_11
 name: Fast Food Commercial
-category: 2. Food And Commercial Fun
+category: 4. Food And Drink
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - food-and-commercial-fun
+  - food-and-drink
 visualDna:
   aesthetic: Quick-service commercial gloss, crave-engineering, food-styling trickery, high-impact appetizing polish
   form_and_line: Perfect stack layers, rounded hero contours, ruffled edges, sear-like texture rings, draped melt curves
@@ -39,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: food-and-commercial-fun
-  categoryName: 2. Food And Commercial Fun
+  categoryId: food-and-drink
+  categoryName: 4. Food And Drink
   tags:
     - miscellaneous-and-fun
-    - food-and-commercial-fun
+    - food-and-drink
   supportedTasks:
     - image_generate
     - image_edit

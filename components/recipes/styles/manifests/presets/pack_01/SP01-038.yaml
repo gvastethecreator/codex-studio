@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-038
 packId: pack_01
 name: Butterfly Lighting
-category: 1. Portrait And Studio
+category: 2. Lighting Techniques
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - portrait-and-studio
+  - lighting-techniques
 visualDna:
   aesthetic: Glamour lighting
   form_and_line: Centered lower cast shadow
@@ -31,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: portrait-and-studio
-  categoryName: 1. Portrait And Studio
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
   tags:
     - photography-and-realism
-    - portrait-and-studio
+    - lighting-techniques
   supportedTasks:
     - image_generate
     - image_edit

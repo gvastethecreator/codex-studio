@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-005
 packId: pack_11
 name: Amigurumi Crochet
-category: 1. Toys And Miniatures
+category: 1. Toys And Crafts
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-miniatures
+  - toys-and-crafts
 visualDna:
   aesthetic: Amigurumi crochet plush language with handmade yarn charm
   form_and_line: Spiral stitch pattern, V-stitch rows, rounded increases, circular construction
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-miniatures
-  categoryName: 1. Toys And Miniatures
+  categoryId: toys-and-crafts
+  categoryName: 1. Toys And Crafts
   tags:
     - miscellaneous-and-fun
-    - toys-and-miniatures
+    - toys-and-crafts
   supportedTasks:
     - image_generate
     - image_edit

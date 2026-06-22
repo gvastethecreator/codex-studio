@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-009
 packId: pack_03
 name: ZBrush Digital Clay Sculpt
-category: 4. Lookdev And Render Pipelines
+category: 1. Render Engines
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lookdev-and-render-pipelines
+  - render-engines
 visualDna:
   aesthetic: Digital clay sculpt
   form_and_line: Matcap shader
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lookdev-and-render-pipelines
-  categoryName: 4. Lookdev And Render Pipelines
+  categoryId: render-engines
+  categoryName: 1. Render Engines
   tags:
     - 3d-and-cgi-rendering
-    - lookdev-and-render-pipelines
+    - render-engines
   supportedTasks:
     - image_generate
     - image_edit

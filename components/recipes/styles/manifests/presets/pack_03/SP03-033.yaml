@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-033
 packId: pack_03
 name: Neon City (Cyberpunk)
-category: 4. Lookdev And Render Pipelines
+category: 7. Environment And Worldbuilding
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lookdev-and-render-pipelines
+  - environment-and-worldbuilding
 visualDna:
   aesthetic: Cyberpunk neon-rain lookdev
   form_and_line: Reflections
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lookdev-and-render-pipelines
-  categoryName: 4. Lookdev And Render Pipelines
+  categoryId: environment-and-worldbuilding
+  categoryName: 7. Environment And Worldbuilding
   tags:
     - 3d-and-cgi-rendering
-    - lookdev-and-render-pipelines
+    - environment-and-worldbuilding
   supportedTasks:
     - image_generate
     - image_edit

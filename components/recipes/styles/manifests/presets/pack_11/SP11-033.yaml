@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-033
 packId: pack_11
 name: Blueprint
-category: 5. Oddities And Novelty
+category: 2. Artistic Mediums
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - oddities-and-novelty
+  - artistic-mediums
 visualDna:
   aesthetic: Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination
   form_and_line: White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges
@@ -37,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: oddities-and-novelty
-  categoryName: 5. Oddities And Novelty
+  categoryId: artistic-mediums
+  categoryName: 2. Artistic Mediums
   tags:
     - miscellaneous-and-fun
-    - oddities-and-novelty
+    - artistic-mediums
   supportedTasks:
     - image_generate
     - image_edit

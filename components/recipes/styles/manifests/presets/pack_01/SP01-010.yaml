@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-010
 packId: pack_01
 name: Low Key Portrait
-category: 2. Lighting Techniques
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting-techniques
+  - portrait-and-studio
 visualDna:
   aesthetic: Low key moody portraiture, dark and dramatic photography
   subject_treatment: Primary details partially hidden in deep shadow, strong emphasis on form and shape
@@ -35,11 +35,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting-techniques
-  categoryName: 2. Lighting Techniques
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - lighting-techniques
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

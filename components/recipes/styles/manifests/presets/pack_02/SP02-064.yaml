@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-064
 packId: pack_02
 name: Neon Noir
-category: 1. Cinematic Lighting And Lenses
+category: 5. Lighting And Atmosphere
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - cinematic-lighting-and-lenses
+  - lighting-and-atmosphere
 visualDna:
   aesthetic: >-
     Midnight neon-noir lighting style prioritizing reflective chroma bleed, sparse luminance islands, and cinematic cool
@@ -42,11 +42,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: cinematic-lighting-and-lenses
-  categoryName: 1. Cinematic Lighting And Lenses
+  categoryId: lighting-and-atmosphere
+  categoryName: 5. Lighting And Atmosphere
   tags:
     - cinematic-and-media
-    - cinematic-lighting-and-lenses
+    - lighting-and-atmosphere
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-057
 packId: pack_03
 name: NFT Collectible Avatar Render
-category: 2. Organic And Character Cgi
+category: 6. Organic Character And Bio CGI
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - organic-and-character-cgi
+  - organic-character-and-bio-cgi
 visualDna:
   aesthetic: Collectible avatar render language
   form_and_line: Clean
@@ -37,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: organic-and-character-cgi
-  categoryName: 2. Organic And Character Cgi
+  categoryId: organic-character-and-bio-cgi
+  categoryName: 6. Organic Character And Bio CGI
   tags:
     - 3d-and-cgi-rendering
-    - organic-and-character-cgi
+    - organic-character-and-bio-cgi
   supportedTasks:
     - image_generate
     - image_edit

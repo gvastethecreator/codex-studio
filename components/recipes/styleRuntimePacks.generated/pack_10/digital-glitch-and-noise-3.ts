@@ -23,25 +23,6 @@ export const GENERATED_STYLE_PRESETS = [
     },
   },
   {
-    id: 'SP10-027',
-    name: 'Chromatic Aberration',
-    category: '3. Digital Glitch & Noise',
-    negativePrompt: 'clean edges',
-    style: {
-      aesthetic: 'Lens error',
-      form_and_line: 'Red/Cyan separation',
-      color_palette: 'Fringing',
-      lighting_setup: 'Normal',
-      material_texture: 'Blurry edges',
-      render_quality: 'Disoriented, 3D glasses',
-      spatial_distortion: 'Color shift',
-      atmosphere: 'Dizzy, intense',
-      key_features: 'Edge fringe',
-      creative_brief:
-        'Apply chromatic-aberration optics to the input: red/cyan edge separation, lens-fringe vibration, slight focus mismatch, and prism-like contour drift should energize forms without turning the image into random blur.',
-    },
-  },
-  {
     id: 'SP10-022',
     name: 'Pixel Sorting',
     category: '3. Digital Glitch & Noise',
@@ -58,6 +39,44 @@ export const GENERATED_STYLE_PRESETS = [
       key_features: 'Vertical sort',
       creative_brief:
         'Apply pixel-sorting entropy to the input: luminance-drag streaks, combed-out bright regions, directional digital smears, and broken raster order should pull any subject into controlled glitch abstraction.',
+    },
+  },
+  {
+    id: 'SP10-023',
+    name: 'VHS Glitch',
+    category: '3. Digital Glitch & Noise',
+    negativePrompt: 'hd, 4k',
+    style: {
+      aesthetic: 'Bad tracking tape',
+      form_and_line: 'Warping at bottom',
+      color_palette: 'Chroma noise, bleeding',
+      lighting_setup: 'Flicker',
+      material_texture: 'Static, scanlines',
+      render_quality: 'Retro, lo-fi',
+      spatial_distortion: 'Tracking error',
+      atmosphere: 'Nostalgic, horror',
+      key_features: 'Tracking scars',
+      creative_brief:
+        'Apply VHS decay as signal damage over the input with bad tracking bands, chroma bleed, scanline vibration, bottom-edge warping, magnetic dropout, and lo-fi analog horror nostalgia. If faces or figures exist, let scanlines tear through them; otherwise corrupt shapes, surfaces, and edges without requiring a portrait or timestamp.',
+    },
+  },
+  {
+    id: 'SP10-024',
+    name: 'CRT Monitor',
+    category: '3. Digital Glitch & Noise',
+    negativePrompt: 'lcd, sharp pixels',
+    style: {
+      aesthetic: 'Close up screen',
+      form_and_line: 'RGB phosphor mask',
+      color_palette: 'Glowing phosphors',
+      lighting_setup: 'Screen glow',
+      material_texture: 'Shadow mask grid',
+      render_quality: 'Retro tech',
+      spatial_distortion: 'Curved screen',
+      atmosphere: 'Retro, tech',
+      key_features: 'Scanlines',
+      creative_brief:
+        'Apply CRT phosphor display logic to the input: RGB triad texture, scanline hum, curved-glass bloom, warm electronic glow, and slight convergence errors should make any subject feel emitted by an old monitor.',
     },
   },
   {
@@ -99,6 +118,25 @@ export const GENERATED_STYLE_PRESETS = [
     },
   },
   {
+    id: 'SP10-027',
+    name: 'Chromatic Aberration',
+    category: '3. Digital Glitch & Noise',
+    negativePrompt: 'clean edges',
+    style: {
+      aesthetic: 'Lens error',
+      form_and_line: 'Red/Cyan separation',
+      color_palette: 'Fringing',
+      lighting_setup: 'Normal',
+      material_texture: 'Blurry edges',
+      render_quality: 'Disoriented, 3D glasses',
+      spatial_distortion: 'Color shift',
+      atmosphere: 'Dizzy, intense',
+      key_features: 'Edge fringe',
+      creative_brief:
+        'Apply chromatic-aberration optics to the input: red/cyan edge separation, lens-fringe vibration, slight focus mismatch, and prism-like contour drift should energize forms without turning the image into random blur.',
+    },
+  },
+  {
     id: 'SP10-028',
     name: 'Scanography',
     category: '3. Digital Glitch & Noise',
@@ -115,44 +153,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features: 'Black background',
       creative_brief:
         'Apply scanography as a sensing method over the input with moving light-bar sweep, flattened depth, dust-on-glass texture, shallow black voids, and squashed motion distortion. If an object, plant, body, or artifact is present, press its forms into scanner glass; otherwise use scan light and compression as an eerie abstraction without requiring a specimen layout.',
-    },
-  },
-  {
-    id: 'SP10-023',
-    name: 'VHS Glitch',
-    category: '3. Digital Glitch & Noise',
-    negativePrompt: 'hd, 4k',
-    style: {
-      aesthetic: 'Bad tracking tape',
-      form_and_line: 'Warping at bottom',
-      color_palette: 'Chroma noise, bleeding',
-      lighting_setup: 'Flicker',
-      material_texture: 'Static, scanlines',
-      render_quality: 'Retro, lo-fi',
-      spatial_distortion: 'Tracking error',
-      atmosphere: 'Nostalgic, horror',
-      key_features: 'Tracking scars',
-      creative_brief:
-        'Apply VHS decay as signal damage over the input with bad tracking bands, chroma bleed, scanline vibration, bottom-edge warping, magnetic dropout, and lo-fi analog horror nostalgia. If faces or figures exist, let scanlines tear through them; otherwise corrupt shapes, surfaces, and edges without requiring a portrait or timestamp.',
-    },
-  },
-  {
-    id: 'SP10-024',
-    name: 'CRT Monitor',
-    category: '3. Digital Glitch & Noise',
-    negativePrompt: 'lcd, sharp pixels',
-    style: {
-      aesthetic: 'Close up screen',
-      form_and_line: 'RGB phosphor mask',
-      color_palette: 'Glowing phosphors',
-      lighting_setup: 'Screen glow',
-      material_texture: 'Shadow mask grid',
-      render_quality: 'Retro tech',
-      spatial_distortion: 'Curved screen',
-      atmosphere: 'Retro, tech',
-      key_features: 'Scanlines',
-      creative_brief:
-        'Apply CRT phosphor display logic to the input: RGB triad texture, scanline hum, curved-glass bloom, warm electronic glow, and slight convergence errors should make any subject feel emitted by an old monitor.',
     },
   },
   {

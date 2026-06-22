@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-073
 packId: pack_01
 name: Long Exposure (Water)
-category: 2. Lighting Techniques
+category: 7. Technical And Specialist Imaging
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting-techniques
+  - technical-and-specialist-imaging
 visualDna:
   aesthetic: Long-exposure motion smoothing
   form_and_line: Silky motion, sharp anchors
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting-techniques
-  categoryName: 2. Lighting Techniques
+  categoryId: technical-and-specialist-imaging
+  categoryName: 7. Technical And Specialist Imaging
   tags:
     - photography-and-realism
-    - lighting-techniques
+    - technical-and-specialist-imaging
   supportedTasks:
     - image_generate
     - image_edit

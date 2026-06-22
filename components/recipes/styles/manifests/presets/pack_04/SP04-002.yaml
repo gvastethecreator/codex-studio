@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-002
 packId: pack_04
 name: Silver Age Comic
-category: 1. Comics And Graphic Novel
+category: 1. Comic Book Styles
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comics-and-graphic-novel
+  - comic-book-styles
 visualDna:
   aesthetic: >-
     Silver-age cosmic comic dynamism with atom-era optimism, crackling energy fields, and mythic
@@ -43,11 +43,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comics-and-graphic-novel
-  categoryName: 1. Comics And Graphic Novel
+  categoryId: comic-book-styles
+  categoryName: 1. Comic Book Styles
   tags:
     - illustration-and-graphic-novel
-    - comics-and-graphic-novel
+    - comic-book-styles
   supportedTasks:
     - image_generate
     - image_edit

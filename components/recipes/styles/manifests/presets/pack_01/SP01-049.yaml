@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-049
 packId: pack_01
 name: Food Photography
-category: 6. Nature And Wildlife
+category: 5. Commercial And Product
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - nature-and-wildlife
+  - commercial-and-product
 visualDna:
   aesthetic: Appetizing food-styling light
   form_and_line: Soft focus background
@@ -33,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: nature-and-wildlife
-  categoryName: 6. Nature And Wildlife
+  categoryId: commercial-and-product
+  categoryName: 5. Commercial And Product
   tags:
     - photography-and-realism
-    - nature-and-wildlife
+    - commercial-and-product
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-092
 packId: pack_02
 name: Crumpled-Paper Scribble
-category: 1. Cinematic Lighting And Lenses
+category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - cinematic-lighting-and-lenses
+  - caricature-and-cartoon-styles
 visualDna:
   aesthetic: Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered
   form_and_line: Lines broken by paper creases, ink pooling in fold valleys, interrupted-contour across wrinkles, roughened-edge strokes
@@ -39,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: cinematic-lighting-and-lenses
-  categoryName: 1. Cinematic Lighting And Lenses
+  categoryId: caricature-and-cartoon-styles
+  categoryName: 6. Caricature And Cartoon Styles
   tags:
     - cinematic-and-media
-    - cinematic-lighting-and-lenses
+    - caricature-and-cartoon-styles
   supportedTasks:
     - image_generate
     - image_edit

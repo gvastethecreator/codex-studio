@@ -60,39 +60,45 @@ categories:
       - pack_10/SP10-043.yaml
       - pack_10/SP10-044.yaml
       - pack_10/SP10-045.yaml
-  - id: pattern-and-texture
-    name: 5. Pattern & Texture
+  - id: textile-and-ornamental-patterns
+    name: 5. Textile & Ornamental Patterns
     presetRefs:
       - pack_10/SP10-046.yaml
       - pack_10/SP10-047.yaml
-      - pack_10/SP10-048.yaml
       - pack_10/SP10-049.yaml
       - pack_10/SP10-050.yaml
       - pack_10/SP10-051.yaml
       - pack_10/SP10-052.yaml
       - pack_10/SP10-053.yaml
+      - pack_10/SP10-057.yaml
+      - pack_10/SP10-058.yaml
+      - pack_10/SP10-065.yaml
+      - pack_10/SP10-066.yaml
+      - pack_10/SP10-070.yaml
+      - pack_10/SP10-075.yaml
+  - id: material-surface-textures
+    name: 6. Material Surface Textures
+    presetRefs:
+      - pack_10/SP10-048.yaml
       - pack_10/SP10-054.yaml
       - pack_10/SP10-055.yaml
       - pack_10/SP10-056.yaml
-      - pack_10/SP10-057.yaml
-      - pack_10/SP10-058.yaml
       - pack_10/SP10-059.yaml
       - pack_10/SP10-060.yaml
       - pack_10/SP10-061.yaml
       - pack_10/SP10-062.yaml
       - pack_10/SP10-063.yaml
       - pack_10/SP10-064.yaml
-      - pack_10/SP10-065.yaml
-      - pack_10/SP10-066.yaml
+      - pack_10/SP10-071.yaml
+  - id: diagram-print-and-light-systems
+    name: 7. Diagram, Print & Light Systems
+    presetRefs:
       - pack_10/SP10-067.yaml
       - pack_10/SP10-068.yaml
       - pack_10/SP10-069.yaml
-      - pack_10/SP10-070.yaml
-      - pack_10/SP10-071.yaml
       - pack_10/SP10-072.yaml
       - pack_10/SP10-073.yaml
       - pack_10/SP10-074.yaml
-      - pack_10/SP10-075.yaml
       - pack_10/SP10-076.yaml
       - pack_10/SP10-077.yaml
       - pack_10/SP10-078.yaml
@@ -100,82 +106,82 @@ categories:
       - pack_10/SP10-080.yaml
 presetRefs:
   - pack_10/SP10-001.yaml
-  - pack_10/SP10-005.yaml
   - pack_10/SP10-002.yaml
   - pack_10/SP10-003.yaml
   - pack_10/SP10-004.yaml
+  - pack_10/SP10-005.yaml
+  - pack_10/SP10-006.yaml
+  - pack_10/SP10-007.yaml
   - pack_10/SP10-008.yaml
   - pack_10/SP10-009.yaml
   - pack_10/SP10-010.yaml
-  - pack_10/SP10-007.yaml
-  - pack_10/SP10-006.yaml
+  - pack_10/SP10-011.yaml
   - pack_10/SP10-012.yaml
+  - pack_10/SP10-013.yaml
+  - pack_10/SP10-014.yaml
+  - pack_10/SP10-015.yaml
   - pack_10/SP10-016.yaml
   - pack_10/SP10-017.yaml
   - pack_10/SP10-018.yaml
   - pack_10/SP10-019.yaml
   - pack_10/SP10-020.yaml
-  - pack_10/SP10-011.yaml
-  - pack_10/SP10-014.yaml
-  - pack_10/SP10-015.yaml
-  - pack_10/SP10-013.yaml
-  - pack_10/SP10-070.yaml
+  - pack_10/SP10-021.yaml
+  - pack_10/SP10-022.yaml
+  - pack_10/SP10-023.yaml
+  - pack_10/SP10-024.yaml
+  - pack_10/SP10-025.yaml
+  - pack_10/SP10-026.yaml
+  - pack_10/SP10-027.yaml
+  - pack_10/SP10-028.yaml
+  - pack_10/SP10-029.yaml
+  - pack_10/SP10-030.yaml
+  - pack_10/SP10-031.yaml
+  - pack_10/SP10-032.yaml
+  - pack_10/SP10-033.yaml
+  - pack_10/SP10-034.yaml
+  - pack_10/SP10-035.yaml
+  - pack_10/SP10-036.yaml
+  - pack_10/SP10-037.yaml
+  - pack_10/SP10-038.yaml
+  - pack_10/SP10-039.yaml
+  - pack_10/SP10-040.yaml
+  - pack_10/SP10-041.yaml
+  - pack_10/SP10-042.yaml
+  - pack_10/SP10-043.yaml
+  - pack_10/SP10-044.yaml
+  - pack_10/SP10-045.yaml
+  - pack_10/SP10-046.yaml
   - pack_10/SP10-047.yaml
   - pack_10/SP10-049.yaml
-  - pack_10/SP10-048.yaml
-  - pack_10/SP10-056.yaml
   - pack_10/SP10-050.yaml
-  - pack_10/SP10-059.yaml
-  - pack_10/SP10-080.yaml
-  - pack_10/SP10-073.yaml
-  - pack_10/SP10-046.yaml
+  - pack_10/SP10-051.yaml
   - pack_10/SP10-052.yaml
   - pack_10/SP10-053.yaml
-  - pack_10/SP10-054.yaml
-  - pack_10/SP10-055.yaml
   - pack_10/SP10-057.yaml
   - pack_10/SP10-058.yaml
+  - pack_10/SP10-065.yaml
+  - pack_10/SP10-066.yaml
+  - pack_10/SP10-070.yaml
+  - pack_10/SP10-075.yaml
+  - pack_10/SP10-048.yaml
+  - pack_10/SP10-054.yaml
+  - pack_10/SP10-055.yaml
+  - pack_10/SP10-056.yaml
+  - pack_10/SP10-059.yaml
   - pack_10/SP10-060.yaml
+  - pack_10/SP10-061.yaml
   - pack_10/SP10-062.yaml
   - pack_10/SP10-063.yaml
   - pack_10/SP10-064.yaml
-  - pack_10/SP10-065.yaml
-  - pack_10/SP10-066.yaml
-  - pack_10/SP10-067.yaml
-  - pack_10/SP10-069.yaml
   - pack_10/SP10-071.yaml
+  - pack_10/SP10-067.yaml
+  - pack_10/SP10-068.yaml
+  - pack_10/SP10-069.yaml
   - pack_10/SP10-072.yaml
+  - pack_10/SP10-073.yaml
   - pack_10/SP10-074.yaml
-  - pack_10/SP10-075.yaml
+  - pack_10/SP10-076.yaml
   - pack_10/SP10-077.yaml
   - pack_10/SP10-078.yaml
   - pack_10/SP10-079.yaml
-  - pack_10/SP10-051.yaml
-  - pack_10/SP10-061.yaml
-  - pack_10/SP10-076.yaml
-  - pack_10/SP10-068.yaml
-  - pack_10/SP10-031.yaml
-  - pack_10/SP10-034.yaml
-  - pack_10/SP10-035.yaml
-  - pack_10/SP10-042.yaml
-  - pack_10/SP10-038.yaml
-  - pack_10/SP10-039.yaml
-  - pack_10/SP10-032.yaml
-  - pack_10/SP10-033.yaml
-  - pack_10/SP10-036.yaml
-  - pack_10/SP10-037.yaml
-  - pack_10/SP10-044.yaml
-  - pack_10/SP10-045.yaml
-  - pack_10/SP10-043.yaml
-  - pack_10/SP10-040.yaml
-  - pack_10/SP10-041.yaml
-  - pack_10/SP10-021.yaml
-  - pack_10/SP10-027.yaml
-  - pack_10/SP10-022.yaml
-  - pack_10/SP10-025.yaml
-  - pack_10/SP10-026.yaml
-  - pack_10/SP10-028.yaml
-  - pack_10/SP10-023.yaml
-  - pack_10/SP10-024.yaml
-  - pack_10/SP10-029.yaml
-  - pack_10/SP10-030.yaml
+  - pack_10/SP10-080.yaml

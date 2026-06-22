@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-040
 packId: pack_04
 name: Infographic
-category: 2. Editorial Illustration
+category: 3. Editorial And Poster
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-illustration
+  - editorial-and-poster
 visualDna:
   aesthetic: Editorial infographic/data-visualization illustration system
   form_and_line: Thin icon strokes, modular chart primitives, directional flow connectors
@@ -35,11 +35,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-illustration
-  categoryName: 2. Editorial Illustration
+  categoryId: editorial-and-poster
+  categoryName: 3. Editorial And Poster
   tags:
     - illustration-and-graphic-novel
-    - editorial-illustration
+    - editorial-and-poster
   supportedTasks:
     - image_generate
     - image_edit

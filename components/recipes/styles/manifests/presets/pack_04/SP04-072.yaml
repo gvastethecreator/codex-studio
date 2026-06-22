@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-072
 packId: pack_04
 name: Ballpoint Pen
-category: 3. Childrens And Educational
+category: 5. Ink And Print
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - childrens-and-educational
+  - ink-and-print
 visualDna:
   aesthetic: Notebook-ink illustration with obsessive micro-hatching
   form_and_line: Fine pressure-variable pen lines, spiral and contour doodle logic
@@ -35,11 +35,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: childrens-and-educational
-  categoryName: 3. Childrens And Educational
+  categoryId: ink-and-print
+  categoryName: 5. Ink And Print
   tags:
     - illustration-and-graphic-novel
-    - childrens-and-educational
+    - ink-and-print
   supportedTasks:
     - image_generate
     - image_edit

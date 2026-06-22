@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-052
 packId: pack_09
 name: Electricity/Lightning
-category: 5. Fx And Procedural Materiality
+category: 5. Elemental And FX
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - fx-and-procedural-materiality
+  - elemental-and-fx
 visualDna:
   aesthetic: Tesla coil arc
   form_and_line: Jagged bolts
@@ -39,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: fx-and-procedural-materiality
-  categoryName: 5. Fx And Procedural Materiality
+  categoryId: elemental-and-fx
+  categoryName: 5. Elemental And FX
   tags:
     - texture-and-materiality
-    - fx-and-procedural-materiality
+    - elemental-and-fx
   supportedTasks:
     - image_generate
     - image_edit

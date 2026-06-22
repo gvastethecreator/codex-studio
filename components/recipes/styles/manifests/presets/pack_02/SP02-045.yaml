@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-045
 packId: pack_02
 name: Pixel Art Animation
-category: 1. Cinematic Lighting And Lenses
+category: 3. Animation Styles
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - cinematic-lighting-and-lenses
+  - animation-styles
 visualDna:
   aesthetic: 16-bit pixel animation
   form_and_line: Pixel outline
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: cinematic-lighting-and-lenses
-  categoryName: 1. Cinematic Lighting And Lenses
+  categoryId: animation-styles
+  categoryName: 3. Animation Styles
   tags:
     - cinematic-and-media
-    - cinematic-lighting-and-lenses
+    - animation-styles
   supportedTasks:
     - image_generate
     - image_edit

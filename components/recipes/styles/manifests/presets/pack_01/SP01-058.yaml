@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-058
 packId: pack_01
 name: Minimalist Photo
-category: 1. Portrait And Studio
+category: 7. Technical And Specialist Imaging
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - portrait-and-studio
+  - technical-and-specialist-imaging
 visualDna:
   aesthetic: Simple composition
   form_and_line: Negative space
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: portrait-and-studio
-  categoryName: 1. Portrait And Studio
+  categoryId: technical-and-specialist-imaging
+  categoryName: 7. Technical And Specialist Imaging
   tags:
     - photography-and-realism
-    - portrait-and-studio
+    - technical-and-specialist-imaging
   supportedTasks:
     - image_generate
     - image_edit

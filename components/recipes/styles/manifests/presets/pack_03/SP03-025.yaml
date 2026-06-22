@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-025
 packId: pack_03
 name: Kitbash
-category: 1. Hard Surface And Industrial Cgi
+category: 5. Hard Surface And Product CGI
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - hard-surface-and-industrial-cgi
+  - hard-surface-and-product-cgi
 visualDna:
   aesthetic: Complex mechanical detail
   form_and_line: Greebles
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: hard-surface-and-industrial-cgi
-  categoryName: 1. Hard Surface And Industrial Cgi
+  categoryId: hard-surface-and-product-cgi
+  categoryName: 5. Hard Surface And Product CGI
   tags:
     - 3d-and-cgi-rendering
-    - hard-surface-and-industrial-cgi
+    - hard-surface-and-product-cgi
   supportedTasks:
     - image_generate
     - image_edit

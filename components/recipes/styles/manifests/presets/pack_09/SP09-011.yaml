@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-011
 packId: pack_09
 name: Wolf Fur
-category: 5. Fx And Procedural Materiality
+category: 1. Natural Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - fx-and-procedural-materiality
+  - natural-materials
 visualDna:
   aesthetic: Thick animal coat
   form_and_line: Hair strands
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: fx-and-procedural-materiality
-  categoryName: 5. Fx And Procedural Materiality
+  categoryId: natural-materials
+  categoryName: 1. Natural Materials
   tags:
     - texture-and-materiality
-    - fx-and-procedural-materiality
+    - natural-materials
   supportedTasks:
     - image_generate
     - image_edit

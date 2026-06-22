@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-020
 packId: pack_04
 name: Kurzgesagt Vector Flat (Infographic)
-category: 3. Childrens And Educational
+category: 2. Children's Illustration
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - childrens-and-educational
+  - childrens-illustration
 visualDna:
   aesthetic: Flat educational infographic system (Kurzgesagt-inspired visual pedagogy)
   form_and_line: Outline-minimal geometric primitives with rounded construction logic
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: childrens-and-educational
-  categoryName: 3. Childrens And Educational
+  categoryId: childrens-illustration
+  categoryName: 2. Children's Illustration
   tags:
     - illustration-and-graphic-novel
-    - childrens-and-educational
+    - childrens-illustration
   supportedTasks:
     - image_generate
     - image_edit

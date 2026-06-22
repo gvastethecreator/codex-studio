@@ -292,6 +292,17 @@ const PACK06_NON_ANIME_MEDIUM_LOCK =
 const PACK10_PATTERN_TEXTURE_DENOISE_SUFFIX =
   'SP10 PATTERN/TEXTURE OVERRIDE: preserve the named surface, pattern, textile, or material as the entire card signal. Do not convert it into anime, manga, character art, fashion editorial, room staging, product-render staging, photoreal macro realism, or concept art. Use broad readable material behavior, large clean shapes, controlled denoised texture, smooth tonal transitions, and low-to-moderate detail only. Avoid pose language, faces, bodies, mannequins, walls, lamps, furniture, market aisles, library aisles, fantasy hallways, crunchy micro-contrast, and ultra-fine noise.';
 
+const PACK10_PATTERN_TEXTURE_KEYS = new Set([
+  'pack_10__pattern_and_texture',
+  'pack_10__textile_and_ornamental_patterns',
+  'pack_10__material_surface_textures',
+  'pack_10__diagram_print_and_light_systems',
+]);
+
+function isPack10PatternTextureKey(key: string) {
+  return PACK10_PATTERN_TEXTURE_KEYS.has(key);
+}
+
 const CATEGORY_SCENE_ANCHORS: Record<string, string[]> = {
   pack_01__lighting: [
     'Place the subject on a quiet rooftop walkway after recent rain, with distant skyline bokeh, puddle reflections, a waist-high concrete ledge, and one practical lamp in frame.',
@@ -2675,7 +2686,7 @@ function presetMotifForPrompt(
       preset.name,
     )}": particle size, density, flow direction, edge softness, translucency, fracture rhythm, surface response, and palette. Do not add a symbolic emblem, glyph, badge, logo-like mark, fantasy relic, mask, weapon, or decorative hero object to create uniqueness.`;
   }
-  if (key === 'pack_10__pattern_and_texture') {
+  if (isPack10PatternTextureKey(key)) {
     return `Differentiate this card through the exact pattern/material behavior of "${sanitizeStylePromptName(
       preset.name,
     )}": repeat scale, surface crop, fold rhythm, edge relief, material sheen, color separation, and tactile spacing. Do not add costumes, masks, props, objects, faces, bodies, rooms, logos, readable codes, or decorative hero items to create uniqueness.`;
@@ -5749,7 +5760,11 @@ function categoryBasePrompt(
                                                                                                 )
                                                                                               ? 'A grounded non-portrait cinematic lighting study using architectural planes, glass, fabric, metal, water, haze, or shadow geometry as the subject, with no human model, chair, curtain, cyclorama, camera equipment, or studio-session setup.'
                                                                                               : CATEGORY_BASE_PROMPTS[
-                                                                                                  key
+                                                                                                  isPack10PatternTextureKey(
+                                                                                                    key,
+                                                                                                  )
+                                                                                                    ? 'pack_10__pattern_and_texture'
+                                                                                                    : key
                                                                                                 ] ||
                                                                                                 'A vertical scene with one clear original subject, foreground detail, midground context, background depth, varied materials, and no text.');
   const subjectVariety = pack06SubjectVarietyPrompt(key);
@@ -5979,7 +5994,7 @@ function buildStylePrompt(
   const pack06Card = pack.id === 'pack_06';
   const pack08Card = pack.id === 'pack_08';
   const pack09Card = pack.id === 'pack_09';
-  const pack10PatternTextureCard = promptCategoryKey === 'pack_10__pattern_and_texture';
+  const pack10PatternTextureCard = isPack10PatternTextureKey(promptCategoryKey);
   const pack15PunkCard = pack.id === 'pack_15';
   const pack17MedievalCard = pack.id === 'pack_17';
   const allowsAnimeGrammar = presetAllowsAnimeGrammar(pack, category, preset);

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-064
 packId: pack_09
 name: Mud (Cracked)
-category: 4. Surface Wear And Aging
+category: 3. Weathering And Decay
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - surface-wear-and-aging
+  - weathering-and-decay
 visualDna:
   aesthetic: Cracked dry mud
   form_and_line: Puzzle cracks
@@ -31,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: surface-wear-and-aging
-  categoryName: 4. Surface Wear And Aging
+  categoryId: weathering-and-decay
+  categoryName: 3. Weathering And Decay
   tags:
     - texture-and-materiality
-    - surface-wear-and-aging
+    - weathering-and-decay
   supportedTasks:
     - image_generate
     - image_edit

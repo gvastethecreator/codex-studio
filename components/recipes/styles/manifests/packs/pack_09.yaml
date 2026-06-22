@@ -3,179 +3,179 @@ id: pack_09
 name: Texture & Materiality
 description: A deep dive into realistic materials, surfaces, and elemental effects, perfect for 3D artists and texture generation.
 categories:
-  - id: metals-and-minerals
-    name: 1. Metals And Minerals
+  - id: natural-materials
+    name: 1. Natural Materials
     presetRefs:
+      - pack_09/SP09-001.yaml
+      - pack_09/SP09-002.yaml
       - pack_09/SP09-003.yaml
       - pack_09/SP09-004.yaml
+      - pack_09/SP09-005.yaml
+      - pack_09/SP09-006.yaml
       - pack_09/SP09-007.yaml
       - pack_09/SP09-008.yaml
       - pack_09/SP09-009.yaml
       - pack_09/SP09-010.yaml
+      - pack_09/SP09-011.yaml
+      - pack_09/SP09-012.yaml
+      - pack_09/SP09-013.yaml
       - pack_09/SP09-014.yaml
       - pack_09/SP09-015.yaml
-      - pack_09/SP09-019.yaml
-      - pack_09/SP09-020.yaml
-      - pack_09/SP09-017.yaml
-      - pack_09/SP09-018.yaml
+      - pack_09/SP09-016.yaml
       - pack_09/SP09-044.yaml
-      - pack_09/SP09-041.yaml
-      - pack_09/SP09-046.yaml
-      - pack_09/SP09-049.yaml
-      - pack_09/SP09-034.yaml
-      - pack_09/SP09-040.yaml
-      - pack_09/SP09-037.yaml
-      - pack_09/SP09-039.yaml
-      - pack_09/SP09-054.yaml
-      - pack_09/SP09-057.yaml
       - pack_09/SP09-055.yaml
-      - pack_09/SP09-058.yaml
-      - pack_09/SP09-059.yaml
-      - pack_09/SP09-060.yaml
-      - pack_09/SP09-061.yaml
-      - pack_09/SP09-062.yaml
       - pack_09/SP09-063.yaml
       - pack_09/SP09-066.yaml
-      - pack_09/SP09-072.yaml
-      - pack_09/SP09-076.yaml
-      - pack_09/SP09-077.yaml
-      - pack_09/SP09-080.yaml
-  - id: organic-and-bio-materials
-    name: 2. Organic And Bio Materials
-    presetRefs:
-      - pack_09/SP09-006.yaml
-      - pack_09/SP09-001.yaml
-      - pack_09/SP09-002.yaml
-      - pack_09/SP09-012.yaml
-      - pack_09/SP09-025.yaml
-      - pack_09/SP09-031.yaml
-      - pack_09/SP09-032.yaml
-      - pack_09/SP09-024.yaml
-      - pack_09/SP09-033.yaml
-      - pack_09/SP09-035.yaml
-      - pack_09/SP09-051.yaml
+      - pack_09/SP09-068.yaml
       - pack_09/SP09-079.yaml
-      - pack_09/SP09-071.yaml
-  - id: fabric-and-soft-materials
-    name: 3. Fabric And Soft Materials
+      - pack_09/SP09-080.yaml
+  - id: man-made-materials
+    name: 2. Man-Made Materials
     presetRefs:
-      - pack_09/SP09-029.yaml
-      - pack_09/SP09-045.yaml
-      - pack_09/SP09-069.yaml
-  - id: surface-wear-and-aging
-    name: 4. Surface Wear And Aging
-    presetRefs:
-      - pack_09/SP09-016.yaml
-      - pack_09/SP09-030.yaml
-      - pack_09/SP09-064.yaml
-      - pack_09/SP09-070.yaml
-  - id: fx-and-procedural-materiality
-    name: 5. Fx And Procedural Materiality
-    presetRefs:
-      - pack_09/SP09-005.yaml
-      - pack_09/SP09-011.yaml
-      - pack_09/SP09-013.yaml
-      - pack_09/SP09-028.yaml
+      - pack_09/SP09-017.yaml
+      - pack_09/SP09-019.yaml
+      - pack_09/SP09-020.yaml
       - pack_09/SP09-021.yaml
       - pack_09/SP09-022.yaml
       - pack_09/SP09-023.yaml
+      - pack_09/SP09-024.yaml
       - pack_09/SP09-026.yaml
       - pack_09/SP09-027.yaml
+      - pack_09/SP09-028.yaml
+      - pack_09/SP09-031.yaml
+      - pack_09/SP09-032.yaml
+      - pack_09/SP09-042.yaml
+      - pack_09/SP09-046.yaml
+      - pack_09/SP09-048.yaml
+      - pack_09/SP09-049.yaml
+      - pack_09/SP09-060.yaml
+      - pack_09/SP09-070.yaml
+      - pack_09/SP09-071.yaml
+      - pack_09/SP09-072.yaml
+      - pack_09/SP09-073.yaml
+      - pack_09/SP09-076.yaml
+      - pack_09/SP09-077.yaml
+      - pack_09/SP09-078.yaml
+  - id: weathering-and-decay
+    name: 3. Weathering And Decay
+    presetRefs:
+      - pack_09/SP09-018.yaml
+      - pack_09/SP09-025.yaml
+      - pack_09/SP09-030.yaml
+      - pack_09/SP09-033.yaml
+      - pack_09/SP09-034.yaml
+      - pack_09/SP09-035.yaml
+      - pack_09/SP09-036.yaml
+      - pack_09/SP09-037.yaml
+      - pack_09/SP09-038.yaml
+      - pack_09/SP09-040.yaml
+      - pack_09/SP09-041.yaml
+      - pack_09/SP09-064.yaml
+      - pack_09/SP09-065.yaml
+  - id: tactile-surfaces
+    name: 4. Tactile Surfaces
+    presetRefs:
+      - pack_09/SP09-029.yaml
+      - pack_09/SP09-039.yaml
+      - pack_09/SP09-045.yaml
       - pack_09/SP09-047.yaml
       - pack_09/SP09-050.yaml
-      - pack_09/SP09-043.yaml
-      - pack_09/SP09-048.yaml
-      - pack_09/SP09-042.yaml
-      - pack_09/SP09-038.yaml
-      - pack_09/SP09-036.yaml
-      - pack_09/SP09-078.yaml
+      - pack_09/SP09-069.yaml
+      - pack_09/SP09-074.yaml
       - pack_09/SP09-075.yaml
+  - id: elemental-and-fx
+    name: 5. Elemental And FX
+    presetRefs:
+      - pack_09/SP09-043.yaml
+      - pack_09/SP09-051.yaml
       - pack_09/SP09-052.yaml
       - pack_09/SP09-053.yaml
+      - pack_09/SP09-054.yaml
       - pack_09/SP09-056.yaml
-      - pack_09/SP09-065.yaml
+      - pack_09/SP09-057.yaml
+      - pack_09/SP09-058.yaml
+      - pack_09/SP09-059.yaml
+      - pack_09/SP09-061.yaml
+      - pack_09/SP09-062.yaml
       - pack_09/SP09-067.yaml
-      - pack_09/SP09-068.yaml
-      - pack_09/SP09-073.yaml
-      - pack_09/SP09-074.yaml
 presetRefs:
+  - pack_09/SP09-001.yaml
+  - pack_09/SP09-002.yaml
   - pack_09/SP09-003.yaml
   - pack_09/SP09-004.yaml
+  - pack_09/SP09-005.yaml
+  - pack_09/SP09-006.yaml
   - pack_09/SP09-007.yaml
   - pack_09/SP09-008.yaml
   - pack_09/SP09-009.yaml
   - pack_09/SP09-010.yaml
+  - pack_09/SP09-011.yaml
+  - pack_09/SP09-012.yaml
+  - pack_09/SP09-013.yaml
   - pack_09/SP09-014.yaml
   - pack_09/SP09-015.yaml
-  - pack_09/SP09-019.yaml
-  - pack_09/SP09-020.yaml
-  - pack_09/SP09-017.yaml
-  - pack_09/SP09-018.yaml
+  - pack_09/SP09-016.yaml
   - pack_09/SP09-044.yaml
-  - pack_09/SP09-041.yaml
-  - pack_09/SP09-046.yaml
-  - pack_09/SP09-049.yaml
-  - pack_09/SP09-034.yaml
-  - pack_09/SP09-040.yaml
-  - pack_09/SP09-037.yaml
-  - pack_09/SP09-039.yaml
-  - pack_09/SP09-054.yaml
-  - pack_09/SP09-057.yaml
   - pack_09/SP09-055.yaml
-  - pack_09/SP09-058.yaml
-  - pack_09/SP09-059.yaml
-  - pack_09/SP09-060.yaml
-  - pack_09/SP09-061.yaml
-  - pack_09/SP09-062.yaml
   - pack_09/SP09-063.yaml
   - pack_09/SP09-066.yaml
-  - pack_09/SP09-072.yaml
-  - pack_09/SP09-076.yaml
-  - pack_09/SP09-077.yaml
-  - pack_09/SP09-080.yaml
-  - pack_09/SP09-006.yaml
-  - pack_09/SP09-001.yaml
-  - pack_09/SP09-002.yaml
-  - pack_09/SP09-012.yaml
-  - pack_09/SP09-025.yaml
-  - pack_09/SP09-031.yaml
-  - pack_09/SP09-032.yaml
-  - pack_09/SP09-024.yaml
-  - pack_09/SP09-033.yaml
-  - pack_09/SP09-035.yaml
-  - pack_09/SP09-051.yaml
+  - pack_09/SP09-068.yaml
   - pack_09/SP09-079.yaml
-  - pack_09/SP09-071.yaml
-  - pack_09/SP09-029.yaml
-  - pack_09/SP09-045.yaml
-  - pack_09/SP09-069.yaml
-  - pack_09/SP09-016.yaml
-  - pack_09/SP09-030.yaml
-  - pack_09/SP09-064.yaml
-  - pack_09/SP09-070.yaml
-  - pack_09/SP09-005.yaml
-  - pack_09/SP09-011.yaml
-  - pack_09/SP09-013.yaml
-  - pack_09/SP09-028.yaml
+  - pack_09/SP09-080.yaml
+  - pack_09/SP09-017.yaml
+  - pack_09/SP09-019.yaml
+  - pack_09/SP09-020.yaml
   - pack_09/SP09-021.yaml
   - pack_09/SP09-022.yaml
   - pack_09/SP09-023.yaml
+  - pack_09/SP09-024.yaml
   - pack_09/SP09-026.yaml
   - pack_09/SP09-027.yaml
+  - pack_09/SP09-028.yaml
+  - pack_09/SP09-031.yaml
+  - pack_09/SP09-032.yaml
+  - pack_09/SP09-042.yaml
+  - pack_09/SP09-046.yaml
+  - pack_09/SP09-048.yaml
+  - pack_09/SP09-049.yaml
+  - pack_09/SP09-060.yaml
+  - pack_09/SP09-070.yaml
+  - pack_09/SP09-071.yaml
+  - pack_09/SP09-072.yaml
+  - pack_09/SP09-073.yaml
+  - pack_09/SP09-076.yaml
+  - pack_09/SP09-077.yaml
+  - pack_09/SP09-078.yaml
+  - pack_09/SP09-018.yaml
+  - pack_09/SP09-025.yaml
+  - pack_09/SP09-030.yaml
+  - pack_09/SP09-033.yaml
+  - pack_09/SP09-034.yaml
+  - pack_09/SP09-035.yaml
+  - pack_09/SP09-036.yaml
+  - pack_09/SP09-037.yaml
+  - pack_09/SP09-038.yaml
+  - pack_09/SP09-040.yaml
+  - pack_09/SP09-041.yaml
+  - pack_09/SP09-064.yaml
+  - pack_09/SP09-065.yaml
+  - pack_09/SP09-029.yaml
+  - pack_09/SP09-039.yaml
+  - pack_09/SP09-045.yaml
   - pack_09/SP09-047.yaml
   - pack_09/SP09-050.yaml
-  - pack_09/SP09-043.yaml
-  - pack_09/SP09-048.yaml
-  - pack_09/SP09-042.yaml
-  - pack_09/SP09-038.yaml
-  - pack_09/SP09-036.yaml
-  - pack_09/SP09-078.yaml
+  - pack_09/SP09-069.yaml
+  - pack_09/SP09-074.yaml
   - pack_09/SP09-075.yaml
+  - pack_09/SP09-043.yaml
+  - pack_09/SP09-051.yaml
   - pack_09/SP09-052.yaml
   - pack_09/SP09-053.yaml
+  - pack_09/SP09-054.yaml
   - pack_09/SP09-056.yaml
-  - pack_09/SP09-065.yaml
+  - pack_09/SP09-057.yaml
+  - pack_09/SP09-058.yaml
+  - pack_09/SP09-059.yaml
+  - pack_09/SP09-061.yaml
+  - pack_09/SP09-062.yaml
   - pack_09/SP09-067.yaml
-  - pack_09/SP09-068.yaml
-  - pack_09/SP09-073.yaml
-  - pack_09/SP09-074.yaml

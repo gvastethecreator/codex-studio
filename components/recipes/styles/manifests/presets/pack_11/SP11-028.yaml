@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-028
 packId: pack_11
 name: Gas-Tube Halo Typography
-category: 4. Retro Pop And Kitsch
+category: 2. Artistic Mediums
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - retro-pop-and-kitsch
+  - artistic-mediums
 visualDna:
   aesthetic: Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and chromatic halo bleed
   form_and_line: Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes, luminous edge repetition
@@ -33,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: retro-pop-and-kitsch
-  categoryName: 4. Retro Pop And Kitsch
+  categoryId: artistic-mediums
+  categoryName: 2. Artistic Mediums
   tags:
     - miscellaneous-and-fun
-    - retro-pop-and-kitsch
+    - artistic-mediums
   supportedTasks:
     - image_generate
     - image_edit

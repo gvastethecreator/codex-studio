@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-051
 packId: pack_11
 name: Bakery Window
-category: 5. Oddities And Novelty
+category: 4. Food And Drink
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - oddities-and-novelty
+  - food-and-drink
 visualDna:
   aesthetic: Artisan bakehouse texture, crust-and-crumb warmth, pastry laminate detail, yeast-rise glow
   form_and_line: Crust cracks, ear-score lines, boule-dome contour, baguette-slash, croissant-laminate layers
@@ -35,11 +35,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: oddities-and-novelty
-  categoryName: 5. Oddities And Novelty
+  categoryId: food-and-drink
+  categoryName: 4. Food And Drink
   tags:
     - miscellaneous-and-fun
-    - oddities-and-novelty
+    - food-and-drink
   supportedTasks:
     - image_generate
     - image_edit

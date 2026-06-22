@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-061
 packId: pack_04
 name: Linocut Print
-category: 4. Printmaking And Ink
+category: 5. Ink And Print
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - printmaking-and-ink
+  - ink-and-print
 visualDna:
   aesthetic: >-
     Linocut relief-print style with carved-negatives contrast, artisan process evidence, and bold
@@ -39,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: printmaking-and-ink
-  categoryName: 4. Printmaking And Ink
+  categoryId: ink-and-print
+  categoryName: 5. Ink And Print
   tags:
     - illustration-and-graphic-novel
-    - printmaking-and-ink
+    - ink-and-print
   supportedTasks:
     - image_generate
     - image_edit

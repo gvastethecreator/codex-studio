@@ -3,21 +3,11 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () => import('./pack_09/metals-and-minerals-1').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_09/organic-and-bio-materials-2').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () =>
-    import('./pack_09/fabric-and-soft-materials-3').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () =>
-    import('./pack_09/surface-wear-and-aging-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_09/fx-and-procedural-materiality-5').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
+  () => import('./pack_09/natural-materials-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_09/man-made-materials-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_09/weathering-and-decay-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_09/tactile-surfaces-4').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_09/elemental-and-fx-5').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

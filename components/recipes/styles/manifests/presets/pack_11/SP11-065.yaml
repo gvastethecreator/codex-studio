@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-065
 packId: pack_11
 name: Soap Bubble
-category: 1. Toys And Miniatures
+category: 5. Micro Macro
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-miniatures
+  - micro-macro
 visualDna:
   aesthetic: Oil slick surface, soap-film, interference-color, floating-sphere, ephemeral-iridescence
   form_and_line: Swirling colors, interference-band contours, film-flow layers, gravity-flow, convective-whorl
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-miniatures
-  categoryName: 1. Toys And Miniatures
+  categoryId: micro-macro
+  categoryName: 5. Micro Macro
   tags:
     - miscellaneous-and-fun
-    - toys-and-miniatures
+    - micro-macro
   supportedTasks:
     - image_generate
     - image_edit

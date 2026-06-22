@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-079
 packId: pack_03
 name: Bronze Statue
-category: 4. Lookdev And Render Pipelines
+category: 2. Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lookdev-and-render-pipelines
+  - materials
 visualDna:
   aesthetic: Cast bronze sculptural material
   form_and_line: Sculpted details
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lookdev-and-render-pipelines
-  categoryName: 4. Lookdev And Render Pipelines
+  categoryId: materials
+  categoryName: 2. Materials
   tags:
     - 3d-and-cgi-rendering
-    - lookdev-and-render-pipelines
+    - materials
   supportedTasks:
     - image_generate
     - image_edit

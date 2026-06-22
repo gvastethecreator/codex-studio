@@ -4,26 +4,43 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP01-002',
-    name: 'Candid Street Portrait',
+    id: 'SP01-023',
+    name: 'GoPro Wide',
     category: '4. Documentary And Street',
     negativePrompt:
       'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
     style: {
-      aesthetic: 'Authentic candid documentary photography, unposed street-derived realism',
-      subject_treatment:
-        'Natural depth of field, primary subject isolated from busy context, spontaneous moment quality',
-      color_and_tone:
-        'Urban color palette, natural daylight tones, slightly desaturated, realistic contrast',
-      lighting_and_shadow: 'Available natural light, dynamic shadows, mixed lighting environments',
-      texture_and_material:
-        'Subtle digital noise or film grain, realistic surface textures, environmental grit',
-      camera_and_composition:
-        'Shot on 35mm or 50mm lens, slight motion blur in background, dynamic framing',
-      atmosphere_and_mood: 'Real, fleeting, documentary, slice-of-life, energetic',
-      rendering_and_quality: 'High quality documentary photography, authentic, unretouched look',
+      aesthetic: 'Action camera POV',
+      form_and_line: 'Fisheye distortion',
+      color_palette: 'Vibrant, sharp',
+      lighting_setup: 'Harsh available light',
+      material_texture: 'Digital sharpening',
+      render_quality: 'Action-camera realism',
+      spatial_distortion: 'Curved horizon',
+      atmosphere: 'Active, immersive',
+      key_features: 'Wide FOV',
       creative_brief:
-        'Apply candid street-documentary behavior to any subject: available light, quick framing, imperfect motion, urban grit, and unposed immediacy without requiring a person, sidewalk, or city setting.',
+        'Apply GoPro-wide action optics to the input: ultra-wide FOV, curved horizon distortion, digital sharpness, hard available light, and foreground pull should make any subject immersive without requiring sports or travel.',
+    },
+  },
+  {
+    id: 'SP01-024',
+    name: 'Drone Aerial',
+    category: '4. Documentary And Street',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed',
+    style: {
+      aesthetic: 'Top-down view',
+      form_and_line: 'Top-down geometry',
+      color_palette: 'Saturated',
+      lighting_setup: 'Flat (noon) or long shadows',
+      material_texture: 'Sharp digital',
+      render_quality: 'Drone survey realism',
+      spatial_distortion: 'Flattened perspective',
+      atmosphere: 'Epic, overview',
+      key_features: "Bird's eye view",
+      creative_brief:
+        'Altitude converts subject into design: flattened perspective, top-down geometry, maplike spacing, long-shadow logic, and crisp digital survey detail. Use drone grammar to abstract any scene or object into pattern; no rivers, roads, fields, travel vista, or natural landscape required. Apply this photographic look over any input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.',
     },
   },
   {
@@ -43,6 +60,101 @@ export const GENERATED_STYLE_PRESETS = [
       key_features: 'Decisive moment tension',
       creative_brief:
         'Candid documentary timing turns any subject into a decisive moment: imperfect framing, natural light, grain, motion trace, and the feeling of truth caught before it could pose. Keep street-photography immediacy without requiring city, pavement, passerby, or urban context.',
+    },
+  },
+  {
+    id: 'SP01-052',
+    name: 'Sports Action',
+    category: '4. Documentary And Street',
+    negativePrompt: 'static, slow',
+    style: {
+      aesthetic: 'High-speed action capture',
+      form_and_line: 'Frozen force geometry',
+      color_palette: 'Vibrant competition color',
+      lighting_setup: 'Hard arena-style light',
+      material_texture: 'Impact texture, dust, sheen',
+      render_quality: 'Sports-editorial sharpness',
+      spatial_distortion: 'Motion blur background',
+      atmosphere: 'Intense, fast',
+      key_features: 'Action freeze',
+      creative_brief:
+        'High-speed sports grammar freezes any subject at peak force: crisp action edge, motion-blurred background, hard arena light, vibrant color, and impact texture. Convey velocity and intensity without requiring athletes, jerseys, stadiums, crowds, or bodies.',
+    },
+  },
+  {
+    id: 'SP01-060',
+    name: 'Documentary (War)',
+    category: '4. Documentary And Street',
+    negativePrompt: 'posed, happy',
+    style: {
+      aesthetic: 'Harsh witness documentary',
+      form_and_line: 'Chaotic factual framing',
+      color_palette: 'Desaturated, dusty',
+      lighting_setup: 'Harsh sun',
+      material_texture: 'Dust, smoke, grain',
+      render_quality: 'Raw, emotional',
+      spatial_distortion: 'None',
+      atmosphere: 'Unflinching, intense',
+      key_features: 'Realism',
+      creative_brief:
+        'Harsh witness photography uses desaturation, dust, smoke, hard sun, grain, and imperfect factual framing to make any subject feel reported rather than staged. Preserve raw documentary testimony without requiring battlefield, tragedy, weapons, sky, or conflict-zone narrative.',
+    },
+  },
+  {
+    id: 'SP01-061',
+    name: 'Paparazzi Style',
+    category: '4. Documentary And Street',
+    negativePrompt: 'posed, studio',
+    style: {
+      aesthetic: 'Intrusive telephoto flash',
+      form_and_line: 'Subject isolated',
+      color_palette: 'Flash washed',
+      lighting_setup: 'Direct flash at night',
+      material_texture: 'High ISO noise',
+      render_quality: 'Tabloid, intrusive',
+      spatial_distortion: 'Motion blur',
+      atmosphere: 'Urgent, chaotic',
+      key_features: 'Startled flash isolation',
+      creative_brief:
+        'Telephoto distance plus sudden flash isolates any subject with tabloid urgency: high ISO grain, washed highlights, night compression, edge motion smear, and intrusive framing. Keep paparazzi tension without requiring street, celebrity, human surprise, or chase narrative.',
+    },
+  },
+  {
+    id: 'SP01-064',
+    name: 'Concert Photography',
+    category: '4. Documentary And Street',
+    negativePrompt: 'quiet, bright',
+    style: {
+      aesthetic: 'Concert-stage lighting',
+      form_and_line: 'Silhouettes in beam fog',
+      color_palette: 'Stage lights (Red/Blue)',
+      lighting_setup: 'Beams, spots',
+      material_texture: 'Fog, heat sheen, grain',
+      render_quality: 'Loud live-event realism',
+      spatial_distortion: 'None',
+      atmosphere: 'Energetic, loud',
+      key_features: 'Beam-and-fog energy',
+      creative_brief:
+        'Concert photography translates any subject through red/blue stage beams, fog volume, hard spotlights, grainy darkness, and loud silhouette energy. Keep live-event intensity without requiring band, crowd hands, instruments, stage performers, or music venue.',
+    },
+  },
+  {
+    id: 'SP01-070',
+    name: 'Travel Photography',
+    category: '4. Documentary And Street',
+    negativePrompt: 'tourist trap, selfie',
+    style: {
+      aesthetic: 'Travel-editorial wanderlust',
+      form_and_line: 'Inviting wide composition',
+      color_palette: 'Vibrant, inviting',
+      lighting_setup: 'Golden hour',
+      material_texture: 'Localized tactile detail',
+      render_quality: 'Travel-magazine polish',
+      spatial_distortion: 'None',
+      atmosphere: 'Adventurous, beautiful',
+      key_features: 'Arrival energy',
+      creative_brief:
+        'Travel photography turns any subject into an inviting arrival: warm golden light, wide composition, vibrant palette, tactile local detail, and polished wanderlust framing. Keep Condé Nast escapism without requiring landmarks, foreign places, shorelines, or tourist narrative.',
     },
   },
   {

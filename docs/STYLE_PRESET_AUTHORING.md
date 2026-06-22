@@ -51,9 +51,10 @@ preview instead.
 
 Anime packs now have a deliberately finer split:
 
-- `pack_05` is organized into 12 buckets, including separate lanes for modern shonen, 2000s, 90s, shojo / magical / visionary classics, slice-of-life, sports, mecha, fantasy, seinen, studio masterpieces, retro, and style-spectrum presets.
-- `pack_13` is split into core anime, slice-of-life / school / music, action, samurai / medieval, and horror.
-- `pack_06`, `pack_08`, `pack_10`, and `pack_12` also rely on semantic buckets now; do not collapse them back into a single catch-all category like `Videojuegos`.
+- `pack_05` is `Anime Battle & Worlds`: modern shonen/action, mecha/cyberpunk, isekai/high fantasy, dark fantasy/seinen, and action.
+- `pack_13` is `Anime Character & Lifestyle`: shojo/magical/visionary classics, slice-of-life/moe, anime style spectrum, core anime, and slice-of-life / school / music.
+- `pack_16` is `Anime Classics & Prestige`: 2000s classics, 90s golden era, sports/performance, studio masterpieces, 70s/80s retro anime, samurai/medieval, and horror.
+- Non-anime packs also rely on semantic buckets now, especially `pack_01`, `pack_02`, `pack_03`, `pack_04`, `pack_06`, `pack_07`, `pack_08`, `pack_09`, `pack_10`, `pack_11`, and `pack_12`; do not collapse them back into catch-all categories like `Videojuegos`, `Pattern & Texture`, or `Oddities`.
 - When authoring or regenerating those packs, keep the prompt anchors and category labels aligned with that split instead of collapsing them back into generic anime staging.
 
 ## Política de naming e idioma (obligatoria)

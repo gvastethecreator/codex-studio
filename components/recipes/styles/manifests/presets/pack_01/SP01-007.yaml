@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-007
 packId: pack_01
 name: Silhouette Portrait
-category: 2. Lighting Techniques
+category: 1. Portrait And Studio
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting-techniques
+  - portrait-and-studio
 visualDna:
   aesthetic: Dramatic silhouette photography, dark outline against a bright background
   subject_treatment: Sharp contour edge, obscured internal detail, focus on shape and form
@@ -47,11 +47,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting-techniques
-  categoryName: 2. Lighting Techniques
+  categoryId: portrait-and-studio
+  categoryName: 1. Portrait And Studio
   tags:
     - photography-and-realism
-    - lighting-techniques
+    - portrait-and-studio
   supportedTasks:
     - image_generate
     - image_edit

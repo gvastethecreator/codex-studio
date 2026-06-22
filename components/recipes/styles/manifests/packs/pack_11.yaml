@@ -3,179 +3,179 @@ id: pack_11
 name: Miscellaneous & Fun
 description: Playful, toy-like, and niche aesthetic styles.
 categories:
-  - id: toys-and-miniatures
-    name: 1. Toys And Miniatures
+  - id: toys-and-crafts
+    name: 1. Toys And Crafts
     presetRefs:
-      - pack_11/SP11-050.yaml
-      - pack_11/SP11-017.yaml
       - pack_11/SP11-001.yaml
       - pack_11/SP11-002.yaml
+      - pack_11/SP11-003.yaml
+      - pack_11/SP11-004.yaml
+      - pack_11/SP11-005.yaml
+      - pack_11/SP11-016.yaml
+      - pack_11/SP11-017.yaml
+      - pack_11/SP11-018.yaml
+      - pack_11/SP11-020.yaml
+      - pack_11/SP11-021.yaml
       - pack_11/SP11-022.yaml
       - pack_11/SP11-023.yaml
       - pack_11/SP11-024.yaml
-      - pack_11/SP11-016.yaml
-      - pack_11/SP11-005.yaml
-      - pack_11/SP11-020.yaml
       - pack_11/SP11-025.yaml
-      - pack_11/SP11-021.yaml
-      - pack_11/SP11-061.yaml
-      - pack_11/SP11-065.yaml
-      - pack_11/SP11-076.yaml
-      - pack_11/SP11-078.yaml
-  - id: food-and-commercial-fun
-    name: 2. Food And Commercial Fun
-    presetRefs:
-      - pack_11/SP11-049.yaml
-      - pack_11/SP11-046.yaml
-      - pack_11/SP11-055.yaml
-      - pack_11/SP11-053.yaml
-      - pack_11/SP11-054.yaml
-      - pack_11/SP11-047.yaml
-      - pack_11/SP11-009.yaml
-      - pack_11/SP11-040.yaml
-  - id: science-and-bio-curiosities
-    name: 3. Science And Bio Curiosities
-    presetRefs:
-      - pack_11/SP11-003.yaml
       - pack_11/SP11-027.yaml
       - pack_11/SP11-029.yaml
-      - pack_11/SP11-034.yaml
-      - pack_11/SP11-012.yaml
-      - pack_11/SP11-013.yaml
-      - pack_11/SP11-037.yaml
-      - pack_11/SP11-039.yaml
-      - pack_11/SP11-038.yaml
-      - pack_11/SP11-059.yaml
-      - pack_11/SP11-071.yaml
-      - pack_11/SP11-056.yaml
-      - pack_11/SP11-072.yaml
-      - pack_11/SP11-058.yaml
-      - pack_11/SP11-069.yaml
-      - pack_11/SP11-074.yaml
-      - pack_11/SP11-073.yaml
-      - pack_11/SP11-068.yaml
-  - id: retro-pop-and-kitsch
-    name: 4. Retro Pop And Kitsch
-    presetRefs:
-      - pack_11/SP11-019.yaml
-      - pack_11/SP11-028.yaml
-      - pack_11/SP11-026.yaml
-      - pack_11/SP11-010.yaml
-      - pack_11/SP11-044.yaml
-      - pack_11/SP11-036.yaml
-      - pack_11/SP11-045.yaml
-      - pack_11/SP11-043.yaml
-      - pack_11/SP11-011.yaml
-      - pack_11/SP11-066.yaml
-  - id: oddities-and-novelty
-    name: 5. Oddities And Novelty
-    presetRefs:
-      - pack_11/SP11-051.yaml
-      - pack_11/SP11-052.yaml
-      - pack_11/SP11-048.yaml
-      - pack_11/SP11-004.yaml
-      - pack_11/SP11-018.yaml
-      - pack_11/SP11-008.yaml
-      - pack_11/SP11-032.yaml
-      - pack_11/SP11-006.yaml
       - pack_11/SP11-030.yaml
       - pack_11/SP11-031.yaml
+  - id: artistic-mediums
+    name: 2. Artistic Mediums
+    presetRefs:
+      - pack_11/SP11-006.yaml
       - pack_11/SP11-007.yaml
+      - pack_11/SP11-008.yaml
+      - pack_11/SP11-019.yaml
+      - pack_11/SP11-026.yaml
+      - pack_11/SP11-028.yaml
+      - pack_11/SP11-032.yaml
       - pack_11/SP11-033.yaml
-      - pack_11/SP11-035.yaml
-      - pack_11/SP11-015.yaml
-      - pack_11/SP11-042.yaml
+      - pack_11/SP11-044.yaml
+  - id: aesthetics
+    name: 3. Aesthetics
+    presetRefs:
+      - pack_11/SP11-009.yaml
+      - pack_11/SP11-010.yaml
+      - pack_11/SP11-011.yaml
+      - pack_11/SP11-012.yaml
+      - pack_11/SP11-013.yaml
       - pack_11/SP11-014.yaml
+      - pack_11/SP11-015.yaml
+      - pack_11/SP11-036.yaml
+      - pack_11/SP11-037.yaml
+      - pack_11/SP11-038.yaml
+      - pack_11/SP11-039.yaml
+      - pack_11/SP11-040.yaml
       - pack_11/SP11-041.yaml
+      - pack_11/SP11-042.yaml
+      - pack_11/SP11-043.yaml
+      - pack_11/SP11-045.yaml
+      - pack_11/SP11-066.yaml
+  - id: food-and-drink
+    name: 4. Food And Drink
+    presetRefs:
+      - pack_11/SP11-046.yaml
+      - pack_11/SP11-047.yaml
+      - pack_11/SP11-048.yaml
+      - pack_11/SP11-049.yaml
+      - pack_11/SP11-050.yaml
+      - pack_11/SP11-051.yaml
+      - pack_11/SP11-052.yaml
+      - pack_11/SP11-053.yaml
+      - pack_11/SP11-054.yaml
+      - pack_11/SP11-055.yaml
+  - id: micro-macro
+    name: 5. Micro Macro
+    presetRefs:
+      - pack_11/SP11-034.yaml
+      - pack_11/SP11-035.yaml
+      - pack_11/SP11-056.yaml
       - pack_11/SP11-057.yaml
-      - pack_11/SP11-064.yaml
-      - pack_11/SP11-063.yaml
+      - pack_11/SP11-058.yaml
+      - pack_11/SP11-059.yaml
       - pack_11/SP11-060.yaml
+      - pack_11/SP11-061.yaml
       - pack_11/SP11-062.yaml
+      - pack_11/SP11-063.yaml
+      - pack_11/SP11-064.yaml
+      - pack_11/SP11-065.yaml
       - pack_11/SP11-067.yaml
-      - pack_11/SP11-080.yaml
-      - pack_11/SP11-075.yaml
-      - pack_11/SP11-079.yaml
+      - pack_11/SP11-068.yaml
+      - pack_11/SP11-069.yaml
       - pack_11/SP11-070.yaml
+      - pack_11/SP11-071.yaml
+      - pack_11/SP11-072.yaml
+      - pack_11/SP11-073.yaml
+      - pack_11/SP11-074.yaml
+      - pack_11/SP11-075.yaml
+      - pack_11/SP11-076.yaml
       - pack_11/SP11-077.yaml
+      - pack_11/SP11-078.yaml
+      - pack_11/SP11-079.yaml
+      - pack_11/SP11-080.yaml
 presetRefs:
-  - pack_11/SP11-050.yaml
-  - pack_11/SP11-017.yaml
   - pack_11/SP11-001.yaml
   - pack_11/SP11-002.yaml
+  - pack_11/SP11-003.yaml
+  - pack_11/SP11-004.yaml
+  - pack_11/SP11-005.yaml
+  - pack_11/SP11-016.yaml
+  - pack_11/SP11-017.yaml
+  - pack_11/SP11-018.yaml
+  - pack_11/SP11-020.yaml
+  - pack_11/SP11-021.yaml
   - pack_11/SP11-022.yaml
   - pack_11/SP11-023.yaml
   - pack_11/SP11-024.yaml
-  - pack_11/SP11-016.yaml
-  - pack_11/SP11-005.yaml
-  - pack_11/SP11-020.yaml
   - pack_11/SP11-025.yaml
-  - pack_11/SP11-021.yaml
-  - pack_11/SP11-061.yaml
-  - pack_11/SP11-065.yaml
-  - pack_11/SP11-076.yaml
-  - pack_11/SP11-078.yaml
-  - pack_11/SP11-049.yaml
-  - pack_11/SP11-046.yaml
-  - pack_11/SP11-055.yaml
-  - pack_11/SP11-053.yaml
-  - pack_11/SP11-054.yaml
-  - pack_11/SP11-047.yaml
-  - pack_11/SP11-009.yaml
-  - pack_11/SP11-040.yaml
-  - pack_11/SP11-003.yaml
   - pack_11/SP11-027.yaml
   - pack_11/SP11-029.yaml
-  - pack_11/SP11-034.yaml
-  - pack_11/SP11-012.yaml
-  - pack_11/SP11-013.yaml
-  - pack_11/SP11-037.yaml
-  - pack_11/SP11-039.yaml
-  - pack_11/SP11-038.yaml
-  - pack_11/SP11-059.yaml
-  - pack_11/SP11-071.yaml
-  - pack_11/SP11-056.yaml
-  - pack_11/SP11-072.yaml
-  - pack_11/SP11-058.yaml
-  - pack_11/SP11-069.yaml
-  - pack_11/SP11-074.yaml
-  - pack_11/SP11-073.yaml
-  - pack_11/SP11-068.yaml
-  - pack_11/SP11-019.yaml
-  - pack_11/SP11-028.yaml
-  - pack_11/SP11-026.yaml
-  - pack_11/SP11-010.yaml
-  - pack_11/SP11-044.yaml
-  - pack_11/SP11-036.yaml
-  - pack_11/SP11-045.yaml
-  - pack_11/SP11-043.yaml
-  - pack_11/SP11-011.yaml
-  - pack_11/SP11-066.yaml
-  - pack_11/SP11-051.yaml
-  - pack_11/SP11-052.yaml
-  - pack_11/SP11-048.yaml
-  - pack_11/SP11-004.yaml
-  - pack_11/SP11-018.yaml
-  - pack_11/SP11-008.yaml
-  - pack_11/SP11-032.yaml
-  - pack_11/SP11-006.yaml
   - pack_11/SP11-030.yaml
   - pack_11/SP11-031.yaml
+  - pack_11/SP11-006.yaml
   - pack_11/SP11-007.yaml
+  - pack_11/SP11-008.yaml
+  - pack_11/SP11-019.yaml
+  - pack_11/SP11-026.yaml
+  - pack_11/SP11-028.yaml
+  - pack_11/SP11-032.yaml
   - pack_11/SP11-033.yaml
-  - pack_11/SP11-035.yaml
-  - pack_11/SP11-015.yaml
-  - pack_11/SP11-042.yaml
+  - pack_11/SP11-044.yaml
+  - pack_11/SP11-009.yaml
+  - pack_11/SP11-010.yaml
+  - pack_11/SP11-011.yaml
+  - pack_11/SP11-012.yaml
+  - pack_11/SP11-013.yaml
   - pack_11/SP11-014.yaml
+  - pack_11/SP11-015.yaml
+  - pack_11/SP11-036.yaml
+  - pack_11/SP11-037.yaml
+  - pack_11/SP11-038.yaml
+  - pack_11/SP11-039.yaml
+  - pack_11/SP11-040.yaml
   - pack_11/SP11-041.yaml
+  - pack_11/SP11-042.yaml
+  - pack_11/SP11-043.yaml
+  - pack_11/SP11-045.yaml
+  - pack_11/SP11-066.yaml
+  - pack_11/SP11-046.yaml
+  - pack_11/SP11-047.yaml
+  - pack_11/SP11-048.yaml
+  - pack_11/SP11-049.yaml
+  - pack_11/SP11-050.yaml
+  - pack_11/SP11-051.yaml
+  - pack_11/SP11-052.yaml
+  - pack_11/SP11-053.yaml
+  - pack_11/SP11-054.yaml
+  - pack_11/SP11-055.yaml
+  - pack_11/SP11-034.yaml
+  - pack_11/SP11-035.yaml
+  - pack_11/SP11-056.yaml
   - pack_11/SP11-057.yaml
-  - pack_11/SP11-064.yaml
-  - pack_11/SP11-063.yaml
+  - pack_11/SP11-058.yaml
+  - pack_11/SP11-059.yaml
   - pack_11/SP11-060.yaml
+  - pack_11/SP11-061.yaml
   - pack_11/SP11-062.yaml
+  - pack_11/SP11-063.yaml
+  - pack_11/SP11-064.yaml
+  - pack_11/SP11-065.yaml
   - pack_11/SP11-067.yaml
-  - pack_11/SP11-080.yaml
-  - pack_11/SP11-075.yaml
-  - pack_11/SP11-079.yaml
+  - pack_11/SP11-068.yaml
+  - pack_11/SP11-069.yaml
   - pack_11/SP11-070.yaml
+  - pack_11/SP11-071.yaml
+  - pack_11/SP11-072.yaml
+  - pack_11/SP11-073.yaml
+  - pack_11/SP11-074.yaml
+  - pack_11/SP11-075.yaml
+  - pack_11/SP11-076.yaml
   - pack_11/SP11-077.yaml
+  - pack_11/SP11-078.yaml
+  - pack_11/SP11-079.yaml
+  - pack_11/SP11-080.yaml

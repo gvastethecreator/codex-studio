@@ -4,6 +4,25 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
+    id: 'SP10-011',
+    name: 'Alcohol Ink',
+    category: '2. Fluid & Organic',
+    negativePrompt: 'solid, dry',
+    style: {
+      aesthetic: 'Fluid painting',
+      form_and_line: 'Hard drying edges',
+      color_palette: 'Translucent, vibrant',
+      lighting_setup: 'Backlit',
+      material_texture: 'Fluid dynamics',
+      render_quality: 'Abstract art, flow',
+      spatial_distortion: 'Liquid',
+      atmosphere: 'Dreamy, fluid',
+      key_features: 'Gold veins',
+      creative_brief:
+        'Apply alcohol-ink bloom to the input: translucent pigment clouds, solvent halos, soft feathered borders, and luminous color pooling should dissolve surfaces while keeping enough contour to recognize the prompt.',
+    },
+  },
+  {
     id: 'SP10-012',
     name: 'Smoke Photography',
     category: '2. Fluid & Organic',
@@ -20,6 +39,63 @@ export const GENERATED_STYLE_PRESETS = [
       key_features: 'Black background',
       creative_brief:
         'Apply smoke-photography logic as a transform over the input with soft tendrils, studio-flash rim light, turbulence trails, and black-background contrast. Preserve subject legibility as vapor silhouette or contour when useful; do not replace the prompt with empty smoke unless abstraction is requested.',
+    },
+  },
+  {
+    id: 'SP10-013',
+    name: 'Oil Slick',
+    category: '2. Fluid & Organic',
+    negativePrompt: 'matte, dull',
+    style: {
+      aesthetic: 'Iridescent liquid',
+      form_and_line: 'Swirls',
+      color_palette: 'Rainbow metallic',
+      lighting_setup: 'Reflective',
+      material_texture: 'Liquid surface',
+      render_quality: 'Abstract, texture',
+      spatial_distortion: 'Fluid',
+      atmosphere: 'Psychedelic, toxic',
+      key_features: 'Rainbow sheen',
+      creative_brief:
+        'Apply oil-slick interference to the input: thin-film rainbow sheens, black wet depth, shifting magenta-cyan-gold highlights, and surface-angle color flips should make any subject feel iridescent and contaminated.',
+    },
+  },
+  {
+    id: 'SP10-014',
+    name: 'Macro Bubble',
+    category: '2. Fluid & Organic',
+    negativePrompt: 'flat',
+    style: {
+      aesthetic: 'Soap film close up',
+      form_and_line: 'Cell walls',
+      color_palette: 'Interference colors',
+      lighting_setup: 'Reflective',
+      material_texture: 'Liquid',
+      render_quality: 'Scientific, beautiful',
+      spatial_distortion: 'Spherical',
+      atmosphere: 'Delicate, colorful',
+      key_features: 'Surface tension',
+      creative_brief:
+        'Apply macro-bubble optics to the input: fragile film domes, rainbow interference, curved reflections, meniscus edges, and magnified surface tension should transform forms into delicate optical membranes.',
+    },
+  },
+  {
+    id: 'SP10-015',
+    name: 'Mycelium Network',
+    category: '2. Fluid & Organic',
+    negativePrompt: 'man made, straight lines',
+    style: {
+      aesthetic: 'Fungal roots',
+      form_and_line: 'Webbing',
+      color_palette: 'White, earthy',
+      lighting_setup: 'Subsurface scattering',
+      material_texture: 'Fuzzy, organic',
+      render_quality: 'Nature, macro',
+      spatial_distortion: 'Branching',
+      atmosphere: 'Connected, growth',
+      key_features: 'Web pattern',
+      creative_brief:
+        'Apply mycelium-network logic to the input: branching white filaments, nutrient-web connectivity, porous organic nodes, and subterranean softness should link forms into living fungal communication without requiring soil or forest.',
     },
   },
   {
@@ -115,82 +191,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features: 'Stars',
       creative_brief:
         'Apply nebula-cloud treatment to the input: pink-indigo gas veils, star-dust speckles, luminous depth, and cosmic-scale haze should make forms feel suspended in astronomical color without requiring an outer-space backdrop.',
-    },
-  },
-  {
-    id: 'SP10-011',
-    name: 'Alcohol Ink',
-    category: '2. Fluid & Organic',
-    negativePrompt: 'solid, dry',
-    style: {
-      aesthetic: 'Fluid painting',
-      form_and_line: 'Hard drying edges',
-      color_palette: 'Translucent, vibrant',
-      lighting_setup: 'Backlit',
-      material_texture: 'Fluid dynamics',
-      render_quality: 'Abstract art, flow',
-      spatial_distortion: 'Liquid',
-      atmosphere: 'Dreamy, fluid',
-      key_features: 'Gold veins',
-      creative_brief:
-        'Apply alcohol-ink bloom to the input: translucent pigment clouds, solvent halos, soft feathered borders, and luminous color pooling should dissolve surfaces while keeping enough contour to recognize the prompt.',
-    },
-  },
-  {
-    id: 'SP10-014',
-    name: 'Macro Bubble',
-    category: '2. Fluid & Organic',
-    negativePrompt: 'flat',
-    style: {
-      aesthetic: 'Soap film close up',
-      form_and_line: 'Cell walls',
-      color_palette: 'Interference colors',
-      lighting_setup: 'Reflective',
-      material_texture: 'Liquid',
-      render_quality: 'Scientific, beautiful',
-      spatial_distortion: 'Spherical',
-      atmosphere: 'Delicate, colorful',
-      key_features: 'Surface tension',
-      creative_brief:
-        'Apply macro-bubble optics to the input: fragile film domes, rainbow interference, curved reflections, meniscus edges, and magnified surface tension should transform forms into delicate optical membranes.',
-    },
-  },
-  {
-    id: 'SP10-015',
-    name: 'Mycelium Network',
-    category: '2. Fluid & Organic',
-    negativePrompt: 'man made, straight lines',
-    style: {
-      aesthetic: 'Fungal roots',
-      form_and_line: 'Webbing',
-      color_palette: 'White, earthy',
-      lighting_setup: 'Subsurface scattering',
-      material_texture: 'Fuzzy, organic',
-      render_quality: 'Nature, macro',
-      spatial_distortion: 'Branching',
-      atmosphere: 'Connected, growth',
-      key_features: 'Web pattern',
-      creative_brief:
-        'Apply mycelium-network logic to the input: branching white filaments, nutrient-web connectivity, porous organic nodes, and subterranean softness should link forms into living fungal communication without requiring soil or forest.',
-    },
-  },
-  {
-    id: 'SP10-013',
-    name: 'Oil Slick',
-    category: '2. Fluid & Organic',
-    negativePrompt: 'matte, dull',
-    style: {
-      aesthetic: 'Iridescent liquid',
-      form_and_line: 'Swirls',
-      color_palette: 'Rainbow metallic',
-      lighting_setup: 'Reflective',
-      material_texture: 'Liquid surface',
-      render_quality: 'Abstract, texture',
-      spatial_distortion: 'Fluid',
-      atmosphere: 'Psychedelic, toxic',
-      key_features: 'Rainbow sheen',
-      creative_brief:
-        'Apply oil-slick interference to the input: thin-film rainbow sheens, black wet depth, shifting magenta-cyan-gold highlights, and surface-angle color flips should make any subject feel iridescent and contaminated.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

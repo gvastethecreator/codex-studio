@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-037
 packId: pack_09
 name: Scratched Metal
-category: 1. Metals And Minerals
+category: 3. Weathering And Decay
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - metals-and-minerals
+  - weathering-and-decay
 visualDna:
   aesthetic: Used machinery
   form_and_line: Random scratches
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: metals-and-minerals
-  categoryName: 1. Metals And Minerals
+  categoryId: weathering-and-decay
+  categoryName: 3. Weathering And Decay
   tags:
     - texture-and-materiality
-    - metals-and-minerals
+    - weathering-and-decay
   supportedTasks:
     - image_generate
     - image_edit

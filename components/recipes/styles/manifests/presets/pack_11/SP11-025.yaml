@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-025
 packId: pack_11
 name: Button Eye Doll
-category: 1. Toys And Miniatures
+category: 1. Toys And Crafts
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-miniatures
+  - toys-and-crafts
 visualDna:
   aesthetic: Uncanny handcrafted button-eyed doll style with stitched-fantasy tension and eerie miniature-horror charm
   form_and_line: Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-miniatures
-  categoryName: 1. Toys And Miniatures
+  categoryId: toys-and-crafts
+  categoryName: 1. Toys And Crafts
   tags:
     - miscellaneous-and-fun
-    - toys-and-miniatures
+    - toys-and-crafts
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-031
 packId: pack_03
 name: Global Illumination
-category: 2. Organic And Character Cgi
+category: 3. Lighting And Atmosphere
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - organic-and-character-cgi
+  - lighting-and-atmosphere
 visualDna:
   aesthetic: Soft bounced light
   form_and_line: Color bleeding
@@ -35,11 +35,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: organic-and-character-cgi
-  categoryName: 2. Organic And Character Cgi
+  categoryId: lighting-and-atmosphere
+  categoryName: 3. Lighting And Atmosphere
   tags:
     - 3d-and-cgi-rendering
-    - organic-and-character-cgi
+    - lighting-and-atmosphere
   supportedTasks:
     - image_generate
     - image_edit

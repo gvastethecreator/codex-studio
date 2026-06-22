@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-004
 packId: pack_09
 name: Granite (Polished)
-category: 1. Metals And Minerals
+category: 1. Natural Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - metals-and-minerals
+  - natural-materials
 visualDna:
   aesthetic: Kitchen countertop stone
   form_and_line: None
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: metals-and-minerals
-  categoryName: 1. Metals And Minerals
+  categoryId: natural-materials
+  categoryName: 1. Natural Materials
   tags:
     - texture-and-materiality
-    - metals-and-minerals
+    - natural-materials
   supportedTasks:
     - image_generate
     - image_edit

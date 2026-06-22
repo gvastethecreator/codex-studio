@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-012
 packId: pack_03
 name: Liquid Simulation
-category: 2. Organic And Character Cgi
+category: 2. Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - organic-and-character-cgi
+  - materials
 visualDna:
   aesthetic: Splashing water or fluid
   form_and_line: Droplets
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: organic-and-character-cgi
-  categoryName: 2. Organic And Character Cgi
+  categoryId: materials
+  categoryName: 2. Materials
   tags:
     - 3d-and-cgi-rendering
-    - organic-and-character-cgi
+    - materials
   supportedTasks:
     - image_generate
     - image_edit

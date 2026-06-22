@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-040
 packId: pack_03
 name: Toon Shader (Cel Shaded)
-category: 5. Stylized 3d
+category: 4. 3D Styles
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - stylized-3d
+  - 3d-styles
 visualDna:
   aesthetic: Anime style 3D
   form_and_line: Black outlines
@@ -39,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: stylized-3d
-  categoryName: 5. Stylized 3d
+  categoryId: 3d-styles
+  categoryName: 4. 3D Styles
   tags:
     - 3d-and-cgi-rendering
-    - stylized-3d
+    - 3d-styles
   supportedTasks:
     - image_generate
     - image_edit

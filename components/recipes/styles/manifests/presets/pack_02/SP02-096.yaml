@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-096
 packId: pack_02
 name: Skateboard Deck Graphic
-category: 1. Cinematic Lighting And Lenses
+category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - cinematic-lighting-and-lenses
+  - caricature-and-cartoon-styles
 visualDna:
   aesthetic: Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss
   form_and_line: Bold thick-black outlines, aggressive angular contours, dripping-paint trails, splatter-burst backgrounds, sharp-stencil edges
@@ -41,11 +41,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: cinematic-lighting-and-lenses
-  categoryName: 1. Cinematic Lighting And Lenses
+  categoryId: caricature-and-cartoon-styles
+  categoryName: 6. Caricature And Cartoon Styles
   tags:
     - cinematic-and-media
-    - cinematic-lighting-and-lenses
+    - caricature-and-cartoon-styles
   supportedTasks:
     - image_generate
     - image_edit

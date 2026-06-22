@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-048
 packId: pack_01
 name: Macro Photography
-category: 2. Lighting Techniques
+category: 6. Nature And Wildlife
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting-techniques
+  - nature-and-wildlife
 visualDna:
   aesthetic: Extreme close-up
   form_and_line: Shallow depth of field
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting-techniques
-  categoryName: 2. Lighting Techniques
+  categoryId: nature-and-wildlife
+  categoryName: 6. Nature And Wildlife
   tags:
     - photography-and-realism
-    - lighting-techniques
+    - nature-and-wildlife
   supportedTasks:
     - image_generate
     - image_edit

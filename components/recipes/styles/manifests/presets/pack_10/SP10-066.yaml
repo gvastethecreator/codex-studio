@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-066
 packId: pack_10
 name: Honeycomb
-category: 5. Pattern & Texture
+category: 5. Textile & Ornamental Patterns
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - abstract-and-experimental
-  - pattern-and-texture
+  - textile-and-ornamental-patterns
 visualDna:
   aesthetic: Hexagonal grid
   form_and_line: Hexagons
@@ -35,11 +35,11 @@ attributes:
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
-  categoryId: pattern-and-texture
-  categoryName: 5. Pattern & Texture
+  categoryId: textile-and-ornamental-patterns
+  categoryName: 5. Textile & Ornamental Patterns
   tags:
     - abstract-and-experimental
-    - pattern-and-texture
+    - textile-and-ornamental-patterns
   supportedTasks:
     - image_generate
     - image_edit

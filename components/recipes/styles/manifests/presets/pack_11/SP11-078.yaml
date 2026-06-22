@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-078
 packId: pack_11
 name: Cork
-category: 1. Toys And Miniatures
+category: 5. Micro Macro
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-miniatures
+  - micro-macro
 visualDna:
   aesthetic: Wine cork zoom, bottle-stopper, bark-product, Quercus-suber, compressed-tradition
   form_and_line: Wood cells, prismatic-cell contours, lenticel-pores, radial-section, tangential-section
@@ -40,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-miniatures
-  categoryName: 1. Toys And Miniatures
+  categoryId: micro-macro
+  categoryName: 5. Micro Macro
   tags:
     - miscellaneous-and-fun
-    - toys-and-miniatures
+    - micro-macro
   supportedTasks:
     - image_generate
     - image_edit

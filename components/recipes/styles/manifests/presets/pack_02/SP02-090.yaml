@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-090
 packId: pack_02
 name: Spiky Edgy Attitude Cartoon
-category: 1. Cinematic Lighting And Lenses
+category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - cinematic-lighting-and-lenses
+  - caricature-and-cartoon-styles
 visualDna:
   aesthetic: Aggressively angular design, sharp triangles and jagged edges, heavy black outlines with zero soft curves, Hot Topic aesthetic, 2000s edgy cartoon network, Invader Zim angularity, JTHM spiky nihilism, skate-punk scribble energy
   form_and_line: Razor-sharp angular contours, triangular composition everywhere, jagged motion lines, aggressive hatch shading
@@ -40,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: cinematic-lighting-and-lenses
-  categoryName: 1. Cinematic Lighting And Lenses
+  categoryId: caricature-and-cartoon-styles
+  categoryName: 6. Caricature And Cartoon Styles
   tags:
     - cinematic-and-media
-    - cinematic-lighting-and-lenses
+    - caricature-and-cartoon-styles
   supportedTasks:
     - image_generate
     - image_edit

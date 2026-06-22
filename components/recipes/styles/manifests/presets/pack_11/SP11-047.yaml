@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-047
 packId: pack_11
 name: Candy Land
-category: 2. Food And Commercial Fun
+category: 4. Food And Drink
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - food-and-commercial-fun
+  - food-and-drink
 visualDna:
   aesthetic: Confectionery material fantasy, edible-color systems, sugar-gloss transformation, gumdrop whimsy
   form_and_line: Sugar coating, candy-cane stripes, lollipop-spiral, frosting-swirl, gumdrop-dome profiles
@@ -40,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: food-and-commercial-fun
-  categoryName: 2. Food And Commercial Fun
+  categoryId: food-and-drink
+  categoryName: 4. Food And Drink
   tags:
     - miscellaneous-and-fun
-    - food-and-commercial-fun
+    - food-and-drink
   supportedTasks:
     - image_generate
     - image_edit

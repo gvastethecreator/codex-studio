@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-015
 packId: pack_04
 name: Risograph Print
-category: 3. Childrens And Educational
+category: 3. Editorial And Poster
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - childrens-and-educational
+  - editorial-and-poster
 visualDna:
   aesthetic: Risograph zine print language with analog imperfection as feature
   form_and_line: Grain-bearing contours and stencil-like shape separation
@@ -35,11 +35,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: childrens-and-educational
-  categoryName: 3. Childrens And Educational
+  categoryId: editorial-and-poster
+  categoryName: 3. Editorial And Poster
   tags:
     - illustration-and-graphic-novel
-    - childrens-and-educational
+    - editorial-and-poster
   supportedTasks:
     - image_generate
     - image_edit

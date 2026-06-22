@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-084
 packId: pack_04
 name: Material Texture Exploration Sheet
-category: 3. Childrens And Educational
+category: 4. Concept Art
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - childrens-and-educational
+  - concept-art
 visualDna:
   aesthetic: Material-study board integrating design sketch and comparative swatches
   form_and_line: Precise contour drawing with leader-line callouts and inset annotations
@@ -42,11 +42,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: childrens-and-educational
-  categoryName: 3. Childrens And Educational
+  categoryId: concept-art
+  categoryName: 4. Concept Art
   tags:
     - illustration-and-graphic-novel
-    - childrens-and-educational
+    - concept-art
   supportedTasks:
     - image_generate
     - image_edit

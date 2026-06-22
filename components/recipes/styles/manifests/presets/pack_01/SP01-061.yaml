@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-061
 packId: pack_01
 name: Paparazzi Style
-category: 2. Lighting Techniques
+category: 4. Documentary And Street
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - lighting-techniques
+  - documentary-and-street
 visualDna:
   aesthetic: Intrusive telephoto flash
   form_and_line: Subject isolated
@@ -32,11 +32,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: lighting-techniques
-  categoryName: 2. Lighting Techniques
+  categoryId: documentary-and-street
+  categoryName: 4. Documentary And Street
   tags:
     - photography-and-realism
-    - lighting-techniques
+    - documentary-and-street
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-029
 packId: pack_11
 name: Embroidery
-category: 3. Science And Bio Curiosities
+category: 1. Toys And Crafts
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - science-and-bio-curiosities
+  - toys-and-crafts
 visualDna:
   aesthetic: Hoop art, embroidery-craft, thread-painting, needlework tapestry, textile illustration
   form_and_line: Thread thickness, satin-stitch bands, french-knot dots, running-stitch dashes, stem-stitch curves
@@ -37,11 +37,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: science-and-bio-curiosities
-  categoryName: 3. Science And Bio Curiosities
+  categoryId: toys-and-crafts
+  categoryName: 1. Toys And Crafts
   tags:
     - miscellaneous-and-fun
-    - science-and-bio-curiosities
+    - toys-and-crafts
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-037
 packId: pack_03
 name: Ambient Occlusion Pass
-category: 4. Lookdev And Render Pipelines
+category: 3. Lighting And Atmosphere
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - lookdev-and-render-pipelines
+  - lighting-and-atmosphere
 visualDna:
   aesthetic: Contact shadows only
   form_and_line: Soft gradients in corners
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: lookdev-and-render-pipelines
-  categoryName: 4. Lookdev And Render Pipelines
+  categoryId: lighting-and-atmosphere
+  categoryName: 3. Lighting And Atmosphere
   tags:
     - 3d-and-cgi-rendering
-    - lookdev-and-render-pipelines
+    - lighting-and-atmosphere
   supportedTasks:
     - image_generate
     - image_edit

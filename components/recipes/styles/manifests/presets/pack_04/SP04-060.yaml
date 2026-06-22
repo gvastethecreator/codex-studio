@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-060
 packId: pack_04
 name: Weapon Design
-category: 2. Editorial Illustration
+category: 4. Concept Art
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - editorial-illustration
+  - concept-art
 visualDna:
   aesthetic: >-
     Weapon concept-sheet style with functional lethality readability, industrial precision, and
@@ -40,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: editorial-illustration
-  categoryName: 2. Editorial Illustration
+  categoryId: concept-art
+  categoryName: 4. Concept Art
   tags:
     - illustration-and-graphic-novel
-    - editorial-illustration
+    - concept-art
   supportedTasks:
     - image_generate
     - image_edit

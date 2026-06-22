@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-016
 packId: pack_09
 name: Glacier Ice
-category: 4. Surface Wear And Aging
+category: 1. Natural Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - surface-wear-and-aging
+  - natural-materials
 visualDna:
   aesthetic: Compressed ancient ice
   form_and_line: Cracks and bubbles
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: surface-wear-and-aging
-  categoryName: 4. Surface Wear And Aging
+  categoryId: natural-materials
+  categoryName: 1. Natural Materials
   tags:
     - texture-and-materiality
-    - surface-wear-and-aging
+    - natural-materials
   supportedTasks:
     - image_generate
     - image_edit

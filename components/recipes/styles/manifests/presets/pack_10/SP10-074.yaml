@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-074
 packId: pack_10
 name: Stained Glass
-category: 5. Pattern & Texture
+category: 7. Diagram, Print & Light Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - abstract-and-experimental
-  - pattern-and-texture
+  - diagram-print-and-light-systems
 visualDna:
   aesthetic: Stained glass segmentation
   form_and_line: Black lead came
@@ -31,11 +31,11 @@ attributes:
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
-  categoryId: pattern-and-texture
-  categoryName: 5. Pattern & Texture
+  categoryId: diagram-print-and-light-systems
+  categoryName: 7. Diagram, Print & Light Systems
   tags:
     - abstract-and-experimental
-    - pattern-and-texture
+    - diagram-print-and-light-systems
   supportedTasks:
     - image_generate
     - image_edit

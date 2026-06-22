@@ -3,12 +3,16 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
+  () => import('./pack_02/film-genres-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_02/tv-and-broadcast-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_02/animation-styles-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_02/photography-eras-4').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_02/cinematic-lighting-and-lenses-1').then(
+    import('./pack_02/lighting-and-atmosphere-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_02/caricature-and-cartoon-styles-6').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
-  () =>
-    import('./pack_02/broadcast-and-tv-look-2').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

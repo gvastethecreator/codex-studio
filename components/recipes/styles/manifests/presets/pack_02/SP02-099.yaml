@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-099
 packId: pack_02
 name: Punk Zine Cut-and-Paste
-category: 1. Cinematic Lighting And Lenses
+category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - cinematic-lighting-and-lenses
+  - caricature-and-cartoon-styles
 visualDna:
   aesthetic: DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss
   form_and_line: Cut-and-paste scissor edges, photocopy-contrast-blackening, tape-strip-transparency, staple-marks, torn-paper contours
@@ -40,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: cinematic-lighting-and-lenses
-  categoryName: 1. Cinematic Lighting And Lenses
+  categoryId: caricature-and-cartoon-styles
+  categoryName: 6. Caricature And Cartoon Styles
   tags:
     - cinematic-and-media
-    - cinematic-lighting-and-lenses
+    - caricature-and-cartoon-styles
   supportedTasks:
     - image_generate
     - image_edit

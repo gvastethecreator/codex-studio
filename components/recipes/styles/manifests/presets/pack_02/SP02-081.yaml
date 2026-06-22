@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-081
 packId: pack_02
 name: Grotesque Exaggeration Cartoon
-category: 1. Cinematic Lighting And Lenses
+category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - cinematic-lighting-and-lenses
+  - caricature-and-cartoon-styles
 visualDna:
   aesthetic: Deliberately ugly caricature, bulbous distortion, warty textures, hideous charm, adult-swim grotesque, John Kricfalusi energy
   form_and_line: Wobbly uneven contours, spasming line weight, broken construction, scratchy re-draw marks, elastic form logic
@@ -40,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: cinematic-lighting-and-lenses
-  categoryName: 1. Cinematic Lighting And Lenses
+  categoryId: caricature-and-cartoon-styles
+  categoryName: 6. Caricature And Cartoon Styles
   tags:
     - cinematic-and-media
-    - cinematic-lighting-and-lenses
+    - caricature-and-cartoon-styles
   supportedTasks:
     - image_generate
     - image_edit

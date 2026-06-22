@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-052
 packId: pack_11
 name: Fruit Explosion
-category: 5. Oddities And Novelty
+category: 4. Food And Drink
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - oddities-and-novelty
+  - food-and-drink
 visualDna:
   aesthetic: High-speed freshness burst, juice-splash photography, cut-surface color energy, orchard-dynamism
   form_and_line: Splash lines, parabolic-arc droplets, knife-slice plane, fruit-half contour, peel-curl spiral
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: oddities-and-novelty
-  categoryName: 5. Oddities And Novelty
+  categoryId: food-and-drink
+  categoryName: 4. Food And Drink
   tags:
     - miscellaneous-and-fun
-    - oddities-and-novelty
+    - food-and-drink
   supportedTasks:
     - image_generate
     - image_edit

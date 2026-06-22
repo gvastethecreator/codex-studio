@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-053
 packId: pack_11
 name: Chocolate Flow
-category: 2. Food And Commercial Fun
+category: 4. Food And Drink
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - food-and-commercial-fun
+  - food-and-drink
 visualDna:
   aesthetic: Viscous cocoa flow, tempered dark gloss, molten confection surface, dense ribbon liquidity
   form_and_line: Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges, swirl-vortex
@@ -35,11 +35,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: food-and-commercial-fun
-  categoryName: 2. Food And Commercial Fun
+  categoryId: food-and-drink
+  categoryName: 4. Food And Drink
   tags:
     - miscellaneous-and-fun
-    - food-and-commercial-fun
+    - food-and-drink
   supportedTasks:
     - image_generate
     - image_edit

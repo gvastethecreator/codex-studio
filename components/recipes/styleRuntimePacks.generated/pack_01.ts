@@ -12,6 +12,10 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
   () =>
     import('./pack_01/commercial-and-product-5').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_01/nature-and-wildlife-6').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_01/technical-and-specialist-imaging-7').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

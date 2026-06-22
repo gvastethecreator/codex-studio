@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-042
 packId: pack_09
 name: Bubble Wrap
-category: 5. Fx And Procedural Materiality
+category: 2. Man-Made Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - fx-and-procedural-materiality
+  - man-made-materials
 visualDna:
   aesthetic: Packing material
   form_and_line: Circles
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: fx-and-procedural-materiality
-  categoryName: 5. Fx And Procedural Materiality
+  categoryId: man-made-materials
+  categoryName: 2. Man-Made Materials
   tags:
     - texture-and-materiality
-    - fx-and-procedural-materiality
+    - man-made-materials
   supportedTasks:
     - image_generate
     - image_edit

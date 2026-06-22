@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP01-059
 packId: pack_01
 name: Abstract Photo
-category: 6. Nature And Wildlife
+category: 7. Technical And Specialist Imaging
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - photography-and-realism
-  - nature-and-wildlife
+  - technical-and-specialist-imaging
 visualDna:
   aesthetic: Unrecognizable forms
   form_and_line: Shape and color
@@ -34,11 +34,11 @@ attributes:
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
-  categoryId: nature-and-wildlife
-  categoryName: 6. Nature And Wildlife
+  categoryId: technical-and-specialist-imaging
+  categoryName: 7. Technical And Specialist Imaging
   tags:
     - photography-and-realism
-    - nature-and-wildlife
+    - technical-and-specialist-imaging
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-018
 packId: pack_11
 name: Balloon Art
-category: 5. Oddities And Novelty
+category: 1. Toys And Crafts
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - oddities-and-novelty
+  - toys-and-crafts
 visualDna:
   aesthetic: Twisted latex construction, balloon-sculpture grammar, squeaky inflated form language, pressure-art novelty
   form_and_line: Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: oddities-and-novelty
-  categoryName: 5. Oddities And Novelty
+  categoryId: toys-and-crafts
+  categoryName: 1. Toys And Crafts
   tags:
     - miscellaneous-and-fun
-    - oddities-and-novelty
+    - toys-and-crafts
   supportedTasks:
     - image_generate
     - image_edit

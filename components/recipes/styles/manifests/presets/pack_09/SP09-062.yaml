@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP09-062
 packId: pack_09
 name: Confetti
-category: 1. Metals And Minerals
+category: 5. Elemental And FX
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - texture-and-materiality
-  - metals-and-minerals
+  - elemental-and-fx
 visualDna:
   aesthetic: Falling paper bits
   form_and_line: Rectangles
@@ -38,11 +38,11 @@ attributes:
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
-  categoryId: metals-and-minerals
-  categoryName: 1. Metals And Minerals
+  categoryId: elemental-and-fx
+  categoryName: 5. Elemental And FX
   tags:
     - texture-and-materiality
-    - metals-and-minerals
+    - elemental-and-fx
   supportedTasks:
     - image_generate
     - image_edit

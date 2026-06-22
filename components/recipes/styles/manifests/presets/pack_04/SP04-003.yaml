@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP04-003
 packId: pack_04
 name: Modern Superhero (Digital)
-category: 1. Comics And Graphic Novel
+category: 1. Comic Book Styles
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - illustration-and-graphic-novel
-  - comics-and-graphic-novel
+  - comic-book-styles
 visualDna:
   aesthetic: Modern blockbuster-comic style with sleek mythic hero energy, widescreen panel staging, and high-impact digital polish
   form_and_line: Clean high-confidence digital inking with controlled contour weights, sharp silhouette reads, and cinematic action line economy
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
-  categoryId: comics-and-graphic-novel
-  categoryName: 1. Comics And Graphic Novel
+  categoryId: comic-book-styles
+  categoryName: 1. Comic Book Styles
   tags:
     - illustration-and-graphic-novel
-    - comics-and-graphic-novel
+    - comic-book-styles
   supportedTasks:
     - image_generate
     - image_edit

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-043
 packId: pack_03
 name: X-Ray Shader
-category: 1. Hard Surface And Industrial Cgi
+category: 2. Materials
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - hard-surface-and-industrial-cgi
+  - materials
 visualDna:
   aesthetic: X-ray transparency render
   form_and_line: Internal structure
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: hard-surface-and-industrial-cgi
-  categoryName: 1. Hard Surface And Industrial Cgi
+  categoryId: materials
+  categoryName: 2. Materials
   tags:
     - 3d-and-cgi-rendering
-    - hard-surface-and-industrial-cgi
+    - materials
   supportedTasks:
     - image_generate
     - image_edit

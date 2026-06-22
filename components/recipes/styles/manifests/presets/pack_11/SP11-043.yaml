@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-043
 packId: pack_11
 name: Postmodern Pattern Clash
-category: 4. Retro Pop And Kitsch
+category: 3. Aesthetics
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - retro-pop-and-kitsch
+  - aesthetics
 visualDna:
   aesthetic: Memphis-informed anti-minimal pattern system with geometric jokes, surface collision, and playful design contradiction
   form_and_line: Squiggles, triangles, terrazzo speckles, checker fragments, zany circles, offset blocks, zigzag punctuation
@@ -33,11 +33,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: retro-pop-and-kitsch
-  categoryName: 4. Retro Pop And Kitsch
+  categoryId: aesthetics
+  categoryName: 3. Aesthetics
   tags:
     - miscellaneous-and-fun
-    - retro-pop-and-kitsch
+    - aesthetics
   supportedTasks:
     - image_generate
     - image_edit

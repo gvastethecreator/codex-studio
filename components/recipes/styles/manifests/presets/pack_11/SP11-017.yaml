@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-017
 packId: pack_11
 name: Action Figure (90s)
-category: 1. Toys And Miniatures
+category: 1. Toys And Crafts
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - toys-and-miniatures
+  - toys-and-crafts
 visualDna:
   aesthetic: Retro action-toy collectible style with heroic molded proportions, shelf-display energy, and kinetic play-readiness
   form_and_line: >-
@@ -44,11 +44,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: toys-and-miniatures
-  categoryName: 1. Toys And Miniatures
+  categoryId: toys-and-crafts
+  categoryName: 1. Toys And Crafts
   tags:
     - miscellaneous-and-fun
-    - toys-and-miniatures
+    - toys-and-crafts
   supportedTasks:
     - image_generate
     - image_edit

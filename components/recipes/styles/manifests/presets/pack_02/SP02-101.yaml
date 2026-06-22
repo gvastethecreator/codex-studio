@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-101
 packId: pack_02
 name: Ren & Stimpy - Veiny Close-Up Grossout
-category: 1. Cinematic Lighting And Lenses
+category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - cinematic-lighting-and-lenses
+  - caricature-and-cartoon-styles
 visualDna:
   aesthetic: Hyper-detailed gross close-up reaction frame, wet swollen surfaces, oversized pores, painterly grossout timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame revulsion played for comedy
   form_and_line: Wobbling brush contours, vibrating line weight, swollen micro-detail lines, irregular fleshy edging
@@ -39,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: cinematic-lighting-and-lenses
-  categoryName: 1. Cinematic Lighting And Lenses
+  categoryId: caricature-and-cartoon-styles
+  categoryName: 6. Caricature And Cartoon Styles
   tags:
     - cinematic-and-media
-    - cinematic-lighting-and-lenses
+    - caricature-and-cartoon-styles
   supportedTasks:
     - image_generate
     - image_edit
