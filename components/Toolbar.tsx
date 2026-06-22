@@ -86,26 +86,26 @@ export interface ToolbarProps {
   codexModelCatalogError: string | null;
 }
 
+const ICON_SIZE = 14;
+
 const AspectRatioIcon: React.FC<{ ratio: AspectRatio }> = ({ ratio }) => {
-  const iconProps = { size: 14 };
   switch (ratio) {
     case '1:1':
-      return <Square {...iconProps} />;
+      return <Square size={ICON_SIZE} />;
     case '3:2':
-      return <RectangleHorizontal {...iconProps} />;
+      return <RectangleHorizontal size={ICON_SIZE} />;
     default:
-      return <RectangleVertical {...iconProps} />;
+      return <RectangleVertical size={ICON_SIZE} />;
   }
 };
 
 import { MODELS as MODEL_IDS } from '../constants';
 
 const ModelIcon: React.FC<{ model: GenerationModel }> = ({ model }) => {
-  const iconProps = { size: 14 };
   if (model === MODEL_IDS.CODEX_IMAGEGEN) {
     return (
       <div className="relative flex items-center justify-center size-4">
-        <Sparkles {...iconProps} className="text-accent-400 group-hover:text-accent-300" />
+        <Sparkles size={ICON_SIZE} className="text-accent-400 group-hover:text-accent-300" />
         <Sparkles
           size={8}
           strokeWidth={3}
@@ -114,7 +114,7 @@ const ModelIcon: React.FC<{ model: GenerationModel }> = ({ model }) => {
       </div>
     );
   }
-  return <Zap {...iconProps} />;
+  return <Zap size={ICON_SIZE} />;
 };
 
 const AVAILABLE_MODELS: {
@@ -175,6 +175,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
     const [localPrompt, setLocalPrompt] = useState(generationConfig.prompt || '');
     const [quickStartError, setQuickStartError] = useState(false);
+    const [quickStartErrorScope, setQuickStartErrorScope] = useState<string | undefined>();
     const [isPromptFocused, setIsPromptFocused] = useState(false);
 
     // Menu States
@@ -286,6 +287,15 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       setPreviewRatio(null);
     }, [setIsInteracting, setPreviewRatio]);
 
+    const handleToolbarMouseEnter = useCallback(() => {
+      setIsInteracting(true);
+    }, [setIsInteracting]);
+
+    const handleToolbarMouseLeave = useCallback(() => {
+      setIsInteracting(false);
+      setPreviewRatio(null);
+    }, [setIsInteracting, setPreviewRatio]);
+
     // Click outside
     useEffect(() => {
       const handleOutsideClick = (event: MouseEvent) => {
@@ -337,6 +347,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const handleTriggerGenerate = useCallback(() => {
       const trimmedPrompt = localPrompt.trim();
       if (!trimmedPrompt && generationConfig.attachments.length === 0) {
+        setQuickStartErrorScope(interactionScope);
         setQuickStartError(true);
         setIsInteracting(true);
         requestAnimationFrame(() => textareaRef.current?.focus({ preventScroll: true }));
@@ -358,6 +369,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       closeAllMenus,
       isForcedMode,
       setIsInteracting,
+      interactionScope,
     ]);
 
     const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -405,19 +417,20 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const isNearLimit = generationConfig.attachments.length >= maxAttachments;
     const hasQuickStartInput = localPrompt.trim().length > 0 || hasAttachments;
 
-    useEffect(() => {
+    if (quickStartError && (quickStartErrorScope !== interactionScope || hasQuickStartInput)) {
       setQuickStartError(false);
-    }, [interactionScope]);
+    }
 
-    useEffect(() => {
-      if (hasQuickStartInput) setQuickStartError(false);
-    }, [hasQuickStartInput]);
-
-    const showQuickStartErrorText = quickStartError && isPromptFocused;
+    const shouldShowQuickStartError =
+      quickStartError && quickStartErrorScope === interactionScope && !hasQuickStartInput;
+    const showQuickStartErrorText = shouldShowQuickStartError && isPromptFocused;
 
     return (
       <div
         ref={containerRef}
+        onMouseEnter={handleToolbarMouseEnter}
+        onMouseMove={handleToolbarMouseEnter}
+        onMouseLeave={handleToolbarMouseLeave}
         className="w-full flex flex-col justify-end z-50 transition-colors duration-700 ease-in-out relative"
       >
         {/* Fixed height background that doesn't expand with the textarea */}
@@ -438,7 +451,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           <div className="flex-1 relative min-w-0">
             {/* Input Container */}
             <div
-              className={`flex min-h-[44px] items-end gap-2 rounded-2xl border border-white/5 bg-zinc-900/50 p-1.5 px-2 shadow-lg transition-colors duration-300 sm:px-3 ${quickStartError ? 'quick-start-error-frame' : ''}`}
+              className={`flex min-h-[44px] items-end gap-2 rounded-2xl border border-white/5 bg-zinc-900/50 p-1.5 px-2 shadow-lg transition-colors duration-300 sm:px-3 ${shouldShowQuickStartError ? 'quick-start-error-frame' : ''}`}
             >
               {showQuickStartErrorText && (
                 <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[9px] font-black uppercase tracking-[0.18em] text-red-200 animate-in fade-in-0 slide-in-from-bottom-1 duration-150">

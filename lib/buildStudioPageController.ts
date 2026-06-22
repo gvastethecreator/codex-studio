@@ -3,8 +3,15 @@ import type { RecipePageProps } from '../components/RecipePage';
 import type { ToolbarProps } from '../components/Toolbar';
 import type { StudioGridSurfaceProps } from '../components/studio/StudioGridSurface';
 import type { StudioOperationsRailProps } from '../components/studio/StudioOperationsRail';
+import type { Job as StudioJob, JobStatus } from '../packages/shared/src';
 import type { AppPageView } from '../hooks/useHashRouter';
-import type { RecipeId } from '../types';
+import type {
+  AspectRatio,
+  QueueJob,
+  QueueJobStatus,
+  RecipeId,
+  StudioGenerationPlaceholder,
+} from '../types';
 
 export interface StudioPageController {
   debugPanel: {
@@ -93,6 +100,73 @@ export interface BuildStudioPageControllerArgs {
   operations: StudioPageOperationsContext;
 }
 
+const ACTIVE_LOCAL_JOB_STATUSES = new Set<QueueJobStatus>(['pending', 'processing']);
+const ACTIVE_SERVER_JOB_STATUSES = new Set<JobStatus>(['queued', 'running', 'needs_review']);
+
+function createdAtMs(value: string | number) {
+  return typeof value === 'number' ? value : Date.parse(value) || Date.now();
+}
+
+function readJobWorkspaceId(job: StudioJob) {
+  const value = job.sourceSpec?.metadata?.workspaceId;
+  return typeof value === 'string' && value.trim() ? value : null;
+}
+
+function readJobAspectRatio(job: StudioJob, linkedLocalJob: QueueJob | undefined) {
+  return job.sourceSpec?.output.aspectRatio ?? linkedLocalJob?.config.aspectRatio ?? null;
+}
+
+export function buildStudioGenerationPlaceholders({
+  jobs,
+  studioJobs,
+  activeWorkspaceId,
+  fallbackAspectRatio,
+}: {
+  jobs: QueueJob[];
+  studioJobs: StudioJob[];
+  activeWorkspaceId: string;
+  fallbackAspectRatio: AspectRatio;
+}): StudioGenerationPlaceholder[] {
+  const linkedLocalJobs = new Map(
+    jobs.flatMap((job) => (job.serverJobId ? [[job.serverJobId, job] as const] : [])),
+  );
+  const activeServerJobs = studioJobs.filter((job) => ACTIVE_SERVER_JOB_STATUSES.has(job.status));
+  const activeServerJobIds = new Set(activeServerJobs.map((job) => job.id));
+
+  return [
+    ...activeServerJobs.flatMap((job) => {
+      const linkedLocalJob = linkedLocalJobs.get(job.id);
+      const workspaceId = readJobWorkspaceId(job) ?? linkedLocalJob?.workspaceId ?? null;
+      if (workspaceId && workspaceId !== activeWorkspaceId) return [];
+
+      return [
+        {
+          id: `server-${job.id}`,
+          status: job.status,
+          aspectRatio: readJobAspectRatio(job, linkedLocalJob) ?? fallbackAspectRatio,
+          prompt: job.originalPrompt || linkedLocalJob?.prompt || 'Generating image',
+          createdAt: createdAtMs(job.createdAt),
+        },
+      ];
+    }),
+    ...jobs.flatMap((job) => {
+      if (!ACTIVE_LOCAL_JOB_STATUSES.has(job.status)) return [];
+      if (job.workspaceId !== activeWorkspaceId) return [];
+      if (job.serverJobId && activeServerJobIds.has(job.serverJobId)) return [];
+
+      return [
+        {
+          id: `local-${job.id}`,
+          status: job.status,
+          aspectRatio: job.config.aspectRatio,
+          prompt: job.prompt,
+          createdAt: job.createdAt,
+        },
+      ];
+    }),
+  ].toSorted((left, right) => right.createdAt - left.createdAt || left.id.localeCompare(right.id));
+}
+
 interface StudioViewportNavigationContext {
   routeView: AppPageView;
   direction: number;
@@ -121,6 +195,12 @@ export function buildStudioPageController(
   args: BuildStudioPageControllerArgs,
 ): StudioPageController {
   const hasProcessingJobs = args.operations.jobs.some((job) => job.status === 'processing');
+  const generationPlaceholders = buildStudioGenerationPlaceholders({
+    jobs: args.operations.jobs,
+    studioJobs: args.operations.studioJobs,
+    activeWorkspaceId: args.grid.activeWorkspaceId,
+    fallbackAspectRatio: args.grid.generationAspectRatio,
+  });
 
   return {
     debugPanel: {
@@ -148,9 +228,11 @@ export function buildStudioPageController(
       handleLoadRecipe: args.grid.handleLoadRecipe,
       handleDelete: args.grid.handleDelete,
       handleToggleFavorite: args.grid.handleToggleFavorite,
-      isGenerating: args.grid.isGenerating || hasProcessingJobs,
+      isGenerating:
+        args.grid.isGenerating || hasProcessingJobs || generationPlaceholders.length > 0,
       transitioningImageId: args.grid.transitioningImageId,
       activeModalImageId: args.grid.activeModalImageId,
+      generationPlaceholders,
       handleSelectAll: args.grid.handleSelectAll,
       handleDeselectAll: args.grid.handleDeselectAll,
       handleDeleteSelected: args.grid.handleDeleteSelected,

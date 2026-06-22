@@ -13,7 +13,7 @@ declare global {
 }
 
 import React from 'react';
-import type { CodexReasoningEffort, CodexServiceTier } from './packages/shared/src';
+import type { CodexReasoningEffort, CodexServiceTier, JobStatus } from './packages/shared/src';
 import { MODELS } from './constants';
 
 export interface Attachment {
@@ -104,6 +104,14 @@ export interface QueueJob {
   createdAt: number;
   completedAt?: number;
   isForced?: boolean;
+}
+
+export interface StudioGenerationPlaceholder {
+  id: string;
+  status: QueueJobStatus | JobStatus;
+  aspectRatio: string;
+  prompt: string;
+  createdAt: number;
 }
 
 export interface LogEntry {

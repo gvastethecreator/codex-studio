@@ -26,6 +26,7 @@ export interface StudioGridSurfaceProps {
   isGenerating: boolean;
   transitioningImageId: string | null;
   activeModalImageId: string | null;
+  generationPlaceholders?: React.ComponentProps<typeof ImageGrid>['generationPlaceholders'];
   handleSelectAll: (images: GeneratedImage[]) => void;
   handleDeselectAll: () => void;
   handleDeleteSelected: () => void;
@@ -57,6 +58,7 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
   isGenerating,
   transitioningImageId,
   activeModalImageId,
+  generationPlaceholders,
   handleSelectAll,
   handleDeselectAll,
   handleDeleteSelected,
@@ -120,6 +122,7 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
             isGenerating={isGenerating}
             transitioningImageId={transitioningImageId}
             activeModalImageId={activeModalImageId}
+            generationPlaceholders={generationPlaceholders}
             onSelectAll={handleGridSelectAll}
             onDeselectAll={handleDeselectAll}
             onDownloadSelected={handleGridDownloadSelected}

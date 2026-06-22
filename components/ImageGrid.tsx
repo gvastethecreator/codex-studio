@@ -1,5 +1,9 @@
 import React, { useRef, useState, useMemo, useSyncExternalStore } from 'react';
-import type { GeneratedImageWithConfig, ImageGenerationConfig } from '../types';
+import type {
+  GeneratedImageWithConfig,
+  ImageGenerationConfig,
+  StudioGenerationPlaceholder,
+} from '../types';
 import {
   Download,
   PlusCircle,
@@ -12,6 +16,7 @@ import {
   ImageOff,
   ArrowUpDown,
   CheckSquare,
+  Loader2,
   Square,
 } from 'lucide-react';
 import ActionButton from './ui/ActionButton';
@@ -28,7 +33,6 @@ interface ImageItemProps {
   onLoadConfig: (config: ImageGenerationConfig) => void;
   onDelete: (id: string) => void;
   onToggleFavorite: (id: string) => void;
-  isWorkspaceGenerating: boolean;
   transitionName?: string;
 }
 
@@ -43,7 +47,6 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     onLoadConfig,
     onDelete,
     onToggleFavorite,
-    isWorkspaceGenerating,
     transitionName,
   }) => {
     const itemRef = useRef<HTMLDivElement>(null);
@@ -110,7 +113,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           type="button"
           onClick={handleImageClick}
           aria-label="Open image preview"
-          className="block w-full appearance-none border-none bg-transparent p-0 text-left"
+          className="block w-full cursor-pointer appearance-none border-none bg-transparent p-0 text-left"
         >
           {imageLoadFailed ? (
             <div
@@ -127,7 +130,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
               loading="lazy"
               decoding="async"
               onError={handleImageError}
-              className={`w-full h-auto block bg-zinc-900 rounded-xl transition-[opacity,filter] duration-700 ${isWorkspaceGenerating ? 'opacity-60 grayscale-[0.2]' : ''}`}
+              className="block h-auto w-full cursor-pointer rounded-xl bg-zinc-900"
               style={{ viewTransitionName: transitionName }}
             />
           )}
@@ -241,8 +244,41 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
   },
 );
 
-interface ImageGridProps {
+const EMPTY_GENERATION_PLACEHOLDERS: StudioGenerationPlaceholder[] = [];
+
+type GridItem =
+  | { type: 'placeholder'; placeholder: StudioGenerationPlaceholder }
+  | { type: 'image'; image: GeneratedImageWithConfig };
+
+function toCssAspectRatio(aspectRatio: string) {
+  return /^\d+:\d+$/.test(aspectRatio) ? aspectRatio.replace(':', ' / ') : '1 / 1';
+}
+
+const GenerationPlaceholderItem: React.FC<{
+  placeholder: StudioGenerationPlaceholder;
+}> = React.memo(({ placeholder }) => (
+  <div className="masonry-item mb-4 overflow-hidden rounded-xl border border-accent-400/20 bg-zinc-950/80 shadow-lg animate-in fade-in-0 zoom-in-95">
+    <output
+      aria-label={`Generation job ${placeholder.status}`}
+      className="relative block overflow-hidden rounded-xl bg-zinc-900"
+      style={{ aspectRatio: toCssAspectRatio(placeholder.aspectRatio) }}
+    >
+      <div className="absolute inset-0 animate-pulse bg-linear-to-br from-white/10 via-zinc-800/70 to-zinc-950" />
+      <div className="absolute inset-x-0 top-0 h-16 bg-linear-to-b from-accent-400/10 to-transparent" />
+      <div className="absolute left-2 top-2 flex max-w-[calc(100%-1rem)] items-center gap-1.5 rounded-lg border border-white/10 bg-black/55 px-2 py-1 text-[10px] font-black uppercase tracking-widest text-zinc-100 backdrop-blur-md">
+        <Loader2 size={12} className={placeholder.status === 'running' ? 'animate-spin' : ''} />
+        <span className="truncate">{placeholder.status}</span>
+      </div>
+      <div className="absolute inset-x-2 bottom-2 rounded-lg border border-white/10 bg-black/50 px-2 py-1.5 text-[10px] font-semibold text-zinc-300 backdrop-blur-md">
+        <div className="truncate">{placeholder.prompt}</div>
+      </div>
+    </output>
+  </div>
+));
+
+export interface ImageGridProps {
   images: GeneratedImageWithConfig[];
+  generationPlaceholders?: StudioGenerationPlaceholder[];
   selectedImageIds: string[];
   onImageClick: (image: GeneratedImageWithConfig, rect: DOMRect) => void;
   onSelectionChange: (id: string, selected: boolean) => void;
@@ -305,7 +341,6 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     onLoadConfig,
     onDelete,
     onToggleFavorite,
-    isGenerating,
     transitioningImageId,
     activeModalImageId,
     onSelectAll,
@@ -320,6 +355,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     catalogError = null,
     onLoadMore,
     onRetryCatalog,
+    generationPlaceholders = EMPTY_GENERATION_PLACEHOLDERS,
   }) => {
     const [sortOrder, setSortOrder] = useState<SortOption>('desc');
     const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
@@ -356,26 +392,34 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
       });
     }, [images, sortOrder]);
 
+    const gridItems = useMemo<GridItem[]>(
+      () => [
+        ...generationPlaceholders.map((placeholder) => ({
+          type: 'placeholder' as const,
+          placeholder,
+        })),
+        ...sortedImages.map((image) => ({ type: 'image' as const, image })),
+      ],
+      [generationPlaceholders, sortedImages],
+    );
+
     const columnCount = useMemo(() => {
       const resolved = resolveColumnCount(viewportWidth);
-      return Math.max(1, Math.min(resolved, Math.max(1, sortedImages.length)));
-    }, [viewportWidth, sortedImages.length]);
+      return Math.max(1, Math.min(resolved, Math.max(1, gridItems.length)));
+    }, [viewportWidth, gridItems.length]);
 
     const columnBuckets = useMemo(() => {
       const safeColumnCount = Math.max(1, columnCount);
-      const buckets: GeneratedImageWithConfig[][] = Array.from(
-        { length: safeColumnCount },
-        () => [],
-      );
+      const buckets: GridItem[][] = Array.from({ length: safeColumnCount }, () => []);
 
-      sortedImages.forEach((image, index) => {
-        buckets[index % safeColumnCount].push(image);
+      gridItems.forEach((item, index) => {
+        buckets[index % safeColumnCount].push(item);
       });
 
       return buckets;
-    }, [sortedImages, columnCount]);
+    }, [gridItems, columnCount]);
 
-    if (images.length === 0) {
+    if (images.length === 0 && generationPlaceholders.length === 0) {
       return (
         <div className="flex h-full w-full items-center justify-center px-6 text-center">
           {catalogError ? (
@@ -533,33 +577,44 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
             style={{ gridTemplateColumns: `repeat(${Math.max(1, columnCount)}, minmax(0, 1fr))` }}
           >
             {columnBuckets.map((bucket, columnIndex) => {
-              const columnKey = bucket[0]?.id
-                ? `column-${bucket[0].id}-${bucket.length}`
+              const firstItem = bucket[0];
+              const firstItemId =
+                firstItem?.type === 'image' ? firstItem.image.id : firstItem?.placeholder.id;
+              const columnKey = firstItemId
+                ? `column-${firstItemId}-${bucket.length}`
                 : `column-empty-${columnIndex}`;
               return (
                 <div key={columnKey} className="flex min-w-0 flex-col gap-0">
-                  {bucket.map((image) => (
-                    <div
-                      key={image.id}
-                      className={activeModalImageId === image.id ? 'opacity-0' : 'opacity-100'}
-                    >
-                      <ImageItem
-                        image={image}
-                        isSelected={selectedImageIds.includes(image.id)}
-                        onImageClick={onImageClick}
-                        onSelectionChange={onSelectionChange}
-                        onRegenerate={onRegenerate}
-                        onAddToContext={onAddToContext}
-                        onLoadConfig={onLoadConfig}
-                        onDelete={onDelete}
-                        onToggleFavorite={onToggleFavorite}
-                        isWorkspaceGenerating={isGenerating}
-                        transitionName={
-                          transitioningImageId === image.id ? 'master-canvas' : undefined
-                        }
+                  {bucket.map((item) =>
+                    item.type === 'placeholder' ? (
+                      <GenerationPlaceholderItem
+                        key={item.placeholder.id}
+                        placeholder={item.placeholder}
                       />
-                    </div>
-                  ))}
+                    ) : (
+                      <div
+                        key={item.image.id}
+                        className={
+                          activeModalImageId === item.image.id ? 'opacity-0' : 'opacity-100'
+                        }
+                      >
+                        <ImageItem
+                          image={item.image}
+                          isSelected={selectedImageIds.includes(item.image.id)}
+                          onImageClick={onImageClick}
+                          onSelectionChange={onSelectionChange}
+                          onRegenerate={onRegenerate}
+                          onAddToContext={onAddToContext}
+                          onLoadConfig={onLoadConfig}
+                          onDelete={onDelete}
+                          onToggleFavorite={onToggleFavorite}
+                          transitionName={
+                            transitioningImageId === item.image.id ? 'master-canvas' : undefined
+                          }
+                        />
+                      </div>
+                    ),
+                  )}
                 </div>
               );
             })}
