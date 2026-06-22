@@ -20807,3 +20807,53 @@ Proxima tanda recomendada:
 
 - Recalcular la cola global de default cards faltantes/stale antes de generar
   mas; no asumir faltantes por memoria.
+
+## Checkpoint 2026-06-22 - `pack_02` photo/media visual correction
+
+Se corrigio una deriva visual de `Cinematic & Media`: varios defaults de
+Film Genres, Photography Eras, Lighting y TV/Broadcast leian como anime/cartoon
+cuando el preset pedia fotografia, film still, video, broadcast u optica.
+
+- Cambio minimo de prompt: `scripts/generate-style-defaults.ts` agrega
+  `PACK 02 PHOTO/MEDIA LOCK` para `pack_02` fuera de Animation/Cartoon y fuera
+  de presets anime explicitos.
+- Regenerados y aceptados por QA visual:
+  `SP02-003|SP02-005|SP02-008|SP02-010|SP02-012|SP02-013|SP02-015|SP02-016|SP02-052|SP02-069|SP02-076|SP02-121|SP02-122|SP02-123|SP02-124|SP02-126|SP02-127`.
+- Dry-run: `.tmp/style-card-review/sp02-photo-media-lock-dryrun.txt`;
+  17/17 prompts con lock fotografico/media. Probe de scope: `SP02-011` y
+  `SP02-037` quedan anime por manifiesto; `SP02-087` queda cartoon.
+- Generacion:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp02-photo-media-audit bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-003|SP02-005|SP02-008|SP02-010|SP02-012|SP02-013|SP02-015|SP02-016|SP02-052|SP02-069|SP02-076|SP02-121|SP02-122|SP02-123|SP02-124|SP02-126|SP02-127" --parallel=3 --session-suffix=sp02_photo_media_lock --force`
+  -> `generated=17 attempted=17 skipped=111 failed=0`.
+- QA visual: `.tmp/style-card-review/sp02_photo_media_after.png` mas hojas
+  completas `pack_02_sheet_after_01.png`, `04`, `05`, `08`. Las 17 pasan como
+  film/photo/TV/broadcast/light cards. `SP02-011`, Animation/Cartoon y
+  `SP02-115..120` se dejan animados por ser intencionales.
+- Validacion: `bun run styles:runtime` ok; `styles:runtime:check` current;
+  `bun run styles:validate -- --pack=pack_02 --coverage` ok con
+  `availableDefaultImages=128/128`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`; `bun run styles:quality:audit` ok, sin redundancia.
+
+Proxima tanda recomendada:
+
+- Seguir la cola global solo con estado runtime fresco; en `pack_02`, no
+  fotografiar Animation/Cartoon ni presets anime explicitos.
+
+## Checkpoint 2026-06-22 - `pack_02` rejected photo/media retry
+
+Se regeneraron de nuevo las tarjetas rechazadas/borradas de la tanda
+photo/media:
+
+- IDs: `SP02-003|SP02-008|SP02-076`.
+- Dry-run: `.tmp/style-card-review/sp02-photo-media-retry-dryrun.txt`, 3/3 con
+  `PACK 02 PHOTO/MEDIA LOCK`.
+- Generacion:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp02-photo-media-rejected-retry bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-003|SP02-008|SP02-076" --parallel=3 --session-suffix=sp02_photo_media_rejected_retry --force`
+  -> `generated=3 attempted=3 skipped=125 failed=0`.
+- QA visual: `.tmp/style-card-review/sp02_photo_media_rejected_retry.png`.
+  `SP02-003` queda como sci-fi practico/neon, `SP02-008` como found-footage
+  horror, `SP02-076` como rim-light object study; ninguna lee como anime.
+- Validacion: `bun run styles:runtime` ok; `styles:runtime:check` current;
+  `bun run styles:validate -- --pack=pack_02 --coverage` ok con
+  `availableDefaultImages=128/128`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`; `bun run styles:quality:audit` ok, sin redundancia.

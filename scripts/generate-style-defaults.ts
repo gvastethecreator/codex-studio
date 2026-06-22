@@ -3929,6 +3929,62 @@ function nonAnimeRepresentativeHeroCue(preset: StyleRuntimePreset) {
   ).toLowerCase()}: material specimen, symbolic object, environment fragment, craft/process form, or a stylized figure only if a figure genuinely clarifies the preset.`;
 }
 
+function isPack02PhotoMediaScenePreset(
+  pack: StyleRuntimePack,
+  category: string,
+  preset: StyleRuntimePreset,
+) {
+  if (pack.id !== 'pack_02' || presetAllowsAnimeGrammar(pack, category, preset)) return false;
+  const key = styleCategoryImageKey(pack.id, category);
+  return (
+    key !== 'pack_02__animation_styles' &&
+    key !== 'pack_02__caricature_and_cartoon_styles' &&
+    !isPack02CartoonMediaPreset(pack, preset)
+  );
+}
+
+function pack02PhotoMediaLockLine(
+  pack: StyleRuntimePack,
+  category: string,
+  preset: StyleRuntimePreset,
+) {
+  if (!isPack02PhotoMediaScenePreset(pack, category, preset)) return '';
+  const key = styleCategoryImageKey(pack.id, category);
+  const base =
+    'PACK 02 PHOTO/MEDIA LOCK: this default card must read as camera-native cinematic, photographic, TV, broadcast, or optical media. This overrides generic illustrated-card allowances. Do not solve it as anime, manga, cel-character art, cartoon mascot, game-art, fantasy illustration, or glossy character concept art.';
+  if (key === 'pack_02__tv_and_broadcast') {
+    return `${base} Broadcast graphics, overlays, monitors, chroma edges, scanlines, and signal artifacts are allowed, but any person, object, or set must feel filmed or video-native, not drawn.`;
+  }
+  if (key === 'pack_02__photography_eras') {
+    return `${base} The first read should be a real photographic process applied to a visible human scene: lens behavior, emulsion, instant film, sensor, scan, exposure, or archival artifact should shape people and setting, not become an isolated process specimen.`;
+  }
+  if (key === 'pack_02__lighting_and_atmosphere') {
+    return `${base} The first read should be a grounded photographic light study on believable people in a specific setting, not an object study, empty room, scenery plate, or fantasy character poster.`;
+  }
+  return `${base} The first read should be a live-action film still or practical cinematic frame with visible characters in a scene, with genre identity carried by light, lens, set texture, film grain, and color grade.`;
+}
+
+function pack02SceneFirstLockLine(
+  pack: StyleRuntimePack,
+  category: string,
+  preset: StyleRuntimePreset,
+) {
+  if (!isPack02PhotoMediaScenePreset(pack, category, preset)) return '';
+  const key = styleCategoryImageKey(pack.id, category);
+  const base =
+    'PACK 02 SCENE-FIRST RULE: make a complete cinematic/media scene with one or more visible people, readable body language, wardrobe, foreground/midground/background, and a specific setting. Do not make neutral object studies, empty environments, macro specimens, isolated props, product shots, abstract graphic fields, or scenery-only cards.';
+  if (key === 'pack_02__tv_and_broadcast') {
+    return `${base} Use a filmed presenter, host, performer, athlete, caller, crew member, or ordinary person inside the broadcast treatment; overlays and screens support the person-led TV moment without readable text.`;
+  }
+  if (key === 'pack_02__photography_eras') {
+    return `${base} The photographic process should modify a human scene, not replace it with a camera-process specimen.`;
+  }
+  if (key === 'pack_02__lighting_and_atmosphere') {
+    return `${base} The named light should shape a person or small cast in a believable scene; light is the style, people and setting are the content.`;
+  }
+  return `${base} Treat the preset as a live-action film still: characters in a genre moment, not a prop, vehicle, empty set, or design object.`;
+}
+
 const POSITIVE_ANIME_SCOPE_PATTERNS: Array<[RegExp, string]> = [
   [/SP06 ANIME-ALLOWED SCOPE/i, 'sp06 anime-allowed scope'],
   [/Pack 06 anime-allowed rule/i, 'sp06 anime-allowed rule'],
@@ -5999,6 +6055,9 @@ function buildStylePrompt(
   const pack17MedievalCard = pack.id === 'pack_17';
   const allowsAnimeGrammar = presetAllowsAnimeGrammar(pack, category, preset);
   const nonAnimeStyleLock = nonAnimeStyleLockLine(pack, category, preset);
+  const pack02PhotoMediaLock = pack02PhotoMediaLockLine(pack, category, preset);
+  const pack02SceneFirstLock = pack02SceneFirstLockLine(pack, category, preset);
+  const pack02SceneFirstCard = Boolean(pack02SceneFirstLock);
   const basePrompt = pack15PunkCard
     ? normalizePack15PromptText(categoryBasePrompt(pack, category, `${variantSeed}:anchor`, preset))
     : categoryBasePrompt(pack, category, `${variantSeed}:anchor`, preset);
@@ -7427,10 +7486,13 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
     !pack10PatternTextureCard &&
     !pack15PunkCard &&
     !pack17MedievalCard &&
+    !pack02SceneFirstCard &&
     !promptOverride;
   const sp05178NoCorridor = preset.id === 'SP05-178';
   const heroLine = promptOverride
     ? promptOverride.hero
+    : pack02SceneFirstCard
+      ? `Use one or more believable live-action people as the first read for ${sanitizeStylePromptName(preset.name).toLowerCase()}: visible face or body language, wardrobe, and role inside the scene. No object-only, prop-only, empty environment, neutral design specimen, abstract anchor, or isolated process sample.`
     : cartoonMediaCard
       ? `A flat representational cartoon-media specimen: ${pack02CartoonRepresentativeHeroCue(preset)}.`
       : pack15PunkCard
@@ -7448,6 +7510,8 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
     ? promptOverride.environment
     : sp05178NoCorridor
       ? 'Use shallow layered broken-facade panels, invasive-shadow shapes, and wet asphalt texture fragments around the character; no walkable street, alley, hallway, road, sidewalk, shrine corridor, room, market, library, or long depth lane.'
+      : pack02SceneFirstCard
+        ? 'Build a complete cinematic setting around the people with foreground, midground, background, lived-in details, and preset-specific film, photo, TV, broadcast, lighting, or genre cues. The environment must be present but cannot replace the people.'
       : cartoonMediaCard
         ? 'Environment optional: use a flat graphic field by default, or a simple concrete setting if it makes this preset easier to read. Do not repeat the same wall, lamp, shelf, corridor, studio, market, library, or furniture formula across cards.'
         : pack15PunkCard
@@ -7461,6 +7525,8 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
                 : familyVariant(ENVIRONMENT_VARIANTS, family, `${variantSeed}:environment`);
   const compositionLine = sp05178NoCorridor
     ? 'Close-to-mid emergency-poster crop with compressed shallow layers, empty hands visible, occult hazard geometry behind the shoulder, and no vanishing-point lane or navigable corridor.'
+    : pack02SceneFirstCard
+      ? 'Scene-still composition: people in action, pause, or performance inside an environment; crop-safe but not portrait-only bust, not object close-up, not scenery plate. Show enough setting to read as film, TV, broadcast, or photography.'
     : cartoonMediaCard
       ? 'Poster-readable composition, one simple graphic anchor plus supporting marks, generous crop-safe negative space; perspective, floor contact, cast shadow, or a simple setting can appear when they make the preset more legible.'
       : pack15PunkCard
@@ -7474,6 +7540,8 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
               : pickVariant(COMPOSITION_VARIANTS, `${variantSeed}:composition`);
   const materialLine = cartoonMediaCard
     ? 'Let paper tooth, cel paint, ink, wax, marker, collage edge, or print texture carry the style; physical props or scene objects are useful only when they are a representative cue, not filler.'
+    : pack02SceneFirstCard
+      ? 'Let materials support the human scene: wardrobe, set surfaces, practical props, atmospheric texture, film grain, video artifacts, emulsion, scanlines, lens bloom, or color grade. Do not make an isolated material/object study.'
     : pack15PunkCard
       ? 'Use broad illustrated material planes: simplified metal, cloth, smoke, neon, bio-material, stone, salvage, glass, or weather shapes with visible brush edges, clean drawn contours, optional subtle paper texture, and sparse graphic wear. Materials should look stylized, matte, painterly, and designed, not photoreal, physically simulated, or PBR-rendered. Avoid realistic metal/armor rendering, mirror rain reflections, noisy grime, tiny rivets everywhere, dense cable webs, panel-grid overload, over-rendered machinery, scratchy screenprint noise, and high-frequency surface detail.'
       : pack17MedievalCard
@@ -7493,6 +7561,8 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
                     : pickVariant(MATERIAL_VARIANTS, `${variantSeed}:material`);
   const lightingLine = cartoonMediaCard
     ? 'Prefer graphic color, paper/cel texture, and style-specific mark contrast; realistic lighting is fine only when it is a deliberate representative cue.'
+    : pack02SceneFirstCard
+      ? 'Use camera-native light on people and setting: practicals, motivated key light, broadcast glare, stage light, available light, hard flash, film noir shadow, or era-specific exposure. Lighting must reveal the scene and body language.'
     : pack15PunkCard
       ? 'Use stylized illustration lighting only: graphic value blocks, controlled color glow, clear rim or ambient accent, open midtones, and readable dark-gray shadow shapes. Avoid cinematic photoreal lensing, physically realistic light, crushed blacks, flat black fills, volumetric hyperreal smoke/fog, realistic night-war mood, HDR highlight noise, and bokeh/photo depth.'
       : pack17MedievalCard
@@ -7502,6 +7572,8 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
           : pickVariant(LIGHT_VARIANTS, `${variantSeed}:light`);
   const detailLine = cartoonMediaCard
     ? 'Details must be broad style marks and readable from thumbnail size; avoid tiny noisy micro-detail, repeated props, signs, labels, or stock room clutter.'
+    : pack02SceneFirstCard
+      ? 'Details must clarify the filmed moment: facial angle or body gesture, wardrobe silhouette, set dressing, practical prop scale, lens artifact, grain, scanline, emulsion edge, or broadcast texture. No readable text, labels, logos, UI, product display, or neutral specimen detail.'
     : pack15PunkCard
       ? 'Details must be few, medium-large, and aesthetic: character silhouette, garment mass, posture, age/body cue, social cue, background machine/biome/weather shape, material symbol embedded in the setting, or creature/environment feature. Clothing and environment should identify the punk subtype without becoming cosplay armor, worker uniform, fashionable jacket identity, handheld-gadget identity, or object-demo staging. Avoid repeated hair-as-identity, repeated high-collar jacket, lace-like microdetail, repeated decorative props, shields/badges unless explicitly required, realistic face/hair detail, tattoo-detail focus, leather-pouch costume detail, texture chatter, ultra-fine ornamental noise, cable lattice carpets, window-panel matrices, and machinery packed into every inch.'
       : pack17MedievalCard
@@ -7521,6 +7593,8 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
     ? 'Mood comes from line rhythm, deformation, crude pressure, color clash, texture, and anchor silhouette, not from a literal scene, celebrity likeness, prop, or known character.'
     : promptOverride
       ? promptOverride.feeling
+      : pack02SceneFirstCard
+        ? 'Mood comes from acting, body language, staging, light, lens, color treatment, and media artifacts. The card should feel like a captured human moment, not a neutral style sample.'
       : pack06Card
         ? 'Feeling comes from the medium behaving with taste: confident color, subject choice, mark pressure, material contact, and a tiny implied story. Avoid sterile technique demo or asset-library placeholder mood.'
         : pack10PatternTextureCard
@@ -7530,6 +7604,8 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
             : pickVariant(FEELING_VARIANTS, `${variantSeed}:feeling`);
   const cameraFocusLine = cartoonMediaCard
     ? 'No camera logic: prioritize silhouette, line behavior, and texture rhythm as a flat graphic card.'
+    : pack02SceneFirstCard
+      ? 'Focus on the human scene through cinematic or photographic camera logic: lens distance, exposure, frame crop, depth layering, motion blur, grain, scanlines, or broadcast optics. Do not focus on a neutral object, product, empty space, or abstract field.'
     : pack15PunkCard
       ? 'No photographic camera logic: no lens realism, no shallow DOF, no bokeh, no cinematic key-art depth, no dramatic real-world perspective. Prioritize flattened poster hierarchy, designed silhouette, drawn edges, shallow illustration depth, graphic focal hierarchy, and one representative subject or scene that sells the punk subtype.'
       : pack17MedievalCard
@@ -7551,6 +7627,8 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
     ? promptOverrideAllowsCharacter
       ? 'Prompt override character rule: include one readable original character or human-scale silhouette integrated with a preset-specific environment/background. Do not output object-only abstraction, franchise likeness, weapon-first action, UI/text, crowd lineup, or face-only portrait.'
       : 'Object/material safety exception: include one readable object, material specimen, symbolic focal form, or environment motif. Do not output an empty abstract-only field, but do not add characters, faces, bodies, portraits, or literal action scenes.'
+    : pack02SceneFirstCard
+      ? 'Pack 02 scene-first rule: include visible people in a complete non-anime film/photo/TV scene. The media style is the treatment; the content is a human moment with setting, wardrobe, body language, and cinematic depth. Do not output object-only cards, empty scenery, macro process samples, camera equipment, neutral props, abstract graphics, anime, manga, cartoon, or illustration-first character art.'
     : pack15PunkCard
       ? 'Pack 15 rule: include one readable characteristic x-punk protagonist as primary subject, integrated with a thematic background/environment. Machines, relics, vehicles, weather systems, creatures, architecture, and symbolic objects may exist only as context around the protagonist; do not put the protagonist in a repeated object-use gesture or make a technical foreground element the card identity. Avoid object-only posters, abstract-only cards, worker crews, revolution/propaganda crowds, generic RPG heroes, and generic American stock illustration.'
       : pack08Card
@@ -7568,6 +7646,8 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
               : representativeAnchorRule(pack, category, preset);
   const actionLine = promptOverride
     ? promptOverride.action
+    : pack02SceneFirstCard
+      ? 'Use a small readable human beat: watching, presenting, performing, fleeing, waiting, arguing, investigating, reacting, crossing frame, bracing under light, or being filmed in an era-specific way. Static is fine only when posture, expression, and staging sell the scene.'
     : cartoonMediaCard
       ? 'No action scene: imply motion through anchor deformation, smear marks, elastic curves, repeated lines, or scribble pressure.'
       : pack15PunkCard
@@ -7583,11 +7663,15 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
                 : pickVariant(ACTION_VARIANTS, `${variantSeed}:action`);
   const constraintSemanticsLine = pack15PunkCard
     ? 'Interpret avoid/no lists as anti-repetition guidance, but keep the pack contract strict: one protagonist in environment is required; technical, mystic, vehicle, signal, or machine motifs may appear only as world context, not as foreground focal equipment or object-use action.'
+    : pack02SceneFirstCard
+      ? 'For Pack 02 photo/media cards, interpret avoid/no lists as anti-cliche guidance, but keep the scene-first contract strict: visible people in a complete filmed/photographed setting are required. Do not overcorrect into empty spaces, isolated props, neutral specimens, camera gear, or abstract media texture.'
     : pack10PatternTextureCard
       ? 'For pack_10 Pattern & Texture, keep avoid/no lists strict against scene drift: do not add people, portraits, mannequins, rooms, furniture, lifestyle props, product staging, corridors, market aisles, library aisles, fantasy hallways, logos, readable codes, or decorative hero objects.'
       : constraintSemantics();
   const visualResetLine = pack15PunkCard
     ? 'If any earlier phrase sounds abstract-only, object-led, or no-scene, reinterpret it as anti-cliche guidance. The final card still needs one readable characteristic protagonist inside a thematic background/environment. Abstract marks, machinery, symbols, materials, and signal effects support that character-world read; they are not the whole image and not the foreground action.'
+    : pack02SceneFirstCard
+      ? 'If any earlier phrase sounds object-led, process-only, atmosphere-only, or abstract-only, reinterpret it as media treatment. The final Pack 02 card still needs visible people in a complete cinematic/photo/TV scene with foreground, midground, background, wardrobe, body language, and preset-specific camera/media treatment.'
     : promptOverride
       ? 'If any earlier phrase sounds abstract-only, reinterpret it as anti-cliche guidance. The final card still needs one readable representative object, material form, symbolic focal form, or environment motif. Do not add a character, face, body, portrait, or literal scene when the override says object/material-first.'
       : pack08Card
@@ -7601,6 +7685,8 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
               : visualResetRule();
   const differentiationLine = pack10PatternTextureCard
     ? 'Keep the material/pattern anchor, but do not reuse generic staging from neighboring presets in this category; vary repeat scale, surface crop, fold/grain direction, tactile edge, and color identity for this preset specifically.'
+    : pack02SceneFirstCard
+      ? 'Keep people and a complete scene mandatory, but do not reuse generic staging from neighboring Pack 02 presets; vary cast role, setting, era/media artifact, lens distance, body language, and foreground/background relationship for this preset specifically.'
     : 'Keep the anchor, but do not reuse generic staging from neighboring presets in this category; vary subject design, environment read, action cue, and color identity for this preset specifically.';
 
   const animeSafeCharacterCard =
@@ -7609,6 +7695,7 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
     !promptOverride;
   const anatomyRuleLine =
     animeSafeCharacterCard ||
+    pack02SceneFirstCard ||
     pack08Card ||
     pack06Card ||
     pack.id === 'pack_05' ||
@@ -7625,18 +7712,22 @@ MODE: text-to-image
 MODEL: ${IMAGEGEN_MODEL}, ${IMAGEGEN_REASONING_EFFORT}
 
 ${nonAnimeStyleLock ? `${nonAnimeStyleLock}\n` : ''}
-Create an original, clean, text-free illustrated style-card. ${
+${pack02PhotoMediaLock ? `${pack02PhotoMediaLock}\n` : ''}
+${pack02SceneFirstLock ? `${pack02SceneFirstLock}\n` : ''}
+${pack02SceneFirstCard ? 'Create an original, clean, text-free live-action cinematic/media style-card with people in a complete scene.' : 'Create an original, clean, text-free illustrated style-card.'} ${
         animeSafeCharacterCard
           ? 'Use one full readable original anime protagonist as the primary anchor: face/pose/acting/costume silhouette must carry the preset identity. Props, relics, emblems, light motifs, and environment fragments support the character; they must not replace the character.'
-          : pack15PunkCard
-            ? 'Use one readable characteristic x-punk protagonist as the primary anchor: face/pose/wardrobe silhouette/body language must carry the subtype. Props, relics, machines, vehicles, creatures, and environment fragments support the character; they must not replace the character.'
-            : 'Use one readable representative anchor: emblem, relic, material specimen, light motif, or environment fragment.'
+          : pack02SceneFirstCard
+            ? 'Use one or more believable live-action people as the primary read: face, pose, body language, wardrobe, and relationship to the setting must carry the preset identity. Media artifacts, light motifs, props, and environment fragments support the human scene; they must not replace it.'
+            : pack15PunkCard
+              ? 'Use one readable characteristic x-punk protagonist as the primary anchor: face/pose/wardrobe silhouette/body language must carry the subtype. Props, relics, machines, vehicles, creatures, and environment fragments support the character; they must not replace the character.'
+              : 'Use one readable representative anchor: emblem, relic, material specimen, light motif, or environment fragment.'
       } Keep it non-graphic, non-derivative, polished, card-readable, and distinct from neighboring presets.
 
 STYLE DNA: aesthetic=${styleAesthetic}; subject=${styleSubject}; color=${styleColor}; light=${styleLighting}; texture=${styleTexture}; camera=${styleCamera}; mood=${styleMood}; render=${styleRender}; features=${styleFeatures}.
 
 ${
-  animeSafeCharacterCard || pack15PunkCard
+  animeSafeCharacterCard || pack02SceneFirstCard || pack15PunkCard
     ? `HERO: ${heroLine}
 ENVIRONMENT: ${environmentLine}
 FEELING: ${feelingLine}
@@ -7644,8 +7735,8 @@ ACTION: ${actionLine}
 `
     : ''
 }REPRESENTATION RULE: ${representationRuleLine}
-CONSTRAINT SEMANTICS: ${constraintSemantics()}
-${anatomyRuleLine ? `${anatomyRuleLine}\n` : ''}${pack12Rule ? `VIDEO GAME GAMEPLAY RULE: ${pack12Rule}\n` : ''}COMPOSITION: Central readable anchor with offset secondary planes and crop-safe negative space.
+CONSTRAINT SEMANTICS: ${constraintSemanticsLine}
+${anatomyRuleLine ? `${anatomyRuleLine}\n` : ''}${pack12Rule ? `VIDEO GAME GAMEPLAY RULE: ${pack12Rule}\n` : ''}COMPOSITION: ${pack02SceneFirstCard ? compositionLine : 'Central readable anchor with offset secondary planes and crop-safe negative space.'}
 MATERIAL: ${materialLine}
 LIGHTING: ${lightingLine}
 DETAIL: ${detailLine}
@@ -7666,6 +7757,8 @@ ${sessionKey ? `SESSION: ${sessionKey}\n` : ''}MODE: text-to-image
 MODEL: ${IMAGEGEN_MODEL}, ${IMAGEGEN_REASONING_EFFORT}
 
 ${nonAnimeStyleLock ? `${nonAnimeStyleLock}\n` : ''}
+${pack02PhotoMediaLock ? `${pack02PhotoMediaLock}\n` : ''}
+${pack02SceneFirstLock ? `${pack02SceneFirstLock}\n` : ''}
 ${basePrompt}
 ${pack06DiversityLock ? `${pack06DiversityLock}\n` : ''}
 ${pack06PresetBrief ? `${pack06PresetBrief}\n` : ''}

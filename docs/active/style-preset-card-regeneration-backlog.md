@@ -9108,3 +9108,76 @@ Siguiente cola recomendada:
 
 - Con `pack_11` cerrado por coverage, volver a la auditoria/cola global con
   foco en faltantes reales actuales y mantener dry-run + QA visual por tanda.
+
+### Primary defaults - 2026-06-22 - `pack_02` photo/media correction
+
+Ronda de QA visual sobre `Cinematic & Media`: habia defaults no-anime con
+lectura anime/cartoon en categorias que deben leerse como fotografia, film
+still, TV/broadcast u optica.
+
+- Correccion de prompt:
+  `scripts/generate-style-defaults.ts` agrega `PACK 02 PHOTO/MEDIA LOCK` para
+  `pack_02` fuera de Animation/Cartoon y fuera de presets anime explicitos.
+  El lock exige lectura camera-native / live-action / broadcast y bloquea
+  anime, manga, cel-character, cartoon mascot, game-art y fantasy illustration
+  como solucion por defecto.
+- Dry-run guardado:
+  `.tmp/style-card-review/sp02-photo-media-lock-dryrun.txt`; los 17 prompts
+  muestran `PACK 02 PHOTO/MEDIA LOCK`. Probe de scope confirma que `SP02-011`
+  y `SP02-037` no reciben el lock por anime explicito, y `SP02-087` no recibe
+  lock fotografico por pertenecer a Cartoon.
+- IDs regenerados:
+  `SP02-003|SP02-005|SP02-008|SP02-010|SP02-012|SP02-013|SP02-015|SP02-016|SP02-052|SP02-069|SP02-076|SP02-121|SP02-122|SP02-123|SP02-124|SP02-126|SP02-127`.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp02-photo-media-audit bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-003|SP02-005|SP02-008|SP02-010|SP02-012|SP02-013|SP02-015|SP02-016|SP02-052|SP02-069|SP02-076|SP02-121|SP02-122|SP02-123|SP02-124|SP02-126|SP02-127" --parallel=3 --session-suffix=sp02_photo_media_lock --force`
+  -> `generated=17 attempted=17 skipped=111 failed=0`.
+- QA visual:
+  `.tmp/style-card-review/sp02_photo_media_after.png` y hojas completas
+  `.tmp/style-card-review/pack_02_sheet_after_01.png`,
+  `pack_02_sheet_after_04.png`, `pack_02_sheet_after_05.png`,
+  `pack_02_sheet_after_08.png`. Aceptadas las 17: Film Genres pasan a film
+  still/live-action, `SP02-052` lee como lomography fotografico, `SP02-069` y
+  `SP02-076` como estudios de luz, y `SP02-121..127` como TV/broadcast/video.
+  Se dejan intencionalmente animados `SP02-011` y Animation/Cartoon, incluido
+  `SP02-115..120`, porque el manifiesto lo pide.
+- Backup current:
+  `D:\codex-studio-backups\style-default-cards\sp02-photo-media-audit\current`.
+- Validacion:
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`;
+  `bun run styles:runtime:check` -> current;
+  `bun run styles:validate -- --pack=pack_02 --coverage` -> ok,
+  `availableDefaultImages=128/128`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`;
+  `bun run styles:quality:audit` -> ok, `redundancy: none above threshold`.
+
+Siguiente cola recomendada:
+
+- Si aparece otra deriva visual en `pack_02`, usar el mismo lock antes de
+  regenerar; no convertir Animation/Cartoon ni presets anime explicitos a foto.
+
+### Primary defaults - 2026-06-22 - `pack_02` rejected photo/media retry
+
+Retry puntual sobre tarjetas borradas/rechazadas despues de la correccion
+photo/media.
+
+- IDs regenerados: `SP02-003|SP02-008|SP02-076`.
+- Dry-run:
+  `.tmp/style-card-review/sp02-photo-media-retry-dryrun.txt` -> 3/3 prompts
+  con `PACK 02 PHOTO/MEDIA LOCK`.
+- Comando:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp02-photo-media-rejected-retry bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-003|SP02-008|SP02-076" --parallel=3 --session-suffix=sp02_photo_media_rejected_retry --force`
+  -> `generated=3 attempted=3 skipped=125 failed=0`.
+- QA visual:
+  `.tmp/style-card-review/sp02_photo_media_rejected_retry.png`. Aceptadas las
+  3: `SP02-003` como sci-fi practico/neon no-anime, `SP02-008` como
+  found-footage horror sin cartoon, `SP02-076` como estudio de rim lighting
+  sobre objeto/superficie.
+- Backup current:
+  `D:\codex-studio-backups\style-default-cards\sp02-photo-media-rejected-retry\current`.
+- Validacion:
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`;
+  `bun run styles:runtime:check` -> current;
+  `bun run styles:validate -- --pack=pack_02 --coverage` -> ok,
+  `availableDefaultImages=128/128`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`;
+  `bun run styles:quality:audit` -> ok, `redundancy: none above threshold`.

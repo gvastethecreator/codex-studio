@@ -32,14 +32,14 @@
     "presetName": "80s Sci-Fi",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "1. Film Genres",
     "file": "assets/recipes/styles/defaults/SP02-003.webp",
-    "jobId": "30839c8c-064a-4142-8f08-de8228c0635a",
+    "jobId": "53ea79c7-15f7-4f4c-94c8-6e75445437e9",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-003.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T08:16:13.262Z"
+    "generatedAt": "2026-06-22T17:14:10.000Z"
   },
   {
     "presetId": "SP02-004",
@@ -60,14 +60,14 @@
     "presetName": "French New Wave",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "1. Film Genres",
     "file": "assets/recipes/styles/defaults/SP02-005.webp",
-    "jobId": "1ad095ea-0a45-4a8a-8345-4fb8d13875d8",
+    "jobId": "4e23d49c-6c7c-4ecb-91de-e024ced35e44",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-005.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T07:58:03.841Z"
+    "generatedAt": "2026-06-22T16:02:56.624Z"
   },
   {
     "presetId": "SP02-006",
@@ -102,14 +102,14 @@
     "presetName": "Found Footage Horror",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "1. Film Genres",
     "file": "assets/recipes/styles/defaults/SP02-008.webp",
-    "jobId": "425fcd83-ca20-415b-b110-89e4de51295a",
+    "jobId": "e3230999-dea5-4c04-99af-cc4ac08e3c96",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-008.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T07:59:17.372Z"
+    "generatedAt": "2026-06-22T17:13:54.460Z"
   },
   {
     "presetId": "SP02-009",
@@ -130,14 +130,14 @@
     "presetName": "Kung Fu Studio Epic (Shaw Brothers)",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "1. Film Genres",
     "file": "assets/recipes/styles/defaults/SP02-010.webp",
-    "jobId": "0db4e9eb-98cf-46f7-b4c1-1c204b140c9e",
+    "jobId": "e669add4-4cd3-4992-b21e-2a3bbf4bcd00",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-010.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T08:00:31.059Z"
+    "generatedAt": "2026-06-22T16:04:20.232Z"
   },
   {
     "presetId": "SP02-011",
@@ -158,28 +158,28 @@
     "presetName": "Wes Anderson Symmetrical Storybook Cinema",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "1. Film Genres",
     "file": "assets/recipes/styles/defaults/SP02-012.webp",
-    "jobId": "8eb75c38-ffbc-4dad-a19e-f15759d95f8d",
+    "jobId": "c47bb646-44a5-4c4a-a23e-21feb60691e2",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-012.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T08:14:07.304Z"
+    "generatedAt": "2026-06-22T16:05:29.101Z"
   },
   {
     "presetId": "SP02-013",
     "presetName": "Blockbuster Teal & Orange",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "1. Film Genres",
     "file": "assets/recipes/styles/defaults/SP02-013.webp",
-    "jobId": "6636726f-6ebd-4385-9f42-91213bdaf1fa",
+    "jobId": "e4d29b28-c7c5-4214-ad2c-3832001e6464",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-013.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T07:56:46.234Z"
+    "generatedAt": "2026-06-22T16:06:52.757Z"
   },
   {
     "presetId": "SP02-014",
@@ -200,28 +200,28 @@
     "presetName": "Mumblecore",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "1. Film Genres",
     "file": "assets/recipes/styles/defaults/SP02-015.webp",
-    "jobId": "056cfda5-cb26-4c90-a2cd-f03ccedbfbeb",
+    "jobId": "061ff0a4-7582-412d-997a-85b7f639b5d7",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-015.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T08:12:15.998Z"
+    "generatedAt": "2026-06-22T16:08:13.024Z"
   },
   {
     "presetId": "SP02-016",
     "presetName": "Space Opera (70s)",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "1. Film Genres",
     "file": "assets/recipes/styles/defaults/SP02-016.webp",
-    "jobId": "7146b8c5-9434-4c9c-a907-33bcae7833b3",
+    "jobId": "a79dbafb-b74f-4954-8d67-6c536fdbbb00",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-016.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T08:06:58.898Z"
+    "generatedAt": "2026-06-22T16:09:39.159Z"
   },
   {
     "presetId": "SP02-017",
@@ -718,14 +718,14 @@
     "presetName": "Lomography",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "4. Photography Eras",
     "file": "assets/recipes/styles/defaults/SP02-052.webp",
-    "jobId": "1acf59fc-ae6b-4db6-a44b-a265c12cde98",
+    "jobId": "503a99db-319f-42ac-89cd-a3772e92ad15",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-052.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-16T10:58:07.186Z"
+    "generatedAt": "2026-06-22T16:19:46.913Z"
   },
   {
     "presetId": "SP02-053",
@@ -956,14 +956,14 @@
     "presetName": "Split Lighting",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "5. Lighting And Atmosphere",
     "file": "assets/recipes/styles/defaults/SP02-069.webp",
-    "jobId": "700df1ff-f5c0-4980-ab9f-063e44c3f5b3",
+    "jobId": "8ffe09c4-a3d0-46f9-81d9-8a1daa19c804",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-069.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-16T12:32:50.009Z"
+    "generatedAt": "2026-06-22T16:20:49.532Z"
   },
   {
     "presetId": "SP02-070",
@@ -1054,14 +1054,14 @@
     "presetName": "Rim Lighting",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "5. Lighting And Atmosphere",
     "file": "assets/recipes/styles/defaults/SP02-076.webp",
-    "jobId": "cd57a319-9f3a-4729-b228-003e04065197",
+    "jobId": "0a768852-8de0-4cf0-80b5-c184a7b0ba3f",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-076.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T09:16:42.509Z"
+    "generatedAt": "2026-06-22T16:46:28.673Z"
   },
   {
     "presetId": "SP02-077",
@@ -1684,56 +1684,56 @@
     "presetName": "Analog Sitcom Multicam",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "3. Broadcast And Tv Look",
+    "category": "2. TV And Broadcast",
     "file": "assets/recipes/styles/defaults/SP02-121.webp",
-    "jobId": "302b1aac-7f8e-4d78-a87f-516dfebc47e7",
+    "jobId": "31044491-998f-4095-b947-44d980639b8c",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-121.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T09:46:15.412Z"
+    "generatedAt": "2026-06-22T16:11:39.220Z"
   },
   {
     "presetId": "SP02-122",
     "presetName": "Local News Chroma Key Package",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "3. Broadcast And Tv Look",
+    "category": "2. TV And Broadcast",
     "file": "assets/recipes/styles/defaults/SP02-122.webp",
-    "jobId": "54694d40-b2dc-45d7-971d-db10740c74fd",
+    "jobId": "4caa77d2-3329-44f8-ad3f-87f796c63136",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-122.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T09:47:33.910Z"
+    "generatedAt": "2026-06-22T16:12:59.675Z"
   },
   {
     "presetId": "SP02-123",
     "presetName": "Public Access Cable Crawl",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "3. Broadcast And Tv Look",
+    "category": "2. TV And Broadcast",
     "file": "assets/recipes/styles/defaults/SP02-123.webp",
-    "jobId": "62dd9546-3fff-4ea6-8603-5afbefe5b6a6",
+    "jobId": "2b704832-ee9a-44e3-aeb7-854af7cec101",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-123.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T09:48:51.567Z"
+    "generatedAt": "2026-06-22T16:14:24.025Z"
   },
   {
     "presetId": "SP02-124",
     "presetName": "VHS Sports Replay Broadcast",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "3. Broadcast And Tv Look",
+    "category": "2. TV And Broadcast",
     "file": "assets/recipes/styles/defaults/SP02-124.webp",
-    "jobId": "44d42ddd-c27d-48a0-98a0-4469ce21771c",
+    "jobId": "febce4a2-c121-4219-a7da-d60858134c06",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-124.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T09:50:09.904Z"
+    "generatedAt": "2026-06-22T16:15:41.860Z"
   },
   {
     "presetId": "SP02-125",
@@ -1754,28 +1754,28 @@
     "presetName": "Late Night Infomercial Gloss",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "3. Broadcast And Tv Look",
+    "category": "2. TV And Broadcast",
     "file": "assets/recipes/styles/defaults/SP02-126.webp",
-    "jobId": "10bb9a90-1172-482d-87f4-cbbac7796e31",
+    "jobId": "ab09773f-7a1b-4f59-81ef-263f1a0d4d0f",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-126.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T09:53:43.612Z"
+    "generatedAt": "2026-06-22T16:17:00.623Z"
   },
   {
     "presetId": "SP02-127",
     "presetName": "Interlaced Music Video Glow",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "3. Broadcast And Tv Look",
+    "category": "2. TV And Broadcast",
     "file": "assets/recipes/styles/defaults/SP02-127.webp",
-    "jobId": "ecbfe560-1573-4571-bb36-a8dd56ed5578",
+    "jobId": "a125e8e5-c61c-4cf2-8d6f-ab4a9def6bec",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-127.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T09:58:03.179Z"
+    "generatedAt": "2026-06-22T16:18:29.023Z"
   },
   {
     "presetId": "SP02-128",
