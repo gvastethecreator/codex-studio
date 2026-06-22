@@ -38,6 +38,7 @@ describe('catalogCommands', () => {
     const events: { type: string; payload: CatalogImage }[] = [];
     const updated = catalogImage({ id: 'image-2', isFavorite: true });
     const commands = createCatalogCommands({
+      listCatalogImageIds: () => [],
       updateCatalogImage: () => updated,
       softDeleteCatalogImage: () => null,
       restoreCatalogImage: () => null,
@@ -54,6 +55,7 @@ describe('catalogCommands', () => {
   it('keeps not-found outcomes HTTP-agnostic and does not publish', () => {
     const events: string[] = [];
     const commands = createCatalogCommands({
+      listCatalogImageIds: () => [],
       updateCatalogImage: () => null,
       softDeleteCatalogImage: () => null,
       restoreCatalogImage: () => null,
@@ -69,6 +71,7 @@ describe('catalogCommands', () => {
     const events: string[] = [];
     const image = catalogImage();
     const commands = createCatalogCommands({
+      listCatalogImageIds: () => [],
       updateCatalogImage: () => null,
       softDeleteCatalogImage: () => image,
       restoreCatalogImage: () => image,
@@ -80,5 +83,54 @@ describe('catalogCommands', () => {
     expect(commands.restore('image-1')).toEqual({ ok: true, image });
     expect(commands.purge('image-1')).toEqual({ ok: true, image });
     expect(events).toEqual(['catalog.updated', 'catalog.updated', 'catalog.deleted']);
+  });
+
+  it('runs full-scope catalog commands from filter-selected ids', () => {
+    const first = catalogImage({ id: 'image-1', workspaceId: 'workspace-a' });
+    const second = catalogImage({ id: 'image-2', workspaceId: 'workspace-a' });
+    const images = new Map([
+      [first.id, first],
+      [second.id, second],
+    ]);
+    const events: string[] = [];
+    const commands = createCatalogCommands({
+      listCatalogImageIds: (filters) =>
+        [...images.values()]
+          .filter((image) => image.workspaceId === filters.workspaceId)
+          .map((image) => image.id),
+      updateCatalogImage: () => null,
+      softDeleteCatalogImage: (id) => images.get(id) ?? null,
+      restoreCatalogImage: () => null,
+      purgeCatalogImage: () => null,
+      publishEvent: (type) => events.push(type),
+    });
+
+    expect(commands.archiveByFilter({ workspaceId: 'workspace-a' })).toMatchObject({
+      ok: true,
+      action: 'archive',
+      matchedCount: 2,
+      changedCount: 2,
+      failed: [],
+    });
+    expect(events).toEqual(['catalog.updated', 'catalog.updated']);
+  });
+
+  it('does not archive the whole catalog without an explicit scope', () => {
+    const commands = createCatalogCommands({
+      listCatalogImageIds: () => ['image-1'],
+      updateCatalogImage: () => null,
+      softDeleteCatalogImage: () => catalogImage(),
+      restoreCatalogImage: () => null,
+      purgeCatalogImage: () => null,
+      publishEvent: () => {},
+    });
+
+    expect(commands.archiveByFilter({})).toEqual({
+      ok: true,
+      action: 'archive',
+      matchedCount: 0,
+      changedCount: 0,
+      failed: [],
+    });
   });
 });

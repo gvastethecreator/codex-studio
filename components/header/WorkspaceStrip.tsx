@@ -10,6 +10,7 @@ interface WorkspaceStripProps {
   onAddWorkspace: () => void;
   onDeleteWorkspace: (id: string) => void;
   onRenameWorkspace: (id: string, name: string) => void;
+  layout?: 'desktop' | 'compact';
 }
 
 const WORKSPACE_GRADIENTS = [
@@ -44,10 +45,12 @@ export function WorkspaceStrip({
   onAddWorkspace,
   onDeleteWorkspace,
   onRenameWorkspace,
+  layout = 'desktop',
 }: WorkspaceStripProps) {
   const [editingWorkspaceId, setEditingWorkspaceId] = React.useState<string | null>(null);
   const [editingName, setEditingName] = React.useState('');
   const workspacesContainerRef = React.useRef<HTMLDivElement>(null);
+  const isCompact = layout === 'compact';
 
   React.useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
@@ -74,14 +77,15 @@ export function WorkspaceStrip({
   return (
     <div
       ref={workspacesContainerRef}
-      className="vt-workspace-list hidden md:flex items-center gap-2 px-2"
+      className={`vt-workspace-list items-center gap-2 px-2 ${isCompact ? 'flex max-w-[min(82vw,360px)] overflow-x-auto py-1 no-scrollbar' : 'hidden md:flex'}`}
     >
       {workspaces.map((workspace, index) => {
         const label = getWorkspaceLabel(workspace, index);
         const gradientClass = getWorkspaceGradient(index);
         const isActive = activeWorkspaceId === workspace.id;
-        const tooltipContent = `${workspace.name || `Workspace ${label}`} · created ${new Date(workspace.createdAt).toLocaleDateString()}`;
-        const workspaceButtonClassName = `size-9 rounded-xl border-2 transition-all overflow-hidden relative flex items-center justify-center cursor-pointer ${
+        const workspaceName = workspace.name || `Workspace ${label}`;
+        const tooltipContent = `${workspaceName} · created ${new Date(workspace.createdAt).toLocaleDateString()}`;
+        const workspaceButtonClassName = `size-10 rounded-xl border-2 transition-[color,background-color,border-color,opacity,transform,box-shadow] overflow-hidden relative flex items-center justify-center cursor-pointer ${
           isActive
             ? 'border-accent-500 shadow-lg scale-105'
             : 'border-white/10 opacity-60 hover:opacity-100'
@@ -92,10 +96,16 @@ export function WorkspaceStrip({
             <Tooltip content={tooltipContent} position="bottom">
               <button
                 type="button"
+                aria-current={isActive ? 'page' : undefined}
+                aria-label={
+                  isActive
+                    ? `Rename workspace ${workspaceName}`
+                    : `Switch to workspace ${workspaceName}`
+                }
                 onClick={() => {
                   if (isActive) {
                     setEditingWorkspaceId(workspace.id);
-                    setEditingName(workspace.name || `Workspace ${label}`);
+                    setEditingName(workspaceName);
                   } else {
                     onSwitchWorkspace(workspace.id);
                   }
@@ -144,10 +154,10 @@ export function WorkspaceStrip({
                   event.stopPropagation();
                   onDeleteWorkspace(workspace.id);
                 }}
-                className="absolute -top-1.5 -right-1.5 size-4.5 bg-red-500 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10 shadow-sm cursor-pointer"
-                title="Delete workspace"
+                aria-label={`Delete workspace ${workspaceName}`}
+                className="absolute -top-2.5 -right-2.5 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-red-500 text-white opacity-0 shadow-sm transition-opacity group-hover:opacity-100 group-focus-within:opacity-100 focus-visible:opacity-100 hover:bg-red-400"
               >
-                <X size={11} strokeWidth={3} />
+                <X size={13} strokeWidth={3} />
               </button>
             )}
           </div>
@@ -157,7 +167,8 @@ export function WorkspaceStrip({
         <button
           type="button"
           onClick={onAddWorkspace}
-          className="size-9 flex items-center justify-center rounded-xl bg-white/5 hover:bg-accent-500/20 text-zinc-600 border border-dashed border-white/10 transition-all cursor-pointer"
+          aria-label="Create workspace"
+          className="flex size-10 cursor-pointer items-center justify-center rounded-xl border border-dashed border-white/10 bg-white/5 text-zinc-600 transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-zinc-200"
         >
           <Plus size={18} />
         </button>

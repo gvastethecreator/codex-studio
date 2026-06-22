@@ -55,6 +55,7 @@ import { createJobRoutes } from './jobRoutes';
 import { createAssetLogRoutes } from './assetLogRoutes';
 import { createRuntimeRoutes } from './runtimeRoutes';
 import { createStudioControlRoutes } from './studioControlRoutes';
+import { createMaintenanceRoutes } from './maintenanceRoutes';
 import { createEventStreamRoutes } from './eventStreamRoutes';
 import { createLibraryRoutes } from './libraryRoutes';
 import { createLocalApiSecurityMiddleware } from './localApiSecurity';
@@ -122,6 +123,7 @@ export async function createStudioApp(
       resolveWorkerRuntimeTarget,
     });
   const catalogCommands = createCatalogCommands({
+    listCatalogImageIds: (...args) => catalogStore.listCatalogImageIds(...args),
     updateCatalogImage: (...args) => catalogStore.updateCatalogImage(...args),
     softDeleteCatalogImage: (...args) => catalogStore.softDeleteCatalogImage(...args),
     restoreCatalogImage: (...args) => catalogStore.restoreCatalogImage(...args),
@@ -194,6 +196,8 @@ export async function createStudioApp(
     }),
   );
 
+  app.route('/api/maintenance', createMaintenanceRoutes());
+
   app.route(
     '/api/projects',
     createProjectRoutes({
@@ -208,7 +212,7 @@ export async function createStudioApp(
   app.route(
     '/api/jobs',
     createJobRoutes({
-      listJobs: () => dbStore.listJobs(),
+      listJobs: () => dbStore.listJobSummaries?.() ?? dbStore.listJobs(),
       getJob: (jobId) => dbStore.getJob(jobId),
       getJobDetail,
       cancelQueuedOrRunningJob: (jobId) => workerController.cancelQueuedOrRunningJob(jobId),

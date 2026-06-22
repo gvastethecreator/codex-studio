@@ -38,6 +38,7 @@ function createRoutes(store: StudioCatalogStore) {
   return createCatalogRoutes({
     catalogStore: store,
     catalogCommands: createCatalogCommands({
+      listCatalogImageIds: (...args) => store.listCatalogImageIds(...args),
       updateCatalogImage: (...args) => store.updateCatalogImage(...args),
       softDeleteCatalogImage: (...args) => store.softDeleteCatalogImage(...args),
       restoreCatalogImage: (...args) => store.restoreCatalogImage(...args),
@@ -118,5 +119,30 @@ describe('catalog routes', () => {
       isDeleted: false,
     });
     expect(missing.status).toBe(404);
+  });
+
+  it('archives Catalog Entries by full-scope command filter', async () => {
+    const routes = createRoutes(
+      createMemoryCatalogStore([
+        catalogImage({ id: 'image-1', workspaceId: 'workspace-a' }),
+        catalogImage({ id: 'image-2', workspaceId: 'workspace-a' }),
+        catalogImage({ id: 'image-3', workspaceId: 'workspace-b' }),
+      ]),
+    );
+
+    const response = await routes.request('/commands/archive', {
+      method: 'POST',
+      body: JSON.stringify({ workspaceId: 'workspace-a' }),
+      headers: { 'Content-Type': 'application/json' },
+    });
+
+    expect(response.status).toBe(200);
+    await expect(response.json()).resolves.toMatchObject({
+      ok: true,
+      action: 'archive',
+      matchedCount: 2,
+      changedCount: 2,
+      failed: [],
+    });
   });
 });

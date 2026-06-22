@@ -1,6 +1,8 @@
 import type {
   CatalogPage,
   CatalogImage,
+  CatalogBatchCommandResult,
+  CatalogCommandFilter,
   CodexAccountStatusResponse,
   CodexModelCatalogResponse,
   LocalCodexSessionResponse,
@@ -16,12 +18,17 @@ import type {
   ImportExternalOutputSourceInput,
   ImportExternalOutputSourceResult,
   Job,
+  JobSummary,
   Project,
   StudioResetResponse,
   StudioLibrary,
   RegisteredExternalOutputSource,
   RegisterExternalOutputSourceInput,
+  StorageMaintenanceAuditReport,
+  StorageMaintenanceCompactResult,
+  StorageMaintenanceThumbnailBackfillResult,
   SystemLog,
+  ToolingLogsPruneResult,
 } from '../packages/shared/src';
 import { buildStudioJobRetryRequest } from '../lib/studioJobRetry';
 import { resolveStudioApiBase } from './studioRuntime';
@@ -195,6 +202,46 @@ export async function resetStudioData() {
   });
 }
 
+export async function getStorageMaintenanceAudit() {
+  return request<StorageMaintenanceAuditReport>('/api/maintenance/storage/audit');
+}
+
+export async function runStorageCompactMaintenance(
+  input: {
+    write?: boolean;
+    vacuum?: boolean;
+    confirm?: string | null;
+  } = {},
+) {
+  return request<StorageMaintenanceCompactResult>('/api/maintenance/storage/compact', {
+    method: 'POST',
+    body: JSON.stringify(input),
+  });
+}
+
+export async function runThumbnailBackfillMaintenance(
+  input: {
+    write?: boolean;
+    confirm?: string | null;
+    limit?: number;
+  } = {},
+) {
+  return request<StorageMaintenanceThumbnailBackfillResult>(
+    '/api/maintenance/storage/thumbnails/backfill',
+    {
+      method: 'POST',
+      body: JSON.stringify(input),
+    },
+  );
+}
+
+export async function pruneToolingLogsMaintenance(input: { retainPerTask?: number } = {}) {
+  return request<ToolingLogsPruneResult>('/api/maintenance/tooling/logs/prune', {
+    method: 'POST',
+    body: JSON.stringify(input),
+  });
+}
+
 /**
  * Create a persistent backend job that survives UI refreshes.
  */
@@ -209,7 +256,7 @@ export async function createStudioJob(body: CreateJobRequest) {
  * List persistent jobs tracked by the local backend.
  */
 export async function listStudioJobs() {
-  return request<Job[]>('/api/jobs');
+  return request<JobSummary[]>('/api/jobs');
 }
 
 /**
@@ -313,6 +360,27 @@ export async function restoreCatalogImage(imageId: string) {
 export async function purgeCatalogImage(imageId: string) {
   return request<CatalogImage>(`/api/catalog/${imageId}/permanent`, {
     method: 'DELETE',
+  });
+}
+
+export async function archiveCatalogByFilter(filter: CatalogCommandFilter) {
+  return request<CatalogBatchCommandResult>('/api/catalog/commands/archive', {
+    method: 'POST',
+    body: JSON.stringify(filter),
+  });
+}
+
+export async function restoreCatalogByFilter(filter: CatalogCommandFilter) {
+  return request<CatalogBatchCommandResult>('/api/catalog/commands/restore', {
+    method: 'POST',
+    body: JSON.stringify(filter),
+  });
+}
+
+export async function purgeCatalogByFilter(filter: CatalogCommandFilter) {
+  return request<CatalogBatchCommandResult>('/api/catalog/commands/purge', {
+    method: 'POST',
+    body: JSON.stringify(filter),
   });
 }
 

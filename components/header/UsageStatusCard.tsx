@@ -31,7 +31,7 @@ export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps
         <button
           type="button"
           onClick={onOpenDashboard}
-          className={`flex h-10 items-center gap-2 rounded-lg border px-2.5 text-left transition-all hover:border-accent-400/30 hover:bg-white/8 cursor-pointer ${usageToneClasses}`}
+          className={`flex h-10 items-center gap-2 rounded-lg border px-2.5 text-left transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-white/8 cursor-pointer ${usageToneClasses}`}
         >
           <div className="flex size-7 shrink-0 items-center justify-center rounded-md bg-black/20 text-inherit">
             {usage.tone === 'offline' ? <WifiOff size={14} /> : <Gauge size={14} />}
@@ -52,7 +52,7 @@ export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps
                     <span className="text-[9px] font-black uppercase tracking-widest text-zinc-400">
                       {limit.label}
                     </span>
-                    <span className="text-[11px] font-black text-white">
+                    <span className="text-[11px] font-black tabular-nums text-white">
                       {Math.round(limit.availablePercent)}%
                     </span>
                   </span>
@@ -65,7 +65,7 @@ export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps
                 Codex Usage
               </p>
               <div className="flex items-center gap-2 leading-none">
-                <span className="max-w-28 truncate text-[11px] font-black text-white">
+                <span className="max-w-28 truncate text-[11px] font-black tabular-nums text-white">
                   {usage.value}
                 </span>
                 {!usage.isLoading && usage.unitLabel && (

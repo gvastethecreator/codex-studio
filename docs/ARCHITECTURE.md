@@ -45,7 +45,8 @@ graph TD
 - `services/localGenerationRun.ts`: creates Generation Task jobs, waits for terminal states with `watchJob()`, queries `/api/catalog?job_id=...`, and returns catalog-derived local result data.
 - `services/localGenerationVisualBatchCompat.ts`: builds the legacy Visual Batch only at the compatibility edge.
 - `services/localStudioService.ts`: the UI's single HTTP adapter to the local backend.
-- `services/studioEventSource.ts`: shared SSE adapter for jobs, assets, logs, and connection state. Browser consumers receive ref-counted stream leases so the shell and generation runs do not open duplicate EventSource connections.
+- `services/studioEventSource.ts`: shared SSE adapter for jobs, assets, catalog changes, logs, and connection state. Browser consumers receive ref-counted stream leases so the shell and generation runs do not open duplicate EventSource connections.
+- `apps/local-server/src/db.ts` and `apps/local-server/src/catalog.ts`: expose summary-first hot reads for jobs and Catalog Pages, while detail reads keep full durable payload access on demand.
 - `lib/studioCatalogView.ts`: pure Catalog Entry read model. It groups and filters catalog data without depending on Visual Batches or IndexedDB.
 - `lib/studioCatalogImageAdapter.ts`: materializes UI images from Catalog Entries.
 - `lib/studioLegacyVisualSnapshotExport.ts`: builds legacy `GenerationBatch[]` snapshots only for export compatibility.
@@ -83,6 +84,8 @@ graph TD
 ## Estado y persistencia
 
 - SQLite is the local source of truth for jobs, cataloged assets, libraries, projects, settings, job events, and system logs.
+- Hot UI reads are summary-first. `/api/jobs` returns Job Summary records that omit `sourceSpec`; `/api/catalog` returns Catalog Pages that omit full `generationConfig`. Job detail and catalog detail paths load full payloads on demand.
+- Job detail includes a compact provider-neutral trace summary derived from durable job, event, turn, and catalog facts before exposing transcript tail data.
 - The Studio Library is an external local folder. By default it lives under the user's home directory, for example `%USERPROFILE%\AI-Studio-Library` on Windows.
 - Internal state lives under `.studio/`; generated outputs, thumbnails, exports, and trash assets live under `outputs/`.
 - The Browser Queue is an IndexedDB-backed UI execution buffer. Pending browser-only items survive refresh within a bounded inline-reference payload budget; jobs that already reached the backend remain durable as Persistent Jobs and are tracked in the backend session list to avoid duplicate execution.
@@ -129,6 +132,10 @@ Large or optional UI surfaces should not inflate startup:
 
 Codex SDK or scripts are automation surfaces, not the product runtime. They are used for audits, migrations, checks, and maintenance:
 
+- `storage:audit`
+- `storage:compact`
+- `storage:thumbnails:backfill`
+- `tooling:logs:prune`
 - `catalog:source:verify`
 - `providers:verify`
 - `recipes:verify`
@@ -136,6 +143,10 @@ Codex SDK or scripts are automation surfaces, not the product runtime. They are 
 - `ui:source:verify`
 - `ui:chunks:verify`
 - `library:layout:verify`
+
+## Superficie de mantenimiento en la app
+
+Studio Settings exposes a demand-mounted Storage Maintenance panel backed by `/api/maintenance`. It can run storage audit, inline-payload compaction plan/write, historical thumbnail backfill plan/write, and tooling-log pruning from the product UI without letting the browser execute arbitrary shell commands. Script commands remain the automation equivalent for agents and release checks.
 
 ## Objetivos de arquitectura open-source
 

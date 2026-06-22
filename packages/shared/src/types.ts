@@ -168,6 +168,11 @@ export interface Job {
   completedAt: string | null;
 }
 
+export interface JobSummary extends Omit<Job, 'sourceSpec'> {
+  sourceSpec: null;
+  promptPreview: string;
+}
+
 export interface JobEventRecord {
   id: number;
   jobId: string | null;
@@ -217,6 +222,18 @@ export interface JobMetricSummary {
   estimatedPromptTokens: number;
 }
 
+export interface JobTraceSummary {
+  providerId: GenerationProviderId | null;
+  model: string | null;
+  task: string;
+  status: JobStatus;
+  durationMs: number | null;
+  assetCount: number;
+  tokenUsage: JobTokenUsageSummary | null;
+  transcriptPath: string | null;
+  completedAt: string | null;
+}
+
 export interface JobDetailResponse {
   job: Job;
   events: JobEventRecord[];
@@ -224,6 +241,7 @@ export interface JobDetailResponse {
   transcriptEntries: JobTranscriptEntry[];
   catalogImages: CatalogImage[];
   metrics: JobMetricSummary;
+  traceSummary: JobTraceSummary;
 }
 
 export interface Asset {
@@ -276,10 +294,33 @@ export interface CatalogImage {
   createdAt: string;
 }
 
+export interface CatalogImageSummary extends Omit<CatalogImage, 'generationConfig'> {
+  generationConfig: null;
+}
+
 export interface CatalogPage {
   images: CatalogImage[];
   total: number;
   hasMore: boolean;
+}
+
+export interface CatalogCommandFilter {
+  ids?: string[];
+  workspaceId?: string | null;
+  batchId?: string | null;
+  isDeleted?: boolean;
+}
+
+export interface CatalogBatchCommandResult {
+  ok: true;
+  action: 'archive' | 'restore' | 'purge';
+  matchedCount: number;
+  changedCount: number;
+  failed: Array<{
+    id: string;
+    reason: 'not_found' | 'operation_failed';
+    message?: string;
+  }>;
 }
 
 export interface SystemLog {
@@ -291,9 +332,52 @@ export interface SystemLog {
   createdAt: string;
 }
 
-export interface StudioEvent<T = unknown> {
+export type StudioEvent =
+  | {
+      type: 'server.connected';
+      payload: { ok: true };
+      createdAt: string;
+    }
+  | {
+      type:
+        | 'job.created'
+        | 'job.running'
+        | 'job.progress'
+        | 'job.completed'
+        | 'job.failed'
+        | 'job.cancelled';
+      payload: Job | null;
+      createdAt: string;
+    }
+  | {
+      type: 'asset.created';
+      payload: Asset;
+      createdAt: string;
+    }
+  | {
+      type: 'catalog.created' | 'catalog.updated' | 'catalog.deleted';
+      payload: CatalogImage;
+      createdAt: string;
+    }
+  | {
+      type: 'log.created' | 'log.appended';
+      payload: SystemLog;
+      createdAt: string;
+    }
+  | {
+      type:
+        | 'library.created'
+        | 'library.default'
+        | 'output-source.registered'
+        | 'output-source.imported'
+        | 'project.created';
+      payload: unknown;
+      createdAt: string;
+    };
+
+export interface UnknownStudioEvent {
   type: string;
-  payload: T;
+  payload: unknown;
   createdAt: string;
 }
 

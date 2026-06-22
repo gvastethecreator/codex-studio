@@ -100,7 +100,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     return (
       <div
         ref={itemRef}
-        className={`masonry-item mb-4 relative group rounded-xl overflow-hidden cursor-pointer transition-all duration-700 ease-out-expo appearance-none border-none p-0 m-0 bg-transparent text-left
+        className={`masonry-item mb-4 relative group rounded-xl overflow-hidden cursor-pointer transition-[opacity,transform,box-shadow] duration-700 ease-out-expo appearance-none border-none p-0 m-0 bg-transparent text-left
         ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black z-10' : 'shadow-lg'}
         animate-in fade-in-0 zoom-in-95
       `}
@@ -127,13 +127,13 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
               loading="lazy"
               decoding="async"
               onError={handleImageError}
-              className={`w-full h-auto block bg-zinc-900 rounded-xl transition-all duration-700 ${isWorkspaceGenerating ? 'opacity-60 grayscale-[0.2]' : ''}`}
+              className={`w-full h-auto block bg-zinc-900 rounded-xl transition-[opacity,filter] duration-700 ${isWorkspaceGenerating ? 'opacity-60 grayscale-[0.2]' : ''}`}
               style={{ viewTransitionName: transitionName }}
             />
           )}
 
           <div
-            className={`absolute inset-0 transition-all duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-linear-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100'}`}
+            className={`absolute inset-0 transition-opacity duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-linear-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 group-focus-within:opacity-100'}`}
           ></div>
         </button>
 
@@ -144,15 +144,17 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           >
             <button
               type="button"
+              aria-label={image.isFavorite ? 'Remove favorite' : 'Add favorite'}
+              aria-pressed={image.isFavorite}
               onClick={(e) => {
                 e.stopPropagation();
                 onToggleFavorite(image.id);
               }}
-              className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all border shadow-lg backdrop-blur-md
+              className={`flex size-10 items-center justify-center rounded-lg border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
                       ${
                         image.isFavorite
                           ? 'bg-accent-500 border-accent-400 text-white scale-110'
-                          : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
+                          : 'bg-black/45 border-white/15 text-white/60 hover:border-white/30 hover:bg-black/60 hover:text-white group-hover:text-white/80'
                       }`}
             >
               <Heart size={14} fill={image.isFavorite ? 'currentColor' : 'none'} strokeWidth={3} />
@@ -161,12 +163,14 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           <Tooltip content={isSelected ? 'Deselect' : 'Select'} position="bottom">
             <button
               type="button"
+              aria-label={isSelected ? 'Deselect image' : 'Select image'}
+              aria-pressed={isSelected}
               onClick={handleSelectClick}
-              className={`w-7 h-7 rounded-lg flex items-center justify-center transition-all border shadow-lg backdrop-blur-md
+              className={`flex size-10 items-center justify-center rounded-lg border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
                       ${
                         isSelected
                           ? 'bg-accent-600 border-accent-400 text-white scale-110'
-                          : 'bg-black/40 border-white/10 text-transparent hover:border-white/30 hover:bg-black/60 group-hover:text-white/30'
+                          : 'bg-black/45 border-white/15 text-white/60 hover:border-white/30 hover:bg-black/60 hover:text-white group-hover:text-white/80'
                       }`}
             >
               <Check size={14} strokeWidth={3} />
@@ -174,7 +178,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           </Tooltip>
         </div>
 
-        <div className="absolute bottom-3 left-3 right-3 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0 z-20">
+        <div className="absolute bottom-2 left-2 right-2 z-20 flex translate-y-0 flex-col gap-1 opacity-100 transition-[opacity,transform] sm:bottom-3 sm:left-3 sm:right-3 sm:flex-row sm:items-center sm:justify-between sm:translate-y-2 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100 sm:group-focus-within:translate-y-0 sm:group-focus-within:opacity-100">
           <div className="flex items-center gap-1.5 p-1 rounded-lg bg-black/60 backdrop-blur-md border border-white/10">
             <ActionButton
               onClick={(e) => {
@@ -562,7 +566,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
           </div>
           {(hasMore || isCatalogLoading || catalogError || totalCount > imageCount) && (
             <div className="flex flex-col items-center gap-3 py-6 text-center">
-              <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+              <div className="text-[10px] font-black tabular-nums uppercase tracking-widest text-zinc-500">
                 {imageCount} / {totalCount} loaded
               </div>
               {catalogError && <div className="max-w-lg text-xs text-rose-300">{catalogError}</div>}

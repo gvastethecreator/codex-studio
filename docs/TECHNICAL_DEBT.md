@@ -6,6 +6,8 @@ Este documento registra deuda técnica activa mientras Codex Studio se prepara p
 
 Referencia de arquitectura aceptada:
 
+- `docs/architecture/architecture-review-2026-06-21-second-pass-runtime-ux.md` (candidate follow-up findings)
+- `docs/architecture/architecture-review-2026-06-21-runtime-storage-ux.md`
 - `docs/architecture/architecture-review-2026-06-19-front-performance.md`
 - `docs/architecture/architecture-review-2026-05-29.md`
 - `docs/architecture/DEEPENING-ROADMAP.md`
@@ -19,6 +21,32 @@ Cola de ejecución actual:
 4. Completar deepening de rutas en `appFactory`.
 5. Mejorar semántica de refresh en `Local Studio Sync`.
 6. Revisar claridad de seams en `Local Generation Run`.
+
+Prioridad inmediata del lote runtime-storage-UX 2026-06-21:
+
+- Surface partial-failure UX for full-scope backend Catalog commands.
+- Type catalog events and give Local Studio Sync scoped invalidation plus bounded job waiting.
+- Add provider-neutral Job Trace Summary before transcript retention.
+- Harden storage compaction with recoverable-vs-omitted payload reporting.
+- Keep summary-first hot reads as a release guard: list endpoints must not select, parse, or return oversized historical payloads.
+
+Recent runtime-storage progress:
+
+- `JobSummary` is now the default hot read shape for `/api/jobs`.
+- Catalog Page reads no longer select or parse full `generation_config` by default.
+- Hot-plan indexes were added for jobs, job events, and Codex turns.
+- `storage:audit` and guarded `storage:compact` commands now exist.
+- Backend process logs use a shared rotating writer and SQL `system_logs` has bounded recent retention.
+- Backend Catalog archive/restore/purge commands now operate by explicit filter instead of loaded client pages.
+- Local Studio Sync now listens to `catalog.updated` / `catalog.deleted` through the shared event stream.
+
+Second-pass candidate follow-ups from 2026-06-21:
+
+- Done: repo-local tooling log retention for `logs/tooling`; timestamped logs are pruned per task and `.latest.log` stays.
+- Add a content-addressed Reference Store before deleting or retaining reference files aggressively. `storage:audit` now reports reference dedupe stats first.
+- Backfill missing historical catalog thumbnails so gallery cold paths do not generate thumbnails inside HTTP requests. First write batch warmed 137 recoverable rows; 784 remaining rows point at missing source files and should be handled by an orphan-metadata cleanup plan.
+- Measure Studio Readiness request overlap before consolidating freshness ownership.
+- Add catalog search timing before deciding whether FTS is justified.
 
 ### 1. Further decompose `components/AppContent.tsx`
 
@@ -123,7 +151,8 @@ Before a public release candidate, review tracked files and history for local pr
 ## Brechas de documentación
 
 - Add more catalog-first migration guidance as ADR-0013 continues.
-- Add a manual open-source smoke-test checklist.
+- Done: manual release checks now live in `docs/active/release-manual-checklist.md`.
+- Keep large style-generation logs behind the short active index; avoid adding new local absolute backup paths to active docs.
 - Keep provider configuration docs explicit about Provider Secrets staying outside SQLite-backed Studio Settings.
 
 ## Áreas cerradas (o casi cerradas)

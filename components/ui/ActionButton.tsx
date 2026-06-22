@@ -21,7 +21,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
   tooltipPosition = 'top',
 }) => {
   let baseClasses =
-    'relative flex items-center justify-center p-2 rounded-xl transition-all duration-200 outline-none group active:scale-90 ghost-btn';
+    'relative flex items-center justify-center p-2 rounded-xl transition-[color,background-color,border-color,opacity,transform,box-shadow] duration-200 outline-none group active:scale-90 ghost-btn';
 
   if (disabled) {
     baseClasses += ' opacity-20 cursor-not-allowed';

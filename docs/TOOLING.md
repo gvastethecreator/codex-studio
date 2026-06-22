@@ -39,12 +39,28 @@ bun run validate:fast
 bun run validate:full
 ```
 
+## Comandos de mantenimiento
+
+```bash
+bun run storage:audit
+bun run storage:compact
+bun run storage:thumbnails:backfill
+bun run tooling:logs:prune
+```
+
+`storage:compact` y `storage:thumbnails:backfill` son dry-run por defecto. Los modos de escritura requieren `--write` y confirmacion explicita.
+Para batches grandes de thumbnails, agrega `--limit=<n>` despues del nombre del comando y revisa cuantos rows tienen archivos fuente antes de escribir.
+
+La misma superficie existe dentro de la app en Studio Settings -> Storage Maintenance. La UI llama endpoints locales bajo `/api/maintenance`, mantiene audit/plan como acciones directas, y reserva confirmacion explicita para los modos de escritura.
+
 ## Logs persistentes
 
 Las tareas de calidad/build pasan por `scripts/tooling-task.ts` y escriben en `logs/tooling/`:
 
 - `<task>-YYYY-MM-DDTHH-MM-SS.log`
 - `<task>.latest.log`
+
+Los logs timestamped se podan automaticamente por tarea. Usa `bun run tooling:logs:prune` o Studio Settings -> Storage Maintenance si necesitas forzar la limpieza manual.
 
 ## Checklist
 

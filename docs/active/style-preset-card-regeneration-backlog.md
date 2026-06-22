@@ -1,6 +1,6 @@
 # Style Preset Card Regeneration Backlog
 
-> **Note:** This file is a per-preset regeneration log. The intro below and most section headings are translated; per-batch commentary and rationale blocks inside the body remain in Spanish pending a full pass once the regeneration waves settle. Per-preset rows themselves are file paths and need no translation.
+> **Note:** This file is a per-preset regeneration log. Start from `docs/active/style-generation-maintenance-index.md` for the current maintenance entry point, and avoid adding new absolute local backup paths here unless style tooling still needs this exact file. The intro below and most section headings are translated; per-batch commentary and rationale blocks inside the body remain in Spanish pending a full pass once the regeneration waves settle. Per-preset rows themselves are file paths and need no translation.
 
 ## Criterion
 
@@ -187,7 +187,7 @@ Ronda visual de deuda real `pack_05`:
 - IDs: `SP05-253|SP05-254|SP05-255|SP05-251`.
 - Ajuste previo: `SP05-255` y `SP05-251` dejaron de usar object/material
   fallback; despues se agrego anti-sameness contra `black-haired cloaked
-  fantasy traveler`, `castle terrace` y balcon/ciudad fantasy.
+fantasy traveler`, `castle terrace` y balcon/ciudad fantasy.
 - Dry-runs:
   `.tmp\sp05-missing-wave06-dryrun2.txt` y
   `.tmp\sp05-missing-wave06-retry-dryrun.txt`; prompts con `ANATOMY QA`, sin
@@ -274,7 +274,7 @@ Ronda visual de deuda real `pack_05`:
 - Dry-run:
   `.tmp\sp05-missing-wave03-dryrun-current.txt`; prompts character-led, con
   `ANATOMY QA`, sin object/material fallback, y `apply heavy denoise to the
-  image`.
+image`.
 - Comando:
   `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp05-missing-wave03-archive bun run scripts\generate-style-defaults.ts --pack=pack_05 "--preset=SP05-125|SP05-133|SP05-134|SP05-221" --parallel=2 --force --session-suffix=sp05_missing_wave03`
   -> `generated=4 attempted=4 skipped=131 failed=0`.
@@ -768,7 +768,7 @@ Se pauso la generacion y se reviso el generador antes de continuar.
 - Dry-run verificado:
   `bun run scripts\generate-style-defaults.ts --pack=pack_12 "--preset=SP12-008|SP12-017|SP12-021" --dry-run-prompts --force --session-suffix=pack12_speed_non_anime_family_check` -> `prompts=3 skipped=77`.
 - Evidencia prompt: los tres prompts imprimen `Generate one in-engine gameplay
-  screenshot`, `NON-ANIME STYLE LOCK`, `GAMEPLAY SCREENSHOT CONTRACT` y terminan
+screenshot`, `NON-ANIME STYLE LOCK`, `GAMEPLAY SCREENSHOT CONTRACT` y terminan
   con `apply heavy denoise to the image`.
 - Validation:
   `bun run styles:validate -- --pack=pack_12 --coverage` -> ok,
@@ -8883,11 +8883,11 @@ Auditoria antes de continuar:
 - Se pauso la generacion porque la tanda previa expuso fuga de lenguaje
   personaje/anime en presets no-anime (`SP11-012`, `SP11-013`).
 - Ajuste aplicado en `scripts/generate-style-defaults.ts`: `NON-ANIME STYLE
-  LOCK` al inicio de prompts para packs/presets que no pidan explicitamente
+LOCK` al inicio de prompts para packs/presets que no pidan explicitamente
   anime, manga, visual novel, gacha, shonen/shojo/seinen/josei/moe/isekai.
 - La ruta generica no-anime deja de priorizar `protagonist`, `facial angle`,
   `face/pose` y pasa a `material specimen`, `symbolic object`, `environment
-  fragment`, `craft/process form`, o figura no-anime solo cuando ayuda.
+fragment`, `craft/process form`, o figura no-anime solo cuando ayuda.
 - Ajuste aplicado en `scripts/style-default-utils.ts`: el suffix global ya no
   trata `cel animation` como permiso amplio para anime.
 - Dry-run validado para `SP11-015|SP11-019|SP11-026|SP11-030`:
@@ -8914,7 +8914,7 @@ Ronda visual:
   `staleDefaultImages=0`, `missingDefaultImages=30`.
 - Dry-run final guardado en `.tmp/sp11-wave4-dryrun.txt`: los 4 prompts
   muestran `NON-ANIME STYLE LOCK`, ancla no-anime y `apply heavy denoise to
-  the image`.
+the image`.
 - Comando principal:
   `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp11-wave4-archive bun run scripts\generate-style-defaults.ts --pack=pack_11 "--preset=SP11-015|SP11-019|SP11-026|SP11-030" --parallel=2 --session-suffix=sp11_wave4_non_anime_lock`
   -> `generated=4 attempted=4 skipped=76 failed=0`.
@@ -8951,7 +8951,7 @@ Ronda visual:
   `staleDefaultImages=0`, `missingDefaultImages=21`.
 - Dry-run final guardado en `.tmp/sp11-wave5-dryrun.txt`: los 4 prompts
   muestran `NON-ANIME STYLE LOCK`, ancla no-anime y `apply heavy denoise to
-  the image`.
+the image`.
 - Comando principal:
   `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp11-wave5-archive bun run scripts\generate-style-defaults.ts --pack=pack_11 "--preset=SP11-031|SP11-032|SP11-033|SP11-035" --parallel=2 --session-suffix=sp11_wave5_non_anime_lock`
   -> `generated=4 attempted=4 skipped=76 failed=0`.

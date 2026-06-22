@@ -6,6 +6,7 @@ import type {
   Job,
   JobExecutionOptions,
   JobKind,
+  JobSummary,
   Project,
   SystemLog,
 } from '../../../packages/shared/src';
@@ -26,6 +27,7 @@ export interface StudioDbStore {
   updateJobFinalPrompt(id: string, finalPrompt: string): Job | null;
   getJob(id: string): Job | null;
   listJobs(): Job[];
+  listJobSummaries?(): JobSummary[];
   listAssets(): Asset[];
   listLogs(): SystemLog[];
 }
@@ -59,6 +61,12 @@ function parseJson<T>(value: string | null | undefined, fallback: T): T {
   }
 }
 
+function createPromptPreview(value: string | null | undefined, limit = 500) {
+  const text = (value ?? '').trim();
+  if (text.length <= limit) return text;
+  return `${text.slice(0, Math.max(0, limit - 1)).trimEnd()}...`;
+}
+
 function mapProject(row: any): Project {
   return {
     id: row.id,
@@ -85,6 +93,26 @@ function mapJob(row: any): Job {
     createdAt: row.created_at,
     updatedAt: row.updated_at,
     completedAt: row.completed_at,
+  };
+}
+
+function mapJobSummary(row: any): JobSummary {
+  return {
+    id: row.id,
+    projectId: row.project_id,
+    kind: row.kind,
+    providerId: row.provider_id,
+    sourceSpec: null,
+    status: row.status,
+    execution: parseJson<JobExecutionOptions | null>(row.execution_json, null),
+    originalPrompt: createPromptPreview(row.original_prompt),
+    expandedPrompt: row.expanded_prompt ? createPromptPreview(row.expanded_prompt) : null,
+    finalPromptUsed: createPromptPreview(row.final_prompt_used),
+    error: row.error,
+    createdAt: row.created_at,
+    updatedAt: row.updated_at,
+    completedAt: row.completed_at,
+    promptPreview: createPromptPreview(row.final_prompt_used || row.original_prompt),
   };
 }
 
@@ -185,6 +213,7 @@ function migrateSqliteDbStore(database: SqliteDatabaseLike) {
   ensureColumn(database, 'jobs', 'execution_json', 'TEXT');
   ensureColumn(database, 'jobs', 'provider_id', 'TEXT');
   ensureColumn(database, 'jobs', 'source_spec_json', 'TEXT');
+  database.run('CREATE INDEX IF NOT EXISTS idx_jobs_created_desc ON jobs(created_at DESC)');
 }
 
 export function createSqliteDbStore({
@@ -294,6 +323,22 @@ export function createSqliteDbStore({
         .all()
         .map(mapJob);
     },
+    listJobSummaries() {
+      return database
+        .query(
+          `
+          SELECT
+            id, project_id, kind, provider_id, status, execution_json,
+            original_prompt, expanded_prompt, final_prompt_used, error,
+            created_at, updated_at, completed_at
+          FROM jobs
+          ORDER BY created_at DESC
+          LIMIT 100
+        `,
+        )
+        .all()
+        .map(mapJobSummary);
+    },
     listAssets() {
       return database
         .query('SELECT * FROM assets WHERE deleted_at IS NULL ORDER BY created_at DESC LIMIT 200')
@@ -317,6 +362,7 @@ export async function createDefaultDbStore(): Promise<StudioDbStore> {
     getJob,
     listAssets,
     listJobs,
+    listJobSummaries,
     listLogs,
     listProjects,
     updateJobFinalPrompt,
@@ -330,6 +376,7 @@ export async function createDefaultDbStore(): Promise<StudioDbStore> {
     updateJobFinalPrompt,
     getJob,
     listJobs,
+    listJobSummaries,
     listAssets,
     listLogs,
   };

@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vite-plus/test';
-import type { Job } from '../packages/shared/src';
+import type { Job, JobSummary } from '../packages/shared/src';
 import {
   JobWatchCancelledError,
   JobWatchTimeoutError,
@@ -33,6 +33,15 @@ function createJob(overrides: Partial<Job> = {}): Job {
     createdAt: overrides.createdAt ?? '2026-05-31T00:00:00.000Z',
     updatedAt: overrides.updatedAt ?? '2026-05-31T00:00:00.000Z',
     completedAt: overrides.completedAt ?? null,
+  };
+}
+
+function createJobSummary(overrides: Partial<Job> = {}): JobSummary {
+  const job = createJob(overrides);
+  return {
+    ...job,
+    sourceSpec: null,
+    promptPreview: job.finalPromptUsed || job.originalPrompt,
   };
 }
 
@@ -95,6 +104,110 @@ describe('studioEventSource', () => {
     }
   });
 
+  it('dispatches catalog events through the shared stream', () => {
+    const previousEventSource = globalThis.EventSource;
+    const sources: Array<{
+      close: ReturnType<typeof vi.fn>;
+      onmessage: ((event: MessageEvent) => void) | null;
+    }> = [];
+
+    class FakeEventSource {
+      static OPEN = 1;
+      close = vi.fn();
+      onopen: (() => void) | null = null;
+      onerror: (() => void) | null = null;
+      onmessage: ((event: MessageEvent) => void) | null = null;
+      readyState = FakeEventSource.OPEN;
+
+      constructor() {
+        sources.push(this);
+      }
+    }
+
+    Object.defineProperty(globalThis, 'EventSource', {
+      configurable: true,
+      value: FakeEventSource,
+    });
+
+    try {
+      const stream = createStudioEventStream();
+      const seen: string[] = [];
+      stream.onCatalogChanged((image) => seen.push(image.id));
+      for (const type of ['catalog.created', 'catalog.updated', 'catalog.deleted']) {
+        sources[0]?.onmessage?.({
+          data: JSON.stringify({
+            type,
+            payload: { id: type },
+            createdAt: '2026-06-21T00:00:00.000Z',
+          }),
+        } as MessageEvent);
+      }
+
+      expect(seen).toEqual(['catalog.created', 'catalog.updated', 'catalog.deleted']);
+      stream.close();
+    } finally {
+      if (previousEventSource) {
+        Object.defineProperty(globalThis, 'EventSource', {
+          configurable: true,
+          value: previousEventSource,
+        });
+      } else {
+        Reflect.deleteProperty(globalThis, 'EventSource');
+      }
+    }
+  });
+
+  it('ignores empty job event payloads', () => {
+    const previousEventSource = globalThis.EventSource;
+    const sources: Array<{
+      close: ReturnType<typeof vi.fn>;
+      onmessage: ((event: MessageEvent) => void) | null;
+    }> = [];
+
+    class FakeEventSource {
+      static OPEN = 1;
+      close = vi.fn();
+      onopen: (() => void) | null = null;
+      onerror: (() => void) | null = null;
+      onmessage: ((event: MessageEvent) => void) | null = null;
+      readyState = FakeEventSource.OPEN;
+
+      constructor() {
+        sources.push(this);
+      }
+    }
+
+    Object.defineProperty(globalThis, 'EventSource', {
+      configurable: true,
+      value: FakeEventSource,
+    });
+
+    try {
+      const stream = createStudioEventStream();
+      const seen: string[] = [];
+      stream.onJobUpdate('*', (job) => seen.push(job.id));
+      sources[0]?.onmessage?.({
+        data: JSON.stringify({
+          type: 'job.completed',
+          payload: null,
+          createdAt: '2026-06-21T00:00:00.000Z',
+        }),
+      } as MessageEvent);
+
+      expect(seen).toEqual([]);
+      stream.close();
+    } finally {
+      if (previousEventSource) {
+        Object.defineProperty(globalThis, 'EventSource', {
+          configurable: true,
+          value: previousEventSource,
+        });
+      } else {
+        Reflect.deleteProperty(globalThis, 'EventSource');
+      }
+    }
+  });
+
   it('identifies terminal job statuses', () => {
     expect(isTerminalStudioJobStatus('completed')).toBe(true);
     expect(isTerminalStudioJobStatus('failed')).toBe(true);
@@ -116,11 +229,12 @@ describe('studioEventSource', () => {
 
   it('returns already-terminal completed job from initial snapshot', async () => {
     vi.mocked(listStudioJobs).mockResolvedValueOnce([
-      createJob({ id: 'job-1', status: 'completed' }),
+      createJobSummary({ id: 'job-1', status: 'completed' }),
     ]);
     const stream = {
       onJobUpdate: () => () => {},
       onAssetAdded: () => () => {},
+      onCatalogChanged: () => () => {},
       onLogAdded: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
@@ -134,6 +248,7 @@ describe('studioEventSource', () => {
     const stream = {
       onJobUpdate: () => () => {},
       onAssetAdded: () => () => {},
+      onCatalogChanged: () => () => {},
       onLogAdded: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
@@ -155,6 +270,7 @@ describe('studioEventSource', () => {
         };
       },
       onAssetAdded: () => () => {},
+      onCatalogChanged: () => () => {},
       onLogAdded: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
@@ -180,6 +296,7 @@ describe('studioEventSource', () => {
         };
       },
       onAssetAdded: () => () => {},
+      onCatalogChanged: () => () => {},
       onLogAdded: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
@@ -214,6 +331,7 @@ describe('studioEventSource', () => {
         };
       },
       onAssetAdded: () => () => {},
+      onCatalogChanged: () => () => {},
       onLogAdded: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},

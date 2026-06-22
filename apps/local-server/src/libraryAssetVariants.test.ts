@@ -3,6 +3,7 @@ import os from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
 import { describe, expect, it } from 'vite-plus/test';
+import { resolveLibraryPathFromRoot } from './library';
 import {
   ensureThumbnailVariant,
   resolveLibraryThumbnailPath,
@@ -31,7 +32,12 @@ describe('libraryAssetVariants', () => {
     const libraryDir = mkdtempSync(path.join(os.tmpdir(), 'codex-studio-thumbs-'));
 
     try {
-      const sourceFilePath = path.join(libraryDir, 'outputs', '2026-05-26', 'sample.png');
+      const sourceFilePath = resolveLibraryPathFromRoot(
+        libraryDir,
+        'outputs',
+        '2026-05-26',
+        'sample.png',
+      );
       mkdirSync(path.dirname(sourceFilePath), { recursive: true });
       await sharp({
         create: {
@@ -60,7 +66,12 @@ describe('libraryAssetVariants', () => {
     const libraryDir = mkdtempSync(path.join(os.tmpdir(), 'codex-studio-thumbs-'));
 
     try {
-      const sourceFilePath = path.join(libraryDir, 'outputs', 'external', 'sample.png');
+      const sourceFilePath = resolveLibraryPathFromRoot(
+        libraryDir,
+        'outputs',
+        'external',
+        'sample.png',
+      );
       mkdirSync(path.dirname(sourceFilePath), { recursive: true });
       await sharp({
         create: {

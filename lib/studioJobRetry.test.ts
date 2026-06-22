@@ -4,7 +4,7 @@ import type { JobDetailResponse } from '../packages/shared/src';
 import { buildStudioJobRetryRequest, canRetryStudioJob } from './studioJobRetry';
 
 function createDetail(overrides: Partial<JobDetailResponse> = {}): JobDetailResponse {
-  return {
+  const base: JobDetailResponse = {
     job: {
       id: 'job-1',
       projectId: 'project-1',
@@ -71,8 +71,19 @@ function createDetail(overrides: Partial<JobDetailResponse> = {}): JobDetailResp
       tokenUsage: null,
       estimatedPromptTokens: 20,
     },
-    ...overrides,
+    traceSummary: {
+      providerId: 'codex',
+      model: 'gpt-5.4-mini',
+      task: 'image_generate',
+      status: 'needs_review',
+      durationMs: 10_000,
+      assetCount: 0,
+      tokenUsage: null,
+      transcriptPath: null,
+      completedAt: null,
+    },
   };
+  return { ...base, ...overrides, traceSummary: overrides.traceSummary ?? base.traceSummary };
 }
 
 describe('canRetryStudioJob', () => {

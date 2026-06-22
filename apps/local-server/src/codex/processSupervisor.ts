@@ -1,8 +1,8 @@
-import { appendFileSync } from 'node:fs';
 import { getCodexWsUrl } from '../config';
 import { resolveCodexInvocation } from '../codexExecutable';
 import { resolveLibraryPath } from '../library';
 import { log } from '../logger';
+import { appendRotatingLog } from '../rotatingLog';
 import type { AppServerEnsureReason } from '../../../../packages/shared/src';
 
 export interface ProcessInfo {
@@ -129,7 +129,7 @@ export function ensureAppServer(reason: AppServerEnsureReason = 'session') {
     while (true) {
       const chunk = await reader.read();
       if (chunk.done) break;
-      appendFileSync(logPath, Buffer.from(chunk.value).toString('utf8'));
+      appendRotatingLog(logPath, Buffer.from(chunk.value).toString('utf8'));
     }
   };
   if (processHandle.stdout instanceof ReadableStream) void pipeOutput(processHandle.stdout);

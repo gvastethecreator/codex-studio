@@ -1,6 +1,10 @@
 import { Hono } from 'hono';
 
-import type { CatalogImage } from '../../../packages/shared/src';
+import type {
+  CatalogBatchCommandResult,
+  CatalogCommandFilter,
+  CatalogImage,
+} from '../../../packages/shared/src';
 import type { CatalogCommandResult } from './catalogCommands';
 import type { StudioCatalogStore } from './catalogStore';
 import type { embedMetadata as embedMetadataFn } from './metadataEmbedder';
@@ -13,6 +17,9 @@ interface CatalogCommandsBoundary {
   softDelete(id: string): CatalogCommandResult;
   restore(id: string): CatalogCommandResult;
   purge(id: string): CatalogCommandResult;
+  archiveByFilter(filters: CatalogCommandFilter): CatalogBatchCommandResult;
+  restoreByFilter(filters: CatalogCommandFilter): CatalogBatchCommandResult;
+  purgeByFilter(filters: CatalogCommandFilter): CatalogBatchCommandResult;
 }
 
 export interface CreateCatalogRoutesDependencies {
@@ -40,6 +47,21 @@ function catalogFiltersFromUrl(url: string) {
   };
 }
 
+async function readCatalogCommandFilter(request: { json: () => Promise<unknown> }) {
+  const body = await request.json().catch(() => ({}));
+  const record = body && typeof body === 'object' && !Array.isArray(body) ? body : {};
+  const raw = record as Record<string, unknown>;
+  return {
+    ids: Array.isArray(raw.ids)
+      ? raw.ids.filter((id): id is string => typeof id === 'string' && id.length > 0)
+      : undefined,
+    workspaceId:
+      typeof raw.workspaceId === 'string' || raw.workspaceId === null ? raw.workspaceId : undefined,
+    batchId: typeof raw.batchId === 'string' ? raw.batchId : undefined,
+    isDeleted: typeof raw.isDeleted === 'boolean' ? raw.isDeleted : undefined,
+  } satisfies CatalogCommandFilter;
+}
+
 export function createCatalogRoutes({
   catalogStore,
   catalogCommands,
@@ -58,6 +80,18 @@ export function createCatalogRoutes({
         limit: Number(url.searchParams.get('limit') || 50),
       }),
     );
+  });
+
+  routes.post('/commands/archive', async (c) => {
+    return c.json(catalogCommands.archiveByFilter(await readCatalogCommandFilter(c.req)));
+  });
+
+  routes.post('/commands/restore', async (c) => {
+    return c.json(catalogCommands.restoreByFilter(await readCatalogCommandFilter(c.req)));
+  });
+
+  routes.post('/commands/purge', async (c) => {
+    return c.json(catalogCommands.purgeByFilter(await readCatalogCommandFilter(c.req)));
   });
 
   routes.get('/:id', (c) => {
@@ -124,6 +158,28 @@ export function createMemoryCatalogStore(
   const byId = new Map(images.map((image) => [image.id, image]));
   return {
     getCatalogImage: (id) => byId.get(id) ?? null,
+    listCatalogImageIds(filters = {}) {
+      return Array.from(byId.values())
+        .filter((image) => {
+          if (filters.ids && filters.ids.length > 0 && !filters.ids.includes(image.id)) {
+            return false;
+          }
+          if (
+            filters.workspaceId !== undefined &&
+            (image.workspaceId ?? 'default') !== filters.workspaceId
+          ) {
+            return false;
+          }
+          if (filters.batchId && image.batchId !== filters.batchId) {
+            return false;
+          }
+          if (filters.isDeleted !== undefined && image.isDeleted !== filters.isDeleted) {
+            return false;
+          }
+          return true;
+        })
+        .map((image) => image.id);
+    },
     queryCatalog(filters = {}) {
       onQuery?.(filters);
       return {

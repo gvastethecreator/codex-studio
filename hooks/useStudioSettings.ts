@@ -8,15 +8,23 @@ import type {
   GenerationProviderCapabilitiesResponse,
   GenerationProviderRuntimePreflightResponse,
   RegisterExternalOutputSourceInput,
+  StorageMaintenanceAuditReport,
+  StorageMaintenanceCompactResult,
+  StorageMaintenanceThumbnailBackfillResult,
+  ToolingLogsPruneResult,
 } from '../packages/shared/src';
 import {
   getExternalOutputSources,
   getEditableStudioSettings,
   getGenerationProviderCapabilities,
   getGenerationProviderRuntimePreflight,
+  getStorageMaintenanceAudit,
   importExternalOutputSourceFiles,
   listExternalOutputSourceFiles,
+  pruneToolingLogsMaintenance,
   registerExternalOutputSource,
+  runStorageCompactMaintenance,
+  runThumbnailBackfillMaintenance,
   updateEditableStudioSettings,
 } from '../services/localStudioService';
 import type { Toast } from '../types';
@@ -55,6 +63,26 @@ export interface StudioSettingsController {
         workspaceId?: string | null,
       ) => Promise<void>;
     };
+    maintenanceDomain: {
+      audit: StorageMaintenanceAuditReport | null;
+      compactResult: StorageMaintenanceCompactResult | null;
+      thumbnailBackfillResult: StorageMaintenanceThumbnailBackfillResult | null;
+      toolingLogsPruneResult: ToolingLogsPruneResult | null;
+      isLoadingAudit: boolean;
+      runningAction: 'compact' | 'thumbnails' | 'tooling-logs' | null;
+      refreshAudit: () => Promise<void>;
+      compactStorage: (input?: {
+        write?: boolean;
+        vacuum?: boolean;
+        confirm?: string | null;
+      }) => Promise<void>;
+      backfillThumbnails: (input?: {
+        write?: boolean;
+        confirm?: string | null;
+        limit?: number;
+      }) => Promise<void>;
+      pruneToolingLogs: (input?: { retainPerTask?: number }) => Promise<void>;
+    };
   };
 }
 
@@ -78,6 +106,18 @@ export function useStudioSettings({
   );
   const [isRegisteringOutputSource, setIsRegisteringOutputSource] = useState(false);
   const [importingOutputSources, setImportingOutputSources] = useState<Record<string, boolean>>({});
+  const [maintenanceAudit, setMaintenanceAudit] = useState<StorageMaintenanceAuditReport | null>(
+    null,
+  );
+  const [compactResult, setCompactResult] = useState<StorageMaintenanceCompactResult | null>(null);
+  const [thumbnailBackfillResult, setThumbnailBackfillResult] =
+    useState<StorageMaintenanceThumbnailBackfillResult | null>(null);
+  const [toolingLogsPruneResult, setToolingLogsPruneResult] =
+    useState<ToolingLogsPruneResult | null>(null);
+  const [isLoadingMaintenanceAudit, setIsLoadingMaintenanceAudit] = useState(false);
+  const [runningMaintenanceAction, setRunningMaintenanceAction] = useState<
+    'compact' | 'thumbnails' | 'tooling-logs' | null
+  >(null);
   const [error, setError] = useState<string | null>(null);
   const isMountedRef = useRef(true);
 
@@ -297,6 +337,126 @@ export function useStudioSettings({
     [addToast],
   );
 
+  const refreshMaintenanceAudit = useCallback(async () => {
+    setIsLoadingMaintenanceAudit(true);
+    setError(null);
+
+    try {
+      const nextAudit = await getStorageMaintenanceAudit();
+      if (isMountedRef.current) {
+        setMaintenanceAudit(nextAudit);
+      }
+    } catch (auditError) {
+      const message =
+        auditError instanceof Error ? auditError.message : 'Unable to run storage audit';
+      if (isMountedRef.current) {
+        setError(message);
+        addToast?.(message, 'error');
+      }
+    } finally {
+      if (isMountedRef.current) {
+        setIsLoadingMaintenanceAudit(false);
+      }
+    }
+  }, [addToast]);
+
+  const compactStorage = useCallback(
+    async (input: { write?: boolean; vacuum?: boolean; confirm?: string | null } = {}) => {
+      setRunningMaintenanceAction('compact');
+      setError(null);
+
+      try {
+        const result = await runStorageCompactMaintenance(input);
+        if (isMountedRef.current) {
+          setCompactResult(result);
+          addToast?.(
+            result.mode === 'write' ? 'Storage compaction completed' : 'Storage compaction planned',
+            result.mode === 'write' ? 'success' : 'info',
+          );
+        }
+        await refreshMaintenanceAudit();
+      } catch (compactError) {
+        const message =
+          compactError instanceof Error ? compactError.message : 'Unable to compact storage';
+        if (isMountedRef.current) {
+          setError(message);
+          addToast?.(message, 'error');
+        }
+      } finally {
+        if (isMountedRef.current) {
+          setRunningMaintenanceAction(null);
+        }
+      }
+    },
+    [addToast, refreshMaintenanceAudit],
+  );
+
+  const backfillThumbnails = useCallback(
+    async (input: { write?: boolean; confirm?: string | null; limit?: number } = {}) => {
+      setRunningMaintenanceAction('thumbnails');
+      setError(null);
+
+      try {
+        const result = await runThumbnailBackfillMaintenance(input);
+        if (isMountedRef.current) {
+          setThumbnailBackfillResult(result);
+          addToast?.(
+            result.mode === 'write'
+              ? `Backfilled ${result.wroteRows} thumbnail${result.wroteRows === 1 ? '' : 's'}`
+              : `Planned ${result.plannedRows} thumbnail${result.plannedRows === 1 ? '' : 's'}`,
+            result.errors > 0 ? 'info' : result.mode === 'write' ? 'success' : 'info',
+          );
+        }
+        await refreshMaintenanceAudit();
+      } catch (thumbnailError) {
+        const message =
+          thumbnailError instanceof Error
+            ? thumbnailError.message
+            : 'Unable to backfill thumbnails';
+        if (isMountedRef.current) {
+          setError(message);
+          addToast?.(message, 'error');
+        }
+      } finally {
+        if (isMountedRef.current) {
+          setRunningMaintenanceAction(null);
+        }
+      }
+    },
+    [addToast, refreshMaintenanceAudit],
+  );
+
+  const pruneToolingLogs = useCallback(
+    async (input: { retainPerTask?: number } = {}) => {
+      setRunningMaintenanceAction('tooling-logs');
+      setError(null);
+
+      try {
+        const result = await pruneToolingLogsMaintenance(input);
+        if (isMountedRef.current) {
+          setToolingLogsPruneResult(result);
+          addToast?.(
+            `Pruned ${result.pruned} tooling log${result.pruned === 1 ? '' : 's'}`,
+            'success',
+          );
+        }
+        await refreshMaintenanceAudit();
+      } catch (pruneError) {
+        const message =
+          pruneError instanceof Error ? pruneError.message : 'Unable to prune tooling logs';
+        if (isMountedRef.current) {
+          setError(message);
+          addToast?.(message, 'error');
+        }
+      } finally {
+        if (isMountedRef.current) {
+          setRunningMaintenanceAction(null);
+        }
+      }
+    },
+    [addToast, refreshMaintenanceAudit],
+  );
+
   useEffect(() => {
     void refreshSettingsSummary();
   }, [refreshSettingsSummary]);
@@ -328,6 +488,18 @@ export function useStudioSettings({
           loadOutputSourceFiles,
           importOutputSourceFiles,
         },
+        maintenanceDomain: {
+          audit: maintenanceAudit,
+          compactResult,
+          thumbnailBackfillResult,
+          toolingLogsPruneResult,
+          isLoadingAudit: isLoadingMaintenanceAudit,
+          runningAction: runningMaintenanceAction,
+          refreshAudit: refreshMaintenanceAudit,
+          compactStorage,
+          backfillThumbnails,
+          pruneToolingLogs,
+        },
       },
     }),
     [
@@ -338,16 +510,26 @@ export function useStudioSettings({
       isLoadingOutputSources,
       isRegisteringOutputSource,
       isSaving,
+      backfillThumbnails,
+      compactResult,
+      compactStorage,
       loadOutputSourceFiles,
       loadingOutputSourceFiles,
+      isLoadingMaintenanceAudit,
+      maintenanceAudit,
       outputSourceFiles,
       outputSources,
+      pruneToolingLogs,
       providerCapabilities,
       providerRuntimePreflight,
+      refreshMaintenanceAudit,
       refreshOutputSources,
       refreshSettings,
       registerOutputSource,
+      runningMaintenanceAction,
       settings,
+      thumbnailBackfillResult,
+      toolingLogsPruneResult,
       updateSettings,
     ],
   );

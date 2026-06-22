@@ -4,7 +4,7 @@ import type { JobDetailResponse } from '../packages/shared/src';
 import { buildJobInspectorDetailModel } from './jobInspectorFormatter';
 
 function createDetail(overrides: Partial<JobDetailResponse> = {}): JobDetailResponse {
-  return {
+  const base: JobDetailResponse = {
     job: {
       id: 'job-1',
       projectId: 'project-1',
@@ -39,8 +39,19 @@ function createDetail(overrides: Partial<JobDetailResponse> = {}): JobDetailResp
       tokenUsage: null,
       estimatedPromptTokens: 42,
     },
-    ...overrides,
+    traceSummary: {
+      providerId: 'codex',
+      model: 'gpt-image-1',
+      task: 'image_generate',
+      status: 'completed',
+      durationMs: 20_000,
+      assetCount: 0,
+      tokenUsage: null,
+      transcriptPath: null,
+      completedAt: '2026-05-26T10:00:20.000Z',
+    },
   };
+  return { ...base, ...overrides, traceSummary: overrides.traceSummary ?? base.traceSummary };
 }
 
 describe('buildJobInspectorDetailModel', () => {

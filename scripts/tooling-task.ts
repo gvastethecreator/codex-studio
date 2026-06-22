@@ -1,5 +1,12 @@
 import { spawn } from 'node:child_process';
-import { copyFileSync, createWriteStream, mkdirSync } from 'node:fs';
+import {
+  copyFileSync,
+  createWriteStream,
+  mkdirSync,
+  readdirSync,
+  statSync,
+  unlinkSync,
+} from 'node:fs';
 import { availableParallelism } from 'node:os';
 import path from 'node:path';
 
@@ -22,6 +29,7 @@ const LOG_DIR = path.resolve(ROOT_DIR, 'logs', 'tooling');
 const DEFAULT_MAX_OXC_THREADS = 8;
 const DEFAULT_MAX_LINT_THREADS = 8;
 const DEFAULT_TAIL_LINE_COUNT = 12;
+const DEFAULT_TOOLING_LOG_RETENTION = 20;
 
 const SERVER_TYPECHECK_ARGS = [
   'tsc',
@@ -46,6 +54,10 @@ const FMT_THREADS = resolveToolThreads('OXFMT_THREADS', DEFAULT_MAX_OXC_THREADS)
 const LINT_THREADS = resolveLintThreads();
 
 const TASKS: Record<string, TaskDefinition> = {
+  'tooling:logs:prune': {
+    description: 'Prune timestamped tooling logs while preserving rolling latest logs.',
+    steps: [],
+  },
   fmt: {
     description: 'Format all supported files with Oxfmt.',
     steps: [
@@ -269,6 +281,41 @@ function getLogPaths(taskName: string) {
   };
 }
 
+function parseTimestampedToolingLogName(name: string) {
+  const match = name.match(/^(.+)-(\d{4}-\d{2}-\d{2}T.*Z)\.log$/);
+  if (!match) return null;
+  return { group: match[1], stamp: match[2] };
+}
+
+export function pruneToolingLogs(retainPerTask = DEFAULT_TOOLING_LOG_RETENTION, logDir = LOG_DIR) {
+  mkdirSync(logDir, { recursive: true });
+  const keep = Math.max(1, Math.floor(retainPerTask));
+  const groups = new Map<string, Array<{ path: string; mtimeMs: number; stamp: string }>>();
+
+  for (const entry of readdirSync(logDir, { withFileTypes: true })) {
+    if (!entry.isFile() || entry.name.endsWith('.latest.log')) continue;
+    const parsed = parseTimestampedToolingLogName(entry.name);
+    if (!parsed) continue;
+    const filePath = path.join(logDir, entry.name);
+    const files = groups.get(parsed.group) ?? [];
+    files.push({ path: filePath, mtimeMs: statSync(filePath).mtimeMs, stamp: parsed.stamp });
+    groups.set(parsed.group, files);
+  }
+
+  let pruned = 0;
+  for (const files of groups.values()) {
+    files
+      .sort((left, right) => right.mtimeMs - left.mtimeMs || right.stamp.localeCompare(left.stamp))
+      .slice(keep)
+      .forEach((file) => {
+        unlinkSync(file.path);
+        pruned += 1;
+      });
+  }
+
+  return pruned;
+}
+
 function writeBanner(log: NodeJS.WritableStream, title: string) {
   log.write(`\n=== ${title} @ ${new Date().toISOString()} ===\n`);
 }
@@ -362,7 +409,7 @@ async function runStep(step: TaskStep, log: NodeJS.WritableStream, extraArgs: st
   });
 }
 
-async function main() {
+export async function main() {
   const taskName = process.argv[2];
   const extraArgs = process.argv.slice(3);
   if (!taskName || !(taskName in TASKS)) {
@@ -405,14 +452,22 @@ async function main() {
       log.end(() => resolve());
     });
     copyFileSync(runLogPath, latestLogPath);
+    const pruned = pruneToolingLogs(
+      Number(process.env.STUDIO_TOOLING_LOG_RETENTION || DEFAULT_TOOLING_LOG_RETENTION),
+    );
+    if (pruned > 0) {
+      console.log(`[tooling] Pruned ${pruned} old tooling log(s)`);
+    }
     console.log(`\n[tooling] Log escrito en ${runLogPath}`);
   }
 }
 
-try {
-  await main();
-} catch (error) {
-  const message = error instanceof Error ? error.message : String(error);
-  console.error(`\n[tooling] ${message}`);
-  process.exitCode = 1;
+if (import.meta.main) {
+  try {
+    await main();
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.error(`\n[tooling] ${message}`);
+    process.exitCode = 1;
+  }
 }

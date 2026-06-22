@@ -152,7 +152,13 @@ react-scan-overlay,
 
   .ghost-btn {
     background: transparent;
-    transition: all 0.2s var(--ease-out-expo);
+    transition:
+      color 0.2s var(--ease-out-expo),
+      background-color 0.2s var(--ease-out-expo),
+      opacity 0.2s var(--ease-out-expo),
+      transform 0.2s var(--ease-out-expo),
+      border-color 0.2s var(--ease-out-expo),
+      box-shadow 0.2s var(--ease-out-expo);
   }
   .ghost-btn:hover:not(:disabled) {
     background: rgba(255, 255, 255, 0.05);
@@ -228,7 +234,9 @@ react-scan-overlay,
     pointer-events: none;
     opacity: 0;
     transform: scale(0.95);
-    transition: all 0.2s var(--ease-out-expo);
+    transition:
+      opacity 0.2s var(--ease-out-expo),
+      transform 0.2s var(--ease-out-expo);
     border: 1px border-white/5;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }

@@ -5,8 +5,10 @@ import { buildStudioQueueResultPreviews } from '../lib/studioQueueResults';
 import { createCatalogView, type StudioCatalogView } from '../lib/studioCatalogView';
 import {
   deleteCatalogImage as deleteCatalogImageRequest,
-  purgeCatalogImage as purgeCatalogImageRequest,
+  archiveCatalogByFilter,
+  purgeCatalogByFilter,
   queryCatalog,
+  restoreCatalogByFilter,
   restoreCatalogImage as restoreCatalogImageRequest,
   toStudioAssetUrl,
   type CatalogQueryParams,
@@ -235,18 +237,12 @@ export function useStudioCatalogController({
 
   const clearCatalogWorkspace = useCallback(
     async (workspaceId: string) => {
-      const imageIds = collectWorkspaceCatalogImageIds(activeCatalog.entries, workspaceId);
-
-      if (imageIds.length === 0) {
-        return;
-      }
-
       await runCatalogMutation(
-        Promise.all(imageIds.map((imageId) => deleteCatalogImageRequest(imageId))),
+        archiveCatalogByFilter({ workspaceId, isDeleted: false }),
         'Unable to archive workspace images',
       );
     },
-    [activeCatalog.entries, runCatalogMutation],
+    [runCatalogMutation],
   );
 
   const restoreCatalogBatch = useCallback(
@@ -271,7 +267,7 @@ export function useStudioCatalogController({
     }
 
     void runCatalogMutation(
-      Promise.all(trashCatalog.entries.map((entry) => restoreCatalogImageRequest(entry.id))),
+      restoreCatalogByFilter({ isDeleted: true }),
       'Unable to restore catalog trash',
     );
   }, [runCatalogMutation, trashCatalog.entries]);
@@ -282,7 +278,7 @@ export function useStudioCatalogController({
     }
 
     void runCatalogMutation(
-      Promise.all(trashCatalog.entries.map((entry) => purgeCatalogImageRequest(entry.id))),
+      purgeCatalogByFilter({ isDeleted: true }),
       'Unable to empty catalog trash',
     );
   }, [runCatalogMutation, trashCatalog.entries]);

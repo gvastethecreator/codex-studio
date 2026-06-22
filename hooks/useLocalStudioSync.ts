@@ -96,6 +96,9 @@ export function useLocalStudioSync({
     const unsubscribeAsset = stream.onAssetAdded(() => {
       refreshPolicy.onAssetAdded();
     });
+    const unsubscribeCatalog = stream.onCatalogChanged(() => {
+      refreshPolicy.onAssetAdded();
+    });
     const unsubscribeLog = stream.onLogAdded((entry) => {
       dispatch({ type: 'log_added', entry });
     });
@@ -107,6 +110,7 @@ export function useLocalStudioSync({
     return () => {
       unsubscribeJob();
       unsubscribeAsset();
+      unsubscribeCatalog();
       unsubscribeLog();
       unsubscribeConnection();
       stream.close();

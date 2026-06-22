@@ -5,6 +5,7 @@ import { getDb } from './db';
 import { getDefaultLibrary, getLibrary } from './libraries';
 import { resolveLibraryPathFromRoot, toPublicAssetUrl } from './library';
 import { buildCatalogWorkspaceClause } from './catalogWorkspaceClause';
+import type { CatalogCommandFilter } from '../../../packages/shared/src';
 
 export interface CatalogImage {
   id: string;
@@ -52,7 +53,36 @@ function parseJson<T>(value: string | null, fallback: T): T {
   }
 }
 
-function mapCatalogImage(row: any): CatalogImage {
+const CATALOG_IMAGE_SUMMARY_COLUMNS = [
+  'id',
+  'library_id',
+  'file_path',
+  'thumbnail_path',
+  'public_url',
+  'thumbnail_url',
+  'prompt',
+  'negative_prompt',
+  'aspect_ratio',
+  'image_size',
+  'width',
+  'height',
+  'mime_type',
+  'file_size_bytes',
+  'job_id',
+  'workspace_id',
+  'batch_id',
+  'recipe_id',
+  'is_favorite',
+  'is_deleted',
+  'deleted_at',
+  'tags',
+  'created_at',
+].join(', ');
+
+function mapCatalogImage(
+  row: any,
+  options: { includeGenerationConfig?: boolean } = {},
+): CatalogImage {
   return {
     id: row.id,
     libraryId: row.library_id,
@@ -76,7 +106,9 @@ function mapCatalogImage(row: any): CatalogImage {
     isDeleted: Boolean(row.is_deleted),
     deletedAt: row.deleted_at,
     tags: parseJson<string[]>(row.tags, []),
-    generationConfig: parseJson<Record<string, unknown> | null>(row.generation_config, null),
+    generationConfig: options.includeGenerationConfig
+      ? parseJson<Record<string, unknown> | null>(row.generation_config, null)
+      : null,
     createdAt: row.created_at,
   };
 }
@@ -142,10 +174,10 @@ export function registerCatalogImage(input: {
 
 export function getCatalogImage(id: string) {
   const row = getDb().query('SELECT * FROM catalog_images WHERE id = ?').get(id);
-  return row ? mapCatalogImage(row) : null;
+  return row ? mapCatalogImage(row, { includeGenerationConfig: true }) : null;
 }
 
-export function queryCatalog(
+function queryCatalogInternal(
   filters: {
     libraryId?: string | null;
     workspaceId?: string | null;
@@ -157,6 +189,7 @@ export function queryCatalog(
     offset?: number;
     limit?: number;
   } = {},
+  options: { includeGenerationConfig?: boolean } = {},
 ): CatalogPage {
   const clauses: string[] = [];
   const params: any[] = [];
@@ -197,10 +230,54 @@ export function queryCatalog(
         .get(...params) as any
     )?.count ?? 0;
   const images = getDb()
-    .query(`SELECT * FROM catalog_images ${where} ORDER BY created_at DESC LIMIT ? OFFSET ?`)
+    .query(
+      `SELECT ${
+        options.includeGenerationConfig ? '*' : CATALOG_IMAGE_SUMMARY_COLUMNS
+      } FROM catalog_images ${where} ORDER BY created_at DESC LIMIT ? OFFSET ?`,
+    )
     .all(...params, limit, offset)
-    .map(mapCatalogImage);
+    .map((row) => mapCatalogImage(row, options));
   return { images, total, hasMore: offset + images.length < total };
+}
+
+export function queryCatalog(filters: Parameters<typeof queryCatalogInternal>[0] = {}) {
+  return queryCatalogInternal(filters, { includeGenerationConfig: false });
+}
+
+export function queryCatalogDetails(filters: Parameters<typeof queryCatalogInternal>[0] = {}) {
+  return queryCatalogInternal(filters, { includeGenerationConfig: true });
+}
+
+export function listCatalogImageIds(filters: CatalogCommandFilter = {}) {
+  const clauses: string[] = [];
+  const params: any[] = [];
+
+  if (filters.ids && filters.ids.length > 0) {
+    clauses.push(`id IN (${filters.ids.map(() => '?').join(', ')})`);
+    params.push(...filters.ids);
+  }
+
+  const workspaceClause = buildCatalogWorkspaceClause(filters.workspaceId);
+  if (workspaceClause) {
+    clauses.push(workspaceClause.clause);
+    params.push(...workspaceClause.params);
+  }
+
+  if (filters.batchId) {
+    clauses.push('batch_id = ?');
+    params.push(filters.batchId);
+  }
+
+  if (filters.isDeleted !== undefined) {
+    clauses.push('is_deleted = ?');
+    params.push(filters.isDeleted ? 1 : 0);
+  }
+
+  const where = clauses.length > 0 ? `WHERE ${clauses.join(' AND ')}` : '';
+  return getDb()
+    .query(`SELECT id FROM catalog_images ${where} ORDER BY created_at DESC`)
+    .all(...params)
+    .map((row: any) => String(row.id));
 }
 
 export function updateCatalogImage(

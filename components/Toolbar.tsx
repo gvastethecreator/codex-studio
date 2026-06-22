@@ -395,9 +395,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const currentSizes = PRO_SIZES;
 
     const btnClass =
-      'h-10 sm:h-11 flex items-center gap-2 px-3 sm:px-4 rounded-xl sm:rounded-2xl bg-white/5 hover:bg-white/10 text-[9px] font-black tracking-widest transition-all active:scale-95 text-zinc-400 hover:text-white disabled:opacity-30 uppercase group border border-transparent hover:border-white/5 whitespace-nowrap cursor-pointer';
+      'h-10 sm:h-11 flex items-center gap-2 px-3 sm:px-4 rounded-xl sm:rounded-2xl bg-white/5 hover:bg-white/10 text-[9px] font-black tracking-widest transition-[color,background-color,border-color,opacity,transform,box-shadow] active:scale-95 text-zinc-400 hover:text-white disabled:opacity-30 uppercase group border border-transparent hover:border-white/5 whitespace-nowrap cursor-pointer';
     const iconBtnClass =
-      'size-8 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/5 text-zinc-500 hover:text-white hover:bg-white/10 transition-all active:scale-90 relative cursor-pointer disabled:cursor-not-allowed';
+      'size-8 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/5 text-zinc-500 hover:text-white hover:bg-white/10 transition-[color,background-color,border-color,opacity,transform,box-shadow] active:scale-90 relative cursor-pointer disabled:cursor-not-allowed';
     const activeIconBtnClass =
       'bg-gradient-to-b from-accent-800 to-accent-950 border border-accent-700/50 text-accent-300 shadow-[0_2px_10px_rgba(0,0,0,0.5)] cursor-pointer';
 
@@ -470,7 +470,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             e.stopPropagation();
                             onRemoveAttachment(att.id);
                           }}
-                          className="p-1 bg-red-500 text-white rounded-lg transition-all active:scale-90 hover:bg-red-400"
+                          className="p-1 bg-red-500 text-white rounded-lg transition-[color,background-color,border-color,opacity,transform] active:scale-90 hover:bg-red-400"
                         >
                           <X size={10} />
                         </button>
@@ -700,7 +700,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       }}
                       onMouseEnter={() => setPreviewRatio(option.ratio)}
                       title={`${option.label}: ${option.size}`}
-                      className={`aspect-square rounded-lg flex flex-col items-center justify-center gap-1 transition-all ${
+                      className={`aspect-square rounded-lg flex flex-col items-center justify-center gap-1 transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
                         generationConfig.aspectRatio === option.ratio
                           ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/50 text-white shadow-lg'
                           : 'bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
@@ -740,7 +740,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           updateConfig('imageSize', size);
                           setIsSizeOpen(false);
                         }}
-                        className={`w-full text-left px-3 py-2 rounded-lg text-[10px] font-black transition-all ${generationConfig.imageSize === size ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white' : 'hover:bg-white/10 text-zinc-400'}`}
+                        className={`w-full text-left px-3 py-2 rounded-lg text-[10px] font-black transition-[color,background-color,border-color,opacity,transform,box-shadow] ${generationConfig.imageSize === size ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white' : 'hover:bg-white/10 text-zinc-400'}`}
                       >
                         {size}
                       </button>
@@ -774,7 +774,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         updateConfig('batchCount', count);
                         setIsBatchOpen(false);
                       }}
-                      className={`size-8 rounded-lg flex items-center justify-center text-[10px] font-black transition-all ${generationConfig.batchCount === count ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600 text-white' : 'bg-white/5 text-zinc-400 hover:bg-white/10'}`}
+                      className={`size-8 rounded-lg flex items-center justify-center text-[10px] font-black transition-[color,background-color,border-color,opacity,transform,box-shadow] ${generationConfig.batchCount === count ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600 text-white' : 'bg-white/5 text-zinc-400 hover:bg-white/10'}`}
                     >
                       {count}
                     </button>
@@ -812,7 +812,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         updateConfig('model', m.id);
                         setIsModelOpen(false);
                       }}
-                      className={`w-full text-left px-3 py-2.5 rounded-xl transition-all mb-1 last:mb-0 ${generationConfig.model === m.id ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border border-accent-700/30' : 'hover:bg-white/5 text-zinc-400 border border-transparent'}`}
+                      className={`w-full text-left px-3 py-2.5 rounded-xl transition-[color,background-color,border-color,opacity,transform,box-shadow] mb-1 last:mb-0 ${generationConfig.model === m.id ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border border-accent-700/30' : 'hover:bg-white/5 text-zinc-400 border border-transparent'}`}
                     >
                       <div className="flex items-center gap-2 mb-0.5">
                         <ModelIcon model={m.id} />
@@ -888,7 +888,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             type="button"
                             key={model.id}
                             onClick={() => handleSelectExecutionModel(model)}
-                            className={`w-full text-left px-3 py-2.5 rounded-xl transition-all border ${
+                            className={`w-full text-left px-3 py-2.5 rounded-xl transition-[color,background-color,border-color,opacity,transform,box-shadow] border ${
                               isSelected
                                 ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border-accent-700/30'
                                 : 'hover:bg-white/5 text-zinc-400 border-transparent'
@@ -943,7 +943,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           type="button"
                           key={effort}
                           onClick={() => updateConfig('executionReasoningEffort', effort)}
-                          className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${
+                          className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
                             generationConfig.executionReasoningEffort === effort
                               ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
                               : 'bg-white/5 text-zinc-400 hover:bg-white/10'
@@ -970,7 +970,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           type="button"
                           key={speed}
                           onClick={() => handleSelectExecutionSpeed(speed)}
-                          className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-all ${
+                          className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
                             generationConfig.executionSpeed === speed
                               ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
                               : 'bg-white/5 text-zinc-400 hover:bg-white/10'
@@ -991,7 +991,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               onClick={handleTriggerGenerate}
               className={`
                     group relative h-10 px-4 sm:h-11 sm:px-6 rounded-xl sm:rounded-2xl flex items-center justify-center gap-2.5 sm:ml-2 overflow-hidden
-                    text-[10px] tracking-[0.2em] font-black uppercase transition-all cursor-pointer
+                    text-[10px] tracking-[0.2em] font-black uppercase transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer
                     ${
                       isGenerating
                         ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-400 border border-accent-700/30 shadow-lg'
@@ -1002,7 +1002,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               {/* Progress Bar Layer */}
               {isGenerating && (
                 <div
-                  className="absolute left-0 top-0 bottom-0 bg-accent-500/20 transition-all duration-100 ease-linear z-0"
+                  className="absolute left-0 top-0 bottom-0 bg-accent-500/20 transition-[width] duration-100 ease-linear z-0"
                   style={{
                     width: `${Math.min((parseFloat(elapsedTime) / 120) * 100, 100)}%`,
                   }}
@@ -1019,7 +1019,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 {isGenerating ? (
                   <>
                     <Loader2 size={14} className="animate-spin text-accent-500" />
-                    <span className="w-16 text-center">{elapsedTime}s</span>
+                    <span className="w-16 text-center tabular-nums">{elapsedTime}s</span>
                   </>
                 ) : (
                   <>

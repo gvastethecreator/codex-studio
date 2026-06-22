@@ -1,11 +1,12 @@
-import type { StudioEvent } from '../../../packages/shared/src';
+import type { StudioEvent, UnknownStudioEvent } from '../../../packages/shared/src';
 
-type Listener = (event: StudioEvent) => void;
+type PublishedStudioEvent = StudioEvent | UnknownStudioEvent;
+type Listener = (event: PublishedStudioEvent) => void;
 
 const listeners = new Set<Listener>();
 
 export function publishEvent(type: string, payload: unknown) {
-  const event: StudioEvent = {
+  const event: PublishedStudioEvent = {
     type,
     payload,
     createdAt: new Date().toISOString(),

@@ -1,4 +1,11 @@
-import type { Asset, Job, StudioEvent, SystemLog } from '../packages/shared/src';
+import type {
+  Asset,
+  CatalogImage,
+  Job,
+  StudioEvent,
+  SystemLog,
+  UnknownStudioEvent,
+} from '../packages/shared/src';
 import { getStudioApiBase, listStudioJobs } from './localStudioService';
 
 type Unsubscribe = () => void;
@@ -62,6 +69,7 @@ export function createJobTerminalStatusError(job: Job) {
 export interface StudioEventStream {
   onJobUpdate(jobIdOrWildcard: string, callback: Listener<Job>): Unsubscribe;
   onAssetAdded(callback: Listener<Asset>): Unsubscribe;
+  onCatalogChanged(callback: Listener<CatalogImage>): Unsubscribe;
   onLogAdded(callback: Listener<SystemLog>): Unsubscribe;
   onConnectionChange(callback: Listener<boolean>): Unsubscribe;
   close(): void;
@@ -78,6 +86,7 @@ class BrowserStudioEventStream implements StudioEventStream {
   private reconnectDelay = DEFAULT_STUDIO_EVENT_RECONNECT_POLICY.initialDelayMs;
   private jobListeners = new Map<string, Set<Listener<Job>>>();
   private assetListeners = new Set<Listener<Asset>>();
+  private catalogListeners = new Set<Listener<CatalogImage>>();
   private logListeners = new Set<Listener<SystemLog>>();
   private connectionListeners = new Set<Listener<boolean>>();
 
@@ -98,6 +107,11 @@ class BrowserStudioEventStream implements StudioEventStream {
   onAssetAdded(callback: Listener<Asset>) {
     this.assetListeners.add(callback);
     return () => this.assetListeners.delete(callback);
+  }
+
+  onCatalogChanged(callback: Listener<CatalogImage>) {
+    this.catalogListeners.add(callback);
+    return () => this.catalogListeners.delete(callback);
   }
 
   onLogAdded(callback: Listener<SystemLog>) {
@@ -133,7 +147,7 @@ class BrowserStudioEventStream implements StudioEventStream {
     };
     source.onmessage = (event) => {
       try {
-        this.dispatch(JSON.parse(event.data) as StudioEvent);
+        this.dispatch(JSON.parse(event.data) as StudioEvent | UnknownStudioEvent);
       } catch {
         // Ignore malformed SSE frames; the reconnect path handles broken streams.
       }
@@ -153,13 +167,20 @@ class BrowserStudioEventStream implements StudioEventStream {
     for (const listener of this.connectionListeners) listener(connected);
   }
 
-  private dispatch(event: StudioEvent) {
+  private dispatch(event: StudioEvent | UnknownStudioEvent) {
     if (event.type.startsWith('job.')) {
-      const job = event.payload as Job;
+      const job = event.payload as Job | null;
+      if (!job) return;
       this.jobListeners.get('*')?.forEach((listener) => listener(job));
       this.jobListeners.get(job.id)?.forEach((listener) => listener(job));
     } else if (event.type === 'asset.created') {
       this.assetListeners.forEach((listener) => listener(event.payload as Asset));
+    } else if (
+      event.type === 'catalog.created' ||
+      event.type === 'catalog.updated' ||
+      event.type === 'catalog.deleted'
+    ) {
+      this.catalogListeners.forEach((listener) => listener(event.payload as CatalogImage));
     } else if (event.type === 'log.appended' || event.type === 'log.created') {
       this.logListeners.forEach((listener) => listener(event.payload as SystemLog));
     }
@@ -180,6 +201,10 @@ class StudioEventStreamLease implements StudioEventStream {
 
   onAssetAdded(callback: Listener<Asset>) {
     return this.closed ? () => {} : this.stream.onAssetAdded(callback);
+  }
+
+  onCatalogChanged(callback: Listener<CatalogImage>) {
+    return this.closed ? () => {} : this.stream.onCatalogChanged(callback);
   }
 
   onLogAdded(callback: Listener<SystemLog>) {

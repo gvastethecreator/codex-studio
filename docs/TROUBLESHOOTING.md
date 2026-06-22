@@ -51,6 +51,38 @@ Si `check`/`lint`/`test` falla y la salida se corta:
 
 Si la ruta por defecto no existe, define `STUDIO_LIBRARY_DIR` absoluto en `.env.local` y ejecuta `bun run studio:init` de nuevo.
 
+## Storage y logs pesados
+
+Ejecuta `bun run storage:audit` para revisar tamano de SQLite, WAL/SHM, logs, transcripts, references y payloads historicos inline sin imprimir contenido privado.
+El audit tambien reporta thumbnails faltantes, duplicados de referencias por hash, tamano de `logs/tooling`, y payloads compactables recuperables vs no recuperables.
+
+Desde la app, abre Studio Settings -> Storage Maintenance para ejecutar audit, plan de compactacion, backfill de thumbnails y prune de tooling logs mediante `/api/maintenance`.
+
+`storage:compact` es dry-run por defecto. Para escribir cambios historicos debes detener el servidor local y usar:
+
+```bash
+bun run storage:compact -- --write --confirm=compact-inline-payloads
+```
+
+Los logs de backend rotan en `.studio/logs/history`. `/api/logs` y el panel de actividad muestran una ventana reciente, no un archivo historico infinito.
+Los logs de tooling mantienen `.latest.log` por tarea y podan corridas timestamped automaticamente. Para limpiar manualmente desde terminal o desde Storage Maintenance:
+
+```bash
+bun run tooling:logs:prune
+```
+
+Para calentar thumbnails historicos faltantes sin tocar la base primero:
+
+```bash
+bun run storage:thumbnails:backfill
+```
+
+Para escribir el batch planeado:
+
+```bash
+bun run storage:thumbnails:backfill -- --limit=1000 --write --confirm=backfill-thumbnails
+```
+
 ## Comandos útiles
 
 ```bash
@@ -58,6 +90,8 @@ bun run studio:init
 bun run dev:server
 bun run dev:ui
 bun run validate:fast
+bun run storage:audit
+bun run storage:thumbnails:backfill
 bun run check
 bun run test
 bun run build

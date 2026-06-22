@@ -8,6 +8,7 @@ import type {
   JobEventRecord,
   JobExecutionOptions,
   JobKind,
+  JobSummary,
   JobStatus,
   GenerationProviderId,
   GenerationTaskSpec,
@@ -28,6 +29,12 @@ function parseJson<T>(value: string | null | undefined, fallback: T): T {
   } catch {
     return fallback;
   }
+}
+
+function createPromptPreview(value: string | null | undefined, limit = 500) {
+  const text = (value ?? '').trim();
+  if (text.length <= limit) return text;
+  return `${text.slice(0, Math.max(0, limit - 1)).trimEnd()}...`;
 }
 
 function ensureColumn(
@@ -221,6 +228,11 @@ export function migrateDatabase(database: Database) {
   ensureColumn(database, 'jobs', 'execution_json', 'TEXT');
   ensureColumn(database, 'jobs', 'provider_id', 'TEXT');
   ensureColumn(database, 'jobs', 'source_spec_json', 'TEXT');
+  database.run('CREATE INDEX IF NOT EXISTS idx_jobs_created_desc ON jobs(created_at DESC)');
+  database.run('CREATE INDEX IF NOT EXISTS idx_job_events_job_id_id ON job_events(job_id, id)');
+  database.run(
+    'CREATE INDEX IF NOT EXISTS idx_codex_turns_job_updated_desc ON codex_turns(job_id, updated_at DESC)',
+  );
 }
 
 export function migrateDb(db?: Database) {
@@ -273,6 +285,26 @@ function mapJob(row: any): Job {
     createdAt: row.created_at,
     updatedAt: row.updated_at,
     completedAt: row.completed_at,
+  };
+}
+
+function mapJobSummary(row: any): JobSummary {
+  return {
+    id: row.id,
+    projectId: row.project_id,
+    kind: row.kind,
+    providerId: row.provider_id,
+    sourceSpec: null,
+    status: row.status,
+    execution: parseJson<JobExecutionOptions | null>(row.execution_json, null),
+    originalPrompt: createPromptPreview(row.original_prompt),
+    expandedPrompt: row.expanded_prompt ? createPromptPreview(row.expanded_prompt) : null,
+    finalPromptUsed: createPromptPreview(row.final_prompt_used),
+    error: row.error,
+    createdAt: row.created_at,
+    updatedAt: row.updated_at,
+    completedAt: row.completed_at,
+    promptPreview: createPromptPreview(row.final_prompt_used || row.original_prompt),
   };
 }
 
@@ -442,6 +474,23 @@ export function listJobs(db?: Database) {
   return getDb(db).query('SELECT * FROM jobs ORDER BY created_at DESC LIMIT 100').all().map(mapJob);
 }
 
+export function listJobSummaries(db?: Database) {
+  return getDb(db)
+    .query(
+      `
+      SELECT
+        id, project_id, kind, provider_id, status, execution_json,
+        original_prompt, expanded_prompt, final_prompt_used, error,
+        created_at, updated_at, completed_at
+      FROM jobs
+      ORDER BY created_at DESC
+      LIMIT 100
+    `,
+    )
+    .all()
+    .map(mapJobSummary);
+}
+
 export function listRecoverableJobs(db?: Database) {
   return getDb(db)
     .query(`
@@ -523,7 +572,25 @@ export function addSystemLog(
   const row = getDb(db)
     .query('SELECT * FROM system_logs WHERE id = ?')
     .get(Number(result.lastInsertRowid));
+  pruneSystemLogs(undefined, db);
   return row ? mapLog(row) : null;
+}
+
+export function pruneSystemLogs(options: { maxRows?: number } = {}, db?: Database) {
+  const maxRows = Math.max(
+    300,
+    Math.floor(options.maxRows ?? Number(process.env.STUDIO_SYSTEM_LOG_RETENTION_ROWS || 5000)),
+  );
+  getDb(db)
+    .query(
+      `
+      DELETE FROM system_logs
+      WHERE id NOT IN (
+        SELECT id FROM system_logs ORDER BY id DESC LIMIT ?
+      )
+    `,
+    )
+    .run(maxRows);
 }
 
 export function listLogs(db?: Database) {

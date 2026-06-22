@@ -5,6 +5,7 @@ import {
   type Job,
   type JobDetailResponse,
   type StudioEvent,
+  type UnknownStudioEvent,
 } from '../../../packages/shared/src';
 import { createJobRoutes } from './jobRoutes';
 
@@ -15,7 +16,7 @@ function isReferenceProcessingError(
   return false;
 }
 
-function publishEvent(type: string, payload: unknown): StudioEvent {
+function publishEvent(type: string, payload: unknown): StudioEvent | UnknownStudioEvent {
   return {
     type,
     payload,
@@ -69,6 +70,17 @@ function createJobDetail(job: Job): JobDetailResponse {
       timings: [],
       tokenUsage: null,
       estimatedPromptTokens: 0,
+    },
+    traceSummary: {
+      providerId: job.providerId,
+      model: job.execution?.model ?? null,
+      task: job.kind,
+      status: job.status,
+      durationMs: null,
+      assetCount: 0,
+      tokenUsage: null,
+      transcriptPath: null,
+      completedAt: job.completedAt,
     },
   };
 }

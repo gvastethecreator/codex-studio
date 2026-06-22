@@ -4,6 +4,7 @@ import {
   ArrowLeft,
   Home,
   Activity,
+  Briefcase,
   Layers,
   MessageSquare,
   Settings,
@@ -90,6 +91,8 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   onToggleQueue,
   onOpenSettings,
 }) => {
+  const [isMobileWorkspaceOpen, setIsMobileWorkspaceOpen] = React.useState(false);
+  const mobileWorkspaceRef = React.useRef<HTMLDivElement>(null);
   const activeRecipeData = activeRecipe ? RECIPE_DATA[activeRecipe] : null;
   const activeWorkspace = workspaces.find((w) => w.id === activeWorkspaceId);
   const workspaceLabel = activeWorkspace?.name || 'Studio';
@@ -100,6 +103,22 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
       : runtimeStatus.tone === 'warning'
         ? 'border-amber-500/20 bg-amber-500/8 text-amber-200'
         : 'border-rose-500/20 bg-rose-500/8 text-rose-200';
+
+  React.useEffect(() => {
+    if (!isMobileWorkspaceOpen) return;
+
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (
+        mobileWorkspaceRef.current &&
+        !mobileWorkspaceRef.current.contains(event.target as Node)
+      ) {
+        setIsMobileWorkspaceOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleOutsideClick);
+    return () => document.removeEventListener('mousedown', handleOutsideClick);
+  }, [isMobileWorkspaceOpen]);
 
   return (
     <TopToolbar className="w-full min-h-14 bg-black/80 backdrop-blur-sm flex items-center px-3 py-2 sm:px-6 sm:py-0 z-40 shrink-0 border-b border-white/5">
@@ -139,6 +158,38 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 )}
               </button>
             </Tooltip>
+            <div ref={mobileWorkspaceRef} className="relative sm:hidden">
+              <Tooltip content="Workspaces" position="bottom">
+                <button
+                  type="button"
+                  onClick={() => setIsMobileWorkspaceOpen((isOpen) => !isOpen)}
+                  aria-label={`Open workspace switcher: ${workspaceLabel}`}
+                  aria-expanded={isMobileWorkspaceOpen}
+                  className="flex size-10 cursor-pointer items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
+                >
+                  <Briefcase size={16} />
+                </button>
+              </Tooltip>
+              {isMobileWorkspaceOpen && (
+                <div className="absolute left-0 top-full z-50 mt-2 rounded-2xl border border-white/10 bg-zinc-950/95 p-2 shadow-2xl backdrop-blur-md">
+                  <WorkspaceStrip
+                    layout="compact"
+                    workspaces={workspaces}
+                    activeWorkspaceId={activeWorkspaceId}
+                    onSwitchWorkspace={(id) => {
+                      onSwitchWorkspace(id);
+                      setIsMobileWorkspaceOpen(false);
+                    }}
+                    onAddWorkspace={() => {
+                      onAddWorkspace();
+                      setIsMobileWorkspaceOpen(false);
+                    }}
+                    onDeleteWorkspace={onDeleteWorkspace}
+                    onRenameWorkspace={onRenameWorkspace}
+                  />
+                </div>
+              )}
+            </div>
           </div>
 
           {activeRecipeData ? (
@@ -175,7 +226,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={() => onViewChange('studio')}
                 style={{ viewTransitionName: 'nav-studio' } as React.CSSProperties}
-                className={`vt-nav-studio px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer ${currentView === 'studio' ? 'bg-zinc-800 text-white shadow-lg' : 'text-zinc-500'}`}
+                className={`vt-nav-studio px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer ${currentView === 'studio' ? 'bg-zinc-800 text-white shadow-lg' : 'text-zinc-500'}`}
               >
                 {workspaceLabel}
               </button>
@@ -183,14 +234,14 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={() => onViewChange('recipes')}
                 style={{ viewTransitionName: 'nav-recipes' } as React.CSSProperties}
-                className={`vt-nav-recipes px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer ${currentView === 'recipes' ? 'bg-accent-600 text-white shadow-lg' : 'text-zinc-500'}`}
+                className={`vt-nav-recipes px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer ${currentView === 'recipes' ? 'bg-accent-600 text-white shadow-lg' : 'text-zinc-500'}`}
               >
                 Recipes
               </button>
             </div>
           )}
 
-          <div className="hidden min-w-0 sm:block">
+          <div className="hidden min-w-0 md:block">
             <WorkspaceStrip
               workspaces={workspaces}
               activeWorkspaceId={activeWorkspaceId}
@@ -211,7 +262,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenDashboard}
                 aria-label={`Open runtime status: ${runtimeStatus.label}`}
-                className={`flex size-10 items-center justify-center gap-2 rounded-xl border transition-all hover:border-white/20 hover:bg-white/8 xl:w-auto xl:px-3 ${runtimeToneClass}`}
+                className={`flex size-10 items-center justify-center gap-2 rounded-xl border transition-[color,background-color,border-color,opacity,transform] hover:border-white/20 hover:bg-white/8 xl:w-auto xl:px-3 ${runtimeToneClass}`}
               >
                 <Server size={15} />
                 <span className="hidden text-[10px] font-black uppercase tracking-widest xl:inline">
@@ -224,7 +275,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenSettings}
                 aria-label={`Open provider settings for ${activeProviderId}`}
-                className="hidden h-10 max-w-28 items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 text-zinc-300 transition-all hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white lg:flex"
+                className="hidden h-10 max-w-28 items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white lg:flex"
               >
                 <span className="truncate text-[10px] font-black uppercase tracking-widest">
                   {activeProviderId}
@@ -236,7 +287,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onToggleQueue}
                 aria-label="Toggle generation queue"
-                className={`flex h-10 min-w-10 items-center justify-center gap-2 rounded-xl border px-2 transition-all xl:px-3 ${isQueueOpen ? 'border-accent-500/30 bg-accent-500/12 text-white' : 'border-white/10 bg-white/5 text-zinc-300 hover:border-white/20 hover:bg-white/8 hover:text-white'}`}
+                className={`flex h-10 min-w-10 items-center justify-center gap-2 rounded-xl border px-2 transition-[color,background-color,border-color,opacity,transform] xl:px-3 ${isQueueOpen ? 'border-accent-500/30 bg-accent-500/12 text-white' : 'border-white/10 bg-white/5 text-zinc-300 hover:border-white/20 hover:bg-white/8 hover:text-white'}`}
               >
                 <Layers size={15} />
                 {hasQueueResultPreviews && (
@@ -257,7 +308,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                     ))}
                   </div>
                 )}
-                <span className="text-[10px] font-black uppercase tracking-widest">
+                <span className="text-[10px] font-black tabular-nums uppercase tracking-widest">
                   {queueCount}
                 </span>
               </button>
@@ -267,7 +318,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenChat}
                 aria-label="Open Codex chat"
-                className="flex size-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition-all hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
+                className="flex size-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
               >
                 <MessageSquare size={16} />
               </button>
@@ -277,7 +328,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenSettings}
                 aria-label="Open Studio Settings"
-                className="flex size-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition-all hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
+                className="flex size-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
               >
                 <Settings size={16} />
               </button>

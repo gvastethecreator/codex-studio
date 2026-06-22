@@ -4,8 +4,11 @@ import type {
   JobDetailResponse,
   JobEventRecord,
   JobMetricSummary,
+  JobTraceSummary,
   JobTokenUsageSummary,
   JobTranscriptEntry,
+  CatalogImage,
+  CodexTurnRecord,
 } from '../../../packages/shared/src';
 
 type RecordLike = Record<string, unknown>;
@@ -155,6 +158,25 @@ export function buildJobMetrics(
     ],
     tokenUsage,
     estimatedPromptTokens: Math.ceil((job.finalPromptUsed || job.originalPrompt).length / 4),
+  };
+}
+
+export function buildJobTraceSummary(
+  job: Job,
+  turn: CodexTurnRecord | null,
+  catalogImages: CatalogImage[],
+  metrics: JobMetricSummary,
+): JobTraceSummary {
+  return {
+    providerId: job.providerId,
+    model: job.execution?.model ?? null,
+    task: job.sourceSpec?.task ?? job.kind,
+    status: job.status,
+    durationMs: metrics.timings.find((segment) => segment.id === 'total')?.durationMs ?? null,
+    assetCount: catalogImages.length,
+    tokenUsage: metrics.tokenUsage,
+    transcriptPath: turn?.transcriptPath ?? null,
+    completedAt: job.completedAt,
   };
 }
 
@@ -336,16 +358,14 @@ function readLastTranscriptLines(
 }
 
 export async function getJobDetail(jobId: string): Promise<JobDetailResponse | null> {
-  const [{ queryCatalog }, { getCodexTurnByJobId, getJob, listJobEvents }] = await Promise.all([
-    import('./catalog'),
-    import('./db'),
-  ]);
+  const [{ queryCatalogDetails }, { getCodexTurnByJobId, getJob, listJobEvents }] =
+    await Promise.all([import('./catalog'), import('./db')]);
   const job = getJob(jobId);
   if (!job) return null;
 
   const turn = getCodexTurnByJobId(jobId);
   const events = listJobEvents(jobId);
-  const catalogImages = queryCatalog({
+  const catalogImages = queryCatalogDetails({
     jobId,
     isDeleted: false,
     limit: 24,
@@ -354,6 +374,7 @@ export async function getJobDetail(jobId: string): Promise<JobDetailResponse | n
     turn?.transcriptPath && existsSync(turn.transcriptPath)
       ? parseJobTranscript(readLastTranscriptLines(turn.transcriptPath, 180)).slice(-120)
       : [];
+  const metrics = buildJobMetrics(job, events, transcriptEntries);
 
   return {
     job,
@@ -361,6 +382,7 @@ export async function getJobDetail(jobId: string): Promise<JobDetailResponse | n
     turn,
     transcriptEntries,
     catalogImages,
-    metrics: buildJobMetrics(job, events, transcriptEntries),
+    metrics,
+    traceSummary: buildJobTraceSummary(job, turn, catalogImages, metrics),
   };
 }

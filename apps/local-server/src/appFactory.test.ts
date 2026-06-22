@@ -81,6 +81,7 @@ function createFakeCatalogStore(overrides?: Partial<StudioCatalogStore>): Studio
   const store: StudioCatalogStore = {
     getCatalogImage: vi.fn((id: string) => (id === image.id ? image : null)),
     queryCatalog: vi.fn(() => ({ images: [image], total: 1, hasMore: false })),
+    listCatalogImageIds: vi.fn(() => [image.id]),
     registerCatalogImage: vi.fn(() => image),
     updateCatalogImage: vi.fn(() => image),
     softDeleteCatalogImage: vi.fn((id: string) => (id === image.id ? image : null)),

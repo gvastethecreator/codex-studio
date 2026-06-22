@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import type { Job } from '../../../packages/shared/src';
-import { buildJobMetrics, parseJobTranscript } from './jobDetails';
+import { buildJobMetrics, buildJobTraceSummary, parseJobTranscript } from './jobDetails';
 
 describe('parseJobTranscript', () => {
   it('extracts assistant messages and reasoning-like items from JSONL notifications', () => {
@@ -134,6 +134,55 @@ describe('buildJobMetrics', () => {
       inputTokens: 100,
       outputTokens: 25,
       totalTokens: 125,
+    });
+  });
+
+  it('builds a provider-neutral trace summary from durable job facts', () => {
+    const job: Job = {
+      id: 'job-1',
+      projectId: 'project-1',
+      kind: 'image_generate',
+      providerId: 'codex',
+      sourceSpec: null,
+      status: 'completed',
+      execution: { model: 'gpt-image', reasoningEffort: 'medium' },
+      originalPrompt: 'A small brass key',
+      expandedPrompt: null,
+      finalPromptUsed: 'A small brass key',
+      error: null,
+      createdAt: '2026-05-26T10:00:00.000Z',
+      updatedAt: '2026-05-26T10:00:05.000Z',
+      completedAt: '2026-05-26T10:00:05.000Z',
+    };
+
+    expect(
+      buildJobTraceSummary(
+        job,
+        {
+          id: 'turn-1',
+          jobId: 'job-1',
+          codexThreadId: null,
+          codexTurnId: null,
+          transcriptPath: 'D:/library/transcripts/job-1.jsonl',
+          status: 'completed',
+          createdAt: '2026-05-26T10:00:00.000Z',
+          updatedAt: '2026-05-26T10:00:05.000Z',
+        },
+        [{ id: 'catalog-1' } as never],
+        {
+          timings: [{ id: 'total', label: 'Total process', durationMs: 5000 }],
+          tokenUsage: null,
+          estimatedPromptTokens: 4,
+        },
+      ),
+    ).toMatchObject({
+      providerId: 'codex',
+      model: 'gpt-image',
+      task: 'image_generate',
+      status: 'completed',
+      durationMs: 5000,
+      assetCount: 1,
+      transcriptPath: 'D:/library/transcripts/job-1.jsonl',
     });
   });
 });

@@ -5,6 +5,7 @@ import type {
   GenerationTaskSpec,
   Job,
   JobDetailResponse,
+  JobSummary,
 } from '../../../packages/shared/src';
 import { validateGenerationTaskSpec } from '../../../packages/shared/src';
 import type { publishEvent } from './events';
@@ -21,7 +22,7 @@ interface ReferenceProcessingErrorLike {
 }
 
 interface JobRoutesDependencies {
-  listJobs: () => Job[];
+  listJobs: () => Array<Job | JobSummary>;
   getJob: (jobId: string) => Job | null;
   getJobDetail: (jobId: string) => Promise<JobDetailResponse | null>;
   cancelQueuedOrRunningJob: (jobId: string) => Job | null;

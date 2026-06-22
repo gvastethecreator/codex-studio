@@ -34,6 +34,12 @@ import type {
   StudioOutputMode,
   StudioOutputSubfolderToken,
 } from '../packages/shared/src/studioSettings';
+import type {
+  StorageMaintenanceAuditReport,
+  StorageMaintenanceCompactResult,
+  StorageMaintenanceThumbnailBackfillResult,
+  ToolingLogsPruneResult,
+} from '../packages/shared/src/storageMaintenance';
 
 interface StudioSettingsModalProps {
   isOpen: boolean;
@@ -60,6 +66,26 @@ interface StudioSettingsModalProps {
     files: string[],
     workspaceId?: string | null,
   ) => void | Promise<void>;
+  maintenance: {
+    audit: StorageMaintenanceAuditReport | null;
+    compactResult: StorageMaintenanceCompactResult | null;
+    thumbnailBackfillResult: StorageMaintenanceThumbnailBackfillResult | null;
+    toolingLogsPruneResult: ToolingLogsPruneResult | null;
+    isLoadingAudit: boolean;
+    runningAction: 'compact' | 'thumbnails' | 'tooling-logs' | null;
+    refreshAudit: () => void | Promise<void>;
+    compactStorage: (input?: {
+      write?: boolean;
+      vacuum?: boolean;
+      confirm?: string | null;
+    }) => void | Promise<void>;
+    backfillThumbnails: (input?: {
+      write?: boolean;
+      confirm?: string | null;
+      limit?: number;
+    }) => void | Promise<void>;
+    pruneToolingLogs: (input?: { retainPerTask?: number }) => void | Promise<void>;
+  };
   onResetStudio: () => void | Promise<void>;
   isResettingStudio: boolean;
 }
@@ -609,6 +635,225 @@ function SettingsOutputSourcesPanel({
   );
 }
 
+interface SettingsMaintenancePanelProps {
+  maintenance: StudioSettingsModalProps['maintenance'];
+}
+
+function getCompactOmittedBytes(result: StorageMaintenanceCompactResult | null) {
+  return result?.results.reduce((total, item) => total + item.omittedBytes, 0) ?? 0;
+}
+
+function getCompactChangedRows(result: StorageMaintenanceCompactResult | null) {
+  return result?.results.reduce((total, item) => total + item.changedRows, 0) ?? 0;
+}
+
+function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps) {
+  const {
+    audit,
+    compactResult,
+    thumbnailBackfillResult,
+    toolingLogsPruneResult,
+    isLoadingAudit,
+    runningAction,
+    refreshAudit,
+    compactStorage,
+    backfillThumbnails,
+    pruneToolingLogs,
+  } = maintenance;
+  const isCompactRunning = runningAction === 'compact';
+  const isThumbnailRunning = runningAction === 'thumbnails';
+  const isPruneRunning = runningAction === 'tooling-logs';
+  const inlineBytes =
+    audit?.payloadFields.reduce((total, field) => total + field.inlineBytes, 0) ?? 0;
+  const compactRows = getCompactChangedRows(compactResult);
+  const compactBytes = getCompactOmittedBytes(compactResult);
+
+  const handleWriteCompact = () => {
+    const confirmed = window.confirm(
+      'Compact historical inline image payloads now? A local SQLite backup will be created first.',
+    );
+    if (!confirmed) return;
+    void compactStorage({ write: true, confirm: 'compact-inline-payloads' });
+  };
+
+  const handleWriteThumbnails = () => {
+    const confirmed = window.confirm(
+      'Backfill thumbnails for source files that still exist? A local SQLite backup will be created first.',
+    );
+    if (!confirmed) return;
+    void backfillThumbnails({ write: true, confirm: 'backfill-thumbnails', limit: 1000 });
+  };
+
+  return (
+    <div className="mt-4 rounded-lg border border-white/8 bg-white/4 p-4">
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h3 className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
+            Storage Maintenance
+          </h3>
+          <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+            Audit, Compact, Backfill, Prune
+          </p>
+        </div>
+        <button
+          type="button"
+          onClick={() => void refreshAudit()}
+          disabled={isLoadingAudit}
+          className="flex h-9 items-center gap-2 rounded-lg border border-white/10 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+        >
+          {isLoadingAudit ? (
+            <LoaderCircle size={13} className="animate-spin" />
+          ) : (
+            <RefreshCw size={13} />
+          )}
+          Audit
+        </button>
+      </div>
+
+      {audit ? (
+        <div className="grid gap-2 md:grid-cols-4">
+          <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+            <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+              SQLite
+            </div>
+            <div className="mt-1 font-mono text-xs font-bold text-zinc-200">
+              {audit.database.formattedBytes}
+            </div>
+          </div>
+          <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+            <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+              Inline Payloads
+            </div>
+            <div className="mt-1 font-mono text-xs font-bold text-zinc-200">
+              {formatBytes(inlineBytes)}
+            </div>
+          </div>
+          <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+            <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+              Missing Thumbs
+            </div>
+            <div className="mt-1 font-mono text-xs font-bold text-zinc-200">
+              {audit.catalog.missingThumbnails}
+            </div>
+          </div>
+          <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+            <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+              Tooling Logs
+            </div>
+            <div className="mt-1 font-mono text-xs font-bold text-zinc-200">
+              {audit.directories.toolingLogs?.formattedBytes ?? '0 B'}
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div className="rounded-lg border border-white/8 bg-black/20 p-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+          Run audit to load current storage metrics.
+        </div>
+      )}
+
+      <div className="mt-3 grid gap-2 md:grid-cols-3">
+        <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+          <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-300">
+            <Database size={14} className="text-zinc-500" />
+            Payloads
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => void compactStorage()}
+              disabled={isCompactRunning}
+              className="flex h-8 items-center gap-2 rounded-lg border border-white/10 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+            >
+              {isCompactRunning ? <LoaderCircle size={13} className="animate-spin" /> : null}
+              Plan
+            </button>
+            <button
+              type="button"
+              onClick={handleWriteCompact}
+              disabled={isCompactRunning}
+              className="h-8 rounded-lg border border-amber-400/20 bg-amber-500/10 px-3 text-[9px] font-black uppercase tracking-widest text-amber-100 transition-colors hover:bg-amber-500/15 disabled:opacity-40"
+            >
+              Write
+            </button>
+          </div>
+        </div>
+
+        <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+          <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-300">
+            <FileImage size={14} className="text-zinc-500" />
+            Thumbnails
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => void backfillThumbnails({ limit: 1000 })}
+              disabled={isThumbnailRunning}
+              className="flex h-8 items-center gap-2 rounded-lg border border-white/10 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+            >
+              {isThumbnailRunning ? <LoaderCircle size={13} className="animate-spin" /> : null}
+              Plan
+            </button>
+            <button
+              type="button"
+              onClick={handleWriteThumbnails}
+              disabled={isThumbnailRunning}
+              className="h-8 rounded-lg border border-emerald-400/20 bg-emerald-500/10 px-3 text-[9px] font-black uppercase tracking-widest text-emerald-100 transition-colors hover:bg-emerald-500/15 disabled:opacity-40"
+            >
+              Write
+            </button>
+          </div>
+        </div>
+
+        <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+          <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-300">
+            <RefreshCw size={14} className="text-zinc-500" />
+            Tooling Logs
+          </div>
+          <button
+            type="button"
+            onClick={() => void pruneToolingLogs({ retainPerTask: 20 })}
+            disabled={isPruneRunning}
+            className="flex h-8 items-center gap-2 rounded-lg border border-white/10 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+          >
+            {isPruneRunning ? <LoaderCircle size={13} className="animate-spin" /> : null}
+            Prune
+          </button>
+        </div>
+      </div>
+
+      {(compactResult || thumbnailBackfillResult || toolingLogsPruneResult) && (
+        <div className="mt-3 grid gap-2 text-[10px] font-bold uppercase tracking-widest text-zinc-500 md:grid-cols-3">
+          {compactResult ? (
+            <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+              <span className="text-zinc-300">Compact {compactResult.mode}</span>
+              <div className="mt-1 font-mono text-zinc-500">
+                {compactRows} rows / {formatBytes(compactBytes)}
+              </div>
+            </div>
+          ) : null}
+          {thumbnailBackfillResult ? (
+            <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+              <span className="text-zinc-300">Thumbs {thumbnailBackfillResult.mode}</span>
+              <div className="mt-1 font-mono text-zinc-500">
+                {thumbnailBackfillResult.wroteRows} wrote / {thumbnailBackfillResult.plannedRows}{' '}
+                planned / {thumbnailBackfillResult.missingSourceFiles} missing
+              </div>
+            </div>
+          ) : null}
+          {toolingLogsPruneResult ? (
+            <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+              <span className="text-zinc-300">Logs pruned</span>
+              <div className="mt-1 font-mono text-zinc-500">
+                {toolingLogsPruneResult.pruned} files / keep {toolingLogsPruneResult.retainPerTask}
+              </div>
+            </div>
+          ) : null}
+        </div>
+      )}
+    </div>
+  );
+}
+
 // react-doctor-disable-next-line react-doctor/no-many-boolean-props -- settings dialog boundary intentionally receives explicit UI/loading flags
 export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   isOpen,
@@ -631,6 +876,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   onRegisterOutputSource,
   onLoadOutputSourceFiles,
   onImportOutputSourceFiles,
+  maintenance,
   onResetStudio,
   isResettingStudio,
 }) => {
@@ -749,6 +995,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
             onImportOutputSourceFiles={onImportOutputSourceFiles}
             onRegisterOutputSource={onRegisterOutputSource}
           />
+          <SettingsMaintenancePanel maintenance={maintenance} />
         </div>
 
         <div className="flex items-center justify-end gap-3 border-t border-white/8 px-5 py-4">

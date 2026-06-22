@@ -1,10 +1,11 @@
 import { Hono } from 'hono';
 import { streamSSE } from 'hono/streaming';
+import type { StudioEvent } from '../../../packages/shared/src';
 import type { subscribeEvents } from './events';
 
 export const EVENT_STREAM_KEEPALIVE_MS = 10_000;
 
-export function createServerConnectedEvent() {
+export function createServerConnectedEvent(): Extract<StudioEvent, { type: 'server.connected' }> {
   return {
     type: 'server.connected',
     payload: { ok: true },

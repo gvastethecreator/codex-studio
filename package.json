@@ -50,6 +50,9 @@
     "providers:preflight": "bun run scripts/query-provider-runtime.ts",
     "catalog:source:verify": "bun run scripts/catalog-first-source-audit.ts",
     "library:layout:verify": "bun run scripts/studio-library-layout-source-audit.ts",
+    "storage:audit": "bun run scripts/studio-storage-maintenance.ts audit",
+    "storage:compact": "bun run scripts/studio-storage-maintenance.ts compact",
+    "storage:thumbnails:backfill": "bun run scripts/studio-storage-maintenance.ts thumbnails:backfill",
     "ui:chunks": "bun run scripts/report-ui-chunks.ts",
     "ui:chunks:verify": "bun run scripts/report-ui-chunks.ts --verify",
     "ui:source:verify": "bun run scripts/ui-demand-surface-audit.ts",
@@ -72,6 +75,7 @@
     "preview": "vp preview",
     "preview:electron": "bun run scripts/preview-electron.ts",
     "tooling:logs": "explorer logs\\tooling",
+    "tooling:logs:prune": "bun run scripts/tooling-task.ts tooling:logs:prune",
     "doctor": "npx react-doctor@latest"
   },
   "dependencies": {

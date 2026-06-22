@@ -2,7 +2,8 @@
 
 Esta hoja de ruta sigue refactors que convierten módulos superficiales en módulos más profundos, con mejor locality, leverage y testabilidad. Las decisiones relacionadas viven en `docs/adr/`.
 
-Current findings index: `docs/architecture/architecture-review-2026-06-19-front-performance.md`.
+Current findings index: `docs/architecture/architecture-review-2026-06-21-runtime-storage-ux.md`.
+Additional second-pass findings: `docs/architecture/architecture-review-2026-06-21-second-pass-runtime-ux.md`.
 
 ## Conceptos
 
@@ -52,6 +53,34 @@ Execution order for this batch:
 8. Put Composer and Browser Queue persistence on a payload budget. Partial: inline recovery budget implemented; Local Asset refs remain future work.
 9. Consolidate Studio Readiness and Codex model freshness. Partial: Codex model catalog fetch is now owned by generation config and passed into Toolbar.
 10. Close source-audit temp-file hygiene. Done.
+
+## Accepted review batch - 2026-06-21
+
+This runtime-storage-UX batch refines the 2026-06-19 front-performance work. It is anchored by `docs/architecture/architecture-review-2026-06-21-runtime-storage-ux.md`, `docs/active/runtime-storage-ux-plan-2026-06-21.md`, and ADR-0031.
+
+Execution order for this batch:
+
+1. Add summary-first hot reads for jobs and Catalog Pages. Done for `/api/jobs` and `/api/catalog` default reads.
+2. Add cheap hot-plan indexes for jobs, job events, and Codex turns. Done.
+3. Add `storage:audit` and guarded `storage:compact` maintenance commands. Done for read-only audit and dry-run/write-with-confirm compaction.
+4. Add conservative log rotation and SQL log retention. Done.
+5. Move backend Catalog commands to full-scope filter operations with count summaries. Done for archive/restore/purge by filter; remaining UX copy can surface partial failures more clearly.
+6. Give Local Studio Sync ownership of typed catalog events, scoped invalidation, and bounded job waiting. Partial: stream and sync now consume discriminated `catalog.created` / `catalog.updated` / `catalog.deleted`; bounded job waiting and scoped insertion remain.
+7. Add provider-neutral Job Trace Summary before transcript retention. Partial: Job Detail exposes `traceSummary`; dedicated persisted retention rows remain deferred until transcript retention starts.
+8. Revisit Style Browser session split and Studio Readiness freshness only after storage/sync measurements settle.
+
+## Additional candidate review - 2026-06-21
+
+The second-pass audit is anchored by `docs/architecture/architecture-review-2026-06-21-second-pass-runtime-ux.md`.
+
+Suggested follow-up order:
+
+1. Add tooling-log retention for `logs/tooling`. Done.
+2. Add reference dedupe audit coverage and design a content-addressed Reference Store. Audit coverage done; store design remains.
+3. Backfill missing historical thumbnails in bounded batches. First write batch warmed 137 recoverable rows; 784 remaining rows point at missing source files and need orphan-metadata cleanup, not thumbnail generation.
+4. Measure Studio Readiness request overlap before consolidating freshness.
+5. Add catalog search timing before deciding on FTS.
+6. Consider async External Output Source imports only if large imports block Settings in real use.
 
 ## Seguimiento de trabajo
 

@@ -86,6 +86,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
       loadOutputSourceFiles,
       importOutputSourceFiles,
     },
+    maintenanceDomain,
     libraryDir: settingsLibraryDir,
     onResetStudio,
     isResettingStudio,
@@ -214,6 +215,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
               onRegisterOutputSource={registerOutputSource}
               onLoadOutputSourceFiles={loadOutputSourceFiles}
               onImportOutputSourceFiles={importOutputSourceFiles}
+              maintenance={maintenanceDomain}
               onResetStudio={onResetStudio}
               isResettingStudio={isResettingStudio}
             />

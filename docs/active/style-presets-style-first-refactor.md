@@ -1,6 +1,6 @@
 # Style Presets Style-First Refactor (Phase 1)
 
-> **Note:** This file is a chronological refactor log. The intro, quick path, key decisions, and IP/title note below are translated. Per-batch commentary and rationale blocks inside the body remain in Spanish pending a full pass once the refactor waves settle. Per-preset rows are mostly file paths and need no translation.
+> **Note:** This file is a chronological refactor log. Start from `docs/active/style-generation-maintenance-index.md` for the current maintenance entry point, and avoid adding new absolute local backup paths here unless a script still needs this exact file. The intro, quick path, key decisions, and IP/title note below are translated. Per-batch commentary and rationale blocks inside the body remain in Spanish pending a full pass once the refactor waves settle. Per-preset rows are mostly file paths and need no translation.
 
 This refactor fixes presets that described specific scenes instead of reusable styles. The goal is for every preset to act as an **abstract visual grammar** (transferable across subjects) and not as a fixed micro-narrative.
 
@@ -553,7 +553,7 @@ o game/RPG splash generico.
   palabras sueltas del manifiesto; usa solo la allowlist explicita.
 - Ajuste de lenguaje SP06 no-anime:
   se reemplazo `protagonist` por `non-anime designed figure`, `medium-led
-  figure`, `human-scale scenelet` o `game-useful focal idea`, especialmente en
+figure`, `human-scale scenelet` o `game-useful focal idea`, especialmente en
   digital art, concept art, vector, moodboard color story y cozy sim.
 - Dry-run de frontera posterior al patch:
   `.tmp\sp06-anime-boundary-recheck-after-patch.txt` con
@@ -574,7 +574,7 @@ el riesgo activo no era coverage, sino que algunos presets no-anime podian
 resolverse como character-card/anime-adjacent.
 
 - Cambio minimo en `scripts/generate-style-defaults.ts`: `SP06 NON-ANIME
-  MEDIUM LOCK` se inyecta solo si el preset no esta en la allowlist
+MEDIUM LOCK` se inyecta solo si el preset no esta en la allowlist
   `SP06-085|SP06-108|SP06-114`.
 - Regla ajustada: en `pack_06` no-anime, el medio/sistema visual debe leerse
   antes que cualquier personaje; figuras permitidas solo como painted/drawn/
@@ -20312,10 +20312,10 @@ Generacion:
   -> `generated=5 attempted=5 skipped=75 failed=0`.
 - Retry `SP10-055`: primer resultado era bowl/sphere/product still-life; se
   agrego override wood-grain surface y se regenero -> `generated=1 attempted=1
-  skipped=79 failed=0`.
+skipped=79 failed=0`.
 - Retry `SP10-057`: primer resultado era objeto/mascota tejida; se agrego
   override knitted textile surface y se regenero -> `generated=1 attempted=1
-  skipped=79 failed=0`.
+skipped=79 failed=0`.
 
 QA:
 

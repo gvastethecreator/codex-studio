@@ -94,6 +94,17 @@ Use `apps/local-server/src/providers/externalProvider.ts` as the adapter shell f
 Use `apps/local-server/src/providers/externalProviderResults.ts` for hosted image result handling before adding provider-specific download/transcript code. Keep retry policy, image URL extraction, mime/ext inference, asset writes, transcript writes, and secret redaction shared unless a provider truly needs a different contract.
 For ComfyUI, use `apps/local-server/src/providers/comfyExecutor.ts`. It requires `COMFY_API_URL` or `COMFYUI_API_URL` plus `COMFY_WORKFLOW_TEMPLATE_PATH`. The template must be a Comfy workflow JSON with `{{prompt}}` and optional `{{negativePrompt}}` placeholders. The executor submits `/prompt`, polls `/history/{prompt_id}`, imports the first `/view` image into the Studio Library, and records only compact no-secret diagnostics.
 
+## Auditar y compactar storage local
+
+1. Start with Studio Settings -> Storage Maintenance for interactive work, or `bun run storage:audit` for automation. It reports database size, WAL/SHM size, row counts, oversized JSON fields, inline `data:image` markers, missing thumbnails, reference dedupe stats, tooling-log size, and Studio Library directory sizes without printing prompts, transcript text, secrets, or inline image data.
+2. Use `bun run storage:compact` for dry-run planning only. It reports how many historical inline image payloads would be omitted and whether adjacent `localPath` files make them recoverable.
+3. Write compaction is intentionally guarded: stop the local server, review the dry-run output, then run `bun run storage:compact -- --write --confirm=compact-inline-payloads`. Add `--vacuum` only after a successful write plan if you want SQLite file-size reclamation.
+4. Use `bun run storage:thumbnails:backfill` to dry-run missing historical catalog thumbnail rows in bounded batches. Write mode requires `--write --confirm=backfill-thumbnails`; review source-missing counts before writing because those rows need orphan cleanup instead of thumbnail generation.
+5. Compaction may make old inline-only assets non-retryable when no local reference can be reconstructed. The command marks omitted payloads explicitly instead of pretending the bytes still exist.
+6. Do not run write compaction as a release gate or automatic migration.
+7. Do not delete duplicate reference files until a content-addressed Reference Store exists.
+8. Use Storage Maintenance or `bun run tooling:logs:prune` when repo-local `logs/tooling` history needs manual cleanup; normal tooling runs prune timestamped logs automatically.
+
 ## Endurecer cola de generación
 
 1. Validate `Generation Task Spec` before enqueue when a job carries `sourceSpec`.

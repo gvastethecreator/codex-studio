@@ -6,6 +6,7 @@ const mocks = vi.hoisted(() => {
   const stream = {
     onJobUpdate: vi.fn(),
     onAssetAdded: vi.fn(),
+    onCatalogChanged: vi.fn(),
     onLogAdded: vi.fn(),
     onConnectionChange: vi.fn(),
     close: vi.fn(),
@@ -130,6 +131,7 @@ describe('runSingleCodexImagegenJob stream ownership', () => {
     const injectedStream = {
       onJobUpdate: vi.fn(),
       onAssetAdded: vi.fn(),
+      onCatalogChanged: vi.fn(),
       onLogAdded: vi.fn(),
       onConnectionChange: vi.fn(),
       close: vi.fn(),

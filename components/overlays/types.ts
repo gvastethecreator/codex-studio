@@ -11,6 +11,10 @@ import type {
   LocalCodexSessionResponse,
   RegisterExternalOutputSourceInput,
   StudioReadinessSnapshot,
+  StorageMaintenanceAuditReport,
+  StorageMaintenanceCompactResult,
+  StorageMaintenanceThumbnailBackfillResult,
+  ToolingLogsPruneResult,
 } from '../../packages/shared/src';
 import type {
   Attachment,
@@ -121,6 +125,26 @@ export interface StudioSystemOverlaysProps {
         files: string[],
         workspaceId?: string | null,
       ) => void | Promise<void>;
+    };
+    maintenanceDomain: {
+      audit: StorageMaintenanceAuditReport | null;
+      compactResult: StorageMaintenanceCompactResult | null;
+      thumbnailBackfillResult: StorageMaintenanceThumbnailBackfillResult | null;
+      toolingLogsPruneResult: ToolingLogsPruneResult | null;
+      isLoadingAudit: boolean;
+      runningAction: 'compact' | 'thumbnails' | 'tooling-logs' | null;
+      refreshAudit: () => void | Promise<void>;
+      compactStorage: (input?: {
+        write?: boolean;
+        vacuum?: boolean;
+        confirm?: string | null;
+      }) => void | Promise<void>;
+      backfillThumbnails: (input?: {
+        write?: boolean;
+        confirm?: string | null;
+        limit?: number;
+      }) => void | Promise<void>;
+      pruneToolingLogs: (input?: { retainPerTask?: number }) => void | Promise<void>;
     };
     libraryDir: string | null;
     onResetStudio: () => void | Promise<void>;

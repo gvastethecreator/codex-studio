@@ -166,6 +166,26 @@ describe('buildStudioOverlayController', () => {
             calls.push('importOutputSourceFiles');
           },
         },
+        maintenanceDomain: {
+          audit: null,
+          compactResult: null,
+          thumbnailBackfillResult: null,
+          toolingLogsPruneResult: null,
+          isLoadingAudit: false,
+          runningAction: null,
+          refreshAudit: () => {
+            calls.push('refreshMaintenanceAudit');
+          },
+          compactStorage: () => {
+            calls.push('compactStorage');
+          },
+          backfillThumbnails: () => {
+            calls.push('backfillThumbnails');
+          },
+          pruneToolingLogs: () => {
+            calls.push('pruneToolingLogs');
+          },
+        },
         libraryDir: 'D:/AI-Studio-Library',
         onResetStudio: () => {
           calls.push('resetStudio');
@@ -441,6 +461,26 @@ describe('buildStudioOverlayController', () => {
           },
           importOutputSourceFiles: () => {
             calls.push('importOutputSourceFiles');
+          },
+        },
+        maintenanceDomain: {
+          audit: null,
+          compactResult: null,
+          thumbnailBackfillResult: null,
+          toolingLogsPruneResult: null,
+          isLoadingAudit: false,
+          runningAction: null,
+          refreshAudit: () => {
+            calls.push('refreshMaintenanceAudit');
+          },
+          compactStorage: () => {
+            calls.push('compactStorage');
+          },
+          backfillThumbnails: () => {
+            calls.push('backfillThumbnails');
+          },
+          pruneToolingLogs: () => {
+            calls.push('pruneToolingLogs');
           },
         },
         libraryDir: null,

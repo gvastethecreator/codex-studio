@@ -121,6 +121,17 @@ bun run validate:fast
 bun run validate:full
 ```
 
+Maintenance:
+
+```bash
+bun run storage:audit
+bun run storage:compact
+bun run storage:thumbnails:backfill
+bun run tooling:logs:prune
+```
+
+Interactive maintenance is also available in Studio Settings -> Storage Maintenance.
+
 ## Core technical decisions
 
 | Topic                            | Decision                                              |
