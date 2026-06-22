@@ -77,7 +77,7 @@ export const GOOGLE_IMAGE_API_SESSION_CONTRACT = createProviderSessionContract({
   outputRules: ['Return imported Local Assets and Catalog Entries through the standard job flow.'],
 });
 
-export const FAL_IMAGE_API_SESSION_CONTRACT = createProviderSessionContract({
+const FAL_IMAGE_API_SESSION_CONTRACT = createProviderSessionContract({
   id: 'fal-image-api-v1',
   providerId: 'fal',
   stableInstructions: [
@@ -89,7 +89,7 @@ export const FAL_IMAGE_API_SESSION_CONTRACT = createProviderSessionContract({
   outputRules: ['Return imported Local Assets and Catalog Entries through the standard job flow.'],
 });
 
-export const COMFY_WORKFLOW_SESSION_CONTRACT = createProviderSessionContract({
+const COMFY_WORKFLOW_SESSION_CONTRACT = createProviderSessionContract({
   id: 'comfy-workflow-v1',
   providerId: 'comfy',
   stableInstructions: [

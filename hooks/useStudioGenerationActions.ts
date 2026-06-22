@@ -10,7 +10,7 @@ type GenerateOptions = {
   useCurrentAttachments?: boolean;
 };
 
-export function cloneGenerationAttachments(attachments: Attachment[]): Attachment[] {
+function cloneGenerationAttachments(attachments: Attachment[]): Attachment[] {
   return attachments.map((attachment) => ({ ...attachment }));
 }
 

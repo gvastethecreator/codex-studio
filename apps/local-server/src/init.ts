@@ -15,6 +15,9 @@ export function initStudio() {
   ensureDefaultLibrary();
   const defaultProject = ensureDefaultProject();
   const envPath = path.resolve(process.cwd(), '.env.local');
+  const [command, ...args] = resolveCodexInvocation(['--version']);
+  const codex = spawnSync(command, args, { encoding: 'utf8' });
+  const codexVersion = codex.status === 0 ? codex.stdout.trim() : null;
 
   if (!existsSync(envPath)) {
     const settings = getSettings();
@@ -34,9 +37,6 @@ export function initStudio() {
     );
   }
 
-  const [command, ...args] = resolveCodexInvocation(['--version']);
-  const codex = spawnSync(command, args, { encoding: 'utf8' });
-  const codexVersion = codex.status === 0 ? codex.stdout.trim() : null;
   const message = codexVersion
     ? `Studio initialized. Default project: ${defaultProject.id}. Codex: ${codexVersion}`
     : `Studio initialized. Default project: ${defaultProject.id}. Codex CLI was not found in PATH.`;

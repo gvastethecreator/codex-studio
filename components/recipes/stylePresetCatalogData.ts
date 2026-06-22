@@ -125,7 +125,7 @@ export function loadStylePresetCatalogPackData(
   return promise;
 }
 
-export async function loadStylePresetCatalogPacksData(packIds = STYLE_PRESET_CATALOG_PACK_IDS) {
+async function loadStylePresetCatalogPacksData(packIds = STYLE_PRESET_CATALOG_PACK_IDS) {
   const loaded = await Promise.all(packIds.map((packId) => loadStylePresetCatalogPackData(packId)));
   return loaded.filter((packData): packData is StylePresetCatalogPackData => Boolean(packData));
 }

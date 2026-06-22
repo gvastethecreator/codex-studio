@@ -1,9 +1,28 @@
 {
+  "$schema": "https://react.doctor/schema/config.json",
   "ignore": {
-    "rules": [
-      "deslop/unused-file",
-      "react-doctor/async-await-in-loop",
-      "react-doctor/js-set-map-lookups"
+    "overrides": [
+      {
+        "files": [".github/workflows/ci.yml"],
+        "rules": ["react-doctor/build-pipeline-secret-boundary"]
+      },
+      {
+        "files": [
+          "apps/local-server/src/codex/processSupervisor.ts",
+          "apps/local-server/src/codex/rpcClient.ts",
+          "apps/local-server/src/codex/turn.ts",
+          "apps/local-server/src/eventStreamRoutes.ts",
+          "apps/local-server/src/outputSources.ts",
+          "apps/local-server/src/providers/comfyExecutor.ts",
+          "apps/local-server/src/storageMaintenance.ts",
+          "services/localGenerationRun.ts"
+        ],
+        "rules": ["react-doctor/async-await-in-loop"]
+      },
+      {
+        "files": ["electron/main.cjs"],
+        "rules": ["deslop/unused-file"]
+      }
     ]
   }
 }

@@ -6,7 +6,7 @@ import {
   type RecipeContextParams,
 } from './shared';
 
-export function buildStylesContext(params: RecipeContextParams) {
+function buildStylesContext(params: RecipeContextParams) {
   const presetName = getString(params, 'presetName', 'Unnamed Style');
   const mode = getString(params, 'mode', 'DIRECT_STYLE_SYNTHESIS');
   const roleInstruction = getString(params, 'roleInstruction');

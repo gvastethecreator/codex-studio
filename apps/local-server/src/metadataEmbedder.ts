@@ -377,7 +377,7 @@ export async function extractMetadata(filePath: string): Promise<ImageGenMetadat
   }
 }
 
-export async function embedJobAssets(
+async function embedJobAssets(
   jobId: string,
   metadata: ImageGenMetadata,
   libraryDir: string,

@@ -81,7 +81,7 @@ export function collectWorkspaceCatalogImageIds(entries: CatalogImage[], workspa
   }, []);
 }
 
-export function useCatalog({
+function useCatalog({
   pageSize = 200,
   queryCatalogPage = queryCatalog,
   ...filters

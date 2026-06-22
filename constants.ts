@@ -4,13 +4,13 @@ export const MODELS = {
   CODEX_IMAGEGEN: 'codex-imagegen',
 } as const;
 
-export const DEFAULT_CODEX_EXECUTION_MODEL = 'gpt-5.4-mini';
-export const DEFAULT_CODEX_EXECUTION_REASONING_EFFORT = 'low';
-export const DEFAULT_CODEX_EXECUTION_SPEED = 'standard' as const;
+const DEFAULT_CODEX_EXECUTION_MODEL = 'gpt-5.4-mini';
+const DEFAULT_CODEX_EXECUTION_REASONING_EFFORT = 'low';
+const DEFAULT_CODEX_EXECUTION_SPEED = 'standard' as const;
 
 const DEFAULT_ASPECT_RATIO: AspectRatio = '1:1';
 
-export const ALL_RATIOS: AspectRatio[] = ['1:1', '3:2', '2:3'];
+const ALL_RATIOS: AspectRatio[] = ['1:1', '3:2', '2:3'];
 
 export const RATIO_MAP: Record<AspectRatio, number> = {
   '1:1': 1,
@@ -18,11 +18,11 @@ export const RATIO_MAP: Record<AspectRatio, number> = {
   '2:3': 2 / 3,
 };
 
-export const SYSTEM_INSTRUCTIONS = {
+const SYSTEM_INSTRUCTIONS = {
   IMAGE_GENERATOR: `You are an AI Image Generator. Output ONLY the generated image data. Do not provide any text explanation.`,
 };
 
-export const DEFAULT_BACKGROUND_CONFIG = {
+const DEFAULT_BACKGROUND_CONFIG = {
   density: 0.4,
   speed: 0.002,
 };

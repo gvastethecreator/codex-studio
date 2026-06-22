@@ -197,7 +197,7 @@ export async function getCodexModelCatalog(): Promise<CodexModelCatalogResponse>
   return createCodexModelCatalogReader()();
 }
 
-export function createCodexModelCatalogReader({
+function createCodexModelCatalogReader({
   createClient = () => new CodexRpcClient(),
 }: {
   createClient?: CodexRpcTransportFactory;

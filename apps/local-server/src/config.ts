@@ -36,8 +36,9 @@ export function loadDotEnvLocal() {
   for (const line of lines) {
     const trimmed = line.trim();
     if (!trimmed || trimmed.startsWith('#')) continue;
-    const separator = trimmed.indexOf('=');
-    if (separator === -1) continue;
+    const separatorMatch = /=/.exec(trimmed);
+    if (!separatorMatch) continue;
+    const separator = separatorMatch.index;
     const key = trimmed.slice(0, separator).trim();
     const value = trimmed
       .slice(separator + 1)

@@ -88,8 +88,7 @@ export function useStudioNavigation({
   const isModalOpenRef = useRef(isModalOpen);
   isModalOpenRef.current = isModalOpen;
 
-  // react-doctor-disable-next-line react-doctor/no-event-handler
-  useEffect(() => {
+  const syncRouteState = useCallback(() => {
     startViewTransition(() => {
       if (route.view === 'recipe' && route.activeRecipeId) {
         if (activeRecipeRef.current !== route.activeRecipeId) {
@@ -131,6 +130,11 @@ export function useStudioNavigation({
     setActiveRecipe,
     setIsEditorOpen,
   ]);
+
+  useEffect(() => {
+    syncRouteState();
+    return () => {};
+  }, [syncRouteState]);
 
   const handleViewChange = useCallback(
     (newView: 'studio' | 'recipes') => {

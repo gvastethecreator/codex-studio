@@ -1,6 +1,6 @@
-export const GENERATION_TASK_SPEC_VERSION = 'generation-task-spec/v1' as const;
+const GENERATION_TASK_SPEC_VERSION = 'generation-task-spec/v1' as const;
 
-export const GENERATION_TASK_KINDS = [
+const GENERATION_TASK_KINDS = [
   'image_generate',
   'image_edit',
   'style_preset_card',
@@ -29,7 +29,7 @@ export type CompiledProviderPayloadKind =
   | 'comfy_workflow'
   | 'dry_run';
 
-export const GENERATION_QUALITY_PRESET_IDS = [
+const GENERATION_QUALITY_PRESET_IDS = [
   'image_general',
   'image_edit',
   'style_reference',
@@ -194,7 +194,7 @@ const DEFAULT_OUTPUT_CONTRACT: GenerationOutputContract = {
   requiresExactPath: true,
 };
 
-export const GENERATION_QUALITY_PRESET_GUIDANCE = {
+const GENERATION_QUALITY_PRESET_GUIDANCE = {
   image_general: ['Readable subject, coherent lighting, clean composition, artifact-free output.'],
   image_edit: [
     'Preserve source identity and structure; apply requested edits without unintended restyling.',

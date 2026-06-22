@@ -112,6 +112,6 @@ export function resolveStudioApiBase() {
   return resolveStudioRuntime().apiBase;
 }
 
-export function isDesktopStudioRuntime() {
+function isDesktopStudioRuntime() {
   return resolveStudioRuntime().isDesktop;
 }

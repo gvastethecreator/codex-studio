@@ -23,7 +23,7 @@ export function createInitialGlobalState(): GlobalState {
   };
 }
 
-export function ensureDefaultWorkspace(workspaces: Workspace[]): Workspace[] {
+function ensureDefaultWorkspace(workspaces: Workspace[]): Workspace[] {
   if (workspaces.some((workspace) => workspace.id === 'default')) {
     return workspaces;
   }

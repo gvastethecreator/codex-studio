@@ -27,7 +27,7 @@ function mapLibrary(row: any): StudioLibrary {
   };
 }
 
-export function ensureLibraryStructure(libraryPath: string) {
+function ensureLibraryStructure(libraryPath: string) {
   mkdirSync(libraryPath, { recursive: true });
   for (const folder of LIBRARY_FOLDERS) {
     mkdirSync(resolveLibraryPathFromRoot(libraryPath, folder), { recursive: true });

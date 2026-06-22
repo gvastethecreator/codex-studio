@@ -75,7 +75,7 @@ async function getAllKeys(): Promise<IDBValidKey[]> {
   });
 }
 
-export async function getAllEntries(): Promise<{ key: IDBValidKey; value: any }[]> {
+async function getAllEntries(): Promise<{ key: IDBValidKey; value: any }[]> {
   const keys = await getAllKeys();
   const entries = await Promise.all(keys.map(async (key) => ({ key, value: await get(key) })));
   return entries;

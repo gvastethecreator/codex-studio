@@ -56,24 +56,24 @@ export const downloadMultipleImagesAsZip = async (
   ]);
   const zip = new JSZip();
 
-  const promises = images.map(async (img, index) => {
-    try {
-      const response = await fetch(img.src);
-      const blob = await response.blob();
-      const filename = generateSmartFilename(
-        img.config.prompt,
-        img.id,
-        img.config.model,
-        img.config.aspectRatio,
-        index + 1,
-      );
-      zip.file(filename, blob);
-    } catch (err) {
-      runtimeLogger.error(`Failed to fetch image ${img.id} for zip`, err);
-    }
-  });
-
-  await Promise.all(promises);
+  await Promise.all(
+    images.map(async (img, index) => {
+      try {
+        const response = await fetch(img.src);
+        const blob = await response.blob();
+        const filename = generateSmartFilename(
+          img.config.prompt,
+          img.id,
+          img.config.model,
+          img.config.aspectRatio,
+          index + 1,
+        );
+        zip.file(filename, blob);
+      } catch (err) {
+        runtimeLogger.error(`Failed to fetch image ${img.id} for zip`, err);
+      }
+    }),
+  );
   const content = await zip.generateAsync({ type: 'blob' });
   saveAs(content, zipFilename);
 };
@@ -96,7 +96,7 @@ export const exportToJson = <T>(data: T, filename: string) => {
 /**
  * Read a user-provided JSON file and parse it into a typed payload.
  */
-export const readJsonFile = <T = unknown>(file: File): Promise<T> => {
+const readJsonFile = <T = unknown>(file: File): Promise<T> => {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = (e) => {

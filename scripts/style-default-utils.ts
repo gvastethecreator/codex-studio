@@ -12,14 +12,14 @@ import { runWithScriptRetry } from './runtimePolicy';
 
 export const rootDir = process.cwd();
 const homeDir = process.env.USERPROFILE?.trim() || process.env.HOME?.trim() || os.homedir();
-export const recipeAssetsDir = path.join(rootDir, 'assets', 'recipes');
+const recipeAssetsDir = path.join(rootDir, 'assets', 'recipes');
 export const recipeCardsDir = path.join(recipeAssetsDir, 'cards');
-export const recipeStylesDir = path.join(recipeAssetsDir, 'styles');
-export const stylePackManifestsDir = path.join(styleManifestsDir, 'packs');
-export const stylePresetManifestsDir = path.join(styleManifestsDir, 'presets');
+const recipeStylesDir = path.join(recipeAssetsDir, 'styles');
+const stylePackManifestsDir = path.join(styleManifestsDir, 'packs');
+const stylePresetManifestsDir = path.join(styleManifestsDir, 'presets');
 export const categoryBasesDir = path.join(recipeStylesDir, 'category-bases');
 export const defaultsDir = path.join(recipeStylesDir, 'defaults');
-export const previewsDir = path.join(recipeStylesDir, 'previews');
+const previewsDir = path.join(recipeStylesDir, 'previews');
 export const RECIPE_ASSET_EXTENSION = '.webp';
 export const IMAGEGEN_DENOISE_SUFFIX =
   'Preserve the preset native rendering language: photographic, material, macro, painting, illustration, game-art, cartoon, fashion, architecture, graphic, or abstract media are all allowed when they match the preset visual DNA. Do not convert a non-anime preset into anime, manga, big-eye cel faces, visual-novel polish, gacha framing, or generic anime character grammar unless the preset, pack, or category explicitly calls for anime, manga, visual novel, gacha, shonen, shojo, seinen, josei, moe, or isekai. Use controlled grain only when it helps the preset. Avoid noisy grain, dirty dark-color artifact buildup, crushed black blotches, flat black fill, oversharpening, crunchy micro-contrast, excessive ultra-fine noise, ugly texture chatter, low-light compression artifacts, dense mesh artifacts, chainmail-like filler texture, dense cross-hatching carpets, dirty monochrome grain, muddy black ink fields, repeated camera-in-hand, library or market corridor, fantasy hallway, studio chair, curtain, and lamp filler. Favor cleaner large shapes, smoother tonal transitions, controlled material behavior, readable forms, and one clear representative subject, object, material, character, environment, or scene fragment. When a preset asks for people, the character plus environment requirement overrides object/material fallback: keep one clear character integrated with an environment/background, and vary age, body type, crop distance, pose, role, and render lineage across neighboring cards. For human figures, including anime only when explicitly requested, prioritize readable anatomy over spectacle: clean hand count, believable fingers, stable feet, clear joints, head-neck-shoulder alignment, no fused limbs, no melted hands, no tangled instruments, no extra limbs, and simplified secondary figures when action or ensemble staging becomes complex.';
@@ -28,7 +28,7 @@ export const defaultCodexHome = path.join(homeDir, '.codex');
 
 export { styleCategoryImageKey };
 
-export function withRecipeAssetExtension(filePath: string) {
+function withRecipeAssetExtension(filePath: string) {
   const parsed = path.parse(filePath);
   return path.join(parsed.dir, `${parsed.name}${RECIPE_ASSET_EXTENSION}`);
 }
@@ -190,7 +190,7 @@ export async function request<T>(pathName: string, init?: RequestInit): Promise<
   );
 }
 
-export function dataUrlFromBytes(bytes: Uint8Array, mimeType = 'image/png') {
+function dataUrlFromBytes(bytes: Uint8Array, mimeType = 'image/png') {
   return `data:${mimeType};base64,${Buffer.from(bytes).toString('base64')}`;
 }
 

@@ -20834,6 +20834,40 @@ cuando el preset pedia fotografia, film still, video, broadcast u optica.
   `availableDefaultImages=128/128`, `staleDefaultImages=0`,
   `missingDefaultImages=0`; `bun run styles:quality:audit` ok, sin redundancia.
 
+## Checkpoint 2026-06-22 - `pack_02` scene-first photo/media retry
+
+La segunda correccion de `Cinematic & Media` cambia el criterio de aceptacion:
+no basta con evitar anime/cartoon. Film, foto, TV/broadcast y lighting deben
+leerse como escenas completas con personas visibles; objetos, escenarios
+neutros, props aislados y estudios de luz vacios no son defaults validos para
+esta familia.
+
+- Prompt: `scripts/generate-style-defaults.ts` mantiene `PACK 02 PHOTO/MEDIA LOCK`
+  y refuerza `PACK 02 SCENE-FIRST RULE`; Lighting & Atmosphere bloquea
+  retratos face-only, half-empty black panels, estudio oscuro vacio, lamparas y
+  diagramas abstractos de luz.
+- IDs revisados/regenerados: `SP02-003|SP02-005|SP02-008|SP02-069|SP02-076`.
+  Diff efectivo actual: `SP02-005`, `SP02-069`, `SP02-076` y
+  `manifest-pack_02.json`; `SP02-003`/`SP02-008` quedaron revisados en la hoja
+  final pero sin diff contra el estado actual.
+- Dry-run: `.tmp/style-card-review/sp02-photo-media-scene-first-dryrun.txt`
+  -> `prompts=5 skipped=123`, 5/5 con lock photo/media y scene-first.
+- Generacion:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp02-photo-media-scene-first-retry bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-003|SP02-005|SP02-008|SP02-069|SP02-076" --parallel=3 --session-suffix=sp02_photo_media_scene_first_retry --force`
+  -> `generated=5 attempted=5 skipped=123 failed=0`;
+  retry focal `SP02-069` con lighting mas estricto -> `generated=1 attempted=1 skipped=127 failed=0`.
+- QA visual: `.tmp/style-card-review/sp02_photo_media_scene_first_retry.png`.
+  Las cinco pasan como escenas humanas no-anime: sci-fi practico, New Wave
+  cafe/calle, found-footage horror, split lighting en oficina/ventana y rim
+  lighting nocturno. No quedan object-only ni scenery-only en esta tanda.
+- Validacion: `bun run styles:runtime` ok; `styles:runtime:check` current;
+  `bun run styles:validate -- --pack=pack_02 --coverage` ok con
+  `availableDefaultImages=128/128`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`; `bun run styles:quality:audit` ok, sin
+  redundancia; `vp check --fix scripts/generate-style-defaults.ts` ok. El
+  check completo (`bun run check`) sigue bloqueado solo por formato en
+  `.github/workflows/react-doctor.yml`, archivo no tocado por esta ronda.
+
 Proxima tanda recomendada:
 
 - Seguir la cola global solo con estado runtime fresco; en `pack_02`, no

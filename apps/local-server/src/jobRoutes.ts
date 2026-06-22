@@ -7,7 +7,7 @@ import type {
   JobDetailResponse,
   JobSummary,
 } from '../../../packages/shared/src';
-import { validateGenerationTaskSpec } from '../../../packages/shared/src';
+import { validateGenerationTaskSpec } from '../../../packages/shared/src/generationContracts';
 import type { publishEvent } from './events';
 
 interface ProcessReferencesResult {

@@ -1,8 +1,9 @@
-import { useCallback, useRef } from 'react';
+import { useCallback } from 'react';
 import { useStudioJobInspector } from './useStudioJobInspector';
 import type { ToastMessage } from './useToasts';
 import type { Job } from '../packages/shared/src';
 import { retryStudioJobById } from '../services/localStudioService';
+import { useLazyRef } from './useLazyRef';
 
 interface UseStudioActivitySessionOptions {
   studioJobs: Job[];
@@ -33,7 +34,7 @@ export function useStudioActivitySession({
   openDebugPanel,
   closeDebugPanel,
 }: UseStudioActivitySessionOptions): StudioActivitySessionController {
-  const retryingJobIdsRef = useRef(new Set<string>());
+  const retryingJobIdsRef = useLazyRef(() => new Set<string>());
   const {
     selectedStudioJobId,
     selectedJobDetail,
@@ -90,7 +91,7 @@ export function useStudioActivitySession({
           retryingJobIdsRef.current.delete(jobId);
         });
     },
-    [addToast, inspectStudioJob, isDebugPanelOpen],
+    [addToast, inspectStudioJob, isDebugPanelOpen, retryingJobIdsRef],
   );
 
   return {

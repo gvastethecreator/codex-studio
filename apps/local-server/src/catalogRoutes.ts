@@ -159,26 +159,21 @@ export function createMemoryCatalogStore(
   return {
     getCatalogImage: (id) => byId.get(id) ?? null,
     listCatalogImageIds(filters = {}) {
-      return Array.from(byId.values())
-        .filter((image) => {
-          if (filters.ids && filters.ids.length > 0 && !filters.ids.includes(image.id)) {
-            return false;
-          }
-          if (
-            filters.workspaceId !== undefined &&
-            (image.workspaceId ?? 'default') !== filters.workspaceId
-          ) {
-            return false;
-          }
-          if (filters.batchId && image.batchId !== filters.batchId) {
-            return false;
-          }
-          if (filters.isDeleted !== undefined && image.isDeleted !== filters.isDeleted) {
-            return false;
-          }
-          return true;
-        })
-        .map((image) => image.id);
+      const ids: string[] = [];
+      const filterIds = filters.ids && filters.ids.length > 0 ? new Set(filters.ids) : null;
+      for (const image of byId.values()) {
+        if (filterIds && !filterIds.has(image.id)) continue;
+        if (
+          filters.workspaceId !== undefined &&
+          (image.workspaceId ?? 'default') !== filters.workspaceId
+        ) {
+          continue;
+        }
+        if (filters.batchId && image.batchId !== filters.batchId) continue;
+        if (filters.isDeleted !== undefined && image.isDeleted !== filters.isDeleted) continue;
+        ids.push(image.id);
+      }
+      return ids;
     },
     queryCatalog(filters = {}) {
       onQuery?.(filters);

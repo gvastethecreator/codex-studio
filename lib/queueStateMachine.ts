@@ -1,9 +1,9 @@
 import type { Job as StudioJob } from '../packages/shared/src';
 import type { GenerationExecutionOutcome, ImageGenerationConfig, QueueJob } from '../types';
 
-export const MAX_CONCURRENT_JOBS = 3;
-export const TOTAL_MAX_CONCURRENT = 15;
-export const HARD_MAX_LIMIT = 25;
+const MAX_CONCURRENT_JOBS = 3;
+const TOTAL_MAX_CONCURRENT = 15;
+const HARD_MAX_LIMIT = 25;
 
 export function selectJobsToStart(
   pendingJobs: QueueJob[],
@@ -34,7 +34,7 @@ export function selectJobsToStart(
   return jobsToStart;
 }
 
-export function isAbortLikeError(error: unknown): boolean {
+function isAbortLikeError(error: unknown): boolean {
   if (!(error instanceof Error)) return false;
   return (
     error.name === 'AbortError' ||

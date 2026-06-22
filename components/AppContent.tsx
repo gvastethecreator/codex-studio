@@ -33,7 +33,7 @@ export const AppContent: React.FC<AppContentProps> = () => {
 
       <div
         className="relative z-10 flex w-full flex-1 min-h-0 overflow-hidden appearance-none border-none p-0 m-0 bg-transparent"
-        onClick={shell.root.onMainClick}
+        onPointerDownCapture={shell.root.onMainClick}
       >
         <div className="relative min-w-0 flex-1 overflow-hidden">
           <StudioViewport {...shell.viewport} />

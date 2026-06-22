@@ -13,7 +13,7 @@ import { compareStylePackIdsForDisplay } from '../components/recipes/styles/pack
 
 export const rootDir = process.cwd();
 export const styleManifestsDir = path.join(rootDir, 'components', 'recipes', 'styles', 'manifests');
-export const stylePackManifestsDir = path.join(styleManifestsDir, 'packs');
+const stylePackManifestsDir = path.join(styleManifestsDir, 'packs');
 export const stylePresetManifestsDir = path.join(styleManifestsDir, 'presets');
 
 export interface StylePresetManifestRecord {
@@ -95,7 +95,7 @@ export async function loadStylePackManifests(
   return manifests.sort((a, b) => compareStylePackIdsForDisplay(a.id, b.id));
 }
 
-export async function loadStylePresetManifests(
+async function loadStylePresetManifests(
   manifestsDir = stylePresetManifestsDir,
   options: StyleManifestScanOptions = {},
 ) {

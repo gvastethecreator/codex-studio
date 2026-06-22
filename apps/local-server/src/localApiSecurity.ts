@@ -29,10 +29,10 @@ function normalizeOrigin(value: string) {
 function readEnvAllowedOrigins() {
   const raw = process.env.STUDIO_ALLOWED_ORIGINS;
   if (!raw) return [];
-  return raw
-    .split(/[;,]/)
-    .map((origin) => origin.trim())
-    .filter(Boolean);
+  return raw.split(/[;,]/).flatMap((origin) => {
+    const trimmed = origin.trim();
+    return trimmed ? [trimmed] : [];
+  });
 }
 
 function createAllowedOriginSet(extraOrigins: Iterable<string> = []) {
@@ -51,7 +51,7 @@ function applyCorsHeaders(headers: Headers, origin: string) {
   headers.set('Vary', 'Origin');
 }
 
-export function isAllowedLocalApiOrigin(
+function isAllowedLocalApiOrigin(
   origin: string | undefined,
   allowedOrigins: Iterable<string> = DEFAULT_ALLOWED_ORIGINS,
 ) {

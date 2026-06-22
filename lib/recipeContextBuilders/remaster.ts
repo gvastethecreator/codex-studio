@@ -7,7 +7,7 @@ import {
   type RecipeContextParams,
 } from './shared';
 
-export function buildRemasterContext(params: RecipeContextParams) {
+function buildRemasterContext(params: RecipeContextParams) {
   const style = getString(params, 'style', 'Realistic Reconstruction');
   const lighting = getString(params, 'lighting', 'Lighting Correction');
   const camera = getString(params, 'camera', 'Sharp Focus');

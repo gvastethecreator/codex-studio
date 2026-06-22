@@ -21,7 +21,10 @@ import ActionButton from './ui/ActionButton';
 import Logo from './Logo';
 import { downloadImage, generateSmartFilename } from '../utils/fileUtils';
 import { finishCarouselSlideState } from '../lib/imageCarouselState';
-import { buildCarouselThumbnailWindow } from '../lib/imageCarouselThumbnails';
+import {
+  buildCarouselThumbnailWindow,
+  type CarouselThumbnailWindowItem,
+} from '../lib/imageCarouselThumbnails';
 
 import { TopToolbar } from './ui/TopToolbar';
 import { BottomToolbar } from './ui/BottomToolbar';
@@ -322,6 +325,83 @@ function CarouselBottomBar({
   );
 }
 
+interface CarouselTopBarProps {
+  activeIndex: number;
+  isFullscreen: boolean;
+  navScrollRef: React.RefObject<HTMLDivElement | null>;
+  onClose: () => void;
+  onJumpTo: (index: number) => void;
+  onToggleFullscreen: () => void;
+  thumbnailWindow: CarouselThumbnailWindowItem<GeneratedImageWithConfig>[];
+}
+
+function CarouselTopBar({
+  activeIndex,
+  isFullscreen,
+  navScrollRef,
+  onClose,
+  onJumpTo,
+  onToggleFullscreen,
+  thumbnailWindow,
+}: CarouselTopBarProps) {
+  return (
+    <TopToolbar className="absolute top-0 left-0 right-0 w-full h-14 bg-black/80 backdrop-blur-sm flex items-center px-6 z-50 border-b border-white/5">
+      <div className="mx-auto flex w-full max-w-480 items-center justify-between gap-4">
+        <Logo />
+        <div
+          ref={navScrollRef}
+          className="flex-1 flex items-center gap-2 overflow-x-auto custom-scrollbar p-1 snap-x justify-center"
+        >
+          {thumbnailWindow.map(({ item: img, index: idx }) => (
+            <button
+              type="button"
+              key={img.id}
+              data-carousel-index={idx}
+              onClick={() => onJumpTo(idx)}
+              className={`relative size-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-all duration-300
+                            ${
+                              idx === activeIndex
+                                ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
+                                : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
+                            }
+                        `}
+            >
+              <img
+                src={img.thumbnail || img.src}
+                alt=""
+                className="size-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              {img.isFavorite && (
+                <div className="absolute top-1 right-1">
+                  <Heart size={8} className="text-accent-400 fill-accent-400" />
+                </div>
+              )}
+            </button>
+          ))}
+        </div>
+        <div className="flex items-center gap-1">
+          <button
+            type="button"
+            onClick={onToggleFullscreen}
+            className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-zinc-500 hover:text-white transition-all cursor-pointer"
+          >
+            {isFullscreen ? <Minimize2 size={16} /> : <Maximize2 size={16} />}
+          </button>
+          <button
+            type="button"
+            onClick={onClose}
+            className="p-2 bg-zinc-900/60 hover:bg-red-500/20 rounded-xl text-white hover:text-red-500 transition-all shadow-xl cursor-pointer"
+          >
+            <X size={16} />
+          </button>
+        </div>
+      </div>
+    </TopToolbar>
+  );
+}
+
 export const ImageCarousel: React.FC<ImageCarouselProps> = ({
   activeImage,
   allImages,
@@ -492,6 +572,12 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
 
   if (!currentImage) return null;
 
+  const handleToggleFullscreen = () => {
+    if (!document.fullscreenElement) void containerRef.current?.requestFullscreen();
+    else void document.exitFullscreen();
+    setCarouselState((prev) => ({ ...prev, isFullscreen: !prev.isFullscreen }));
+  };
+
   return (
     <div
       ref={containerRef}
@@ -501,64 +587,15 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
         e.stopPropagation();
       }}
     >
-      <TopToolbar className="absolute top-0 left-0 right-0 w-full h-14 bg-black/80 backdrop-blur-sm flex items-center px-6 z-50 border-b border-white/5">
-        <div className="mx-auto flex w-full max-w-480 items-center justify-between gap-4">
-          <Logo />
-          <div
-            ref={navScrollRef}
-            className="flex-1 flex items-center gap-2 overflow-x-auto custom-scrollbar p-1 snap-x justify-center"
-          >
-            {thumbnailWindow.map(({ item: img, index: idx }) => (
-              <button
-                type="button"
-                key={img.id}
-                data-carousel-index={idx}
-                onClick={() => handleJumpTo(idx)}
-                className={`relative size-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-all duration-300
-                            ${
-                              idx === activeIndex
-                                ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
-                                : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
-                            }
-                        `}
-              >
-                <img
-                  src={img.thumbnail || img.src}
-                  alt=""
-                  className="size-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                />
-                {img.isFavorite && (
-                  <div className="absolute top-1 right-1">
-                    <Heart size={8} className="text-accent-400 fill-accent-400" />
-                  </div>
-                )}
-              </button>
-            ))}
-          </div>
-          <div className="flex items-center gap-1">
-            <button
-              type="button"
-              onClick={() => {
-                if (!document.fullscreenElement) void containerRef.current?.requestFullscreen();
-                else void document.exitFullscreen();
-                setCarouselState((prev) => ({ ...prev, isFullscreen: !prev.isFullscreen }));
-              }}
-              className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-zinc-500 hover:text-white transition-all cursor-pointer"
-            >
-              {isFullscreen ? <Minimize2 size={16} /> : <Maximize2 size={16} />}
-            </button>
-            <button
-              type="button"
-              onClick={onClose}
-              className="p-2 bg-zinc-900/60 hover:bg-red-500/20 rounded-xl text-white hover:text-red-500 transition-all shadow-xl cursor-pointer"
-            >
-              <X size={16} />
-            </button>
-          </div>
-        </div>
-      </TopToolbar>
+      <CarouselTopBar
+        activeIndex={activeIndex}
+        isFullscreen={isFullscreen}
+        navScrollRef={navScrollRef}
+        onClose={onClose}
+        onJumpTo={handleJumpTo}
+        onToggleFullscreen={handleToggleFullscreen}
+        thumbnailWindow={thumbnailWindow}
+      />
 
       <section className="flex-1 relative overflow-hidden flex items-center justify-center">
         {allImages.length > 1 && (

@@ -6,6 +6,10 @@ import type { RecipeId } from '../../types';
 import { ErrorBoundary } from '../ErrorBoundary';
 import type { RecipePageProps } from '../RecipePage';
 import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
+import {
+  getStudioViewportTransitionClassName,
+  resolveStudioViewportRouteKey,
+} from './studioViewportRouting';
 
 const RecipePage = React.lazy(() =>
   import('../RecipePage').then((module) => ({ default: module.RecipePage })),
@@ -18,25 +22,6 @@ const StudioPage = React.lazy(() =>
 );
 
 const VIEWPORT_SURFACE_BASE_CLASS = 'absolute inset-0 w-full h-full overflow-hidden';
-
-export function resolveStudioViewportRouteKey(
-  routeView: AppPageView,
-  activeRecipe: RecipeId | null,
-) {
-  if (routeView === 'recipe' && activeRecipe) return `recipe-${activeRecipe}`;
-  if (routeView === 'studio') return 'studio';
-  return 'recipes-list';
-}
-
-export function isRecipesViewVisible(routeView: AppPageView) {
-  return ['recipes', 'default'].includes(routeView);
-}
-
-export function getStudioViewportTransitionClassName(direction: number) {
-  const slideClass =
-    direction > 0 ? 'slide-in-from-right-3' : direction < 0 ? 'slide-in-from-left-3' : 'zoom-in-95';
-  return `animate-in fade-in-0 ${slideClass} duration-200`;
-}
 
 interface StudioViewportProps {
   routeView: AppPageView;

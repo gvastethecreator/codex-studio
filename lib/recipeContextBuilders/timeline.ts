@@ -8,7 +8,7 @@ import {
   type RecipeContextParams,
 } from './shared';
 
-export function buildTimelineContext(params: RecipeContextParams) {
+function buildTimelineContext(params: RecipeContextParams) {
   const nextIndex = getNumber(params, 'nextIndex', 1);
   const direction = getString(params, 'direction', 'forward');
   const timeDeltaValue = getString(params, 'timeDeltaValue', 'SHORT_TERM_CONSEQUENCE');

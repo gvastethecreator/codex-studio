@@ -293,7 +293,7 @@ export function buildStudioShellOverlayController({
   });
 }
 
-export function useStudioOverlayController(
+function useStudioOverlayController(
   args: BuildStudioOverlayControllerArgs,
 ): StudioOverlayController {
   return buildStudioOverlayController(args);

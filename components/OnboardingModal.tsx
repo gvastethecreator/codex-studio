@@ -167,18 +167,15 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   const intro = isReady
     ? 'Create images locally with Codex. Your data stays on your machine.'
     : readiness.description;
-  const [previewImage, setPreviewImage] = React.useState(fallbackStyleRecipePreview);
+  const previewImage = React.useMemo(
+    () => (isOpen ? pickStyleRecipePreviewImage() : fallbackStyleRecipePreview),
+    [isOpen],
+  );
   const sessionDetail = codexReady
     ? 'You are signed in and ready to generate.'
     : localCodexSession?.reason === 'chatgpt_login_required'
       ? 'Run codex login and choose ChatGPT.'
       : localCodexSession?.error || 'Connect your local Codex session.';
-
-  React.useEffect(() => {
-    if (!isOpen) return;
-
-    setPreviewImage(pickStyleRecipePreviewImage());
-  }, [isOpen]);
 
   return (
     <AnimatePresence>

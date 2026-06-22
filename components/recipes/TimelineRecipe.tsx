@@ -21,6 +21,7 @@ import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown } from './RecipeUI';
 import { QuickStartText } from './QuickStartText';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
+import { useLazyRef } from '../../hooks/useLazyRef';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { createTimelineRecipeParams } from '../../lib/recipeDerivedParams';
 import { getRecipeNumberParam, hasRecipeIdentity } from '../../lib/recipeIdentity';
@@ -485,16 +486,17 @@ function getSequenceIndex(imageConfig?: ImageGenerationConfig): number {
   return imageConfig ? getRecipeNumberParam(imageConfig, 'nextIndex', 0) : 0;
 }
 
-export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
+function useTimelineRecipeController({
   config,
   updateConfig,
-  updateAttachment,
-  onFileSelect,
-  onGenerate,
   isGenerating,
-  images = EMPTY_IMAGES,
-  onSelectImage,
-}) => {
+  images,
+}: {
+  config: ImageGenerationConfig;
+  updateConfig: TimelineRecipeProps['updateConfig'];
+  isGenerating: boolean;
+  images: GeneratedImageWithConfig[];
+}) {
   // --- Persistent UI State ---
   const [direction, setDirection] = useLocalStorage<'forward' | 'backward'>(
     'timeline-direction',
@@ -528,7 +530,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
   const [isOnionSkinEnabled, setIsOnionSkinEnabled] = useState(false);
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const itemRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
+  const itemRefs = useLazyRef(() => new Map<string, HTMLButtonElement>());
   // react-doctor-disable-next-line react-doctor/no-event-handler
   const activeImage = useMemo(() => config.attachments[0], [config.attachments]);
 
@@ -614,22 +616,25 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
   );
 
   // 4. Robust Center Scroll Logic
-  const scrollToItem = useCallback((itemId: string) => {
-    const element = itemRefs.current.get(itemId);
-    const container = scrollContainerRef.current;
-    if (element && container) {
-      const containerRect = container.getBoundingClientRect();
-      const elementRect = element.getBoundingClientRect();
+  const scrollToItem = useCallback(
+    (itemId: string) => {
+      const element = itemRefs.current.get(itemId);
+      const container = scrollContainerRef.current;
+      if (element && container) {
+        const containerRect = container.getBoundingClientRect();
+        const elementRect = element.getBoundingClientRect();
 
-      // Calculate the exact scroll position to center the element
-      const scrollLeft = element.offsetLeft - containerRect.width / 2 + elementRect.width / 2;
+        // Calculate the exact scroll position to center the element
+        const scrollLeft = element.offsetLeft - containerRect.width / 2 + elementRect.width / 2;
 
-      container.scrollTo({
-        left: scrollLeft,
-        behavior: 'smooth',
-      });
-    }
-  }, []);
+        container.scrollTo({
+          left: scrollLeft,
+          behavior: 'smooth',
+        });
+      }
+    },
+    [itemRefs],
+  );
 
   const handleItemClick = useCallback(
     (item: (typeof timelineItems)[0]) => {
@@ -731,7 +736,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
     return skinItem?.src || null;
   }, [isOnionSkinEnabled, currentRefIndex, direction, timelineItems, activeImage]);
 
-  const BottomDock = useMemo(
+  const bottomDock = useMemo(
     () => (
       <TimelineBottomDock
         direction={direction}
@@ -763,24 +768,53 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
     ],
   );
 
+  return {
+    activeImage,
+    bottomDock,
+    currentRefIndex,
+    direction,
+    handleItemClick,
+    handleLocalUpload,
+    itemRefs,
+    onionSkinSrc,
+    ratioValue,
+    scrollContainerRef,
+    sessionOrigin,
+    timelineItems,
+  };
+}
+
+export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
+  config,
+  updateConfig,
+  isGenerating,
+  images = EMPTY_IMAGES,
+}) => {
+  const timelineController = useTimelineRecipeController({
+    config,
+    updateConfig,
+    isGenerating,
+    images,
+  });
+
   return (
     <RecipeLayout
       isGenerating={isGenerating}
-      bottomDock={BottomDock}
-      className="p-0 pb-28 flex flex-col items-center justify-center relative h-full"
+      bottomDock={timelineController.bottomDock}
+      className="p-0 pb-72 sm:pb-28 flex flex-col items-center justify-center relative h-full"
     >
       <TimelineCanvas
-        activeImage={activeImage}
-        onionSkinSrc={onionSkinSrc}
-        direction={direction}
-        currentRefIndex={currentRefIndex}
-        ratioValue={ratioValue}
-        timelineItems={timelineItems}
-        sessionOrigin={sessionOrigin}
-        scrollContainerRef={scrollContainerRef}
-        itemRefs={itemRefs}
-        onLocalUpload={handleLocalUpload}
-        onItemClick={handleItemClick}
+        activeImage={timelineController.activeImage}
+        onionSkinSrc={timelineController.onionSkinSrc}
+        direction={timelineController.direction}
+        currentRefIndex={timelineController.currentRefIndex}
+        ratioValue={timelineController.ratioValue}
+        timelineItems={timelineController.timelineItems}
+        sessionOrigin={timelineController.sessionOrigin}
+        scrollContainerRef={timelineController.scrollContainerRef}
+        itemRefs={timelineController.itemRefs}
+        onLocalUpload={timelineController.handleLocalUpload}
+        onItemClick={timelineController.handleItemClick}
       />
     </RecipeLayout>
   );

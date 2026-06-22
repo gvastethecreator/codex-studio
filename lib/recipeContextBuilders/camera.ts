@@ -8,7 +8,7 @@ import {
   type RecipeContextParams,
 } from './shared';
 
-export function buildCameraContext(params: RecipeContextParams) {
+function buildCameraContext(params: RecipeContextParams) {
   const azimuth = Math.round(getNumber(params, 'azimuth', 0));
   const elevation = Math.round(getNumber(params, 'elevation', 0));
   const distance = Math.round(getNumber(params, 'distance', 100));

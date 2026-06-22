@@ -48,9 +48,15 @@ export function WorkspaceStrip({
   onRenameWorkspace,
   layout = 'desktop',
 }: WorkspaceStripProps) {
-  const [editingWorkspaceId, setEditingWorkspaceId] = React.useState<string | null>(null);
+  const [workspaceUi, setWorkspaceUi] = React.useState<{
+    editingWorkspaceId: string | null;
+    contextMenuWorkspaceId: string | null;
+  }>({
+    editingWorkspaceId: null,
+    contextMenuWorkspaceId: null,
+  });
+  const { editingWorkspaceId, contextMenuWorkspaceId } = workspaceUi;
   const [editingName, setEditingName] = React.useState('');
-  const [contextMenuWorkspaceId, setContextMenuWorkspaceId] = React.useState<string | null>(null);
   const workspacesContainerRef = React.useRef<HTMLDivElement>(null);
   const isCompact = layout === 'compact';
 
@@ -61,14 +67,12 @@ export function WorkspaceStrip({
         workspacesContainerRef.current &&
         !workspacesContainerRef.current.contains(event.target as Node)
       ) {
-        setEditingWorkspaceId(null);
-        setContextMenuWorkspaceId(null);
+        setWorkspaceUi({ editingWorkspaceId: null, contextMenuWorkspaceId: null });
       }
     };
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
-        setEditingWorkspaceId(null);
-        setContextMenuWorkspaceId(null);
+        setWorkspaceUi({ editingWorkspaceId: null, contextMenuWorkspaceId: null });
       }
     };
 
@@ -84,7 +88,7 @@ export function WorkspaceStrip({
     if (editingName.trim()) {
       onRenameWorkspace(id, editingName.trim());
     }
-    setEditingWorkspaceId(null);
+    setWorkspaceUi((prev) => ({ ...prev, editingWorkspaceId: null }));
   };
 
   return (
@@ -123,24 +127,34 @@ export function WorkspaceStrip({
                     : `Switch to workspace ${workspaceName}`
                 }
                 onClick={() => {
-                  setContextMenuWorkspaceId(null);
                   if (isActive) {
-                    setEditingWorkspaceId(workspace.id);
+                    setWorkspaceUi({
+                      editingWorkspaceId: workspace.id,
+                      contextMenuWorkspaceId: null,
+                    });
                     setEditingName(workspaceName);
                   } else {
+                    setWorkspaceUi({
+                      editingWorkspaceId: null,
+                      contextMenuWorkspaceId: null,
+                    });
                     onSwitchWorkspace(workspace.id);
                   }
                 }}
                 onContextMenu={(event) => {
                   event.preventDefault();
-                  setEditingWorkspaceId(null);
-                  setContextMenuWorkspaceId(workspace.id);
+                  setWorkspaceUi({
+                    editingWorkspaceId: null,
+                    contextMenuWorkspaceId: workspace.id,
+                  });
                 }}
                 onKeyDown={(event) => {
                   if (event.key === 'ContextMenu' || (event.shiftKey && event.key === 'F10')) {
                     event.preventDefault();
-                    setEditingWorkspaceId(null);
-                    setContextMenuWorkspaceId(workspace.id);
+                    setWorkspaceUi({
+                      editingWorkspaceId: null,
+                      contextMenuWorkspaceId: workspace.id,
+                    });
                   }
                 }}
                 className={workspaceButtonClassName}
@@ -172,7 +186,9 @@ export function WorkspaceStrip({
                   onChange={(event) => setEditingName(event.target.value)}
                   onKeyDown={(event) => {
                     if (event.key === 'Enter') handleRenameSubmit(workspace.id);
-                    if (event.key === 'Escape') setEditingWorkspaceId(null);
+                    if (event.key === 'Escape') {
+                      setWorkspaceUi((prev) => ({ ...prev, editingWorkspaceId: null }));
+                    }
                   }}
                   aria-label="Rename workspace"
                   className="bg-black/50 border border-white/10 rounded-lg px-2 py-1.5 text-xs text-white outline-none focus:border-accent-500 w-40"
@@ -193,10 +209,10 @@ export function WorkspaceStrip({
                   onClick={(event) => {
                     event.stopPropagation();
                     if (!canDeleteWorkspace) return;
-                    setContextMenuWorkspaceId(null);
+                    setWorkspaceUi((prev) => ({ ...prev, contextMenuWorkspaceId: null }));
                     onDeleteWorkspace(workspace.id);
                   }}
-                  className="flex w-full items-center gap-2 rounded-lg px-2.5 py-2 text-left text-[11px] font-black uppercase tracking-widest text-red-300 transition-colors hover:bg-red-500/10 hover:text-red-200 disabled:cursor-not-allowed disabled:text-zinc-600 disabled:hover:bg-transparent"
+                  className="flex w-full items-center gap-2 rounded-lg px-2.5 py-2 text-left text-[11px] font-black uppercase tracking-widest text-red-300 transition-colors hover:bg-red-500/10 hover:text-red-200 disabled:cursor-not-allowed disabled:text-red-200/35 disabled:hover:bg-transparent"
                 >
                   <Trash2 size={13} />
                   <span>{canDeleteWorkspace ? 'Delete workspace' : 'Default locked'}</span>
@@ -210,7 +226,7 @@ export function WorkspaceStrip({
         <button
           type="button"
           onClick={() => {
-            setContextMenuWorkspaceId(null);
+            setWorkspaceUi((prev) => ({ ...prev, contextMenuWorkspaceId: null }));
             onAddWorkspace();
           }}
           aria-label="Create workspace"

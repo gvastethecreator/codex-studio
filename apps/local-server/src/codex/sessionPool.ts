@@ -204,7 +204,7 @@ export function createSessionPool({
 
 const defaultSessionPool = createSessionPool();
 
-export function getDefaultSessionPool() {
+function getDefaultSessionPool() {
   return defaultSessionPool;
 }
 
@@ -212,7 +212,7 @@ export function getImagegenSessionKey(prompt: string) {
   return defaultSessionPool.getSessionKey(prompt);
 }
 
-export async function createImagegenSession(
+async function createImagegenSession(
   sessionKey: string,
   execution?: JobExecutionOptions | null,
 ): Promise<SessionHandle> {

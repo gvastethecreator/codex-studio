@@ -313,6 +313,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   return (
     <dialog
       open
+      aria-label="Image editor"
       className="fixed inset-0 z-100 m-0 flex h-full w-full flex-col border-none bg-black/98 p-0 backdrop-blur-3xl animate-in fade-in duration-500"
       onCancel={(e) => {
         e.preventDefault();

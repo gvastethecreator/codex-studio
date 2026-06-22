@@ -15,7 +15,7 @@ export interface RecoverableStorageEntry {
   value: string | null;
 }
 
-export const DEFAULT_RECOVERY_IGNORED_KEYS = [
+const DEFAULT_RECOVERY_IGNORED_KEYS = [
   'session-logs',
   'app-workspaces',
   ...LEGACY_VISUAL_BATCH_CACHE_KEYS,

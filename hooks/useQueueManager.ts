@@ -13,6 +13,7 @@ import {
 } from '../lib/browserQueuePersistence';
 import { get, set } from '../utils/idb';
 import { runtimeLogger } from '../utils/runtimeLogger';
+import { useLazyRef } from './useLazyRef';
 
 interface UseQueueManagerProps {
   executeGeneration: QueueJobExecuteGeneration;
@@ -52,9 +53,9 @@ export const useQueueManager = ({
   const [isResting, setIsResting] = useState(false);
   const [queueTick, setQueueTick] = useState(0);
   const restTimerRef = useRef<NodeJS.Timeout | null>(null);
-  const abortControllersRef = useRef<Map<string, AbortController>>(new Map());
-  const linkedServerJobIdsRef = useRef<Map<string, string>>(new Map());
-  const processingJobsRef = useRef<Set<string>>(new Set());
+  const abortControllersRef = useLazyRef(() => new Map<string, AbortController>());
+  const linkedServerJobIdsRef = useLazyRef(() => new Map<string, string>());
+  const processingJobsRef = useLazyRef(() => new Set<string>());
   const hasHydratedPersistedQueueRef = useRef(false);
 
   useEffect(() => {
@@ -86,7 +87,7 @@ export const useQueueManager = ({
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [linkedServerJobIdsRef]);
 
   useEffect(() => {
     if (!hasHydratedPersistedQueueRef.current) return;
@@ -151,21 +152,24 @@ export const useQueueManager = ({
         addToast('Job cancelled', 'info');
       });
     },
-    [addToast, cancelPersistentJob],
+    [abortControllersRef, addToast, cancelPersistentJob, linkedServerJobIdsRef],
   );
 
-  const removeJob = useCallback((jobId: string) => {
-    const controller = abortControllersRef.current.get(jobId);
-    if (controller) {
-      controller.abort();
-      abortControllersRef.current.delete(jobId);
-    }
-    linkedServerJobIdsRef.current.delete(jobId);
+  const removeJob = useCallback(
+    (jobId: string) => {
+      const controller = abortControllersRef.current.get(jobId);
+      if (controller) {
+        controller.abort();
+        abortControllersRef.current.delete(jobId);
+      }
+      linkedServerJobIdsRef.current.delete(jobId);
 
-    startViewTransition(() => {
-      setJobs((prev) => prev.filter((job) => job.id !== jobId));
-    });
-  }, []);
+      startViewTransition(() => {
+        setJobs((prev) => prev.filter((job) => job.id !== jobId));
+      });
+    },
+    [abortControllersRef, linkedServerJobIdsRef],
+  );
 
   const clearCompleted = useCallback(() => {
     startViewTransition(() => {
@@ -183,7 +187,7 @@ export const useQueueManager = ({
         }
       }
     });
-  }, []);
+  }, [linkedServerJobIdsRef]);
 
   const resetQueue = useCallback(() => {
     if (restTimerRef.current) {
@@ -206,7 +210,7 @@ export const useQueueManager = ({
     startViewTransition(() => {
       setJobs([]);
     });
-  }, []);
+  }, [abortControllersRef, linkedServerJobIdsRef, processingJobsRef]);
 
   useEffect(() => {
     const pendingJobs = jobs.filter((j) => j.status === 'pending');
@@ -298,7 +302,15 @@ export const useQueueManager = ({
     return () => {
       if (restTimer) clearTimeout(restTimer);
     };
-  }, [jobs, isResting, executeGeneration, queueTick]);
+  }, [
+    abortControllersRef,
+    executeGeneration,
+    isResting,
+    jobs,
+    linkedServerJobIdsRef,
+    processingJobsRef,
+    queueTick,
+  ]);
 
   return {
     jobs,

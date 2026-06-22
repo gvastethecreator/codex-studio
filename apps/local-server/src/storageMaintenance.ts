@@ -380,7 +380,7 @@ function readDatabaseFileStats(dbPath: string) {
   };
 }
 
-export function createStorageMaintenanceAuditReport(
+function createStorageMaintenanceAuditReport(
   options: Required<StorageMaintenanceOptions>,
   db: SqliteDatabase,
 ): StorageMaintenanceAuditReport {

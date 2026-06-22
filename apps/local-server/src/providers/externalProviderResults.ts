@@ -70,7 +70,7 @@ export function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null;
 }
 
-export function redactSecrets(value: string, secrets: readonly string[]) {
+function redactSecrets(value: string, secrets: readonly string[]) {
   return secrets.reduce(
     (result, secret) => (secret ? result.replaceAll(secret, '[redacted]') : result),
     value,
@@ -81,7 +81,7 @@ export function responseSnippet(value: string, secrets: readonly string[] = []) 
   return redactSecrets(value, secrets).replace(/\s+/g, ' ').trim().slice(0, 500);
 }
 
-export function isRetryableStatus(status: number) {
+function isRetryableStatus(status: number) {
   return isRetryableProviderStatus(status);
 }
 

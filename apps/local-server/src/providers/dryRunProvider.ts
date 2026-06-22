@@ -11,7 +11,7 @@ export type DryRunCompiledInput = CompiledProviderInput<{
   promptPreview: string;
 }>;
 
-export const DRY_RUN_SESSION_CONTRACT = createProviderSessionContract({
+const DRY_RUN_SESSION_CONTRACT = createProviderSessionContract({
   id: 'dry-run-v1',
   providerId: 'dry_run',
   stableInstructions: [

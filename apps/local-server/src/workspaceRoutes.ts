@@ -36,16 +36,16 @@ function mapWorkspace(row: any): CatalogWorkspace {
   };
 }
 
-export function listCatalogWorkspaces() {
+function listCatalogWorkspaces() {
   return getDb().query('SELECT * FROM workspaces ORDER BY created_at ASC').all().map(mapWorkspace);
 }
 
-export function getCatalogWorkspace(id: string) {
+function getCatalogWorkspace(id: string) {
   const row = getDb().query('SELECT * FROM workspaces WHERE id = ?').get(id);
   return row ? mapWorkspace(row) : null;
 }
 
-export function createCatalogWorkspace(input: {
+function createCatalogWorkspace(input: {
   name: string;
   libraryId?: string | null;
   filterJson?: unknown;
@@ -74,7 +74,7 @@ export function createCatalogWorkspace(input: {
   return workspace;
 }
 
-export function updateCatalogWorkspace(
+function updateCatalogWorkspace(
   id: string,
   patch: { name?: string; libraryId?: string | null; filterJson?: unknown; sortOrder?: string },
 ) {
@@ -94,7 +94,7 @@ export function updateCatalogWorkspace(
   return getCatalogWorkspace(id);
 }
 
-export function deleteCatalogWorkspace(id: string) {
+function deleteCatalogWorkspace(id: string) {
   const current = getCatalogWorkspace(id);
   if (!current) return false;
   getDb().query('DELETE FROM workspaces WHERE id = ?').run(id);

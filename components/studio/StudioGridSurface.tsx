@@ -7,7 +7,6 @@ import { FormatPreview } from '../FormatPreview';
 import { ImageGrid } from '../ImageGrid';
 
 export interface StudioGridSurfaceProps {
-  isModalOpen: boolean;
   activeWorkspaceId: string;
   allImages: GeneratedImage[];
   imagesWithConfig: GeneratedImageWithConfig[];
@@ -23,27 +22,33 @@ export interface StudioGridSurfaceProps {
   handleLoadRecipe: (config: GeneratedImageWithConfig['config']) => void;
   handleDelete: (imageId: string) => void;
   handleToggleFavorite: (imageId: string) => void;
-  isGenerating: boolean;
   transitioningImageId: string | null;
   activeModalImageId: string | null;
-  generationPlaceholders?: React.ComponentProps<typeof ImageGrid>['generationPlaceholders'];
   handleSelectAll: (images: GeneratedImage[]) => void;
   handleDeselectAll: () => void;
   handleDeleteSelected: () => void;
   handleClearWorkspace: (workspaceId: string) => void;
-  previewRatio: AspectRatio | null;
-  generationAspectRatio: AspectRatio;
-  isInteractingWithToolbar: boolean;
-  catalogTotal: number;
-  catalogHasMore: boolean;
-  isCatalogLoading: boolean;
-  catalogError: string | null;
-  loadMoreCatalog: () => void;
-  refreshCatalog: () => void;
+  chrome: {
+    isModalOpen: boolean;
+    isInteractingWithToolbar: boolean;
+    previewRatio: AspectRatio | null;
+    generationAspectRatio: AspectRatio;
+  };
+  generation: {
+    isGenerating: boolean;
+    placeholders?: React.ComponentProps<typeof ImageGrid>['generationPlaceholders'];
+  };
+  catalog: {
+    total: number;
+    hasMore: boolean;
+    isLoading: boolean;
+    error: string | null;
+    loadMore: () => void;
+    refresh: () => void;
+  };
 }
 
 export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
-  isModalOpen,
   activeWorkspaceId,
   allImages,
   imagesWithConfig,
@@ -55,23 +60,15 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
   handleLoadRecipe,
   handleDelete,
   handleToggleFavorite,
-  isGenerating,
   transitioningImageId,
   activeModalImageId,
-  generationPlaceholders,
   handleSelectAll,
   handleDeselectAll,
   handleDeleteSelected,
   handleClearWorkspace,
-  previewRatio,
-  generationAspectRatio,
-  isInteractingWithToolbar,
-  catalogTotal,
-  catalogHasMore,
-  isCatalogLoading,
-  catalogError,
-  loadMoreCatalog,
-  refreshCatalog,
+  chrome,
+  generation,
+  catalog,
 }) => {
   const handleGridRegenerate = useCallback(
     (config: GeneratedImageWithConfig['config']) => {
@@ -119,28 +116,30 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
             onLoadConfig={handleLoadRecipe}
             onDelete={handleDelete}
             onToggleFavorite={handleToggleFavorite}
-            isGenerating={isGenerating}
+            isGenerating={generation.isGenerating}
             transitioningImageId={transitioningImageId}
             activeModalImageId={activeModalImageId}
-            generationPlaceholders={generationPlaceholders}
+            generationPlaceholders={generation.placeholders}
             onSelectAll={handleGridSelectAll}
             onDeselectAll={handleDeselectAll}
             onDownloadSelected={handleGridDownloadSelected}
             onDownloadAll={handleGridDownloadAll}
             onDeleteSelected={handleDeleteSelected}
             onClearWorkspace={handleGridClearWorkspace}
-            catalogTotal={catalogTotal}
-            hasMore={catalogHasMore}
-            isCatalogLoading={isCatalogLoading}
-            catalogError={catalogError}
-            onLoadMore={loadMoreCatalog}
-            onRetryCatalog={refreshCatalog}
+            catalogTotal={catalog.total}
+            hasMore={catalog.hasMore}
+            isCatalogLoading={catalog.isLoading}
+            catalogError={catalog.error}
+            onLoadMore={catalog.loadMore}
+            onRetryCatalog={catalog.refresh}
           />
         </ErrorBoundary>
       </div>
       <FormatPreview
-        ratio={previewRatio || generationAspectRatio}
-        isVisible={!isModalOpen && (isInteractingWithToolbar || !!previewRatio)}
+        ratio={chrome.previewRatio || chrome.generationAspectRatio}
+        isVisible={
+          !chrome.isModalOpen && (chrome.isInteractingWithToolbar || !!chrome.previewRatio)
+        }
         isWorkspaceEmpty={allImages.length === 0}
       />
     </div>

@@ -31,7 +31,7 @@ export function parseRecipeIdFromContext(context: string = ''): RecipeId {
   return null;
 }
 
-export function getRecipeContextBuilder(recipeId: RegisteredRecipeId) {
+function getRecipeContextBuilder(recipeId: RegisteredRecipeId) {
   const recipeModule = getRecipeModule(recipeId);
   if (!recipeModule) {
     return null;

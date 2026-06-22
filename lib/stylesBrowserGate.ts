@@ -1,4 +1,4 @@
-export const STYLE_CATALOG_RESOURCE_MARKERS = [
+const STYLE_CATALOG_RESOURCE_MARKERS = [
   'StylePresetCatalogSearchSurface',
   'stylePresetCatalogData',
 ] as const;

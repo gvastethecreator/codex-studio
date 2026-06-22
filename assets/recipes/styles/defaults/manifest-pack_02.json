@@ -62,12 +62,12 @@
     "packName": "Cinematic & Media",
     "category": "1. Film Genres",
     "file": "assets/recipes/styles/defaults/SP02-005.webp",
-    "jobId": "4e23d49c-6c7c-4ecb-91de-e024ced35e44",
+    "jobId": "192d5f16-d53c-4370-ad58-44e46f630ade",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-005.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-22T16:02:56.624Z"
+    "generatedAt": "2026-06-22T17:15:34.397Z"
   },
   {
     "presetId": "SP02-006",
@@ -958,12 +958,12 @@
     "packName": "Cinematic & Media",
     "category": "5. Lighting And Atmosphere",
     "file": "assets/recipes/styles/defaults/SP02-069.webp",
-    "jobId": "8ffe09c4-a3d0-46f9-81d9-8a1daa19c804",
+    "jobId": "dfe81671-4174-4cfd-9a99-ac972581baa6",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-069.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-22T16:20:49.532Z"
+    "generatedAt": "2026-06-22T17:21:31.854Z"
   },
   {
     "presetId": "SP02-070",
@@ -1056,12 +1056,12 @@
     "packName": "Cinematic & Media",
     "category": "5. Lighting And Atmosphere",
     "file": "assets/recipes/styles/defaults/SP02-076.webp",
-    "jobId": "0a768852-8de0-4cf0-80b5-c184a7b0ba3f",
+    "jobId": "19624f4d-a1c0-4f0e-839e-fdc83e6da661",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-076.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-06-22T16:46:28.673Z"
+    "generatedAt": "2026-06-22T17:17:50.719Z"
   },
   {
     "presetId": "SP02-077",

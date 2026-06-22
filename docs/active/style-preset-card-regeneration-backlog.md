@@ -9150,6 +9150,56 @@ still, TV/broadcast u optica.
   `missingDefaultImages=0`;
   `bun run styles:quality:audit` -> ok, `redundancy: none above threshold`.
 
+### Primary defaults - 2026-06-22 - `pack_02` scene-first photo/media retry
+
+Retry puntual despues de que la tanda photo/media seguia teniendo lectura de
+objetos, escenarios neutros o estudios de luz sin escena humana suficiente. La
+regla corregida para `Cinematic & Media` queda: las tarjetas no-anime de film,
+foto, TV/broadcast y lighting deben ser escenas completas con personas
+visibles; la fotografia/cine/medio es el tratamiento, no el sujeto aislado.
+
+- Correccion de prompt:
+  `scripts/generate-style-defaults.ts` conserva `PACK 02 PHOTO/MEDIA LOCK` y
+  agrega/refuerza `PACK 02 SCENE-FIRST RULE` para `pack_02` fuera de
+  Animation/Cartoon y presets anime explicitos. Lighting & Atmosphere ahora
+  bloquea retratos face-only, paneles negros vacios, estudio oscuro vacio,
+  lamparas y diagramas abstractos de luz.
+- IDs revisados/regenerados:
+  `SP02-003|SP02-005|SP02-008|SP02-069|SP02-076`.
+  La corrida intento los 5; el diff efectivo actual queda en `SP02-005`,
+  `SP02-069`, `SP02-076` y `manifest-pack_02.json`, porque `SP02-003` y
+  `SP02-008` ya coincidian con el estado actual aceptado.
+- Dry-run:
+  `.tmp/style-card-review/sp02-photo-media-scene-first-dryrun.txt` ->
+  `prompts=5 skipped=123`; 5/5 con `PACK 02 PHOTO/MEDIA LOCK` y contrato
+  scene-first/personas visibles.
+- Generacion:
+  `CODEX_IMAGEGEN_WAIT_TIMEOUT_MS=1200000 STYLE_DEFAULT_CARD_ARCHIVE_DIR=D:\codex-studio-backups\style-default-cards\sp02-photo-media-scene-first-retry bun run scripts/generate-style-defaults.ts --pack=pack_02 "--preset=SP02-003|SP02-005|SP02-008|SP02-069|SP02-076" --parallel=3 --session-suffix=sp02_photo_media_scene_first_retry --force`
+  -> `generated=5 attempted=5 skipped=123 failed=0`.
+  Luego `SP02-069` se regenero solo con el lock de lighting mas estricto:
+  `bun run scripts/generate-style-defaults.ts --pack=pack_02 --preset=SP02-069 --parallel=1 --session-suffix=sp02_photo_media_scene_first_retry_scene_tighten --force`
+  -> `generated=1 attempted=1 skipped=127 failed=0`.
+- QA visual:
+  `.tmp/style-card-review/sp02_photo_media_scene_first_retry.png`. Aceptadas:
+  `SP02-003` sci-fi practico con persona en entorno neon; `SP02-005` New Wave
+  con dos personas en cafe/calle; `SP02-008` found-footage con escena humana de
+  horror; `SP02-069` split lighting con persona, segunda figura y entorno de
+  oficina/ventana; `SP02-076` rim lighting con persona y escena nocturna. No
+  quedan anime, cartoon, object-only, macro specimen ni scenery-only en esta
+  tanda.
+- Backup current:
+  `D:\codex-studio-backups\style-default-cards\sp02-photo-media-scene-first-retry\current`.
+- Validacion:
+  `bun run styles:runtime` -> ok, `packs=17`, `presets=1649`;
+  `bun run styles:runtime:check` -> current;
+  `bun run styles:validate -- --pack=pack_02 --coverage` -> ok,
+  `availableDefaultImages=128/128`, `staleDefaultImages=0`,
+  `missingDefaultImages=0`;
+  `bun run styles:quality:audit` -> ok, `redundancy: none above threshold`;
+  `vp check --fix scripts/generate-style-defaults.ts` -> ok para formato/lint/tipos
+  del generador. `bun run check` queda bloqueado por formato en
+  `.github/workflows/react-doctor.yml`, archivo no tocado por esta ronda.
+
 Siguiente cola recomendada:
 
 - Si aparece otra deriva visual en `pack_02`, usar el mismo lock antes de

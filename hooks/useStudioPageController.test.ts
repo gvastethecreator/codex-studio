@@ -90,10 +90,10 @@ describe('buildStudioPageController', () => {
 
     expect(controller.debugPanel.isVisible).toBe(false);
     expect(controller.debugPanel.props.imagesCount).toBe(1);
-    expect(controller.grid.isGenerating).toBe(true);
-    expect(controller.grid.catalogHasMore).toBe(true);
-    expect(controller.grid.catalogTotal).toBe(250);
-    expect(controller.grid.generationPlaceholders).toEqual([
+    expect(controller.grid.generation.isGenerating).toBe(true);
+    expect(controller.grid.catalog.hasMore).toBe(true);
+    expect(controller.grid.catalog.total).toBe(250);
+    expect(controller.grid.generation.placeholders).toEqual([
       {
         id: 'local-job-1',
         status: 'processing',

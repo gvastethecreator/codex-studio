@@ -9,12 +9,18 @@ import type { resolveLibraryPath } from './library';
 
 function resolveUniquePath(filePath: string) {
   if (!existsSync(filePath)) return filePath;
-  const parsed = path.parse(filePath);
+  const targetPathParts = path.parse(filePath);
   for (let index = 2; index < 1000; index += 1) {
-    const candidate = path.join(parsed.dir, `${parsed.name}-${index}${parsed.ext}`);
+    const candidate = path.join(
+      targetPathParts.dir,
+      `${targetPathParts.name}-${index}${targetPathParts.ext}`,
+    );
     if (!existsSync(candidate)) return candidate;
   }
-  return path.join(parsed.dir, `${parsed.name}-${Date.now()}${parsed.ext}`);
+  return path.join(
+    targetPathParts.dir,
+    `${targetPathParts.name}-${Date.now()}${targetPathParts.ext}`,
+  );
 }
 
 export function inferGeneratedAssetMimeType(filePath: string) {

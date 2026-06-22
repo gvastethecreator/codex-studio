@@ -4,7 +4,7 @@ import path from 'node:path';
 import sharp from 'sharp';
 import { getSettings } from './config';
 
-export const DEFAULT_THUMBNAIL_MAX_EDGE = 512;
+const DEFAULT_THUMBNAIL_MAX_EDGE = 512;
 const MIN_THUMBNAIL_MAX_EDGE = 48;
 const MAX_THUMBNAIL_MAX_EDGE = 1024;
 const DEFAULT_ASSET_CACHE_SECONDS = 60 * 60;
@@ -55,10 +55,7 @@ export function resolveThumbnailMaxEdge(rawValue?: number | string | null) {
   return Math.max(MIN_THUMBNAIL_MAX_EDGE, Math.min(MAX_THUMBNAIL_MAX_EDGE, Math.round(parsed)));
 }
 
-export function isThumbnailAssetPath(
-  filePath: string,
-  libraryDir: string = getSettings().libraryDir,
-) {
+function isThumbnailAssetPath(filePath: string, libraryDir: string = getSettings().libraryDir) {
   const relativePath = normalizeRelativePath(path.relative(libraryDir, filePath));
   return (
     relativePath.startsWith('outputs/thumbnails/') ||
@@ -81,13 +78,13 @@ export function resolveLibraryThumbnailPath(
 
   const { parentSegments, nestedRelativePath } = resolveThumbnailParentSegments(relativePath);
   const nestedSegments = toPathSegments(path.dirname(nestedRelativePath));
-  const parsed = path.parse(nestedRelativePath);
+  const nestedPathParts = path.parse(nestedRelativePath);
 
   return path.join(
     libraryDir,
     ...parentSegments,
     ...nestedSegments,
-    `${parsed.name}.${cacheKey}.${maxEdge}.webp`,
+    `${nestedPathParts.name}.${cacheKey}.${maxEdge}.webp`,
   );
 }
 
@@ -142,7 +139,7 @@ export async function ensureThumbnailVariant(
   }
 }
 
-export function resolveLibraryAssetContentType(filePath: string) {
+function resolveLibraryAssetContentType(filePath: string) {
   const ext = path.extname(filePath).toLowerCase();
   switch (ext) {
     case '.svg':

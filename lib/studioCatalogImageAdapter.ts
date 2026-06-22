@@ -3,8 +3,8 @@ import type { GeneratedImage, GeneratedImageWithConfig } from '../types';
 import { toStudioAssetUrl } from '../services/localStudioService';
 import { buildGenerationConfigFromCatalogImage } from '../utils/catalogImageGenerationConfig';
 
-export const GRID_THUMBNAIL_MAX_EDGE = 512;
-export const MODAL_PREVIEW_MAX_EDGE = 1024;
+const GRID_THUMBNAIL_MAX_EDGE = 512;
+const MODAL_PREVIEW_MAX_EDGE = 1024;
 
 export interface MaterializeCatalogEntryImageOptions {
   batchId?: string;

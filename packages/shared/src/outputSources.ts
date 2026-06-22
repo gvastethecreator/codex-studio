@@ -1,6 +1,6 @@
 import type { GenerationProviderId } from './generationContracts';
 
-export const EXTERNAL_OUTPUT_SOURCE_REGISTRY_VERSION = 'external-output-sources/v1' as const;
+const EXTERNAL_OUTPUT_SOURCE_REGISTRY_VERSION = 'external-output-sources/v1' as const;
 
 export type ExternalOutputSourceStatus = 'detected' | 'registered' | 'missing' | 'blocked';
 

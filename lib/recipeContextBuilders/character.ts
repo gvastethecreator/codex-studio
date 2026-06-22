@@ -11,7 +11,7 @@ import {
   getCharacterStyleInstruction,
 } from '../recipePromptFragments';
 
-export function buildCharacterContext(params: RecipeContextParams) {
+function buildCharacterContext(params: RecipeContextParams) {
   const layout = getString(params, 'layout', 'Classic Turnaround');
   const style = getString(params, 'style', 'Preserve Source Style');
   const shot = getString(params, 'shot', 'Full Body');

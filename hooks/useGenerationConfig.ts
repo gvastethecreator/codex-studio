@@ -24,6 +24,12 @@ interface UseGenerationConfigProps {
   log: (message: string) => void;
 }
 
+interface CodexModelCatalogState {
+  catalog: CodexModelCatalogResponse | null;
+  isLoading: boolean;
+  error: string | null;
+}
+
 export function prepareGenerationConfigForPersist(
   config: ImageGenerationConfig,
 ): ImageGenerationConfig {
@@ -73,11 +79,11 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
     DEFAULT_GENERATION_CONFIG,
     { prepareForPersist: prepareGenerationConfigForPersist },
   );
-  const [codexModelCatalog, setCodexModelCatalog] = useState<CodexModelCatalogResponse | null>(
-    null,
-  );
-  const [isLoadingCodexModelCatalog, setIsLoadingCodexModelCatalog] = useState(true);
-  const [codexModelCatalogError, setCodexModelCatalogError] = useState<string | null>(null);
+  const [codexModelCatalogState, setCodexModelCatalogState] = useState<CodexModelCatalogState>({
+    catalog: null,
+    isLoading: true,
+    error: null,
+  });
 
   const logRef = useRef(log);
   logRef.current = log;
@@ -138,34 +144,44 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
     setGenerationConfig,
   ]);
 
+  const handleCodexModelCatalogLoaded = useCallback(
+    (catalog: CodexModelCatalogResponse) => {
+      const codexModels = catalog?.models ?? [];
+      setCodexModelCatalogState({
+        catalog,
+        error: catalog.error,
+        isLoading: false,
+      });
+      setGenerationConfig((prev) => normalizeGenerationConfigForCodexModels(prev, codexModels));
+    },
+    [setGenerationConfig],
+  );
+
+  const handleCodexModelCatalogFailed = useCallback((error: unknown) => {
+    setCodexModelCatalogState({
+      catalog: null,
+      error: error instanceof Error ? error.message : 'Unable to read the Codex model catalog.',
+      isLoading: false,
+    });
+  }, []);
+
   useEffect(() => {
     let cancelled = false;
 
     void getCodexModelCatalog()
       .then((catalog) => {
         if (cancelled) return;
-
-        const codexModels = catalog?.models ?? [];
-        setCodexModelCatalog(catalog);
-        setCodexModelCatalogError(catalog.error);
-        setGenerationConfig((prev) => normalizeGenerationConfigForCodexModels(prev, codexModels));
+        handleCodexModelCatalogLoaded(catalog);
       })
       .catch((error) => {
         if (cancelled) return;
-        setCodexModelCatalogError(
-          error instanceof Error ? error.message : 'Unable to read the Codex model catalog.',
-        );
-      })
-      .finally(() => {
-        if (!cancelled) {
-          setIsLoadingCodexModelCatalog(false);
-        }
+        handleCodexModelCatalogFailed(error);
       });
 
     return () => {
       cancelled = true;
     };
-  }, [setGenerationConfig]);
+  }, [handleCodexModelCatalogFailed, handleCodexModelCatalogLoaded]);
 
   const updateGenerationConfig = useCallback(
     <K extends keyof ImageGenerationConfig>(key: K, value: ImageGenerationConfig[K]) => {
@@ -286,8 +302,8 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
     handleRemoveAttachment,
     handleAddToContext,
     maxAttachments,
-    codexModelCatalog,
-    isLoadingCodexModelCatalog,
-    codexModelCatalogError,
+    codexModelCatalog: codexModelCatalogState.catalog,
+    isLoadingCodexModelCatalog: codexModelCatalogState.isLoading,
+    codexModelCatalogError: codexModelCatalogState.error,
   };
 };

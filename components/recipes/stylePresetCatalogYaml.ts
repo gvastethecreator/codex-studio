@@ -10,7 +10,7 @@ function loadYamlParser() {
   return yamlLoader;
 }
 
-export async function loadYamlObjects<T>(files: Record<string, ManifestGlobLoader>) {
+async function loadYamlObjects<T>(files: Record<string, ManifestGlobLoader>) {
   const [yaml, entries] = await Promise.all([
     loadYamlParser(),
     Promise.all(
@@ -23,7 +23,7 @@ export async function loadYamlObjects<T>(files: Record<string, ManifestGlobLoade
     .map(([, yamlContent]) => yaml.load(String(yamlContent)) as T);
 }
 
-export function normalizePresetAssetAvailability(preset: StylePresetManifest): StylePresetManifest {
+function normalizePresetAssetAvailability(preset: StylePresetManifest): StylePresetManifest {
   const resolvedDefaultImage = resolveStyleDefaultImage(preset.id);
   const defaultImageExists = Boolean(resolvedDefaultImage);
   return {

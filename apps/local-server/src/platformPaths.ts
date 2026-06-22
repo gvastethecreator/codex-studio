@@ -85,6 +85,6 @@ export function resolvePlatformPath(key: PlatformPathKey) {
   return process.platform === 'win32' ? resolveWindowsPath(key) : resolveUnixPath(key);
 }
 
-export function getPlatformPathSeparator() {
+function getPlatformPathSeparator() {
   return path.sep;
 }

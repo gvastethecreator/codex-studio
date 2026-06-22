@@ -3980,7 +3980,7 @@ function pack02SceneFirstLockLine(
     return `${base} The photographic process should modify a human scene, not replace it with a camera-process specimen.`;
   }
   if (key === 'pack_02__lighting_and_atmosphere') {
-    return `${base} The named light should shape a person or small cast in a believable scene; light is the style, people and setting are the content.`;
+    return `${base} The named light should shape a person or small cast in a believable scene; light is the style, people and setting are the content. Do not solve lighting presets as face-only portraits, half-empty black panels, empty studio darkness, lamp studies, or abstract light diagrams.`;
   }
   return `${base} Treat the preset as a live-action film still: characters in a genre moment, not a prop, vehicle, empty set, or design object.`;
 }
@@ -7493,201 +7493,201 @@ Make it immediately recognizable as a ${safeImagegenLabel.toLowerCase()} style-c
     ? promptOverride.hero
     : pack02SceneFirstCard
       ? `Use one or more believable live-action people as the first read for ${sanitizeStylePromptName(preset.name).toLowerCase()}: visible face or body language, wardrobe, and role inside the scene. No object-only, prop-only, empty environment, neutral design specimen, abstract anchor, or isolated process sample.`
-    : cartoonMediaCard
-      ? `A flat representational cartoon-media specimen: ${pack02CartoonRepresentativeHeroCue(preset)}.`
-      : pack15PunkCard
-        ? 'Use one distinctive x-punk protagonist designed from this exact preset and obey the DIVERSITY LOCK for age, body type, crop, role, and silhouette. Let posture, wardrobe block, attitude, social role, and body language carry the style identity. Machines, vehicles, relics, creatures, signal motifs, and engineered shapes may appear beside or behind them as world context, but keep hands empty or naturally gestural and do not make object-use the pose. Do not use centered full-body fantasy adventurer, repeated young stylish anime protagonist, generic RPG hero, generic American stock character, uniformed worker, propaganda figure, cloak/pouch costume, or worker crew.'
-        : pack08Card
-          ? `One original adult fashion subject for ${sanitizeStylePromptName(preset.name)}: garment silhouette, posture, fabric behavior, and styling must be first read.`
-          : pack06Card
-            ? pack06HeroPrompt(promptCategoryKey, preset)
-            : pack10PatternTextureCard
-              ? `No character hero. Focal anchor is one cropped ${sanitizeStylePromptName(preset.name).toLowerCase()} material specimen, patterned object, folded surface, or shallow texture panel.`
-              : genericNonAnimeCard
-                ? nonAnimeRepresentativeHeroCue(preset)
-                : familyVariant(HERO_VARIANTS, family, `${variantSeed}:hero`);
+      : cartoonMediaCard
+        ? `A flat representational cartoon-media specimen: ${pack02CartoonRepresentativeHeroCue(preset)}.`
+        : pack15PunkCard
+          ? 'Use one distinctive x-punk protagonist designed from this exact preset and obey the DIVERSITY LOCK for age, body type, crop, role, and silhouette. Let posture, wardrobe block, attitude, social role, and body language carry the style identity. Machines, vehicles, relics, creatures, signal motifs, and engineered shapes may appear beside or behind them as world context, but keep hands empty or naturally gestural and do not make object-use the pose. Do not use centered full-body fantasy adventurer, repeated young stylish anime protagonist, generic RPG hero, generic American stock character, uniformed worker, propaganda figure, cloak/pouch costume, or worker crew.'
+          : pack08Card
+            ? `One original adult fashion subject for ${sanitizeStylePromptName(preset.name)}: garment silhouette, posture, fabric behavior, and styling must be first read.`
+            : pack06Card
+              ? pack06HeroPrompt(promptCategoryKey, preset)
+              : pack10PatternTextureCard
+                ? `No character hero. Focal anchor is one cropped ${sanitizeStylePromptName(preset.name).toLowerCase()} material specimen, patterned object, folded surface, or shallow texture panel.`
+                : genericNonAnimeCard
+                  ? nonAnimeRepresentativeHeroCue(preset)
+                  : familyVariant(HERO_VARIANTS, family, `${variantSeed}:hero`);
   const environmentLine = promptOverride
     ? promptOverride.environment
     : sp05178NoCorridor
       ? 'Use shallow layered broken-facade panels, invasive-shadow shapes, and wet asphalt texture fragments around the character; no walkable street, alley, hallway, road, sidewalk, shrine corridor, room, market, library, or long depth lane.'
       : pack02SceneFirstCard
         ? 'Build a complete cinematic setting around the people with foreground, midground, background, lived-in details, and preset-specific film, photo, TV, broadcast, lighting, or genre cues. The environment must be present but cannot replace the people.'
-      : cartoonMediaCard
-        ? 'Environment optional: use a flat graphic field by default, or a simple concrete setting if it makes this preset easier to read. Do not repeat the same wall, lamp, shelf, corridor, studio, market, library, or furniture formula across cards.'
-        : pack15PunkCard
-          ? 'Use a compact art-directed x-punk world fragment tied to the protagonist: street corner, vehicle bay, shrine street, signal rooftop, flood barrier, salvage camp, weather rig, lunar garage, cave settlement, transit deck, public plaza, or gothic salon chosen only when preset-specific. Environment must sell the punk subtype around the character; it must not become object-only display, handheld-prop scene, control-surface demo, tool demo, generic fantasy scenery, market aisle, corridor, workshop crew scene, American stock backdrop, or concept-art panorama.'
-          : pack08Card
-            ? 'Use a restrained editorial setting with one preset-specific cue: street edge, studio plane, stage light, gym threshold, atelier wall, or clean interior detail. No runway crowd, boutique aisle, closet, catalog page, or prop clutter.'
-            : pack06Card
-              ? pack06EnvironmentPrompt(promptCategoryKey, preset)
-              : pack10PatternTextureCard
-                ? 'Use shallow material depth only; no person, portrait, mannequin, room, domestic props, showroom, furniture, corridor, market aisle, library aisle, or fantasy hallway.'
-                : familyVariant(ENVIRONMENT_VARIANTS, family, `${variantSeed}:environment`);
+        : cartoonMediaCard
+          ? 'Environment optional: use a flat graphic field by default, or a simple concrete setting if it makes this preset easier to read. Do not repeat the same wall, lamp, shelf, corridor, studio, market, library, or furniture formula across cards.'
+          : pack15PunkCard
+            ? 'Use a compact art-directed x-punk world fragment tied to the protagonist: street corner, vehicle bay, shrine street, signal rooftop, flood barrier, salvage camp, weather rig, lunar garage, cave settlement, transit deck, public plaza, or gothic salon chosen only when preset-specific. Environment must sell the punk subtype around the character; it must not become object-only display, handheld-prop scene, control-surface demo, tool demo, generic fantasy scenery, market aisle, corridor, workshop crew scene, American stock backdrop, or concept-art panorama.'
+            : pack08Card
+              ? 'Use a restrained editorial setting with one preset-specific cue: street edge, studio plane, stage light, gym threshold, atelier wall, or clean interior detail. No runway crowd, boutique aisle, closet, catalog page, or prop clutter.'
+              : pack06Card
+                ? pack06EnvironmentPrompt(promptCategoryKey, preset)
+                : pack10PatternTextureCard
+                  ? 'Use shallow material depth only; no person, portrait, mannequin, room, domestic props, showroom, furniture, corridor, market aisle, library aisle, or fantasy hallway.'
+                  : familyVariant(ENVIRONMENT_VARIANTS, family, `${variantSeed}:environment`);
   const compositionLine = sp05178NoCorridor
     ? 'Close-to-mid emergency-poster crop with compressed shallow layers, empty hands visible, occult hazard geometry behind the shoulder, and no vanishing-point lane or navigable corridor.'
     : pack02SceneFirstCard
       ? 'Scene-still composition: people in action, pause, or performance inside an environment; crop-safe but not portrait-only bust, not object close-up, not scenery plate. Show enough setting to read as film, TV, broadcast, or photography.'
-    : cartoonMediaCard
-      ? 'Poster-readable composition, one simple graphic anchor plus supporting marks, generous crop-safe negative space; perspective, floor contact, cast shadow, or a simple setting can appear when they make the preset more legible.'
-      : pack15PunkCard
-        ? 'Character-led 2D illustrated style-card composition with one clear protagonist plus thematic background, following the DIVERSITY LOCK crop exactly. Vary scale aggressively across presets: small environmental figure, medium-long full body, seated/leaning public-life vignette, back view, side view, masked/obscured face, or unusual poster angle. Strong silhouette first, shallow poster depth, broad foreground/midground/background planes, crop-safe graphic spacing, limited crowding, and no object-only poster, signal-prop portrait, mechanical focal prop, photo-session staging, cinematic close-up, repeated waist-up fashion bust, realistic perspective drama, propaganda poster crowd, or foreground uniform portrait.'
-        : pack08Card
-          ? 'Fashion editorial card composition: one model, readable garment silhouette, crop-safe full or three-quarter pose, simple background planes, and no object-only clothing display.'
-          : pack06Card
-            ? 'Strong style-card composition: one clear subject or scenelet with foreground/midground/background planes, crop-safe negative space, and a non-default silhouette. Avoid lonely centered object demo, school exercise sheet, or generic portrait bust unless the preset explicitly needs that read.'
-            : pack10PatternTextureCard
-              ? 'Material-card composition: one readable cropped surface or object edge, macro-to-mid textile/material depth, crop-safe negative space, and no character or room staging.'
-              : pickVariant(COMPOSITION_VARIANTS, `${variantSeed}:composition`);
+      : cartoonMediaCard
+        ? 'Poster-readable composition, one simple graphic anchor plus supporting marks, generous crop-safe negative space; perspective, floor contact, cast shadow, or a simple setting can appear when they make the preset more legible.'
+        : pack15PunkCard
+          ? 'Character-led 2D illustrated style-card composition with one clear protagonist plus thematic background, following the DIVERSITY LOCK crop exactly. Vary scale aggressively across presets: small environmental figure, medium-long full body, seated/leaning public-life vignette, back view, side view, masked/obscured face, or unusual poster angle. Strong silhouette first, shallow poster depth, broad foreground/midground/background planes, crop-safe graphic spacing, limited crowding, and no object-only poster, signal-prop portrait, mechanical focal prop, photo-session staging, cinematic close-up, repeated waist-up fashion bust, realistic perspective drama, propaganda poster crowd, or foreground uniform portrait.'
+          : pack08Card
+            ? 'Fashion editorial card composition: one model, readable garment silhouette, crop-safe full or three-quarter pose, simple background planes, and no object-only clothing display.'
+            : pack06Card
+              ? 'Strong style-card composition: one clear subject or scenelet with foreground/midground/background planes, crop-safe negative space, and a non-default silhouette. Avoid lonely centered object demo, school exercise sheet, or generic portrait bust unless the preset explicitly needs that read.'
+              : pack10PatternTextureCard
+                ? 'Material-card composition: one readable cropped surface or object edge, macro-to-mid textile/material depth, crop-safe negative space, and no character or room staging.'
+                : pickVariant(COMPOSITION_VARIANTS, `${variantSeed}:composition`);
   const materialLine = cartoonMediaCard
     ? 'Let paper tooth, cel paint, ink, wax, marker, collage edge, or print texture carry the style; physical props or scene objects are useful only when they are a representative cue, not filler.'
     : pack02SceneFirstCard
       ? 'Let materials support the human scene: wardrobe, set surfaces, practical props, atmospheric texture, film grain, video artifacts, emulsion, scanlines, lens bloom, or color grade. Do not make an isolated material/object study.'
-    : pack15PunkCard
-      ? 'Use broad illustrated material planes: simplified metal, cloth, smoke, neon, bio-material, stone, salvage, glass, or weather shapes with visible brush edges, clean drawn contours, optional subtle paper texture, and sparse graphic wear. Materials should look stylized, matte, painterly, and designed, not photoreal, physically simulated, or PBR-rendered. Avoid realistic metal/armor rendering, mirror rain reflections, noisy grime, tiny rivets everywhere, dense cable webs, panel-grid overload, over-rendered machinery, scratchy screenprint noise, and high-frequency surface detail.'
-      : pack17MedievalCard
-        ? 'Use readable illustrated material planes: clean armor edges, cloth folds, stone cuts, relic surfaces, controlled print texture, and medium-sized details. Avoid photoreal skin/material simulation, muddy grime, dirty dark speckle, and tiny noisy micro-texture.'
-        : pack08Card
-          ? 'Prioritize fabric behavior: drape, seam, weave, leather/knit/sheen contrast, layering, footwear, and accessory scale. No noisy textile microdetail.'
-          : sp05178NoCorridor
-            ? 'Use costume cloth, wet asphalt texture fragments, botanical silhouettes, talisman-gold lines, painted cel shadows, and hazard glow; no centered prop, sword, staff, wand, blade, weapon, or handheld object.'
-            : promptOverride
-              ? 'Use broad graphic/material surfaces tied to this preset; do not introduce skin, clothing, portrait, body, or lifestyle texture unless the override explicitly asks for it.'
-              : pack06Card
-                ? 'Use medium-specific material behavior as broad readable design: pigment body, paper tooth, ink pressure, pixel constraints, collage seams, vector edges, or digital brush planes. Let material support the subject and palette; avoid tiny noisy texture chatter.'
-                : pack10PatternTextureCard
-                  ? 'Let the named pattern or texture carry the full style signal through broad readable material behavior, not through props, people, interiors, or fashion staging.'
-                  : genericNonAnimeCard
-                    ? 'Prioritize preset-specific material behavior, surface rhythm, color fields, and environmental texture. Avoid skin/face/hair rendering as the main style signal unless the preset explicitly needs a person.'
-                    : pickVariant(MATERIAL_VARIANTS, `${variantSeed}:material`);
+      : pack15PunkCard
+        ? 'Use broad illustrated material planes: simplified metal, cloth, smoke, neon, bio-material, stone, salvage, glass, or weather shapes with visible brush edges, clean drawn contours, optional subtle paper texture, and sparse graphic wear. Materials should look stylized, matte, painterly, and designed, not photoreal, physically simulated, or PBR-rendered. Avoid realistic metal/armor rendering, mirror rain reflections, noisy grime, tiny rivets everywhere, dense cable webs, panel-grid overload, over-rendered machinery, scratchy screenprint noise, and high-frequency surface detail.'
+        : pack17MedievalCard
+          ? 'Use readable illustrated material planes: clean armor edges, cloth folds, stone cuts, relic surfaces, controlled print texture, and medium-sized details. Avoid photoreal skin/material simulation, muddy grime, dirty dark speckle, and tiny noisy micro-texture.'
+          : pack08Card
+            ? 'Prioritize fabric behavior: drape, seam, weave, leather/knit/sheen contrast, layering, footwear, and accessory scale. No noisy textile microdetail.'
+            : sp05178NoCorridor
+              ? 'Use costume cloth, wet asphalt texture fragments, botanical silhouettes, talisman-gold lines, painted cel shadows, and hazard glow; no centered prop, sword, staff, wand, blade, weapon, or handheld object.'
+              : promptOverride
+                ? 'Use broad graphic/material surfaces tied to this preset; do not introduce skin, clothing, portrait, body, or lifestyle texture unless the override explicitly asks for it.'
+                : pack06Card
+                  ? 'Use medium-specific material behavior as broad readable design: pigment body, paper tooth, ink pressure, pixel constraints, collage seams, vector edges, or digital brush planes. Let material support the subject and palette; avoid tiny noisy texture chatter.'
+                  : pack10PatternTextureCard
+                    ? 'Let the named pattern or texture carry the full style signal through broad readable material behavior, not through props, people, interiors, or fashion staging.'
+                    : genericNonAnimeCard
+                      ? 'Prioritize preset-specific material behavior, surface rhythm, color fields, and environmental texture. Avoid skin/face/hair rendering as the main style signal unless the preset explicitly needs a person.'
+                      : pickVariant(MATERIAL_VARIANTS, `${variantSeed}:material`);
   const lightingLine = cartoonMediaCard
     ? 'Prefer graphic color, paper/cel texture, and style-specific mark contrast; realistic lighting is fine only when it is a deliberate representative cue.'
     : pack02SceneFirstCard
       ? 'Use camera-native light on people and setting: practicals, motivated key light, broadcast glare, stage light, available light, hard flash, film noir shadow, or era-specific exposure. Lighting must reveal the scene and body language.'
-    : pack15PunkCard
-      ? 'Use stylized illustration lighting only: graphic value blocks, controlled color glow, clear rim or ambient accent, open midtones, and readable dark-gray shadow shapes. Avoid cinematic photoreal lensing, physically realistic light, crushed blacks, flat black fills, volumetric hyperreal smoke/fog, realistic night-war mood, HDR highlight noise, and bokeh/photo depth.'
-      : pack17MedievalCard
-        ? 'Use simple readable illustration lighting: one clear key light plus one rim or glow accent, open midtones, defined shadow shapes, and visible details in dark areas. Avoid cinematic low-light realism, crushed blacks, smoky artifact buildup, and noisy dark gradients.'
-        : pack06Card
-          ? 'Use color-script lighting, not generic realism: one dominant hue family, one counter-temperature shadow, one surprising accent, open midtones, and clean value grouping. Avoid weak beige/blue, stock orange-teal, muddy monochrome, or neon pasted over dark mush.'
-          : pickVariant(LIGHT_VARIANTS, `${variantSeed}:light`);
+      : pack15PunkCard
+        ? 'Use stylized illustration lighting only: graphic value blocks, controlled color glow, clear rim or ambient accent, open midtones, and readable dark-gray shadow shapes. Avoid cinematic photoreal lensing, physically realistic light, crushed blacks, flat black fills, volumetric hyperreal smoke/fog, realistic night-war mood, HDR highlight noise, and bokeh/photo depth.'
+        : pack17MedievalCard
+          ? 'Use simple readable illustration lighting: one clear key light plus one rim or glow accent, open midtones, defined shadow shapes, and visible details in dark areas. Avoid cinematic low-light realism, crushed blacks, smoky artifact buildup, and noisy dark gradients.'
+          : pack06Card
+            ? 'Use color-script lighting, not generic realism: one dominant hue family, one counter-temperature shadow, one surprising accent, open midtones, and clean value grouping. Avoid weak beige/blue, stock orange-teal, muddy monochrome, or neon pasted over dark mush.'
+            : pickVariant(LIGHT_VARIANTS, `${variantSeed}:light`);
   const detailLine = cartoonMediaCard
     ? 'Details must be broad style marks and readable from thumbnail size; avoid tiny noisy micro-detail, repeated props, signs, labels, or stock room clutter.'
     : pack02SceneFirstCard
       ? 'Details must clarify the filmed moment: facial angle or body gesture, wardrobe silhouette, set dressing, practical prop scale, lens artifact, grain, scanline, emulsion edge, or broadcast texture. No readable text, labels, logos, UI, product display, or neutral specimen detail.'
-    : pack15PunkCard
-      ? 'Details must be few, medium-large, and aesthetic: character silhouette, garment mass, posture, age/body cue, social cue, background machine/biome/weather shape, material symbol embedded in the setting, or creature/environment feature. Clothing and environment should identify the punk subtype without becoming cosplay armor, worker uniform, fashionable jacket identity, handheld-gadget identity, or object-demo staging. Avoid repeated hair-as-identity, repeated high-collar jacket, lace-like microdetail, repeated decorative props, shields/badges unless explicitly required, realistic face/hair detail, tattoo-detail focus, leather-pouch costume detail, texture chatter, ultra-fine ornamental noise, cable lattice carpets, window-panel matrices, and machinery packed into every inch.'
-      : pack17MedievalCard
-        ? 'Details must be visible and drawn with clear edges: armor seams, border shapes, relic trim, monster features, cloth folds, masonry cuts, or graphic marks. Avoid over-texturing, black mush, dirty speckle, and ultra-fine clutter.'
-        : pack08Card
-          ? 'Details must be garment-scale: cut, hem, sleeve, collar, belt, texture block, shoe shape, or accessory rhythm. Avoid logos, readable text, jewelry clutter, prop-first styling, and ultra-fine noise.'
-          : promptOverride
-            ? promptOverride.detail
-            : pack06Card
-              ? 'Details must be medium-sized and style-specific: paint edge, ink break, paper seam, pixel cluster, stencil bridge, palette accent, garment/material cue, or environmental scale mark. No decorative filler, no repeated bird/animal shortcut, no ultra-fine noise.'
-              : pack10PatternTextureCard
-                ? 'Details must stay material-scale: repeat interval, weave ridge, pigment bleed, grain line, seam edge, marble vein, dot spacing, or folded-surface shadow. No pose nuance, face, body, garment model, room prop, or ultra-fine noise.'
-                : genericNonAnimeCard
-                  ? 'Details must be medium-sized preset cues: material edge, process mark, object contour, palette accent, environmental scale mark, or symbolic shape. No face glamour, hair-as-identity, costume microdetail, or ultra-fine noise.'
-                  : pickVariant(DETAIL_VARIANTS, `${variantSeed}:detail`);
+      : pack15PunkCard
+        ? 'Details must be few, medium-large, and aesthetic: character silhouette, garment mass, posture, age/body cue, social cue, background machine/biome/weather shape, material symbol embedded in the setting, or creature/environment feature. Clothing and environment should identify the punk subtype without becoming cosplay armor, worker uniform, fashionable jacket identity, handheld-gadget identity, or object-demo staging. Avoid repeated hair-as-identity, repeated high-collar jacket, lace-like microdetail, repeated decorative props, shields/badges unless explicitly required, realistic face/hair detail, tattoo-detail focus, leather-pouch costume detail, texture chatter, ultra-fine ornamental noise, cable lattice carpets, window-panel matrices, and machinery packed into every inch.'
+        : pack17MedievalCard
+          ? 'Details must be visible and drawn with clear edges: armor seams, border shapes, relic trim, monster features, cloth folds, masonry cuts, or graphic marks. Avoid over-texturing, black mush, dirty speckle, and ultra-fine clutter.'
+          : pack08Card
+            ? 'Details must be garment-scale: cut, hem, sleeve, collar, belt, texture block, shoe shape, or accessory rhythm. Avoid logos, readable text, jewelry clutter, prop-first styling, and ultra-fine noise.'
+            : promptOverride
+              ? promptOverride.detail
+              : pack06Card
+                ? 'Details must be medium-sized and style-specific: paint edge, ink break, paper seam, pixel cluster, stencil bridge, palette accent, garment/material cue, or environmental scale mark. No decorative filler, no repeated bird/animal shortcut, no ultra-fine noise.'
+                : pack10PatternTextureCard
+                  ? 'Details must stay material-scale: repeat interval, weave ridge, pigment bleed, grain line, seam edge, marble vein, dot spacing, or folded-surface shadow. No pose nuance, face, body, garment model, room prop, or ultra-fine noise.'
+                  : genericNonAnimeCard
+                    ? 'Details must be medium-sized preset cues: material edge, process mark, object contour, palette accent, environmental scale mark, or symbolic shape. No face glamour, hair-as-identity, costume microdetail, or ultra-fine noise.'
+                    : pickVariant(DETAIL_VARIANTS, `${variantSeed}:detail`);
   const feelingLine = cartoonMediaCard
     ? 'Mood comes from line rhythm, deformation, crude pressure, color clash, texture, and anchor silhouette, not from a literal scene, celebrity likeness, prop, or known character.'
     : promptOverride
       ? promptOverride.feeling
       : pack02SceneFirstCard
         ? 'Mood comes from acting, body language, staging, light, lens, color treatment, and media artifacts. The card should feel like a captured human moment, not a neutral style sample.'
-      : pack06Card
-        ? 'Feeling comes from the medium behaving with taste: confident color, subject choice, mark pressure, material contact, and a tiny implied story. Avoid sterile technique demo or asset-library placeholder mood.'
-        : pack10PatternTextureCard
-          ? 'Feeling comes from material rhythm, surface tactility, repeat scale, color separation, and clean crop tension; no character dynamics, face emotion, cute object, or lifestyle scene.'
-          : genericNonAnimeCard
-            ? 'Feeling comes from palette, material pressure, process trace, atmosphere, and composition. If a figure appears, keep acting restrained and non-anime; do not use big-eye emotion or character-card drama.'
-            : pickVariant(FEELING_VARIANTS, `${variantSeed}:feeling`);
+        : pack06Card
+          ? 'Feeling comes from the medium behaving with taste: confident color, subject choice, mark pressure, material contact, and a tiny implied story. Avoid sterile technique demo or asset-library placeholder mood.'
+          : pack10PatternTextureCard
+            ? 'Feeling comes from material rhythm, surface tactility, repeat scale, color separation, and clean crop tension; no character dynamics, face emotion, cute object, or lifestyle scene.'
+            : genericNonAnimeCard
+              ? 'Feeling comes from palette, material pressure, process trace, atmosphere, and composition. If a figure appears, keep acting restrained and non-anime; do not use big-eye emotion or character-card drama.'
+              : pickVariant(FEELING_VARIANTS, `${variantSeed}:feeling`);
   const cameraFocusLine = cartoonMediaCard
     ? 'No camera logic: prioritize silhouette, line behavior, and texture rhythm as a flat graphic card.'
     : pack02SceneFirstCard
       ? 'Focus on the human scene through cinematic or photographic camera logic: lens distance, exposure, frame crop, depth layering, motion blur, grain, scanlines, or broadcast optics. Do not focus on a neutral object, product, empty space, or abstract field.'
-    : pack15PunkCard
-      ? 'No photographic camera logic: no lens realism, no shallow DOF, no bokeh, no cinematic key-art depth, no dramatic real-world perspective. Prioritize flattened poster hierarchy, designed silhouette, drawn edges, shallow illustration depth, graphic focal hierarchy, and one representative subject or scene that sells the punk subtype.'
-      : pack17MedievalCard
-        ? 'Prioritize clean silhouette, defined linework, and card-readable focal hierarchy over photoreal camera depth or murky atmosphere.'
-        : pack08Card
-          ? 'Prioritize garment silhouette and body posture over face glamour or background. Keep hands, shoulders, hips, knees, and feet anatomically readable.'
-          : sp05178NoCorridor
-            ? 'Focus on the original face, empty hands, shoulder contour, and occult hazard geometry; do not focus down an alley, road, hallway, corridor, or handheld object.'
-            : promptOverride
-              ? promptOverride.cameraFocus
-              : pack06Card
-                ? 'Prioritize graphic focal hierarchy over camera realism: silhouette first, color block second, medium texture third. Keep anatomy simple when figures appear; keep objects contextual rather than isolated product shots.'
-                : pack10PatternTextureCard
-                  ? 'Prioritize material hierarchy over camera realism: one readable surface rhythm, one dominant scale, clean crop, and no lens drama, portrait framing, product pedestal, or room perspective.'
-                  : genericNonAnimeCard
-                    ? 'Prioritize the preset-specific anchor and material/composition hierarchy over face, pose, or character glamour. Keep any figure simple, non-anime, and secondary unless the preset explicitly needs people.'
-                    : pickVariant(CAMERA_FOCUS_VARIANTS, `${variantSeed}:focus`);
+      : pack15PunkCard
+        ? 'No photographic camera logic: no lens realism, no shallow DOF, no bokeh, no cinematic key-art depth, no dramatic real-world perspective. Prioritize flattened poster hierarchy, designed silhouette, drawn edges, shallow illustration depth, graphic focal hierarchy, and one representative subject or scene that sells the punk subtype.'
+        : pack17MedievalCard
+          ? 'Prioritize clean silhouette, defined linework, and card-readable focal hierarchy over photoreal camera depth or murky atmosphere.'
+          : pack08Card
+            ? 'Prioritize garment silhouette and body posture over face glamour or background. Keep hands, shoulders, hips, knees, and feet anatomically readable.'
+            : sp05178NoCorridor
+              ? 'Focus on the original face, empty hands, shoulder contour, and occult hazard geometry; do not focus down an alley, road, hallway, corridor, or handheld object.'
+              : promptOverride
+                ? promptOverride.cameraFocus
+                : pack06Card
+                  ? 'Prioritize graphic focal hierarchy over camera realism: silhouette first, color block second, medium texture third. Keep anatomy simple when figures appear; keep objects contextual rather than isolated product shots.'
+                  : pack10PatternTextureCard
+                    ? 'Prioritize material hierarchy over camera realism: one readable surface rhythm, one dominant scale, clean crop, and no lens drama, portrait framing, product pedestal, or room perspective.'
+                    : genericNonAnimeCard
+                      ? 'Prioritize the preset-specific anchor and material/composition hierarchy over face, pose, or character glamour. Keep any figure simple, non-anime, and secondary unless the preset explicitly needs people.'
+                      : pickVariant(CAMERA_FOCUS_VARIANTS, `${variantSeed}:focus`);
   const representationRuleLine = promptOverride
     ? promptOverrideAllowsCharacter
       ? 'Prompt override character rule: include one readable original character or human-scale silhouette integrated with a preset-specific environment/background. Do not output object-only abstraction, franchise likeness, weapon-first action, UI/text, crowd lineup, or face-only portrait.'
       : 'Object/material safety exception: include one readable object, material specimen, symbolic focal form, or environment motif. Do not output an empty abstract-only field, but do not add characters, faces, bodies, portraits, or literal action scenes.'
     : pack02SceneFirstCard
       ? 'Pack 02 scene-first rule: include visible people in a complete non-anime film/photo/TV scene. The media style is the treatment; the content is a human moment with setting, wardrobe, body language, and cinematic depth. Do not output object-only cards, empty scenery, macro process samples, camera equipment, neutral props, abstract graphics, anime, manga, cartoon, or illustration-first character art.'
-    : pack15PunkCard
-      ? 'Pack 15 rule: include one readable characteristic x-punk protagonist as primary subject, integrated with a thematic background/environment. Machines, relics, vehicles, weather systems, creatures, architecture, and symbolic objects may exist only as context around the protagonist; do not put the protagonist in a repeated object-use gesture or make a technical foreground element the card identity. Avoid object-only posters, abstract-only cards, worker crews, revolution/propaganda crowds, generic RPG heroes, and generic American stock illustration.'
-      : pack08Card
-        ? 'Pack 08 rule: include one adult fashion figure wearing the style. Garment and silhouette are mandatory; do not output object-only clothing, empty texture, mannequin, catalog flat lay, runway crowd, or abstract textile field.'
-        : pack06Card
-          ? preset.id === 'SP06-112'
-            ? 'Pack 06 icon-kit rule: include a coherent non-weapon support-equipment icon kit with multiple readable device silhouettes and shallow in-world context. Do not add people, humanoids, mascot helpers, anime mechanics, portraits, creatures, or character scenes; the named icon-system grammar must read before any narrative content.'
-            : pack06AllowsAnimePreset(preset)
-              ? 'Pack 06 anime-allowed rule: include one readable subject or scenelet chosen from the base prompt while preserving the visual-novel, gacha, or anime-game system the preset explicitly asks for.'
-              : 'Pack 06 rule: include one readable medium-led subject or scenelet chosen from the base prompt. Objects, creatures, vehicles, relics, material forms, environment fragments, and restrained non-anime figures are allowed when they prove the preset. The named medium/system must read before any character design. Do not reduce the card to anime character art, a basic object demo, palette swatch, centered mascot, technique sample, or empty abstraction.'
-          : pack10PatternTextureCard
-            ? 'Pack 10 Pattern & Texture rule: include one readable material specimen, patterned object, folded surface, textile crop, or texture panel. Do not add characters, portraits, mannequins, rooms, furniture, wallpaper-showroom staging, or literal lifestyle scenes.'
-            : genericNonAnimeCard
-              ? 'Non-anime rule: include one readable preset-specific anchor: material specimen, symbolic object, environment fragment, craft/process form, or restrained stylized figure only when useful. Do not output generic anime portrait, manga character card, visual-novel bust, gacha frame, or empty abstract-only card.'
-              : representativeAnchorRule(pack, category, preset);
+      : pack15PunkCard
+        ? 'Pack 15 rule: include one readable characteristic x-punk protagonist as primary subject, integrated with a thematic background/environment. Machines, relics, vehicles, weather systems, creatures, architecture, and symbolic objects may exist only as context around the protagonist; do not put the protagonist in a repeated object-use gesture or make a technical foreground element the card identity. Avoid object-only posters, abstract-only cards, worker crews, revolution/propaganda crowds, generic RPG heroes, and generic American stock illustration.'
+        : pack08Card
+          ? 'Pack 08 rule: include one adult fashion figure wearing the style. Garment and silhouette are mandatory; do not output object-only clothing, empty texture, mannequin, catalog flat lay, runway crowd, or abstract textile field.'
+          : pack06Card
+            ? preset.id === 'SP06-112'
+              ? 'Pack 06 icon-kit rule: include a coherent non-weapon support-equipment icon kit with multiple readable device silhouettes and shallow in-world context. Do not add people, humanoids, mascot helpers, anime mechanics, portraits, creatures, or character scenes; the named icon-system grammar must read before any narrative content.'
+              : pack06AllowsAnimePreset(preset)
+                ? 'Pack 06 anime-allowed rule: include one readable subject or scenelet chosen from the base prompt while preserving the visual-novel, gacha, or anime-game system the preset explicitly asks for.'
+                : 'Pack 06 rule: include one readable medium-led subject or scenelet chosen from the base prompt. Objects, creatures, vehicles, relics, material forms, environment fragments, and restrained non-anime figures are allowed when they prove the preset. The named medium/system must read before any character design. Do not reduce the card to anime character art, a basic object demo, palette swatch, centered mascot, technique sample, or empty abstraction.'
+            : pack10PatternTextureCard
+              ? 'Pack 10 Pattern & Texture rule: include one readable material specimen, patterned object, folded surface, textile crop, or texture panel. Do not add characters, portraits, mannequins, rooms, furniture, wallpaper-showroom staging, or literal lifestyle scenes.'
+              : genericNonAnimeCard
+                ? 'Non-anime rule: include one readable preset-specific anchor: material specimen, symbolic object, environment fragment, craft/process form, or restrained stylized figure only when useful. Do not output generic anime portrait, manga character card, visual-novel bust, gacha frame, or empty abstract-only card.'
+                : representativeAnchorRule(pack, category, preset);
   const actionLine = promptOverride
     ? promptOverride.action
     : pack02SceneFirstCard
       ? 'Use a small readable human beat: watching, presenting, performing, fleeing, waiting, arguing, investigating, reacting, crossing frame, bracing under light, or being filmed in an era-specific way. Static is fine only when posture, expression, and staging sell the scene.'
-    : cartoonMediaCard
-      ? 'No action scene: imply motion through anchor deformation, smear marks, elastic curves, repeated lines, or scribble pressure.'
-      : pack15PunkCard
-        ? 'Show one simple role-defining attitude or lived-world beat chosen by the DIVERSITY LOCK: walking through the place, waiting under strange weather, looking back, sheltering, performing, resting, guarding a threshold, crossing a transit space, riding, sitting, being dwarfed by the environment, or standing as the world moves around them. Keep it personal, iconic, and prop-free, not a task demo, worker productivity pose, military pose, crowd rally, repeated hands-in-pockets portrait, or action-hero combat.'
-        : sp05178NoCorridor
-          ? 'Imply a paused defensive reaction with empty hands and wind-tension only; no chase, weapon swing, attack pose, battle lane, or street confrontation.'
-          : pack06Card
-            ? 'Use a small readable beat when helpful: stance, drift, weather pressure, material pull, traversal cue, print registration slip, pixel motion, or collage tear direction. Static is fine only when the subject still feels intentionally composed and flavorful.'
-            : pack10PatternTextureCard
-              ? 'No action scene. Suggest movement only through folds, weave direction, grain, repeat rhythm, pigment bleed, or material flow.'
-              : genericNonAnimeCard
-                ? 'Use motion only when it clarifies the preset: process flow, material drift, environmental pressure, or a restrained non-anime figure gesture. Static is fine when the anchor is strong.'
-                : pickVariant(ACTION_VARIANTS, `${variantSeed}:action`);
+      : cartoonMediaCard
+        ? 'No action scene: imply motion through anchor deformation, smear marks, elastic curves, repeated lines, or scribble pressure.'
+        : pack15PunkCard
+          ? 'Show one simple role-defining attitude or lived-world beat chosen by the DIVERSITY LOCK: walking through the place, waiting under strange weather, looking back, sheltering, performing, resting, guarding a threshold, crossing a transit space, riding, sitting, being dwarfed by the environment, or standing as the world moves around them. Keep it personal, iconic, and prop-free, not a task demo, worker productivity pose, military pose, crowd rally, repeated hands-in-pockets portrait, or action-hero combat.'
+          : sp05178NoCorridor
+            ? 'Imply a paused defensive reaction with empty hands and wind-tension only; no chase, weapon swing, attack pose, battle lane, or street confrontation.'
+            : pack06Card
+              ? 'Use a small readable beat when helpful: stance, drift, weather pressure, material pull, traversal cue, print registration slip, pixel motion, or collage tear direction. Static is fine only when the subject still feels intentionally composed and flavorful.'
+              : pack10PatternTextureCard
+                ? 'No action scene. Suggest movement only through folds, weave direction, grain, repeat rhythm, pigment bleed, or material flow.'
+                : genericNonAnimeCard
+                  ? 'Use motion only when it clarifies the preset: process flow, material drift, environmental pressure, or a restrained non-anime figure gesture. Static is fine when the anchor is strong.'
+                  : pickVariant(ACTION_VARIANTS, `${variantSeed}:action`);
   const constraintSemanticsLine = pack15PunkCard
     ? 'Interpret avoid/no lists as anti-repetition guidance, but keep the pack contract strict: one protagonist in environment is required; technical, mystic, vehicle, signal, or machine motifs may appear only as world context, not as foreground focal equipment or object-use action.'
     : pack02SceneFirstCard
       ? 'For Pack 02 photo/media cards, interpret avoid/no lists as anti-cliche guidance, but keep the scene-first contract strict: visible people in a complete filmed/photographed setting are required. Do not overcorrect into empty spaces, isolated props, neutral specimens, camera gear, or abstract media texture.'
-    : pack10PatternTextureCard
-      ? 'For pack_10 Pattern & Texture, keep avoid/no lists strict against scene drift: do not add people, portraits, mannequins, rooms, furniture, lifestyle props, product staging, corridors, market aisles, library aisles, fantasy hallways, logos, readable codes, or decorative hero objects.'
-      : constraintSemantics();
+      : pack10PatternTextureCard
+        ? 'For pack_10 Pattern & Texture, keep avoid/no lists strict against scene drift: do not add people, portraits, mannequins, rooms, furniture, lifestyle props, product staging, corridors, market aisles, library aisles, fantasy hallways, logos, readable codes, or decorative hero objects.'
+        : constraintSemantics();
   const visualResetLine = pack15PunkCard
     ? 'If any earlier phrase sounds abstract-only, object-led, or no-scene, reinterpret it as anti-cliche guidance. The final card still needs one readable characteristic protagonist inside a thematic background/environment. Abstract marks, machinery, symbols, materials, and signal effects support that character-world read; they are not the whole image and not the foreground action.'
     : pack02SceneFirstCard
       ? 'If any earlier phrase sounds object-led, process-only, atmosphere-only, or abstract-only, reinterpret it as media treatment. The final Pack 02 card still needs visible people in a complete cinematic/photo/TV scene with foreground, midground, background, wardrobe, body language, and preset-specific camera/media treatment.'
-    : promptOverride
-      ? 'If any earlier phrase sounds abstract-only, reinterpret it as anti-cliche guidance. The final card still needs one readable representative object, material form, symbolic focal form, or environment motif. Do not add a character, face, body, portrait, or literal scene when the override says object/material-first.'
-      : pack08Card
-        ? 'If any earlier phrase sounds object-only or abstract-only, reinterpret it as anti-cliche guidance. The final SP08 card still needs one adult fashion figure wearing a preset-specific garment in a restrained editorial context.'
-        : pack06Card
-          ? 'If any earlier phrase sounds like object-only, technique-demo, or abstract-only, reinterpret it as anti-cliche guidance. The final SP06 card still needs one tasteful readable subject or scenelet with medium identity, deliberate palette, and enough context to feel designed. Do not overcorrect into empty abstraction or isolated prop/product art.'
-          : pack10PatternTextureCard
-            ? 'If any earlier phrase sounds abstract-only, reinterpret it as anti-cliche guidance. The final pattern card still needs one readable material specimen or patterned object, but no character, portrait, room, or lifestyle scene.'
-            : genericNonAnimeCard
-              ? 'If any earlier phrase sounds abstract-only, reinterpret it as anti-cliche guidance. The final card still needs one readable preset-specific anchor, but do not solve it as anime, manga, visual-novel, gacha, or generic character-card art unless this exact preset explicitly asks for that.'
-              : visualResetRule();
+      : promptOverride
+        ? 'If any earlier phrase sounds abstract-only, reinterpret it as anti-cliche guidance. The final card still needs one readable representative object, material form, symbolic focal form, or environment motif. Do not add a character, face, body, portrait, or literal scene when the override says object/material-first.'
+        : pack08Card
+          ? 'If any earlier phrase sounds object-only or abstract-only, reinterpret it as anti-cliche guidance. The final SP08 card still needs one adult fashion figure wearing a preset-specific garment in a restrained editorial context.'
+          : pack06Card
+            ? 'If any earlier phrase sounds like object-only, technique-demo, or abstract-only, reinterpret it as anti-cliche guidance. The final SP06 card still needs one tasteful readable subject or scenelet with medium identity, deliberate palette, and enough context to feel designed. Do not overcorrect into empty abstraction or isolated prop/product art.'
+            : pack10PatternTextureCard
+              ? 'If any earlier phrase sounds abstract-only, reinterpret it as anti-cliche guidance. The final pattern card still needs one readable material specimen or patterned object, but no character, portrait, room, or lifestyle scene.'
+              : genericNonAnimeCard
+                ? 'If any earlier phrase sounds abstract-only, reinterpret it as anti-cliche guidance. The final card still needs one readable preset-specific anchor, but do not solve it as anime, manga, visual-novel, gacha, or generic character-card art unless this exact preset explicitly asks for that.'
+                : visualResetRule();
   const differentiationLine = pack10PatternTextureCard
     ? 'Keep the material/pattern anchor, but do not reuse generic staging from neighboring presets in this category; vary repeat scale, surface crop, fold/grain direction, tactile edge, and color identity for this preset specifically.'
     : pack02SceneFirstCard
       ? 'Keep people and a complete scene mandatory, but do not reuse generic staging from neighboring Pack 02 presets; vary cast role, setting, era/media artifact, lens distance, body language, and foreground/background relationship for this preset specifically.'
-    : 'Keep the anchor, but do not reuse generic staging from neighboring presets in this category; vary subject design, environment read, action cue, and color identity for this preset specifically.';
+      : 'Keep the anchor, but do not reuse generic staging from neighboring presets in this category; vary subject design, environment read, action cue, and color identity for this preset specifically.';
 
   const animeSafeCharacterCard =
     imagegenSafeDna &&

@@ -122,7 +122,7 @@ function getParameterGroups(parameters: RecipeParameterDescriptor[]) {
   ];
 }
 
-export function createRecipeCatalog(modules: RecipeModule[] = listRecipeModules()) {
+function createRecipeCatalog(modules: RecipeModule[] = listRecipeModules()) {
   return modules.map((module): RecipeCatalogEntry => {
     const card = RECIPE_CARD_METADATA[module.id];
     return {

@@ -50,7 +50,7 @@ export function localStudioSyncBackendReducer(
   }
 }
 
-export function mapStudioLogToUi(entry: StudioLog): LogEntry {
+function mapStudioLogToUi(entry: StudioLog): LogEntry {
   return {
     id: `studio-log-${entry.id}`,
     timestamp: Date.parse(entry.createdAt) || Date.now(),

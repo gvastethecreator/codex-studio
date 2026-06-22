@@ -13,7 +13,7 @@ import {
   parseSpritesheetGrid,
 } from '../recipePromptFragments';
 
-export function buildSpritesheetContext(params: RecipeContextParams) {
+function buildSpritesheetContext(params: RecipeContextParams) {
   const view = getString(params, 'view', 'Match Source');
   const style = getString(params, 'style', 'Preserve Style');
   const grid = getString(params, 'grid', '2x2');

@@ -1,4 +1,4 @@
-export const RECIPE_PROVIDER_DIRECTIVES_PROTOCOL = 'recipe-provider-directives/v1' as const;
+const RECIPE_PROVIDER_DIRECTIVES_PROTOCOL = 'recipe-provider-directives/v1' as const;
 
 export interface RecipeProviderDirective {
   label: string;

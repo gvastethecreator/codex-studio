@@ -1,4 +1,3 @@
-import type { LeftDebugPanelProps } from '../components/LeftDebugPanel';
 import type { RecipePageProps } from '../components/RecipePage';
 import type { ToolbarProps } from '../components/Toolbar';
 import type { StudioGridSurfaceProps } from '../components/studio/StudioGridSurface';
@@ -7,11 +6,23 @@ import type { Job as StudioJob, JobStatus } from '../packages/shared/src';
 import type { AppPageView } from '../hooks/useHashRouter';
 import type {
   AspectRatio,
+  LogEntry,
   QueueJob,
   QueueJobStatus,
   RecipeId,
   StudioGenerationPlaceholder,
+  Workspace,
 } from '../types';
+
+interface LeftDebugPanelProps {
+  workspaces: Workspace[];
+  logs: LogEntry[];
+  studioJobs: StudioJob[];
+  visualGroupsCount: number;
+  imagesCount: number;
+  onInspectJob?: (jobId: string) => void;
+  selectedJobId?: string | null;
+}
 
 export interface StudioPageController {
   debugPanel: {
@@ -59,22 +70,22 @@ interface StudioPageGridContext {
   handleLoadRecipe: StudioGridSurfaceProps['handleLoadRecipe'];
   handleDelete: StudioGridSurfaceProps['handleDelete'];
   handleToggleFavorite: StudioGridSurfaceProps['handleToggleFavorite'];
-  isGenerating: StudioGridSurfaceProps['isGenerating'];
+  isGenerating: boolean;
   transitioningImageId: StudioGridSurfaceProps['transitioningImageId'];
   activeModalImageId: StudioGridSurfaceProps['activeModalImageId'];
   handleSelectAll: StudioGridSurfaceProps['handleSelectAll'];
   handleDeselectAll: StudioGridSurfaceProps['handleDeselectAll'];
   handleDeleteSelected: StudioGridSurfaceProps['handleDeleteSelected'];
   handleClearWorkspace: StudioGridSurfaceProps['handleClearWorkspace'];
-  previewRatio: StudioGridSurfaceProps['previewRatio'];
-  generationAspectRatio: StudioGridSurfaceProps['generationAspectRatio'];
-  isInteractingWithToolbar: StudioGridSurfaceProps['isInteractingWithToolbar'];
-  catalogTotal: StudioGridSurfaceProps['catalogTotal'];
-  catalogHasMore: StudioGridSurfaceProps['catalogHasMore'];
-  isCatalogLoading: StudioGridSurfaceProps['isCatalogLoading'];
-  catalogError: StudioGridSurfaceProps['catalogError'];
-  loadMoreCatalog: StudioGridSurfaceProps['loadMoreCatalog'];
-  refreshCatalog: StudioGridSurfaceProps['refreshCatalog'];
+  previewRatio: AspectRatio | null;
+  generationAspectRatio: AspectRatio;
+  isInteractingWithToolbar: boolean;
+  catalogTotal: number;
+  catalogHasMore: boolean;
+  isCatalogLoading: boolean;
+  catalogError: string | null;
+  loadMoreCatalog: () => void;
+  refreshCatalog: () => void;
 }
 
 interface StudioPageOperationsContext {
@@ -216,7 +227,6 @@ export function buildStudioPageController(
       },
     },
     grid: {
-      isModalOpen: args.grid.isModalOpen,
       activeWorkspaceId: args.grid.activeWorkspaceId,
       allImages: args.grid.allImages,
       imagesWithConfig: args.grid.imagesWithConfig,
@@ -228,24 +238,31 @@ export function buildStudioPageController(
       handleLoadRecipe: args.grid.handleLoadRecipe,
       handleDelete: args.grid.handleDelete,
       handleToggleFavorite: args.grid.handleToggleFavorite,
-      isGenerating:
-        args.grid.isGenerating || hasProcessingJobs || generationPlaceholders.length > 0,
       transitioningImageId: args.grid.transitioningImageId,
       activeModalImageId: args.grid.activeModalImageId,
-      generationPlaceholders,
       handleSelectAll: args.grid.handleSelectAll,
       handleDeselectAll: args.grid.handleDeselectAll,
       handleDeleteSelected: args.grid.handleDeleteSelected,
       handleClearWorkspace: args.grid.handleClearWorkspace,
-      previewRatio: args.grid.previewRatio,
-      generationAspectRatio: args.grid.generationAspectRatio,
-      isInteractingWithToolbar: args.grid.isInteractingWithToolbar,
-      catalogTotal: args.grid.catalogTotal,
-      catalogHasMore: args.grid.catalogHasMore,
-      isCatalogLoading: args.grid.isCatalogLoading,
-      catalogError: args.grid.catalogError,
-      loadMoreCatalog: args.grid.loadMoreCatalog,
-      refreshCatalog: args.grid.refreshCatalog,
+      chrome: {
+        isModalOpen: args.grid.isModalOpen,
+        isInteractingWithToolbar: args.grid.isInteractingWithToolbar,
+        previewRatio: args.grid.previewRatio,
+        generationAspectRatio: args.grid.generationAspectRatio,
+      },
+      generation: {
+        isGenerating:
+          args.grid.isGenerating || hasProcessingJobs || generationPlaceholders.length > 0,
+        placeholders: generationPlaceholders,
+      },
+      catalog: {
+        total: args.grid.catalogTotal,
+        hasMore: args.grid.catalogHasMore,
+        isLoading: args.grid.isCatalogLoading,
+        error: args.grid.catalogError,
+        loadMore: args.grid.loadMoreCatalog,
+        refresh: args.grid.refreshCatalog,
+      },
     },
     operations: {
       isModalOpen: args.grid.isModalOpen,

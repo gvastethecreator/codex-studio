@@ -12,7 +12,7 @@ import {
   createCinematicLayoutInstruction,
 } from '../recipePromptFragments';
 
-export function buildCinematicContext(params: RecipeContextParams) {
+function buildCinematicContext(params: RecipeContextParams) {
   const frames = Math.max(1, getNumber(params, 'frames', 9));
   const rows = Math.max(1, getNumber(params, 'rows', 3));
   const cols = Math.max(1, getNumber(params, 'cols', 3));

@@ -30,7 +30,7 @@ export interface CreateExternalGenerationProviderDependencies {
   createDefaultExecutors?: () => ExternalProviderExecutorRegistry;
 }
 
-export function isExternalExecutableProviderId(
+function isExternalExecutableProviderId(
   providerId: GenerationProviderId | null | undefined,
 ): providerId is ExternalExecutableProviderId {
   return providerId === 'google' || providerId === 'fal' || providerId === 'comfy';

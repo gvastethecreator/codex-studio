@@ -32,7 +32,7 @@ export function normalizeScriptPollingPolicy(
   };
 }
 
-export function withScriptRetry<T>(
+function withScriptRetry<T>(
   factory: () => Effect.Effect<T, unknown>,
   policyInput: Partial<ScriptRetryPolicy> & {
     shouldRetry?: (error: unknown) => boolean;

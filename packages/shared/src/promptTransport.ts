@@ -38,7 +38,7 @@ export function extractRecipeIdFromRecipeContext(recipeContext: string | null | 
   return match?.[1] ?? null;
 }
 
-export function extractNegativePromptFromPrompt(prompt: string | null | undefined) {
+function extractNegativePromptFromPrompt(prompt: string | null | undefined) {
   const source = trimPrompt(prompt);
   const match = source.match(
     /(?:^|\n\n)Avoid:\n([\s\S]*?)(?=\n\nImageGen output size:|\n\nAspect ratio:|$)/,
@@ -47,11 +47,11 @@ export function extractNegativePromptFromPrompt(prompt: string | null | undefine
   return match?.[1]?.trim() ?? '';
 }
 
-export function extractAspectRatioFromPrompt(prompt: string | null | undefined) {
+function extractAspectRatioFromPrompt(prompt: string | null | undefined) {
   return trimPrompt(prompt).match(/Aspect ratio:\s*([0-9]+:[0-9]+)/)?.[1] ?? null;
 }
 
-export function extractImageSizeFromPrompt(prompt: string | null | undefined) {
+function extractImageSizeFromPrompt(prompt: string | null | undefined) {
   return (
     trimPrompt(prompt)
       .match(/ImageGen output size:\s*([^\n]+)/)?.[1]

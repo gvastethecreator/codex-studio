@@ -72,7 +72,7 @@ export function buildOutputAssetRelativePath(
   );
 }
 
-export function resolveOutputAssetPath(
+function resolveOutputAssetPath(
   settings: Pick<EditableStudioSettings, 'outputOrganization'>,
   context: OutputAssetPathContext,
 ) {

@@ -1,7 +1,7 @@
 import type { CodexServiceTier } from './types';
 import type { GenerationProviderId } from './generationContracts';
 
-export const EDITABLE_STUDIO_SETTINGS_VERSION = 'editable-studio-settings/v1' as const;
+const EDITABLE_STUDIO_SETTINGS_VERSION = 'editable-studio-settings/v1' as const;
 
 export type StudioOutputMode = 'studio_library' | 'external_source';
 export type StudioOutputSubfolderToken = 'date' | 'provider' | 'model' | 'recipe';

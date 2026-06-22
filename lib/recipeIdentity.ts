@@ -18,7 +18,7 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === 'object' && !Array.isArray(value);
 }
 
-export function isRegisteredRecipeId(value: unknown): value is RegisteredRecipeId {
+function isRegisteredRecipeId(value: unknown): value is RegisteredRecipeId {
   return typeof value === 'string' && KNOWN_RECIPE_IDS.has(value as RegisteredRecipeId);
 }
 
@@ -47,14 +47,14 @@ export function hasRecipeIdentity(
   return resolveRecipeIdentity(config)?.recipeId === recipeId;
 }
 
-export function getRecipeParam(
+function getRecipeParam(
   config: Pick<ImageGenerationConfig, 'recipeContext' | 'recipeId' | 'recipeParams'>,
   key: string,
 ) {
   return resolveRecipeIdentity(config)?.recipeParams[key];
 }
 
-export function getRecipeStringParam(
+function getRecipeStringParam(
   config: Pick<ImageGenerationConfig, 'recipeContext' | 'recipeId' | 'recipeParams'>,
   key: string,
   fallback = '',

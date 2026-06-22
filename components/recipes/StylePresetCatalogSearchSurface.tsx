@@ -34,13 +34,21 @@ const TASK_FILTERS = [
   { id: 'texture_generate', label: 'Textures' },
 ];
 
+type StyleCatalogLoadState = {
+  searchIndex: StylePresetCatalogSearchIndex | null;
+  isLoading: boolean;
+};
+
 export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchSurfaceProps> = ({
   onClose,
   onSelectPreset,
   onApplyPreset,
 }) => {
-  const [searchIndex, setSearchIndex] = useState<StylePresetCatalogSearchIndex | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [catalogLoad, setCatalogLoad] = useState<StyleCatalogLoadState>({
+    searchIndex: null,
+    isLoading: true,
+  });
+  const { searchIndex, isLoading } = catalogLoad;
   const [query, setQuery] = useState('');
   const [packId, setPackId] = useState('');
   const [task, setTask] = useState('');
@@ -70,12 +78,10 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
 
   useEffect(() => {
     let cancelled = false;
-    setIsLoading(true);
-    setSearchIndex(null);
+    setCatalogLoad({ searchIndex: null, isLoading: true });
     void loadStylePresetCatalogSearchIndex(packIdsToLoad).then((loaded) => {
       if (!cancelled) {
-        setSearchIndex(loaded);
-        setIsLoading(false);
+        setCatalogLoad({ searchIndex: loaded, isLoading: false });
       }
     });
     return () => {

@@ -4,7 +4,7 @@ import {
   getStudioViewportTransitionClassName,
   isRecipesViewVisible,
   resolveStudioViewportRouteKey,
-} from './StudioViewport';
+} from './studioViewportRouting';
 
 describe('StudioViewport routing', () => {
   it('maps views to route keys for viewport transitions', () => {

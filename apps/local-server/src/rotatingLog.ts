@@ -38,9 +38,12 @@ function resolveRotatingLogOptions(options: RotatingLogOptions = {}) {
 function createHistoryFilePath(filePath: string, now: Date) {
   const directory = path.dirname(filePath);
   const historyDirectory = path.join(directory, 'history');
-  const parsed = path.parse(filePath);
+  const logPathParts = path.parse(filePath);
   const timestamp = now.toISOString().replace(/[:.]/g, '-');
-  return path.join(historyDirectory, `${parsed.name}.${timestamp}${parsed.ext || '.log'}`);
+  return path.join(
+    historyDirectory,
+    `${logPathParts.name}.${timestamp}${logPathParts.ext || '.log'}`,
+  );
 }
 
 function pruneHistory(filePath: string, maxHistoryFiles: number) {
@@ -50,15 +53,17 @@ function pruneHistory(filePath: string, maxHistoryFiles: number) {
   const historyDirectory = path.join(directory, 'history');
   if (!existsSync(historyDirectory)) return;
 
-  const parsed = path.parse(filePath);
+  const logPathParts = path.parse(filePath);
   const historyFiles = readdirSync(historyDirectory)
-    .filter((name) => name.startsWith(`${parsed.name}.`))
-    .map((name) => {
+    .flatMap((name) => {
+      if (!name.startsWith(`${logPathParts.name}.`)) return [];
       const fullPath = path.join(historyDirectory, name);
-      return {
-        path: fullPath,
-        mtimeMs: statSync(fullPath).mtimeMs,
-      };
+      return [
+        {
+          path: fullPath,
+          mtimeMs: statSync(fullPath).mtimeMs,
+        },
+      ];
     })
     .sort((a, b) => b.mtimeMs - a.mtimeMs);
 
@@ -67,7 +72,7 @@ function pruneHistory(filePath: string, maxHistoryFiles: number) {
   }
 }
 
-export function rotateLogIfNeeded(filePath: string, options: RotatingLogOptions = {}) {
+function rotateLogIfNeeded(filePath: string, options: RotatingLogOptions = {}) {
   const resolved = resolveRotatingLogOptions(options);
   if (!existsSync(filePath)) return false;
   const size = statSync(filePath).size;

@@ -93,7 +93,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
   onCloseRef.current = onClose;
 
   const latestJobs = useMemo(
-    () => [...studioJobs].sort((a, b) => getJobTime(b) - getJobTime(a)).slice(0, 6),
+    () => studioJobs.toSorted((a, b) => getJobTime(b) - getJobTime(a)).slice(0, 6),
     [studioJobs],
   );
   const activeCount = latestJobs.filter((job) => RUNNING_STATUSES.has(job.status)).length;
@@ -147,10 +147,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
         onClick={onClose}
       />
 
-      <section
-        className="absolute inset-x-3 bottom-3 top-3 mx-auto flex max-w-5xl overflow-hidden rounded-[28px] border border-white/10 bg-zinc-950/96 shadow-[0_40px_160px_rgba(0,0,0,0.7)] sm:inset-x-6 sm:bottom-6 sm:top-6"
-        onClick={(event) => event.stopPropagation()}
-      >
+      <section className="absolute inset-x-3 bottom-3 top-3 mx-auto flex max-w-5xl overflow-hidden rounded-[28px] border border-white/10 bg-zinc-950/96 shadow-[0_40px_160px_rgba(0,0,0,0.7)] sm:inset-x-6 sm:bottom-6 sm:top-6">
         <div className="flex min-w-0 flex-1 flex-col">
           <header className="flex items-center justify-between border-b border-white/8 px-5 py-4 sm:px-6">
             <div className="flex min-w-0 items-center gap-3">
@@ -220,13 +217,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                 })}
               </div>
 
-              <form
-                className="border-t border-white/8 p-4 sm:p-5"
-                onSubmit={(event) => {
-                  event.preventDefault();
-                  submit();
-                }}
-              >
+              <div className="border-t border-white/8 p-4 sm:p-5">
                 <div className="flex min-h-14 items-end gap-2 rounded-2xl border border-white/10 bg-black/30 p-2">
                   <textarea
                     ref={textareaRef}
@@ -244,7 +235,8 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                     className="custom-scrollbar max-h-40 min-h-10 flex-1 resize-none bg-transparent px-2 py-2 text-sm leading-6 text-zinc-100 outline-none placeholder:text-zinc-700"
                   />
                   <button
-                    type="submit"
+                    type="button"
+                    onClick={submit}
                     disabled={!prompt.trim()}
                     className="grid size-11 shrink-0 place-items-center rounded-2xl border border-accent-500/20 bg-accent-600 text-white transition-colors hover:bg-accent-500 disabled:cursor-not-allowed disabled:border-white/10 disabled:bg-white/5 disabled:text-zinc-600"
                     aria-label="Send generation prompt"
@@ -256,7 +248,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                     )}
                   </button>
                 </div>
-              </form>
+              </div>
             </main>
 
             <aside className="hidden min-h-0 flex-col border-l border-white/8 bg-black/20 xl:flex">
