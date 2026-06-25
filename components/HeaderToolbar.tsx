@@ -59,6 +59,7 @@ const RECIPE_DATA: Record<Exclude<RecipeId, null>, { name: string }> = {
   remaster: { name: 'Remaster' },
   spritesheet: { name: 'Sprite Sheet' },
   cinematic: { name: 'Cinematic' },
+  'character-lab': { name: 'Character Lab' },
   character: { name: 'Character' },
   styles: { name: 'Styles' },
   camera: { name: 'Camera' },

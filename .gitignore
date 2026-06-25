@@ -35,6 +35,7 @@ apps/studio-ui/dist
 # Local artifacts / scratch outputs
 artifacts/
 !artifacts/.gitkeep
+port-this/
 
 # Project-specific generated style data
 components/recipes/styles/defaults/.locks/

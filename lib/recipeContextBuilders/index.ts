@@ -1,4 +1,5 @@
 import { cameraRecipeContextBuilder } from './camera';
+import { characterLabRecipeContextBuilder } from './characterLab';
 import { characterRecipeContextBuilder } from './character';
 import { cinematicRecipeContextBuilder } from './cinematic';
 import { remasterRecipeContextBuilder } from './remaster';
@@ -9,6 +10,7 @@ import type { RecipeContextBuilder, RegisteredRecipeId } from './shared';
 
 export const RECIPE_CONTEXT_BUILDERS = {
   camera: cameraRecipeContextBuilder,
+  'character-lab': characterLabRecipeContextBuilder,
   character: characterRecipeContextBuilder,
   cinematic: cinematicRecipeContextBuilder,
   remaster: remasterRecipeContextBuilder,

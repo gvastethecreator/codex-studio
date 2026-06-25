@@ -100,6 +100,44 @@ describe('localGenerationRun', () => {
     ]);
   });
 
+  it('preserves Character Lab source and reference roles for backend task assets', async () => {
+    const assets = await buildJobAssets({
+      config: {
+        ...DEFAULT_GENERATION_CONFIG,
+        recipeId: 'character-lab',
+        attachments: [
+          {
+            id: 'source',
+            name: 'source.png',
+            dataUrl: 'data:image/png;base64,SOURCE',
+            strength: 0.8,
+          },
+          {
+            id: 'ref-1',
+            name: 'style.png',
+            dataUrl: 'data:image/png;base64,REF',
+            strength: 0.35,
+          },
+        ],
+      },
+    });
+
+    expect(assets).toEqual([
+      {
+        role: 'input',
+        name: 'source.png',
+        dataUrl: 'data:image/png;base64,SOURCE',
+        strength: 0.8,
+      },
+      {
+        role: 'reference',
+        name: 'style.png',
+        dataUrl: 'data:image/png;base64,REF',
+        strength: 0.35,
+      },
+    ]);
+  });
+
   it('keeps edit-mode assets scoped to input image plus mask attachments', async () => {
     const assets = await buildJobAssets({
       config: {

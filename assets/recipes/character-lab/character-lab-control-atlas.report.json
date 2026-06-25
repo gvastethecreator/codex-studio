@@ -1,0 +1,6541 @@
+{
+  "ok": true,
+  "tool": "sprite-atlas-builder + scripts/build-character-lab-icon-assets.ts",
+  "artDirection": "neutral-mannequin-v1-color-accent-props",
+  "errors": [],
+  "atlas": {
+    "path": "assets/recipes/character-lab/character-lab-control-atlas.png",
+    "size": [2048, 2304],
+    "sha256": "a10347718291477aa1c64673f58b6d05ae965469cfeaf1b113cdff19324e622f"
+  },
+  "manifest": "assets/recipes/character-lab/character-lab-control-atlas.manifest.json",
+  "source": "assets/recipes/character-lab/character-lab-control-atlas.source.json",
+  "qa": {
+    "runDir": ".tmp/character-lab/mannequin-v1-atlas-run",
+    "allContact": ".tmp/character-lab/mannequin-v1-atlas-run/qa/all-contact.png",
+    "runtimeAtlas": "assets/recipes/character-lab/character-lab-control-atlas.png"
+  },
+  "compose": {
+    "ok": true,
+    "engine": "component-row",
+    "curation_applied": false,
+    "errors": [],
+    "atlas": "sprite-sheet-alpha.png",
+    "manifest": "manifest.json",
+    "cell": {
+      "width": 128,
+      "height": 128
+    },
+    "states": [
+      "row_00",
+      "row_01",
+      "row_02",
+      "row_03",
+      "row_04",
+      "row_05",
+      "row_06",
+      "row_07",
+      "row_08",
+      "row_09",
+      "row_10",
+      "row_11",
+      "row_12",
+      "row_13",
+      "row_14",
+      "row_15",
+      "row_16",
+      "row_17"
+    ],
+    "cells": [
+      {
+        "state": "row_00",
+        "frame": 0,
+        "id": "poses:front",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 1,
+        "id": "poses:back",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 2,
+        "id": "poses:left",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 3,
+        "id": "poses:right",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 4,
+        "id": "poses:three_quarter",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 5,
+        "id": "poses:expressions",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 6,
+        "id": "poses:closeup_portrait",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 7,
+        "id": "poses:action_running",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 8,
+        "id": "poses:action_jumping",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 9,
+        "id": "poses:action_fighting",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 10,
+        "id": "poses:action_sneaking",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 11,
+        "id": "poses:action_spellcasting",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 12,
+        "id": "poses:victory_pose",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 13,
+        "id": "poses:defeated_pose",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 14,
+        "id": "poses:dodging",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_00",
+        "frame": 15,
+        "id": "poses:blocking",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 0,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 0,
+        "id": "poses:throwing",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 1,
+        "id": "poses:cheering",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 2,
+        "id": "poses:thinking",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 3,
+        "id": "poses:reaction_scared",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 4,
+        "id": "poses:reaction_confused",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 5,
+        "id": "poses:yawning",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 6,
+        "id": "poses:smirking",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 7,
+        "id": "poses:facepalm",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 8,
+        "id": "poses:pointing",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 9,
+        "id": "poses:interaction_waving",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 10,
+        "id": "poses:interaction_device",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 11,
+        "id": "poses:holding_sign",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 12,
+        "id": "poses:shrugging",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 13,
+        "id": "poses:reading_book",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 14,
+        "id": "poses:drinking_mug",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_01",
+        "frame": 15,
+        "id": "poses:couples_holding_hands",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 128,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 0,
+        "id": "poses:couples_back_to_back",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 1,
+        "id": "poses:couples_embrace",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 2,
+        "id": "poses:couples_fighting",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 3,
+        "id": "poses:couples_dancing",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 4,
+        "id": "poses:couples_selfie",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 5,
+        "id": "poses:group_pose",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 6,
+        "id": "poses:carrying",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 7,
+        "id": "special:isometric_sheet",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 8,
+        "id": "special:turnaround_sheet",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 9,
+        "id": "special:dynamic_sheet",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 10,
+        "id": "special:sheet_with_items",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 11,
+        "id": "special:anatomy_sheet",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 12,
+        "id": "special:disassemble_sheet",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 13,
+        "id": "special:wireframe_sheet",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 14,
+        "id": "special:skeleton_sheet",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_02",
+        "frame": 15,
+        "id": "special:sticker_sheet",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 256,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 0,
+        "id": "special:pixel_art_portrait",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 1,
+        "id": "special:vga_box_art",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 2,
+        "id": "special:tarot_card",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 3,
+        "id": "special:plastic_toy",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 4,
+        "id": "special:collectible_figurine",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 5,
+        "id": "special:bronze_sculpture",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 6,
+        "id": "special:marble_sculpture",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 7,
+        "id": "special:videogame_screenshot",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 8,
+        "id": "special:rpg_card",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 9,
+        "id": "special:transform_child",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 10,
+        "id": "special:transform_teen",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 11,
+        "id": "special:transform_young_adult",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 12,
+        "id": "special:transform_elder",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 13,
+        "id": "special:transform_evil",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 14,
+        "id": "special:transform_holy",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_03",
+        "frame": 15,
+        "id": "special:transform_gender_swap",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 384,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 0,
+        "id": "special:transform_cybernetic",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 1,
+        "id": "special:transform_apocalyptic",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 2,
+        "id": "special:transform_antagonist",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 3,
+        "id": "special:transform_hologram",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 4,
+        "id": "special:transform_crystal",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 5,
+        "id": "special:transform_fire",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 6,
+        "id": "special:transform_nature",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 7,
+        "id": "special:transform_constellation",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 8,
+        "id": "special:weapon_sheet",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 9,
+        "id": "special:outfit_variations",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 10,
+        "id": "special:vehicle_mount_sheet",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 11,
+        "id": "special:home_base_art",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 12,
+        "id": "special:asset_food",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 13,
+        "id": "special:asset_possessions",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 14,
+        "id": "special:asset_inventory",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_04",
+        "frame": 15,
+        "id": "special:asset_powers",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 512,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 0,
+        "id": "spritesheets:walk",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 1,
+        "id": "spritesheets:run",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 2,
+        "id": "spritesheets:jump",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 3,
+        "id": "spritesheets:dash",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 4,
+        "id": "spritesheets:slide",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 5,
+        "id": "spritesheets:dodge_roll",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 6,
+        "id": "spritesheets:swimming",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 7,
+        "id": "spritesheets:crawling",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 8,
+        "id": "spritesheets:climbing",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 9,
+        "id": "spritesheets:levitate_hover",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 10,
+        "id": "spritesheets:melee_attack",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 11,
+        "id": "spritesheets:ranged_attack",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 12,
+        "id": "spritesheets:magic_spell",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 13,
+        "id": "spritesheets:charge_attack",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 14,
+        "id": "spritesheets:special_attack",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_05",
+        "frame": 15,
+        "id": "spritesheets:block",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 640,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 0,
+        "id": "spritesheets:parry",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 1,
+        "id": "spritesheets:item_use",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 2,
+        "id": "spritesheets:throwing",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 3,
+        "id": "spritesheets:interact",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 4,
+        "id": "spritesheets:idle",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 5,
+        "id": "spritesheets:hurt_animation",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 6,
+        "id": "spritesheets:dizzy_stunned",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 7,
+        "id": "spritesheets:death_animation",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 8,
+        "id": "spritesheets:get_up",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 9,
+        "id": "spritesheets:power_up_aura",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 10,
+        "id": "spritesheets:celebrate_victory",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 11,
+        "id": "spritesheets:sleeping",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 12,
+        "id": "spritesheets:teleport_in",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 13,
+        "id": "spritesheets:crouch",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 14,
+        "id": "spritesheets:shocked",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_06",
+        "frame": 15,
+        "id": "spritesheets:tired",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 768,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 0,
+        "id": "spritesheets:alert",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 1,
+        "id": "spritesheets:emote_wave",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 2,
+        "id": "spritesheets:energetic_greeting",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 3,
+        "id": "spritesheets:emote_laugh",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 4,
+        "id": "spritesheets:dance_loop",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 5,
+        "id": "spritesheets:thumbs_up",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 6,
+        "id": "spritesheets:bow",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 7,
+        "id": "spritesheets:emote_taunt",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 8,
+        "id": "spritesheets:emote_nod",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 9,
+        "id": "spritesheets:emote_shake_head",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 10,
+        "id": "spritesheets:emote_cry",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 11,
+        "id": "spritesheets:shrug",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 12,
+        "id": "spritesheets:facepalm",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 13,
+        "id": "spritesheets:point",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 14,
+        "id": "spritesheets:clap",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_07",
+        "frame": 15,
+        "id": "spritesheets:salute",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 896,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 0,
+        "id": "scenes:char_home",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 1,
+        "id": "scenes:char_workplace",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 2,
+        "id": "scenes:char_yard",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 3,
+        "id": "scenes:char_room",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 4,
+        "id": "scenes:char_hobby_space",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 5,
+        "id": "scenes:char_kitchen",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 6,
+        "id": "scenes:char_trophy_room",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 7,
+        "id": "scenes:char_favorite_spot",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 8,
+        "id": "scenes:char_vehicle",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 9,
+        "id": "scenes:char_neighborhood",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 10,
+        "id": "scenes:forest",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 11,
+        "id": "scenes:tavern",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 12,
+        "id": "scenes:dragon_lair",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 13,
+        "id": "scenes:ancient_temple",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 14,
+        "id": "scenes:library",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_08",
+        "frame": 15,
+        "id": "scenes:steampunk_workshop",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 1024,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 0,
+        "id": "scenes:clockwork_city",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 1,
+        "id": "scenes:crystalline_caverns",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 2,
+        "id": "scenes:haunted_mansion",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 3,
+        "id": "scenes:marketplace",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 4,
+        "id": "scenes:gladiator_arena",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 5,
+        "id": "scenes:elemental_plane",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 6,
+        "id": "scenes:throne_room",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 7,
+        "id": "scenes:alchemist_lab",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 8,
+        "id": "scenes:world_tree",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 9,
+        "id": "scenes:dwarven_forge",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 10,
+        "id": "scenes:elven_city",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 11,
+        "id": "scenes:gothic_cathedral",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 12,
+        "id": "scenes:wizard_tower_observatory",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 13,
+        "id": "scenes:undead_crypt",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 14,
+        "id": "scenes:cyberpunk",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_09",
+        "frame": 15,
+        "id": "scenes:space_station",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 1152,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 0,
+        "id": "scenes:hightech_lab",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 1,
+        "id": "scenes:post_apoc",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 2,
+        "id": "scenes:alien_planet",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 3,
+        "id": "scenes:volcanic_wasteland",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 4,
+        "id": "scenes:dystopian_megastructure",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 5,
+        "id": "scenes:spaceship_bridge",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 6,
+        "id": "scenes:hangar_bay",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 7,
+        "id": "scenes:cryo_chamber",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 8,
+        "id": "scenes:biopunk_lab",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 9,
+        "id": "scenes:generation_ship_arboretum",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 10,
+        "id": "scenes:asteroid_mine",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 11,
+        "id": "scenes:solarpunk_city",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 12,
+        "id": "scenes:mecha_cockpit",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 13,
+        "id": "scenes:terraforming_site",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 14,
+        "id": "scenes:noir_street",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_10",
+        "frame": 15,
+        "id": "scenes:urban_rooftop",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 1280,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 0,
+        "id": "scenes:coffee_shop",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 1,
+        "id": "scenes:retro_arcade",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 2,
+        "id": "scenes:art_museum",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 3,
+        "id": "scenes:rooftop_garden",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 4,
+        "id": "scenes:subway_platform",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 5,
+        "id": "scenes:public_library",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 6,
+        "id": "scenes:city_intersection",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 7,
+        "id": "scenes:airport_terminal",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 8,
+        "id": "scenes:shopping_mall",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 9,
+        "id": "scenes:amusement_park",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 10,
+        "id": "scenes:university_campus",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 11,
+        "id": "scenes:skate_park",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 12,
+        "id": "scenes:concert_stage",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 13,
+        "id": "scenes:abandoned_warehouse",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 14,
+        "id": "scenes:neon_diner",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_11",
+        "frame": 15,
+        "id": "scenes:botanical_garden_conservatory",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 1408,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 0,
+        "id": "scenes:recording_studio",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 1,
+        "id": "scenes:skyscraper_lounge",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 2,
+        "id": "scenes:mountain",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 3,
+        "id": "scenes:sky_island",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 4,
+        "id": "scenes:underwater_reef",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 5,
+        "id": "scenes:monastery_courtyard",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 6,
+        "id": "scenes:zen_garden",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 7,
+        "id": "scenes:giant_mushroom_forest",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 8,
+        "id": "scenes:desert_oasis",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 9,
+        "id": "scenes:aurora_borealis",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 10,
+        "id": "scenes:petrified_forest",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 11,
+        "id": "scenes:bioluminescent_beach",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 12,
+        "id": "scenes:dreamscape",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 13,
+        "id": "scenes:sea_of_clouds",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 14,
+        "id": "scenes:inside_geode",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_12",
+        "frame": 15,
+        "id": "scenes:forgotten_god_statue",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 1536,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 0,
+        "id": "effects:zoom_out_fill",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 1,
+        "id": "effects:extreme_zoom_out",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 2,
+        "id": "effects:cosmic_zoom_out",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 3,
+        "id": "effects:low_angle",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 4,
+        "id": "effects:high_angle",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 5,
+        "id": "effects:birds_eye",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 6,
+        "id": "effects:dutch_angle",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 7,
+        "id": "effects:fisheye",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 8,
+        "id": "effects:pov",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 9,
+        "id": "effects:third_person",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 10,
+        "id": "effects:over_shoulder",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 11,
+        "id": "effects:cinematic_wide",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 12,
+        "id": "effects:closeup_action",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 13,
+        "id": "effects:aerial_tracking",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 14,
+        "id": "effects:isometric",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_13",
+        "frame": 15,
+        "id": "effects:top_down",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 1664,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 0,
+        "id": "effects:day_sunrise",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 1,
+        "id": "effects:day_midday",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 2,
+        "id": "effects:day_golden_hour",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 3,
+        "id": "effects:day_night",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 4,
+        "id": "effects:weather_overcast",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 5,
+        "id": "effects:weather_rainy",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 6,
+        "id": "effects:weather_foggy",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 7,
+        "id": "effects:weather_stormy",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 8,
+        "id": "effects:quality_phone",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 9,
+        "id": "effects:quality_digicam",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 10,
+        "id": "effects:quality_analog",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 11,
+        "id": "effects:quality_professional",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 12,
+        "id": "effects:quality_polaroid",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 13,
+        "id": "effects:quality_vhs",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 14,
+        "id": "effects:quality_infrared",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_14",
+        "frame": 15,
+        "id": "effects:quality_daguerreotype",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 1792,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 0,
+        "id": "effects:bg_remove",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 1,
+        "id": "effects:bg_explosive",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 2,
+        "id": "effects:bg_gradient",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 3,
+        "id": "effects:bg_blur",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 4,
+        "id": "effects:bg_grid",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 5,
+        "id": "effects:bg_pattern",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 6,
+        "id": "motion:motion_idle",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 7,
+        "id": "motion:motion_walk",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 8,
+        "id": "motion:motion_run",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 9,
+        "id": "motion:motion_turn",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 10,
+        "id": "motion:motion_attack",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 11,
+        "id": "motion:motion_spell",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 12,
+        "id": "motion:motion_block",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 13,
+        "id": "motion:motion_laugh",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 14,
+        "id": "profile:basic-info",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_15",
+        "frame": 15,
+        "id": "profile:live-interview",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 1920,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 0,
+        "id": "profile:style-analysis",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 1,
+        "id": "profile:equipment",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 2,
+        "id": "profile:story-hooks",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 3,
+        "id": "profile:attributes",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 4,
+        "id": "profile:dialogue",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 5,
+        "id": "control:source",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 6,
+        "id": "control:reference",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 7,
+        "id": "control:browse-all",
+        "nontransparent_pixels": 16384,
+        "x": 896,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 8,
+        "id": "control:search",
+        "nontransparent_pixels": 16384,
+        "x": 1024,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 9,
+        "id": "control:favorite",
+        "nontransparent_pixels": 16384,
+        "x": 1152,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 10,
+        "id": "control:recent",
+        "nontransparent_pixels": 16384,
+        "x": 1280,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 11,
+        "id": "control:prompt-preview",
+        "nontransparent_pixels": 16384,
+        "x": 1408,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 12,
+        "id": "control:batch",
+        "nontransparent_pixels": 16384,
+        "x": 1536,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 13,
+        "id": "control:generate",
+        "nontransparent_pixels": 16384,
+        "x": 1664,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 14,
+        "id": "control:use-as-source",
+        "nontransparent_pixels": 16384,
+        "x": 1792,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_16",
+        "frame": 15,
+        "id": "control:download",
+        "nontransparent_pixels": 16384,
+        "x": 1920,
+        "y": 2048,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_17",
+        "frame": 0,
+        "id": "control:export",
+        "nontransparent_pixels": 16384,
+        "x": 0,
+        "y": 2176,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_17",
+        "frame": 1,
+        "id": "control:notes",
+        "nontransparent_pixels": 16384,
+        "x": 128,
+        "y": 2176,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_17",
+        "frame": 2,
+        "id": "control:history",
+        "nontransparent_pixels": 16384,
+        "x": 256,
+        "y": 2176,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_17",
+        "frame": 3,
+        "id": "control:motion-preflight",
+        "nontransparent_pixels": 16384,
+        "x": 384,
+        "y": 2176,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_17",
+        "frame": 4,
+        "id": "control:profile-preflight",
+        "nontransparent_pixels": 16384,
+        "x": 512,
+        "y": 2176,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_17",
+        "frame": 5,
+        "id": "control:live-preflight",
+        "nontransparent_pixels": 16384,
+        "x": 640,
+        "y": 2176,
+        "w": 128,
+        "h": 128
+      },
+      {
+        "state": "row_17",
+        "frame": 6,
+        "id": "control:clear",
+        "nontransparent_pixels": 16384,
+        "x": 768,
+        "y": 2176,
+        "w": 128,
+        "h": 128
+      }
+    ],
+    "frame_layout": {
+      "sheetWidth": 512,
+      "sheetHeight": 576,
+      "cellWidth": 32,
+      "cellHeight": 32,
+      "rows": {
+        "row_00": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_01": [
+          {
+            "x": 0,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_02": [
+          {
+            "x": 0,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_03": [
+          {
+            "x": 0,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_04": [
+          {
+            "x": 0,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_05": [
+          {
+            "x": 0,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_06": [
+          {
+            "x": 0,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_07": [
+          {
+            "x": 0,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_08": [
+          {
+            "x": 0,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_09": [
+          {
+            "x": 0,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_10": [
+          {
+            "x": 0,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_11": [
+          {
+            "x": 0,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_12": [
+          {
+            "x": 0,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_13": [
+          {
+            "x": 0,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_14": [
+          {
+            "x": 0,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_15": [
+          {
+            "x": 0,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_16": [
+          {
+            "x": 0,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_17": [
+          {
+            "x": 0,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          }
+        ]
+      }
+    },
+    "contentFit": {
+      "visibleThreshold": 8,
+      "contentBox": 112
+    }
+  },
+  "composeManifest": {
+    "characterId": "character-lab-icons-mannequin-v1",
+    "engine": "component-row",
+    "game_input": "sprite-sheet-alpha.png",
+    "degraded_static_fallback": false,
+    "curation_applied": false,
+    "sprite_sheet_alpha": "sprite-sheet-alpha.png",
+    "sprite_sheet_alpha_report": "sprite-sheet-alpha.report.json",
+    "base_image": null,
+    "cell": {
+      "width": 32,
+      "height": 32
+    },
+    "chroma_key": null,
+    "animation": {
+      "cellWidth": 32,
+      "cellHeight": 32,
+      "columns": 16,
+      "rows": {
+        "row_00": {
+          "row": 0,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_01": {
+          "row": 1,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_02": {
+          "row": 2,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_03": {
+          "row": 3,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_04": {
+          "row": 4,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_05": {
+          "row": 5,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_06": {
+          "row": 6,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_07": {
+          "row": 7,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_08": {
+          "row": 8,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_09": {
+          "row": 9,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_10": {
+          "row": 10,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_11": {
+          "row": 11,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_12": {
+          "row": 12,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_13": {
+          "row": 13,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_14": {
+          "row": 14,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_15": {
+          "row": 15,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_16": {
+          "row": 16,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        },
+        "row_17": {
+          "row": 17,
+          "frames": 16,
+          "fps": 1,
+          "loop": false
+        }
+      }
+    },
+    "frame_layout": {
+      "sheetWidth": 512,
+      "sheetHeight": 576,
+      "cellWidth": 32,
+      "cellHeight": 32,
+      "rows": {
+        "row_00": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 0,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_01": [
+          {
+            "x": 0,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 32,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_02": [
+          {
+            "x": 0,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 64,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_03": [
+          {
+            "x": 0,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 96,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_04": [
+          {
+            "x": 0,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 128,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_05": [
+          {
+            "x": 0,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 160,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_06": [
+          {
+            "x": 0,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 192,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_07": [
+          {
+            "x": 0,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 224,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_08": [
+          {
+            "x": 0,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 256,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_09": [
+          {
+            "x": 0,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 288,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_10": [
+          {
+            "x": 0,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 320,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_11": [
+          {
+            "x": 0,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 352,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_12": [
+          {
+            "x": 0,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 384,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_13": [
+          {
+            "x": 0,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 416,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_14": [
+          {
+            "x": 0,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 448,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_15": [
+          {
+            "x": 0,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 480,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_16": [
+          {
+            "x": 0,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 512,
+            "w": 32,
+            "h": 32
+          }
+        ],
+        "row_17": [
+          {
+            "x": 0,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 32,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 64,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 96,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 128,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 160,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 192,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 224,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 256,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 288,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 320,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 352,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 384,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 416,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 448,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "x": 480,
+            "y": 544,
+            "w": 32,
+            "h": 32
+          }
+        ]
+      }
+    },
+    "preset": "custom-asset-atlas",
+    "output": {
+      "columns": 16,
+      "rows": 18,
+      "cellSize": 32
+    },
+    "asset_kind": "asset",
+    "extraction_mode": "slots"
+  },
+  "assetQa": {
+    "file": "assets/recipes/character-lab/character-lab-icon-assets.qa.json",
+    "ok": true,
+    "sourceSheets512": 18,
+    "sourceSlots": 288,
+    "runtimeFrames": 279,
+    "centerStats": {
+      "maxOffset": 21.5,
+      "p95Offset": 12.5,
+      "minCoverage": 0.1276,
+      "medianCoverage": 0.6262
+    }
+  }
+}

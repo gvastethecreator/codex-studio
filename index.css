@@ -66,6 +66,11 @@ react-scan-overlay,
     --panel-translate-y: 100px;
     --panel-blur: 2px;
     --panel-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --dropdown-open-dur: 250ms;
+    --dropdown-close-dur: 150ms;
+    --dropdown-pre-scale: 0.97;
+    --dropdown-closing-scale: 0.99;
+    --dropdown-ease: cubic-bezier(0.22, 1, 0.36, 1);
 
     --accent-50: 250 250 250;
     --accent-100: 245 245 245;
@@ -113,6 +118,15 @@ react-scan-overlay,
     transition-property: color, background-color, opacity, transform, border-color;
     transition-timing-function: var(--ease-in-out-smooth);
     transition-duration: 200ms;
+  }
+
+  button:not(:disabled),
+  [role='button'] {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
   }
 }
 
@@ -197,6 +211,97 @@ react-scan-overlay,
       filter var(--panel-open-dur) var(--panel-ease);
   }
 
+  .t-dropdown {
+    transform: scale(var(--dropdown-pre-scale)) translateY(-4px);
+    transform-origin: top right;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      transform var(--dropdown-open-dur) var(--dropdown-ease),
+      opacity var(--dropdown-open-dur) var(--dropdown-ease);
+    will-change: transform, opacity;
+  }
+  .t-dropdown[data-origin='top-left'] {
+    transform-origin: top left;
+  }
+  .t-dropdown[data-origin='top-center'] {
+    transform-origin: top center;
+  }
+  .t-dropdown[data-open='true'] {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .t-dropdown[data-closing='true'] {
+    transform: scale(var(--dropdown-closing-scale)) translateY(-2px);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      transform var(--dropdown-close-dur) var(--dropdown-ease),
+      opacity var(--dropdown-close-dur) var(--dropdown-ease);
+  }
+
+  .character-lab-panel {
+    animation: character-lab-panel-enter 320ms var(--dropdown-ease) both;
+  }
+  .character-lab-panel[data-panel='main'] {
+    animation-delay: 40ms;
+  }
+  .character-lab-panel[data-panel='right'] {
+    animation-delay: 80ms;
+  }
+  .character-lab-action-card {
+    transform-origin: center;
+  }
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']) {
+    cursor: pointer;
+  }
+  .character-lab-action-card:active:not(:disabled),
+  .character-lab-control-card:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+  .character-lab-preview-option {
+    transform-origin: center;
+    animation: character-lab-option-card-enter 360ms var(--dropdown-ease) both;
+  }
+  .character-lab-preview-option:nth-child(2) {
+    animation-delay: 35ms;
+  }
+  .character-lab-preview-option:nth-child(3) {
+    animation-delay: 70ms;
+  }
+  .character-lab-preview-option:nth-child(4) {
+    animation-delay: 105ms;
+  }
+  .character-lab-preview-option:nth-child(5) {
+    animation-delay: 140ms;
+  }
+
+  @keyframes character-lab-panel-enter {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+      filter: blur(2px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes character-lab-option-card-enter {
+    from {
+      opacity: 0;
+      transform: translateY(8px) scale(0.985);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
   [data-ui-chrome-suppressed='true'] .recipe-module-bottom-dock {
     opacity: 0;
     transform: translateY(16px);
@@ -216,7 +321,11 @@ react-scan-overlay,
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .t-panel-slide {
+    .t-panel-slide,
+    .t-dropdown,
+    .character-lab-panel,
+    .character-lab-preview-option {
+      animation: none !important;
       transition: none !important;
     }
   }

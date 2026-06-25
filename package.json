@@ -25,6 +25,8 @@
     "dev:electron": "bun run scripts/dev-electron.ts",
     "studio:init": "bun run scripts/studio-init.ts",
     "assets:migrate:webp": "bun run scripts/migrate-image-assets-to-webp.ts",
+    "assets:character-lab:icons": "bun run scripts/build-character-lab-icon-assets.ts",
+    "assets:character-lab:option-icons": "bun run scripts/build-character-lab-option-icon-assets.ts",
     "styles:split": "bun run scripts/split-style-preset-manifests.ts",
     "styles:scaffold": "bun run scripts/scaffold-style-preset.ts",
     "styles:validate": "bun run scripts/validate-style-preset-manifests.ts",

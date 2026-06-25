@@ -1,0 +1,6117 @@
+{
+  "ok": true,
+  "generatedAt": "2026-06-24T03:53:17.463Z",
+  "sourceSheets": 48,
+  "sourceSheetHashes": {
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-00.png": "b6796a9db6e9ae55623d084ffe74fe284e534a423baca75d661ddd6aefb120d0",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-01.png": "d2062451509bc5f0bc324dcf2d015e8867ad12fc78d7925a17e16419d1250498",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-02.png": "8be05106733873241f9927152d4f3befe26fcc8f1a7b4043d1924fb84814152a",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-03.png": "a416ebbda6fb3976b1f664b0ddfe53dc67322b98ff29cae62470648d31f4f751",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-aspect-ratio-00.png": "e04ba191e7ee771e4a77e501665f333275658f59b071e23284edad9503a99c65",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-aspect-ratio-01.png": "cf6f37f74a221c494f59a1591a832aa9b207a96fc701602793fc0fcc50372d23",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-aspect-ratio-02.png": "885b9f5cd972a8e954fe1a954599d0f07939609860188e6df4e99c9b12f760db",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-00.png": "059fc9cfca1fbf086673e3941d5576c1f8b54f568699b49a3785bcf4cf5bd4a0",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-01.png": "9acab8cfc6680ae9d7738d5f42939ab762049f63bb63c02a35a82f3148df0180",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-02.png": "5a5a8e6c96282d44d7a0eb723a1625e3da793841d98f332cc3d8b4a9ec011931",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-03.png": "61cd6e9b0a6823da0f57702795c811ca0602e33a162211ce061ab24af6b75212",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-04.png": "2968efaea332dc93ae864c9b8cb7b20dd209e45dfaf856ad2b4cf643424be205",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-05.png": "923e27675014f888ec06982aa5dd91e67bd04714bfbe2ea87f42d4503db36518",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-06.png": "73776a014268ee463caff5c75146ae42fdf71ea625a229efc35070ddaa018799",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-07.png": "c02bed9a64d23c25d3f2237d46f71754b0c552a7ed6f916f33cacef6b15598d3",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-08.png": "7929e99ed7eec5c61601804fcd82bdf571046e9d20aba388e67ba5b80c980943",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-09.png": "7b0a04a37de23def1410a2275d157196d4e7561c392178a025f5944431955584",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-10.png": "faf49cb619919f7cc7c0721a11c46f1fdab5f59b08f1367e0e8b43e80e0481da",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-11.png": "a4dc37818f8f5e56fbf343cf8f7b5734a60e4dc13b501920570f15b4def159b3",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-00.png": "e823ebab3c1b07e28ee8411cc5d236ec42204375a45abf043c1cc41a56850a39",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-01.png": "c00a383ff6f217e746547db9b2a1c60a61d5e430a4f35f931b0cc8cc2f8cced4",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-02.png": "a1c62bc4cf0e1248d75455559648415090e17633df64eb15c645d491956c83a9",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-03.png": "805be3314927f88530b9ef27e87b69034fc04cac428f2ccb9bf1036cbefdf8bc",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-04.png": "6da3f0d0b374f55dc0e3263925d3f90dd34265cda2f6b326c3e1653ee80dd3bf",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-05.png": "1609fcac442d774dfb418b2d9fff1024e351ae4147724d841e831b3c30fcaf51",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-06.png": "4efe9b022f5fd5035c54974eed3245150262122ef945f08ebea7b5db54c6e4fa",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-07.png": "9859b897015905a6b03091d804b80a5df532b933dc81b299e0fb7086f0befead",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-08.png": "2e9a404d5f606ab596942b1478b3e28cc3e20ed6ea8a21f7501d4e404448a004",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-09.png": "cd97a23768ab48d4902fc2d29fdde963bc78132aa7697020d13951e95fe93026",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-10.png": "1cbc83f22f304acff4a89bd3d780a6a4e3911a9d6f62ba7e3a53a73665139af4",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-11.png": "9f75769c2e2ec734f8ea0d3ac700ecfb5ba9118fe74019564c9ffd3915d5fe80",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-12.png": "fd496ebc6506d6a53156fa625fb1f67e516952ed9400f70a5664773d6a92dff3",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-13.png": "de86560ddadb8737df6300438aafca923a9533a27292cc87dbe6c7311228029a",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-14.png": "19260fb164a050d00dfbde890d2dc4cd7278bba098036637c146d075d031a23e",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-15.png": "0beb6eb6d4c8b3600d38d39918011db62c711a8438eb53d13d255cf1f2f990ac",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-16.png": "642c5916f15a17ab98a0eef3a258f621cf9d08a6ac9df0086e7bf9ab1f01b162",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-17.png": "6c9fefc505c5e5935c89f44af106eef9af2363a6978f58fb980150b8c079221a",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-18.png": "106fab18dcd90087076b95e9a5016a64132d2074151ae37ba900dff3166ff098",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-19.png": "30fd9a59d52c3328272c1428e72bc2d8d31bfe0353d0803592ba35d8b1943cbc",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-20.png": "af85d3e55ed01295ea974c5280df8df41389056b9e6503c89048e6830efe9957",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-21.png": "7b995580668d11db1f709f2a325a03820f2443a6b72a61ccf9491e53c84f33a9",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-22.png": "79de34ad1f7339b9769aedb4c1f3ae3169325bb189234164083087cddf76d12c",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-23.png": "3668ce517ea679f5771cdf494f72ee530e4d17b2c06f52305c8ce023a7afdd5a",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-24.png": "13fdad007cf90f6629f63999e3175e63b0a7609a97a014e3fdc14bc01be40b9a",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-25.png": "07c8756e3aa618ff170b7645d0736e0dd2776ab39241f3508a063877f129a94b",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-00.png": "30f7f499dc8c322efa5ae5f64fc7c2ba7e170d6d248af09f4e3bcd78c7a8399d",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-01.png": "df9abb7bd84c04ef5e432454c546af117061501a0531bedd9fb4bb7cb02d85d4",
+    "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-02.png": "d2c1b7779ec06427f63b0b3e37d1b6197f4667d2c4ef3a6186554333f9d18dbc"
+  },
+  "sourceFrames512": 189,
+  "runtimeFrames": 189,
+  "expectedFrames": 189,
+  "runtimeAtlas": "assets/recipes/character-lab/character-lab-option-atlas.png",
+  "runtimeAtlasSha256": "75d80cfc2fef608334cf17142027679fac655d5319c4ab1ed43e5ecce5ed05ae",
+  "missing": [],
+  "centerStats": {
+    "maxOffset": 5,
+    "p95Offset": 1,
+    "minCoverage": 0.2087,
+    "medianCoverage": 0.4036
+  },
+  "frames": {
+    "option:expression:neutral": {
+      "x": 0,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Neutral",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-00.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-neutral.png",
+      "sourceBounds": {
+        "left": 120,
+        "top": 64,
+        "right": 518,
+        "bottom": 591,
+        "width": 399,
+        "height": 528
+      },
+      "runtimeBounds": {
+        "left": 22,
+        "top": 8,
+        "right": 105,
+        "bottom": 119,
+        "width": 84,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:happy": {
+      "x": 128,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Happy",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-00.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-happy.png",
+      "sourceBounds": {
+        "left": 44,
+        "top": 70,
+        "right": 540,
+        "bottom": 594,
+        "width": 497,
+        "height": 525
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 8,
+        "right": 116,
+        "bottom": 119,
+        "width": 106,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:sad": {
+      "x": 256,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Sad",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-00.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-sad.png",
+      "sourceBounds": {
+        "left": 125,
+        "top": 55,
+        "right": 532,
+        "bottom": 567,
+        "width": 408,
+        "height": 513
+      },
+      "runtimeBounds": {
+        "left": 20,
+        "top": 8,
+        "right": 107,
+        "bottom": 119,
+        "width": 88,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:angry": {
+      "x": 384,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Angry",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-00.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-angry.png",
+      "sourceBounds": {
+        "left": 50,
+        "top": 59,
+        "right": 516,
+        "bottom": 567,
+        "width": 467,
+        "height": 509
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 8,
+        "right": 114,
+        "bottom": 119,
+        "width": 102,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:surprised": {
+      "x": 512,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Surprised",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-01.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-surprised.png",
+      "sourceBounds": {
+        "left": 109,
+        "top": 58,
+        "right": 549,
+        "bottom": 608,
+        "width": 441,
+        "height": 551
+      },
+      "runtimeBounds": {
+        "left": 20,
+        "top": 8,
+        "right": 108,
+        "bottom": 119,
+        "width": 89,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:determined": {
+      "x": 640,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Determined",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-01.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-determined.png",
+      "sourceBounds": {
+        "left": 13,
+        "top": 67,
+        "right": 494,
+        "bottom": 608,
+        "width": 482,
+        "height": 542
+      },
+      "runtimeBounds": {
+        "left": 15,
+        "top": 8,
+        "right": 113,
+        "bottom": 119,
+        "width": 99,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:annoyed": {
+      "x": 768,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Annoyed",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-01.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-annoyed.png",
+      "sourceBounds": {
+        "left": 115,
+        "top": 31,
+        "right": 563,
+        "bottom": 565,
+        "width": 449,
+        "height": 535
+      },
+      "runtimeBounds": {
+        "left": 18,
+        "top": 8,
+        "right": 110,
+        "bottom": 119,
+        "width": 93,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:confident": {
+      "x": 896,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Confident",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-01.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-confident.png",
+      "sourceBounds": {
+        "left": 31,
+        "top": 29,
+        "right": 503,
+        "bottom": 566,
+        "width": 473,
+        "height": 538
+      },
+      "runtimeBounds": {
+        "left": 15,
+        "top": 8,
+        "right": 112,
+        "bottom": 119,
+        "width": 98,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:scared": {
+      "x": 1024,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Scared",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-02.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-scared.png",
+      "sourceBounds": {
+        "left": 123,
+        "top": 67,
+        "right": 589,
+        "bottom": 593,
+        "width": 467,
+        "height": 527
+      },
+      "runtimeBounds": {
+        "left": 15,
+        "top": 8,
+        "right": 113,
+        "bottom": 119,
+        "width": 99,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:sarcastic": {
+      "x": 1152,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Sarcastic",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-02.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-sarcastic.png",
+      "sourceBounds": {
+        "left": 76,
+        "top": 52,
+        "right": 506,
+        "bottom": 616,
+        "width": 431,
+        "height": 565
+      },
+      "runtimeBounds": {
+        "left": 22,
+        "top": 8,
+        "right": 105,
+        "bottom": 119,
+        "width": 84,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:shy-timid": {
+      "x": 1280,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Shy / Timid",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-02.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-shy-timid.png",
+      "sourceBounds": {
+        "left": 163,
+        "top": 30,
+        "right": 503,
+        "bottom": 542,
+        "width": 341,
+        "height": 513
+      },
+      "runtimeBounds": {
+        "left": 28,
+        "top": 8,
+        "right": 100,
+        "bottom": 119,
+        "width": 73,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:smug": {
+      "x": 1408,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Smug",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-02.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-smug.png",
+      "sourceBounds": {
+        "left": 28,
+        "top": 33,
+        "right": 527,
+        "bottom": 565,
+        "width": 500,
+        "height": 533
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 8,
+        "right": 116,
+        "bottom": 119,
+        "width": 105,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:exhausted": {
+      "x": 1536,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Exhausted",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-03.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-exhausted.png",
+      "sourceBounds": {
+        "left": 140,
+        "top": 97,
+        "right": 541,
+        "bottom": 597,
+        "width": 402,
+        "height": 501
+      },
+      "runtimeBounds": {
+        "left": 20,
+        "top": 8,
+        "right": 108,
+        "bottom": 119,
+        "width": 89,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:joyful": {
+      "x": 1664,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Joyful",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-03.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-joyful.png",
+      "sourceBounds": {
+        "left": 13,
+        "top": 57,
+        "right": 616,
+        "bottom": 592,
+        "width": 604,
+        "height": 536
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 15,
+        "right": 119,
+        "bottom": 113,
+        "width": 112,
+        "height": 99
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:worried": {
+      "x": 1792,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Worried",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-03.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-worried.png",
+      "sourceBounds": {
+        "left": 141,
+        "top": 28,
+        "right": 528,
+        "bottom": 564,
+        "width": 388,
+        "height": 537
+      },
+      "runtimeBounds": {
+        "left": 24,
+        "top": 8,
+        "right": 103,
+        "bottom": 119,
+        "width": 80,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:expression:flirty": {
+      "x": 1920,
+      "y": 0,
+      "w": 128,
+      "h": 128,
+      "field": "expression",
+      "label": "Flirty",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-03.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-expression-flirty.png",
+      "sourceBounds": {
+        "left": 71,
+        "top": 33,
+        "right": 522,
+        "bottom": 560,
+        "width": 452,
+        "height": 528
+      },
+      "runtimeBounds": {
+        "left": 17,
+        "top": 8,
+        "right": 111,
+        "bottom": 119,
+        "width": 95,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:aspect-ratio:1-1": {
+      "x": 0,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "aspect-ratio",
+      "label": "1:1",
+      "detail": "Square",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-aspect-ratio-00.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-aspect-ratio-1-1.png",
+      "sourceBounds": {
+        "left": 105,
+        "top": 117,
+        "right": 540,
+        "bottom": 532,
+        "width": 436,
+        "height": 416
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 11,
+        "right": 119,
+        "bottom": 117,
+        "width": 112,
+        "height": 107
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:aspect-ratio:21-9": {
+      "x": 128,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "aspect-ratio",
+      "label": "21:9",
+      "detail": "Landscape",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-aspect-ratio-00.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-aspect-ratio-21-9.png",
+      "sourceBounds": {
+        "left": 4,
+        "top": 222,
+        "right": 595,
+        "bottom": 494,
+        "width": 592,
+        "height": 273
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 40,
+        "right": 119,
+        "bottom": 88,
+        "width": 112,
+        "height": 49
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:aspect-ratio:16-9": {
+      "x": 256,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "aspect-ratio",
+      "label": "16:9",
+      "detail": "Landscape",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-aspect-ratio-00.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-aspect-ratio-16-9.png",
+      "sourceBounds": {
+        "left": 45,
+        "top": 73,
+        "right": 598,
+        "bottom": 445,
+        "width": 554,
+        "height": 373
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 27,
+        "right": 119,
+        "bottom": 100,
+        "width": 112,
+        "height": 74
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:aspect-ratio:4-3": {
+      "x": 384,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "aspect-ratio",
+      "label": "4:3",
+      "detail": "Landscape",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-aspect-ratio-00.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-aspect-ratio-4-3.png",
+      "sourceBounds": {
+        "left": 75,
+        "top": 74,
+        "right": 539,
+        "bottom": 441,
+        "width": 465,
+        "height": 368
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 20,
+        "right": 119,
+        "bottom": 107,
+        "width": 112,
+        "height": 88
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:aspect-ratio:3-2": {
+      "x": 512,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "aspect-ratio",
+      "label": "3:2",
+      "detail": "Landscape",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-aspect-ratio-01.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-aspect-ratio-3-2.png",
+      "sourceBounds": {
+        "left": 83,
+        "top": 164,
+        "right": 622,
+        "bottom": 515,
+        "width": 540,
+        "height": 352
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 28,
+        "right": 119,
+        "bottom": 99,
+        "width": 112,
+        "height": 72
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:aspect-ratio:9-16": {
+      "x": 640,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "aspect-ratio",
+      "label": "9:16",
+      "detail": "Portrait",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-aspect-ratio-01.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-aspect-ratio-9-16.png",
+      "sourceBounds": {
+        "left": 146,
+        "top": 64,
+        "right": 442,
+        "bottom": 626,
+        "width": 297,
+        "height": 563
+      },
+      "runtimeBounds": {
+        "left": 36,
+        "top": 8,
+        "right": 92,
+        "bottom": 121,
+        "width": 57,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:aspect-ratio:3-4": {
+      "x": 768,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "aspect-ratio",
+      "label": "3:4",
+      "detail": "Portrait",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-aspect-ratio-01.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-aspect-ratio-3-4.png",
+      "sourceBounds": {
+        "left": 182,
+        "top": 8,
+        "right": 519,
+        "bottom": 491,
+        "width": 338,
+        "height": 484
+      },
+      "runtimeBounds": {
+        "left": 26,
+        "top": 8,
+        "right": 102,
+        "bottom": 119,
+        "width": 77,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:aspect-ratio:2-3": {
+      "x": 896,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "aspect-ratio",
+      "label": "2:3",
+      "detail": "Portrait",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-aspect-ratio-01.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-aspect-ratio-2-3.png",
+      "sourceBounds": {
+        "left": 150,
+        "top": 0,
+        "right": 439,
+        "bottom": 518,
+        "width": 290,
+        "height": 519
+      },
+      "runtimeBounds": {
+        "left": 34,
+        "top": 6,
+        "right": 94,
+        "bottom": 119,
+        "width": 61,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 168
+      }
+    },
+    "option:aspect-ratio:5-4": {
+      "x": 1024,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "aspect-ratio",
+      "label": "5:4",
+      "detail": "Flexible",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-aspect-ratio-02.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-aspect-ratio-5-4.png",
+      "sourceBounds": {
+        "left": 119,
+        "top": 137,
+        "right": 550,
+        "bottom": 533,
+        "width": 432,
+        "height": 397
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 13,
+        "right": 119,
+        "bottom": 115,
+        "width": 112,
+        "height": 103
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:aspect-ratio:4-5": {
+      "x": 1152,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "aspect-ratio",
+      "label": "4:5",
+      "detail": "Flexible",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-aspect-ratio-02.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-aspect-ratio-4-5.png",
+      "sourceBounds": {
+        "left": 122,
+        "top": 75,
+        "right": 505,
+        "bottom": 593,
+        "width": 384,
+        "height": 519
+      },
+      "runtimeBounds": {
+        "left": 23,
+        "top": 8,
+        "right": 104,
+        "bottom": 119,
+        "width": 82,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:preserve-original": {
+      "x": 1280,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Preserve Original",
+      "detail": "Keep the source image's style.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-00.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-preserve-original.png",
+      "sourceBounds": {
+        "left": 52,
+        "top": 81,
+        "right": 598,
+        "bottom": 599,
+        "width": 547,
+        "height": 519
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 11,
+        "right": 119,
+        "bottom": 116,
+        "width": 112,
+        "height": 106
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:anime-manga": {
+      "x": 1408,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Anime / Manga",
+      "detail": "Classic Japanese animation style.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-00.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-anime-manga.png",
+      "sourceBounds": {
+        "left": 91,
+        "top": 58,
+        "right": 527,
+        "bottom": 600,
+        "width": 437,
+        "height": 543
+      },
+      "runtimeBounds": {
+        "left": 20,
+        "top": 8,
+        "right": 108,
+        "bottom": 119,
+        "width": 89,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:90s-anime-cel-shaded": {
+      "x": 1536,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "90s Anime (Cel-shaded)",
+      "detail": "Hand-drawn look, hard shadows.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-00.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-90s-anime-cel-shaded.png",
+      "sourceBounds": {
+        "left": 139,
+        "top": 16,
+        "right": 596,
+        "bottom": 567,
+        "width": 458,
+        "height": 552
+      },
+      "runtimeBounds": {
+        "left": 18,
+        "top": 8,
+        "right": 109,
+        "bottom": 119,
+        "width": 92,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:modern-anime-digital": {
+      "x": 1664,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Modern Anime (Digital)",
+      "detail": "Sharp, clean, complex lighting.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-00.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-modern-anime-digital.png",
+      "sourceBounds": {
+        "left": 84,
+        "top": 19,
+        "right": 533,
+        "bottom": 571,
+        "width": 450,
+        "height": 553
+      },
+      "runtimeBounds": {
+        "left": 19,
+        "top": 8,
+        "right": 108,
+        "bottom": 119,
+        "width": 90,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:studio-ghibli-inspired": {
+      "x": 1792,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Studio Ghibli Inspired",
+      "detail": "Whimsical, soft, painterly.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-01.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-studio-ghibli-inspired.png",
+      "sourceBounds": {
+        "left": 69,
+        "top": 67,
+        "right": 603,
+        "bottom": 615,
+        "width": 535,
+        "height": 549
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 8,
+        "right": 118,
+        "bottom": 118,
+        "width": 109,
+        "height": 111
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:horror-manga-junji-ito": {
+      "x": 1920,
+      "y": 128,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Horror Manga (Junji Ito)",
+      "detail": "High-contrast, detailed, unsettling.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-01.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-horror-manga-junji-ito.png",
+      "sourceBounds": {
+        "left": 32,
+        "top": 0,
+        "right": 586,
+        "bottom": 626,
+        "width": 555,
+        "height": 627
+      },
+      "runtimeBounds": {
+        "left": 19,
+        "top": 9,
+        "right": 112,
+        "bottom": 119,
+        "width": 94,
+        "height": 111
+      },
+      "cleanup": {
+        "removedComponents": 56,
+        "removedPixels": 1374
+      }
+    },
+    "option:style:action-manga-akira-toriyama": {
+      "x": 0,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Action Manga (Akira Toriyama)",
+      "detail": "Blocky, dynamic figures, action.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-01.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-action-manga-akira-toriyama.png",
+      "sourceBounds": {
+        "left": 53,
+        "top": 18,
+        "right": 618,
+        "bottom": 594,
+        "width": 566,
+        "height": 577
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 9,
+        "right": 116,
+        "bottom": 118,
+        "width": 108,
+        "height": 110
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:seinen-manga-takehiko-inoue": {
+      "x": 128,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Seinen Manga (Takehiko Inoue)",
+      "detail": "Realistic anatomy, expressive ink.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-01.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-seinen-manga-takehiko-inoue.png",
+      "sourceBounds": {
+        "left": 43,
+        "top": 12,
+        "right": 585,
+        "bottom": 615,
+        "width": 543,
+        "height": 604
+      },
+      "runtimeBounds": {
+        "left": 14,
+        "top": 11,
+        "right": 113,
+        "bottom": 119,
+        "width": 100,
+        "height": 109
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:70s-retro-mecha-action-anime": {
+      "x": 256,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "70s Retro Mecha/Action Anime",
+      "detail": "Vintage, bold designs, film grain.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-02.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-70s-retro-mecha-action-anime.png",
+      "sourceBounds": {
+        "left": 50,
+        "top": 53,
+        "right": 613,
+        "bottom": 607,
+        "width": 564,
+        "height": 555
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 9,
+        "right": 119,
+        "bottom": 118,
+        "width": 112,
+        "height": 110
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:cartoon-toon": {
+      "x": 384,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Cartoon / Toon",
+      "detail": "Simplified shapes, bold outlines.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-02.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-cartoon-toon.png",
+      "sourceBounds": {
+        "left": 50,
+        "top": 71,
+        "right": 527,
+        "bottom": 592,
+        "width": 478,
+        "height": 522
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 8,
+        "right": 114,
+        "bottom": 119,
+        "width": 102,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:american-comic-book": {
+      "x": 512,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "American Comic Book",
+      "detail": "Dynamic poses, strong inks.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-02.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-american-comic-book.png",
+      "sourceBounds": {
+        "left": 41,
+        "top": 14,
+        "right": 626,
+        "bottom": 566,
+        "width": 586,
+        "height": 553
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 12,
+        "right": 119,
+        "bottom": 116,
+        "width": 112,
+        "height": 105
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:vintage-comic-1960s": {
+      "x": 640,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Vintage Comic (1960s)",
+      "detail": "Ben-Day dots, limited colors.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-02.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-vintage-comic-1960s.png",
+      "sourceBounds": {
+        "left": 52,
+        "top": 10,
+        "right": 542,
+        "bottom": 575,
+        "width": 491,
+        "height": 566
+      },
+      "runtimeBounds": {
+        "left": 16,
+        "top": 8,
+        "right": 112,
+        "bottom": 119,
+        "width": 97,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:graphic-novel-noir": {
+      "x": 768,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Graphic Novel / Noir",
+      "detail": "High-contrast, gritty, cinematic.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-03.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-graphic-novel-noir.png",
+      "sourceBounds": {
+        "left": 94,
+        "top": 59,
+        "right": 600,
+        "bottom": 605,
+        "width": 507,
+        "height": 547
+      },
+      "runtimeBounds": {
+        "left": 14,
+        "top": 8,
+        "right": 115,
+        "bottom": 119,
+        "width": 102,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:chibi": {
+      "x": 896,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Chibi",
+      "detail": "Cute, oversized heads, simplified bodies.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-03.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-chibi.png",
+      "sourceBounds": {
+        "left": 94,
+        "top": 61,
+        "right": 476,
+        "bottom": 575,
+        "width": 383,
+        "height": 515
+      },
+      "runtimeBounds": {
+        "left": 23,
+        "top": 8,
+        "right": 104,
+        "bottom": 119,
+        "width": 82,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:vector-art": {
+      "x": 1024,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Vector Art",
+      "detail": "Clean lines, flat colors, geometric.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-03.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-vector-art.png",
+      "sourceBounds": {
+        "left": 100,
+        "top": 13,
+        "right": 578,
+        "bottom": 540,
+        "width": 479,
+        "height": 528
+      },
+      "runtimeBounds": {
+        "left": 14,
+        "top": 8,
+        "right": 114,
+        "bottom": 119,
+        "width": 101,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:flat-design": {
+      "x": 1152,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Flat Design",
+      "detail": "Minimalist, clean, simple shapes.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-03.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-flat-design.png",
+      "sourceBounds": {
+        "left": 47,
+        "top": 43,
+        "right": 508,
+        "bottom": 518,
+        "width": 462,
+        "height": 476
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 8,
+        "right": 118,
+        "bottom": 119,
+        "width": 109,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:psychedelic-art": {
+      "x": 1280,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Psychedelic Art",
+      "detail": "Distorted visuals, vibrant colors, surreal.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-04.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-psychedelic-art.png",
+      "sourceBounds": {
+        "left": 39,
+        "top": 4,
+        "right": 604,
+        "bottom": 615,
+        "width": 566,
+        "height": 612
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 8,
+        "right": 115,
+        "bottom": 119,
+        "width": 103,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:pixel-art-16-bit": {
+      "x": 1408,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Pixel Art (16-bit)",
+      "detail": "Retro console style, limited palette.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-04.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-pixel-art-16-bit.png",
+      "sourceBounds": {
+        "left": 176,
+        "top": 35,
+        "right": 405,
+        "bottom": 554,
+        "width": 230,
+        "height": 520
+      },
+      "runtimeBounds": {
+        "left": 41,
+        "top": 8,
+        "right": 87,
+        "bottom": 119,
+        "width": 47,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 392
+      }
+    },
+    "option:style:pixel-art-32-bit": {
+      "x": 1536,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Pixel Art (32-bit)",
+      "detail": "Detailed pixel work, richer palette.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-04.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-pixel-art-32-bit.png",
+      "sourceBounds": {
+        "left": 109,
+        "top": 13,
+        "right": 534,
+        "bottom": 569,
+        "width": 426,
+        "height": 557
+      },
+      "runtimeBounds": {
+        "left": 22,
+        "top": 8,
+        "right": 106,
+        "bottom": 118,
+        "width": 85,
+        "height": 111
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:voxel-art": {
+      "x": 1664,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Voxel Art",
+      "detail": "3D pixel art, blocky look.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-04.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-voxel-art.png",
+      "sourceBounds": {
+        "left": 87,
+        "top": 0,
+        "right": 481,
+        "bottom": 563,
+        "width": 395,
+        "height": 564
+      },
+      "runtimeBounds": {
+        "left": 26,
+        "top": 6,
+        "right": 102,
+        "bottom": 119,
+        "width": 77,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:glitch-art": {
+      "x": 1792,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Glitch Art",
+      "detail": "Digital distortion, corrupted feel.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-05.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-glitch-art.png",
+      "sourceBounds": {
+        "left": 38,
+        "top": 45,
+        "right": 608,
+        "bottom": 610,
+        "width": 571,
+        "height": 566
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 9,
+        "right": 119,
+        "bottom": 118,
+        "width": 110,
+        "height": 110
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:synthwave-retrowave": {
+      "x": 1920,
+      "y": 256,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Synthwave / Retrowave",
+      "detail": "Neon grids, 80s futuristic vibe.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-05.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-synthwave-retrowave.png",
+      "sourceBounds": {
+        "left": 10,
+        "top": 41,
+        "right": 598,
+        "bottom": 611,
+        "width": 589,
+        "height": 571
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 12,
+        "right": 119,
+        "bottom": 117,
+        "width": 111,
+        "height": 106
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:retro-2d-rpg-snes": {
+      "x": 0,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Retro 2D RPG (SNES)",
+      "detail": "16-bit fantasy sprites.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-05.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-retro-2d-rpg-snes.png",
+      "sourceBounds": {
+        "left": 70,
+        "top": 39,
+        "right": 547,
+        "bottom": 571,
+        "width": 478,
+        "height": 533
+      },
+      "runtimeBounds": {
+        "left": 14,
+        "top": 8,
+        "right": 113,
+        "bottom": 119,
+        "width": 100,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:ps1-n64-era-3d": {
+      "x": 128,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "PS1 / N64 Era 3D",
+      "detail": "Low-poly models, warped textures.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-05.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-ps1-n64-era-3d.png",
+      "sourceBounds": {
+        "left": 92,
+        "top": 3,
+        "right": 492,
+        "bottom": 597,
+        "width": 401,
+        "height": 595
+      },
+      "runtimeBounds": {
+        "left": 27,
+        "top": 8,
+        "right": 100,
+        "bottom": 119,
+        "width": 74,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:ps2-era-3d": {
+      "x": 256,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "PS2 Era 3D",
+      "detail": "More complex retro 3D models.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-06.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-ps2-era-3d.png",
+      "sourceBounds": {
+        "left": 95,
+        "top": 28,
+        "right": 580,
+        "bottom": 608,
+        "width": 486,
+        "height": 581
+      },
+      "runtimeBounds": {
+        "left": 18,
+        "top": 8,
+        "right": 110,
+        "bottom": 119,
+        "width": 93,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:cel-shaded-3d-wind-waker": {
+      "x": 384,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Cel-shaded 3D (Wind Waker)",
+      "detail": "Cartoonish hand-drawn 3D.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-06.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-cel-shaded-3d-wind-waker.png",
+      "sourceBounds": {
+        "left": 78,
+        "top": 33,
+        "right": 545,
+        "bottom": 603,
+        "width": 468,
+        "height": 571
+      },
+      "runtimeBounds": {
+        "left": 19,
+        "top": 8,
+        "right": 109,
+        "bottom": 119,
+        "width": 91,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:souls-like-dark-fantasy": {
+      "x": 512,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Souls-like (Dark Fantasy)",
+      "detail": "Gritty, atmospheric, realistic.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-06.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-souls-like-dark-fantasy.png",
+      "sourceBounds": {
+        "left": 6,
+        "top": 0,
+        "right": 626,
+        "bottom": 617,
+        "width": 621,
+        "height": 618
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 8,
+        "right": 118,
+        "bottom": 114,
+        "width": 109,
+        "height": 107
+      },
+      "cleanup": {
+        "removedComponents": 4,
+        "removedPixels": 28
+      }
+    },
+    "option:style:modern-aaa-realism": {
+      "x": 640,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Modern AAA Realism",
+      "detail": "Photorealistic, complex models.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-06.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-modern-aaa-realism.png",
+      "sourceBounds": {
+        "left": 1,
+        "top": 0,
+        "right": 565,
+        "bottom": 600,
+        "width": 565,
+        "height": 601
+      },
+      "runtimeBounds": {
+        "left": 21,
+        "top": 7,
+        "right": 116,
+        "bottom": 119,
+        "width": 96,
+        "height": 113
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:fighting-game-style": {
+      "x": 768,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Fighting Game Style",
+      "detail": "Stylized, muscular characters.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-07.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-fighting-game-style.png",
+      "sourceBounds": {
+        "left": 37,
+        "top": 30,
+        "right": 598,
+        "bottom": 612,
+        "width": 562,
+        "height": 583
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 8,
+        "right": 116,
+        "bottom": 119,
+        "width": 106,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:mobile-game-style": {
+      "x": 896,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Mobile Game Style",
+      "detail": "Bright, simple, and clean.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-07.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-mobile-game-style.png",
+      "sourceBounds": {
+        "left": 36,
+        "top": 37,
+        "right": 556,
+        "bottom": 608,
+        "width": 521,
+        "height": 572
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 8,
+        "right": 114,
+        "bottom": 119,
+        "width": 102,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:visual-novel-style": {
+      "x": 1024,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Visual Novel Style",
+      "detail": "High-quality 2D character art.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-07.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-visual-novel-style.png",
+      "sourceBounds": {
+        "left": 34,
+        "top": 8,
+        "right": 616,
+        "bottom": 593,
+        "width": 583,
+        "height": 586
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 8,
+        "right": 119,
+        "bottom": 118,
+        "width": 111,
+        "height": 111
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:3d-render-modern": {
+      "x": 1152,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "3D Render (Modern)",
+      "detail": "Clean, high-fidelity 3D models.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-07.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-3d-render-modern.png",
+      "sourceBounds": {
+        "left": 52,
+        "top": 12,
+        "right": 554,
+        "bottom": 596,
+        "width": 503,
+        "height": 585
+      },
+      "runtimeBounds": {
+        "left": 16,
+        "top": 8,
+        "right": 111,
+        "bottom": 119,
+        "width": 96,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:3d-render-retro-ps1": {
+      "x": 1280,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "3D Render (Retro PS1)",
+      "detail": "Low-poly models, no smoothing.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-08.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-3d-render-retro-ps1.png",
+      "sourceBounds": {
+        "left": 115,
+        "top": 62,
+        "right": 593,
+        "bottom": 596,
+        "width": 479,
+        "height": 535
+      },
+      "runtimeBounds": {
+        "left": 14,
+        "top": 8,
+        "right": 113,
+        "bottom": 119,
+        "width": 100,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:low-poly-3d": {
+      "x": 1408,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Low Poly 3D",
+      "detail": "Stylized, minimal polygons.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-08.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-low-poly-3d.png",
+      "sourceBounds": {
+        "left": 64,
+        "top": 57,
+        "right": 533,
+        "bottom": 600,
+        "width": 470,
+        "height": 544
+      },
+      "runtimeBounds": {
+        "left": 16,
+        "top": 8,
+        "right": 111,
+        "bottom": 119,
+        "width": 96,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:claymation-style": {
+      "x": 1536,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Claymation Style",
+      "detail": "Handcrafted clay look.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-08.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-claymation-style.png",
+      "sourceBounds": {
+        "left": 108,
+        "top": 8,
+        "right": 585,
+        "bottom": 556,
+        "width": 478,
+        "height": 549
+      },
+      "runtimeBounds": {
+        "left": 16,
+        "top": 8,
+        "right": 112,
+        "bottom": 119,
+        "width": 97,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:concept-art-sketch": {
+      "x": 1664,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Concept Art (Sketch)",
+      "detail": "Rough, energetic lines.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-08.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-concept-art-sketch.png",
+      "sourceBounds": {
+        "left": 18,
+        "top": 0,
+        "right": 567,
+        "bottom": 575,
+        "width": 550,
+        "height": 576
+      },
+      "runtimeBounds": {
+        "left": 16,
+        "top": 10,
+        "right": 116,
+        "bottom": 117,
+        "width": 101,
+        "height": 108
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 2
+      }
+    },
+    "option:style:concept-art-polished": {
+      "x": 1792,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Concept Art (Polished)",
+      "detail": "Clean, detailed, production-ready.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-09.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-concept-art-polished.png",
+      "sourceBounds": {
+        "left": 43,
+        "top": 28,
+        "right": 592,
+        "bottom": 609,
+        "width": 550,
+        "height": 582
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 8,
+        "right": 116,
+        "bottom": 119,
+        "width": 106,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:matte-painting": {
+      "x": 1920,
+      "y": 384,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Matte Painting",
+      "detail": "Photorealistic, epic landscapes.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-09.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-matte-painting.png",
+      "sourceBounds": {
+        "left": 19,
+        "top": 24,
+        "right": 599,
+        "bottom": 608,
+        "width": 581,
+        "height": 585
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 9,
+        "right": 119,
+        "bottom": 118,
+        "width": 110,
+        "height": 110
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:watercolor-painting": {
+      "x": 0,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Watercolor Painting",
+      "detail": "Soft, transparent colors.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-09.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-watercolor-painting.png",
+      "sourceBounds": {
+        "left": 15,
+        "top": 0,
+        "right": 601,
+        "bottom": 611,
+        "width": 587,
+        "height": 612
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 8,
+        "right": 117,
+        "bottom": 119,
+        "width": 106,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:oil-painting": {
+      "x": 128,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Oil Painting",
+      "detail": "Rich, opaque, thick brushwork.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-09.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-oil-painting.png",
+      "sourceBounds": {
+        "left": 18,
+        "top": 1,
+        "right": 603,
+        "bottom": 609,
+        "width": 586,
+        "height": 609
+      },
+      "runtimeBounds": {
+        "left": 14,
+        "top": 10,
+        "right": 113,
+        "bottom": 118,
+        "width": 100,
+        "height": 109
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 6
+      }
+    },
+    "option:style:charcoal-sketch": {
+      "x": 256,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Charcoal Sketch",
+      "detail": "B&W, smudged, focus on light/shadow.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-10.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-charcoal-sketch.png",
+      "sourceBounds": {
+        "left": 69,
+        "top": 24,
+        "right": 599,
+        "bottom": 601,
+        "width": 531,
+        "height": 578
+      },
+      "runtimeBounds": {
+        "left": 17,
+        "top": 10,
+        "right": 111,
+        "bottom": 117,
+        "width": 95,
+        "height": 108
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 220
+      }
+    },
+    "option:style:ukiyo-e-woodblock": {
+      "x": 384,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Ukiyo-e Woodblock",
+      "detail": "Japanese print, bold outlines.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-10.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-ukiyo-e-woodblock.png",
+      "sourceBounds": {
+        "left": 9,
+        "top": 33,
+        "right": 585,
+        "bottom": 607,
+        "width": 577,
+        "height": 575
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 8,
+        "right": 119,
+        "bottom": 119,
+        "width": 112,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:stained-glass": {
+      "x": 512,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Stained Glass",
+      "detail": "Bold black lines, vibrant colors.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-10.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-stained-glass.png",
+      "sourceBounds": {
+        "left": 114,
+        "top": 0,
+        "right": 511,
+        "bottom": 584,
+        "width": 398,
+        "height": 585
+      },
+      "runtimeBounds": {
+        "left": 27,
+        "top": 6,
+        "right": 101,
+        "bottom": 119,
+        "width": 75,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 4,
+        "removedPixels": 8746
+      }
+    },
+    "option:style:art-nouveau": {
+      "x": 640,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Art Nouveau",
+      "detail": "Elegant, flowing lines, decorative.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-10.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-art-nouveau.png",
+      "sourceBounds": {
+        "left": 16,
+        "top": 4,
+        "right": 566,
+        "bottom": 575,
+        "width": 551,
+        "height": 572
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 8,
+        "right": 117,
+        "bottom": 119,
+        "width": 108,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:art-deco": {
+      "x": 768,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Art Deco",
+      "detail": "Geometric shapes, strong lines, opulent.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-11.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-art-deco.png",
+      "sourceBounds": {
+        "left": 56,
+        "top": 21,
+        "right": 567,
+        "bottom": 600,
+        "width": 512,
+        "height": 580
+      },
+      "runtimeBounds": {
+        "left": 15,
+        "top": 8,
+        "right": 112,
+        "bottom": 119,
+        "width": 98,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:surrealism-dali-esque": {
+      "x": 896,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Surrealism (Dali-esque)",
+      "detail": "Dreamlike, bizarre, illogical scenes.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-11.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-surrealism-dali-esque.png",
+      "sourceBounds": {
+        "left": 23,
+        "top": 63,
+        "right": 561,
+        "bottom": 593,
+        "width": 539,
+        "height": 531
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 9,
+        "right": 119,
+        "bottom": 118,
+        "width": 112,
+        "height": 110
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:style:technical-drawing-blueprint": {
+      "x": 1024,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "style",
+      "label": "Technical Drawing / Blueprint",
+      "detail": "Precise lines, schematic look.",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-style-11.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-style-technical-drawing-blueprint.png",
+      "sourceBounds": {
+        "left": 37,
+        "top": 6,
+        "right": 584,
+        "bottom": 578,
+        "width": 548,
+        "height": 573
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 8,
+        "right": 117,
+        "bottom": 118,
+        "width": 107,
+        "height": 111
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:preserve-original": {
+      "x": 1152,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Preserve Original",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-00.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-preserve-original.png",
+      "sourceBounds": {
+        "left": 138,
+        "top": 28,
+        "right": 442,
+        "bottom": 603,
+        "width": 305,
+        "height": 576
+      },
+      "runtimeBounds": {
+        "left": 36,
+        "top": 8,
+        "right": 92,
+        "bottom": 111,
+        "width": 57,
+        "height": 104
+      },
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 2018
+      }
+    },
+    "option:clothing:fantasy-knight-armor": {
+      "x": 1280,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Fantasy Knight Armor",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-00.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-fantasy-knight-armor.png",
+      "sourceBounds": {
+        "left": 43,
+        "top": 22,
+        "right": 438,
+        "bottom": 579,
+        "width": 396,
+        "height": 558
+      },
+      "runtimeBounds": {
+        "left": 25,
+        "top": 8,
+        "right": 102,
+        "bottom": 119,
+        "width": 78,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 1056
+      }
+    },
+    "option:clothing:wizard-robes": {
+      "x": 1408,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Wizard Robes",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-00.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-wizard-robes.png",
+      "sourceBounds": {
+        "left": 132,
+        "top": 0,
+        "right": 586,
+        "bottom": 587,
+        "width": 455,
+        "height": 588
+      },
+      "runtimeBounds": {
+        "left": 21,
+        "top": 6,
+        "right": 104,
+        "bottom": 119,
+        "width": 84,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 6
+      }
+    },
+    "option:clothing:rogue-s-leather-tunic": {
+      "x": 1536,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Rogue's Leather Tunic",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-00.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-rogue-s-leather-tunic.png",
+      "sourceBounds": {
+        "left": 143,
+        "top": 0,
+        "right": 419,
+        "bottom": 587,
+        "width": 277,
+        "height": 588
+      },
+      "runtimeBounds": {
+        "left": 39,
+        "top": 6,
+        "right": 89,
+        "bottom": 119,
+        "width": 51,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:elven-silks": {
+      "x": 1664,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Elven Silks",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-01.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-elven-silks.png",
+      "sourceBounds": {
+        "left": 140,
+        "top": 16,
+        "right": 498,
+        "bottom": 615,
+        "width": 359,
+        "height": 600
+      },
+      "runtimeBounds": {
+        "left": 32,
+        "top": 8,
+        "right": 96,
+        "bottom": 119,
+        "width": 65,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:barbarian-furs": {
+      "x": 1792,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Barbarian Furs",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-01.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-barbarian-furs.png",
+      "sourceBounds": {
+        "left": 79,
+        "top": 15,
+        "right": 480,
+        "bottom": 613,
+        "width": 402,
+        "height": 599
+      },
+      "runtimeBounds": {
+        "left": 27,
+        "top": 8,
+        "right": 100,
+        "bottom": 119,
+        "width": 74,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:druid-s-ceremonial-robes": {
+      "x": 1920,
+      "y": 512,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Druid's Ceremonial Robes",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-01.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-druid-s-ceremonial-robes.png",
+      "sourceBounds": {
+        "left": 112,
+        "top": 2,
+        "right": 510,
+        "bottom": 601,
+        "width": 399,
+        "height": 600
+      },
+      "runtimeBounds": {
+        "left": 28,
+        "top": 8,
+        "right": 100,
+        "bottom": 119,
+        "width": 73,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:bard-s-colorful-attire": {
+      "x": 0,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Bard's Colorful Attire",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-01.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-bard-s-colorful-attire.png",
+      "sourceBounds": {
+        "left": 124,
+        "top": 0,
+        "right": 483,
+        "bottom": 599,
+        "width": 360,
+        "height": 600
+      },
+      "runtimeBounds": {
+        "left": 31,
+        "top": 6,
+        "right": 96,
+        "bottom": 119,
+        "width": 66,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:necromancer-s-dark-cloak": {
+      "x": 128,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Necromancer's Dark Cloak",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-02.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-necromancer-s-dark-cloak.png",
+      "sourceBounds": {
+        "left": 122,
+        "top": 20,
+        "right": 512,
+        "bottom": 596,
+        "width": 391,
+        "height": 577
+      },
+      "runtimeBounds": {
+        "left": 28,
+        "top": 8,
+        "right": 100,
+        "bottom": 119,
+        "width": 73,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:dwarven-smithing-apron": {
+      "x": 256,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Dwarven Smithing Apron",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-02.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-dwarven-smithing-apron.png",
+      "sourceBounds": {
+        "left": 188,
+        "top": 20,
+        "right": 438,
+        "bottom": 599,
+        "width": 251,
+        "height": 580
+      },
+      "runtimeBounds": {
+        "left": 41,
+        "top": 8,
+        "right": 86,
+        "bottom": 119,
+        "width": 46,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:warlock-s-shadow-weave-robes": {
+      "x": 384,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Warlock's Shadow Weave Robes",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-02.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-warlock-s-shadow-weave-robes.png",
+      "sourceBounds": {
+        "left": 117,
+        "top": 21,
+        "right": 504,
+        "bottom": 591,
+        "width": 388,
+        "height": 571
+      },
+      "runtimeBounds": {
+        "left": 27,
+        "top": 8,
+        "right": 101,
+        "bottom": 119,
+        "width": 75,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:paladin-s-holy-plate-armor": {
+      "x": 512,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Paladin's Holy Plate Armor",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-02.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-paladin-s-holy-plate-armor.png",
+      "sourceBounds": {
+        "left": 145,
+        "top": 21,
+        "right": 484,
+        "bottom": 597,
+        "width": 340,
+        "height": 577
+      },
+      "runtimeBounds": {
+        "left": 32,
+        "top": 8,
+        "right": 95,
+        "bottom": 119,
+        "width": 64,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:vampire-noble-attire": {
+      "x": 640,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Vampire Noble Attire",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-03.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-vampire-noble-attire.png",
+      "sourceBounds": {
+        "left": 145,
+        "top": 11,
+        "right": 509,
+        "bottom": 590,
+        "width": 365,
+        "height": 580
+      },
+      "runtimeBounds": {
+        "left": 30,
+        "top": 8,
+        "right": 98,
+        "bottom": 119,
+        "width": 69,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:nomad-desert-wraps": {
+      "x": 768,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Nomad Desert Wraps",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-03.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-nomad-desert-wraps.png",
+      "sourceBounds": {
+        "left": 143,
+        "top": 11,
+        "right": 437,
+        "bottom": 591,
+        "width": 295,
+        "height": 581
+      },
+      "runtimeBounds": {
+        "left": 37,
+        "top": 8,
+        "right": 91,
+        "bottom": 119,
+        "width": 55,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:plague-doctor-outfit": {
+      "x": 896,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Plague Doctor Outfit",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-03.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-plague-doctor-outfit.png",
+      "sourceBounds": {
+        "left": 170,
+        "top": 35,
+        "right": 459,
+        "bottom": 590,
+        "width": 290,
+        "height": 556
+      },
+      "runtimeBounds": {
+        "left": 36,
+        "top": 8,
+        "right": 92,
+        "bottom": 119,
+        "width": 57,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 3354
+      }
+    },
+    "option:clothing:king-s-royal-garb": {
+      "x": 1024,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "King's Royal Garb",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-03.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-king-s-royal-garb.png",
+      "sourceBounds": {
+        "left": 111,
+        "top": 0,
+        "right": 465,
+        "bottom": 591,
+        "width": 355,
+        "height": 592
+      },
+      "runtimeBounds": {
+        "left": 31,
+        "top": 7,
+        "right": 96,
+        "bottom": 119,
+        "width": 66,
+        "height": 113
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:jester-s-motley": {
+      "x": 1152,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Jester's Motley",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-04.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-jester-s-motley.png",
+      "sourceBounds": {
+        "left": 185,
+        "top": 14,
+        "right": 451,
+        "bottom": 593,
+        "width": 267,
+        "height": 580
+      },
+      "runtimeBounds": {
+        "left": 40,
+        "top": 8,
+        "right": 88,
+        "bottom": 119,
+        "width": 49,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:celestial-sage-robes": {
+      "x": 1280,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Celestial Sage Robes",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-04.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-celestial-sage-robes.png",
+      "sourceBounds": {
+        "left": 95,
+        "top": 13,
+        "right": 476,
+        "bottom": 594,
+        "width": 382,
+        "height": 582
+      },
+      "runtimeBounds": {
+        "left": 29,
+        "top": 8,
+        "right": 98,
+        "bottom": 119,
+        "width": 70,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:fae-touched-silken-garb": {
+      "x": 1408,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Fae-touched Silken Garb",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-04.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-fae-touched-silken-garb.png",
+      "sourceBounds": {
+        "left": 168,
+        "top": 0,
+        "right": 487,
+        "bottom": 586,
+        "width": 320,
+        "height": 587
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 7,
+        "right": 93,
+        "bottom": 119,
+        "width": 59,
+        "height": 113
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:orcish-warchief-plate": {
+      "x": 1536,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Orcish Warchief Plate",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-04.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-orcish-warchief-plate.png",
+      "sourceBounds": {
+        "left": 121,
+        "top": 0,
+        "right": 438,
+        "bottom": 593,
+        "width": 318,
+        "height": 594
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 6,
+        "right": 92,
+        "bottom": 119,
+        "width": 58,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:sci-fi-power-armor": {
+      "x": 1664,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Sci-Fi Power Armor",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-05.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-sci-fi-power-armor.png",
+      "sourceBounds": {
+        "left": 172,
+        "top": 12,
+        "right": 484,
+        "bottom": 574,
+        "width": 313,
+        "height": 563
+      },
+      "runtimeBounds": {
+        "left": 34,
+        "top": 8,
+        "right": 93,
+        "bottom": 119,
+        "width": 60,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 2042
+      }
+    },
+    "option:clothing:galactic-explorer-jumpsuit": {
+      "x": 1792,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Galactic Explorer Jumpsuit",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-05.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-galactic-explorer-jumpsuit.png",
+      "sourceBounds": {
+        "left": 162,
+        "top": 12,
+        "right": 399,
+        "bottom": 573,
+        "width": 238,
+        "height": 562
+      },
+      "runtimeBounds": {
+        "left": 42,
+        "top": 8,
+        "right": 86,
+        "bottom": 119,
+        "width": 45,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 1698
+      }
+    },
+    "option:clothing:cyberpunk-gear": {
+      "x": 1920,
+      "y": 640,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Cyberpunk Gear",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-05.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-cyberpunk-gear.png",
+      "sourceBounds": {
+        "left": 205,
+        "top": 0,
+        "right": 454,
+        "bottom": 554,
+        "width": 250,
+        "height": 555
+      },
+      "runtimeBounds": {
+        "left": 40,
+        "top": 6,
+        "right": 87,
+        "bottom": 119,
+        "width": 48,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:steampunk-attire": {
+      "x": 0,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Steampunk Attire",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-05.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-steampunk-attire.png",
+      "sourceBounds": {
+        "left": 129,
+        "top": 0,
+        "right": 431,
+        "bottom": 557,
+        "width": 303,
+        "height": 558
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 6,
+        "right": 93,
+        "bottom": 119,
+        "width": 59,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:cyberpunk-netrunner-suit": {
+      "x": 128,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Cyberpunk Netrunner Suit",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-06.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-cyberpunk-netrunner-suit.png",
+      "sourceBounds": {
+        "left": 167,
+        "top": 6,
+        "right": 491,
+        "bottom": 600,
+        "width": 325,
+        "height": 595
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 8,
+        "right": 93,
+        "bottom": 119,
+        "width": 59,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 376
+      }
+    },
+    "option:clothing:post-apocalyptic-heavy-armor": {
+      "x": 256,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Post-Apocalyptic Heavy Armor",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-06.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-post-apocalyptic-heavy-armor.png",
+      "sourceBounds": {
+        "left": 140,
+        "top": 6,
+        "right": 427,
+        "bottom": 600,
+        "width": 288,
+        "height": 595
+      },
+      "runtimeBounds": {
+        "left": 38,
+        "top": 8,
+        "right": 89,
+        "bottom": 119,
+        "width": 52,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 378
+      }
+    },
+    "option:clothing:space-pirate-gear": {
+      "x": 384,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Space Pirate Gear",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-06.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-space-pirate-gear.png",
+      "sourceBounds": {
+        "left": 188,
+        "top": 0,
+        "right": 493,
+        "bottom": 586,
+        "width": 306,
+        "height": 587
+      },
+      "runtimeBounds": {
+        "left": 36,
+        "top": 6,
+        "right": 91,
+        "bottom": 119,
+        "width": 56,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:starship-captain-uniform": {
+      "x": 512,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Starship Captain Uniform",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-06.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-starship-captain-uniform.png",
+      "sourceBounds": {
+        "left": 160,
+        "top": 0,
+        "right": 409,
+        "bottom": 588,
+        "width": 250,
+        "height": 589
+      },
+      "runtimeBounds": {
+        "left": 42,
+        "top": 6,
+        "right": 86,
+        "bottom": 119,
+        "width": 45,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:android-shell-exposed-circuits": {
+      "x": 640,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Android Shell (Exposed circuits)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-07.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-android-shell-exposed-circuits.png",
+      "sourceBounds": {
+        "left": 210,
+        "top": 17,
+        "right": 428,
+        "bottom": 592,
+        "width": 219,
+        "height": 576
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 8,
+        "right": 83,
+        "bottom": 119,
+        "width": 40,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 212
+      }
+    },
+    "option:clothing:void-walker-s-suit": {
+      "x": 768,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Void-walker's Suit",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-07.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-void-walker-s-suit.png",
+      "sourceBounds": {
+        "left": 115,
+        "top": 17,
+        "right": 445,
+        "bottom": 593,
+        "width": 331,
+        "height": 577
+      },
+      "runtimeBounds": {
+        "left": 33,
+        "top": 8,
+        "right": 95,
+        "bottom": 119,
+        "width": 63,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 212
+      }
+    },
+    "option:clothing:biomechanical-suit": {
+      "x": 896,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Biomechanical Suit",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-07.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-biomechanical-suit.png",
+      "sourceBounds": {
+        "left": 181,
+        "top": 0,
+        "right": 486,
+        "bottom": 577,
+        "width": 306,
+        "height": 578
+      },
+      "runtimeBounds": {
+        "left": 36,
+        "top": 6,
+        "right": 92,
+        "bottom": 119,
+        "width": 57,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:solar-punk-artisan-wear": {
+      "x": 1024,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Solar-punk Artisan Wear",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-07.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-solar-punk-artisan-wear.png",
+      "sourceBounds": {
+        "left": 127,
+        "top": 0,
+        "right": 414,
+        "bottom": 582,
+        "width": 288,
+        "height": 583
+      },
+      "runtimeBounds": {
+        "left": 38,
+        "top": 6,
+        "right": 90,
+        "bottom": 119,
+        "width": 53,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:retro-futuristic-spaceman-suit": {
+      "x": 1152,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Retro-futuristic Spaceman Suit",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-08.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-retro-futuristic-spaceman-suit.png",
+      "sourceBounds": {
+        "left": 203,
+        "top": 10,
+        "right": 433,
+        "bottom": 589,
+        "width": 231,
+        "height": 580
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 8,
+        "right": 84,
+        "bottom": 119,
+        "width": 42,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 690
+      }
+    },
+    "option:clothing:samurai-armor": {
+      "x": 1280,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Samurai Armor",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-08.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-samurai-armor.png",
+      "sourceBounds": {
+        "left": 134,
+        "top": 5,
+        "right": 425,
+        "bottom": 594,
+        "width": 292,
+        "height": 590
+      },
+      "runtimeBounds": {
+        "left": 38,
+        "top": 8,
+        "right": 90,
+        "bottom": 119,
+        "width": 53,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 450
+      }
+    },
+    "option:clothing:kimono": {
+      "x": 1408,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Kimono",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-08.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-kimono.png",
+      "sourceBounds": {
+        "left": 209,
+        "top": 0,
+        "right": 455,
+        "bottom": 597,
+        "width": 247,
+        "height": 598
+      },
+      "runtimeBounds": {
+        "left": 42,
+        "top": 6,
+        "right": 85,
+        "bottom": 119,
+        "width": 44,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:victorian-era-ball-gown": {
+      "x": 1536,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Victorian Era Ball Gown",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-08.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-victorian-era-ball-gown.png",
+      "sourceBounds": {
+        "left": 59,
+        "top": 0,
+        "right": 515,
+        "bottom": 596,
+        "width": 457,
+        "height": 597
+      },
+      "runtimeBounds": {
+        "left": 22,
+        "top": 6,
+        "right": 106,
+        "bottom": 119,
+        "width": 85,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:viking-raider-leathers": {
+      "x": 1664,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Viking Raider Leathers",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-09.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-viking-raider-leathers.png",
+      "sourceBounds": {
+        "left": 189,
+        "top": 13,
+        "right": 495,
+        "bottom": 591,
+        "width": 307,
+        "height": 579
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 8,
+        "right": 92,
+        "bottom": 119,
+        "width": 58,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 4,
+        "removedPixels": 932
+      }
+    },
+    "option:clothing:egyptian-pharaoh-regalia": {
+      "x": 1792,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Egyptian Pharaoh Regalia",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-09.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-egyptian-pharaoh-regalia.png",
+      "sourceBounds": {
+        "left": 139,
+        "top": 4,
+        "right": 437,
+        "bottom": 597,
+        "width": 299,
+        "height": 594
+      },
+      "runtimeBounds": {
+        "left": 37,
+        "top": 8,
+        "right": 90,
+        "bottom": 119,
+        "width": 54,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 810
+      }
+    },
+    "option:clothing:roaring-20s-flapper-dress": {
+      "x": 1920,
+      "y": 768,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Roaring 20s Flapper Dress",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-09.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-roaring-20s-flapper-dress.png",
+      "sourceBounds": {
+        "left": 224,
+        "top": 0,
+        "right": 431,
+        "bottom": 591,
+        "width": 208,
+        "height": 592
+      },
+      "runtimeBounds": {
+        "left": 46,
+        "top": 6,
+        "right": 81,
+        "bottom": 119,
+        "width": 36,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 8,
+        "removedPixels": 266
+      }
+    },
+    "option:clothing:1950s-greaser-leather-jacket-jeans": {
+      "x": 0,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "1950s Greaser (Leather jacket, jeans)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-09.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-1950s-greaser-leather-jacket-jeans.png",
+      "sourceBounds": {
+        "left": 150,
+        "top": 0,
+        "right": 386,
+        "bottom": 588,
+        "width": 237,
+        "height": 589
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 6,
+        "right": 85,
+        "bottom": 119,
+        "width": 43,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:1980s-new-wave-fashion": {
+      "x": 128,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "1980s New Wave Fashion",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-10.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-1980s-new-wave-fashion.png",
+      "sourceBounds": {
+        "left": 223,
+        "top": 16,
+        "right": 455,
+        "bottom": 597,
+        "width": 233,
+        "height": 582
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 8,
+        "right": 84,
+        "bottom": 119,
+        "width": 42,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:modern-casual-wear": {
+      "x": 256,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Modern Casual Wear",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-10.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-modern-casual-wear.png",
+      "sourceBounds": {
+        "left": 163,
+        "top": 16,
+        "right": 380,
+        "bottom": 597,
+        "width": 218,
+        "height": 582
+      },
+      "runtimeBounds": {
+        "left": 45,
+        "top": 8,
+        "right": 83,
+        "bottom": 119,
+        "width": 39,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 236
+      }
+    },
+    "option:clothing:streetwear-oversized-hoodie-cargo-pants-chunky-sneakers": {
+      "x": 384,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Streetwear (Oversized hoodie, cargo pants, chunky sneakers)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-10.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-streetwear-oversized-hoodie-cargo-pants-chunky-sneakers.png",
+      "sourceBounds": {
+        "left": 215,
+        "top": 0,
+        "right": 454,
+        "bottom": 586,
+        "width": 240,
+        "height": 587
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 6,
+        "right": 85,
+        "bottom": 119,
+        "width": 43,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:skater-punk-outfit": {
+      "x": 512,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Skater Punk Outfit",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-10.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-skater-punk-outfit.png",
+      "sourceBounds": {
+        "left": 163,
+        "top": 10,
+        "right": 376,
+        "bottom": 596,
+        "width": 214,
+        "height": 587
+      },
+      "runtimeBounds": {
+        "left": 45,
+        "top": 13,
+        "right": 82,
+        "bottom": 119,
+        "width": 38,
+        "height": 107
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 2072
+      }
+    },
+    "option:clothing:techwear-functional-futuristic": {
+      "x": 640,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Techwear (Functional, futuristic)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-11.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-techwear-functional-futuristic.png",
+      "sourceBounds": {
+        "left": 207,
+        "top": 9,
+        "right": 452,
+        "bottom": 605,
+        "width": 246,
+        "height": 597
+      },
+      "runtimeBounds": {
+        "left": 42,
+        "top": 8,
+        "right": 85,
+        "bottom": 119,
+        "width": 44,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 138
+      }
+    },
+    "option:clothing:hypebeast-outfit-designer-brands-rare-sneakers": {
+      "x": 768,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Hypebeast Outfit (Designer brands, rare sneakers)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-11.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-hypebeast-outfit-designer-brands-rare-sneakers.png",
+      "sourceBounds": {
+        "left": 161,
+        "top": 9,
+        "right": 400,
+        "bottom": 613,
+        "width": 240,
+        "height": 605
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 8,
+        "right": 84,
+        "bottom": 119,
+        "width": 42,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:graffiti-artist-wear-paint-splattered-clothes-beanie": {
+      "x": 896,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Graffiti Artist Wear (Paint-splattered clothes, beanie)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-11.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-graffiti-artist-wear-paint-splattered-clothes-beanie.png",
+      "sourceBounds": {
+        "left": 180,
+        "top": 0,
+        "right": 447,
+        "bottom": 593,
+        "width": 268,
+        "height": 594
+      },
+      "runtimeBounds": {
+        "left": 40,
+        "top": 6,
+        "right": 87,
+        "bottom": 119,
+        "width": 48,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:drill-rapper-tracksuit-balaclava-designer-bag": {
+      "x": 1024,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Drill Rapper (Tracksuit, balaclava, designer bag)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-11.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-drill-rapper-tracksuit-balaclava-designer-bag.png",
+      "sourceBounds": {
+        "left": 163,
+        "top": 0,
+        "right": 388,
+        "bottom": 593,
+        "width": 226,
+        "height": 594
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 6,
+        "right": 83,
+        "bottom": 119,
+        "width": 40,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:lo-fi-beats-listener-oversized-sweater-beanie-round-glasses": {
+      "x": 1152,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Lo-Fi Beats Listener (Oversized sweater, beanie, round glasses)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-12.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-lo-fi-beats-listener-oversized-sweater-beanie-round-glasses.png",
+      "sourceBounds": {
+        "left": 212,
+        "top": 8,
+        "right": 443,
+        "bottom": 608,
+        "width": 232,
+        "height": 601
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 8,
+        "right": 84,
+        "bottom": 119,
+        "width": 41,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 320
+      }
+    },
+    "option:clothing:dark-academia-tweed-blazer-turtleneck-trousers": {
+      "x": 1280,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Dark Academia (Tweed blazer, turtleneck, trousers)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-12.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-dark-academia-tweed-blazer-turtleneck-trousers.png",
+      "sourceBounds": {
+        "left": 160,
+        "top": 8,
+        "right": 389,
+        "bottom": 604,
+        "width": 230,
+        "height": 597
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 8,
+        "right": 84,
+        "bottom": 119,
+        "width": 41,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 584
+      }
+    },
+    "option:clothing:light-academia-linen-shirt-light-colored-sweater-chinos": {
+      "x": 1408,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Light Academia (Linen shirt, light-colored sweater, chinos)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-12.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-light-academia-linen-shirt-light-colored-sweater-chinos.png",
+      "sourceBounds": {
+        "left": 221,
+        "top": 0,
+        "right": 450,
+        "bottom": 587,
+        "width": 230,
+        "height": 588
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 6,
+        "right": 84,
+        "bottom": 119,
+        "width": 41,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:preppy-ivy-league-style-polo-shirt-khaki-shorts-boat-shoes": {
+      "x": 1536,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Preppy Ivy League Style (Polo shirt, khaki shorts, boat shoes)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-12.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-preppy-ivy-league-style-polo-shirt-khaki-shorts-boat-shoes.png",
+      "sourceBounds": {
+        "left": 157,
+        "top": 0,
+        "right": 371,
+        "bottom": 589,
+        "width": 215,
+        "height": 590
+      },
+      "runtimeBounds": {
+        "left": 45,
+        "top": 6,
+        "right": 82,
+        "bottom": 119,
+        "width": 38,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:librarian-chic-cardigan-button-up-shirt-glasses": {
+      "x": 1664,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Librarian Chic (Cardigan, button-up shirt, glasses)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-13.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-librarian-chic-cardigan-button-up-shirt-glasses.png",
+      "sourceBounds": {
+        "left": 229,
+        "top": 15,
+        "right": 446,
+        "bottom": 599,
+        "width": 218,
+        "height": 585
+      },
+      "runtimeBounds": {
+        "left": 45,
+        "top": 8,
+        "right": 83,
+        "bottom": 119,
+        "width": 39,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 362
+      }
+    },
+    "option:clothing:art-student-paint-splattered-overalls-quirky-earrings-tote-bag": {
+      "x": 1792,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Art Student (Paint-splattered overalls, quirky earrings, tote bag)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-13.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-art-student-paint-splattered-overalls-quirky-earrings-tote-bag.png",
+      "sourceBounds": {
+        "left": 157,
+        "top": 14,
+        "right": 400,
+        "bottom": 607,
+        "width": 244,
+        "height": 594
+      },
+      "runtimeBounds": {
+        "left": 42,
+        "top": 8,
+        "right": 85,
+        "bottom": 119,
+        "width": 44,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 630
+      }
+    },
+    "option:clothing:chaotic-academia-mismatched-patterns-worn-out-sweaters-disheveled-look": {
+      "x": 1920,
+      "y": 896,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Chaotic Academia (Mismatched patterns, worn-out sweaters, disheveled look)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-13.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-chaotic-academia-mismatched-patterns-worn-out-sweaters-disheveled-look.png",
+      "sourceBounds": {
+        "left": 233,
+        "top": 0,
+        "right": 473,
+        "bottom": 588,
+        "width": 241,
+        "height": 589
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 6,
+        "right": 85,
+        "bottom": 119,
+        "width": 43,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:goth-black-clothing-leather-silver-jewelry": {
+      "x": 0,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Goth (Black clothing, leather, silver jewelry)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-13.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-goth-black-clothing-leather-silver-jewelry.png",
+      "sourceBounds": {
+        "left": 148,
+        "top": 0,
+        "right": 376,
+        "bottom": 592,
+        "width": 229,
+        "height": 593
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 6,
+        "right": 84,
+        "bottom": 119,
+        "width": 41,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:pastel-goth-pastel-colors-with-goth-elements": {
+      "x": 128,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Pastel Goth (Pastel colors with goth elements)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-14.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-pastel-goth-pastel-colors-with-goth-elements.png",
+      "sourceBounds": {
+        "left": 210,
+        "top": 5,
+        "right": 438,
+        "bottom": 611,
+        "width": 229,
+        "height": 607
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 8,
+        "right": 83,
+        "bottom": 119,
+        "width": 40,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 114
+      }
+    },
+    "option:clothing:punk-rocker-ripped-jeans-band-t-shirt-studded-jacket": {
+      "x": 256,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Punk Rocker (Ripped jeans, band t-shirt, studded jacket)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-14.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-punk-rocker-ripped-jeans-band-t-shirt-studded-jacket.png",
+      "sourceBounds": {
+        "left": 160,
+        "top": 5,
+        "right": 394,
+        "bottom": 608,
+        "width": 235,
+        "height": 604
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 8,
+        "right": 84,
+        "bottom": 119,
+        "width": 41,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 134
+      }
+    },
+    "option:clothing:metalhead-black-band-shirt-denim-vest-leather-pants": {
+      "x": 384,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Metalhead (Black band shirt, denim vest, leather pants)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-14.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-metalhead-black-band-shirt-denim-vest-leather-pants.png",
+      "sourceBounds": {
+        "left": 209,
+        "top": 0,
+        "right": 447,
+        "bottom": 603,
+        "width": 239,
+        "height": 604
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 6,
+        "right": 84,
+        "bottom": 119,
+        "width": 42,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:e-girl-e-boy-outfit-striped-shirt-chains-beanie": {
+      "x": 512,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "E-girl / E-boy Outfit (Striped shirt, chains, beanie)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-14.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-e-girl-e-boy-outfit-striped-shirt-chains-beanie.png",
+      "sourceBounds": {
+        "left": 157,
+        "top": 0,
+        "right": 376,
+        "bottom": 597,
+        "width": 220,
+        "height": 598
+      },
+      "runtimeBounds": {
+        "left": 45,
+        "top": 6,
+        "right": 83,
+        "bottom": 119,
+        "width": 39,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:hipster-attire-beanie-flannel": {
+      "x": 640,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Hipster Attire (Beanie, flannel)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-15.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-hipster-attire-beanie-flannel.png",
+      "sourceBounds": {
+        "left": 237,
+        "top": 4,
+        "right": 454,
+        "bottom": 601,
+        "width": 218,
+        "height": 598
+      },
+      "runtimeBounds": {
+        "left": 45,
+        "top": 8,
+        "right": 82,
+        "bottom": 119,
+        "width": 38,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 860
+      }
+    },
+    "option:clothing:scene-kid-2000s-revival-coontails-bright-colors-skinny-jeans": {
+      "x": 768,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Scene Kid (2000s revival",
+      "detail": "Coontails, bright colors, skinny jeans)",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-15.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-scene-kid-2000s-revival-coontails-bright-colors-skinny-jeans.png",
+      "sourceBounds": {
+        "left": 168,
+        "top": 1,
+        "right": 363,
+        "bottom": 606,
+        "width": 196,
+        "height": 606
+      },
+      "runtimeBounds": {
+        "left": 47,
+        "top": 8,
+        "right": 80,
+        "bottom": 119,
+        "width": 34,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 1336
+      }
+    },
+    "option:clothing:health-goth-monochromatic-athletic-wear-futuristic-look": {
+      "x": 896,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Health Goth (Monochromatic athletic wear, futuristic look)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-15.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-health-goth-monochromatic-athletic-wear-futuristic-look.png",
+      "sourceBounds": {
+        "left": 233,
+        "top": 25,
+        "right": 456,
+        "bottom": 585,
+        "width": 224,
+        "height": 561
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 10,
+        "right": 84,
+        "bottom": 119,
+        "width": 42,
+        "height": 110
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 4484
+      }
+    },
+    "option:clothing:witchcore-long-black-dress-occult-symbols-layered-shawls": {
+      "x": 1024,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Witchcore (Long black dress, occult symbols, layered shawls)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-15.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-witchcore-long-black-dress-occult-symbols-layered-shawls.png",
+      "sourceBounds": {
+        "left": 125,
+        "top": 0,
+        "right": 460,
+        "bottom": 592,
+        "width": 336,
+        "height": 593
+      },
+      "runtimeBounds": {
+        "left": 33,
+        "top": 7,
+        "right": 94,
+        "bottom": 119,
+        "width": 62,
+        "height": 113
+      },
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 350
+      }
+    },
+    "option:clothing:cottagecore-outfit-flowy-dress-knitted-cardigan-rustic": {
+      "x": 1152,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Cottagecore Outfit (Flowy dress, knitted cardigan, rustic)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-16.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-cottagecore-outfit-flowy-dress-knitted-cardigan-rustic.png",
+      "sourceBounds": {
+        "left": 213,
+        "top": 10,
+        "right": 504,
+        "bottom": 600,
+        "width": 292,
+        "height": 591
+      },
+      "runtimeBounds": {
+        "left": 38,
+        "top": 8,
+        "right": 90,
+        "bottom": 119,
+        "width": 53,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 584
+      }
+    },
+    "option:clothing:minimalist-chic-neutral-colors-clean-lines-simple-silhouette": {
+      "x": 1280,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Minimalist Chic (Neutral colors, clean lines, simple silhouette)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-16.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-minimalist-chic-neutral-colors-clean-lines-simple-silhouette.png",
+      "sourceBounds": {
+        "left": 164,
+        "top": 12,
+        "right": 387,
+        "bottom": 602,
+        "width": 224,
+        "height": 591
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 8,
+        "right": 83,
+        "bottom": 119,
+        "width": 40,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 922
+      }
+    },
+    "option:clothing:y2k-revival-fashion-low-rise-jeans-crop-top-colorful-accessories": {
+      "x": 1408,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Y2K Revival Fashion (Low-rise jeans, crop top, colorful accessories)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-16.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-y2k-revival-fashion-low-rise-jeans-crop-top-colorful-accessories.png",
+      "sourceBounds": {
+        "left": 245,
+        "top": 0,
+        "right": 460,
+        "bottom": 580,
+        "width": 216,
+        "height": 581
+      },
+      "runtimeBounds": {
+        "left": 45,
+        "top": 6,
+        "right": 83,
+        "bottom": 119,
+        "width": 39,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:bohemian-boho-chic-flowing-fabrics-earthy-tones-fringe": {
+      "x": 1536,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Bohemian / Boho-Chic (Flowing fabrics, earthy tones, fringe)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-16.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-bohemian-boho-chic-flowing-fabrics-earthy-tones-fringe.png",
+      "sourceBounds": {
+        "left": 134,
+        "top": 0,
+        "right": 444,
+        "bottom": 581,
+        "width": 311,
+        "height": 582
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 6,
+        "right": 92,
+        "bottom": 119,
+        "width": 58,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:gamer-streamer-casual-comfortable-hoodie-headphones-merch": {
+      "x": 1664,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Gamer / Streamer Casual (Comfortable hoodie, headphones, merch)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-17.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-gamer-streamer-casual-comfortable-hoodie-headphones-merch.png",
+      "sourceBounds": {
+        "left": 221,
+        "top": 9,
+        "right": 457,
+        "bottom": 604,
+        "width": 237,
+        "height": 596
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 8,
+        "right": 84,
+        "bottom": 119,
+        "width": 42,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 314
+      }
+    },
+    "option:clothing:tech-bro-uniform-branded-fleece-vest-button-down-sneakers": {
+      "x": 1792,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Tech Bro Uniform (Branded fleece vest, button-down, sneakers)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-17.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-tech-bro-uniform-branded-fleece-vest-button-down-sneakers.png",
+      "sourceBounds": {
+        "left": 167,
+        "top": 9,
+        "right": 385,
+        "bottom": 606,
+        "width": 219,
+        "height": 598
+      },
+      "runtimeBounds": {
+        "left": 45,
+        "top": 8,
+        "right": 82,
+        "bottom": 119,
+        "width": 38,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 202
+      }
+    },
+    "option:clothing:vsco-girl-oversized-t-shirt-shell-necklace-scrunchies": {
+      "x": 1920,
+      "y": 1024,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "VSCO Girl (Oversized t-shirt, shell necklace, scrunchies)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-17.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-vsco-girl-oversized-t-shirt-shell-necklace-scrunchies.png",
+      "sourceBounds": {
+        "left": 230,
+        "top": 0,
+        "right": 456,
+        "bottom": 589,
+        "width": 227,
+        "height": 590
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 6,
+        "right": 84,
+        "bottom": 119,
+        "width": 41,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:normcore-unbranded-basics-simple-jeans-plain-sneakers": {
+      "x": 0,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Normcore (Unbranded basics, simple jeans, plain sneakers)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-17.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-normcore-unbranded-basics-simple-jeans-plain-sneakers.png",
+      "sourceBounds": {
+        "left": 178,
+        "top": 0,
+        "right": 380,
+        "bottom": 591,
+        "width": 203,
+        "height": 592
+      },
+      "runtimeBounds": {
+        "left": 46,
+        "top": 6,
+        "right": 81,
+        "bottom": 119,
+        "width": 36,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:baddie-aesthetic-bodycon-dress-perfect-makeup-high-heels": {
+      "x": 128,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Baddie Aesthetic (Bodycon dress, perfect makeup, high heels)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-18.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-baddie-aesthetic-bodycon-dress-perfect-makeup-high-heels.png",
+      "sourceBounds": {
+        "left": 215,
+        "top": 16,
+        "right": 409,
+        "bottom": 598,
+        "width": 195,
+        "height": 583
+      },
+      "runtimeBounds": {
+        "left": 47,
+        "top": 8,
+        "right": 81,
+        "bottom": 119,
+        "width": 35,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 828
+      }
+    },
+    "option:clothing:plant-mom-dad-linen-shirt-practical-pants-surrounded-by-plants": {
+      "x": 256,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Plant Mom/Dad (Linen shirt, practical pants, surrounded by plants)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-18.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-plant-mom-dad-linen-shirt-practical-pants-surrounded-by-plants.png",
+      "sourceBounds": {
+        "left": 130,
+        "top": 13,
+        "right": 406,
+        "bottom": 595,
+        "width": 277,
+        "height": 583
+      },
+      "runtimeBounds": {
+        "left": 39,
+        "top": 8,
+        "right": 89,
+        "bottom": 119,
+        "width": 51,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 2596
+      }
+    },
+    "option:clothing:dark-cottagecore-goblincore-earthy-tones-mushroom-motifs-slightly-worn-l": {
+      "x": 384,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Dark Cottagecore / Goblincore (Earthy tones, mushroom motifs, slightly worn look)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-18.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-dark-cottagecore-goblincore-earthy-tones-mushroom-motifs-slightly-worn-l.png",
+      "sourceBounds": {
+        "left": 217,
+        "top": 0,
+        "right": 479,
+        "bottom": 600,
+        "width": 263,
+        "height": 601
+      },
+      "runtimeBounds": {
+        "left": 41,
+        "top": 6,
+        "right": 87,
+        "bottom": 119,
+        "width": 47,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:clowncore-rainbow-patterns-oversized-collars-playful-accessories": {
+      "x": 512,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Clowncore (Rainbow patterns, oversized collars, playful accessories)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-18.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-clowncore-rainbow-patterns-oversized-collars-playful-accessories.png",
+      "sourceBounds": {
+        "left": 142,
+        "top": 0,
+        "right": 389,
+        "bottom": 606,
+        "width": 248,
+        "height": 607
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 6,
+        "right": 85,
+        "bottom": 119,
+        "width": 43,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:fairycore-faecore-ethereal-dresses-flower-crowns-delicate-wings": {
+      "x": 640,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Fairycore / Faecore (Ethereal dresses, flower crowns, delicate wings)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-19.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-fairycore-faecore-ethereal-dresses-flower-crowns-delicate-wings.png",
+      "sourceBounds": {
+        "left": 212,
+        "top": 9,
+        "right": 532,
+        "bottom": 598,
+        "width": 321,
+        "height": 590
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 8,
+        "right": 93,
+        "bottom": 119,
+        "width": 59,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 1912
+      }
+    },
+    "option:clothing:athleisure-wear": {
+      "x": 768,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Athleisure Wear",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-19.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-athleisure-wear.png",
+      "sourceBounds": {
+        "left": 168,
+        "top": 8,
+        "right": 408,
+        "bottom": 605,
+        "width": 241,
+        "height": 598
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 8,
+        "right": 85,
+        "bottom": 119,
+        "width": 43,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 2598
+      }
+    },
+    "option:clothing:gorpcore-hiker-chic-technical-jacket-cargo-shorts-hiking-boots": {
+      "x": 896,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Gorpcore / Hiker-chic (Technical jacket, cargo shorts, hiking boots)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-19.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-gorpcore-hiker-chic-technical-jacket-cargo-shorts-hiking-boots.png",
+      "sourceBounds": {
+        "left": 228,
+        "top": 0,
+        "right": 471,
+        "bottom": 588,
+        "width": 244,
+        "height": 589
+      },
+      "runtimeBounds": {
+        "left": 42,
+        "top": 6,
+        "right": 85,
+        "bottom": 119,
+        "width": 44,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:surfer-style-board-shorts-tank-top-flip-flops": {
+      "x": 1024,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Surfer Style (Board shorts, tank top, flip-flops)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-19.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-surfer-style-board-shorts-tank-top-flip-flops.png",
+      "sourceBounds": {
+        "left": 157,
+        "top": 0,
+        "right": 425,
+        "bottom": 592,
+        "width": 269,
+        "height": 593
+      },
+      "runtimeBounds": {
+        "left": 40,
+        "top": 6,
+        "right": 88,
+        "bottom": 119,
+        "width": 49,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 10
+      }
+    },
+    "option:clothing:yoga-instructor-yoga-pants-sports-bra-serene-expression": {
+      "x": 1152,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Yoga Instructor (Yoga pants, sports bra, serene expression)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-20.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-yoga-instructor-yoga-pants-sports-bra-serene-expression.png",
+      "sourceBounds": {
+        "left": 207,
+        "top": 16,
+        "right": 440,
+        "bottom": 589,
+        "width": 234,
+        "height": 574
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 8,
+        "right": 85,
+        "bottom": 119,
+        "width": 43,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 314
+      }
+    },
+    "option:clothing:cyclist-gear-lycra-shorts-cycling-jersey-helmet": {
+      "x": 1280,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Cyclist Gear (Lycra shorts, cycling jersey, helmet)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-20.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-cyclist-gear-lycra-shorts-cycling-jersey-helmet.png",
+      "sourceBounds": {
+        "left": 149,
+        "top": 7,
+        "right": 353,
+        "bottom": 603,
+        "width": 205,
+        "height": 597
+      },
+      "runtimeBounds": {
+        "left": 46,
+        "top": 8,
+        "right": 81,
+        "bottom": 119,
+        "width": 36,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 248
+      }
+    },
+    "option:clothing:business-casual-attire": {
+      "x": 1408,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Business Casual Attire",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-20.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-business-casual-attire.png",
+      "sourceBounds": {
+        "left": 260,
+        "top": 0,
+        "right": 458,
+        "bottom": 579,
+        "width": 199,
+        "height": 580
+      },
+      "runtimeBounds": {
+        "left": 46,
+        "top": 6,
+        "right": 81,
+        "bottom": 119,
+        "width": 36,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:formal-suit-tuxedo": {
+      "x": 1536,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Formal Suit / Tuxedo",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-20.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-formal-suit-tuxedo.png",
+      "sourceBounds": {
+        "left": 152,
+        "top": 0,
+        "right": 356,
+        "bottom": 585,
+        "width": 205,
+        "height": 586
+      },
+      "runtimeBounds": {
+        "left": 46,
+        "top": 6,
+        "right": 82,
+        "bottom": 119,
+        "width": 37,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:modern-business-suit-slim-fit-no-tie": {
+      "x": 1664,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Modern Business Suit (Slim fit, no tie)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-21.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-modern-business-suit-slim-fit-no-tie.png",
+      "sourceBounds": {
+        "left": 261,
+        "top": 12,
+        "right": 461,
+        "bottom": 599,
+        "width": 201,
+        "height": 588
+      },
+      "runtimeBounds": {
+        "left": 46,
+        "top": 8,
+        "right": 81,
+        "bottom": 119,
+        "width": 36,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 660
+      }
+    },
+    "option:clothing:creative-professional-stylish-blazer-dark-jeans-designer-sneakers": {
+      "x": 1792,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Creative Professional (Stylish blazer, dark jeans, designer sneakers)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-21.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-creative-professional-stylish-blazer-dark-jeans-designer-sneakers.png",
+      "sourceBounds": {
+        "left": 164,
+        "top": 11,
+        "right": 388,
+        "bottom": 603,
+        "width": 225,
+        "height": 593
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 8,
+        "right": 83,
+        "bottom": 119,
+        "width": 40,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 890
+      }
+    },
+    "option:clothing:startup-founder-branded-hoodie-expensive-sneakers-confident-stance": {
+      "x": 1920,
+      "y": 1152,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Startup Founder (Branded hoodie, expensive sneakers, confident stance)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-21.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-startup-founder-branded-hoodie-expensive-sneakers-confident-stance.png",
+      "sourceBounds": {
+        "left": 256,
+        "top": 0,
+        "right": 464,
+        "bottom": 588,
+        "width": 209,
+        "height": 589
+      },
+      "runtimeBounds": {
+        "left": 46,
+        "top": 6,
+        "right": 82,
+        "bottom": 119,
+        "width": 37,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:barista-uniform-apron-t-shirt-comfortable-shoes": {
+      "x": 0,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Barista Uniform (Apron, t-shirt, comfortable shoes)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-21.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-barista-uniform-apron-t-shirt-comfortable-shoes.png",
+      "sourceBounds": {
+        "left": 166,
+        "top": 0,
+        "right": 366,
+        "bottom": 590,
+        "width": 201,
+        "height": 591
+      },
+      "runtimeBounds": {
+        "left": 47,
+        "top": 6,
+        "right": 81,
+        "bottom": 119,
+        "width": 35,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:summer-beachwear": {
+      "x": 128,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Summer Beachwear",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-22.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-summer-beachwear.png",
+      "sourceBounds": {
+        "left": 238,
+        "top": 10,
+        "right": 452,
+        "bottom": 616,
+        "width": 215,
+        "height": 607
+      },
+      "runtimeBounds": {
+        "left": 46,
+        "top": 8,
+        "right": 82,
+        "bottom": 119,
+        "width": 37,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 80
+      }
+    },
+    "option:clothing:winter-wear-puffer-jacket": {
+      "x": 256,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Winter Wear (Puffer jacket)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-22.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-winter-wear-puffer-jacket.png",
+      "sourceBounds": {
+        "left": 146,
+        "top": 0,
+        "right": 384,
+        "bottom": 609,
+        "width": 239,
+        "height": 610
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 7,
+        "right": 84,
+        "bottom": 119,
+        "width": 41,
+        "height": 113
+      },
+      "cleanup": {
+        "removedComponents": 4,
+        "removedPixels": 18
+      }
+    },
+    "option:clothing:vintage-aviator-jacket": {
+      "x": 384,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Vintage Aviator Jacket",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-22.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-vintage-aviator-jacket.png",
+      "sourceBounds": {
+        "left": 229,
+        "top": 0,
+        "right": 522,
+        "bottom": 601,
+        "width": 294,
+        "height": 602
+      },
+      "runtimeBounds": {
+        "left": 38,
+        "top": 6,
+        "right": 90,
+        "bottom": 119,
+        "width": 53,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:festival-goer-fringe-face-glitter-denim-shorts": {
+      "x": 512,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Festival Goer (Fringe, face glitter, denim shorts)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-22.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-festival-goer-fringe-face-glitter-denim-shorts.png",
+      "sourceBounds": {
+        "left": 147,
+        "top": 0,
+        "right": 411,
+        "bottom": 608,
+        "width": 265,
+        "height": 609
+      },
+      "runtimeBounds": {
+        "left": 41,
+        "top": 6,
+        "right": 86,
+        "bottom": 119,
+        "width": 46,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:tourist-outfit-hawaiian-shirt-shorts-camera-around-neck": {
+      "x": 640,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Tourist Outfit (Hawaiian shirt, shorts, camera around neck)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-23.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-tourist-outfit-hawaiian-shirt-shorts-camera-around-neck.png",
+      "sourceBounds": {
+        "left": 231,
+        "top": 2,
+        "right": 453,
+        "bottom": 608,
+        "width": 223,
+        "height": 607
+      },
+      "runtimeBounds": {
+        "left": 45,
+        "top": 8,
+        "right": 83,
+        "bottom": 119,
+        "width": 39,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 114
+      }
+    },
+    "option:clothing:pajamas-loungewear-cozy-sweatpants-and-a-soft-shirt": {
+      "x": 768,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Pajamas / Loungewear (Cozy sweatpants and a soft shirt)",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-23.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-pajamas-loungewear-cozy-sweatpants-and-a-soft-shirt.png",
+      "sourceBounds": {
+        "left": 175,
+        "top": 9,
+        "right": 379,
+        "bottom": 602,
+        "width": 205,
+        "height": 594
+      },
+      "runtimeBounds": {
+        "left": 46,
+        "top": 8,
+        "right": 81,
+        "bottom": 119,
+        "width": 36,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 526
+      }
+    },
+    "option:clothing:noir-detective-trenchcoat": {
+      "x": 896,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Noir Detective Trenchcoat",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-23.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-noir-detective-trenchcoat.png",
+      "sourceBounds": {
+        "left": 224,
+        "top": 0,
+        "right": 488,
+        "bottom": 594,
+        "width": 265,
+        "height": 595
+      },
+      "runtimeBounds": {
+        "left": 40,
+        "top": 6,
+        "right": 87,
+        "bottom": 119,
+        "width": 48,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:superhero-spandex-suit": {
+      "x": 1024,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Superhero Spandex Suit",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-23.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-superhero-spandex-suit.png",
+      "sourceBounds": {
+        "left": 140,
+        "top": 0,
+        "right": 528,
+        "bottom": 583,
+        "width": 389,
+        "height": 584
+      },
+      "runtimeBounds": {
+        "left": 28,
+        "top": 6,
+        "right": 100,
+        "bottom": 119,
+        "width": 73,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:royal-gown": {
+      "x": 1152,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Royal Gown",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-24.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-royal-gown.png",
+      "sourceBounds": {
+        "left": 150,
+        "top": 0,
+        "right": 626,
+        "bottom": 611,
+        "width": 477,
+        "height": 612
+      },
+      "runtimeBounds": {
+        "left": 21,
+        "top": 7,
+        "right": 108,
+        "bottom": 119,
+        "width": 88,
+        "height": 113
+      },
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 544
+      }
+    },
+    "option:clothing:gothic-victorian-attire": {
+      "x": 1280,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Gothic Victorian Attire",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-24.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-gothic-victorian-attire.png",
+      "sourceBounds": {
+        "left": 149,
+        "top": 10,
+        "right": 423,
+        "bottom": 604,
+        "width": 275,
+        "height": 595
+      },
+      "runtimeBounds": {
+        "left": 39,
+        "top": 8,
+        "right": 88,
+        "bottom": 119,
+        "width": 50,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 4,
+        "removedPixels": 898
+      }
+    },
+    "option:clothing:gothic-lolita-dress": {
+      "x": 1408,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Gothic Lolita Dress",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-24.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-gothic-lolita-dress.png",
+      "sourceBounds": {
+        "left": 200,
+        "top": 0,
+        "right": 502,
+        "bottom": 597,
+        "width": 303,
+        "height": 598
+      },
+      "runtimeBounds": {
+        "left": 37,
+        "top": 6,
+        "right": 91,
+        "bottom": 119,
+        "width": 55,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 16,
+        "removedPixels": 622
+      }
+    },
+    "option:clothing:post-apocalyptic-scavenger": {
+      "x": 1536,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Post-Apocalyptic Scavenger",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-24.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-post-apocalyptic-scavenger.png",
+      "sourceBounds": {
+        "left": 144,
+        "top": 0,
+        "right": 464,
+        "bottom": 597,
+        "width": 321,
+        "height": 598
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 6,
+        "right": 92,
+        "bottom": 119,
+        "width": 58,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:clothing:wasteland-raider-leathers": {
+      "x": 1664,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Wasteland Raider Leathers",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-25.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-wasteland-raider-leathers.png",
+      "sourceBounds": {
+        "left": 237,
+        "top": 8,
+        "right": 517,
+        "bottom": 601,
+        "width": 281,
+        "height": 594
+      },
+      "runtimeBounds": {
+        "left": 39,
+        "top": 8,
+        "right": 89,
+        "bottom": 119,
+        "width": 51,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 8,
+        "removedPixels": 1702
+      }
+    },
+    "option:clothing:tribal-hunter-garb": {
+      "x": 1792,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Tribal Hunter Garb",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-25.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-tribal-hunter-garb.png",
+      "sourceBounds": {
+        "left": 146,
+        "top": 8,
+        "right": 415,
+        "bottom": 592,
+        "width": 270,
+        "height": 585
+      },
+      "runtimeBounds": {
+        "left": 39,
+        "top": 8,
+        "right": 88,
+        "bottom": 119,
+        "width": 50,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 4,
+        "removedPixels": 2706
+      }
+    },
+    "option:clothing:circus-ringleader-costume": {
+      "x": 1920,
+      "y": 1280,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Circus Ringleader Costume",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-25.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-circus-ringleader-costume.png",
+      "sourceBounds": {
+        "left": 216,
+        "top": 0,
+        "right": 498,
+        "bottom": 592,
+        "width": 283,
+        "height": 593
+      },
+      "runtimeBounds": {
+        "left": 39,
+        "top": 6,
+        "right": 89,
+        "bottom": 119,
+        "width": 51,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 34
+      }
+    },
+    "option:clothing:mad-scientist-lab-coat": {
+      "x": 0,
+      "y": 1408,
+      "w": 128,
+      "h": 128,
+      "field": "clothing",
+      "label": "Mad Scientist Lab Coat",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-clothing-25.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-clothing-mad-scientist-lab-coat.png",
+      "sourceBounds": {
+        "left": 118,
+        "top": 0,
+        "right": 428,
+        "bottom": 588,
+        "width": 311,
+        "height": 589
+      },
+      "runtimeBounds": {
+        "left": 36,
+        "top": 6,
+        "right": 92,
+        "bottom": 119,
+        "width": 57,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 2
+      }
+    },
+    "option:body-type:preserve-original": {
+      "x": 128,
+      "y": 1408,
+      "w": 128,
+      "h": 128,
+      "field": "body-type",
+      "label": "Preserve Original",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-00.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-body-type-preserve-original.png",
+      "sourceBounds": {
+        "left": 212,
+        "top": 15,
+        "right": 435,
+        "bottom": 586,
+        "width": 224,
+        "height": 572
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 8,
+        "right": 84,
+        "bottom": 119,
+        "width": 41,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 562
+      }
+    },
+    "option:body-type:thinner": {
+      "x": 256,
+      "y": 1408,
+      "w": 128,
+      "h": 128,
+      "field": "body-type",
+      "label": "Thinner",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-00.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-body-type-thinner.png",
+      "sourceBounds": {
+        "left": 196,
+        "top": 15,
+        "right": 380,
+        "bottom": 588,
+        "width": 185,
+        "height": 574
+      },
+      "runtimeBounds": {
+        "left": 48,
+        "top": 8,
+        "right": 80,
+        "bottom": 119,
+        "width": 33,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 700
+      }
+    },
+    "option:body-type:very-thin": {
+      "x": 384,
+      "y": 1408,
+      "w": 128,
+      "h": 128,
+      "field": "body-type",
+      "label": "Very Thin",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-00.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-body-type-very-thin.png",
+      "sourceBounds": {
+        "left": 255,
+        "top": 0,
+        "right": 423,
+        "bottom": 570,
+        "width": 169,
+        "height": 571
+      },
+      "runtimeBounds": {
+        "left": 49,
+        "top": 6,
+        "right": 78,
+        "bottom": 119,
+        "width": 30,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:body-type:skeletal-emaciated": {
+      "x": 512,
+      "y": 1408,
+      "w": 128,
+      "h": 128,
+      "field": "body-type",
+      "label": "Skeletal / Emaciated",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-00.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-body-type-skeletal-emaciated.png",
+      "sourceBounds": {
+        "left": 201,
+        "top": 0,
+        "right": 376,
+        "bottom": 574,
+        "width": 176,
+        "height": 575
+      },
+      "runtimeBounds": {
+        "left": 48,
+        "top": 6,
+        "right": 79,
+        "bottom": 119,
+        "width": 32,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:body-type:heavier": {
+      "x": 640,
+      "y": 1408,
+      "w": 128,
+      "h": 128,
+      "field": "body-type",
+      "label": "Heavier",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-01.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-body-type-heavier.png",
+      "sourceBounds": {
+        "left": 200,
+        "top": 16,
+        "right": 453,
+        "bottom": 572,
+        "width": 254,
+        "height": 557
+      },
+      "runtimeBounds": {
+        "left": 40,
+        "top": 8,
+        "right": 88,
+        "bottom": 119,
+        "width": 49,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 802
+      }
+    },
+    "option:body-type:obese": {
+      "x": 768,
+      "y": 1408,
+      "w": 128,
+      "h": 128,
+      "field": "body-type",
+      "label": "Obese",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-01.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-body-type-obese.png",
+      "sourceBounds": {
+        "left": 118,
+        "top": 15,
+        "right": 428,
+        "bottom": 572,
+        "width": 311,
+        "height": 558
+      },
+      "runtimeBounds": {
+        "left": 34,
+        "top": 8,
+        "right": 94,
+        "bottom": 119,
+        "width": 61,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 1720
+      }
+    },
+    "option:body-type:morbidly-obese": {
+      "x": 896,
+      "y": 1408,
+      "w": 128,
+      "h": 128,
+      "field": "body-type",
+      "label": "Morbidly Obese",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-01.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-body-type-morbidly-obese.png",
+      "sourceBounds": {
+        "left": 150,
+        "top": 0,
+        "right": 505,
+        "bottom": 561,
+        "width": 356,
+        "height": 562
+      },
+      "runtimeBounds": {
+        "left": 30,
+        "top": 6,
+        "right": 98,
+        "bottom": 119,
+        "width": 69,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:body-type:athletically-fit": {
+      "x": 1024,
+      "y": 1408,
+      "w": 128,
+      "h": 128,
+      "field": "body-type",
+      "label": "Athletically Fit",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-01.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-body-type-athletically-fit.png",
+      "sourceBounds": {
+        "left": 157,
+        "top": 0,
+        "right": 386,
+        "bottom": 565,
+        "width": 230,
+        "height": 566
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 6,
+        "right": 85,
+        "bottom": 119,
+        "width": 43,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:body-type:lean-muscle": {
+      "x": 1152,
+      "y": 1408,
+      "w": 128,
+      "h": 128,
+      "field": "body-type",
+      "label": "Lean Muscle",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-02.png",
+      "sourceSlot": 0,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-body-type-lean-muscle.png",
+      "sourceBounds": {
+        "left": 224,
+        "top": 12,
+        "right": 434,
+        "bottom": 578,
+        "width": 211,
+        "height": 567
+      },
+      "runtimeBounds": {
+        "left": 45,
+        "top": 8,
+        "right": 83,
+        "bottom": 119,
+        "width": 39,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 1692
+      }
+    },
+    "option:body-type:stocky-burly": {
+      "x": 1280,
+      "y": 1408,
+      "w": 128,
+      "h": 128,
+      "field": "body-type",
+      "label": "Stocky / Burly",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-02.png",
+      "sourceSlot": 1,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-body-type-stocky-burly.png",
+      "sourceBounds": {
+        "left": 133,
+        "top": 19,
+        "right": 399,
+        "bottom": 570,
+        "width": 267,
+        "height": 552
+      },
+      "runtimeBounds": {
+        "left": 38,
+        "top": 8,
+        "right": 89,
+        "bottom": 119,
+        "width": 52,
+        "height": 112
+      },
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 3264
+      }
+    },
+    "option:body-type:exaggerated-muscles": {
+      "x": 1408,
+      "y": 1408,
+      "w": 128,
+      "h": 128,
+      "field": "body-type",
+      "label": "Exaggerated Muscles",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-02.png",
+      "sourceSlot": 2,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-body-type-exaggerated-muscles.png",
+      "sourceBounds": {
+        "left": 180,
+        "top": 0,
+        "right": 487,
+        "bottom": 562,
+        "width": 308,
+        "height": 563
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 6,
+        "right": 93,
+        "bottom": 119,
+        "width": 59,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "option:body-type:hyper-muscular": {
+      "x": 1536,
+      "y": 1408,
+      "w": 128,
+      "h": 128,
+      "field": "body-type",
+      "label": "Hyper-Muscular",
+      "detail": "",
+      "sourceSheet": "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-body-type-02.png",
+      "sourceSlot": 3,
+      "sourceFrame512": "assets/recipes/character-lab/sources/option-icons-v1/frames-512/option-body-type-hyper-muscular.png",
+      "sourceBounds": {
+        "left": 69,
+        "top": 0,
+        "right": 482,
+        "bottom": 561,
+        "width": 414,
+        "height": 562
+      },
+      "runtimeBounds": {
+        "left": 24,
+        "top": 6,
+        "right": 104,
+        "bottom": 119,
+        "width": 81,
+        "height": 114
+      },
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    }
+  }
+}

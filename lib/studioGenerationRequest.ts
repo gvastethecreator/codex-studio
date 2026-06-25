@@ -31,7 +31,9 @@ export function prepareStudioGenerationRequest({
   const baseAttachments = configOverrides?.attachments ?? generationConfig.attachments;
   const effectiveRecipeId = configOverrides?.recipeId ?? generationConfig.recipeId;
   const finalAttachments =
-    effectiveRecipeId === 'timeline' ? baseAttachments : baseAttachments.slice(0, 1);
+    effectiveRecipeId === 'timeline' || effectiveRecipeId === 'character-lab'
+      ? baseAttachments.slice(0, 4)
+      : baseAttachments.slice(0, 1);
   const hasReferenceImage = finalAttachments.length > 0;
 
   if (!finalPrompt && !hasReferenceImage) {

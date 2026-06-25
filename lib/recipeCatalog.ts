@@ -82,6 +82,14 @@ const RECIPE_CARD_METADATA: Record<RegisteredRecipeId, RecipeCatalogCardMetadata
     accentColor: 'rose',
     cardImageKey: 'cinematic',
   },
+  'character-lab': {
+    id: 'character-lab',
+    subtitle: 'Asset Workflow',
+    tag: 'Lab',
+    buttonText: 'Open Lab',
+    accentColor: 'emerald',
+    cardImageKey: 'character-lab',
+  },
   timeline: {
     id: 'timeline',
     subtitle: 'Scene Extrapolation',

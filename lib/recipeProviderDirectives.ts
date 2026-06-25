@@ -84,6 +84,67 @@ function buildCharacterProviderDirectives(module: RecipeModule, params: Record<s
   });
 }
 
+function buildCharacterLabProviderDirectives(
+  module: RecipeModule,
+  params: Record<string, unknown>,
+) {
+  const actionLabel = getString(params, 'actionLabel') || 'Front View';
+  const actionPrompt = getString(params, 'actionPrompt') || 'Generate a clean character asset.';
+  const mode = getString(params, 'mode') || 'poses';
+  const mediaType = getString(params, 'mediaType') || 'image';
+  const capability = getString(params, 'capability') || 'ready';
+  const frames = getNumber(params, 'frames', 0);
+  const referencesCount = getNumber(params, 'referencesCount', 0);
+  const hasSource = getBoolean(params, 'hasSource');
+
+  return createRecipeProviderDirectives({
+    recipeId: module.id,
+    title: module.title,
+    sections: [
+      {
+        title: 'Character Lab Action',
+        directives: [
+          directive('Mode', mode),
+          directive('Category', getString(params, 'category') || 'Standard Views'),
+          directive('Action', actionLabel),
+          directive('Action ID', getString(params, 'actionId')),
+          directive('Recommended Task', getString(params, 'task') || module.defaultTask),
+          directive('Media Type', mediaType),
+          directive('Capability', capability),
+          directive('Action Prompt', actionPrompt),
+          directive('Frames', frames > 0 ? frames : 'not specified'),
+          directive('Couples Or Group Pose', getBoolean(params, 'isCouplesPose') ? 'yes' : 'no'),
+        ],
+      },
+      {
+        title: 'Identity And References',
+        directives: [
+          directive('Subject / Key Details', getString(params, 'subject')),
+          directive('Has Source Image', hasSource ? 'yes' : 'no'),
+          directive('Extra References', referencesCount),
+          directive(
+            'Identity Contract',
+            hasSource
+              ? 'Treat the first attachment as the identity source; use later attachments as references.'
+              : 'Create a cohesive original character from the prompt and recipe controls.',
+          ),
+        ],
+      },
+      {
+        title: 'Character Controls',
+        directives: [
+          directive('Style', getString(params, 'style')),
+          directive('Clothing', getString(params, 'clothing')),
+          directive('Body Type', getString(params, 'bodyType')),
+          directive('Expression', getString(params, 'expression')),
+          directive('Background Color', getString(params, 'backgroundColor')),
+          directive('Requested Aspect Ratio', getString(params, 'labAspectRatio')),
+        ],
+      },
+    ],
+  });
+}
+
 function buildCameraProviderDirectives(module: RecipeModule, params: Record<string, unknown>) {
   const azimuth = Math.round(getNumber(params, 'azimuth', 0));
   const elevation = Math.round(getNumber(params, 'elevation', 0));
@@ -321,6 +382,7 @@ export function buildRecipeProviderDirectives(
   const input = params ?? {};
 
   if (module.id === 'camera') return buildCameraProviderDirectives(module, input);
+  if (module.id === 'character-lab') return buildCharacterLabProviderDirectives(module, input);
   if (module.id === 'character') return buildCharacterProviderDirectives(module, input);
   if (module.id === 'cinematic') return buildCinematicProviderDirectives(module, input);
   if (module.id === 'remaster') return buildRemasterProviderDirectives(module, input);

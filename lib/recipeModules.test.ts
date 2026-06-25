@@ -23,6 +23,7 @@ describe('recipeModules', () => {
       'remaster',
       'spritesheet',
       'cinematic',
+      'character-lab',
       'character',
       'camera',
       'timeline',
@@ -182,6 +183,52 @@ describe('recipeModules', () => {
     expect(spec.task).toBe('sprite_sheet');
     expect(spec.providerId).toBe('codex');
     expect(spec.quality?.qualityPresetId).toBe('sprite_sheet');
+  });
+
+  it('lets Character Lab actions request supported task kinds and source/reference roles', () => {
+    const spec = buildGenerationTaskSpecFromRecipe({
+      id: 'spec-character-lab-sprite',
+      providerId: 'codex',
+      config: {
+        ...DEFAULT_GENERATION_CONFIG,
+        prompt: 'a compact walk cycle',
+        recipeId: 'character-lab',
+        recipeParams: {
+          mode: 'spritesheets',
+          actionId: 'spritesheets:walk',
+          actionLabel: 'Walk',
+          category: 'Movement',
+          actionPrompt: 'a concise, 4-frame walking cycle showing the key poses of the movement.',
+          task: 'sprite_sheet',
+          mediaType: 'spritesheet',
+          frames: 4,
+          isCouplesPose: false,
+          capability: 'ready',
+          subject: 'compact courier',
+          style: 'Pixel Art (16-bit): Retro console style, limited palette.',
+          backgroundColor: '#000000',
+          referencesCount: 1,
+          hasSource: true,
+        },
+        attachments: [
+          { id: 'source', name: 'source.png', dataUrl: 'data:image/png;base64,aaa', strength: 0.8 },
+          { id: 'ref', name: 'style.png', dataUrl: 'data:image/png;base64,bbb', strength: 0.5 },
+        ],
+      },
+    });
+
+    expect(spec.task).toBe('sprite_sheet');
+    expect(spec.assets.map((asset) => asset.role)).toEqual(['input', 'reference']);
+    expect(spec.quality).toMatchObject({
+      qualityPresetId: 'sprite_sheet',
+      subject: 'compact courier',
+      style: 'Pixel Art (16-bit): Retro console style, limited palette.',
+      color: '#000000',
+    });
+    expect(spec.metadata.recipeContext).toContain('recipe: character-lab');
+    expect(JSON.stringify(spec.metadata.recipeProviderDirectives)).toContain(
+      'Subject / Key Details',
+    );
   });
 
   it('rejects unsupported provider pairings before provider compilation', () => {

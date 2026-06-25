@@ -22,6 +22,11 @@ const CharacterSheetRecipe = React.lazy(() =>
     default: module.CharacterSheetRecipe,
   })),
 );
+const CharacterLabRecipe = React.lazy(() =>
+  import('./recipes/CharacterLabRecipe').then((module) => ({
+    default: module.CharacterLabRecipe,
+  })),
+);
 const StylesRecipe = React.lazy(() =>
   import('./recipes/StylesRecipe').then((module) => ({ default: module.StylesRecipe })),
 );
@@ -148,6 +153,18 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
             onFileSelect={handlePastedFiles}
             onGenerate={handleGenerate}
             isGenerating={isGenerating}
+          />
+        )}
+        {activeRecipe === 'character-lab' && (
+          <CharacterLabRecipe
+            config={generationConfig}
+            updateConfig={updateGenerationConfig}
+            updateAttachment={updateAttachment}
+            onGenerate={handleGenerate}
+            isGenerating={isGenerating}
+            images={imagesWithConfig}
+            onSelectImage={openModal}
+            onUseAsSource={handleAddToContext}
           />
         )}
       </React.Suspense>

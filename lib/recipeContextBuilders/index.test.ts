@@ -5,6 +5,7 @@ import type { RegisteredRecipeId } from './shared';
 
 const EXPECTED_RECIPE_IDS: RegisteredRecipeId[] = [
   'camera',
+  'character-lab',
   'character',
   'cinematic',
   'remaster',

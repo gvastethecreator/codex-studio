@@ -1,0 +1,1686 @@
+{
+  "image": "character-lab-control-atlas.png",
+  "cellSize": 128,
+  "columns": 16,
+  "rows": 18,
+  "frameCount": 279,
+  "artDirection": "neutral-mannequin-v1-color-accent-props",
+  "source": "character-lab-control-atlas.source.json",
+  "builderReport": "character-lab-control-atlas.report.json",
+  "frames": {
+    "poses:front": {
+      "x": 0,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:back": {
+      "x": 128,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:left": {
+      "x": 256,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:right": {
+      "x": 384,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:three_quarter": {
+      "x": 512,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:expressions": {
+      "x": 640,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:closeup_portrait": {
+      "x": 768,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:action_running": {
+      "x": 896,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:action_jumping": {
+      "x": 1024,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:action_fighting": {
+      "x": 1152,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:action_sneaking": {
+      "x": 1280,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:action_spellcasting": {
+      "x": 1408,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:victory_pose": {
+      "x": 1536,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:defeated_pose": {
+      "x": 1664,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:dodging": {
+      "x": 1792,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:blocking": {
+      "x": 1920,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "poses:throwing": {
+      "x": 0,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:cheering": {
+      "x": 128,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:thinking": {
+      "x": 256,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:reaction_scared": {
+      "x": 384,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:reaction_confused": {
+      "x": 512,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:yawning": {
+      "x": 640,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:smirking": {
+      "x": 768,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:facepalm": {
+      "x": 896,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:pointing": {
+      "x": 1024,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:interaction_waving": {
+      "x": 1152,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:interaction_device": {
+      "x": 1280,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:holding_sign": {
+      "x": 1408,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:shrugging": {
+      "x": 1536,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:reading_book": {
+      "x": 1664,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:drinking_mug": {
+      "x": 1792,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:couples_holding_hands": {
+      "x": 1920,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "poses:couples_back_to_back": {
+      "x": 0,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "poses:couples_embrace": {
+      "x": 128,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "poses:couples_fighting": {
+      "x": 256,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "poses:couples_dancing": {
+      "x": 384,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "poses:couples_selfie": {
+      "x": 512,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "poses:group_pose": {
+      "x": 640,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "poses:carrying": {
+      "x": 768,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "special:isometric_sheet": {
+      "x": 896,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "special:turnaround_sheet": {
+      "x": 1024,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "special:dynamic_sheet": {
+      "x": 1152,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "special:sheet_with_items": {
+      "x": 1280,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "special:anatomy_sheet": {
+      "x": 1408,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "special:disassemble_sheet": {
+      "x": 1536,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "special:wireframe_sheet": {
+      "x": 1664,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "special:skeleton_sheet": {
+      "x": 1792,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "special:sticker_sheet": {
+      "x": 1920,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "special:pixel_art_portrait": {
+      "x": 0,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:vga_box_art": {
+      "x": 128,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:tarot_card": {
+      "x": 256,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:plastic_toy": {
+      "x": 384,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:collectible_figurine": {
+      "x": 512,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:bronze_sculpture": {
+      "x": 640,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:marble_sculpture": {
+      "x": 768,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:videogame_screenshot": {
+      "x": 896,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:rpg_card": {
+      "x": 1024,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_child": {
+      "x": 1152,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_teen": {
+      "x": 1280,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_young_adult": {
+      "x": 1408,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_elder": {
+      "x": 1536,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_evil": {
+      "x": 1664,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_holy": {
+      "x": 1792,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_gender_swap": {
+      "x": 1920,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_cybernetic": {
+      "x": 0,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_apocalyptic": {
+      "x": 128,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_antagonist": {
+      "x": 256,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_hologram": {
+      "x": 384,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_crystal": {
+      "x": 512,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_fire": {
+      "x": 640,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_nature": {
+      "x": 768,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:transform_constellation": {
+      "x": 896,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:weapon_sheet": {
+      "x": 1024,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:outfit_variations": {
+      "x": 1152,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:vehicle_mount_sheet": {
+      "x": 1280,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:home_base_art": {
+      "x": 1408,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:asset_food": {
+      "x": 1536,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:asset_possessions": {
+      "x": 1664,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:asset_inventory": {
+      "x": 1792,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "special:asset_powers": {
+      "x": 1920,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:walk": {
+      "x": 0,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:run": {
+      "x": 128,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:jump": {
+      "x": 256,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:dash": {
+      "x": 384,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:slide": {
+      "x": 512,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:dodge_roll": {
+      "x": 640,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:swimming": {
+      "x": 768,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:crawling": {
+      "x": 896,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:climbing": {
+      "x": 1024,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:levitate_hover": {
+      "x": 1152,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:melee_attack": {
+      "x": 1280,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:ranged_attack": {
+      "x": 1408,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:magic_spell": {
+      "x": 1536,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:charge_attack": {
+      "x": 1664,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:special_attack": {
+      "x": 1792,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:block": {
+      "x": 1920,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:parry": {
+      "x": 0,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:item_use": {
+      "x": 128,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:throwing": {
+      "x": 256,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:interact": {
+      "x": 384,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:idle": {
+      "x": 512,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:hurt_animation": {
+      "x": 640,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:dizzy_stunned": {
+      "x": 768,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:death_animation": {
+      "x": 896,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:get_up": {
+      "x": 1024,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:power_up_aura": {
+      "x": 1152,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:celebrate_victory": {
+      "x": 1280,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:sleeping": {
+      "x": 1408,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:teleport_in": {
+      "x": 1536,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:crouch": {
+      "x": 1664,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:shocked": {
+      "x": 1792,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:tired": {
+      "x": 1920,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:alert": {
+      "x": 0,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:emote_wave": {
+      "x": 128,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:energetic_greeting": {
+      "x": 256,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:emote_laugh": {
+      "x": 384,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:dance_loop": {
+      "x": 512,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:thumbs_up": {
+      "x": 640,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:bow": {
+      "x": 768,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:emote_taunt": {
+      "x": 896,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:emote_nod": {
+      "x": 1024,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:emote_shake_head": {
+      "x": 1152,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:emote_cry": {
+      "x": 1280,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:shrug": {
+      "x": 1408,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:facepalm": {
+      "x": 1536,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:point": {
+      "x": 1664,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:clap": {
+      "x": 1792,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "spritesheets:salute": {
+      "x": 1920,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:char_home": {
+      "x": 0,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:char_workplace": {
+      "x": 128,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:char_yard": {
+      "x": 256,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:char_room": {
+      "x": 384,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:char_hobby_space": {
+      "x": 512,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:char_kitchen": {
+      "x": 640,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:char_trophy_room": {
+      "x": 768,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:char_favorite_spot": {
+      "x": 896,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:char_vehicle": {
+      "x": 1024,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:char_neighborhood": {
+      "x": 1152,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:forest": {
+      "x": 1280,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:tavern": {
+      "x": 1408,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:dragon_lair": {
+      "x": 1536,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:ancient_temple": {
+      "x": 1664,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:library": {
+      "x": 1792,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:steampunk_workshop": {
+      "x": 1920,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:clockwork_city": {
+      "x": 0,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:crystalline_caverns": {
+      "x": 128,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:haunted_mansion": {
+      "x": 256,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:marketplace": {
+      "x": 384,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:gladiator_arena": {
+      "x": 512,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:elemental_plane": {
+      "x": 640,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:throne_room": {
+      "x": 768,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:alchemist_lab": {
+      "x": 896,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:world_tree": {
+      "x": 1024,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:dwarven_forge": {
+      "x": 1152,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:elven_city": {
+      "x": 1280,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:gothic_cathedral": {
+      "x": 1408,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:wizard_tower_observatory": {
+      "x": 1536,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:undead_crypt": {
+      "x": 1664,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:cyberpunk": {
+      "x": 1792,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:space_station": {
+      "x": 1920,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:hightech_lab": {
+      "x": 0,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:post_apoc": {
+      "x": 128,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:alien_planet": {
+      "x": 256,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:volcanic_wasteland": {
+      "x": 384,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:dystopian_megastructure": {
+      "x": 512,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:spaceship_bridge": {
+      "x": 640,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:hangar_bay": {
+      "x": 768,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:cryo_chamber": {
+      "x": 896,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:biopunk_lab": {
+      "x": 1024,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:generation_ship_arboretum": {
+      "x": 1152,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:asteroid_mine": {
+      "x": 1280,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:solarpunk_city": {
+      "x": 1408,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:mecha_cockpit": {
+      "x": 1536,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:terraforming_site": {
+      "x": 1664,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:noir_street": {
+      "x": 1792,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:urban_rooftop": {
+      "x": 1920,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:coffee_shop": {
+      "x": 0,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:retro_arcade": {
+      "x": 128,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:art_museum": {
+      "x": 256,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:rooftop_garden": {
+      "x": 384,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:subway_platform": {
+      "x": 512,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:public_library": {
+      "x": 640,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:city_intersection": {
+      "x": 768,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:airport_terminal": {
+      "x": 896,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:shopping_mall": {
+      "x": 1024,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:amusement_park": {
+      "x": 1152,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:university_campus": {
+      "x": 1280,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:skate_park": {
+      "x": 1408,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:concert_stage": {
+      "x": 1536,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:abandoned_warehouse": {
+      "x": 1664,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:neon_diner": {
+      "x": 1792,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:botanical_garden_conservatory": {
+      "x": 1920,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:recording_studio": {
+      "x": 0,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:skyscraper_lounge": {
+      "x": 128,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:mountain": {
+      "x": 256,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:sky_island": {
+      "x": 384,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:underwater_reef": {
+      "x": 512,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:monastery_courtyard": {
+      "x": 640,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:zen_garden": {
+      "x": 768,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:giant_mushroom_forest": {
+      "x": 896,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:desert_oasis": {
+      "x": 1024,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:aurora_borealis": {
+      "x": 1152,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:petrified_forest": {
+      "x": 1280,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:bioluminescent_beach": {
+      "x": 1408,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:dreamscape": {
+      "x": 1536,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:sea_of_clouds": {
+      "x": 1664,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:inside_geode": {
+      "x": 1792,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "scenes:forgotten_god_statue": {
+      "x": 1920,
+      "y": 1536,
+      "w": 128,
+      "h": 128
+    },
+    "effects:zoom_out_fill": {
+      "x": 0,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:extreme_zoom_out": {
+      "x": 128,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:cosmic_zoom_out": {
+      "x": 256,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:low_angle": {
+      "x": 384,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:high_angle": {
+      "x": 512,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:birds_eye": {
+      "x": 640,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:dutch_angle": {
+      "x": 768,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:fisheye": {
+      "x": 896,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:pov": {
+      "x": 1024,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:third_person": {
+      "x": 1152,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:over_shoulder": {
+      "x": 1280,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:cinematic_wide": {
+      "x": 1408,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:closeup_action": {
+      "x": 1536,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:aerial_tracking": {
+      "x": 1664,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:isometric": {
+      "x": 1792,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:top_down": {
+      "x": 1920,
+      "y": 1664,
+      "w": 128,
+      "h": 128
+    },
+    "effects:day_sunrise": {
+      "x": 0,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:day_midday": {
+      "x": 128,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:day_golden_hour": {
+      "x": 256,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:day_night": {
+      "x": 384,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:weather_overcast": {
+      "x": 512,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:weather_rainy": {
+      "x": 640,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:weather_foggy": {
+      "x": 768,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:weather_stormy": {
+      "x": 896,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:quality_phone": {
+      "x": 1024,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:quality_digicam": {
+      "x": 1152,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:quality_analog": {
+      "x": 1280,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:quality_professional": {
+      "x": 1408,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:quality_polaroid": {
+      "x": 1536,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:quality_vhs": {
+      "x": 1664,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:quality_infrared": {
+      "x": 1792,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:quality_daguerreotype": {
+      "x": 1920,
+      "y": 1792,
+      "w": 128,
+      "h": 128
+    },
+    "effects:bg_remove": {
+      "x": 0,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "effects:bg_explosive": {
+      "x": 128,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "effects:bg_gradient": {
+      "x": 256,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "effects:bg_blur": {
+      "x": 384,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "effects:bg_grid": {
+      "x": 512,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "effects:bg_pattern": {
+      "x": 640,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "motion:motion_idle": {
+      "x": 768,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "motion:motion_walk": {
+      "x": 896,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "motion:motion_run": {
+      "x": 1024,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "motion:motion_turn": {
+      "x": 1152,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "motion:motion_attack": {
+      "x": 1280,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "motion:motion_spell": {
+      "x": 1408,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "motion:motion_block": {
+      "x": 1536,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "motion:motion_laugh": {
+      "x": 1664,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "profile:basic-info": {
+      "x": 1792,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "profile:live-interview": {
+      "x": 1920,
+      "y": 1920,
+      "w": 128,
+      "h": 128
+    },
+    "profile:style-analysis": {
+      "x": 0,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "profile:equipment": {
+      "x": 128,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "profile:story-hooks": {
+      "x": 256,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "profile:attributes": {
+      "x": 384,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "profile:dialogue": {
+      "x": 512,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "control:source": {
+      "x": 640,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "control:reference": {
+      "x": 768,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "control:browse-all": {
+      "x": 896,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "control:search": {
+      "x": 1024,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "control:favorite": {
+      "x": 1152,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "control:recent": {
+      "x": 1280,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "control:prompt-preview": {
+      "x": 1408,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "control:batch": {
+      "x": 1536,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "control:generate": {
+      "x": 1664,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "control:use-as-source": {
+      "x": 1792,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "control:download": {
+      "x": 1920,
+      "y": 2048,
+      "w": 128,
+      "h": 128
+    },
+    "control:export": {
+      "x": 0,
+      "y": 2176,
+      "w": 128,
+      "h": 128
+    },
+    "control:notes": {
+      "x": 128,
+      "y": 2176,
+      "w": 128,
+      "h": 128
+    },
+    "control:history": {
+      "x": 256,
+      "y": 2176,
+      "w": 128,
+      "h": 128
+    },
+    "control:motion-preflight": {
+      "x": 384,
+      "y": 2176,
+      "w": 128,
+      "h": 128
+    },
+    "control:profile-preflight": {
+      "x": 512,
+      "y": 2176,
+      "w": 128,
+      "h": 128
+    },
+    "control:live-preflight": {
+      "x": 640,
+      "y": 2176,
+      "w": 128,
+      "h": 128
+    },
+    "control:clear": {
+      "x": 768,
+      "y": 2176,
+      "w": 128,
+      "h": 128
+    }
+  }
+}

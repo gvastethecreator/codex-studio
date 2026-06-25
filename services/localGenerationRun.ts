@@ -155,9 +155,9 @@ export async function buildJobAssets({
     ? config.attachments.filter((attachment) => attachment.id.startsWith('mask-'))
     : config.attachments;
 
-  for (const attachment of queuedAttachments) {
+  for (const [index, attachment] of queuedAttachments.entries()) {
     assets.push({
-      role: attachment.id.startsWith('mask-') ? 'mask' : 'reference',
+      role: getQueuedAttachmentAssetRole({ config, attachment, index }),
       name: attachment.name,
       dataUrl: attachment.dataUrl,
       strength: attachment.strength,
@@ -165,6 +165,20 @@ export async function buildJobAssets({
   }
 
   return assets;
+}
+
+function getQueuedAttachmentAssetRole({
+  config,
+  attachment,
+  index,
+}: {
+  config: Pick<ImageGenerationConfig, 'recipeId'>;
+  attachment: ImageGenerationConfig['attachments'][number];
+  index: number;
+}): GenerationTaskAssetRef['role'] {
+  if (attachment.id.startsWith('mask-')) return 'mask';
+  if (config.recipeId === 'character-lab' && index === 0) return 'input';
+  return 'reference';
 }
 
 export function buildLocalGenerationTaskPrompt({

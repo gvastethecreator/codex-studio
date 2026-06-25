@@ -1,0 +1,8129 @@
+{
+  "ok": true,
+  "generatedAt": "2026-06-24T04:06:09.714Z",
+  "sourceSheets512": 18,
+  "sourceSlots": 288,
+  "runtimeFrames": 279,
+  "runtimeAtlas": "assets/recipes/character-lab/character-lab-control-atlas.png",
+  "runtimeAtlasSha256": "a10347718291477aa1c64673f58b6d05ae965469cfeaf1b113cdff19324e622f",
+  "sourceSheetHashes": {
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png": "07a24bfd3e5abb70b25c66aedd541e3a65e554fa00b9da74468c6b51704d9890",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png": "1d5d66da31d47b58bece1b2b22c5cad2291e59595ba82dfc1cb82d1369435d45",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png": "e0eb0a529d1eb1057cf2ead4e9b074ff0ba4ea620a3c93b341408c1ef4b7b007",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png": "5903884b3e30ee4578842bc2b18bdd3122eb3c3845500c2128cb949f42f2937d",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png": "950e32e6b6ba841141195e2cde244f7182c7fe209eecfec5f834053e135f6084",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png": "385ddb111d571126f9967a5d14970b918e701aba5b925f039daf135735af31c7",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png": "7c9b1513ce23c176ff4b05370169cf6ca7868608a6b6c2365b4de1127517f2a6",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png": "90d7caecd4eb014a3f180a8db40d872059e1f1ce151a0c982ec950e06ce2d33d",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png": "afafa8b1e7bc16c99db2ace9d1576220001b082a1ac06d1c642e30a61bf83926",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png": "89a4ecfa189fe1615c3fc414ce12cf82316c4405c57666ea0f99946092450ba0",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png": "0c497edc09e57c2aa57d2ea192d80198e1b428d7b1eabe6bb22be2fdb4731df6",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png": "e5f2b0f0ab8ed83422f885b8bfa3b31ff848a100e6b2b8b65218909f490918a3",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png": "4c7ab2d86da1d6a6d9d54aaf687bd289cb2dc925136dba820f01fe890037bbf4",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png": "56c830fb56b79dbc7ee86523fcbb068798ce249990cf964246f42ac76fb6fd2d",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png": "d39d7f6a1791b791116ce6d655244c13a7afc79e0cafcb29b33c05917f4b1345",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png": "edb341abb8964e157a619539b48420687adcff421d3b0a1e12b930d818d1178d",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png": "0049349d4d530e28ad02e224ae28a75bd00d88c6de4f02554d1ac8790f05e9e2",
+    "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png": "eb6345b9e3ab2f33902292ca1864cdb9bf034c5a05a28bb80b92c956e0b0a99d"
+  },
+  "missing": [],
+  "centerStats": {
+    "maxOffset": 21.5,
+    "p95Offset": 12.5,
+    "minCoverage": 0.1276,
+    "medianCoverage": 0.6262
+  },
+  "frames": {
+    "poses:front": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 198,
+        "top": 66,
+        "right": 385,
+        "bottom": 511,
+        "width": 188,
+        "height": 446
+      },
+      "runtimeBounds": {
+        "left": 43,
+        "top": 10,
+        "right": 85,
+        "bottom": 119,
+        "width": 43,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.2887,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:back": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 163,
+        "top": 66,
+        "right": 352,
+        "bottom": 511,
+        "width": 190,
+        "height": 446
+      },
+      "runtimeBounds": {
+        "left": 42,
+        "top": 10,
+        "right": 85,
+        "bottom": 119,
+        "width": 44,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.2954,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:left": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 171,
+        "top": 66,
+        "right": 262,
+        "bottom": 511,
+        "width": 92,
+        "height": 446
+      },
+      "runtimeBounds": {
+        "left": 55,
+        "top": 10,
+        "right": 73,
+        "bottom": 119,
+        "width": 19,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.1276,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:right": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 136,
+        "top": 66,
+        "right": 225,
+        "bottom": 511,
+        "width": 90,
+        "height": 446
+      },
+      "runtimeBounds": {
+        "left": 55,
+        "top": 10,
+        "right": 73,
+        "bottom": 119,
+        "width": 19,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.1276,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:three_quarter": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 203,
+        "top": 0,
+        "right": 371,
+        "bottom": 511,
+        "width": 169,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 48,
+        "top": 25,
+        "right": 80,
+        "bottom": 119,
+        "width": 33,
+        "height": 95
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 8.5
+      },
+      "maxCenterOffset": 8.5,
+      "coverage": 0.1913,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 1488
+      }
+    },
+    "poses:expressions": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 86,
+        "top": 0,
+        "right": 406,
+        "bottom": 488,
+        "width": 321,
+        "height": 489
+      },
+      "runtimeBounds": {
+        "left": 28,
+        "top": 26,
+        "right": 99,
+        "bottom": 117,
+        "width": 72,
+        "height": 92
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 8
+      },
+      "maxCenterOffset": 8,
+      "coverage": 0.4043,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 1465
+      }
+    },
+    "poses:closeup_portrait": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 2,
+        "top": 0,
+        "right": 511,
+        "bottom": 508,
+        "width": 510,
+        "height": 509
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 25,
+        "right": 98,
+        "bottom": 117,
+        "width": 90,
+        "height": 93
+      },
+      "centerOffset": {
+        "x": -10,
+        "y": 7.5
+      },
+      "maxCenterOffset": 10,
+      "coverage": 0.5109,
+      "cleanup": {
+        "removedComponents": 9,
+        "removedPixels": 2071
+      }
+    },
+    "poses:action_running": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 382,
+        "bottom": 506,
+        "width": 383,
+        "height": 507
+      },
+      "runtimeBounds": {
+        "left": 22,
+        "top": 25,
+        "right": 104,
+        "bottom": 117,
+        "width": 83,
+        "height": 93
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 7.5
+      },
+      "maxCenterOffset": 7.5,
+      "coverage": 0.4711,
+      "cleanup": {
+        "removedComponents": 7,
+        "removedPixels": 2482
+      }
+    },
+    "poses:action_jumping": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 84,
+        "top": 14,
+        "right": 444,
+        "bottom": 511,
+        "width": 361,
+        "height": 498
+      },
+      "runtimeBounds": {
+        "left": 26,
+        "top": 9,
+        "right": 101,
+        "bottom": 101,
+        "width": 76,
+        "height": 93
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -8.5
+      },
+      "maxCenterOffset": 8.5,
+      "coverage": 0.4314,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 1772
+      }
+    },
+    "poses:action_fighting": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 57,
+        "top": 32,
+        "right": 511,
+        "bottom": 439,
+        "width": 455,
+        "height": 408
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 16,
+        "right": 81,
+        "bottom": 111,
+        "width": 72,
+        "height": 96
+      },
+      "centerOffset": {
+        "x": -18,
+        "y": 0
+      },
+      "maxCenterOffset": 18,
+      "coverage": 0.4219,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 25
+      }
+    },
+    "poses:action_sneaking": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 93,
+        "right": 400,
+        "bottom": 511,
+        "width": 401,
+        "height": 419
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 10,
+        "right": 115,
+        "bottom": 119,
+        "width": 105,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.705,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 958
+      }
+    },
+    "poses:action_spellcasting": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 38,
+        "right": 405,
+        "bottom": 511,
+        "width": 406,
+        "height": 474
+      },
+      "runtimeBounds": {
+        "left": 17,
+        "top": 10,
+        "right": 109,
+        "bottom": 101,
+        "width": 93,
+        "height": 92
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": -8
+      },
+      "maxCenterOffset": 8,
+      "coverage": 0.5222,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 1401
+      }
+    },
+    "poses:victory_pose": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 142,
+        "top": 0,
+        "right": 413,
+        "bottom": 440,
+        "width": 272,
+        "height": 441
+      },
+      "runtimeBounds": {
+        "left": 32,
+        "top": 8,
+        "right": 96,
+        "bottom": 117,
+        "width": 65,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.4364,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:defeated_pose": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 111,
+        "top": 24,
+        "right": 511,
+        "bottom": 400,
+        "width": 401,
+        "height": 377
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 81,
+        "bottom": 114,
+        "width": 72,
+        "height": 101
+      },
+      "centerOffset": {
+        "x": -18,
+        "y": 0.5
+      },
+      "maxCenterOffset": 18,
+      "coverage": 0.4438,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 2162
+      }
+    },
+    "poses:dodging": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 354,
+        "bottom": 422,
+        "width": 355,
+        "height": 423
+      },
+      "runtimeBounds": {
+        "left": 17,
+        "top": 8,
+        "right": 108,
+        "bottom": 117,
+        "width": 92,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6177,
+      "cleanup": {
+        "removedComponents": 4,
+        "removedPixels": 1275
+      }
+    },
+    "poses:blocking": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
+      "sourceBounds": {
+        "left": 19,
+        "top": 0,
+        "right": 363,
+        "bottom": 420,
+        "width": 345,
+        "height": 421
+      },
+      "runtimeBounds": {
+        "left": 20,
+        "top": 8,
+        "right": 107,
+        "bottom": 117,
+        "width": 88,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5908,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:throwing": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 66,
+        "top": 66,
+        "right": 470,
+        "bottom": 511,
+        "width": 405,
+        "height": 446
+      },
+      "runtimeBounds": {
+        "left": 15,
+        "top": 10,
+        "right": 112,
+        "bottom": 119,
+        "width": 98,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.658,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:cheering": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 84,
+        "top": 44,
+        "right": 434,
+        "bottom": 511,
+        "width": 351,
+        "height": 468
+      },
+      "runtimeBounds": {
+        "left": 24,
+        "top": 10,
+        "right": 103,
+        "bottom": 119,
+        "width": 80,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5371,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:thinking": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 85,
+        "top": 88,
+        "right": 393,
+        "bottom": 511,
+        "width": 309,
+        "height": 424
+      },
+      "runtimeBounds": {
+        "left": 25,
+        "top": 10,
+        "right": 102,
+        "bottom": 118,
+        "width": 78,
+        "height": 109
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.5189,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:reaction_scared": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 82,
+        "top": 90,
+        "right": 444,
+        "bottom": 511,
+        "width": 363,
+        "height": 422
+      },
+      "runtimeBounds": {
+        "left": 18,
+        "top": 10,
+        "right": 109,
+        "bottom": 118,
+        "width": 92,
+        "height": 109
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6121,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:reaction_confused": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 72,
+        "top": 0,
+        "right": 428,
+        "bottom": 498,
+        "width": 357,
+        "height": 499
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 25,
+        "right": 101,
+        "bottom": 117,
+        "width": 67,
+        "height": 93
+      },
+      "centerOffset": {
+        "x": 4.5,
+        "y": 7.5
+      },
+      "maxCenterOffset": 7.5,
+      "coverage": 0.3803,
+      "cleanup": {
+        "removedComponents": 3,
+        "removedPixels": 237
+      }
+    },
+    "poses:yawning": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 76,
+        "top": 0,
+        "right": 404,
+        "bottom": 498,
+        "width": 329,
+        "height": 499
+      },
+      "runtimeBounds": {
+        "left": 29,
+        "top": 21,
+        "right": 99,
+        "bottom": 117,
+        "width": 71,
+        "height": 97
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 5.5
+      },
+      "maxCenterOffset": 5.5,
+      "coverage": 0.4203,
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 143
+      }
+    },
+    "poses:smirking": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 72,
+        "top": 65,
+        "right": 351,
+        "bottom": 497,
+        "width": 280,
+        "height": 433
+      },
+      "runtimeBounds": {
+        "left": 30,
+        "top": 10,
+        "right": 97,
+        "bottom": 117,
+        "width": 68,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.4482,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:facepalm": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 95,
+        "top": 95,
+        "right": 372,
+        "bottom": 489,
+        "width": 278,
+        "height": 395
+      },
+      "runtimeBounds": {
+        "left": 27,
+        "top": 10,
+        "right": 101,
+        "bottom": 117,
+        "width": 75,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.4944,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:pointing": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 69,
+        "top": 63,
+        "right": 384,
+        "bottom": 450,
+        "width": 316,
+        "height": 388
+      },
+      "runtimeBounds": {
+        "left": 21,
+        "top": 10,
+        "right": 107,
+        "bottom": 117,
+        "width": 87,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.5735,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:interaction_waving": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 77,
+        "top": 34,
+        "right": 439,
+        "bottom": 450,
+        "width": 363,
+        "height": 417
+      },
+      "runtimeBounds": {
+        "left": 18,
+        "top": 10,
+        "right": 110,
+        "bottom": 117,
+        "width": 93,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.613,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:interaction_device": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 75,
+        "top": 77,
+        "right": 364,
+        "bottom": 511,
+        "width": 290,
+        "height": 435
+      },
+      "runtimeBounds": {
+        "left": 29,
+        "top": 10,
+        "right": 99,
+        "bottom": 103,
+        "width": 71,
+        "height": 94
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -7
+      },
+      "maxCenterOffset": 7,
+      "coverage": 0.4073,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 168
+      }
+    },
+    "poses:holding_sign": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 67,
+        "top": 30,
+        "right": 405,
+        "bottom": 450,
+        "width": 339,
+        "height": 421
+      },
+      "runtimeBounds": {
+        "left": 21,
+        "top": 10,
+        "right": 106,
+        "bottom": 117,
+        "width": 86,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.5669,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:shrugging": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 39,
+        "top": 39,
+        "right": 483,
+        "bottom": 430,
+        "width": 445,
+        "height": 392
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 17,
+        "right": 117,
+        "bottom": 111,
+        "width": 108,
+        "height": 95
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6262,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:reading_book": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 66,
+        "top": 19,
+        "right": 388,
+        "bottom": 426,
+        "width": 323,
+        "height": 408
+      },
+      "runtimeBounds": {
+        "left": 22,
+        "top": 10,
+        "right": 106,
+        "bottom": 117,
+        "width": 85,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.5603,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:drinking_mug": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 29,
+        "top": 0,
+        "right": 401,
+        "bottom": 429,
+        "width": 373,
+        "height": 430
+      },
+      "runtimeBounds": {
+        "left": 18,
+        "top": 19,
+        "right": 110,
+        "bottom": 117,
+        "width": 93,
+        "height": 99
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 4.5
+      },
+      "maxCenterOffset": 4.5,
+      "coverage": 0.562,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 3312
+      }
+    },
+    "poses:couples_holding_hands": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 30,
+        "right": 448,
+        "bottom": 429,
+        "width": 449,
+        "height": 400
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 16,
+        "right": 117,
+        "bottom": 111,
+        "width": 110,
+        "height": 96
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 0
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6445,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:couples_back_to_back": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 157,
+        "top": 46,
+        "right": 412,
+        "bottom": 486,
+        "width": 256,
+        "height": 441
+      },
+      "runtimeBounds": {
+        "left": 34,
+        "top": 10,
+        "right": 94,
+        "bottom": 117,
+        "width": 61,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.4021,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:couples_embrace": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 87,
+        "top": 59,
+        "right": 383,
+        "bottom": 486,
+        "width": 297,
+        "height": 428
+      },
+      "runtimeBounds": {
+        "left": 27,
+        "top": 10,
+        "right": 100,
+        "bottom": 117,
+        "width": 74,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.4878,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 30
+      }
+    },
+    "poses:couples_fighting": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 72,
+        "right": 477,
+        "bottom": 491,
+        "width": 478,
+        "height": 420
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 17,
+        "right": 117,
+        "bottom": 110,
+        "width": 110,
+        "height": 94
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 0
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6311,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:couples_dancing": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 1,
+        "top": 37,
+        "right": 452,
+        "bottom": 499,
+        "width": 452,
+        "height": 463
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 10,
+        "right": 116,
+        "bottom": 117,
+        "width": 105,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6921,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:couples_selfie": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 89,
+        "top": 43,
+        "right": 449,
+        "bottom": 470,
+        "width": 361,
+        "height": 428
+      },
+      "runtimeBounds": {
+        "left": 19,
+        "top": 10,
+        "right": 108,
+        "bottom": 117,
+        "width": 90,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.5933,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:group_pose": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 47,
+        "top": 45,
+        "right": 453,
+        "bottom": 470,
+        "width": 407,
+        "height": 426
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 10,
+        "right": 115,
+        "bottom": 117,
+        "width": 103,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.679,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "poses:carrying": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 111,
+        "top": 49,
+        "right": 441,
+        "bottom": 470,
+        "width": 331,
+        "height": 422
+      },
+      "runtimeBounds": {
+        "left": 22,
+        "top": 10,
+        "right": 105,
+        "bottom": 117,
+        "width": 84,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.5537,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:isometric_sheet": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 81,
+        "top": 40,
+        "right": 322,
+        "bottom": 475,
+        "width": 242,
+        "height": 436
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 10,
+        "right": 92,
+        "bottom": 117,
+        "width": 58,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.3823,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:turnaround_sheet": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 53,
+        "top": 47,
+        "right": 489,
+        "bottom": 511,
+        "width": 437,
+        "height": 465
+      },
+      "runtimeBounds": {
+        "left": 14,
+        "top": 10,
+        "right": 114,
+        "bottom": 119,
+        "width": 101,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6781,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:dynamic_sheet": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 6,
+        "top": 31,
+        "right": 492,
+        "bottom": 511,
+        "width": 487,
+        "height": 481
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 11,
+        "right": 117,
+        "bottom": 119,
+        "width": 108,
+        "height": 109
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1.5
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.7185,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:sheet_with_items": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 35,
+        "top": 37,
+        "right": 469,
+        "bottom": 511,
+        "width": 435,
+        "height": 475
+      },
+      "runtimeBounds": {
+        "left": 15,
+        "top": 9,
+        "right": 113,
+        "bottom": 119,
+        "width": 99,
+        "height": 111
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6707,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:anatomy_sheet": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 24,
+        "top": 9,
+        "right": 368,
+        "bottom": 511,
+        "width": 345,
+        "height": 503
+      },
+      "runtimeBounds": {
+        "left": 29,
+        "top": 10,
+        "right": 100,
+        "bottom": 100,
+        "width": 72,
+        "height": 91
+      },
+      "centerOffset": {
+        "x": 1,
+        "y": -8.5
+      },
+      "maxCenterOffset": 8.5,
+      "coverage": 0.3999,
+      "cleanup": {
+        "removedComponents": 3,
+        "removedPixels": 807
+      }
+    },
+    "special:disassemble_sheet": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 70,
+        "top": 0,
+        "right": 473,
+        "bottom": 439,
+        "width": 404,
+        "height": 440
+      },
+      "runtimeBounds": {
+        "left": 15,
+        "top": 8,
+        "right": 113,
+        "bottom": 117,
+        "width": 99,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6647,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 1169
+      }
+    },
+    "special:wireframe_sheet": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 126,
+        "top": 0,
+        "right": 353,
+        "bottom": 487,
+        "width": 228,
+        "height": 488
+      },
+      "runtimeBounds": {
+        "left": 40,
+        "top": 8,
+        "right": 87,
+        "bottom": 117,
+        "width": 48,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.3223,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:skeleton_sheet": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 113,
+        "top": 0,
+        "right": 511,
+        "bottom": 487,
+        "width": 399,
+        "height": 488
+      },
+      "runtimeBounds": {
+        "left": 20,
+        "top": 8,
+        "right": 69,
+        "bottom": 117,
+        "width": 50,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": -19,
+        "y": -1
+      },
+      "maxCenterOffset": 19,
+      "coverage": 0.3357,
+      "cleanup": {
+        "removedComponents": 3,
+        "removedPixels": 182
+      }
+    },
+    "special:sticker_sheet": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 462,
+        "bottom": 452,
+        "width": 463,
+        "height": 453
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 9,
+        "right": 117,
+        "bottom": 116,
+        "width": 110,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.7251,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:pixel_art_portrait": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 101,
+        "top": 92,
+        "right": 452,
+        "bottom": 481,
+        "width": 352,
+        "height": 390
+      },
+      "runtimeBounds": {
+        "left": 16,
+        "top": 10,
+        "right": 112,
+        "bottom": 117,
+        "width": 97,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6394,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:vga_box_art": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 98,
+        "top": 59,
+        "right": 426,
+        "bottom": 495,
+        "width": 329,
+        "height": 437
+      },
+      "runtimeBounds": {
+        "left": 24,
+        "top": 10,
+        "right": 102,
+        "bottom": 117,
+        "width": 79,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.5208,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:tarot_card": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 88,
+        "top": 55,
+        "right": 382,
+        "bottom": 498,
+        "width": 295,
+        "height": 444
+      },
+      "runtimeBounds": {
+        "left": 29,
+        "top": 10,
+        "right": 98,
+        "bottom": 117,
+        "width": 70,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.4614,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:plastic_toy": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 25,
+        "top": 57,
+        "right": 374,
+        "bottom": 495,
+        "width": 350,
+        "height": 439
+      },
+      "runtimeBounds": {
+        "left": 22,
+        "top": 10,
+        "right": 106,
+        "bottom": 117,
+        "width": 85,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.5603,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:collectible_figurine": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 154,
+        "top": 30,
+        "right": 377,
+        "bottom": 467,
+        "width": 224,
+        "height": 438
+      },
+      "runtimeBounds": {
+        "left": 38,
+        "top": 10,
+        "right": 90,
+        "bottom": 117,
+        "width": 53,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.3494,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:bronze_sculpture": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 136,
+        "top": 16,
+        "right": 382,
+        "bottom": 466,
+        "width": 247,
+        "height": 451
+      },
+      "runtimeBounds": {
+        "left": 36,
+        "top": 10,
+        "right": 92,
+        "bottom": 117,
+        "width": 57,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.3757,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:marble_sculpture": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 62,
+        "top": 28,
+        "right": 511,
+        "bottom": 467,
+        "width": 450,
+        "height": 440
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 11,
+        "right": 78,
+        "bottom": 116,
+        "width": 69,
+        "height": 106
+      },
+      "centerOffset": {
+        "x": -19.5,
+        "y": 0
+      },
+      "maxCenterOffset": 19.5,
+      "coverage": 0.4464,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 937
+      }
+    },
+    "special:videogame_screenshot": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 73,
+        "right": 415,
+        "bottom": 511,
+        "width": 416,
+        "height": 439
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 10,
+        "right": 114,
+        "bottom": 98,
+        "width": 104,
+        "height": 89
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -9.5
+      },
+      "maxCenterOffset": 9.5,
+      "coverage": 0.5649,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 88
+      }
+    },
+    "special:rpg_card": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 115,
+        "top": 14,
+        "right": 438,
+        "bottom": 511,
+        "width": 324,
+        "height": 498
+      },
+      "runtimeBounds": {
+        "left": 30,
+        "top": 9,
+        "right": 98,
+        "bottom": 119,
+        "width": 69,
+        "height": 111
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.4675,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:transform_child": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 62,
+        "top": 104,
+        "right": 402,
+        "bottom": 511,
+        "width": 341,
+        "height": 408
+      },
+      "runtimeBounds": {
+        "left": 21,
+        "top": 10,
+        "right": 108,
+        "bottom": 119,
+        "width": 88,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 1,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5908,
+      "cleanup": {
+        "removedComponents": 7,
+        "removedPixels": 438
+      }
+    },
+    "special:transform_teen": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 65,
+        "top": 14,
+        "right": 338,
+        "bottom": 511,
+        "width": 274,
+        "height": 498
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 9,
+        "right": 92,
+        "bottom": 119,
+        "width": 58,
+        "height": 111
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.3929,
+      "cleanup": {
+        "removedComponents": 4,
+        "removedPixels": 10
+      }
+    },
+    "special:transform_young_adult": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 106,
+        "top": 0,
+        "right": 277,
+        "bottom": 433,
+        "width": 172,
+        "height": 434
+      },
+      "runtimeBounds": {
+        "left": 44,
+        "top": 8,
+        "right": 83,
+        "bottom": 117,
+        "width": 40,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.2686,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:transform_elder": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 142,
+        "top": 0,
+        "right": 389,
+        "bottom": 414,
+        "width": 248,
+        "height": 415
+      },
+      "runtimeBounds": {
+        "left": 33,
+        "top": 8,
+        "right": 95,
+        "bottom": 117,
+        "width": 63,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.423,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:transform_evil": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 14,
+        "top": 0,
+        "right": 457,
+        "bottom": 435,
+        "width": 444,
+        "height": 436
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 9,
+        "right": 117,
+        "bottom": 116,
+        "width": 108,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.7119,
+      "cleanup": {
+        "removedComponents": 3,
+        "removedPixels": 110
+      }
+    },
+    "special:transform_holy": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 19,
+        "top": 0,
+        "right": 511,
+        "bottom": 456,
+        "width": 493,
+        "height": 457
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 12,
+        "right": 119,
+        "bottom": 113,
+        "width": 110,
+        "height": 102
+      },
+      "centerOffset": {
+        "x": 1,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6848,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 24
+      }
+    },
+    "special:transform_gender_swap": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 412,
+        "bottom": 391,
+        "width": 413,
+        "height": 392
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 12,
+        "right": 117,
+        "bottom": 114,
+        "width": 110,
+        "height": 103
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -0.5
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6915,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:transform_cybernetic": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 133,
+        "top": 19,
+        "right": 419,
+        "bottom": 507,
+        "width": 287,
+        "height": 489
+      },
+      "runtimeBounds": {
+        "left": 33,
+        "top": 10,
+        "right": 94,
+        "bottom": 117,
+        "width": 62,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.4087,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:transform_apocalyptic": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 56,
+        "top": 26,
+        "right": 424,
+        "bottom": 511,
+        "width": 369,
+        "height": 486
+      },
+      "runtimeBounds": {
+        "left": 24,
+        "top": 10,
+        "right": 102,
+        "bottom": 117,
+        "width": 79,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.5208,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:transform_antagonist": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 28,
+        "top": 0,
+        "right": 461,
+        "bottom": 511,
+        "width": 434,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 19,
+        "top": 12,
+        "right": 107,
+        "bottom": 119,
+        "width": 89,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 2
+      },
+      "maxCenterOffset": 2,
+      "coverage": 0.5867,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 122
+      }
+    },
+    "special:transform_hologram": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 66,
+        "top": 22,
+        "right": 399,
+        "bottom": 511,
+        "width": 334,
+        "height": 490
+      },
+      "runtimeBounds": {
+        "left": 28,
+        "top": 10,
+        "right": 98,
+        "bottom": 119,
+        "width": 71,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.4767,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:transform_crystal": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 120,
+        "top": 20,
+        "right": 392,
+        "bottom": 503,
+        "width": 273,
+        "height": 484
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 10,
+        "right": 93,
+        "bottom": 117,
+        "width": 59,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.3889,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:transform_fire": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 11,
+        "top": 11,
+        "right": 465,
+        "bottom": 511,
+        "width": 455,
+        "height": 501
+      },
+      "runtimeBounds": {
+        "left": 15,
+        "top": 10,
+        "right": 111,
+        "bottom": 118,
+        "width": 97,
+        "height": 109
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6453,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:transform_nature": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 20,
+        "top": 21,
+        "right": 428,
+        "bottom": 508,
+        "width": 409,
+        "height": 488
+      },
+      "runtimeBounds": {
+        "left": 20,
+        "top": 10,
+        "right": 108,
+        "bottom": 117,
+        "width": 89,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.5867,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:transform_constellation": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 31,
+        "top": 0,
+        "right": 423,
+        "bottom": 503,
+        "width": 393,
+        "height": 504
+      },
+      "runtimeBounds": {
+        "left": 23,
+        "top": 14,
+        "right": 105,
+        "bottom": 117,
+        "width": 83,
+        "height": 104
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 2
+      },
+      "maxCenterOffset": 2,
+      "coverage": 0.5269,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 109
+      }
+    },
+    "special:weapon_sheet": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 45,
+        "top": 30,
+        "right": 480,
+        "bottom": 455,
+        "width": 436,
+        "height": 426
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 12,
+        "right": 117,
+        "bottom": 116,
+        "width": 108,
+        "height": 105
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6921,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:outfit_variations": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 43,
+        "top": 33,
+        "right": 428,
+        "bottom": 461,
+        "width": 386,
+        "height": 429
+      },
+      "runtimeBounds": {
+        "left": 16,
+        "top": 10,
+        "right": 112,
+        "bottom": 117,
+        "width": 97,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6394,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:vehicle_mount_sheet": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 17,
+        "top": 23,
+        "right": 511,
+        "bottom": 469,
+        "width": 495,
+        "height": 447
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 16,
+        "right": 104,
+        "bottom": 112,
+        "width": 95,
+        "height": 97
+      },
+      "centerOffset": {
+        "x": -6.5,
+        "y": 0.5
+      },
+      "maxCenterOffset": 6.5,
+      "coverage": 0.5624,
+      "cleanup": {
+        "removedComponents": 4,
+        "removedPixels": 363
+      }
+    },
+    "special:home_base_art": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 26,
+        "right": 495,
+        "bottom": 480,
+        "width": 496,
+        "height": 455
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 15,
+        "right": 117,
+        "bottom": 113,
+        "width": 110,
+        "height": 99
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 0.5
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6647,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:asset_food": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 32,
+        "top": 0,
+        "right": 455,
+        "bottom": 477,
+        "width": 424,
+        "height": 478
+      },
+      "runtimeBounds": {
+        "left": 17,
+        "top": 9,
+        "right": 111,
+        "bottom": 118,
+        "width": 95,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6378,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:asset_possessions": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 4,
+        "top": 5,
+        "right": 434,
+        "bottom": 474,
+        "width": 431,
+        "height": 470
+      },
+      "runtimeBounds": {
+        "left": 15,
+        "top": 10,
+        "right": 113,
+        "bottom": 117,
+        "width": 99,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6526,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:asset_inventory": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 6,
+        "top": 0,
+        "right": 438,
+        "bottom": 492,
+        "width": 433,
+        "height": 493
+      },
+      "runtimeBounds": {
+        "left": 17,
+        "top": 8,
+        "right": 110,
+        "bottom": 117,
+        "width": 94,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6311,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "special:asset_powers": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
+      "sourceBounds": {
+        "left": 3,
+        "top": 3,
+        "right": 471,
+        "bottom": 464,
+        "width": 469,
+        "height": 462
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 11,
+        "right": 117,
+        "bottom": 116,
+        "width": 108,
+        "height": 106
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6987,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:walk": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 66,
+        "top": 48,
+        "right": 453,
+        "bottom": 483,
+        "width": 388,
+        "height": 436
+      },
+      "runtimeBounds": {
+        "left": 16,
+        "top": 10,
+        "right": 111,
+        "bottom": 117,
+        "width": 96,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6328,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:run": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 17,
+        "top": 86,
+        "right": 433,
+        "bottom": 477,
+        "width": 417,
+        "height": 392
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 14,
+        "right": 117,
+        "bottom": 114,
+        "width": 106,
+        "height": 101
+      },
+      "centerOffset": {
+        "x": 1,
+        "y": 0.5
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6534,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:jump": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 40,
+        "top": 19,
+        "right": 511,
+        "bottom": 500,
+        "width": 472,
+        "height": 482
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 10,
+        "right": 116,
+        "bottom": 117,
+        "width": 106,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6987,
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 182
+      }
+    },
+    "spritesheets:dash": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 167,
+        "right": 469,
+        "bottom": 487,
+        "width": 470,
+        "height": 321
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 28,
+        "right": 117,
+        "bottom": 98,
+        "width": 110,
+        "height": 71
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -0.5
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.4767,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 783
+      }
+    },
+    "spritesheets:slide": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 45,
+        "top": 114,
+        "right": 500,
+        "bottom": 416,
+        "width": 456,
+        "height": 303
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 29,
+        "right": 117,
+        "bottom": 98,
+        "width": 108,
+        "height": 70
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.4614,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:dodge_roll": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 41,
+        "top": 110,
+        "right": 511,
+        "bottom": 511,
+        "width": 471,
+        "height": 402
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 18,
+        "right": 94,
+        "bottom": 88,
+        "width": 85,
+        "height": 71
+      },
+      "centerOffset": {
+        "x": -11.5,
+        "y": -10.5
+      },
+      "maxCenterOffset": 11.5,
+      "coverage": 0.3683,
+      "cleanup": {
+        "removedComponents": 7,
+        "removedPixels": 717
+      }
+    },
+    "spritesheets:swimming": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 176,
+        "right": 477,
+        "bottom": 511,
+        "width": 478,
+        "height": 336
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 27,
+        "right": 117,
+        "bottom": 72,
+        "width": 110,
+        "height": 46
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -14
+      },
+      "maxCenterOffset": 14,
+      "coverage": 0.3088,
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 2268
+      }
+    },
+    "spritesheets:crawling": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 15,
+        "top": 129,
+        "right": 448,
+        "bottom": 511,
+        "width": 434,
+        "height": 383
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 17,
+        "right": 117,
+        "bottom": 84,
+        "width": 108,
+        "height": 68
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -13
+      },
+      "maxCenterOffset": 13,
+      "coverage": 0.4482,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 108
+      }
+    },
+    "spritesheets:climbing": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 131,
+        "top": 0,
+        "right": 365,
+        "bottom": 508,
+        "width": 235,
+        "height": 509
+      },
+      "runtimeBounds": {
+        "left": 40,
+        "top": 8,
+        "right": 87,
+        "bottom": 116,
+        "width": 48,
+        "height": 109
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1.5
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.3193,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 1127
+      }
+    },
+    "spritesheets:levitate_hover": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 19,
+        "top": 0,
+        "right": 511,
+        "bottom": 422,
+        "width": 493,
+        "height": 423
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 16,
+        "right": 74,
+        "bottom": 109,
+        "width": 64,
+        "height": 94
+      },
+      "centerOffset": {
+        "x": -21,
+        "y": -1
+      },
+      "maxCenterOffset": 21,
+      "coverage": 0.3672,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 22
+      }
+    },
+    "spritesheets:melee_attack": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 417,
+        "bottom": 511,
+        "width": 418,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 19,
+        "top": 8,
+        "right": 107,
+        "bottom": 119,
+        "width": 89,
+        "height": 112
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6084,
+      "cleanup": {
+        "removedComponents": 8,
+        "removedPixels": 1562
+      }
+    },
+    "spritesheets:ranged_attack": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 15,
+        "top": 0,
+        "right": 422,
+        "bottom": 511,
+        "width": 408,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 22,
+        "top": 8,
+        "right": 106,
+        "bottom": 97,
+        "width": 85,
+        "height": 90
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -11
+      },
+      "maxCenterOffset": 11,
+      "coverage": 0.4669,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 211
+      }
+    },
+    "spritesheets:magic_spell": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 49,
+        "top": 0,
+        "right": 511,
+        "bottom": 397,
+        "width": 463,
+        "height": 398
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 18,
+        "right": 119,
+        "bottom": 109,
+        "width": 107,
+        "height": 92
+      },
+      "centerOffset": {
+        "x": 2.5,
+        "y": 0
+      },
+      "maxCenterOffset": 2.5,
+      "coverage": 0.6008,
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 170
+      }
+    },
+    "spritesheets:charge_attack": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 42,
+        "right": 511,
+        "bottom": 398,
+        "width": 512,
+        "height": 357
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 29,
+        "right": 117,
+        "bottom": 99,
+        "width": 110,
+        "height": 71
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 0.5
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.4767,
+      "cleanup": {
+        "removedComponents": 15,
+        "removedPixels": 1846
+      }
+    },
+    "spritesheets:special_attack": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 486,
+        "bottom": 431,
+        "width": 487,
+        "height": 432
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 15,
+        "right": 117,
+        "bottom": 111,
+        "width": 110,
+        "height": 97
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -0.5
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6512,
+      "cleanup": {
+        "removedComponents": 7,
+        "removedPixels": 80
+      }
+    },
+    "spritesheets:block": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
+      "sourceBounds": {
+        "left": 8,
+        "top": 0,
+        "right": 464,
+        "bottom": 399,
+        "width": 457,
+        "height": 400
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 15,
+        "right": 115,
+        "bottom": 110,
+        "width": 106,
+        "height": 96
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6211,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 49
+      }
+    },
+    "spritesheets:parry": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 33,
+        "top": 90,
+        "right": 496,
+        "bottom": 511,
+        "width": 464,
+        "height": 422
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 15,
+        "right": 117,
+        "bottom": 114,
+        "width": 108,
+        "height": 100
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6592,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:item_use": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 121,
+        "top": 53,
+        "right": 342,
+        "bottom": 488,
+        "width": 222,
+        "height": 436
+      },
+      "runtimeBounds": {
+        "left": 38,
+        "top": 10,
+        "right": 90,
+        "bottom": 117,
+        "width": 53,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.3494,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:throwing": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 97,
+        "right": 464,
+        "bottom": 476,
+        "width": 465,
+        "height": 380
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 20,
+        "right": 117,
+        "bottom": 107,
+        "width": 110,
+        "height": 88
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 0
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5908,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:interact": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 31,
+        "top": 65,
+        "right": 428,
+        "bottom": 499,
+        "width": 398,
+        "height": 435
+      },
+      "runtimeBounds": {
+        "left": 15,
+        "top": 10,
+        "right": 112,
+        "bottom": 117,
+        "width": 98,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.646,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:idle": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 151,
+        "top": 35,
+        "right": 401,
+        "bottom": 470,
+        "width": 251,
+        "height": 436
+      },
+      "runtimeBounds": {
+        "left": 34,
+        "top": 10,
+        "right": 93,
+        "bottom": 117,
+        "width": 60,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.3955,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:hurt_animation": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 46,
+        "top": 53,
+        "right": 403,
+        "bottom": 511,
+        "width": 358,
+        "height": 459
+      },
+      "runtimeBounds": {
+        "left": 23,
+        "top": 10,
+        "right": 105,
+        "bottom": 119,
+        "width": 83,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5573,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 558
+      }
+    },
+    "spritesheets:dizzy_stunned": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 25,
+        "top": 31,
+        "right": 511,
+        "bottom": 467,
+        "width": 487,
+        "height": 437
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 16,
+        "right": 119,
+        "bottom": 113,
+        "width": 110,
+        "height": 98
+      },
+      "centerOffset": {
+        "x": 1,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.658,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:death_animation": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 179,
+        "right": 469,
+        "bottom": 425,
+        "width": 470,
+        "height": 247
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 38,
+        "right": 117,
+        "bottom": 91,
+        "width": 110,
+        "height": 54
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.3625,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:get_up": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 79,
+        "top": 91,
+        "right": 438,
+        "bottom": 511,
+        "width": 360,
+        "height": 421
+      },
+      "runtimeBounds": {
+        "left": 18,
+        "top": 10,
+        "right": 109,
+        "bottom": 119,
+        "width": 92,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6177,
+      "cleanup": {
+        "removedComponents": 3,
+        "removedPixels": 471
+      }
+    },
+    "spritesheets:power_up_aura": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 38,
+        "top": 0,
+        "right": 436,
+        "bottom": 438,
+        "width": 399,
+        "height": 439
+      },
+      "runtimeBounds": {
+        "left": 16,
+        "top": 8,
+        "right": 110,
+        "bottom": 117,
+        "width": 95,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6378,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:celebrate_victory": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 21,
+        "top": 0,
+        "right": 511,
+        "bottom": 511,
+        "width": 491,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 19,
+        "top": 9,
+        "right": 88,
+        "bottom": 102,
+        "width": 70,
+        "height": 94
+      },
+      "centerOffset": {
+        "x": -10,
+        "y": -8
+      },
+      "maxCenterOffset": 10,
+      "coverage": 0.4016,
+      "cleanup": {
+        "removedComponents": 4,
+        "removedPixels": 2459
+      }
+    },
+    "spritesheets:sleeping": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 77,
+        "right": 482,
+        "bottom": 511,
+        "width": 483,
+        "height": 435
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 15,
+        "right": 117,
+        "bottom": 87,
+        "width": 110,
+        "height": 73
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -12.5
+      },
+      "maxCenterOffset": 12.5,
+      "coverage": 0.4901,
+      "cleanup": {
+        "removedComponents": 3,
+        "removedPixels": 340
+      }
+    },
+    "spritesheets:teleport_in": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 53,
+        "top": 0,
+        "right": 454,
+        "bottom": 407,
+        "width": 402,
+        "height": 408
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 8,
+        "right": 116,
+        "bottom": 117,
+        "width": 104,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 1,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6982,
+      "cleanup": {
+        "removedComponents": 7,
+        "removedPixels": 213
+      }
+    },
+    "spritesheets:crouch": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 75,
+        "top": 2,
+        "right": 375,
+        "bottom": 369,
+        "width": 301,
+        "height": 368
+      },
+      "runtimeBounds": {
+        "left": 20,
+        "top": 10,
+        "right": 107,
+        "bottom": 117,
+        "width": 88,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.5801,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:shocked": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 20,
+        "top": 0,
+        "right": 368,
+        "bottom": 391,
+        "width": 349,
+        "height": 392
+      },
+      "runtimeBounds": {
+        "left": 22,
+        "top": 8,
+        "right": 111,
+        "bottom": 117,
+        "width": 90,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 3,
+        "y": -1
+      },
+      "maxCenterOffset": 3,
+      "coverage": 0.6042,
+      "cleanup": {
+        "removedComponents": 4,
+        "removedPixels": 1355
+      }
+    },
+    "spritesheets:tired": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
+      "sourceBounds": {
+        "left": 28,
+        "top": 0,
+        "right": 305,
+        "bottom": 390,
+        "width": 278,
+        "height": 391
+      },
+      "runtimeBounds": {
+        "left": 26,
+        "top": 8,
+        "right": 101,
+        "bottom": 117,
+        "width": 76,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5103,
+      "cleanup": {
+        "removedComponents": 3,
+        "removedPixels": 583
+      }
+    },
+    "spritesheets:alert": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 132,
+        "top": 38,
+        "right": 386,
+        "bottom": 487,
+        "width": 255,
+        "height": 450
+      },
+      "runtimeBounds": {
+        "left": 35,
+        "top": 10,
+        "right": 93,
+        "bottom": 117,
+        "width": 59,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.3889,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:emote_wave": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 78,
+        "top": 57,
+        "right": 361,
+        "bottom": 496,
+        "width": 284,
+        "height": 440
+      },
+      "runtimeBounds": {
+        "left": 30,
+        "top": 10,
+        "right": 97,
+        "bottom": 117,
+        "width": 68,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.4482,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:energetic_greeting": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 47,
+        "top": 42,
+        "right": 392,
+        "bottom": 511,
+        "width": 346,
+        "height": 470
+      },
+      "runtimeBounds": {
+        "left": 25,
+        "top": 10,
+        "right": 102,
+        "bottom": 119,
+        "width": 78,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5237,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:emote_laugh": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 86,
+        "top": 54,
+        "right": 340,
+        "bottom": 496,
+        "width": 255,
+        "height": 443
+      },
+      "runtimeBounds": {
+        "left": 34,
+        "top": 10,
+        "right": 93,
+        "bottom": 117,
+        "width": 60,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.3955,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:dance_loop": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 124,
+        "top": 13,
+        "right": 459,
+        "bottom": 491,
+        "width": 336,
+        "height": 479
+      },
+      "runtimeBounds": {
+        "left": 27,
+        "top": 10,
+        "right": 101,
+        "bottom": 117,
+        "width": 75,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.4944,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:thumbs_up": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 87,
+        "top": 45,
+        "right": 410,
+        "bottom": 483,
+        "width": 324,
+        "height": 439
+      },
+      "runtimeBounds": {
+        "left": 25,
+        "top": 10,
+        "right": 103,
+        "bottom": 117,
+        "width": 79,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.5208,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:bow": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 92,
+        "top": 0,
+        "right": 321,
+        "bottom": 488,
+        "width": 230,
+        "height": 489
+      },
+      "runtimeBounds": {
+        "left": 40,
+        "top": 21,
+        "right": 88,
+        "bottom": 118,
+        "width": 49,
+        "height": 98
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 6
+      },
+      "maxCenterOffset": 6,
+      "coverage": 0.2931,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 209
+      }
+    },
+    "spritesheets:emote_taunt": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 24,
+        "top": 30,
+        "right": 381,
+        "bottom": 475,
+        "width": 358,
+        "height": 446
+      },
+      "runtimeBounds": {
+        "left": 21,
+        "top": 10,
+        "right": 106,
+        "bottom": 117,
+        "width": 86,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.5669,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:emote_nod": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 131,
+        "top": 27,
+        "right": 420,
+        "bottom": 511,
+        "width": 290,
+        "height": 485
+      },
+      "runtimeBounds": {
+        "left": 33,
+        "top": 10,
+        "right": 96,
+        "bottom": 102,
+        "width": 64,
+        "height": 93
+      },
+      "centerOffset": {
+        "x": 1,
+        "y": -7.5
+      },
+      "maxCenterOffset": 7.5,
+      "coverage": 0.3633,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 627
+      }
+    },
+    "spritesheets:emote_shake_head": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 80,
+        "top": 26,
+        "right": 408,
+        "bottom": 445,
+        "width": 329,
+        "height": 420
+      },
+      "runtimeBounds": {
+        "left": 22,
+        "top": 10,
+        "right": 105,
+        "bottom": 117,
+        "width": 84,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.5537,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:emote_cry": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 32,
+        "top": 37,
+        "right": 511,
+        "bottom": 511,
+        "width": 480,
+        "height": 475
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 11,
+        "right": 83,
+        "bottom": 97,
+        "width": 74,
+        "height": 87
+      },
+      "centerOffset": {
+        "x": -17,
+        "y": -9.5
+      },
+      "maxCenterOffset": 17,
+      "coverage": 0.3929,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 663
+      }
+    },
+    "spritesheets:shrug": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 18,
+        "right": 407,
+        "bottom": 511,
+        "width": 408,
+        "height": 494
+      },
+      "runtimeBounds": {
+        "left": 18,
+        "top": 9,
+        "right": 108,
+        "bottom": 102,
+        "width": 91,
+        "height": 94
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": -8
+      },
+      "maxCenterOffset": 8,
+      "coverage": 0.5221,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 451
+      }
+    },
+    "spritesheets:facepalm": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 120,
+        "top": 0,
+        "right": 430,
+        "bottom": 407,
+        "width": 311,
+        "height": 408
+      },
+      "runtimeBounds": {
+        "left": 24,
+        "top": 8,
+        "right": 104,
+        "bottom": 117,
+        "width": 81,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5438,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:point": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 11,
+        "top": 0,
+        "right": 421,
+        "bottom": 407,
+        "width": 411,
+        "height": 408
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 10,
+        "right": 117,
+        "bottom": 117,
+        "width": 108,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.7119,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:clap": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 36,
+        "top": 0,
+        "right": 318,
+        "bottom": 409,
+        "width": 283,
+        "height": 410
+      },
+      "runtimeBounds": {
+        "left": 28,
+        "top": 8,
+        "right": 100,
+        "bottom": 117,
+        "width": 73,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.4901,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "spritesheets:salute": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
+      "sourceBounds": {
+        "left": 1,
+        "top": 0,
+        "right": 326,
+        "bottom": 418,
+        "width": 326,
+        "height": 419
+      },
+      "runtimeBounds": {
+        "left": 23,
+        "top": 8,
+        "right": 105,
+        "bottom": 117,
+        "width": 83,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5573,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:char_home": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 505,
+        "bottom": 511,
+        "width": 496,
+        "height": 498
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 10,
+        "right": 117,
+        "bottom": 119,
+        "width": 108,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.7251,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 10
+      }
+    },
+    "scenes:char_workplace": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 25,
+        "top": 55,
+        "right": 487,
+        "bottom": 510,
+        "width": 463,
+        "height": 456
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 11,
+        "right": 117,
+        "bottom": 116,
+        "width": 108,
+        "height": 106
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6987,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:char_yard": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 10,
+        "top": 103,
+        "right": 511,
+        "bottom": 505,
+        "width": 502,
+        "height": 403
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 20,
+        "right": 104,
+        "bottom": 106,
+        "width": 95,
+        "height": 87
+      },
+      "centerOffset": {
+        "x": -6.5,
+        "y": -0.5
+      },
+      "maxCenterOffset": 6.5,
+      "coverage": 0.5045,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 112
+      }
+    },
+    "scenes:char_room": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 91,
+        "right": 487,
+        "bottom": 511,
+        "width": 488,
+        "height": 421
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 18,
+        "right": 117,
+        "bottom": 112,
+        "width": 110,
+        "height": 95
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 1.5
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.6378,
+      "cleanup": {
+        "removedComponents": 3,
+        "removedPixels": 8
+      }
+    },
+    "scenes:char_hobby_space": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 11,
+        "top": 61,
+        "right": 465,
+        "bottom": 472,
+        "width": 455,
+        "height": 412
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 16,
+        "right": 117,
+        "bottom": 112,
+        "width": 108,
+        "height": 97
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6394,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:char_kitchen": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 12,
+        "top": 39,
+        "right": 463,
+        "bottom": 494,
+        "width": 452,
+        "height": 456
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 10,
+        "right": 117,
+        "bottom": 117,
+        "width": 105,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 1.5,
+        "y": 0
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.6921,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:char_trophy_room": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 22,
+        "top": 60,
+        "right": 442,
+        "bottom": 484,
+        "width": 421,
+        "height": 425
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 10,
+        "right": 117,
+        "bottom": 117,
+        "width": 107,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.7053,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:char_favorite_spot": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 465,
+        "bottom": 484,
+        "width": 466,
+        "height": 485
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 8,
+        "right": 115,
+        "bottom": 117,
+        "width": 105,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.705,
+      "cleanup": {
+        "removedComponents": 3,
+        "removedPixels": 4
+      }
+    },
+    "scenes:char_vehicle": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 11,
+        "top": 0,
+        "right": 511,
+        "bottom": 511,
+        "width": 501,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 10,
+        "right": 108,
+        "bottom": 119,
+        "width": 98,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": -4,
+        "y": 1
+      },
+      "maxCenterOffset": 4,
+      "coverage": 0.658,
+      "cleanup": {
+        "removedComponents": 5,
+        "removedPixels": 1260
+      }
+    },
+    "scenes:char_neighborhood": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 24,
+        "right": 486,
+        "bottom": 511,
+        "width": 487,
+        "height": 488
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 10,
+        "right": 116,
+        "bottom": 100,
+        "width": 108,
+        "height": 91
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -8.5
+      },
+      "maxCenterOffset": 8.5,
+      "coverage": 0.5999,
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 1971
+      }
+    },
+    "scenes:forest": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 1,
+        "right": 511,
+        "bottom": 511,
+        "width": 512,
+        "height": 511
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 10,
+        "right": 119,
+        "bottom": 119,
+        "width": 109,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 1.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.7318,
+      "cleanup": {
+        "removedComponents": 19,
+        "removedPixels": 1414
+      }
+    },
+    "scenes:tavern": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 478,
+        "bottom": 511,
+        "width": 479,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 11,
+        "right": 114,
+        "bottom": 119,
+        "width": 103,
+        "height": 109
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 1.5
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.6852,
+      "cleanup": {
+        "removedComponents": 9,
+        "removedPixels": 2325
+      }
+    },
+    "scenes:dragon_lair": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 17,
+        "top": 0,
+        "right": 511,
+        "bottom": 438,
+        "width": 495,
+        "height": 439
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 15,
+        "right": 109,
+        "bottom": 111,
+        "width": 100,
+        "height": 97
+      },
+      "centerOffset": {
+        "x": -4,
+        "y": -0.5
+      },
+      "maxCenterOffset": 4,
+      "coverage": 0.592,
+      "cleanup": {
+        "removedComponents": 8,
+        "removedPixels": 313
+      }
+    },
+    "scenes:ancient_temple": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 475,
+        "bottom": 423,
+        "width": 476,
+        "height": 424
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 14,
+        "right": 117,
+        "bottom": 111,
+        "width": 110,
+        "height": 98
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.658,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 78
+      }
+    },
+    "scenes:library": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 482,
+        "bottom": 448,
+        "width": 483,
+        "height": 449
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 12,
+        "right": 116,
+        "bottom": 113,
+        "width": 108,
+        "height": 102
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6724,
+      "cleanup": {
+        "removedComponents": 28,
+        "removedPixels": 7688
+      }
+    },
+    "scenes:steampunk_workshop": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
+      "sourceBounds": {
+        "left": 12,
+        "top": 0,
+        "right": 488,
+        "bottom": 451,
+        "width": 477,
+        "height": 452
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 11,
+        "right": 117,
+        "bottom": 114,
+        "width": 108,
+        "height": 104
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6855,
+      "cleanup": {
+        "removedComponents": 10,
+        "removedPixels": 471
+      }
+    },
+    "scenes:clockwork_city": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 14,
+        "top": 12,
+        "right": 497,
+        "bottom": 511,
+        "width": 484,
+        "height": 500
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 10,
+        "right": 115,
+        "bottom": 119,
+        "width": 104,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6982,
+      "cleanup": {
+        "removedComponents": 9,
+        "removedPixels": 2150
+      }
+    },
+    "scenes:crystalline_caverns": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 15,
+        "top": 25,
+        "right": 492,
+        "bottom": 511,
+        "width": 478,
+        "height": 487
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 10,
+        "right": 116,
+        "bottom": 119,
+        "width": 106,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.7117,
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 381
+      }
+    },
+    "scenes:haunted_mansion": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 1,
+        "top": 22,
+        "right": 511,
+        "bottom": 511,
+        "width": 511,
+        "height": 490
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 14,
+        "right": 109,
+        "bottom": 117,
+        "width": 98,
+        "height": 104
+      },
+      "centerOffset": {
+        "x": -3,
+        "y": 2
+      },
+      "maxCenterOffset": 3,
+      "coverage": 0.6221,
+      "cleanup": {
+        "removedComponents": 9,
+        "removedPixels": 427
+      }
+    },
+    "scenes:marketplace": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 70,
+        "right": 510,
+        "bottom": 511,
+        "width": 511,
+        "height": 442
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 18,
+        "right": 117,
+        "bottom": 112,
+        "width": 108,
+        "height": 95
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1.5
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.6262,
+      "cleanup": {
+        "removedComponents": 12,
+        "removedPixels": 1181
+      }
+    },
+    "scenes:gladiator_arena": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 7,
+        "top": 0,
+        "right": 504,
+        "bottom": 505,
+        "width": 498,
+        "height": 506
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 8,
+        "right": 116,
+        "bottom": 117,
+        "width": 106,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.7117,
+      "cleanup": {
+        "removedComponents": 9,
+        "removedPixels": 526
+      }
+    },
+    "scenes:elemental_plane": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 5,
+        "top": 0,
+        "right": 501,
+        "bottom": 500,
+        "width": 497,
+        "height": 501
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 8,
+        "right": 117,
+        "bottom": 116,
+        "width": 107,
+        "height": 109
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -1.5
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.7119,
+      "cleanup": {
+        "removedComponents": 8,
+        "removedPixels": 2321
+      }
+    },
+    "scenes:throne_room": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 3,
+        "top": 0,
+        "right": 511,
+        "bottom": 501,
+        "width": 509,
+        "height": 502
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 12,
+        "right": 113,
+        "bottom": 115,
+        "width": 104,
+        "height": 104
+      },
+      "centerOffset": {
+        "x": -2,
+        "y": 0
+      },
+      "maxCenterOffset": 2,
+      "coverage": 0.6602,
+      "cleanup": {
+        "removedComponents": 14,
+        "removedPixels": 2321
+      }
+    },
+    "scenes:alchemist_lab": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 504,
+        "bottom": 505,
+        "width": 505,
+        "height": 506
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 8,
+        "right": 117,
+        "bottom": 117,
+        "width": 109,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.7318,
+      "cleanup": {
+        "removedComponents": 9,
+        "removedPixels": 173
+      }
+    },
+    "scenes:world_tree": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 11,
+        "top": 5,
+        "right": 500,
+        "bottom": 511,
+        "width": 490,
+        "height": 507
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 10,
+        "right": 115,
+        "bottom": 119,
+        "width": 104,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6982,
+      "cleanup": {
+        "removedComponents": 10,
+        "removedPixels": 59
+      }
+    },
+    "scenes:dwarven_forge": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 9,
+        "top": 7,
+        "right": 498,
+        "bottom": 511,
+        "width": 490,
+        "height": 505
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 10,
+        "right": 116,
+        "bottom": 119,
+        "width": 105,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.705,
+      "cleanup": {
+        "removedComponents": 9,
+        "removedPixels": 167
+      }
+    },
+    "scenes:elven_city": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 493,
+        "bottom": 511,
+        "width": 494,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 10,
+        "right": 115,
+        "bottom": 111,
+        "width": 104,
+        "height": 102
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -3
+      },
+      "maxCenterOffset": 3,
+      "coverage": 0.6475,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 4
+      }
+    },
+    "scenes:gothic_cathedral": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 500,
+        "bottom": 511,
+        "width": 501,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 11,
+        "right": 116,
+        "bottom": 108,
+        "width": 105,
+        "height": 98
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -4
+      },
+      "maxCenterOffset": 4,
+      "coverage": 0.6281,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 4
+      }
+    },
+    "scenes:wizard_tower_observatory": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 15,
+        "top": 0,
+        "right": 497,
+        "bottom": 455,
+        "width": 483,
+        "height": 456
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 11,
+        "right": 117,
+        "bottom": 114,
+        "width": 108,
+        "height": 104
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6855,
+      "cleanup": {
+        "removedComponents": 12,
+        "removedPixels": 435
+      }
+    },
+    "scenes:undead_crypt": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 13,
+        "top": 0,
+        "right": 492,
+        "bottom": 454,
+        "width": 480,
+        "height": 455
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 11,
+        "right": 117,
+        "bottom": 114,
+        "width": 108,
+        "height": 104
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6855,
+      "cleanup": {
+        "removedComponents": 19,
+        "removedPixels": 560
+      }
+    },
+    "scenes:cyberpunk": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 5,
+        "top": 0,
+        "right": 494,
+        "bottom": 458,
+        "width": 490,
+        "height": 459
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 13,
+        "right": 117,
+        "bottom": 114,
+        "width": 108,
+        "height": 102
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6724,
+      "cleanup": {
+        "removedComponents": 3,
+        "removedPixels": 47
+      }
+    },
+    "scenes:space_station": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 499,
+        "bottom": 457,
+        "width": 500,
+        "height": 458
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 14,
+        "right": 115,
+        "bottom": 113,
+        "width": 104,
+        "height": 100
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6348,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 63
+      }
+    },
+    "scenes:hightech_lab": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 14,
+        "top": 24,
+        "right": 497,
+        "bottom": 495,
+        "width": 484,
+        "height": 472
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 12,
+        "right": 117,
+        "bottom": 115,
+        "width": 108,
+        "height": 104
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6855,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:post_apoc": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 10,
+        "top": 31,
+        "right": 503,
+        "bottom": 500,
+        "width": 494,
+        "height": 470
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 13,
+        "right": 116,
+        "bottom": 115,
+        "width": 107,
+        "height": 103
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6727,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:alien_planet": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 12,
+        "top": 26,
+        "right": 497,
+        "bottom": 499,
+        "width": 486,
+        "height": 474
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 117,
+        "bottom": 116,
+        "width": 108,
+        "height": 103
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1.5
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.679,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:volcanic_wasteland": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 4,
+        "top": 0,
+        "right": 491,
+        "bottom": 506,
+        "width": 488,
+        "height": 507
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 9,
+        "right": 115,
+        "bottom": 117,
+        "width": 104,
+        "height": 109
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6919,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:dystopian_megastructure": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 6,
+        "right": 508,
+        "bottom": 500,
+        "width": 509,
+        "height": 495
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 12,
+        "right": 117,
+        "bottom": 116,
+        "width": 109,
+        "height": 105
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6985,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:spaceship_bridge": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 7,
+        "top": 38,
+        "right": 507,
+        "bottom": 463,
+        "width": 501,
+        "height": 426
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 19,
+        "right": 117,
+        "bottom": 109,
+        "width": 108,
+        "height": 91
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.5999,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:hangar_bay": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 9,
+        "top": 12,
+        "right": 498,
+        "bottom": 488,
+        "width": 490,
+        "height": 477
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 15,
+        "right": 115,
+        "bottom": 116,
+        "width": 106,
+        "height": 102
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 2
+      },
+      "maxCenterOffset": 2,
+      "coverage": 0.6599,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:cryo_chamber": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 7,
+        "top": 16,
+        "right": 480,
+        "bottom": 495,
+        "width": 474,
+        "height": 480
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 10,
+        "right": 117,
+        "bottom": 117,
+        "width": 107,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.7053,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:biopunk_lab": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 12,
+        "top": 7,
+        "right": 498,
+        "bottom": 511,
+        "width": 487,
+        "height": 505
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 11,
+        "right": 114,
+        "bottom": 118,
+        "width": 102,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6724,
+      "cleanup": {
+        "removedComponents": 12,
+        "removedPixels": 1103
+      }
+    },
+    "scenes:generation_ship_arboretum": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 9,
+        "top": 2,
+        "right": 501,
+        "bottom": 459,
+        "width": 493,
+        "height": 458
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 117,
+        "bottom": 112,
+        "width": 108,
+        "height": 99
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6526,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:asteroid_mine": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 6,
+        "top": 14,
+        "right": 502,
+        "bottom": 511,
+        "width": 497,
+        "height": 498
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 11,
+        "right": 116,
+        "bottom": 105,
+        "width": 106,
+        "height": 95
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -5.5
+      },
+      "maxCenterOffset": 5.5,
+      "coverage": 0.6146,
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 30
+      }
+    },
+    "scenes:solarpunk_city": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 1,
+        "top": 0,
+        "right": 493,
+        "bottom": 511,
+        "width": 493,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 9,
+        "right": 115,
+        "bottom": 117,
+        "width": 104,
+        "height": 109
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6919,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 19
+      }
+    },
+    "scenes:mecha_cockpit": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 8,
+        "top": 0,
+        "right": 497,
+        "bottom": 436,
+        "width": 490,
+        "height": 437
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 117,
+        "bottom": 111,
+        "width": 108,
+        "height": 98
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.646,
+      "cleanup": {
+        "removedComponents": 13,
+        "removedPixels": 300
+      }
+    },
+    "scenes:terraforming_site": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 2,
+        "top": 6,
+        "right": 505,
+        "bottom": 462,
+        "width": 504,
+        "height": 457
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 117,
+        "bottom": 112,
+        "width": 108,
+        "height": 99
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6526,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:noir_street": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 12,
+        "top": 0,
+        "right": 501,
+        "bottom": 469,
+        "width": 490,
+        "height": 470
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 11,
+        "right": 117,
+        "bottom": 115,
+        "width": 108,
+        "height": 105
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6921,
+      "cleanup": {
+        "removedComponents": 10,
+        "removedPixels": 109
+      }
+    },
+    "scenes:urban_rooftop": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 510,
+        "bottom": 463,
+        "width": 511,
+        "height": 464
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 16,
+        "right": 117,
+        "bottom": 111,
+        "width": 108,
+        "height": 96
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6328,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 119
+      }
+    },
+    "scenes:coffee_shop": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 27,
+        "top": 42,
+        "right": 500,
+        "bottom": 511,
+        "width": 474,
+        "height": 470
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 11,
+        "right": 117,
+        "bottom": 117,
+        "width": 107,
+        "height": 107
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6988,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:retro_arcade": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 7,
+        "top": 88,
+        "right": 496,
+        "bottom": 498,
+        "width": 490,
+        "height": 411
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 19,
+        "right": 117,
+        "bottom": 108,
+        "width": 106,
+        "height": 90
+      },
+      "centerOffset": {
+        "x": 1,
+        "y": 0
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5823,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:art_museum": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 7,
+        "top": 64,
+        "right": 511,
+        "bottom": 499,
+        "width": 505,
+        "height": 436
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 18,
+        "right": 110,
+        "bottom": 110,
+        "width": 101,
+        "height": 93
+      },
+      "centerOffset": {
+        "x": -3.5,
+        "y": 0.5
+      },
+      "maxCenterOffset": 3.5,
+      "coverage": 0.5733,
+      "cleanup": {
+        "removedComponents": 5,
+        "removedPixels": 48
+      }
+    },
+    "scenes:rooftop_garden": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 58,
+        "right": 489,
+        "bottom": 502,
+        "width": 490,
+        "height": 445
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 18,
+        "right": 117,
+        "bottom": 112,
+        "width": 110,
+        "height": 95
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 1.5
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.6378,
+      "cleanup": {
+        "removedComponents": 15,
+        "removedPixels": 823
+      }
+    },
+    "scenes:subway_platform": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 15,
+        "top": 34,
+        "right": 503,
+        "bottom": 470,
+        "width": 489,
+        "height": 437
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 16,
+        "right": 117,
+        "bottom": 110,
+        "width": 108,
+        "height": 95
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6262,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:public_library": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 11,
+        "top": 26,
+        "right": 495,
+        "bottom": 478,
+        "width": 485,
+        "height": 453
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 15,
+        "right": 117,
+        "bottom": 112,
+        "width": 107,
+        "height": 98
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.64,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:city_intersection": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 16,
+        "right": 511,
+        "bottom": 511,
+        "width": 512,
+        "height": 496
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 13,
+        "right": 119,
+        "bottom": 118,
+        "width": 111,
+        "height": 106
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 2
+      },
+      "maxCenterOffset": 2,
+      "coverage": 0.7181,
+      "cleanup": {
+        "removedComponents": 20,
+        "removedPixels": 447
+      }
+    },
+    "scenes:airport_terminal": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 33,
+        "right": 491,
+        "bottom": 476,
+        "width": 492,
+        "height": 444
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 16,
+        "right": 117,
+        "bottom": 111,
+        "width": 110,
+        "height": 96
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 0
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6445,
+      "cleanup": {
+        "removedComponents": 7,
+        "removedPixels": 1207
+      }
+    },
+    "scenes:shopping_mall": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 15,
+        "top": 1,
+        "right": 500,
+        "bottom": 511,
+        "width": 486,
+        "height": 511
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 10,
+        "right": 115,
+        "bottom": 117,
+        "width": 103,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.679,
+      "cleanup": {
+        "removedComponents": 20,
+        "removedPixels": 1105
+      }
+    },
+    "scenes:amusement_park": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 4,
+        "top": 0,
+        "right": 492,
+        "bottom": 511,
+        "width": 489,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 10,
+        "right": 115,
+        "bottom": 117,
+        "width": 103,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.679,
+      "cleanup": {
+        "removedComponents": 8,
+        "removedPixels": 670
+      }
+    },
+    "scenes:university_campus": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 511,
+        "bottom": 511,
+        "width": 512,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 10,
+        "right": 110,
+        "bottom": 119,
+        "width": 100,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": -3,
+        "y": 1
+      },
+      "maxCenterOffset": 3,
+      "coverage": 0.6714,
+      "cleanup": {
+        "removedComponents": 25,
+        "removedPixels": 1356
+      }
+    },
+    "scenes:skate_park": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 11,
+        "right": 497,
+        "bottom": 511,
+        "width": 498,
+        "height": 501
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 10,
+        "right": 117,
+        "bottom": 119,
+        "width": 109,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.7318,
+      "cleanup": {
+        "removedComponents": 15,
+        "removedPixels": 643
+      }
+    },
+    "scenes:concert_stage": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 18,
+        "top": 0,
+        "right": 488,
+        "bottom": 453,
+        "width": 471,
+        "height": 454
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 10,
+        "right": 116,
+        "bottom": 115,
+        "width": 105,
+        "height": 106
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6793,
+      "cleanup": {
+        "removedComponents": 13,
+        "removedPixels": 742
+      }
+    },
+    "scenes:abandoned_warehouse": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 7,
+        "top": 0,
+        "right": 492,
+        "bottom": 439,
+        "width": 486,
+        "height": 440
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 14,
+        "right": 117,
+        "bottom": 111,
+        "width": 107,
+        "height": 98
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.64,
+      "cleanup": {
+        "removedComponents": 9,
+        "removedPixels": 2009
+      }
+    },
+    "scenes:neon_diner": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 511,
+        "bottom": 444,
+        "width": 512,
+        "height": 445
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 16,
+        "right": 119,
+        "bottom": 110,
+        "width": 111,
+        "height": 95
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6436,
+      "cleanup": {
+        "removedComponents": 10,
+        "removedPixels": 2204
+      }
+    },
+    "scenes:botanical_garden_conservatory": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 492,
+        "bottom": 443,
+        "width": 493,
+        "height": 444
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 14,
+        "right": 116,
+        "bottom": 111,
+        "width": 109,
+        "height": 98
+      },
+      "centerOffset": {
+        "x": -1.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.652,
+      "cleanup": {
+        "removedComponents": 18,
+        "removedPixels": 740
+      }
+    },
+    "scenes:recording_studio": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 22,
+        "top": 43,
+        "right": 502,
+        "bottom": 503,
+        "width": 481,
+        "height": 461
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 14,
+        "right": 117,
+        "bottom": 116,
+        "width": 105,
+        "height": 103
+      },
+      "centerOffset": {
+        "x": 1.5,
+        "y": 1.5
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.6601,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:skyscraper_lounge": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 15,
+        "top": 49,
+        "right": 491,
+        "bottom": 511,
+        "width": 477,
+        "height": 463
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 117,
+        "bottom": 116,
+        "width": 108,
+        "height": 103
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1.5
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.679,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:mountain": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 54,
+        "right": 511,
+        "bottom": 511,
+        "width": 512,
+        "height": 458
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 18,
+        "right": 111,
+        "bottom": 112,
+        "width": 102,
+        "height": 95
+      },
+      "centerOffset": {
+        "x": -3,
+        "y": 1.5
+      },
+      "maxCenterOffset": 3,
+      "coverage": 0.5914,
+      "cleanup": {
+        "removedComponents": 7,
+        "removedPixels": 110
+      }
+    },
+    "scenes:sky_island": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 32,
+        "right": 501,
+        "bottom": 511,
+        "width": 502,
+        "height": 480
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 13,
+        "right": 117,
+        "bottom": 117,
+        "width": 110,
+        "height": 105
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 1.5
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.705,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:underwater_reef": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 15,
+        "top": 30,
+        "right": 495,
+        "bottom": 478,
+        "width": 481,
+        "height": 449
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 117,
+        "bottom": 114,
+        "width": 108,
+        "height": 101
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6658,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:monastery_courtyard": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 6,
+        "top": 25,
+        "right": 495,
+        "bottom": 480,
+        "width": 490,
+        "height": 456
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 117,
+        "bottom": 113,
+        "width": 108,
+        "height": 100
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6592,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:zen_garden": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 3,
+        "top": 41,
+        "right": 484,
+        "bottom": 480,
+        "width": 482,
+        "height": 440
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 15,
+        "right": 117,
+        "bottom": 112,
+        "width": 108,
+        "height": 98
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.646,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:giant_mushroom_forest": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 40,
+        "right": 486,
+        "bottom": 482,
+        "width": 487,
+        "height": 443
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 117,
+        "bottom": 112,
+        "width": 108,
+        "height": 99
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6526,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "scenes:desert_oasis": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 13,
+        "top": 6,
+        "right": 502,
+        "bottom": 511,
+        "width": 490,
+        "height": 506
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 10,
+        "right": 115,
+        "bottom": 119,
+        "width": 104,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6982,
+      "cleanup": {
+        "removedComponents": 19,
+        "removedPixels": 1004
+      }
+    },
+    "scenes:aurora_borealis": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 8,
+        "top": 0,
+        "right": 488,
+        "bottom": 511,
+        "width": 481,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 14,
+        "top": 11,
+        "right": 114,
+        "bottom": 119,
+        "width": 101,
+        "height": 109
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 1.5
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.6719,
+      "cleanup": {
+        "removedComponents": 5,
+        "removedPixels": 1406
+      }
+    },
+    "scenes:petrified_forest": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 15,
+        "right": 511,
+        "bottom": 511,
+        "width": 512,
+        "height": 497
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 12,
+        "right": 111,
+        "bottom": 104,
+        "width": 103,
+        "height": 93
+      },
+      "centerOffset": {
+        "x": -3.5,
+        "y": -5.5
+      },
+      "maxCenterOffset": 5.5,
+      "coverage": 0.5847,
+      "cleanup": {
+        "removedComponents": 5,
+        "removedPixels": 935
+      }
+    },
+    "scenes:bioluminescent_beach": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 1,
+        "right": 495,
+        "bottom": 511,
+        "width": 496,
+        "height": 511
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 16,
+        "right": 116,
+        "bottom": 106,
+        "width": 107,
+        "height": 91
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": -2.5
+      },
+      "maxCenterOffset": 2.5,
+      "coverage": 0.5943,
+      "cleanup": {
+        "removedComponents": 9,
+        "removedPixels": 508
+      }
+    },
+    "scenes:dreamscape": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 12,
+        "top": 0,
+        "right": 501,
+        "bottom": 443,
+        "width": 490,
+        "height": 444
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 117,
+        "bottom": 112,
+        "width": 108,
+        "height": 99
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6526,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 2
+      }
+    },
+    "scenes:sea_of_clouds": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 1,
+        "top": 0,
+        "right": 500,
+        "bottom": 444,
+        "width": 500,
+        "height": 445
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 117,
+        "bottom": 111,
+        "width": 108,
+        "height": 98
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.646,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 4
+      }
+    },
+    "scenes:inside_geode": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 478,
+        "bottom": 448,
+        "width": 479,
+        "height": 449
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 12,
+        "right": 117,
+        "bottom": 114,
+        "width": 108,
+        "height": 103
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.679,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 224
+      }
+    },
+    "scenes:forgotten_god_statue": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 494,
+        "bottom": 447,
+        "width": 495,
+        "height": 448
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 117,
+        "bottom": 112,
+        "width": 108,
+        "height": 99
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6526,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 4
+      }
+    },
+    "effects:zoom_out_fill": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 77,
+        "top": 86,
+        "right": 458,
+        "bottom": 466,
+        "width": 382,
+        "height": 381
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 10,
+        "right": 117,
+        "bottom": 117,
+        "width": 108,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.7119,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:extreme_zoom_out": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 50,
+        "top": 83,
+        "right": 452,
+        "bottom": 469,
+        "width": 403,
+        "height": 387
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 12,
+        "right": 117,
+        "bottom": 115,
+        "width": 108,
+        "height": 104
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6855,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:cosmic_zoom_out": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 28,
+        "top": 74,
+        "right": 450,
+        "bottom": 483,
+        "width": 423,
+        "height": 410
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 12,
+        "right": 117,
+        "bottom": 116,
+        "width": 108,
+        "height": 105
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6921,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:low_angle": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 82,
+        "right": 431,
+        "bottom": 482,
+        "width": 432,
+        "height": 401
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 117,
+        "bottom": 113,
+        "width": 108,
+        "height": 100
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6592,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:high_angle": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 82,
+        "top": 64,
+        "right": 457,
+        "bottom": 391,
+        "width": 376,
+        "height": 328
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 19,
+        "right": 116,
+        "bottom": 109,
+        "width": 106,
+        "height": 91
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.5887,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:birds_eye": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 68,
+        "top": 70,
+        "right": 433,
+        "bottom": 437,
+        "width": 366,
+        "height": 368
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 10,
+        "right": 117,
+        "bottom": 117,
+        "width": 107,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.7053,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:dutch_angle": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 29,
+        "top": 83,
+        "right": 458,
+        "bottom": 439,
+        "width": 430,
+        "height": 357
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 21,
+        "right": 116,
+        "bottom": 108,
+        "width": 106,
+        "height": 88
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5693,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:fisheye": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 13,
+        "top": 48,
+        "right": 421,
+        "bottom": 459,
+        "width": 409,
+        "height": 412
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 10,
+        "right": 117,
+        "bottom": 117,
+        "width": 107,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.7053,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:pov": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 36,
+        "top": 28,
+        "right": 496,
+        "bottom": 511,
+        "width": 461,
+        "height": 484
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 10,
+        "right": 115,
+        "bottom": 90,
+        "width": 103,
+        "height": 81
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -13.5
+      },
+      "maxCenterOffset": 13.5,
+      "coverage": 0.5092,
+      "cleanup": {
+        "removedComponents": 3,
+        "removedPixels": 802
+      }
+    },
+    "effects:third_person": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 40,
+        "top": 46,
+        "right": 463,
+        "bottom": 394,
+        "width": 424,
+        "height": 349
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 20,
+        "right": 116,
+        "bottom": 107,
+        "width": 107,
+        "height": 88
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.5747,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:over_shoulder": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 22,
+        "top": 21,
+        "right": 511,
+        "bottom": 511,
+        "width": 490,
+        "height": 491
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 10,
+        "right": 96,
+        "bottom": 92,
+        "width": 87,
+        "height": 83
+      },
+      "centerOffset": {
+        "x": -10.5,
+        "y": -12.5
+      },
+      "maxCenterOffset": 12.5,
+      "coverage": 0.4407,
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 362
+      }
+    },
+    "effects:cinematic_wide": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 83,
+        "right": 447,
+        "bottom": 511,
+        "width": 448,
+        "height": 429
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 13,
+        "right": 117,
+        "bottom": 71,
+        "width": 110,
+        "height": 59
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -21.5
+      },
+      "maxCenterOffset": 21.5,
+      "coverage": 0.3961,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 140
+      }
+    },
+    "effects:closeup_action": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 53,
+        "top": 0,
+        "right": 472,
+        "bottom": 380,
+        "width": 420,
+        "height": 381
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 13,
+        "right": 117,
+        "bottom": 112,
+        "width": 107,
+        "height": 100
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6531,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 466
+      }
+    },
+    "effects:aerial_tracking": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 64,
+        "top": 0,
+        "right": 444,
+        "bottom": 351,
+        "width": 381,
+        "height": 352
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 15,
+        "right": 117,
+        "bottom": 113,
+        "width": 108,
+        "height": 99
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6526,
+      "cleanup": {
+        "removedComponents": 3,
+        "removedPixels": 476
+      }
+    },
+    "effects:isometric": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 28,
+        "top": 0,
+        "right": 423,
+        "bottom": 384,
+        "width": 396,
+        "height": 385
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 10,
+        "right": 117,
+        "bottom": 116,
+        "width": 108,
+        "height": 107
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.7053,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:top_down": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
+      "sourceBounds": {
+        "left": 8,
+        "top": 4,
+        "right": 421,
+        "bottom": 382,
+        "width": 414,
+        "height": 379
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 22,
+        "right": 117,
+        "bottom": 113,
+        "width": 108,
+        "height": 92
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 4
+      },
+      "maxCenterOffset": 4,
+      "coverage": 0.6064,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 964
+      }
+    },
+    "effects:day_sunrise": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 33,
+        "top": 132,
+        "right": 511,
+        "bottom": 511,
+        "width": 479,
+        "height": 380
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 22,
+        "right": 119,
+        "bottom": 108,
+        "width": 110,
+        "height": 87
+      },
+      "centerOffset": {
+        "x": 1,
+        "y": 1.5
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.5841,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 51
+      }
+    },
+    "effects:day_midday": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 12,
+        "right": 369,
+        "bottom": 511,
+        "width": 370,
+        "height": 500
+      },
+      "runtimeBounds": {
+        "left": 49,
+        "top": 10,
+        "right": 103,
+        "bottom": 118,
+        "width": 55,
+        "height": 109
+      },
+      "centerOffset": {
+        "x": 12.5,
+        "y": 0.5
+      },
+      "maxCenterOffset": 12.5,
+      "coverage": 0.3659,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:day_golden_hour": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 132,
+        "right": 487,
+        "bottom": 511,
+        "width": 488,
+        "height": 380
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 23,
+        "right": 117,
+        "bottom": 106,
+        "width": 109,
+        "height": 84
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5588,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 2
+      }
+    },
+    "effects:day_night": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 9,
+        "top": 44,
+        "right": 462,
+        "bottom": 511,
+        "width": 454,
+        "height": 468
+      },
+      "runtimeBounds": {
+        "left": 14,
+        "top": 10,
+        "right": 114,
+        "bottom": 119,
+        "width": 101,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6781,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 271
+      }
+    },
+    "effects:weather_overcast": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 31,
+        "top": 40,
+        "right": 467,
+        "bottom": 506,
+        "width": 437,
+        "height": 467
+      },
+      "runtimeBounds": {
+        "left": 14,
+        "top": 10,
+        "right": 114,
+        "bottom": 117,
+        "width": 101,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6658,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:weather_rainy": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 7,
+        "top": 27,
+        "right": 470,
+        "bottom": 506,
+        "width": 464,
+        "height": 480
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 10,
+        "right": 112,
+        "bottom": 117,
+        "width": 100,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 0
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6592,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:weather_foggy": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 2,
+        "top": 69,
+        "right": 462,
+        "bottom": 511,
+        "width": 461,
+        "height": 443
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 12,
+        "right": 117,
+        "bottom": 117,
+        "width": 108,
+        "height": 106
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6987,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:weather_stormy": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 28,
+        "top": 30,
+        "right": 450,
+        "bottom": 499,
+        "width": 423,
+        "height": 470
+      },
+      "runtimeBounds": {
+        "left": 18,
+        "top": 10,
+        "right": 112,
+        "bottom": 117,
+        "width": 95,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 1.5,
+        "y": 0
+      },
+      "maxCenterOffset": 1.5,
+      "coverage": 0.6262,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:quality_phone": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 71,
+        "top": 22,
+        "right": 384,
+        "bottom": 511,
+        "width": 314,
+        "height": 490
+      },
+      "runtimeBounds": {
+        "left": 30,
+        "top": 9,
+        "right": 97,
+        "bottom": 119,
+        "width": 68,
+        "height": 111
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.4607,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:quality_digicam": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 17,
+        "top": 86,
+        "right": 424,
+        "bottom": 511,
+        "width": 408,
+        "height": 426
+      },
+      "runtimeBounds": {
+        "left": 13,
+        "top": 10,
+        "right": 115,
+        "bottom": 119,
+        "width": 103,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6915,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:quality_analog": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 11,
+        "top": 0,
+        "right": 445,
+        "bottom": 511,
+        "width": 435,
+        "height": 512
+      },
+      "runtimeBounds": {
+        "left": 18,
+        "top": 18,
+        "right": 109,
+        "bottom": 119,
+        "width": 92,
+        "height": 102
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 5
+      },
+      "maxCenterOffset": 5,
+      "coverage": 0.5728,
+      "cleanup": {
+        "removedComponents": 18,
+        "removedPixels": 615
+      }
+    },
+    "effects:quality_professional": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 10,
+        "top": 27,
+        "right": 442,
+        "bottom": 511,
+        "width": 433,
+        "height": 485
+      },
+      "runtimeBounds": {
+        "left": 16,
+        "top": 10,
+        "right": 111,
+        "bottom": 119,
+        "width": 96,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6445,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:quality_polaroid": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 72,
+        "top": 0,
+        "right": 440,
+        "bottom": 408,
+        "width": 369,
+        "height": 409
+      },
+      "runtimeBounds": {
+        "left": 16,
+        "top": 8,
+        "right": 112,
+        "bottom": 117,
+        "width": 97,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6512,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:quality_vhs": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 15,
+        "top": 0,
+        "right": 442,
+        "bottom": 390,
+        "width": 428,
+        "height": 391
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 13,
+        "right": 117,
+        "bottom": 112,
+        "width": 108,
+        "height": 100
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6592,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 1
+      }
+    },
+    "effects:quality_infrared": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 5,
+        "top": 0,
+        "right": 442,
+        "bottom": 406,
+        "width": 438,
+        "height": 407
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 12,
+        "right": 116,
+        "bottom": 113,
+        "width": 106,
+        "height": 102
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6599,
+      "cleanup": {
+        "removedComponents": 7,
+        "removedPixels": 43
+      }
+    },
+    "effects:quality_daguerreotype": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
+      "sourceBounds": {
+        "left": 41,
+        "top": 0,
+        "right": 426,
+        "bottom": 425,
+        "width": 386,
+        "height": 426
+      },
+      "runtimeBounds": {
+        "left": 16,
+        "top": 8,
+        "right": 112,
+        "bottom": 117,
+        "width": 97,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6512,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:bg_remove": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 73,
+        "top": 95,
+        "right": 480,
+        "bottom": 510,
+        "width": 408,
+        "height": 416
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 10,
+        "right": 116,
+        "bottom": 117,
+        "width": 106,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6987,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:bg_explosive": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 22,
+        "top": 61,
+        "right": 472,
+        "bottom": 499,
+        "width": 451,
+        "height": 439
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 12,
+        "right": 117,
+        "bottom": 116,
+        "width": 108,
+        "height": 105
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6921,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:bg_gradient": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 2,
+        "top": 70,
+        "right": 442,
+        "bottom": 508,
+        "width": 441,
+        "height": 439
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 11,
+        "right": 116,
+        "bottom": 117,
+        "width": 107,
+        "height": 107
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6988,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:bg_blur": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 76,
+        "right": 450,
+        "bottom": 505,
+        "width": 451,
+        "height": 430
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 13,
+        "right": 117,
+        "bottom": 115,
+        "width": 108,
+        "height": 103
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.679,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:bg_grid": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 53,
+        "top": 83,
+        "right": 478,
+        "bottom": 478,
+        "width": 426,
+        "height": 396
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 14,
+        "right": 116,
+        "bottom": 113,
+        "width": 107,
+        "height": 100
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6531,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "effects:bg_pattern": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 47,
+        "top": 68,
+        "right": 454,
+        "bottom": 463,
+        "width": 408,
+        "height": 396
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 12,
+        "right": 117,
+        "bottom": 116,
+        "width": 108,
+        "height": 105
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6921,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "motion:motion_idle": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 78,
+        "top": 63,
+        "right": 365,
+        "bottom": 494,
+        "width": 288,
+        "height": 432
+      },
+      "runtimeBounds": {
+        "left": 30,
+        "top": 10,
+        "right": 98,
+        "bottom": 117,
+        "width": 69,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.4548,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "motion:motion_walk": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 114,
+        "top": 47,
+        "right": 306,
+        "bottom": 476,
+        "width": 193,
+        "height": 430
+      },
+      "runtimeBounds": {
+        "left": 41,
+        "top": 10,
+        "right": 86,
+        "bottom": 117,
+        "width": 46,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.3032,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "motion:motion_run": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 99,
+        "top": 25,
+        "right": 462,
+        "bottom": 511,
+        "width": 364,
+        "height": 487
+      },
+      "runtimeBounds": {
+        "left": 30,
+        "top": 10,
+        "right": 103,
+        "bottom": 101,
+        "width": 74,
+        "height": 92
+      },
+      "centerOffset": {
+        "x": 3,
+        "y": -8
+      },
+      "maxCenterOffset": 8,
+      "coverage": 0.4155,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 785
+      }
+    },
+    "motion:motion_turn": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 46,
+        "top": 15,
+        "right": 450,
+        "bottom": 511,
+        "width": 405,
+        "height": 497
+      },
+      "runtimeBounds": {
+        "left": 20,
+        "top": 9,
+        "right": 107,
+        "bottom": 99,
+        "width": 88,
+        "height": 91
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -9.5
+      },
+      "maxCenterOffset": 9.5,
+      "coverage": 0.4888,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 1433
+      }
+    },
+    "motion:motion_attack": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 8,
+        "top": 13,
+        "right": 451,
+        "bottom": 511,
+        "width": 444,
+        "height": 499
+      },
+      "runtimeBounds": {
+        "left": 17,
+        "top": 9,
+        "right": 111,
+        "bottom": 100,
+        "width": 95,
+        "height": 92
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -9
+      },
+      "maxCenterOffset": 9,
+      "coverage": 0.5334,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 840
+      }
+    },
+    "motion:motion_spell": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 19,
+        "top": 7,
+        "right": 447,
+        "bottom": 511,
+        "width": 429,
+        "height": 505
+      },
+      "runtimeBounds": {
+        "left": 18,
+        "top": 11,
+        "right": 109,
+        "bottom": 103,
+        "width": 92,
+        "height": 93
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -6.5
+      },
+      "maxCenterOffset": 6.5,
+      "coverage": 0.5222,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 696
+      }
+    },
+    "motion:motion_block": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 66,
+        "top": 0,
+        "right": 473,
+        "bottom": 402,
+        "width": 408,
+        "height": 403
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 9,
+        "right": 117,
+        "bottom": 117,
+        "width": 108,
+        "height": 109
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.7185,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "motion:motion_laugh": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 56,
+        "top": 0,
+        "right": 511,
+        "bottom": 393,
+        "width": 456,
+        "height": 394
+      },
+      "runtimeBounds": {
+        "left": 12,
+        "top": 16,
+        "right": 83,
+        "bottom": 110,
+        "width": 72,
+        "height": 95
+      },
+      "centerOffset": {
+        "x": -16,
+        "y": -0.5
+      },
+      "maxCenterOffset": 16,
+      "coverage": 0.4175,
+      "cleanup": {
+        "removedComponents": 3,
+        "removedPixels": 1762
+      }
+    },
+    "profile:basic-info": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 511,
+        "bottom": 394,
+        "width": 512,
+        "height": 395
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 21,
+        "right": 94,
+        "bottom": 104,
+        "width": 87,
+        "height": 84
+      },
+      "centerOffset": {
+        "x": -12.5,
+        "y": -1
+      },
+      "maxCenterOffset": 12.5,
+      "coverage": 0.446,
+      "cleanup": {
+        "removedComponents": 5,
+        "removedPixels": 368
+      }
+    },
+    "profile:live-interview": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 401,
+        "bottom": 414,
+        "width": 402,
+        "height": 415
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 8,
+        "right": 115,
+        "bottom": 117,
+        "width": 106,
+        "height": 110
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.7117,
+      "cleanup": {
+        "removedComponents": 4,
+        "removedPixels": 29
+      }
+    },
+    "profile:style-analysis": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 43,
+        "top": 106,
+        "right": 480,
+        "bottom": 486,
+        "width": 438,
+        "height": 381
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 19,
+        "right": 117,
+        "bottom": 110,
+        "width": 108,
+        "height": 92
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6064,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "profile:equipment": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 27,
+        "top": 109,
+        "right": 461,
+        "bottom": 487,
+        "width": 435,
+        "height": 379
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 17,
+        "right": 117,
+        "bottom": 110,
+        "width": 108,
+        "height": 94
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6196,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "profile:story-hooks": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 4,
+        "top": 105,
+        "right": 511,
+        "bottom": 488,
+        "width": 508,
+        "height": 384
+      },
+      "runtimeBounds": {
+        "left": 9,
+        "top": 24,
+        "right": 100,
+        "bottom": 104,
+        "width": 92,
+        "height": 81
+      },
+      "centerOffset": {
+        "x": -9,
+        "y": 0.5
+      },
+      "maxCenterOffset": 9,
+      "coverage": 0.4548,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 39
+      }
+    },
+    "profile:attributes": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 109,
+        "right": 442,
+        "bottom": 488,
+        "width": 443,
+        "height": 380
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 18,
+        "right": 117,
+        "bottom": 109,
+        "width": 110,
+        "height": 92
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 0
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6177,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "profile:dialogue": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 37,
+        "top": 62,
+        "right": 484,
+        "bottom": 444,
+        "width": 448,
+        "height": 383
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 18,
+        "right": 117,
+        "bottom": 109,
+        "width": 108,
+        "height": 92
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.6064,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:source": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 76,
+        "top": 66,
+        "right": 409,
+        "bottom": 433,
+        "width": 334,
+        "height": 368
+      },
+      "runtimeBounds": {
+        "left": 15,
+        "top": 10,
+        "right": 112,
+        "bottom": 117,
+        "width": 98,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.646,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:reference": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 26,
+        "top": 70,
+        "right": 425,
+        "bottom": 424,
+        "width": 400,
+        "height": 355
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 17,
+        "right": 117,
+        "bottom": 111,
+        "width": 108,
+        "height": 95
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6262,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:browse-all": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 28,
+        "right": 421,
+        "bottom": 441,
+        "width": 422,
+        "height": 414
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 11,
+        "right": 117,
+        "bottom": 116,
+        "width": 110,
+        "height": 106
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": 0
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.7117,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:search": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 96,
+        "top": 21,
+        "right": 461,
+        "bottom": 511,
+        "width": 366,
+        "height": 491
+      },
+      "runtimeBounds": {
+        "left": 25,
+        "top": 9,
+        "right": 104,
+        "bottom": 119,
+        "width": 80,
+        "height": 111
+      },
+      "centerOffset": {
+        "x": 1,
+        "y": 0.5
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.542,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:favorite": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 32,
+        "top": 2,
+        "right": 425,
+        "bottom": 511,
+        "width": 394,
+        "height": 510
+      },
+      "runtimeBounds": {
+        "left": 23,
+        "top": 9,
+        "right": 105,
+        "bottom": 116,
+        "width": 83,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0.5,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5471,
+      "cleanup": {
+        "removedComponents": 6,
+        "removedPixels": 1364
+      }
+    },
+    "control:recent": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 4,
+        "right": 428,
+        "bottom": 511,
+        "width": 429,
+        "height": 508
+      },
+      "runtimeBounds": {
+        "left": 18,
+        "top": 9,
+        "right": 104,
+        "bottom": 89,
+        "width": 87,
+        "height": 81
+      },
+      "centerOffset": {
+        "x": -2.5,
+        "y": -14.5
+      },
+      "maxCenterOffset": 14.5,
+      "coverage": 0.4301,
+      "cleanup": {
+        "removedComponents": 2,
+        "removedPixels": 333
+      }
+    },
+    "control:prompt-preview": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 51,
+        "top": 9,
+        "right": 354,
+        "bottom": 511,
+        "width": 304,
+        "height": 503
+      },
+      "runtimeBounds": {
+        "left": 31,
+        "top": 9,
+        "right": 96,
+        "bottom": 119,
+        "width": 66,
+        "height": 111
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.4471,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:batch": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 68,
+        "top": 0,
+        "right": 467,
+        "bottom": 342,
+        "width": 400,
+        "height": 343
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 16,
+        "right": 117,
+        "bottom": 109,
+        "width": 108,
+        "height": 94
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6196,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:generate": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 38,
+        "top": 0,
+        "right": 511,
+        "bottom": 343,
+        "width": 474,
+        "height": 344
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 24,
+        "right": 99,
+        "bottom": 102,
+        "width": 90,
+        "height": 79
+      },
+      "centerOffset": {
+        "x": -9,
+        "y": -0.5
+      },
+      "maxCenterOffset": 9,
+      "coverage": 0.434,
+      "cleanup": {
+        "removedComponents": 7,
+        "removedPixels": 2094
+      }
+    },
+    "control:use-as-source": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 470,
+        "bottom": 325,
+        "width": 471,
+        "height": 326
+      },
+      "runtimeBounds": {
+        "left": 8,
+        "top": 25,
+        "right": 117,
+        "bottom": 100,
+        "width": 110,
+        "height": 76
+      },
+      "centerOffset": {
+        "x": -1,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.5103,
+      "cleanup": {
+        "removedComponents": 1,
+        "removedPixels": 1046
+      }
+    },
+    "control:download": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
+      "sourceBounds": {
+        "left": 36,
+        "top": 0,
+        "right": 364,
+        "bottom": 325,
+        "width": 329,
+        "height": 326
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 9,
+        "right": 117,
+        "bottom": 116,
+        "width": 108,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": -1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.7119,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:export": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
+      "sourceBounds": {
+        "left": 107,
+        "top": 103,
+        "right": 438,
+        "bottom": 432,
+        "width": 332,
+        "height": 330
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 12,
+        "right": 116,
+        "bottom": 117,
+        "width": 107,
+        "height": 106
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 1
+      },
+      "maxCenterOffset": 1,
+      "coverage": 0.6923,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:notes": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
+      "sourceBounds": {
+        "left": 100,
+        "top": 90,
+        "right": 423,
+        "bottom": 446,
+        "width": 324,
+        "height": 357
+      },
+      "runtimeBounds": {
+        "left": 15,
+        "top": 10,
+        "right": 112,
+        "bottom": 117,
+        "width": 98,
+        "height": 108
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "maxCenterOffset": 0,
+      "coverage": 0.646,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:history": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
+      "sourceBounds": {
+        "left": 36,
+        "top": 120,
+        "right": 361,
+        "bottom": 422,
+        "width": 326,
+        "height": 303
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 15,
+        "right": 116,
+        "bottom": 112,
+        "width": 107,
+        "height": 98
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.64,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:motion-preflight": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
+      "sourceBounds": {
+        "left": 8,
+        "top": 84,
+        "right": 412,
+        "bottom": 478,
+        "width": 405,
+        "height": 395
+      },
+      "runtimeBounds": {
+        "left": 11,
+        "top": 12,
+        "right": 116,
+        "bottom": 116,
+        "width": 106,
+        "height": 105
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6793,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:profile-preflight": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
+      "sourceBounds": {
+        "left": 78,
+        "top": 58,
+        "right": 443,
+        "bottom": 420,
+        "width": 366,
+        "height": 363
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 11,
+        "right": 117,
+        "bottom": 117,
+        "width": 108,
+        "height": 107
+      },
+      "centerOffset": {
+        "x": 0,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.7053,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:live-preflight": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
+      "sourceBounds": {
+        "left": 84,
+        "top": 114,
+        "right": 439,
+        "bottom": 386,
+        "width": 356,
+        "height": 273
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 23,
+        "right": 116,
+        "bottom": 104,
+        "width": 107,
+        "height": 82
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 0
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.5355,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    },
+    "control:clear": {
+      "source": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
+      "sourceBounds": {
+        "left": 39,
+        "top": 64,
+        "right": 393,
+        "bottom": 406,
+        "width": 355,
+        "height": 343
+      },
+      "runtimeBounds": {
+        "left": 10,
+        "top": 13,
+        "right": 116,
+        "bottom": 115,
+        "width": 107,
+        "height": 103
+      },
+      "centerOffset": {
+        "x": -0.5,
+        "y": 0.5
+      },
+      "maxCenterOffset": 0.5,
+      "coverage": 0.6727,
+      "cleanup": {
+        "removedComponents": 0,
+        "removedPixels": 0
+      }
+    }
+  }
+}

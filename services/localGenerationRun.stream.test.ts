@@ -107,6 +107,7 @@ vi.mock('../lib/recipeModules', () => ({
 
 describe('runSingleCodexImagegenJob stream ownership', () => {
   beforeEach(() => {
+    vi.resetModules();
     vi.clearAllMocks();
   });
 

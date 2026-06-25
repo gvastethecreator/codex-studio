@@ -60,6 +60,7 @@ const RECIPE_LIST_ORDER: RegisteredRecipeId[] = [
   'remaster',
   'spritesheet',
   'cinematic',
+  'character-lab',
   'character',
   'camera',
   'timeline',
@@ -257,6 +258,16 @@ const CHARACTER_OPTIONS = {
     'Weapons/Gear',
     'Hair & Accessories',
   ],
+} as const;
+
+const CHARACTER_LAB_OPTIONS = {
+  totalActions: 261,
+  mode: ['poses', 'spritesheets', 'scenes', 'special', 'effects', 'motion', 'profile'],
+  styleDefault: "Preserve Original: Keep the source image's style.",
+  clothingDefault: 'Preserve Original',
+  bodyTypeDefault: 'Preserve Original',
+  expressionDefault: 'Neutral',
+  labAspectRatio: ['1:1', '21:9', '16:9', '4:3', '3:2', '9:16', '3:4', '2:3', '5:4', '4:5'],
 } as const;
 
 const TIMELINE_OPTIONS = {
@@ -539,6 +550,119 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
         group: 'camera',
         defaultValue: 'Auto-Detect',
         options: options(CINEMATIC_OPTIONS.lens),
+      },
+    ],
+  }),
+  'character-lab': createRecipeModule({
+    id: 'character-lab',
+    title: 'Character Lab',
+    description: `Produce character poses, sheets, scenes, sprites, effects, and gated profile/motion workflows from ${CHARACTER_LAB_OPTIONS.totalActions} ported actions.`,
+    defaultTask: 'image_generate',
+    supportedTasks: ['image_generate', 'image_edit', 'sprite_sheet'],
+    parameters: [
+      {
+        id: 'mode',
+        label: 'Workflow',
+        kind: 'enum',
+        control: 'select',
+        group: 'action',
+        defaultValue: 'poses',
+        options: options(CHARACTER_LAB_OPTIONS.mode),
+      },
+      { id: 'actionId', label: 'Action ID', kind: 'string', control: 'text', group: 'action' },
+      { id: 'actionLabel', label: 'Action', kind: 'string', control: 'text', group: 'action' },
+      { id: 'category', label: 'Category', kind: 'string', control: 'text', group: 'action' },
+      {
+        id: 'actionPrompt',
+        label: 'Action Prompt',
+        kind: 'string',
+        control: 'text',
+        group: 'action',
+      },
+      { id: 'task', label: 'Task', kind: 'string', control: 'text', group: 'action' },
+      { id: 'mediaType', label: 'Media Type', kind: 'string', control: 'text', group: 'action' },
+      { id: 'frames', label: 'Frames', kind: 'number', control: 'text', group: 'action' },
+      {
+        id: 'isCouplesPose',
+        label: 'Couples Or Group Pose',
+        kind: 'boolean',
+        control: 'toggle',
+        group: 'action',
+        defaultValue: false,
+      },
+      {
+        id: 'capability',
+        label: 'Capability',
+        kind: 'string',
+        control: 'text',
+        group: 'action',
+        defaultValue: 'ready',
+      },
+      { id: 'subject', label: 'Subject', kind: 'string', control: 'text', group: 'character' },
+      {
+        id: 'style',
+        label: 'Style',
+        kind: 'string',
+        control: 'text',
+        group: 'character',
+        defaultValue: CHARACTER_LAB_OPTIONS.styleDefault,
+      },
+      {
+        id: 'clothing',
+        label: 'Clothing',
+        kind: 'string',
+        control: 'text',
+        group: 'character',
+        defaultValue: CHARACTER_LAB_OPTIONS.clothingDefault,
+      },
+      {
+        id: 'bodyType',
+        label: 'Body Type',
+        kind: 'string',
+        control: 'text',
+        group: 'character',
+        defaultValue: CHARACTER_LAB_OPTIONS.bodyTypeDefault,
+      },
+      {
+        id: 'expression',
+        label: 'Expression',
+        kind: 'string',
+        control: 'text',
+        group: 'character',
+        defaultValue: CHARACTER_LAB_OPTIONS.expressionDefault,
+      },
+      {
+        id: 'backgroundColor',
+        label: 'Background Color',
+        kind: 'color',
+        control: 'color',
+        group: 'character',
+        defaultValue: '#FFFFFF',
+      },
+      {
+        id: 'labAspectRatio',
+        label: 'Requested Aspect Ratio',
+        kind: 'enum',
+        control: 'select',
+        group: 'output',
+        defaultValue: '1:1',
+        options: options(CHARACTER_LAB_OPTIONS.labAspectRatio),
+      },
+      {
+        id: 'hasSource',
+        label: 'Has Source',
+        kind: 'boolean',
+        control: 'toggle',
+        group: 'source',
+        defaultValue: false,
+      },
+      {
+        id: 'referencesCount',
+        label: 'References',
+        kind: 'number',
+        control: 'text',
+        group: 'source',
+        defaultValue: 0,
       },
     ],
   }),
@@ -951,7 +1075,15 @@ export function buildGenerationTaskSpecFromRecipe({
     ? buildRecipeProviderDirectives(module, config.recipeParams ?? null)
     : null;
   const prompt = config.prompt || 'Generate a high-quality image.';
-  const taskKind = task ?? module?.defaultTask ?? 'image_generate';
+  const requestedTask =
+    typeof config.recipeParams?.task === 'string'
+      ? (config.recipeParams.task as GenerationTaskKind)
+      : null;
+  const taskKind =
+    task ??
+    (module && requestedTask && isRecipeTaskSupported(module, requestedTask)
+      ? requestedTask
+      : (module?.defaultTask ?? 'image_generate'));
   const resolvedImageSize = config.aspectRatio
     ? getImageGenSizeForRatio(config.aspectRatio).size
     : (config.imageSize ?? null);
@@ -987,33 +1119,51 @@ export function buildGenerationTaskSpecFromRecipe({
       config.recipeId === 'styles' && typeof config.recipeParams?.presetId === 'string'
         ? config.recipeParams.presetId
         : null,
-    assets: config.attachments.map((attachment) => ({
-      role: 'reference' as const,
+    assets: config.attachments.map((attachment, index) => ({
+      role:
+        config.recipeId === 'character-lab' && index === 0
+          ? ('input' as const)
+          : ('reference' as const),
       name: attachment.name,
       dataUrl: attachment.dataUrl,
       strength: attachment.strength,
     })),
     quality: {
       qualityPresetId,
-      subject: null,
+      subject:
+        config.recipeId === 'character-lab' && typeof config.recipeParams?.subject === 'string'
+          ? config.recipeParams.subject
+          : null,
       composition: null,
       style:
         config.recipeId === 'styles' && typeof config.recipeParams?.presetName === 'string'
           ? config.recipeParams.presetName
-          : null,
+          : config.recipeId === 'character-lab' && typeof config.recipeParams?.style === 'string'
+            ? config.recipeParams.style
+            : null,
       lighting: null,
       color:
-        typeof config.recipeParams?.colorTone === 'string' ? config.recipeParams.colorTone : null,
+        typeof config.recipeParams?.colorTone === 'string'
+          ? config.recipeParams.colorTone
+          : config.recipeId === 'character-lab' &&
+              typeof config.recipeParams?.backgroundColor === 'string'
+            ? config.recipeParams.backgroundColor
+            : null,
       materials: null,
       constraints: [],
       negative: [],
-      referenceRoles: config.attachments.map((attachment) => ({
-        role: 'reference' as const,
+      referenceRoles: config.attachments.map((attachment, index) => ({
+        role:
+          config.recipeId === 'character-lab' && index === 0
+            ? ('input' as const)
+            : ('reference' as const),
         assetName: attachment.name,
         instruction:
-          config.recipeId === 'styles'
-            ? 'Use as style and mood reference while preserving the requested subject.'
-            : 'Use as visual reference according to the requested generation task.',
+          config.recipeId === 'character-lab' && index === 0
+            ? 'Use as the primary character identity source.'
+            : config.recipeId === 'styles'
+              ? 'Use as style and mood reference while preserving the requested subject.'
+              : 'Use as visual reference according to the requested generation task.',
       })),
     },
     output: {

@@ -1,13 +1,18 @@
 import { describe, expect, it } from 'vite-plus/test';
 
+import { listRecipeModules } from '../lib/recipeModules';
 import { createProviderInputAuditReport } from './provider-input-audit';
 
 describe('provider input audit', () => {
   it('audits compact compiled inputs for all current Recipe Modules', () => {
     const report = createProviderInputAuditReport({ includeExternalFixtures: false });
+    const expectedRecipeRows = listRecipeModules().reduce(
+      (total, module) => total + module.supportedProviders.length,
+      0,
+    );
 
     expect(report.summary.failures).toEqual([]);
-    expect(report.summary.recipeRows).toBe(14);
+    expect(report.summary.recipeRows).toBe(expectedRecipeRows);
     expect(report.rows.every((row) => row.kind === 'recipe')).toBe(true);
     expect(report.rows.every((row) => row.hasRecipeProviderDirectives)).toBe(true);
     expect(report.rows.every((row) => row.omittedStableInstructions)).toBe(true);

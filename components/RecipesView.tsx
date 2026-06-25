@@ -14,6 +14,7 @@ import {
   Clock,
   Hourglass,
   ScanFace,
+  Boxes,
 } from 'lucide-react';
 import type { RecipeId } from '../types';
 import { RECIPE_CARD_IMAGES } from '../lib/recipeAssetCatalog';
@@ -28,6 +29,7 @@ const RECIPE_TAG_ICONS: Record<Exclude<RecipeId, null>, LucideIcon> = {
   remaster: Wand2,
   camera: Video,
   cinematic: Clapperboard,
+  'character-lab': Boxes,
   timeline: Hourglass,
   spritesheet: Grid3X3,
   character: User,
@@ -38,6 +40,7 @@ const RECIPE_BUTTON_ICONS: Record<Exclude<RecipeId, null>, LucideIcon> = {
   remaster: Sparkles,
   camera: Film,
   cinematic: Film,
+  'character-lab': Sparkles,
   timeline: Clock,
   spritesheet: ArrowRight,
   character: Users,

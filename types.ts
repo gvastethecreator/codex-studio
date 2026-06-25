@@ -1,17 +1,3 @@
-// FIX: Add type definitions for the View Transitions API to avoid TypeScript errors.
-interface ViewTransition {
-  ready: Promise<void>;
-  finished: Promise<void>;
-  updateCallbackDone: Promise<void>;
-  skipTransition: () => void;
-}
-
-declare global {
-  interface Document {
-    startViewTransition(updateCallback: () => Promise<void> | void): ViewTransition;
-  }
-}
-
 import React from 'react';
 import type { CodexReasoningEffort, CodexServiceTier, JobStatus } from './packages/shared/src';
 import { MODELS } from './constants';
@@ -33,6 +19,7 @@ export type RecipeId =
   | 'remaster'
   | 'spritesheet'
   | 'cinematic'
+  | 'character-lab'
   | 'character'
   | 'styles'
   | 'camera'

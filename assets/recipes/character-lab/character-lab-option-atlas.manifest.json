@@ -1,0 +1,1145 @@
+{
+  "image": "assets/recipes/character-lab/character-lab-option-atlas.png",
+  "cellSize": 128,
+  "columns": 16,
+  "rows": 12,
+  "frameCount": 189,
+  "source": "assets/recipes/character-lab/character-lab-option-atlas.source.json",
+  "sourceFrames512Directory": "assets/recipes/character-lab/sources/option-icons-v1/frames-512",
+  "frames": {
+    "option:expression:neutral": {
+      "x": 0,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:happy": {
+      "x": 128,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:sad": {
+      "x": 256,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:angry": {
+      "x": 384,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:surprised": {
+      "x": 512,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:determined": {
+      "x": 640,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:annoyed": {
+      "x": 768,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:confident": {
+      "x": 896,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:scared": {
+      "x": 1024,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:sarcastic": {
+      "x": 1152,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:shy-timid": {
+      "x": 1280,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:smug": {
+      "x": 1408,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:exhausted": {
+      "x": 1536,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:joyful": {
+      "x": 1664,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:worried": {
+      "x": 1792,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:expression:flirty": {
+      "x": 1920,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "option:aspect-ratio:1-1": {
+      "x": 0,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:aspect-ratio:21-9": {
+      "x": 128,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:aspect-ratio:16-9": {
+      "x": 256,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:aspect-ratio:4-3": {
+      "x": 384,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:aspect-ratio:3-2": {
+      "x": 512,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:aspect-ratio:9-16": {
+      "x": 640,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:aspect-ratio:3-4": {
+      "x": 768,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:aspect-ratio:2-3": {
+      "x": 896,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:aspect-ratio:5-4": {
+      "x": 1024,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:aspect-ratio:4-5": {
+      "x": 1152,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:preserve-original": {
+      "x": 1280,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:anime-manga": {
+      "x": 1408,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:90s-anime-cel-shaded": {
+      "x": 1536,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:modern-anime-digital": {
+      "x": 1664,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:studio-ghibli-inspired": {
+      "x": 1792,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:horror-manga-junji-ito": {
+      "x": 1920,
+      "y": 128,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:action-manga-akira-toriyama": {
+      "x": 0,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:seinen-manga-takehiko-inoue": {
+      "x": 128,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:70s-retro-mecha-action-anime": {
+      "x": 256,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:cartoon-toon": {
+      "x": 384,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:american-comic-book": {
+      "x": 512,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:vintage-comic-1960s": {
+      "x": 640,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:graphic-novel-noir": {
+      "x": 768,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:chibi": {
+      "x": 896,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:vector-art": {
+      "x": 1024,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:flat-design": {
+      "x": 1152,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:psychedelic-art": {
+      "x": 1280,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:pixel-art-16-bit": {
+      "x": 1408,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:pixel-art-32-bit": {
+      "x": 1536,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:voxel-art": {
+      "x": 1664,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:glitch-art": {
+      "x": 1792,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:synthwave-retrowave": {
+      "x": 1920,
+      "y": 256,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:retro-2d-rpg-snes": {
+      "x": 0,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:ps1-n64-era-3d": {
+      "x": 128,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:ps2-era-3d": {
+      "x": 256,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:cel-shaded-3d-wind-waker": {
+      "x": 384,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:souls-like-dark-fantasy": {
+      "x": 512,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:modern-aaa-realism": {
+      "x": 640,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:fighting-game-style": {
+      "x": 768,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:mobile-game-style": {
+      "x": 896,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:visual-novel-style": {
+      "x": 1024,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:3d-render-modern": {
+      "x": 1152,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:3d-render-retro-ps1": {
+      "x": 1280,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:low-poly-3d": {
+      "x": 1408,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:claymation-style": {
+      "x": 1536,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:concept-art-sketch": {
+      "x": 1664,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:concept-art-polished": {
+      "x": 1792,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:matte-painting": {
+      "x": 1920,
+      "y": 384,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:watercolor-painting": {
+      "x": 0,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:oil-painting": {
+      "x": 128,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:charcoal-sketch": {
+      "x": 256,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:ukiyo-e-woodblock": {
+      "x": 384,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:stained-glass": {
+      "x": 512,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:art-nouveau": {
+      "x": 640,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:art-deco": {
+      "x": 768,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:surrealism-dali-esque": {
+      "x": 896,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:style:technical-drawing-blueprint": {
+      "x": 1024,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:preserve-original": {
+      "x": 1152,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:fantasy-knight-armor": {
+      "x": 1280,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:wizard-robes": {
+      "x": 1408,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:rogue-s-leather-tunic": {
+      "x": 1536,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:elven-silks": {
+      "x": 1664,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:barbarian-furs": {
+      "x": 1792,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:druid-s-ceremonial-robes": {
+      "x": 1920,
+      "y": 512,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:bard-s-colorful-attire": {
+      "x": 0,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:necromancer-s-dark-cloak": {
+      "x": 128,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:dwarven-smithing-apron": {
+      "x": 256,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:warlock-s-shadow-weave-robes": {
+      "x": 384,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:paladin-s-holy-plate-armor": {
+      "x": 512,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:vampire-noble-attire": {
+      "x": 640,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:nomad-desert-wraps": {
+      "x": 768,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:plague-doctor-outfit": {
+      "x": 896,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:king-s-royal-garb": {
+      "x": 1024,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:jester-s-motley": {
+      "x": 1152,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:celestial-sage-robes": {
+      "x": 1280,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:fae-touched-silken-garb": {
+      "x": 1408,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:orcish-warchief-plate": {
+      "x": 1536,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:sci-fi-power-armor": {
+      "x": 1664,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:galactic-explorer-jumpsuit": {
+      "x": 1792,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:cyberpunk-gear": {
+      "x": 1920,
+      "y": 640,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:steampunk-attire": {
+      "x": 0,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:cyberpunk-netrunner-suit": {
+      "x": 128,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:post-apocalyptic-heavy-armor": {
+      "x": 256,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:space-pirate-gear": {
+      "x": 384,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:starship-captain-uniform": {
+      "x": 512,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:android-shell-exposed-circuits": {
+      "x": 640,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:void-walker-s-suit": {
+      "x": 768,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:biomechanical-suit": {
+      "x": 896,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:solar-punk-artisan-wear": {
+      "x": 1024,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:retro-futuristic-spaceman-suit": {
+      "x": 1152,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:samurai-armor": {
+      "x": 1280,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:kimono": {
+      "x": 1408,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:victorian-era-ball-gown": {
+      "x": 1536,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:viking-raider-leathers": {
+      "x": 1664,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:egyptian-pharaoh-regalia": {
+      "x": 1792,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:roaring-20s-flapper-dress": {
+      "x": 1920,
+      "y": 768,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:1950s-greaser-leather-jacket-jeans": {
+      "x": 0,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:1980s-new-wave-fashion": {
+      "x": 128,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:modern-casual-wear": {
+      "x": 256,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:streetwear-oversized-hoodie-cargo-pants-chunky-sneakers": {
+      "x": 384,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:skater-punk-outfit": {
+      "x": 512,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:techwear-functional-futuristic": {
+      "x": 640,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:hypebeast-outfit-designer-brands-rare-sneakers": {
+      "x": 768,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:graffiti-artist-wear-paint-splattered-clothes-beanie": {
+      "x": 896,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:drill-rapper-tracksuit-balaclava-designer-bag": {
+      "x": 1024,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:lo-fi-beats-listener-oversized-sweater-beanie-round-glasses": {
+      "x": 1152,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:dark-academia-tweed-blazer-turtleneck-trousers": {
+      "x": 1280,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:light-academia-linen-shirt-light-colored-sweater-chinos": {
+      "x": 1408,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:preppy-ivy-league-style-polo-shirt-khaki-shorts-boat-shoes": {
+      "x": 1536,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:librarian-chic-cardigan-button-up-shirt-glasses": {
+      "x": 1664,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:art-student-paint-splattered-overalls-quirky-earrings-tote-bag": {
+      "x": 1792,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:chaotic-academia-mismatched-patterns-worn-out-sweaters-disheveled-look": {
+      "x": 1920,
+      "y": 896,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:goth-black-clothing-leather-silver-jewelry": {
+      "x": 0,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:pastel-goth-pastel-colors-with-goth-elements": {
+      "x": 128,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:punk-rocker-ripped-jeans-band-t-shirt-studded-jacket": {
+      "x": 256,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:metalhead-black-band-shirt-denim-vest-leather-pants": {
+      "x": 384,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:e-girl-e-boy-outfit-striped-shirt-chains-beanie": {
+      "x": 512,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:hipster-attire-beanie-flannel": {
+      "x": 640,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:scene-kid-2000s-revival-coontails-bright-colors-skinny-jeans": {
+      "x": 768,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:health-goth-monochromatic-athletic-wear-futuristic-look": {
+      "x": 896,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:witchcore-long-black-dress-occult-symbols-layered-shawls": {
+      "x": 1024,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:cottagecore-outfit-flowy-dress-knitted-cardigan-rustic": {
+      "x": 1152,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:minimalist-chic-neutral-colors-clean-lines-simple-silhouette": {
+      "x": 1280,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:y2k-revival-fashion-low-rise-jeans-crop-top-colorful-accessories": {
+      "x": 1408,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:bohemian-boho-chic-flowing-fabrics-earthy-tones-fringe": {
+      "x": 1536,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:gamer-streamer-casual-comfortable-hoodie-headphones-merch": {
+      "x": 1664,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:tech-bro-uniform-branded-fleece-vest-button-down-sneakers": {
+      "x": 1792,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:vsco-girl-oversized-t-shirt-shell-necklace-scrunchies": {
+      "x": 1920,
+      "y": 1024,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:normcore-unbranded-basics-simple-jeans-plain-sneakers": {
+      "x": 0,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:baddie-aesthetic-bodycon-dress-perfect-makeup-high-heels": {
+      "x": 128,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:plant-mom-dad-linen-shirt-practical-pants-surrounded-by-plants": {
+      "x": 256,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:dark-cottagecore-goblincore-earthy-tones-mushroom-motifs-slightly-worn-l": {
+      "x": 384,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:clowncore-rainbow-patterns-oversized-collars-playful-accessories": {
+      "x": 512,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:fairycore-faecore-ethereal-dresses-flower-crowns-delicate-wings": {
+      "x": 640,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:athleisure-wear": {
+      "x": 768,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:gorpcore-hiker-chic-technical-jacket-cargo-shorts-hiking-boots": {
+      "x": 896,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:surfer-style-board-shorts-tank-top-flip-flops": {
+      "x": 1024,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:yoga-instructor-yoga-pants-sports-bra-serene-expression": {
+      "x": 1152,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:cyclist-gear-lycra-shorts-cycling-jersey-helmet": {
+      "x": 1280,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:business-casual-attire": {
+      "x": 1408,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:formal-suit-tuxedo": {
+      "x": 1536,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:modern-business-suit-slim-fit-no-tie": {
+      "x": 1664,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:creative-professional-stylish-blazer-dark-jeans-designer-sneakers": {
+      "x": 1792,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:startup-founder-branded-hoodie-expensive-sneakers-confident-stance": {
+      "x": 1920,
+      "y": 1152,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:barista-uniform-apron-t-shirt-comfortable-shoes": {
+      "x": 0,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:summer-beachwear": {
+      "x": 128,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:winter-wear-puffer-jacket": {
+      "x": 256,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:vintage-aviator-jacket": {
+      "x": 384,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:festival-goer-fringe-face-glitter-denim-shorts": {
+      "x": 512,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:tourist-outfit-hawaiian-shirt-shorts-camera-around-neck": {
+      "x": 640,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:pajamas-loungewear-cozy-sweatpants-and-a-soft-shirt": {
+      "x": 768,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:noir-detective-trenchcoat": {
+      "x": 896,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:superhero-spandex-suit": {
+      "x": 1024,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:royal-gown": {
+      "x": 1152,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:gothic-victorian-attire": {
+      "x": 1280,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:gothic-lolita-dress": {
+      "x": 1408,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:post-apocalyptic-scavenger": {
+      "x": 1536,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:wasteland-raider-leathers": {
+      "x": 1664,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:tribal-hunter-garb": {
+      "x": 1792,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:circus-ringleader-costume": {
+      "x": 1920,
+      "y": 1280,
+      "w": 128,
+      "h": 128
+    },
+    "option:clothing:mad-scientist-lab-coat": {
+      "x": 0,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "option:body-type:preserve-original": {
+      "x": 128,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "option:body-type:thinner": {
+      "x": 256,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "option:body-type:very-thin": {
+      "x": 384,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "option:body-type:skeletal-emaciated": {
+      "x": 512,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "option:body-type:heavier": {
+      "x": 640,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "option:body-type:obese": {
+      "x": 768,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "option:body-type:morbidly-obese": {
+      "x": 896,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "option:body-type:athletically-fit": {
+      "x": 1024,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "option:body-type:lean-muscle": {
+      "x": 1152,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "option:body-type:stocky-burly": {
+      "x": 1280,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "option:body-type:exaggerated-muscles": {
+      "x": 1408,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    },
+    "option:body-type:hyper-muscular": {
+      "x": 1536,
+      "y": 1408,
+      "w": 128,
+      "h": 128
+    }
+  }
+}
