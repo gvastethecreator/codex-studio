@@ -37,6 +37,35 @@ describe('recipeContext', () => {
     expect(parseRecipeIdFromContext(context)).toBe('styles');
   });
 
+  it('includes selected style layers in style recipe documents', () => {
+    const context = buildRecipeContext('styles', {
+      presetId: 'SP01-001',
+      presetName: 'Studio Headshot + Film Noir',
+      selectedStyles: [
+        {
+          slot: 1,
+          presetName: 'Studio Headshot',
+          packName: 'Photography & Realism',
+          strength: 0.7,
+          aesthetic: 'clean studio portrait',
+        },
+        {
+          slot: 2,
+          presetName: 'Film Noir',
+          packName: 'Cinematic & Media',
+          strength: 0.4,
+          aesthetic: 'hard shadow crime drama',
+        },
+      ],
+    });
+
+    expect(context).toContain('[SELECTED STYLE LAYERS]');
+    expect(context).toContain(
+      'Slot 1: Studio Headshot | Pack: Photography & Realism | Strength: 0.70',
+    );
+    expect(context).toContain('Slot 2: Film Noir | Pack: Cinematic & Media | Strength: 0.40');
+  });
+
   it('does not parse recipe ids from title substrings without the protocol envelope', () => {
     expect(parseRecipeIdFromContext('CAMERA VIEW PROMPT')).toBeNull();
   });

@@ -6,8 +6,10 @@ import {
   type RecipeModule,
   type RecipeParameterDescriptor,
 } from './recipeModules';
+import { CHARACTER_LAB_RECIPE_ALIASES, type RecipeAliasId } from './recipeAliases';
 
 type RegisteredRecipeId = Exclude<RecipeId, null>;
+export type RecipeCardImageKey = RegisteredRecipeId | RecipeAliasId;
 
 export interface RecipeCatalogCardMetadata {
   id: RegisteredRecipeId;
@@ -15,18 +17,21 @@ export interface RecipeCatalogCardMetadata {
   tag: string;
   buttonText: string;
   accentColor: string;
-  cardImageKey: RegisteredRecipeId;
+  cardImageKey: RecipeCardImageKey;
 }
 
 export interface RecipeCatalogEntry {
   id: RegisteredRecipeId;
+  targetRecipeId: RegisteredRecipeId;
+  routeAliasId: null;
+  isAlias: false;
   title: string;
   subtitle: string;
   description: string;
   tag: string;
   buttonText: string;
   accentColor: string;
-  cardImageKey: RegisteredRecipeId;
+  cardImageKey: RecipeCardImageKey;
   defaultTask: GenerationTaskKind;
   supportedTasks: GenerationTaskKind[];
   supportedProviders: GenerationProviderId[];
@@ -35,6 +40,29 @@ export interface RecipeCatalogEntry {
   parameterGroups: string[];
   requiredParameterIds: string[];
 }
+
+export interface RecipeCatalogAliasEntry {
+  id: RecipeAliasId;
+  targetRecipeId: RegisteredRecipeId;
+  routeAliasId: RecipeAliasId;
+  isAlias: true;
+  title: string;
+  subtitle: string;
+  description: string;
+  tag: string;
+  buttonText: string;
+  accentColor: string;
+  cardImageKey: RecipeCardImageKey;
+  defaultTask: GenerationTaskKind;
+  supportedTasks: GenerationTaskKind[];
+  supportedProviders: GenerationProviderId[];
+  parameters: RecipeParameterDescriptor[];
+  defaultParams: Record<string, unknown>;
+  parameterGroups: string[];
+  requiredParameterIds: string[];
+}
+
+export type RecipeCatalogDisplayEntry = RecipeCatalogEntry | RecipeCatalogAliasEntry;
 
 export interface RecipeCatalogSearchFilters {
   query?: string;
@@ -135,6 +163,9 @@ function createRecipeCatalog(modules: RecipeModule[] = listRecipeModules()) {
     const card = RECIPE_CARD_METADATA[module.id];
     return {
       id: module.id,
+      targetRecipeId: module.id,
+      routeAliasId: null,
+      isAlias: false,
       title: toDisplayTitle(module),
       subtitle: card.subtitle,
       description: module.description,
@@ -157,6 +188,53 @@ function createRecipeCatalog(modules: RecipeModule[] = listRecipeModules()) {
 }
 
 export const RECIPE_CATALOG = createRecipeCatalog();
+
+function createRecipeAliasCatalog(catalog: RecipeCatalogEntry[] = RECIPE_CATALOG) {
+  return CHARACTER_LAB_RECIPE_ALIASES.flatMap((alias): RecipeCatalogAliasEntry[] => {
+    const targetEntry = catalog.find((entry) => entry.id === alias.targetRecipeId);
+    if (!targetEntry) return [];
+
+    return [
+      {
+        id: alias.id,
+        targetRecipeId: alias.targetRecipeId,
+        routeAliasId: alias.id,
+        isAlias: true,
+        title: alias.title,
+        subtitle: alias.subtitle,
+        description: alias.description,
+        tag: alias.tag,
+        buttonText: alias.buttonText,
+        accentColor: alias.accentColor,
+        cardImageKey: alias.cardImageKey,
+        defaultTask: alias.defaultTask,
+        supportedTasks: alias.supportedTasks,
+        supportedProviders: targetEntry.supportedProviders,
+        parameters: targetEntry.parameters,
+        defaultParams: {
+          ...targetEntry.defaultParams,
+          mode: alias.characterLabMode,
+        },
+        parameterGroups: targetEntry.parameterGroups,
+        requiredParameterIds: targetEntry.requiredParameterIds,
+      },
+    ];
+  });
+}
+
+export const RECIPE_ALIAS_CATALOG = createRecipeAliasCatalog();
+
+function createRecipeDiscoveryCatalog(
+  catalog: RecipeCatalogEntry[] = RECIPE_CATALOG,
+  aliases: RecipeCatalogAliasEntry[] = RECIPE_ALIAS_CATALOG,
+) {
+  return catalog.flatMap((entry): RecipeCatalogDisplayEntry[] => [
+    entry,
+    ...aliases.filter((alias) => alias.targetRecipeId === entry.id),
+  ]);
+}
+
+export const RECIPE_DISCOVERY_CATALOG = createRecipeDiscoveryCatalog();
 
 export function validateRecipeCatalog(catalog: RecipeCatalogEntry[] = RECIPE_CATALOG) {
   const errors: string[] = [];

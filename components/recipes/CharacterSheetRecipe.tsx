@@ -1,5 +1,12 @@
 import React, { useState, useRef, useMemo } from 'react';
-import { Layout, Brush, Palette, X, Camera, ScanFace } from 'lucide-react';
+import {
+  IconLayout as Layout,
+  IconBrush as Brush,
+  IconPalette as Palette,
+  IconX as X,
+  IconCamera as Camera,
+  IconUserScan as ScanFace,
+} from '@tabler/icons-react';
 import type { Attachment, ImageGenerationConfig } from '../../types';
 import { RATIO_MAP } from '../../constants';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
@@ -123,7 +130,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
     <RecipeLayout
       isGenerating={isGenerating}
       bottomDock={BottomDock}
-      className="p-6 md:p-12 pb-48 flex items-center justify-center"
+      className="p-3 pb-[var(--studio-recipe-dock-space)] sm:p-6 md:p-12 sm:pb-48 flex items-center justify-center"
     >
       {/* CENTER: Reference / Input Area */}
       <div className="relative w-full max-w-400 h-full flex flex-col items-center justify-center group">
@@ -131,8 +138,9 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
           className={`relative flex items-center justify-center overflow-hidden rounded-3xl border bg-white/2 shadow-2xl transition-all duration-500`}
           style={{
             aspectRatio: ratioValue,
-            width: `min(80vw, (100vh - 350px) * ${ratioValue})`,
-            height: `min(100vh - 350px, 80vw / ${ratioValue})`,
+            width: 'min(86vw, 72vh)',
+            maxWidth: '100%',
+            maxHeight: 'calc(100dvh - var(--studio-chrome-block))',
             borderStyle: hasReference ? 'solid' : 'dashed',
             borderColor: hasReference ? 'rgb(var(--indigo-500) / 0.3)' : 'rgb(255 255 255 / 0.1)',
           }}

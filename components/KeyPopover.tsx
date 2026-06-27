@@ -1,5 +1,10 @@
 import React from 'react';
-import { Key, ExternalLink, ShieldCheck, X } from 'lucide-react';
+import {
+  IconKey as Key,
+  IconExternalLink as ExternalLink,
+  IconShieldCheck as ShieldCheck,
+  IconX as X,
+} from '@tabler/icons-react';
 import { MotionDiv, AnimatePresence } from 'motion/react';
 
 interface KeyPopoverProps {

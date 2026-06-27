@@ -1,11 +1,15 @@
 import type { AppPageView } from '../../hooks/useHashRouter';
+import type { RecipeAliasId } from '../../lib/recipeAliases';
 import type { RecipeId } from '../../types';
 
 export function resolveStudioViewportRouteKey(
   routeView: AppPageView,
   activeRecipe: RecipeId | null,
+  activeRecipeAliasId: RecipeAliasId | null = null,
 ) {
-  if (routeView === 'recipe' && activeRecipe) return `recipe-${activeRecipe}`;
+  if (routeView === 'recipe' && activeRecipe) {
+    return `recipe-${activeRecipeAliasId ?? activeRecipe}`;
+  }
   if (routeView === 'studio') return 'studio';
   return 'recipes-list';
 }
@@ -15,7 +19,7 @@ export function isRecipesViewVisible(routeView: AppPageView) {
 }
 
 export function getStudioViewportTransitionClassName(direction: number) {
-  const slideClass =
-    direction > 0 ? 'slide-in-from-right-3' : direction < 0 ? 'slide-in-from-left-3' : 'zoom-in-95';
-  return `animate-in fade-in-0 ${slideClass} duration-200`;
+  if (direction > 0) return 'studio-route-enter studio-route-enter-forward';
+  if (direction < 0) return 'studio-route-enter studio-route-enter-back';
+  return 'studio-route-enter studio-route-enter-neutral';
 }

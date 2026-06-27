@@ -30,10 +30,13 @@ export function prepareStudioGenerationRequest({
   const finalPrompt = promptSource?.trim() ?? '';
   const baseAttachments = configOverrides?.attachments ?? generationConfig.attachments;
   const effectiveRecipeId = configOverrides?.recipeId ?? generationConfig.recipeId;
-  const finalAttachments =
-    effectiveRecipeId === 'timeline' || effectiveRecipeId === 'character-lab'
-      ? baseAttachments.slice(0, 4)
-      : baseAttachments.slice(0, 1);
+  const maxAttachments =
+    effectiveRecipeId === 'styles'
+      ? 5
+      : effectiveRecipeId === 'timeline' || effectiveRecipeId === 'character-lab'
+        ? 4
+        : 1;
+  const finalAttachments = baseAttachments.slice(0, maxAttachments);
   const hasReferenceImage = finalAttachments.length > 0;
 
   if (!finalPrompt && !hasReferenceImage) {

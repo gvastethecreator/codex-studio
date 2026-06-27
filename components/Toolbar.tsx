@@ -1,33 +1,34 @@
 import {
-  Ban,
-  Bot,
-  BrainCircuit,
-  Check,
-  ChevronDown,
-  Edit3,
-  Eraser,
-  Hash,
-  ImagePlus,
-  Key,
-  Layers,
-  Loader2,
-  Maximize,
-  Monitor,
-  MoreHorizontal,
-  PlusCircle,
-  Ratio,
-  RectangleHorizontal,
-  RectangleVertical,
-  Scan,
-  Send,
-  ShieldAlert,
-  Sparkles,
-  Square,
-  Wand,
-  Wand2,
-  X,
-  Zap,
-} from 'lucide-react';
+  IconBan as Ban,
+  IconRobot as Bot,
+  IconBrain as BrainCircuit,
+  IconCheck as Check,
+  IconChevronDown as ChevronDown,
+  IconEdit as Edit3,
+  IconEraser as Eraser,
+  IconHash as Hash,
+  IconPhotoPlus as ImagePlus,
+  IconKey as Key,
+  IconStack as Layers,
+  IconLoader2 as Loader2,
+  IconMaximize as Maximize,
+  IconDeviceDesktop as Monitor,
+  IconDots as MoreHorizontal,
+  IconCirclePlus as PlusCircle,
+  IconAspectRatio as Ratio,
+  IconRectangle as RectangleHorizontal,
+  IconRectangleVertical as RectangleVertical,
+  IconScan as Scan,
+  IconAdjustmentsHorizontal as SlidersHorizontal,
+  IconSend as Send,
+  IconShieldExclamation as ShieldAlert,
+  IconSparkles as Sparkles,
+  IconSquare as Square,
+  IconWand as Wand,
+  IconWand as Wand2,
+  IconX as X,
+  IconBolt as Zap,
+} from '@tabler/icons-react';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import {
   formatCodexModelLabel,
@@ -184,6 +185,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const [isExecutionOpen, setIsExecutionOpen] = useState(false);
     const [isSizeOpen, setIsSizeOpen] = useState(false);
     const [isBatchOpen, setIsBatchOpen] = useState(false);
+    const [isMobileControlsOpen, setIsMobileControlsOpen] = useState(false);
     const [isForcedMode, setIsForcedMode] = useState(false);
 
     // Logic AI Popover States
@@ -303,6 +305,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           closeAllMenus();
           setIsNegativeOpen(false);
           setIsRefineOpen(false);
+          setIsMobileControlsOpen(false);
         }
       };
       document.addEventListener('mousedown', handleOutsideClick);
@@ -336,9 +339,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         const target = textareaRef.current;
         const scrollPos = target.scrollTop;
         // Reset height to base height to get the correct scrollHeight when text is deleted
-        target.style.height = '32px';
+        target.style.height = '28px';
         const scrollHeight = target.scrollHeight;
-        target.style.height = `${Math.min(Math.max(scrollHeight, 32), 400)}px`;
+        target.style.height = `${Math.min(Math.max(scrollHeight, 28), 320)}px`;
         // Restore scroll position to prevent jumping
         target.scrollTop = scrollPos;
       }
@@ -361,6 +364,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       closeAllMenus();
       setIsNegativeOpen(false);
       setIsRefineOpen(false);
+      setIsMobileControlsOpen(false);
     }, [
       localPrompt,
       generationConfig.attachments.length,
@@ -407,9 +411,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const currentSizes = PRO_SIZES;
 
     const btnClass =
-      'h-10 sm:h-11 flex items-center gap-2 px-3 sm:px-4 rounded-xl sm:rounded-2xl bg-white/5 hover:bg-white/10 text-[9px] font-black tracking-widest transition-[color,background-color,border-color,opacity,transform,box-shadow] active:scale-95 text-zinc-400 hover:text-white disabled:opacity-30 uppercase group border border-transparent hover:border-white/5 whitespace-nowrap cursor-pointer';
+      'h-10 sm:h-9 w-full sm:w-auto flex items-center justify-center gap-1.5 px-2 sm:px-2.5 rounded-lg bg-white/5 hover:bg-white/10 text-[9px] font-black tracking-widest transition-[color,background-color,border-color,opacity,transform,box-shadow] active:scale-95 text-zinc-400 hover:text-white disabled:opacity-30 uppercase group border border-transparent hover:border-white/5 whitespace-nowrap cursor-pointer';
     const iconBtnClass =
-      'size-8 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/5 text-zinc-500 hover:text-white hover:bg-white/10 transition-[color,background-color,border-color,opacity,transform,box-shadow] active:scale-90 relative cursor-pointer disabled:cursor-not-allowed';
+      'size-10 sm:size-8 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/5 text-zinc-500 hover:text-white hover:bg-white/10 transition-[color,background-color,border-color,opacity,transform,box-shadow] active:scale-90 relative cursor-pointer disabled:cursor-not-allowed';
     const activeIconBtnClass =
       'bg-gradient-to-b from-accent-800 to-accent-950 border border-accent-700/50 text-accent-300 shadow-[0_2px_10px_rgba(0,0,0,0.5)] cursor-pointer';
 
@@ -434,9 +438,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         className="w-full flex flex-col justify-end z-50 transition-colors duration-700 ease-in-out relative"
       >
         {/* Fixed height background that doesn't expand with the textarea */}
-        <div className="absolute inset-x-0 bottom-0 h-[116px] pointer-events-none bg-black/80 backdrop-blur-sm transition-colors duration-700 ease-in-out sm:h-[68px]" />
+        <div className="absolute inset-x-0 bottom-0 h-[94px] pointer-events-none bg-black/80 backdrop-blur-sm transition-colors duration-700 ease-in-out sm:h-[50px]" />
 
-        <div className="relative z-10 mx-auto flex w-full max-w-[1920px] flex-col items-stretch gap-2 px-4 py-3 sm:flex-row sm:items-end sm:gap-3 sm:px-6">
+        <div className="relative z-10 flex w-full flex-col items-stretch gap-1 px-2 py-1.5 sm:flex-row sm:items-end sm:gap-1.5">
           <input
             type="file"
             ref={fileInputRef}
@@ -451,7 +455,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           <div className="flex-1 relative min-w-0">
             {/* Input Container */}
             <div
-              className={`flex min-h-[44px] items-end gap-2 rounded-2xl border border-white/5 bg-zinc-900/50 p-1.5 px-2 shadow-lg transition-colors duration-300 sm:px-3 ${shouldShowQuickStartError ? 'quick-start-error-frame' : ''}`}
+              className={`flex min-h-9 items-end gap-1.5 rounded-lg border border-white/5 bg-zinc-900/50 p-1 px-2 shadow-lg transition-colors duration-300 ${shouldShowQuickStartError ? 'quick-start-error-frame' : ''}`}
             >
               {showQuickStartErrorText && (
                 <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[9px] font-black uppercase tracking-[0.18em] text-red-200 animate-in fade-in-0 slide-in-from-bottom-1 duration-150">
@@ -552,12 +556,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 }}
                 placeholder="Describe what you want to create..."
                 rows={1}
-                className={`custom-scrollbar max-h-[400px] min-w-0 flex-1 self-end overflow-y-auto resize-none border-none bg-transparent px-2 py-[6px] text-[13px] font-medium leading-normal tracking-tight text-zinc-200 outline-none placeholder-zinc-700 sm:min-w-[100px] sm:px-3 ${isEnhancingPrompt || isRefactoring ? 'font-mono text-accent-400 opacity-80' : ''}`}
-                style={{ minHeight: '32px' }}
+                className={`custom-scrollbar max-h-[320px] min-w-0 flex-1 self-end overflow-y-auto resize-none border-none bg-transparent px-1.5 py-1 text-[13px] font-medium leading-normal tracking-tight text-zinc-200 outline-none placeholder-zinc-700 sm:min-w-[100px] ${isEnhancingPrompt || isRefactoring ? 'font-mono text-accent-400 opacity-80' : ''}`}
+                style={{ minHeight: '28px' }}
               />
 
               {/* LOGIC AI TOOLS */}
-              <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
+              <div className="hidden shrink-0 items-center gap-1.5 sm:flex sm:gap-2">
                 {/* 1. NEGATIVE (Exclude) */}
                 <div className="relative">
                   <Tooltip content="Negative Prompt (Exclude)">
@@ -576,7 +580,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     </button>
                   </Tooltip>
                   {isNegativeOpen && (
-                    <div className="absolute bottom-full mb-3 right-0 w-64 bg-zinc-900/95 border border-white/10 rounded-2xl p-3 shadow-2xl z-[100] animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150">
+                    <div className="studio-mobile-popover absolute bottom-full mb-3 right-0 w-64 bg-zinc-900/95 border border-white/10 rounded-2xl p-3 shadow-2xl z-[100] animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150 custom-scrollbar">
                       <label
                         htmlFor="negative-prompt-input"
                         className="text-[9px] font-black text-zinc-500 uppercase tracking-widest block mb-2"
@@ -613,7 +617,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     </button>
                   </Tooltip>
                   {isRefineOpen && (
-                    <div className="absolute bottom-full mb-3 right-0 w-72 bg-zinc-900/95 border border-white/10 rounded-2xl p-3 shadow-2xl z-[100] animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150">
+                    <div className="studio-mobile-popover absolute bottom-full mb-3 right-0 w-72 bg-zinc-900/95 border border-white/10 rounded-2xl p-3 shadow-2xl z-[100] animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150 custom-scrollbar">
                       <label
                         htmlFor="magic-edit-input"
                         className="text-[9px] font-black text-zinc-500 uppercase tracking-widest block mb-2"
@@ -684,318 +688,453 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           </div>
 
           {/* CONTROLS ROW */}
-          <div className="pointer-events-auto flex w-full min-w-0 items-end justify-between gap-1.5 sm:w-auto sm:justify-start sm:gap-2">
-            {/* Aspect Ratio */}
-            <div className="relative">
-              <button
-                type="button"
-                onClick={() => {
-                  setIsAspectRatioOpen(!isAspectRatioOpen);
-                  setIsModelOpen(false);
-                  setIsExecutionOpen(false);
-                  setIsBatchOpen(false);
-                }}
-                className={btnClass}
-              >
-                <AspectRatioIcon ratio={generationConfig.aspectRatio} />
-                <span>{generationConfig.aspectRatio}</span>
-              </button>
-              {isAspectRatioOpen && (
-                <div className="absolute bottom-full mb-4 left-0 bg-zinc-900/95 border border-white/10 rounded-2xl p-3 shadow-2xl z-[100] grid grid-cols-3 gap-2 w-[270px] animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150">
-                  {currentRatios.map((option) => (
-                    <button
-                      type="button"
-                      key={option.ratio}
-                      onClick={() => {
-                        updateConfig('aspectRatio', option.ratio);
-                        setIsAspectRatioOpen(false);
-                        setPreviewRatio(null);
-                      }}
-                      onMouseEnter={() => setPreviewRatio(option.ratio)}
-                      title={`${option.label}: ${option.size}`}
-                      className={`aspect-square rounded-lg flex flex-col items-center justify-center gap-1 transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
-                        generationConfig.aspectRatio === option.ratio
-                          ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/50 text-white shadow-lg'
-                          : 'bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
-                      }`}
-                    >
-                      <AspectRatioIcon ratio={option.ratio} />
-                      <span className="text-[8px] font-black">{option.ratio}</span>
-                      <span className="text-[6px] font-bold text-zinc-500">{option.size}</span>
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
+          <div className="pointer-events-auto flex w-full min-w-0 items-end justify-between gap-1 sm:w-auto sm:justify-start">
+            <button
+              type="button"
+              onClick={() => {
+                closeAllMenus();
+                setIsNegativeOpen(false);
+                setIsRefineOpen(false);
+                setIsMobileControlsOpen(true);
+              }}
+              aria-label="Open generation controls"
+              aria-expanded={isMobileControlsOpen}
+              className={`${btnClass} min-w-0 flex-1 sm:hidden`}
+            >
+              <SlidersHorizontal size={14} />
+              <span>Controls</span>
+            </button>
 
-            {/* Resolution */}
-            {showSizeControl && (
-              <div className="relative">
+            <div
+              className={`${isMobileControlsOpen ? 'fixed' : 'hidden'} custom-scrollbar inset-x-2 z-[90] flex-col gap-3 overflow-y-auto rounded-2xl border border-white/10 bg-zinc-950/95 p-3 shadow-2xl backdrop-blur-xl sm:static sm:flex sm:max-h-none sm:flex-row sm:items-end sm:gap-1 sm:overflow-visible sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none sm:backdrop-blur-0`}
+              style={
+                isMobileControlsOpen
+                  ? {
+                      bottom: 'calc(var(--studio-mobile-dock-height) + 0.75rem)',
+                      maxHeight: 'min(62vh, 28rem)',
+                    }
+                  : undefined
+              }
+            >
+              <div className="flex items-center justify-between border-b border-white/5 pb-2 sm:hidden">
+                <div className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500">
+                  Generation
+                </div>
                 <button
                   type="button"
                   onClick={() => {
-                    setIsSizeOpen(!isSizeOpen);
-                    setIsModelOpen(false);
-                    setIsExecutionOpen(false);
+                    closeAllMenus();
+                    setIsMobileControlsOpen(false);
                   }}
-                  className={btnClass}
+                  aria-label="Close generation controls"
+                  className="flex size-8 items-center justify-center rounded-lg bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
                 >
-                  <Monitor size={14} />
-                  <span>{generationConfig.imageSize || '1K'}</span>
+                  <X size={14} />
                 </button>
-                {isSizeOpen && (
-                  <div className="absolute bottom-full mb-4 left-0 bg-zinc-900/95 border border-white/10 rounded-2xl p-2 shadow-2xl z-[100] flex flex-col gap-1 min-w-[80px] animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150">
-                    {currentSizes.map((size) => (
-                      <button
-                        type="button"
-                        key={size}
-                        onClick={() => {
-                          updateConfig('imageSize', size);
-                          setIsSizeOpen(false);
-                        }}
-                        className={`w-full text-left px-3 py-2 rounded-lg text-[10px] font-black transition-[color,background-color,border-color,opacity,transform,box-shadow] ${generationConfig.imageSize === size ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white' : 'hover:bg-white/10 text-zinc-400'}`}
-                      >
-                        {size}
-                      </button>
-                    ))}
-                  </div>
-                )}
               </div>
-            )}
 
-            {/* Batch Count */}
-            <div className="relative">
-              <button
-                type="button"
-                onClick={() => {
-                  setIsBatchOpen(!isBatchOpen);
-                  setIsModelOpen(false);
-                  setIsExecutionOpen(false);
-                }}
-                className={btnClass}
-              >
-                <Layers size={14} />
-                <span>{generationConfig.batchCount || 1}x</span>
-              </button>
-              {isBatchOpen && (
-                <div className="absolute bottom-full mb-4 left-0 bg-zinc-900/95 border border-white/10 rounded-2xl p-2 shadow-2xl z-[100] flex gap-2 animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150">
-                  {BATCH_COUNTS.map((count) => (
+              <div className="grid gap-2 rounded-xl border border-white/6 bg-white/[0.03] p-2 sm:hidden">
+                <div className="grid gap-1.5">
+                  <label
+                    htmlFor="mobile-negative-prompt-input"
+                    className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500"
+                  >
+                    Negative
+                  </label>
+                  <input
+                    id="mobile-negative-prompt-input"
+                    type="text"
+                    value={generationConfig.negativePrompt || ''}
+                    onChange={(e) => updateConfig('negativePrompt', e.target.value)}
+                    placeholder="Blurry, low quality, distortion..."
+                    autoComplete="off"
+                    aria-label="Negative prompt"
+                    className="h-9 rounded-lg border border-white/5 bg-black/40 px-3 text-[11px] text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-red-500/30"
+                  />
+                </div>
+                <div className="grid gap-1.5">
+                  <label
+                    htmlFor="mobile-magic-edit-input"
+                    className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500"
+                  >
+                    Refine
+                  </label>
+                  <div className="flex gap-2">
+                    <input
+                      id="mobile-magic-edit-input"
+                      type="text"
+                      value={magicInstruction}
+                      onChange={(e) => setMagicInstruction(e.target.value)}
+                      placeholder="Make it sharper, warmer, cinematic..."
+                      autoComplete="off"
+                      onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
+                      aria-label="Edit instructions"
+                      className="h-9 min-w-0 flex-1 rounded-lg border border-white/5 bg-black/40 px-3 text-[11px] text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/30"
+                    />
                     <button
                       type="button"
-                      key={count}
-                      onClick={() => {
-                        updateConfig('batchCount', count);
-                        setIsBatchOpen(false);
-                      }}
-                      className={`size-8 rounded-lg flex items-center justify-center text-[10px] font-black transition-[color,background-color,border-color,opacity,transform,box-shadow] ${generationConfig.batchCount === count ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600 text-white' : 'bg-white/5 text-zinc-400 hover:bg-white/10'}`}
+                      onClick={handleMagicEdit}
+                      disabled={isRefactoring}
+                      aria-label="Apply edit instructions"
+                      className="flex size-9 items-center justify-center rounded-lg bg-accent-600 text-white transition-colors hover:bg-accent-500 disabled:opacity-50"
                     >
-                      {count}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Model Selector */}
-            <div className="relative">
-              <button
-                type="button"
-                onClick={() => {
-                  setIsModelOpen(!isModelOpen);
-                  setIsAspectRatioOpen(false);
-                  setIsExecutionOpen(false);
-                }}
-                className={btnClass}
-              >
-                <ModelIcon model={generationConfig.model} />
-                <span className="hidden 2xl:inline text-[8px]">
-                  {AVAILABLE_MODELS.find((m) => m.id === generationConfig.model)?.name.replace(
-                    'Codex ',
-                    '',
-                  )}
-                </span>
-              </button>
-              {isModelOpen && (
-                <div className="absolute bottom-full mb-4 right-0 bg-zinc-900/95 border border-white/10 rounded-2xl p-2 min-w-[240px] shadow-2xl z-[100] animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150">
-                  {AVAILABLE_MODELS.map((m) => (
-                    <button
-                      type="button"
-                      key={m.id}
-                      onClick={() => {
-                        updateConfig('model', m.id);
-                        setIsModelOpen(false);
-                      }}
-                      className={`w-full text-left px-3 py-2.5 rounded-xl transition-[color,background-color,border-color,opacity,transform,box-shadow] mb-1 last:mb-0 ${generationConfig.model === m.id ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border border-accent-700/30' : 'hover:bg-white/5 text-zinc-400 border border-transparent'}`}
-                    >
-                      <div className="flex items-center gap-2 mb-0.5">
-                        <ModelIcon model={m.id} />
-                        <div
-                          className={`text-[10px] font-black uppercase tracking-wide ${generationConfig.model === m.id ? 'text-accent-300' : 'text-zinc-300'}`}
-                        >
-                          {m.name}
-                        </div>
-                      </div>
-                      <div className="text-[8px] text-zinc-500 font-bold pl-6">{m.description}</div>
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Codex Task Execution Selector */}
-            <div className="relative">
-              <button
-                type="button"
-                onClick={() => {
-                  setIsExecutionOpen(!isExecutionOpen);
-                  setIsModelOpen(false);
-                  setIsAspectRatioOpen(false);
-                  setIsBatchOpen(false);
-                }}
-                className={btnClass}
-              >
-                <BrainCircuit size={14} />
-                <span className="hidden 2xl:inline text-[8px]">{executionSummary}</span>
-              </button>
-              {isExecutionOpen && (
-                <div className="absolute bottom-full mb-4 right-0 bg-zinc-900/95 border border-white/10 rounded-2xl p-3 min-w-[360px] max-w-[420px] shadow-2xl z-[110] animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150">
-                  <div className="flex items-start justify-between gap-4 mb-3">
-                    <div>
-                      <div className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500 mb-1">
-                        Codex Task Execution
-                      </div>
-                      <div className="text-[11px] font-black text-zinc-100 uppercase tracking-wide">
-                        {selectedExecutionModel?.displayName || executionModelLabel}
-                      </div>
-                      <div className="text-[8px] text-zinc-500 font-bold mt-1 max-w-[280px] leading-relaxed">
-                        {selectedExecutionModel?.description ||
-                          'Choose the Codex model that executes the generation task, plus its thinking effort and speed tier.'}
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2 shrink-0">
-                      {isLoadingCodexModelCatalog && (
-                        <Loader2 size={12} className="animate-spin text-accent-300" />
+                      {isRefactoring ? (
+                        <div className="size-3 animate-spin rounded-full border-2 border-white/20 border-t-white" />
+                      ) : (
+                        <Send size={12} />
                       )}
-                      <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
-                        {codexModelCatalog?.source === 'fallback' ? 'Docs fallback' : 'Live'}
-                      </div>
-                    </div>
+                    </button>
                   </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <button
+                    type="button"
+                    onClick={onEnhancePrompt}
+                    disabled={isEnhancingPrompt}
+                    aria-label="Enhance prompt"
+                    className="flex h-10 items-center justify-center gap-2 rounded-lg bg-white/5 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-50"
+                  >
+                    {isEnhancingPrompt ? (
+                      <div className="size-3 animate-spin rounded-full border-2 border-accent-400/30 border-t-accent-400" />
+                    ) : (
+                      <Wand2 size={14} />
+                    )}
+                    Enhance
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setIsForcedMode(!isForcedMode)}
+                    aria-label="Toggle force job"
+                    aria-pressed={isForcedMode}
+                    className={`flex h-10 items-center justify-center gap-2 rounded-lg text-[9px] font-black uppercase tracking-widest transition-colors ${
+                      isForcedMode
+                        ? 'border border-yellow-500/30 bg-yellow-900/20 text-yellow-300'
+                        : 'bg-white/5 text-zinc-300 hover:bg-white/10 hover:text-white'
+                    }`}
+                  >
+                    <Zap size={14} className={isForcedMode ? 'animate-pulse' : undefined} />
+                    Force
+                  </button>
+                </div>
+              </div>
 
-                  {executionSourceMessage && (
-                    <div className="mb-3 rounded-xl border border-amber-500/20 bg-amber-500/10 px-3 py-2 text-[8px] font-bold text-amber-200">
-                      {executionSourceMessage}
+              <div className="grid grid-cols-2 gap-2 sm:contents">
+                {/* Aspect Ratio */}
+                <div className="relative min-w-0">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsAspectRatioOpen(!isAspectRatioOpen);
+                      setIsModelOpen(false);
+                      setIsExecutionOpen(false);
+                      setIsBatchOpen(false);
+                    }}
+                    className={btnClass}
+                  >
+                    <AspectRatioIcon ratio={generationConfig.aspectRatio} />
+                    <span>{generationConfig.aspectRatio}</span>
+                  </button>
+                  {isAspectRatioOpen && (
+                    <div className="studio-mobile-popover absolute bottom-full mb-4 left-0 bg-zinc-900/95 border border-white/10 rounded-2xl p-3 shadow-2xl z-[100] grid grid-cols-3 gap-2 w-[270px] animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150 custom-scrollbar">
+                      {currentRatios.map((option) => (
+                        <button
+                          type="button"
+                          key={option.ratio}
+                          onClick={() => {
+                            updateConfig('aspectRatio', option.ratio);
+                            setIsAspectRatioOpen(false);
+                            setPreviewRatio(null);
+                          }}
+                          onMouseEnter={() => setPreviewRatio(option.ratio)}
+                          title={`${option.label}: ${option.size}`}
+                          className={`aspect-square rounded-lg flex flex-col items-center justify-center gap-1 transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                            generationConfig.aspectRatio === option.ratio
+                              ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/50 text-white shadow-lg'
+                              : 'bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
+                          }`}
+                        >
+                          <AspectRatioIcon ratio={option.ratio} />
+                          <span className="text-[8px] font-black">{option.ratio}</span>
+                          <span className="text-[6px] font-bold text-zinc-500">{option.size}</span>
+                        </button>
+                      ))}
                     </div>
                   )}
+                </div>
 
-                  <div className="mb-3">
-                    <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500 mb-2">
-                      Available Codex Models
-                    </div>
-                    <div className="max-h-[220px] overflow-y-auto pr-1 space-y-1.5 custom-scrollbar">
-                      {codexModels.map((model) => {
-                        const isSelected = model.id === selectedExecutionModel?.id;
-                        const modelSpeedOptions = getCodexSpeedOptions(model);
-                        return (
+                {/* Resolution */}
+                {showSizeControl && (
+                  <div className="relative min-w-0">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsSizeOpen(!isSizeOpen);
+                        setIsModelOpen(false);
+                        setIsExecutionOpen(false);
+                      }}
+                      className={btnClass}
+                    >
+                      <Monitor size={14} />
+                      <span>{generationConfig.imageSize || '1K'}</span>
+                    </button>
+                    {isSizeOpen && (
+                      <div className="studio-mobile-popover absolute bottom-full mb-4 left-0 bg-zinc-900/95 border border-white/10 rounded-2xl p-2 shadow-2xl z-[100] flex flex-col gap-1 min-w-[80px] animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150 custom-scrollbar">
+                        {currentSizes.map((size) => (
                           <button
                             type="button"
-                            key={model.id}
-                            onClick={() => handleSelectExecutionModel(model)}
-                            className={`w-full text-left px-3 py-2.5 rounded-xl transition-[color,background-color,border-color,opacity,transform,box-shadow] border ${
-                              isSelected
-                                ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border-accent-700/30'
-                                : 'hover:bg-white/5 text-zinc-400 border-transparent'
-                            }`}
+                            key={size}
+                            onClick={() => {
+                              updateConfig('imageSize', size);
+                              setIsSizeOpen(false);
+                            }}
+                            className={`w-full text-left px-3 py-2 rounded-lg text-[10px] font-black transition-[color,background-color,border-color,opacity,transform,box-shadow] ${generationConfig.imageSize === size ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white' : 'hover:bg-white/10 text-zinc-400'}`}
                           >
-                            <div className="flex items-center justify-between gap-3 mb-1">
-                              <div
-                                className={`text-[10px] font-black uppercase tracking-wide ${
-                                  isSelected ? 'text-accent-300' : 'text-zinc-200'
+                            {size}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {/* Batch Count */}
+                <div className="relative min-w-0">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsBatchOpen(!isBatchOpen);
+                      setIsModelOpen(false);
+                      setIsExecutionOpen(false);
+                    }}
+                    className={btnClass}
+                  >
+                    <Layers size={14} />
+                    <span>{generationConfig.batchCount || 1}x</span>
+                  </button>
+                  {isBatchOpen && (
+                    <div className="studio-mobile-popover absolute bottom-full mb-4 left-0 bg-zinc-900/95 border border-white/10 rounded-2xl p-2 shadow-2xl z-[100] flex gap-2 animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150 custom-scrollbar">
+                      {BATCH_COUNTS.map((count) => (
+                        <button
+                          type="button"
+                          key={count}
+                          onClick={() => {
+                            updateConfig('batchCount', count);
+                            setIsBatchOpen(false);
+                          }}
+                          className={`size-8 rounded-lg flex items-center justify-center text-[10px] font-black transition-[color,background-color,border-color,opacity,transform,box-shadow] ${generationConfig.batchCount === count ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600 text-white' : 'bg-white/5 text-zinc-400 hover:bg-white/10'}`}
+                        >
+                          {count}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Model Selector */}
+                <div className="relative min-w-0">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsModelOpen(!isModelOpen);
+                      setIsAspectRatioOpen(false);
+                      setIsExecutionOpen(false);
+                    }}
+                    className={btnClass}
+                  >
+                    <ModelIcon model={generationConfig.model} />
+                    <span className="text-[8px] sm:hidden 2xl:inline">
+                      {AVAILABLE_MODELS.find((m) => m.id === generationConfig.model)?.name.replace(
+                        'Codex ',
+                        '',
+                      )}
+                    </span>
+                  </button>
+                  {isModelOpen && (
+                    <div className="studio-mobile-popover absolute bottom-full mb-4 right-0 bg-zinc-900/95 border border-white/10 rounded-2xl p-2 min-w-[240px] shadow-2xl z-[100] animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150 custom-scrollbar">
+                      {AVAILABLE_MODELS.map((m) => (
+                        <button
+                          type="button"
+                          key={m.id}
+                          onClick={() => {
+                            updateConfig('model', m.id);
+                            setIsModelOpen(false);
+                          }}
+                          className={`w-full text-left px-3 py-2.5 rounded-xl transition-[color,background-color,border-color,opacity,transform,box-shadow] mb-1 last:mb-0 ${generationConfig.model === m.id ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border border-accent-700/30' : 'hover:bg-white/5 text-zinc-400 border border-transparent'}`}
+                        >
+                          <div className="flex items-center gap-2 mb-0.5">
+                            <ModelIcon model={m.id} />
+                            <div
+                              className={`text-[10px] font-black uppercase tracking-wide ${generationConfig.model === m.id ? 'text-accent-300' : 'text-zinc-300'}`}
+                            >
+                              {m.name}
+                            </div>
+                          </div>
+                          <div className="text-[8px] text-zinc-500 font-bold pl-6">
+                            {m.description}
+                          </div>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Codex Task Execution Selector */}
+                <div className="relative min-w-0">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsExecutionOpen(!isExecutionOpen);
+                      setIsModelOpen(false);
+                      setIsAspectRatioOpen(false);
+                      setIsBatchOpen(false);
+                    }}
+                    className={btnClass}
+                  >
+                    <BrainCircuit size={14} />
+                    <span className="text-[8px] sm:hidden">Task</span>
+                    <span className="hidden text-[8px] 2xl:inline">{executionSummary}</span>
+                  </button>
+                  {isExecutionOpen && (
+                    <div className="studio-mobile-popover absolute bottom-full mb-4 right-0 bg-zinc-900/95 border border-white/10 rounded-2xl p-3 min-w-[360px] max-w-[420px] shadow-2xl z-[110] animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-2 duration-150 custom-scrollbar">
+                      <div className="flex items-start justify-between gap-4 mb-3">
+                        <div>
+                          <div className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500 mb-1">
+                            Codex Task Execution
+                          </div>
+                          <div className="text-[11px] font-black text-zinc-100 uppercase tracking-wide">
+                            {selectedExecutionModel?.displayName || executionModelLabel}
+                          </div>
+                          <div className="text-[8px] text-zinc-500 font-bold mt-1 max-w-[280px] leading-relaxed">
+                            {selectedExecutionModel?.description ||
+                              'Choose the Codex model that executes the generation task, plus its thinking effort and speed tier.'}
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2 shrink-0">
+                          {isLoadingCodexModelCatalog && (
+                            <Loader2 size={12} className="animate-spin text-accent-300" />
+                          )}
+                          <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                            {codexModelCatalog?.source === 'fallback' ? 'Docs fallback' : 'Live'}
+                          </div>
+                        </div>
+                      </div>
+
+                      {executionSourceMessage && (
+                        <div className="mb-3 rounded-xl border border-amber-500/20 bg-amber-500/10 px-3 py-2 text-[8px] font-bold text-amber-200">
+                          {executionSourceMessage}
+                        </div>
+                      )}
+
+                      <div className="mb-3">
+                        <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500 mb-2">
+                          Available Codex Models
+                        </div>
+                        <div className="max-h-[220px] overflow-y-auto pr-1 space-y-1.5 custom-scrollbar">
+                          {codexModels.map((model) => {
+                            const isSelected = model.id === selectedExecutionModel?.id;
+                            const modelSpeedOptions = getCodexSpeedOptions(model);
+                            return (
+                              <button
+                                type="button"
+                                key={model.id}
+                                onClick={() => handleSelectExecutionModel(model)}
+                                className={`w-full text-left px-3 py-2.5 rounded-xl transition-[color,background-color,border-color,opacity,transform,box-shadow] border ${
+                                  isSelected
+                                    ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border-accent-700/30'
+                                    : 'hover:bg-white/5 text-zinc-400 border-transparent'
                                 }`}
                               >
-                                {model.displayName}
-                              </div>
-                              {isSelected ? (
-                                <Check size={12} className="text-accent-300 shrink-0" />
-                              ) : null}
-                            </div>
-                            <div className="text-[8px] text-zinc-500 font-bold leading-relaxed">
-                              {model.description || 'Codex execution model'}
-                            </div>
-                            <div className="mt-2 flex flex-wrap gap-1.5">
-                              {model.isDefault && (
-                                <span className="px-1.5 py-0.5 rounded-md bg-accent-500/15 text-accent-200 text-[7px] font-black uppercase tracking-wide">
-                                  Default
-                                </span>
-                              )}
-                              {modelSpeedOptions.includes('fast') && (
-                                <span className="px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-200 text-[7px] font-black uppercase tracking-wide">
-                                  Fast
-                                </span>
-                              )}
-                              {codexModelCatalog?.planType &&
-                                model.id === 'gpt-5.3-codex-spark' && (
-                                  <span className="px-1.5 py-0.5 rounded-md bg-fuchsia-500/10 text-fuchsia-200 text-[7px] font-black uppercase tracking-wide">
-                                    {codexModelCatalog.planType}
-                                  </span>
-                                )}
-                            </div>
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
-
-                  <div className="border-t border-white/5 pt-3 mb-3">
-                    <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500 mb-2">
-                      Thinking
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                      {executionReasoningOptions.map((effort) => (
-                        <button
-                          type="button"
-                          key={effort}
-                          onClick={() => updateConfig('executionReasoningEffort', effort)}
-                          className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
-                            generationConfig.executionReasoningEffort === effort
-                              ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
-                              : 'bg-white/5 text-zinc-400 hover:bg-white/10'
-                          }`}
-                        >
-                          {effort}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="border-t border-white/5 pt-3">
-                    <div className="flex items-center justify-between gap-3 mb-2">
-                      <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
-                        Speed
+                                <div className="flex items-center justify-between gap-3 mb-1">
+                                  <div
+                                    className={`text-[10px] font-black uppercase tracking-wide ${
+                                      isSelected ? 'text-accent-300' : 'text-zinc-200'
+                                    }`}
+                                  >
+                                    {model.displayName}
+                                  </div>
+                                  {isSelected ? (
+                                    <Check size={12} className="text-accent-300 shrink-0" />
+                                  ) : null}
+                                </div>
+                                <div className="text-[8px] text-zinc-500 font-bold leading-relaxed">
+                                  {model.description || 'Codex execution model'}
+                                </div>
+                                <div className="mt-2 flex flex-wrap gap-1.5">
+                                  {model.isDefault && (
+                                    <span className="px-1.5 py-0.5 rounded-md bg-accent-500/15 text-accent-200 text-[7px] font-black uppercase tracking-wide">
+                                      Default
+                                    </span>
+                                  )}
+                                  {modelSpeedOptions.includes('fast') && (
+                                    <span className="px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-200 text-[7px] font-black uppercase tracking-wide">
+                                      Fast
+                                    </span>
+                                  )}
+                                  {codexModelCatalog?.planType &&
+                                    model.id === 'gpt-5.3-codex-spark' && (
+                                      <span className="px-1.5 py-0.5 rounded-md bg-fuchsia-500/10 text-fuchsia-200 text-[7px] font-black uppercase tracking-wide">
+                                        {codexModelCatalog.planType}
+                                      </span>
+                                    )}
+                                </div>
+                              </button>
+                            );
+                          })}
+                        </div>
                       </div>
-                      <div className="text-[8px] font-bold text-zinc-600">
-                        Fast mode depends on the selected model and Codex sign-in.
+
+                      <div className="border-t border-white/5 pt-3 mb-3">
+                        <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500 mb-2">
+                          Thinking
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                          {executionReasoningOptions.map((effort) => (
+                            <button
+                              type="button"
+                              key={effort}
+                              onClick={() => updateConfig('executionReasoningEffort', effort)}
+                              className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                                generationConfig.executionReasoningEffort === effort
+                                  ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
+                                  : 'bg-white/5 text-zinc-400 hover:bg-white/10'
+                              }`}
+                            >
+                              {effort}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="border-t border-white/5 pt-3">
+                        <div className="flex items-center justify-between gap-3 mb-2">
+                          <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                            Speed
+                          </div>
+                          <div className="text-[8px] font-bold text-zinc-600">
+                            Fast mode depends on the selected model and Codex sign-in.
+                          </div>
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                          {executionSpeedOptions.map((speed) => (
+                            <button
+                              type="button"
+                              key={speed}
+                              onClick={() => handleSelectExecutionSpeed(speed)}
+                              className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                                generationConfig.executionSpeed === speed
+                                  ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
+                                  : 'bg-white/5 text-zinc-400 hover:bg-white/10'
+                              }`}
+                            >
+                              {formatCodexSpeedLabel(speed)}
+                            </button>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                    <div className="flex flex-wrap gap-2">
-                      {executionSpeedOptions.map((speed) => (
-                        <button
-                          type="button"
-                          key={speed}
-                          onClick={() => handleSelectExecutionSpeed(speed)}
-                          className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
-                            generationConfig.executionSpeed === speed
-                              ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
-                              : 'bg-white/5 text-zinc-400 hover:bg-white/10'
-                          }`}
-                        >
-                          {formatCodexSpeedLabel(speed)}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
+                  )}
                 </div>
-              )}
+              </div>
             </div>
 
             {/* GENERATE BUTTON - Dark Gradient Premium */}
@@ -1003,7 +1142,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               type="button"
               onClick={handleTriggerGenerate}
               className={`
-                    group relative h-10 px-4 sm:h-11 sm:px-6 rounded-xl sm:rounded-2xl flex items-center justify-center gap-2.5 sm:ml-2 overflow-hidden
+                    group relative h-8 px-3 sm:h-9 sm:px-4 rounded-lg flex items-center justify-center gap-2 sm:ml-1 overflow-hidden
                     text-[10px] tracking-[0.2em] font-black uppercase transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer
                     ${
                       isGenerating

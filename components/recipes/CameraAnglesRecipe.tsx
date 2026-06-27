@@ -1,18 +1,18 @@
 import React, { useState, useRef, useMemo } from 'react';
 import {
-  Upload,
-  X,
-  RotateCw,
-  ArrowUpFromLine,
-  ZoomIn,
-  Camera,
-  Eye,
-  Move3d,
-  SlidersHorizontal,
-  Loader2,
-  Maximize2,
-  MousePointer2,
-} from 'lucide-react';
+  IconUpload as Upload,
+  IconX as X,
+  IconRotateClockwise as RotateCw,
+  IconArrowBarUp as ArrowUpFromLine,
+  IconZoomIn as ZoomIn,
+  IconCamera as Camera,
+  IconEye as Eye,
+  IconRotate3d as Move3d,
+  IconAdjustmentsHorizontal as SlidersHorizontal,
+  IconLoader2 as Loader2,
+  IconMaximize as Maximize2,
+  IconPointer as MousePointer2,
+} from '@tabler/icons-react';
 import type { Attachment, ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
 import { useCameraViewport } from '../../hooks/useCameraViewport';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
@@ -265,11 +265,11 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
     <RecipeLayout
       isGenerating={isGenerating}
       bottomDock={BottomDock}
-      className="flex flex-col p-4 gap-6"
+      className="flex flex-col p-3 pb-[var(--studio-recipe-dock-space)] gap-4 sm:p-4 sm:pb-32 sm:gap-6"
     >
-      <div className="flex flex-col lg:flex-row h-full gap-6">
+      <div className="custom-scrollbar flex h-full flex-col gap-4 overflow-y-auto lg:flex-row lg:gap-6 lg:overflow-hidden">
         {/* LEFT: THREE.JS VIEWPORT */}
-        <div className="relative flex flex-1 flex-col overflow-hidden rounded-3xl border border-white/5 shadow-2xl min-h-100 lg:min-h-0">
+        <div className="relative flex min-h-[320px] flex-1 flex-col overflow-hidden rounded-2xl border border-white/5 shadow-2xl sm:rounded-3xl sm:min-h-100 lg:min-h-0">
           {/* Viewport Overlay Controls */}
           <div className="absolute top-6 left-6 z-20 flex flex-col gap-2 pointer-events-none">
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/10 bg-black/40 backdrop-blur-sm">
@@ -287,7 +287,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
 
           {/* CANVAS CONTAINER */}
           <div ref={mountRef} className="flex-1 size-full relative cursor-move touch-none group">
-            <div className="pip-viewport absolute top-6 right-6 z-30 h-45 w-60 overflow-hidden rounded-lg border-2 border-white/10 bg-black/50 shadow-2xl backdrop-blur-sm pointer-events-none">
+            <div className="pip-viewport absolute right-3 top-3 z-30 hidden h-28 w-36 overflow-hidden rounded-lg border-2 border-white/10 bg-black/50 shadow-2xl backdrop-blur-sm pointer-events-none sm:block lg:right-6 lg:top-6 lg:h-45 lg:w-60">
               <div className="absolute top-0 left-0 px-2 py-0.5 bg-black/50 text-cyan-400 text-[8px] font-black uppercase tracking-widest">
                 CAM VIEW
               </div>

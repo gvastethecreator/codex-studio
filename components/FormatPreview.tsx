@@ -43,7 +43,6 @@ export const FormatPreview: React.FC<FormatPreviewProps> = ({
               aspectRatio: `${data.width} / ${data.height}`,
               width: 'auto',
               height: '100%',
-              viewTransitionName: 'master-canvas',
             }}
           >
             {/* Visual Guide Elements */}

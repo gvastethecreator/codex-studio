@@ -4,6 +4,7 @@ import type { StudioGridSurfaceProps } from '../components/studio/StudioGridSurf
 import type { StudioOperationsRailProps } from '../components/studio/StudioOperationsRail';
 import type { Job as StudioJob, JobStatus } from '../packages/shared/src';
 import type { AppPageView } from '../hooks/useHashRouter';
+import type { RecipeAliasId } from './recipeAliases';
 import type {
   AspectRatio,
   LogEntry,
@@ -38,9 +39,10 @@ export interface StudioViewportController {
     routeView: AppPageView;
     direction: number;
     activeRecipe: RecipeId | null;
+    activeRecipeAliasId: RecipeAliasId | null;
     recipePageProps: Omit<RecipePageProps, 'activeRecipe'>;
     studioPageController: StudioPageController;
-    onSelectRecipe: (recipeId: RecipeId) => void;
+    onSelectRecipe: (recipeId: RecipeId, aliasId?: RecipeAliasId | null) => void;
   };
   generationDock: {
     isModalOpen: boolean;
@@ -182,7 +184,8 @@ interface StudioViewportNavigationContext {
   routeView: AppPageView;
   direction: number;
   activeRecipe: RecipeId | null;
-  onSelectRecipe: (recipeId: RecipeId) => void;
+  activeRecipeAliasId: RecipeAliasId | null;
+  onSelectRecipe: (recipeId: RecipeId, aliasId?: RecipeAliasId | null) => void;
 }
 
 interface StudioViewportRecipeContext {
@@ -294,6 +297,7 @@ export function buildStudioViewportController({
       routeView: navigation.routeView,
       direction: navigation.direction,
       activeRecipe: navigation.activeRecipe,
+      activeRecipeAliasId: navigation.activeRecipeAliasId,
       recipePageProps: recipe.recipePageProps,
       studioPageController: recipe.studioPageController,
       onSelectRecipe: navigation.onSelectRecipe,

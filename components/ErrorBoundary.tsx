@@ -1,5 +1,5 @@
 import React, { Component, ErrorInfo, ReactNode } from 'react';
-import { AlertTriangle } from 'lucide-react';
+import { IconAlertTriangle as AlertTriangle } from '@tabler/icons-react';
 import { runtimeLogger } from '../utils/runtimeLogger';
 
 interface Props {

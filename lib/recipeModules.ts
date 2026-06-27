@@ -2,15 +2,38 @@ import {
   createGenerationTaskSpec,
   type GenerationQualityPresetId,
   type GenerationProviderId,
+  type GenerationTaskAssetRef,
   type GenerationTaskKind,
 } from '../packages/shared/src/generationContracts';
 import { getImageGenSizeForRatio } from '../utils/imageGenSizing';
-import type { ImageGenerationConfig, RecipeId } from '../types';
+import type { Attachment, ImageGenerationConfig, RecipeId } from '../types';
 import { RECIPE_CONTEXT_BUILDERS } from './recipeContextBuilders';
 import type { RecipeContextParams } from './recipeContextBuilders';
 import { buildRecipeProviderDirectives } from './recipeProviderDirectives';
 
 type RegisteredRecipeId = Exclude<RecipeId, null>;
+
+function isInlineAttachmentDataUrl(value: string | null | undefined) {
+  return /^data:image\/[^;]+;base64,/i.test(value?.trim() ?? '');
+}
+
+function resolveRecipeAttachmentAssetLocation(
+  attachment: Attachment,
+): Pick<GenerationTaskAssetRef, 'dataUrl' | 'localPath' | 'sourceUrl'> {
+  const localPath = attachment.localPath?.trim();
+  if (localPath) return { localPath };
+
+  const explicitSourceUrl = attachment.sourceUrl?.trim();
+  if (explicitSourceUrl) return { sourceUrl: explicitSourceUrl };
+
+  const attachmentSource = attachment.dataUrl.trim();
+  if (isInlineAttachmentDataUrl(attachmentSource)) return { dataUrl: attachmentSource };
+  if (/^https?:\/\//i.test(attachmentSource) || attachmentSource.startsWith('/')) {
+    return { sourceUrl: attachmentSource };
+  }
+
+  return { dataUrl: attachmentSource };
+}
 
 export type RecipeParameterKind = 'string' | 'number' | 'boolean' | 'record' | 'enum' | 'color';
 export type RecipeParameterControlKind =
@@ -1125,7 +1148,7 @@ export function buildGenerationTaskSpecFromRecipe({
           ? ('input' as const)
           : ('reference' as const),
       name: attachment.name,
-      dataUrl: attachment.dataUrl,
+      ...resolveRecipeAttachmentAssetLocation(attachment),
       strength: attachment.strength,
     })),
     quality: {
@@ -1162,7 +1185,7 @@ export function buildGenerationTaskSpecFromRecipe({
           config.recipeId === 'character-lab' && index === 0
             ? 'Use as the primary character identity source.'
             : config.recipeId === 'styles'
-              ? 'Use as style and mood reference while preserving the requested subject.'
+              ? 'Use as source/reference material while applying the selected style layers.'
               : 'Use as visual reference according to the requested generation task.',
       })),
     },

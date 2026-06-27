@@ -10,9 +10,11 @@ describe('buildStudioHeaderToolbarProps', () => {
     const props = buildStudioHeaderToolbarProps({
       view: {
         isGenerating: false,
+        generationStartTime: 1234,
         currentView: 'recipes',
         onViewChange: (view) => calls.push(`view:${view}`),
         activeRecipe: null,
+        activeRecipeAliasId: null,
         onCloseRecipe: () => calls.push('closeRecipe'),
         usage: {
           value: '120',
@@ -85,6 +87,7 @@ describe('buildStudioHeaderToolbarProps', () => {
     expect(props.activeWorkspaceId).toBe('default');
     expect(props.trashCount).toBe(2);
     expect(props.usage.value).toBe('120');
+    expect(props.generationStartTime).toBe(1234);
     expect(props.queueCount).toBe(4);
     expect(props.queueResultPreviews).toEqual([
       { id: 'result-1', src: '/library/assets/result-1.png' },

@@ -166,6 +166,50 @@ describe('recipeModules', () => {
     });
   });
 
+  it('builds style specs with multiple selected styles and references', () => {
+    const spec = buildGenerationTaskSpecFromRecipe({
+      id: 'spec-style-blend',
+      providerId: 'codex',
+      config: {
+        ...DEFAULT_GENERATION_CONFIG,
+        prompt: 'a ceramic bird',
+        recipeId: 'styles',
+        recipeParams: {
+          presetId: 'SP01-001',
+          presetName: 'Studio Headshot + Film Noir',
+          selectedStyles: [
+            {
+              slot: 1,
+              presetId: 'SP01-001',
+              presetName: 'Studio Headshot',
+              packName: 'Photography & Realism',
+              strength: 0.7,
+            },
+            {
+              slot: 2,
+              presetId: 'SP02-010',
+              presetName: 'Film Noir',
+              packName: 'Cinematic & Media',
+              strength: 0.4,
+            },
+          ],
+        },
+        attachments: [
+          { id: 'ref-1', name: 'one.png', dataUrl: 'data:image/png;base64,aaa', strength: 0.15 },
+          { id: 'ref-2', name: 'two.png', dataUrl: 'data:image/png;base64,bbb', strength: 0.15 },
+        ],
+      },
+    });
+
+    expect(spec.stylePresetId).toBe('SP01-001');
+    expect(spec.assets).toHaveLength(2);
+    expect(spec.quality).toMatchObject({
+      qualityPresetId: 'style_reference',
+      style: 'Studio Headshot + Film Noir',
+    });
+    expect(JSON.stringify(spec.metadata.recipeProviderDirectives)).toContain('Style Slot 2');
+  });
+
   it('uses recipe-specific default tasks without encoding providers into task names', () => {
     const spec = buildGenerationTaskSpecFromRecipe({
       id: 'spec-sprite',

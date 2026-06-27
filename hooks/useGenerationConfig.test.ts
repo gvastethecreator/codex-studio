@@ -22,6 +22,33 @@ describe('prepareGenerationConfigForPersist', () => {
 
     expect(prepared.attachments).toEqual([]);
   });
+
+  it('keeps handoff-backed attachments without persisting oversized inline bytes', () => {
+    const prepared = prepareGenerationConfigForPersist({
+      ...DEFAULT_GENERATION_CONFIG,
+      attachments: [
+        {
+          id: 'large-ref',
+          name: 'large.png',
+          dataUrl: `data:image/png;base64,${'A'.repeat(600 * 1024)}`,
+          localPath: 'D:/AI-Studio-Library/.studio/references/handoff-1/large.png',
+          sourceUrl: 'http://127.0.0.1:4317/library/.studio/references/handoff-1/large.png',
+          strength: 1,
+        },
+      ],
+    });
+
+    expect(prepared.attachments).toEqual([
+      {
+        id: 'large-ref',
+        name: 'large.png',
+        dataUrl: 'http://127.0.0.1:4317/library/.studio/references/handoff-1/large.png',
+        localPath: 'D:/AI-Studio-Library/.studio/references/handoff-1/large.png',
+        sourceUrl: 'http://127.0.0.1:4317/library/.studio/references/handoff-1/large.png',
+        strength: 1,
+      },
+    ]);
+  });
 });
 
 describe('normalizeGenerationConfigForCodexModels', () => {

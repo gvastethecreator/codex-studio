@@ -72,11 +72,29 @@ export function getRecipeNumberParam(
   return typeof value === 'number' && Number.isFinite(value) ? value : fallback;
 }
 
+function hasSelectedStylePresetId(
+  config: Pick<ImageGenerationConfig, 'recipeContext' | 'recipeId' | 'recipeParams'>,
+  presetId: string,
+) {
+  const selectedStyles = getRecipeParam(config, 'selectedStyles');
+  if (!Array.isArray(selectedStyles)) return false;
+
+  return selectedStyles.some(
+    (entry) =>
+      entry &&
+      typeof entry === 'object' &&
+      !Array.isArray(entry) &&
+      (entry as Record<string, unknown>).presetId === presetId,
+  );
+}
+
 export function hasStylePresetIdentity(
   config: Pick<ImageGenerationConfig, 'recipeContext' | 'recipeId' | 'recipeParams'>,
   presetId: string,
 ) {
   return (
-    hasRecipeIdentity(config, 'styles') && getRecipeStringParam(config, 'presetId') === presetId
+    hasRecipeIdentity(config, 'styles') &&
+    (getRecipeStringParam(config, 'presetId') === presetId ||
+      hasSelectedStylePresetId(config, presetId))
   );
 }

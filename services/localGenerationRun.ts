@@ -19,6 +19,7 @@ import {
   listProjects,
   queryCatalog,
 } from './localStudioService';
+import { resolveStudioApiBase } from './studioRuntime';
 import { createStudioEventStream, type StudioEventStream, watchJob } from './studioEventSource';
 import {
   isGenerationCancellationError,
@@ -159,12 +160,36 @@ export async function buildJobAssets({
     assets.push({
       role: getQueuedAttachmentAssetRole({ config, attachment, index }),
       name: attachment.name,
-      dataUrl: attachment.dataUrl,
+      ...resolveAttachmentAssetLocation(attachment),
       strength: attachment.strength,
     });
   }
 
   return assets;
+}
+
+function isInlineAttachmentDataUrl(value: string | null | undefined) {
+  return /^data:image\/[^;]+;base64,/i.test(value?.trim() ?? '');
+}
+
+function resolveAttachmentAssetLocation(
+  attachment: ImageGenerationConfig['attachments'][number],
+): Pick<GenerationTaskAssetRef, 'dataUrl' | 'localPath' | 'sourceUrl'> {
+  const localPath = attachment.localPath?.trim();
+  if (localPath) return { localPath };
+
+  const explicitSourceUrl = attachment.sourceUrl?.trim();
+  if (explicitSourceUrl) return { sourceUrl: explicitSourceUrl };
+
+  const attachmentSource = attachment.dataUrl.trim();
+  if (isInlineAttachmentDataUrl(attachmentSource)) return { dataUrl: attachmentSource };
+
+  if (/^https?:\/\//i.test(attachmentSource)) return { sourceUrl: attachmentSource };
+  if (attachmentSource.startsWith('/')) {
+    return { sourceUrl: `${resolveStudioApiBase()}${attachmentSource}` };
+  }
+
+  return { dataUrl: attachmentSource };
 }
 
 function getQueuedAttachmentAssetRole({
@@ -276,7 +301,7 @@ export async function runSingleCodexImagegenJob(options: {
       serviceTier: config.executionSpeed === 'standard' ? null : config.executionSpeed,
     },
     references: requestAssets.flatMap((asset) =>
-      asset.dataUrl
+      asset.dataUrl && isInlineAttachmentDataUrl(asset.dataUrl)
         ? [
             {
               name: asset.name,

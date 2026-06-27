@@ -12,6 +12,9 @@ describe('StudioViewport routing', () => {
     expect(resolveStudioViewportRouteKey('recipes', null)).toBe('recipes-list');
     expect(resolveStudioViewportRouteKey('recipe', 'character')).toBe('recipe-character');
     expect(resolveStudioViewportRouteKey('recipe', 'camera')).toBe('recipe-camera');
+    expect(resolveStudioViewportRouteKey('recipe', 'character-lab', 'character-sprites')).toBe(
+      'recipe-character-sprites',
+    );
     expect(resolveStudioViewportRouteKey('recipe', null)).toBe('recipes-list');
   });
 
@@ -22,8 +25,17 @@ describe('StudioViewport routing', () => {
   });
 
   it('keeps viewport transitions compositor-friendly', () => {
-    expect(getStudioViewportTransitionClassName(1)).not.toMatch(/filter|blur/);
-    expect(getStudioViewportTransitionClassName(-1)).not.toMatch(/filter|blur/);
-    expect(getStudioViewportTransitionClassName(0)).not.toMatch(/filter|blur/);
+    expect(getStudioViewportTransitionClassName(1)).toBe(
+      'studio-route-enter studio-route-enter-forward',
+    );
+    expect(getStudioViewportTransitionClassName(-1)).toBe(
+      'studio-route-enter studio-route-enter-back',
+    );
+    expect(getStudioViewportTransitionClassName(0)).toBe(
+      'studio-route-enter studio-route-enter-neutral',
+    );
+    expect(getStudioViewportTransitionClassName(1)).not.toMatch(/animate-in|filter|blur/);
+    expect(getStudioViewportTransitionClassName(-1)).not.toMatch(/animate-in|filter|blur/);
+    expect(getStudioViewportTransitionClassName(0)).not.toMatch(/animate-in|filter|blur/);
   });
 });

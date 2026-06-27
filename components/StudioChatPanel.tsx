@@ -1,15 +1,15 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
-  AlertTriangle,
-  Bot,
-  CheckCircle2,
-  Clock,
-  Loader2,
-  MessageSquare,
-  Send,
-  User,
-  X,
-} from 'lucide-react';
+  IconAlertTriangle as AlertTriangle,
+  IconRobot as Bot,
+  IconCircleCheck as CheckCircle2,
+  IconClock as Clock,
+  IconLoader2 as Loader2,
+  IconMessage as MessageSquare,
+  IconSend as Send,
+  IconUser as User,
+  IconX as X,
+} from '@tabler/icons-react';
 
 import { cn } from '../lib/utils';
 import type { Job as StudioJob } from '../packages/shared/src';

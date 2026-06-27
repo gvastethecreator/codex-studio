@@ -12,6 +12,10 @@ Update 2026-05-30: pipeline follow-up work is split into three ready-to-pick doc
 - `docs/active/pipeline-image-quality-plan.md`: improve output quality with structured visual specs, reference roles, prompt tightening, quality presets, and live review evidence.
 - `docs/active/pipeline-queue-reliability-plan.md`: harden queue submission with task-spec validation, reference preflight, provider preflight, normalized errors, and dry-run smoke coverage.
 
+Update 2026-06-26: **Queue/Recipes UI density and Reference Handoff** work added a backend-managed `/api/references/handoff` flow for oversized browser references. Large inline images should be persisted into the Studio Library `.studio/references/handoff-*` path before Browser Queue recovery needs to serialize them; queued jobs then carry `localPath`/`sourceUrl` refs instead of oversized `data:image` payloads.
+
+Update 2026-06-26: **Compact Shell UI pass** tightened normal-use chrome after an `improve-interfaces` audit. Header controls, workspace strip, usage/status controls, composer dock, Queue rail, Queue cards, and Recipe cards now use smaller visual footprints while keeping dense hit targets. Route changes now use a scoped transform/opacity transition instead of generic slide/zoom classes.
+
 ## Resumption protocol
 
 1. Read `AGENTS.md`, `CONTEXT.md`, `docs/ARCHITECTURE.md`, latest relevant `docs/adr/*.md`, `docs/active/professionalization-roadmap.md`, `docs/active/professionalization-handoff.md`, `docs/TECHNICAL_DEBT.md`, and `SKILLS.md`.
@@ -30,7 +34,13 @@ Latest focused work fixed and verified:
 - Backend task assets include queued attachments.
 - Task summary exposes total timing, queue wait, provider turn, asset import, token usage, and prompt estimate.
 - Recent Results panel is compact with internal scroll.
+- Recent Results can open a lightweight carousel from the Queue panel.
+- Queue cards are compacted for denser job scanning.
+- Recipe section cards use a vertical TCG-style layout with recipe artwork.
+- Oversized browser references can use the Studio Library reference handoff path instead of failing recovery solely because inline bytes exceed 512 KB.
 - Carousel resolver has focused coverage.
+- Compact shell pass tightened header/workspace/status controls, bottom composer, Queue rail/cards, and Recipes grid/card density.
+- Route transitions use the `studio-route-enter` transform/opacity helper with reduced-motion coverage.
 
 Fresh commands that passed:
 

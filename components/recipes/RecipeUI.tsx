@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { MotionDiv, AnimatePresence } from 'motion/react';
-import { Pipette } from 'lucide-react';
+import { IconColorPicker as Pipette } from '@tabler/icons-react';
 
 interface ControlDropdownProps {
   title?: string;
@@ -60,7 +60,7 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 10, scale: 0.95 }}
               transition={{ duration: 0.15, ease: 'easeOut' }}
-              className="absolute bottom-full mb-3 left-0 bg-zinc-950 border border-white/10 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.5)] overflow-y-auto max-h-60 min-w-[180px] z-50 custom-scrollbar p-1"
+              className="recipe-control-popover absolute bottom-full mb-3 left-0 bg-zinc-950 border border-white/10 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.5)] overflow-y-auto max-h-60 min-w-[180px] z-50 custom-scrollbar p-1"
             >
               {options.map((opt) => (
                 <button
@@ -122,7 +122,7 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
             initial={{ opacity: 0, y: 10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
-            className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 bg-zinc-950 border border-white/10 rounded-2xl p-3 shadow-2xl z-50 min-w-[200px]"
+            className="recipe-control-popover absolute bottom-full mb-3 left-1/2 -translate-x-1/2 bg-zinc-950 border border-white/10 rounded-2xl p-3 shadow-2xl z-50 min-w-[200px]"
           >
             <button
               type="button"

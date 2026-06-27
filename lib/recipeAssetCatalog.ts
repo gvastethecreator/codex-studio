@@ -1,4 +1,3 @@
-import type { RecipeId } from '../types';
 import {
   GENERATED_STYLE_DEFAULT_IMAGES,
   GENERATED_STYLE_DEFAULT_IMAGE_VARIANTS,
@@ -41,15 +40,16 @@ function buildUrlCatalog(files: Record<string, unknown>) {
 const recipeCardCatalog = buildUrlCatalog(recipeCardImageFiles);
 const stylePreviewCatalog = buildUrlCatalog(stylePreviewImageFiles);
 
-const recipeCardCatalogByRecipeId = Object.entries(recipeCardCatalog).reduce<
-  Partial<Record<Exclude<RecipeId, null>, string>>
->((acc, [key, value]) => {
-  const normalizedKey = key.startsWith('recipe-') ? key.slice('recipe-'.length) : key;
-  acc[normalizedKey as Exclude<RecipeId, null>] = value;
-  return acc;
-}, {});
+const recipeCardCatalogByKey = Object.entries(recipeCardCatalog).reduce<Record<string, string>>(
+  (acc, [key, value]) => {
+    const normalizedKey = key.startsWith('recipe-') ? key.slice('recipe-'.length) : key;
+    acc[normalizedKey] = value;
+    return acc;
+  },
+  {},
+);
 
-export const RECIPE_CARD_IMAGES = recipeCardCatalogByRecipeId;
+export const RECIPE_CARD_IMAGES = recipeCardCatalogByKey;
 export const STYLE_CATEGORY_IMAGES = buildUrlCatalog(styleCategoryImageFiles);
 export const STYLE_DEFAULT_IMAGES = GENERATED_STYLE_DEFAULT_IMAGES;
 const STYLE_DEFAULT_IMAGE_VARIANTS = GENERATED_STYLE_DEFAULT_IMAGE_VARIANTS;

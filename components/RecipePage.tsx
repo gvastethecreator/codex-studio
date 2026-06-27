@@ -5,10 +5,12 @@ import type {
   ImageGenerationConfig,
   RecipeId,
 } from '../types';
+import type { RecipeAliasId } from '../lib/recipeAliases';
 import { RecipeRouter } from './RecipeRouter';
 
 export interface RecipePageProps {
   activeRecipe: RecipeId;
+  activeRecipeAliasId?: RecipeAliasId | null;
   generationConfig: ImageGenerationConfig;
   updateGenerationConfig: <K extends keyof ImageGenerationConfig>(
     key: K,
@@ -29,6 +31,7 @@ export interface RecipePageProps {
 
 export const RecipePage: React.FC<RecipePageProps> = ({
   activeRecipe,
+  activeRecipeAliasId = null,
   generationConfig,
   updateGenerationConfig,
   updateAttachment,
@@ -42,6 +45,7 @@ export const RecipePage: React.FC<RecipePageProps> = ({
   return (
     <RecipeRouter
       activeRecipe={activeRecipe}
+      activeRecipeAliasId={activeRecipeAliasId}
       generationConfig={generationConfig}
       updateGenerationConfig={updateGenerationConfig}
       updateAttachment={updateAttachment}

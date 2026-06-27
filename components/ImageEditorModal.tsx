@@ -1,4 +1,10 @@
-import { Brush, Sparkles, Trash2, Undo, X } from 'lucide-react';
+import {
+  IconBrush as Brush,
+  IconSparkles as Sparkles,
+  IconTrash as Trash2,
+  IconArrowBackUp as Undo,
+  IconX as X,
+} from '@tabler/icons-react';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import type { Attachment } from '../types';
 import ActionButton from './ui/ActionButton';
@@ -38,8 +44,8 @@ function ImageEditorControlsPanel({
   onGenerate,
 }: ImageEditorControlsPanelProps) {
   return (
-    <div className="w-full md:w-96 bg-zinc-950 p-8 flex flex-col gap-10 shadow-[20px_0_60px_rgba(0,0,0,1)]">
-      <div className="space-y-4">
+    <div className="custom-scrollbar flex max-h-[44vh] w-full flex-col gap-5 overflow-y-auto bg-zinc-950 p-4 shadow-[20px_0_60px_rgba(0,0,0,1)] sm:p-6 md:max-h-none md:w-96 md:gap-10 md:p-8">
+      <div className="space-y-3 sm:space-y-4">
         <label
           htmlFor="image-editor-prompt"
           className="text-[10px] font-black text-zinc-700 uppercase tracking-widest"
@@ -53,11 +59,11 @@ function ImageEditorControlsPanel({
           onChange={(e) => onEditPromptChange(e.target.value)}
           placeholder="Describe the changes..."
           aria-label="Edit prompt"
-          className="w-full min-h-40 max-h-75 bg-black/40 rounded-2xl p-5 text-[13px] font-bold leading-relaxed focus:bg-black/60 transition-colors outline-none resize-none placeholder-zinc-800 custom-scrollbar"
+          className="w-full min-h-24 max-h-44 bg-black/40 rounded-2xl p-4 text-[13px] font-bold leading-relaxed focus:bg-black/60 transition-colors outline-none resize-none placeholder-zinc-800 custom-scrollbar sm:min-h-40 sm:max-h-75 sm:p-5"
         />
       </div>
 
-      <div className="space-y-8">
+      <div className="space-y-5 sm:space-y-8">
         <Slider
           icon={<Brush className="size-4 text-zinc-600" />}
           label="Brush Size"
@@ -92,7 +98,7 @@ function ImageEditorControlsPanel({
           type="button"
           onClick={onGenerate}
           disabled={isGenerating || !editPrompt.trim() || historyIndex < 0}
-          className={`w-full h-16 rounded-2xl flex items-center justify-center gap-4 text-[12px] font-black tracking-[0.25em] uppercase transition-all active:scale-95 shadow-2xl
+          className={`w-full h-12 sm:h-16 rounded-2xl flex items-center justify-center gap-4 text-[12px] font-black tracking-[0.25em] uppercase transition-all active:scale-95 shadow-2xl
                     ${
                       isGenerating
                         ? 'bg-accent-500/10 text-accent-500/40'
@@ -182,7 +188,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
     setupCanvas();
   }, [setupCanvas]);
 
-  const getMousePos = (e: React.MouseEvent) => {
+  const getPointerPos = (e: React.PointerEvent<HTMLCanvasElement>) => {
     const canvas = canvasRef.current;
     if (!canvas) return { x: 0, y: 0 };
     const rect = canvas.getBoundingClientRect();
@@ -207,11 +213,20 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
     setHistoryIndex(newHistory.length - 1);
   }, [historyIndex]);
 
-  const startDrawing = (e: React.MouseEvent) => {
+  const moveBrushCursor = useCallback((clientX: number, clientY: number) => {
+    if (!brushCursorRef.current) return;
+    brushCursorRef.current.style.left = `${clientX}px`;
+    brushCursorRef.current.style.top = `${clientY}px`;
+  }, []);
+
+  const startDrawing = (e: React.PointerEvent<HTMLCanvasElement>) => {
+    e.preventDefault();
+    e.currentTarget.setPointerCapture(e.pointerId);
+    moveBrushCursor(e.clientX, e.clientY);
     isDrawingRef.current = true;
     const ctx = canvasRef.current?.getContext('2d');
     if (!ctx) return;
-    const { x, y } = getMousePos(e);
+    const { x, y } = getPointerPos(e);
     ctx.beginPath();
     ctx.moveTo(x, y);
     ctx.fillStyle = 'white';
@@ -229,12 +244,14 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
     ctx.moveTo(x, y);
   };
 
-  const draw = (e: React.MouseEvent) => {
+  const draw = (e: React.PointerEvent<HTMLCanvasElement>) => {
+    moveBrushCursor(e.clientX, e.clientY);
     if (!isDrawingRef.current) return;
+    e.preventDefault();
     const ctx = canvasRef.current?.getContext('2d');
     if (!ctx) return;
 
-    const { x, y } = getMousePos(e);
+    const { x, y } = getPointerPos(e);
     const rect = canvasRef.current!.getBoundingClientRect();
     const scale = canvasRef.current!.width / rect.width;
 
@@ -246,7 +263,10 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
     ctx.stroke();
   };
 
-  const stopDrawing = () => {
+  const stopDrawing = (e?: React.PointerEvent<HTMLCanvasElement>) => {
+    if (e?.currentTarget.hasPointerCapture(e.pointerId)) {
+      e.currentTarget.releasePointerCapture(e.pointerId);
+    }
     if (isDrawingRef.current) {
       isDrawingRef.current = false;
       saveHistory();
@@ -291,15 +311,12 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   };
 
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (brushCursorRef.current) {
-        brushCursorRef.current.style.left = `${e.clientX}px`;
-        brushCursorRef.current.style.top = `${e.clientY}px`;
-      }
+    const handlePointerMove = (e: PointerEvent) => {
+      moveBrushCursor(e.clientX, e.clientY);
     };
-    if (isOpen) window.addEventListener('mousemove', handleMouseMove, { passive: true });
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, [isOpen]);
+    if (isOpen) window.addEventListener('pointermove', handlePointerMove, { passive: true });
+    return () => window.removeEventListener('pointermove', handlePointerMove);
+  }, [isOpen, moveBrushCursor]);
 
   const handleReset = useCallback(() => {
     const ctx = canvasRef.current?.getContext('2d');
@@ -321,18 +338,18 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
       }}
     >
       <div
-        className="h-20 w-full flex items-center justify-between px-10 border-b border-white/5"
+        className="flex min-h-16 w-full items-center justify-between gap-3 border-b border-white/5 px-4 py-3 sm:h-20 sm:px-10 sm:py-0"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-center gap-5">
-          <div className="p-2.5 bg-accent-500/10 rounded-xl">
-            <Sparkles size={20} className="text-accent-400" />
+        <div className="flex min-w-0 items-center gap-3 sm:gap-5">
+          <div className="rounded-xl bg-accent-500/10 p-2 sm:p-2.5">
+            <Sparkles size={18} className="text-accent-400 sm:size-5" />
           </div>
-          <div>
-            <h2 className="text-sm font-black tracking-widest uppercase text-white">
+          <div className="min-w-0">
+            <h2 className="truncate text-xs font-black tracking-widest uppercase text-white sm:text-sm">
               Precision Inpaint
             </h2>
-            <p className="text-[10px] text-zinc-600 font-bold uppercase tracking-tight">
+            <p className="hidden text-[10px] text-zinc-600 font-bold uppercase tracking-tight sm:block">
               Edit masked area and regenerate
             </p>
           </div>
@@ -340,7 +357,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
         <button
           type="button"
           onClick={handleClose}
-          className="p-3 bg-zinc-900/60 hover:bg-zinc-800 rounded-xl text-zinc-600 hover:text-white transition-all shadow-xl"
+          className="rounded-xl bg-zinc-900/60 p-3 text-zinc-600 shadow-xl transition-all hover:bg-zinc-800 hover:text-white"
         >
           <X size={24} />
         </button>
@@ -351,7 +368,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
         onClick={(e) => e.stopPropagation()}
       >
         <div
-          className="flex-1 relative flex items-center justify-center p-8 bg-[#010101]"
+          className="relative flex min-h-[42vh] flex-1 items-center justify-center bg-[#010101] p-3 sm:p-8"
           ref={containerRef}
         >
           {image && (
@@ -367,10 +384,11 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           )}
           <canvas
             ref={canvasRef}
-            onMouseDown={startDrawing}
-            onMouseMove={draw}
-            onMouseUp={stopDrawing}
-            onMouseLeave={stopDrawing}
+            onPointerDown={startDrawing}
+            onPointerMove={draw}
+            onPointerUp={stopDrawing}
+            onPointerCancel={stopDrawing}
+            onPointerLeave={stopDrawing}
             className="relative z-10 cursor-none touch-none opacity-90 mix-blend-screen shadow-[0_0_100px_rgba(255,255,255,0.05)]"
           />
           <div

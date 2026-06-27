@@ -1,35 +1,37 @@
 import {
-  Archive,
-  ArrowUpDown,
-  BookOpen,
-  Box,
-  Briefcase,
-  Building,
-  Camera,
-  Check,
-  ChevronLeft,
-  ChevronRight,
-  Clapperboard,
-  Copy,
-  Filter,
-  Gamepad2,
-  Heart,
-  Layers,
-  Palette,
-  PenTool,
-  Printer,
-  RefreshCw,
-  Search,
-  Shirt,
-  SlidersHorizontal,
-  SmilePlus,
-  Sparkles,
-  Star,
-  Tv,
-  Upload,
-  Wand2,
-  X,
-} from 'lucide-react';
+  IconArchive as Archive,
+  IconArrowsSort as ArrowUpDown,
+  IconBook as BookOpen,
+  IconBox as Box,
+  IconBriefcase as Briefcase,
+  IconBuilding as Building,
+  IconCamera as Camera,
+  IconCheck as Check,
+  IconChevronLeft as ChevronLeft,
+  IconChevronRight as ChevronRight,
+  IconMovie as Clapperboard,
+  IconCopy as Copy,
+  IconFilter as Filter,
+  IconDeviceGamepad2 as Gamepad2,
+  IconHeart as Heart,
+  IconPhoto as ImageIcon,
+  IconStack as Layers,
+  IconPalette as Palette,
+  IconPencil as PenTool,
+  IconPlayerPlay as Play,
+  IconPlus as Plus,
+  IconPrinter as Printer,
+  IconSearch as Search,
+  IconShirt as Shirt,
+  IconAdjustmentsHorizontal as SlidersHorizontal,
+  IconMoodPlus as SmilePlus,
+  IconSparkles as Sparkles,
+  IconStar as Star,
+  IconDeviceTv as Tv,
+  IconUpload as Upload,
+  IconWand as Wand2,
+  IconX as X,
+} from '@tabler/icons-react';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   STYLE_CATEGORY_IMAGES,
@@ -48,7 +50,6 @@ import {
 import type { Attachment, GeneratedImageWithConfig, ImageGenerationConfig } from '../../types';
 import Tooltip from '../Tooltip';
 import { FloatingTooltip } from '../ui/FloatingTooltip';
-import Slider from '../ui/Slider';
 import { RecipeLayout } from './RecipeLayout';
 import {
   collectStylePresetPreviewSources,
@@ -90,6 +91,13 @@ const FAVORITES_PACK_ID = 'favorites';
 const EMPTY_IMAGES: GeneratedImageWithConfig[] = [];
 const DEFAULT_STYLE_PACK_ID = STYLE_RUNTIME_PACK_SUMMARIES[0]?.id ?? 'pack_01';
 const STYLE_GROUP_VIEWPORT_ROOT_MARGIN = '900px 0px';
+const MAX_STYLE_REFERENCE_IMAGES = 5;
+const MAX_SELECTED_STYLE_SLOTS = 5;
+const DEFAULT_SELECTED_STYLE_STRENGTH = 0.75;
+const STYLE_PACKS_TAB_ID = 'packs';
+const STYLE_RECIPE_HASH_PREFIX = 'recipe-styles';
+
+type StyleTabId = string;
 
 const StylePresetCatalogSearchSurface = React.lazy(() =>
   import('./StylePresetCatalogSearchSurface').then((module) => ({
@@ -292,8 +300,6 @@ function getCategoryVisualIdentity(
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { startViewTransition } from '../../utils/transitionUtils';
 
-const previewDataUrlCache = new Map<string, string>();
-
 interface StyleCardHoverPreview {
   id: string;
   name: string;
@@ -313,6 +319,13 @@ interface StylePresetVisualState {
   exampleImageSrc: string | null;
 }
 
+interface SelectedStyleSlot {
+  preset: StyleRuntimePreset;
+  packId: string;
+  packName: string;
+  strength: number;
+}
+
 interface StylePresetCardProps {
   preset: StyleRuntimePreset;
   visualState: StylePresetVisualState | undefined;
@@ -324,6 +337,100 @@ interface StylePresetCardProps {
   onCopy: (e: React.MouseEvent, preset: StyleRuntimePreset) => void;
   onToggleFavorite: (presetId: string) => void;
   onHoverPreviewChange: (preview: StyleCardHoverPreview | null) => void;
+}
+
+function normalizeStyleTabId(tabId: string | null | undefined): StyleTabId {
+  const cleanTabId = (tabId ?? '').trim();
+  if (!cleanTabId || cleanTabId === 'landing' || cleanTabId === STYLE_PACKS_TAB_ID) {
+    return STYLE_PACKS_TAB_ID;
+  }
+
+  if (cleanTabId === FAVORITES_PACK_ID) return FAVORITES_PACK_ID;
+
+  return STYLE_RUNTIME_PACK_SUMMARIES.some((pack) => pack.id === cleanTabId)
+    ? cleanTabId
+    : STYLE_PACKS_TAB_ID;
+}
+
+function readStyleTabIdFromHash(rawHash: string) {
+  const hash = rawHash.replace(/^#/, '');
+  if (!hash.startsWith(STYLE_RECIPE_HASH_PREFIX)) return null;
+
+  const segment = hash.slice(STYLE_RECIPE_HASH_PREFIX.length).replace(/^\//, '').split(/[/?#]/)[0];
+
+  return normalizeStyleTabId(segment);
+}
+
+function getStyleTabHash(tabId: StyleTabId) {
+  return `${STYLE_RECIPE_HASH_PREFIX}/${normalizeStyleTabId(tabId)}`;
+}
+
+function writeStyleTabHash(tabId: StyleTabId, mode: 'push' | 'replace' = 'push') {
+  const nextHash = `#${getStyleTabHash(tabId)}`;
+  if (window.location.hash === nextHash) return;
+
+  const nextUrl = `${window.location.pathname}${window.location.search}${nextHash}`;
+  if (mode === 'replace') {
+    window.history.replaceState(null, '', nextUrl);
+    return;
+  }
+
+  window.location.hash = nextHash.slice(1);
+}
+
+function createStylePresetVisualState({
+  preset,
+  presetPackId,
+  presetPackName,
+  images,
+}: {
+  preset: StyleRuntimePreset;
+  presetPackId: string;
+  presetPackName: string;
+  images: GeneratedImageWithConfig[];
+}): StylePresetVisualState {
+  const resultImages = images
+    .filter((img) => hasStylePresetIdentity(img.config, preset.id))
+    .sort((a, b) => b.createdAt - a.createdAt);
+  const defaultImageStale = isStyleDefaultImageStale(preset.id);
+  const defaultImage = resolveStyleDefaultImage(preset.id);
+  const defaultImageVariants = resolveStyleDefaultImageVariants(preset.id);
+  const categoryImage = preset.category
+    ? STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)]
+    : undefined;
+  const previewImage =
+    categoryImage || (preset.category ? STYLE_CATEGORY_PREVIEWS[preset.category] : undefined);
+
+  return {
+    presetPackName,
+    resultImages,
+    defaultImage,
+    defaultImageVariants,
+    defaultImageStale,
+    previewImage,
+    exampleImageSrc:
+      resultImages[0]?.thumbnail ||
+      resultImages[0]?.preview ||
+      resultImages[0]?.src ||
+      defaultImage ||
+      defaultImageVariants[0] ||
+      previewImage ||
+      null,
+  };
+}
+
+function resolveStylePresetPrimaryCardImage(visualState: StylePresetVisualState | undefined) {
+  if (!visualState) return null;
+
+  return (
+    resolveStylePresetCardImages({
+      resultImages: visualState.resultImages,
+      defaultImage: visualState.defaultImage,
+      defaultImageVariants: visualState.defaultImageVariants,
+      defaultImageStale: visualState.defaultImageStale,
+      previewImage: visualState.previewImage,
+    })[0] ?? null
+  );
 }
 
 function resolveStyleCardImageDiagnostics({
@@ -356,6 +463,7 @@ interface StylePresetGroupSectionProps {
 interface StylePresetResultButtonProps {
   activeCardImage: StylePresetCardImage | null;
   preset: StyleRuntimePreset;
+  active: boolean;
   onCycle: (dir: number) => void;
   hasMultipleImages: boolean;
   imageIndex: number;
@@ -367,6 +475,7 @@ interface StylePresetResultButtonProps {
 const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
   activeCardImage,
   preset,
+  active,
   onCycle,
   hasMultipleImages,
   imageIndex,
@@ -408,12 +517,14 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
       <div className="absolute inset-0 group/image">
         <button
           type="button"
-          aria-label={`Regenerate ${preset.name}`}
+          aria-label={`${active ? 'Remove' : 'Select'} ${preset.name}`}
           onClick={() => onApply(preset)}
           className="absolute inset-0 z-10 cursor-pointer"
         >
           <img
             src={activeCardImage.src}
+            width={300}
+            height={400}
             className={`style-preset-thumbnail size-full object-cover transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02] ${
               activeCardImage.kind === 'stale-default'
                 ? 'opacity-[0.82] saturate-[0.86] brightness-[0.92]'
@@ -429,7 +540,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
           <div className="absolute inset-0 bg-zinc-950/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
           <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover/image:opacity-100">
             <div className="flex size-10 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white backdrop-blur-md">
-              <RefreshCw size={18} />
+              {active ? <Check size={18} /> : <Plus size={18} />}
             </div>
           </div>
         </button>
@@ -480,9 +591,9 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
             }}
             onKeyDown={handleApplyFromKeyboard}
             className="rounded-lg border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600"
-            title="Regenerate Style"
+            title={active ? 'Remove style' : 'Select style'}
           >
-            <RefreshCw size={14} />
+            {active ? <Check size={14} /> : <Plus size={14} />}
           </button>
         </div>
       </div>
@@ -494,6 +605,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
       type="button"
       onClick={() => onApply(preset)}
       className="absolute inset-0 flex size-full cursor-pointer flex-col items-center justify-center gap-3 bg-zinc-900/50 transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed"
+      aria-pressed={active}
     >
       <div
         className={`flex size-14 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-colors duration-300 group-hover:bg-white/8 ${theme.text}`}
@@ -501,7 +613,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
         <Palette size={24} />
       </div>
       <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 translate-y-2">
-        Apply
+        {active ? 'Selected' : 'Select'}
       </span>
     </button>
   );
@@ -635,6 +747,7 @@ const StylePresetCard = React.memo(
             <StylePresetResultButton
               activeCardImage={activeCardImage}
               preset={preset}
+              active={active}
               onCycle={handleCycle}
               hasMultipleImages={hasMultipleImages}
               imageIndex={imageIndex}
@@ -667,6 +780,7 @@ const StylePresetCard = React.memo(
               <button
                 type="button"
                 onClick={() => onApply(preset)}
+                aria-pressed={active}
                 className="flex cursor-pointer flex-col justify-center appearance-none border-none p-0 m-0 bg-transparent text-left w-full"
               >
                 <div className="mb-1 flex w-full items-center justify-between gap-2">
@@ -866,38 +980,91 @@ function describePreviewValue(value: unknown): string | null {
   return null;
 }
 
-async function loadPreviewAttachment(previewUrl: string, preset: StyleRuntimePreset) {
-  let dataUrl = previewDataUrlCache.get(previewUrl);
+function clampStyleStrength(value: number) {
+  if (!Number.isFinite(value)) return DEFAULT_SELECTED_STYLE_STRENGTH;
+  return Math.max(0.1, Math.min(1, Number(value.toFixed(2))));
+}
 
-  if (!dataUrl) {
-    const response = await fetch(previewUrl);
-    if (!response.ok) {
-      throw new Error(`Unable to load style preview: ${response.status}`);
-    }
+function formatStyleStrength(value: number) {
+  return clampStyleStrength(value).toFixed(2);
+}
 
-    const blob = await response.blob();
-    dataUrl = await new Promise<string>((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = () => {
-        if (typeof reader.result !== 'string') {
-          reject(new Error('Unable to convert style preview into a data URL'));
-          return;
-        }
+function getStyleNegativePrompt(preset: StyleRuntimePreset, packId: string) {
+  const isPhotoPackFallback = ['pack_09', 'pack_10', 'pack_11'].includes(packId);
+  return (
+    preset.negativePrompt ||
+    (isPhotoPackFallback
+      ? 'illustration, drawing, painting, sketch, cartoon, anime, 2d, graphic, flat, vector, ink'
+      : '')
+  );
+}
 
-        resolve(reader.result);
-      };
-      reader.onerror = () => reject(reader.error);
-      reader.readAsDataURL(blob);
-    });
-    previewDataUrlCache.set(previewUrl, dataUrl);
-  }
+function getStylePackSummary(packId: string) {
+  return STYLE_RUNTIME_PACK_SUMMARIES.find((pack) => pack.id === packId) ?? null;
+}
+
+function createSelectedStyleLayer(slot: SelectedStyleSlot, index: number) {
+  const { preset } = slot;
+  const subjectTreatment = describeStyleValue(
+    preset.style.subject_treatment ?? preset.style.form_and_line,
+  );
+  const colorTone = describeStyleValue(preset.style.color_and_tone ?? preset.style.color_palette);
+  const lightingShadow = describeStyleValue(
+    preset.style.lighting_and_shadow ?? preset.style.lighting_setup,
+  );
+  const textureMaterial = describeStyleValue(
+    preset.style.texture_and_material ?? preset.style.material_texture,
+  );
+  const cameraComposition = describeStyleValue(
+    preset.style.camera_and_composition ?? preset.style.spatial_distortion,
+  );
+  const atmosphereMood = describeStyleValue(
+    preset.style.atmosphere_and_mood ?? preset.style.atmosphere,
+  );
+  const renderingQuality = describeStyleValue(
+    preset.style.rendering_and_quality ?? preset.style.render_quality,
+  );
 
   return {
-    id: `style-preview-${preset.id}`,
-    name: `${preset.category || 'Style Preview'} - reference.webp`,
-    dataUrl,
-    strength: 0.45,
+    slot: index + 1,
+    presetId: preset.id,
+    presetName: preset.name,
+    packId: slot.packId,
+    packName: slot.packName,
+    category: preset.category || 'General',
+    strength: clampStyleStrength(slot.strength),
+    aesthetic: preset.style.aesthetic,
+    subjectTreatment,
+    colorTone,
+    lightingShadow,
+    textureMaterial,
+    cameraComposition,
+    atmosphereMood,
+    renderingQuality,
+    creativeBrief: preset.style.creative_brief ?? '',
   };
+}
+
+type SelectedStyleLayer = ReturnType<typeof createSelectedStyleLayer>;
+
+function joinSelectedStyleLayerValue(
+  slots: SelectedStyleSlot[],
+  resolveValue: (layer: SelectedStyleLayer) => string,
+) {
+  return slots
+    .flatMap((slot, index) => {
+      const layer = createSelectedStyleLayer(slot, index);
+      const value = resolveValue(layer).trim();
+      return value
+        ? [`${layer.presetName} (${formatStyleStrength(layer.strength)}): ${value}`]
+        : [];
+    })
+    .join(' | ');
+}
+
+function createSelectedStylesPrompt(slots: SelectedStyleSlot[]) {
+  const names = slots.map((slot) => slot.preset.name).join(' + ');
+  return `Apply selected style layers: ${names}`;
 }
 
 function getPackIcon(id: string): React.ReactNode {
@@ -954,20 +1121,26 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   images = EMPTY_IMAGES,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
-  // react-doctor-disable-next-line react-doctor/no-event-handler
-  const activeImage = config.attachments[0];
+  const referenceImages = config.attachments.slice(0, MAX_STYLE_REFERENCE_IMAGES);
+  const referenceSlotsRemaining = Math.max(0, MAX_STYLE_REFERENCE_IMAGES - referenceImages.length);
 
   const [currentPackId, setCurrentPackId] = useState(DEFAULT_STYLE_PACK_ID);
+  const [isPackLandingOpen, setIsPackLandingOpen] = useState(true);
+  const currentStyleTabRef = useRef<StyleTabId>(STYLE_PACKS_TAB_ID);
   const [loadedStylePacksById, setLoadedStylePacksById] = useState<
     Record<string, StyleRuntimePack>
   >({});
+  const [selectedStyles, setSelectedStyles] = useState<SelectedStyleSlot[]>([]);
   const [interactionState, setInteractionState] = useState({
     activePresetId: null as string | null,
     copiedStyleId: null as string | null,
     hoveredPresetPreview: null as StyleCardHoverPreview | null,
-    styleStrength: 0.8,
   });
-  const { activePresetId, copiedStyleId, hoveredPresetPreview, styleStrength } = interactionState;
+  const { copiedStyleId, hoveredPresetPreview } = interactionState;
+  const selectedStyleIds = useMemo(
+    () => new Set(selectedStyles.map((slot) => slot.preset.id)),
+    [selectedStyles],
+  );
   const lastHoveredPresetPreviewRef = useRef<StyleCardHoverPreview | null>(null);
   if (hoveredPresetPreview) {
     lastHoveredPresetPreviewRef.current = hoveredPresetPreview;
@@ -1005,6 +1178,67 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const [favorites, setFavorites] = useLocalStorage<string[]>('style-favorites', []);
   const [gridColumns, setGridColumns] = useLocalStorage<number>('styles-grid-columns', 4);
   const styleScrollRootRef = useRef<HTMLDivElement>(null);
+
+  const applyStyleTab = useCallback(
+    (
+      tabId: StyleTabId,
+      options: {
+        resetSearch?: boolean;
+        browserStatePatch?: Partial<typeof browserState>;
+      } = {},
+    ) => {
+      const normalizedTabId = normalizeStyleTabId(tabId);
+      currentStyleTabRef.current = normalizedTabId;
+
+      startViewTransition(
+        () => {
+          if (normalizedTabId === STYLE_PACKS_TAB_ID) {
+            setIsPackLandingOpen(true);
+          } else {
+            setIsPackLandingOpen(false);
+            setCurrentPackId(normalizedTabId);
+          }
+
+          if (options.resetSearch || options.browserStatePatch) {
+            setBrowserState((prev) => ({
+              ...prev,
+              ...(options.resetSearch ? { searchQuery: '' } : {}),
+              ...options.browserStatePatch,
+            }));
+          }
+        },
+        { useNative: true },
+      );
+    },
+    [],
+  );
+
+  const navigateToStyleTab = useCallback(
+    (tabId: StyleTabId) => {
+      const normalizedTabId = normalizeStyleTabId(tabId);
+      applyStyleTab(normalizedTabId, { resetSearch: true });
+      writeStyleTabHash(normalizedTabId);
+    },
+    [applyStyleTab],
+  );
+
+  useEffect(() => {
+    const syncStyleTabFromHash = () => {
+      const hashTabId = readStyleTabIdFromHash(window.location.hash);
+      if (!hashTabId) return;
+
+      if (window.location.hash === `#${STYLE_RECIPE_HASH_PREFIX}`) {
+        writeStyleTabHash(hashTabId, 'replace');
+      }
+
+      if (currentStyleTabRef.current === hashTabId) return;
+      applyStyleTab(hashTabId, { resetSearch: true });
+    };
+
+    syncStyleTabFromHash();
+    window.addEventListener('hashchange', syncStyleTabFromHash);
+    return () => window.removeEventListener('hashchange', syncStyleTabFromHash);
+  }, [applyStyleTab]);
 
   const cacheStylePack = useCallback((pack: StyleRuntimePack) => {
     setLoadedStylePacksById((current) =>
@@ -1145,6 +1379,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     [activePack.id, currentPackId, loadedStylePacksById],
   );
 
+  const getPackNameForId = useCallback(
+    (packId: string) =>
+      loadedStylePacksById[packId]?.name ?? getStylePackSummary(packId)?.name ?? 'Styles',
+    [loadedStylePacksById],
+  );
+
   const presetVisualStateById = useMemo(() => {
     const stateMap = new Map<string, StylePresetVisualState>();
 
@@ -1154,34 +1394,15 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     visiblePresets.forEach((preset) => {
       const presetPackId = getPackIdForPreset(preset);
       const presetPack = loadedStylePacksById[presetPackId] ?? activePack;
-      const resultImages = images
-        .filter((img) => hasStylePresetIdentity(img.config, preset.id))
-        .sort((a, b) => b.createdAt - a.createdAt);
-      const defaultImageStale = isStyleDefaultImageStale(preset.id);
-      const defaultImage = resolveStyleDefaultImage(preset.id);
-      const defaultImageVariants = resolveStyleDefaultImageVariants(preset.id);
-      const categoryImage = preset.category
-        ? STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)]
-        : undefined;
-      const previewImage =
-        categoryImage || (preset.category ? STYLE_CATEGORY_PREVIEWS[preset.category] : undefined);
-
-      stateMap.set(preset.id, {
-        presetPackName: presetPack.name,
-        resultImages,
-        defaultImage,
-        defaultImageVariants,
-        defaultImageStale,
-        previewImage,
-        exampleImageSrc:
-          resultImages[0]?.thumbnail ||
-          resultImages[0]?.preview ||
-          resultImages[0]?.src ||
-          defaultImage ||
-          defaultImageVariants[0] ||
-          previewImage ||
-          null,
-      });
+      stateMap.set(
+        preset.id,
+        createStylePresetVisualState({
+          preset,
+          presetPackId,
+          presetPackName: presetPack.name,
+          images,
+        }),
+      );
     });
 
     return stateMap;
@@ -1193,6 +1414,24 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     images,
     loadedStylePacksById,
   ]);
+
+  const selectedStyleVisualStateById = useMemo(() => {
+    const stateMap = new Map<string, StylePresetVisualState>();
+
+    selectedStyles.forEach((slot) => {
+      stateMap.set(
+        slot.preset.id,
+        createStylePresetVisualState({
+          preset: slot.preset,
+          presetPackId: slot.packId,
+          presetPackName: slot.packName,
+          images,
+        }),
+      );
+    });
+
+    return stateMap;
+  }, [images, selectedStyles]);
 
   const filterKey = `${currentPackId}|${searchQuery}|${sortOrder}|${showFavoritesOnly}`;
   const prevFilterKeyRef = useRef(filterKey);
@@ -1258,21 +1497,58 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     });
   }, [stylePreviewPreloadSources]);
 
-  const handleApplyStyle = async (preset: StyleRuntimePreset, presetPackIdOverride?: string) => {
-    setInteractionState((prev) => ({ ...prev, activePresetId: preset.id }));
+  const handleSelectStyle = useCallback(
+    (preset: StyleRuntimePreset, presetPackIdOverride?: string) => {
+      const presetPackId = presetPackIdOverride ?? getPackIdForPreset(preset);
+      const packName = getPackNameForId(presetPackId);
 
-    const presetPackId = presetPackIdOverride ?? getPackIdForPreset(preset);
-    const categoryBaseUrl = preset.category
-      ? STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)]
-      : undefined;
-    const fallbackPreviewUrl =
-      categoryBaseUrl ||
-      (preset.category ? STYLE_CATEGORY_PREVIEWS[preset.category] : undefined) ||
-      STYLE_PACK_FALLBACK_IMAGES[presetPackId];
-    const fallbackAttachment =
-      !activeImage && fallbackPreviewUrl
-        ? await loadPreviewAttachment(fallbackPreviewUrl, preset)
-        : null;
+      setInteractionState((prev) => ({ ...prev, activePresetId: preset.id }));
+      setSelectedStyles((current) => {
+        if (current.some((slot) => slot.preset.id === preset.id)) {
+          return current.filter((slot) => slot.preset.id !== preset.id);
+        }
+        if (current.length >= MAX_SELECTED_STYLE_SLOTS) {
+          return current;
+        }
+        return [
+          ...current,
+          {
+            preset,
+            packId: presetPackId,
+            packName,
+            strength: DEFAULT_SELECTED_STYLE_STRENGTH,
+          },
+        ];
+      });
+    },
+    [getPackIdForPreset, getPackNameForId],
+  );
+
+  const handleApplyStyleRef = useRef(handleSelectStyle);
+  handleApplyStyleRef.current = handleSelectStyle;
+
+  const selectedStyleLayers = useMemo(
+    () => selectedStyles.map(createSelectedStyleLayer),
+    [selectedStyles],
+  );
+
+  const updateSelectedStyleStrength = useCallback((presetId: string, strength: number) => {
+    setSelectedStyles((current) =>
+      current.map((slot) =>
+        slot.preset.id === presetId ? { ...slot, strength: clampStyleStrength(strength) } : slot,
+      ),
+    );
+  }, []);
+
+  const removeSelectedStyle = useCallback((presetId: string) => {
+    setSelectedStyles((current) => current.filter((slot) => slot.preset.id !== presetId));
+  }, []);
+
+  const handleGenerateSelectedStyles = useCallback(() => {
+    if (selectedStyles.length === 0) return;
+
+    const layers = selectedStyles.map(createSelectedStyleLayer);
+    const hasReferenceImages = referenceImages.length > 0;
     const diversityPrompts = [
       'Introduce a noticeably different camera distance and framing from previous renders.',
       'Shift scene energy with a different gesture or action beat while preserving the subject intent.',
@@ -1280,103 +1556,88 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       'Vary background staging and spatial depth so this render is visibly unique.',
     ] as const;
     const diversityHint = diversityPrompts[Math.floor(Math.random() * diversityPrompts.length)];
-    const effectiveImage = activeImage || fallbackAttachment;
-    const normalizedReference = effectiveImage
-      ? {
-          ...effectiveImage,
-          strength: 0.15,
-        }
-      : null;
-    const intensity = styleStrength;
-    const isPhotoPackFallback = ['pack_09', 'pack_10', 'pack_11'].includes(presetPackId);
-    const subjectTreatment = describeStyleValue(
-      preset.style.subject_treatment ?? preset.style.form_and_line,
-    );
-    const colorTone = describeStyleValue(preset.style.color_and_tone ?? preset.style.color_palette);
-    const lightingShadow = describeStyleValue(
-      preset.style.lighting_and_shadow ?? preset.style.lighting_setup,
-    );
-    const textureMaterial = describeStyleValue(
-      preset.style.texture_and_material ?? preset.style.material_texture,
-    );
-    const cameraComposition = describeStyleValue(
-      preset.style.camera_and_composition ?? preset.style.spatial_distortion,
-    );
-    const atmosphereMood = describeStyleValue(
-      preset.style.atmosphere_and_mood ?? preset.style.atmosphere,
-    );
-    const renderingQuality = describeStyleValue(
-      preset.style.rendering_and_quality ?? preset.style.render_quality,
-    );
-
-    const presetNegative =
-      preset.negativePrompt ||
-      (isPhotoPackFallback
-        ? 'illustration, drawing, painting, sketch, cartoon, anime, 2d, graphic, flat, vector, ink'
-        : '');
-
-    // --- SEMANTIC ABSTRACTION PROMPTING ---
-    let roleInstruction = '';
-    let compositionRule = '';
-
-    if (!effectiveImage) {
-      roleInstruction = `
-        Synthesize the requested subject in the target style from scratch.
-        Ensure the style's DNA is the primary driver of the visual output.
-        Focus on creating a high-quality, coherent image that embodies the aesthetic.
-      `;
-      compositionRule = 'Create a balanced and aesthetically pleasing composition.';
-    } else {
-      roleInstruction = `
-        Use the provided image only as a loose semantic reference for subject intent.
-        DO NOT preserve pose, framing, camera angle, or original composition.
-        Re-stage the subject with a clearly different gesture, perspective, and environment while applying the target style DNA.
+    const selectedNames = layers.map((layer) => layer.presetName).join(' + ');
+    const roleInstruction = hasReferenceImages
+      ? `
+        Use the uploaded images as loose semantic references for subject intent.
+        DO NOT preserve pose, framing, camera angle, or original composition unless the prompt explicitly asks.
+        Re-stage the subject with clearly different gesture, perspective, and environment while applying the selected style layers.
         Make the result feel freshly generated, not a repaint of the input.
+      `
+      : `
+        Synthesize the requested subject from the prompt and selected style layers.
+        Make the selected style DNA the primary driver of the visual output.
+        Focus on a coherent, high-quality image that exposes the combined aesthetic.
       `;
-      compositionRule =
-        'Preserve only subject intent; force substantial variation in pose, camera, composition, lighting, and scene staging.';
-    }
-
-    let styleEmphasis = '';
-    if (intensity > 0.85) {
-      styleEmphasis = `
-        EXAGGERATE the style features. 
-        If the style is rough, make it messy. 
-        If the style is colorful, oversaturate it. 
-        Push the aesthetic to its limit.
-        `;
-    }
-    styleEmphasis = styleEmphasis ? `${styleEmphasis.trim()}\n${diversityHint}` : diversityHint;
-
-    const styleRecipeParams = {
-      presetId: preset.id,
-      presetName: preset.name,
-      mode: fallbackAttachment
-        ? 'PACK_CATEGORY_BASE_STYLE_APPLICATION'
-        : activeImage
-          ? 'CREATIVE_REIMAGINING'
-          : 'DIRECT_STYLE_SYNTHESIS',
-      roleInstruction: roleInstruction.trim(),
-      compositionRule: compositionRule.trim(),
-      styleEmphasis: styleEmphasis.trim(),
-      aesthetic: preset.style.aesthetic,
-      subjectTreatment,
-      colorTone,
-      lightingShadow,
-      textureMaterial,
-      cameraComposition,
-      atmosphereMood,
-      renderingQuality,
-      creativeBrief: preset.style.creative_brief ?? '',
-    };
+    const compositionRule = hasReferenceImages
+      ? 'Preserve only subject intent from the uploaded references; force substantial variation in pose, camera, composition, lighting, and scene staging.'
+      : 'Create a balanced composition from scratch using the selected style layers as the visual system.';
+    const styleEmphasis = [
+      `Blend ${layers.length} selected style layer${layers.length === 1 ? '' : 's'}; respect each layer strength as its visual influence.`,
+      ...layers.map(
+        (layer) =>
+          `Slot ${layer.slot}: ${layer.presetName} at ${formatStyleStrength(layer.strength)} strength.`,
+      ),
+      diversityHint,
+    ].join('\n');
+    const selectedNegativePrompts = selectedStyles
+      .map((slot) => getStyleNegativePrompt(slot.preset, slot.packId))
+      .filter((value) => value.trim());
+    const mergedNegativePrompt = [config.negativePrompt, ...selectedNegativePrompts]
+      .flatMap((value) => {
+        const trimmed = value?.trim();
+        return trimmed ? [trimmed] : [];
+      })
+      .join(', ');
 
     onGenerate(
-      undefined,
+      config.prompt?.trim() || createSelectedStylesPrompt(selectedStyles),
       {
         recipeId: 'styles',
-        recipeParams: styleRecipeParams,
+        recipeParams: {
+          presetId: layers[0]?.presetId ?? '',
+          presetName: selectedNames,
+          selectedStyles: layers,
+          mode: hasReferenceImages ? 'CREATIVE_REIMAGINING' : 'DIRECT_STYLE_SYNTHESIS',
+          roleInstruction: roleInstruction.trim(),
+          compositionRule,
+          styleEmphasis,
+          aesthetic: joinSelectedStyleLayerValue(selectedStyles, (layer) => layer.aesthetic),
+          subjectTreatment: joinSelectedStyleLayerValue(
+            selectedStyles,
+            (layer) => layer.subjectTreatment,
+          ),
+          colorTone: joinSelectedStyleLayerValue(selectedStyles, (layer) => layer.colorTone),
+          lightingShadow: joinSelectedStyleLayerValue(
+            selectedStyles,
+            (layer) => layer.lightingShadow,
+          ),
+          textureMaterial: joinSelectedStyleLayerValue(
+            selectedStyles,
+            (layer) => layer.textureMaterial,
+          ),
+          cameraComposition: joinSelectedStyleLayerValue(
+            selectedStyles,
+            (layer) => layer.cameraComposition,
+          ),
+          atmosphereMood: joinSelectedStyleLayerValue(
+            selectedStyles,
+            (layer) => layer.atmosphereMood,
+          ),
+          renderingQuality: joinSelectedStyleLayerValue(
+            selectedStyles,
+            (layer) => layer.renderingQuality,
+          ),
+          creativeBrief: joinSelectedStyleLayerValue(
+            selectedStyles,
+            (layer) => layer.creativeBrief,
+          ),
+        },
         recipeContext: '',
-        attachments: normalizedReference ? [normalizedReference] : [],
+        attachments: referenceImages.map((attachment) => ({
+          ...attachment,
+          strength: 0.15,
+        })),
         model: config.model,
         imageSize: config.imageSize,
         batchCount: config.batchCount,
@@ -1384,35 +1645,45 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         executionModel: config.executionModel,
         executionReasoningEffort: config.executionReasoningEffort,
         executionSpeed: config.executionSpeed,
-        negativePrompt: config.negativePrompt
-          ? `${config.negativePrompt}, ${presetNegative}`
-          : presetNegative,
+        negativePrompt: mergedNegativePrompt,
       },
       { preventModal: true },
     );
-  };
-
-  const handleApplyStyleRef = useRef(handleApplyStyle);
-  handleApplyStyleRef.current = handleApplyStyle;
+  }, [
+    config.aspectRatio,
+    config.batchCount,
+    config.executionModel,
+    config.executionReasoningEffort,
+    config.executionSpeed,
+    config.imageSize,
+    config.model,
+    config.negativePrompt,
+    config.prompt,
+    onGenerate,
+    referenceImages,
+    selectedStyles,
+  ]);
 
   const handleCloseCatalogSearch = useCallback(
     () => setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: false })),
     [],
   );
 
-  const handleSelectCatalogPreset = useCallback((result: StylePresetCatalogSearchResult) => {
-    startViewTransition(() => {
-      setCurrentPackId(result.packId);
+  const handleSelectCatalogPreset = useCallback(
+    (result: StylePresetCatalogSearchResult) => {
+      applyStyleTab(result.packId, {
+        browserStatePatch: {
+          searchQuery: result.name,
+          showAllStyleCategories: true,
+          expandedStyleGroups: new Set([result.categoryName]),
+        },
+      });
+      writeStyleTabHash(result.packId);
       setInteractionState((prev) => ({ ...prev, activePresetId: result.id }));
-      setBrowserState((prev) => ({
-        ...prev,
-        searchQuery: result.name,
-        showAllStyleCategories: true,
-        expandedStyleGroups: new Set([result.categoryName]),
-      }));
-    });
-    setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: false }));
-  }, []);
+      setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: false }));
+    },
+    [applyStyleTab],
+  );
 
   const handleApplyCatalogPreset = useCallback(
     async (result: StylePresetCatalogSearchResult) => {
@@ -1422,12 +1693,16 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       const preset = loadedPack?.presets.find((candidate) => candidate.id === result.id);
       if (!preset) return;
 
-      setCurrentPackId(result.packId);
+      applyStyleTab(result.packId, {
+        browserStatePatch: {
+          isCatalogSearchOpen: false,
+        },
+      });
+      writeStyleTabHash(result.packId);
       setInteractionState((prev) => ({ ...prev, activePresetId: result.id }));
-      setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: false }));
-      void handleApplyStyleRef.current(preset, result.packId);
+      handleApplyStyleRef.current(preset, result.packId);
     },
-    [loadedStylePacksById, cacheStylePack],
+    [loadedStylePacksById, cacheStylePack, applyStyleTab],
   );
 
   const handleCopyStylePrompt = (e: React.MouseEvent, preset: StyleRuntimePreset) => {
@@ -1458,7 +1733,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
     const files = Array.from(e.dataTransfer.files).filter((f: File) => f.type.startsWith('image/'));
-    if (files.length > 0) onFileSelect(files);
+    if (files.length > 0 && referenceSlotsRemaining > 0) {
+      onFileSelect(files.slice(0, referenceSlotsRemaining));
+    }
   };
 
   const handleHoverPreviewChange = useCallback((preview: StyleCardHoverPreview | null) => {
@@ -1472,7 +1749,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           key={preset.id}
           preset={preset}
           visualState={presetVisualStateById.get(preset.id)}
-          active={activePresetId === preset.id}
+          active={selectedStyleIds.has(preset.id)}
           copied={copiedStyleId === preset.id}
           favorite={favorites.includes(preset.id)}
           theme={activeTheme}
@@ -1484,7 +1761,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       );
     },
     [
-      activePresetId,
+      selectedStyleIds,
       copiedStyleId,
       favorites,
       activeTheme,
@@ -1494,180 +1771,444 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     ],
   );
 
+  const styleTabNavigationItems = useMemo(
+    () => [
+      { id: STYLE_PACKS_TAB_ID, label: 'Packs' },
+      { id: FAVORITES_PACK_ID, label: 'Favorites' },
+      ...STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => ({ id: pack.id, label: pack.name })),
+    ],
+    [],
+  );
+  const currentStyleTabId = isPackLandingOpen ? STYLE_PACKS_TAB_ID : currentPackId;
+  const currentStyleTabIndex = Math.max(
+    0,
+    styleTabNavigationItems.findIndex((item) => item.id === currentStyleTabId),
+  );
+  const previousStyleTab = styleTabNavigationItems[currentStyleTabIndex - 1] ?? null;
+  const nextStyleTab = styleTabNavigationItems[currentStyleTabIndex + 1] ?? null;
+
   return (
     <RecipeLayout isGenerating={isGenerating} className="flex size-full">
       {/* LEFT: VISUAL CONTEXT PREVIEW */}
-      <div className="w-[30%] 2xl:w-[25%] h-full flex flex-col p-6 relative z-10 overflow-y-auto custom-scrollbar">
-        <div className="w-full min-h-full flex flex-col gap-6">
+      <div className="relative z-10 hidden h-full w-[28%] min-w-[260px] shrink-0 flex-col overflow-y-auto p-4 2xl:w-[24%] xl:flex custom-scrollbar">
+        <div className="flex min-h-full w-full flex-col gap-3">
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-lg font-black text-white uppercase tracking-tighter">
-                Reference
+                References
               </h2>
               <p className="text-[10px] text-zinc-600 font-bold uppercase tracking-widest mt-1">
-                Input Source
+                {referenceImages.length}/{MAX_STYLE_REFERENCE_IMAGES} Images
               </p>
             </div>
           </div>
 
-          <div className="group relative w-full min-h-96 flex-1 shrink-0">
-            <div className="relative size-full overflow-hidden rounded-3xl">
-              {activeImage ? (
-                <div className="size-full relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-zinc-900/20">
-                  <img
-                    src={activeImage.dataUrl}
-                    className="size-full object-contain p-2 opacity-90 group-hover:opacity-100 transition-opacity"
-                    alt=""
-                  />
-                  <button
-                    type="button"
-                    onClick={() => updateConfig('attachments', [])}
-                    className="absolute top-4 right-4 p-2 rounded-xl bg-red-500/10 text-red-400 hover:bg-red-500 hover:text-white border border-red-500/20 transition-all opacity-0 group-hover:opacity-100 shadow-xl"
-                  >
-                    <X size={16} />
-                  </button>
-                </div>
-              ) : (
-                <button
-                  type="button"
-                  onDragOver={(e) => e.preventDefault()}
-                  onDrop={handleDrop}
-                  onClick={() => fileInputRef.current?.click()}
-                  className="group flex size-full cursor-pointer flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl border-2 border-dashed border-white/5 bg-white/1 transition-all hover:border-white/20 hover:bg-white/3 appearance-none p-0 m-0"
-                >
-                  <input
-                    type="file"
-                    ref={fileInputRef}
-                    aria-label="Upload reference image"
-                    onChange={(e) => {
-                      if (e.target.files) {
-                        onFileSelect(Array.from(e.target.files));
-                        e.target.value = '';
-                      }
-                    }}
-                    className="hidden"
-                    accept="image/*"
-                  />
-                  <div className="size-16 rounded-2xl bg-zinc-900 border border-white/5 flex items-center justify-center group-hover:scale-110 group-hover:border-white/20 transition-all shadow-2xl">
-                    <Upload
-                      size={24}
-                      className="text-zinc-600 group-hover:text-white transition-colors"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <h3 className="text-base font-black text-zinc-500 group-hover:text-white uppercase tracking-tight transition-colors">
-                      Upload or enter prompt
-                    </h3>
-                  </div>
-                </button>
-              )}
+          <div
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={handleDrop}
+            className="rounded-xl border border-white/8 bg-white/[0.025] p-1.5"
+          >
+            <input
+              type="file"
+              ref={fileInputRef}
+              aria-label="Upload reference images"
+              onChange={(e) => {
+                if (e.target.files) {
+                  onFileSelect(Array.from(e.target.files).slice(0, referenceSlotsRemaining));
+                  e.target.value = '';
+                }
+              }}
+              className="hidden"
+              accept="image/*"
+              multiple
+            />
 
-              <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-3xl">
-                <div
-                  className="t-panel-slide relative size-full overflow-hidden rounded-3xl border border-white/10 bg-zinc-950 shadow-2xl"
-                  data-open={hoveredPresetPreview ? 'true' : 'false'}
-                  style={{ '--panel-translate-y': '48px' } as React.CSSProperties}
-                >
-                  {resolvedHoveredPresetPreview && (
-                    <>
-                      {resolvedHoveredPresetPreview.imageSrc ? (
-                        <img
-                          src={resolvedHoveredPresetPreview.imageSrc}
-                          className="absolute inset-0 size-full object-cover"
-                          alt={resolvedHoveredPresetPreview.name}
-                        />
-                      ) : (
-                        <div className="absolute inset-0 flex items-center justify-center bg-zinc-950 text-zinc-500">
-                          <div className="flex flex-col items-center gap-3">
-                            <div className="flex size-16 items-center justify-center rounded-2xl border border-white/10 bg-white/5">
-                              <Palette size={28} />
-                            </div>
-                            <span className="text-[10px] font-black uppercase tracking-[0.24em]">
-                              Style Preview
-                            </span>
-                          </div>
-                        </div>
-                      )}
+            <div className="grid grid-cols-5 gap-1.5">
+              {Array.from({ length: MAX_STYLE_REFERENCE_IMAGES }).map((_, index) => {
+                const image = referenceImages[index];
+                const isAddSlot =
+                  !image && index === referenceImages.length && referenceSlotsRemaining > 0;
 
-                      <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-black/5" />
-
-                      <div className="absolute inset-x-0 bottom-0 p-3 md:p-4">
-                        <div className="max-w-[76%] rounded-2xl border border-white/10 bg-zinc-950/35 px-3.5 py-3 backdrop-blur-2xl shadow-[0_12px_32px_rgba(0,0,0,0.34)]">
-                          <div className="flex min-w-0 flex-wrap items-center gap-2">
-                            <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[7px] font-black uppercase tracking-[0.22em] text-white/65">
-                              {resolvedHoveredPresetPreview.packName}
-                            </span>
-                            <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[7px] font-black uppercase tracking-[0.22em] text-zinc-300/80">
-                              {resolvedHoveredPresetPreview.category}
-                            </span>
-                          </div>
-
-                          <h3 className="mt-2.5 truncate text-xs font-black uppercase tracking-[0.02em] text-white">
-                            {resolvedHoveredPresetPreview.name}
-                          </h3>
-
-                          <p className="mt-1.5 line-clamp-2 text-[9px] leading-relaxed text-zinc-200/78">
-                            {resolvedHoveredPresetPreview.aesthetic}
-                          </p>
-                        </div>
+                if (image) {
+                  return (
+                    <div
+                      key={image.id}
+                      data-style-reference-image={image.id}
+                      className="group/reference relative h-12 overflow-hidden rounded-md border border-white/10 bg-zinc-950"
+                    >
+                      <img
+                        src={image.dataUrl}
+                        alt=""
+                        width={80}
+                        height={48}
+                        className="size-full object-contain p-0.5 opacity-95 transition-opacity group-hover/reference:opacity-100"
+                      />
+                      <div className="absolute left-1 top-1 rounded-sm border border-black/30 bg-black/55 px-1 py-0.5 text-[7px] font-black tabular-nums text-white/80 backdrop-blur">
+                        {index + 1}
                       </div>
-                    </>
-                  )}
-                </div>
-              </div>
+                      <button
+                        type="button"
+                        onClick={() =>
+                          updateConfig(
+                            'attachments',
+                            config.attachments.filter((attachment) => attachment.id !== image.id),
+                          )
+                        }
+                        className="absolute right-1 top-1 flex size-5 items-center justify-center rounded-md border border-red-400/20 bg-red-500/15 text-red-200 opacity-0 transition-[opacity,background-color,color] hover:bg-red-500 hover:text-white group-hover/reference:opacity-100"
+                        aria-label={`Remove reference image ${index + 1}`}
+                      >
+                        <X size={11} />
+                      </button>
+                    </div>
+                  );
+                }
+
+                if (isAddSlot) {
+                  return (
+                    <button
+                      type="button"
+                      key="add-reference"
+                      data-style-reference-add
+                      onClick={() => fileInputRef.current?.click()}
+                      className="group/add flex h-12 min-w-0 flex-col items-center justify-center gap-0.5 overflow-hidden rounded-md border border-dashed border-white/12 bg-zinc-950/70 text-zinc-500 transition-[border-color,background-color,color] hover:border-white/24 hover:bg-white/6 hover:text-white"
+                    >
+                      <Upload size={14} />
+                      <span className="max-w-full truncate px-1 text-[7px] font-black uppercase tracking-widest">
+                        Add
+                      </span>
+                    </button>
+                  );
+                }
+
+                return (
+                  <div
+                    key={`empty-reference-${index}`}
+                    data-style-reference-empty={index}
+                    className="flex h-12 items-center justify-center rounded-md border border-white/6 bg-zinc-950/40 text-zinc-700"
+                    aria-hidden="true"
+                  >
+                    <ImageIcon size={13} />
+                  </div>
+                );
+              })}
             </div>
           </div>
 
-          {/* CONTROL SLIDERS */}
-          {activeImage && (
-            <div className="animate-in slide-in-from-bottom-2 fade-in duration-500 space-y-6">
-              <Slider
-                icon={<Palette className="text-zinc-500 size-4" />}
-                label="Style Strength"
-                value={styleStrength}
-                min={0.1}
-                max={1}
-                step={0.05}
-                onChange={(value) =>
-                  setInteractionState((prev) => ({ ...prev, styleStrength: value }))
-                }
+          <div
+            data-style-preview-card
+            className="relative min-h-[480px] flex-1 overflow-hidden rounded-2xl border border-white/18 bg-zinc-950 shadow-[0_30px_90px_rgba(0,0,0,0.52)] ring-1 ring-white/8"
+          >
+            {resolvedHoveredPresetPreview?.imageSrc ? (
+              <img
+                src={resolvedHoveredPresetPreview.imageSrc}
+                width={480}
+                height={640}
+                className="absolute inset-0 size-full object-cover"
+                alt={resolvedHoveredPresetPreview.name}
               />
-
-              <div className="flex justify-between mt-2 text-[8px] font-black uppercase tracking-widest text-zinc-600">
-                <span>Re-Imagine</span>
-                <span>{styleStrength > 0.8 ? 'Exaggerated' : 'Balanced'}</span>
+            ) : referenceImages[0] ? (
+              <img
+                src={referenceImages[0].dataUrl}
+                width={480}
+                height={480}
+                className="absolute inset-0 size-full object-contain p-2 opacity-95"
+                alt=""
+              />
+            ) : (
+              <div className="absolute inset-0 flex items-center justify-center text-zinc-600">
+                <div className="flex flex-col items-center gap-3">
+                  <div className="flex size-14 items-center justify-center rounded-xl border border-white/10 bg-white/5">
+                    <ImageIcon size={24} />
+                  </div>
+                  <span className="text-[9px] font-black uppercase tracking-[0.24em]">
+                    Style Preview
+                  </span>
+                </div>
               </div>
-            </div>
-          )}
+            )}
+
+            {resolvedHoveredPresetPreview && (
+              <>
+                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-black/5" />
+                <div className="absolute inset-x-0 bottom-0 p-3">
+                  <div className="max-w-[94%] rounded-xl border border-white/12 bg-zinc-950/62 px-3 py-2.5 backdrop-blur-2xl shadow-[0_12px_32px_rgba(0,0,0,0.34)]">
+                    <div className="flex min-w-0 flex-wrap items-center gap-1.5">
+                      <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[7px] font-black uppercase tracking-[0.2em] text-white/65">
+                        {resolvedHoveredPresetPreview.packName}
+                      </span>
+                      <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[7px] font-black uppercase tracking-[0.2em] text-zinc-300/80">
+                        {resolvedHoveredPresetPreview.category}
+                      </span>
+                    </div>
+                    <h3 className="mt-2 truncate text-xs font-black uppercase tracking-[0.02em] text-white">
+                      {resolvedHoveredPresetPreview.name}
+                    </h3>
+                    <p className="mt-1.5 line-clamp-2 text-[9px] leading-relaxed text-zinc-200/78">
+                      {resolvedHoveredPresetPreview.aesthetic}
+                    </p>
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </div>
 
       {/* RIGHT: STYLE BROWSER */}
-      <div data-style-browser-root className="flex-1 h-full flex flex-col bg-[#060606] relative">
+      <div
+        data-style-browser-root
+        className="relative flex h-full min-w-0 flex-1 flex-col bg-[#060606]"
+      >
         <div className="absolute inset-0 opacity-[0.02] pointer-events-none" />
 
+        <div className="xl:hidden border-b border-white/5 bg-zinc-950/72 px-3 py-2 backdrop-blur-md">
+          <details className="group rounded-xl border border-white/8 bg-white/[0.025]">
+            <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-3 py-2">
+              <div className="min-w-0">
+                <div className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500">
+                  Style Setup
+                </div>
+                <div className="mt-0.5 truncate text-xs font-black uppercase tracking-tight text-white">
+                  {selectedStyles.length} styles / {referenceImages.length} refs
+                </div>
+              </div>
+              <div className="flex shrink-0 items-center gap-2">
+                <button
+                  type="button"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    fileInputRef.current?.click();
+                  }}
+                  disabled={referenceSlotsRemaining <= 0}
+                  className="flex size-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-40"
+                  aria-label="Add style reference"
+                >
+                  <Upload size={15} />
+                </button>
+                <span className="rounded-lg border border-white/8 bg-black/30 px-2 py-1 text-[9px] font-black uppercase tracking-widest text-zinc-400">
+                  Edit
+                </span>
+              </div>
+            </summary>
+
+            <div className="grid gap-3 border-t border-white/6 p-3">
+              <div className="rounded-xl border border-white/6 bg-black/20 p-2">
+                <div className="mb-2 flex items-center justify-between gap-3">
+                  <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                    References
+                  </span>
+                  <span className="text-[9px] font-bold uppercase tracking-widest text-zinc-600">
+                    {referenceImages.length}/{MAX_STYLE_REFERENCE_IMAGES}
+                  </span>
+                </div>
+                <div className="grid grid-cols-5 gap-1.5">
+                  {Array.from({ length: MAX_STYLE_REFERENCE_IMAGES }).map((_, index) => {
+                    const image = referenceImages[index];
+                    if (!image) {
+                      return (
+                        <button
+                          type="button"
+                          key={`mobile-reference-empty-${index}`}
+                          onClick={() => fileInputRef.current?.click()}
+                          disabled={
+                            index !== referenceImages.length || referenceSlotsRemaining <= 0
+                          }
+                          className="flex h-12 items-center justify-center rounded-md border border-dashed border-white/10 bg-zinc-950/70 text-zinc-600 disabled:pointer-events-none disabled:opacity-45"
+                          aria-label={`Add reference image ${index + 1}`}
+                        >
+                          {index === referenceImages.length && referenceSlotsRemaining > 0 ? (
+                            <Upload size={13} />
+                          ) : (
+                            <ImageIcon size={13} />
+                          )}
+                        </button>
+                      );
+                    }
+                    return (
+                      <div
+                        key={image.id}
+                        className="group/reference-mobile relative h-12 overflow-hidden rounded-md border border-white/10 bg-zinc-950"
+                      >
+                        <img
+                          src={image.dataUrl}
+                          alt=""
+                          className="size-full object-contain p-0.5"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <button
+                          type="button"
+                          onClick={() =>
+                            updateConfig(
+                              'attachments',
+                              config.attachments.filter((attachment) => attachment.id !== image.id),
+                            )
+                          }
+                          className="absolute right-1 top-1 flex size-5 items-center justify-center rounded-md bg-black/65 text-red-200 opacity-100"
+                          aria-label={`Remove reference image ${index + 1}`}
+                        >
+                          <X size={11} />
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div className="rounded-xl border border-white/6 bg-black/20 p-2">
+                <div className="mb-2 flex items-center justify-between gap-3">
+                  <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                    Style Slots
+                  </span>
+                  {selectedStyles.length > 0 && (
+                    <button
+                      type="button"
+                      onClick={() => setSelectedStyles([])}
+                      className="rounded-lg border border-white/8 bg-white/5 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-400"
+                    >
+                      Clear
+                    </button>
+                  )}
+                </div>
+
+                <div className="flex max-h-44 flex-col gap-2 overflow-y-auto pr-1 custom-scrollbar">
+                  {selectedStyles.length === 0 ? (
+                    <div className="rounded-lg border border-dashed border-white/8 bg-white/[0.02] px-3 py-4 text-center text-[9px] font-black uppercase tracking-widest text-zinc-600">
+                      Pick styles from the browser
+                    </div>
+                  ) : (
+                    selectedStyles.map((slot, index) => (
+                      <div
+                        key={slot.preset.id}
+                        className="rounded-lg border border-white/8 bg-zinc-950/80 p-2"
+                      >
+                        <div className="flex min-w-0 items-center gap-2">
+                          <div className="min-w-0 flex-1">
+                            <div className="truncate text-[8px] font-black uppercase tracking-widest text-zinc-500">
+                              Slot {index + 1} - {slot.packName}
+                            </div>
+                            <div className="truncate text-[11px] font-black uppercase tracking-tight text-white">
+                              {slot.preset.name}
+                            </div>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={() => removeSelectedStyle(slot.preset.id)}
+                            className="flex size-8 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-400"
+                            aria-label={`Remove ${slot.preset.name}`}
+                          >
+                            <X size={13} />
+                          </button>
+                        </div>
+                        <div className="mt-2 flex items-center gap-2">
+                          <Palette className="size-3 shrink-0 text-zinc-500" />
+                          <input
+                            type="range"
+                            min={0.1}
+                            max={1}
+                            step={0.05}
+                            value={slot.strength}
+                            onChange={(event) =>
+                              updateSelectedStyleStrength(
+                                slot.preset.id,
+                                Number(event.target.value),
+                              )
+                            }
+                            className="h-1 min-w-0 flex-1 accent-white"
+                            aria-label={`Style Strength ${slot.preset.name}`}
+                          />
+                          <span className="w-8 text-right text-[8px] font-black tabular-nums text-zinc-400">
+                            {formatStyleStrength(slot.strength)}
+                          </span>
+                        </div>
+                      </div>
+                    ))
+                  )}
+                </div>
+
+                <button
+                  type="button"
+                  onClick={handleGenerateSelectedStyles}
+                  disabled={selectedStyles.length === 0 || isGenerating}
+                  className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-xl border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] disabled:cursor-not-allowed disabled:border-white/8 disabled:bg-white/5 disabled:text-zinc-600"
+                >
+                  <Play size={15} />
+                  {isGenerating ? 'Generating' : 'Generate'}
+                </button>
+              </div>
+            </div>
+          </details>
+        </div>
+
         {/* Pack Tabs */}
-        <div className="vt-recipe-tabs h-16 flex items-center px-6 border-b border-white/5 gap-2 overflow-x-auto custom-scrollbar bg-zinc-950/40 backdrop-blur-md z-20">
+        <div className="vt-recipe-tabs h-14 sm:h-16 flex items-center px-3 sm:px-6 border-b border-white/5 gap-2 overflow-x-auto custom-scrollbar bg-zinc-950/40 backdrop-blur-md z-20">
+          <div className="mr-1 flex shrink-0 items-center gap-1 rounded-lg border border-white/5 bg-zinc-950/55 p-1">
+            <button
+              type="button"
+              onClick={() => previousStyleTab && navigateToStyleTab(previousStyleTab.id)}
+              disabled={!previousStyleTab}
+              data-style-tab-previous
+              aria-label="Previous style tab"
+              title={previousStyleTab ? `Previous: ${previousStyleTab.label}` : 'No previous tab'}
+              className="flex size-7 items-center justify-center rounded-md text-zinc-400 transition-[background-color,color,opacity] hover:bg-white/6 hover:text-white disabled:cursor-not-allowed disabled:opacity-35"
+            >
+              <ChevronLeft size={15} />
+            </button>
+            <button
+              type="button"
+              onClick={() => nextStyleTab && navigateToStyleTab(nextStyleTab.id)}
+              disabled={!nextStyleTab}
+              data-style-tab-next
+              aria-label="Next style tab"
+              title={nextStyleTab ? `Next: ${nextStyleTab.label}` : 'No next tab'}
+              className="flex size-7 items-center justify-center rounded-md text-zinc-400 transition-[background-color,color,opacity] hover:bg-white/6 hover:text-white disabled:cursor-not-allowed disabled:opacity-35"
+            >
+              <ChevronRight size={15} />
+            </button>
+          </div>
+
+          <button
+            type="button"
+            onClick={() => navigateToStyleTab(STYLE_PACKS_TAB_ID)}
+            data-style-tab-url={`#${getStyleTabHash(STYLE_PACKS_TAB_ID)}`}
+            className={`
+                  group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-[background-color,border-color,color,box-shadow] duration-300 flex items-center gap-2
+                    ${
+                      isPackLandingOpen
+                        ? 'bg-zinc-800 border border-white/10 text-white shadow-lg'
+                        : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
+                    }
+                `}
+          >
+            <Layers size={16} />
+            {isPackLandingOpen && (
+              <span className="text-[9px] font-black uppercase tracking-widest whitespace-nowrap animate-in fade-in slide-in-from-left-2">
+                Packs
+              </span>
+            )}
+          </button>
+
           {/* Favorites Tab */}
           <button
             type="button"
-            onClick={() => {
-              startViewTransition(() => {
-                setCurrentPackId(FAVORITES_PACK_ID);
-                setBrowserState((prev) => ({ ...prev, searchQuery: '' }));
-              });
-            }}
+            onClick={() => navigateToStyleTab(FAVORITES_PACK_ID)}
+            data-style-tab-url={`#${getStyleTabHash(FAVORITES_PACK_ID)}`}
             className={`
-                  group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
+                  group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-[background-color,border-color,color,box-shadow] duration-300 flex items-center gap-2
                     ${
-                      currentPackId === FAVORITES_PACK_ID
+                      !isPackLandingOpen && currentPackId === FAVORITES_PACK_ID
                         ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
                         : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
                     }
                 `}
           >
-            <Heart size={16} fill={currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'} />
-            {currentPackId === FAVORITES_PACK_ID && (
+            <Heart
+              size={16}
+              fill={
+                !isPackLandingOpen && currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'
+              }
+            />
+            {!isPackLandingOpen && currentPackId === FAVORITES_PACK_ID && (
               <span className="text-[9px] font-black uppercase tracking-widest whitespace-nowrap animate-in fade-in slide-in-from-left-2">
                 Favorites
               </span>
@@ -1676,7 +2217,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
           {/* Standard Packs */}
           {STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => {
-            const isActive = currentPackId === pack.id;
+            const isActive = !isPackLandingOpen && currentPackId === pack.id;
             const theme = PACK_THEMES[pack.id] || PACK_THEMES['pack_01'];
 
             return (
@@ -1685,14 +2226,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 key={pack.id}
                 data-style-pack-id={pack.id}
                 data-style-pack-active={isActive ? 'true' : 'false'}
-                onClick={() => {
-                  startViewTransition(() => {
-                    setCurrentPackId(pack.id);
-                    setBrowserState((prev) => ({ ...prev, searchQuery: '' }));
-                  });
-                }}
+                data-style-tab-url={`#${getStyleTabHash(pack.id)}`}
+                onClick={() => navigateToStyleTab(pack.id)}
                 className={`
-                      group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-all duration-300 flex items-center gap-2
+                      group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-[background-color,border-color,color,box-shadow] duration-300 flex items-center gap-2
                             ${
                               isActive
                                 ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
@@ -1714,191 +2251,270 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           })}
         </div>
 
-        {/* Pack Header Info + Search Bar */}
-        <div className="px-8 pt-6 pb-2 flex flex-col xl:flex-row xl:items-end justify-between gap-4">
-          <div>
-            <h2
-              className={`text-2xl font-black uppercase tracking-tighter mb-1 transition-colors duration-500 ${activeTheme.text}`}
-            >
-              {activePack.name}
-            </h2>
-            <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-widest">
-              {activePack.description}
-            </p>
-          </div>
+        {isPackLandingOpen ? (
+          <div className="flex-1 overflow-y-auto custom-scrollbar px-4 py-5 sm:px-8 sm:py-8 animate-in fade-in slide-in-from-bottom-3 duration-300">
+            <div className="mb-7 flex flex-col gap-2">
+              <h2 className="text-2xl font-black uppercase tracking-tighter text-white">
+                Style Packs
+              </h2>
+              <p className="max-w-3xl text-[10px] font-bold uppercase tracking-widest text-zinc-500">
+                Curated visual systems for controlled style direction.
+              </p>
+            </div>
 
-          {/* Search & Filter Toolbar */}
-          <div className="flex items-center gap-2 p-1 rounded-xl border border-white/5">
-            <div className="flex min-w-50 flex-1 items-center gap-2 rounded-lg border border-white/5 bg-zinc-950/40 px-3 py-1.5">
-              <Search size={14} className="text-zinc-500" />
-              <input
-                type="text"
-                placeholder="Search styles..."
-                value={searchQuery}
-                onChange={(e) =>
-                  setBrowserState((prev) => ({ ...prev, searchQuery: e.target.value }))
-                }
-                aria-label="Search styles"
-                className="bg-transparent border-none outline-none text-[11px] text-white placeholder-zinc-600 w-full font-medium"
-              />
-              {searchQuery && (
+            <div className="grid grid-cols-[repeat(auto-fill,minmax(170px,1fr))] gap-3 pb-16 sm:grid-cols-[repeat(auto-fill,minmax(220px,1fr))] sm:gap-4">
+              {STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => {
+                const theme = PACK_THEMES[pack.id] || PACK_THEMES['pack_01'];
+                const fallbackImage = STYLE_PACK_FALLBACK_IMAGES[pack.id];
+                return (
+                  <button
+                    type="button"
+                    key={pack.id}
+                    data-style-pack-card={pack.id}
+                    data-style-tab-url={`#${getStyleTabHash(pack.id)}`}
+                    onClick={() => navigateToStyleTab(pack.id)}
+                    className="group relative min-h-72 overflow-hidden rounded-xl border border-white/8 bg-zinc-950 text-left transition-[border-color,background-color,box-shadow,transform] hover:border-white/16 hover:bg-zinc-900 hover:shadow-[0_20px_44px_rgba(0,0,0,0.34)]"
+                  >
+                    <div className="absolute inset-0 bg-zinc-900">
+                      {fallbackImage ? (
+                        <img
+                          src={fallbackImage}
+                          alt=""
+                          width={420}
+                          height={288}
+                          className="size-full object-cover opacity-70 transition-[opacity,transform,filter] duration-300 group-hover:scale-[1.03] group-hover:opacity-85 group-hover:saturate-[1.04]"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      ) : (
+                        <div className={`flex size-full items-center justify-center ${theme.text}`}>
+                          {getPackIcon(pack.id)}
+                        </div>
+                      )}
+                      <div className="absolute inset-0 bg-linear-to-t from-black via-black/45 to-black/8" />
+                    </div>
+
+                    <div className="relative z-10 flex min-h-72 flex-col justify-between p-4">
+                      <div className="flex items-center justify-between gap-3">
+                        <div
+                          className={`flex size-10 items-center justify-center rounded-xl border border-white/10 bg-black/45 ${theme.text} backdrop-blur-md`}
+                        >
+                          {getPackIcon(pack.id)}
+                        </div>
+                        <span className="rounded-full border border-white/10 bg-black/45 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-300 backdrop-blur-md">
+                          {pack.presetCount} Styles
+                        </span>
+                      </div>
+
+                      <div>
+                        <h3 className="line-clamp-2 text-lg font-black uppercase tracking-tight text-white">
+                          {pack.name}
+                        </h3>
+                        <p className="mt-2 line-clamp-3 text-[10px] font-medium leading-relaxed text-zinc-300/86">
+                          {pack.description}
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        ) : (
+          <div
+            key={currentPackId}
+            data-style-folder={currentPackId}
+            className="flex min-h-0 flex-1 flex-col animate-in fade-in slide-in-from-right-3 duration-300"
+          >
+            {/* Pack Header Info + Search Bar */}
+            <div className="px-4 pt-4 pb-2 sm:px-8 sm:pt-6 flex flex-col xl:flex-row xl:items-end justify-between gap-4">
+              <div>
+                <h2
+                  className={`text-2xl font-black uppercase tracking-tighter mb-1 transition-colors duration-500 ${activeTheme.text}`}
+                >
+                  {activePack.name}
+                </h2>
+                <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-widest">
+                  {activePack.description}
+                </p>
+              </div>
+
+              {/* Search & Filter Toolbar */}
+              <div className="flex flex-wrap items-center gap-2 p-1 rounded-xl border border-white/5">
+                <div className="flex min-w-0 flex-1 basis-48 items-center gap-2 rounded-lg border border-white/5 bg-zinc-950/40 px-3 py-1.5">
+                  <Search size={14} className="text-zinc-500" />
+                  <input
+                    type="text"
+                    placeholder="Search styles..."
+                    value={searchQuery}
+                    onChange={(e) =>
+                      setBrowserState((prev) => ({ ...prev, searchQuery: e.target.value }))
+                    }
+                    aria-label="Search styles"
+                    className="bg-transparent border-none outline-none text-[11px] text-white placeholder-zinc-600 w-full font-medium"
+                  />
+                  {searchQuery && (
+                    <button
+                      type="button"
+                      onClick={() => setBrowserState((prev) => ({ ...prev, searchQuery: '' }))}
+                    >
+                      <X size={12} className="text-zinc-500 hover:text-white" />
+                    </button>
+                  )}
+                </div>
+
+                <div className="h-6 w-px bg-white/5" />
+
                 <button
                   type="button"
-                  onClick={() => setBrowserState((prev) => ({ ...prev, searchQuery: '' }))}
+                  onClick={() =>
+                    setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: true }))
+                  }
+                  data-style-open-catalog
+                  className="flex h-8 items-center gap-2 rounded-lg px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
+                  title="Open Style Catalog"
                 >
-                  <X size={12} className="text-zinc-500 hover:text-white" />
+                  <BookOpen size={15} />
+                  Catalog
                 </button>
-              )}
-            </div>
 
-            <div className="h-6 w-px bg-white/5" />
+                <button
+                  type="button"
+                  onClick={() =>
+                    setBrowserState((prev) => ({
+                      ...prev,
+                      sortOrder: prev.sortOrder === 'az' ? 'za' : 'az',
+                    }))
+                  }
+                  className="p-1.5 rounded-lg text-zinc-500 hover:text-white hover:bg-white/5 transition-colors"
+                  title={sortOrder === 'az' ? 'Sort A-Z' : 'Sort Z-A'}
+                >
+                  <ArrowUpDown size={16} />
+                </button>
 
-            <button
-              type="button"
-              onClick={() => setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: true }))}
-              data-style-open-catalog
-              className="flex h-8 items-center gap-2 rounded-lg px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
-              title="Open Style Catalog"
-            >
-              <BookOpen size={15} />
-              Catalog
-            </button>
+                {currentPackId !== FAVORITES_PACK_ID && (
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setBrowserState((prev) => ({
+                        ...prev,
+                        showFavoritesOnly: !prev.showFavoritesOnly,
+                      }))
+                    }
+                    className={`p-1.5 rounded-lg transition-colors ${showFavoritesOnly ? 'text-rose-400 bg-rose-500/10' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
+                    title="Filter Favorites in this Pack"
+                  >
+                    <Heart size={16} fill={showFavoritesOnly ? 'currentColor' : 'none'} />
+                  </button>
+                )}
 
-            <button
-              type="button"
-              onClick={() =>
-                setBrowserState((prev) => ({
-                  ...prev,
-                  sortOrder: prev.sortOrder === 'az' ? 'za' : 'az',
-                }))
-              }
-              className="p-1.5 rounded-lg text-zinc-500 hover:text-white hover:bg-white/5 transition-colors"
-              title={sortOrder === 'az' ? 'Sort A-Z' : 'Sort Z-A'}
-            >
-              <ArrowUpDown size={16} />
-            </button>
+                <div className="h-6 w-px bg-white/5" />
 
-            {currentPackId !== FAVORITES_PACK_ID && (
-              <button
-                type="button"
-                onClick={() =>
-                  setBrowserState((prev) => ({
-                    ...prev,
-                    showFavoritesOnly: !prev.showFavoritesOnly,
-                  }))
-                }
-                className={`p-1.5 rounded-lg transition-colors ${showFavoritesOnly ? 'text-rose-400 bg-rose-500/10' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
-                title="Filter Favorites in this Pack"
-              >
-                <Heart size={16} fill={showFavoritesOnly ? 'currentColor' : 'none'} />
-              </button>
-            )}
-
-            <div className="h-6 w-px bg-white/5" />
-
-            <div className="flex items-center gap-2 rounded-lg border border-white/5 bg-zinc-950/40 px-2 py-1">
-              <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
-                Zoom
-              </span>
-              <input
-                type="range"
-                min={2}
-                max={7}
-                step={1}
-                value={gridColumns}
-                onChange={(e) => setGridColumns(Number(e.target.value))}
-                className="h-1.5 w-20 accent-white"
-                aria-label="Style grid zoom"
-                title="Style card columns"
-              />
-              <span className="w-4 text-[9px] font-black text-zinc-300 tabular-nums">
-                {gridColumns}
-              </span>
-            </div>
-          </div>
-        </div>
-
-        {/* The Grid - Grouped by Category */}
-        <div
-          ref={styleScrollRootRef}
-          className="flex-1 overflow-y-auto custom-scrollbar px-8 pb-12 pt-4"
-        >
-          <div className="w-full pb-20 space-y-10">
-            {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
-            {processedData.favorites.length > 0 && currentPackId !== FAVORITES_PACK_ID && (
-              <StylePresetGroupSection
-                groupKey="favorites"
-                title="Pinned / Favorites"
-                presets={processedData.favorites}
-                expanded
-                gridColumns={gridColumns}
-                scrollRootRef={styleScrollRootRef}
-                scrollContainerWidth={styleScrollWidth}
-                initiallyVisible
-                headerClassName="opacity-100"
-                accentClassName="bg-rose-500"
-                titleClassName="text-rose-400"
-                dividerClassName="bg-linear-to-r from-rose-500/20 to-transparent"
-                showMoreClassName="mt-4 flex h-9 items-center gap-2 rounded-lg border border-rose-500/20 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-300 transition-colors hover:bg-rose-500/20"
-                renderPresetCard={renderPresetCard}
-                onShowAll={showAllStylesInGroup}
-              />
-            )}
-
-            {/* OTHER CATEGORIES */}
-            {visibleStyleGroupEntries.map(([category, presets], index) => {
-              const categoryIdentity = getCategoryVisualIdentity(currentPackId, category);
-              return (
-                <StylePresetGroupSection
-                  key={category}
-                  groupKey={category}
-                  title={category}
-                  icon={categoryIdentity?.icon}
-                  presets={presets}
-                  expanded
-                  gridColumns={gridColumns}
-                  scrollRootRef={styleScrollRootRef}
-                  scrollContainerWidth={styleScrollWidth}
-                  initiallyVisible={index === 0 && processedData.favorites.length === 0}
-                  headerClassName="opacity-60"
-                  accentClassName={categoryIdentity?.accentClassName ?? activeTheme.bg}
-                  titleClassName={categoryIdentity?.titleClassName ?? 'text-zinc-300'}
-                  dividerClassName="bg-white/10"
-                  showMoreClassName="mt-4 flex h-9 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
-                  renderPresetCard={renderPresetCard}
-                  onShowAll={showAllStylesInGroup}
-                />
-              );
-            })}
-
-            {hiddenStyleGroupEntries.length > 0 && (
-              <button
-                type="button"
-                onClick={() =>
-                  setBrowserState((prev) => ({ ...prev, showAllStyleCategories: true }))
-                }
-                data-style-show-all-categories
-                data-style-hidden-groups={hiddenStyleGroupEntries.length}
-                data-style-hidden-presets={hiddenStylePresetCount}
-                className="flex h-10 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
-              >
-                <ChevronRight size={14} />
-                Show {hiddenStyleGroupEntries.length} more categories ({hiddenStylePresetCount}{' '}
-                styles)
-              </button>
-            )}
-
-            {processedData.favorites.length === 0 &&
-              Object.keys(processedData.groups).length === 0 && (
-                <div className="h-64 flex flex-col items-center justify-center text-zinc-600 gap-4">
-                  <Filter size={32} className="opacity-20" />
-                  <span className="text-xs font-bold uppercase tracking-widest">
-                    No styles found matching criteria
+                <div className="hidden items-center gap-2 rounded-lg border border-white/5 bg-zinc-950/40 px-2 py-1 sm:flex">
+                  <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                    Zoom
+                  </span>
+                  <input
+                    type="range"
+                    min={2}
+                    max={7}
+                    step={1}
+                    value={gridColumns}
+                    onChange={(e) => setGridColumns(Number(e.target.value))}
+                    className="h-1.5 w-20 accent-white"
+                    aria-label="Style grid zoom"
+                    title="Style card columns"
+                  />
+                  <span className="w-4 text-[9px] font-black text-zinc-300 tabular-nums">
+                    {gridColumns}
                   </span>
                 </div>
-              )}
+              </div>
+            </div>
+
+            {/* The Grid - Grouped by Category */}
+            <div
+              ref={styleScrollRootRef}
+              className="flex-1 overflow-y-auto custom-scrollbar px-4 pb-12 pt-4 sm:px-8"
+            >
+              <div className="w-full pb-20 space-y-10">
+                {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
+                {processedData.favorites.length > 0 && currentPackId !== FAVORITES_PACK_ID && (
+                  <StylePresetGroupSection
+                    groupKey="favorites"
+                    title="Pinned / Favorites"
+                    presets={processedData.favorites}
+                    expanded
+                    gridColumns={gridColumns}
+                    scrollRootRef={styleScrollRootRef}
+                    scrollContainerWidth={styleScrollWidth}
+                    initiallyVisible
+                    headerClassName="opacity-100"
+                    accentClassName="bg-rose-500"
+                    titleClassName="text-rose-400"
+                    dividerClassName="bg-linear-to-r from-rose-500/20 to-transparent"
+                    showMoreClassName="mt-4 flex h-9 items-center gap-2 rounded-lg border border-rose-500/20 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-300 transition-colors hover:bg-rose-500/20"
+                    renderPresetCard={renderPresetCard}
+                    onShowAll={showAllStylesInGroup}
+                  />
+                )}
+
+                {/* OTHER CATEGORIES */}
+                {visibleStyleGroupEntries.map(([category, presets], index) => {
+                  const categoryIdentity = getCategoryVisualIdentity(currentPackId, category);
+                  return (
+                    <StylePresetGroupSection
+                      key={category}
+                      groupKey={category}
+                      title={category}
+                      icon={categoryIdentity?.icon}
+                      presets={presets}
+                      expanded
+                      gridColumns={gridColumns}
+                      scrollRootRef={styleScrollRootRef}
+                      scrollContainerWidth={styleScrollWidth}
+                      initiallyVisible={index === 0 && processedData.favorites.length === 0}
+                      headerClassName="opacity-60"
+                      accentClassName={categoryIdentity?.accentClassName ?? activeTheme.bg}
+                      titleClassName={categoryIdentity?.titleClassName ?? 'text-zinc-300'}
+                      dividerClassName="bg-white/10"
+                      showMoreClassName="mt-4 flex h-9 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+                      renderPresetCard={renderPresetCard}
+                      onShowAll={showAllStylesInGroup}
+                    />
+                  );
+                })}
+
+                {hiddenStyleGroupEntries.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setBrowserState((prev) => ({ ...prev, showAllStyleCategories: true }))
+                    }
+                    data-style-show-all-categories
+                    data-style-hidden-groups={hiddenStyleGroupEntries.length}
+                    data-style-hidden-presets={hiddenStylePresetCount}
+                    className="flex h-10 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+                  >
+                    <ChevronRight size={14} />
+                    Show {hiddenStyleGroupEntries.length} more categories ({hiddenStylePresetCount}{' '}
+                    styles)
+                  </button>
+                )}
+
+                {processedData.favorites.length === 0 &&
+                  Object.keys(processedData.groups).length === 0 && (
+                    <div className="h-64 flex flex-col items-center justify-center text-zinc-600 gap-4">
+                      <Filter size={32} className="opacity-20" />
+                      <span className="text-xs font-bold uppercase tracking-widest">
+                        No styles found matching criteria
+                      </span>
+                    </div>
+                  )}
+              </div>
+            </div>
           </div>
-        </div>
+        )}
 
         {isCatalogSearchOpen && (
           <React.Suspense
@@ -1916,6 +2532,147 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           </React.Suspense>
         )}
       </div>
+
+      <aside className="hidden h-full w-[320px] min-w-[300px] shrink-0 flex-col border-l border-white/5 bg-zinc-950/70 px-4 py-4 2xl:w-[360px] xl:flex">
+        <div className="mb-3 flex items-start justify-between gap-3">
+          <div>
+            <h2 className="text-lg font-black uppercase tracking-tighter text-white">
+              Style Slots
+            </h2>
+            <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+              {selectedStyles.length}/{MAX_SELECTED_STYLE_SLOTS} Selected
+            </p>
+          </div>
+          {selectedStyles.length > 0 && (
+            <button
+              type="button"
+              onClick={() => setSelectedStyles([])}
+              className="flex size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
+              aria-label="Clear selected styles"
+            >
+              <X size={14} />
+            </button>
+          )}
+        </div>
+
+        <div
+          className={`flex flex-col gap-2 overflow-y-auto custom-scrollbar pr-1 ${
+            selectedStyles.length > 0 ? 'min-h-0 flex-1' : 'shrink-0'
+          }`}
+        >
+          {Array.from({ length: MAX_SELECTED_STYLE_SLOTS }).map((_, index) => {
+            const slot = selectedStyles[index];
+            const layer = selectedStyleLayers[index];
+            const slotCardImage = resolveStylePresetPrimaryCardImage(
+              slot ? selectedStyleVisualStateById.get(slot.preset.id) : undefined,
+            );
+            if (!slot || !layer) {
+              return (
+                <div
+                  key={`empty-${index}`}
+                  data-selected-style-empty-slot={index + 1}
+                  className="flex h-14 items-center gap-2 rounded-lg border border-dashed border-white/8 bg-white/[0.02] px-3 text-zinc-600"
+                >
+                  <div className="flex size-7 shrink-0 items-center justify-center rounded-md border border-white/8 bg-white/4">
+                    <Palette size={13} />
+                  </div>
+                  <span className="text-[9px] font-black uppercase tracking-widest">
+                    Empty Slot {index + 1}
+                  </span>
+                </div>
+              );
+            }
+
+            return (
+              <div
+                key={slot.preset.id}
+                data-selected-style-slot={slot.preset.id}
+                data-selected-style-card-image={slotCardImage?.kind ?? 'empty'}
+                className="rounded-xl border border-white/10 bg-zinc-900/55 p-2.5 shadow-[0_14px_30px_rgba(0,0,0,0.22)]"
+              >
+                <div className="grid grid-cols-[3.25rem_minmax(0,1fr)_1.75rem] items-start gap-2.5">
+                  <div className="relative aspect-[3/4] w-[3.25rem] shrink-0 overflow-hidden rounded-lg border border-white/10 bg-zinc-950">
+                    {slotCardImage ? (
+                      <img
+                        src={slotCardImage.src}
+                        alt=""
+                        width={52}
+                        height={69}
+                        className="size-full object-cover"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : (
+                      <div
+                        className={`flex size-full items-center justify-center ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'}`}
+                      >
+                        {getPackIcon(slot.packId)}
+                      </div>
+                    )}
+                    <div className="absolute left-1 top-1 rounded-sm border border-black/30 bg-black/55 px-1 py-0.5 text-[7px] font-black text-white/80 backdrop-blur">
+                      {index + 1}
+                    </div>
+                    <div
+                      className={`absolute bottom-1 right-1 flex size-5 items-center justify-center rounded-md border border-white/10 bg-black/52 ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'} backdrop-blur`}
+                    >
+                      {getPackIcon(slot.packId)}
+                    </div>
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <div className="mb-1 text-[8px] font-black uppercase tracking-[0.2em] text-zinc-500">
+                      Slot {index + 1} - {slot.packName}
+                    </div>
+                    <h3 className="truncate text-xs font-black uppercase tracking-tight text-white">
+                      {slot.preset.name}
+                    </h3>
+                    <p className="mt-1 line-clamp-1 text-[9px] leading-relaxed text-zinc-400">
+                      {layer.aesthetic}
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => removeSelectedStyle(slot.preset.id)}
+                    className="flex size-7 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-400 transition-colors hover:bg-red-500/15 hover:text-red-200"
+                    aria-label={`Remove ${slot.preset.name}`}
+                  >
+                    <X size={13} />
+                  </button>
+                </div>
+
+                <div className="mt-2 flex items-center gap-2">
+                  <Palette className="size-3 shrink-0 text-zinc-500" />
+                  <input
+                    type="range"
+                    min={0.1}
+                    max={1}
+                    step={0.05}
+                    value={slot.strength}
+                    onChange={(event) =>
+                      updateSelectedStyleStrength(slot.preset.id, Number(event.target.value))
+                    }
+                    className="h-1 min-w-0 flex-1 accent-white"
+                    aria-label={`Style Strength ${slot.preset.name}`}
+                    data-selected-style-strength={slot.preset.id}
+                  />
+                  <span className="w-8 text-right text-[8px] font-black tabular-nums text-zinc-400">
+                    {formatStyleStrength(slot.strength)}
+                  </span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <button
+          type="button"
+          onClick={handleGenerateSelectedStyles}
+          disabled={selectedStyles.length === 0 || isGenerating}
+          className="mt-3 flex h-11 items-center justify-center gap-2 rounded-xl border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/35 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-white/8 disabled:bg-white/5 disabled:text-zinc-600"
+        >
+          <Play size={16} />
+          {isGenerating ? 'Generating' : 'Generate'}
+        </button>
+      </aside>
     </RecipeLayout>
   );
 };

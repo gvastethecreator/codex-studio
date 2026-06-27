@@ -1,5 +1,12 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Search, X, ArrowRight, Database, Sparkles, LoaderCircle } from 'lucide-react';
+import {
+  IconSearch as Search,
+  IconX as X,
+  IconArrowRight as ArrowRight,
+  IconDatabase as Database,
+  IconSparkles as Sparkles,
+  IconLoader as LoaderCircle,
+} from '@tabler/icons-react';
 import {
   STYLE_CATEGORY_IMAGES,
   STYLE_CATEGORY_PREVIEWS,

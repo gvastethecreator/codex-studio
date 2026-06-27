@@ -1,16 +1,21 @@
-import { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useLayoutEffect, useRef } from 'react';
 import type { Dispatch, SetStateAction } from 'react';
+import { preloadStudioViewportRoute } from '../components/shell/StudioViewport';
+import type { RecipeAliasId } from '../lib/recipeAliases';
 import type { Attachment, GeneratedImageWithConfig, RecipeId } from '../types';
 import type { HashRouterState } from './useHashRouter';
-import { startViewTransition } from '../utils/transitionUtils';
 
 interface UseStudioNavigationProps {
   route: HashRouterState;
   recipe: {
     active: RecipeId;
     setActive: Dispatch<SetStateAction<RecipeId>>;
-    navigateToRecipes: () => void;
-    navigateToRecipe: (id: Exclude<RecipeId, null>) => void;
+    navigateToRecipes: (beforeCommit?: () => void) => void;
+    navigateToRecipe: (
+      id: Exclude<RecipeId, null>,
+      aliasId?: RecipeAliasId | null,
+      beforeCommit?: () => void,
+    ) => void;
   };
   modal: {
     isOpen: boolean;
@@ -25,7 +30,7 @@ interface UseStudioNavigationProps {
     closeState: () => void;
   };
   shell: {
-    navigateToStudio: () => void;
+    navigateToStudio: (beforeCommit?: () => void) => void;
     closeOverlay: () => void;
   };
 }
@@ -89,37 +94,35 @@ export function useStudioNavigation({
   isModalOpenRef.current = isModalOpen;
 
   const syncRouteState = useCallback(() => {
-    startViewTransition(() => {
-      if (route.view === 'recipe' && route.activeRecipeId) {
-        if (activeRecipeRef.current !== route.activeRecipeId) {
-          setActiveRecipe(route.activeRecipeId);
-        }
-      } else if (activeRecipeRef.current) {
-        setActiveRecipe(null);
+    if (route.view === 'recipe' && route.activeRecipeId) {
+      if (activeRecipeRef.current !== route.activeRecipeId) {
+        setActiveRecipe(route.activeRecipeId);
       }
+    } else if (activeRecipeRef.current) {
+      setActiveRecipe(null);
+    }
 
-      // react-doctor-disable-next-line react-doctor/no-event-handler
-      if (route.overlay === 'editor') {
-        if (!imageToEditRef.current) {
-          closeOverlay();
-          return;
-        }
-        setIsEditorOpen(true);
+    // react-doctor-disable-next-line react-doctor/no-event-handler
+    if (route.overlay === 'editor') {
+      if (!imageToEditRef.current) {
+        closeOverlay();
         return;
       }
+      setIsEditorOpen(true);
+      return;
+    }
 
-      if (route.overlay === 'modal') {
-        return;
-      }
+    if (route.overlay === 'modal') {
+      return;
+    }
 
-      if (shouldCloseModalForOverlay(route.overlay, isModalOpenRef.current)) {
-        closeModal();
-      }
+    if (shouldCloseModalForOverlay(route.overlay, isModalOpenRef.current)) {
+      closeModal();
+    }
 
-      if (isEditorOpenRef.current) {
-        closeEditorState();
-      }
-    });
+    if (isEditorOpenRef.current) {
+      closeEditorState();
+    }
   }, [
     route.activeRecipeId,
     route.overlay,
@@ -131,34 +134,50 @@ export function useStudioNavigation({
     setIsEditorOpen,
   ]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     syncRouteState();
     return () => {};
   }, [syncRouteState]);
 
   const handleViewChange = useCallback(
     (newView: 'studio' | 'recipes') => {
-      if (newView === 'studio') {
-        navigateToStudio();
-        return;
-      }
+      const commitViewChange = () => {
+        if (newView === 'studio') {
+          navigateToStudio(() => setActiveRecipe(null));
+          return;
+        }
 
-      navigateToRecipes();
+        navigateToRecipes(() => setActiveRecipe(null));
+      };
+
+      void preloadStudioViewportRoute(newView, null).then(commitViewChange, commitViewChange);
     },
-    [navigateToRecipes, navigateToStudio],
+    [navigateToRecipes, navigateToStudio, setActiveRecipe],
   );
 
   const handleRecipeSelection = useCallback(
-    (id: RecipeId) => {
+    (id: RecipeId, aliasId?: RecipeAliasId | null) => {
       if (!id) return;
-      navigateToRecipe(id);
+
+      const commitRecipeSelection = () => {
+        navigateToRecipe(id, aliasId ?? null, () => setActiveRecipe(id));
+      };
+
+      void preloadStudioViewportRoute('recipe', id).then(
+        commitRecipeSelection,
+        commitRecipeSelection,
+      );
     },
-    [navigateToRecipe],
+    [navigateToRecipe, setActiveRecipe],
   );
 
   const handleCloseRecipe = useCallback(() => {
-    navigateToRecipes();
-  }, [navigateToRecipes]);
+    const commitCloseRecipe = () => {
+      navigateToRecipes(() => setActiveRecipe(null));
+    };
+
+    void preloadStudioViewportRoute('recipes', null).then(commitCloseRecipe, commitCloseRecipe);
+  }, [navigateToRecipes, setActiveRecipe]);
 
   const handleOpenModal = useCallback(
     (image: GeneratedImageWithConfig) => {

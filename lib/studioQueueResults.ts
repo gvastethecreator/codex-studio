@@ -3,6 +3,7 @@ import type { CatalogImage } from '../packages/shared/src';
 export interface StudioQueueResultPreview {
   id: string;
   src: string;
+  fullSrc: string;
   prompt: string | null;
   jobId: string | null;
   recipeId: string | null;
@@ -45,6 +46,7 @@ export function buildStudioQueueResultPreviews(
       src: entry.thumbnailUrl
         ? toAssetUrl(entry.thumbnailUrl)
         : toAssetUrl(entry.publicUrl, { variant: 'thumb', maxEdge: thumbnailMaxEdge }),
+      fullSrc: toAssetUrl(entry.publicUrl),
       prompt: entry.prompt,
       jobId: entry.jobId,
       recipeId: entry.recipeId,

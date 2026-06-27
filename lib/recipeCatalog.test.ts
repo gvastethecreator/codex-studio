@@ -1,6 +1,11 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import { RECIPE_CATALOG, searchRecipeCatalog, validateRecipeCatalog } from './recipeCatalog';
+import {
+  RECIPE_CATALOG,
+  RECIPE_DISCOVERY_CATALOG,
+  searchRecipeCatalog,
+  validateRecipeCatalog,
+} from './recipeCatalog';
 
 describe('recipeCatalog', () => {
   it('materializes UI catalog entries from Recipe Modules without duplicating module descriptions', () => {
@@ -45,5 +50,30 @@ describe('recipeCatalog', () => {
     expect(searchRecipeCatalog({ parameterId: 'presetId' }).map((recipe) => recipe.id)).toEqual([
       'styles',
     ]);
+  });
+
+  it('adds Character Lab aliases only to the discovery catalog', () => {
+    expect(RECIPE_CATALOG.map((recipe) => recipe.id)).not.toContain('character-sprites');
+    expect(
+      RECIPE_DISCOVERY_CATALOG.filter((recipe) => recipe.targetRecipeId === 'character-lab').map(
+        (recipe) => recipe.id,
+      ),
+    ).toEqual([
+      'character-lab',
+      'character-poses',
+      'character-sprites',
+      'character-scenes',
+      'character-variants',
+      'character-transforms',
+    ]);
+    expect(
+      RECIPE_DISCOVERY_CATALOG.find((recipe) => recipe.id === 'character-sprites'),
+    ).toMatchObject({
+      targetRecipeId: 'character-lab',
+      routeAliasId: 'character-sprites',
+      cardImageKey: 'character-sprites',
+      defaultTask: 'sprite_sheet',
+      defaultParams: expect.objectContaining({ mode: 'spritesheets' }),
+    });
   });
 });

@@ -1,5 +1,12 @@
 import React from 'react';
-import { X, User, Download, Database, Layers, HardDrive } from 'lucide-react';
+import {
+  IconX as X,
+  IconUser as User,
+  IconDownload as Download,
+  IconDatabase as Database,
+  IconStack as Layers,
+  IconDeviceDesktop as HardDrive,
+} from '@tabler/icons-react';
 import type { Workspace } from '../types';
 
 interface DashboardModalProps {
@@ -20,9 +27,9 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/80 backdrop-blur-sm">
-      <div className="vt-dashboard-modal bg-zinc-900 border border-white/10 rounded-3xl w-full max-w-xl shadow-2xl overflow-hidden flex flex-col">
-        <div className="flex items-center justify-between p-6 border-b border-white/5">
+    <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/80 p-0 backdrop-blur-sm sm:p-4">
+      <div className="vt-dashboard-modal flex h-full w-full max-w-xl flex-col overflow-hidden bg-zinc-900 shadow-2xl sm:h-auto sm:max-h-[88vh] sm:rounded-3xl sm:border sm:border-white/10">
+        <div className="flex shrink-0 items-center justify-between border-b border-white/5 p-4 sm:p-6">
           <div className="flex items-center gap-3">
             <div className="p-2 rounded-xl bg-accent-500/10 text-accent-400">
               <User size={20} />
@@ -40,10 +47,10 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
           </button>
         </div>
 
-        <div className="p-8 flex flex-col gap-8">
-          <div className="flex items-center gap-6">
-            <div className="size-20 rounded-2xl bg-zinc-800 border border-white/10 flex items-center justify-center text-zinc-400 relative overflow-hidden">
-              <User size={40} />
+        <div className="custom-scrollbar flex flex-1 flex-col gap-6 overflow-y-auto p-4 sm:gap-8 sm:p-8">
+          <div className="flex items-center gap-4 sm:gap-6">
+            <div className="relative flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-zinc-800 text-zinc-400 sm:size-20">
+              <User size={34} />
               <div className="absolute inset-0 bg-linear-to-tr from-accent-500/20 to-transparent" />
             </div>
             <div>
@@ -60,7 +67,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
             <div className="p-4 rounded-2xl bg-white/5 border border-white/5 flex flex-col gap-1">
               <div className="flex items-center gap-2">
                 <HardDrive size={14} className="text-emerald-400" />

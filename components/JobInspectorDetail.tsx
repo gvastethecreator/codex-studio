@@ -1,18 +1,18 @@
 import React, { useMemo } from 'react';
 import {
-  Activity,
-  AlertCircle,
-  BrainCircuit,
-  Clock3,
-  Eye,
-  FileText,
-  Image as ImageIcon,
-  Layers3,
-  Link2,
-  MessageSquare,
-  RotateCcw,
-  Wrench,
-} from 'lucide-react';
+  IconActivity as Activity,
+  IconAlertCircle as AlertCircle,
+  IconBrain as BrainCircuit,
+  IconClock as Clock3,
+  IconEye as Eye,
+  IconFileText as FileText,
+  IconPhoto as ImageIcon,
+  IconStack3 as Layers3,
+  IconLink as Link2,
+  IconMessage as MessageSquare,
+  IconRotate as RotateCcw,
+  IconTool as Wrench,
+} from '@tabler/icons-react';
 
 import type { Job as StudioJob, JobDetailResponse } from '../packages/shared/src';
 import {

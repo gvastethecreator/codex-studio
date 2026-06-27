@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { X, AlertCircle, CheckCircle, Info, AlertTriangle } from 'lucide-react';
+import {
+  IconX as X,
+  IconAlertCircle as AlertCircle,
+  IconCircleCheck as CheckCircle,
+  IconInfoCircle as Info,
+  IconAlertTriangle as AlertTriangle,
+} from '@tabler/icons-react';
 import type { ToastMessage } from '../hooks/useToasts';
 
 interface ToastProps {

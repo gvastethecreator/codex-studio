@@ -122,4 +122,37 @@ describe('browser queue persistence', () => {
     expect(persisted[0]?.config.attachments).toEqual([]);
     expect(persisted[0]?.error).toContain('exceeded 512 KB');
   });
+
+  it('keeps oversized references when a durable handoff path exists', () => {
+    const persisted = prepareBrowserQueueJobsForPersist([
+      createBrowserQueueJob({
+        config: {
+          ...DEFAULT_GENERATION_CONFIG,
+          attachments: [
+            {
+              id: 'large-ref',
+              name: 'large.png',
+              dataUrl: `data:image/png;base64,${'A'.repeat(600 * 1024)}`,
+              localPath: 'D:/AI-Studio-Library/.studio/references/handoff-1/large.png',
+              sourceUrl: 'http://127.0.0.1:4317/library/.studio/references/handoff-1/large.png',
+              strength: 1,
+            },
+          ],
+        },
+      }),
+    ]);
+
+    expect(persisted[0]?.status).toBe('pending');
+    expect(persisted[0]?.error).toBeUndefined();
+    expect(persisted[0]?.config.attachments).toEqual([
+      {
+        id: 'large-ref',
+        name: 'large.png',
+        dataUrl: 'http://127.0.0.1:4317/library/.studio/references/handoff-1/large.png',
+        localPath: 'D:/AI-Studio-Library/.studio/references/handoff-1/large.png',
+        sourceUrl: 'http://127.0.0.1:4317/library/.studio/references/handoff-1/large.png',
+        strength: 1,
+      },
+    ]);
+  });
 });

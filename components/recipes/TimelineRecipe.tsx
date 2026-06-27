@@ -1,19 +1,19 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import {
-  Clock,
-  StepBack,
-  StepForward,
-  Lock,
-  Video,
-  FastForward,
-  Rewind,
-  Hourglass,
-  Film,
-  Upload,
-  Layers,
-  Activity,
-  Sun,
-} from 'lucide-react';
+  IconClock as Clock,
+  IconPlayerTrackPrev as StepBack,
+  IconPlayerTrackNext as StepForward,
+  IconLock as Lock,
+  IconVideo as Video,
+  IconPlayerSkipForward as FastForward,
+  IconPlayerSkipBack as Rewind,
+  IconHourglass as Hourglass,
+  IconMovie as Film,
+  IconUpload as Upload,
+  IconStack as Layers,
+  IconActivity as Activity,
+  IconSun as Sun,
+} from '@tabler/icons-react';
 import { MotionDiv, MotionButton, AnimatePresence } from 'motion/react';
 import type { Attachment, ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
 import { RATIO_MAP } from '../../constants';
@@ -282,8 +282,9 @@ function TimelineCanvas({
           className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-zinc-950"
           style={{
             aspectRatio: ratioValue,
-            width: `min(80vw, (100vh - 400px) * ${ratioValue})`,
-            height: `min(100vh - 400px, 80vw / ${ratioValue})`,
+            width: 'min(86vw, 72vh)',
+            maxWidth: '100%',
+            maxHeight: 'calc(100dvh - var(--studio-chrome-block))',
           }}
         >
           {activeImage ? (
@@ -801,7 +802,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
     <RecipeLayout
       isGenerating={isGenerating}
       bottomDock={timelineController.bottomDock}
-      className="p-0 pb-72 sm:pb-28 flex flex-col items-center justify-center relative h-full"
+      className="p-0 pb-[var(--studio-recipe-dock-space)] sm:pb-28 flex flex-col items-center justify-center relative h-full"
     >
       <TimelineCanvas
         activeImage={timelineController.activeImage}

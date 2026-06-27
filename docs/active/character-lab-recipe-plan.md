@@ -33,9 +33,9 @@ Use `Character Lab`, not plain `Assets`, because Studio already uses `Local Asse
 
 - Source image first.
 - Up to three additional reference images.
-- Left-side action launcher grouped by the same modes and categories as `port-this/`.
-- Center canvas that stays clean until Character Lab produces its own outputs.
-- Right-side configuration panel with global character controls, reference slots, and generation action.
+- Left column owns source upload/dropzone first, then Action Setup with global character controls, reference slots, prompt preview, and generation action.
+- Center column owns the action browser: mode tabs in one horizontal row, search below, then grouped action options.
+- Right column owns the selection summary, source/action preview composition, selected option cards, prompt snapshot, and recent Character Lab outputs.
 - Motion/Profile/Live visible as planned capabilities until provider-independent tasks and durable persistence exist.
 
 ImageGen concept guides were generated as part of ideation, then rejected after reviewing the live `port-this` app. The implemented prototype follows the simpler reference layout instead of those exploratory mockups. ImageGen is now used for the production icon source sheet only.
@@ -104,12 +104,17 @@ Interface polish added after first integration review:
 - Dropdown option icon QA generated 189 rendered options from the generated option atlas with zero missing atlas sprites.
 - The central preview keeps selected output/action identity and attached source imagery as separate portrait cards, so uploading a source no longer visually replaces the selected action.
 - Prompt Snapshot now sits below the preview/context composition; context cards use height-constrained portrait previews and only appear in the center when there is enough horizontal room, avoiding overlap with the Action Setup panel.
+- The 2026-06-27 redesign moved the source dropzone and Action Setup into the left column, moved mode tabs/search/action options into the center column, and moved selected-output/source/options/prompt preview into the right summary column. Mobile stacks those columns in the same order.
+- The stronger 2026-06-27 redesign rebalanced the desktop workbench to 30% / 30% / 40%, replaced the large source dropzone with a four-slot attachment row (`Main`, `R1`, `R2`, `R3`) that unlocks references after the principal image, removed the redundant prompt/preview controls, switched the action browser to vertical recipe-styles-inspired cards, and made the right column own selected inputs, option previews, prompt, and outputs.
+- The ultrawide follow-up keeps the 30% / 30% / 40% proportions inside a capped `1560px` workbench and limits action-card track growth, so large monitors add surrounding breathing room instead of scaling every control up.
+- The next 2026-06-27 density pass changes the workbench to 25% / 25% / 50%, removes the left-column selected-action highlight card, moves Generate to a separated bottom-right footer in the preview column, reduces global padding/spacing, and compacts the action browser cards to smaller vertical tracks.
+- The follow-up keeps that 25% / 25% / 50% grid at 100% available width and changes Generate from a footer row into a floating bottom-right action over the preview panel, preserving vertical space for preview content.
 
 ## Icon Atlas Strategy
 
 Use a generated raster atlas strategy:
 
-- Lucide remains the standard for common UI controls.
+- Tabler icons remain the standard for common UI controls.
 - The Character Lab atlas provides one real raster sprite frame per ported action and control button.
 - The source sheet was generated with ImageGen, then normalized and composed through `sprite-atlas-builder` using the `custom-asset-atlas` slot workflow.
 - The runtime atlas was rebuilt from 512px source frames into centered 128px cells with content-fit cropping and mild sharpening before resize.
@@ -293,6 +298,18 @@ Latest evidence:
 - `output/playwright/character-lab-option-cards-mobile.png`
 - `output/playwright/character-lab-option-cards-mobile-preview.png`
 - `output/playwright/character-lab-option-cards-visual-qa.json`
+- `output/playwright/character-lab-redesign-desktop.png`
+- `output/playwright/character-lab-redesign-mobile-top.png`
+- `output/playwright/character-lab-redesign-mobile-browser.png`
+- `output/playwright/character-lab-redesign-mobile-actions.png`
+- `output/playwright/character-lab-redesign-mobile-preview.png`
+- `output/playwright/character-lab-303040-redesign-final-desktop.png`
+- `output/playwright/character-lab-303040-redesign-inspect-mobile-top.png`
+- `output/playwright/character-lab-303040-redesign-inspect-mobile-browser.png`
+- `output/playwright/character-lab-303040-redesign-inspect-mobile-actions.png`
+- `output/playwright/character-lab-303040-redesign-inspect-mobile-preview.png`
+- `output/playwright/character-lab-303040-redesign-inspect-mobile-prompt.png`
+- `output/playwright/character-lab-303040-redesign-ultrawide-2560.png`
 
 ## Known Non-Goals For Phase 1
 

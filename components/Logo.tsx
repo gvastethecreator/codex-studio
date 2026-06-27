@@ -25,16 +25,16 @@ const Logo: React.FC<LogoProps> = ({ isGenerating = false }) => {
     <button
       type="button"
       onClick={handleCycleTheme}
-      className={`group relative flex items-center gap-2.5 rounded-xl p-1 outline-none select-none transition-transform active:scale-95 ${isAnimating ? 'animate-logo-pop' : ''}`}
+      className={`group relative flex items-center gap-2 rounded-lg p-0.5 outline-none select-none transition-transform active:scale-95 ${isAnimating ? 'animate-logo-pop' : ''}`}
       aria-label="Change Theme"
       title="Click to cycle theme"
     >
-      <div className="relative flex size-8 items-center justify-center">
-        <div className="absolute inset-0 rounded-2xl bg-accent-500/18 transition-all duration-500 ease-out-expo group-hover:scale-110 group-hover:opacity-100" />
+      <div className="relative flex size-7 items-center justify-center">
+        <div className="absolute inset-0 rounded-xl bg-accent-500/18 transition-all duration-500 ease-out-expo group-hover:scale-110 group-hover:opacity-100" />
         <div className="absolute inset-[1.5px] rounded-xl border border-white/10 bg-zinc-950/85 backdrop-blur-sm transition-all duration-500 ease-out-expo group-hover:border-white/15 group-hover:bg-zinc-900/85" />
         <div
           aria-hidden="true"
-          className={`relative z-10 size-5 text-accent-300 transition-all duration-300 ease-out-expo group-hover:-translate-y-0.5 group-hover:scale-110 group-hover:text-white ${isGenerating ? 'animate-pulse text-accent-100' : ''}`}
+          className={`relative z-10 size-[18px] text-accent-300 transition-all duration-300 ease-out-expo group-hover:-translate-y-0.5 group-hover:scale-110 group-hover:text-white ${isGenerating ? 'animate-pulse text-accent-100' : ''}`}
           // react-doctor-disable-next-line react-doctor/no-danger
           dangerouslySetInnerHTML={{ __html: logoSvg }}
         />
@@ -48,10 +48,10 @@ const Logo: React.FC<LogoProps> = ({ isGenerating = false }) => {
 
       {/* Text Label */}
       <div className="flex flex-col items-start leading-none">
-        <span className="text-xs font-black tracking-tight text-zinc-100 group-hover:text-white transition-colors font-sans uppercase">
+        <span className="text-[11px] font-black tracking-tight text-zinc-100 group-hover:text-white transition-colors font-sans uppercase">
           CODEX
         </span>
-        <span className="text-[7.5px] font-black text-accent-500 uppercase tracking-widest transition-colors duration-300 group-hover:text-accent-400">
+        <span className="text-[7px] font-black text-accent-500 uppercase tracking-widest transition-colors duration-300 group-hover:text-accent-400">
           STUDIO
         </span>
       </div>

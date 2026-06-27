@@ -5,20 +5,20 @@ import type {
   StudioGenerationPlaceholder,
 } from '../types';
 import {
-  Download,
-  PlusCircle,
-  RefreshCw,
-  Trash2,
-  Check,
-  ClipboardList,
-  History,
-  Heart,
-  ImageOff,
-  ArrowUpDown,
-  CheckSquare,
-  Loader2,
-  Square,
-} from 'lucide-react';
+  IconDownload as Download,
+  IconCirclePlus as PlusCircle,
+  IconRefresh as RefreshCw,
+  IconTrash as Trash2,
+  IconCheck as Check,
+  IconClipboardList as ClipboardList,
+  IconHistory as History,
+  IconHeart as Heart,
+  IconPhotoOff as ImageOff,
+  IconArrowsSort as ArrowUpDown,
+  IconSquareCheck as CheckSquare,
+  IconLoader2 as Loader2,
+  IconSquare as Square,
+} from '@tabler/icons-react';
 import ActionButton from './ui/ActionButton';
 import { downloadImage, generateSmartFilename } from '../utils/fileUtils';
 import Tooltip from './Tooltip';
@@ -327,6 +327,7 @@ function resolveColumnCount(width: number) {
   if (width >= 1024) return 5;
   if (width >= 768) return 4;
   if (width >= 640) return 3;
+  if (width < 480) return 1;
   return 2;
 }
 
@@ -443,7 +444,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
 
     return (
       <div className="w-full h-full relative">
-        <div className="absolute top-4 right-8 z-30 flex items-center gap-2">
+        <div className="absolute left-3 right-3 top-3 z-30 flex items-center justify-end gap-2 sm:left-auto sm:right-8 sm:top-4">
           {imageCount > 0 && (
             <div className="flex items-center gap-1 rounded-xl border border-white/10 bg-zinc-900/80 p-1 shadow-2xl backdrop-blur-md">
               {imageCount > 1 && (
@@ -571,7 +572,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
             )}
           </div>
         </div>
-        <div className="custom-scrollbar h-full w-full overflow-y-auto px-4 pt-16 pb-8 sm:px-8">
+        <div className="custom-scrollbar h-full w-full overflow-y-auto px-3 pt-16 pb-8 sm:px-8">
           <div
             className="grid gap-4"
             style={{ gridTemplateColumns: `repeat(${Math.max(1, columnCount)}, minmax(0, 1fr))` }}

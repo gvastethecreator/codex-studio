@@ -20,6 +20,8 @@ import type {
   Job,
   JobSummary,
   Project,
+  ReferenceHandoffRequest,
+  ReferenceHandoffResponse,
   StudioResetResponse,
   StudioLibrary,
   RegisteredExternalOutputSource,
@@ -249,6 +251,13 @@ export async function createStudioJob(body: CreateJobRequest) {
   return request<Job>('/api/jobs', {
     method: 'POST',
     body: JSON.stringify(body),
+  });
+}
+
+export async function createReferenceHandoff(input: ReferenceHandoffRequest) {
+  return request<ReferenceHandoffResponse>('/api/references/handoff', {
+    method: 'POST',
+    body: JSON.stringify(input),
   });
 }
 

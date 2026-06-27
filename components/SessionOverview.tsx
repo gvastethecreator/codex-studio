@@ -1,5 +1,10 @@
 import React from 'react';
-import { Activity, Database, Layers3, Terminal } from 'lucide-react';
+import {
+  IconActivity as Activity,
+  IconDatabase as Database,
+  IconStack3 as Layers3,
+  IconTerminal as Terminal,
+} from '@tabler/icons-react';
 
 import type { Job as StudioJob } from '../packages/shared/src';
 import type { LogEntry, Workspace } from '../types';

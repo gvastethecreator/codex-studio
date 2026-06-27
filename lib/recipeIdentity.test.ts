@@ -31,6 +31,24 @@ describe('recipeIdentity', () => {
     expect(hasStylePresetIdentity(config, 'SP99-001')).toBe(true);
   });
 
+  it('matches style identity from multi-style selected slots', () => {
+    const config: ImageGenerationConfig = {
+      ...baseConfig,
+      recipeId: 'styles',
+      recipeParams: {
+        presetId: 'SP01-001',
+        selectedStyles: [
+          { presetId: 'SP01-001', presetName: 'Studio Headshot' },
+          { presetId: 'SP02-010', presetName: 'Film Noir' },
+        ],
+      },
+    };
+
+    expect(hasStylePresetIdentity(config, 'SP01-001')).toBe(true);
+    expect(hasStylePresetIdentity(config, 'SP02-010')).toBe(true);
+    expect(hasStylePresetIdentity(config, 'SP03-001')).toBe(false);
+  });
+
   it('can read the recipe id from the structured context envelope', () => {
     expect(
       hasRecipeIdentity(

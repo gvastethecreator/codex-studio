@@ -2,6 +2,15 @@
 
 Este archivo describe flujos de trabajo locales del repo para personas y agentes. No es un glosario; para términos canónicos usa `CONTEXT.md`.
 
+## Setup inicial de Codex Studio
+
+1. Use la skill repo-local `skills/codex-studio-setup/SKILL.md` para preparar un checkout nuevo o reparar una welcome screen bloqueada.
+2. El prompt copiable de onboarding debe apuntar a esa skill y pasar snapshot de runtime: repo, API local, Studio Library, `.env.local`, Bun, Codex CLI, app-server, Local Codex Session y readiness.
+3. Setup automatico debe operar por comandos soportados del repo: `bun install` cuando haga falta, `bun run studio:init`, `bun run dev`, `/api/health`, `/api/codex/session` y `/api/app-server/start`.
+4. Si falta ChatGPT login, detenerse con accion exacta `codex login`; no marcar readiness completa sin sesion real.
+5. Mantener Provider Secrets fuera de SQLite, catalogo, logs, capturas, docs y archivos committeados.
+6. Cierre: `bun run test`, `bun run check`, `bun run build`. Para cambios de onboarding/frontend, agregar verificacion visual.
+
 ## Agregar o cambiar un Generation Provider
 
 1. Keep Codex-first product semantics.

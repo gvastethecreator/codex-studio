@@ -1,7 +1,7 @@
 import type { QueueJob } from '../types';
 import {
-  filterPersistableInlineAttachments,
   MAX_PERSISTED_INLINE_ATTACHMENT_BYTES,
+  preparePersistableAttachments,
 } from './browserPersistenceBudget';
 
 export const BROWSER_QUEUE_STORAGE_KEY = 'browser-queue-jobs';
@@ -55,8 +55,18 @@ export function prepareBrowserQueueJobsForRestore(value: unknown): QueueJob[] {
 
 export function prepareBrowserQueueJobsForPersist(jobs: QueueJob[]): QueueJob[] {
   return jobs.slice(-MAX_RESTORED_BROWSER_QUEUE_JOBS).map((job) => {
-    const attachments = filterPersistableInlineAttachments(job.config.attachments);
-    if (attachments.length === job.config.attachments.length) return job;
+    const { attachments, omittedInlineCount } = preparePersistableAttachments(
+      job.config.attachments,
+    );
+    if (omittedInlineCount === 0) {
+      return {
+        ...job,
+        config: {
+          ...job.config,
+          attachments,
+        },
+      };
+    }
 
     return {
       ...job,

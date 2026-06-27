@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
-  Grid3X3,
-  Palette,
-  PaintBucket,
-  Eye,
-  SeparatorHorizontal,
-  Hash,
-  ScanLine,
-  Edit3,
-  X,
-  ChevronLeft,
-} from 'lucide-react';
+  IconGrid3x3 as Grid3X3,
+  IconPalette as Palette,
+  IconPaint as PaintBucket,
+  IconEye as Eye,
+  IconSeparatorHorizontal as SeparatorHorizontal,
+  IconHash as Hash,
+  IconLineScan as ScanLine,
+  IconEdit as Edit3,
+  IconX as X,
+  IconChevronLeft as ChevronLeft,
+} from '@tabler/icons-react';
 import type { ImageGenerationConfig, AspectRatio } from '../../types';
 import { RATIO_MAP } from '../../constants';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
@@ -46,6 +46,11 @@ const DEFAULT_PARAMS = {
   background: getRecipeStringDefault(SPRITESHEET_DEFAULTS, 'background', 'Dark Grey'),
   dividers: getRecipeStringDefault(SPRITESHEET_DEFAULTS, 'dividers', 'No Dividers'),
 };
+
+function shouldOpenSpritesheetSidebarByDefault() {
+  if (typeof window === 'undefined') return true;
+  return window.innerWidth >= 640;
+}
 
 function getDividerStyle(dividers: string): string {
   switch (dividers) {
@@ -99,9 +104,10 @@ function SpritesheetSidebar({
     <>
       <div
         className={`
-              flex-shrink-0 bg-black/40 border border-white/5 rounded-3xl flex flex-col overflow-hidden shadow-2xl transition-all duration-500 ease-out-expo relative
-              ${isOpen ? 'w-72 opacity-100' : 'w-0 opacity-0 border-0 pointer-events-none'}
+              fixed inset-x-3 z-50 flex max-h-[42vh] flex-col overflow-hidden rounded-2xl border border-white/8 bg-zinc-950/95 shadow-2xl backdrop-blur-xl transition-all duration-500 ease-out-expo sm:relative sm:inset-auto sm:z-auto sm:max-h-none sm:flex-shrink-0 sm:bg-black/40 sm:rounded-3xl
+              ${isOpen ? 'translate-y-0 opacity-100 sm:w-72' : 'pointer-events-none translate-y-4 opacity-0 sm:w-0 sm:border-0'}
            `}
+        style={{ bottom: 'calc(var(--studio-mobile-dock-height) + 0.75rem)' }}
       >
         <div className="h-14 border-b border-white/5 flex items-center px-5 gap-2 bg-white/[0.02]">
           <Hash size={14} className="text-emerald-500" />
@@ -153,7 +159,9 @@ function SpritesheetSidebar({
         <button
           type="button"
           onClick={onOpen}
-          className="absolute right-0 top-1/2 -translate-y-1/2 p-2 bg-zinc-900 border border-white/10 rounded-l-xl hover:bg-zinc-800 text-zinc-400 hover:text-white transition-all shadow-lg"
+          className="fixed right-3 z-50 rounded-xl border border-white/10 bg-zinc-900 p-3 text-zinc-400 shadow-lg transition-all hover:bg-zinc-800 hover:text-white sm:absolute sm:right-0 sm:top-1/2 sm:-translate-y-1/2 sm:rounded-l-xl sm:p-2"
+          style={{ bottom: 'calc(var(--studio-mobile-dock-height) + 0.75rem)' }}
+          aria-label="Open cell editor"
         >
           <ChevronLeft size={16} />
         </button>
@@ -175,7 +183,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
   const [gridInteraction, setGridInteraction] = useState({
     hoveredCell: null as number | null,
     editingCell: null as number | null,
-    isSidebarOpen: true,
+    isSidebarOpen: shouldOpenSpritesheetSidebarByDefault(),
   });
   const { hoveredCell, editingCell, isSidebarOpen } = gridInteraction;
   const setEditingCell = (val: number | null) =>
@@ -221,8 +229,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
 
   const isLightBg = params.background === 'White' || params.background.includes('Green');
 
-  const availWidthCSS = isSidebarOpen ? 'calc(100vw - 360px)' : 'calc(100vw - 48px)';
-  const availHeightCSS = 'calc(100vh - 350px)'; // Account for dock
+  const availHeightCSS = 'calc(100dvh - var(--studio-chrome-block))';
 
   const BottomDock = useMemo(
     () => (
@@ -291,24 +298,24 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
   const gridContainerStyle = useMemo<React.CSSProperties>(
     () => ({
       aspectRatio: ratioValue,
-      width: `min(${availWidthCSS}, ${availHeightCSS} * ${ratioValue})`,
-      height: `min(${availHeightCSS}, ${availWidthCSS} / ${ratioValue})`,
+      width: `min(100%, ${availHeightCSS})`,
+      maxHeight: availHeightCSS,
       display: 'grid',
       gridTemplateColumns: `repeat(${gridCols}, 1fr)`,
       gridTemplateRows: `repeat(${gridRows}, 1fr)`,
       gap: hasDividers ? '1px' : '0px',
       padding: hasDividers ? '1px' : '0px',
     }),
-    [ratioValue, availWidthCSS, availHeightCSS, gridCols, gridRows, hasDividers],
+    [ratioValue, availHeightCSS, gridCols, gridRows, hasDividers],
   );
 
   return (
     <RecipeLayout
       isGenerating={!!isGenerating}
       bottomDock={BottomDock}
-      className="p-6 pt-20 pb-48 flex items-center justify-center"
+      className="p-3 pt-4 pb-[var(--studio-recipe-dock-space)] sm:p-6 sm:pt-20 sm:pb-48 flex items-center justify-center"
     >
-      <div className="flex size-full gap-6 items-center justify-center relative">
+      <div className="flex size-full gap-3 sm:gap-6 items-center justify-center relative">
         {/* CANVAS AREA */}
         <div className="flex-1 flex flex-col items-center justify-center relative min-w-0 h-full">
           {/* Auto-Scaling Container */}
@@ -373,7 +380,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
             ))}
           </div>
 
-          <div className="absolute -bottom-12 bg-black/60 border border-white/10 px-4 py-2 rounded-xl flex items-center gap-3 shadow-lg pointer-events-none">
+          <div className="absolute bottom-2 left-2 right-2 justify-center bg-black/60 border border-white/10 px-3 py-2 rounded-xl flex items-center gap-3 shadow-lg pointer-events-none sm:-bottom-12 sm:left-auto sm:right-auto sm:justify-start sm:px-4">
             <ScanLine size={16} className="text-emerald-400" />
             <div className="flex flex-col">
               <span className="text-[10px] font-black text-white uppercase tracking-widest">

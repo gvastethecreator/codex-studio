@@ -1,14 +1,14 @@
 import React, { useState, useRef, useMemo } from 'react';
 import {
-  Upload,
-  Sun,
-  Camera,
-  X,
-  Palette,
-  MonitorPlay,
-  Fingerprint,
-  Type as TextIcon,
-} from 'lucide-react';
+  IconUpload as Upload,
+  IconSun as Sun,
+  IconCamera as Camera,
+  IconX as X,
+  IconPalette as Palette,
+  IconDeviceTv as MonitorPlay,
+  IconFingerprint as Fingerprint,
+  IconTypography as TextIcon,
+} from '@tabler/icons-react';
 import type { Attachment, ImageGenerationConfig } from '../../types';
 import { RATIO_MAP } from '../../constants';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
@@ -173,14 +173,15 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
     <RecipeLayout
       isGenerating={isGenerating}
       bottomDock={BottomDock}
-      className="p-8 pt-20 pb-48 flex items-center justify-center"
+      className="p-3 pt-4 pb-[var(--studio-recipe-dock-space)] sm:p-8 sm:pt-20 sm:pb-48 flex items-center justify-center"
     >
       <div
         className="relative shadow-2xl transition-all duration-500 ease-out-expo bg-zinc-900 border border-white/10 rounded-lg overflow-hidden group"
         style={{
           aspectRatio: ratioValue,
-          width: `min(80vw, (100vh - 350px) * ${ratioValue})`,
-          height: `min(100vh - 350px, 80vw / ${ratioValue})`,
+          width: 'min(86vw, 72vh)',
+          maxWidth: '100%',
+          maxHeight: 'calc(100dvh - var(--studio-chrome-block))',
         }}
       >
         {activeImage ? (

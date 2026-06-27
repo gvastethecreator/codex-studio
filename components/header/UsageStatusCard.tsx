@@ -1,10 +1,16 @@
-import { Gauge, WifiOff } from 'lucide-react';
+import { IconGauge as Gauge, IconWifiOff as WifiOff } from '@tabler/icons-react';
 import type { StudioUsageSummary } from '../../lib/studioDiagnostics';
 import Tooltip from '../Tooltip';
 
 interface UsageStatusCardProps {
   usage: StudioUsageSummary;
   onOpenDashboard: () => void;
+}
+
+function getUsageBarClass(availablePercent: number) {
+  if (availablePercent <= 15) return 'bg-rose-400';
+  if (availablePercent <= 35) return 'bg-amber-300';
+  return 'bg-emerald-300';
 }
 
 export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps) {
@@ -26,35 +32,33 @@ export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps
       : usage.tooltip;
 
   return (
-    <div className="hidden h-10 shrink-0 items-center lg:flex">
+    <div className="hidden h-8 shrink-0 items-center lg:flex">
       <Tooltip content={tooltip} position="bottom">
         <button
           type="button"
           onClick={onOpenDashboard}
-          className={`flex h-10 items-center gap-2 rounded-lg border px-2.5 text-left transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-white/8 cursor-pointer ${usageToneClasses}`}
+          className={`studio-hit-target flex h-8 items-center gap-1.5 rounded-lg border px-2 text-left transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-white/8 cursor-pointer ${usageToneClasses}`}
         >
-          <div className="flex size-7 shrink-0 items-center justify-center rounded-md bg-black/20 text-inherit">
-            {usage.tone === 'offline' ? <WifiOff size={14} /> : <Gauge size={14} />}
+          <div className="flex size-5 shrink-0 items-center justify-center rounded-md bg-black/20 text-inherit">
+            {usage.tone === 'offline' ? <WifiOff size={13} /> : <Gauge size={13} />}
           </div>
           {visibleLimits.length > 0 ? (
-            <div className="flex h-8 items-center gap-2">
+            <div className="flex h-7 items-center gap-2">
               {visibleLimits.map((limit) => (
-                <div key={limit.id} className="flex items-center gap-1.5">
-                  <span
-                    className="relative block size-6 shrink-0 rounded-full"
-                    style={{
-                      background: `conic-gradient(rgb(52 211 153) ${Math.round(limit.availablePercent * 3.6)}deg, rgb(63 63 70 / 0.65) 0deg)`,
-                    }}
-                  >
-                    <span className="absolute inset-1 rounded-full bg-black/80" />
-                  </span>
-                  <span className="grid min-w-10 gap-0.5 leading-none">
-                    <span className="text-[9px] font-black uppercase tracking-widest text-zinc-400">
+                <div key={limit.id} className="grid w-20 gap-1 leading-none">
+                  <span className="flex min-w-0 items-center justify-between gap-1">
+                    <span className="truncate text-[8px] font-black uppercase tracking-widest text-zinc-400">
                       {limit.label}
                     </span>
-                    <span className="text-[11px] font-black tabular-nums text-white">
+                    <span className="text-[9px] font-black tabular-nums text-white">
                       {Math.round(limit.availablePercent)}%
                     </span>
+                  </span>
+                  <span className="h-1 overflow-hidden rounded-full bg-zinc-700/70">
+                    <span
+                      className={`block h-full rounded-full transition-[width] duration-200 ${getUsageBarClass(limit.availablePercent)}`}
+                      style={{ width: `${Math.max(0, Math.min(limit.availablePercent, 100))}%` }}
+                    />
                   </span>
                 </div>
               ))}

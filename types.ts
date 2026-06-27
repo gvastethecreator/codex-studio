@@ -5,7 +5,9 @@ import { MODELS } from './constants';
 export interface Attachment {
   id: string;
   name: string;
-  dataUrl: string; // Base64
+  dataUrl: string; // Inline data URL or browser-renderable reference URL.
+  localPath?: string;
+  sourceUrl?: string;
   strength: number; // Value from 0 to 1
 }
 

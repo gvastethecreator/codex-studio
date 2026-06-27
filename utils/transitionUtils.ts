@@ -7,8 +7,16 @@ export const setIsGlobalTransitioning = (value: boolean) => {
   isGlobalTransitioning = value;
 };
 
-export const startViewTransition = (callback: () => void) => {
+export interface StartViewTransitionOptions {
+  useNative?: boolean;
+}
+
+export const startViewTransition = (
+  callback: () => void,
+  options: StartViewTransitionOptions = {},
+) => {
   if (
+    !options.useNative ||
     isGlobalTransitioning ||
     !document.startViewTransition ||
     document.visibilityState !== 'visible'
@@ -18,6 +26,7 @@ export const startViewTransition = (callback: () => void) => {
   }
 
   isGlobalTransitioning = true;
+
   // react-doctor-disable-next-line react-doctor/no-document-start-view-transition
   const transition = document.startViewTransition(() => {
     // react-doctor-disable-next-line react-doctor/no-flush-sync

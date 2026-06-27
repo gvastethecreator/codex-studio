@@ -57,6 +57,12 @@ describe('prepareStudioGenerationRequest', () => {
             dataUrl: 'data:image/jpeg;base64,BBBB',
             strength: 0.5,
           },
+          {
+            id: 'fallback-2',
+            name: 'style-detail.jpg',
+            dataUrl: 'data:image/jpeg;base64,CCCC',
+            strength: 0.3,
+          },
         ],
       },
     });
@@ -65,11 +71,11 @@ describe('prepareStudioGenerationRequest', () => {
     if (!request.ok) return;
 
     expect(request.finalConfig.recipeId).toBe('styles');
-    expect(request.finalConfig.attachments).toHaveLength(1);
+    expect(request.finalConfig.attachments).toHaveLength(2);
     expect(request.shouldClearComposerAttachments).toBe(false);
   });
 
-  it('limits non-timeline requests to a single attachment to avoid cross-job leakage', () => {
+  it('limits non-multi-reference requests to a single attachment to avoid cross-job leakage', () => {
     const request = prepareStudioGenerationRequest({
       generationConfig: {
         ...DEFAULT_GENERATION_CONFIG,
@@ -125,6 +131,35 @@ describe('prepareStudioGenerationRequest', () => {
     if (!request.ok) return;
 
     expect(request.finalConfig.attachments).toHaveLength(2);
+  });
+
+  it('preserves up to five style reference images', () => {
+    const attachments = Array.from({ length: 6 }, (_, index) => ({
+      id: `att-${index + 1}`,
+      name: `ref-${index + 1}.png`,
+      dataUrl: `data:image/png;base64,REF${index + 1}`,
+      strength: 0.5,
+    }));
+
+    const request = prepareStudioGenerationRequest({
+      generationConfig: {
+        ...DEFAULT_GENERATION_CONFIG,
+        prompt: 'style blend',
+        recipeId: 'styles',
+        attachments,
+      },
+    });
+
+    expect(request.ok).toBe(true);
+    if (!request.ok) return;
+
+    expect(request.finalConfig.attachments.map((attachment) => attachment.id)).toEqual([
+      'att-1',
+      'att-2',
+      'att-3',
+      'att-4',
+      'att-5',
+    ]);
   });
 
   it('rejects empty generation without prompt or reference image', () => {

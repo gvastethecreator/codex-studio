@@ -1,5 +1,5 @@
 import React from 'react';
-import { Plus, Trash2 } from 'lucide-react';
+import { IconPlus as Plus, IconTrash as Trash2 } from '@tabler/icons-react';
 import { isDefaultWorkspace } from '../../lib/workspaceLifecycle';
 import type { Workspace } from '../../types';
 import Tooltip from '../Tooltip';
@@ -94,7 +94,7 @@ export function WorkspaceStrip({
   return (
     <div
       ref={workspacesContainerRef}
-      className={`vt-workspace-list items-center gap-2 px-2 ${isCompact ? 'flex max-w-[min(82vw,360px)] overflow-x-auto py-1 no-scrollbar' : 'hidden md:flex'}`}
+      className={`vt-workspace-list items-center gap-1 px-1 ${isCompact ? 'flex max-w-[min(82vw,340px)] overflow-x-auto py-1 no-scrollbar' : 'hidden md:flex'}`}
     >
       {workspaces.map((workspace, index) => {
         const label = getWorkspaceLabel(workspace, index);
@@ -103,10 +103,8 @@ export function WorkspaceStrip({
         const workspaceName = workspace.name || `Workspace ${label}`;
         const canDeleteWorkspace = workspaces.length > 1 && !isDefaultWorkspace(workspace.id);
         const tooltipContent = `${workspaceName} · created ${new Date(workspace.createdAt).toLocaleDateString()}`;
-        const workspaceButtonClassName = `size-10 rounded-xl border-2 transition-[color,background-color,border-color,opacity,transform,box-shadow] overflow-hidden relative flex items-center justify-center cursor-pointer ${
-          isActive
-            ? 'border-accent-500 shadow-lg scale-105'
-            : 'border-white/10 opacity-60 hover:opacity-100'
+        const workspaceButtonClassName = `studio-hit-target size-8 rounded-lg border-2 transition-[color,background-color,border-color,opacity,transform,box-shadow] overflow-hidden relative flex items-center justify-center cursor-pointer ${
+          isActive ? 'border-accent-500 scale-105' : 'border-white/10 opacity-60 hover:opacity-100'
         }`;
 
         return (
@@ -179,7 +177,7 @@ export function WorkspaceStrip({
               </button>
             </Tooltip>
             {editingWorkspaceId === workspace.id && (
-              <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-zinc-900 border border-white/10 p-2 rounded-xl shadow-xl z-50 flex gap-2 animate-in fade-in zoom-in duration-200">
+              <div className="absolute top-full mt-1.5 left-1/2 -translate-x-1/2 bg-zinc-900 border border-white/10 p-1.5 rounded-lg shadow-xl z-50 flex gap-2 animate-in fade-in zoom-in duration-200">
                 <input
                   ref={(el) => el?.focus()}
                   value={editingName}
@@ -191,7 +189,7 @@ export function WorkspaceStrip({
                     }
                   }}
                   aria-label="Rename workspace"
-                  className="bg-black/50 border border-white/10 rounded-lg px-2 py-1.5 text-xs text-white outline-none focus:border-accent-500 w-40"
+                  className="bg-black/50 border border-white/10 rounded-lg px-2 py-1.5 text-xs text-white outline-none focus:border-accent-500 w-36"
                   placeholder="Workspace name"
                 />
               </div>
@@ -200,7 +198,7 @@ export function WorkspaceStrip({
               <div
                 role="menu"
                 aria-label={`Workspace actions for ${workspaceName}`}
-                className="absolute top-full left-1/2 z-50 mt-2 min-w-44 -translate-x-1/2 rounded-xl border border-white/10 bg-zinc-950/95 p-1 shadow-2xl backdrop-blur-md animate-in fade-in zoom-in duration-150"
+                className="absolute top-full left-1/2 z-50 mt-1.5 min-w-40 -translate-x-1/2 rounded-lg border border-white/10 bg-zinc-950/95 p-1 shadow-2xl backdrop-blur-md animate-in fade-in zoom-in duration-150"
               >
                 <button
                   type="button"
@@ -212,7 +210,7 @@ export function WorkspaceStrip({
                     setWorkspaceUi((prev) => ({ ...prev, contextMenuWorkspaceId: null }));
                     onDeleteWorkspace(workspace.id);
                   }}
-                  className="flex w-full items-center gap-2 rounded-lg px-2.5 py-2 text-left text-[11px] font-black uppercase tracking-widest text-red-300 transition-colors hover:bg-red-500/10 hover:text-red-200 disabled:cursor-not-allowed disabled:text-red-200/35 disabled:hover:bg-transparent"
+                  className="flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-[10px] font-black uppercase tracking-widest text-red-300 transition-colors hover:bg-red-500/10 hover:text-red-200 disabled:cursor-not-allowed disabled:text-red-200/35 disabled:hover:bg-transparent"
                 >
                   <Trash2 size={13} />
                   <span>{canDeleteWorkspace ? 'Delete workspace' : 'Default locked'}</span>
@@ -230,9 +228,9 @@ export function WorkspaceStrip({
             onAddWorkspace();
           }}
           aria-label="Create workspace"
-          className="flex size-10 cursor-pointer items-center justify-center rounded-xl border border-dashed border-white/10 bg-white/5 text-zinc-600 transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-zinc-200"
+          className="studio-hit-target flex size-8 cursor-pointer items-center justify-center rounded-lg border border-dashed border-white/10 bg-white/5 text-zinc-600 transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-zinc-200"
         >
-          <Plus size={18} />
+          <Plus size={16} />
         </button>
       </Tooltip>
     </div>

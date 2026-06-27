@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrainCircuit, X } from 'lucide-react';
+import { IconBrain as BrainCircuit, IconX as X } from '@tabler/icons-react';
 
 import type { Job as StudioJob, JobDetailResponse } from '../packages/shared/src';
 import type { LogEntry, Workspace } from '../types';
@@ -73,7 +73,6 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
 
       <div
         className="absolute inset-4 overflow-hidden rounded-[30px] border border-white/10 bg-zinc-950/96 shadow-[0_40px_160px_rgba(0,0,0,0.65)]"
-        style={{ viewTransitionName: 'debug-panel' }}
         onClick={(event) => event.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b border-white/8 px-6 py-5">

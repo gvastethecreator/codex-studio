@@ -16,9 +16,17 @@ import {
   normalizeCodexSpeed,
   pickPreferredCodexModel,
 } from '../lib/codexExecution';
-import { getCodexModelCatalog } from '../services/localStudioService';
+import {
+  createReferenceHandoff,
+  getCodexModelCatalog,
+  toStudioAssetUrl,
+} from '../services/localStudioService';
 import type { CodexModel, CodexModelCatalogResponse } from '../packages/shared/src';
-import { filterPersistableInlineAttachments } from '../lib/browserPersistenceBudget';
+import {
+  filterPersistableInlineAttachments,
+  isInlineImageDataUrl,
+  MAX_PERSISTED_INLINE_ATTACHMENT_BYTES,
+} from '../lib/browserPersistenceBudget';
 
 interface UseGenerationConfigProps {
   log: (message: string) => void;
@@ -202,7 +210,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
 
   const processFiles = useCallback(
     async (files: File[]) => {
-      const filesToProcess = files.slice(0, 1);
+      const filesToProcess = files.slice(0, maxAttachments);
 
       const results = await Promise.all(
         filesToProcess.map(async (file) => {
@@ -214,12 +222,45 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
               reader.readAsDataURL(file);
             });
 
-            return {
+            const attachment: Attachment = {
               id: `att-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`,
               name: file.name,
               dataUrl,
               strength: 0.5,
-            } as Attachment;
+            };
+
+            if (
+              isInlineImageDataUrl(dataUrl) &&
+              dataUrl.length > MAX_PERSISTED_INLINE_ATTACHMENT_BYTES
+            ) {
+              try {
+                const handoff = await createReferenceHandoff({
+                  references: [
+                    {
+                      name: file.name,
+                      dataUrl,
+                      strength: attachment.strength,
+                    },
+                  ],
+                });
+                const persistedReference = handoff.references[0];
+                if (persistedReference) {
+                  const sourceUrl = toStudioAssetUrl(persistedReference.publicUrl);
+                  return {
+                    ...attachment,
+                    dataUrl: sourceUrl,
+                    localPath: persistedReference.localPath,
+                    sourceUrl,
+                  };
+                }
+              } catch (err) {
+                log(
+                  `Reference handoff failed for "${file.name}": ${formatErrorMessage(err)}. The image will remain browser-only until generation starts.`,
+                );
+              }
+            }
+
+            return attachment;
           } catch (err) {
             log(`Failed to read attachment "${file.name}": ${formatErrorMessage(err)}`);
             return null;
@@ -232,12 +273,14 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
       if (newAttachments.length > 0) {
         setGenerationConfig((prev) => ({
           ...prev,
-          attachments: [newAttachments[0]],
+          attachments: [...prev.attachments, ...newAttachments].slice(0, maxAttachments),
         }));
-        log('Reference image updated. Previous attachment context was replaced.');
+        log(
+          `Added ${newAttachments.length} reference image${newAttachments.length === 1 ? '' : 's'}.`,
+        );
       }
     },
-    [log, setGenerationConfig],
+    [log, maxAttachments, setGenerationConfig],
   );
 
   const handleFileSelect = useCallback(
@@ -282,6 +325,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
               id: `gen-${image.id}-${Date.now()}`,
               name: 'Generated Image',
               dataUrl,
+              sourceUrl: dataUrl,
               strength: 0.5,
             },
           ],

@@ -241,6 +241,7 @@ describe('buildStudioPageController', () => {
         routeView: 'recipe',
         direction: 1,
         activeRecipe: 'camera',
+        activeRecipeAliasId: null,
         onSelectRecipe: () => {},
       },
       recipe: {

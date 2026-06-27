@@ -10,9 +10,11 @@ type StartTransition = (callback: () => void) => void;
 
 interface StudioHeaderToolbarViewContext {
   isGenerating: HeaderToolbarProps['isGenerating'];
+  generationStartTime: HeaderToolbarProps['generationStartTime'];
   currentView: HeaderToolbarProps['currentView'];
   onViewChange: HeaderToolbarProps['onViewChange'];
   activeRecipe: HeaderToolbarProps['activeRecipe'];
+  activeRecipeAliasId: HeaderToolbarProps['activeRecipeAliasId'];
   onCloseRecipe: HeaderToolbarProps['onCloseRecipe'];
   usage: HeaderToolbarProps['usage'];
 }
@@ -91,6 +93,7 @@ export function buildStudioHeaderToolbarProps({
 }: BuildStudioHeaderToolbarPropsArgs): HeaderToolbarProps {
   return {
     isGenerating: view.isGenerating,
+    generationStartTime: view.generationStartTime,
     workspaces: workspace.workspaces,
     activeWorkspaceId: workspace.activeWorkspaceId,
     onSwitchWorkspace: (workspaceId) =>
@@ -108,6 +111,7 @@ export function buildStudioHeaderToolbarProps({
     currentView: view.currentView,
     onViewChange: view.onViewChange,
     activeRecipe: view.activeRecipe,
+    activeRecipeAliasId: view.activeRecipeAliasId,
     onCloseRecipe: view.onCloseRecipe,
     onOpenDashboard: overlays.onOpenDashboard,
     onOpenOnboarding: () => startTransition(() => overlays.openOnboarding()),

@@ -1,20 +1,20 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import {
-  ChevronLeft,
-  ChevronRight,
-  X,
-  Download,
-  PlusCircle,
-  RefreshCw,
-  Trash2,
-  Maximize2,
-  Minimize2,
-  ClipboardList,
-  History,
-  Check,
-  Heart,
-  SplitSquareHorizontal,
-} from 'lucide-react';
+  IconChevronLeft as ChevronLeft,
+  IconChevronRight as ChevronRight,
+  IconX as X,
+  IconDownload as Download,
+  IconCirclePlus as PlusCircle,
+  IconRefresh as RefreshCw,
+  IconTrash as Trash2,
+  IconMaximize as Maximize2,
+  IconMinimize as Minimize2,
+  IconClipboardList as ClipboardList,
+  IconHistory as History,
+  IconCheck as Check,
+  IconHeart as Heart,
+  IconLayoutBoardSplit as SplitSquareHorizontal,
+} from '@tabler/icons-react';
 import { MotionDiv, AnimatePresence, Variants } from 'motion/react';
 import type { GeneratedImageWithConfig, ImageGenerationConfig } from '../types';
 import ActionButton from './ui/ActionButton';

@@ -9,6 +9,7 @@ const QueuePanel = React.lazy(() =>
 );
 
 export interface StudioOperationsRailProps {
+  hasGenerationDock?: boolean;
   isModalOpen: boolean;
   isQueueOpen: boolean;
   setIsQueueOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -27,6 +28,7 @@ export interface StudioOperationsRailProps {
 }
 
 export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
+  hasGenerationDock = false,
   isModalOpen,
   isQueueOpen,
   setIsQueueOpen,
@@ -52,9 +54,19 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
   }
 
   return (
-    <div className="fixed inset-x-0 bottom-[116px] top-24 z-40 flex overflow-hidden animate-in fade-in-0 slide-in-from-right-3 duration-200 sm:static sm:h-full sm:shrink-0">
+    <div
+      className="fixed inset-x-2 z-40 flex overflow-hidden rounded-2xl border border-white/10 shadow-2xl studio-route-enter studio-route-enter-forward sm:static sm:h-full sm:shrink-0 sm:rounded-none sm:border-none sm:shadow-none"
+      style={{
+        top: 'var(--studio-mobile-header-height)',
+        bottom: hasGenerationDock
+          ? 'calc(var(--studio-mobile-dock-height) + 0.5rem)'
+          : 'max(0.75rem, var(--studio-mobile-safe-bottom))',
+      }}
+    >
       <React.Suspense
-        fallback={<div className="h-full w-full border-l border-white/10 bg-black/40 sm:w-80" />}
+        fallback={
+          <div className="h-full w-full border-l border-white/10 bg-black/40 sm:w-[304px]" />
+        }
       >
         <QueuePanel
           jobs={jobs}

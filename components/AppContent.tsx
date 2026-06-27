@@ -18,6 +18,10 @@ interface AppContentProps {}
 
 export const AppContent: React.FC<AppContentProps> = () => {
   const shell = useStudioShell();
+  const hasGenerationDock =
+    !shell.generationDock.isModalOpen &&
+    !shell.generationDock.isUiChromeSuppressed &&
+    (shell.generationDock.currentView === 'studio' || !!shell.generationDock.activeRecipe);
 
   return (
     <div
@@ -38,7 +42,10 @@ export const AppContent: React.FC<AppContentProps> = () => {
         <div className="relative min-w-0 flex-1 overflow-hidden">
           <StudioViewport {...shell.viewport} />
         </div>
-        <StudioOperationsRail {...shell.viewport.studioPageController.operations} />
+        <StudioOperationsRail
+          {...shell.viewport.studioPageController.operations}
+          hasGenerationDock={hasGenerationDock}
+        />
       </div>
 
       <StudioGenerationDock {...shell.generationDock} />

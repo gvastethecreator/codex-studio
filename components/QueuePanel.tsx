@@ -1,18 +1,20 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence, MotionDiv } from 'motion/react';
 import {
-  AlertTriangle,
-  BrainCircuit,
-  CheckCircle2,
-  ChevronRight,
-  Clock,
-  Layers,
-  Loader2,
-  RotateCcw,
-  Trash2,
-  XCircle,
-  Zap,
-} from 'lucide-react';
+  IconAlertTriangle as AlertTriangle,
+  IconBrain as BrainCircuit,
+  IconCircleCheck as CheckCircle2,
+  IconChevronLeft as ChevronLeft,
+  IconChevronRight as ChevronRight,
+  IconClock as Clock,
+  IconStack as Layers,
+  IconLoader2 as Loader2,
+  IconMaximize as Maximize2,
+  IconRotate as RotateCcw,
+  IconTrash as Trash2,
+  IconCircleX as XCircle,
+  IconBolt as Zap,
+} from '@tabler/icons-react';
 
 import { canRetryStudioJob } from '../lib/studioJobRetry';
 import { cn } from '../lib/utils';
@@ -123,8 +125,8 @@ function resolveServerJobPreview(job: StudioJob, resultPreviewSrc?: string) {
 }
 
 const StatItem = ({ label, value, color }: { label: string; value: number; color: string }) => (
-  <div className="flex flex-col items-center justify-center bg-black/20 p-2">
-    <span className={cn('text-xs font-bold', color)}>{value}</span>
+  <div className="flex flex-col items-center justify-center bg-black/20 px-1.5 py-1">
+    <span className={cn('text-[11px] font-bold', color)}>{value}</span>
     <span className="text-[8px] font-bold uppercase tracking-tighter text-white/30">{label}</span>
   </div>
 );
@@ -147,8 +149,13 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
   }) => {
     const [isLocalQueueOpen, setIsLocalQueueOpen] = useState(true);
     const [isServerQueueOpen, setIsServerQueueOpen] = useState(true);
+    const [activeResultId, setActiveResultId] = useState<string | null>(null);
     const [nowMs, setNowMs] = useState(() => Date.now());
     const hasRecentResults = results.length > 0;
+    const activeResultIndex = activeResultId
+      ? results.findIndex((result) => result.id === activeResultId)
+      : -1;
+    const activeResult = activeResultIndex >= 0 ? results[activeResultIndex] : null;
     const resultsByJobId = useMemo(() => {
       const map = new Map<string, string>();
       for (const result of results) {
@@ -181,14 +188,14 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     const totalJobs = jobs.length + serverJobs.length;
 
     return (
-      <div className="flex h-full w-full flex-col border-l border-white/10 bg-black/40 backdrop-blur-xl sm:w-80">
-        <div className="flex items-center justify-between border-b border-white/10 bg-white/5 p-4">
-          <div className="flex items-center gap-2">
-            <div className="rounded-lg bg-accent-500/20 p-1.5 text-accent-400">
-              <Layers size={18} />
+      <div className="flex h-full w-full flex-col border border-white/10 bg-zinc-950 backdrop-blur-xl sm:w-[304px] sm:border-y-0 sm:border-r-0 sm:border-l sm:bg-black/45">
+        <div className="flex items-center justify-between border-b border-white/10 bg-white/5 px-2.5 py-2">
+          <div className="flex items-center gap-1.5">
+            <div className="rounded-md bg-accent-500/20 p-1.5 text-accent-400">
+              <Layers size={16} />
             </div>
             <div>
-              <h3 className="text-sm font-semibold text-white/90">Generation Queue</h3>
+              <h3 className="text-xs font-semibold text-white/90">Generation Queue</h3>
               <p className="text-[10px] font-medium uppercase tracking-wider text-white/40">
                 {totalJobs} visible jobs • 3 local concurrent
               </p>
@@ -200,7 +207,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
               <button
                 type="button"
                 onClick={onClearCompleted}
-                className="rounded-lg p-2 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
+                className="studio-hit-target rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
                 title="Clear completed"
               >
                 <Trash2 size={16} />
@@ -210,7 +217,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
               <button
                 type="button"
                 onClick={onClose}
-                className="rounded-lg p-2 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
+                className="studio-hit-target rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
                 title="Close queue"
               >
                 <XCircle size={16} />
@@ -242,7 +249,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
           )}
         </AnimatePresence>
 
-        <div className="custom-scrollbar flex-1 space-y-2 overflow-y-auto p-2">
+        <div className="custom-scrollbar flex-1 space-y-1 overflow-y-auto p-1">
           <div className="rounded-lg border border-white/10 bg-white/5 p-1.5">
             <div className="mb-1 flex items-center justify-between px-1">
               <span className="text-[9px] font-black uppercase tracking-widest text-white/35">
@@ -252,16 +259,18 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             </div>
 
             {hasRecentResults ? (
-              <div className="custom-scrollbar h-40 overflow-y-auto pr-1">
+              <div className="custom-scrollbar h-24 overflow-y-auto pr-1">
                 <div className="grid grid-cols-4 gap-1">
                   {results.map((result) => (
-                    <div
+                    <button
+                      type="button"
                       key={result.id}
+                      onClick={() => setActiveResultId(result.id)}
                       className={cn(
-                        'rounded border p-0.5 transition-colors',
+                        'group relative rounded border p-0.5 transition-colors cursor-pointer',
                         selectedJobId && result.jobId === selectedJobId
                           ? 'border-accent-500/30 bg-accent-500/10'
-                          : 'border-white/5 bg-black/20',
+                          : 'border-white/5 bg-black/20 hover:border-white/20',
                       )}
                       title={`${result.prompt || 'Generated result'} · ${new Date(
                         result.createdAt,
@@ -279,7 +288,10 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                           decoding="async"
                         />
                       </div>
-                    </div>
+                      <span className="pointer-events-none absolute inset-0 grid place-items-center rounded bg-black/0 text-white opacity-0 transition-opacity group-hover:bg-black/35 group-hover:opacity-100">
+                        <Maximize2 size={12} />
+                      </span>
+                    </button>
                   ))}
                 </div>
               </div>
@@ -290,7 +302,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             )}
           </div>
 
-          <div className="rounded-xl border border-white/10 bg-white/5 p-2">
+          <div className="rounded-lg border border-white/10 bg-white/5 p-1.5">
             <button
               type="button"
               onClick={() => setIsServerQueueOpen((value) => !value)}
@@ -319,7 +331,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                   exit={{ height: 0, opacity: 0 }}
                   className="overflow-hidden"
                 >
-                  <div className="space-y-2">
+                  <div className="space-y-1">
                     {serverJobs.length > 0 ? (
                       serverJobs
                         .slice(0, 20)
@@ -346,7 +358,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             </AnimatePresence>
           </div>
 
-          <div className="rounded-xl border border-white/10 bg-white/5 p-2">
+          <div className="rounded-lg border border-white/10 bg-white/5 p-1.5">
             <button
               type="button"
               onClick={() => setIsLocalQueueOpen((value) => !value)}
@@ -375,7 +387,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                   exit={{ height: 0, opacity: 0 }}
                   className="overflow-hidden"
                 >
-                  <div className="space-y-2">
+                  <div className="space-y-1">
                     <AnimatePresence initial={false}>
                       {jobs.length === 0 && serverJobs.length === 0 && !hasRecentResults ? (
                         <MotionDiv
@@ -425,10 +437,109 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             </AnimatePresence>
           </div>
         </div>
+        {activeResult ? (
+          <RecentResultsCarousel
+            result={activeResult}
+            index={activeResultIndex}
+            total={results.length}
+            onClose={() => setActiveResultId(null)}
+            onPrevious={() =>
+              setActiveResultId(
+                results[(activeResultIndex - 1 + results.length) % results.length]?.id ?? null,
+              )
+            }
+            onNext={() =>
+              setActiveResultId(results[(activeResultIndex + 1) % results.length]?.id ?? null)
+            }
+            onInspect={
+              activeResult.jobId ? () => onInspectJob(activeResult.jobId as string) : undefined
+            }
+          />
+        ) : null}
       </div>
     );
   },
 );
+
+const RecentResultsCarousel: React.FC<{
+  result: StudioQueueResultPreview;
+  index: number;
+  total: number;
+  onClose: () => void;
+  onPrevious: () => void;
+  onNext: () => void;
+  onInspect?: () => void;
+}> = ({ result, index, total, onClose, onPrevious, onNext, onInspect }) => {
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onClose();
+      if (event.key === 'ArrowLeft') onPrevious();
+      if (event.key === 'ArrowRight') onNext();
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [onClose, onNext, onPrevious]);
+
+  return (
+    <div className="fixed inset-0 z-50 flex flex-col bg-black/92 backdrop-blur-md">
+      <div className="flex h-14 shrink-0 items-center justify-between border-b border-white/10 px-3">
+        <div className="min-w-0">
+          <p className="truncate text-xs font-semibold text-white/90">
+            {result.prompt || 'Generated result'}
+          </p>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-white/35">
+            {index + 1} / {total}
+          </p>
+        </div>
+        <div className="flex items-center gap-1">
+          {onInspect ? (
+            <button
+              type="button"
+              onClick={onInspect}
+              className="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-[10px] font-black uppercase tracking-widest text-white/70 transition-colors hover:bg-white/10 hover:text-white"
+            >
+              Inspect
+            </button>
+          ) : null}
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-lg p-2 text-white/50 transition-colors hover:bg-white/10 hover:text-white"
+            aria-label="Close recent result carousel"
+          >
+            <XCircle size={18} />
+          </button>
+        </div>
+      </div>
+
+      <div className="relative flex min-h-0 flex-1 items-center justify-center p-4">
+        <button
+          type="button"
+          onClick={onPrevious}
+          className="absolute left-3 z-10 rounded-lg border border-white/10 bg-black/50 p-2 text-white/65 transition-colors hover:bg-white/10 hover:text-white"
+          aria-label="Previous recent result"
+        >
+          <ChevronLeft size={20} />
+        </button>
+        <img
+          src={result.fullSrc || result.src}
+          alt={result.prompt || 'Generated result'}
+          className="max-h-full max-w-full rounded-lg object-contain shadow-2xl"
+          decoding="async"
+        />
+        <button
+          type="button"
+          onClick={onNext}
+          className="absolute right-3 z-10 rounded-lg border border-white/10 bg-black/50 p-2 text-white/65 transition-colors hover:bg-white/10 hover:text-white"
+          aria-label="Next recent result"
+        >
+          <ChevronRight size={20} />
+        </button>
+      </div>
+    </div>
+  );
+};
 
 const ServerJobItem: React.FC<{
   job: StudioJob;
@@ -461,7 +572,7 @@ const ServerJobItem: React.FC<{
   return (
     <div
       className={cn(
-        'flex items-start gap-2 rounded-xl border p-2.5 transition-colors',
+        'flex items-start gap-1.5 rounded-lg border px-1.5 py-1 transition-colors',
         isSelected
           ? 'border-accent-500/30 bg-accent-500/10'
           : 'border-white/5 bg-black/20 hover:border-white/10 hover:bg-white/5',
@@ -470,11 +581,11 @@ const ServerJobItem: React.FC<{
       <button
         type="button"
         onClick={onInspect}
-        className="flex min-w-0 flex-1 items-start gap-2.5 text-left cursor-pointer"
+        className="flex min-w-0 flex-1 items-start gap-1.5 text-left cursor-pointer"
       >
         <div className="mt-0.5 shrink-0">{icon}</div>
 
-        <div className="mt-0.5 size-10 shrink-0 overflow-hidden rounded-md border border-white/10 bg-black/40">
+        <div className="mt-0.5 size-7 shrink-0 overflow-hidden rounded-md border border-white/10 bg-black/40">
           {previewSrc ? (
             <img
               src={previewSrc}
@@ -491,11 +602,11 @@ const ServerJobItem: React.FC<{
         </div>
 
         <div className="min-w-0 flex-1">
-          <p className="line-clamp-2 text-[11px] font-semibold leading-tight text-white/90">
+          <p className="line-clamp-1 text-[10px] font-semibold leading-tight text-white/90">
             {job.originalPrompt}
           </p>
 
-          <div className="mt-1.5 flex items-center gap-1.5">
+          <div className="mt-0.5 flex items-center gap-1">
             <span
               className={cn(
                 'rounded-md border px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider',
@@ -517,7 +628,7 @@ const ServerJobItem: React.FC<{
             </span>
           </div>
 
-          <div className="mt-1.5 flex items-center gap-1.5 text-[9px] text-white/35">
+          <div className="mt-0.5 flex items-center gap-1 text-[9px] text-white/35">
             <span>{formatClockTime(createdAtMs)}</span>
             <span>•</span>
             <span>{formatDurationMs(durationMs)}</span>
@@ -532,7 +643,7 @@ const ServerJobItem: React.FC<{
           </div>
 
           {job.error && (
-            <p className="mt-1 rounded border border-rose-500/10 bg-rose-500/5 p-1 text-[9px] text-rose-300/80">
+            <p className="mt-1 line-clamp-2 rounded border border-rose-500/10 bg-rose-500/5 p-1 text-[9px] text-rose-300/80">
               {job.error}
             </p>
           )}
@@ -545,7 +656,7 @@ const ServerJobItem: React.FC<{
           <button
             type="button"
             onClick={onCancel}
-            className="rounded-lg p-1.5 text-white/35 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
+            className="studio-hit-target rounded-lg p-1 text-white/35 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
             title="Cancel backend job"
           >
             <XCircle size={13} />
@@ -555,7 +666,7 @@ const ServerJobItem: React.FC<{
           <button
             type="button"
             onClick={onRetry}
-            className="rounded-lg p-1.5 text-white/35 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
+            className="studio-hit-target rounded-lg p-1 text-white/35 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
             title="Retry backend job"
           >
             <RotateCcw size={13} />
@@ -583,10 +694,10 @@ const JobItem: React.FC<{
   const content = (
     <>
       <div className={cn('mt-0.5', config.color)}>
-        <Icon size={16} className={cn(config.spin && 'animate-spin')} />
+        <Icon size={14} className={cn(config.spin && 'animate-spin')} />
       </div>
 
-      <div className="mt-0.5 size-10 shrink-0 overflow-hidden rounded-md border border-white/10 bg-black/40">
+      <div className="mt-0.5 size-7 shrink-0 overflow-hidden rounded-md border border-white/10 bg-black/40">
         {previewSrc ? (
           <img
             src={previewSrc}
@@ -603,7 +714,7 @@ const JobItem: React.FC<{
       </div>
 
       <div className="min-w-0 flex-1">
-        <p className="mb-1 line-clamp-2 text-[11px] font-medium leading-tight text-white/85">
+        <p className="mb-1 line-clamp-1 text-[10px] font-medium leading-tight text-white/85">
           {job.prompt}
         </p>
 
@@ -636,13 +747,13 @@ const JobItem: React.FC<{
         </div>
 
         {job.error && (
-          <p className="mt-2 rounded border border-rose-500/10 bg-rose-500/5 p-1.5 text-[10px] leading-tight text-rose-400/80">
+          <p className="mt-1 line-clamp-2 rounded border border-rose-500/10 bg-rose-500/5 p-1 text-[9px] leading-tight text-rose-400/80">
             {job.error}
           </p>
         )}
 
         {job.serverJobId ? (
-          <div className="mt-2 flex items-center gap-2 text-[9px] font-bold uppercase tracking-wider text-zinc-500">
+          <div className="mt-1 flex items-center gap-1.5 text-[8px] font-bold uppercase tracking-wider text-zinc-500">
             <BrainCircuit size={11} className="text-accent-400" />
             Click to inspect backend transcript
           </div>
@@ -658,22 +769,22 @@ const JobItem: React.FC<{
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, scale: 0.95 }}
       className={cn(
-        'group relative rounded-xl border p-3 transition-all duration-300',
+        'group relative rounded-lg border px-1.5 py-1 transition-[color,background-color,border-color,opacity,transform] duration-200',
         config.bg,
         isSelected ? 'border-accent-500/30 ring-1 ring-accent-500/20' : config.border,
       )}
     >
-      <div className="flex items-start gap-3">
+      <div className="flex items-start gap-1.5">
         {onInspect ? (
           <button
             type="button"
             onClick={onInspect}
-            className="flex min-w-0 flex-1 items-start gap-3 text-left cursor-pointer"
+            className="flex min-w-0 flex-1 items-start gap-1.5 text-left cursor-pointer"
           >
             {content}
           </button>
         ) : (
-          <div className="flex min-w-0 flex-1 items-start gap-3">{content}</div>
+          <div className="flex min-w-0 flex-1 items-start gap-1.5">{content}</div>
         )}
 
         <div className="flex flex-col gap-1 opacity-0 transition-opacity group-hover:opacity-100">
@@ -681,7 +792,7 @@ const JobItem: React.FC<{
             <button
               type="button"
               onClick={onCancel}
-              className="rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
+              className="studio-hit-target rounded-lg p-1 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
               title="Cancel"
             >
               <XCircle size={14} />
@@ -692,7 +803,7 @@ const JobItem: React.FC<{
             <button
               type="button"
               onClick={onRetry}
-              className="rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
+              className="studio-hit-target rounded-lg p-1 text-white/40 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
               title="Retry"
             >
               <RotateCcw size={14} />
@@ -702,7 +813,7 @@ const JobItem: React.FC<{
           <button
             type="button"
             onClick={onRemove}
-            className="rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
+            className="studio-hit-target rounded-lg p-1 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
             title="Remove"
           >
             <Trash2 size={14} />

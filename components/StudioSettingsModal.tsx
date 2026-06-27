@@ -1,16 +1,16 @@
 import {
-  Database,
-  FileImage,
-  FolderOpen,
-  FolderPlus,
-  LoaderCircle,
-  RefreshCw,
-  RotateCcw,
-  Save,
-  Settings,
-  Upload,
-  X,
-} from 'lucide-react';
+  IconDatabase as Database,
+  IconPhoto as FileImage,
+  IconFolderOpen as FolderOpen,
+  IconFolderPlus as FolderPlus,
+  IconLoader as LoaderCircle,
+  IconRefresh as RefreshCw,
+  IconRotate as RotateCcw,
+  IconDeviceFloppy as Save,
+  IconSettings as Settings,
+  IconUpload as Upload,
+  IconX as X,
+} from '@tabler/icons-react';
 import type React from 'react';
 import { useMemo, useRef, useState } from 'react';
 

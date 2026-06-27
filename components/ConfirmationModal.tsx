@@ -1,6 +1,11 @@
 import React from 'react';
 import { AnimatePresence, MotionDiv } from 'motion/react';
-import { AlertTriangle, RotateCcw, ShieldAlert, X } from 'lucide-react';
+import {
+  IconAlertTriangle as AlertTriangle,
+  IconRotate as RotateCcw,
+  IconShieldExclamation as ShieldAlert,
+  IconX as X,
+} from '@tabler/icons-react';
 
 import type { ConfirmationTone } from '../hooks/useStudioActionConfirmations';
 

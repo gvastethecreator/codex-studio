@@ -46,6 +46,37 @@ function paramDirective(params: Record<string, unknown>, key: string, label: str
   return directive(label, getString(params, key));
 }
 
+function getSelectedStyleLayerDirectives(params: Record<string, unknown>) {
+  const value = params.selectedStyles;
+  if (!Array.isArray(value)) return [];
+
+  return value.flatMap((entry, index) => {
+    if (!entry || typeof entry !== 'object' || Array.isArray(entry)) return [];
+    const layer = entry as Record<string, unknown>;
+    const presetName = getString(layer, 'presetName');
+    if (!presetName) return [];
+    const strength = getNumber(layer, 'strength', 0.75);
+    const packName = getString(layer, 'packName');
+    const aesthetic = getString(layer, 'aesthetic');
+    const creativeBrief = getString(layer, 'creativeBrief');
+
+    return [
+      directive(
+        `Style Slot ${index + 1}`,
+        [
+          presetName,
+          packName ? `pack ${packName}` : '',
+          `strength ${Math.max(0.1, Math.min(1, strength)).toFixed(2)}`,
+          aesthetic ? `aesthetic ${aesthetic}` : '',
+          creativeBrief ? `brief ${creativeBrief}` : '',
+        ]
+          .filter(Boolean)
+          .join('; '),
+      ),
+    ];
+  });
+}
+
 function buildCharacterProviderDirectives(module: RecipeModule, params: Record<string, unknown>) {
   const layout = getString(params, 'layout') || 'Classic Turnaround';
   const style = getString(params, 'style') || 'Preserve Source Style';
@@ -343,6 +374,8 @@ function buildTimelineProviderDirectives(module: RecipeModule, params: Record<st
 }
 
 function buildStylesProviderDirectives(module: RecipeModule, params: Record<string, unknown>) {
+  const selectedStyleDirectives = getSelectedStyleLayerDirectives(params);
+
   return createRecipeProviderDirectives({
     recipeId: module.id,
     title: module.title,
@@ -356,6 +389,7 @@ function buildStylesProviderDirectives(module: RecipeModule, params: Record<stri
           paramDirective(params, 'compositionRule', 'Composition Rule'),
           paramDirective(params, 'styleEmphasis', 'Style Emphasis'),
           paramDirective(params, 'creativeBrief', 'Creative Brief'),
+          ...selectedStyleDirectives,
         ],
       },
       {

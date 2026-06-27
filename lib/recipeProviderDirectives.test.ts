@@ -33,6 +33,39 @@ describe('recipeProviderDirectives', () => {
     expect(serialized).not.toContain('SP09-006');
   });
 
+  it('includes selected style slots and strengths in style directives', () => {
+    const styles = getRecipeModule('styles');
+    const directives =
+      styles &&
+      buildRecipeProviderDirectives(styles, {
+        presetId: 'SP01-001',
+        presetName: 'Studio Headshot + Film Noir',
+        selectedStyles: [
+          {
+            presetName: 'Studio Headshot',
+            packName: 'Photography & Realism',
+            strength: 0.7,
+            aesthetic: 'clean studio portrait',
+          },
+          {
+            presetName: 'Film Noir',
+            packName: 'Cinematic & Media',
+            strength: 0.4,
+            aesthetic: 'hard shadow crime drama',
+          },
+        ],
+      });
+
+    const serialized = directives ? serializeRecipeProviderDirectives(directives) : '';
+
+    expect(serialized).toContain(
+      '- Style Slot 1: Studio Headshot; pack Photography & Realism; strength 0.70; aesthetic clean studio portrait',
+    );
+    expect(serialized).toContain(
+      '- Style Slot 2: Film Noir; pack Cinematic & Media; strength 0.40; aesthetic hard shadow crime drama',
+    );
+  });
+
   it('builds compact provider directives for camera params', () => {
     const camera = getRecipeModule('camera');
     expect(camera).toBeTruthy();

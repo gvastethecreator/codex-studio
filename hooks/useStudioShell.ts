@@ -1,9 +1,10 @@
-import { useCallback, useEffect, useMemo } from 'react';
+import { useCallback, useEffect, useMemo, useRef } from 'react';
 
 import type { HeaderToolbarProps } from '../components/HeaderToolbar';
 import type { StudioOverlayController } from '../components/AppOverlays';
 import type { RecipePageProps } from '../components/RecipePage';
 import type { ToolbarProps } from '../components/Toolbar';
+import type { RecipeAliasId } from '../lib/recipeAliases';
 import type { RecipeId } from '../types';
 import type { ToastMessage } from './useToasts';
 import { useGlobal } from '../contexts/GlobalContext';
@@ -52,9 +53,10 @@ export interface StudioShellController {
     routeView: AppPageView;
     direction: number;
     activeRecipe: RecipeId | null;
+    activeRecipeAliasId: RecipeAliasId | null;
     recipePageProps: Omit<RecipePageProps, 'activeRecipe'>;
     studioPageController: StudioPageController;
-    onSelectRecipe: (recipeId: RecipeId) => void;
+    onSelectRecipe: (recipeId: RecipeId, aliasId?: RecipeAliasId | null) => void;
   };
   generationDock: {
     isModalOpen: boolean;
@@ -147,11 +149,21 @@ export function useStudioShell(): StudioShellController {
 
   const viewState = useStudioViewState({ closeOverlay });
   const refreshSettingsSurface = studioSettings.data.settingsDomain.refresh;
+  const wasGeneratingRef = useRef(pipeline.isGenerating);
 
   useEffect(() => {
     if (!viewState.overlays.settings.isOpen) return;
     void refreshSettingsSurface();
   }, [refreshSettingsSurface, viewState.overlays.settings.isOpen]);
+
+  useEffect(() => {
+    const justStartedGenerating = pipeline.isGenerating && !wasGeneratingRef.current;
+    wasGeneratingRef.current = pipeline.isGenerating;
+
+    if (justStartedGenerating && !viewState.queue.isOpen) {
+      viewState.queue.setIsOpen(true);
+    }
+  }, [pipeline.isGenerating, viewState.queue.isOpen, viewState.queue.setIsOpen]);
 
   const clearStudioUiState = useCallback(() => {
     recipe.setActiveRecipe(null);
@@ -686,6 +698,7 @@ export function useStudioShell(): StudioShellController {
           routeView: route.view,
           direction,
           activeRecipe: recipe.activeRecipe,
+          activeRecipeAliasId: route.activeRecipeAliasId,
           onSelectRecipe: handleRecipeSelection,
         },
         recipe: {
@@ -702,6 +715,7 @@ export function useStudioShell(): StudioShellController {
       route.view,
       direction,
       recipe.activeRecipe,
+      route.activeRecipeAliasId,
       handleRecipeSelection,
       recipePageProps,
       studioPageController,
@@ -716,9 +730,11 @@ export function useStudioShell(): StudioShellController {
       buildStudioHeaderToolbarProps({
         view: {
           isGenerating: pipeline.isGenerating,
+          generationStartTime: pipeline.generationStartTime,
           currentView,
           onViewChange: handleViewChange,
           activeRecipe: recipe.activeRecipe,
+          activeRecipeAliasId: route.activeRecipeAliasId,
           onCloseRecipe: handleCloseRecipe,
           usage: studioRuntime.status.diagnostics.usage,
         },
@@ -757,9 +773,11 @@ export function useStudioShell(): StudioShellController {
       }),
     [
       pipeline.isGenerating,
+      pipeline.generationStartTime,
       currentView,
       handleViewChange,
       recipe.activeRecipe,
+      route.activeRecipeAliasId,
       handleCloseRecipe,
       studioRuntime.status.diagnostics.usage,
       workspacesWithThumbs,

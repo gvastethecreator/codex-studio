@@ -100,6 +100,59 @@ describe('localGenerationRun', () => {
     ]);
   });
 
+  it('materializes handoff-backed attachments as local asset refs', async () => {
+    const assets = await buildJobAssets({
+      config: {
+        ...DEFAULT_GENERATION_CONFIG,
+        attachments: [
+          {
+            id: 'att-1',
+            name: 'download.jpg',
+            dataUrl: 'http://127.0.0.1:4317/library/.studio/references/handoff-1/download.jpg',
+            localPath: 'D:/AI-Studio-Library/.studio/references/handoff-1/download.jpg',
+            sourceUrl: 'http://127.0.0.1:4317/library/.studio/references/handoff-1/download.jpg',
+            strength: 0.15,
+          },
+        ],
+      },
+    });
+
+    expect(assets).toEqual([
+      {
+        role: 'reference',
+        name: 'download.jpg',
+        localPath: 'D:/AI-Studio-Library/.studio/references/handoff-1/download.jpg',
+        strength: 0.15,
+      },
+    ]);
+  });
+
+  it('materializes generated-image URLs as source URL refs instead of inline references', async () => {
+    const assets = await buildJobAssets({
+      config: {
+        ...DEFAULT_GENERATION_CONFIG,
+        attachments: [
+          {
+            id: 'att-1',
+            name: 'generated.png',
+            dataUrl: 'http://127.0.0.1:4317/library/outputs/generated.png',
+            sourceUrl: 'http://127.0.0.1:4317/library/outputs/generated.png',
+            strength: 0.5,
+          },
+        ],
+      },
+    });
+
+    expect(assets).toEqual([
+      {
+        role: 'reference',
+        name: 'generated.png',
+        sourceUrl: 'http://127.0.0.1:4317/library/outputs/generated.png',
+        strength: 0.5,
+      },
+    ]);
+  });
+
   it('preserves Character Lab source and reference roles for backend task assets', async () => {
     const assets = await buildJobAssets({
       config: {

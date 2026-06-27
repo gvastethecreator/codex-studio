@@ -1,18 +1,18 @@
 import React, { useState, useRef, useMemo, useCallback } from 'react';
 import {
-  Clapperboard,
-  Video,
-  Aperture,
-  Film,
-  X,
-  Sun,
-  Grid3X3,
-  Clock,
-  CloudRain,
-  LayoutTemplate,
-  RectangleHorizontal,
-  Upload,
-} from 'lucide-react';
+  IconMovie as Clapperboard,
+  IconVideo as Video,
+  IconAperture as Aperture,
+  IconMovie as Film,
+  IconX as X,
+  IconSun as Sun,
+  IconGrid3x3 as Grid3X3,
+  IconClock as Clock,
+  IconCloudRain as CloudRain,
+  IconTemplate as LayoutTemplate,
+  IconRectangle as RectangleHorizontal,
+  IconUpload as Upload,
+} from '@tabler/icons-react';
 import { AnimatePresence } from 'motion/react';
 import type { Attachment, ImageGenerationConfig } from '../../types';
 import { RATIO_MAP } from '../../constants';
@@ -237,14 +237,15 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
     <RecipeLayout
       isGenerating={isGenerating}
       bottomDock={BottomDock}
-      className="p-6 pt-20 pb-48 flex items-center justify-center"
+      className="p-3 pt-4 pb-[var(--studio-recipe-dock-space)] sm:p-6 sm:pt-20 sm:pb-48 flex items-center justify-center"
     >
       <div
         className="relative shadow-2xl transition-all duration-500 ease-out-expo bg-zinc-900 border border-white/10 rounded-lg overflow-hidden group"
         style={{
           aspectRatio: ratioValue,
-          width: `min(90vw, (100vh - 350px) * ${ratioValue})`,
-          height: `min(100vh - 350px, 90vw / ${ratioValue})`,
+          width: 'min(90vw, 74vh)',
+          maxWidth: '100%',
+          maxHeight: 'calc(100dvh - var(--studio-chrome-block))',
         }}
       >
         {activeImage && (

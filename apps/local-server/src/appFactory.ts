@@ -9,7 +9,7 @@ import { createDefaultDbStore, type StudioDbStore } from './dbStore';
 import { getSettingValue, setSettingValue } from './db';
 import { publishEvent, subscribeEvents } from './events';
 import { initStudio } from './init';
-import { inspectLibrary, resolvePublicLibraryPath } from './library';
+import { inspectLibrary, resolvePublicLibraryPath, toPublicAssetUrl } from './library';
 import { listLibraries, registerLibrary, removeLibrary, setDefaultLibrary } from './libraries';
 import { log } from './logger';
 import {
@@ -58,6 +58,7 @@ import { createStudioControlRoutes } from './studioControlRoutes';
 import { createMaintenanceRoutes } from './maintenanceRoutes';
 import { createEventStreamRoutes } from './eventStreamRoutes';
 import { createLibraryRoutes } from './libraryRoutes';
+import { createReferenceRoutes } from './referenceRoutes';
 import { createLocalApiSecurityMiddleware } from './localApiSecurity';
 import type {
   AppServerEnsureReason,
@@ -250,6 +251,19 @@ export async function createStudioApp(
       publishEvent,
       logJobCreated: (kind, jobId) => appLogger('info', 'api', `Job created: ${kind}`, jobId),
       enqueueJob: (job) => workerController.enqueueJob(job),
+    }),
+  );
+
+  app.route(
+    '/api/references',
+    createReferenceRoutes({
+      createHandoffId: () => `handoff-${randomUUID()}`,
+      processReferences: (handoffId, prompt, references, libraryDir) =>
+        processReferences(handoffId, prompt, references, libraryDir),
+      readLibraryDir: () => getSettings().libraryDir,
+      toPublicAssetUrl,
+      isReferenceProcessingError: (error): error is ReferenceProcessingError =>
+        error instanceof ReferenceProcessingError,
     }),
   );
 

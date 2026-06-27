@@ -1,19 +1,25 @@
 import React from 'react';
 import { AnimatePresence, MotionDiv } from 'motion/react';
 import {
-  ArrowRight,
-  CheckCircle2,
-  CircleAlert,
-  CircleDashed,
-  Folder,
-  Image as ImageIcon,
-  Play,
-  RefreshCw,
-  Sparkles,
-  Terminal,
-  X,
-} from 'lucide-react';
+  IconArrowRight as ArrowRight,
+  IconCircleCheck as CheckCircle2,
+  IconAlertCircle as CircleAlert,
+  IconCircleDashed as CircleDashed,
+  IconClipboard as Clipboard,
+  IconClipboardCheck as ClipboardCheck,
+  IconFolder as Folder,
+  IconPhoto as ImageIcon,
+  IconPlayerPlay as Play,
+  IconRefresh as RefreshCw,
+  IconSparkles as Sparkles,
+  IconTerminal as Terminal,
+  IconX as X,
+} from '@tabler/icons-react';
 import fallbackStyleRecipePreview from '../assets/recipes/styles/defaults/SP01-001.webp?url';
+import {
+  buildCodexStudioSetupPrompt,
+  CODEX_STUDIO_SETUP_SKILL_PATH,
+} from '../lib/onboardingSetupPrompt';
 import { STYLE_AVAILABLE_DEFAULT_IMAGES } from '../lib/recipeAssetCatalog';
 import type {
   HealthResponse,
@@ -124,6 +130,54 @@ function PreviewCard({ previewImage }: { previewImage: string }) {
   );
 }
 
+function SetupPromptCard({ prompt }: { prompt: string }) {
+  const [copyState, setCopyState] = React.useState<'idle' | 'copied' | 'failed'>('idle');
+  const CopyIcon = copyState === 'copied' ? ClipboardCheck : Clipboard;
+
+  const copyPrompt = React.useCallback(async () => {
+    try {
+      await navigator.clipboard.writeText(prompt);
+      setCopyState('copied');
+      window.setTimeout(() => setCopyState('idle'), 1800);
+    } catch {
+      setCopyState('failed');
+      window.setTimeout(() => setCopyState('idle'), 2200);
+    }
+  }, [prompt]);
+
+  return (
+    <div className="mt-6 rounded-2xl border border-blue-500/18 bg-blue-500/[0.06] p-4">
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0">
+          <p className="text-[11px] font-black uppercase tracking-[0.24em] text-blue-300">
+            Codex setup handoff
+          </p>
+          <p className="mt-2 text-sm leading-6 text-zinc-400">
+            Prepared prompt for the repo-local setup skill.
+          </p>
+        </div>
+        <button
+          type="button"
+          onClick={copyPrompt}
+          className="inline-flex h-10 shrink-0 items-center justify-center gap-2 rounded-xl border border-blue-400/20 bg-blue-500/12 px-3 text-[10px] font-black uppercase tracking-widest text-blue-100 transition-colors hover:bg-blue-500/20"
+        >
+          <CopyIcon size={15} />
+          {copyState === 'copied' ? 'Copied' : copyState === 'failed' ? 'Failed' : 'Copy'}
+        </button>
+      </div>
+      <p className="mt-3 truncate rounded-lg border border-white/8 bg-black/30 px-2.5 py-1 font-mono text-[11px] text-zinc-500">
+        {CODEX_STUDIO_SETUP_SKILL_PATH}
+      </p>
+      <textarea
+        readOnly
+        value={prompt}
+        aria-label="Codex Studio setup prompt"
+        className="custom-scrollbar mt-3 h-52 w-full resize-none rounded-xl border border-white/8 bg-black/35 p-3 font-mono text-[11px] leading-5 text-zinc-300 outline-none"
+      />
+    </div>
+  );
+}
+
 export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   apiBase,
   error,
@@ -170,6 +224,17 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   const previewImage = React.useMemo(
     () => (isOpen ? pickStyleRecipePreviewImage() : fallbackStyleRecipePreview),
     [isOpen],
+  );
+  const setupPrompt = React.useMemo(
+    () =>
+      buildCodexStudioSetupPrompt({
+        apiBase,
+        health,
+        isDesktopRuntime,
+        localCodexSession,
+        readiness,
+      }),
+    [apiBase, health, isDesktopRuntime, localCodexSession, readiness],
   );
   const sessionDetail = codexReady
     ? 'You are signed in and ready to generate.'
@@ -302,6 +367,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                         tone={serverTone}
                       />
                     </div>
+                    <SetupPromptCard prompt={setupPrompt} />
                   </div>
                 </section>
               </div>

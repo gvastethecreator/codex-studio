@@ -448,3 +448,21 @@ export interface CreateJobRequest {
     strength: number;
   }[];
 }
+
+export interface ReferenceHandoffRequest {
+  references: {
+    name: string;
+    dataUrl: string;
+    strength: number;
+  }[];
+}
+
+export interface ReferenceHandoffResponse {
+  handoffId: string;
+  references: {
+    name: string;
+    localPath: string;
+    publicUrl: string;
+    strength: number;
+  }[];
+}

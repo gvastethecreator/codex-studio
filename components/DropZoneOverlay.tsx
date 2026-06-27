@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paperclip } from 'lucide-react';
+import { IconPaperclip as Paperclip } from '@tabler/icons-react';
 
 interface DropZoneOverlayProps {
   isVisible: boolean;
