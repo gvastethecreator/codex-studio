@@ -20,12 +20,9 @@ import type { StudioUsageSummary } from '../lib/studioDiagnostics';
 import type { Workspace, RecipeId } from '../types';
 import { UsageStatusCard } from './header/UsageStatusCard';
 import { WorkspaceStrip } from './header/WorkspaceStrip';
+import type { StudioCommandCenterProjection } from '../lib/commandCenterProjection';
 
 export interface HeaderToolbarProps {
-  queueResultPreviews?: Array<{
-    id: string;
-    src: string;
-  }>;
   isGenerating: boolean;
   workspaces: (Workspace & { imageCount?: number })[];
   activeWorkspaceId: string;
@@ -45,19 +42,14 @@ export interface HeaderToolbarProps {
   trashCount: number;
   onToggleDebug: () => void;
   usage: StudioUsageSummary;
-  activeProviderId: string;
-  runtimeStatus: {
-    label: string;
-    tone: 'success' | 'warning' | 'danger';
-  };
-  queueCount: number;
+  commandCenter: StudioCommandCenterProjection;
   isQueueOpen: boolean;
   onToggleQueue: () => void;
   onOpenSettings: () => void;
   generationStartTime: number | null;
 }
 
-const EMPTY_QUEUE_PREVIEWS: Array<{ id: string; src: string }> = [];
+const EMPTY_QUEUE_PREVIEWS: StudioCommandCenterProjection['queue']['resultPreviews'] = [];
 
 const RECIPE_DATA: Record<Exclude<RecipeId, null>, { name: string }> = {
   remaster: { name: 'Remaster' },
@@ -90,10 +82,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   trashCount,
   onToggleDebug,
   usage,
-  activeProviderId,
-  runtimeStatus,
-  queueResultPreviews = EMPTY_QUEUE_PREVIEWS,
-  queueCount,
+  commandCenter,
   isQueueOpen,
   onToggleQueue,
   onOpenSettings,
@@ -110,8 +99,15 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
     : null;
   const activeWorkspace = workspaces.find((w) => w.id === activeWorkspaceId);
   const workspaceLabel = activeWorkspace?.name || 'Studio';
-  const hasQueueResultPreviews = queueResultPreviews.length > 0;
-  const showCollapsedQueueProgress = isGenerating && !isQueueOpen;
+  const runtimeStatus = commandCenter.runtimeStatus;
+  const activeProvider = commandCenter.provider;
+  const queueResultPreviews = commandCenter.queue.resultPreviews ?? EMPTY_QUEUE_PREVIEWS;
+  const queueCount = commandCenter.queue.count;
+  const hasQueueResultPreviews = commandCenter.queue.hasResultPreviews;
+  const showCollapsedQueueProgress = commandCenter.queue.showCollapsedProgress;
+  const providerToolbarLabel = commandCenter.compactMode
+    ? activeProvider.id.slice(0, 3)
+    : activeProvider.id;
   const queueProgressPercent = (() => {
     if (!showCollapsedQueueProgress) return 0;
     void queueProgressTick;
@@ -267,7 +263,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
           </div>
 
           <div className="flex shrink-0 items-center gap-1">
-            <Tooltip content={`Runtime status: ${runtimeStatus.label}`} position="bottom">
+            <Tooltip content={runtimeStatus.tooltip} position="bottom">
               <button
                 type="button"
                 onClick={onOpenDashboard}
@@ -280,15 +276,15 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 </span>
               </button>
             </Tooltip>
-            <Tooltip content={`Active provider: ${activeProviderId}`} position="bottom">
+            <Tooltip content={activeProvider.tooltip} position="bottom">
               <button
                 type="button"
                 onClick={onOpenSettings}
-                aria-label={`Open provider settings for ${activeProviderId}`}
-                className="studio-hit-target hidden h-8 max-w-24 items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-2 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white lg:flex"
+                aria-label={`Open provider settings for ${activeProvider.label}`}
+                className={`studio-hit-target hidden h-8 items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-2 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white lg:flex ${commandCenter.compactMode ? 'max-w-12' : 'max-w-24'}`}
               >
                 <span className="truncate text-[9px] font-black uppercase tracking-widest">
-                  {activeProviderId}
+                  {providerToolbarLabel}
                 </span>
               </button>
             </Tooltip>
@@ -425,7 +421,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                       className="flex min-h-11 items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
                     >
                       <Settings size={15} />
-                      <span className="truncate">{activeProviderId}</span>
+                      <span className="truncate">{activeProvider.label}</span>
                     </button>
                   </div>
                   <div className="grid grid-cols-2 gap-2">

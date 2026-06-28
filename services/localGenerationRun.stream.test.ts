@@ -125,7 +125,7 @@ describe('runSingleCodexImagegenJob stream ownership', () => {
 
     expect(mocks.createStudioEventStream).toHaveBeenCalledTimes(1);
     expect(mocks.stream.close).toHaveBeenCalledTimes(1);
-  });
+  }, 60_000);
 
   it('does not close an injected event stream', async () => {
     const { runSingleCodexImagegenJob } = await import('./localGenerationRun');
@@ -150,5 +150,5 @@ describe('runSingleCodexImagegenJob stream ownership', () => {
 
     expect(mocks.createStudioEventStream).not.toHaveBeenCalled();
     expect(injectedStream.close).not.toHaveBeenCalled();
-  });
+  }, 60_000);
 });

@@ -19,7 +19,7 @@ import {
 import { canRetryStudioJob } from '../lib/studioJobRetry';
 import { cn } from '../lib/utils';
 import type { StudioQueueResultPreview } from '../lib/studioQueueResults';
-import type { Job as StudioJob } from '../packages/shared/src';
+import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 import type { QueueJob } from '../types';
 
 interface QueuePanelProps {
@@ -115,12 +115,8 @@ function formatDurationMs(value: number | null) {
   return `${minutes}m ${seconds}s`;
 }
 
-function resolveServerJobPreview(job: StudioJob, resultPreviewSrc?: string) {
+function resolveServerJobPreview(resultPreviewSrc?: string) {
   if (resultPreviewSrc) return resultPreviewSrc;
-
-  const sourceAsset = job.sourceSpec?.assets?.find((asset) => typeof asset.dataUrl === 'string');
-  if (sourceAsset?.dataUrl) return sourceAsset.dataUrl;
-
   return null;
 }
 
@@ -339,7 +335,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                           <ServerJobItem
                             key={job.id}
                             job={job}
-                            previewSrc={resolveServerJobPreview(job, resultsByJobId.get(job.id))}
+                            previewSrc={resolveServerJobPreview(resultsByJobId.get(job.id))}
                             nowMs={nowMs}
                             isSelected={selectedJobId === job.id}
                             onInspect={() => onInspectJob(job.id)}

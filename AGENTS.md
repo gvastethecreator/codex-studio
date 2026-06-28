@@ -14,6 +14,34 @@ This file is for agents working inside this repo. Vocabulary lives in `CONTEXT.m
 - The top toolbar is the Command Center.
 - Heavy diagnostics, settings, provider internals, and visual effects should be Demand-Mounted Surfaces.
 
+## Setup / First Run
+
+When the user asks for setup, getting started, first run, onboarding, or the
+checkout is not initialized, use `skills/codex-studio-setup/SKILL.md` before
+ad hoc commands.
+
+Setup agent flow:
+
+1. Read this guide, `README.md`, `SKILLS.md`, and
+   `skills/codex-studio-setup/SKILL.md`.
+2. Inspect repo and runtime state without printing secrets:
+   - `git status --short`
+   - `bun --version`
+   - `codex --version`
+   - `.env.local` presence
+   - Studio Library path and initialization state
+   - `/api/health` and `/api/codex/session` when the server is reachable
+3. Run `bun install` only when dependencies are missing or stale enough to
+   block setup.
+4. Run `bun run studio:init` when `.env.local`, the Studio Library, SQLite
+   state, default library, or default project are missing.
+5. Start or verify the local runtime with `bun run dev` when needed, then check
+   UI/backend health.
+6. If ChatGPT auth is missing, stop and ask the user to run `codex login` and
+   choose ChatGPT. Do not claim setup is complete until that user-only step is
+   done and rechecked.
+7. Close out with one validation pass and a concise readiness summary.
+
 ## Required Context Pass
 
 Before architecture or runtime work, read:

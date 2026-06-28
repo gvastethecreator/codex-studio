@@ -40,6 +40,7 @@ import type {
   StorageMaintenanceThumbnailBackfillResult,
   ToolingLogsPruneResult,
 } from '../packages/shared/src/storageMaintenance';
+import { createStorageRepairPlanFromAudit } from '../packages/shared/src/storageMaintenance';
 
 interface StudioSettingsModalProps {
   isOpen: boolean;
@@ -667,6 +668,10 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
     audit?.payloadFields.reduce((total, field) => total + field.inlineBytes, 0) ?? 0;
   const compactRows = getCompactChangedRows(compactResult);
   const compactBytes = getCompactOmittedBytes(compactResult);
+  const repairPlan = useMemo(
+    () => (audit ? createStorageRepairPlanFromAudit(audit) : null),
+    [audit],
+  );
 
   const handleWriteCompact = () => {
     const confirmed = window.confirm(
@@ -820,6 +825,50 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
           </button>
         </div>
       </div>
+
+      {repairPlan ? (
+        <div className="mt-3 rounded-lg border border-white/8 bg-black/20 p-3">
+          <div className="mb-2 flex items-center justify-between gap-3">
+            <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+              Repair Plan
+            </div>
+            <div className="font-mono text-[9px] font-bold text-zinc-500">
+              {repairPlan.summary.itemCount} items / {formatBytes(repairPlan.summary.totalBytes)}
+            </div>
+          </div>
+          {repairPlan.items.length > 0 ? (
+            <div className="grid gap-2">
+              {repairPlan.items.map((item) => (
+                <div
+                  key={item.id}
+                  className="rounded-md border border-white/8 bg-white/[0.03] px-3 py-2"
+                >
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
+                      {item.title}
+                    </span>
+                    <span
+                      className={`text-[8px] font-black uppercase tracking-widest ${
+                        item.severity === 'warning' ? 'text-amber-300' : 'text-zinc-500'
+                      }`}
+                    >
+                      {item.severity}
+                    </span>
+                  </div>
+                  <p className="mt-1 text-[10px] leading-relaxed text-zinc-500">{item.detail}</p>
+                  <div className="mt-2 truncate font-mono text-[9px] text-zinc-600">
+                    {item.command}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+              No repair actions recommended by the current audit.
+            </div>
+          )}
+        </div>
+      ) : null}
 
       {(compactResult || thumbnailBackfillResult || toolingLogsPruneResult) && (
         <div className="mt-3 grid gap-2 text-[10px] font-bold uppercase tracking-widest text-zinc-500 md:grid-cols-3">

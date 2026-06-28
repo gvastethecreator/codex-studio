@@ -1,8 +1,17 @@
 import { useCallback, useEffect, useReducer, useMemo, useRef } from 'react';
 import { listStudioJobs, listStudioLogs } from '../services/localStudioService';
-import { createStudioEventStream } from '../services/studioEventSource';
+import {
+  createStudioEventStream,
+  type StudioEventStream,
+  watchJob,
+} from '../services/studioEventSource';
 import type { LogEntry } from '../types';
-import type { Job as StudioJob, SystemLog as StudioLog } from '../packages/shared/src';
+import type { Job, SystemLog as StudioLog } from '../packages/shared/src';
+import type { ShellActivityJob } from '../lib/shellActivityJob';
+import {
+  catalogRefreshScopeFromImage,
+  type CatalogRefreshScope,
+} from '../lib/catalogOperationResult';
 import {
   buildMergedStudioLogs,
   countActiveServerJobs,
@@ -14,11 +23,11 @@ import { createLocalStudioSyncRefreshPolicy } from './localStudioSyncRefreshPoli
 interface UseLocalStudioSyncProps {
   logs: LogEntry[];
   log: (message: string) => void;
-  onCatalogChanged?: () => void;
+  onCatalogChanged?: (scope?: CatalogRefreshScope) => void;
 }
 
 export interface LocalStudioSyncActivity {
-  studioJobs: StudioJob[];
+  studioJobs: ShellActivityJob[];
   mergedLogs: LogEntry[];
   activeServerJobCount: number;
   isBackendConnected: boolean;
@@ -27,6 +36,7 @@ export interface LocalStudioSyncActivity {
 export interface LocalStudioSyncResult {
   activity: LocalStudioSyncActivity;
   refreshBackendState: () => Promise<void>;
+  waitForBackendJob: (jobId: string, signal?: AbortSignal, timeoutMs?: number) => Promise<Job>;
 }
 
 export function useLocalStudioSync({
@@ -39,6 +49,7 @@ export function useLocalStudioSync({
     INITIAL_LOCAL_STUDIO_SYNC_BACKEND_STATE,
   );
   const isMountedRef = useRef(true);
+  const streamRef = useRef<StudioEventStream | null>(null);
 
   useEffect(() => {
     isMountedRef.current = true;
@@ -65,7 +76,6 @@ export function useLocalStudioSync({
       const [backendJobs, backendLogs] = await Promise.all([listStudioJobs(), listStudioLogs()]);
 
       dispatch({ type: 'refresh', jobs: backendJobs, logs: backendLogs });
-      onCatalogChanged?.();
     } catch (error) {
       if (!isMountedRef.current) {
         return;
@@ -90,14 +100,15 @@ export function useLocalStudioSync({
     void refreshBackendState();
 
     const stream = createStudioEventStream();
+    streamRef.current = stream;
     const unsubscribeJob = stream.onJobUpdate('*', (job) => {
       dispatch({ type: 'job_update', job });
     });
     const unsubscribeAsset = stream.onAssetAdded(() => {
       refreshPolicy.onAssetAdded();
     });
-    const unsubscribeCatalog = stream.onCatalogChanged(() => {
-      refreshPolicy.onAssetAdded();
+    const unsubscribeCatalog = stream.onCatalogChanged(({ image }) => {
+      onCatalogChanged?.(catalogRefreshScopeFromImage(image));
     });
     const unsubscribeLog = stream.onLogAdded((entry) => {
       dispatch({ type: 'log_added', entry });
@@ -114,8 +125,24 @@ export function useLocalStudioSync({
       unsubscribeLog();
       unsubscribeConnection();
       stream.close();
+      if (streamRef.current === stream) {
+        streamRef.current = null;
+      }
     };
   }, [refreshPolicy, refreshBackendState]);
+
+  const waitForBackendJob = useCallback(
+    async (jobId: string, signal?: AbortSignal, timeoutMs?: number) => {
+      const existingStream = streamRef.current;
+      const stream = existingStream ?? createStudioEventStream();
+      try {
+        return await watchJob(stream, jobId, signal, timeoutMs);
+      } finally {
+        if (!existingStream) stream.close();
+      }
+    },
+    [],
+  );
 
   return {
     activity: {
@@ -125,5 +152,6 @@ export function useLocalStudioSync({
       isBackendConnected: backendState.connected,
     },
     refreshBackendState,
+    waitForBackendJob,
   };
 }

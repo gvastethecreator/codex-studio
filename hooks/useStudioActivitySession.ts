@@ -1,12 +1,12 @@
 import { useCallback } from 'react';
 import { useStudioJobInspector } from './useStudioJobInspector';
 import type { ToastMessage } from './useToasts';
-import type { Job } from '../packages/shared/src';
 import { retryStudioJobById } from '../services/localStudioService';
 import { useLazyRef } from './useLazyRef';
+import type { ShellActivityJob } from '../lib/shellActivityJob';
 
 interface UseStudioActivitySessionOptions {
-  studioJobs: Job[];
+  studioJobs: ShellActivityJob[];
   addToast: (message: string, type?: ToastMessage['type']) => void;
   isDebugPanelOpen: boolean;
   openDebugPanel: () => void;

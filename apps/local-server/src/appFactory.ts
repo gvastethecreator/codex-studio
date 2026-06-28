@@ -164,7 +164,7 @@ export async function createStudioApp(
   app.route(
     '/api/providers',
     createProviderRoutes({
-      readSettings: readEditableStudioSettings(settingsStorage),
+      readSettings: () => readEditableStudioSettings(settingsStorage),
     }),
   );
 

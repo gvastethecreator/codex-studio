@@ -19,6 +19,20 @@ Codex Studio is an open-source image creation environment built for fast local i
 
 ## Quick start
 
+Fast path: ask Codex from this repo to do the first-run setup.
+
+```text
+Set up Codex Studio for first run.
+```
+
+Codex will use [`AGENTS.md`](./AGENTS.md), [`SKILLS.md`](./SKILLS.md), and
+[`skills/codex-studio-setup/SKILL.md`](./skills/codex-studio-setup/SKILL.md)
+to install dependencies when needed, initialize the local Studio Library,
+verify Codex/ChatGPT session readiness, start the local runtime, and report any
+remaining user-only action.
+
+Manual fallback:
+
 1. Install dependencies and initialize your local studio library.
    - `bun install`
    - `bun run studio:init`

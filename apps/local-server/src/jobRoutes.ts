@@ -2,59 +2,20 @@ import { Hono } from 'hono';
 import { Either, Schema } from 'effect';
 import type {
   CreateJobRequest,
-  GenerationTaskSpec,
   Job,
   JobDetailResponse,
   JobSummary,
 } from '../../../packages/shared/src';
-import { validateGenerationTaskSpec } from '../../../packages/shared/src/generationContracts';
-import type { publishEvent } from './events';
+import {
+  createPersistentJobIntake,
+  type PersistentJobIntakeDependencies,
+} from './persistentJobIntake';
 
-interface ProcessReferencesResult {
-  augmentedPrompt: string;
-  persistedRefs: unknown[];
-}
-
-interface ReferenceProcessingErrorLike {
-  message: string;
-  referenceName: string | null;
-  reason: string;
-}
-
-interface JobRoutesDependencies {
+interface JobRoutesDependencies extends PersistentJobIntakeDependencies {
   listJobs: () => Array<Job | JobSummary>;
   getJob: (jobId: string) => Job | null;
   getJobDetail: (jobId: string) => Promise<JobDetailResponse | null>;
   cancelQueuedOrRunningJob: (jobId: string) => Job | null;
-  ensureDefaultProjectId: () => string;
-  createJobId: () => string;
-  createJob: (input: {
-    id: string;
-    projectId: string;
-    kind: Job['kind'];
-    providerId: Job['providerId'];
-    sourceSpec: GenerationTaskSpec | null;
-    prompt: string;
-    execution: Job['execution'];
-  }) => Job;
-  updateJobFinalPrompt: (jobId: string, finalPrompt: string) => Job | null;
-  processReferences: (
-    jobId: string,
-    prompt: string,
-    references: CreateJobRequest['references'],
-    libraryDir: string,
-  ) => Promise<ProcessReferencesResult>;
-  hydrateSourceSpecAssetPaths: (
-    sourceSpec: GenerationTaskSpec | null,
-    references: CreateJobRequest['references'],
-    persistedRefs: unknown[],
-  ) => GenerationTaskSpec | null;
-  readLibraryDir: () => string;
-  resolveProviderExecutionBlocker: (providerId: string) => unknown;
-  isReferenceProcessingError: (error: unknown) => error is ReferenceProcessingErrorLike;
-  publishEvent: typeof publishEvent;
-  logJobCreated: (kind: string, jobId: string) => void;
-  enqueueJob: (job: Job) => void;
 }
 
 const CreateJobRequestBoundarySchema = Schema.Struct({
@@ -89,39 +50,6 @@ function decodeCreateJobRequestBoundary(body: unknown) {
   return Schema.decodeUnknownEither(CreateJobRequestBoundarySchema)(body);
 }
 
-function shouldRequireLocalRunIds(sourceSpec: GenerationTaskSpec | null) {
-  const metadata =
-    sourceSpec?.metadata &&
-    typeof sourceSpec.metadata === 'object' &&
-    !Array.isArray(sourceSpec.metadata)
-      ? sourceSpec.metadata
-      : {};
-  return Boolean(
-    sourceSpec &&
-    (typeof metadata.batchId === 'string' || typeof metadata.workspaceId === 'string'),
-  );
-}
-
-function createValidationErrorResponse(
-  sourceSpec: GenerationTaskSpec,
-  providerId: Job['providerId'],
-) {
-  const issues = validateGenerationTaskSpec(sourceSpec, {
-    requireLocalRunIds: shouldRequireLocalRunIds(sourceSpec),
-    requireHydratedAssets: true,
-    expectedProviderId: providerId,
-  });
-  if (issues.length === 0) return null;
-
-  return {
-    error: 'Invalid Generation Task Spec',
-    code: issues[0].code,
-    field: issues[0].field,
-    reason: issues[0].message,
-    issues,
-  };
-}
-
 export function createJobRoutes({
   listJobs,
   getJob,
@@ -141,6 +69,20 @@ export function createJobRoutes({
   enqueueJob,
 }: JobRoutesDependencies) {
   const routes = new Hono();
+  const persistentJobIntake = createPersistentJobIntake({
+    ensureDefaultProjectId,
+    createJobId,
+    createJob,
+    updateJobFinalPrompt,
+    processReferences,
+    hydrateSourceSpecAssetPaths,
+    readLibraryDir,
+    resolveProviderExecutionBlocker,
+    isReferenceProcessingError,
+    publishEvent,
+    logJobCreated,
+    enqueueJob,
+  });
 
   routes.get('/', (c) => c.json(listJobs()));
 
@@ -205,77 +147,9 @@ export function createJobRoutes({
       references: boundaryBody.references as CreateJobRequest['references'],
     };
 
-    const projectId = body.projectId || ensureDefaultProjectId();
-    const prompt = (body.prompt || body.sourceSpec?.prompt || '').trim();
-    if (!prompt) return c.json({ error: 'Prompt is required' }, 400);
-    const jobId = createJobId();
-
-    const providerId =
-      body.kind === 'dry_run'
-        ? 'dry_run'
-        : (body.providerId ?? body.sourceSpec?.providerId ?? 'codex');
-
-    let sourceSpec: GenerationTaskSpec | null = body.sourceSpec
-      ? {
-          ...body.sourceSpec,
-          providerId: body.sourceSpec.providerId ?? providerId,
-          assets: body.sourceSpec.assets.map((asset) => ({ ...asset })),
-        }
-      : null;
-
-    const providerBlocker = resolveProviderExecutionBlocker(providerId);
-    if (providerBlocker) {
-      return c.json(providerBlocker, 400);
-    }
-
-    let finalPrompt = prompt;
-    try {
-      const processedReferences = await processReferences(
-        jobId,
-        prompt,
-        body.references || [],
-        readLibraryDir(),
-      );
-      finalPrompt = processedReferences.augmentedPrompt;
-      sourceSpec = hydrateSourceSpecAssetPaths(
-        sourceSpec,
-        body.references || [],
-        processedReferences.persistedRefs,
-      );
-    } catch (error) {
-      if (isReferenceProcessingError(error)) {
-        return c.json(
-          { error: error.message, referenceName: error.referenceName, reason: error.reason },
-          400,
-        );
-      }
-      throw error;
-    }
-
-    if (sourceSpec) {
-      const validationError = createValidationErrorResponse(sourceSpec, providerId);
-      if (validationError) {
-        return c.json(validationError, 400);
-      }
-    }
-
-    const job = createJob({
-      id: jobId,
-      projectId,
-      kind: body.kind,
-      providerId,
-      sourceSpec,
-      prompt,
-      execution: body.execution ?? null,
-    });
-
-    const queuedJob =
-      finalPrompt === prompt ? job : (updateJobFinalPrompt(job.id, finalPrompt) ?? job);
-
-    publishEvent('job.created', queuedJob);
-    logJobCreated(queuedJob.kind, queuedJob.id);
-    enqueueJob(queuedJob);
-    return c.json(queuedJob, 201);
+    const result = await persistentJobIntake.createJob(body);
+    if (!result.ok) return c.json(result.error.body, result.error.status);
+    return c.json(result.job, result.status);
   });
 
   return routes;

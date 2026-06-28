@@ -7,6 +7,7 @@ import {
   buildStudioViewportController,
 } from '../lib/buildStudioPageController';
 import { createGenerationTaskSpec, type Job } from '../packages/shared/src';
+import { toShellActivityJob } from '../lib/shellActivityJob';
 
 describe('buildStudioPageController', () => {
   it('concentrates debug, grid, and operations props behind one controller', () => {
@@ -134,7 +135,10 @@ describe('buildStudioPageController', () => {
       buildStudioGenerationPlaceholders({
         activeWorkspaceId: 'default',
         fallbackAspectRatio: '1:1',
-        studioJobs: [runningJob, { ...runningJob, id: 'done-1', status: 'completed' }],
+        studioJobs: [
+          toShellActivityJob(runningJob, 'backend_event'),
+          toShellActivityJob({ ...runningJob, id: 'done-1', status: 'completed' }, 'backend_event'),
+        ],
         jobs: [
           {
             id: 'queued-1',

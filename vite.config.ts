@@ -1,6 +1,8 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { defineConfig, lazyPlugins } from 'vite-plus';
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite-plus';
 
 const rootDir = fileURLToPath(new URL('.', import.meta.url));
 
@@ -14,14 +16,7 @@ export default defineConfig({
     port: 17222,
     host: 'localhost',
   },
-  plugins: lazyPlugins(async () => {
-    const [{ default: react }, { default: tailwindcss }] = await Promise.all([
-      import('@vitejs/plugin-react'),
-      import('@tailwindcss/vite'),
-    ]);
-
-    return [react(), tailwindcss()];
-  }),
+  plugins: [...react(), ...tailwindcss()] as never,
   resolve: {
     alias: {
       '@': path.resolve(rootDir, '.'),

@@ -1,10 +1,16 @@
 import type { Dispatch, SetStateAction } from 'react';
 
 import { startViewTransition } from '../utils/transitionUtils';
+import { buildStudioCommandCenterProjection } from './commandCenterProjection';
 import { runWorkspaceSwitchLifecycle } from './workspaceLifecycle';
 
 import type { HeaderToolbarProps } from '../components/HeaderToolbar';
 import type { StudioRuntimeStatusItem } from './studioDiagnostics';
+import type {
+  EditableStudioSettings,
+  GenerationProviderCapabilitiesResponse,
+  GenerationProviderRuntimePreflightResponse,
+} from '../packages/shared/src';
 
 type StartTransition = (callback: () => void) => void;
 
@@ -38,12 +44,14 @@ interface StudioHeaderToolbarOverlayContext {
 }
 
 interface StudioHeaderToolbarCommandCenterContext {
+  settings: Pick<EditableStudioSettings, 'defaultProviderId' | 'commandCenterCompactMode'> | null;
   provider: {
-    defaultProviderId: HeaderToolbarProps['activeProviderId'] | null | undefined;
+    capabilities: GenerationProviderCapabilitiesResponse | null;
+    runtimePreflight: GenerationProviderRuntimePreflightResponse | null;
   };
   queue: {
     statusItems: StudioRuntimeStatusItem[];
-    queueResultPreviews: HeaderToolbarProps['queueResultPreviews'];
+    queueResultPreviews: HeaderToolbarProps['commandCenter']['queue']['resultPreviews'];
     queueJobCount: number;
     activeServerJobCount: number;
     isQueueOpen: HeaderToolbarProps['isQueueOpen'];
@@ -60,24 +68,6 @@ export interface BuildStudioHeaderToolbarPropsArgs {
   overlays: StudioHeaderToolbarOverlayContext;
   commandCenter: StudioHeaderToolbarCommandCenterContext;
   startTransition?: StartTransition;
-}
-
-function summarizeRuntimeStatus(
-  statusItems: StudioRuntimeStatusItem[],
-): HeaderToolbarProps['runtimeStatus'] {
-  if (statusItems.length === 0) {
-    return { label: 'Checking', tone: 'warning' };
-  }
-
-  if (statusItems.some((item) => item.tone === 'danger')) {
-    return { label: 'Attention', tone: 'danger' };
-  }
-
-  if (statusItems.some((item) => item.tone === 'warning')) {
-    return { label: 'Standby', tone: 'warning' };
-  }
-
-  return { label: 'Ready', tone: 'success' };
 }
 
 /**
@@ -120,10 +110,17 @@ export function buildStudioHeaderToolbarProps({
     trashCount: overlays.trashCount,
     onToggleDebug: overlays.onToggleDebug,
     usage: view.usage,
-    activeProviderId: commandCenter.provider.defaultProviderId ?? 'codex',
-    runtimeStatus: summarizeRuntimeStatus(commandCenter.queue.statusItems),
-    queueResultPreviews: commandCenter.queue.queueResultPreviews,
-    queueCount: commandCenter.queue.queueJobCount + commandCenter.queue.activeServerJobCount,
+    commandCenter: buildStudioCommandCenterProjection({
+      settings: commandCenter.settings,
+      providerCapabilities: commandCenter.provider.capabilities,
+      providerRuntimePreflight: commandCenter.provider.runtimePreflight,
+      statusItems: commandCenter.queue.statusItems,
+      queueResultPreviews: commandCenter.queue.queueResultPreviews,
+      queueJobCount: commandCenter.queue.queueJobCount,
+      activeServerJobCount: commandCenter.queue.activeServerJobCount,
+      isQueueOpen: commandCenter.queue.isQueueOpen,
+      isGenerating: view.isGenerating,
+    }),
     isQueueOpen: commandCenter.queue.isQueueOpen,
     onToggleQueue: () => commandCenter.queue.setIsQueueOpen((previous) => !previous),
     onOpenSettings: commandCenter.actions.onOpenSettings,

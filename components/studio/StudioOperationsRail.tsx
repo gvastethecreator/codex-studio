@@ -1,7 +1,7 @@
 import React from 'react';
 
 import type { StudioQueueResultPreview } from '../../lib/studioQueueResults';
-import type { Job as StudioJob } from '../../packages/shared/src';
+import type { ShellActivityJob as StudioJob } from '../../lib/shellActivityJob';
 import type { QueueJob } from '../../types';
 
 const QueuePanel = React.lazy(() =>

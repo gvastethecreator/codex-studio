@@ -406,7 +406,7 @@ export function validateGenerationTaskSpec(
     });
   }
 
-  if (!spec.id?.trim()) {
+  if (typeof spec.id !== 'string' || !spec.id.trim()) {
     issues.push({
       code: 'invalid_spec_id',
       message: 'Generation Task Spec id is required.',
@@ -453,7 +453,7 @@ export function validateGenerationTaskSpec(
     });
   }
 
-  if (!spec.prompt?.trim()) {
+  if (typeof spec.prompt !== 'string' || !spec.prompt.trim()) {
     issues.push({
       code: 'invalid_prompt',
       message: 'Generation Task Spec prompt is required.',
@@ -507,7 +507,7 @@ export function validateGenerationTaskSpec(
       });
       return;
     }
-    if (!asset.name?.trim()) {
+    if (typeof asset.name !== 'string' || !asset.name.trim()) {
       issues.push({
         code: 'invalid_asset',
         message: 'Generation Task asset name is required.',

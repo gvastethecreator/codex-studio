@@ -11,6 +11,11 @@ import { getStudioApiBase, listStudioJobs } from './localStudioService';
 type Unsubscribe = () => void;
 type Listener<T> = (payload: T) => void;
 
+export interface StudioCatalogEventPayload {
+  type: 'catalog.created' | 'catalog.updated' | 'catalog.deleted';
+  image: CatalogImage;
+}
+
 const TERMINAL_STATUSES = new Set(['completed', 'failed', 'cancelled', 'needs_review']);
 
 export interface StudioEventReconnectPolicy {
@@ -69,7 +74,7 @@ export function createJobTerminalStatusError(job: Job) {
 export interface StudioEventStream {
   onJobUpdate(jobIdOrWildcard: string, callback: Listener<Job>): Unsubscribe;
   onAssetAdded(callback: Listener<Asset>): Unsubscribe;
-  onCatalogChanged(callback: Listener<CatalogImage>): Unsubscribe;
+  onCatalogChanged(callback: Listener<StudioCatalogEventPayload>): Unsubscribe;
   onLogAdded(callback: Listener<SystemLog>): Unsubscribe;
   onConnectionChange(callback: Listener<boolean>): Unsubscribe;
   close(): void;
@@ -86,7 +91,7 @@ class BrowserStudioEventStream implements StudioEventStream {
   private reconnectDelay = DEFAULT_STUDIO_EVENT_RECONNECT_POLICY.initialDelayMs;
   private jobListeners = new Map<string, Set<Listener<Job>>>();
   private assetListeners = new Set<Listener<Asset>>();
-  private catalogListeners = new Set<Listener<CatalogImage>>();
+  private catalogListeners = new Set<Listener<StudioCatalogEventPayload>>();
   private logListeners = new Set<Listener<SystemLog>>();
   private connectionListeners = new Set<Listener<boolean>>();
 
@@ -109,7 +114,7 @@ class BrowserStudioEventStream implements StudioEventStream {
     return () => this.assetListeners.delete(callback);
   }
 
-  onCatalogChanged(callback: Listener<CatalogImage>) {
+  onCatalogChanged(callback: Listener<StudioCatalogEventPayload>) {
     this.catalogListeners.add(callback);
     return () => this.catalogListeners.delete(callback);
   }
@@ -180,7 +185,10 @@ class BrowserStudioEventStream implements StudioEventStream {
       event.type === 'catalog.updated' ||
       event.type === 'catalog.deleted'
     ) {
-      this.catalogListeners.forEach((listener) => listener(event.payload as CatalogImage));
+      const type = event.type as StudioCatalogEventPayload['type'];
+      this.catalogListeners.forEach((listener) =>
+        listener({ type, image: event.payload as CatalogImage }),
+      );
     } else if (event.type === 'log.appended' || event.type === 'log.created') {
       this.logListeners.forEach((listener) => listener(event.payload as SystemLog));
     }
@@ -203,7 +211,7 @@ class StudioEventStreamLease implements StudioEventStream {
     return this.closed ? () => {} : this.stream.onAssetAdded(callback);
   }
 
-  onCatalogChanged(callback: Listener<CatalogImage>) {
+  onCatalogChanged(callback: Listener<StudioCatalogEventPayload>) {
     return this.closed ? () => {} : this.stream.onCatalogChanged(callback);
   }
 

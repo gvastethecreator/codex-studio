@@ -1,9 +1,37 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import { createGenerationTaskSpec } from '../../../packages/shared/src';
-import { hydrateSourceSpecAssetPaths } from './referenceManager';
+import {
+  hydrateSourceSpecAssetPaths,
+  prepareReferencesForPersistence,
+  ReferenceProcessingError,
+} from './referenceManager';
 
 describe('referenceManager', () => {
+  it('rejects reference payloads that exceed count or byte budgets before persistence', () => {
+    const smallReference = {
+      name: 'ref.png',
+      dataUrl: `data:image/png;base64,${Buffer.from('abc').toString('base64')}`,
+      strength: 0.5,
+    };
+
+    expect(() =>
+      prepareReferencesForPersistence([smallReference, smallReference], {
+        maxCount: 1,
+        maxBytes: 1024,
+        maxTotalBytes: 2048,
+      }),
+    ).toThrow(ReferenceProcessingError);
+
+    expect(() =>
+      prepareReferencesForPersistence([smallReference], {
+        maxCount: 1,
+        maxBytes: 2,
+        maxTotalBytes: 2048,
+      }),
+    ).toThrow(ReferenceProcessingError);
+  });
+
   it('hydrates every inline task asset with its persisted local path', () => {
     const sourceSpec = createGenerationTaskSpec({
       id: 'spec-1',

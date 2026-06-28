@@ -76,6 +76,14 @@ _Avoid_: source spec, recipeContext, stored prompt
 Stable provider-level instructions and output rules reused across jobs so each Compiled Provider Input only carries task-specific delta.
 _Avoid_: repeated prompt boilerplate, per-job system prompt, hidden recipe text
 
+**Provider Registry**:
+Single queryable source of Generation Provider facts used by Provider Boundary capability, preflight, compiler, executor, and worker-routing seams.
+_Avoid_: duplicated provider list, vendor switch table, route-local provider facts
+
+**Persistent Job Intake**:
+Backend seam that turns a job creation request into one durable Persistent Job, including provider selection, source-spec validation, reference persistence, event publication, and enqueue.
+_Avoid_: route-owned job creation, provider-named task intake, ad-hoc enqueue path
+
 **Recipe Provider Directives**:
 Compact provider-ready directive snapshot derived from a Recipe Module's Generation Task Spec metadata when the recipe has enough structured data to avoid sending the full Recipe Context.
 _Avoid_: recipeContext replacement for every recipe, hidden prompt copy, lossy summary
@@ -96,9 +104,17 @@ _Avoid_: prompt component, recipe page, workflow string
 Queryable index of Recipe Modules used by UI cards, scripts, and agents to inspect recipe identity, tasks, providers, and parameters without reading React pages.
 _Avoid_: recipe card copy, hardcoded recipes list, UI-only recipe metadata
 
+**Recipe Discovery Projection**:
+Queryable discovery view over Recipe Modules and aliases for UI cards, scripts, and agents.
+_Avoid_: separate recipe search list, alias-only recipe module, duplicated catalog query
+
 **Style Preset Manifest**:
 Granular style preset record with stable identity, category, editorial taxonomy, visual DNA, avoid rules, asset references, supported tasks, tags, and versioning.
 _Avoid_: inline pack entry, giant YAML row, prompt-only preset
+
+**Style Search Projection**:
+Compact search view derived from Style Preset Manifests and Style Pack Manifests for demand-mounted style browsing.
+_Avoid_: runtime pack search truth, UI-only style search index, duplicated task tags
 
 **Style Pack Manifest**:
 Lightweight grouping record for style pack metadata, categories, ordering, and references to Style Preset Manifests.
@@ -130,6 +146,14 @@ _Avoid_: durable catalog record, source of truth
 Frontend seam that mirrors backend jobs, logs, and live events while importing Catalog Entries into the Visual Batch cache.
 _Avoid_: polling loop, ad-hoc refresh code
 
+**Shell Activity Job**:
+Compact shell-facing activity model derived from Job Summaries, live job events, and Browser Queue links.
+_Avoid_: full job payload in hot UI reads, queue-only job model, debug-only job row
+
+**Catalog Operation Result**:
+Frontend-visible result from an Image Catalog command, including counts, skipped items, warnings, and refresh scope.
+_Avoid_: ignored mutation response, toast-only side effect, blind catalog refresh
+
 **Local Generation Run**:
 Frontend seam that creates Persistent Jobs, waits for completion, queries catalog results, and returns one Visual Batch.
 _Avoid_: inline job choreography, direct editor pipeline
@@ -154,6 +178,18 @@ _Avoid_: floating status panel, scattered global controls, dashboard-only comman
 UI surface that mounts, fetches, animates, or renders expensive details only while visible or explicitly active.
 _Avoid_: always-on panel, hidden live widget, background diagnostics view
 
+**Settings Surface**:
+Demand-mounted configuration surface that owns heavy Studio Settings, provider diagnostics, output-source, and maintenance hydration while the Command Center keeps compact status.
+_Avoid_: shell-owned settings hydration, always-on settings fetch, toolbar settings detail
+
+**Import Operation**:
+Bounded import workflow for larger External Output Source imports, with progress, skipped-file reasons, path-safety checks, and final summary.
+_Avoid_: browser-side directory copy, unscoped file scan, silent bulk import
+
+**Storage Repair Plan**:
+Read-only maintenance plan for storage repair work such as reference migration, orphan Catalog Entry cleanup, and thumbnail repair.
+_Avoid_: direct repair command, secret-printing audit, destructive storage scan
+
 ## Relationships
 
 - A **Library Registry** tracks one or more **Studio Libraries** and exactly one default library at a time.
@@ -164,20 +200,24 @@ _Avoid_: always-on panel, hidden live widget, background diagnostics view
 - A **Catalog Page** contains many **Catalog Entries**.
 - A generation-flavored **Persistent Job** executes one or more **Codex Turns**.
 - A **Persistent Job** has one **Generation Task** and one **Generation Provider** selected through the **Provider Boundary**.
+- **Persistent Job Intake** creates Persistent Jobs and uses the **Provider Registry** to keep Generation Task and Generation Provider policy explicit.
 - A **Recipe Module** produces a **Generation Task Spec** for a **Generation Task**.
-- A **Recipe Module Catalog** exposes Recipe Module metadata for navigation, scripts, and agents; it does not build provider payloads.
+- A **Recipe Module Catalog** exposes Recipe Module metadata for navigation, scripts, and agents; the **Recipe Discovery Projection** is the query view over modules and aliases.
 - **Recipe Provider Directives** may be attached to a **Generation Task Spec** when structured recipe data is strong enough to compile a compact prompt safely.
 - A **Generation Provider** compiles a **Generation Task Spec** into provider-specific execution.
 - A **Compiled Provider Input** is derived from a **Generation Task Spec** and may be much smaller than the stored spec.
 - A **Provider Session Contract** supplies stable rules that do not need to be repeated in every **Compiled Provider Input**.
 - The **Codex Product Runtime** powers interactive Codex jobs; the **Codex Automation Surface** supports non-interactive maintenance workflows.
+- A **Style Search Projection** is derived from **Style Preset Manifests** and **Style Pack Manifests**.
 - A **Style Pack Manifest** groups many **Style Preset Manifests** without owning all preset content inline.
 - A **Local Generation Run** creates one or more **Persistent Jobs** and materializes one **Visual Batch** for the UI.
 - **Local Studio Sync** imports **Catalog Entries** into **Visual Batches** for the current grid.
+- A **Shell Activity Job** is the shell-facing model for hot job reads; full **Persistent Job** detail is loaded on demand.
+- A **Catalog Operation Result** lets the shell show scoped command outcomes without treating every mutation as a blind full refresh.
 - **Studio Shell** materializes **Studio Runtime**, navigation state, overlays, and **Visual Batches** into the renderable app layout.
 - **Studio Readiness** depends on **Studio Runtime**, **Studio Library**, **App-Server Lifecycle**, and the **Local Codex Session**.
 - The **Command Center** exposes global status and commands, while deeper configuration and diagnostics open from it.
-- A **Demand-Mounted Surface** is opened from the **Command Center** or another explicit user action.
+- A **Demand-Mounted Surface** is opened from the **Command Center** or another explicit user action; the **Settings Surface** is the settings-specific demand-mounted surface.
 - The **Provider Boundary** is Codex-first: Codex remains the primary integration path, while external image systems plug into the same durable local contracts.
 
 ## Example dialogue
@@ -202,8 +242,12 @@ _Avoid_: always-on panel, hidden live widget, background diagnostics view
 - **Local Codex Session** is the local ChatGPT-login capability snapshot; avoid calling it "account status" except when referring to the compatibility endpoint `/api/codex/account`.
 - **Provider Boundary** does not mean the product becomes a generic provider router; it preserves a Codex-first studio while allowing external generation systems behind backend adapters.
 - **Generation Task** and **Generation Provider** are separate concepts; do not encode provider names into task names.
+- **Provider Registry** is provider fact ownership, not a Provider Secret store.
+- **Persistent Job Intake** may accept compatibility aliases, but new durable policy must preserve the **Generation Task** / **Generation Provider** split.
 - **Recipe Module** means a declarative workflow module, not a React-only page or a prebuilt prompt string.
+- **Recipe Discovery Projection** aliases help discovery; aliases are not new **Recipe Modules**.
 - **Style Preset Manifest** preserves preset identity and editing locality; avoid returning to giant pack files where one edit risks a whole category.
+- **Style Search Projection** should derive from manifests, not from visual runtime pack shortcuts.
 - **Compiled Provider Input** is execution data, not the durable source of truth; preserve the richer **Generation Task Spec** for traceability.
 - **Provider Session Contract** should contain stable rules only; task-specific requirements belong in the **Generation Task Spec** and its **Compiled Provider Input**.
 - **Codex Automation Surface** should not replace the **Codex Product Runtime** unless a future ADR explicitly changes the product architecture.

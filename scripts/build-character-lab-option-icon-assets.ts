@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 import { existsSync } from 'node:fs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import sharp from 'sharp';
+import sharp, { type OutputInfo, type OverlayOptions } from 'sharp';
 
 const repoRoot = process.cwd();
 const assetDir = path.join(repoRoot, 'assets', 'recipes', 'character-lab');
@@ -55,7 +55,7 @@ interface OptionPlan {
 
 interface RawImage {
   data: Buffer;
-  info: sharp.OutputInfo;
+  info: OutputInfo;
 }
 
 interface Bounds {
@@ -471,7 +471,7 @@ async function main() {
     batch.items.map((item, sourceSlot) => ({ batch, item, sourceSlot })),
   );
   const rows = Math.ceil(frameEntries.length / RUNTIME_COLUMNS);
-  const composites: sharp.OverlayOptions[] = [];
+  const composites: OverlayOptions[] = [];
   const frames: Record<string, FrameRecord> = {};
   const missing: string[] = [];
 

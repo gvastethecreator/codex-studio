@@ -4,7 +4,10 @@ import {
   materializeCatalogEntryImage,
   resolveCatalogEntryCreatedAt,
 } from './studioCatalogImageAdapter';
-import type { LegacyVisualBatchSnapshot } from './studioLegacyVisualBatchTypes';
+import {
+  toLegacyVisualBatch,
+  type LegacyVisualBatchSnapshot,
+} from './studioLegacyVisualBatchTypes';
 
 export function buildLegacyVisualBatchSnapshotFromCatalog(
   view: StudioCatalogView,
@@ -16,18 +19,20 @@ export function buildLegacyVisualBatchSnapshotFromCatalog(
     if (!firstEntry) continue;
     const createdAt = resolveCatalogEntryCreatedAt(firstEntry);
 
-    batches.push({
-      id: batchId,
-      workspaceId: firstEntry.workspaceId || 'default',
-      config: buildGenerationConfigFromCatalogImage(firstEntry),
-      images: entries.map((entry) =>
-        materializeCatalogEntryImage(entry, {
-          batchId,
-          createdAt: resolveCatalogEntryCreatedAt(entry),
-        }),
-      ),
-      createdAt,
-    });
+    batches.push(
+      toLegacyVisualBatch({
+        id: batchId,
+        workspaceId: firstEntry.workspaceId || 'default',
+        config: buildGenerationConfigFromCatalogImage(firstEntry),
+        images: entries.map((entry) =>
+          materializeCatalogEntryImage(entry, {
+            batchId,
+            createdAt: resolveCatalogEntryCreatedAt(entry),
+          }),
+        ),
+        createdAt,
+      }),
+    );
   }
 
   return batches.sort((a, b) => b.createdAt - a.createdAt || a.id.localeCompare(b.id));

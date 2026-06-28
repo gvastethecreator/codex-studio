@@ -1,7 +1,5 @@
-import {
-  searchStylePresetCatalog,
-  type StylePresetCatalogSearchFilters,
-} from '../components/recipes/stylePresetManifests';
+import type { StylePresetCatalogSearchFilters } from '../components/recipes/stylePresetManifests';
+import { projectStyleSearchResultsFromManifestCatalog } from '../components/recipes/styleSearchProjection';
 import { loadStyleManifestGraph } from './style-manifest-files';
 
 function argValue(name: string) {
@@ -28,7 +26,7 @@ const filters: StylePresetCatalogSearchFilters = {
 const asJson = process.argv.includes('--json');
 
 const { catalog } = await loadStyleManifestGraph();
-const results = searchStylePresetCatalog(catalog, filters);
+const results = projectStyleSearchResultsFromManifestCatalog({ catalog, filters });
 
 if (asJson) {
   console.log(JSON.stringify({ count: results.length, results }, null, 2));

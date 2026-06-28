@@ -9,6 +9,7 @@ import {
   resolveThumbnailMaxEdge,
 } from './libraryAssetVariants';
 import type { log } from './logger';
+import { isPublicLibraryAssetPath } from './publicLibraryAssetPolicy';
 
 interface LibraryRoutesDependencies {
   resolvePublicLibraryPath: typeof resolvePublicLibraryPath;
@@ -16,6 +17,7 @@ interface LibraryRoutesDependencies {
   buildLibraryAssetHeaders: typeof buildLibraryAssetHeaders;
   resolveAssetCacheSeconds: typeof resolveAssetCacheSeconds;
   resolveThumbnailMaxEdge: typeof resolveThumbnailMaxEdge;
+  isPublicLibraryAssetPath?: typeof isPublicLibraryAssetPath;
   fileExists?: (filePath: string) => boolean;
   createFileResponse?: (filePath: string) => Response;
   logger?: typeof log;
@@ -27,6 +29,7 @@ export function createLibraryRoutes({
   buildLibraryAssetHeaders,
   resolveAssetCacheSeconds,
   resolveThumbnailMaxEdge,
+  isPublicLibraryAssetPath: canServePublicLibraryAsset = isPublicLibraryAssetPath,
   fileExists = existsSync,
   createFileResponse = (filePath: string) => new Response(Bun.file(filePath)),
   logger,
@@ -35,8 +38,13 @@ export function createLibraryRoutes({
 
   routes.get('/library/*', async (c) => {
     const encoded = c.req.path.replace('/library/', '');
-    const relative = decodeURIComponent(encoded);
-    if (relative.includes('..')) return c.notFound();
+    let relative = '';
+    try {
+      relative = decodeURIComponent(encoded);
+    } catch {
+      return c.notFound();
+    }
+    if (!canServePublicLibraryAsset(relative)) return c.notFound();
     const filePath = resolvePublicLibraryPath(relative);
     if (!fileExists(filePath)) return c.notFound();
 

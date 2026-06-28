@@ -2,7 +2,6 @@ import type { CompiledProviderInput, GenerationProviderId } from '../../../../pa
 import type { TurnResult } from '../codex/turn';
 import {
   getExternalProviderRuntimePreflight,
-  type ExternalExecutableProviderId,
   type ProviderRuntimePreflight,
 } from './runtimeConfig';
 import {
@@ -10,6 +9,10 @@ import {
   type ExternalProviderExecutorRegistry,
 } from './externalProviderExecutors';
 import { compileProviderInputForJob } from './providerInputCompiler';
+import {
+  isExternalExecutableProviderId,
+  type ExternalExecutableProviderId,
+} from './providerRegistry';
 import type { GenerationProvider, GenerationProviderJob } from './types';
 
 export interface ExternalProviderExecutionContext {
@@ -28,12 +31,6 @@ export interface CreateExternalGenerationProviderDependencies {
   execute?: ExternalProviderExecutor;
   executors?: ExternalProviderExecutorRegistry;
   createDefaultExecutors?: () => ExternalProviderExecutorRegistry;
-}
-
-function isExternalExecutableProviderId(
-  providerId: GenerationProviderId | null | undefined,
-): providerId is ExternalExecutableProviderId {
-  return providerId === 'google' || providerId === 'fal' || providerId === 'comfy';
 }
 
 function formatPreflightDiagnostics(preflight: ProviderRuntimePreflight) {

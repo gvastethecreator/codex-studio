@@ -83,18 +83,11 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
       codexReady: true,
       onboardingReady: false,
     },
-    worker: {
-      running: true,
-      activeJobs: 0,
-      maxConcurrentJobs: 4,
-    },
     ...overrides,
   };
 }
 
-function createSession(
-  overrides?: Partial<LocalCodexSessionResponse>,
-): LocalCodexSessionResponse {
+function createSession(overrides?: Partial<LocalCodexSessionResponse>): LocalCodexSessionResponse {
   return {
     authMode: null,
     planType: null,

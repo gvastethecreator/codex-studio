@@ -6,6 +6,7 @@ import {
   compileFalImageApiInput,
   compileGoogleImageApiInput,
 } from './externalProviderInputs';
+import { hasProviderRegistryCompiler } from './providerRegistry';
 import type { GenerationProviderJob } from './types';
 
 export type ProviderInputCompiler = (job: GenerationProviderJob) => CompiledProviderInput;
@@ -23,7 +24,7 @@ export type CompilableProviderId = keyof typeof PROVIDER_INPUT_COMPILERS;
 export function hasProviderInputCompiler(
   providerId: GenerationProviderId,
 ): providerId is CompilableProviderId {
-  return providerId in PROVIDER_INPUT_COMPILERS;
+  return hasProviderRegistryCompiler(providerId) && providerId in PROVIDER_INPUT_COMPILERS;
 }
 
 export function compileProviderInputForJob(

@@ -28,6 +28,10 @@ import {
   updateEditableStudioSettings,
 } from '../services/localStudioService';
 import type { Toast } from '../types';
+import {
+  removeImportedOutputSourceFiles,
+  summarizeImportOperationResult,
+} from '../lib/importOperation';
 
 interface UseStudioSettingsOptions {
   addToast?: (message: string, type?: Toast['type']) => void;
@@ -309,17 +313,12 @@ export function useStudioSettings({
       try {
         const result = await importExternalOutputSourceFiles(sourceId, { files, workspaceId });
         if (isMountedRef.current) {
-          const importedFiles = new Set(result.imported.map((item) => item.sourceFile));
+          const summary = summarizeImportOperationResult(result);
           setOutputSourceFiles((current) => ({
             ...current,
-            [sourceId]: (current[sourceId] ?? []).filter(
-              (file) => !importedFiles.has(file.relativePath),
-            ),
+            [sourceId]: removeImportedOutputSourceFiles(current[sourceId] ?? [], summary),
           }));
-          addToast?.(
-            `Imported ${result.imported.length} file${result.imported.length === 1 ? '' : 's'}`,
-            result.skipped.length > 0 ? 'info' : 'success',
-          );
+          addToast?.(summary.toast.message, summary.toast.type);
         }
       } catch (importError) {
         const message =

@@ -651,7 +651,7 @@ function PreviewOptionCard({
 }) {
   return (
     <div
-      className={`character-lab-preview-option group flex h-full min-h-[156px] min-w-0 flex-col rounded-xl border border-white/10 bg-black/40 p-2 shadow-[0_14px_34px_rgba(0,0,0,0.24)] transition-[border-color,background-color,transform] duration-200 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/[0.045] ${
+      className={`character-lab-preview-option group flex h-full min-h-[132px] min-w-0 flex-col rounded-xl border border-white/10 bg-black/40 p-2 shadow-[0_12px_26px_rgba(0,0,0,0.22)] transition-[border-color,background-color,transform] duration-200 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/[0.045] ${
         prominent ? 'sm:col-span-2 xl:col-span-1' : ''
       }`}
     >
@@ -663,7 +663,7 @@ function PreviewOptionCard({
             className="size-full object-contain p-1 transition-transform duration-300 group-hover:scale-[1.035]"
           />
         ) : (
-          <CharacterLabOptionIcon id={item.iconId} fallbackId={item.fallbackIconId} size={78} />
+          <CharacterLabOptionIcon id={item.iconId} fallbackId={item.fallbackIconId} size={64} />
         )}
         <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
         <span className="absolute left-1.5 top-1.5 rounded-md border border-white/10 bg-black/70 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest text-zinc-500">
@@ -671,10 +671,10 @@ function PreviewOptionCard({
         </span>
       </div>
       <div className="min-w-0 shrink-0 px-0.5 pt-1.5">
-        <div className="line-clamp-2 min-h-6 text-[10px] font-black leading-tight text-zinc-100">
+        <div className="line-clamp-1 text-[10px] font-black leading-tight text-zinc-100">
           {item.value}
         </div>
-        <div className="mt-0.5 truncate text-[8px] font-bold leading-tight text-zinc-600">
+        <div className="mt-0.5 line-clamp-1 text-[8px] font-bold leading-tight text-zinc-600">
           {item.detail}
         </div>
       </div>
@@ -761,7 +761,7 @@ function AttachmentSetupSlot({
 
 function SourcePreviewCard({ source }: { source: Attachment | null }) {
   return (
-    <div className="character-lab-preview-option group flex min-h-[220px] flex-col rounded-xl border border-white/10 bg-black/45 p-2.5 shadow-[0_18px_48px_rgba(0,0,0,0.3)] transition-[border-color,background-color] duration-200 hover:border-white/20 hover:bg-white/[0.04]">
+    <div className="character-lab-preview-option group flex h-full min-h-[180px] flex-col rounded-xl border border-white/10 bg-black/45 p-2 shadow-[0_16px_36px_rgba(0,0,0,0.28)] transition-[border-color,background-color] duration-200 hover:border-white/20 hover:bg-white/[0.04]">
       <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-lg border border-white/10 bg-black">
         {source ? (
           <img
@@ -770,18 +770,18 @@ function SourcePreviewCard({ source }: { source: Attachment | null }) {
             className="size-full object-contain p-1 outline outline-1 -outline-offset-1 outline-white/10 transition-transform duration-300 group-hover:scale-[1.025]"
           />
         ) : (
-          <CharacterLabIcon id="control:source" size={96} />
+          <CharacterLabIcon id="control:source" size={76} />
         )}
         <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
         <span className="absolute left-3 top-3 rounded-lg border border-white/10 bg-black/70 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-300">
           Source Image
         </span>
       </div>
-      <div className="min-w-0 px-0.5 pt-2">
-        <div className="truncate text-[12px] font-black uppercase tracking-wide text-white">
+      <div className="min-w-0 px-0.5 pt-1.5">
+        <div className="truncate text-[11px] font-black uppercase tracking-wide text-white">
           {source ? 'Source Attached' : 'Prompt Guided'}
         </div>
-        <div className="mt-0.5 truncate text-[9px] font-black uppercase tracking-widest text-zinc-500">
+        <div className="mt-0.5 truncate text-[8px] font-black uppercase tracking-widest text-zinc-500">
           {source?.name ?? 'No image source'}
         </div>
       </div>
@@ -806,14 +806,14 @@ function ActionButton({
       type="button"
       onClick={() => onSelect(action)}
       title={action.prompt}
-      className={`character-lab-action-card group relative flex aspect-[4/5] min-h-[148px] w-full min-w-0 flex-col overflow-hidden rounded-xl border p-1.5 text-left shadow-[0_12px_28px_rgba(0,0,0,0.24)] transition-[background-color,border-color,color,opacity,transform] duration-150 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
+      className={`character-lab-action-card group relative flex aspect-[5/6] min-h-[132px] w-full min-w-0 flex-col overflow-hidden rounded-xl border p-1.5 text-left shadow-[0_10px_22px_rgba(0,0,0,0.22)] transition-[background-color,border-color,color,opacity,transform] duration-150 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
         selected
           ? `${accent.border} ${accent.soft} text-white ring-1 ring-inset ring-white/10`
           : 'border-white/10 bg-black/35 text-zinc-400 hover:border-white/20 hover:bg-white/[0.06] hover:text-zinc-100'
       }`}
     >
       <span className="relative flex min-h-0 w-full flex-1 items-center justify-center overflow-hidden rounded-lg bg-black">
-        <CharacterLabIcon id={action.id} size={72} />
+        <CharacterLabIcon id={action.id} size={58} />
         <span className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
         {selected && (
           <span
@@ -823,12 +823,19 @@ function ActionButton({
           </span>
         )}
       </span>
-      <span className="min-w-0 shrink-0 px-1 pb-1 pt-1.5">
-        <span className="line-clamp-2 min-h-7 text-[9px] font-black leading-tight text-pretty">
+      <span className="min-w-0 shrink-0 px-1 pb-1 pt-1">
+        <span className="line-clamp-1 text-[9px] font-black leading-tight text-pretty">
           {action.label}
         </span>
         <span
-          className={`mt-1 block truncate text-[8px] font-black uppercase tracking-widest ${selected ? accent.text : 'text-zinc-600'}`}
+          className={`mt-0.5 line-clamp-2 text-[8px] font-semibold leading-snug text-pretty ${
+            selected ? 'text-zinc-300/85' : 'text-zinc-500 group-hover:text-zinc-400'
+          }`}
+        >
+          {action.prompt}
+        </span>
+        <span
+          className={`mt-0.5 block truncate text-[7px] font-black uppercase tracking-widest ${selected ? accent.text : 'text-zinc-600'}`}
         >
           {action.task}
         </span>
@@ -1146,7 +1153,7 @@ export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = ({
       isGenerating={isGenerating}
       className="character-lab-shell overflow-hidden bg-[#101010] p-2 pb-[var(--studio-recipe-dock-space)] sm:p-3 sm:pb-3 max-xl:overflow-y-auto"
     >
-      <div className="grid size-full min-h-0 grid-cols-[minmax(260px,1fr)_minmax(260px,1fr)_minmax(520px,2fr)] gap-3 max-xl:flex max-xl:h-auto max-xl:min-h-[1120px] max-xl:flex-col max-sm:min-h-0">
+      <div className="grid size-full min-h-0 grid-cols-[minmax(250px,5fr)_minmax(320px,6fr)_minmax(440px,9fr)] gap-3 max-xl:flex max-xl:h-auto max-xl:min-h-[1120px] max-xl:flex-col max-sm:min-h-0">
         <aside
           className="character-lab-panel z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/10 bg-zinc-950/90 shadow-2xl max-xl:min-h-[680px] max-sm:min-h-[680px]"
           data-panel="left"
@@ -1415,7 +1422,7 @@ export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = ({
                       </button>
                     )}
                   </div>
-                  <div className="grid grid-cols-[repeat(2,minmax(0,150px))] justify-center gap-2">
+                  <div className="grid grid-cols-[repeat(auto-fit,minmax(124px,1fr))] gap-2">
                     {actions.map((action) => (
                       <ActionButton
                         key={action.id}
@@ -1459,10 +1466,10 @@ export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = ({
             </div>
           </div>
 
-          <div className="min-h-0 flex-1 overflow-y-auto p-3 custom-scrollbar">
-            <div className="grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-2.5 max-2xl:grid-cols-1">
+          <div className="min-h-0 flex-1 overflow-y-auto p-2.5 pb-20 custom-scrollbar">
+            <div className="grid grid-cols-[minmax(210px,0.9fr)_minmax(250px,1.1fr)] gap-2.5 max-[1180px]:grid-cols-1">
               <SourcePreviewCard source={source} />
-              <div className="rounded-xl border border-white/10 bg-black/45 p-2.5 shadow-[0_18px_46px_rgba(0,0,0,0.28)]">
+              <div className="flex h-full min-h-[180px] flex-col rounded-xl border border-white/10 bg-black/45 p-2.5 shadow-[0_16px_36px_rgba(0,0,0,0.26)]">
                 <div className="mb-2 flex items-center justify-between gap-2">
                   <div>
                     <div className="text-[10px] font-black uppercase tracking-widest text-zinc-400">
@@ -1476,7 +1483,7 @@ export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = ({
                     {source ? `${references.length + 1}/4` : '0/4'}
                   </span>
                 </div>
-                <div className="grid grid-cols-[repeat(4,minmax(0,72px))] gap-1.5">
+                <div className="grid grid-cols-4 gap-1.5">
                   {[source, ...references, null, null, null]
                     .slice(0, 4)
                     .map((attachment, index) => (
@@ -1504,7 +1511,7 @@ export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = ({
                       </div>
                     ))}
                 </div>
-                <div className="mt-2.5 rounded-lg border border-white/10 bg-zinc-950/75 p-2.5">
+                <div className="mt-2.5 flex min-h-0 flex-1 flex-col rounded-lg border border-white/10 bg-zinc-950/75 p-2">
                   <div className="mb-1 flex items-center justify-between gap-2">
                     <span className="truncate text-[11px] font-black uppercase tracking-wide text-zinc-100">
                       {selectedAction.label}
@@ -1515,31 +1522,36 @@ export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = ({
                       {capabilityLabel}
                     </span>
                   </div>
-                  <p className="line-clamp-3 text-[10px] leading-relaxed text-zinc-500">
-                    {selectedActionSummary}
+                  <p className="line-clamp-3 text-[10px] leading-snug text-pretty text-zinc-500">
+                    {selectedAction.prompt}
                   </p>
+                  <div className="mt-auto pt-2 text-[8px] font-black uppercase tracking-widest text-zinc-600">
+                    {selectedActionSummary}
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="mt-3 grid grid-cols-2 gap-2.5 min-[1300px]:grid-cols-[repeat(3,minmax(0,164px))]">
-              {previewControlItems.map((item) => (
-                <PreviewOptionCard key={item.label} item={item} />
-              ))}
-            </div>
-
-            <div className="mt-3 rounded-xl border border-white/10 bg-black/45 p-2.5 shadow-[0_16px_48px_rgba(0,0,0,0.26)]">
-              <div className="mb-1.5 flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-zinc-500">
-                <FileText size={12} aria-hidden="true" />
-                Prompt Snapshot
+            <div className="mt-2.5 grid grid-cols-[minmax(0,1.35fr)_minmax(220px,0.65fr)] gap-2.5 max-[1360px]:grid-cols-1">
+              <div className="grid grid-cols-[repeat(auto-fit,minmax(148px,1fr))] gap-2">
+                {previewControlItems.map((item) => (
+                  <PreviewOptionCard key={item.label} item={item} />
+                ))}
               </div>
-              <p className="max-h-44 overflow-y-auto whitespace-pre-wrap text-[10px] leading-relaxed text-zinc-500 custom-scrollbar">
-                {selectedPrompt}
-              </p>
+
+              <div className="rounded-xl border border-white/10 bg-black/45 p-2.5 shadow-[0_14px_34px_rgba(0,0,0,0.24)]">
+                <div className="mb-1.5 flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                  <FileText size={12} aria-hidden="true" />
+                  Prompt Snapshot
+                </div>
+                <p className="max-h-56 overflow-y-auto whitespace-pre-wrap text-[10px] leading-relaxed text-zinc-500 custom-scrollbar">
+                  {selectedPrompt}
+                </p>
+              </div>
             </div>
 
             {recentImages.length > 0 && (
-              <div className="mt-3">
+              <div className="mt-2.5">
                 <div className="mb-1.5 flex items-center justify-between gap-2">
                   <div className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">
                     Recent Outputs

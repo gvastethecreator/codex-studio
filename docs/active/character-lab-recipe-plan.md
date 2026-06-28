@@ -106,9 +106,9 @@ Interface polish added after first integration review:
 - Prompt Snapshot now sits below the preview/context composition; context cards use height-constrained portrait previews and only appear in the center when there is enough horizontal room, avoiding overlap with the Action Setup panel.
 - The 2026-06-27 redesign moved the source dropzone and Action Setup into the left column, moved mode tabs/search/action options into the center column, and moved selected-output/source/options/prompt preview into the right summary column. Mobile stacks those columns in the same order.
 - The stronger 2026-06-27 redesign rebalanced the desktop workbench to 30% / 30% / 40%, replaced the large source dropzone with a four-slot attachment row (`Main`, `R1`, `R2`, `R3`) that unlocks references after the principal image, removed the redundant prompt/preview controls, switched the action browser to vertical recipe-styles-inspired cards, and made the right column own selected inputs, option previews, prompt, and outputs.
-- The ultrawide follow-up keeps the 30% / 30% / 40% proportions inside a capped `1560px` workbench and limits action-card track growth, so large monitors add surrounding breathing room instead of scaling every control up.
-- The next 2026-06-27 density pass changes the workbench to 25% / 25% / 50%, removes the left-column selected-action highlight card, moves Generate to a separated bottom-right footer in the preview column, reduces global padding/spacing, and compacts the action browser cards to smaller vertical tracks.
-- The follow-up keeps that 25% / 25% / 50% grid at 100% available width and changes Generate from a footer row into a floating bottom-right action over the preview panel, preserving vertical space for preview content.
+- The current 2026-06-27 density pass keeps the workbench at 100% available width with a 25% / 30% / 45% desktop ratio, removes the left-column selected-action highlight card, and keeps Generate as a floating bottom-right action over the preview panel.
+- The action browser now follows the recipe-styles density pattern with width-driven card tracks: compact vertical cards auto-fit from 2 to 5 columns as the middle panel grows, with tighter title/description spacing and prompt-derived descriptions.
+- The right panel now behaves like a compact bento summary: source and selected inputs share the top row when width allows, option previews auto-fit below, and the prompt snapshot shares horizontal space instead of forcing a long single-column stack.
 
 ## Icon Atlas Strategy
 

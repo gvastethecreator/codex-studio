@@ -1,6 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { CatalogImage, CatalogPage } from '../packages/shared/src';
 import { buildArchivedImageGroupsFromCatalog } from '../lib/studioCatalogTrashView';
+import {
+  describeCatalogOperationResult,
+  type CatalogRefreshScope,
+} from '../lib/catalogOperationResult';
 import { buildStudioQueueResultPreviews } from '../lib/studioQueueResults';
 import { createCatalogView, type StudioCatalogView } from '../lib/studioCatalogView';
 import {
@@ -9,7 +13,6 @@ import {
   purgeCatalogByFilter,
   queryCatalog,
   restoreCatalogByFilter,
-  restoreCatalogImage as restoreCatalogImageRequest,
   toStudioAssetUrl,
   type CatalogQueryParams,
   updateCatalogImage as updateCatalogImageRequest,
@@ -44,7 +47,7 @@ export interface UseStudioCatalogControllerResult {
   queueResults: ReturnType<typeof buildStudioQueueResultPreviews>;
   queueResultPreviews: Array<{ id: string; src: string }>;
   catalogTrashGroups: ReturnType<typeof buildArchivedImageGroupsFromCatalog>;
-  refreshCatalogs: () => void;
+  refreshCatalogs: (scope?: CatalogRefreshScope) => void;
   deleteCatalogImage: (imageId: string) => void;
   deleteCatalogImages: (imageIds: string[]) => void;
   toggleCatalogFavorite: (imageId: string) => void;
@@ -181,15 +184,39 @@ export function useStudioCatalogController({
   const refreshActiveCatalog = activeCatalog.refresh;
   const refreshWorkspaceCatalog = workspaceCatalog.refresh;
   const refreshTrashCatalog = trashCatalog.refresh;
-  const refreshCatalogs = useCallback(async () => {
-    await Promise.all([refreshActiveCatalog(), refreshWorkspaceCatalog(), refreshTrashCatalog()]);
-  }, [refreshActiveCatalog, refreshWorkspaceCatalog, refreshTrashCatalog]);
+  const refreshCatalogs = useCallback(
+    async (scope: CatalogRefreshScope = { kind: 'all' }) => {
+      if (scope.kind === 'active') {
+        await refreshActiveCatalog();
+        return;
+      }
+
+      if (scope.kind === 'workspace') {
+        await Promise.all([refreshActiveCatalog(), refreshWorkspaceCatalog()]);
+        return;
+      }
+
+      if (scope.kind === 'trash') {
+        await refreshTrashCatalog();
+        return;
+      }
+
+      await Promise.all([refreshActiveCatalog(), refreshWorkspaceCatalog(), refreshTrashCatalog()]);
+    },
+    [refreshActiveCatalog, refreshWorkspaceCatalog, refreshTrashCatalog],
+  );
 
   const runCatalogMutation = useCallback(
-    async (operation: Promise<unknown>, fallbackMessage: string) => {
+    async (
+      operation: Promise<unknown>,
+      fallbackMessage: string,
+      refreshScope: CatalogRefreshScope = { kind: 'all' },
+    ) => {
       try {
-        await operation;
-        await refreshCatalogs();
+        const result = await operation;
+        const toast = describeCatalogOperationResult(result);
+        if (toast) addToast(toast.message, toast.type);
+        await refreshCatalogs(refreshScope);
       } catch (error) {
         addToast(resolveCatalogMutationError(error, fallbackMessage), 'error');
       }
@@ -202,6 +229,7 @@ export function useStudioCatalogController({
       void runCatalogMutation(
         deleteCatalogImageRequest(imageId),
         `Unable to archive image ${imageId}`,
+        { kind: 'all' },
       );
     },
     [runCatalogMutation],
@@ -216,6 +244,7 @@ export function useStudioCatalogController({
       void runCatalogMutation(
         Promise.all(imageIds.map((imageId) => deleteCatalogImageRequest(imageId))),
         'Unable to archive selected images',
+        { kind: 'all' },
       );
     },
     [runCatalogMutation],
@@ -230,6 +259,7 @@ export function useStudioCatalogController({
           isFavorite: !(current?.isFavorite ?? false),
         }),
         'Unable to update favorite',
+        { kind: 'workspace', workspaceId: current?.workspaceId ?? null },
       );
     },
     [activeCatalog.view.byId, runCatalogMutation],
@@ -240,6 +270,7 @@ export function useStudioCatalogController({
       await runCatalogMutation(
         archiveCatalogByFilter({ workspaceId, isDeleted: false }),
         'Unable to archive workspace images',
+        { kind: 'all' },
       );
     },
     [runCatalogMutation],
@@ -254,8 +285,9 @@ export function useStudioCatalogController({
       }
 
       void runCatalogMutation(
-        Promise.all(entries.map((entry) => restoreCatalogImageRequest(entry.id))),
+        restoreCatalogByFilter({ batchId, isDeleted: true }),
         'Unable to restore catalog batch',
+        { kind: 'all' },
       );
     },
     [runCatalogMutation, trashCatalog.view.byBatchId],
@@ -269,6 +301,7 @@ export function useStudioCatalogController({
     void runCatalogMutation(
       restoreCatalogByFilter({ isDeleted: true }),
       'Unable to restore catalog trash',
+      { kind: 'all' },
     );
   }, [runCatalogMutation, trashCatalog.entries]);
 
@@ -280,6 +313,7 @@ export function useStudioCatalogController({
     void runCatalogMutation(
       purgeCatalogByFilter({ isDeleted: true }),
       'Unable to empty catalog trash',
+      { kind: 'trash' },
     );
   }, [runCatalogMutation, trashCatalog.entries]);
 

@@ -12,7 +12,7 @@ Este documento resume el stack de desarrollo y los comandos operativos del repo.
 
 - Gestor de paquetes: **Bun**
 - Toolchain UI: **Vite+**
-- Bundler UI: **Vite 8 + Rolldown**
+- Bundler UI: **Vite 8.1 + Rolldown**
 - Lint/format: **Oxlint + Oxfmt** vía Vite+
 - Tests unitarios: **Vitest** vía Vite+
 - Estilos: **Tailwind CSS v4**
@@ -21,6 +21,8 @@ Este documento resume el stack de desarrollo y los comandos operativos del repo.
 ## Fuente de verdad
 
 La configuración de tooling vive en `vite.config.ts`.
+
+`package.json` declara `vite`, `oxlint` y `oxfmt` como dependencias directas del workspace para que los binarios locales sean auditables. Los `overrides` mantienen esa misma baseline cuando `vite-plus` o runners internos declaran rangos o pines transitivos anteriores.
 
 No dupliques configuración de ESLint/Prettier/Vitest fuera de ese archivo salvo excepción explícitamente documentada.
 

@@ -21,6 +21,7 @@ import { buildStudioShellOverlayController } from './useStudioOverlayController'
 import { useStudioReset } from './useStudioReset';
 import { useStudioRuntime } from './useStudioRuntime';
 import { useStudioSettings } from './useStudioSettings';
+import { useSettingsSurface } from './useSettingsSurface';
 import { useStudioViewState } from './useStudioViewState';
 import { useVaultTransfer } from './useVaultTransfer';
 import { useWorkspaceStrip } from './useWorkspaceStrip';
@@ -148,13 +149,7 @@ export function useStudioShell(): StudioShellController {
   });
 
   const viewState = useStudioViewState({ closeOverlay });
-  const refreshSettingsSurface = studioSettings.data.settingsDomain.refresh;
   const wasGeneratingRef = useRef(pipeline.isGenerating);
-
-  useEffect(() => {
-    if (!viewState.overlays.settings.isOpen) return;
-    void refreshSettingsSurface();
-  }, [refreshSettingsSurface, viewState.overlays.settings.isOpen]);
 
   useEffect(() => {
     const justStartedGenerating = pipeline.isGenerating && !wasGeneratingRef.current;
@@ -276,6 +271,19 @@ export function useStudioShell(): StudioShellController {
     emptyTrash: emptyCatalogTrash,
   });
 
+  const settingsSurfaceModule = useSettingsSurface({
+    isOpen: viewState.overlays.settings.isOpen,
+    close: viewState.overlays.settings.close,
+    settingsDomain: studioSettings.data.settingsDomain,
+    providerDomain: studioSettings.data.providerDomain,
+    outputSourcesDomain: studioSettings.data.outputSourcesDomain,
+    maintenanceDomain: studioSettings.data.maintenanceDomain,
+    libraryDir: studioRuntime.status.diagnostics.health?.libraryDir ?? null,
+    fallbackLibraryDir: studioRuntime.onboarding.health?.libraryDir ?? null,
+    onResetStudio: requestResetStudio,
+    isResettingStudio,
+  });
+
   const { workspacesWithThumbs, handleAddWorkspace, handleDeleteWorkspace, handleRenameWorkspace } =
     useWorkspaceStrip({
       workspaces,
@@ -379,7 +387,6 @@ export function useStudioShell(): StudioShellController {
             complete: studioRuntime.onboarding.complete,
             refreshHealth: studioRuntime.onboarding.refreshHealth,
             ensureAppServer: studioRuntime.onboarding.ensureAppServer,
-            diagnosticsLibraryDir: studioRuntime.status.diagnostics.health?.libraryDir ?? null,
           },
         },
         activity: {
@@ -394,48 +401,7 @@ export function useStudioShell(): StudioShellController {
         },
         isSettingsModalOpen: viewState.overlays.settings.isOpen,
         settingsModule: {
-          close: viewState.overlays.settings.close,
-          settingsDomain: {
-            settings: studioSettings.data.settingsDomain.settings,
-            error: studioSettings.data.settingsDomain.error,
-            isLoading: studioSettings.data.settingsDomain.isLoading,
-            isSaving: studioSettings.data.settingsDomain.isSaving,
-            refresh: studioSettings.data.settingsDomain.refresh,
-            update: studioSettings.data.settingsDomain.update,
-          },
-          providerDomain: {
-            capabilities: studioSettings.data.providerDomain.capabilities,
-            runtimePreflight: studioSettings.data.providerDomain.runtimePreflight,
-          },
-          outputSourcesDomain: {
-            outputSources: studioSettings.data.outputSourcesDomain.outputSources,
-            outputSourceFiles: studioSettings.data.outputSourcesDomain.outputSourceFiles,
-            isLoadingOutputSources: studioSettings.data.outputSourcesDomain.isLoadingOutputSources,
-            loadingOutputSourceFiles:
-              studioSettings.data.outputSourcesDomain.loadingOutputSourceFiles,
-            isRegisteringOutputSource:
-              studioSettings.data.outputSourcesDomain.isRegisteringOutputSource,
-            importingOutputSources: studioSettings.data.outputSourcesDomain.importingOutputSources,
-            registerOutputSource: studioSettings.data.outputSourcesDomain.registerOutputSource,
-            loadOutputSourceFiles: studioSettings.data.outputSourcesDomain.loadOutputSourceFiles,
-            importOutputSourceFiles:
-              studioSettings.data.outputSourcesDomain.importOutputSourceFiles,
-          },
-          maintenanceDomain: {
-            audit: studioSettings.data.maintenanceDomain.audit,
-            compactResult: studioSettings.data.maintenanceDomain.compactResult,
-            thumbnailBackfillResult: studioSettings.data.maintenanceDomain.thumbnailBackfillResult,
-            toolingLogsPruneResult: studioSettings.data.maintenanceDomain.toolingLogsPruneResult,
-            isLoadingAudit: studioSettings.data.maintenanceDomain.isLoadingAudit,
-            runningAction: studioSettings.data.maintenanceDomain.runningAction,
-            refreshAudit: studioSettings.data.maintenanceDomain.refreshAudit,
-            compactStorage: studioSettings.data.maintenanceDomain.compactStorage,
-            backfillThumbnails: studioSettings.data.maintenanceDomain.backfillThumbnails,
-            pruneToolingLogs: studioSettings.data.maintenanceDomain.pruneToolingLogs,
-          },
-          libraryDir: studioRuntime.status.diagnostics.health?.libraryDir ?? null,
-          onResetStudio: requestResetStudio,
-          isResettingStudio,
+          ...settingsSurfaceModule,
         },
         workspace: {
           catalogVisualGroupCount,
@@ -502,12 +468,7 @@ export function useStudioShell(): StudioShellController {
       exportLegacyVisualBatchSnapshot,
       viewState.overlays.settings.isOpen,
       viewState.overlays.settings.close,
-      studioSettings.data.settingsDomain,
-      studioSettings.data.providerDomain,
-      studioSettings.data.outputSourcesDomain,
-      studioSettings.data.maintenanceDomain,
-      requestResetStudio,
-      isResettingStudio,
+      settingsSurfaceModule,
       catalogVisualGroupCount,
       workspaces,
       catalogTrashGroups,
@@ -755,8 +716,10 @@ export function useStudioShell(): StudioShellController {
           onToggleDebug: activitySession.debugPanel.toggle,
         },
         commandCenter: {
+          settings: studioSettings.data.settingsDomain.settings,
           provider: {
-            defaultProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId,
+            capabilities: studioSettings.data.providerDomain.capabilities,
+            runtimePreflight: studioSettings.data.providerDomain.runtimePreflight,
           },
           queue: {
             statusItems: studioRuntime.status.diagnostics.statusItems,
@@ -793,6 +756,8 @@ export function useStudioShell(): StudioShellController {
       catalogTrashGroups.length,
       activitySession.debugPanel.toggle,
       studioSettings.data.settingsDomain.settings,
+      studioSettings.data.providerDomain.capabilities,
+      studioSettings.data.providerDomain.runtimePreflight,
       studioRuntime.status.diagnostics.statusItems,
       queueResultPreviews,
       jobs.length,

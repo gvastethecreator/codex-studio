@@ -12,7 +12,7 @@ import {
 } from '@tabler/icons-react';
 
 import { cn } from '../lib/utils';
-import type { Job as StudioJob } from '../packages/shared/src';
+import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 import type { ImageGenerationConfig, LogEntry } from '../types';
 
 type GenerateFromChat = (

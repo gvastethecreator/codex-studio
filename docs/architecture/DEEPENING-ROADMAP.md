@@ -4,6 +4,8 @@ Esta hoja de ruta sigue refactors que convierten módulos superficiales en módu
 
 Current findings index: `docs/architecture/architecture-review-2026-06-21-runtime-storage-ux.md`.
 Additional second-pass findings: `docs/architecture/architecture-review-2026-06-21-second-pass-runtime-ux.md`.
+Provider/sync/operations follow-up findings: `docs/architecture/architecture-review-2026-06-28-provider-sync-operations-followup.md`.
+Improve/debt audit findings: `docs/architecture/architecture-review-2026-06-28-improve-debt-audit.md`.
 
 ## Conceptos
 
@@ -82,7 +84,68 @@ Suggested follow-up order:
 5. Add catalog search timing before deciding on FTS.
 6. Consider async External Output Source imports only if large imports block Settings in real use.
 
+## Accepted review batch - 2026-06-28
+
+The provider/sync/operations follow-up batch comes from `docs/architecture/architecture-review-2026-06-28-provider-sync-operations-followup.md` and ADR-0032.
+
+Execution order for this batch:
+
+1. Make Provider Settings reads live at the Provider Boundary.
+2. Consolidate provider facts into a Provider Registry Module.
+3. Extract Persistent Job Intake from the job route Adapter.
+4. Protect summary-first reads with a Shell Activity Job Module.
+5. Deepen Local Studio Sync invalidation and Catalog Operation Result together.
+6. Move Settings hydration into a Settings Surface Module.
+7. Complete Command Center Projection Module.
+8. Build Style Search Projection from manifest truth.
+9. Unify Recipe Module discovery and search through Recipe Discovery Projection.
+10. Route larger External Output Source imports through an Import Operation seam.
+11. Seal Legacy Visual Batch snapshots as a DTO.
+12. Add a Storage Repair Plan Module after Reference Store decision.
+
 ## Seguimiento de trabajo
+
+### Accepted batch: improve/debt safety boundaries - 2026-06-28
+
+- **Status:** Implemented and verified
+- **Findings:** `docs/architecture/architecture-review-2026-06-28-improve-debt-audit.md`
+- **ADR:** `docs/adr/0033-public-library-and-job-intake-boundaries.md`
+- **Plan:** `plans/008-public-library-job-intake-reference-boundaries.md`
+- **Files:** `apps/local-server/src/publicLibraryAssetPolicy.ts`, `apps/local-server/src/libraryRoutes.ts`, `apps/local-server/src/persistentJobIntake.ts`, `apps/local-server/src/referenceManager.ts`, `packages/shared/src/generationContracts.ts`.
+- **Depends on:** ADR-0032.
+- **Unblocks:** safer local asset serving, malformed job intake handling, and bounded reference persistence before deeper Recipe/Settings/Provider follow-ups.
+- **Concrete steps:**
+  - implemented: `/library/*` crosses a public asset allowlist instead of serving any Studio Library-relative path;
+  - implemented: Persistent Job Intake validates malformed `sourceSpec` input before asset dereference or reference persistence;
+  - implemented: reference persistence enforces count and byte budgets before creating directories or files.
+- **Exit criteria:** focused boundary tests pass; `bun run test`, `bun run check`, and `bun run build` pass or blockers are recorded.
+- **Exit proof:** focused boundary tests passed (`bun run test -- apps/local-server/src/publicLibraryAssetPolicy.test.ts apps/local-server/src/libraryRoutes.test.ts apps/local-server/src/referenceManager.test.ts apps/local-server/src/persistentJobIntake.test.ts apps/local-server/src/jobRoutes.test.ts packages/shared/src/generationContracts.test.ts`, 6 files / 29 tests); `bun run test` passed (159 files / 551 tests); `bun run check` passed; `bun run build` passed. No visual verification was required because this batch changed backend contracts and docs only.
+- **Docs:** keep this tracker, ADR-0033, and plan 008 aligned.
+
+### Accepted batch: provider sync and operations follow-up - 2026-06-28
+
+- **Status:** Implemented and verified
+- **Findings:** `docs/architecture/architecture-review-2026-06-28-provider-sync-operations-followup.md`
+- **ADR:** `docs/adr/0032-provider-registry-and-persistent-job-intake.md`
+- **Files:** `apps/local-server/src/providerRoutes.ts`, `apps/local-server/src/providers/*`, `apps/local-server/src/jobRoutes.ts`, `apps/local-server/src/persistentJobIntake.ts`, `hooks/useLocalStudioSync.ts`, `hooks/useCatalog.ts`, `hooks/useStudioShell.ts`, `hooks/useSettingsSurface.ts`, `lib/buildStudioHeaderToolbarProps.ts`, `lib/commandCenterProjection.ts`, `components/recipes/styleSearchProjection.ts`, `lib/recipeDiscoveryProjection.ts`, `lib/importOperation.ts`, `lib/studioLegacyVisualBatchTypes.ts`, storage maintenance modules.
+- **Depends on:** ADR-0023, ADR-0024, ADR-0026, ADR-0030, ADR-0031.
+- **Unblocks:** fresher provider status, route-thin job creation, summary-first shell activity reads, scoped catalog refresh, demand-mounted settings data, manifest-backed search, recipe discovery parity, and safer storage/import maintenance.
+- **Concrete steps:**
+  - implemented: provider capability/preflight reads use live Studio Settings per request;
+  - implemented: Provider Registry now feeds capability definitions, runtime requirements, compiler availability, executor routing, and worker routing;
+  - implemented: `POST /api/jobs` now crosses Persistent Job Intake, with `codex_imagegen` recorded as a compatibility alias instead of durable task truth;
+  - implemented: Shell Activity Job protects summary-first hot reads for queue, operations rail, debug, and shell activity surfaces;
+  - implemented: Catalog Operation Result and typed Local Studio Sync catalog events now drive scoped refresh, visible feedback, and bounded job waiting;
+  - implemented: Settings Surface owns open-time heavy hydration and resolved library fallback for the Settings modal;
+  - implemented: Command Center Projection combines compact mode, provider capability/preflight status, runtime readiness, and queue state for `HeaderToolbar`;
+  - implemented: Style Search Projection wraps manifest/runtime search filters and pack planning for the lazy surface and scripts;
+  - implemented: Recipe Discovery Projection unifies UI and script discovery while keeping aliases separate from Recipe Modules;
+  - implemented: Import Operation owns External Output Source import summary, toast tone, and pending-file removal;
+  - implemented: Legacy Visual Batch snapshots are explicit DTOs translated at import/export edges;
+  - implemented: Storage Repair Plan derives guarded dry-run repair items from storage audit without choosing a destructive Reference Store layout.
+- **Exit criteria:** all twelve recommendations are implemented or explicitly deferred for a load-bearing reason; focused tests cover each new Module interface; `bun run test`, `bun run check`, and `bun run build` pass or any blocker is reported with exact command; frontend changes have Playwright visual verification.
+- **Exit proof:** focused interface tests passed (`bun run test -- apps/local-server/src/providers/providerRegistry.test.ts apps/local-server/src/providerRoutes.test.ts apps/local-server/src/persistentJobIntake.test.ts apps/local-server/src/jobRoutes.test.ts lib/shellActivityJob.test.ts hooks/localStudioSyncProjection.test.ts services/studioEventSource.test.ts lib/catalogOperationResult.test.ts hooks/useStudioPageController.test.ts hooks/useStudioOverlayController.test.ts hooks/useStudioHeaderToolbarConfig.test.ts lib/settingsSurface.test.ts lib/commandCenterProjection.test.ts components/recipes/styleSearchProjection.test.ts lib/recipeDiscoveryProjection.test.ts lib/importOperation.test.ts lib/studioLegacyVisualBatchTypes.test.ts packages/shared/src/storageMaintenance.test.ts`, 18 files / 48 tests); `bun run check` passed; `bun run test` passed (158 files / 544 tests); `bun run build` passed; Playwright smoke passed with `provider-sync-ops-visual-clean-ok` on `http://localhost:17222/` plus local server `http://127.0.0.1:17223/`, covering Command Center/home, Settings provider capabilities, Recipes, mobile commands, and mobile Settings. Screenshots: `output/playwright/provider-sync-ops-home.png`, `output/playwright/provider-sync-ops-settings-provider.png`, `output/playwright/provider-sync-ops-recipes.png`, `output/playwright/provider-sync-ops-mobile-commands.png`, `output/playwright/provider-sync-ops-mobile-settings.png`.
+- **Docs:** keep this tracker, `CONTEXT.md`, `docs/ARCHITECTURE.md`, and the findings document aligned as implementation sharpens.
 
 ### 1. Deepen the `Studio Shell` orchestration module
 

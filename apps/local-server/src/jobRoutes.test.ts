@@ -43,6 +43,16 @@ function createJob(overrides: Partial<Job> = {}): Job {
   };
 }
 
+type CreateJobInput = {
+  id: string;
+  projectId: string;
+  kind: Job['kind'];
+  providerId: Job['providerId'];
+  sourceSpec: GenerationTaskSpec | null;
+  prompt: string;
+  execution: Job['execution'];
+};
+
 function createSourceSpec(overrides: Partial<GenerationTaskSpec> = {}): GenerationTaskSpec {
   return createGenerationTaskSpec({
     id: overrides.id ?? 'spec-1',
@@ -169,7 +179,18 @@ describe('jobRoutes', () => {
     const publishEvent = vi.fn();
     const enqueueJob = vi.fn();
     const logJobCreated = vi.fn();
-    const created = createJob({ id: 'job-new', kind: 'codex_imagegen' });
+    const createJobFn = vi.fn((input: CreateJobInput) =>
+      createJob({
+        id: input.id,
+        projectId: input.projectId,
+        kind: input.kind,
+        providerId: input.providerId,
+        sourceSpec: input.sourceSpec,
+        originalPrompt: input.prompt,
+        finalPromptUsed: input.prompt,
+      }),
+    );
+    const created = createJob({ id: 'job-new', kind: 'image_generate' });
 
     const routes = createJobRoutes({
       listJobs: () => [],
@@ -178,7 +199,7 @@ describe('jobRoutes', () => {
       cancelQueuedOrRunningJob: () => null,
       ensureDefaultProjectId: () => 'project-default',
       createJobId: () => 'job-new',
-      createJob: () => created,
+      createJob: createJobFn,
       updateJobFinalPrompt: () => created,
       processReferences: async () => ({
         augmentedPrompt: 'draw a lighthouse with refs',
@@ -216,8 +237,11 @@ describe('jobRoutes', () => {
 
     expect(createResponse.status).toBe(201);
     await expect(createResponse.json()).resolves.toEqual(created);
+    expect(createJobFn).toHaveBeenCalledWith(
+      expect.objectContaining({ kind: 'image_generate', providerId: 'codex' }),
+    );
     expect(publishEvent).toHaveBeenCalledWith('job.created', created);
-    expect(logJobCreated).toHaveBeenCalledWith('codex_imagegen', 'job-new');
+    expect(logJobCreated).toHaveBeenCalledWith('image_generate', 'job-new');
     expect(enqueueJob).toHaveBeenCalledWith(created);
 
     const invalidPromptResponse = await routes.request('/', {
@@ -360,6 +384,50 @@ describe('jobRoutes', () => {
     await expect(invalidPayload.json()).resolves.toMatchObject({
       code: 'invalid_request_body',
     });
+    expect(enqueueJob).not.toHaveBeenCalled();
+  });
+
+  it('returns structured 400 for malformed source specs without enqueue', async () => {
+    const enqueueJob = vi.fn();
+    const processReferences = vi.fn(async () => ({
+      augmentedPrompt: 'draw',
+      persistedRefs: [],
+    }));
+    const routes = createJobRoutes({
+      listJobs: () => [],
+      getJob: () => null,
+      getJobDetail: async () => null,
+      cancelQueuedOrRunningJob: () => null,
+      ensureDefaultProjectId: () => 'project-default',
+      createJobId: () => 'job-new',
+      createJob: () => createJob({ id: 'job-new' }),
+      updateJobFinalPrompt: () => null,
+      processReferences,
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/library',
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError,
+      publishEvent,
+      logJobCreated: () => {},
+      enqueueJob,
+    });
+
+    const response = await routes.request('/', {
+      method: 'POST',
+      body: JSON.stringify({
+        kind: 'image_generate',
+        prompt: 'draw a lighthouse',
+        sourceSpec: {},
+      }),
+      headers: { 'Content-Type': 'application/json' },
+    });
+
+    expect(response.status).toBe(400);
+    await expect(response.json()).resolves.toMatchObject({
+      error: 'Invalid Generation Task Spec',
+      code: 'invalid_task_spec',
+    });
+    expect(processReferences).not.toHaveBeenCalled();
     expect(enqueueJob).not.toHaveBeenCalled();
   });
 });

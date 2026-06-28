@@ -1,7 +1,8 @@
 import React from 'react';
 import { IconBrain as BrainCircuit, IconX as X } from '@tabler/icons-react';
 
-import type { Job as StudioJob, JobDetailResponse } from '../packages/shared/src';
+import type { JobDetailResponse } from '../packages/shared/src';
+import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 import type { LogEntry, Workspace } from '../types';
 import { JobInspectorDetail } from './JobInspectorDetail';
 import { SessionOverview } from './SessionOverview';

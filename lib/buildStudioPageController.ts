@@ -2,9 +2,10 @@ import type { RecipePageProps } from '../components/RecipePage';
 import type { ToolbarProps } from '../components/Toolbar';
 import type { StudioGridSurfaceProps } from '../components/studio/StudioGridSurface';
 import type { StudioOperationsRailProps } from '../components/studio/StudioOperationsRail';
-import type { Job as StudioJob, JobStatus } from '../packages/shared/src';
+import type { JobStatus } from '../packages/shared/src';
 import type { AppPageView } from '../hooks/useHashRouter';
 import type { RecipeAliasId } from './recipeAliases';
+import type { ShellActivityJob as StudioJob } from './shellActivityJob';
 import type {
   AspectRatio,
   LogEntry,
@@ -121,12 +122,11 @@ function createdAtMs(value: string | number) {
 }
 
 function readJobWorkspaceId(job: StudioJob) {
-  const value = job.sourceSpec?.metadata?.workspaceId;
-  return typeof value === 'string' && value.trim() ? value : null;
+  return job.workspaceId;
 }
 
 function readJobAspectRatio(job: StudioJob, linkedLocalJob: QueueJob | undefined) {
-  return job.sourceSpec?.output.aspectRatio ?? linkedLocalJob?.config.aspectRatio ?? null;
+  return job.aspectRatio ?? linkedLocalJob?.config.aspectRatio ?? null;
 }
 
 export function buildStudioGenerationPlaceholders({
@@ -157,7 +157,7 @@ export function buildStudioGenerationPlaceholders({
           id: `server-${job.id}`,
           status: job.status,
           aspectRatio: readJobAspectRatio(job, linkedLocalJob) ?? fallbackAspectRatio,
-          prompt: job.originalPrompt || linkedLocalJob?.prompt || 'Generating image',
+          prompt: job.promptPreview || linkedLocalJob?.prompt || 'Generating image',
           createdAt: createdAtMs(job.createdAt),
         },
       ];

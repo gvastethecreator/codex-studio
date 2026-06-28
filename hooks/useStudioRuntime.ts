@@ -6,13 +6,14 @@ import { useLocalStudioSync } from './useLocalStudioSync';
 import { useStudioDiagnostics } from './useStudioDiagnostics';
 import { useStudioOnboarding } from './useStudioOnboarding';
 import { useStudioSessionVerifier } from './useStudioSessionVerifier';
+import type { CatalogRefreshScope } from '../lib/catalogOperationResult';
 
 interface UseStudioRuntimeProps {
   logs: LogEntry[];
   log: (message: string) => void;
   addToast: (message: string, type?: Toast['type']) => void;
   shouldAutoOpen: boolean;
-  onCatalogChanged?: () => void;
+  onCatalogChanged?: (scope?: CatalogRefreshScope) => void;
 }
 
 /**

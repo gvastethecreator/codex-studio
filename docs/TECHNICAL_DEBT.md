@@ -6,6 +6,8 @@ Este documento registra deuda técnica activa mientras Codex Studio se prepara p
 
 Referencia de arquitectura aceptada:
 
+- `docs/architecture/architecture-review-2026-06-28-improve-debt-audit.md` (current improve/debt audit)
+- `docs/adr/0033-public-library-and-job-intake-boundaries.md`
 - `docs/architecture/architecture-review-2026-06-21-second-pass-runtime-ux.md` (candidate follow-up findings)
 - `docs/architecture/architecture-review-2026-06-21-runtime-storage-ux.md`
 - `docs/architecture/architecture-review-2026-06-19-front-performance.md`
@@ -14,13 +16,13 @@ Referencia de arquitectura aceptada:
 
 Cola de ejecución actual:
 
-0. Continuar el lote front-performance 2026-06-19: finish full Local Studio Sync job-waiting ownership, backend full-scope Catalog Page commands, Style Browser session split, and remaining Studio Readiness freshness.
-1. Profundizar orquestación de `Studio Shell`.
-2. Profundizar `Studio Generation Session`.
-3. Reducir traducción de overlays de sistema tras separar seams de `Studio Settings` por dominio operativo.
-4. Completar deepening de rutas en `appFactory`.
-5. Mejorar semántica de refresh en `Local Studio Sync`.
-6. Revisar claridad de seams en `Local Generation Run`.
+1. Continuar el lote front-performance 2026-06-19: finish full Local Studio Sync job-waiting ownership, backend full-scope Catalog Page commands, Style Browser session split, and remaining Studio Readiness freshness.
+2. Profundizar orquestación de `Studio Shell`.
+3. Profundizar `Studio Generation Session`.
+4. Reducir traducción de overlays de sistema tras separar seams de `Studio Settings` por dominio operativo.
+5. Completar deepening de rutas en `appFactory`.
+6. Mejorar semántica de refresh en `Local Studio Sync`.
+7. Revisar claridad de seams en `Local Generation Run`.
 
 Prioridad inmediata del lote runtime-storage-UX 2026-06-21:
 
@@ -32,6 +34,7 @@ Prioridad inmediata del lote runtime-storage-UX 2026-06-21:
 
 Recent runtime-storage progress:
 
+- Done 2026-06-28: `plans/008-public-library-job-intake-reference-boundaries.md` closed `/library/*` public-asset allowlisting, malformed `Persistent Job Intake` validation, and reference count/byte budgets.
 - `JobSummary` is now the default hot read shape for `/api/jobs`.
 - Catalog Page reads no longer select or parse full `generation_config` by default.
 - Hot-plan indexes were added for jobs, job events, and Codex turns.

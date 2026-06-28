@@ -2,7 +2,7 @@ import { createComfyWorkflowExecutor } from './comfyExecutor';
 import { createFalImageExecutor } from './falExecutor';
 import { createGoogleImageExecutor } from './googleExecutor';
 import type { ExternalProviderExecutor } from './externalProvider';
-import type { ExternalExecutableProviderId } from './runtimeConfig';
+import type { ExternalExecutableProviderId } from './providerRegistry';
 
 export type ExternalProviderExecutorRegistry = Partial<
   Record<ExternalExecutableProviderId, ExternalProviderExecutor>

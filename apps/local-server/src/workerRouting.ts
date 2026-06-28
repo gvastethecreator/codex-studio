@@ -3,8 +3,10 @@ import {
   type GenerationTaskKind,
 } from '../../../packages/shared/src/generationContracts';
 import type { Job } from '../../../packages/shared/src/types';
-
-export type WorkerRuntimeTarget = 'dry_run' | 'codex' | 'external';
+import {
+  resolveProviderWorkerRuntimeTarget,
+  type WorkerRuntimeTarget,
+} from './providers/providerRegistry';
 
 function resolveGenerationTaskFromJob(
   job: Pick<Job, 'kind' | 'sourceSpec'>,
@@ -21,16 +23,17 @@ export function resolveWorkerRuntimeTarget(
   job: Pick<Job, 'kind' | 'providerId' | 'sourceSpec'>,
 ): WorkerRuntimeTarget | null {
   const providerId = job.providerId ?? job.sourceSpec?.providerId ?? null;
+  const providerTarget = resolveProviderWorkerRuntimeTarget(providerId);
 
-  if (job.kind === 'dry_run' || providerId === 'dry_run') {
+  if (job.kind === 'dry_run' || providerTarget === 'dry_run') {
     return 'dry_run';
   }
 
-  if (providerId === 'google' || providerId === 'fal' || providerId === 'comfy') {
+  if (providerTarget === 'external') {
     return 'external';
   }
 
-  if (providerId && providerId !== 'codex') {
+  if (providerId && providerTarget !== 'codex') {
     return null;
   }
 

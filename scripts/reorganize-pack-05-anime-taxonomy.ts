@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import yaml from 'js-yaml';
+import * as yaml from 'js-yaml';
 
 type PackCategory = {
   name: string;

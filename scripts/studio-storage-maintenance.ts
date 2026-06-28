@@ -5,6 +5,7 @@ import {
   type CompactStorageMaintenanceOptions,
   type ThumbnailBackfillStorageMaintenanceOptions,
 } from '../apps/local-server/src/storageMaintenance';
+import { createStorageRepairPlanFromAudit } from '../packages/shared/src/storageMaintenance';
 import { getSettings } from '../apps/local-server/src/config';
 import { resolveLibraryPathFromRoot } from '../apps/local-server/src/library';
 
@@ -15,7 +16,7 @@ export {
 } from '../apps/local-server/src/storageMaintenance';
 
 interface StorageArgs {
-  command: 'audit' | 'compact' | 'thumbnails:backfill';
+  command: 'audit' | 'plan' | 'compact' | 'thumbnails:backfill';
   libraryDir: string;
   dbPath: string;
   write: boolean;
@@ -30,7 +31,9 @@ function parseArgs(argv: string[]): StorageArgs {
       ? 'compact'
       : argv[2] === 'thumbnails:backfill'
         ? 'thumbnails:backfill'
-        : 'audit';
+        : argv[2] === 'plan'
+          ? 'plan'
+          : 'audit';
   const libraryArg = argv.find((arg) => arg.startsWith('--library='));
   const dbArg = argv.find((arg) => arg.startsWith('--db='));
   const limitArg = argv.find((arg) => arg.startsWith('--limit='));
@@ -75,6 +78,15 @@ export async function main(argv = Bun.argv) {
       limit: args.limit,
     };
     console.log(JSON.stringify(await backfillStorageThumbnails(options), null, 2));
+    return;
+  }
+
+  if (args.command === 'plan') {
+    const audit = await readStorageMaintenanceAudit({
+      libraryDir: args.libraryDir,
+      dbPath: args.dbPath,
+    });
+    console.log(JSON.stringify(createStorageRepairPlanFromAudit(audit), null, 2));
     return;
   }
 

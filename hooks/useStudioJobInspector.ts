@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useReducer, useMemo, useRef } from 'react';
 import { getStudioJobDetail } from '../services/localStudioService';
-import type { Job as StudioJob, JobDetailResponse } from '../packages/shared/src';
+import type { JobDetailResponse } from '../packages/shared/src';
+import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 
 interface UseStudioJobInspectorProps {
   studioJobs: StudioJob[];

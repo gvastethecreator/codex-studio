@@ -6,7 +6,6 @@ import type {
   ExternalOutputSourceFile,
   GenerationProviderCapabilitiesResponse,
   GenerationProviderRuntimePreflightResponse,
-  Job as StudioJob,
   JobDetailResponse,
   LocalCodexSessionResponse,
   RegisterExternalOutputSourceInput,
@@ -25,6 +24,7 @@ import type {
 } from '../../types';
 import type { ConfirmationRequest } from '../../hooks/useStudioActionConfirmations';
 import type { ArchivedImageGroup } from '../../lib/studioCatalogTrashView';
+import type { ShellActivityJob as StudioJob } from '../../lib/shellActivityJob';
 
 export interface StudioImageOverlaysProps {
   modalImage: GeneratedImageWithConfig | null;

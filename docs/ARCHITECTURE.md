@@ -34,14 +34,14 @@ graph TD
 - `hooks/useStudioShell.ts`: materializes the `Studio Shell` by composing deeper shell-facing seams instead of owning catalog, page, and command wiring inline.
 - `hooks/useStudioViewState.ts`: groups shell-local queue, editor, preview, and overlay visibility state so `useStudioShell.ts` can cross smaller view-state surfaces instead of a flat list of UI setters.
 - `hooks/useStudioNavigation.ts`: groups recipe, modal, editor, and shell navigation concerns so route synchronization and overlay closing rules cross one deeper navigation seam instead of another flat argument list.
-- `hooks/useStudioSettings.ts`: groups editable `Studio Settings`, provider capability/runtime-preflight reads, and External Output Source loading/import commands behind one shell-facing data surface. Startup reads only the lightweight settings summary; full provider/output-source data refreshes when the Settings surface opens.
+- `hooks/useStudioSettings.ts` and `hooks/useSettingsSurface.ts`: group editable `Studio Settings`, provider capability/runtime-preflight reads, External Output Source loading/import commands, and open-time Settings Surface hydration behind one shell-facing data surface. Startup reads only the lightweight settings summary; full provider/output-source data refreshes when the Settings surface opens.
 - `hooks/useStudioActivitySession.ts`: groups selected-job inspection state and debug-panel toggling so shell activity wiring crosses focused `selection` and `debugPanel` surfaces instead of another flat list of runtime-detail props.
 - `hooks/useCatalog.ts`: exposes the `Image Catalog` read seam plus `Catalog Page` state (`total`, `hasMore`, loading, error, load more) and `useStudioCatalogController()` for catalog mutations, queue-result previews, trash grouping, and refresh choreography.
 - `hooks/useStudioGenerationSession.ts`: groups queue and generation-action surfaces so the `Studio Shell` no longer consumes another flat spread of generation-session fields.
 - `services/studioRuntime.ts`: resolves the backend API base and runtime metadata without coupling the renderer to Electron.
 - `hooks/useStudioRuntime.ts`: aggregates sync, onboarding, diagnostics, readiness, and session verification for shell consumers.
 - `lib/queueStateMachine.ts`: centralizes queue slot selection, abort classification, and per-job queue execution results from explicit generation outcomes so `useQueueManager.ts` can stay focused on queue orchestration instead of owning the full execution lifecycle inline.
-- `hooks/useLocalStudioSync.ts`: performs HTTP catch-up, subscribes to the shared `GET /api/events` stream, mirrors backend jobs/logs, and refreshes the catalog.
+- `hooks/useLocalStudioSync.ts`: performs HTTP catch-up, subscribes to the shared `GET /api/events` stream, mirrors compact Shell Activity Jobs/logs, refreshes the catalog from typed Catalog Operation scopes, and owns bounded backend job waiting.
 - `services/localGenerationRun.ts`: creates Generation Task jobs, waits for terminal states with `watchJob()`, queries `/api/catalog?job_id=...`, and returns catalog-derived local result data.
 - `services/localGenerationVisualBatchCompat.ts`: builds the legacy Visual Batch only at the compatibility edge.
 - `services/localStudioService.ts`: the UI's single HTTP adapter to the local backend.
@@ -49,25 +49,28 @@ graph TD
 - `apps/local-server/src/db.ts` and `apps/local-server/src/catalog.ts`: expose summary-first hot reads for jobs and Catalog Pages, while detail reads keep full durable payload access on demand.
 - `lib/studioCatalogView.ts`: pure Catalog Entry read model. It groups and filters catalog data without depending on Visual Batches or IndexedDB.
 - `lib/studioCatalogImageAdapter.ts`: materializes UI images from Catalog Entries.
-- `lib/studioLegacyVisualSnapshotExport.ts`: builds legacy `GenerationBatch[]` snapshots only for export compatibility.
+- `lib/studioLegacyVisualBatchTypes.ts` and `lib/studioLegacyVisualSnapshotExport.ts`: define and translate explicit Legacy Visual Batch DTO snapshots only for export/import compatibility.
 - `lib/buildStudioPageController.ts`: concentrates `Studio Page` debug, grid, and operations projection and also exposes the shared `buildStudioViewportController()` presentation seam, so route view, recipe props, and dock visibility stop being rebuilt inline in `useStudioShell.ts`.
-- `lib/buildStudioHeaderToolbarProps.ts`: concentrates `Command Center` and header-toolbar transitions, runtime status derivation, queue counts, and provider fallback in one seam.
-- `hooks/useStudioOverlayController.ts`: keeps the lower-level overlay controller seam and now also exposes a deeper shell-overlay seam that derives `Studio Settings` library fallback and background-toggle choreography from runtime/settings modules, then publishes grouped `settingsModule` data into `StudioSystemOverlays` instead of widening a flat settings prop surface.
+- `lib/buildStudioHeaderToolbarProps.ts` and `lib/commandCenterProjection.ts`: concentrate `Command Center` and header-toolbar transitions, runtime status derivation, provider capability/preflight projection, compact-mode policy, and queue counts in one seam.
+- `hooks/useStudioOverlayController.ts`: keeps the lower-level overlay controller seam and publishes grouped `settingsModule` data into `StudioSystemOverlays` instead of widening a flat settings prop surface.
+- `components/recipes/styleSearchProjection.ts` and `lib/recipeDiscoveryProjection.ts`: expose manifest-backed Style Search and Recipe Discovery projections for lazy UI surfaces, scripts, and aliases without redefining Recipe Modules.
+- `lib/importOperation.ts`: owns External Output Source import summaries, toast tone, and pending-file removal at the Settings surface boundary.
 - `lib/studioReadiness.ts` and `lib/studioDiagnostics.ts`: pure builders for onboarding, header status, and system panels.
 - `hooks/useGenerationConfig.ts`: owns the Codex model catalog read for generation defaults and passes the catalog to the Toolbar instead of letting the Toolbar fetch model freshness separately.
 - `apps/local-server/src/settingsRoutes.ts`: groups editable `Studio Settings` read/patch HTTP behavior so `appFactory.ts` keeps runtime composition concerns.
 - `apps/local-server/src/codexRoutes.ts`: groups Local Codex Session and model/account route behavior (`/api/codex/*`) behind one backend seam.
 - `apps/local-server/src/librariesRoutes.ts`: groups Studio Library list/create/default/remove HTTP behavior (`/api/libraries/*`) behind one backend seam.
 - `apps/local-server/src/projectRoutes.ts`: groups project listing/creation HTTP behavior (`/api/projects`) and keeps event/log side effects out of `appFactory.ts` inline handlers.
-- `apps/local-server/src/jobRoutes.ts`: groups job list/detail/cancel/create HTTP behavior (`/api/jobs/*`) and keeps provider-blocker/reference-processing orchestration out of `appFactory.ts` inline handlers.
+- `apps/local-server/src/jobRoutes.ts` and `apps/local-server/src/persistentJobIntake.ts`: group job list/detail/cancel/create HTTP behavior (`/api/jobs/*`) and keep provider-blocker/reference-processing/new-job compatibility policy out of route handlers.
 - `apps/local-server/src/assetLogRoutes.ts`: groups lightweight asset/log list HTTP behavior (`/api/assets`, `/api/logs`) into a dedicated backend seam.
 - `apps/local-server/src/runtimeRoutes.ts`: groups runtime health/bootstrap/app-server-start HTTP behavior (`/api/health`, `/api/bootstrap-config`, `/api/app-server/start`) into a dedicated backend seam.
 - `apps/local-server/src/studioControlRoutes.ts`: groups Studio control HTTP behavior (`/api/studio/reset`) into a dedicated backend seam.
-- `apps/local-server/src/providerRoutes.ts` and `apps/local-server/src/outputSourceRoutes.ts`: keep provider capability/preflight and External Output Source HTTP behavior out of `appFactory.ts` inline handlers.
+- `apps/local-server/src/providerRoutes.ts`, `apps/local-server/src/providers/providerRegistry.ts`, and `apps/local-server/src/outputSourceRoutes.ts`: keep provider capability/preflight, Provider Registry facts, worker routing, compiler/executor availability, and External Output Source HTTP behavior out of `appFactory.ts` inline handlers.
 - `apps/local-server/src/eventStreamRoutes.ts`: groups SSE event stream behavior (`/api/events`) into a dedicated backend seam.
 - `apps/local-server/src/libraryRoutes.ts`: groups local asset serving behavior (`/library/*`) including thumbnail variant fallback and cache headers into a dedicated backend seam.
 - `components/shell/StudioViewport.tsx`: demand-mounted route shell that lazy-loads studio and recipe surfaces.
 - `components/recipes/styles/manifests/`: granular source of truth for Style Pack Manifests and Style Preset Manifests.
+- `packages/shared/src/storageMaintenance.ts`: shares Storage Maintenance DTOs plus dry-run Storage Repair Plan projection between Settings and automation scripts.
 
 ## Flujo de generación
 
@@ -146,7 +149,7 @@ Codex SDK or scripts are automation surfaces, not the product runtime. They are 
 
 ## Superficie de mantenimiento en la app
 
-Studio Settings exposes a demand-mounted Storage Maintenance panel backed by `/api/maintenance`. It can run storage audit, inline-payload compaction plan/write, historical thumbnail backfill plan/write, and tooling-log pruning from the product UI without letting the browser execute arbitrary shell commands. Script commands remain the automation equivalent for agents and release checks.
+Studio Settings exposes a demand-mounted Storage Maintenance panel backed by `/api/maintenance`. It can run storage audit, inline-payload compaction plan/write, historical thumbnail backfill plan/write, and tooling-log pruning from the product UI without letting the browser execute arbitrary shell commands. Storage Repair Plan is derived from the same audit data and stays dry-run/read-only until a guarded write adapter is chosen. Script commands remain the automation equivalent for agents and release checks.
 
 ## Objetivos de arquitectura open-source
 

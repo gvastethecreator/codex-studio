@@ -1,44 +1,17 @@
 import type {
   GenerationProviderId,
   GenerationProviderRuntimePreflight,
-  ProviderRuntimeKind,
   ProviderSecretState,
 } from '../../../../packages/shared/src';
+import {
+  listExternalExecutableProviderEntries,
+  type ExternalExecutableProviderId,
+  type ProviderRegistryEntry,
+} from './providerRegistry';
 
-export type ExternalExecutableProviderId = 'google' | 'fal' | 'comfy';
 export type ProviderRuntimePreflight = GenerationProviderRuntimePreflight & {
   providerId: ExternalExecutableProviderId;
 };
-
-interface ProviderRuntimeDefinition {
-  providerId: ExternalExecutableProviderId;
-  runtimeKind: ProviderRuntimeKind;
-  secretEnvNames: string[];
-  localRuntimeEnvNames: string[];
-  requiredConfigEnvNames?: string[];
-}
-
-const PROVIDER_RUNTIME_DEFINITIONS: ProviderRuntimeDefinition[] = [
-  {
-    providerId: 'google',
-    runtimeKind: 'hosted_api',
-    secretEnvNames: ['GOOGLE_API_KEY', 'GEMINI_API_KEY', 'NANO_BANANA_API_KEY'],
-    localRuntimeEnvNames: [],
-  },
-  {
-    providerId: 'fal',
-    runtimeKind: 'hosted_api',
-    secretEnvNames: ['FAL_KEY', 'FAL_API_KEY'],
-    localRuntimeEnvNames: [],
-  },
-  {
-    providerId: 'comfy',
-    runtimeKind: 'local_workflow',
-    secretEnvNames: [],
-    localRuntimeEnvNames: ['COMFY_API_URL', 'COMFYUI_API_URL'],
-    requiredConfigEnvNames: ['COMFY_WORKFLOW_TEMPLATE_PATH'],
-  },
-];
 
 function firstConfiguredEnvName(env: Record<string, string | undefined>, names: readonly string[]) {
   return names.find((name) => Boolean(env[name]?.trim())) ?? null;
@@ -72,7 +45,7 @@ function resolveLocalRuntimeState(
 }
 
 function createPreflight(
-  definition: ProviderRuntimeDefinition,
+  definition: ProviderRegistryEntry & { providerId: ExternalExecutableProviderId },
   env: Record<string, string | undefined>,
 ): ProviderRuntimePreflight {
   const secretSource = firstConfiguredEnvName(env, definition.secretEnvNames);
@@ -122,7 +95,9 @@ function createPreflight(
 export function readExternalProviderRuntimePreflights(
   env: Record<string, string | undefined> = process.env,
 ) {
-  return PROVIDER_RUNTIME_DEFINITIONS.map((definition) => createPreflight(definition, env));
+  return listExternalExecutableProviderEntries().map((definition) =>
+    createPreflight(definition, env),
+  );
 }
 
 export function getExternalProviderRuntimePreflight(

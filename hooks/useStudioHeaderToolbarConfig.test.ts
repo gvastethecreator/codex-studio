@@ -46,8 +46,40 @@ describe('buildStudioHeaderToolbarProps', () => {
         onToggleDebug: () => calls.push('toggleDebug'),
       },
       commandCenter: {
+        settings: {
+          defaultProviderId: 'google',
+          commandCenterCompactMode: true,
+        },
         provider: {
-          defaultProviderId: null,
+          capabilities: {
+            providers: [
+              {
+                providerId: 'google',
+                label: 'Google image API',
+                runtimeKind: 'hosted_api',
+                status: 'active',
+                isDefault: true,
+                hasAdapter: true,
+                canExecute: true,
+                secretState: 'configured',
+                detail: 'Google adapter is available.',
+              },
+            ],
+          },
+          runtimePreflight: {
+            providers: [
+              {
+                providerId: 'google',
+                runtimeKind: 'hosted_api',
+                secretState: 'configured',
+                secretSource: 'GOOGLE_API_KEY',
+                localRuntimeState: 'not_required',
+                localRuntimeSource: null,
+                canAttemptExecution: true,
+                diagnostics: [],
+              },
+            ],
+          },
         },
         queue: {
           statusItems: [
@@ -88,14 +120,22 @@ describe('buildStudioHeaderToolbarProps', () => {
     expect(props.trashCount).toBe(2);
     expect(props.usage.value).toBe('120');
     expect(props.generationStartTime).toBe(1234);
-    expect(props.queueCount).toBe(4);
-    expect(props.queueResultPreviews).toEqual([
+    expect(props.commandCenter.compactMode).toBe(true);
+    expect(props.commandCenter.queue.count).toBe(4);
+    expect(props.commandCenter.queue.resultPreviews).toEqual([
       { id: 'result-1', src: '/library/assets/result-1.png' },
     ]);
-    expect(props.activeProviderId).toBe('codex');
-    expect(props.runtimeStatus).toEqual({
+    expect(props.commandCenter.provider).toEqual(
+      expect.objectContaining({
+        id: 'google',
+        label: 'Google image API',
+        tone: 'success',
+      }),
+    );
+    expect(props.commandCenter.runtimeStatus).toEqual({
       label: 'Attention',
       tone: 'danger',
+      tooltip: 'Backend: Offline',
     });
     expect(calls).toEqual([
       'transition',

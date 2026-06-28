@@ -132,7 +132,7 @@ describe('studioEventSource', () => {
     try {
       const stream = createStudioEventStream();
       const seen: string[] = [];
-      stream.onCatalogChanged((image) => seen.push(image.id));
+      stream.onCatalogChanged((event) => seen.push(`${event.type}:${event.image.id}`));
       for (const type of ['catalog.created', 'catalog.updated', 'catalog.deleted']) {
         sources[0]?.onmessage?.({
           data: JSON.stringify({
@@ -143,7 +143,11 @@ describe('studioEventSource', () => {
         } as MessageEvent);
       }
 
-      expect(seen).toEqual(['catalog.created', 'catalog.updated', 'catalog.deleted']);
+      expect(seen).toEqual([
+        'catalog.created:catalog.created',
+        'catalog.updated:catalog.updated',
+        'catalog.deleted:catalog.deleted',
+      ]);
       stream.close();
     } finally {
       if (previousEventSource) {

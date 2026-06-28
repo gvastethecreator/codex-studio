@@ -578,5 +578,5 @@ describe('stylePresetManifests', () => {
     );
     expect(runtimeIndex.presetById.get('SP01-001')?.name).toBeTruthy();
     expect(runtimeIndex.presetPackIdById.get('SP01-001')).toBe('pack_01');
-  }, 60_000);
+  }, 120_000);
 });

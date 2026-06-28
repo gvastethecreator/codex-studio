@@ -21,6 +21,7 @@ until the catalog coordination plans at the end.
 | 005  | Move GSAP compatibility off the startup path           | P2       | L      | 002                 | DONE - verified 2026-06-15 |
 | 006  | Split style catalog data before raising its budget     | P3       | M      | catalog-agent-clear | DONE - verified 2026-06-15 |
 | 007  | Make style catalog search load incrementally           | P3       | L      | 006                 | DONE - verified 2026-06-15 |
+| 008  | Public Library, Job Intake, and Reference Boundaries   | P1       | M      | ADR-0033            | DONE - verified 2026-06-28 |
 
 Status values: TODO | IN PROGRESS | DONE | BLOCKED (with one-line reason) |
 REJECTED (with one-line rationale).
@@ -43,6 +44,7 @@ REJECTED (with one-line rationale).
 2. Wave B: plans 004, 005. These reduce background churn and startup cost after
    the first wave stabilizes.
 3. Wave C: plans 006, 007. Run only after catalog-pack coordination is safe.
+4. Wave D: plan 008. Safety boundary pass from the 2026-06-28 improve/debt audit.
 
 ## Shared verification closeout
 

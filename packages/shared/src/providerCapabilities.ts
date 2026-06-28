@@ -40,9 +40,10 @@ export interface CreateProviderCapabilitiesInput {
   settings: Pick<EditableStudioSettings, 'defaultProviderId'>;
   secretConfigured?: Partial<Record<GenerationProviderId, boolean>>;
   localRuntimeConfigured?: Partial<Record<GenerationProviderId, boolean>>;
+  providers?: ProviderCapabilityDefinition[];
 }
 
-const PROVIDERS: Array<{
+export interface ProviderCapabilityDefinition {
   providerId: GenerationProviderId;
   label: string;
   runtimeKind: ProviderRuntimeKind;
@@ -52,7 +53,9 @@ const PROVIDERS: Array<{
   activeDetail: string;
   plannedDetail: string;
   missingDetail: string;
-}> = [
+}
+
+const PROVIDERS: ProviderCapabilityDefinition[] = [
   {
     providerId: 'codex',
     label: 'Codex app-server',
@@ -118,9 +121,10 @@ export function createGenerationProviderCapabilities({
   settings,
   secretConfigured = {},
   localRuntimeConfigured = {},
+  providers = PROVIDERS,
 }: CreateProviderCapabilitiesInput): GenerationProviderCapabilitiesResponse {
   return {
-    providers: PROVIDERS.map((provider) => {
+    providers: providers.map((provider) => {
       const secretReady = Boolean(secretConfigured[provider.providerId]);
       const runtimeReady = provider.requiresLocalRuntime
         ? Boolean(localRuntimeConfigured[provider.providerId])

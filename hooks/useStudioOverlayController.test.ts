@@ -5,6 +5,7 @@ import {
   buildStudioOverlayController,
   buildStudioShellOverlayController,
 } from './useStudioOverlayController';
+import { toShellActivityJob } from '../lib/shellActivityJob';
 
 describe('buildStudioOverlayController', () => {
   it('centralizes overlay counts and transition wrappers', () => {
@@ -74,7 +75,7 @@ describe('buildStudioOverlayController', () => {
       activity: {
         mergedLogs: [{ id: 'log-1', message: 'hello', timestamp: 1 }],
         studioJobs: [
-          {
+          toShellActivityJob({
             id: 'job-1',
             projectId: 'default',
             kind: 'dry_run',
@@ -89,7 +90,7 @@ describe('buildStudioOverlayController', () => {
             createdAt: '2026-05-07T00:00:00.000Z',
             updatedAt: '2026-05-07T00:00:00.000Z',
             completedAt: null,
-          },
+          }),
         ],
         selectedJobDetail: null,
         isLoadingSelectedJob: false,
@@ -128,7 +129,6 @@ describe('buildStudioOverlayController', () => {
         ensureAppServer: () => {
           calls.push('ensureAppServer');
         },
-        diagnosticsLibraryDir: null,
       },
       isSettingsModalOpen: false,
       settingsModule: {
@@ -407,7 +407,6 @@ describe('buildStudioOverlayController', () => {
           ensureAppServer: () => {
             calls.push('ensureAppServer');
           },
-          diagnosticsLibraryDir: 'D:/from-diagnostics',
         },
       },
       activity: {
@@ -483,7 +482,7 @@ describe('buildStudioOverlayController', () => {
             calls.push('pruneToolingLogs');
           },
         },
-        libraryDir: null,
+        libraryDir: 'D:/from-settings-surface',
         onResetStudio: () => {
           calls.push('resetStudio');
         },
@@ -520,6 +519,6 @@ describe('buildStudioOverlayController', () => {
       },
     });
 
-    expect(controller.systemOverlays.settingsModule.libraryDir).toBe('D:/from-diagnostics');
+    expect(controller.systemOverlays.settingsModule.libraryDir).toBe('D:/from-settings-surface');
   });
 });

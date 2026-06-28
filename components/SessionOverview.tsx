@@ -6,7 +6,7 @@ import {
   IconTerminal as Terminal,
 } from '@tabler/icons-react';
 
-import type { Job as StudioJob } from '../packages/shared/src';
+import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 import type { LogEntry, Workspace } from '../types';
 import { cn } from '../lib/utils';
 

@@ -74,7 +74,6 @@ interface StudioOverlayOnboardingContext {
   complete: () => void;
   refreshHealth: () => void | Promise<void>;
   ensureAppServer: () => void | Promise<void>;
-  diagnosticsLibraryDir: string | null;
 }
 
 type StudioOverlaySettingsContext = StudioSystemOverlaysProps['settingsModule'];
@@ -232,14 +231,7 @@ export function buildStudioOverlayController({
       ensureAppServer: () => {
         void onboarding.ensureAppServer();
       },
-      settingsModule: {
-        ...settingsModule,
-        libraryDir:
-          settingsModule.libraryDir ??
-          onboarding.diagnosticsLibraryDir ??
-          onboarding.health?.libraryDir ??
-          null,
-      },
+      settingsModule,
     },
     workspaceOverlays: {
       isTrashModalOpen: workspace.isTrashModalOpen,

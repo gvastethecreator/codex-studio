@@ -19,7 +19,8 @@ import {
 import type { RecipeAliasId } from '../lib/recipeAliases';
 import type { RecipeId } from '../types';
 import { RECIPE_CARD_IMAGES } from '../lib/recipeAssetCatalog';
-import { RECIPE_DISCOVERY_CATALOG, type RecipeCatalogDisplayEntry } from '../lib/recipeCatalog';
+import type { RecipeCatalogDisplayEntry } from '../lib/recipeCatalog';
+import { createRecipeDiscoveryProjection } from '../lib/recipeDiscoveryProjection';
 
 interface RecipesViewProps {
   onSelectRecipe: (id: RecipeId, aliasId?: RecipeAliasId | null) => void;
@@ -48,11 +49,13 @@ const RECIPE_BUTTON_ICONS: Record<Exclude<RecipeId, null>, TablerIcon> = {
 };
 
 export const RecipesView: React.FC<RecipesViewProps> = ({ onSelectRecipe }) => {
+  const recipeDiscovery = React.useMemo(() => createRecipeDiscoveryProjection(), []);
+
   return (
     <div className="w-full h-full overflow-y-auto overflow-x-hidden custom-scrollbar py-0 px-3">
       <div className="max-w-[1680px] mx-auto">
         <div className="grid grid-cols-2 gap-2 pt-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
-          {RECIPE_DISCOVERY_CATALOG.map((recipe) => (
+          {recipeDiscovery.entries.map((recipe) => (
             <RecipeCard key={recipe.id} recipe={recipe} onSelect={onSelectRecipe} />
           ))}
         </div>

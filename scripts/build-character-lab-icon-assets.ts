@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 import { existsSync } from 'node:fs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import sharp from 'sharp';
+import sharp, { type OutputInfo, type OverlayOptions } from 'sharp';
 
 const repoRoot = process.cwd();
 const assetDir = path.join(repoRoot, 'assets', 'recipes', 'character-lab');
@@ -98,7 +98,7 @@ interface AtlasManifest {
 
 interface RawImage {
   data: Buffer;
-  info: sharp.OutputInfo;
+  info: OutputInfo;
 }
 
 interface Bounds {
@@ -329,7 +329,7 @@ async function buildSourceSheets(source: SourceContract) {
     sourceImages512.push(relativePath(sheetPath));
     if (existsSync(sheetPath)) continue;
 
-    const composites: sharp.OverlayOptions[] = [];
+    const composites: OverlayOptions[] = [];
     for (let index = 0; index < batch.items.length; index += 1) {
       const framePath = path.join(
         sourceFrameDir,
@@ -422,7 +422,7 @@ async function runtimeCell(sheetPath: string, slot: number) {
 
 async function buildRuntimeAtlas(source: SourceContract, manifest: AtlasManifest) {
   const frameEntries = Object.entries(source.frames);
-  const composites: sharp.OverlayOptions[] = [];
+  const composites: OverlayOptions[] = [];
   const qaFrames: Record<
     string,
     {

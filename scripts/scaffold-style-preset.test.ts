@@ -1,7 +1,7 @@
 import { mkdtemp, mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { tmpdir } from 'node:os';
-import yaml from 'js-yaml';
+import * as yaml from 'js-yaml';
 import { describe, expect, it } from 'vite-plus/test';
 
 import type {

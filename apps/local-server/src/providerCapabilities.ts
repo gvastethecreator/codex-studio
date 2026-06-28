@@ -4,6 +4,7 @@ import {
 } from '../../../packages/shared/src/providerCapabilities';
 import type { EditableStudioSettings } from '../../../packages/shared/src/studioSettings';
 import type { GenerationProviderId } from '../../../packages/shared/src/generationContracts';
+import { listProviderCapabilityDefinitions } from './providers/providerRegistry';
 import { createProviderReadinessMaps } from './providers/runtimeConfig';
 
 export interface ProviderExecutionBlocker {
@@ -21,6 +22,7 @@ export function readProviderCapabilities(
 
   return createGenerationProviderCapabilities({
     settings,
+    providers: listProviderCapabilityDefinitions(),
     secretConfigured: readiness.secretConfigured,
     localRuntimeConfigured: readiness.localRuntimeConfigured,
   });

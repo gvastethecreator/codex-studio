@@ -16,8 +16,6 @@ import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { resolveStylePreviewImage } from '../../lib/stylePresetVisuals';
 
 import {
-  resolveStylePresetCatalogSearchPackIds,
-  searchStylePresetCatalogIndex,
   type StylePresetCatalogSearchIndex,
   type StylePresetCatalogSearchResult,
 } from './stylePresetManifests';
@@ -25,21 +23,18 @@ import {
   STYLE_PRESET_CATALOG_SEARCH_PACK_SUMMARIES,
   loadStylePresetCatalogSearchIndex,
 } from './stylePresetCatalogSearchData';
+import {
+  buildStyleSearchFilters,
+  planStyleSearchPackIds,
+  projectStyleSearchResultsFromIndex,
+  STYLE_SEARCH_TASK_FILTERS,
+} from './styleSearchProjection';
 
 interface StylePresetCatalogSearchSurfaceProps {
   onClose: () => void;
   onSelectPreset: (result: StylePresetCatalogSearchResult) => void;
   onApplyPreset: (result: StylePresetCatalogSearchResult) => void;
 }
-
-const TASK_FILTERS = [
-  { id: '', label: 'All' },
-  { id: 'image_generate', label: 'Image' },
-  { id: 'image_edit', label: 'Edit' },
-  { id: 'style_preset_card', label: 'Cards' },
-  { id: 'sprite_sheet', label: 'Sprites' },
-  { id: 'texture_generate', label: 'Textures' },
-];
 
 type StyleCatalogLoadState = {
   searchIndex: StylePresetCatalogSearchIndex | null;
@@ -61,17 +56,18 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
   const [task, setTask] = useState('');
 
   const filters = useMemo(
-    () => ({
-      query,
-      packId: packId || undefined,
-      task: task || undefined,
-      limit: 80,
-    }),
+    () =>
+      buildStyleSearchFilters({
+        query,
+        packId: packId || undefined,
+        task: task || undefined,
+        limit: 80,
+      }),
     [packId, query, task],
   );
   const packIdsToLoad = useMemo(
     () =>
-      resolveStylePresetCatalogSearchPackIds({
+      planStyleSearchPackIds({
         packSummaries: STYLE_PRESET_CATALOG_SEARCH_PACK_SUMMARIES,
         filters,
       }),
@@ -97,7 +93,13 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
   }, [packIdsToLoad, packIdsToLoadKey]);
 
   const results = useMemo(
-    () => (searchIndex ? searchStylePresetCatalogIndex(searchIndex, filters) : []),
+    () =>
+      searchIndex
+        ? projectStyleSearchResultsFromIndex({
+            searchIndex,
+            filters,
+          })
+        : [],
     [filters, searchIndex],
   );
 
@@ -174,7 +176,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
         </select>
 
         <div className="flex items-center gap-1 rounded-xl border border-white/10 bg-black/50 p-1">
-          {TASK_FILTERS.map((filter) => (
+          {STYLE_SEARCH_TASK_FILTERS.map((filter) => (
             <button
               type="button"
               key={filter.id || 'all'}

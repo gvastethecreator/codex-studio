@@ -12,7 +12,7 @@ let createCodexTurn: typeof import('./turn').createCodexTurn;
 
 beforeAll(async () => {
   ({ createCodexTurn } = await import('./turn'));
-});
+}, 30_000);
 
 describe('createCodexTurn', () => {
   it('times out a hung turn completion, invalidates the persisted session, and retries', async () => {

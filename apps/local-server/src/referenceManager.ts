@@ -20,6 +20,18 @@ export interface ReferenceResult {
   augmentedPrompt: string;
 }
 
+export interface ReferencePayloadLimits {
+  maxCount: number;
+  maxBytes: number;
+  maxTotalBytes: number;
+}
+
+export const DEFAULT_REFERENCE_PAYLOAD_LIMITS: ReferencePayloadLimits = {
+  maxCount: 16,
+  maxBytes: 25 * 1024 * 1024,
+  maxTotalBytes: 64 * 1024 * 1024,
+};
+
 export class ReferenceProcessingError extends Error {
   constructor(
     public readonly referenceName: string,
@@ -70,6 +82,42 @@ function decodeDataUrl(reference: RawReference) {
   }
 }
 
+interface DecodedReference {
+  reference: RawReference;
+  bytes: Buffer;
+}
+
+export function prepareReferencesForPersistence(
+  references: RawReference[],
+  limits: ReferencePayloadLimits = DEFAULT_REFERENCE_PAYLOAD_LIMITS,
+): DecodedReference[] {
+  if (references.length > limits.maxCount) {
+    throw new ReferenceProcessingError(
+      'references',
+      `too many references; maximum is ${limits.maxCount}`,
+    );
+  }
+
+  let totalBytes = 0;
+  return references.map((reference) => {
+    const bytes = decodeDataUrl(reference);
+    if (bytes.length > limits.maxBytes) {
+      throw new ReferenceProcessingError(
+        reference.name,
+        `reference exceeds ${limits.maxBytes} bytes`,
+      );
+    }
+    totalBytes += bytes.length;
+    if (totalBytes > limits.maxTotalBytes) {
+      throw new ReferenceProcessingError(
+        reference.name,
+        `references exceed ${limits.maxTotalBytes} total bytes`,
+      );
+    }
+    return { reference, bytes };
+  });
+}
+
 function buildPromptWithReferences(prompt: string, references: ProcessedReference[]) {
   if (references.length === 0) return prompt;
   const referenceBlock = references
@@ -94,15 +142,17 @@ export async function processReferences(
     return { persistedRefs: [], augmentedPrompt: prompt };
   }
 
+  const decodedReferences = prepareReferencesForPersistence(references);
   const referencesDir = resolveLibraryPathFromRoot(libraryDir, 'references', jobId);
   mkdirSync(referencesDir, { recursive: true });
   const existing = new Set<string>();
   const persistedRefs: ProcessedReference[] = [];
 
-  for (const [index, reference] of references.entries()) {
+  for (const [index, decoded] of decodedReferences.entries()) {
+    const { reference, bytes } = decoded;
     const fileName = safeReferenceName(reference.name, existing, index);
     const filePath = path.join(referencesDir, fileName);
-    writeFileSync(filePath, decodeDataUrl(reference));
+    writeFileSync(filePath, bytes);
     persistedRefs.push({
       name: reference.name || fileName,
       path: filePath,

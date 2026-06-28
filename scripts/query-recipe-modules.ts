@@ -1,5 +1,6 @@
 import type { GenerationProviderId, GenerationTaskKind } from '../packages/shared/src';
-import { searchRecipeCatalog, validateRecipeCatalog } from '../lib/recipeCatalog';
+import { validateRecipeCatalog } from '../lib/recipeCatalog';
+import { searchRecipeDiscoveryProjection } from '../lib/recipeDiscoveryProjection';
 import { RECIPE_MODULE_EXAMPLES } from '../lib/recipeModuleExamples';
 
 function argValue(name: string) {
@@ -29,7 +30,7 @@ if (verifyOnly) {
   process.exit(0);
 }
 
-const results = searchRecipeCatalog({
+const results = searchRecipeDiscoveryProjection({
   query: argValue('query') ?? argValue('q'),
   task: argValue('task') as GenerationTaskKind | undefined,
   providerId: argValue('provider') as GenerationProviderId | undefined,
@@ -52,8 +53,9 @@ if (asJson) {
 } else {
   console.log(`[recipes:catalog] results=${results.length}`);
   for (const recipe of results) {
+    const alias = recipe.isAlias ? ` aliasFor=${recipe.targetRecipeId}` : '';
     console.log(
-      `- ${recipe.id} | ${recipe.title} | task=${recipe.defaultTask} | providers=${recipe.supportedProviders.join(',')} | params=${recipe.parameters.length}`,
+      `- ${recipe.id} | ${recipe.title} | task=${recipe.defaultTask} | providers=${recipe.supportedProviders.join(',')} | params=${recipe.parameters.length}${alias}`,
     );
   }
   if (includeExamples) {

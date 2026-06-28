@@ -1,8 +1,14 @@
 import type { LogEntry } from '../types';
-import type { Job as StudioJob, SystemLog as StudioLog } from '../packages/shared/src';
+import type { Job as StudioJob, JobSummary, SystemLog as StudioLog } from '../packages/shared/src';
+import {
+  countActiveShellActivityJobs,
+  mergeShellActivityJobs,
+  toShellActivityJob,
+  type ShellActivityJob,
+} from '../lib/shellActivityJob';
 
 export interface LocalStudioSyncBackendState {
-  jobs: StudioJob[];
+  jobs: ShellActivityJob[];
   logs: StudioLog[];
   connected: boolean;
 }
@@ -14,7 +20,7 @@ export const INITIAL_LOCAL_STUDIO_SYNC_BACKEND_STATE: LocalStudioSyncBackendStat
 };
 
 export type LocalStudioSyncBackendAction =
-  | { type: 'refresh'; jobs: StudioJob[]; logs: StudioLog[] }
+  | { type: 'refresh'; jobs: Array<StudioJob | JobSummary>; logs: StudioLog[] }
   | { type: 'job_update'; job: StudioJob }
   | { type: 'log_added'; entry: StudioLog }
   | { type: 'connection_change'; connected: boolean }
@@ -26,14 +32,15 @@ export function localStudioSyncBackendReducer(
 ): LocalStudioSyncBackendState {
   switch (action.type) {
     case 'refresh':
-      return { jobs: action.jobs, logs: action.logs, connected: true };
+      return {
+        jobs: action.jobs.map((job) => toShellActivityJob(job, 'backend_summary')),
+        logs: action.logs,
+        connected: true,
+      };
     case 'job_update':
       return {
         ...state,
-        jobs: [
-          action.job,
-          ...state.jobs.filter((candidate) => candidate.id !== action.job.id),
-        ].slice(0, 100),
+        jobs: mergeShellActivityJobs(state.jobs, toShellActivityJob(action.job, 'backend_event')),
       };
     case 'log_added':
       return {
@@ -64,8 +71,4 @@ export function buildMergedStudioLogs(studioLogs: StudioLog[], logs: LogEntry[])
     .slice(0, 100);
 }
 
-export function countActiveServerJobs(jobs: StudioJob[]) {
-  return jobs.filter(
-    (job) => job.status === 'queued' || job.status === 'running' || job.status === 'needs_review',
-  ).length;
-}
+export const countActiveServerJobs = countActiveShellActivityJobs;
