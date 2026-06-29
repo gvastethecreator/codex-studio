@@ -12,22 +12,34 @@ tags:
   - 3d-and-cgi-rendering
   - hard-surface-and-product-cgi
 visualDna:
-  aesthetic: Frosted glass interface
-  form_and_line: White borders
-  color_palette: Blurry background colors, frosted tones
-  lighting_setup: Soft, diffuse-transmission
-  material_texture: Noise blur, glass-transparency
-  render_quality: Modern UI design, interface trend
-  atmosphere: Clean, modern, translucent UX
-  key_features: Floating cards, depth-blur layers
+  aesthetic: >-
+    Glassmorphism UI within 5. Hard Surface And Product CGI: a reusable 3D & CGI Rendering visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Glassmorphism UI's specific style identity.
+  form_and_line: >-
+    Define Glassmorphism UI through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Glassmorphism UI-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Glassmorphism UI recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Glassmorphism UI: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
+  render_quality: >-
+    Render Glassmorphism UI with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  atmosphere: >-
+    Set a mood that belongs to Glassmorphism UI: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Glassmorphism UI's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Interface panels float in a hierarchy of blur — each card catches the colors behind it and softens them into frosted
-    abstraction, and white borders trace the edges of translucent rectangles like window frames into another layer.
-    Depth-blur cascades through the z-stack, and diffuse transmission gives glass its weight without its opacity. The
-    image is modern UI rendered tactile: a glassmorphism dream where every surface is a window and every window is a
-    promise of what lies beneath. Apply Glassmorphism UI as a portable 3D/render style system over any input: preserve
-    its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
-    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Create a style-card that translates Glassmorphism UI into a portable visual system for 5. Hard Surface And Product
+    CGI. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - opaque
   - flat

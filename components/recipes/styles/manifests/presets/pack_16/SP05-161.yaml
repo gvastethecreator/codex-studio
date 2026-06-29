@@ -12,16 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Shonen de potencia absoluta noventera, aura mítica, escala extrema y catarsis visual de transformación.
-  form_and_line: Contorno contundente, foreshortening agresivo y acting de presión energética de alto impacto.
-  color_palette: Amarillos eléctricos de aura, azules saturados, verdes minerales y naranjas de choque energético.
-  lighting_setup: Cel contrastado con rim extremo, highlights duros y separación de sombra para fuerza corporal.
-  material_texture: Partículas fracturadas, polvo luminoso, grano de cel clásico y fondos pintados de era dorada.
-  render_quality: Acabado premium 90s con lectura inmediata de power-up, presión física y stakes descomunales.
-  spatial_distortion: Escala hiperexpresiva con anatomía exagerada y perspectiva cinética de impacto frontal.
-  atmosphere: Explosiva, icónica, incansable y mítica.
-  key_features: Estelas de aura, halos de impacto, perfiles de catarsis y coreografía abstracta de rivalidad trascendente.
-  creative_brief: Construye una gramática reusable de impacto energético noventero para cualquier sujeto, priorizando aura, escala extrema y dramatismo de transformación sin imponer duelo, terreno devastado ni combate literal.
+  aesthetic: >-
+    Planetary Aura Impact Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Planetary Aura Impact Style's specific style identity.
+  form_and_line: >-
+    Define Planetary Aura Impact Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Planetary Aura Impact Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Planetary Aura Impact Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Planetary Aura Impact Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Planetary Aura Impact Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Planetary Aura Impact Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Planetary Aura Impact Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Planetary Aura Impact Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Planetary Aura Impact Style into a portable visual system for 3. 90s Golden Era.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-161.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

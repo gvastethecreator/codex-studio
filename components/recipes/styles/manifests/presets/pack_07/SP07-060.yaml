@@ -12,22 +12,38 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Deformación retro de cartoon macabro, con amenaza juguetona y exageración torcida de lectura inmediata.
-  form_and_line: Verticales inclinadas, masas combadas, vacíos deformados y silueta elástica con contorno gráfico claro.
+  aesthetic: >-
+    Haunted Toon Deformation within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Haunted Toon Deformation's specific style identity.
+  form_and_line: >-
+    Define Haunted Toon Deformation through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
   color_palette: >-
-    Moonlit violet, toxic-lime accents, charcoal black, desaturated pumpkin orange trim, pale spectral ivory, and deep
-    indigo shadow pools
-  lighting_setup: Keys de relámpago intermitente, contraluz lunar frío, brillos selectivos y bloques cel-shade de alto contraste.
-  material_texture: Planos pintados flat, contorno entintado, gradientes limitados y motivos de madera simplificada de estilo TV.
-  render_quality: Lectura 2D limpia con nostalgia televisiva, claridad de forma alta y terror lúdico no realista.
-  spatial_distortion: Deformación elástica, inclinación imposible y gestos pareidólicos sugeridos.
-  atmosphere: Campy, traviesa y teatral, con suspenso amable sin violencia realista.
-  key_features: Perfil inclinado, acentos zigzag, contraluz frío, siluetas spooky y ritmo de gate gráfico.
+    Use a Haunted Toon Deformation-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Haunted Toon Deformation recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Haunted Toon Deformation: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Haunted Toon Deformation with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Haunted Toon Deformation: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Haunted Toon Deformation: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Haunted Toon Deformation's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Usa deformación haunted-cartoon como sistema gráfico: siluetas inclinadas, contornos elásticos, paleta spooky lúdica
-    y contraste de tormenta. Debe funcionar como estilo de render y masa torcida, no como obligacion de mostrar mansion
-    embrujada, tormenta nocturna o set de Halloween literal. Mantiene deformacion elastica, ritmo grafico y atmosfera
-    spooky ludica sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Haunted Toon Deformation into a portable visual system for 5. Fantasy And Mythic
+    Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - scary realistic
 assets:

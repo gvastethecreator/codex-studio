@@ -13,16 +13,38 @@ tags:
   - mythic
   - japanese-myth
 visualDna:
-  aesthetic: Sacred foxfire threshold blending shrine dignity with sly yokai presence.
-  form_and_line: Receding torii cues, lantern braids, and fox-mask shrine sigils.
-  color_palette: Vermilion lacquer, pine shadow green, and foxfire cyan.
-  lighting_setup: Mist-soft moonlight punctuated by floating spirit flames near gates.
-  material_texture: Rain-dark cedar, worn stone steps, paper talismans, and lacquered beams.
-  render_quality: Atmospheric premium matte art with crisp shrine iconography.
-  spatial_distortion: Narrowing gate-sequence depth guiding the eye toward hidden pact energy.
-  atmosphere: Reverence, subtle mischief, and sacred suspense.
-  key_features: Kitsune statue cues, warding charms, spirit lantern trail, purification basin hints.
-  creative_brief: Recast the input through whispering foxfire threshold, marking deeper pacts with unseen beings without requiring a shrine passage.
+  aesthetic: >-
+    Whispering Foxfire Threshold within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Whispering Foxfire Threshold's specific style identity.
+  form_and_line: >-
+    Define Whispering Foxfire Threshold through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Whispering Foxfire Threshold-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Whispering Foxfire Threshold recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Whispering Foxfire Threshold: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Whispering Foxfire Threshold with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Whispering Foxfire Threshold: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Whispering Foxfire Threshold: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Whispering Foxfire Threshold's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Whispering Foxfire Threshold into a portable visual system for 7. Mythic
+    Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - photoreal
   - anime-chibi

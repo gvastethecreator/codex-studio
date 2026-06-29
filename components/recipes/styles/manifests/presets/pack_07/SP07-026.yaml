@@ -12,25 +12,38 @@ tags:
   - architecture-and-interior
   - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Retrofuturismo Googie de optimismo atómico, velocidad visual y espectáculo comercial modernista.
+  aesthetic: >-
+    Googie Architecture within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Googie Architecture's specific style identity.
   form_and_line: >-
-    Cantiléveres ascendentes, vectores boomerang, canopy en V, starbursts y acristalamientos
-    angulares dinámicos.
+    Define Googie Architecture through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
   color_palette: >-
-    Primarios neón sobre neutros cromados, turquesa/rojo como anclas y amarillos mantequilla con
-    naranja atómico.
+    Use a Googie Architecture-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Señalética brillante, difusiones plásticas retroiluminadas y bordes tipo marquee con secuencia
-    luminosa.
-  material_texture: Cromo pulido, terrazo brillante, Formica esmaltada, estuco pintado y reflejos duros de vidrio.
-  render_quality: Retro-futuro de media centuria con energía kitsch precisa y acabado optimista de alto contraste.
-  spatial_distortion: Sesgo direccional y perspectiva levantada para sugerir movimiento continuo.
-  atmosphere: Lúdica, veloz, nostálgica y espectacular.
-  key_features: Motivos starburst, geometría de impulso, neón-cromo dominante y coreografía de voladizos.
+    Use lighting that makes Googie Architecture recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Googie Architecture: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Googie Architecture with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Googie Architecture: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Googie Architecture: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Googie Architecture's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Define una gramática Googie transferible donde velocidad geométrica, exuberancia neón-cromo y
-    optimismo atómico sean constantes visuales. Debe funcionar sin depender de la narrativa de un
-    diner o carretera concreta.
+    Create a style-card that translates Googie Architecture into a portable visual system for 2. Architectural Movements
+    And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - square
   - boring

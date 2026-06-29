@@ -12,19 +12,38 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Estética pulp de velocidad extrema construida como póster de impacto, con agresividad gráfica y adrenalina neon-noir.
-  form_and_line: Contorno afilado tipo cuchilla, contraste grueso-fino de tinta y tallado de silueta en bloques violentos.
-  color_palette: Racing red, black ink, chrome white, toxic yellow, electric blue, asphalt violet
-  lighting_setup: Spot de alto contraste, rim duro, glare de neón nocturno y masas de sombra en cuña.
-  material_texture: Brillo lacquered, guiños de caucho, grano screenprint y acabado de cartel pulido.
-  render_quality: Acción hiperdinámica con lectura instantánea de movimiento y composición de afiche cinético.
-  spatial_distortion: Velocity-smeared perspective, lunging anatomy, poster-compressed depth, impact-first framing
-  atmosphere: Agresiva, estridente y elegante, impulsada por urgencia de carrera.
-  key_features: Razorline anatomy, cuñas de sombra pesada, motion de póster y actitud neon pulp de máxima velocidad.
+  aesthetic: >-
+    Takeshi Koike - Razorline Velocity Poster within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Takeshi Koike - Razorline Velocity Poster's specific style identity.
+  form_and_line: >-
+    Define Takeshi Koike - Razorline Velocity Poster through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Takeshi Koike - Razorline Velocity Poster-specific palette with clear dominant, secondary, and accent roles.
+    Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Takeshi Koike - Razorline Velocity Poster recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Takeshi Koike - Razorline Velocity Poster: surface response, grain,
+    patina, polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Takeshi Koike - Razorline Velocity Poster with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Takeshi Koike - Razorline Velocity Poster: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Takeshi Koike - Razorline Velocity Poster: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Takeshi Koike - Razorline Velocity Poster's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática reusable de razor-velocity basada en silueta cortante,
-    contrastes gráficos severos y desplazamiento imposible, sin exigir carrera,
-    auto, carretera, piloto ni póster de vehículo.
+    Create a style-card that translates Takeshi Koike - Razorline Velocity Poster into a portable visual system for 12.
+    Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - still
   - calm

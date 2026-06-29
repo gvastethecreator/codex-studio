@@ -7,6 +7,7 @@ export const MIN_THUMBNAIL_SIZE = 144;
 export const MAX_THUMBNAIL_SIZE = 320;
 export const THUMBNAIL_SIZE_STEP = 8;
 export const IMAGE_GRID_COLUMN_GAP = 16;
+export const IMAGE_GRID_MAX_COLUMNS = 12;
 
 export function filterImageGridImages(
   images: GeneratedImageWithConfig[],
@@ -53,7 +54,7 @@ export function resolveImageGridColumnCount({
   const columnCount = Math.floor(
     (availableWidth + IMAGE_GRID_COLUMN_GAP) / (thumbnailSize + IMAGE_GRID_COLUMN_GAP),
   );
-  const cappedColumnCount = Math.max(1, Math.min(8, columnCount));
+  const cappedColumnCount = Math.max(1, Math.min(IMAGE_GRID_MAX_COLUMNS, columnCount));
   return Math.max(1, Math.min(cappedColumnCount, Math.max(1, itemCount)));
 }
 

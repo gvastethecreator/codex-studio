@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Harvest-pantheon stewardship where iron discipline and grain abundance become sacred labor.
-  form_and_line: Grain-silo cues, tall sheaf rhythms, and ceremonial threshing arcs.
-  color_palette: Wheat gold, iron black, and dusty green.
-  lighting_setup: Late harvest sun with steel shadow lines.
-  material_texture: Forged iron, straw, sunbaked clay, and old oak.
-  render_quality: Monumental mythic rendering with rural material detail.
-  spatial_distortion: Nave-like axis expanding into field-like abundance without requiring a basilica.
-  atmosphere: Plenty, labor, and sacred stewardship.
-  key_features: Harvest icons, iron scythes, grain reliquary cues.
-  creative_brief: Convert the input through iron harvest stewardship, treating work, grain, and forged ritual as miracle without forcing a farm temple.
+  aesthetic: >-
+    Iron Harvest Stewardship within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Iron Harvest Stewardship's specific style identity.
+  form_and_line: >-
+    Define Iron Harvest Stewardship through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Iron Harvest Stewardship-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Iron Harvest Stewardship recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Iron Harvest Stewardship: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Iron Harvest Stewardship with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Iron Harvest Stewardship: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Iron Harvest Stewardship: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Iron Harvest Stewardship's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Iron Harvest Stewardship into a portable visual system for 3. Mythic Pantheons &
+    Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cute

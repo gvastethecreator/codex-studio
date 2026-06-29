@@ -13,28 +13,37 @@ tags:
   - civic-infrastructure-and-specialty-spaces
 visualDna:
   aesthetic: >-
-    Inmersión azul técnica, donde envolvente acrílica y columna de agua construyen espectáculo
-    óptico.
+    Immersive Aquarium Optics within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Immersive Aquarium Optics's specific style identity.
   form_and_line: >-
-    Secciones arqueadas continuas, empuje tubular de perspectiva y capas de profundidad acuática con
-    flujo suave.
-  color_palette: Blue, Cyan, Aquamarine, Deep Navy shadow, Bioluminescent fleck, Sandy floor tan
+    Define Immersive Aquarium Optics through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Immersive Aquarium Optics-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Redes caústicas dinámicas, dapple cenital, ambiente azul profundo y brillo de tanque de alta
-    difusión.
-  material_texture: Acrílico grueso, piel de agua refractiva, partículas suspendidas y rugosidad de sustrato húmedo.
+    Use lighting that makes Immersive Aquarium Optics recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Immersive Aquarium Optics: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
   render_quality: >-
-    Claridad acuática alta con refracción físicamente creíble y atenuación cromática por
-    profundidad.
-  spatial_distortion: Refracción, atenuación azul y curvatura óptica controlada.
-  atmosphere: Asombro silencioso, calma presurizada e inmersión azul de ritmo humano ralentizado.
+    Render Immersive Aquarium Optics with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Immersive Aquarium Optics: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Immersive Aquarium Optics: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
   key_features: >-
-    Barridos caústicos, nervios acrílicos, turbidez variable, siluetas acuáticas y estratos
-    bióticos.
+    Prioritize Immersive Aquarium Optics's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Pasa cualquier sujeto por agua presurizada: acrílico grueso, atenuación azul, caústicas móviles,
-    partículas suspendidas y curvatura óptica. La biota puede aparecer, pero el estilo vive en la
-    física visual del tanque.
+    Create a style-card that translates Immersive Aquarium Optics into a portable visual system for 3. Civic
+    Infrastructure And Specialty Spaces. Preserve the preset identity through style mechanics, not a fixed scene,
+    character, prop, or story beat.
 avoidRules:
   - flat dry-air scene
   - no refraction or water optics

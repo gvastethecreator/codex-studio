@@ -67,17 +67,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Environment And Worldbuilding',
     negativePrompt: 'fantasy, magic',
     style: {
-      aesthetic: 'Molecule or galaxy',
-      form_and_line: 'Data driven',
-      color_palette: 'False color data',
-      lighting_setup: 'Self illuminated',
-      material_texture: 'Particle cloud, volumetric data',
-      render_quality: 'NASA lab-grade accuracy, scientific storytelling',
-      spatial_distortion: 'None',
-      atmosphere: 'Smart, complex, knowledge-driven',
-      key_features: 'Data points, scale-reference',
+      aesthetic:
+        "Scientific Visualization within 7. Environment And Worldbuilding: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Scientific Visualization's specific style identity.",
+      form_and_line:
+        'Define Scientific Visualization through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Scientific Visualization-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Scientific Visualization recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Scientific Visualization: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Scientific Visualization with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Scientific Visualization: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Scientific Visualization: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Scientific Visualization's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Data becomes image — false-color palettes map the invisible spectrum to visible beauty, and particle clouds render protein folds or galactic clusters with equal authority. Self-illuminated volumetric forms float against deep space or cellular void, and scale references remind the eye that this is neither fantasy nor metaphor. The image channels NASA-grade accuracy: scientific storytelling where every color, every data point, every rendered voxel carries the weight of measurement. Apply Scientific Visualization as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        'Create a style-card that translates Scientific Visualization into a portable visual system for 7. Environment And Worldbuilding. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -122,16 +131,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Environment And Worldbuilding',
     negativePrompt: 'subject, object',
     style: {
-      aesthetic: 'Wallpaper art',
-      form_and_line: 'Flowing shapes',
-      color_palette: 'Pleasing gradients, ambient hues',
-      lighting_setup: 'Soft, ambient-fill',
-      material_texture: 'Smooth, seamless-surface',
-      render_quality: 'Desktop wallpaper, clean, background art',
-      atmosphere: 'Calm, digital, zen-productivity',
-      key_features: 'No focal point, flowing composition',
+      aesthetic:
+        "Abstract Background within 7. Environment And Worldbuilding: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Abstract Background's specific style identity.",
+      form_and_line:
+        'Define Abstract Background through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Abstract Background-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Abstract Background recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Abstract Background: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Abstract Background with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      atmosphere:
+        'Set a mood that belongs to Abstract Background: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Abstract Background's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'No subject demands attention — flowing shapes drift across the frame in pleasing gradients and ambient hues, a composition engineered for the periphery of focus. Soft ambient-fill lighting wraps seamless surfaces in calm, and the absence of a focal point invites the eye to wander without destination. The image is digital zen: a desktop wallpaper that enhances rather than competes, beauty designed to be lived alongside rather than stared at. Apply Abstract Background as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        'Create a style-card that translates Abstract Background into a portable visual system for 7. Environment And Worldbuilding. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {

@@ -10,21 +10,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cute, flat-light, watermark, text, logo, low-quality',
     style: {
       aesthetic:
-        'Dark sacred fantasy with eclipse-lit reliquary authority and processional rhythm.',
+        "Eclipse Reliquary Processional within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Eclipse Reliquary Processional's specific style identity.",
       form_and_line:
-        'Long ritual silhouettes, gothic ornament bands, vertical icon axes, and solemn procession-like spacing.',
-      color_palette: 'Negro obsidiana, marfil antiguo y oro quemado.',
+        'Define Eclipse Reliquary Processional through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Eclipse Reliquary Processional-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Eclipse backlight, narrow sacred beams, gold rim partitions, and deep obsidian falloff.',
-      material_texture: 'Wet stone, liturgical metal, and heavy velvet.',
-      render_quality: 'Key art premium con dramatismo controlado.',
+        'Use lighting that makes Eclipse Reliquary Processional recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Eclipse Reliquary Processional: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Eclipse Reliquary Processional with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Monumental central-axis depth that feels processional without requiring a cathedral interior.',
-      atmosphere: 'Reverence, fatality, and ceremonial magnetism.',
+        'Use spatial behavior that fits Eclipse Reliquary Processional: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Eclipse Reliquary Processional: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Eclipse halo hierarchy, reliquary gold accents, processional silhouette rhythm, gothic verticals, and silent authority.',
+        "Prioritize Eclipse Reliquary Processional's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Process the input through eclipse reliquary grandeur: obsidian negative space, antique-ivory sacred axes, burned-gold rimlight, and solemn processional spacing should make any subject feel dark, majestic, and ceremonial without requiring a cathedral, clergy, stained glass, or parade.',
+        'Create a style-card that translates Eclipse Reliquary Processional into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -34,22 +38,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, comedy, candy-colors, watermark, text, logo',
     style: {
       aesthetic:
-        'Aristocratic death-feast noir where etiquette persists as cursed protocol and petrified luxury.',
+        "Petrified Banquet Etiquette within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Petrified Banquet Etiquette's specific style identity.",
       form_and_line:
-        'Rigid protocol silhouettes, knife-and-goblet rhythm, axial table-like geometry, and formal spacing.',
-      color_palette: 'Bone ivory, coagulated wine black, and smoked pewter gray.',
-      lighting_setup: 'Candle troughs with mirrored marble bounce and deep peripheral falloff.',
+        'Define Petrified Banquet Etiquette through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Petrified Banquet Etiquette-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Petrified Banquet Etiquette recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Veined marble slabs, tarnished heirloom silver, oxidized candelabra, and desiccated floral garlands.',
+        'Use materials and textures that reinforce Petrified Banquet Etiquette: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Prestige editorial key art with high micro-detail and controlled tonal compression.',
+        'Render Petrified Banquet Etiquette with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Vaulted axial depth that tunnels attention through ceremonial place-setting rhythm without requiring a banquet hall.',
-      atmosphere: 'Ritualized decay, dynastic arrogance, and prophetic unease.',
+        'Use spatial behavior that fits Petrified Banquet Etiquette: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Petrified Banquet Etiquette: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Petrified etiquette cues, carbonized centerpiece forms, oath-cutlery lines, veined marble, and empty sovereign-axis tension.',
+        "Prioritize Petrified Banquet Etiquette's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Petrify the input through banquet etiquette noir: bone ivory, coagulated wine-black shadows, pewter decay, oath-cutlery rhythm, and rigid protocol geometry should make any subject feel cursed by perfect manners without requiring nobles, table, courtiers, food, or dining room.',
+        'Create a style-card that translates Petrified Banquet Etiquette into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -59,19 +66,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, slapstick, daylight-realism, flat-light, watermark, text, logo',
     style: {
       aesthetic:
-        'Ritual performance noir translated into masked symbolism and controlled theatrical menace.',
+        "Obsidian Mask Stagecraft within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Obsidian Mask Stagecraft's specific style identity.",
       form_and_line:
-        'Mask-like silhouettes, proscenium cues, and choreographed diagonals that can wrap any subject.',
-      color_palette: 'Obsidian black, lacquer red, and pearl smoke.',
-      lighting_setup: 'Knife-like stage spotlights with dense velvet shadow pockets.',
-      material_texture: 'Lacquered masks, velvet shadow, carved emblems, and metallic dust.',
-      render_quality: 'Prestige concept illustration with clear theatrical staging language.',
+        'Define Obsidian Mask Stagecraft through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Obsidian Mask Stagecraft-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Obsidian Mask Stagecraft recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Obsidian Mask Stagecraft: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Obsidian Mask Stagecraft with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Layered stage depth and recursive curtain geometry without requiring a literal theatre.',
-      atmosphere: 'Fatal spectacle, sacred drama, and poised emotional tension.',
-      key_features: 'Ceremonial mask cues, fractured proscenium shapes, ritual choreography marks.',
+        'Use spatial behavior that fits Obsidian Mask Stagecraft: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Obsidian Mask Stagecraft: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Obsidian Mask Stagecraft's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input as an immaculate noir rite, using obsidian masks and stagecraft as symbolic style cues rather than a fixed theatre setup.',
+        'Create a style-card that translates Obsidian Mask Stagecraft into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -80,19 +93,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, cute, low-detail, watermark, text, logo, flat-light',
     style: {
-      aesthetic: 'Sacred solar iconography pierced by thorned metal and sacrificial noir tension.',
+      aesthetic:
+        "Thorned Solar Relic Icon within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Thorned Solar Relic Icon's specific style identity.",
       form_and_line:
-        'Circular halo logic, pointed thorns, and vertical relic framing adaptable to any subject.',
-      color_palette: 'Bone white, soot black, and burnished gold.',
-      lighting_setup: 'Hard rimlight through stained haze.',
-      material_texture: 'Hammered bronze, cracked stone, scarred enamel, and velvet shadow.',
-      render_quality: 'Editorial mythic illustration with high contrast.',
+        'Define Thorned Solar Relic Icon through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Thorned Solar Relic Icon-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Thorned Solar Relic Icon recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Thorned Solar Relic Icon: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Thorned Solar Relic Icon with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Radiating tension lines and compressed icon depth without requiring a pedestal.',
-      atmosphere: 'Reverence, danger, and compressed power.',
-      key_features: 'Sun sigil, thorn crown, burnished sacrificial edges.',
+        'Use spatial behavior that fits Thorned Solar Relic Icon: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Thorned Solar Relic Icon: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Thorned Solar Relic Icon's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform the input through a thorn-pierced solar relic language, fusing divinity and sacrifice without locking the image to an altar object.',
+        'Create a style-card that translates Thorned Solar Relic Icon into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -102,20 +122,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cheerful, neon, watermark, text, logo, empty-space',
     style: {
       aesthetic:
-        'Prophetic archive language built from mirrored fragments, uncertain memory, and refracted omens.',
+        "Mirror Oracle Refraction Archive within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Mirror Oracle Refraction Archive's specific style identity.",
       form_and_line:
-        'Repeating mirror arcs, catalog-like divisions, and reflective corridor rhythms.',
-      color_palette: 'Silvered gray, indigo, and ivory.',
-      lighting_setup: 'Broken reflections and candle glimmers.',
+        'Define Mirror Oracle Refraction Archive through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Mirror Oracle Refraction Archive-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Mirror Oracle Refraction Archive recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Polished glass, vellum-like surfaces, lacquered wood, and silvering scars.',
-      render_quality: 'Lyrical concept art with precise symbolic layering.',
+        'Use materials and textures that reinforce Mirror Oracle Refraction Archive: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Mirror Oracle Refraction Archive with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Hall-of-mirrors depth with archival order, applicable to portraits, objects, or abstract forms.',
-      atmosphere: 'Uncertainty, memory, and hidden knowledge.',
-      key_features: 'Oracle mirror shards, catalog tablets, sealed prophecy fragments.',
+        'Use spatial behavior that fits Mirror Oracle Refraction Archive: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Mirror Oracle Refraction Archive: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Mirror Oracle Refraction Archive's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reframe any input as reflective oracle archive logic: mirror shards, silvering scars, catalog divisions, indigo memory, and refracted prophecy should reshape the subject without requiring rooms, libraries, tablets, corridors, or literal archive furniture.',
+        'Create a style-card that translates Mirror Oracle Refraction Archive into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -125,19 +150,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cute, sci-fi, watermark, text, logo, overexposed',
     style: {
       aesthetic:
-        'Interwoven serpent iconography as a renewal glyph with vigilant mythic noir energy.',
+        "Serpent Knot Renewal Glyph within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Serpent Knot Renewal Glyph's specific style identity.",
       form_and_line:
-        'Braided curves, looping arches, and spiral geometry that can coil around any subject.',
-      color_palette: 'Jade black, tarnished gold, and ember red.',
-      lighting_setup: 'Low lantern pools and glints on scale-like surfaces.',
-      material_texture: 'Carved stone, woven metal, and polished bone.',
-      render_quality: 'Mythic illustration with strong emblematic readability.',
+        'Define Serpent Knot Renewal Glyph through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Serpent Knot Renewal Glyph-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Serpent Knot Renewal Glyph recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Serpent Knot Renewal Glyph: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Serpent Knot Renewal Glyph with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Spiraling pull toward a symbolic core without requiring chapel architecture.',
-      atmosphere: 'Transformation, vigilance, and sacred continuity.',
-      key_features: 'Serpent knot, renewal loops, scale-like surfaces.',
+        'Use spatial behavior that fits Serpent Knot Renewal Glyph: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Serpent Knot Renewal Glyph: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Serpent Knot Renewal Glyph's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convert the input into a serpent-knot renewal emblem, keeping the serpentine identity while avoiding a fixed chapel or altar setup.',
+        'Create a style-card that translates Serpent Knot Renewal Glyph into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -148,20 +179,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, playful, candy-color, watermark, text, logo, glossy, serpent, snake, braided loops, symmetric totem, sword, hanging plant, window alcove',
     style: {
       aesthetic:
-        'Fallen authority rendered through ash-crown symbolism, soot residue, and memorial noir gravity.',
+        "Ash-Crown Residue Authority within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ash-Crown Residue Authority's specific style identity.",
       form_and_line:
-        'Brittle crown silhouettes, collapsed diadem arcs, and asymmetrical ash cascade rhythms with no braided loops, serpent coils, or central totem symmetry.',
-      color_palette: 'Charcoal, muted silver, and antique ivory.',
-      lighting_setup: 'Narrow halo beam from above.',
-      material_texture: 'Charred wood, cracked enamel, dusty glass, and powdery soot.',
-      render_quality: 'Cinematic symbolic still life.',
+        'Define Ash-Crown Residue Authority through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Ash-Crown Residue Authority-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Ash-Crown Residue Authority recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Ash-Crown Residue Authority: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Ash-Crown Residue Authority with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Tight iconic depth with offset fragment layers and drifting residue, not a required cabinet or shrine axis.',
-      atmosphere: 'Loss, legitimacy, and solemn afterimage.',
+        'Use spatial behavior that fits Ash-Crown Residue Authority: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ash-Crown Residue Authority: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Ash crown, residue halos, memorial dust, collapsed diadem fragments, offset crown shards.',
+        "Prioritize Ash-Crown Residue Authority's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret any input as authority surviving only as ash, residue, and crown-shaped memory. Use offset crown shards, brittle silhouette, soot halos, charred enamel, narrow overhead beams, and memorial gravity without requiring serpents, braided loops, shrine windows, relic cabinets, rulers, swords, or literal objects.',
+        'Create a style-card that translates Ash-Crown Residue Authority into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -171,18 +207,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cute, vaporwave, watermark, text, logo, busy-background',
     style: {
       aesthetic:
-        'Mythic underworld guidance expressed through lantern glow, mourning, and threshold crossing.',
-      form_and_line: 'Lantern-core geometry, veil silhouettes, and descending rhythm cues.',
-      color_palette: 'Amber glow, abyss black, and oxblood.',
-      lighting_setup: 'Single source lantern light with deep falloff.',
-      material_texture: 'Oiled metal, damp stone, waxed cloth, and smoke-darkened edges.',
-      render_quality: 'Narrative key art with dramatic light focus.',
+        "Underworld Lantern Threshold within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Underworld Lantern Threshold's specific style identity.",
+      form_and_line:
+        'Define Underworld Lantern Threshold through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Underworld Lantern Threshold-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Underworld Lantern Threshold recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Underworld Lantern Threshold: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Underworld Lantern Threshold with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Forms pulled toward a lantern-like core without forcing a tunnel or staircase.',
-      atmosphere: 'Guidance, mourning, and crossing thresholds.',
-      key_features: 'Underworld lantern, threshold veil, amber falloff.',
+        'Use spatial behavior that fits Underworld Lantern Threshold: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Underworld Lantern Threshold: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Underworld Lantern Threshold's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use underworld-lantern logic as the visual engine for any input, turning darkness into a navigable threshold through amber falloff, veil silhouettes, smoke edges, and mourning-metal detail without requiring lantern props, tunnels, stairs, guides, or passage setups.',
+        'Create a style-card that translates Underworld Lantern Threshold into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -192,18 +235,26 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, sterile-minimal, cartoon, watermark, text, logo, flat-composition, greenhouse, conservatory, garden path, potted plants',
     style: {
-      aesthetic: 'Fractured sanctity expressed through broken halo geometry and quiet regrowth.',
-      form_and_line: 'Circular ruin motifs, climbing organic lines, and petal-like debris.',
-      color_palette: 'Pale moss, tarnished gold, and stone gray.',
-      lighting_setup: 'Soft dusk light with halo fragments catching restrained highlights.',
-      material_texture: 'Weathered marble, wet leaves, and oxidized metal.',
-      render_quality: 'Poetic symbolic landscape with calm tension.',
+      aesthetic:
+        "Broken Halo Regrowth within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Broken Halo Regrowth's specific style identity.",
+      form_and_line:
+        'Define Broken Halo Regrowth through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Broken Halo Regrowth-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Broken Halo Regrowth recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Broken Halo Regrowth: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Broken Halo Regrowth with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Orbital spiral around broken ring forms without requiring a literal garden.',
-      atmosphere: 'Recovery, sanctity, and wounded beauty.',
-      key_features: 'Broken halo, revival growth, wounded sanctity.',
+        'Use spatial behavior that fits Broken Halo Regrowth: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Broken Halo Regrowth: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Broken Halo Regrowth's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through broken-halo regrowth, with fractured divinity and organic renewal continuing through it without requiring a greenhouse, conservatory, garden path, potted plants, or literal overgrown chapel scene.',
+        'Create a style-card that translates Broken Halo Regrowth into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -212,18 +263,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, neon, pop-art, watermark, text, logo, cute',
     style: {
-      aesthetic: 'Ancestral totem language marked by blackwater reflections and ritual memory.',
-      form_and_line: 'Vertical stacked forms, carved notches, and horizontal reflection bands.',
-      color_palette: 'Ink black, river teal, and oxidized copper.',
-      lighting_setup: 'Moonlit reflections and lantern scatter.',
-      material_texture: 'River stone, carved wood, and corroded metal.',
-      render_quality: 'Mythic concept illustration with emblematic clarity.',
+      aesthetic:
+        "Blackwater Totem Memory within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Blackwater Totem Memory's specific style identity.",
+      form_and_line:
+        'Define Blackwater Totem Memory through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Blackwater Totem Memory-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Blackwater Totem Memory recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Blackwater Totem Memory: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Blackwater Totem Memory with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Upright totem tension against flowing blackwater bands, adaptable beyond landscape.',
-      atmosphere: 'Ancestor memory, passage, and river-bound ritual.',
-      key_features: 'Totem pillars, blackwater sheen, carved ancestral marks.',
+        'Use spatial behavior that fits Blackwater Totem Memory: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Blackwater Totem Memory: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Blackwater Totem Memory's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Translate any input into blackwater totem memory, using carved vertical signs, oxidized-copper scars, reflection bands, and ink-dark flow. Keep ancestor-memory weight without forcing totems, riverbanks, landscapes, carved figures, or ritual sites.',
+        'Create a style-card that translates Blackwater Totem Memory into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -233,18 +292,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, loud-patterns, comic style, watermark, text, logo, over-saturation',
     style: {
       aesthetic:
-        'Memorial veil language built from erased names, recovered marks, and quiet witness.',
-      form_and_line: 'Soft drape, layered glyph-like traces, and narrow ritual framing.',
-      color_palette: 'Smoke gray, ash white, and muted violet.',
-      lighting_setup: 'Backlit cloth glow and candle edge light.',
-      material_texture: 'Fine linen, thread shimmer, and wax residue.',
-      render_quality: 'Intimate symbolic rendering with textile detail.',
+        "Veil of Erased Names within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Veil of Erased Names's specific style identity.",
+      form_and_line:
+        'Define Veil of Erased Names through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Veil of Erased Names-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Veil of Erased Names recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Veil of Erased Names: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Veil of Erased Names with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Shallow layered depth emphasizing veils, traces, and translucent memory.',
-      atmosphere: 'Absence, remembrance, and quiet witness.',
-      key_features: 'Veiled name traces, memorial stitches, folded witness layers.',
+        'Use spatial behavior that fits Veil of Erased Names: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Veil of Erased Names: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Veil of Erased Names's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret any input through veils, erased-name marks, and mourning stitches. Use abstract glyph traces, linen translucency, wax residue, and witness-like layering instead of readable text, plaques, literal names, memorial rooms, or fixed ceremonial props.',
+        'Create a style-card that translates Veil of Erased Names into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -253,17 +319,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Mythic — Symbolism',
     negativePrompt: 'photoreal, whimsical, candy colors, watermark, text, logo, blur',
     style: {
-      aesthetic: 'Sigil liturgy carved from salt-encrusted bone, severe and ceremonial.',
-      form_and_line: 'Repeating sigil panels, vertebra-like arcs, and ceremonial symmetry.',
-      color_palette: 'Salt white, dark sepia, and iron gray.',
-      lighting_setup: 'Cold skylight with crisp shadow cuts.',
-      material_texture: 'Chiseled bone, salt crust, and rough stone.',
-      render_quality: 'Esoteric symbolic rendering with precise emblem readability.',
-      spatial_distortion: 'Receding sigil rhythm that multiplies meaning without requiring a hall.',
-      atmosphere: 'Severance, permanence, and ritual authority.',
-      key_features: 'Bone sigils, salt encrustation, oath-like panels.',
+      aesthetic:
+        "Salt-Bone Sigil Liturgy within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Salt-Bone Sigil Liturgy's specific style identity.",
+      form_and_line:
+        'Define Salt-Bone Sigil Liturgy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Salt-Bone Sigil Liturgy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Salt-Bone Sigil Liturgy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Salt-Bone Sigil Liturgy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Salt-Bone Sigil Liturgy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Salt-Bone Sigil Liturgy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Salt-Bone Sigil Liturgy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Salt-Bone Sigil Liturgy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Rework the input as a salt-bone sigil liturgy, where memory is etched and preserved by salt rather than staged in a fixed hall.',
+        'Create a style-card that translates Salt-Bone Sigil Liturgy into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -273,18 +348,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, whimsical, neon, watermark, text, logo, clutter',
     style: {
       aesthetic:
-        'Eclipse-based cipher knowledge rendered through lunar codes and secret symbolic order.',
-      form_and_line: 'Radial divisions, cipher rings, and circular reading-table cues.',
-      color_palette: 'Midnight blue, brass, and parchment.',
-      lighting_setup: 'Eclipse shadow with thin clerical lamps.',
-      material_texture: 'Old paper, etched brass, polished oak, and darkened lunar enamel.',
-      render_quality: 'Scholarly mythic concept art.',
+        "Eclipse Cipher Knowledge within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Eclipse Cipher Knowledge's specific style identity.",
+      form_and_line:
+        'Define Eclipse Cipher Knowledge through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Eclipse Cipher Knowledge-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Eclipse Cipher Knowledge recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Eclipse Cipher Knowledge: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Eclipse Cipher Knowledge with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Circular planning and orbital cipher pull without requiring a library interior.',
-      atmosphere: 'Intellect, secrecy, and cosmic patterning.',
-      key_features: 'Cipher scroll cues, eclipse disks, encoded index marks.',
+        'Use spatial behavior that fits Eclipse Cipher Knowledge: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Eclipse Cipher Knowledge: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Eclipse Cipher Knowledge's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply eclipse-cipher knowledge to the input, turning lunar geometry into secret language without forcing shelves or a study room.',
+        'Create a style-card that translates Eclipse Cipher Knowledge into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -294,18 +376,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, violent, toy-like, watermark, text, logo, over-sharp',
     style: {
       aesthetic:
-        'Rite-of-passage ascent expressed through feather emblems, thresholds, and graceful motion.',
-      form_and_line: 'Upward thrust, layered plumes, and step-like progression cues.',
-      color_palette: 'Ivory, smoke, and deep teal.',
-      lighting_setup: 'Dawn-side glow and soft shadow gradation.',
-      material_texture: 'Weathered stone, delicate feathers, brushed metal accents, and soft dust.',
-      render_quality: 'Mythic ascent illustration with graceful motion.',
+        "Feathered Ascent Threshold within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Feathered Ascent Threshold's specific style identity.",
+      form_and_line:
+        'Define Feathered Ascent Threshold through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Feathered Ascent Threshold-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Feathered Ascent Threshold recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Feathered Ascent Threshold: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Feathered Ascent Threshold with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Vertical climb sensation pulled toward a sacred vanishing point without requiring stairs.',
-      atmosphere: 'Transition, aspiration, and guided ascent.',
-      key_features: 'Feather motifs, ascent markers, threshold bands.',
+        'Use spatial behavior that fits Feathered Ascent Threshold: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Feathered Ascent Threshold: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Feathered Ascent Threshold's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reframe the input as a feathered ascent threshold, suggesting passage between worlds while leaving subject and setting free.',
+        'Create a style-card that translates Feathered Ascent Threshold into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -315,18 +404,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, neon, sketchy, watermark, text, logo, flat-perspective',
     style: {
       aesthetic:
-        'Celestial marker language carved with hymn-like stone symbols and sacred astronomy.',
-      form_and_line: 'Ringed forms, psalmic mark bands, and viewing-aperture cues.',
-      color_palette: 'Granite, moon silver, and faded blue.',
-      lighting_setup: 'Night sky glow with measured interior lanterns.',
-      material_texture: 'Chiseled stone, bronze lens accents, and weathered carved marks.',
-      render_quality: 'Monumental symbolic render with sacred astronomy and carved-stone clarity.',
+        "Stone Psalm Celestial Marker within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Stone Psalm Celestial Marker's specific style identity.",
+      form_and_line:
+        'Define Stone Psalm Celestial Marker through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Stone Psalm Celestial Marker-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Stone Psalm Celestial Marker recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Stone Psalm Celestial Marker: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Stone Psalm Celestial Marker with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Rising concentric rings toward a celestial aperture without requiring an observatory.',
-      atmosphere: 'Contemplation, astronomy, and sacred order.',
-      key_features: 'Psalm-like carvings, celestial apertures, star-ledger marks.',
+        'Use spatial behavior that fits Stone Psalm Celestial Marker: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Stone Psalm Celestial Marker: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Stone Psalm Celestial Marker's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Mark the input with stone psalm astronomy: granite mass, moon-silver rings, faded-blue night glow, chiseled hymn bands, and celestial aperture cues should make any subject feel liturgical and star-measured without requiring an observatory, monument, stairs, telescope, or sky-viewing setup.',
+        'Create a style-card that translates Stone Psalm Celestial Marker into a portable visual system for 1. Mythic Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

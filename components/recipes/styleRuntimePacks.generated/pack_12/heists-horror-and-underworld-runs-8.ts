@@ -11,22 +11,23 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, sci-fi-ui, flat-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática immersive-sim barroca de infiltración social, sospecha faccional y ejecución silenciosa.',
+        "Shadow Opera Assassin Court within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Shadow Opera Assassin Court's specific style identity.",
       subject_treatment:
-        'Convierte el input en rol stealth/disguise/assassin, máscara social, llave de acceso o amenaza cortesana según aplique.',
+        "Treat any subject through Shadow Opera Assassin Court's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Burdeos, negro terciopelo y oro envejecido para codificar estatus y amenaza.',
+        'Use a controlled palette that supports Shadow Opera Assassin Court: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Lámparas dramáticas con alto contraste para rutas de ocultamiento y ventanas de ejecución.',
+        'Shape light and shadow for Shadow Opera Assassin Court: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Seda, mármol pulido, acero ornamentado y cortinajes densos de cobertura visual.',
+        "Render surfaces with Shadow Opera Assassin Court's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Tableau con capas de foreground, line-of-sight y rutas silenciosas; corte, ópera o gala son anclas opcionales.',
-      atmosphere_and_mood: 'Elegancia letal, paranoia social y tensión ritualizada.',
+        "Compose with Shadow Opera Assassin Court's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Shadow Opera Assassin Court's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Stealth sandbox screencap: suspicion states, disguise routes, social access cues readable.',
+        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
       creative_brief:
-        'Aplica Shadow Opera Assassin Court como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
+        'Create a style-card that translates Shadow Opera Assassin Court into a portable visual system for 7. Heists, Horror & Underworld Runs. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -37,20 +38,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, cheerful-light, clean-surfaces, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática survival-horror postindustrial con recursos escasos, stealth, proximidad y mutación húmeda.',
+        "Forgotten Subway Mutation Zone within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Forgotten Subway Mutation Zone's specific style identity.",
       subject_treatment:
-        'Reinterpreta el input como amenaza lurker/rusher/brute, refugio, herramienta o residuo orgánico intrusivo según su forma.',
+        "Treat any subject through Forgotten Subway Mutation Zone's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Verde tóxico, negro húmedo y rojo señal para navegación de riesgo y objetivos de escape.',
+        'Use a controlled palette that supports Forgotten Subway Mutation Zone: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Fluorescentes inestables, parches oscuros y halos de humedad que alteran visibilidad.',
+        'Shape light and shadow for Forgotten Subway Mutation Zone: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Óxido, moho, hormigón mojado, cableado expuesto y residuos orgánicos intrusivos.',
+        "Render surfaces with Forgotten Subway Mutation Zone's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Profundidad estrecha, evasión lateral y visibilidad rota como tensión; no requiere metro ni pasillos concretos.',
-      atmosphere_and_mood: 'Opresiva, incómoda y paranoica.',
+        "Compose with Forgotten Subway Mutation Zone's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Forgotten Subway Mutation Zone's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Survival-horror gameplay frame: danger telemetry, escape route, mutation pressure readable.',
+        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -61,20 +63,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, static, flat-light, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática runner-adventure de trampas mecánicas con timing, reflejos, memoria de patrón y telegraph inmediato.',
+        "Temple Runner Trap Gauntlet within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Temple Runner Trap Gauntlet's specific style identity.",
       subject_treatment:
-        'Convierte el input en explorer, relic kit, hazard o mecanismo secuenciado; templo y reliquia son anclas opcionales.',
+        "Treat any subject through Temple Runner Trap Gauntlet's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Arena ancestral, jade funcional y rojo alerta para telegraph de peligro inmediato.',
+        'Use a controlled palette that supports Temple Runner Trap Gauntlet: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Rayos solares recortados y contraste direccional para anticipar obstáculos secuenciados.',
+        'Shape light and shadow for Temple Runner Trap Gauntlet: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Piedra tallada, madera estructural y metal oxidado de mecanismos activos.',
+        "Render surfaces with Temple Runner Trap Gauntlet's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Perspectiva de fuga, lanes y puntos de salto inequívocos como estructura, sin exigir gauntlet o templo.',
-      atmosphere_and_mood: 'Urgente, rítmica y punitiva, de riesgo constante.',
+        "Compose with Temple Runner Trap Gauntlet's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Temple Runner Trap Gauntlet's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Runner gameplay screencap: trap rhythm, hazard spacing, dodge timing, traversal path readable.',
+        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -85,20 +88,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, clean-theme, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática horror-action carnavalesca con telegraphs engañosos, zonas corruptas y espectáculo grotesco de boss.',
+        "Cursed Carnival Showdown within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cursed Carnival Showdown's specific style identity.",
       subject_treatment:
-        'Reinterpreta el input como ringmaster, mascota fallida, atracción hostil, prop maldito o señal mecánica de miedo.',
+        "Treat any subject through Cursed Carnival Showdown's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Amarillos nicotina, carmín coagulado, violeta amoratado y blanco sodio intermitente para inestabilidad emocional.',
+        'Use a controlled palette that supports Cursed Carnival Showdown: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Parpadeo errático de marquesina, estrobos prácticos y sombras profundas en bordes de circulación.',
+        'Shape light and shadow for Cursed Carnival Showdown: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Esmalte cuarteado, lona con moho, mecánica oxidada y grasa envejecida en nodos críticos.',
+        "Render surfaces with Cursed Carnival Showdown's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Choke-points, revelación escalonada y funnels de presión sin exigir parque, showdown o arena fija.',
-      atmosphere_and_mood: 'Macabra, burlona y crecientemente impredecible.',
+        "Compose with Cursed Carnival Showdown's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Cursed Carnival Showdown's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Boss-showdown gameplay screencap: phase hazards, grotesque arena beats, dodge space readable.',
+        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -109,20 +113,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, daylight, flat, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática dungeon-raid nocturna con espinas arcanas, asalto coordinado y capas defensivas.',
+        "Thorn Castle Moon Raid within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Thorn Castle Moon Raid's specific style identity.",
       subject_treatment:
-        'Aplica roles de brecha/soporte/control/eliminación al input, o conviértelo en barrera orgánica, trampa o punto de entrada.',
+        "Treat any subject through Thorn Castle Moon Raid's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Azul lunar, verde oscuro y rojo ritual para lectura de ruta, trampa y objetivo.',
+        'Use a controlled palette that supports Thorn Castle Moon Raid: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Antorchas escasas, niebla plateada y sombras profundas para windows de entrada.',
+        'Shape light and shadow for Thorn Castle Moon Raid: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Piedra mojada, enredaderas hostiles, hierro antiguo y barreras orgánicas activas.',
+        "Render surfaces with Thorn Castle Moon Raid's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Punto de entrada claro, rutas secundarias y capas defensivas sin exigir castillo o murallas.',
-      atmosphere_and_mood: 'Calculada, valiente y tensa en cooperación.',
+        "Compose with Thorn Castle Moon Raid's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Thorn Castle Moon Raid's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Raid-opening gameplay frame: moonlit access, threat layers, tactical priority, escape routes readable.',
+        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -133,20 +138,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, tropical, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática survival-horror polar con reparación de sistemas, defensa de perímetro, baliza rota y aislamiento.',
+        "Polar Signal Tower Outbreak within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Polar Signal Tower Outbreak's specific style identity.",
       subject_treatment:
-        'Convierte el input en técnico armado, entidad desconocida, herramienta, antena parcial o fallo de protocolo.',
+        "Treat any subject through Polar Signal Tower Outbreak's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Blanco grisáceo, rojo emergencia y azul metálico para jerarquía de estado crítico.',
+        'Use a controlled palette that supports Polar Signal Tower Outbreak: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Baliza rotatoria, penumbra dominante y ventanas de visibilidad intermitente.',
+        'Shape light and shadow for Polar Signal Tower Outbreak: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Nieve compacta, acero helado, escarcha y cableado expuesto por clima extremo.',
+        "Render surfaces with Polar Signal Tower Outbreak's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Nodo central, rutas de acceso y puntos de fallo identificables sin exigir torre o estación.',
-      atmosphere_and_mood: 'Aislada, paranoica y resistente.',
+        "Compose with Polar Signal Tower Outbreak's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Polar Signal Tower Outbreak's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Survival-outbreak gameplay screencap: signal objective, infection risk, weather cover, route pressure clear.',
+        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -157,18 +163,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, rainy-city, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática heist-western futurista con abordaje, saqueo, escape en movimiento y polvo cobrizo.',
+        "Copper Canyon Train Robbery within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Copper Canyon Train Robbery's specific style identity.",
       subject_treatment:
-        'Aplica roles bandido/guardia/persecución/corte de ruta al input; jetpack, tren y cañón son anclas opcionales.',
+        "Treat any subject through Copper Canyon Train Robbery's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Cobre brillante, azul cielo y negro carbón para lectura de facción y estado de alerta.',
-      lighting_and_shadow: 'Sol duro con polvo a contraluz para enfatizar velocidad y exposición.',
-      texture_and_material: 'Madera envejecida, acero remachado, tierra seca y humo de propulsión.',
+        'Use a controlled palette that supports Copper Canyon Train Robbery: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+      lighting_and_shadow:
+        'Shape light and shadow for Copper Canyon Train Robbery: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+      texture_and_material:
+        "Render surfaces with Copper Canyon Train Robbery's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Diagonal de movimiento con puntos de salto, abordaje y repliegue sin exigir tren literal.',
-      atmosphere_and_mood: 'Explosiva, audaz y narrativamente tensa.',
+        "Compose with Copper Canyon Train Robbery's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Copper Canyon Train Robbery's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Heist mission gameplay screencap: train objective, loot route, extraction timing, guard pressure clear.',
+        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -179,20 +188,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, modern-cars, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática sky-piracy aeronaval con abordaje aéreo, dominio de carriles, botín oportunista y pátina verdigris.',
+        "Verdigris Harbor Pirate Skies within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Verdigris Harbor Pirate Skies's specific style identity.",
       subject_treatment:
-        'Convierte el input en facción pirata, nave, tripulación, botín o vector de abordaje con firma clara.',
+        "Treat any subject through Verdigris Harbor Pirate Skies's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Verde pátina, cobre marrón, azul tormenta y destellos de latón para contraste de facción.',
+        'Use a controlled palette that supports Verdigris Harbor Pirate Skies: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Claros rotos entre nubes, rim light de casco y niebla volumétrica por altura.',
+        'Shape light and shadow for Verdigris Harbor Pirate Skies: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Madera alquitranada, latón corroído, lona tensionada y planchas remachadas salinizadas.',
+        "Render surfaces with Verdigris Harbor Pirate Skies's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Diagonal aérea, capas de altitud y trayectorias cruzadas sin exigir puerto o combate literal.',
-      atmosphere_and_mood: 'Agressiva, codiciosa y espectacularmente tormentosa.',
+        "Compose with Verdigris Harbor Pirate Skies's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Verdigris Harbor Pirate Skies's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Airship boarding gameplay frame: flagship priority, approach vectors, pirate-sky scale readable.',
+        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -203,20 +213,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, cheerful, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática transit-survival horror abisal con encierro, fallo sistémico y amenaza no visible.',
+        "Abyss Rail Horror Transit within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Abyss Rail Horror Transit's specific style identity.",
       subject_treatment:
-        'Convierte el input en superviviente vulnerable, infraestructura colapsada, señal de fallo o presencia oculta.',
+        "Treat any subject through Abyss Rail Horror Transit's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Azules de profundidad, negros de apagón, rojos de emergencia y neutros desaturados bajo pánico.',
+        'Use a controlled palette that supports Abyss Rail Horror Transit: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Parpadeo de emergencia, estrobos duros y recesos de baja visibilidad para tensión escalonada.',
+        'Shape light and shadow for Abyss Rail Horror Transit: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Acero salinizado, vidrio con condensación, fijaciones corroídas y suelo húmedo continuo.',
+        "Render surfaces with Abyss Rail Horror Transit's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Sightlines cerradas, choke-points, oclusiones y fuga ansiosa de profundidad sin exigir vagón.',
-      atmosphere_and_mood: 'Claustrofóbica, paranoica y de urgencia extrema.',
+        "Compose with Abyss Rail Horror Transit's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Abyss Rail Horror Transit's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Survival-horror transit gameplay screencap: carriage routes, abyss pressure, fear cues readable.',
+        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -227,20 +238,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, fantasy-castle, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática objective-warfare de señal con captura, interferencia, estática eléctrica y control territorial.',
+        "Static Dune Radio Wars within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Static Dune Radio Wars's specific style identity.",
       subject_treatment:
-        'Convierte el input en operador de radio, torre, jammer, escuadra móvil o objetivo de sabotaje.',
+        "Treat any subject through Static Dune Radio Wars's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Arena clara, azul estático y negro carbón para lectura de control territorial.',
+        'Use a controlled palette that supports Static Dune Radio Wars: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Destellos eléctricos y sol severo para telegraph de ventanas operativas.',
+        'Shape light and shadow for Static Dune Radio Wars: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Antenas corroídas, lona técnica, arena fina y cableado expuesto por tormenta.',
+        "Render surfaces with Static Dune Radio Wars's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Objetivos dominantes, rutas de aproximación y zonas contestadas sin exigir dunas o torres literales.',
-      atmosphere_and_mood: 'Estratégica, hostil y de supervivencia informacional.',
+        "Compose with Static Dune Radio Wars's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Static Dune Radio Wars's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Objective-mode gameplay frame: signal control, dune cover, radio priority, tactical pressure readable.',
+        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

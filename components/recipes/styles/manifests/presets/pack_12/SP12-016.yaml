@@ -12,21 +12,35 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Gramática immersive-sim barroca de infiltración social, sospecha faccional y ejecución silenciosa.
+  aesthetic: >-
+    Shadow Opera Assassin Court within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Shadow Opera Assassin Court's specific style identity.
   subject_treatment: >-
-    Convierte el input en rol stealth/disguise/assassin, máscara social, llave de acceso o amenaza cortesana según
-    aplique.
-  color_and_tone: Burdeos, negro terciopelo y oro envejecido para codificar estatus y amenaza.
-  lighting_and_shadow: Lámparas dramáticas con alto contraste para rutas de ocultamiento y ventanas de ejecución.
-  texture_and_material: Seda, mármol pulido, acero ornamentado y cortinajes densos de cobertura visual.
-  camera_and_composition: Tableau con capas de foreground, line-of-sight y rutas silenciosas; corte, ópera o gala son anclas opcionales.
-  atmosphere_and_mood: Elegancia letal, paranoia social y tensión ritualizada.
-  rendering_and_quality: 'Stealth sandbox screencap: suspicion states, disguise routes, social access cues readable.'
+    Treat any subject through Shadow Opera Assassin Court's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Shadow Opera Assassin Court: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Shadow Opera Assassin Court: legible depth, purposeful highlights, readable focal zones,
+    and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Shadow Opera Assassin Court's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Shadow Opera Assassin Court's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Shadow Opera Assassin Court's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
   creative_brief: >-
-    Aplica Shadow Opera Assassin Court como gramatica original de videojuego sobre cualquier input: conserva su sistema
-    de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
-    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece
-    fijo.
+    Create a style-card that translates Shadow Opera Assassin Court into a portable visual system for 7. Heists, Horror
+    & Underworld Runs. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - watermark
   - text

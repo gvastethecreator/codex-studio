@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Mythic underworld guidance expressed through lantern glow, mourning, and threshold crossing.
-  form_and_line: Lantern-core geometry, veil silhouettes, and descending rhythm cues.
-  color_palette: Amber glow, abyss black, and oxblood.
-  lighting_setup: Single source lantern light with deep falloff.
-  material_texture: Oiled metal, damp stone, waxed cloth, and smoke-darkened edges.
-  render_quality: Narrative key art with dramatic light focus.
-  spatial_distortion: Forms pulled toward a lantern-like core without forcing a tunnel or staircase.
-  atmosphere: Guidance, mourning, and crossing thresholds.
-  key_features: Underworld lantern, threshold veil, amber falloff.
-  creative_brief: Use underworld-lantern logic as the visual engine for any input, turning darkness into a navigable threshold through amber falloff, veil silhouettes, smoke edges, and mourning-metal detail without requiring lantern props, tunnels, stairs, guides, or passage setups.
+  aesthetic: >-
+    Underworld Lantern Threshold within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Underworld Lantern Threshold's specific style identity.
+  form_and_line: >-
+    Define Underworld Lantern Threshold through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Underworld Lantern Threshold-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Underworld Lantern Threshold recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Underworld Lantern Threshold: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Underworld Lantern Threshold with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Underworld Lantern Threshold: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Underworld Lantern Threshold: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Underworld Lantern Threshold's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Underworld Lantern Threshold into a portable visual system for 1. Mythic
+    Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cute

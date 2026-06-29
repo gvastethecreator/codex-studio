@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Astral omen noir shaped by funerary bells, star charts, and disciplined ritual warning.
-  form_and_line: Vertical belfry cues, radial star-chart motifs, and pendulum-centered geometry.
-  color_palette: Midnight blue-black, tarnished brass, and bone-white starlight accents.
-  lighting_setup: Moon slit beams plus lantern pools around engraved celestial instruments.
-  material_texture: Weathered limestone, oxidized bronze bells, wax seals, and soot-marked parchment maps.
-  render_quality: Premium narrative concept art with sharp focal hierarchy and long-range readability.
-  spatial_distortion: Upward spiral perspective converging at an aperture aligned with a bell core.
-  atmosphere: Liturgical vigilance, astronomical dread, and disciplined wonder.
-  key_features: Star-calibrated bell cues, omen charts, cloaked sentinel shapes, resonance-marked stone.
-  creative_brief: Apply grave-bell astral warning to the input, turning celestial alignment and bell resonance into ritual dread without requiring an observatory.
+  aesthetic: >-
+    Grave Bell Astral Warning within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Grave Bell Astral Warning's specific style identity.
+  form_and_line: >-
+    Define Grave Bell Astral Warning through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Grave Bell Astral Warning-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Grave Bell Astral Warning recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Grave Bell Astral Warning: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Grave Bell Astral Warning with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Grave Bell Astral Warning: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Grave Bell Astral Warning: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Grave Bell Astral Warning's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Grave Bell Astral Warning into a portable visual system for 4. Mythic Cosmology
+    & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - playful

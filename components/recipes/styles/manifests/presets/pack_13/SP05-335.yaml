@@ -12,25 +12,38 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Minimalismo mineral introspectivo con translucidez gema suspendida en vacío contemplativo.
-  form_and_line: Contorno mínimo preciso, arista cristalina limpia y marcas expresivas de baja densidad.
-  color_palette: Opal white, seafoam cyan, pale gold, quartz pink, void black, glacial blue
+  aesthetic: >-
+    Haruko Ichikawa - Mineral Void Serenity within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Haruko Ichikawa - Mineral Void Serenity's specific style identity.
+  form_and_line: >-
+    Define Haruko Ichikawa - Mineral Void Serenity through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Haruko Ichikawa - Mineral Void Serenity-specific palette with clear dominant, secondary, and accent roles.
+    Keep contrast deliberate and avoid generic color wash.
   lighting_setup: >-
-    Luz refractiva limpia, glow de borde, apertura ambiental inmensa y chispa cristalina sin ruido
-    escénico.
+    Use lighting that makes Haruko Ichikawa - Mineral Void Serenity recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
   material_texture: >-
-    Translucidez mineral pulida, suavidad de erosión marina, superficie vítrea y terreno mate
-    mínimo.
-  render_quality: Claridad contemplativa de alto control, con espacio negativo dominante y detalle selectivo.
+    Use materials and textures that reinforce Haruko Ichikawa - Mineral Void Serenity: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Haruko Ichikawa - Mineral Void Serenity with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Slim fragile proportion logic, open-space isolation, clean silhouette spacing, and low-clutter
-    monumental emptiness
-  atmosphere: Esparsa, luminosa e introspectiva, sostenida por fragilidad cristalina.
-  key_features: Translucidez gema, composición en vacío abierto, paisaje mínimo y lenguaje postural delicado.
+    Use spatial behavior that fits Haruko Ichikawa - Mineral Void Serenity: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Haruko Ichikawa - Mineral Void Serenity: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Haruko Ichikawa - Mineral Void Serenity's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Use Haruko Ichikawa as style anchor for mineral-void serenity. Any prompt should become
-    translucent, quiet, faceted, spacious, and melancholic through negative space. Gem bodies, empty
-    terrain, fragile figures, and literal landscapes are optional.
+    Create a style-card that translates Haruko Ichikawa - Mineral Void Serenity into a portable visual system for 12.
+    Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - noisy maximalism
   - cluttered environment
@@ -43,8 +56,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-335.webp
 attributes:
   negativePrompt: >-
-    noisy maximalism, cluttered environment, gritty horror texture, warm muddy palette, heavy
-    outline cartooning, dense crowd staging, opaque plastic surfaces
+    noisy maximalism, cluttered environment, gritty horror texture, warm muddy palette, heavy outline cartooning, dense
+    crowd staging, opaque plastic surfaces
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

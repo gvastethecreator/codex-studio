@@ -12,16 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Velocidad cósmica hipercinética dibujada a pulso, con exceso cromático y culto absoluto al impulso.
-  form_and_line: Trazo brutal de inercia extrema, líneas de fuga violentas y siluetas aerodinámicas de alto contraste.
-  color_palette: Primarios incendiarios, magentas eléctricos, negros densos y acentos neón de nitro en combustión.
-  lighting_setup: Flashes de propulsión, contraluces duros y estallidos lumínicos que enfatizan aceleración sin reposo.
-  material_texture: Superficie vibrante, fricción abrasada, humo dibujado y grano entintado de energía analógica.
-  render_quality: Acabado de espectáculo maximalista con claridad de velocidad y sobrecarga sensorial.
-  spatial_distortion: Perspectiva túnel y curvatura extrema del espacio para sensación de riesgo constante.
-  atmosphere: Adrenalínica, eufórica, vertiginosa, explosiva.
-  key_features: Motion-lines dominantes, perfiles excéntricos y dramatización gráfica de boost, fricción y derrape abstracto.
-  creative_brief: Construye una gramática reusable de hipervelocidad cósmica para cualquier sujeto, priorizando energía dibujada, riesgo visual y clímax imposible. Si el input lo permite, puede volverse vehículo, piloto abstracto o bólido de trazo; si no, recibe líneas de boost, fricción y túnel cinético sin fijar carrera ni pista.
+  aesthetic: >-
+    Hyperkinetic Cosmic Velocity Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Hyperkinetic Cosmic Velocity Style's specific style identity.
+  form_and_line: >-
+    Define Hyperkinetic Cosmic Velocity Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Hyperkinetic Cosmic Velocity Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Hyperkinetic Cosmic Velocity Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Hyperkinetic Cosmic Velocity Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Hyperkinetic Cosmic Velocity Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Hyperkinetic Cosmic Velocity Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Hyperkinetic Cosmic Velocity Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Hyperkinetic Cosmic Velocity Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Hyperkinetic Cosmic Velocity Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-079.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

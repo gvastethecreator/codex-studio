@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Processional blood-moon omen language with solemn public ritual pressure.
-  form_and_line: Long solemn verticals, lantern-pole rhythms, suspended banner lines, and a lunar arc overhead with no candle cluster centerpiece.
-  color_palette: Blood red, midnight indigo, and ash gray.
-  lighting_setup: Moonlit backlight with lantern accents.
-  material_texture: Wet stone sheen, ceremonial cloth, lacquered wood, and ash haze.
-  render_quality: Cinematic mythic rendering with processional clarity.
-  spatial_distortion: Receding ritual rhythm that leads visual force toward a blood moon disk.
-  atmosphere: Omen, obedience, and a solemn public rite.
-  key_features: Processional mask cues, lantern standards, blood moon sigils, suspended omen banners.
-  creative_brief: Apply blood-moon processional omen logic to any input, making red celestial pressure feel like witness and verdict. Use lantern-pole rhythm, suspended omen banners, ash haze, solemn verticals, and obedient negative space without forcing candle clusters, black wax shrines, corridor reliquaries, moon disks, street marches, masks, crowds, or ritual parades.
+  aesthetic: >-
+    Blood Moon Processional Omen within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Blood Moon Processional Omen's specific style identity.
+  form_and_line: >-
+    Define Blood Moon Processional Omen through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Blood Moon Processional Omen-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Blood Moon Processional Omen recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Blood Moon Processional Omen: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Blood Moon Processional Omen with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Blood Moon Processional Omen: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Blood Moon Processional Omen: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Blood Moon Processional Omen's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Blood Moon Processional Omen into a portable visual system for 2. Mythic Ritual
+    Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - playful
@@ -33,7 +54,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP14-108.webp
 attributes:
-  negativePrompt: photoreal, playful, bright-day, watermark, text, logo, action-pose, candle clusters, black wax, glass corridor, reliquary tower
+  negativePrompt: >-
+    photoreal, playful, bright-day, watermark, text, logo, action-pose, candle clusters, black wax, glass corridor,
+    reliquary tower
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault

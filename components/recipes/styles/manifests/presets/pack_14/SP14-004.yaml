@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Lethal crystal-botany noir with warden-like vigilance and refined menace.
-  form_and_line: Slender guarded silhouettes, translucent thorn geometry, regal verticals, and labyrinthine botanical contours.
-  color_palette: Petrol green, smoked crystal, and cold silver.
-  lighting_setup: Glow interno en espinas y rim glacial.
-  material_texture: Fractal glass, fine metal, and nocturnal garden mist.
-  render_quality: Refined concept art with unmistakable personality.
-  spatial_distortion: Layered labyrinthine depth made from glass thorns and nocturnal botanical planes.
-  atmosphere: Refined menace, mystery, and vigilance.
-  key_features: Crystal thorn crowns, smoked-glass foliage, petrol-green glow, severe guarded stance, and nocturnal garden mist.
-  creative_brief: 'Thorn the input with glass-botany menace: petrol greens, smoked crystal, glacial rims, translucent spike geometry, and severe warden-like verticals should make any subject beautiful and dangerous without requiring a greenhouse, humanoid guardian, armor suit, or literal garden setting.'
+  aesthetic: >-
+    Glass-Thorn Warden Botany within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Glass-Thorn Warden Botany's specific style identity.
+  form_and_line: >-
+    Define Glass-Thorn Warden Botany through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Glass-Thorn Warden Botany-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Glass-Thorn Warden Botany recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Glass-Thorn Warden Botany: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Glass-Thorn Warden Botany with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Glass-Thorn Warden Botany: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Glass-Thorn Warden Botany: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Glass-Thorn Warden Botany's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Glass-Thorn Warden Botany into a portable visual system for 3. Mythic Pantheons
+    & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cartoonish

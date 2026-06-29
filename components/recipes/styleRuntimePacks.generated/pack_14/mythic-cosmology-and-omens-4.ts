@@ -10,22 +10,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, playful, bright-summer, sci-fi-clean, watermark, text, logo',
     style: {
       aesthetic:
-        'Astral omen noir shaped by funerary bells, star charts, and disciplined ritual warning.',
+        "Grave Bell Astral Warning within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Grave Bell Astral Warning's specific style identity.",
       form_and_line:
-        'Vertical belfry cues, radial star-chart motifs, and pendulum-centered geometry.',
-      color_palette: 'Midnight blue-black, tarnished brass, and bone-white starlight accents.',
-      lighting_setup: 'Moon slit beams plus lantern pools around engraved celestial instruments.',
+        'Define Grave Bell Astral Warning through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Grave Bell Astral Warning-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Grave Bell Astral Warning recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Weathered limestone, oxidized bronze bells, wax seals, and soot-marked parchment maps.',
+        'Use materials and textures that reinforce Grave Bell Astral Warning: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Premium narrative concept art with sharp focal hierarchy and long-range readability.',
+        'Render Grave Bell Astral Warning with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Upward spiral perspective converging at an aperture aligned with a bell core.',
-      atmosphere: 'Liturgical vigilance, astronomical dread, and disciplined wonder.',
+        'Use spatial behavior that fits Grave Bell Astral Warning: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Grave Bell Astral Warning: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Star-calibrated bell cues, omen charts, cloaked sentinel shapes, resonance-marked stone.',
+        "Prioritize Grave Bell Astral Warning's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply grave-bell astral warning to the input, turning celestial alignment and bell resonance into ritual dread without requiring an observatory.',
+        'Create a style-card that translates Grave Bell Astral Warning into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -34,17 +37,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Mythic — Cosmology & Omens',
     negativePrompt: 'photoreal, bright-pop, cyber-neon, watermark, text, logo',
     style: {
-      aesthetic: 'Broken-comet omen archive language with shattered prophecy and night-sky dread.',
-      form_and_line: 'Circular dome cues, fractured star maps, and radial corridor rhythms.',
-      color_palette: 'Midnight indigo, silver ash, and ember gold.',
-      lighting_setup: 'Telescope glow and starlight shafts through cracked vaults.',
-      material_texture: 'Polished obsidian, weathered brass, and parchment charts.',
-      render_quality: 'Cinematic cosmic concept with clear symbolic anchors.',
-      spatial_distortion: 'Curved dome-like perspective focusing on a central astrolabe cue.',
-      atmosphere: 'Foreboding wonder and prophetic tension.',
-      key_features: 'Comet reliquary cues, oracle lenses, omen inscription walls.',
+      aesthetic:
+        "Broken Comet Omen Archive within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Broken Comet Omen Archive's specific style identity.",
+      form_and_line:
+        'Define Broken Comet Omen Archive through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Broken Comet Omen Archive-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Broken Comet Omen Archive recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Broken Comet Omen Archive: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Broken Comet Omen Archive with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Broken Comet Omen Archive: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Broken Comet Omen Archive: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Broken Comet Omen Archive's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast any input through broken-comet omen logic, where fractured light reads as warning. Keep comet-reliquary tension, radial star-map rhythm, midnight obsidian, brass omen lenses, and cracked-vault dread without forcing meteor fragments, observatories, archives, telescopes, or room staging.',
+        'Create a style-card that translates Broken Comet Omen Archive into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -53,17 +65,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Mythic — Cosmology & Omens',
     negativePrompt: 'photoreal, comedic, neon-future, watermark, text, logo',
     style: {
-      aesthetic: 'Eclipse-meridian verdict language with judicial dread and cosmic inevitability.',
-      form_and_line: 'Meridian spine, stepped tribunal cues, and celestial arcs.',
-      color_palette: 'Slate black, moon ivory, and blood amber.',
-      lighting_setup: 'Eclipse halo and brazier edge highlights.',
-      material_texture: 'Engraved basalt, bronze markers, and smoke-worn stone.',
-      render_quality: 'Monumental ritual tableau with strict geometry.',
-      spatial_distortion: 'Axis-centered depth toward an eclipse judgment point.',
-      atmosphere: 'Judicial dread and cosmic inevitability.',
-      key_features: 'Meridian obelisk, shadow dial, omen-choir pit cues.',
+      aesthetic:
+        "Eclipse Meridian Verdict within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Eclipse Meridian Verdict's specific style identity.",
+      form_and_line:
+        'Define Eclipse Meridian Verdict through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Eclipse Meridian Verdict-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Eclipse Meridian Verdict recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Eclipse Meridian Verdict: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Eclipse Meridian Verdict with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Eclipse Meridian Verdict: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Eclipse Meridian Verdict: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Eclipse Meridian Verdict's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform the input through eclipse-meridian verdict geometry, making celestial alignment feel legally binding without requiring a chamber.',
+        'Create a style-card that translates Eclipse Meridian Verdict into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -72,18 +93,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Mythic — Cosmology & Omens',
     negativePrompt: 'photoreal, cartoon, cyberpunk, watermark, text, logo',
     style: {
-      aesthetic: 'Celestial forge discipline where destiny aligns to star-sign cycles.',
-      form_and_line: 'Orbit-ring cues, axial forge geometry, and constellation lane rhythms.',
-      color_palette: 'Iron blue, brass, and cinder orange.',
-      lighting_setup: 'Furnace cores and rotating skylight apertures.',
-      material_texture: 'Heat-cracked stone, riveted steel, and etched brass rings.',
-      render_quality: 'Monumental celestial craft concept with bold silhouette clarity.',
+      aesthetic:
+        "Zodiac Tempered Destiny within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Zodiac Tempered Destiny's specific style identity.",
+      form_and_line:
+        'Define Zodiac Tempered Destiny through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Zodiac Tempered Destiny-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Zodiac Tempered Destiny recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Zodiac Tempered Destiny: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Zodiac Tempered Destiny with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Long axial depth toward a stellar forge core with larger readable forms.',
-      atmosphere: 'Determined ritual and astral discipline.',
-      key_features: 'Orbit rings, constellation marks, and omen basin glow.',
+        'Use spatial behavior that fits Zodiac Tempered Destiny: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Zodiac Tempered Destiny: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Zodiac Tempered Destiny's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret any input through zodiac-tempered destiny, preserving orbit-ring geometry, iron-blue discipline, brass constellation marks, furnace glow, and astral order without requiring anvils, naves, or forge staging.',
+        'Create a style-card that translates Zodiac Tempered Destiny into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -93,17 +122,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cheerful, neon-tech, watermark, text, logo',
     style: {
       aesthetic:
-        'Mortality mapped as planetary motion through orbital spirals and sacred underworld geometry.',
-      form_and_line: 'Spiral ring cues, descending path geometry, and orbital relief walls.',
-      color_palette: 'Bone gray, deep violet, and tarnished silver.',
-      lighting_setup: 'Candle constellations and shafted moonlight vents.',
-      material_texture: 'Damp stone, mineral deposits, and corroded relic metal.',
-      render_quality: 'Moody cosmic-underworld concept with readable depth and larger forms.',
-      spatial_distortion: 'Descending spiral depth toward a dark orbital core.',
-      atmosphere: 'Liminal dread and sacred curiosity.',
-      key_features: 'Orbital tablets, sepulchral rings, and star-map reliefs.',
+        "Orbital Death Spiral within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Orbital Death Spiral's specific style identity.",
+      form_and_line:
+        'Define Orbital Death Spiral through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Orbital Death Spiral-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Orbital Death Spiral recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Orbital Death Spiral: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Orbital Death Spiral with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Orbital Death Spiral: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Orbital Death Spiral: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Orbital Death Spiral's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply orbital death spiral to the input, mapping mortality as planetary motion without requiring catacombs or crypt staging.',
+        'Create a style-card that translates Orbital Death Spiral into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -113,17 +150,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, slapstick, cyberpunk-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Nebular pilgrimage ascent with austere hope, vow banners, and suspended star petitions.',
-      form_and_line: 'Terraced step cues, sky-shrine silhouettes, and lantern spines.',
-      color_palette: 'Dust rose, midnight blue, and pale gold.',
-      lighting_setup: 'Dawn gradients and suspended shrine lights.',
-      material_texture: 'Sandstone slabs, cloth pennants, and bronze charms.',
-      render_quality: 'Expansive atmospheric matte with processional flow.',
-      spatial_distortion: 'Upward ascent composition into clouded celestial depth.',
-      atmosphere: 'Hopeful austerity and spiritual endurance.',
-      key_features: 'Pilgrim shrine cues, star chimes, vow banners.',
+        "Nebula Pilgrim Ascent within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Nebula Pilgrim Ascent's specific style identity.",
+      form_and_line:
+        'Define Nebula Pilgrim Ascent through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Nebula Pilgrim Ascent-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Nebula Pilgrim Ascent recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Nebula Pilgrim Ascent: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Nebula Pilgrim Ascent with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Nebula Pilgrim Ascent: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Nebula Pilgrim Ascent: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Nebula Pilgrim Ascent's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reframe the input through nebula pilgrim ascent, suggesting celestial petition and spiritual endurance without requiring stairs.',
+        'Create a style-card that translates Nebula Pilgrim Ascent into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -133,17 +178,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, bright-cartoon, cyber-city, watermark, text, logo',
     style: {
       aesthetic:
-        'Starfall precedent language where celestial debris becomes civic omen and judgment.',
-      form_and_line: 'Basin rings, stepped bench cues, and central meteor-plinth geometry.',
-      color_palette: 'Cobalt, charcoal, and molten copper.',
-      lighting_setup: 'Meteor core glow and cool night perimeter lamps.',
-      material_texture: 'Fused glass, fractured rock, and ceremonial bronze.',
-      render_quality: 'Narrative keyframe with strong focal hierarchy.',
-      spatial_distortion: 'Crater-bowl depth emphasizing a central meteor relic.',
-      atmosphere: 'Collective anxiety and interpretive ceremony.',
-      key_features: 'Meteor altar cues, verdict terraces, ash runes.',
+        "Starfall Precedent Basin within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Starfall Precedent Basin's specific style identity.",
+      form_and_line:
+        'Define Starfall Precedent Basin through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Starfall Precedent Basin-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Starfall Precedent Basin recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Starfall Precedent Basin: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Starfall Precedent Basin with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Starfall Precedent Basin: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Starfall Precedent Basin: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Starfall Precedent Basin's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convert any input through starfall precedent, making celestial impact feel like legal omen. Use basin rings, fused-glass scars, molten copper focal glow, verdict terraces, and collective anxiety without forcing meteors, courts, benches, craters, public gatherings, or ritual hearings.',
+        'Create a style-card that translates Starfall Precedent Basin into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -153,17 +206,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, comic, neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Lunar salt divination with monastic discipline, crystalline omens, and moon-tide vigilance.',
-      form_and_line: 'Cloister grid cues, salt-pan bands, and observatory tower silhouettes.',
-      color_palette: 'Chalk white, deep indigo, and amber flame.',
-      lighting_setup: 'Moonwash and low torch perimeter glow.',
-      material_texture: 'Crystalline salt crust, adobe, and oxidized metal.',
-      render_quality: 'Serene yet ominous environment concept.',
-      spatial_distortion: 'Layered progression from cloister-like order to salt-flat reflection.',
-      atmosphere: 'Monastic discipline and astral vigilance.',
-      key_features: 'Salt omens, lunar stills, prayer-terrace cues.',
+        "Lunar Salt Divination within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Lunar Salt Divination's specific style identity.",
+      form_and_line:
+        'Define Lunar Salt Divination through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Lunar Salt Divination-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Lunar Salt Divination recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Lunar Salt Divination: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Lunar Salt Divination with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Lunar Salt Divination: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Lunar Salt Divination: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Lunar Salt Divination's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through lunar salt divination, where weather and spirit readings crystallize without requiring a monastery.',
+        'Create a style-card that translates Lunar Salt Divination into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -173,17 +234,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, playful, cyberpunk-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Planetary bell alarm language with celestial timing, ritual defense, and solemn warning.',
-      form_and_line: 'Bell-tower cues, concentric wall rhythms, and hanging bridge loops.',
-      color_palette: 'Iron gray, moon silver, and ember bronze.',
-      lighting_setup: 'Bell-chamber glows and storm backlight.',
-      material_texture: 'Cast bronze bells, weathered stone, and rope fibers.',
-      render_quality: 'High-contrast fortress concept with ritual emphasis.',
-      spatial_distortion: 'Vertical focus rising from threshold to bell crown.',
-      atmosphere: 'Alarmed solemnity and cosmic timing.',
-      key_features: 'Planetary bells, omen gears, signal parapet cues.',
+        "Planetary Bell Alarm within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Planetary Bell Alarm's specific style identity.",
+      form_and_line:
+        'Define Planetary Bell Alarm through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Planetary Bell Alarm-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Planetary Bell Alarm recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Planetary Bell Alarm: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Planetary Bell Alarm with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Planetary Bell Alarm: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Planetary Bell Alarm: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Planetary Bell Alarm's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply planetary bell alarm to the input, calibrating its rhythm to celestial conjunctions without requiring a citadel.',
+        'Create a style-card that translates Planetary Bell Alarm into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -193,17 +262,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cartoon, cyber-city, watermark, text, logo',
     style: {
       aesthetic:
-        'Glass astrolabe navigation where tides, stars, and instruments form one ritual map.',
-      form_and_line: 'Dock-grid cues, astrolabe towers, and curved tidewall geometry.',
-      color_palette: 'Sea green, steel blue, and amber.',
-      lighting_setup: 'Tide reflections and instrument backlighting.',
-      material_texture: 'Salted timber, blown glass, and riveted brass.',
-      render_quality: 'Nautical-cosmic concept with clean readability.',
-      spatial_distortion: 'Perspective drawn toward rotating star instruments and tidal arcs.',
-      atmosphere: 'Navigational suspense and ritual precision.',
-      key_features: 'Astrolabe crane cues, chart docks, omen beacons.',
+        "Glass Astrolabe Navigation within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Glass Astrolabe Navigation's specific style identity.",
+      form_and_line:
+        'Define Glass Astrolabe Navigation through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Glass Astrolabe Navigation-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Glass Astrolabe Navigation recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Glass Astrolabe Navigation: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Glass Astrolabe Navigation with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Glass Astrolabe Navigation: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Glass Astrolabe Navigation: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Glass Astrolabe Navigation's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret the input through glass astrolabe navigation, treating tides and stars as one map without requiring a harbor.',
+        'Create a style-card that translates Glass Astrolabe Navigation into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -213,17 +290,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, comedic, colorful-pop, watermark, text, logo',
     style: {
       aesthetic:
-        'Auroral omen containment with polar fatalism, controlled prophecy, and cosmic paranoia.',
-      form_and_line: 'Isolated tower cues, aurora cages, and radial confinement bands.',
-      color_palette: 'Polar cyan, black ice, and warning amber.',
-      lighting_setup: 'Aurora veils and guarded spotlight corridors.',
-      material_texture: 'Frozen steel, chained stone, and etched sigils.',
-      render_quality: 'Stark concept art with oppressive geometry.',
-      spatial_distortion: 'Multi-ring confinement depth under an open auroral sky.',
-      atmosphere: 'Fatalism, control, and cosmic paranoia.',
-      key_features: 'Omen vault cues, aurora bars, sentinel walkways.',
+        "Auroral Omen Containment within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Auroral Omen Containment's specific style identity.",
+      form_and_line:
+        'Define Auroral Omen Containment through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Auroral Omen Containment-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Auroral Omen Containment recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Auroral Omen Containment: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Auroral Omen Containment with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Auroral Omen Containment: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Auroral Omen Containment: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Auroral Omen Containment's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast any input through auroral omen containment, as if dangerous prophecies were held inside polar light. Keep aurora bars, black-ice geometry, guarded amber signals, sigil-etched confinement, and cosmic paranoia without requiring towers, prisons, sentinels, vaults, or polar landscapes.',
+        'Create a style-card that translates Auroral Omen Containment into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -233,17 +318,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, whimsical, cyber-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Cosmic collapse memory preserved through falling sun spirals, ember pools, and black stone.',
-      form_and_line: 'Helix terrace cues, solar disks, and descending altar rhythms.',
-      color_palette: 'Burnt gold, obsidian, and violet haze.',
-      lighting_setup: 'Sunset shafts and internal altar flames.',
-      material_texture: 'Black stone, gilded reliefs, and ash deposits.',
-      render_quality: 'Epic symbolic concept with strong silhouette rhythm.',
-      spatial_distortion: 'Downward spiral perspective into a ceremonial collapse core.',
-      atmosphere: 'Cataclysmic awe and ritual remembrance.',
-      key_features: 'Fallen sun murals, collapse-mark cues, ember pools.',
+        "Falling Suns Memory Spiral within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Falling Suns Memory Spiral's specific style identity.",
+      form_and_line:
+        'Define Falling Suns Memory Spiral through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Falling Suns Memory Spiral-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Falling Suns Memory Spiral recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Falling Suns Memory Spiral: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Falling Suns Memory Spiral with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Falling Suns Memory Spiral: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Falling Suns Memory Spiral: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Falling Suns Memory Spiral's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform the input through falling-suns memory spiral, preserving the dread of burned worlds without requiring a shrine.',
+        'Create a style-card that translates Falling Suns Memory Spiral into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -254,17 +347,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, chaotic-neon, cartoon, bedroom, apartment, domestic interior, bed, sofa, watermark, text, logo',
     style: {
       aesthetic:
-        'Equinox balance axis with bilateral precision, sacred calibration, and liminal poise.',
-      form_and_line: 'Twin-span cues, mirrored pylons, and axial shrine-chamber geometry.',
-      color_palette: 'Stone white, bronze, and blue dusk.',
-      lighting_setup: 'Symmetric light split and low ritual lanterns.',
-      material_texture: 'Cut granite, bronze inlays, and polished rails.',
-      render_quality: 'Architectural concept focused on symmetry precision.',
-      spatial_distortion: 'Perfect bilateral framing along a bridge-like balance axis.',
-      atmosphere: 'Poise, tension, and sacred calibration.',
-      key_features: 'Equinox markers, twin altar cues, mirrored water basins.',
+        "Equinox Balance Axis within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Equinox Balance Axis's specific style identity.",
+      form_and_line:
+        'Define Equinox Balance Axis through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Equinox Balance Axis-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Equinox Balance Axis recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Equinox Balance Axis: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Equinox Balance Axis with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Equinox Balance Axis: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Equinox Balance Axis: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Equinox Balance Axis's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply equinox balance axis to the input, making balance itself feel divine through bilateral precision, sacred calibration, stone-white symmetry, mirrored markers, and equinox poise without requiring a bridge sanctuary, bedroom, apartment, domestic interior, furniture vignette, or window-corner staging.',
+        'Create a style-card that translates Equinox Balance Axis into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -273,17 +374,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Mythic — Cosmology & Omens',
     negativePrompt: 'photoreal, comedy, cyberpunk, watermark, text, logo',
     style: {
-      aesthetic: 'Omen salt processing where prophecy crystallizes like water infrastructure.',
-      form_and_line: 'Terraced basin cues, pillar rows, and intake channel geometry.',
-      color_palette: 'Salt white, graphite, and pale turquoise.',
-      lighting_setup: 'Dry heat glare and reflective basin shimmer.',
-      material_texture: 'Crusted salt, lime plaster, and weathered bronze valves.',
-      render_quality: 'Environmental concept with utility-ritual blend.',
-      spatial_distortion: 'Stepwise descent toward the deepest omen pool.',
-      atmosphere: 'Arid solemnity and archival care.',
-      key_features: 'Salt tablets, omen sluices, measuring obelisks.',
+      aesthetic:
+        "Omen Salt Processing within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Omen Salt Processing's specific style identity.",
+      form_and_line:
+        'Define Omen Salt Processing through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Omen Salt Processing-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Omen Salt Processing recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Omen Salt Processing: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Omen Salt Processing with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Omen Salt Processing: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Omen Salt Processing: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Omen Salt Processing's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Rework the input through omen salt processing, turning prophecy into crystallized utility without requiring a reservoir.',
+        'Create a style-card that translates Omen Salt Processing into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -293,17 +403,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, playful, neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Night meridian secrecy with anomaly records, obsessive study, and scholarly noir dread.',
-      form_and_line: 'Vertical stack cues, narrow galleries, and rotating index-bridge rhythms.',
-      color_palette: 'Ink black, brass, and parchment beige.',
-      lighting_setup: 'Desk pools and faint celestial backlight.',
-      material_texture: 'Leather folios, brass rails, and timber shelves.',
-      render_quality: 'Scholarly noir concept with dense detail.',
-      spatial_distortion: 'Tower-like interior depth with stacked perspective and sealed layers.',
-      atmosphere: 'Obsessive study and quiet dread.',
-      key_features: 'Meridian ledgers, index clockwork, sealed prophecy-vault cues.',
+        "Night Meridian State Secret within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Night Meridian State Secret's specific style identity.",
+      form_and_line:
+        'Define Night Meridian State Secret through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Night Meridian State Secret-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Night Meridian State Secret recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Night Meridian State Secret: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Night Meridian State Secret with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Night Meridian State Secret: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Night Meridian State Secret: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Night Meridian State Secret's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Translate the input through night-meridian state secrecy, treating cosmic anomaly as classified evidence without requiring an archive tower.',
+        'Create a style-card that translates Night Meridian State Secret into a portable visual system for 4. Mythic Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

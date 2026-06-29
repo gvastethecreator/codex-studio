@@ -12,20 +12,38 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Reset-loop dark fantasy, with ornate beauty under dread, emotional collapse, and recursive fate pressure.
-  form_and_line: Elegant fantasy contouring interrupted by spiral repeats, stress-fracture accents, and tightening visual rhythms.
-  color_palette: Icy violet, pale silver, bruised blue, candle amber, deep burgundy, and shadowed ivory.
-  lighting_setup: Beautiful surface glow with dread below it, cold rim halos, looping highlight echoes, and suffocating low contrast.
-  material_texture: Fine fabric grain, carved ornament, paper-thin magic particles, damp shadow glaze, and polished despair.
-  render_quality: High-polish fantasy anime with psychological tension, delicate detail, and controlled emotional breakdown.
-  spatial_distortion: Spiral compression, deja-vu repetition, and ornamental depth that seems to close inward.
-  atmosphere: Anxious, tragic, harrowing, relentless.
-  key_features: Recursive fate, beauty-as-pressure, spiral dread, fragile hope, ornate emotional collapse.
+  aesthetic: >-
+    Re:Zero Reset-Loop Dark Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Re:Zero Reset-Loop Dark Fantasy's specific style identity.
+  form_and_line: >-
+    Define Re:Zero Reset-Loop Dark Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Re:Zero Reset-Loop Dark Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Re:Zero Reset-Loop Dark Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Re:Zero Reset-Loop Dark Fantasy: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Re:Zero Reset-Loop Dark Fantasy with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Re:Zero Reset-Loop Dark Fantasy: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Re:Zero Reset-Loop Dark Fantasy: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Re:Zero Reset-Loop Dark Fantasy's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Treat any prompt as trapped inside beautiful repetition: use spiral
-    composition, delicate ornament, cold glow, and emotional pressure to imply a
-    reset-loop without literal locations, antagonists, set pieces, or named
-    characters.
+    Create a style-card that translates Re:Zero Reset-Loop Dark Fantasy into a portable visual system for 8. Isekai &
+    High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-092.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

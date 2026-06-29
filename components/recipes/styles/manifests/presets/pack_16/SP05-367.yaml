@@ -12,20 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Precisión tímbrica de conjunto, ansiedad de certamen y ternura aspiracional.
-  form_and_line: Gestualidad respiratoria detallada, postura disciplinada y microacting de sincronía conjunta.
-  color_palette: Dorados de resonancia pulida, azules sobrios y ámbar de interior sereno.
-  lighting_setup: Luz de tarde con foco cálido sobre superficies reflectivas y sombras suaves.
-  material_texture: Brillo metálico espejo, mecanismos pequeños usados, papel mate y tejido formal.
-  render_quality: Frame musical premium con lectura de sección, afinación emocional y jerarquía de planos rítmicos.
-  spatial_distortion: Profundidad de ensamble por capas rítmicas y compresión leve hacia foco de sección.
-  atmosphere: Tierna, aspiracional, pulida y competitivamente musical.
-  key_features: Reflejos cálidos, detalle respiratorio, proximidad de ensamble y escala íntima.
+  aesthetic: >-
+    Brass Section Tender Precision Style within 6. Sports, Competition & Performance: a reusable Anime Classics &
+    Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the
+    result transferable across subjects while preserving Brass Section Tender Precision Style's specific style identity.
+  form_and_line: >-
+    Define Brass Section Tender Precision Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Brass Section Tender Precision Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Brass Section Tender Precision Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Brass Section Tender Precision Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Brass Section Tender Precision Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Brass Section Tender Precision Style: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Brass Section Tender Precision Style: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Brass Section Tender Precision Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de tender-ensemble-precision donde
-    reflejo metálico, disciplina de ensamble y sensibilidad aspiracional
-    formen un sistema visual estable y transferible sin imponer banda escolar,
-    instrumentos, aula, atriles ni ensayo literal.
+    Create a style-card that translates Brass Section Tender Precision Style into a portable visual system for 6.
+    Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene,
+    character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-367.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

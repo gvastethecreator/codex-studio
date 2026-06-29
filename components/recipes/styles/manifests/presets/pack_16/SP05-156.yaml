@@ -12,20 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Horror estival de bucle cerrado, con fachada moe quebrada por paranoia íntima y colapso de confianza.
-  form_and_line: Trazado cute limpio con ruptura facial extrema en crisis, alternando inocencia visual y violencia psicológica.
-  color_palette: Verdes estivales, rojos de alarma, amarillos de tarde densa y sombras violetas de fiebre.
-  lighting_setup: Luz solar opresiva de verano con transiciones abruptas a contraste ansioso en momentos de breakdown.
-  material_texture: Madera cálida, tierra húmeda, telas festivas abstractas y limpieza digital que potencia el quiebre tonal.
-  render_quality: Acabado premium horror-2000s con alto contraste cute-to-terror y claridad de escalada paranoica.
-  spatial_distortion: Espacio cerrado con repetición de recorridos, encuadre de bucle y presión del entorno sobre figuras.
-  atmosphere: Pastoril, paranoica, febril, aterradora.
-  key_features: Pulso sonoro visual, expresiones de quiebre, repetición ritual y contraste cute-to-terror.
+  aesthetic: >-
+    Summer Loop Paranoia Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Summer Loop Paranoia Style's specific style identity.
+  form_and_line: >-
+    Define Summer Loop Paranoia Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Summer Loop Paranoia Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Summer Loop Paranoia Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Summer Loop Paranoia Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Summer Loop Paranoia Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Summer Loop Paranoia Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Summer Loop Paranoia Style: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Summer Loop Paranoia Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática reusable de summer-loop-paranoia para cualquier
-    sujeto, combinando estética tierna, calor opresivo, repetición ritual y
-    terror de sospecha íntima sin imponer aldeas, santuarios, máscaras,
-    cigarras, casas ni festivales.
+    Create a style-card that translates Summer Loop Paranoia Style into a portable visual system for 2. 2000s Classics.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-156.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

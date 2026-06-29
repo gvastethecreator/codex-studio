@@ -12,20 +12,38 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Monumentalidad criomórfica glacial, con elegancia invernal soberana y pureza cristalina.
-  form_and_line: Arbotantes facetados, ritmos glaciales verticales, columnatas congeladas y jerarquías heladas de perfil limpio.
-  color_palette: Glacier white, polar cyan, pale sapphire blue, aurora mint, deep teal shadow, and prismatic diamond highlights
-  lighting_setup: Transmisión subsuperficial en hielo, wash auroral, acentos lunares de borde y rebote nítido sobre nieve compacta.
-  material_texture: Planos de hielo pulido, grano cristalino escarchado, acumulación de cencellada y losas glaciales translúcidas.
-  render_quality: Fantasía invernal de alta fidelidad con refracción precisa y claridad monumental de gran escala.
-  spatial_distortion: Vertical crystalline rise and frozen layering without a mandatory palace or cathedral silhouette
-  atmosphere: Soberana, austera y silenciosa, con temperatura emocional subcero.
-  key_features: Bóvedas cristalinas, cadencia helada, nodos congelados y tramos de hielo esculpido.
+  aesthetic: >-
+    Cryomorphic Palace Geometry within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Cryomorphic Palace Geometry's specific style identity.
+  form_and_line: >-
+    Define Cryomorphic Palace Geometry through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Cryomorphic Palace Geometry-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Cryomorphic Palace Geometry recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Cryomorphic Palace Geometry: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Cryomorphic Palace Geometry with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Cryomorphic Palace Geometry: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Cryomorphic Palace Geometry: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Cryomorphic Palace Geometry's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Transforma cualquier composición con monumentalidad criomórfica: facetas de hielo, transmisión subsuperficial fría,
-    ritmos congelados y claridad regia. La identidad debe venir de optica glacial y jerarquia monumental, no de un
-    palacio de hielo, catedral invernal o salon real literal. Conserva faceta, escala, refraccion fria y atmosfera
-    soberana sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Cryomorphic Palace Geometry into a portable visual system for 5. Fantasy And
+    Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - dominant warm palette
   - cozy fireplace mood

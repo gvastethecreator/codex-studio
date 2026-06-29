@@ -12,16 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Melodrama celeste hiper-luminoso con anhelo íntimo, memoria fragmentada y monumentalidad atmosférica.
-  form_and_line: Línea pulida de feature moderno, acting íntimo y composición de horizonte como eje emocional.
-  color_palette: Azules profundos de crepúsculo, magentas de cielo tardío, naranjas de atardecer y cian cristalino.
-  lighting_setup: Flare óptico controlado, contraluz de hora mágica y gradientes de cielo de alta saturación sentimental.
-  material_texture: Superficies limpias, aire húmedo translúcido y microdetalle ambiental de realismo pictórico.
-  render_quality: Acabado cinematográfico brillante con foco en luz narrativa y emoción suspendida en paisaje.
-  spatial_distortion: Escala dual entre proximidad y lejanía, con cortes espaciales que refuerzan distancia afectiva.
-  atmosphere: Romántica, luminosa, nostálgica, doliente.
-  key_features: Cielo protagonista, motivo de hilo/memoria y contraste entre cotidianidad íntima y evento cósmico.
-  creative_brief: Define una gramática reusable de romance cósmico-lumínico para cualquier sujeto, priorizando cielo expresivo, anhelo temporal y delicadeza emocional sin imponer ciudad, pueblo, adolescentes ni cometas literales.
+  aesthetic: >-
+    Skyglow Longing Drama Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Skyglow Longing Drama Style's specific style identity.
+  form_and_line: >-
+    Define Skyglow Longing Drama Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Skyglow Longing Drama Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Skyglow Longing Drama Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Skyglow Longing Drama Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Skyglow Longing Drama Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Skyglow Longing Drama Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Skyglow Longing Drama Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Skyglow Longing Drama Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Skyglow Longing Drama Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-074.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -12,19 +12,38 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Wandering mage chronicle style, with patient world texture, learned magic, natural wonder, and mature travel curiosity.
-  form_and_line: Soft fantasy linework, practical ornament, maplike flow lines, layered detail zones, and calm exploratory rhythm.
-  color_palette: Weathered sky blue, warm ochre, moss green, parchment cream, mineral violet, and soft mana glow.
-  lighting_setup: Long-horizon daylight, warm ambient bounce, gentle spell glows, and atmospheric depth that feels lived-in.
-  material_texture: Parchment grain, woven cloth, weathered leather, mineral dust, soft magic particles, and hand-painted terrain color.
-  render_quality: Expansive but intimate fantasy anime polish with rich cultural texture and curiosity-first clarity.
-  spatial_distortion: Maplike expansion, slow parallax depth, and open composition that rewards looking around.
-  atmosphere: Curious, expansive, wondrous, immersive.
-  key_features: Learned magic, lived-in texture, journey-as-growth, soft horizon depth, world curiosity.
+  aesthetic: >-
+    Mushoku Tensei Wandering Mage Chronicle within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Mushoku Tensei Wandering Mage Chronicle's specific style identity.
+  form_and_line: >-
+    Define Mushoku Tensei Wandering Mage Chronicle through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Mushoku Tensei Wandering Mage Chronicle-specific palette with clear dominant, secondary, and accent roles.
+    Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Mushoku Tensei Wandering Mage Chronicle recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Mushoku Tensei Wandering Mage Chronicle: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Mushoku Tensei Wandering Mage Chronicle with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Mushoku Tensei Wandering Mage Chronicle: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Mushoku Tensei Wandering Mage Chronicle: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Mushoku Tensei Wandering Mage Chronicle's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Render any subject as part of a patient magical chronicle: magic should feel
-    studied and geographic, surfaces should look traveled, and wonder should
-    come from accumulated detail rather than a canonical itinerary or event.
+    Create a style-card that translates Mushoku Tensei Wandering Mage Chronicle into a portable visual system for 8.
+    Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-093.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

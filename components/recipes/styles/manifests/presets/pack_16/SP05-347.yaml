@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Deporte shonen de resistencia ascendente, esfuerzo mental, presión grupal y quiebre de ritmo.
-  form_and_line: Curvas de inclinación pronunciada, musculatura de esfuerzo sostenido y postura de alta cadencia.
-  color_palette: Bloques saturados de esfuerzo sobre oscuros rugosos, verdes inclinados y cielos fríos de altura.
-  lighting_setup: Luz abierta de ascenso con contraluces de pendiente y flare suave de altitud.
-  material_texture: Superficie rugosa, fibra técnica sugerida, tejido deportivo y polvo fino de fricción.
-  render_quality: Frame de resistencia premium con legibilidad de ascenso emocional, succión grupal y ruptura de ritmo.
-  spatial_distortion: Perspectiva comprimida de pendiente y elongación de curva para dramatizar ascenso.
-  atmosphere: Exhausta, obsesiva y triunfal por resistencia.
-  key_features: Diagonales ascendentes, spacing de grupo, gestualidad de esfuerzo, velocidad acumulada y respiración extrema.
+  aesthetic: >-
+    Uphill Endurance Breakaway Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Uphill Endurance Breakaway Style's specific style identity.
+  form_and_line: >-
+    Define Uphill Endurance Breakaway Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Uphill Endurance Breakaway Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Uphill Endurance Breakaway Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Uphill Endurance Breakaway Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Uphill Endurance Breakaway Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Uphill Endurance Breakaway Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Uphill Endurance Breakaway Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Uphill Endurance Breakaway Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica una gramática reusable de breakaway ascendente a cualquier prompt o imagen de entrada:
-    resistencia, pendiente emocional y presión grupal sin imponer bicicletas, pelotón, rutas ni montaña literal.
+    Create a style-card that translates Uphill Endurance Breakaway Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-347.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

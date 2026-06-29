@@ -12,20 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Transformación mágica coral con glamour lunar, heroísmo pastel y simbolismo ornamental de esperanza colectiva.
-  form_and_line: Línea 90s fina y elegante, silueta coreográfica coral y transición ornamental ritual.
-  color_palette: Rosas perlados, lilas lunares, celestes suaves y dorados delicados de emblema mágico.
-  lighting_setup: Halo etéreo de transformación, brillo satinado y contraste limpio de combate luminoso.
-  material_texture: Satén mágico abstracto, cristal ornamental, partículas de glitter y grano cel de fantasía optimista.
-  render_quality: Acabado dorado noventero con legibilidad perfecta de metamorfosis, unión y victoria emotiva.
-  spatial_distortion: Espacio ceremonial abierto para presentación, vuelo gráfico y cierre coral en formación.
-  atmosphere: Romántica, empoderadora, grácil, radiante.
-  key_features: Motivo creciente, cintas en espiral, composición coral e iconografía mística de emblema.
+  aesthetic: >-
+    Sparkling Magical Chorus Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Sparkling Magical Chorus Style's specific style identity.
+  form_and_line: >-
+    Define Sparkling Magical Chorus Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Sparkling Magical Chorus Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Sparkling Magical Chorus Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Sparkling Magical Chorus Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Sparkling Magical Chorus Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Sparkling Magical Chorus Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Sparkling Magical Chorus Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Sparkling Magical Chorus Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de sparkling-magical-chorus para cualquier
-    sujeto, equilibrando elegancia ornamental, cohesión visual y luz
-    esperanzadora sin imponer equipos, trajes, escuadrones, accesorios,
-    transformación literal ni combate luminoso.
+    Create a style-card that translates Sparkling Magical Chorus Style into a portable visual system for 3. 90s Golden
+    Era. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-012.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -13,22 +13,37 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Aventura industrial-humanista con coralidad cálida, ingeniería práctica y emocionalidad familiar
-    entre humor y duelo.
-  form_and_line: Contorno limpio y seguro, balance entre rostro y máquina, y linework expresivo funcional.
-  color_palette: Steel blue, workwear brown, ember orange, cream, engine red, soot grey
-  lighting_setup: Prácticos de taller, glow cálido de atardecer y contraste térmico industrial legible.
-  material_texture: Grasa mecánica, telas de trabajo, madera usada, metal empolvado y cuero marcado por uso.
-  render_quality: Acción de conjunto robusta con claridad mecánica y narrativa afectiva en simultáneo.
+    Hiromu Arakawa - Mechanical Warmth Ensemble within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Hiromu Arakawa - Mechanical Warmth Ensemble's specific style identity.
+  form_and_line: >-
+    Define Hiromu Arakawa - Mechanical Warmth Ensemble through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Hiromu Arakawa - Mechanical Warmth Ensemble-specific palette with clear dominant, secondary, and accent roles.
+    Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Hiromu Arakawa - Mechanical Warmth Ensemble recognizable: purposeful key, rim, bounce,
+    shadow, and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Hiromu Arakawa - Mechanical Warmth Ensemble: surface response, grain,
+    patina, polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Hiromu Arakawa - Mechanical Warmth Ensemble with high production clarity, strong silhouette reads, clean
+    detail priority, and no accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Strong readable anatomy, ensemble-balanced composition, practical depth, and robust physical
-    posing
-  atmosphere: Cálida y fuerte, con pragmatismo emocional de equipo.
-  key_features: Detalle mecánico legible, química coral, gestos family-coded y oscilación tonal humor-duelo.
+    Use spatial behavior that fits Hiromu Arakawa - Mechanical Warmth Ensemble: perspective, compression, exaggeration,
+    or depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Hiromu Arakawa - Mechanical Warmth Ensemble: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Hiromu Arakawa - Mechanical Warmth Ensemble's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Use Hiromu Arakawa as style anchor for mechanical-warmth ensemble grammar. Any prompt should
-    combine legible craft, practical engineering, tonal humor/grief, and humanist warmth. Workshops,
-    groups, families, prosthetics, vehicles, and action scenes are optional.
+    Create a style-card that translates Hiromu Arakawa - Mechanical Warmth Ensemble into a portable visual system for
+    12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - sterile machine render
   - cold villainous armor
@@ -41,8 +56,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-341.webp
 attributes:
   negativePrompt: >-
-    sterile machine render, cold villainous armor, glossy sci-fi UI, isolated product shot, flat
-    generic workshop, weak mechanical detail, cynical grimdark tone
+    sterile machine render, cold villainous armor, glossy sci-fi UI, isolated product shot, flat generic workshop, weak
+    mechanical detail, cynical grimdark tone
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

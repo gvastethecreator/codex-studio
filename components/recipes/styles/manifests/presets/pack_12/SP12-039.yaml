@@ -12,19 +12,35 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Gramática rhythm-battle gótica con timing estricto, carriles musicales, spotlight pulsado y coreografía espectral.
-  subject_treatment: Convierte el input en performer fantasmal, nota, carril, gesto beat-synced o amenaza sincronizada.
-  color_and_tone: Púrpura real, dorado gastado, cian espectral y sombras burdeos para contraste temporal dramático.
-  lighting_and_shadow: Conos de spotlight programados, bloom pulsado y sombras sincronizadas al tempo.
-  texture_and_material: Madera lacada desgastada, terciopelo comprimido, latón oxidado y niebla particulada.
-  camera_and_composition: Framing de ritmo con hotspots de tempo y lanes visibles; teatro/proscenio son anclas opcionales.
-  atmosphere_and_mood: Teatral, urgente y ceremonialmente competitiva.
-  rendering_and_quality: 'Rhythm-battle gameplay frame: timing cues, combo pressure, stage phase, spectral beats readable.'
+  aesthetic: >-
+    Phantom Theater Rhythm Battle within 5. Speed, Sport & Competitive Arenas: a reusable Video Game Originals Vault
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Phantom Theater Rhythm Battle's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Phantom Theater Rhythm Battle's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Phantom Theater Rhythm Battle: clear tonal hierarchy, intentional contrast,
+    and category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Phantom Theater Rhythm Battle: legible depth, purposeful highlights, readable focal
+    zones, and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Phantom Theater Rhythm Battle's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Phantom Theater Rhythm Battle's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Phantom Theater Rhythm Battle's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 5. Speed, Sport & Competitive Arenas style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
   creative_brief: >-
-    Aplica Phantom Theater Rhythm Battle como gramatica original de videojuego sobre cualquier input: conserva su
-    sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
-    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece
-    fijo.
+    Create a style-card that translates Phantom Theater Rhythm Battle into a portable visual system for 5. Speed, Sport
+    & Competitive Arenas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - watermark
   - text

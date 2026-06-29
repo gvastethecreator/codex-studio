@@ -13,16 +13,38 @@ tags:
   - mythic
   - japanese-myth
 visualDna:
-  aesthetic: Serpent-kami oath path with protective shrine cues, vertical peril, and sacred caution.
-  form_and_line: Zigzag cliff stair cues, cliff torii, and coiling carved balustrades.
-  color_palette: Slate green, fog gray, and cinnabar accents.
-  lighting_setup: Side-lit fog banks and shrine candle nodes.
-  material_texture: Eroded rock, lacquered wood rails, and damp rope bindings.
-  render_quality: Atmospheric concept art with perilous path legibility.
-  spatial_distortion: Vertical zigzag composition over abyss-like depth.
-  atmosphere: Awe, vertigo, and sacred caution.
-  key_features: Serpent carvings, oath plaques, cliffside spirit altar cues.
-  creative_brief: Reinterpret the input through serpent-kami oath path, renewing a pact with river-serpent deity without requiring a mountain trail.
+  aesthetic: >-
+    Serpent Kami Oath Path within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Serpent Kami Oath Path's specific style identity.
+  form_and_line: >-
+    Define Serpent Kami Oath Path through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Serpent Kami Oath Path-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Serpent Kami Oath Path recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Serpent Kami Oath Path: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Serpent Kami Oath Path with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Serpent Kami Oath Path: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Serpent Kami Oath Path: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Serpent Kami Oath Path's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Serpent Kami Oath Path into a portable visual system for 7. Mythic Japanese
+    Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - photoreal
   - cheerful-cartoon

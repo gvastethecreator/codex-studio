@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Ritual investigation expressed through wax seals, ceremonial stamp grids, and procedural suspicion.
-  form_and_line: Seal-array geometry, compartment planes, and sharp docket-edge rhythms.
-  color_palette: Deep red wax, midnight black, and parchment beige.
-  lighting_setup: Tight inspection lamps with low peripheral shadow.
-  material_texture: Melted wax, heavy card, brass stamp heads, linen, and dark lacquer.
-  render_quality: Clean ritual-noir rendering with procedural suspicion mood.
-  spatial_distortion: Flattened verdict-plane perspective with stacked seals as visual pressure.
-  atmosphere: Suspicion, procedure, and disciplined scrutiny.
-  key_features: Wax seals, verdict stamps, sealed packet shapes.
-  creative_brief: Rework the input through wax-seal verdict logic, where stamps, seals, and docket pressure carry judgment without requiring an investigation room, reading desk, or evidence archive.
+  aesthetic: >-
+    Wax Seal Verdict Grid within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Wax Seal Verdict Grid's specific style identity.
+  form_and_line: >-
+    Define Wax Seal Verdict Grid through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Wax Seal Verdict Grid-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Wax Seal Verdict Grid recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Wax Seal Verdict Grid: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Wax Seal Verdict Grid with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Wax Seal Verdict Grid: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Wax Seal Verdict Grid: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Wax Seal Verdict Grid's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Wax Seal Verdict Grid into a portable visual system for 2. Mythic Ritual Noir.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cute

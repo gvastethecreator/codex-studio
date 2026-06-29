@@ -12,20 +12,37 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Calma zen de contencion extrema, vacio disciplinado y materialidad natural silenciosa sin dependencia de interior tradicional fijo.
-  form_and_line: Reticula modular baja, lineas horizontales contenidas, filtros transluidos y focos asimetricos de vacio intencional.
-  color_palette: Blanco papel de arroz, madera clara calida, verde tatami, carbon sumi e indigo apagado
-  lighting_setup: Difusion filtrada, pools calidos de baja intensidad y sombras de transicion lenta con control contemplativo.
-  material_texture: Fibra vegetal visible, veta de madera cruda, arcilla mate alisada a mano y translucidez de papel.
-  render_quality: Minimal refinado con equilibrio de espacio negativo y precision contemplativa portable.
-  spatial_distortion: Geometria neutra; profundidad por capas filtrantes y vacios secuenciados.
-  atmosphere: Serena, reverente, lenta y enfocada.
-  key_features: Reticula baja, filtros transluidos, focos sobrios, materiales organicos desnudos y ritmo contenido.
+  aesthetic: >-
+    Japanese Zen within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Japanese Zen's specific style identity.
+  form_and_line: >-
+    Define Japanese Zen through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable
+    beyond one literal scene.
+  color_palette: >-
+    Use a Japanese Zen-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and
+    avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Japanese Zen recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Japanese Zen: surface response, grain, patina, polish, or wear should feel
+    intentional and style-defining.
+  render_quality: >-
+    Render Japanese Zen with high production clarity, strong silhouette reads, clean detail priority, and no accidental
+    UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Japanese Zen: perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Japanese Zen: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Japanese Zen's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Define el preset como una gramatica de calma modular: reticula, filtro de luz y vacio intencional. La transferencia
-    debe sostener quietud material y precision ritual sin depender de tatami-room, templo, jardin seco o escena
-    tradicional especifica. Conserva logica material, escala contenida y ritmo espacial contemplativo sin fijar
-    tipologia, paisaje, franquicia, criatura ni escena cerrada.
+    Create a style-card that translates Japanese Zen into a portable visual system for 1. Interior Design Systems.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - clutter
   - western

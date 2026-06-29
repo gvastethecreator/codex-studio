@@ -13,16 +13,37 @@ tags:
   - mythic
   - greek-myth
 visualDna:
-  aesthetic: Heroic civic oath-duel language under divine law and martial ceremony.
-  form_and_line: Semicircle tier cues, spear colonnades, and altar-axis geometry.
-  color_palette: Marble ivory, bronze, and storm blue.
-  lighting_setup: Dramatic noon shafts and brazier accents.
-  material_texture: Worn limestone, hammered bronze, and ash-sand flooring.
-  render_quality: Monumental concept scene with crisp readability.
-  spatial_distortion: Arena-bowl perspective drawing toward a central oath point.
-  atmosphere: Martial honor, ceremony, and public tension.
-  key_features: Oath altar cues, spear standards, eagle banners.
-  creative_brief: Transform the input through bronze-spear public oath, where verdict and combat feel inseparable without requiring an amphitheater.
+  aesthetic: >-
+    Bronze Spear Public Oath within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Bronze Spear Public Oath's specific style identity.
+  form_and_line: >-
+    Define Bronze Spear Public Oath through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Bronze Spear Public Oath-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Bronze Spear Public Oath recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Bronze Spear Public Oath: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Bronze Spear Public Oath with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Bronze Spear Public Oath: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Bronze Spear Public Oath: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Bronze Spear Public Oath's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Bronze Spear Public Oath into a portable visual system for 5. Mythic Greek
+    Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - comedic

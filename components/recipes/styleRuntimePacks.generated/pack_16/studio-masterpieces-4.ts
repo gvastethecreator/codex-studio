@@ -11,24 +11,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía steampunk romántica, ingeniería encantada y ternura doméstica itinerante.',
+        "Wandering Clockwork Hearth Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Wandering Clockwork Hearth Style's specific style identity.",
       form_and_line:
-        'Línea fluida de cuento adulto, gesto elegante y diseño mecánico-mágico de alta legibilidad.',
+        'Define Wandering Clockwork Hearth Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Cobre envejecido, crema cálido, turquesa de cielo abierto y rojos de hogar encendido.',
+        'Use a Wandering Clockwork Hearth Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Contraste suave entre calor íntimo y exterior ventoso, con glow ígneo y sol pastoral.',
+        'Use lighting that makes Wandering Clockwork Hearth Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Latón remachado, yeso vivido, textiles usados y fondos pintados con pátina artesanal.',
+        'Use materials and textures that reinforce Wandering Clockwork Hearth Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado fílmico premium que combina grandiosidad móvil y proximidad emocional íntima.',
+        'Render Wandering Clockwork Hearth Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Macro-silueta móvil y micro-espacios habitados para dualidad épica-hogar.',
-      atmosphere: 'Encantada, nómada, romántica, caprichosa.',
+        'Use spatial behavior that fits Wandering Clockwork Hearth Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Wandering Clockwork Hearth Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Mecánica poética visible, núcleo ígneo carismático y tensión entre amenaza exterior y refugio interior.',
+        "Prioritize Wandering Clockwork Hearth Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de steampunk afectivo errante para cualquier sujeto, equilibrando escala fantástica, artesanía mecánica y calor de pertenencia sin imponer castillos, hogares, calderas ni praderas literales.',
+        'Create a style-card that translates Wandering Clockwork Hearth Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -39,24 +40,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Melodrama celeste hiper-luminoso con anhelo íntimo, memoria fragmentada y monumentalidad atmosférica.',
+        "Skyglow Longing Drama Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Skyglow Longing Drama Style's specific style identity.",
       form_and_line:
-        'Línea pulida de feature moderno, acting íntimo y composición de horizonte como eje emocional.',
+        'Define Skyglow Longing Drama Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules profundos de crepúsculo, magentas de cielo tardío, naranjas de atardecer y cian cristalino.',
+        'Use a Skyglow Longing Drama Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Flare óptico controlado, contraluz de hora mágica y gradientes de cielo de alta saturación sentimental.',
+        'Use lighting that makes Skyglow Longing Drama Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficies limpias, aire húmedo translúcido y microdetalle ambiental de realismo pictórico.',
+        'Use materials and textures that reinforce Skyglow Longing Drama Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado cinematográfico brillante con foco en luz narrativa y emoción suspendida en paisaje.',
+        'Render Skyglow Longing Drama Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Escala dual entre proximidad y lejanía, con cortes espaciales que refuerzan distancia afectiva.',
-      atmosphere: 'Romántica, luminosa, nostálgica, doliente.',
+        'Use spatial behavior that fits Skyglow Longing Drama Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Skyglow Longing Drama Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Cielo protagonista, motivo de hilo/memoria y contraste entre cotidianidad íntima y evento cósmico.',
+        "Prioritize Skyglow Longing Drama Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de romance cósmico-lumínico para cualquier sujeto, priorizando cielo expresivo, anhelo temporal y delicadeza emocional sin imponer ciudad, pueblo, adolescentes ni cometas literales.',
+        'Create a style-card that translates Skyglow Longing Drama Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -67,24 +69,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Romance meteorológico con lluvia persistente, espiritualidad íntima y decisión afectiva contra lo inevitable.',
+        "Rainlight Threshold Romance Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Rainlight Threshold Romance Style's specific style identity.",
       form_and_line:
-        'Línea elegante de drama contemporáneo, acting de vulnerabilidad activa y composición minimal de umbral vertical.',
+        'Define Rainlight Threshold Romance Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Grises azulados de tormenta, cian húmedo, ámbar de claro solar y blancos de nube rota.',
+        'Use a Rainlight Threshold Romance Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Lluvia en contraluz con rayos selectivos, reflejo acuoso y halos de tregua lumínica.',
+        'Use lighting that makes Rainlight Threshold Romance Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cristal mojado, superficie mineral húmeda, tela empapada y neblina fina de precipitación continua.',
+        'Use materials and textures that reinforce Rainlight Threshold Romance Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de clima narrativo con gran sensibilidad de luz cambiante y gesto íntimo.',
+        'Render Rainlight Threshold Romance Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio vertical inundable, con foco en puntos altos de refugio emocional.',
-      atmosphere: 'Húmeda, tierna, tormentosa, esperanzada.',
+        'Use spatial behavior that fits Rainlight Threshold Romance Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Rainlight Threshold Romance Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Dinámica lluvia-sol, intimidad húmeda, símbolo de plegaria climática y tensión entre sacrificio y deseo.',
+        "Prioritize Rainlight Threshold Romance Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de melodrama pluvial para cualquier sujeto, equilibrando clima emocional, intimidad y destellos de redención luminosa sin imponer ciudad, azotea, asfalto ni plegarias literales.',
+        'Create a style-card that translates Rainlight Threshold Romance Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -95,23 +98,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Thriller identitario de paranoia íntima, performance pública y disociación reflejada.',
+        "Mirror Identity Collapse Thriller Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Mirror Identity Collapse Thriller Style's specific style identity.",
       form_and_line:
-        'Línea sobria y tensa, acting microexpresivo y composición de encierro psicológico.',
-      color_palette: 'Neón frío, piel desaturada, rojos de alarma y grises de vigilancia íntima.',
+        'Define Mirror Identity Collapse Thriller Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Mirror Identity Collapse Thriller Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación clínica nocturna, reflejos espejados agresivos y zonas de sombra de amenaza latente.',
+        'Use lighting that makes Mirror Identity Collapse Thriller Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cristal, pantalla CRT, maquillaje escénico y superficies cotidianas de realismo inquietante.',
+        'Use materials and textures that reinforce Mirror Identity Collapse Thriller Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado fílmico de precisión psicológica con montaje de ambigüedad controlada.',
+        'Render Mirror Identity Collapse Thriller Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Interiores comprimidos y capas de reflejo para sensación de yo fragmentado y mirada externa invasiva.',
-      atmosphere: 'Tensa, desorientadora, paranoica, gélida.',
+        'Use spatial behavior that fits Mirror Identity Collapse Thriller Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Mirror Identity Collapse Thriller Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Motivo de espejo duplicado, vigilancia implícita y tensión entre persona pública y privada.',
+        "Prioritize Mirror Identity Collapse Thriller Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de thriller de identidad fracturada para cualquier sujeto, combinando intimidad hostil, vigilancia perceptiva y colapso del autorretrato sin imponer apartamentos, idols, escenarios ni cámaras literales.',
+        'Create a style-card that translates Mirror Identity Collapse Thriller Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -122,24 +127,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Cyber-apocalipsis de precisión mecánica, violencia juvenil abstracta y catástrofe psíquica en escalada.',
+        "Otomo Light-Trail Collapse Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Otomo Light-Trail Collapse Style's specific style identity.",
       form_and_line:
-        'Línea ultra-densa de ingeniería, movimiento cinético feroz y anatomía al borde de mutación.',
+        'Define Otomo Light-Trail Collapse Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Rojos de alarma, violetas nocturnos, cian eléctrico y negros profundos de infraestructura colapsada.',
+        'Use a Otomo Light-Trail Collapse Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Neón agresivo, luces de emergencia intermitentes y contraste duro de distopía industrial.',
+        'Use lighting that makes Otomo Light-Trail Collapse Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Metal remachado, superficie caliente, concreto fracturado y grano de cel hiperdetallado.',
+        'Use materials and textures that reinforce Otomo Light-Trail Collapse Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado de largometraje técnico de altísima energía con legibilidad de caos sistémico.',
+        'Render Otomo Light-Trail Collapse Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Escala macro con capas infraestructurales y vacío institucional para sensación de implosión.',
-      atmosphere: 'Monumental, eléctrica, apocalíptica, cinética.',
+        'Use spatial behavior that fits Otomo Light-Trail Collapse Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Otomo Light-Trail Collapse Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Estela lumínica icónica, ingeniería obsesiva y tensión entre tecnología cívica y ruptura biológica.',
+        "Prioritize Otomo Light-Trail Collapse Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de colapso cyber-mecánico extremo para cualquier sujeto, priorizando densidad, aceleración social y horror de transformación. Puede convertir el input en masa mutante, vehículo-luz o infraestructura viva si aporta estilo, sin fijar megaciudad, autopista ni estadio.',
+        'Create a style-card that translates Otomo Light-Trail Collapse Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -150,24 +156,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Velocidad cósmica hipercinética dibujada a pulso, con exceso cromático y culto absoluto al impulso.',
+        "Hyperkinetic Cosmic Velocity Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Hyperkinetic Cosmic Velocity Style's specific style identity.",
       form_and_line:
-        'Trazo brutal de inercia extrema, líneas de fuga violentas y siluetas aerodinámicas de alto contraste.',
+        'Define Hyperkinetic Cosmic Velocity Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Primarios incendiarios, magentas eléctricos, negros densos y acentos neón de nitro en combustión.',
+        'Use a Hyperkinetic Cosmic Velocity Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Flashes de propulsión, contraluces duros y estallidos lumínicos que enfatizan aceleración sin reposo.',
+        'Use lighting that makes Hyperkinetic Cosmic Velocity Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie vibrante, fricción abrasada, humo dibujado y grano entintado de energía analógica.',
+        'Use materials and textures that reinforce Hyperkinetic Cosmic Velocity Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado de espectáculo maximalista con claridad de velocidad y sobrecarga sensorial.',
+        'Render Hyperkinetic Cosmic Velocity Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva túnel y curvatura extrema del espacio para sensación de riesgo constante.',
-      atmosphere: 'Adrenalínica, eufórica, vertiginosa, explosiva.',
+        'Use spatial behavior that fits Hyperkinetic Cosmic Velocity Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Hyperkinetic Cosmic Velocity Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Motion-lines dominantes, perfiles excéntricos y dramatización gráfica de boost, fricción y derrape abstracto.',
+        "Prioritize Hyperkinetic Cosmic Velocity Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de hipervelocidad cósmica para cualquier sujeto, priorizando energía dibujada, riesgo visual y clímax imposible. Si el input lo permite, puede volverse vehículo, piloto abstracto o bólido de trazo; si no, recibe líneas de boost, fricción y túnel cinético sin fijar carrera ni pista.',
+        'Create a style-card that translates Hyperkinetic Cosmic Velocity Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -178,24 +185,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Lirismo oceánico-cósmico de contemplación mística, con biología marina y trascendencia sensorial.',
+        "Children of the Sea Cosmic Ocean Lyrical within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Children of the Sea Cosmic Ocean Lyrical's specific style identity.",
       form_and_line:
-        'Línea delicada y fluida, formas etéreas y movimiento acuático continuo de baja fricción.',
+        'Define Children of the Sea Cosmic Ocean Lyrical through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Turquesas abisales, azules ultraprofundos, plateados lunares y destellos bioluminiscentes.',
+        'Use a Children of the Sea Cosmic Ocean Lyrical-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz submarina difusa, caústicas suaves y halos celestes que funden agua y firmamento.',
+        'Use lighting that makes Children of the Sea Cosmic Ocean Lyrical recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Película de agua translúcida, superficies húmedas luminosas, partículas suspendidas y fondos de profundidad orgánica.',
+        'Use materials and textures that reinforce Children of the Sea Cosmic Ocean Lyrical: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado cinematográfico de alta pureza visual con foco en fluidez y silencio emocional.',
+        'Render Children of the Sea Cosmic Ocean Lyrical with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Escalas líquidas entre macrocosmos marino y proximidad íntima para experiencia de inmersión total.',
-      atmosphere: 'Mística, acuática, etérea, cósmica.',
+        'Use spatial behavior that fits Children of the Sea Cosmic Ocean Lyrical: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Children of the Sea Cosmic Ocean Lyrical: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Movimiento de marea coreográfico, foco contemplativo y fusión iconográfica de océano-universo.',
+        "Prioritize Children of the Sea Cosmic Ocean Lyrical's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de espiritualidad oceánica cósmica para cualquier sujeto, equilibrando fluidez material, asombro contemplativo y resonancia trascendente.',
+        'Create a style-card that translates Children of the Sea Cosmic Ocean Lyrical into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -206,24 +214,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Cine-memoria romántico de alto prestigio, construido con capas temporales, anhelo visual y montaje emocional.',
+        "Temporal Memory Cinema Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Temporal Memory Cinema Style's specific style identity.",
       form_and_line:
-        'Contorno elegante con variación fina de grosor, siluetas actorales limpias y raccord gestual entre estados del mismo sujeto.',
+        'Define Temporal Memory Cinema Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Neutros de película envejecida, blancos de nieve luminosa, carmín de vestuario clásico y azules nocturnos de recuerdo persistente.',
+        'Use a Temporal Memory Cinema Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz de estudio suavizada con rebote frío exterior, halos leves sobre partículas de nieve y separación delicada de primer plano y fondo.',
+        'Use lighting that makes Temporal Memory Cinema Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Tejidos de época con caída densa, celuloide sugerido por grano fino, superficies de set pintado y humedad invernal atmosférica.',
+        'Use materials and textures that reinforce Temporal Memory Cinema Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado fílmico premium con énfasis en continuidad de montaje, foco emocional estable y lectura inmediata de silueta protagonista.',
+        'Render Temporal Memory Cinema Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio semi-naturalista con disolvencias visuales entre planos temporales para producir sensación de recuerdo en movimiento.',
-      atmosphere: 'Nostálgica, luminosa, melancólica, devota del recuerdo.',
+        'Use spatial behavior that fits Temporal Memory Cinema Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Temporal Memory Cinema Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Montaje temporal, capas de recuerdo, cambios sutiles de textura visual, anhelo sostenido y composición de memoria superpuesta.',
+        "Prioritize Temporal Memory Cinema Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica una gramática reusable de cine-memoria a cualquier prompt o imagen de entrada: múltiples tiempos emocionales en una sola imagen, transiciones suaves y nostalgia activa sin imponer épocas, nieve ni vestuario narrativo.',
+        'Create a style-card that translates Temporal Memory Cinema Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -233,24 +242,26 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
-      aesthetic: 'Humanismo cálido con comedia amarga, textura social y ternura resistente.',
+      aesthetic:
+        "Social Humanist Warmth Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Social Humanist Warmth Style's specific style identity.",
       form_and_line:
-        'Línea expresiva de ensemble, gestualidad corporal imperfecta pero cálida y staging coral adaptable a cualquier motivo.',
+        'Define Social Humanist Warmth Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Neones festivos, ámbares de refugio precario, azules fríos de noche invernal y rojos puntuales de esperanza doméstica.',
+        'Use a Social Humanist Warmth Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Contraste entre iluminación pública dura y focos cálidos de proximidad, con reflejos húmedos que amplifican intimidad.',
+        'Use lighting that makes Social Humanist Warmth Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie mojada, cartón gastado, telas superpuestas de invierno y señalética con desgaste cotidiano.',
+        'Use materials and textures that reinforce Social Humanist Warmth Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado cinematográfico con prioridad en química de grupo, legibilidad emocional y detalle ambiental vivido.',
+        'Render Social Humanist Warmth Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva comprimida con capas de objetos y presencias que envuelven el foco relacional.',
-      atmosphere: 'Caótica, compasiva, festiva, redentora.',
+        'Use spatial behavior that fits Social Humanist Warmth Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Social Humanist Warmth Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Composición coral, microgestos de cuidado, humor corporal, textura social sugerida y contraste entre dureza visual y compasión.',
+        "Prioritize Social Humanist Warmth Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define un estilo reusable de gracia humanista para cualquier prompt o imagen de entrada: calor emocional, imperfección expresiva y vínculo social sin imponer callejones, navidad, refugios ni grupos protagonistas.',
+        'Create a style-card that translates Social Humanist Warmth Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -261,24 +272,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Aventura celeste clásica, con maravilla retro-mecánica, optimismo de descubrimiento y escala vertical abierta.',
+        "Airborne Wonder Adventure Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Airborne Wonder Adventure Style's specific style identity.",
       form_and_line:
-        'Contornos claros, ingeniería retro sugerida, curvas orgánicas y diagonales de elevación que vuelven expansivo cualquier sujeto.',
+        'Define Airborne Wonder Adventure Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Cielos cerúleos amplios, dorados envejecidos de metal, verdes de ruina suspendida y blancos de nube brillante.',
+        'Use a Airborne Wonder Adventure Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación de gran altitud con contraluces solares, volumen de nubes y destellos selectivos sobre superficies metálicas.',
+        'Use lighting that makes Airborne Wonder Adventure Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Latón pulido y oxidado, piedra aérea erosionada, vegetación colgante y telas de aventura con desgaste funcional.',
+        'Use materials and textures that reinforce Airborne Wonder Adventure Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de aventura cinematográfica, lectura limpia de escala aérea y claridad de acción en planos abiertos.',
+        'Render Airborne Wonder Adventure Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva vertical expansiva con sensación de caída y ascenso continuo entre estratos de nubes.',
-      atmosphere: 'Maravillosa, valiente, libre, expedicionaria.',
+        'Use spatial behavior that fits Airborne Wonder Adventure Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Airborne Wonder Adventure Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Luz de altura, metales retro, composición vertical abierta, sensación de viaje y contraste entre inocencia y tecnología noble.',
+        "Prioritize Airborne Wonder Adventure Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de aventura celeste para cualquier prompt o imagen de entrada: asombro, escala aérea y diseño retro-mecánico. Puede elevar el input con robots nobles, ruina suspendida, ingeniería aérea o silueta exploradora si suma identidad, sin fijar isla flotante ni escena de expedición.',
+        'Create a style-card that translates Airborne Wonder Adventure Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -289,24 +301,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Epopeya eco-profética donde lo contaminado se vuelve sagrado, vivo y capaz de reconciliación.',
+        "Eco-Prophetic Wind Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Eco-Prophetic Wind Style's specific style identity.",
       form_and_line:
-        'Siluetas aerodinámicas, curvas orgánicas, trazo firme y capas de viento que envuelven el motivo sin cambiar su identidad.',
+        'Define Eco-Prophetic Wind Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Ocres contaminados, turquesas velados, dorados de polvo esporal y azules de cielo quebrado por neblina tóxica.',
+        'Use a Eco-Prophetic Wind Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz ventosa de alto contraste con rayos filtrados por esporas, generando profundidad y pulso espiritual ambiental.',
+        'Use lighting that makes Eco-Prophetic Wind Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficies bio-minerales, membranas orgánicas iridiscentes, telas de vuelo erosionadas y terreno sedimentado.',
+        'Use materials and textures that reinforce Eco-Prophetic Wind Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Calidad fílmica premium con prioridad en escala ecológica, legibilidad aérea y dramatismo ambiental sostenido.',
+        'Render Eco-Prophetic Wind Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Horizonte amplio con compresión atmosférica y flujos diagonales que guían la mirada como corrientes de viento.',
-      atmosphere: 'Profética, compasiva, eólica, reverente.',
+        'Use spatial behavior that fits Eco-Prophetic Wind Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Eco-Prophetic Wind Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Viento visible, esporas luminosas, biología abstracta, escala ecológica y empatía visual frente a materia amenazante.',
+        "Prioritize Eco-Prophetic Wind Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define un estilo reusable de mito ecológico para cualquier prompt o imagen de entrada: viento, partículas vivas y reconciliación planetaria sin imponer junglas tóxicas, planeadores, insectos gigantes ni profecías narrativas.',
+        'Create a style-card that translates Eco-Prophetic Wind Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -317,24 +330,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Realismo afectivo estacional, con intimidad cotidiana, cuidado persistente y transformación suave.',
+        "Seasonal Intimacy Realism Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Seasonal Intimacy Realism Style's specific style identity.",
       form_and_line:
-        'Línea suave, anatomía naturalista cálida y gestualidad de cuidado aplicada al sujeto original sin forzar parentescos.',
+        'Define Seasonal Intimacy Realism Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Verdes de montaña húmeda, marrones de madera habitada, grises lluviosos y dorados suaves de hogar encendido.',
+        'Use a Seasonal Intimacy Realism Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz meteorológica cambiante por estación, interiores cálidos de refugio y exteriores nublados con contraste bajo.',
+        'Use lighting that makes Seasonal Intimacy Realism Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Tierra labrada, madera reparada, ropa cotidiana mojada por lluvia y vegetación de ciclo anual visible.',
+        'Use materials and textures that reinforce Seasonal Intimacy Realism Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de drama humano, con foco en microemociones, ritmo doméstico y continuidad temporal de crecimiento.',
+        'Render Seasonal Intimacy Realism Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacialidad naturalista con composición de proximidad familiar y apertura de paisaje para respiración emocional.',
-      atmosphere: 'Tierna, laboriosa, nostálgica, protectora.',
+        'Use spatial behavior that fits Seasonal Intimacy Realism Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Seasonal Intimacy Realism Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Luz climática, textura doméstica abstracta, transformación no espectacular, calma estacional y lenguaje corporal protector.',
+        "Prioritize Seasonal Intimacy Realism Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Crea una gramática reusable de intimidad estacional para cualquier prompt o imagen de entrada: cuidado, clima y transformación silenciosa sin imponer maternidad, casas rurales, familias ni escenas domésticas.',
+        'Create a style-card that translates Seasonal Intimacy Realism Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -345,24 +359,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Juventud luminosa con elasticidad temporal ligera, energía de error cotidiano y melancolía de decisión irreversible.',
+        "Elastic Summer Time Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Elastic Summer Time Style's specific style identity.",
       form_and_line:
-        'Trazos ágiles, expresividad espontánea, diagonales de impulso y siluetas limpias de alta legibilidad.',
+        'Define Elastic Summer Time Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules brillantes, blancos cálidos, verdes suaves de cotidianidad abierta y acentos rosados de impulso emocional.',
+        'Use a Elastic Summer Time Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol de tarde alto con rebotes claros, sombras suaves y brillo atmosférico de verano en expansión.',
+        'Use lighting that makes Elastic Summer Time Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficies cálidas al sol, metal liviano, telas ligeras y aire húmedo estival sin anclar locación.',
+        'Use materials and textures that reinforce Elastic Summer Time Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado cinematográfico fresco con prioridad en ritmo corporal, timing visual y lectura clara de loop temporal.',
+        'Render Elastic Summer Time Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva naturalista con elongación dinámica en saltos y microdeformación de trayectoria para sugerir rewind temporal.',
-      atmosphere: 'Lúdica, nostálgica, aérea, impulsiva.',
+        'Use spatial behavior that fits Elastic Summer Time Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Elastic Summer Time Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Luz de tarde, impulso corporal, repetición temporal sutil, aire de verano abstracto y tensión entre juego y arrepentimiento.',
+        "Prioritize Elastic Summer Time Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Crea una gramática reusable de tiempo elástico veraniego para cualquier prompt o imagen de entrada: ligereza, impulso y arrepentimiento suave sin imponer azoteas, escuelas, saltos literales ni grupos juveniles.',
+        'Create a style-card that translates Elastic Summer Time Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -373,24 +388,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Tragedia político-militar abstracta, con peso doctrinal, humanidad reprimida y amenaza institucional.',
+        "Paramilitary Melancholy Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Paramilitary Melancholy Style's specific style identity.",
       form_and_line:
-        'Siluetas macizas, contornos rígidos, encuadres cerrados y geometría opresiva que puede aplicarse a cualquier sujeto.',
+        'Define Paramilitary Melancholy Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Grises carbón industriales, rojos ópticos de amenaza, marrones de humo y desaturados fríos de crisis prolongada.',
+        'Use a Paramilitary Melancholy Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Contraluces de incendio, haces tácticos, neblina densa de crisis y highlights selectivos en visores y metal.',
+        'Use lighting that makes Paramilitary Melancholy Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Blindaje mate con abrasión, concreto ennegrecido, humo particulado y telas técnicas de uso operativo.',
+        'Use materials and textures that reinforce Paramilitary Melancholy Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado cinematográfico severo con lectura táctica impecable, detalle industrial y dramatismo psicológico contenido.',
+        'Render Paramilitary Melancholy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva comprimida por masas opresivas y humo, con profundidad fragmentada que sugiere cerco institucional.',
-      atmosphere: 'Opresiva, trágica, disciplinaria, crepuscular.',
+        'Use spatial behavior that fits Paramilitary Melancholy Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Paramilitary Melancholy Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Ópticas rojas abstractas, humo denso, masa visual pesada, cercanía emocional y conflicto entre deber y conciencia.',
+        "Prioritize Paramilitary Melancholy Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de melancolía paramilitar para cualquier prompt o imagen de entrada: control, humo y peso moral sin imponer blindajes, calles de disturbio, armas ni fuerzas específicas.',
+        'Create a style-card that translates Paramilitary Melancholy Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -401,24 +417,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Drama íntimo de reparación emocional, centrado en vulnerabilidad, escucha y dignidad relacional.',
+        "Delicate Reconciliation Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Delicate Reconciliation Style's specific style identity.",
       form_and_line:
-        'Línea delicada de microgesto, énfasis en manos, hombros y mirada baja, con contornos limpios que priorizan lectura afectiva sobre acción.',
+        'Define Delicate Reconciliation Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules calmados, beiges suaves, verdes pálidos de primavera y acentos rosados de empatía contenida.',
+        'Use a Delicate Reconciliation Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz natural de tarde nublada con difusión amable, contraste bajo y brillos discretos que favorecen intimidad conversacional.',
+        'Use lighting that makes Delicate Reconciliation Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Hormigón húmedo, telas cotidianas, metal gastado y reflejos acuosos serenos.',
+        'Use materials and textures that reinforce Delicate Reconciliation Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de realismo sensible con foco en expresión corporal mínima y continuidad emocional entre planos.',
+        'Render Delicate Reconciliation Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacialidad naturalista abierta con distancia interpersonal modulada como métrica visual de confianza y perdón.',
-      atmosphere: 'Tierno, arrepentido, respirable, humano.',
+        'Use spatial behavior that fits Delicate Reconciliation Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Delicate Reconciliation Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Microgesto, manos como énfasis opcional, luz suave, distancia afectiva y silencio visual elocuente.',
+        "Prioritize Delicate Reconciliation Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de reconciliación humana para cualquier prompt o imagen de entrada: microgesto, escucha y fragilidad sin imponer escuelas, riberas, parejas de personajes ni escenas de disculpa.',
+        'Create a style-card that translates Delicate Reconciliation Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -429,24 +446,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Teatro musical histórico-punk, con tradición remezclada, glam radical y energía de resurrección escénica.',
+        "Historical Glam Punk Performance Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Historical Glam Punk Performance Style's specific style identity.",
       form_and_line:
-        'Trazos elásticos y angulares, corporalidad performativa, siluetas exageradas y pose dramática de alta visibilidad.',
+        'Define Historical Glam Punk Performance Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Rojos ceremoniales, púrpuras eléctricos, negros performativos y dorados antiguos reactivados como acentos de linaje.',
+        'Use a Historical Glam Punk Performance Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Contraluces performativos, haces dinámicos y cambios de temperatura por clímax rítmico para enfatizar catarsis colectiva.',
+        'Use lighting that makes Historical Glam Punk Performance Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Tejidos históricos reinterpretados con brillo de show, madera pulida, tensión lineal y humo de performance.',
+        'Use materials and textures that reinforce Historical Glam Punk Performance Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de ópera-rock animada con foco en impacto gestual, lectura coral y ritmo visual musical.',
+        'Render Historical Glam Punk Performance Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio performativo expansivo con perspectiva coral y compresión frontal en momentos de explosión rítmica.',
-      atmosphere: 'Extático, rebelde, ceremonial, liberador.',
+        'Use spatial behavior that fits Historical Glam Punk Performance Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Historical Glam Punk Performance Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Ornamento histórico remezclado, luz performativa, manifiesto corporal, ritmo musical visual y exceso teatral controlado.',
+        "Prioritize Historical Glam Punk Performance Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de teatro punk histórico para cualquier prompt o imagen de entrada: performance, ornamento y energía glam sin imponer escenarios, instrumentos, audiencias ni vestuario literal.',
+        'Create a style-card that translates Historical Glam Punk Performance Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -457,24 +475,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Mitología rugosa de supervivencia compartida, con pulso feroz, espiritualidad gráfica y ternura bajo presión.',
+        "Rough Mythic Density Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Rough Mythic Density Style's specific style identity.",
       form_and_line:
-        'Línea nerviosa, contornos irregulares, verticalidad agresiva y siluetas compactas en tensión.',
+        'Define Rough Mythic Density Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Amarillos sucios de sodio, cianes de señal, rojos gastados de pigmento erosionado y sombras petroladas profundas.',
+        'Use a Rough Mythic Density Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación mixta contaminada, focos duros, brillos sucios y contraluces altos.',
+        'Use lighting that makes Rough Mythic Density Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Chapa rugosa, piel pictórica descascarada, filamentos expuestos, superficie caliente y desgaste cotidiano.',
+        'Use materials and textures that reinforce Rough Mythic Density Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Terminación premium de crudeza controlada con alta legibilidad espacial en caos multicapa.',
+        'Render Rough Mythic Density Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva vertical laberíntica con compresión estrecha y saltos de altura que refuerzan dominio emocional.',
-      atmosphere: 'Áspera, sagrada, abarrotada, feral.',
+        'Use spatial behavior that fits Rough Mythic Density Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Rough Mythic Density Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Textura densa, tótems gráficos, verticalidad agresiva, energía instintiva y mezcla de ternura con amenaza.',
+        "Prioritize Rough Mythic Density Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Crea una gramática reusable de mito rugoso para cualquier prompt o imagen de entrada: densidad, irregularidad y supervivencia compartida sin imponer callejones, azoteas, infancia ni ciudad literal.',
+        'Create a style-card that translates Rough Mythic Density Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -485,24 +504,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Cámara musical intimista de precisión emocional, enfocada en distancia afectiva, pausa y resonancia silenciosa.',
+        "Quiet Musical Distance Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Quiet Musical Distance Style's specific style identity.",
       form_and_line:
-        'Trazo fino y reservado, microgestos delicados, respiración visual y timing compositivo entre presencia y ausencia.',
+        'Define Quiet Musical Distance Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Marfiles pálidos, azules deslavados, grises silenciosos y dorados suaves de resonancia acústica.',
+        'Use a Quiet Musical Distance Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz interior filtrada de baja intensidad con sombras blandas que sostienen vulnerabilidad sin dramatismo excesivo.',
+        'Use lighting that makes Quiet Musical Distance Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Barniz cálido, superficies enceradas, telas ligeras y aire suspendido con sensación acústica contenida.',
+        'Use materials and textures that reinforce Quiet Musical Distance Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de alta sutileza, lectura de proximidad emocional y refinamiento acústico traducido a imagen.',
+        'Render Quiet Musical Distance Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad longitudinal usada como métrica de distancia vincular, con limpieza compositiva y mínima distorsión.',
-      atmosphere: 'Frágil, musical, contenida, punzante.',
+        'Use spatial behavior that fits Quiet Musical Distance Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Quiet Musical Distance Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Distancia espacial, gestualidad mínima, luz pálida, ritmo de cámara y composición de silencio compartido.',
+        "Prioritize Quiet Musical Distance Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de intimidad musical para cualquier prompt o imagen de entrada: pausa, aire y distancia emocional sin imponer instrumentos, pasillos, escuelas ni dúos de personajes.',
+        'Create a style-card that translates Quiet Musical Distance Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -513,24 +533,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Retrofuturismo art deco monumental con tensión social, asombro tecnológico clásico y melancolía industrial humanista.',
+        "Humanist Art Deco Retrofuture Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Humanist Art Deco Retrofuture Style's specific style identity.",
       form_and_line:
-        'Contorno robusto, geometría decó escalonada, curvas humanoides suaves y masa mecánica abstracta.',
+        'Define Humanist Art Deco Retrofuture Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Ámbar cinematográfico, verdes petróleo industriales, cremas envejecidos y acentos cromados de ingeniería monumental.',
+        'Use a Humanist Art Deco Retrofuture Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación vertical con bruma cálida, contraluces monumentales y brillos controlados sobre metal.',
+        'Use lighting that makes Humanist Art Deco Retrofuture Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Acero remachado, mármol art-decó, cristal antiguo y superficies mecánicas con pátina de uso civil.',
+        'Use materials and textures that reinforce Humanist Art Deco Retrofuture Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de gran espectáculo retrofuturo con lectura jerárquica impecable entre escala humana y escala sistémica.',
+        'Render Humanist Art Deco Retrofuture Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva ascendente con profundidad estratificada por capas sociales y flujos verticales.',
-      atmosphere: 'Grandiosa, nostálgica, metálica, empática.',
+        'Use spatial behavior that fits Humanist Art Deco Retrofuture Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Humanist Art Deco Retrofuture Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Geometría decó, escala industrial, ternura tecnológica, composición social en capas y contraste entre máquina y humanidad.',
+        "Prioritize Humanist Art Deco Retrofuture Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de retrofuturo humanista para cualquier prompt o imagen de entrada: geometría decó, escala y sensibilidad tecnológica. Androides, maquinaria cívica o siluetas monumentales pueden aparecer como indicios humanistas cuando fortalezcan el input, sin fijar skyline ni jerarquía narrativa.',
+        'Create a style-card that translates Humanist Art Deco Retrofuture Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -541,24 +562,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Lirismo pluvial hiperobservacional, donde intimidad contenida se expresa mediante materia húmeda y pausa contemplativa.',
+        "Hyperobserved Rain Intimacy Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Hyperobserved Rain Intimacy Style's specific style identity.",
       form_and_line:
-        'Línea pulcra y elegante, anatomía naturalista serena y encuadres de detalle que priorizan objetos-cuerpo como signos emocionales.',
+        'Define Hyperobserved Rain Intimacy Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Verdes saturados por lluvia, grises perlados, negros húmedos y acentos piel de baja saturación.',
+        'Use a Hyperobserved Rain Intimacy Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz de día lluvioso con reflexión especular en superficies mojadas y contraste delicado de refugio cubierto.',
+        'Use lighting that makes Hyperobserved Rain Intimacy Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Gotas sobre materia orgánica, madera barnizada húmeda, concreto encharcado y cuero con brillo de lluvia.',
+        'Use materials and textures that reinforce Hyperobserved Rain Intimacy Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de refinamiento atmosférico extremo, con foco en microdetalle material y silencio expresivo.',
+        'Render Hyperobserved Rain Intimacy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio naturalista íntimo con profundidad por cortinas de lluvia y capas reflectantes.',
-      atmosphere: 'Lluviosa, íntima, solitaria, exquisita.',
+        'Use spatial behavior that fits Hyperobserved Rain Intimacy Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Hyperobserved Rain Intimacy Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Textura acuosa, detalle milimétrico, objetos cotidianos tratados como emoción y quietud de alta carga afectiva.',
+        "Prioritize Hyperobserved Rain Intimacy Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de intimidad bajo lluvia para cualquier prompt o imagen de entrada: humedad, pausa y observación microscópica sin imponer jardines, pabellones, zapatos ni encuentros románticos.',
+        'Create a style-card that translates Hyperobserved Rain Intimacy Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -569,24 +591,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía liminal cálida con artesanía viva, humor espiritual y extrañeza amable de cuento iniciático.',
+        "Warm Liminal Reverie Fantasy Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Warm Liminal Reverie Fantasy Style's specific style identity.",
       form_and_line:
-        'Línea de largometraje orgánica, acting expresivo de curiosidad valiente y siluetas de criatura no amenazante.',
+        'Define Warm Liminal Reverie Fantasy Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Ocres cálidos de interior, rojos lacados, verdes musgo suaves y dorados de luz húmeda.',
+        'Use a Warm Liminal Reverie Fantasy Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Vapor volumétrico con glow ámbar, puntos de luz difusos y contraste blando de umbral encantado.',
+        'Use lighting that makes Warm Liminal Reverie Fantasy Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Madera barnizada, cerámica húmeda, papel tradicional y fondos pintados con densidad artesanal.',
+        'Use materials and textures that reinforce Warm Liminal Reverie Fantasy Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado cinematográfico premium con microgesto emocional y atmósfera envolvente continua.',
+        'Render Warm Liminal Reverie Fantasy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Estructura laberíntica acogedora con escalas variables para sensación de umbral entre mundos.',
-      atmosphere: 'Asombrada, mágica, íntima, onírica.',
+        'Use spatial behavior that fits Warm Liminal Reverie Fantasy Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Warm Liminal Reverie Fantasy Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Rituales cotidianos vivos, formas entrañables y narrativa visual de descubrimiento ético.',
+        "Prioritize Warm Liminal Reverie Fantasy Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de fantasía liminal cálida para cualquier sujeto, equilibrando misterio amable, ritual cotidiano y crecimiento emocional sin imponer bathhouses, criaturas, pasillos ni arquitectura concreta.',
+        'Create a style-card that translates Warm Liminal Reverie Fantasy Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -597,24 +620,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía digital operática de gran escala, con identidad luminosa, ornamento de datos y emoción pop monumental.',
+        "Digital Pop Opera Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Digital Pop Opera Style's specific style identity.",
       form_and_line:
-        'Siluetas elegantes, curvas ornamentales, linework limpio y coreografía visual de luz aplicada a cualquier motivo.',
+        'Define Digital Pop Opera Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Magentas y cianes luminosos, blancos perla, violetas profundos y gradientes iridiscentes de entorno virtual.',
+        'Use a Digital Pop Opera Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación sinfónica con haces volumétricos, contraluces monumentales y acentos pulsantes sincronizados al clímax vocal.',
+        'Use lighting that makes Digital Pop Opera Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficies translúcidas tipo interfaz, metal pulido digital y partículas de luz como materia performativa.',
+        'Use materials and textures that reinforce Digital Pop Opera Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de pop-opera virtual con nitidez de ícono, profundidad de espectáculo y jerarquía emocional contundente.',
+        'Render Digital Pop Opera Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacialidad expansiva no literal con escala reverencial y perspectiva ascendente que enfatiza trascendencia performativa.',
-      atmosphere: 'Grandiosa, catártica, conectiva, esperanzadora.',
+        'Use spatial behavior that fits Digital Pop Opera Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Digital Pop Opera Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Escala digital monumental, pulsos de luz, ornamento virtual, identidad radiante y teatralidad pop sin espacio fijo.',
+        "Prioritize Digital Pop Opera Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define un estilo reusable de ópera digital para cualquier prompt o imagen de entrada: luz escénica, identidad luminosa y grandeza emocional sin imponer catedrales virtuales, avatares, conciertos ni multitudes.',
+        'Create a style-card that translates Digital Pop Opera Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -625,24 +649,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Espectáculo heroico hipergráfico, con anti-naturalismo cromático, energía geométrica y teatralidad de póster vivo.',
+        "Hypergraphic Chromatic Action Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Hypergraphic Chromatic Action Style's specific style identity.",
       form_and_line:
-        'Contorno duro y dinámico, geometría angular dominante y siluetas de acción que privilegian impacto inmediato sobre detalle realista.',
+        'Define Hypergraphic Chromatic Action Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Bloques intensos en cian, magenta, naranja fuego y amarillos eléctricos con negros limpios de separación gráfica.',
+        'Use a Hypergraphic Chromatic Action Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación extrema de incendio estilizado, contraluces violentos y flashes de alto contraste para clímax continuo.',
+        'Use lighting that makes Hypergraphic Chromatic Action Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficies mecha lisas de acabado sintético, humo estilizado y fuego triangular tratado como forma gráfica.',
+        'Use materials and textures that reinforce Hypergraphic Chromatic Action Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de acción maximalista con legibilidad de coreografía de rescate y jerarquía clara de héroe-antihéroe.',
+        'Render Hypergraphic Chromatic Action Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva de gran angular heroica con deformación cinética orientada a velocidad, choque y espectáculo.',
-      atmosphere: 'Incandescente, teatral, gráfica, triunfal.',
+        'Use spatial behavior that fits Hypergraphic Chromatic Action Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Hypergraphic Chromatic Action Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Formas triangulares, color blocking extremo, energía de choque, composición de póster y teatralidad operática.',
+        "Prioritize Hypergraphic Chromatic Action Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de acción cromática hipergráfica para cualquier prompt o imagen de entrada: geometría, saturación y heroísmo abstracto. El input puede ganar mecha sintético, fuego triangular, rescate gráfico o rivalidad visual si aumenta impacto, sin fijar una escena narrativa concreta.',
+        'Create a style-card that translates Hypergraphic Chromatic Action Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -653,24 +678,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Epopeya eco-mítica ancestral, conflicto civilizatorio y espiritualidad feroz de materia viva.',
+        "Eco-Mythic Conflict Epic Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Eco-Mythic Conflict Epic Style's specific style identity.",
       form_and_line:
-        'Línea robusta y noble, anatomía heroica contenida y composición de choque entre organicidad y hierro.',
+        'Define Eco-Mythic Conflict Epic Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Verdes profundos, tierra húmeda, negros de hierro y blancos fantasmales de espíritu natural.',
+        'Use a Eco-Mythic Conflict Epic Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz filtrada con rayos dramáticos, niebla profunda y contrastes de incendio industrial.',
+        'Use lighting that makes Eco-Mythic Conflict Epic Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Corteza viva, piel rugosa, metal forjado y barro bélico sobre fondo pictórico orgánico.',
+        'Use materials and textures that reinforce Eco-Mythic Conflict Epic Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Producción cinematográfica de alta gravedad moral, con lectura clara de escala natural y tragedia humana.',
+        'Render Eco-Mythic Conflict Epic Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Grandes vacíos orgánicos y gargantas de escala para enfatizar mundo viejo vs mundo mecánico.',
-      atmosphere: 'Majestuosa, elemental, primal, sobrecogedora.',
+        'Use spatial behavior that fits Eco-Mythic Conflict Epic Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Eco-Mythic Conflict Epic Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Iconografía de guardián natural, tensión organicidad-industria y narrativa visual de pacto roto.',
+        "Prioritize Eco-Mythic Conflict Epic Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de conflicto eco-épico para cualquier sujeto, fusionando misticismo natural, violencia histórica y peso de decisión moral sin imponer bosques, bestias, armaduras ni guerra literal.',
+        'Create a style-card that translates Eco-Mythic Conflict Epic Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -681,24 +707,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Surrealismo psico-onírico de collage cinético, con transición imposible y arquitectura mental en fuga.',
+        "Cinematic Dream-Collapse Surrealism Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cinematic Dream-Collapse Surrealism Style's specific style identity.",
       form_and_line:
-        'Línea metamórfica de montaje continuo, silhouettes mutantes y raccord deliberadamente inestable.',
+        'Define Cinematic Dream-Collapse Surrealism Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Saturación carnavalesca, fucsias intensos, amarillos ácidos y negros de vacío subconsciente.',
+        'Use a Cinematic Dream-Collapse Surrealism Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Destellos abruptos, focos teatrales flotantes y variaciones lumínicas que rompen continuidad realista.',
+        'Use lighting that makes Cinematic Dream-Collapse Surrealism Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie de objeto-ícono, plástico ritual, papel simbólico y grano de sueño inestable.',
+        'Use materials and textures that reinforce Cinematic Dream-Collapse Surrealism Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado de feature experimental con ritmo de edición alucinada y claridad de motivo simbólico.',
+        'Render Cinematic Dream-Collapse Surrealism Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacios plegables con tránsito entre interior psíquico y plano externo sin corte lógico.',
-      atmosphere: 'Delirante, hipnótica, exuberante, inquietante.',
+        'Use spatial behavior that fits Cinematic Dream-Collapse Surrealism Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Cinematic Dream-Collapse Surrealism Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Secuencias de íconos, metamorfosis de plano, lógica de sueño y tensión entre terapia y colapso mental.',
+        "Prioritize Cinematic Dream-Collapse Surrealism Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de surrealismo onírico cinematográfico para cualquier sujeto, priorizando transformación continua, choque simbólico y vértigo perceptivo sin imponer desfiles, escenarios urbanos ni objetos concretos.',
+        'Create a style-card that translates Cinematic Dream-Collapse Surrealism Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -709,24 +736,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía metafísica de duelo, con naturaleza velada, umbrales abstractos y transformación interna.',
+        "Metaphysical Mourning Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Metaphysical Mourning Style's specific style identity.",
       form_and_line:
-        'Línea delicada y contemplativa, bordes suavemente inestables y siluetas tratadas como presencias ambiguas.',
+        'Define Metaphysical Mourning Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Verdes apagados de humedad emocional, grises de luto, marfiles velados y acentos cálidos mínimos de memoria íntima.',
+        'Use a Metaphysical Mourning Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz difusa de cielo cubierto con contraluces tenues en bruma, preservando ambigüedad entre vigilia y sueño.',
+        'Use lighting that makes Metaphysical Mourning Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Veladuras húmedas, fibras orgánicas sugeridas, yeso erosionado y madera envejecida como memoria material.',
+        'Use materials and textures that reinforce Metaphysical Mourning Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Terminación premium de tono introspectivo, con jerarquía suave y microdetalle atmosférico orientado a sensación de tránsito.',
+        'Render Metaphysical Mourning Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad por capas de neblina y arquitectura no euclidiana ligera que sugiere pasaje interior.',
-      atmosphere: 'Doliente, extraña, contemplativa, en búsqueda.',
+        'Use spatial behavior that fits Metaphysical Mourning Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Metaphysical Mourning Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Umbral simbólico, quietud suspendida, luz velada, escala emocional ambigua y materia orgánica sugerida.',
+        "Prioritize Metaphysical Mourning Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática transferible de duelo onírico para cualquier prompt o imagen de entrada: silencio metafísico, bordes inestables y sensación de tránsito interior sin imponer aves, torres, pantanos ni portales literales.',
+        'Create a style-card that translates Metaphysical Mourning Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -737,24 +765,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Psicodelia de reinvención radical con lógica mutante de estilos, donde la imagen cambia de piel como motor narrativo principal.',
+        "Mutating Psychedelic Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Mutating Psychedelic Style's specific style identity.",
       form_and_line:
-        'Hibridación de trazo caricatural, anatomía distorsionada y fragmentos gráficos que alternan registro cómico y existencial.',
+        'Define Mutating Psychedelic Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Saturaciones altas en magenta, cian, naranja ácido y negros de corte abrupto para choques perceptivos deliberados.',
+        'Use a Mutating Psychedelic Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación no naturalista, flashes de transición y bloques de luz plana que marcan saltos de estado mental.',
+        'Use lighting that makes Mutating Psychedelic Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Collage gráfico, pinceladas abruptas, manchas digitales y capas visuales de apariencia heterogénea intencional.',
+        'Use materials and textures that reinforce Mutating Psychedelic Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de caos controlado, con claridad de ritmo interno pese a la ruptura constante de lenguaje visual.',
+        'Render Mutating Psychedelic Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio elástico con deformaciones súbitas, cámaras imposibles y continuidad quebrada orientada a vértigo liberador.',
-      atmosphere: 'Liberadora, delirante, brillante, cinética.',
+        'Use spatial behavior that fits Mutating Psychedelic Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Mutating Psychedelic Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Estallidos mixed-media, transiciones violentas, distorsión corporal, colisión de registros y renacimiento por cambio de forma.',
+        "Prioritize Mutating Psychedelic Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de mutación psicodélica para cualquier prompt o imagen de entrada: choque de estilos, distorsión espacial y reinvención gráfica sin imponer fugas, persecuciones ni escena narrativa.',
+        'Create a style-card that translates Mutating Psychedelic Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -765,24 +794,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Comedia nocturna surreal, con deriva social, caos cálido y humor romántico sin gravedad.',
+        "Nocturnal Social Whirl Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Nocturnal Social Whirl Style's specific style identity.",
       form_and_line:
-        'Trazo ágil de comedia, siluetas expresivas, curvas de remolino y staging coral adaptable al sujeto original.',
+        'Define Nocturnal Social Whirl Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Naranjas de farol, rojos festivos, violetas nocturnos y verdes de neón suave para ritmo de ronda.',
+        'Use a Nocturnal Social Whirl Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación nocturna cálida y señalética blanda, con contrastes dinámicos que favorecen aventura improvisada.',
+        'Use lighting that makes Nocturnal Social Whirl Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Madera cálida, vidrio empañado, papel impreso y superficie húmeda con brillo de noche.',
+        'Use materials and textures that reinforce Nocturnal Social Whirl Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de odisea ligera, con legibilidad alta en multiescena y pulso narrativo continuo.',
+        'Render Nocturnal Social Whirl Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Laberinto amable con compresión íntima y expansión episódica por umbrales y desvíos narrativos.',
-      atmosphere: 'Caprichosa, nocturna, afectuosa, social.',
+        'Use spatial behavior that fits Nocturnal Social Whirl Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Nocturnal Social Whirl Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Luz nocturna cálida, remolino social, humor excéntrico, paleta festiva y deriva episódica abstracta.',
+        "Prioritize Nocturnal Social Whirl Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de remolino nocturno para cualquier prompt o imagen de entrada: comedia, calidez y azar social sin imponer ciudades, pubs, alcohol, literatura ni encuentros específicos.',
+        'Create a style-card that translates Nocturnal Social Whirl Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -793,24 +823,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Surrealismo psicoanalítico invasivo, con teatralidad cromática, metamorfosis de identidad y colapso de la vigilia.',
+        "Dream Invasion Carnival Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Dream Invasion Carnival Style's specific style identity.",
       form_and_line:
-        'Contornos pulidos con rupturas súbitas, metamorfosis en cadena y coreografía simbólica sin multitud obligatoria.',
+        'Define Dream Invasion Carnival Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Primarios saturados de carnaval, dorados performativos, negros profundos de inconsciente y pasteles inquietantes.',
+        'Use a Dream Invasion Carnival Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación de show onírico con focos teatrales, pulsos cromáticos y transiciones abruptas entre planos mentales.',
+        'Use lighting that makes Dream Invasion Carnival Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficies brillantes de objeto-pop, telas pesadas, plástico simbólico y niebla de densidad psicológica.',
+        'Use materials and textures that reinforce Dream Invasion Carnival Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de alta densidad visual con orden interno preciso para sostener legibilidad en caos simbólico.',
+        'Render Dream Invasion Carnival Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio no estable con colapso de fronteras sueño-vigilia y continuidad fluida entre planos incompatibles.',
-      atmosphere: 'Surreal, carnavalesca, invasiva, deslumbrante.',
+        'Use spatial behavior that fits Dream Invasion Carnival Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Dream Invasion Carnival Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Saturación teatral, objetos simbólicos mutantes, fragmentación identitaria, ritmo carnavalesco y ruptura de fronteras mentales.',
+        "Prioritize Dream Invasion Carnival Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de invasión onírica para cualquier prompt o imagen de entrada: carnaval mental, metamorfosis y exceso cromático sin imponer desfiles, objetos domésticos, multitudes ni escenas de sueño concretas.',
+        'Create a style-card that translates Dream Invasion Carnival Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -821,24 +852,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Alegoría gótica de silencio apocalíptico, monumentalidad vaciada y simbolismo ambiguo de contemplación extrema.',
+        "Ascetic Gothic Silence Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ascetic Gothic Silence Style's specific style identity.",
       form_and_line:
-        'Línea fina y ascética, proporciones alargadas, ritmo severo y espacios negativos tratados como materia espiritual.',
+        'Define Ascetic Gothic Silence Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azul petróleo profundo, grises de piedra mojada, marfiles apagados y negros acuosos de profundidad incierta.',
+        'Use a Ascetic Gothic Silence Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación baja y difusa con reflejos acuáticos fríos, focos puntuales de vidriera rota y sombras de gran masa.',
+        'Use lighting that makes Ascetic Gothic Silence Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Piedra erosionada, superficies inundadas espejadas, madera antigua saturada y pátina ritual de abandono.',
+        'Use materials and textures that reinforce Ascetic Gothic Silence Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de contemplación lenta, detalle textural sobrio y jerarquía simbólica por vacío compositivo.',
+        'Render Ascetic Gothic Silence Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Escala reverencial sobredimensionada con perspectiva contemplativa que reduce lo humano a signo frágil.',
-      atmosphere: 'Sacra, muda, onírica, doliente.',
+        'Use spatial behavior that fits Ascetic Gothic Silence Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ascetic Gothic Silence Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Vacío devocional, agua oscura sugerida, símbolos no resueltos, siluetas elongadas y quietud extrema.',
+        "Prioritize Ascetic Gothic Silence Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña un lenguaje reusable de misticismo ascético para cualquier prompt o imagen de entrada: silencio, vacío y símbolo ambiguo sin imponer catedrales, ruinas inundadas, huevos ni figuras litúrgicas concretas.',
+        'Create a style-card that translates Ascetic Gothic Silence Style into a portable visual system for 10. Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

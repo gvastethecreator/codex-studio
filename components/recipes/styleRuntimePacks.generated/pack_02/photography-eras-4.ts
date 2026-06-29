@@ -226,17 +226,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Photography Eras',
     negativePrompt: 'sharp focus',
     style: {
-      aesthetic: 'Lensless photo',
-      form_and_line: 'None',
-      color_palette: 'Soft, dark, muted monochrome, grey wash, charcoal',
-      lighting_setup: 'Long exposure, minutes-to-hours, time-smear, star trails',
-      material_texture: 'Soft everywhere, infinite softness, no lens character',
-      render_quality: 'Dreamy, infinite DOF, everything-in-focus, timeless blur',
-      spatial_distortion: 'Vignette, circular edge, keyhole darkening',
-      atmosphere: 'Ethereal, time, solargraph, patient observation',
-      key_features: 'Blur, no lens, circular vignette, time-smear, light-leak edge',
+      aesthetic:
+        "Pinhole Camera within 4. Photography Eras: a reusable Cinematic & Media visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Pinhole Camera's specific style identity.",
+      form_and_line:
+        'Define Pinhole Camera through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Pinhole Camera-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Pinhole Camera recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Pinhole Camera: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Pinhole Camera with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Pinhole Camera: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Pinhole Camera: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Pinhole Camera's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Light admitted through the smallest aperture, gathering slowly across hours like sediment settling in still water. The resulting image is a photograph of duration itself, where movement dissolves into ghostly smears and stillness accrues improbable weight. Everything is in focus and nothing is sharp — a paradox of infinite depth rendered through the softest possible eye. Apply Pinhole Camera as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        'Create a style-card that translates Pinhole Camera into a portable visual system for 4. Photography Eras. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {

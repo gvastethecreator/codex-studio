@@ -390,7 +390,7 @@ Constraints: no gradients; no mockups; no 3D; no watermark
 ```
 Use case: text-localization
 Input images: Image 1: original infographic
-Primary request: replace "Bean Hopper", "Grinder", "Brew Group", "Boiler", "Water Tank", and "Drip Tray" with "Tolva", "Molino", "Grupo de infusión", "Caldera", "Depósito de agua", and "Bandeja de goteo"
+Primary request: replace "Bean Hopper", "Grinder", "Brew Group", "Boiler", "Water Tank", and "Drip Tray" with "Whole Bean Bin", "Burr Grinder", "Brew Chamber", "Heating Unit", "Water Reservoir", and "Cup Tray"
 Constraints: change only the text; preserve layout, typography, spacing, and hierarchy; no extra words; do not alter logos or imagery
 ```
 

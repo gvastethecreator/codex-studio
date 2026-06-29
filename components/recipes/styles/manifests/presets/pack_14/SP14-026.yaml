@@ -13,16 +13,38 @@ tags:
   - mythic
   - japanese-myth
 visualDna:
-  aesthetic: Celestial kagura motion invoking storm kami through disciplined theatrical elegance.
-  form_and_line: Raised stage cues, fan-like drape geometry, and braided ritual ropes.
-  color_palette: Ink black, moon silver, and crimson silk.
-  lighting_setup: Spotlight-like moon shafts and ritual braziers framing masked performers.
-  material_texture: Polished cypress floor, silk costumes, bronze bells, and rice-paper screens.
-  render_quality: High-end performance key art with crisp silhouette language.
-  spatial_distortion: Stage-forward composition with layered shadow depth and divine weather corridors.
-  atmosphere: Controlled ecstasy, divine attention, and formal danger.
-  key_features: Kagura masks, storm drums, sacred mirrors, rope-bounded dance-ring cues.
-  creative_brief: Transform any input through eight-storm kagura motion, where disciplined gesture opens temporary corridors to weather gods. Use fan geometry, braided rope rhythm, moon-silver spotlighting, storm-drum pressure, and silk-like motion without requiring dancers, masks, stages, shrines, or performance scenes.
+  aesthetic: >-
+    Eight Storm Kagura Motion within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Eight Storm Kagura Motion's specific style identity.
+  form_and_line: >-
+    Define Eight Storm Kagura Motion through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Eight Storm Kagura Motion-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Eight Storm Kagura Motion recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Eight Storm Kagura Motion: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Eight Storm Kagura Motion with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Eight Storm Kagura Motion: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Eight Storm Kagura Motion: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Eight Storm Kagura Motion's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Eight Storm Kagura Motion into a portable visual system for 7. Mythic Japanese
+    Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - photoreal
   - modern-concert-tech

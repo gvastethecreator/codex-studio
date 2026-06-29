@@ -11,23 +11,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Shonen deportivo de impulso vertical, cooperación táctica, sincronía de equipo y lectura de ritmo colectivo.',
+        "Vertical Team Rally Energy Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Vertical Team Rally Energy Style's specific style identity.",
       form_and_line:
-        'Anatomía atlética limpia, arcos de salto explosivos y gestualidad de comunicación inmediata entre roles.',
+        'Define Vertical Team Rally Energy Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Naranjas cálidos de rebote, cian competitivo, blancos energéticos y contraste cromático por rol visual.',
-      lighting_setup: 'Luz de alto rebote con backlight de impacto para siluetas aéreas legibles.',
+        'Use a Vertical Team Rally Energy Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Vertical Team Rally Energy Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficies brillantes, malla geométrica sugerida, tela transpirable y marcas de fricción.',
+        'Use materials and textures that reinforce Vertical Team Rally Energy Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame deportivo premium con jerarquía clara de impulso, coordinación y eje de bloqueo abstracto.',
+        'Render Vertical Team Rally Energy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Foreshortening de salto y perspectiva de tensión que prioriza timing, recepción y respuesta colectiva.',
-      atmosphere: 'Eléctrica, optimista y cohesionada por esfuerzo colectivo.',
+        'Use spatial behavior that fits Vertical Team Rally Energy Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Vertical Team Rally Energy Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Impulso vertical, llamadas visuales de equipo, geometría de tensión, timing aéreo y energía de rally prolongado.',
+        "Prioritize Vertical Team Rally Energy Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica una gramática reusable de energía deportiva vertical a cualquier prompt o imagen de entrada: salto, sincronía y anticipación colectiva sin imponer vóley, canchas, redes, saques ni equipos concretos.',
+        'Create a style-card that translates Vertical Team Rally Energy Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -38,23 +40,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Deporte competitivo de ego extremo, presión de definición, visión táctica agresiva y ruptura individualista.',
+        "Ego Pressure Breakout Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ego Pressure Breakout Style's specific style identity.",
       form_and_line:
-        'Líneas tensas de aceleración corta, torsión corporal agresiva y postura depredadora en finalización.',
+        'Define Ego Pressure Breakout Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules fríos técnicos, neón ácido de presión psicológica y rojos de amenaza decisiva.',
-      lighting_setup: 'Iluminación high-contrast con foco cerrado y recorte duro sobre el sujeto.',
+        'Use a Ego Pressure Breakout Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Ego Pressure Breakout Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficies sintéticas de alta fricción, geometría de jaula, textiles de alto rendimiento y sudor especular.',
+        'Use materials and textures that reinforce Ego Pressure Breakout Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Sports frame de intensidad máxima con lectura instantánea de duelo interno y decisión final.',
+        'Render Ego Pressure Breakout Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Túnel visual, compresión de distancia final y deformación dinámica por sprint terminal.',
-      atmosphere: 'Predatoria, obsesiva y clínicamente competitiva.',
+        'Use spatial behavior that fits Ego Pressure Breakout Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ego Pressure Breakout Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Torque corporal, mirada de presión, geometría de jaula abstracta, último instante decisivo y aura de ego.',
+        "Prioritize Ego Pressure Breakout Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica una gramática reusable de presión ego-breakout a cualquier prompt o imagen de entrada: jaula geométrica, mirada depredadora y decisión letal sin imponer fútbol, redes, goles ni disparos.',
+        'Create a style-card that translates Ego Pressure Breakout Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -65,24 +69,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Competencia noventera de carisma físico, rivalidad directa, esfuerzo colectivo y disciplina emocional.',
+        "Nineties Physical Rivalry Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Nineties Physical Rivalry Style's specific style identity.",
       form_and_line:
-        'Anatomía atlética expresiva, arcos de esfuerzo limpios, contacto corporal físico y acting rivalry-driven.',
+        'Define Nineties Physical Rivalry Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Rojos clásicos, blancos limpios, miel cálida, azul de sombra interior y acentos dorados.',
+        'Use a Nineties Physical Rivalry Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luminaria directa con rebote cálido y sombras de media altura en clave retro.',
+        'Use lighting that makes Nineties Physical Rivalry Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie encerada, grano deportivo, tejido vintage y sudor de alta fricción.',
+        'Use materials and textures that reinforce Nineties Physical Rivalry Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame deportivo narrativo con lectura clara de posesión emocional, contacto y respuesta colectiva.',
+        'Render Nineties Physical Rivalry Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva media con exageración moderada de salto, empuje y entrada al conflicto.',
-      atmosphere: 'Carismática, sudada, competitiva y esperanzada.',
+        'Use spatial behavior that fits Nineties Physical Rivalry Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Nineties Physical Rivalry Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Contacto físico, miradas de duelo, trayectorias de esfuerzo, reflejos cálidos y energía de equipo reactiva.',
+        "Prioritize Nineties Physical Rivalry Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica una gramática reusable de rivalidad deportiva noventera a cualquier prompt o imagen de entrada: calor físico, disciplina y duelo de miradas sin imponer basket, aro, cancha, tiro ni banca.',
+        'Create a style-card that translates Nineties Physical Rivalry Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -93,24 +98,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Deporte táctico de velocidad ilusoria, circulación invisible, timing colectivo y ruptura de marca.',
+        "Phantom Teamplay Speed Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Phantom Teamplay Speed Style's specific style identity.",
       form_and_line:
-        'Líneas rápidas de trayectoria, siluetas limpias por rol y anatomía optimizada para cambio de ritmo.',
+        'Define Phantom Teamplay Speed Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules eléctricos, negros de contraste profundo y acentos cian para telegraph de circulación.',
+        'Use a Phantom Teamplay Speed Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación dramática con highlights selectivos en manos, mirada y línea de trayectoria.',
+        'Use lighting that makes Phantom Teamplay Speed Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie pulida reflectiva, malla geométrica sugerida, tejido técnico y trazas de movimiento estilizadas.',
+        'Use materials and textures that reinforce Phantom Teamplay Speed Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado deportivo de alta precisión con claridad de jugada colectiva vs estrella individual.',
+        'Render Phantom Teamplay Speed Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Compresión espacial y estiramiento direccional en trayectorias fantasma para lectura de sorpresa.',
-      atmosphere: 'Estratégica, veloz y tácticamente deslumbrante.',
+        'Use spatial behavior that fits Phantom Teamplay Speed Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Phantom Teamplay Speed Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Trails fantasma, cambios bruscos de dirección, contraste teamplay vs aceplay y lectura de velocidad invisible.',
+        "Prioritize Phantom Teamplay Speed Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica una gramática reusable de velocidad fantasma táctica a cualquier prompt o imagen de entrada: trails invisibles, cortes súbitos y contraste equipo-individuo sin imponer basket, pelota, cancha ni duelos perimetrales.',
+        'Create a style-card that translates Phantom Teamplay Speed Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -121,24 +127,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Deporte shonen de resistencia ascendente, esfuerzo mental, presión grupal y quiebre de ritmo.',
+        "Uphill Endurance Breakaway Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Uphill Endurance Breakaway Style's specific style identity.",
       form_and_line:
-        'Curvas de inclinación pronunciada, musculatura de esfuerzo sostenido y postura de alta cadencia.',
+        'Define Uphill Endurance Breakaway Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Bloques saturados de esfuerzo sobre oscuros rugosos, verdes inclinados y cielos fríos de altura.',
+        'Use a Uphill Endurance Breakaway Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz abierta de ascenso con contraluces de pendiente y flare suave de altitud.',
+        'Use lighting that makes Uphill Endurance Breakaway Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie rugosa, fibra técnica sugerida, tejido deportivo y polvo fino de fricción.',
+        'Use materials and textures that reinforce Uphill Endurance Breakaway Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame de resistencia premium con legibilidad de ascenso emocional, succión grupal y ruptura de ritmo.',
+        'Render Uphill Endurance Breakaway Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva comprimida de pendiente y elongación de curva para dramatizar ascenso.',
-      atmosphere: 'Exhausta, obsesiva y triunfal por resistencia.',
+        'Use spatial behavior that fits Uphill Endurance Breakaway Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Uphill Endurance Breakaway Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Diagonales ascendentes, spacing de grupo, gestualidad de esfuerzo, velocidad acumulada y respiración extrema.',
+        "Prioritize Uphill Endurance Breakaway Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica una gramática reusable de breakaway ascendente a cualquier prompt o imagen de entrada: resistencia, pendiente emocional y presión grupal sin imponer bicicletas, pelotón, rutas ni montaña literal.',
+        'Create a style-card that translates Uphill Endurance Breakaway Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -149,24 +156,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Deporte de precisión bajo calor estival, control de zona, duelo mental y tensión de instante decisivo.',
+        "Summer Precision Duel Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Summer Precision Duel Style's specific style identity.",
       form_and_line:
-        'Mecánica cinética abstracta, lectura de señales y anatomía de transferencia precisa.',
+        'Define Summer Precision Duel Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules funcionales, rojizos secos de presión, blancos de marca gráfica y dorado cálido de verano.',
+        'Use a Summer Precision Duel Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol alto competitivo con rebote en polvo y contraluz duro sobre el eje de objetivo.',
+        'Use lighting that makes Summer Precision Duel Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Polvo seco, cuero abstracto, marcas de fricción sugeridas, tela técnica y borde metálico.',
+        'Use materials and textures that reinforce Summer Precision Duel Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame competitivo de alta nitidez con prioridad visual en señal, liberación abstracta y respuesta.',
+        'Render Summer Precision Duel Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva de objetivo con compresión dramática de distancia y foco en trayectoria.',
-      atmosphere: 'Concentrada, calurosa y disciplinadamente juvenil.',
+        'Use spatial behavior that fits Summer Precision Duel Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Summer Precision Duel Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Foco de objetivo, geometría estratégica, tensión lateral, postura contenida y calor competitivo.',
+        "Prioritize Summer Precision Duel Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica una gramática reusable de duelo deportivo preciso a cualquier prompt o imagen de entrada: objetivo, calor y lectura mental sin imponer baseball, guantes, montículo, dugout ni inning.',
+        'Create a style-card that translates Summer Precision Duel Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -177,24 +185,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Deporte generacional de largo arco, legado competitivo, maduración personal y resolución sostenida.',
+        "Generational Sports Resolve Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Generational Sports Resolve Style's specific style identity.",
       form_and_line:
-        'Acting deportivo emocional, mecánica de esfuerzo sólida y postura de determinación.',
+        'Define Generational Sports Resolve Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Paleta competitiva clásica con azules profundos, blancos cálidos y acentos rojos de herencia emocional.',
+        'Use a Generational Sports Resolve Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación nocturna amplia con foco sentimental sobre gesto, materia y decisión.',
+        'Use lighting that makes Generational Sports Resolve Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cuero envejecido, polvo deportivo, tela en desgaste progresivo y metal de fondo.',
+        'Use materials and textures that reinforce Generational Sports Resolve Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame deportivo emotivo con lectura clara de trayectoria vital y tensión competitiva.',
+        'Render Generational Sports Resolve Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva progresiva que conserva un eje de objetivo como núcleo simbólico.',
-      atmosphere: 'Resuelta, nostálgica y profundamente motivada.',
+        'Use spatial behavior that fits Generational Sports Resolve Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Generational Sports Resolve Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Iconografía deportiva abstracta, profundidad de trayectoria, ecos de crecimiento y herencia emocional.',
+        "Prioritize Generational Sports Resolve Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica una gramática reusable de resolución deportiva generacional a cualquier prompt o imagen de entrada: legado, madurez y arco vital sin imponer baseball, guantes, pelotas, estadios ni linajes literales.',
+        'Create a style-card that translates Generational Sports Resolve Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -205,23 +214,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Deporte acuático luminoso centrado en sincronía, técnica corporal y transición fluida.',
+        "Aquatic Relay Glow Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Aquatic Relay Glow Style's specific style identity.",
       form_and_line:
-        'Anatomía hidrodinámica limpia, arcos fluidos y lectura clara de cambio de ritmo.',
+        'Define Aquatic Relay Glow Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules clorados, blancos espumosos y acentos saturados para lectura de flujo direccional.',
+        'Use a Aquatic Relay Glow Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación acuática con caústicas controladas y highlights sobre láminas fluidas.',
+        'Use lighting that makes Aquatic Relay Glow Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Láminas especulares, humedad mineral, tejido elástico y gotas en suspensión.',
-      render_quality: 'Frame acuático de alta nitidez con prioridad en salida, ritmo y transición.',
+        'Use materials and textures that reinforce Aquatic Relay Glow Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Aquatic Relay Glow Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Distorsión suave por refracción y perspectiva longitudinal para lectura de velocidad.',
-      atmosphere: 'Refrescante, competitiva y emocionalmente cohesionada.',
+        'Use spatial behavior that fits Aquatic Relay Glow Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Aquatic Relay Glow Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Arcos de splash, geometría líquida, reflejos de cloro, tensión de relevo y siluetas aerodinámicas.',
+        "Prioritize Aquatic Relay Glow Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica una gramática reusable de energía acuática sincronizada a cualquier prompt o imagen de entrada: agua, brillo y transición fluida sin imponer natación, carriles, piletas, relevos ni cuerpos poolside.',
+        'Create a style-card that translates Aquatic Relay Glow Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -232,24 +243,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Resistencia de fondo nocturna, pacing mental, cohesión grupal y respiración progresiva.',
+        "Long-Distance Night Endurance Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Long-Distance Night Endurance Style's specific style identity.",
       form_and_line:
-        'Siluetas de avance eficiente, postura de economía física y acting de fatiga contenida.',
+        'Define Long-Distance Night Endurance Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules nocturnos fríos, ámbar puntual y acentos discretos de cohesión grupal.',
+        'Use a Long-Distance Night Endurance Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Cadencia lumínica seriada, contraste bajo nocturno y halos de respiración en frío.',
+        'Use lighting that makes Long-Distance Night Endurance Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie húmeda fina, textil técnico, vapor de aliento y desgaste continuo.',
+        'Use materials and textures that reinforce Long-Distance Night Endurance Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame deportivo introspectivo con claridad de spacing grupal, ritmo y esfuerzo acumulado.',
+        'Render Long-Distance Night Endurance Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva de recorrido largo con compresión gradual de distancia y vector de avance continuo.',
-      atmosphere: 'Determinada, fría, introspectiva y comunitaria.',
+        'Use spatial behavior that fits Long-Distance Night Endurance Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Long-Distance Night Endurance Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Ritmo de luces, spacing de grupo, vapor respiratorio, continuidad de ruta abstracta y calma de esfuerzo.',
+        "Prioritize Long-Distance Night Endurance Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica una gramática reusable de resistencia nocturna a cualquier prompt o imagen de entrada: pacing, respiración y cohesión sin imponer running, campus, maratones, rutas ni farolas literales.',
+        'Create a style-card that translates Long-Distance Night Endurance Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -259,21 +271,26 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
-      aesthetic: 'Trick flow nocturno de estilo personal, rivalidad expresiva y neón underground.',
-      form_and_line: 'Poses elásticas de control, curvas expresivas y anatomía dinámica legible.',
+      aesthetic:
+        "Neon Trick Flow Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Neon Trick Flow Style's specific style identity.",
+      form_and_line:
+        'Define Neon Trick Flow Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Neones tropicales saturados, negros rugosos y acentos cromáticos por identidad visual.',
-      lighting_setup: 'Iluminación nocturna clandestina con contraluces duros y rebote húmedo.',
-      material_texture: 'Superficie rugosa, fricción gastada, metal marcado y textil vibrante.',
+        'Use a Neon Trick Flow Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Neon Trick Flow Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Neon Trick Flow Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame cinético premium con lectura instantánea de truco abstracto, aterrizaje y velocidad.',
+        'Render Neon Trick Flow Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Foreshortening aéreo y curvatura gráfica para enfatizar altura y trayectoria.',
-      atmosphere: 'Rebelde, divertida, acelerada y extremadamente viva.',
+        'Use spatial behavior that fits Neon Trick Flow Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Neon Trick Flow Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Curvas de truco, estelas de rueda abstractas, neón underground, estilo personal y momentum de caída.',
+        "Prioritize Neon Trick Flow Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica una gramática reusable de trick flow nocturno a cualquier prompt o imagen de entrada: neón, curvas y estilo competitivo sin imponer skate, rampas, ruedas, crew ni trucos literales.',
+        'Create a style-card that translates Neon Trick Flow Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -284,23 +301,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Velocidad nocturna técnica, con deriva controlada, transferencia de peso visual y lectura de riesgo invisible.',
+        "Nocturnal Drift Tension Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Nocturnal Drift Tension Style's specific style identity.",
       form_and_line:
-        'Contornos afilados, vectores de derrape abstracto y postura de concentración máxima aplicable a cualquier sujeto.',
+        'Define Nocturnal Drift Tension Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules de noche inclinada, blanco de haz alto, naranja térmico y negros húmedos.',
+        'Use a Nocturnal Drift Tension Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Cortes de luz direccionales y halos de niebla que enfatizan apex y salida de curva.',
+        'Use lighting that makes Nocturnal Drift Tension Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Granularidad húmeda, metal mojado, humo fino y reflejos bajos de velocidad.',
+        'Use materials and textures that reinforce Nocturnal Drift Tension Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame de performance anime con prioridad en trayectoria, adherencia visual y lectura de riesgo.',
-      spatial_distortion: 'Compresión agresiva de túnel visual y estiramiento lateral de deriva.',
-      atmosphere: 'Nocturna, tensa, técnica y adictiva.',
+        'Render Nocturnal Drift Tension Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Nocturnal Drift Tension Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Nocturnal Drift Tension Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Ángulo de deriva, conos de luz, curva abstracta, foco técnico y estela de humo precisa.',
+        "Prioritize Nocturnal Drift Tension Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de deriva nocturna para cualquier prompt o imagen de entrada: tracción, riesgo y luz direccional sin imponer autos, montaña, faros, volantes ni carreras.',
+        'Create a style-card that translates Nocturnal Drift Tension Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -311,23 +330,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Performance tecnificada de nueva generación, orientada a telemetría, trazada óptima y precisión fría.',
+        "Telemetry Apex Precision Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Telemetry Apex Precision Style's specific style identity.",
       form_and_line:
-        'Silueta limpia, gestualidad analítica y líneas de apex abstractas de alta definición.',
+        'Define Telemetry Apex Precision Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Cian digital, grises titanio, azules costeros y acentos magenta de interfaz de rendimiento.',
+        'Use a Telemetry Apex Precision Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación nocturna con reflejos controlados y cues digitales de alta legibilidad.',
+        'Use lighting that makes Telemetry Apex Precision Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Fibra pulida, pintura metalizada, superficie lisa de velocidad y vidrio técnico.',
-      render_quality: 'Performance frame premium con claridad de datos, velocidad y control fino.',
+        'Use materials and textures that reinforce Telemetry Apex Precision Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Telemetry Apex Precision Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Vector de trazada óptima y compresión de distancia hacia punto de decisión.',
-      atmosphere: 'Precisa, moderna, fría y tácticamente competitiva.',
+        'Use spatial behavior that fits Telemetry Apex Precision Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Telemetry Apex Precision Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Línea de apex limpia, lectura telemetry-like, reflejo frío, postura de control y tracción fina.',
+        "Prioritize Telemetry Apex Precision Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Formula una gramática reusable de precisión telemetry-apex para cualquier prompt o imagen de entrada: datos, trazada y control fino sin imponer autos, costa, circuito, tablero ni frenada literal.',
+        'Create a style-card that translates Telemetry Apex Precision Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -338,22 +359,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Sprint idolizado de energía festiva, showmanship competitivo, velocidad brillante y alegría dramática.',
+        "Festive Sprint Idol Energy Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Festive Sprint Idol Energy Style's specific style identity.",
       form_and_line:
-        'Siluetas livianas, movimiento de listones/cabello y acting de rivalidad alegre.',
-      color_palette: 'Pasteles saturados de evento, verdes vivos y acentos de alto contraste.',
+        'Define Festive Sprint Idol Energy Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Festive Sprint Idol Energy Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación brillante de espectáculo con destellos de clímax veloz y rebote cálido.',
+        'Use lighting that makes Festive Sprint Idol Energy Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Polvo deportivo, telas ornamentales ligeras, accesorios de presentación y brillo pulido.',
+        'Use materials and textures that reinforce Festive Sprint Idol Energy Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Performance frame hyper-bright con lectura limpia de sprint, carril abstracto y clímax.',
-      spatial_distortion: 'Estelas de velocidad y compresión hacia punto de llegada emocional.',
-      atmosphere: 'Centelleante, veloz, alegre y dramática.',
+        'Render Festive Sprint Idol Energy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Festive Sprint Idol Energy Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Festive Sprint Idol Energy Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Profundidad de carril abstracto, energía colectiva, cintas en movimiento y rush de llegada.',
+        "Prioritize Festive Sprint Idol Energy Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de sprint idol festivo para cualquier prompt o imagen de entrada: velocidad, espectáculo y brillo competitivo sin imponer pista, derby, público, meta ni carrera literal.',
+        'Create a style-card that translates Festive Sprint Idol Energy Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -364,23 +388,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Duelo deportivo estilizado, con control de línea, efecto especial abstracto y presión de torneo.',
+        "Graphic Impact Duel Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Graphic Impact Duel Style's specific style identity.",
       form_and_line:
-        'Arcos de impacto marcados, postura de reacción precisa y acting de rivalidad frontal.',
-      color_palette: 'Azules interiores, blancos técnicos y acentos cromáticos por fuerza opuesta.',
+        'Define Graphic Impact Duel Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Graphic Impact Duel Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación indoor contrastada con focos en impacto gráfico y zona de respuesta.',
+        'Use lighting that makes Graphic Impact Duel Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie sintética, tensión lineal sugerida, ruido de impacto y textil de alto rendimiento.',
+        'Use materials and textures that reinforce Graphic Impact Duel Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame deportivo de alta teatralidad con claridad de punto emocional, ventaja y respuesta.',
+        'Render Graphic Impact Duel Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Foreshortening de impacto y compresión de fondo para enfatizar timing de devolución.',
-      atmosphere: 'Estilizada, intensa, juvenil y dramática.',
+        'Use spatial behavior that fits Graphic Impact Duel Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Graphic Impact Duel Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Arco de impacto, geometría de línea, estela de golpe y framing de enfrentamiento frontal.',
+        "Prioritize Graphic Impact Duel Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de duelo deportivo teatral para cualquier prompt o imagen de entrada: trayectoria, efecto y rivalidad frontal sin imponer tennis, baseline, raquetas, pelota ni cancha.',
+        'Create a style-card that translates Graphic Impact Duel Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -391,21 +417,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Deporte psicológico de alta velocidad, enfocado en spin abstracto, anticipación y fractura perceptiva competitiva.',
+        "Spin Pressure Distortion Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Spin Pressure Distortion Style's specific style identity.",
       form_and_line:
-        'Trazos nerviosos, microgesto facial bajo presión y snap de muñeca hiperlegible.',
-      color_palette: 'Verdes fríos, amarillos de alta visibilidad y sombras azul-gris de tensión.',
-      lighting_setup: 'Luz interior contenida con contrastes abruptos en zona de impacto y rostro.',
-      material_texture: 'Superficie mate, goma marcada, plano áspero y sudor granular.',
+        'Define Spin Pressure Distortion Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Spin Pressure Distortion Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Spin Pressure Distortion Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Spin Pressure Distortion Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame deportivo expresionista con lectura instantánea de spin, respuesta y quiebre mental.',
+        'Render Spin Pressure Distortion Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva de borde comprimido con deformación subjetiva en intercambios de ritmo extremo.',
-      atmosphere: 'Psicológica, rápida, cruda y competitivamente íntima.',
+        'Use spatial behavior that fits Spin Pressure Distortion Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Spin Pressure Distortion Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Plano dominante, snap de muñeca, distorsión de presión y cues de trayectoria rotacional.',
+        "Prioritize Spin Pressure Distortion Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Formula una gramática reusable de spin-pressure-distortion para cualquier prompt o imagen de entrada: presión mental, efecto y deformación perceptiva sin imponer mesa, paleta, pelota ni rally.',
+        'Create a style-card that translates Spin Pressure Distortion Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -416,21 +446,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Combate de superación clásica orientado a resistencia, técnica compacta y comeback físico.',
+        "Comeback Grit Impact Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Comeback Grit Impact Style's specific style identity.",
       form_and_line:
-        'Anatomía de impacto pesada, guardia compacta y acting físico de castigo acumulado.',
+        'Define Comeback Grit Impact Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Rojos de presión, azul acero de sombra periférica y tonos cálidos de esfuerzo extremo.',
-      lighting_setup: 'Spot duro con penumbra periférica y foco dramático en borde de presión.',
+        'Use a Comeback Grit Impact Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Comeback Grit Impact Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cuero castigado, bandas saturadas, tejido gastado y sudor de esfuerzo acumulado.',
+        'Use materials and textures that reinforce Comeback Grit Impact Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame de combate deportivo con legibilidad de impacto, defensa y recuperación.',
-      spatial_distortion: 'Compresión de distancia en intercambio corto e impacto ascendente.',
-      atmosphere: 'Dura, inspiradora, áspera y obstinada.',
-      key_features: 'Límites tensos, postura de impacto, fatiga visible y recuperación obstinada.',
+        'Render Comeback Grit Impact Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Comeback Grit Impact Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Comeback Grit Impact Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Comeback Grit Impact Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de comeback grit para cualquier prompt o imagen de entrada: impacto, fatiga y recuperación sin imponer boxeo, ring, cuerdas, coach ni banquillo.',
+        'Create a style-card that translates Comeback Grit Impact Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -441,21 +475,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Performance competitiva vulnerable, centrada en coreografía emocional, línea corporal y control de eje.',
-      form_and_line: 'Silueta elongada, transición fluida entre poses y precisión de eje curvo.',
+        "Vulnerable Performance Spin Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Vulnerable Performance Spin Style's specific style identity.",
+      form_and_line:
+        'Define Vulnerable Performance Spin Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules glaciales, plateados de foco y acentos cromáticos de vestuario escénico.',
-      lighting_setup: 'Conos de spotlight con relleno frío y reflejo especular controlado.',
-      material_texture: 'Superficie pulida con trazas finas, tela brillante y cristales fríos.',
+        'Use a Vulnerable Performance Spin Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Vulnerable Performance Spin Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Vulnerable Performance Spin Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Performance frame premium con claridad de impulso, spin abstracto y cierre limpio.',
+        'Render Vulnerable Performance Spin Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Curvatura elegante de trayectorias y profundidad escénica para lectura de programa completo.',
-      atmosphere: 'Elegante, vulnerable, emotiva y competitiva.',
+        'Use spatial behavior that fits Vulnerable Performance Spin Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Vulnerable Performance Spin Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Reflejo frío, postura de spin, shimmer de vestuario y curvas de trayectoria precisas.',
+        "Prioritize Vulnerable Performance Spin Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de performance vulnerable en eje para cualquier prompt o imagen de entrada: coreografía, reflejo y precisión emocional sin imponer patinaje, pista, cuchillas ni rutina.',
+        'Create a style-card that translates Vulnerable Performance Spin Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -466,22 +504,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Competición poética de reflejo mental, memoria sonora, gesto instantáneo y disciplina elegante.',
+        "Poetic Reflex Focus Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Poetic Reflex Focus Style's specific style identity.",
       form_and_line:
-        'Gesto de mano ultrarrápido, postura baja disciplinada y movimiento de tela como vector de acción.',
+        'Define Poetic Reflex Focus Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Tonos vegetales cálidos, índigo tradicional y acentos carmín de tensión competitiva.',
+        'Use a Poetic Reflex Focus Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación interior suave con foco sobre planos de memoria y contraste de concentración facial.',
-      material_texture: 'Trama vegetal, papel nítido, seda formal y madera ceremonial sugerida.',
+        'Use lighting that makes Poetic Reflex Focus Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Poetic Reflex Focus Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame deportivo-cultural con lectura precisa de sonido, reacción y captura mental.',
+        'Render Poetic Reflex Focus Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva rasante y estiramiento gestual para dramatizar velocidad de strike.',
-      atmosphere: 'Concentrada, elegante, disciplinada y urgentemente competitiva.',
-      key_features: 'Geometría baja, blur de mano, tensión silenciosa y close-up de foco mental.',
+        'Use spatial behavior that fits Poetic Reflex Focus Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Poetic Reflex Focus Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Poetic Reflex Focus Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Formula una gramática reusable de reflejo poético para cualquier prompt o imagen de entrada: memoria, gesto y silencio competitivo sin imponer karuta, tatami, cartas, sala ni poesía literal.',
+        'Create a style-card that translates Poetic Reflex Focus Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -492,23 +533,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Entrenamiento metódico de mejora incremental, análisis técnico, repetición y evolución medible.',
-      form_and_line: 'Mecánica depurada, pasos didácticos y acting de concentración sostenida.',
+        "Incremental Method Training Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Incremental Method Training Style's specific style identity.",
+      form_and_line:
+        'Define Incremental Method Training Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Paleta sobria de práctica, verdes funcionales, blancos de guía y acentos azules de análisis.',
+        'Use a Incremental Method Training Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz de entrenamiento uniforme con contraste moderado para lectura didáctica de gesto.',
+        'Use lighting that makes Incremental Method Training Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie usada, material funcional, marcas tácticas sugeridas y textil de práctica.',
+        'Use materials and textures that reinforce Incremental Method Training Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame técnico de entrenamiento con claridad de corrección, progreso y consistencia.',
+        'Render Incremental Method Training Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva funcional sin dramatización excesiva, enfocada en secuencia y repetición.',
-      atmosphere: 'Estudiosa, práctica, constante y determinada.',
+        'Use spatial behavior that fits Incremental Method Training Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Incremental Method Training Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Cues de análisis, mecánica repetida, patrón de pies y lenguaje corporal de mejora progresiva.',
+        "Prioritize Incremental Method Training Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de entrenamiento calculado para cualquier prompt o imagen de entrada: método, repetición y progreso medible sin imponer tennis, cuadernos, raquetas ni cancha.',
+        'Create a style-card that translates Incremental Method Training Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -519,23 +562,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Rivalidad glam de alto riesgo, precisión de gesto, trayectoria imposible y duelo de identidad competitiva.',
+        "Glam Precision Rivalry Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Glam Precision Rivalry Style's specific style identity.",
       form_and_line:
-        'Arco de swing elegante, postura de control fino y silueta de rival claramente codificada.',
+        'Define Glam Precision Rivalry Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Verdes premium, blancos luminosos, acentos cromáticos de rival y cielo de contraste limpio.',
-      lighting_setup: 'Luz abierta con focos dramáticos en gesto, impacto y trayectoria.',
+        'Use a Glam Precision Rivalry Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Glam Precision Rivalry Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie recortada de alta gama, grip detallado, tejido deportivo de lujo y metal pulido.',
+        'Use materials and textures that reinforce Glam Precision Rivalry Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Sports frame de precisión vistosa con legibilidad de línea de tiro abstracta y presión de match.',
+        'Render Glam Precision Rivalry Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad larga con trazas de trayectoria y compresión selectiva de distancia al objetivo.',
-      atmosphere: 'Lujosa, precisa, lúdica y ferozmente competitiva.',
+        'Use spatial behavior that fits Glam Precision Rivalry Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Glam Precision Rivalry Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Líneas de trayectoria, silueta de swing abstracto, trazas cromáticas y contraste de rivales codificados.',
+        "Prioritize Glam Precision Rivalry Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de rivalidad glam precisa para cualquier prompt o imagen de entrada: gesto, riesgo y trayectorias cromáticas sin imponer golf, fairway, hoyos, palos ni rivales literales.',
+        'Create a style-card that translates Glam Precision Rivalry Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -546,23 +591,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Sincronía aérea de conjunto, ritmo corporal, control muscular y confianza grupal.',
+        "Synchronized Aerial Team Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Synchronized Aerial Team Style's specific style identity.",
       form_and_line:
-        'Extensiones limpias de columna y piernas, arcos de salto coordinados y timing gestual colectivo.',
+        'Define Synchronized Aerial Team Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules y blancos limpios, acentos naranja de energía y fondos cálidos de competencia.',
-      lighting_setup: 'Luz homogénea con realce en fase aérea y sombra suave bajo la suspensión.',
+        'Use a Synchronized Aerial Team Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Synchronized Aerial Team Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Rebote granular, textil elástico técnico, agarre ligero y superficie pulida.',
+        'Use materials and textures that reinforce Synchronized Aerial Team Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame deportivo de alta nitidez con legibilidad de sincronía, altura y aterrizaje.',
+        'Render Synchronized Aerial Team Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Foreshortening vertical moderado para enfatizar suspensión grupal y alineación de figuras.',
-      atmosphere: 'Ligera, esperanzadora, sincronizada y vibrante.',
+        'Use spatial behavior that fits Synchronized Aerial Team Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Synchronized Aerial Team Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Poses midair en espejo, lectura de conteo, extensión corporal y calor competitivo.',
+        "Prioritize Synchronized Aerial Team Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de vuelo sincronizado para cualquier prompt o imagen de entrada: conteo, extensión y confianza grupal sin imponer gimnasia, club escolar, equipo masculino ni rutina.',
+        'Create a style-card that translates Synchronized Aerial Team Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -573,24 +620,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ensayo obsesivo de línea corporal, disciplina técnica, exposición emocional y perfección frágil.',
+        "Obsessive Line Rehearsal Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Obsessive Line Rehearsal Style's specific style identity.",
       form_and_line:
-        'Eje corporal refinado, extensiones largas, transición de peso controlada y gesto vulnerable.',
+        'Define Obsessive Line Rehearsal Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Neutros de estudio, rosas empolvados, grises cálidos y acentos de piel iluminada por esfuerzo.',
+        'Use a Obsessive Line Rehearsal Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz de sala y rebote de espejo con contraste medio para enfatizar corrección postural.',
+        'Use lighting that makes Obsessive Line Rehearsal Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Piso desgastado, tela de ensayo transpirable, resina fina y sudor de práctica.',
+        'Use materials and textures that reinforce Obsessive Line Rehearsal Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame performativo elegante con lectura clara de técnica, tensión muscular y vulnerabilidad.',
+        'Render Obsessive Line Rehearsal Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva de espejo múltiple con profundidad repetida que acentúa autocorrección y presión.',
-      atmosphere: 'Apasionada, disciplinada, elegante y técnicamente frágil.',
+        'Use spatial behavior that fits Obsessive Line Rehearsal Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Obsessive Line Rehearsal Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Multiplicación especular, líneas de extremidad, respiración de ensayo y foco corporal expresivo.',
+        "Prioritize Obsessive Line Rehearsal Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de obsessive-line-rehearsal donde línea anatómica, autocorrección, repetición especular y emocionalidad contenida formen identidad visual transferible sin imponer ballet, estudio, zapatillas ni ensayo literal.',
+        'Create a style-card that translates Obsessive Line Rehearsal Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -601,23 +649,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Movimiento formal en pareja, frame coreográfico, tracción elegante y tensión escénica abstracta.',
+        "Formal Partner Motion Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Formal Partner Motion Style's specific style identity.",
       form_and_line:
-        'Siluetas duales en giro, torso estructurado, líneas de guía y fluidez controlada.',
+        'Define Formal Partner Motion Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Dorados cálidos, negros de contraste formal, rojos profundos y blancos de brillo de gala.',
+        'Use a Formal Partner Motion Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Spotlights cálidos de competición con reflejo fuerte en superficie pulida y bordes de silueta.',
+        'Use lighting that makes Formal Partner Motion Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Satén en flujo, cuero pulido, superficie brillante y pedrería escénica fina.',
+        'Use materials and textures that reinforce Formal Partner Motion Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame de danza premium con lectura de liderazgo-seguimiento, giro y postura.',
-      spatial_distortion: 'Barrido circular con compresión de fondo y foco en eje de pareja.',
-      atmosphere: 'Deslumbrante, tensa, romántica e intensa.',
+        'Render Formal Partner Motion Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Formal Partner Motion Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Formal Partner Motion Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Reflejo de superficie, silueta dual, dinámica de giro y presión pública implícita.',
+        "Prioritize Formal Partner Motion Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de formal-partner-motion donde técnica de pareja, teatralidad de giro y presión pública sostengan identidad visual transferible sin imponer ballroom, pista, jurado ni rutina específica.',
+        'Create a style-card that translates Formal Partner Motion Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -628,22 +678,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ensamble tradicional de resonancia colectiva, precisión de digitación y sinceridad performativa.',
+        "Traditional Ensemble Resonance Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Traditional Ensemble Resonance Style's specific style identity.",
       form_and_line:
-        'Postura estable, gesto de mano fino y coreografía mínima de conjunto por respiración.',
-      color_palette: 'Maderas cálidas, ámbar íntimo, negro laca y acentos crema de formalidad.',
+        'Define Traditional Ensemble Resonance Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Traditional Ensemble Resonance Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz suave con foco frontal sobre líneas resonantes y rebote cálido de madera.',
-      material_texture: 'Laca pulida, tensión lineal visible, tela ceremonial y madera resonante.',
+        'Use lighting that makes Traditional Ensemble Resonance Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Traditional Ensemble Resonance Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame musical de alta delicadeza con legibilidad de ataque, dinámica y balance entre intérpretes.',
+        'Render Traditional Ensemble Resonance Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva de ensamble en abanico con profundidad serena y jerarquía de secciones.',
-      atmosphere: 'Sincera, resonante, delicada y elevadora.',
+        'Use spatial behavior that fits Traditional Ensemble Resonance Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Traditional Ensemble Resonance Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Detalle lineal resonante, postura estable, brillo de laca y foco en colocación de manos.',
+        "Prioritize Traditional Ensemble Resonance Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Formula una gramática reusable de traditional-ensemble-resonance donde materialidad resonante, respiración grupal y lectura de gesto musical construyan identidad transferible sin imponer koto, escuela, escenario ni postura sentada fija.',
+        'Create a style-card that translates Traditional Ensemble Resonance Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -653,23 +706,26 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
-      aesthetic: 'Precisión tímbrica de conjunto, ansiedad de certamen y ternura aspiracional.',
+      aesthetic:
+        "Brass Section Tender Precision Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Brass Section Tender Precision Style's specific style identity.",
       form_and_line:
-        'Gestualidad respiratoria detallada, postura disciplinada y microacting de sincronía conjunta.',
-      color_palette: 'Dorados de resonancia pulida, azules sobrios y ámbar de interior sereno.',
+        'Define Brass Section Tender Precision Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Brass Section Tender Precision Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz de tarde con foco cálido sobre superficies reflectivas y sombras suaves.',
+        'Use lighting that makes Brass Section Tender Precision Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Brillo metálico espejo, mecanismos pequeños usados, papel mate y tejido formal.',
+        'Use materials and textures that reinforce Brass Section Tender Precision Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame musical premium con lectura de sección, afinación emocional y jerarquía de planos rítmicos.',
+        'Render Brass Section Tender Precision Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad de ensamble por capas rítmicas y compresión leve hacia foco de sección.',
-      atmosphere: 'Tierna, aspiracional, pulida y competitivamente musical.',
+        'Use spatial behavior that fits Brass Section Tender Precision Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Brass Section Tender Precision Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Reflejos cálidos, detalle respiratorio, proximidad de ensamble y escala íntima.',
+        "Prioritize Brass Section Tender Precision Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de tender-ensemble-precision donde reflejo metálico, disciplina de ensamble y sensibilidad aspiracional formen un sistema visual estable y transferible sin imponer banda escolar, instrumentos, aula, atriles ni ensayo literal.',
+        'Create a style-card that translates Brass Section Tender Precision Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -680,24 +736,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Jazz nocturno visceral, improvisación ascendente, presencia solista y explosión soulful.',
+        "Midnight Jazz Ascension Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Midnight Jazz Ascension Style's specific style identity.",
       form_and_line:
-        'Silueta performativa en tensión, gesto respiratorio marcado y arcos de cuerpo al fraseo.',
+        'Define Midnight Jazz Ascension Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules midnight, dorados latón, magentas de neón tenue y negros humo de sala.',
+        'Use a Midnight Jazz Ascension Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Spot cálido aislado con contraluz de neblina y glow lateral sobre metal curvo.',
+        'Use lighting that makes Midnight Jazz Ascension Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Latón con pátina, madera oscura, humo volumétrico fino y tela de performance.',
+        'Use materials and textures that reinforce Midnight Jazz Ascension Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame performativo adulto con lectura de intensidad, dinámica de solo y respuesta de sala.',
+        'Render Midnight Jazz Ascension Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad nocturna comprimida hacia foco performativo con halo periférico difuso.',
-      atmosphere: 'Nocturna, impulsada, soulful y explosiva.',
+        'Use spatial behavior that fits Midnight Jazz Ascension Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Midnight Jazz Ascension Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Brillo de latón, haze nocturno, spot aislado y silueta de solo en ascenso continuo.',
+        "Prioritize Midnight Jazz Ascension Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de midnight-jazz-ascension donde timbre de latón, atmósfera nocturna y cuerpo performativo construyan identidad transferible sin imponer saxofón, club, concierto ni solista literal.',
+        'Create a style-card that translates Midnight Jazz Ascension Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -708,22 +765,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Juventud cruda de feedback emocional, crecimiento por ensayo, precariedad sonora y cohesión emergente.',
+        "Raw Youth Feedback Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Raw Youth Feedback Style's specific style identity.",
       form_and_line:
-        'Posturas imperfectas de ejecución abstracta, energía contenida, microgesto inseguro y dinámica de grupo.',
+        'Define Raw Youth Feedback Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Marrones crudos, rojos de señal improvisada, negros de equipo usado y acentos neón caseros.',
-      lighting_setup: 'Luz dura de práctica con sombras irregulares y contraluces improvisados.',
-      material_texture: 'Vinilo usado, metal gastado, líneas enredadas y pintura descascarada.',
+        'Use a Raw Youth Feedback Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Raw Youth Feedback Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Raw Youth Feedback Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame crudo con legibilidad de rol grupal, precariedad sonora y progresión de ensayo.',
+        'Render Raw Youth Feedback Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva cerrada con capas densas de equipo abstracto y proximidad física.',
-      atmosphere: 'Cruda, joven, precaria y de corazón abierto.',
+        'Use spatial behavior that fits Raw Youth Feedback Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Raw Youth Feedback Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Torres gráficas de sonido, postura de ejecución, clutter lineal y spacing de grupo en formación.',
+        "Prioritize Raw Youth Feedback Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Formula una gramática reusable de raw-youth-feedback donde precariedad, energía de ensayo y autenticidad punk articulen identidad transferible sin imponer garaje, amplificadores, banda, instrumentos ni sala de práctica.',
+        'Create a style-card that translates Raw Youth Feedback Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -734,21 +794,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Confesión indie íntima, lirismo vulnerable, calidez contenida y silencio emocional.',
+        "Intimate Indie Confession Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Intimate Indie Confession Style's specific style identity.",
       form_and_line:
-        'Gestualidad cercana, postura contenida y distancia emocional claramente legible.',
+        'Define Intimate Indie Confession Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Ámbar cálido, azul nocturno suave y acentos granate de melancolía contemporánea.',
-      lighting_setup: 'Focos pequeños con caída suave y penumbra envolvente de espacio reducido.',
-      material_texture: 'Madera mínima, metal de soporte, acabado mate y humo ligero ambiental.',
-      render_quality: 'Frame emotivo con lectura de confesión, silencio y clímax íntimo.',
+        'Use a Intimate Indie Confession Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Intimate Indie Confession Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Intimate Indie Confession Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Intimate Indie Confession Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva frontal compacta con foco íntimo y eje de respiración compartida.',
-      atmosphere: 'Íntima, doliente, cálida y acústicamente contenida.',
+        'Use spatial behavior that fits Intimate Indie Confession Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Intimate Indie Confession Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Framing íntimo, close-up táctil, spacing emocional y lenguaje corporal confesional.',
+        "Prioritize Intimate Indie Confession Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de intimate-indie-confession donde intimidad acústica, tensión emocional y mínima puesta escénica definan una identidad visual reutilizable sin imponer escenario, micrófono, guitarra, dúo ni venue literal.',
+        'Create a style-card that translates Intimate Indie Confession Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -759,24 +823,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Confrontación performativa alegórica, rivalidad escénica abstracta y coreografía de alto simbolismo.',
+        "Allegorical Spotlight Confrontation Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Allegorical Spotlight Confrontation Style's specific style identity.",
       form_and_line:
-        'Poses teatrales de confrontación, siluetas rituales y transición dramática entre niveles visuales.',
+        'Define Allegorical Spotlight Confrontation Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Carmín escénico, azul zafiro nocturno, dorado de gala y negros de fondo operático.',
+        'Use a Allegorical Spotlight Confrontation Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Cruce de spotlights con backlight teatral y sombras recortadas en capas verticales.',
+        'Use lighting that makes Allegorical Spotlight Confrontation Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Terciopelo abstracto, superficie pintada, metal utilitario y humo controlado.',
+        'Use materials and textures that reinforce Allegorical Spotlight Confrontation Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame performativo de alto impacto con legibilidad de símbolo, tensión y jerarquía dramática.',
+        'Render Allegorical Spotlight Confrontation Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Arquitectura axial abstracta con capas verticales y profundidad alegórica en fuga vertical.',
-      atmosphere: 'Teatral, competitiva, simbólica y espectacularmente luminosa.',
+        'Use spatial behavior that fits Allegorical Spotlight Confrontation Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Allegorical Spotlight Confrontation Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Hazes de spotlight cruzado, poses de confrontación abstracta, capas verticales y pageantry ornamental.',
+        "Prioritize Allegorical Spotlight Confrontation Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de allegorical-spotlight-confrontation donde alegoría, coreografía de confrontación y arquitectura axial sostengan una identidad visual transferible sin imponer escenario, escaleras, espadas, teatro ni combate literal.',
+        'Create a style-card that translates Allegorical Spotlight Confrontation Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -787,23 +852,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ensamble virtuoso excéntrico, fricción creativa entre rigor, caos controlado y energía culta.',
+        "Virtuoso Ensemble Whirl Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Virtuoso Ensemble Whirl Style's specific style identity.",
       form_and_line:
-        'Gestos de dirección enérgicos, acting performativo moderado y lectura clara de secciones.',
+        'Define Virtuoso Ensemble Whirl Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Maderas y marfiles clásicos, negros de frac, dorados tenues y acentos escarlata de tensión cómica.',
+        'Use a Virtuoso Ensemble Whirl Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz amplia con focos suaves sobre gesto directivo y foco virtuoso principal.',
-      material_texture: 'Barniz clásico, papel mate, metal de soporte y tela formal en movimiento.',
+        'Use lighting that makes Virtuoso Ensemble Whirl Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Virtuoso Ensemble Whirl Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame sinfónico vivaz con legibilidad de jerarquía de dirección, respuesta y caos controlado.',
+        'Render Virtuoso Ensemble Whirl Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad de ensamble por capas seccionales con perspectiva convergente al eje directivo.',
-      atmosphere: 'Viva, culta, excéntrica e inspiradora.',
+        'Use spatial behavior that fits Virtuoso Ensemble Whirl Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Virtuoso Ensemble Whirl Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Gesto de dirección, masa de secciones, foco virtuoso y fricción de ensayo colectivo.',
+        "Prioritize Virtuoso Ensemble Whirl Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de virtuoso-ensemble-whirl donde geografía de secciones, autoridad gestual y excentricidad performativa generen identidad transferible sin imponer orquesta, podio, piano, atriles ni ensayo académico literal.',
+        'Create a style-card that translates Virtuoso Ensemble Whirl Style into a portable visual system for 6. Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -13,30 +13,37 @@ tags:
   - toy-craft-and-miniature-architecture
 visualDna:
   aesthetic: >-
-    Artesanía marítima miniaturizada encapsulada, con precisión de vitrina y efecto de escala
-    imposible dentro de vidrio.
+    Bottle-Glass Curio Miniature within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Bottle-Glass Curio Miniature's specific style identity.
   form_and_line: >-
-    Silueta elongada de vidrio, cuello restrictivo, verticales comprimidas y red fina dentro de
-    marco cilíndrico.
+    Define Bottle-Glass Curio Miniature through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
   color_palette: >-
-    Aged wood brown, sail cream, rigging tan, pale bottle aqua tint, oxidized brass accents, neutral
-    glass highlights, and cork earth tones
+    Use a Bottle-Glass Curio Miniature-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Iluminación de exposición controlada, streaks especulares alargados en vidrio y compresión de
-    sombra interna suave.
+    Use lighting that makes Bottle-Glass Curio Miniature recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
   material_texture: >-
-    Vidrio claro micro-rayado, madera miniatura barnizada, fibra de hilo tensada, papel plegado y
-    corcho poroso.
-  render_quality: Miniatura de precisión alta con lectura de escala clara y fidelidad óptica de curio-display.
-  spatial_distortion: Cylindrical refraction warp and magnification compression introduced by curved bottle glass
-  atmosphere: Reverente, meticulosa y contemplativa, con imposibilidad serena de museo.
+    Use materials and textures that reinforce Bottle-Glass Curio Miniature: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Bottle-Glass Curio Miniature with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Bottle-Glass Curio Miniature: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Bottle-Glass Curio Miniature: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
   key_features: >-
-    Ilusión de inserción por cuello, malla fina tensada, sellado de corcho, magnificación por
-    curvatura y base de exhibición.
+    Prioritize Bottle-Glass Curio Miniature's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Encapsula cualquier sujeto como curio miniatura dentro de vidrio: refracción cilíndrica,
-    compresión por cuello, microdetalle meticuloso y base de vitrina. No depende de barco; depende
-    de imposibilidad artesanal encapsulada.
+    Create a style-card that translates Bottle-Glass Curio Miniature into a portable visual system for 6. Toy Craft And
+    Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - open ocean background
   - seascape dominance

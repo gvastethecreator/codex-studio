@@ -12,29 +12,37 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Modernismo Bauhaus funcional, claridad industrial y belleza derivada de funcion explicita.
+  aesthetic: >-
+    Bauhaus Interior within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Bauhaus Interior's specific style identity.
   form_and_line: >-
-    Interseccion de circulo/cuadrado, reticula racional, tubulares metalicos y planos limpios de
-    lectura didactica.
+    Define Bauhaus Interior through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
   color_palette: >-
-    Blanco/negro estructural, grises calidos y acentos primarios (rojo, amarillo, azul) de uso
-    jerarquico.
+    Use a Bauhaus Interior-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
   lighting_setup: >-
-    Iluminacion uniforme de tarea, spots funcionales y pendentes simples sin dramatizacion
-    superflua.
-  material_texture: Acero tubular, vidrio claro, cuero liso, madera curvada, loneta y linoleo de acabado honesto.
+    Use lighting that makes Bauhaus Interior recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Bauhaus Interior: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
   render_quality: >-
-    Precision racionalista con prioridad constructiva, composicion pedagogica y eficiencia visual
-    atemporal.
-  spatial_distortion: Neutralidad geometrica con enfasis en orden proporcional e interaccion de formas basicas.
-  atmosphere: Intelectual, limpio, pragmatico y optimista.
+    Render Bauhaus Interior with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Bauhaus Interior: perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Bauhaus Interior: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
   key_features: >-
-    Cantilever visual, acentos cromaticos controlados, estructura visible y gramatica geometrica
-    elemental.
+    Prioritize Bauhaus Interior's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Convierte cualquier input en un sistema Bauhaus donde funcion, estructura visible y geometria
-    primaria gobiernen cada decision visual. Debe sentirse pedagogico, productivo y construido, sin
-    depender de un interior ejemplar ni de ornamento anecdotico.
+    Create a style-card that translates Bauhaus Interior into a portable visual system for 1. Interior Design Systems.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - ornate
   - cluttered

@@ -1,4 +1,4 @@
-import { resolveStyleDefaultImage } from '../../lib/recipeAssetCatalog';
+import { resolveStyleDefaultImageThumbnail } from '../../lib/styleThumbnailCatalog';
 import {
   GENERATED_STYLE_RUNTIME_PACK_SUMMARIES,
   loadGeneratedStyleRuntimePack,
@@ -31,7 +31,7 @@ export async function loadStylePresetCatalogSearchIndex(
   return createStylePresetCatalogSearchIndexFromRuntimePacks(
     packs.filter((pack): pack is StyleRuntimePack => Boolean(pack)),
     {
-      resolveDefaultImage: resolveStyleDefaultImage,
+      resolveDefaultImage: resolveStyleDefaultImageThumbnail,
     },
   );
 }

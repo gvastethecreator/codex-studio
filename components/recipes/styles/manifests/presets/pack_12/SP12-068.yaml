@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Gramática skyforge prep-hub con monturas dracónicas, loadout, mantenimiento y salida aérea.
-  subject_treatment: Si el input contiene criatura o vehículo, darle arnés dracónico/forjado; si es personaje, rol rider/mecánico/combatiente.
-  color_and_tone: Azul cielo, acero y oro bruñido para jerarquía de facción y rango.
-  lighting_and_shadow: Luz abierta de altura con humo de forja localizado en zonas de trabajo.
-  texture_and_material: Escamas tratadas, remaches aeronáuticos, cuero reforzado y herrajes térmicos.
-  camera_and_composition: Puntos de despliegue, logística y líneas aéreas sin exigir dock o plataforma concreta.
-  atmosphere_and_mood: Épica, preparatoria y de anticipación bélica.
-  rendering_and_quality: 'Dragon-dock gameplay screencap: logistics, gear staging, launch route, faction readiness clear.'
+  aesthetic: >-
+    Skyforge Dragon Dock within 3. Sci-Fi Frontiers & Mech Zones: a reusable Video Game Originals Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Skyforge Dragon Dock's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Skyforge Dragon Dock's visual grammar: readable silhouette, role cues, controlled detail
+    density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Skyforge Dragon Dock: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Skyforge Dragon Dock: legible depth, purposeful highlights, readable focal zones, and
+    atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Skyforge Dragon Dock's material logic: tactile detail, coherent finish, and texture choices
+    that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Skyforge Dragon Dock's staging logic: strong focal hierarchy, stable readable framing, and spatial
+    rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Skyforge Dragon Dock's mood through environment, color, light, and texture. Keep it distinct from neighboring
+    presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 3. Sci-Fi Frontiers & Mech Zones style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

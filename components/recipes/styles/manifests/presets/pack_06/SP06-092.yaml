@@ -12,16 +12,37 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: Commodore-64-pixel-art, broad-fat-pixels in 320x200 or 160x200 multi-color mode, unmistakable C64 brown-and-grey palette, SID-chip music as visual rhythm, Last Ninja and Impossible Mission as computer-art anchors, European-computer-game look, wide-pixel-aspect-ratio stretching, 16-colors-of-genius-constraint
-  form_and_line: Fat-pixel 8x8 character blocks, multi-color overlay logic, 320x200 chunky resolution, wide-pixel-aspect stretching, hardware multiplexing barriers visible
-  color_palette: C64-classic-16 — brown, dark-grey, light-grey, orange, cyan, purple, green, blue, yellow, white, black, red, all slightly-muted-80s-computer-spectrum
-  lighting_setup: Flat-pixel-fill-lighting, no-gradients, dither-pattern-value-transitions, color-per-8x8-cell-limitation, raster-interrupt-split effects
-  material_texture: Character-block-grid, hardware-sprite-resolution-limit, dither-pattern-noise, CRT-composite-video-artifacting, SID-audio-hum-visual-counterpart
-  render_quality: Commodore-64-pixel aesthetic, 8-bit-home-computer-beauty, European-80s-game-art, fat-pixel-warmth, 16-color-mastery
-  spatial_distortion: Multi-color-character-block-grid, wide-pixel-aspect-ratio, 160x200-resolution-proportions, raster-scanline-line-rendering, PAL/NTSC-letterbox
-  atmosphere: 80s-computer-club nostalgia, bedroom-coding-wonder, cassette-loading-patience, SID-chip-soundtrack-memory, European-home-computer-warmth
-  key_features: C64 16-color palette, fat multi-color pixels, character-block-grid artifacts, wide-pixel aspect, dither-pattern shading, CRT-composite blur, raster-split effects
-  creative_brief: Any prompt is forced through sixteen muted colors and wide character-cell pixels. The image feels built from the same grid that held text, with dithered value shifts, composite blur and raster splits turning limitation into warmth.
+  aesthetic: >-
+    C64 Commodore Palette within 6. Retro Game Visual Systems: a reusable Essential Art Styles visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving C64 Commodore Palette's specific style identity.
+  form_and_line: >-
+    Define C64 Commodore Palette through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a C64 Commodore Palette-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes C64 Commodore Palette recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce C64 Commodore Palette: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render C64 Commodore Palette with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits C64 Commodore Palette: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to C64 Commodore Palette: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize C64 Commodore Palette's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates C64 Commodore Palette into a portable visual system for 6. Retro Game Visual
+    Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - smooth
   - modern

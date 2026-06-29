@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Shonen deportivo de impulso vertical, cooperación táctica, sincronía de equipo y lectura de ritmo colectivo.
-  form_and_line: Anatomía atlética limpia, arcos de salto explosivos y gestualidad de comunicación inmediata entre roles.
-  color_palette: Naranjas cálidos de rebote, cian competitivo, blancos energéticos y contraste cromático por rol visual.
-  lighting_setup: Luz de alto rebote con backlight de impacto para siluetas aéreas legibles.
-  material_texture: Superficies brillantes, malla geométrica sugerida, tela transpirable y marcas de fricción.
-  render_quality: Frame deportivo premium con jerarquía clara de impulso, coordinación y eje de bloqueo abstracto.
-  spatial_distortion: Foreshortening de salto y perspectiva de tensión que prioriza timing, recepción y respuesta colectiva.
-  atmosphere: Eléctrica, optimista y cohesionada por esfuerzo colectivo.
-  key_features: Impulso vertical, llamadas visuales de equipo, geometría de tensión, timing aéreo y energía de rally prolongado.
+  aesthetic: >-
+    Vertical Team Rally Energy Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Vertical Team Rally Energy Style's specific style identity.
+  form_and_line: >-
+    Define Vertical Team Rally Energy Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Vertical Team Rally Energy Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Vertical Team Rally Energy Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Vertical Team Rally Energy Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Vertical Team Rally Energy Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Vertical Team Rally Energy Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Vertical Team Rally Energy Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Vertical Team Rally Energy Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica una gramática reusable de energía deportiva vertical a cualquier prompt o imagen de entrada:
-    salto, sincronía y anticipación colectiva sin imponer vóley, canchas, redes, saques ni equipos concretos.
+    Create a style-card that translates Vertical Team Rally Energy Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-343.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

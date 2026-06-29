@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Ruined metropolitan iconography where sanctity survives as unstable electric folklore.
-  form_and_line: Frontal icon geometry, fractured aureole rings, cable-bundle arcs, and shrine-like symmetry.
-  color_palette: Faded cyan plasma, wounded magenta, and soot-black concrete.
-  lighting_setup: Intermittent neon fault flicker with rain-slick reflected halos.
-  material_texture: Wet brutalist concrete, shattered acrylic tubes, oxidized steel, and pasted liturgical posters.
-  render_quality: High-impact poster-concept hybrid with crisp silhouette readability for key-art use.
-  spatial_distortion: Flat-compressed devotional framing that pushes broken neon iconography toward the viewer without requiring an alley shrine.
-  atmosphere: Defiant faith, civic collapse, and reverent urban tension.
-  key_features: Broken halo scaffolds, votive cable bundles, rain-neon reflections, soot concrete, and unstable electric sainthood.
-  creative_brief: 'Canonize the input as broken neon sainthood: fractured aureoles, cyan-magenta fault light, rain-slick concrete, votive cable bundles, and blackout-era devotional symmetry should sanctify any subject without requiring a saint, city shrine, alley, graffiti wall, or literal figure.'
+  aesthetic: >-
+    Broken Neon Saint Icon within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Broken Neon Saint Icon's specific style identity.
+  form_and_line: >-
+    Define Broken Neon Saint Icon through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Broken Neon Saint Icon-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Broken Neon Saint Icon recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Broken Neon Saint Icon: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Broken Neon Saint Icon with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Broken Neon Saint Icon: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Broken Neon Saint Icon: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Broken Neon Saint Icon's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Broken Neon Saint Icon into a portable visual system for 2. Mythic Ritual Noir.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - bright-daylight

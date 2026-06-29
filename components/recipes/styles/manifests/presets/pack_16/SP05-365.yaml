@@ -12,19 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Movimiento formal en pareja, frame coreográfico, tracción elegante y tensión escénica abstracta.
-  form_and_line: Siluetas duales en giro, torso estructurado, líneas de guía y fluidez controlada.
-  color_palette: Dorados cálidos, negros de contraste formal, rojos profundos y blancos de brillo de gala.
-  lighting_setup: Spotlights cálidos de competición con reflejo fuerte en superficie pulida y bordes de silueta.
-  material_texture: Satén en flujo, cuero pulido, superficie brillante y pedrería escénica fina.
-  render_quality: Frame de danza premium con lectura de liderazgo-seguimiento, giro y postura.
-  spatial_distortion: Barrido circular con compresión de fondo y foco en eje de pareja.
-  atmosphere: Deslumbrante, tensa, romántica e intensa.
-  key_features: Reflejo de superficie, silueta dual, dinámica de giro y presión pública implícita.
+  aesthetic: >-
+    Formal Partner Motion Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Formal Partner Motion Style's specific style identity.
+  form_and_line: >-
+    Define Formal Partner Motion Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Formal Partner Motion Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Formal Partner Motion Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Formal Partner Motion Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Formal Partner Motion Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Formal Partner Motion Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Formal Partner Motion Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Formal Partner Motion Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática reusable de formal-partner-motion donde técnica de
-    pareja, teatralidad de giro y presión pública sostengan identidad visual
-    transferible sin imponer ballroom, pista, jurado ni rutina específica.
+    Create a style-card that translates Formal Partner Motion Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-365.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

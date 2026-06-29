@@ -1,4 +1,4 @@
-import { resolveStyleDefaultImage } from '../../lib/recipeAssetCatalog';
+import { resolveStyleDefaultImageThumbnail } from '../../lib/styleThumbnailCatalog';
 import type { StylePackManifest, StylePresetManifest } from './styles/manifestTypes';
 
 export type ManifestGlobLoader = () => Promise<unknown>;
@@ -24,7 +24,7 @@ async function loadYamlObjects<T>(files: Record<string, ManifestGlobLoader>) {
 }
 
 function normalizePresetAssetAvailability(preset: StylePresetManifest): StylePresetManifest {
-  const resolvedDefaultImage = resolveStyleDefaultImage(preset.id);
+  const resolvedDefaultImage = resolveStyleDefaultImageThumbnail(preset.id);
   const defaultImageExists = Boolean(resolvedDefaultImage);
   return {
     ...preset,

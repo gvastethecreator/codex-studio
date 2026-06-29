@@ -13,28 +13,36 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Anti-naturalistic ignition anime with tricolor fire geometry, protest intensity, flat chromatic
-    collision, and legible formal chaos
+    Tri-Fire Riot Geometry within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Tri-Fire Riot Geometry's specific style identity.
   form_and_line: >-
-    Aristas diagonales agresivas, siluetas icónicas abstractas, composición de póster y bloques de
-    calor facetado.
-  color_palette: Cian intenso, magenta caliente, amarillo ácido, negro carbón y blanco de choque térmico.
-  lighting_setup: Llama plana de alto croma, backlight térmico y rims duros para separar masas en conflicto.
+    Define Tri-Fire Riot Geometry through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Tri-Fire Riot Geometry-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Tri-Fire Riot Geometry recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
   material_texture: >-
-    Acabado gráfico semiplano, material termo-reactivo, hollín estilizado y overlays de energía
-    lineal.
+    Use materials and textures that reinforce Tri-Fire Riot Geometry: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
   render_quality: >-
-    Acción maximalista de lectura instantánea, con color-blocking extremo y control formal de caos
-    ígneo.
-  spatial_distortion: Perspectiva en diagonales violentas y compresión dramática para amplificar colisión heroica.
-  atmosphere: Ardiente, rebelde y estruendosa, de protesta visual en combustión.
+    Render Tri-Fire Riot Geometry with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Tri-Fire Riot Geometry: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Tri-Fire Riot Geometry: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Tricolor flame planes, angular riot geometry, flat extreme color, combative sanctity, readable
-    chaos, and thermal protest pressure
+    Prioritize Tri-Fire Riot Geometry's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Use tri-fire riot geometry as incendiary graphic grammar. Any prompt should feel urgent,
-    flat-colored, angular, and rebellious. Hardware, cities, emergency roles, vehicles, and incident
-    scenes are optional.
+    Create a style-card that translates Tri-Fire Riot Geometry into a portable visual system for 7. Mecha & Cyberpunk.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -52,8 +60,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-240.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

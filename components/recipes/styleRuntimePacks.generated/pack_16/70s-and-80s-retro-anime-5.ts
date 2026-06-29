@@ -39,24 +39,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Aventura ecológica postcolapso de espíritu luminoso, donde ruina tecnológica y rebrote natural conviven con esperanza activa.',
+        "Rusted Eco Hope Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Rusted Eco Hope Style's specific style identity.",
       form_and_line:
-        'Contorno cel robusto con acting atlético, siluetas de salto y escalada, y gesto corporal optimista de exploración.',
+        'Define Rusted Eco Hope Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Turquesas oceánicos, óxidos rojizos, verdes de rebrote y blancos solares de cielo abierto.',
+        'Use a Rusted Eco Hope Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol marítimo frontal de alto contraste, sombras cel cortas y rim ventoso para reforzar impulso acrobático.',
+        'Use lighting that makes Rusted Eco Hope Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Chapa oxidada, concreto salinizado, roca costera y vegetación resiliente sobre infraestructura antigua.',
+        'Use materials and textures that reinforce Rusted Eco Hope Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-aventura con lectura clara de movimiento, geografía insular y pulso ambiental optimista.',
+        'Render Rusted Eco Hope Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva amplia de acantilado e isla con verticalidad juguetona para enfatizar agilidad del protagonista.',
-      atmosphere: 'Esperanzadora, energética, marina, aventurera.',
+        'Use spatial behavior that fits Rusted Eco Hope Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Rusted Eco Hope Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Óxido luminoso, rebrote ecológico, energía corporal, cielo abierto y lectura optimista de mundo dañado.',
+        "Prioritize Rusted Eco Hope Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de aventura ecológica resiliente para cualquier prompt o imagen de entrada: óxido, aire abierto y esperanza activa sin imponer islas, costas, saltos juveniles ni infraestructura específica.',
+        'Create a style-card that translates Rusted Eco Hope Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -67,24 +68,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Picardía retro-jazz elegante, humor seco, glamour nocturno abstracto y tensión de engaño sofisticado.',
+        "Jazzy Rogue Heist Rhythm Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Jazzy Rogue Heist Rhythm Style's specific style identity.",
       form_and_line:
-        'Trazo cel vintage afilado, gestualidad pícara y coreografía de timing musical sin acción fija.',
+        'Define Jazzy Rogue Heist Rhythm Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Carbón nocturno, ámbar de farola, turquesa tenue y acentos crema de cartel antiguo.',
+        'Use a Jazzy Rogue Heist Rhythm Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Noir suave con contraluz recortado, reflejo húmedo y key focal en gesto de engaño.',
+        'Use lighting that makes Jazzy Rogue Heist Rhythm Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie mojada, tela textil elegante, cromado reflectante y grano telecine de caper setentero.',
+        'Use materials and textures that reinforce Jazzy Rogue Heist Rhythm Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado broadcast 80s de alto carácter, lectura clara de astucia, ritmo y puesta en escena.',
+        'Render Jazzy Rogue Heist Rhythm Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva oblicua con encuadres de fuga, contrapicado de estilo y compresión de escape.',
-      atmosphere: 'Jazzy, juguetona, traviesa, sofisticada.',
+        'Use spatial behavior that fits Jazzy Rogue Heist Rhythm Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Jazzy Rogue Heist Rhythm Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Silueta estilizada, ritmo de montaje heist, luces recortadas y acting de doble intención.',
+        "Prioritize Jazzy Rogue Heist Rhythm Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de jazzy-rogue-heist-rhythm para cualquier sujeto, priorizando elegancia táctica, ironía visual y swing nocturno sin imponer robos, calles, callejones, gabardinas, vitrinas ni dúos investigadores.',
+        'Create a style-card that translates Jazzy Rogue Heist Rhythm Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -95,24 +97,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ópera astral romántica, heroicidad melancólica, nobleza crepuscular y escala monumental.',
+        "Melancholy Astral Opera Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Melancholy Astral Opera Style's specific style identity.",
       form_and_line:
-        'Línea cel clásica de figura elevada, drapeado amplio, acting contenido de añoranza y nobleza.',
+        'Define Melancholy Astral Opera Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Índigos profundos, oro envejecido, rojo vino ceremonial y grises siderales desaturados.',
+        'Use a Melancholy Astral Opera Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Claroscuro estelar con key lateral dramática, halos de vacío y rim tenue sobre capa en movimiento.',
+        'Use lighting that makes Melancholy Astral Opera Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Metal envejecido, terciopelo ceremonial, vidrio oscuro y grano analógico elegante.',
+        'Use materials and textures that reinforce Melancholy Astral Opera Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Producción retro premium con lectura épica-lírica y composición de gran aliento visual.',
+        'Render Melancholy Astral Opera Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Grandes vacíos y ejes largos para enfatizar soledad heroica y destino itinerante.',
-      atmosphere: 'Melancólica, heroica, anhelante, grandiosa.',
+        'Use spatial behavior that fits Melancholy Astral Opera Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Melancholy Astral Opera Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Drapeado icónico, silueta noble, escala axial y horizonte abstracto como contrapeso emocional.',
+        "Prioritize Melancholy Astral Opera Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de melancholy-astral-opera para cualquier sujeto, equilibrando majestuosidad operática, soledad noble y escala crepuscular sin imponer corsarios, naves, uniformes, puentes, ventanales ni horizontes estelares literales.',
+        'Create a style-card that translates Melancholy Astral Opera Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -123,22 +126,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Procedural retro con filo cómico, elegancia precisa y tensión nocturna de deducción.',
-      form_and_line: 'Trazo cel preciso, acting seco y blocking táctico con ritmo irónico.',
-      color_palette: 'Cobalto nocturno, neón rosa-controlado, ámbar contenido y grafito frío.',
+        "Neon Procedural Irony Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Neon Procedural Irony Style's specific style identity.",
+      form_and_line:
+        'Define Neon Procedural Irony Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Neon Procedural Irony Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Contraste de vidrio y sombra, reflejos húmedos y key dirigida para lectura de indicio visual.',
+        'Use lighting that makes Neon Procedural Irony Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Tejido elegante, metal vintage abstracto, vidrio lluvioso y grano cinematográfico pulcro.',
+        'Use materials and textures that reinforce Neon Procedural Irony Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado broadcast 80s con equilibrio entre carisma procedural y ritmo de resolución.',
+        'Render Neon Procedural Irony Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad oblicua con encuadres de vigilancia, giro táctico y resolución rápida.',
-      atmosphere: 'Elegante, afilada, irónica, magnética.',
+        'Use spatial behavior that fits Neon Procedural Irony Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Neon Procedural Irony Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Siluetas elegantes, neón de expediente abstracto, acción compacta y humor procedural seco.',
+        "Prioritize Neon Procedural Irony Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de neon-procedural-irony para cualquier sujeto, combinando sofisticación táctica, deducción visual y timing irónico sin imponer policías, detectives, calles, armas, trajes, ventanas ni persecuciones.',
+        'Create a style-card that translates Neon Procedural Irony Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -149,24 +155,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Infraestructura cyber-retro hiperdensa, fricción social, velocidad mecánica y saturación sistémica.',
+        "Hyper-Dense Cyber-Retro Infrastructure Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Hyper-Dense Cyber-Retro Infrastructure Style's specific style identity.",
       form_and_line:
-        'Línea detallista y nerviosa, estructura protagonista y dinámica de desplazamiento a máxima inercia.',
+        'Define Hyper-Dense Cyber-Retro Infrastructure Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Violeta eléctrico, verde neón, concreto gris-azul y rojos de señal disruptiva.',
+        'Use a Hyper-Dense Cyber-Retro Infrastructure Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Brillo de señal superpuesto, flare industrial y sombras recortadas por capas elevadas.',
+        'Use lighting that makes Hyper-Dense Cyber-Retro Infrastructure Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficies calientes, chapa abstracta, señalética luminosa y suciedad tecnológica acumulada.',
+        'Use materials and textures that reinforce Hyper-Dense Cyber-Retro Infrastructure Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado retro de alta complejidad visual con lectura clara de caos estructurado.',
+        'Render Hyper-Dense Cyber-Retro Infrastructure Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Capas infraestructurales superpuestas para sensación de presión sistémica constante.',
-      atmosphere: 'Eléctrica, rebelde, convulsa, adrenalínica.',
+        'Use spatial behavior that fits Hyper-Dense Cyber-Retro Infrastructure Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Hyper-Dense Cyber-Retro Infrastructure Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Horizonte saturado de ingeniería, movilidad agresiva, densidad señalética y pulso de revuelta.',
+        "Prioritize Hyper-Dense Cyber-Retro Infrastructure Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de hyper-dense-cyber-retro-infrastructure para cualquier sujeto, priorizando densidad arquitectónica, energía social y movimiento continuo sin imponer ciudad literal, calles, torres, vías, pasarelas ni cartelería concreta.',
+        'Create a style-card that translates Hyper-Dense Cyber-Retro Infrastructure Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -177,23 +184,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Aventura cómica de formas redondas, inocencia física, slapstick amable y energía itinerante.',
+        "Round Adventure Slapstick Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Round Adventure Slapstick Style's specific style identity.",
       form_and_line:
-        'Trazo cel elástico y expresivo, timing de gag corporal y silueta cartoon de lectura instantánea.',
+        'Define Round Adventure Slapstick Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Amarillos soleados, verdes vivos, naranjas suaves y azules limpios de viaje clásico.',
+        'Use a Round Adventure Slapstick Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación abierta de aventura diurna, sombra simple y acentos brillantes de humor físico.',
-      material_texture: 'Polvo caricaturesco, tela simple, piedra ligera y grano retro optimista.',
+        'Use lighting that makes Round Adventure Slapstick Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Round Adventure Slapstick Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado broadcast cálido con énfasis en claridad cómica y ternura de movimiento.',
+        'Render Round Adventure Slapstick Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio expansivo y flexible para carrera, salto y choque cómico sin perder legibilidad.',
-      atmosphere: 'Aventurera, alegre, juguetona, entrañable.',
+        'Use spatial behavior that fits Round Adventure Slapstick Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Round Adventure Slapstick Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Proporción redondeada, energía de troupe, beat de broma visual y choque amistoso.',
+        "Prioritize Round Adventure Slapstick Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de round-adventure-slapstick para cualquier sujeto, enfocada en elasticidad expresiva, optimismo narrativo y ritmo de gag físico sin imponer artes marciales, viajes, troupe, combate ni mundo expansivo literal.',
+        'Create a style-card that translates Round Adventure Slapstick Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -204,24 +213,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ópera espacial clásica, con liturgia de mando analógico, solemnidad colectiva y supervivencia civilizatoria.',
+        "Analog Space Opera Command Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Analog Space Opera Command Style's specific style identity.",
       form_and_line:
-        'Contorno grueso de ingeniería, siluetas jerarquizadas y acting decidido de mando clásico setentero.',
+        'Define Analog Space Opera Command Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules interestelares profundos, rojos de alerta analógica, grises metálicos y ámbares cálidos de interfaz.',
+        'Use a Analog Space Opera Command Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación de alarma táctica con pools rojos intermitentes, key de interfaz y sombra cel de alta urgencia.',
+        'Use lighting that makes Analog Space Opera Command Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Paneles analógicos, metal pintado, fósforo de monitor y grano de telecine vintage.',
+        'Use materials and textures that reinforce Analog Space Opera Command Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-broadcast con lectura táctica clara y dramatismo emocional coral.',
+        'Render Analog Space Opera Command Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva forzada y escala cósmica monumental para enfatizar fragilidad humana frente al vacío.',
-      atmosphere: 'Noble, urgente, cósmica, sacrificial.',
+        'Use spatial behavior that fits Analog Space Opera Command Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Analog Space Opera Command Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Paneles analógicos, jerarquía compositiva, alerta solemne, escala interestelar sugerida y heroísmo coral.',
+        "Prioritize Analog Space Opera Command Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de mando espacial analógico para cualquier prompt o imagen de entrada: tensión, ceremonia técnica y escala épica sin imponer puentes de nave, consolas, cascos ni tripulaciones.',
+        'Create a style-card that translates Analog Space Opera Command Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -232,24 +242,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Romanticismo corsario crepuscular, con ética disidente, elegancia fúnebre y soledad heroica.',
+        "Melancholic Space Corsair Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Melancholic Space Corsair Style's specific style identity.",
       form_and_line:
-        'Silueta de capa dominante, línea heroica elongada y contornos limpios de icono outlaw de alto contraste.',
+        'Define Melancholic Space Corsair Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Negros terciopelo, azules de abismo estelar, rojos vino de emblema y blancos fríos de insignia.',
+        'Use a Melancholic Space Corsair Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Contraluz estelar dramático con rim fuerte sobre capa y rostro, sombras planas de fuerte identidad gráfica.',
+        'Use lighting that makes Melancholic Space Corsair Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Tejido pesado en movimiento, superficies de casco oscurecidas y señalética pirata de acabado clásico.',
+        'Use materials and textures that reinforce Melancholic Space Corsair Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Terminación premium retro-operática con foco en presencia de figura única y aura de leyenda errante.',
+        'Render Melancholic Space Corsair Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Contraste de primerísimo monumental contra vacío astral negativo para acentuar aislamiento soberano.',
-      atmosphere: 'Romántica, solitaria, rebelde, cósmica.',
+        'Use spatial behavior that fits Melancholic Space Corsair Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Melancholic Space Corsair Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Silueta imperial, vacío compositivo, viento estelar abstracto, emblemas oscuros y código moral insumiso.',
+        "Prioritize Melancholic Space Corsair Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Crea una gramática reusable de leyenda corsaria melancólica para cualquier prompt o imagen de entrada: elegancia fúnebre, vacío y disidencia sin imponer capas, calaveras, capitanes ni naves.',
+        'Create a style-card that translates Melancholic Space Corsair Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -260,23 +271,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Balada cósmica de tránsito existencial, con nostalgia elegíaca, maravilla iniciática y horizonte infinito.',
+        "Celestial Journey Melancholy Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Celestial Journey Melancholy Style's specific style identity.",
       form_and_line:
-        'Línea clásica de tránsito contemplativo, acting meditado y ritmo visual de trayecto largo.',
+        'Define Celestial Journey Melancholy Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules de noche profunda, dorados antiguos, blancos de nieve estelar y sepias de recuerdo.',
-      lighting_setup: 'Faroles lechosos, calidez compartimentada y contraluz sobre vacío estelar.',
+        'Use a Celestial Journey Melancholy Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Celestial Journey Melancholy Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Metal envejecido, vapor suave, madera antigua y película granulada de época.',
+        'Use materials and textures that reinforce Celestial Journey Melancholy Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-poético con legibilidad narrativa de tránsito y emoción de despedida continua.',
+        'Render Celestial Journey Melancholy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva longitudinal, con profundidad astral que extiende sensación de viaje eterno.',
-      atmosphere: 'Melancólica, maravillada, sideral, meditativa.',
+        'Use spatial behavior that fits Celestial Journey Melancholy Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Celestial Journey Melancholy Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Horizonte infinito, umbrales de viaje, equipaje simbólico abstracto, escala cósmica íntima y soledad luminosa.',
+        "Prioritize Celestial Journey Melancholy Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de peregrinaje metafísico para cualquier prompt o imagen de entrada: viaje, despedida y escala cósmica íntima sin imponer trenes, estaciones, vías ni equipaje literal.',
+        'Create a style-card that translates Celestial Journey Melancholy Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -287,24 +300,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Tragedia barroca insurgente, con glamour cortesano quebrado, sentimentalismo político y alto voltaje ornamental.',
+        "Baroque Insurgent Melodrama Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Baroque Insurgent Melodrama Style's specific style identity.",
       form_and_line:
-        'Línea ornamental y estilizada, posturas de retrato ceremonial y gestualidad trágica de alta teatralidad histórica.',
+        'Define Baroque Insurgent Melodrama Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Marfiles empolvados, azules reales, rojos de rosa heráldica y dorados envejecidos.',
+        'Use a Baroque Insurgent Melodrama Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz lateral ceremonial con sombras planas nobles, halos suaves sobre ornamento y contraste de protocolo.',
+        'Use lighting that makes Baroque Insurgent Melodrama Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Brocado ceremonial, encaje rígido, piedra pulida y pátina ornamental al borde del derrumbe.',
+        'Use materials and textures that reinforce Baroque Insurgent Melodrama Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-histórico con lectura de emblema visual y tensión dramática de destino.',
+        'Render Baroque Insurgent Melodrama Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Composición profunda con eje de retrato frontal y presión histórica abstracta en segundo plano.',
-      atmosphere: 'Regia, trágica, histórica, apasionada.',
+        'Use spatial behavior that fits Baroque Insurgent Melodrama Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Baroque Insurgent Melodrama Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Ornamento floral, protocolo visual, retrato trágico, sensualidad pictórica y sensación de fractura histórica.',
+        "Prioritize Baroque Insurgent Melodrama Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de melodrama barroco insurgente para cualquier prompt o imagen de entrada: protocolo, ornamento y tensión política sin imponer uniformes, palacios, escalinatas ni aristocracia literal.',
+        'Create a style-card that translates Baroque Insurgent Melodrama Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -315,24 +329,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Sitcom sci-fi ochentera de caos afectivo, color fluorescente, slapstick corporal y fricción sentimental episódica.',
+        "Neon Sci-Fi Slapstick Rom-Com Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Neon Sci-Fi Slapstick Rom-Com Style's specific style identity.",
       form_and_line:
-        'Contorno grueso caricaturesco, acting facial exagerado y timing visual de gag físico instantáneo.',
+        'Define Neon Sci-Fi Slapstick Rom-Com Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Neones rosas y turquesa, amarillos eléctricos, azules nocturnos saturados y acentos pastel de sitcom.',
+        'Use a Neon Sci-Fi Slapstick Rom-Com Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz frontal televisiva con neón filtrado, contraste bajo y acentos de gag instantáneo.',
+        'Use lighting that makes Neon Sci-Fi Slapstick Rom-Com Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie doméstica plana, señalética fluorescente, utilería sci-fi ligera y grano retro de emisión.',
+        'Use materials and textures that reinforce Neon Sci-Fi Slapstick Rom-Com Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-pop con claridad de broma, ritmo de caos y legibilidad de ensemble romántico.',
+        'Render Neon Sci-Fi Slapstick Rom-Com Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio elástico de comedia con deformaciones leves para golpes visuales y persecuciones domésticas.',
-      atmosphere: 'Hiperactiva, coqueta, neón, traviesa.',
+        'Use spatial behavior that fits Neon Sci-Fi Slapstick Rom-Com Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Neon Sci-Fi Slapstick Rom-Com Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Color fluorescente, timing corto, expresiones exageradas, gadgets absurdos sugeridos y fricción romántica caricaturesca.',
+        "Prioritize Neon Sci-Fi Slapstick Rom-Com Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de rom-com sci-fi histriónica para cualquier prompt o imagen de entrada: neón, slapstick y caos afectivo sin imponer aliens, apartamentos, persecuciones ni iconografía oni.',
+        'Create a style-card that translates Neon Sci-Fi Slapstick Rom-Com Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -343,24 +358,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Comedia romántica adulta de convivencia lenta, erosión cotidiana y ternura de segunda oportunidad.',
+        "Adult Domestic Warmth Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Adult Domestic Warmth Style's specific style identity.",
       form_and_line:
-        'Línea suave de convivencia, actuación sutil de proximidad y composición íntima con humor de fricción diaria.',
+        'Define Adult Domestic Warmth Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Ámbares de atardecer, marrones de madera vivida, verdes apagados y rojos discretos de intimidad.',
+        'Use a Adult Domestic Warmth Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz dorada de fin de tarde con sombras planas tranquilas y contraste bajo que favorece ternura acumulativa.',
+        'Use lighting that makes Adult Domestic Warmth Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficies gastadas, telas colgadas, muebles usados y grano cálido de serie televisiva clásica.',
+        'Use materials and textures that reinforce Adult Domestic Warmth Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-doméstico con énfasis en microdrama emocional y timing cómico cotidiano.',
+        'Render Adult Domestic Warmth Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Corredores estrechos y espacios conectados que intensifican roce emocional continuo.',
-      atmosphere: 'Cálida, nostálgica, doméstica, paciente.',
+        'Use spatial behavior that fits Adult Domestic Warmth Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Adult Domestic Warmth Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Clutter habitable, luz de atardecer, microgesto afectivo, desgaste entrañable y humor cotidiano suave.',
+        "Prioritize Adult Domestic Warmth Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Crea una gramática reusable de intimidad doméstica adulta para cualquier prompt o imagen de entrada: rutina, calidez y tiempo vivido sin imponer pensiones, balcones, vecinos ni romance explícito.',
+        'Create a style-card that translates Adult Domestic Warmth Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -371,24 +387,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Melodrama deportivo de verano tardío, con rivalidad, duelo íntimo y crecimiento nostálgico.',
+        "Summer Sports Melodrama Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Summer Sports Melodrama Style's specific style identity.",
       form_and_line:
-        'Línea atlética limpia, gesto contenido y composición que alterna acción física y pausa emocional.',
+        'Define Summer Sports Melodrama Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Verdes soleados, naranjas de atardecer, blancos limpios y azules deslavados de verano tardío.',
+        'Use a Summer Sports Melodrama Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol bajo cálido con contraluces amplios y sombras planas que sostienen melancolía ligera.',
+        'Use lighting that makes Summer Sports Melodrama Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Polvo seco, cuero cálido, tela funcional y grano fílmico de recuerdo deportivo.',
+        'Use materials and textures that reinforce Summer Sports Melodrama Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado retro-atlético premium con lectura táctica de esfuerzo y subtexto romántico en respiraciones largas.',
+        'Render Summer Sports Melodrama Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva abierta con compresión selectiva en momentos de mirada y decisión sentimental.',
-      atmosphere: 'Nostálgica, cálida, atlética, melancólica.',
+        'Use spatial behavior that fits Summer Sports Melodrama Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Summer Sports Melodrama Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Luz estival, presión competitiva, pausa antes del esfuerzo, deseo contenido y crescendo emocional.',
+        "Prioritize Summer Sports Melodrama Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de deporte sentimental juvenil para cualquier prompt o imagen de entrada: verano, competencia y maduración sin imponer baseball, diamantes, marcadores, dugouts ni adolescentes.',
+        'Create a style-card that translates Summer Sports Melodrama Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -399,23 +416,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Noir ochentero seductor, con cinismo brillante, comedia insolente y peligro preciso.',
+        "Eighties Neon Precision Noir Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Eighties Neon Precision Noir Style's specific style identity.",
       form_and_line:
-        'Contorno firme, acting de pose confiada y encuadres dinámicos de tensión vertical.',
+        'Define Eighties Neon Precision Noir Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules nocturnos de cristal, morados neón, grises acero y acentos rojos de peligro instantáneo.',
+        'Use a Eighties Neon Precision Noir Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Neón alto reflejado en cristal, key cortante y sombras planas de thriller televisivo.',
+        'Use lighting that makes Eighties Neon Precision Noir Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Vidrio nocturno, superficie brillante, tailoring texturado y metal pulido estilizado.',
+        'Use materials and textures that reinforce Eighties Neon Precision Noir Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-noir con lectura clara de acción, punchline visual y elegancia precisa.',
-      spatial_distortion: 'Profundidad vertical exagerada y lente de acción para ritmo de amenaza.',
-      atmosphere: 'Suave, neón, irónica, peligrosa.',
+        'Render Eighties Neon Precision Noir Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Eighties Neon Precision Noir Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Eighties Neon Precision Noir Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Neón nocturno, verticalidad abstracta, moda 80s sugerida, ironía visual y contraste entre humor y amenaza.',
+        "Prioritize Eighties Neon Precision Noir Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de noir ochentero de precisión para cualquier prompt o imagen de entrada: neón, cinismo y precisión tensa sin imponer skylines, armas, detectives ni violencia literal.',
+        'Create a style-card that translates Eighties Neon Precision Noir Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -426,24 +445,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Space-action glam hiperpop, con elegancia táctica, croma explosivo y caos coreografiado.',
+        "Explosive Space Glam Action Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Explosive Space Glam Action Style's specific style identity.",
       form_and_line:
-        'Siluetas fashion dinámicas, contorno cel contundente y lenguaje de pose dual coordinada en clave de impacto.',
+        'Define Explosive Space Glam Action Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Blancos clínicos de corredor, rosas explosivos, cianes láser y acentos amarillos de advertencia pop.',
+        'Use a Explosive Space Glam Action Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz interior brillante de sci-fi retro con flashes de energía y sombras planas para legibilidad de acción veloz.',
+        'Use lighting that makes Explosive Space Glam Action Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Corredor sci-fi pulido, textil técnico brillante, residuos de disparo láser y grano analógico televisivo.',
+        'Use materials and textures that reinforce Explosive Space Glam Action Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-glam con claridad de dúo protagonista y balance entre espectacularidad y control.',
+        'Render Explosive Space Glam Action Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Corredores de fuga y combate con perspectiva lineal acelerada para subrayar velocidad y destrucción elegante.',
-      atmosphere: 'Flashy, traviesa, pop, explosiva.',
+        'Use spatial behavior that fits Explosive Space Glam Action Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Explosive Space Glam Action Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Moda sci-fi abstracta, láseres de color, sincronía táctica sugerida, croma explosivo y composición de caos limpio.',
+        "Prioritize Explosive Space Glam Action Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de acción glam espacial para cualquier prompt o imagen de entrada: moda, energía táctica y color explosivo sin imponer dúos, pasillos, misiones ni protagonistas concretos.',
+        'Create a style-card that translates Explosive Space Glam Action Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -454,24 +474,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Pulp espacial profesionalista, con ética de oficio, aventura resolutiva y optimismo técnico ochentero.',
+        "Competent Space Pulp Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Competent Space Pulp Style's specific style identity.",
       form_and_line:
-        'Contorno robusto de diseño técnico, acting competente y staging funcional orientado a resolución práctica.',
+        'Define Competent Space Pulp Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Naranjas operativos, azules técnicos, grises industriales y blancos de señal funcional.',
+        'Use a Competent Space Pulp Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación de mantenimiento con key frontal claro, sombras planas técnicas y acentos de baliza.',
+        'Use lighting that makes Competent Space Pulp Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Metal usado, paneles de servicio, tejido técnico y desgaste mecánico de uso intensivo.',
+        'Use materials and textures that reinforce Competent Space Pulp Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-pulp con foco en claridad procedimental, jerarquía funcional y acción resolutiva.',
+        'Render Competent Space Pulp Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Gran volumen operativo con líneas guía y flujo direccional para enfatizar competencia técnica.',
-      atmosphere: 'Pulp, aventurera, competente, luminosa.',
+        'Use spatial behavior that fits Competent Space Pulp Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Competent Space Pulp Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Color-identidad fuerte, claridad procedimental, hardware funcional sugerido, oficio competente y aventura directa.',
+        "Prioritize Competent Space Pulp Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Crea una gramática reusable de pulp espacial competente para cualquier prompt o imagen de entrada: oficio, claridad técnica y heroísmo práctico. Trajes, hangares, tripulación o rescate pueden operar como indicios de oficio espacial cuando el input lo admita, sin convertir el resultado en una escena obligatoria.',
+        'Create a style-card that translates Competent Space Pulp Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -482,23 +503,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Heist glam nocturno de alta elegancia, con sofisticación ochentera, precisión coreográfica y tensión de infiltración.',
+        "Elegant Eighties Heist Glam Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Elegant Eighties Heist Glam Style's specific style identity.",
       form_and_line:
-        'Línea estilizada de figura felina, poses de infiltración milimétrica y coreografía silenciosa táctica.',
-      color_palette: 'Rojos icónicos, negros cerrados, dorados de lujo y blancos de spotlight.',
+        'Define Elegant Eighties Heist Glam Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Elegant Eighties Heist Glam Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Conos de luz de seguridad, sombras planas marcadas y brillos reflectivos para tensión furtiva.',
+        'Use lighting that makes Elegant Eighties Heist Glam Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Piedra pulida, vidrio reflectivo, cuero técnico y grano analógico de serie nocturna retro.',
+        'Use materials and textures that reinforce Elegant Eighties Heist Glam Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de thriller elegante con legibilidad de movimiento furtivo y glamour controlado.',
+        'Render Elegant Eighties Heist Glam Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio abstracto con perspectiva profunda y capas de vigilancia que tensionan el vector de salida.',
-      atmosphere: 'Astuta, elegante, nocturna, glamurosa.',
+        'Use spatial behavior that fits Elegant Eighties Heist Glam Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Elegant Eighties Heist Glam Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Rojo acento, lujo reflejado, ballet criminal abstracto, siluetas elegantes y precisión estratégica.',
+        "Prioritize Elegant Eighties Heist Glam Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de heist glam para cualquier prompt o imagen de entrada: elegancia, reflejos y tensión furtiva sin imponer tríos, ladronas, museos, vitrinas ni leotardos.',
+        'Create a style-card that translates Elegant Eighties Heist Glam Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -509,24 +532,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Épica zodiacal juvenil, con fraternidad heroica, brillo ritual y dramatismo cósmico declarativo.',
+        "Zodiac Cosmic Heroism Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Zodiac Cosmic Heroism Style's specific style identity.",
       form_and_line:
-        'Contornos brillantes, anatomía heroica elongada y poses de impacto frontal con energía ritual sagrada.',
+        'Define Zodiac Cosmic Heroism Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules celestes, dorados astrales, blancos marmóreos y rojos de voluntad combativa.',
+        'Use a Zodiac Cosmic Heroism Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Flares de constelación sobre clave dura de cel, sombras planas dramáticas y rim luminoso en bordes ornamentales.',
+        'Use lighting that makes Zodiac Cosmic Heroism Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Brillo ceremonial pulido, piedra mítica abstracta, partículas de impacto y grano analógico retro.',
+        'Use materials and textures that reinforce Zodiac Cosmic Heroism Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-shonen con lectura instantánea de equipo, poder astral y escalada de intensidad.',
+        'Render Zodiac Cosmic Heroism Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva monumental ascendente para amplificar sacrificio, impacto y destino estelar.',
-      atmosphere: 'Mítica, vehemente, celeste, sacrificial.',
+        'Use spatial behavior that fits Zodiac Cosmic Heroism Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Zodiac Cosmic Heroism Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Iconografía estelar, brillo ritual, estelas cósmicas, pose declarativa y emoción combativa juvenil.',
+        "Prioritize Zodiac Cosmic Heroism Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de heroísmo zodiacal para cualquier prompt o imagen de entrada: cosmos, brillo y juramento visual sin imponer armaduras, templos, escalinatas ni combates literales.',
+        'Create a style-card that translates Zodiac Cosmic Heroism Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -537,23 +561,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Retrofuturo rebelde de OVA ochentera, con neón sintético, velocidad gráfica y paranoia de sistema encubierto.',
+        "Arcade Techno-Rebellion Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Arcade Techno-Rebellion Style's specific style identity.",
       form_and_line:
-        'Trazado afilado de señalética, diagonales cinéticas y silueta rebelde como eje de identidad visual.',
-      color_palette: 'Cianes y magentas arcade, violetas sintéticos de twilight y negros húmedos.',
+        'Define Arcade Techno-Rebellion Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Arcade Techno-Rebellion Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Derrame de neón nocturno, parpadeo de cartelería abstracta y contraste cel duro con backfill de sodio.',
+        'Use lighting that makes Arcade Techno-Rebellion Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Brillo de lluvia sobre superficie oscura, borde de bloom CRT y grano analógico de video-era.',
+        'Use materials and textures that reinforce Arcade Techno-Rebellion Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium OVA retro-tech con claridad de velocidad y atmósfera de inquietud sistémica.',
+        'Render Arcade Techno-Rebellion Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva de avance forzado con compresión profunda para enfatizar fuga y revelación.',
-      atmosphere: 'Elegante, rebelde, nocturna, revelatoria.',
+        'Use spatial behavior that fits Arcade Techno-Rebellion Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Arcade Techno-Rebellion Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Overlays de arcade, neón sintético, velocidad lateral, vigilancia abstracta y revelación de verdad oculta.',
+        "Prioritize Arcade Techno-Rebellion Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de techno-rebeldía ochentera para cualquier prompt o imagen de entrada: arcade, velocidad y paranoia. El input puede recibir moto, rider silhouette, carretera abstracta o skyline glitch si refuerza la tensión retro-tech, sin fijar persecución ni ciudad literal.',
+        'Create a style-card that translates Arcade Techno-Rebellion Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -564,23 +590,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Pulp espacial canalla de carisma seductor, humor insolente y peligro cool en clave noir retrofuturista.',
+        "Charismatic Space Rogue Pulp Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Charismatic Space Rogue Pulp Style's specific style identity.",
       form_and_line:
-        'Silueta rogue confiada, postura relajada de tensión y contorno cel limpio con staging pulp de viñeta dinámica.',
-      color_palette: 'Rojo dominante, púrpuras interestelares, ámbar ahumado y azules acero.',
+        'Define Charismatic Space Rogue Pulp Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Charismatic Space Rogue Pulp Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación lounge-noir, bordes de energía, charcos de luz baja y rim estelar cosmopolita.',
+        'Use lighting that makes Charismatic Space Rogue Pulp Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Brillo de vestuario retro, humo difuso de ambiente, superficies sci-fi cepilladas y grano compositivo analógico.',
+        'Use materials and textures that reinforce Charismatic Space Rogue Pulp Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium pulp-80s con legibilidad total del protagonista y atmósfera de peligro juguetón.',
+        'Render Charismatic Space Rogue Pulp Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Encuadre centrado en carisma con profundidad comprimida y dinámica one-vs-many de alta confianza.',
-      atmosphere: 'Desfachatada, cósmica, juguetona, peligrosa.',
+        'Use spatial behavior that fits Charismatic Space Rogue Pulp Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Charismatic Space Rogue Pulp Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Rojo acento, silueta relajada, amenaza elegante, ironía visual y lujo retrofuturista sugerido.',
+        "Prioritize Charismatic Space Rogue Pulp Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de rogue pulp espacial para cualquier prompt o imagen de entrada: seducción, ironía y amenaza elegante sin imponer chaquetas, láseres, clubes ni anti-héroes concretos.',
+        'Create a style-card that translates Charismatic Space Rogue Pulp Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -591,24 +619,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Tragedia política áspera, donde juventud, geometría coercitiva e institución opresiva chocan.',
+        "Angular Institutional Tragedy Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Angular Institutional Tragedy Style's specific style identity.",
       form_and_line:
-        'Contorno angular severo, siluetas rígidas y actuación contenida de trauma bajo presión institucional.',
+        'Define Angular Institutional Tragedy Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Grises industriales, azules fríos de interfaz, rojos de alerta táctica y blancos desaturados.',
+        'Use a Angular Institutional Tragedy Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz dura de control institucional, sombras cel planas tajantes y destellos de interfaz en rostros tensos.',
+        'Use lighting that makes Angular Institutional Tragedy Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Aleación pesada, vidrio fracturable, paneles tácticos y ruido analógico de señal en crisis.',
+        'Use materials and textures that reinforce Angular Institutional Tragedy Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-institucional con lectura estratégica clara y peso emocional de decisión irreversible.',
+        'Render Angular Institutional Tragedy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad comprimida y escala opresiva para reforzar claustrofobia política.',
-      atmosphere: 'Tensa, institucional, trágica, cortante.',
+        'Use spatial behavior that fits Angular Institutional Tragedy Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Angular Institutional Tragedy Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Geometría angular, luz de conflicto, códigos abstractos de poder, crisis psicológica y masa opresiva.',
+        "Prioritize Angular Institutional Tragedy Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de tragedia institucional angular para cualquier prompt o imagen de entrada: aristas, trauma y poder opresivo sin imponer colonias, cabinas, pilotos, facciones ni máquinas concretas.',
+        'Create a style-card that translates Angular Institutional Tragedy Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -647,24 +676,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Maquinaria táctica terrenal, doctrina funcional, fatiga de campaña y sobriedad operacional.',
+        "Grounded Tactical Machinery Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Grounded Tactical Machinery Style's specific style identity.",
       form_and_line:
-        'Línea técnica robusta, panelado legible y acting de tensión logística continua.',
+        'Define Grounded Tactical Machinery Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Olivas apagados, tierra polvorienta, acero mate y rojos mínimos de señal de riesgo.',
+        'Use a Grounded Tactical Machinery Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz dura de campo abierto, sombras secas de blindaje y reflejos discretos en metal funcional.',
+        'Use lighting that makes Grounded Tactical Machinery Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie rayada, barro compactado, lona técnica y grano viejo de crónica operacional.',
+        'Use materials and textures that reinforce Grounded Tactical Machinery Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado retro de precisión mecánica con claridad documental de hardware y cadena funcional.',
+        'Render Grounded Tactical Machinery Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad por capas tácticas con bloqueos, cobertura abstracta y avance pesado.',
-      atmosphere: 'Seria, devastada, áspera, resiliente.',
+        'Use spatial behavior that fits Grounded Tactical Machinery Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Grounded Tactical Machinery Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Masa funcional, mapa táctico implícito, desgaste prolongado y peso logístico visible.',
+        "Prioritize Grounded Tactical Machinery Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de grounded-tactical-machinery para cualquier sujeto, priorizando funcionalidad mecánica, disciplina táctica y peso logístico. Si el input admite transformación mecánica, puede volverse mecha, vehículo táctico o hardware operativo; si no, debe recibir placas, marcas de mantenimiento y peso logístico sin fijar frente de guerra, escuadra, mapa ni campo de batalla.',
+        'Create a style-card that translates Grounded Tactical Machinery Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -675,24 +705,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Espectáculo pop transformable de alto brillo, teatralidad aérea y emoción de clímax performático.',
+        "Pop Transformable Aerial Spectacle Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Pop Transformable Aerial Spectacle Style's specific style identity.",
       form_and_line:
-        'Trazo cel dinámico con coreografía de ascenso y transición performance-heroísmo.',
+        'Define Pop Transformable Aerial Spectacle Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Magentas de show, cian eléctrico, blanco perlado y acentos metálicos cromados.',
+        'Use a Pop Transformable Aerial Spectacle Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Spotlights glam combinados con flare técnico, rim brillante y gradiente futurista.',
+        'Use lighting that makes Pop Transformable Aerial Spectacle Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Lentejuela textil, pintura técnica brillante, panel translúcido y grano cálido broadcast.',
+        'Use materials and textures that reinforce Pop Transformable Aerial Spectacle Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado retro premium de espectáculo híbrido con legibilidad simultánea de ícono pop y tecnología.',
+        'Render Pop Transformable Aerial Spectacle Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio elevado y ascendente conectado por encuadres de transformación y vuelo gráfico.',
-      atmosphere: 'Radiante, emotiva, espectacular, eufórica.',
+        'Use spatial behavior that fits Pop Transformable Aerial Spectacle Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Pop Transformable Aerial Spectacle Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Silueta pop distintiva, transformación técnica, iluminación de show y gestualidad de clímax.',
+        "Prioritize Pop Transformable Aerial Spectacle Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de pop-transformable-aerial-spectacle para cualquier sujeto, equilibrando brillo escénico, ingeniería heroica y emoción de directo. Puede convertir el input en ícono transformable, mecha pop o nave-espectáculo si refuerza el estilo; evita fijar idol, escenario, concierto, cockpit, aeronave literal o combate.',
+        'Create a style-card that translates Pop Transformable Aerial Spectacle Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -703,24 +734,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Drama de entrenamiento y sacrificio extremo, con vulnerabilidad emotiva, escala cósmica y determinación formativa.',
+        "Monumental Formation Sacrifice Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Monumental Formation Sacrifice Style's specific style identity.",
       form_and_line:
-        'Línea cel de alto contraste, close-ups emocionales intensos y siluetas monumentales frente a fragilidad humana.',
+        'Define Monumental Formation Sacrifice Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules nocturnos de base, blancos técnicos, rojos de alarma y naranjas de impulso terminal.',
+        'Use a Monumental Formation Sacrifice Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz industrial con destellos de energía, sombras planas rígidas y backlight de cuenta regresiva emocional.',
+        'Use lighting that makes Monumental Formation Sacrifice Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Masa técnica pesada, paneles funcionales, superficies de esfuerzo y grano televisivo ochentero.',
+        'Use materials and textures that reinforce Monumental Formation Sacrifice Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-dramático con énfasis en escala, cuerpo vulnerable y crescendo emocional de partida.',
+        'Render Monumental Formation Sacrifice Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva vertical extrema que magnifica madurez forzada y salto irreversible.',
-      atmosphere: 'Sincera, grandiosa, llorosa, heroica.',
+        'Use spatial behavior that fits Monumental Formation Sacrifice Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Monumental Formation Sacrifice Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Escala colosal, lágrimas de determinación, infraestructura abstracta, salto irreversible y emoción formativa.',
+        "Prioritize Monumental Formation Sacrifice Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Crea una gramática reusable de heroísmo formativo monumental para cualquier prompt o imagen de entrada: entrenamiento, sacrificio y escala cósmica sin imponer academias, plataformas, motores, pilotos ni lanzamientos.',
+        'Create a style-card that translates Monumental Formation Sacrifice Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -731,24 +763,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía biomórfica de extrañeza onírica, con tecnología ritual, niebla viva y siluetas quiméricas.',
+        "Biomorphic Mist Ritual Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Biomorphic Mist Ritual Style's specific style identity.",
       form_and_line:
-        'Siluetas quiméricas con línea orgánico-metálica, poses heroicas y contorno clásico de cel.',
+        'Define Biomorphic Mist Ritual Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Verdes brumosos, violetas de crepúsculo arcano, metales opacos y acentos lumínicos etéreos.',
+        'Use a Biomorphic Mist Ritual Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Niebla luminosa como fuente principal, key suave de contracampo y sombras planas que conservan legibilidad retro.',
+        'Use lighting that makes Biomorphic Mist Ritual Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Quitina metálica, membranas translúcidas, materia húmeda fantástica y ruido fílmico analógico.',
+        'Use materials and textures that reinforce Biomorphic Mist Ritual Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-fantasy con claridad de diseño híbrido y atmósfera de tensión irreal sostenida.',
+        'Render Biomorphic Mist Ritual Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad brumosa con distorsión ligera de escala para reforzar mundo no terrestre.',
-      atmosphere: 'Extraña, brumosa, heroica, ultraterrena.',
+        'Use spatial behavior that fits Biomorphic Mist Ritual Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Biomorphic Mist Ritual Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Niebla viva, siluetas quiméricas, biología mecánica, brillo ritual y relieve fantástico abstracto.',
+        "Prioritize Biomorphic Mist Ritual Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de fantasía biomórfica para cualquier prompt o imagen de entrada: niebla, quimera y tecnología ritual. Insectos, espadas, mechas orgánicos o reliquias vivas pueden transformar el input si sostienen el estilo, sin fijar guerra ni escena de combate.',
+        'Create a style-card that translates Biomorphic Mist Ritual Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -759,24 +792,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Horror demónico setentero de violencia expresionista, con transformación corporal cruda y tragedia sin filtro.',
+        "Psychedelic Demonic Horror Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Psychedelic Demonic Horror Style's specific style identity.",
       form_and_line:
-        'Deformación anatómica agresiva, trazo quebrado de metamorfosis y energía de tinta frenética.',
+        'Define Psychedelic Demonic Horror Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Rojos hemáticos ácidos, amarillos tóxicos, violetas infernales y blancos de pánico estroboscópico.',
+        'Use a Psychedelic Demonic Horror Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Estallidos de contraste, subluces de horror y sombras cel inestables con artefacto de señal analógica.',
+        'Use lighting that makes Psychedelic Demonic Horror Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Pintura cel rugosa, sangrado croma de TV antigua y fondos deteriorados de pincel duro.',
+        'Use materials and textures that reinforce Psychedelic Demonic Horror Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de shock-retro deliberadamente abrasivo, con legibilidad emocional asentada en confrontación visual.',
+        'Render Psychedelic Demonic Horror Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Warping de body horror y encuadre desorientado impulsado por dolor de transformación.',
-      atmosphere: 'Pánico, psicodelia, tragedia, primalidad.',
+        'Use spatial behavior that fits Psychedelic Demonic Horror Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Psychedelic Demonic Horror Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Agonía metamórfica, simbolismo apocalíptico, brutalidad cromática, grano de broadcast antiguo e impacto visceral.',
+        "Prioritize Psychedelic Demonic Horror Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de horror demónico expresionista para cualquier prompt o imagen de entrada: transformación, crudeza y tragedia cromática sin imponer demonios literales ni escenas de violencia concreta.',
+        'Create a style-card that translates Psychedelic Demonic Horror Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -787,24 +821,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Épica de supervivencia brutal, impacto físico extremo, ferocidad ritual y dureza post-colapso.',
+        "Wasteland Impact Legend Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Wasteland Impact Legend Style's specific style identity.",
       form_and_line:
-        'Línea gruesa y cortante, anatomía hipertensa y puesta de golpe frontal con lectura brutal inmediata.',
+        'Define Wasteland Impact Legend Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Ocres abrasados, negros pesados, rojos secos y acentos hueso de paisaje devastado.',
+        'Use a Wasteland Impact Legend Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol alto implacable y sombras densas, con destellos duros sobre sudor, metal y cuero gastado.',
+        'Use lighting that makes Wasteland Impact Legend Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cuero curtido, polvo volcánico, cicatriz visible y grano áspero de cinta analógica violenta.',
+        'Use materials and textures that reinforce Wasteland Impact Legend Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado retro de alto contraste corporal, privilegiando contundencia, daño y resiliencia.',
+        'Render Wasteland Impact Legend Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Horizonte árido abstracto con encuadres de colisión directa y escala de choque primitivo.',
-      atmosphere: 'Brutal, icónica, tensa, visceral.',
+        'Use spatial behavior that fits Wasteland Impact Legend Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Wasteland Impact Legend Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Siluetas masivas, gesto de supervivencia, dureza wasteland y coreografía de impacto sin ornamento.',
+        "Prioritize Wasteland Impact Legend Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de wasteland-impact-legend para cualquier sujeto, enfocada en peso físico, dureza material y catarsis de choque sin imponer desiertos, duelos, guerreros, cuero, cicatrices ni combate literal.',
+        'Create a style-card that translates Wasteland Impact Legend Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -815,24 +850,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Ópera pop de dualidad estratégica y espectáculo emocional, donde tensión técnica y melodrama cromático coexisten.',
+        "Strategic Pop Duality Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Strategic Pop Duality Style's specific style identity.",
       form_and_line:
-        'Doble registro de línea, rigidez operacional y fluidez performativa de espectáculo.',
+        'Define Strategic Pop Duality Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Grises tácticos, rojos de alerta, azules estelares y pasteles pop de contrapeso emocional.',
+        'Use a Strategic Pop Duality Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Haze técnico combinado con spot escénico, glow de interfaz y contraluces cósmicos de gran dramatismo.',
+        'Use lighting that makes Strategic Pop Duality Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Placas pintadas, marcas operativas, superficies de show y shimmer de borde cel analógico.',
+        'Use materials and textures that reinforce Strategic Pop Duality Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium retro-futuro con balance nítido entre lectura táctica y catarsis pop escénica.',
+        'Render Strategic Pop Duality Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Escala macro contrapuesta a encuadre íntimo performativo para tensión entre estrategia y canción.',
-      atmosphere: 'Romántica, estratégica, pop, sideral.',
+        'Use spatial behavior that fits Strategic Pop Duality Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Strategic Pop Duality Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Contraste táctico-pop, escala operática, color pop, melodrama estratégico y diseño técnico sentimental.',
+        "Prioritize Strategic Pop Duality Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de pop estratégico dual para cualquier prompt o imagen de entrada: estrategia, espectáculo y romance gráfico. Idols, mechas, carrier decks, ciudad-nave u operaciones militares pueden funcionar como indicios de escala y dualidad pop-táctica cuando aporten estilo, sin fijar una escena militar.',
+        'Create a style-card that translates Strategic Pop Duality Style into a portable visual system for 11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

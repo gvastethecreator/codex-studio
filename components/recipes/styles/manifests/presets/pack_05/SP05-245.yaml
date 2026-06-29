@@ -12,20 +12,39 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Profecía romántica ventosa, fatalismo adivinatorio, melancolía carmín y contraste entre curva shōjo y geometría épica.
-  form_and_line: Curvas emocionales, diagonales de viento, ornamento arcano, contrapunto angular y poses teatrales de destino.
-  color_palette: Carmín crepuscular, azul viento, dorado arcano, plata fría y violeta profético.
-  lighting_setup: Backlight ventoso, glow místico facetado y key dramático de tensión sentimental.
-  material_texture: Tela batida por viento, metal pulido abstracto, piedra ceremonial, brillo adivinatorio y humo atmosférico.
-  render_quality: Fantasía romántica de alto dramatismo con fusión legible de épica mecha y sensibilidad shōjo.
-  spatial_distortion: Profundidad por corrientes de viento, diagonales de destino, tensión entre curvas suaves y masas angulares.
-  atmosphere: Ventosa, mística y apasionada, con tensión entre amor y guerra.
-  key_features: Simbolismo adivinatorio, ráfagas diagonales, contraste shōjo-angular, plata arcana y mirada predestinada.
+  aesthetic: >-
+    The Vision of Escaflowne - Windblown Tarot Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving The Vision of Escaflowne - Windblown Tarot Fantasy's specific style
+    identity.
+  form_and_line: >-
+    Define The Vision of Escaflowne - Windblown Tarot Fantasy through line, mass, contour, spacing, and rhythm. Keep
+    forms readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a The Vision of Escaflowne - Windblown Tarot Fantasy-specific palette with clear dominant, secondary, and accent
+    roles. Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes The Vision of Escaflowne - Windblown Tarot Fantasy recognizable: purposeful key, rim,
+    bounce, shadow, and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce The Vision of Escaflowne - Windblown Tarot Fantasy: surface response,
+    grain, patina, polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render The Vision of Escaflowne - Windblown Tarot Fantasy with high production clarity, strong silhouette reads,
+    clean detail priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits The Vision of Escaflowne - Windblown Tarot Fantasy: perspective, compression,
+    exaggeration, or depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to The Vision of Escaflowne - Windblown Tarot Fantasy: specific, coherent, and distinct,
+    with emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize The Vision of Escaflowne - Windblown Tarot Fantasy's key features: recognizable shape language, palette
+    logic, material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática windblown-prophecy reusable donde romance fatalista,
-    iconografía adivinatoria, viento y contraste angular construyan épica emotiva
-    transferible, sin fijar rol, artefacto, conflicto o vínculo narrativo
-    específico.
+    Create a style-card that translates The Vision of Escaflowne - Windblown Tarot Fantasy into a portable visual system
+    for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character,
+    prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +61,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-245.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

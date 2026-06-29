@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Gramática tower-defense nocturna con plantación mecanizada, economía local y carriles convergentes.
-  subject_treatment: Reinterpreta el input como centinela, torreta improvisada, cultivo-máquina o unidad de oleada.
-  color_and_tone: Verde oscuro, naranja lámpara y gris acero para separar línea defensiva y puntos críticos.
-  lighting_and_shadow: Iluminación perimetral con sombras largas para telegraph de oleadas.
-  texture_and_material: Suelo húmedo, metal oxidado, follaje utilitario y maquinaria agrícola reforzada.
-  camera_and_composition: Carriles convergentes y nodos de upgrade visibles sin exigir granero u orchard.
-  atmosphere_and_mood: Cooperativa, resistente y de presión sostenida.
-  rendering_and_quality: 'Tactical defense gameplay screencap: pathing, range, orchard-machine waves, priority targets clear.'
+  aesthetic: >-
+    Iron Orchard Defense Night within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Iron Orchard Defense Night's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Iron Orchard Defense Night's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Iron Orchard Defense Night: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Iron Orchard Defense Night: legible depth, purposeful highlights, readable focal zones,
+    and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Iron Orchard Defense Night's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Iron Orchard Defense Night's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Iron Orchard Defense Night's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

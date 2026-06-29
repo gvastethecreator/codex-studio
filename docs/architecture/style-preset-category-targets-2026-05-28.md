@@ -7,7 +7,7 @@ This file defines target category topology for packs that still rely on broad or
 - Category ids: `kebab-case` only.
 - Taxonomy ids/tags: English only.
 - Prefer category sizes in ~12-35 preset range.
-- Avoid catch-all ids (`videojuegos`, `misc`, `other`) in durable manifests.
+- Avoid catch-all ids (`misc`, `other`, or legacy game buckets) in durable manifests.
 
 ## Anime family targets
 
@@ -37,7 +37,7 @@ This file defines target category topology for packs that still rely on broad or
 - `core-anime` (renamed from `core_anime`)
 - `slice-of-life-school-music` (renamed from `slice_of_life_school_music`)
 
-## Decomposition targets for legacy `videojuegos` packs
+## Decomposition targets for legacy game catch-all packs
 
 ## `pack_01` Photography & Realism
 

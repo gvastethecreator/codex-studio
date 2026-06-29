@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Prophetic archive language built from mirrored fragments, uncertain memory, and refracted omens.
-  form_and_line: Repeating mirror arcs, catalog-like divisions, and reflective corridor rhythms.
-  color_palette: Silvered gray, indigo, and ivory.
-  lighting_setup: Broken reflections and candle glimmers.
-  material_texture: Polished glass, vellum-like surfaces, lacquered wood, and silvering scars.
-  render_quality: Lyrical concept art with precise symbolic layering.
-  spatial_distortion: Hall-of-mirrors depth with archival order, applicable to portraits, objects, or abstract forms.
-  atmosphere: Uncertainty, memory, and hidden knowledge.
-  key_features: Oracle mirror shards, catalog tablets, sealed prophecy fragments.
-  creative_brief: 'Reframe any input as reflective oracle archive logic: mirror shards, silvering scars, catalog divisions, indigo memory, and refracted prophecy should reshape the subject without requiring rooms, libraries, tablets, corridors, or literal archive furniture.'
+  aesthetic: >-
+    Mirror Oracle Refraction Archive within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Mirror Oracle Refraction Archive's specific style identity.
+  form_and_line: >-
+    Define Mirror Oracle Refraction Archive through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Mirror Oracle Refraction Archive-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Mirror Oracle Refraction Archive recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Mirror Oracle Refraction Archive: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Mirror Oracle Refraction Archive with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Mirror Oracle Refraction Archive: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Mirror Oracle Refraction Archive: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Mirror Oracle Refraction Archive's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Mirror Oracle Refraction Archive into a portable visual system for 1. Mythic
+    Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cheerful

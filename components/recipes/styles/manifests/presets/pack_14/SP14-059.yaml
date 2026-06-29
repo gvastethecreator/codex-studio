@@ -13,16 +13,38 @@ tags:
   - mythic
   - african-myth
 visualDna:
-  aesthetic: Crocodile river pact language guarded by spirit totems, caution, and elemental respect.
-  form_and_line: River-stair cues, shrine pylons, and rope-crossing geometry.
-  color_palette: Mud green, bronze, and dusk violet.
-  lighting_setup: Reflective water light and ritual lantern clusters.
-  material_texture: Reed mats, wet stone, and carved totems.
-  render_quality: Atmospheric riverside concept.
-  spatial_distortion: Longitudinal water-edge depth with crossing tension.
-  atmosphere: Caution, reverence, and elemental pact.
-  key_features: Covenant basin cues, crocodile masks, oath posts.
-  creative_brief: Apply crocodile river pact to the input, making passage feel ritually acknowledged without requiring a ford or shrine.
+  aesthetic: >-
+    Crocodile River Pact within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Crocodile River Pact's specific style identity.
+  form_and_line: >-
+    Define Crocodile River Pact through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Crocodile River Pact-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Crocodile River Pact recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Crocodile River Pact: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Crocodile River Pact with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Crocodile River Pact: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Crocodile River Pact: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Crocodile River Pact's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Crocodile River Pact into a portable visual system for 6. Mythic African
+    Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - photoreal
   - slapstick

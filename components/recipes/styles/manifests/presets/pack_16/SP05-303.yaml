@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Balada cósmica de tránsito existencial, con nostalgia elegíaca, maravilla iniciática y horizonte infinito.
-  form_and_line: Línea clásica de tránsito contemplativo, acting meditado y ritmo visual de trayecto largo.
-  color_palette: Azules de noche profunda, dorados antiguos, blancos de nieve estelar y sepias de recuerdo.
-  lighting_setup: Faroles lechosos, calidez compartimentada y contraluz sobre vacío estelar.
-  material_texture: Metal envejecido, vapor suave, madera antigua y película granulada de época.
-  render_quality: Acabado premium retro-poético con legibilidad narrativa de tránsito y emoción de despedida continua.
-  spatial_distortion: Perspectiva longitudinal, con profundidad astral que extiende sensación de viaje eterno.
-  atmosphere: Melancólica, maravillada, sideral, meditativa.
-  key_features: Horizonte infinito, umbrales de viaje, equipaje simbólico abstracto, escala cósmica íntima y soledad luminosa.
+  aesthetic: >-
+    Celestial Journey Melancholy Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Celestial Journey Melancholy Style's specific style identity.
+  form_and_line: >-
+    Define Celestial Journey Melancholy Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Celestial Journey Melancholy Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Celestial Journey Melancholy Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Celestial Journey Melancholy Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Celestial Journey Melancholy Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Celestial Journey Melancholy Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Celestial Journey Melancholy Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Celestial Journey Melancholy Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática reusable de peregrinaje metafísico para cualquier prompt o imagen de entrada:
-    viaje, despedida y escala cósmica íntima sin imponer trenes, estaciones, vías ni equipaje literal.
+    Create a style-card that translates Celestial Journey Melancholy Style into a portable visual system for 11. 70s &
+    80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-303.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

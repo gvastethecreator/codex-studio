@@ -13,32 +13,36 @@ tags:
   - interior-design-systems
 visualDna:
   aesthetic: >-
-    Modernismo doméstico de mitad de siglo con optimismo atómico, sofisticación sobria y presencia
-    escultórica habitable.
+    Mid-Century Modern within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Mid-Century Modern's specific style identity.
   form_and_line: >-
-    Curvas orgánicas contenidas, patas cónicas, volúmenes bajos, módulos horizontales y siluetas
-    icónicas equilibradas.
+    Define Mid-Century Modern through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
   color_palette: >-
-    Teca y nogal como base, mostaza/oliva y naranja quemado como acentos, neutros cálidos para
-    cohesión.
+    Use a Mid-Century Modern-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
   lighting_setup: >-
-    Resplandor práctico cálido, colgantes de época como geometría opcional, luz de tarde filtrada y contraste suave de
-    hospitalidad social.
-  material_texture: Chapas de madera finas, tejidos de lana/tweed, contrachapado moldeado, metal ligero cepillado.
+    Use lighting that makes Mid-Century Modern recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Mid-Century Modern: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
   render_quality: >-
-    Editorial retro contemporáneo con nostalgia controlada, claridad de mobiliario y composición
-    funcional elegante.
+    Render Mid-Century Modern with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Proporción estable con énfasis en lectura de piezas; profundidad por ritmo modular, no por
-    teatralidad.
-  atmosphere: Acogedor, conversacional, curado y optimista sin exceso decorativo.
+    Use spatial behavior that fits Mid-Century Modern: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Mid-Century Modern: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Silueta baja, soporte cónico, calidez nogal-teca, acentos atómicos y equilibrio entre función
-    legible y curva suave.
+    Prioritize Mid-Century Modern's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Mantén una gramática mid-century transferible: proporción baja, silueta icónica y coreografía
-    madera-textil-luz cálida. El resultado debe sentirse social y refinado sobre cualquier input,
-    sin caer en pastiche vintage ni depender de lámparas literales o sala escenificada.
+    Create a style-card that translates Mid-Century Modern into a portable visual system for 1. Interior Design Systems.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - antique
   - victorian

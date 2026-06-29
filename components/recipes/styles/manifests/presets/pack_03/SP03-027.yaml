@@ -12,22 +12,34 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: Organic blobs merging
-  form_and_line: Smooth curves
-  color_palette: Gradient, glossy, blobby fusion
-  lighting_setup: Studio, specular curves
-  material_texture: Smooth plastic, elastic surface
-  render_quality: Abstract, motion graphics, organic fluidity
-  atmosphere: Fluid, abstract, hypnotic flow
-  key_features: Merging shapes, surface tension
+  aesthetic: >-
+    Metaballs within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis,
+    disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving
+    Metaballs's specific style identity.
+  form_and_line: >-
+    Define Metaballs through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable
+    beyond one literal scene.
+  color_palette: >-
+    Use a Metaballs-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and
+    avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Metaballs recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable
+    hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Metaballs: surface response, grain, patina, polish, or wear should feel
+    intentional and style-defining.
+  render_quality: >-
+    Render Metaballs with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI,
+    text, logos, or watermark.
+  atmosphere: >-
+    Set a mood that belongs to Metaballs: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Metaballs's key features: recognizable shape language, palette logic, material cues, lighting behavior,
+    and composition rules.
   creative_brief: >-
-    Spheres reach toward each other across invisible thresholds, and where they touch, surface tension bridges the gap
-    into a single continuous form — the isosurface algorithm deciding where one blob ends and another begins. Glossy
-    gradients wrap every curve like liquid plastic frozen mid-pour, and specular highlights trace the seams of fusion.
-    The image is hypnotic abstraction: molecular, organic, a lava lamp rendered with the precision of mathematical
-    inevitability. Apply Metaballs as a portable 3D/render style system over any input: preserve its renderer logic,
-    material behavior, geometry language, lighting grammar, and production cues while avoiding a required character,
-    vehicle, prop, environment, UI screen, product shot, or scene template.
+    Create a style-card that translates Metaballs into a portable visual system for 4. 3D Styles. Preserve the preset
+    identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - sharp
   - geometric

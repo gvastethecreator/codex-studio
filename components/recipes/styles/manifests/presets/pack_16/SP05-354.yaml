@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Performance tecnificada de nueva generación, orientada a telemetría, trazada óptima y precisión fría.
-  form_and_line: Silueta limpia, gestualidad analítica y líneas de apex abstractas de alta definición.
-  color_palette: Cian digital, grises titanio, azules costeros y acentos magenta de interfaz de rendimiento.
-  lighting_setup: Iluminación nocturna con reflejos controlados y cues digitales de alta legibilidad.
-  material_texture: Fibra pulida, pintura metalizada, superficie lisa de velocidad y vidrio técnico.
-  render_quality: Performance frame premium con claridad de datos, velocidad y control fino.
-  spatial_distortion: Vector de trazada óptima y compresión de distancia hacia punto de decisión.
-  atmosphere: Precisa, moderna, fría y tácticamente competitiva.
-  key_features: Línea de apex limpia, lectura telemetry-like, reflejo frío, postura de control y tracción fina.
+  aesthetic: >-
+    Telemetry Apex Precision Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Telemetry Apex Precision Style's specific style identity.
+  form_and_line: >-
+    Define Telemetry Apex Precision Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Telemetry Apex Precision Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Telemetry Apex Precision Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Telemetry Apex Precision Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Telemetry Apex Precision Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Telemetry Apex Precision Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Telemetry Apex Precision Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Telemetry Apex Precision Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Formula una gramática reusable de precisión telemetry-apex para cualquier prompt o imagen de entrada:
-    datos, trazada y control fino sin imponer autos, costa, circuito, tablero ni frenada literal.
+    Create a style-card that translates Telemetry Apex Precision Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-354.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

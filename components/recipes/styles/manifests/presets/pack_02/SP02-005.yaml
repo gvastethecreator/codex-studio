@@ -12,16 +12,37 @@ tags:
   - cinematic-and-media
   - film-genres
 visualDna:
-  aesthetic: Jump-cut nouvelle vague cinema, Godard film energy, natural light rebellion, existential cool
-  form_and_line: None
-  color_palette: Black and White high contrast, gritty grey, silver halide
-  lighting_setup: Natural light, available window, street-level ambience
-  material_texture: 16mm grain, handheld texture, raw documentary feel
-  render_quality: Handheld, raw, unpolished vérité, rebellious imperfection
-  spatial_distortion: Jump cut feel, temporal rupture, axis-breaking edit
-  atmosphere: Cool, intellectual, existential, restless
-  key_features: Natural light, handheld rupture, location immediacy
-  creative_brief: 'French New Wave style rejects polish through handheld framing, available light, 16mm grain, jump-cut rupture, and casual location immediacy. Apply rebellious cinematic looseness to any subject without requiring Paris, street settings, cigarettes, apartments, or dialogue.'
+  aesthetic: >-
+    French New Wave within 1. Film Genres: a reusable Cinematic & Media visual language with a clear stylistic thesis,
+    disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving
+    French New Wave's specific style identity.
+  form_and_line: >-
+    Define French New Wave through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a French New Wave-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes French New Wave recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce French New Wave: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
+  render_quality: >-
+    Render French New Wave with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits French New Wave: perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to French New Wave: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
+  key_features: >-
+    Prioritize French New Wave's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates French New Wave into a portable visual system for 1. Film Genres. Preserve the
+    preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - studio lighting
   - stable

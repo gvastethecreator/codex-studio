@@ -1,47 +1,47 @@
-# Sistema de diseño y UX
+# Design System And UX
 
-## Objetivo
+## Objective
 
-Codex Studio debe sentirse como una herramienta creativa profesional: precisa, técnica y orientada a tareas, sin sacrificar claridad para usuarios nuevos.
+Codex Studio should feel like a professional creative tool: precise, technical, and task-oriented without sacrificing clarity for new users.
 
-## Principios
+## Principles
 
-- Claridad antes que adorno.
-- Estado del sistema visible y accionable.
-- Consistencia de vocabulario en toda la UI.
+- Clarity before decoration.
+- Visible and actionable system state.
+- Consistent vocabulary across the UI.
 
-## Paleta
+## Palette
 
-- Fondo principal oscuro (near-black/zinc).
-- Superficies sobrias, sin glassmorphism decorativo.
-- Acento para estados de generación/listo.
-- Semántica de color clara para peligro/info.
+- Dark main background, near-black/zinc.
+- Restrained surfaces, no decorative glassmorphism.
+- Accent color for generation/ready states.
+- Clear color semantics for danger and info.
 
-## Tipografía
+## Typography
 
-- Sans legible para UI general.
-- Monoespaciada para datos técnicos (IDs, puertos, logs).
+- Legible sans-serif for general UI.
+- Monospace for technical data such as IDs, ports, and logs.
 
 ## Motion
 
-- GSAP como estándar.
-- Duraciones típicas 150–250 ms.
-- Animar estado/revelado/feedback; no “animación por animar”.
-- Priorizar `transform` y `opacity`.
+- GSAP is the standard.
+- Typical durations: 150-250 ms.
+- Animate state, reveal, and feedback; avoid motion for its own sake.
+- Prioritize `transform` and `opacity`.
 
-## Interacción
+## Interaction
 
-- Drag & drop global para referencias.
-- Atajos útiles (`Escape`, navegación de carrusel, comparación).
-- Confirmaciones destructivas con impacto y recuperación explicados.
+- Global drag and drop for references.
+- Useful shortcuts: `Escape`, carousel navigation, comparison.
+- Destructive confirmations must explain impact and recovery.
 
-- Superficies demand-mounted con carga/error visibles; no usar huecos silenciosos.
-- Comandos visibles solo cuando tienen comportamiento real o una razÃ³n de bloqueo accionable.
+- Demand-mounted surfaces need visible loading and error states; do not leave silent gaps.
+- Commands should be visible only when they have real behavior or an actionable blocked reason.
 
-- El composer inferior debe mantener filas estables en mobile; los controles no deben montarse sobre el prompt ni crear overflow horizontal.
+- The bottom composer must keep stable rows on mobile; controls must not overlap the prompt or create horizontal overflow.
 
-## Meta open-source
+## Open-Source Goal
 
-- Copy comprensible para quien llega por primera vez.
-- Empty states que enseñen el siguiente paso.
-- Diagnósticos que indiquen bloqueo + acción recomendada.
+- Copy should be clear for first-time visitors.
+- Empty states should teach the next step.
+- Diagnostics should explain the blocker and recommended action.

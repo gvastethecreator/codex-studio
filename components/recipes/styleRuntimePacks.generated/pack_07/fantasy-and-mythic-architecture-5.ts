@@ -10,23 +10,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'industrial, blocky',
     style: {
       aesthetic:
-        'Clasicismo élfico orgánico de santuario, con integración biocéntrica y refinamiento lírico de alta fantasía.',
+        "Verdant Elven Sanctuary within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Verdant Elven Sanctuary's specific style identity.",
       form_and_line:
-        'Arcos filigranados, soportes derivados de ramas, estratos en cascada y curvas estructurales no ortogonales.',
+        'Define Verdant Elven Sanctuary through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Autumn Gold, White, Silver Birch, Moss-floor Green, Waterfall Mist, Soft Lavender dusk',
+        'Use a Verdant Elven Sanctuary-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Glow etéreo cálido, faroles élficos, reflejo lunar en agua y radiancia interior contenida de carácter ceremonial.',
+        'Use lighting that makes Verdant Elven Sanctuary recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Piedra tallada fina, madera viva, inlays nacarados, filigrana plateada y superficies de brillo cristalino.',
+        'Use materials and textures that reinforce Verdant Elven Sanctuary: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Alta fidelidad fantástica con integración biótica-artesanal y ornamento de lectura precisa.',
-      spatial_distortion: 'None',
-      atmosphere: 'Refugio sacro, melancolía luminosa y continuidad atemporal.',
+        'Render Verdant Elven Sanctuary with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Verdant Elven Sanctuary: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Verdant Elven Sanctuary: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Estratos atravesados por agua, fusión árbol-estructura, trazas finas suspendidas y orientación celeste.',
+        "Prioritize Verdant Elven Sanctuary's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Cualquier sujeto adopta curvatura filigranada, fusión árbol-estructura, agua como estrato y luz melancólica. La referencia élfica guía refinamiento lírico, no una localización licenciada.',
+        'Create a style-card that translates Verdant Elven Sanctuary into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -90,25 +92,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, wide empty space, hallway, corridor, surveillance camera',
     style: {
       aesthetic:
-        'Residencial techno-brutalista de compresión vertical extrema y sobrecarga infraestructural persistente.',
+        "Techno-Brutalist Compression within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Techno-Brutalist Compression's specific style identity.",
       form_and_line:
-        'Apilamiento modular repetitivo, diagonales de cableado, escaleras de servicio zigzagueantes y canales de luz fragmentados.',
+        'Define Techno-Brutalist Compression through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Carbon blacks, oxidized rust browns, toxic greens, sign-magenta accents, smoggy blue-greys, low-luminance neon tints',
+        'Use a Techno-Brutalist Compression-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Derrame artificial continuo, prácticos inestables, oclusión dura y microreflejos húmedos de contraste estrecho.',
+        'Use lighting that makes Techno-Brutalist Compression recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Acero corrugado fatigado, polímero con mugre incrustada, pintura pelada en capas y hormigón manchado.',
+        'Use materials and textures that reinforce Techno-Brutalist Compression: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Densidad distópica de detalle alto, clutter legible y ruido visual controlado.',
+        'Render Techno-Brutalist Compression with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Vertical stacking exaggeration with compressed sectional layering and constrained breathing-space intervals',
+        'Use spatial behavior that fits Techno-Brutalist Compression: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
       atmosphere:
-        'Opresiva, sobreconstruida e inestable, con saturación eléctrica de supervivencia.',
+        'Set a mood that belongs to Techno-Brutalist Compression: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Lógica de stack modular, servicios expuestos, congestión de cables, superficies degradadas y circulación constreñida.',
+        "Prioritize Techno-Brutalist Compression's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Presiona cualquier input con apilamiento modular, servicios expuestos, cables, neon bajo y material fatigado. Debe sentirse comprimido por infraestructura de supervivencia, no sucio por decoracion ni por pasillo distopico repetido.',
+        'Create a style-card that translates Techno-Brutalist Compression into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -118,24 +120,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'horror candy, gore, photoreal food macro, edible mascot, kid-party literal',
     style: {
       aesthetic:
-        'Fantasia confitera de surrealismo comestible, donde masa, azucar y glaseado se vuelven sistema arquitectonico portable.',
+        "Confectionery Surrealism within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Confectionery Surrealism's specific style identity.",
       form_and_line:
-        'Masas redondeadas blandas, repeticion modular candy, bandas de icing y uniones dulces que deforman estructura sin requerir castillo o calle de cuento.',
+        'Define Confectionery Surrealism through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Pink, pastel, candy-apple red, gumdrop green, marshmallow white, licorice black',
+        'Use a Confectionery Surrealism-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Glow calido de confiteria, brillos de frosting, translucidez gumdrop y destellos de cristal de azucar controlados.',
+        'Use lighting that makes Confectionery Surrealism recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Glaseado, bizcocho, caramelo duro, malvavisco, oblea y hebras de azucar estirada con tactilidad de exceso edible.',
+        'Use materials and textures that reinforce Confectionery Surrealism: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Fantasia estilizada de saturacion alta con coherencia ludica de material comestible y construccion creible.',
-      spatial_distortion: 'Melting and soft structural sag without forcing a fairy-tale skyline',
+        'Render Confectionery Surrealism with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Confectionery Surrealism: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
       atmosphere:
-        'Exceso ludico, surrealismo alegre y escapismo hiper-dulce convertido en materia construida.',
+        'Set a mood that belongs to Confectionery Surrealism: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Planos de icing, nodos gumdrop, acentos sprinkle y soportes candy-cane integrados como lenguaje estructural.',
+        "Prioritize Confectionery Surrealism's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier sujeto o volumen en surrealismo confitero: glaseado como junta, caramelo como soporte, gumdrops como nodos y pastel como masa. La fantasia debe sentirse material y tactil, no dependiente de reino, cuento, mesa de postres o escena infantil fija. Mantiene logica comestible, escala de ensamblaje, ritmo candy y atmosfera ludica sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Confectionery Surrealism into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -145,23 +148,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cheerful open-sky scene, dry clean luxury interior, no pressure atmosphere',
     style: {
       aesthetic:
-        'Deco abisal retrofuturista con presión marina y decadencia monumental reclamadas por el agua.',
+        "Abyssal Deco Pressure within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Abyssal Deco Pressure's specific style identity.",
       form_and_line:
-        'Clústeres de presión, arterias vítreas, verticales deco y fracturas por filtración.',
+        'Define Abyssal Deco Pressure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Blue, Gold, Biolum, Coral Pink, Seaweed Green, Rust-orange decay, Gleaming Brass',
+        'Use a Abyssal Deco Pressure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Filtro acuático azul profundo, constelaciones bioluminiscentes y contraste entre glow dorado interior y alarma roja.',
+        'Use lighting that makes Abyssal Deco Pressure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Piedra mojada, vidrio presurizado, pátina cobre-verde, coral incrustado y hormigón con fugas.',
+        'Use materials and textures that reinforce Abyssal Deco Pressure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Subacuático cinematográfico con detalle de presión, legibilidad deco y balance ruina-colonización biológica.',
-      spatial_distortion: 'None',
-      atmosphere: 'Asombro presurizado, melancolía abisal y grandeza silenciosa en declive.',
+        'Render Abyssal Deco Pressure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Abyssal Deco Pressure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Abyssal Deco Pressure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Motivos deco metálicos, firmas de fuga, capas de coralización y wayfinding bioluminiscente.',
+        "Prioritize Abyssal Deco Pressure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier sujeto o entorno en una sintaxis abisal-deco: presión visible, geometría elegante bajo agua, metal envejecido, vidrio presurizado y bioluminiscencia como sistema de lectura. Evita fijar ciudad; prioriza sensación de ingeniería sumergida y lujo erosionado.',
+        'Create a style-card that translates Abyssal Deco Pressure into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -198,24 +203,25 @@ export const GENERATED_STYLE_PRESETS = [
       'ordinary brick-wall dominance, wood-cabin material lock, opaque masonry overriding crystalline optics',
     style: {
       aesthetic:
-        'Megaestructura cristalina de crecimiento geologico y futurismo mineral monolitico, portable a cualquier masa o sistema.',
+        "Prismatic Mineral Megastructure within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Prismatic Mineral Megastructure's specific style identity.",
       form_and_line:
-        'Apilamientos facetados, haces hexagonales, placas gema y convergencias prismatica multiples sin depender de una sola aguja heroica.',
+        'Define Prismatic Mineral Megastructure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Purple-blue-white, amethyst, sapphire, diamond spark, deep crystal violet, iridescent flash',
+        'Use a Prismatic Mineral Megastructure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Refraccion interna intensa, dispersion espectral, nucleos autoiluminados y bordes facetados de alto brillo.',
+        'Use lighting that makes Prismatic Mineral Megastructure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cristal vitreo, caras gema, profundidad translucida y mineralizacion de microdetalle con optica coherente.',
+        'Use materials and textures that reinforce Prismatic Mineral Megastructure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Arquitectura cristalina de alta claridad con precision mineral monumental y control fisico de luz interna.',
+        'Render Prismatic Mineral Megastructure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Faceted stacking and refractive scale drift without a mandatory spire apex',
-      atmosphere: 'Quietud luminosa, asombro frio y elegancia mineral de otro mundo.',
+        'Use spatial behavior that fits Prismatic Mineral Megastructure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Prismatic Mineral Megastructure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Planos refractivos, nucleos translucidos, estratos de brillo interno y jerarquia prismatica en capas.',
+        "Prioritize Prismatic Mineral Megastructure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Haz que el estilo nazca de optica mineral: masa facetada, crecimiento cristalino, refraccion interna y color espectral disciplinado. Debe poder envolver arquitectura, objeto, personaje o paisaje sin exigir torre-aguja unica, templo gema o skyline de monolitos identicos. Conserva logica mineral, escala prismatica, ritmo facetado y atmosfera fria sin depender de edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Prismatic Mineral Megastructure into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -225,23 +231,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'square, tall',
     style: {
       aesthetic:
-        'Domesticidad pastoral semienterrada de escala humana, con umbrales redondos y calidez artesanal portable.',
+        "Bermed Round-Door Pastoral within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bermed Round-Door Pastoral's specific style identity.",
       form_and_line:
-        'Aberturas redondeadas dominantes, cubierta bermada baja, corredores suaves y planificación íntima de perfil contenido.',
+        'Define Bermed Round-Door Pastoral through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Moss green, weathered timber brown, loam umber, butter-cream plaster, muted brass highlights, warm terracotta accents, soft wildflower notes',
+        'Use a Bermed Round-Door Pastoral-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Clave cálida de hogar, spill bajo de umbral, prácticos de linterna y rebote difuso de tarde.',
+        'Use lighting that makes Bermed Round-Door Pastoral recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cubierta de césped, madera cepillada a mano, revoco de cal-arcilla, piedra gastada y latón cepillado.',
+        'Use materials and textures that reinforce Bermed Round-Door Pastoral: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Realismo de cuento doméstico con tactilidad artesanal y encanto fantástico contenido por función vivida.',
-      spatial_distortion: 'None',
-      atmosphere: 'Protegida, íntima y celebratoria de rituales cotidianos de vida lenta.',
+        'Render Bermed Round-Door Pastoral with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Bermed Round-Door Pastoral: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Bermed Round-Door Pastoral: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Umbral redondeado, cubierta vegetal, masa bermada y núcleo compacto de calor doméstico.',
+        "Prioritize Bermed Round-Door Pastoral's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Traslada cualquier tema a domesticidad pastoral semienterrada: umbrales redondeados, proporciones bajas, materiales calidos, cubierta vegetal y escala artesanal. El resultado debe comunicar refugio lento y tactil sin depender de round-door pastoral burrow-home trope, licensed literary burrow-home, aldea pastoral fija o casa concreta. Conserva umbrales redondos, masa bermada, calidez artesanal y proporcion contenida sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Bermed Round-Door Pastoral into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -251,24 +259,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'scary realistic',
     style: {
       aesthetic:
-        'Deformación retro de cartoon macabro, con amenaza juguetona y exageración torcida de lectura inmediata.',
+        "Haunted Toon Deformation within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Haunted Toon Deformation's specific style identity.",
       form_and_line:
-        'Verticales inclinadas, masas combadas, vacíos deformados y silueta elástica con contorno gráfico claro.',
+        'Define Haunted Toon Deformation through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Moonlit violet, toxic-lime accents, charcoal black, desaturated pumpkin orange trim, pale spectral ivory, and deep indigo shadow pools',
+        'Use a Haunted Toon Deformation-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Keys de relámpago intermitente, contraluz lunar frío, brillos selectivos y bloques cel-shade de alto contraste.',
+        'Use lighting that makes Haunted Toon Deformation recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Planos pintados flat, contorno entintado, gradientes limitados y motivos de madera simplificada de estilo TV.',
+        'Use materials and textures that reinforce Haunted Toon Deformation: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Lectura 2D limpia con nostalgia televisiva, claridad de forma alta y terror lúdico no realista.',
+        'Render Haunted Toon Deformation with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Deformación elástica, inclinación imposible y gestos pareidólicos sugeridos.',
-      atmosphere: 'Campy, traviesa y teatral, con suspenso amable sin violencia realista.',
+        'Use spatial behavior that fits Haunted Toon Deformation: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Haunted Toon Deformation: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Perfil inclinado, acentos zigzag, contraluz frío, siluetas spooky y ritmo de gate gráfico.',
+        "Prioritize Haunted Toon Deformation's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Usa deformación haunted-cartoon como sistema gráfico: siluetas inclinadas, contornos elásticos, paleta spooky lúdica y contraste de tormenta. Debe funcionar como estilo de render y masa torcida, no como obligacion de mostrar mansion embrujada, tormenta nocturna o set de Halloween literal. Mantiene deformacion elastica, ritmo grafico y atmosfera spooky ludica sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Haunted Toon Deformation into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -279,24 +288,25 @@ export const GENERATED_STYLE_PRESETS = [
       'dominant warm palette, cozy fireplace mood, orange heat glow overriding glacial optics',
     style: {
       aesthetic:
-        'Monumentalidad criomórfica glacial, con elegancia invernal soberana y pureza cristalina.',
+        "Cryomorphic Palace Geometry within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cryomorphic Palace Geometry's specific style identity.",
       form_and_line:
-        'Arbotantes facetados, ritmos glaciales verticales, columnatas congeladas y jerarquías heladas de perfil limpio.',
+        'Define Cryomorphic Palace Geometry through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Glacier white, polar cyan, pale sapphire blue, aurora mint, deep teal shadow, and prismatic diamond highlights',
+        'Use a Cryomorphic Palace Geometry-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Transmisión subsuperficial en hielo, wash auroral, acentos lunares de borde y rebote nítido sobre nieve compacta.',
+        'Use lighting that makes Cryomorphic Palace Geometry recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Planos de hielo pulido, grano cristalino escarchado, acumulación de cencellada y losas glaciales translúcidas.',
+        'Use materials and textures that reinforce Cryomorphic Palace Geometry: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Fantasía invernal de alta fidelidad con refracción precisa y claridad monumental de gran escala.',
+        'Render Cryomorphic Palace Geometry with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Vertical crystalline rise and frozen layering without a mandatory palace or cathedral silhouette',
-      atmosphere: 'Soberana, austera y silenciosa, con temperatura emocional subcero.',
+        'Use spatial behavior that fits Cryomorphic Palace Geometry: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Cryomorphic Palace Geometry: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Bóvedas cristalinas, cadencia helada, nodos congelados y tramos de hielo esculpido.',
+        "Prioritize Cryomorphic Palace Geometry's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transforma cualquier composición con monumentalidad criomórfica: facetas de hielo, transmisión subsuperficial fría, ritmos congelados y claridad regia. La identidad debe venir de optica glacial y jerarquia monumental, no de un palacio de hielo, catedral invernal o salon real literal. Conserva faceta, escala, refraccion fria y atmosfera soberana sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Cryomorphic Palace Geometry into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -306,23 +316,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dominant polished industrial metal, cold machine structure',
     style: {
       aesthetic:
-        'Vernáculo de canopy elevado, con ingeniería orgánica artesanal y vida comunal suspendida.',
+        "Canopy Rope Vernacular within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Canopy Rope Vernacular's specific style identity.",
       form_and_line:
-        'Hubs circulares, catenarias de cuerda, anillos de amarre y circulación vertical por niveles orgánicos.',
+        'Define Canopy Rope Vernacular through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Redwood brown, moss green, rope tan, bark gray, filtered canopy gold, and muted ember accents for night signaling',
+        'Use a Canopy Rope Vernacular-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz moteada filtrada por hojas, prácticos cálidos colgantes, rebote de fogata y glow nocturno de bajo contraste.',
+        'Use lighting that makes Canopy Rope Vernacular recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Madera desbastada, fibra de cuerda trenzada, paneles de paja tejida y amarres vegetales sobre soportes de corteza.',
+        'Use materials and textures that reinforce Canopy Rope Vernacular: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Realismo artesanal aventurero con integración arbórea legible y profundidad vertical consistente.',
-      spatial_distortion: 'None',
-      atmosphere: 'Comunal, ingeniosa y vigilante, con ritualidad suave de hábitat ecológico.',
+        'Render Canopy Rope Vernacular with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Canopy Rope Vernacular: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Canopy Rope Vernacular: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Cuerdas enlazadas, plataformas radiales, pasarelas suspendidas y puntos elevados de observación.',
+        "Prioritize Canopy Rope Vernacular's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica una gramática vernacular suspendida: plataformas radiales, cuerdas catenarias, amarres vegetales, luz filtrada por dosel y materiales vivos. Debe expresar ingenieria comunal elevada sin tribu literal, pueblo arboreo fijo, planeta selvatico ni set especifico. Mantiene material vivo, tension suspendida, escala vertical y ritmo de amarre sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Canopy Rope Vernacular into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {

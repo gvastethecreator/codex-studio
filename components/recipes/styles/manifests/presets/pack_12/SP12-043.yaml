@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Gramática urban-disaster action con evacuación dinámica, amenaza colosal y contención por fases.
-  subject_treatment: Si el input es criatura o máquina, escalarlo a amenaza kaiju; si es personaje/objeto, volverlo equipo evac/suppression/shield o infraestructura de crisis.
-  color_and_tone: Gris tormenta, rojo alarma y cian marino para priorizar riesgo civil y respuesta táctica.
-  lighting_and_shadow: Relámpagos, incendios industriales y humo para telegraph de fases de crisis.
-  texture_and_material: Agua turbulenta, hormigón roto, acero doblado y residuos urbanos activos.
-  camera_and_composition: Escala colosal, corredores de evacuación y puntos de defensa visibles sin exigir puerto.
-  atmosphere_and_mood: Abrumadora, urgente y de supervivencia colectiva.
-  rendering_and_quality: 'Evacuation event gameplay frame: civilian routes, kaiju scale, containment objectives readable.'
+  aesthetic: >-
+    Harbor Kaiju Evacuation within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Harbor Kaiju Evacuation's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Harbor Kaiju Evacuation's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Harbor Kaiju Evacuation: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Harbor Kaiju Evacuation: legible depth, purposeful highlights, readable focal zones, and
+    atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Harbor Kaiju Evacuation's material logic: tactile detail, coherent finish, and texture choices
+    that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Harbor Kaiju Evacuation's staging logic: strong focal hierarchy, stable readable framing, and spatial
+    rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Harbor Kaiju Evacuation's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail
+    readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

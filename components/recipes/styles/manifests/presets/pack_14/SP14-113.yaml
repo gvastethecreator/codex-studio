@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Suspended bell warning language with mourning, silence, and monumental noir stillness.
-  form_and_line: Heavy arch cues, bell silhouettes, and repeating niche rhythms.
-  color_palette: Stone gray, bronze patina, and smoke black.
-  lighting_setup: Dim crypt light with focused bell-edge highlights.
-  material_texture: Chiseled stone, aged bronze, and cobwebbed cloth.
-  render_quality: Monumental mythic stillness with strong contrast.
-  spatial_distortion: Deep receding tunnel feeling ending in a silent bell focal cue.
-  atmosphere: Mourning, suspension, and unspoken warning.
-  key_features: Silent bells, niche shadows, ritual chainwork.
-  creative_brief: Apply silent-bell warning to any input, making suspended mass read as omen rather than sound. Use bronze patina, niche rhythm, chainwork, cryptic stillness, and focused edge highlights without requiring bells, crypts, arches, tunnels, or mourning figures.
+  aesthetic: >-
+    Silent Bell Warning within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Silent Bell Warning's specific style identity.
+  form_and_line: >-
+    Define Silent Bell Warning through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Silent Bell Warning-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Silent Bell Warning recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Silent Bell Warning: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Silent Bell Warning with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Silent Bell Warning: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Silent Bell Warning: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Silent Bell Warning's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Silent Bell Warning into a portable visual system for 2. Mythic Ritual Noir.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cute

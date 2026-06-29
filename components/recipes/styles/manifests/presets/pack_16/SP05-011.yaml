@@ -12,20 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Shonen de aura y rivalidad absoluta, dramatismo noventero de confrontación iniciática y leyenda juvenil.
-  form_and_line: Línea angulosa de alta tensión, anatomía cinética y puesta en pose de desafío frontal.
-  color_palette: Amarillo energía, azul eléctrico, rojo rival y negro profundo de impacto cel clásico.
-  lighting_setup: Contraste duro con flare de aura, rim agresivo y sombra marcada para potencia corporal.
-  material_texture: Fondo pintado de explosión abstracta, polvo de choque y grano fílmico de catarsis épica.
-  render_quality: Acabado 90s premium con lectura cristalina de power-up, choque ideológico y catarsis física.
-  spatial_distortion: Perspectiva forzada, speed lines y compresión de distancia para aumentar urgencia de confrontación.
-  atmosphere: Épica, explosiva, feroz, legendaria.
-  key_features: Stare-down icónico, aura visible, rivalidad abstracta y silueta heroica de alto contraste.
+  aesthetic: >-
+    Generational Aura Clash Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Generational Aura Clash Style's specific style identity.
+  form_and_line: >-
+    Define Generational Aura Clash Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Generational Aura Clash Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Generational Aura Clash Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Generational Aura Clash Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Generational Aura Clash Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Generational Aura Clash Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Generational Aura Clash Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Generational Aura Clash Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática reusable de generational-aura-clash para cualquier
-    sujeto, priorizando intensidad emocional, escalada de poder y energía de
-    confrontación sin imponer batallas, torneos, duelos, rivales concretos ni
-    coreografía de combate.
+    Create a style-card that translates Generational Aura Clash Style into a portable visual system for 3. 90s Golden
+    Era. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-011.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

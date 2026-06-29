@@ -12,19 +12,37 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Elven-fairy couture, moonlit ethereality, woodland grace
-  form_and_line: Flowing, windblown, gossamer waterfall silhouette, bishop-sleeve billow, empire-line rise
-  color_palette: White, Silver, Pale Blue, moonstone, starlight silver, celadon mist, pearl essence
-  lighting_setup: Glowing, backlight, god-ray shafts, moonbeam dapple, faerie-light sparkle
-  material_texture: Silk chiffon, gossamer organza, liquid satin charmeuse, silver lamé thread, dew-beaded tulle
-  render_quality: Epic fantasy polish, elven grace, artisan-fantasy caliber
-  spatial_distortion: Floating fabric
-  atmosphere: Magical, soft, dreamlike, ancient enchantment, starlit serenity, timeless immortal-realm longing
-  key_features: Translucency, flowing sleeves, circlet or brooch cues, silver-thread constellation detail
+  aesthetic: >-
+    Ethereal Fantasy within 4. Fantasy Sci-Fi Costume: a reusable Fashion & Costume visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Ethereal Fantasy's specific style identity.
+  form_and_line: >-
+    Define Ethereal Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Ethereal Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Ethereal Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Ethereal Fantasy: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
+  render_quality: >-
+    Render Ethereal Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Ethereal Fantasy: perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Ethereal Fantasy: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Ethereal Fantasy's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Apply elven ethereality to the input through gossamer translucency, moonstone thread, floating sleeves and a palette
-    of pearl, celadon and pale blue. Keep circlet or brooch cues when useful, but avoid locking the image to named
-    fantasy realms, harp-lit figures, woodland princess bodies or fixed gown tableaux.
+    Create a style-card that translates Ethereal Fantasy into a portable visual system for 4. Fantasy Sci-Fi Costume.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - heavy
   - dark

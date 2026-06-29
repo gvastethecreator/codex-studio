@@ -13,16 +13,37 @@ tags:
   - mythic
   - cosmology
 visualDna:
-  aesthetic: Nebular pilgrimage ascent with austere hope, vow banners, and suspended star petitions.
-  form_and_line: Terraced step cues, sky-shrine silhouettes, and lantern spines.
-  color_palette: Dust rose, midnight blue, and pale gold.
-  lighting_setup: Dawn gradients and suspended shrine lights.
-  material_texture: Sandstone slabs, cloth pennants, and bronze charms.
-  render_quality: Expansive atmospheric matte with processional flow.
-  spatial_distortion: Upward ascent composition into clouded celestial depth.
-  atmosphere: Hopeful austerity and spiritual endurance.
-  key_features: Pilgrim shrine cues, star chimes, vow banners.
-  creative_brief: Reframe the input through nebula pilgrim ascent, suggesting celestial petition and spiritual endurance without requiring stairs.
+  aesthetic: >-
+    Nebula Pilgrim Ascent within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Nebula Pilgrim Ascent's specific style identity.
+  form_and_line: >-
+    Define Nebula Pilgrim Ascent through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Nebula Pilgrim Ascent-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Nebula Pilgrim Ascent recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Nebula Pilgrim Ascent: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Nebula Pilgrim Ascent with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Nebula Pilgrim Ascent: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Nebula Pilgrim Ascent: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Nebula Pilgrim Ascent's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Nebula Pilgrim Ascent into a portable visual system for 4. Mythic Cosmology &
+    Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - slapstick

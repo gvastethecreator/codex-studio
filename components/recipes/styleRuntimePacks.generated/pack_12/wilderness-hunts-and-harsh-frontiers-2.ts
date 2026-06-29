@@ -11,21 +11,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, flat-light, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática extraction-shooter bioluminiscente con stealth orgánico, rastreo térmico y hostilidad alienígena nocturna.',
+        "Bioluminescent Jungle Raid within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bioluminescent Jungle Raid's specific style identity.",
       subject_treatment:
-        'Transforma el input en lectura de presa/equipo/ruta con perfiles térmicos, señales aliado-enemigo y camuflaje vivo sin exigir una jungla literal.',
+        "Treat any subject through Bioluminescent Jungle Raid's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Verdes bioluminiscentes y azules tinta con acentos de señalización táctica para rutas seguras.',
+        'Use a controlled palette that supports Bioluminescent Jungle Raid: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Luz orgánica puntual + niebla volumétrica para ocultamiento parcial y ventanas de visibilidad situacional.',
+        'Shape light and shadow for Bioluminescent Jungle Raid: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Corteza húmeda, hojas translúcidas, barro pesado y fluidos vegetales reactivos al movimiento.',
+        "Render surfaces with Bioluminescent Jungle Raid's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Capas de cobertura orgánica, líneas de visión quebradas, diagonales de emboscada y ventanas de extracción sugeridas.',
+        "Compose with Bioluminescent Jungle Raid's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
       atmosphere_and_mood:
-        'Cacería silenciosa, paranoia ambiental y descubrimiento biológico de alto riesgo.',
+        "Build Bioluminescent Jungle Raid's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Gameplay screencap from active jungle raid: terrain reads, target priority, co-op encounter cues.',
+        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -36,20 +36,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, snow, pastel, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática dungeon-crawler infernal con riesgo térmico, crafting bélico, calor telegráfico y maquinaria ritual.',
+        "Volcanic Forge Dungeon within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Volcanic Forge Dungeon's specific style identity.",
       subject_treatment:
-        'Transforma el input en enemigo forjador, arma, estación o criatura endurecida por horno; usar telegraphs de calor y ritmo de martillo sin fijar un dungeon.',
+        "Treat any subject through Volcanic Forge Dungeon's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Naranja fundido, negro carbón y reflejos cobrizo-escoria para lectura inmediata de zonas letales.',
+        'Use a controlled palette that supports Volcanic Forge Dungeon: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Lava como key dominante, humo denso de fill y pulsos de horno para timing de mecánicas.',
+        'Shape light and shadow for Volcanic Forge Dungeon: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Escoria vítrea, hierro incandescente, cadenas antiguas y piedra volcánica fracturada.',
+        "Render surfaces with Volcanic Forge Dungeon's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Eje diagonal de progresión con crisoles, plataformas seguras y landmarks térmicos como anclas opcionales.',
-      atmosphere_and_mood: 'Hostil, abrasiva y ceremonial, de supervivencia técnico-combativa.',
+        "Compose with Volcanic Forge Dungeon's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Volcanic Forge Dungeon's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Dungeon gameplay screencap: lava hazards, crafting nodes, routes, combat space readable.',
+        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -60,23 +61,23 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, tropical, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática survival sandbox ártica con refugio precario, crafting, trueque, expedición y contraste térmico.',
+        "Frozen Bazaar Survival Night within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Frozen Bazaar Survival Night's specific style identity.",
       subject_treatment:
-        'Reinterpreta el input como trader, hunter, scout, recurso o estación improvisada; usar equipo térmico y perfiles de clase sólo cuando aporten lectura.',
+        "Treat any subject through Frozen Bazaar Survival Night's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Azul glaciar, ámbar cálido y gris humo para separar refugio de amenaza exterior.',
+        'Use a controlled palette that supports Frozen Bazaar Survival Night: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Fuentes puntuales de farol sobre blizzard denso, con contraste funcional de zonas seguras.',
+        'Shape light and shadow for Frozen Bazaar Survival Night: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Hielo rayado, lona pesada, madera húmeda y metal congelado por uso extremo.',
+        "Render surfaces with Frozen Bazaar Survival Night's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Hub de supervivencia con puntos de misión, recursos y salida a whiteout como estructura flexible, no bazaar literal.',
+        "Compose with Frozen Bazaar Survival Night's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
       atmosphere_and_mood:
-        'Refugio precario, cooperación tensa y supervivencia nocturna prolongada.',
+        "Build Frozen Bazaar Survival Night's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Survival hub screencap: resource economy, prep choices, trader-hunter roles, cold pressure readable.',
+        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
       creative_brief:
-        'Aplica Frozen Bazaar Survival Night como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
+        'Create a style-card that translates Frozen Bazaar Survival Night into a portable visual system for 6. Wilderness Hunts & Harsh Frontiers. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -87,22 +88,23 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, clean-lab, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática co-op extraction shooter minera con objetivos, evacuación, polvo mineral y supervivencia de escuadra.',
+        "Deep Mine Co-op Extraction within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Deep Mine Co-op Extraction's specific style identity.",
       subject_treatment:
-        'Reinterpreta el input como operario pesado, tool-weapon, recurso, amenaza o equipo de extracción modular.',
+        "Treat any subject through Deep Mine Co-op Extraction's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Cobre oscuro, verde radar y naranja industrial para lectura de objetivo y estado de equipo.',
+        'Use a controlled palette that supports Deep Mine Co-op Extraction: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Cascos iluminados, focos de maquinaria y sombras profundas de túnel activo.',
+        'Shape light and shadow for Deep Mine Co-op Extraction: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Roca fracturada, polvo mineral denso, acero rugoso y marcas de perforación reciente.',
+        "Render surfaces with Deep Mine Co-op Extraction's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Objetivos a distancia, rutas de retorno y zonas de emboscada legibles; túnel o mina son anclas opcionales.',
-      atmosphere_and_mood: 'Labor extrema, camaradería funcional y riesgo continuo.',
+        "Compose with Deep Mine Co-op Extraction's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Deep Mine Co-op Extraction's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Co-op extraction gameplay frame: objective marker, threat direction, tunnel route, team gear clear.',
+        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
       creative_brief:
-        'Aplica Deep Mine Co-op Extraction como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
+        'Create a style-card that translates Deep Mine Co-op Extraction into a portable visual system for 6. Wilderness Hunts & Harsh Frontiers. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -113,22 +115,23 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, murky-water, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática action-RPG submarina coralina con exploración vertical, patrullas, movilidad acuática y biominera viva.',
+        "Coral Reef Underkingdom within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Coral Reef Underkingdom's specific style identity.",
       subject_treatment:
-        'Convierte el input en guardián anfibio, montura abisal, ruta, reliquia o estructura coralina según su silueta.',
+        "Treat any subject through Coral Reef Underkingdom's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Turquesa brillante, rojo coral y blanco nacarado para separar rutas seguras y zonas hostiles.',
+        'Use a controlled palette that supports Coral Reef Underkingdom: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Rayos filtrados, caústicas dinámicas y capas de profundidad para navegación tridimensional.',
+        'Shape light and shadow for Coral Reef Underkingdom: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Coral poroso, escamas nacaradas, algas estructurales y arquitectura bio-mineral viva.',
+        "Render surfaces with Coral Reef Underkingdom's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Perspectiva amplia con corrientes, ascenso/descenso y jerarquía territorial; ciudad coralina es opcional.',
-      atmosphere_and_mood: 'Maravillosa, elegante y peligrosamente impredecible.',
+        "Compose with Coral Reef Underkingdom's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Coral Reef Underkingdom's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Underwater exploration gameplay frame: routes, territory, guardian threat, depth hierarchy readable.',
+        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
       creative_brief:
-        'Aplica Coral Reef Underkingdom como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
+        'Create a style-card that translates Coral Reef Underkingdom into a portable visual system for 6. Wilderness Hunts & Harsh Frontiers. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -139,20 +142,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, neon-city, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática tactical-shooter de largo alcance con control de líneas, ventaja de altura y exposición calculada.',
+        "Crimson Canyon Sniper Run within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Crimson Canyon Sniper Run's specific style identity.",
       subject_treatment:
-        'Aplica rol marksman, camuflaje geológico, kit de reposicionamiento o vulnerabilidad de cruce al input.',
+        "Treat any subject through Crimson Canyon Sniper Run's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Rojo mineral, beige seco y azul limpio para separar terreno, cobertura y exposición.',
+        'Use a controlled palette that supports Crimson Canyon Sniper Run: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Sol agresivo con sombras definidas que marcan ventanas de disparo y tránsito.',
+        'Shape light and shadow for Crimson Canyon Sniper Run: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Roca sedimentaria, polvo fino, textil áspero y equipamiento antiabrasión.',
+        "Render surfaces with Crimson Canyon Sniper Run's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Profundidad extrema, rutas de flanqueo y ventanas de tiro como composición sin exigir cañón.',
-      atmosphere_and_mood: 'Precisa, paciente y letal a distancia.',
+        "Compose with Crimson Canyon Sniper Run's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Crimson Canyon Sniper Run's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Competitive sniper-map screencap: sightlines, nests, crossing risk, canyon cover readable.',
+        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -163,20 +167,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, cityscape, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática co-op monster-hunt eléctrica con rastreo, coordinación, ventanas de ejecución y telegraphs de tormenta.',
+        "Thunder Plains Beast Hunt within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Thunder Plains Beast Hunt's specific style identity.",
       subject_treatment:
-        'Si el input contiene criatura/personaje, escalarlo a bestia, hunter o montura; si es objeto, volverlo rastro, herramienta o weak point.',
+        "Treat any subject through Thunder Plains Beast Hunt's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Azul tormenta, amarillo rayo y tierra oscura para codificar clima, peligro y terreno.',
+        'Use a controlled palette that supports Thunder Plains Beast Hunt: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Relámpagos intermitentes, cielos dramáticos y flashes de impacto para telegraph de fase.',
+        'Shape light and shadow for Thunder Plains Beast Hunt: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Pelaje mojado, cuero blindado, barro pesado y marcas de zarpazo sobre terreno saturado.',
+        "Render surfaces with Thunder Plains Beast Hunt's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Escala amplia, rutas de cerco y líneas de escape visibles sin exigir llanura abierta.',
-      atmosphere_and_mood: 'Épica, riesgosa y altamente coordinada.',
+        "Compose with Thunder Plains Beast Hunt's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Thunder Plains Beast Hunt's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Monster-hunt gameplay screencap: storm telegraphs, weak points, pursuit routes, reward target clear.',
+        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -187,22 +192,23 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, snow-theme, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática frontier-defense RPG con brasas permanentes, patrulla, fortificación y caza reactiva.',
+        "Emberwood Ranger Outpost within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Emberwood Ranger Outpost's specific style identity.",
       subject_treatment:
-        'Convierte el input en ranger tecno-místico, refugio, trampa, rastro o perímetro defensivo según aplique.',
+        "Treat any subject through Emberwood Ranger Outpost's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Naranja brasa, verde pino y negro humo para separar refugio, amenaza y rutas.',
+        'Use a controlled palette that supports Emberwood Ranger Outpost: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Brillos cálidos entre troncos oscuros para lectura de vigilancia nocturna.',
+        'Shape light and shadow for Emberwood Ranger Outpost: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Corteza carbonizada, cuero reforzado, acero templado y ceniza suspendida.',
+        "Render surfaces with Emberwood Ranger Outpost's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Líneas de defensa, alarma y accesos secundarios visibles; outpost o portón son anclas opcionales.',
-      atmosphere_and_mood: 'Vigilante, resistente y tácticamente austera.',
+        "Compose with Emberwood Ranger Outpost's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Emberwood Ranger Outpost's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Defensive outpost gameplay frame: patrol paths, alarm states, ranger response, ember cues readable.',
+        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
       creative_brief:
-        'Aplica Emberwood Ranger Outpost como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
+        'Create a style-card that translates Emberwood Ranger Outpost into a portable visual system for 6. Wilderness Hunts & Harsh Frontiers. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -213,20 +219,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, neon, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática warfront-attrition con avance por trincheras, desgaste, suministros y barro metálico.',
+        "Bronze Marsh Siege Camp within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bronze Marsh Siege Camp's specific style identity.",
       subject_treatment:
-        'Reinterpreta el input como ingeniero de asedio, unidad de empuje, suministro, fortín o línea de avance.',
+        "Treat any subject through Bronze Marsh Siege Camp's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Verde barro, bronce viejo y rojo estandarte para codificar bando y presión de frente.',
+        'Use a controlled palette that supports Bronze Marsh Siege Camp: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Niebla baja con antorchas dispersas para visibilidad parcial y amenaza constante.',
+        'Shape light and shadow for Bronze Marsh Siege Camp: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Barro profundo, madera húmeda, placas metálicas y fortificaciones improvisadas.',
+        "Render surfaces with Bronze Marsh Siege Camp's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Líneas de avance, rutas de asalto y colapso defensivo sin exigir marisma o fortín.',
-      atmosphere_and_mood: 'Opresiva, militar y de desgaste prolongado.',
+        "Compose with Bronze Marsh Siege Camp's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Bronze Marsh Siege Camp's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'War-campaign gameplay frame: advance lines, siege camp pressure, marsh cover, defense collapse readable.',
+        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -237,19 +244,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, city-neon, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática colossus-hunt cooperativa con escalada táctica, derribo por fases y weak points biomecánicos.',
+        "Titan Orchard Colossus Hunt within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Titan Orchard Colossus Hunt's specific style identity.",
       subject_treatment:
-        'Si el input contiene criatura, escalarla a coloso; si contiene personaje/objeto, convertirlo en escalador, anclaje o weak point.',
+        "Treat any subject through Titan Orchard Colossus Hunt's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Verde oliva, rojo fruta madura y gris metal para contraste orgánico-mecánico.',
+        'Use a controlled palette that supports Titan Orchard Colossus Hunt: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Cielo nublado con brillos de armadura que señalan momentos de vulnerabilidad.',
+        'Shape light and shadow for Titan Orchard Colossus Hunt: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Corteza gigante, savia espesa, placas mecánicas y anclajes de ascenso.',
-      camera_and_composition: 'Escala extrema y puntos de ascenso sin exigir huerto titánico.',
-      atmosphere_and_mood: 'Asombrosa, peligrosa y cooperativamente épica.',
+        "Render surfaces with Titan Orchard Colossus Hunt's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+      camera_and_composition:
+        "Compose with Titan Orchard Colossus Hunt's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Titan Orchard Colossus Hunt's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Colossus-hunt gameplay frame: phase telegraph, climb route, weak point, finishing window readable.',
+        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

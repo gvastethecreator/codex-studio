@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Sun-pantheon trial tempered by ash, smoke, and sacrificial brilliance.
-  form_and_line: Radial altar cues, stepped tiers, and haloed deity-niche rhythms.
-  color_palette: Ash gold, ember red, and blackened ivory.
-  lighting_setup: Furnace glow and solar shafts through smoke.
-  material_texture: Burnt stone, gold leaf residue, and soot-streaked silk.
-  render_quality: High-drama mythic rendering with iconographic clarity.
-  spatial_distortion: Concentric sanctuary logic around a furnace-like solar core.
-  atmosphere: Majesty, ordeal, and radiant severity.
-  key_features: Sun disc, ash-step bands, deity-niche silhouettes.
-  creative_brief: Recast the input through a cinder sun pantheon trial, making radiance survive through ash and flame without requiring a hall.
+  aesthetic: >-
+    Cinder Sun Pantheon Trial within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Cinder Sun Pantheon Trial's specific style identity.
+  form_and_line: >-
+    Define Cinder Sun Pantheon Trial through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Cinder Sun Pantheon Trial-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Cinder Sun Pantheon Trial recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Cinder Sun Pantheon Trial: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Cinder Sun Pantheon Trial with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Cinder Sun Pantheon Trial: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Cinder Sun Pantheon Trial: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Cinder Sun Pantheon Trial's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Cinder Sun Pantheon Trial into a portable visual system for 3. Mythic Pantheons
+    & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cheerful

@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Deporte táctico de velocidad ilusoria, circulación invisible, timing colectivo y ruptura de marca.
-  form_and_line: Líneas rápidas de trayectoria, siluetas limpias por rol y anatomía optimizada para cambio de ritmo.
-  color_palette: Azules eléctricos, negros de contraste profundo y acentos cian para telegraph de circulación.
-  lighting_setup: Iluminación dramática con highlights selectivos en manos, mirada y línea de trayectoria.
-  material_texture: Superficie pulida reflectiva, malla geométrica sugerida, tejido técnico y trazas de movimiento estilizadas.
-  render_quality: Acabado deportivo de alta precisión con claridad de jugada colectiva vs estrella individual.
-  spatial_distortion: Compresión espacial y estiramiento direccional en trayectorias fantasma para lectura de sorpresa.
-  atmosphere: Estratégica, veloz y tácticamente deslumbrante.
-  key_features: Trails fantasma, cambios bruscos de dirección, contraste teamplay vs aceplay y lectura de velocidad invisible.
+  aesthetic: >-
+    Phantom Teamplay Speed Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Phantom Teamplay Speed Style's specific style identity.
+  form_and_line: >-
+    Define Phantom Teamplay Speed Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Phantom Teamplay Speed Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Phantom Teamplay Speed Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Phantom Teamplay Speed Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Phantom Teamplay Speed Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Phantom Teamplay Speed Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Phantom Teamplay Speed Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Phantom Teamplay Speed Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica una gramática reusable de velocidad fantasma táctica a cualquier prompt o imagen de entrada:
-    trails invisibles, cortes súbitos y contraste equipo-individuo sin imponer basket, pelota, cancha ni duelos perimetrales.
+    Create a style-card that translates Phantom Teamplay Speed Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-346.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

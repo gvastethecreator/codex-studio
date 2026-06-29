@@ -12,20 +12,37 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Evening jacket, after-dark luxury, candlelit-sophistication
-  form_and_line: Soft highlights, shawl-collar wrap, soft tailored taper, jacquard-relief silhouette, silk-faced lapel roll
-  color_palette: Deep Blue, Burgundy, midnight, amethyst, forest, oxblood, cognac
-  lighting_setup: Soft edge glow, candle-halo warmth, dim amber ambience, nap-revealing side light
-  material_texture: Plush velvet pile, crushed velvet, silk-velvet devoré, jacquard weave, satin-faced lapel, grosgrain trim
-  render_quality: Rich, soft, after-dark velvet luxury, velvet-pile depth
-  spatial_distortion: None
-  atmosphere: Luxury, night, after-hours refinement, aged-whiskey warmth, quiet exclusivity
-  key_features: Soft sheen, pile-direction gleam, satin lapel, jacquard pattern, frog closure
+  aesthetic: >-
+    Velvet within 5. Fabric & Texture Focus: a reusable Fashion & Costume visual language with a clear stylistic thesis,
+    disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving
+    Velvet's specific style identity.
+  form_and_line: >-
+    Define Velvet through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable
+    beyond one literal scene.
+  color_palette: >-
+    Use a Velvet-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid
+    generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Velvet recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable
+    hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Velvet: surface response, grain, patina, polish, or wear should feel
+    intentional and style-defining.
+  render_quality: >-
+    Render Velvet with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI,
+    text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Velvet: perspective, compression, exaggeration, or depth should support the style
+    without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Velvet: specific, coherent, and distinct, with emotional tone carried by visual systems
+    rather than narrative captioning.
+  key_features: >-
+    Prioritize Velvet's key features: recognizable shape language, palette logic, material cues, lighting behavior, and
+    composition rules.
   creative_brief: >-
-    Velvet the input with directional pile: crushed nap shifts, deep burgundy or
-    midnight color, satin-lapel cues, jacquard relief and soft side glow. Keep
-    after-dark luxury without requiring a smoking jacket, private club, piano bar
-    or wearer.
+    Create a style-card that translates Velvet into a portable visual system for 5. Fabric & Texture Focus. Preserve the
+    preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - plastic gloss
   - hard metal glare

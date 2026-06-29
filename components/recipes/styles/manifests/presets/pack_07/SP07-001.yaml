@@ -13,36 +13,36 @@ tags:
   - interior-design-systems
 visualDna:
   aesthetic: >-
-    Minimalismo arquitectónico de alta precisión, donde la ausencia programática y la continuidad
-    material construyen lujo silencioso.
+    Modern Minimalist within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Modern Minimalist's specific style identity.
   form_and_line: >-
-    Planos ortogonales largos, encuentros sin marco, espesores ocultos, ejes de circulación limpios
-    y piezas flotantes de bajo perfil.
+    Define Modern Minimalist through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
   color_palette: >-
-    Blanco mineral, marfil cálido, gris piedra frío, arena pálida y roble desaturado como único
-    acento térmico.
+    Use a Modern Minimalist-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
   lighting_setup: >-
-    Luz diurna difusa de gran apertura, rebotes uniformes sin hotspots, cove lighting perimetral
-    oculto y sombras extremadamente blandas.
+    Use lighting that makes Modern Minimalist recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
   material_texture: >-
-    Yeso fino continuo, microcemento mate, piedra apomazada de poro cerrado y madera cepillada casi
-    sin veta visible.
+    Use materials and textures that reinforce Modern Minimalist: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
   render_quality: >-
-    Visualización editorial ultra-clean con énfasis en proporción, borde, alineación y disciplina de
-    vacío.
+    Render Modern Minimalist with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Perspectiva neutra y estable, con profundidad construida por capas tonales suaves en lugar de
-    dramatización angular.
+    Use spatial behavior that fits Modern Minimalist: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
   atmosphere: >-
-    Serenidad curada, control acústico implícito, claridad mental, y sensación de lujo por
-    contención.
+    Set a mood that belongs to Modern Minimalist: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Vacío activo, alineación invisible, planos enrasados, módulos suspendidos y continuidad material
-    sin lectura de escena obligatoria.
+    Prioritize Modern Minimalist's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Preserva una gramática minimalista transferible basada en sustracción extrema, continuidad
-    constructiva y jerarquía por vacío. Cualquier input debe absorberse en planos silenciosos, luz
-    uniforme y detalle oculto de alta precisión sin quedar atado a arquitectura literal.
+    Create a style-card that translates Modern Minimalist into a portable visual system for 1. Interior Design Systems.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - clutter
   - ornate

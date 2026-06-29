@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Sigil liturgy carved from salt-encrusted bone, severe and ceremonial.
-  form_and_line: Repeating sigil panels, vertebra-like arcs, and ceremonial symmetry.
-  color_palette: Salt white, dark sepia, and iron gray.
-  lighting_setup: Cold skylight with crisp shadow cuts.
-  material_texture: Chiseled bone, salt crust, and rough stone.
-  render_quality: Esoteric symbolic rendering with precise emblem readability.
-  spatial_distortion: Receding sigil rhythm that multiplies meaning without requiring a hall.
-  atmosphere: Severance, permanence, and ritual authority.
-  key_features: Bone sigils, salt encrustation, oath-like panels.
-  creative_brief: Rework the input as a salt-bone sigil liturgy, where memory is etched and preserved by salt rather than staged in a fixed hall.
+  aesthetic: >-
+    Salt-Bone Sigil Liturgy within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Salt-Bone Sigil Liturgy's specific style identity.
+  form_and_line: >-
+    Define Salt-Bone Sigil Liturgy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Salt-Bone Sigil Liturgy-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Salt-Bone Sigil Liturgy recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Salt-Bone Sigil Liturgy: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Salt-Bone Sigil Liturgy with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Salt-Bone Sigil Liturgy: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Salt-Bone Sigil Liturgy: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Salt-Bone Sigil Liturgy's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Salt-Bone Sigil Liturgy into a portable visual system for 1. Mythic Symbolism.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - whimsical

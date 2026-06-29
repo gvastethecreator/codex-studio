@@ -10,23 +10,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal material finish, full-scale real scene',
     style: {
       aesthetic:
-        'Miniatura papercraft basada en lógica de pliegue, estratificación de diorama y sensibilidad manual portable.',
+        "Papercraft Diorama Construction within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Papercraft Diorama Construction's specific style identity.",
       form_and_line:
-        'Siluetas de corte nítido, bisagras marcadas, uniones por pestaña y planos pop-up en profundidad apilada.',
+        'Define Papercraft Diorama Construction through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Off-white paper stock, kraft brown board, neutral newsprint gray, pastel card inserts, tracing-paper translucency, and muted pigment accents',
+        'Use a Papercraft Diorama Construction-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Key suave de maqueta, sombras direccionales por cantos de papel y glow tenue por translucidez de láminas finas.',
+        'Use lighting that makes Papercraft Diorama Construction recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Fibra visible, diente de cartulina, memoria de pliegue, pelusa de corte y costuras secas de pegamento mate.',
+        'Use materials and textures that reinforce Papercraft Diorama Construction: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Miniatura artesanal de alta claridad con escala controlada y materialidad deliberadamente no fotoreal.',
-      spatial_distortion: 'None',
-      atmosphere: 'Delicada, paciente y contemplativa, con ensamblaje manual explícito.',
+        'Render Papercraft Diorama Construction with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Papercraft Diorama Construction: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Papercraft Diorama Construction: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Líneas de score expuestas, uniones tab-slot, planos por capas y ritmo de sombra en borde de papel.',
+        "Prioritize Papercraft Diorama Construction's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Renderiza cualquier tema como construcción papercraft: planos plegados, pestañas visibles, fibra de cartulina, sombras de borde y profundidad de diorama. La maqueta debe sentirse hecha a mano sin depender de ciudad miniatura, calle de maqueta, vitrina museistica o escena urbana obligatoria. Conserva pliegue, pestanas, fibra visible, escala de maqueta y sombra por capas sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Papercraft Diorama Construction into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -36,23 +38,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'seamless photoreal material without studs, full-scale realistic construction',
     style: {
       aesthetic:
-        'Toy brick-built con ensamblaje modular ABS, lógica stud-visible e ingeniería lúdica simplificada.',
+        "Studded ABS Brick System within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Studded ABS Brick System's specific style identity.",
       form_and_line:
-        'Retícula ortogonal de studs, masa escalonada por bloques, trabas de esquina y transición geométrica de escala juguete.',
+        'Define Studded ABS Brick System through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Saturated primary red-yellow-blue, bright green accents, neutral black-white-gray balancing blocks, and occasional transparent-plastic highlight tones',
+        'Use a Studded ABS Brick System-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Key difusa amplia de interior, especulares plásticas nítidas y agrupaciones de highlight sobre coronas stud.',
+        'Use lighting that makes Studded ABS Brick System recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Brillo ABS inyectado, tapas circulares, juntas de pieza, transiciones slope y marcas leves de moldeo.',
+        'Use materials and textures that reinforce Studded ABS Brick System: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Toy-architecture de lectura alta con ensamblaje preciso y abstracción de bloque no realista deliberada.',
-      spatial_distortion: 'None',
-      atmosphere: 'Energética, constructiva y optimista, guiada por sistema modular.',
+        'Render Studded ABS Brick System with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Studded ABS Brick System: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Studded ABS Brick System: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Campos de studs visibles, huellas alineadas a baseplate, apilado modular, seams interlock y color blocking plástico intenso.',
+        "Prioritize Studded ABS Brick System's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte forma y superficie en ensamblaje brick-built: studs visibles, juntas interlock, color blocking plástico y brillo ABS. El estilo debe leer como sistema modular de juguete aplicable a cualquier sujeto.',
+        'Create a style-card that translates Studded ABS Brick System into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -62,23 +66,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'hard carved stone finish replacing wet sand, permanent masonry read',
     style: {
       aesthetic:
-        'Construcción litoral efímera modelada en arena húmeda con vulnerabilidad mareal y fortificación lúdica improvisada.',
+        "Wet-Sand Ephemeral Modeling within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Wet-Sand Ephemeral Modeling's specific style identity.",
       form_and_line:
-        'Torres cilíndricas de molde-balde, verticales por goteo, parapetos festoneados y contornos blandos propensos a erosión.',
+        'Define Wet-Sand Ephemeral Modeling through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Dry sand beige, wet umber brown, shell off-white, sunlit shore gold, driftwood gray, and muted sea-glass accents',
+        'Use a Wet-Sand Ephemeral Modeling-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Daylight costero duro, shimmer de agua reflejada, sombras bajas de playa y microespeculares en superficie húmeda.',
+        'Use lighting that makes Wet-Sand Ephemeral Modeling recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Agregación granular de arena, costra compactada, crestas de goteo, inclusiones de concha y bordes suavizados por desgaste.',
+        'Use materials and textures that reinforce Wet-Sand Ephemeral Modeling: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Escultura transitoria de detalle alto con fidelidad granular y señales de colapso controlado.',
-      spatial_distortion: 'Crumbling',
-      atmosphere: 'Soleada, táctil y frágil, condicionada por decadencia natural inminente.',
+        'Render Wet-Sand Ephemeral Modeling with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Wet-Sand Ephemeral Modeling: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Wet-Sand Ephemeral Modeling: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Perfiles por goteo, módulos repetidos de molde, canales erosionables, crestas almenadas y líneas de desgaste de marea.',
+        "Prioritize Wet-Sand Ephemeral Modeling's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Usa arena húmeda como lenguaje material: granulación compactada, bordes erosionables, goteo, molde repetido y vulnerabilidad temporal. No necesita castillo ni playa; necesita comportamiento escultorico efimero sin depender de horizonte costero o arena de juguete literal. Conserva granulacion humeda, erosion, molde repetido y fragilidad mareal sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Wet-Sand Ephemeral Modeling into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -88,23 +94,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'solid wall',
     style: {
       aesthetic:
-        'Carton reciclado improvisado con union visible, invencion low-tech y fantasia manual de bajo recurso portable.',
+        "Corrugated Cardboard Improvisation within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Corrugated Cardboard Improvisation's specific style identity.",
       form_and_line:
-        'Ortogonales apiladas, voladizos de solapa, aperturas recortadas a mano y remiendos estructurales sin cuarto infantil obligatorio.',
+        'Define Corrugated Cardboard Improvisation through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Kraft cardboard brown, packing-tape tan, marker black linework, wax-crayon accent colors, label-white patches, and soft neutral inserts',
+        'Use a Corrugated Cardboard Improvisation-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Calidez domestica suave, hotspots puntuales de linterna y rebote filtrado de baja tecnologia sin fijar interior narrativo unico.',
+        'Use lighting that makes Corrugated Cardboard Improvisation recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Canales corrugados, superficie kraft fibrosa, cinta brillante, bleed de marcador y trazas cerosas de crayon.',
+        'Use materials and textures that reinforce Corrugated Cardboard Improvisation: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Realismo artesanal low-tech con imperfeccion de ensamblaje, tactilidad reciclada y lectura estructural clara.',
-      spatial_distortion: 'Sagging and patched asymmetry from improvised load paths',
-      atmosphere: 'Ingeniosa, temporal y orgullosamente homemade.',
+        'Render Corrugated Cardboard Improvisation with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Corrugated Cardboard Improvisation: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Corrugated Cardboard Improvisation: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Canto corrugado expuesto, juntas reforzadas con cinta, solapas estructurales, ornamento a marcador y refuerzos blandos insertados.',
+        "Prioritize Corrugated Cardboard Improvisation's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica construccion de carton improvisado: corrugado expuesto, cinta brillante, solapas estructurales, cortes manuales y marcas de low-tech craft. Debe expresar invencion material barata sin escena infantil fija, fuerte sesgo de playroom ni maqueta de cuarto cerrada. Conserva corrugado, cinta, escala improvisada y logica de carga remendada sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Corrugated Cardboard Improvisation into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -168,25 +176,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'square',
     style: {
       aesthetic:
-        'Vernaculo fungico encantado con masa bulbosa y logica ecologica miniatura, portable mas alla del bosque de cuento.',
+        "Fungal Vernacular Miniature within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Fungal Vernacular Miniature's specific style identity.",
       form_and_line:
-        'Columnas tipo tallo, cubiertas domo-cap, intrados acanalado de laminas y transiciones organicas de volumen hinchado.',
+        'Define Fungal Vernacular Miniature through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Toadstool red, cream speckling, soft stem white, spore brown, moss green, muted fairy blue accents, and warm understory amber',
+        'Use a Fungal Vernacular Miniature-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz filtrada moteada, relleno frio de sombra y acentos bioluminiscentes sutiles en bordes y cavidades bajas.',
+        'Use lighting that makes Fungal Vernacular Miniature recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Piel fungica mate, moteado de sombrero, costillas de lamina, manto musgoso humedo y polvo fino de esporas.',
+        'Use materials and textures that reinforce Fungal Vernacular Miniature: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Fantasia storybook con curvatura organica fiel y detalle tactil de micromaterial biologico.',
+        'Render Fungal Vernacular Miniature with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Cap-and-stem volumetric swelling with softened miniature proportion drift',
+        'Use spatial behavior that fits Fungal Vernacular Miniature: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
       atmosphere:
-        'Encantada, protegida y diminuta, como un ecosistema construido desde crecimiento biologico.',
+        'Set a mood that belongs to Fungal Vernacular Miniature: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Siluetas cap-dome, tallos estructurales, aperturas circulares, bases humedas y jerarquia de cluster biologico.',
+        "Prioritize Fungal Vernacular Miniature's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Usa morfologia fungica como estilo: jerarquia cap-stem, piel moteada, laminas acanaladas, musgo humedo y escala miniatura ecologica. El sujeto puede variar; la logica biologica y bulbosa debe mandar sin exigir suelo de bosque, anillo de setas, cottage fae o cluster narrativo fijo. Conserva jerarquia cap-stem, microescala humeda y tactilidad biologica sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Fungal Vernacular Miniature into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -196,24 +204,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'open ocean background, seascape dominance, full maritime landscape',
     style: {
       aesthetic:
-        'Artesanía marítima miniaturizada encapsulada, con precisión de vitrina y efecto de escala imposible dentro de vidrio.',
+        "Bottle-Glass Curio Miniature within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bottle-Glass Curio Miniature's specific style identity.",
       form_and_line:
-        'Silueta elongada de vidrio, cuello restrictivo, verticales comprimidas y red fina dentro de marco cilíndrico.',
+        'Define Bottle-Glass Curio Miniature through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Aged wood brown, sail cream, rigging tan, pale bottle aqua tint, oxidized brass accents, neutral glass highlights, and cork earth tones',
+        'Use a Bottle-Glass Curio Miniature-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación de exposición controlada, streaks especulares alargados en vidrio y compresión de sombra interna suave.',
+        'Use lighting that makes Bottle-Glass Curio Miniature recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Vidrio claro micro-rayado, madera miniatura barnizada, fibra de hilo tensada, papel plegado y corcho poroso.',
+        'Use materials and textures that reinforce Bottle-Glass Curio Miniature: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Miniatura de precisión alta con lectura de escala clara y fidelidad óptica de curio-display.',
+        'Render Bottle-Glass Curio Miniature with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Cylindrical refraction warp and magnification compression introduced by curved bottle glass',
-      atmosphere: 'Reverente, meticulosa y contemplativa, con imposibilidad serena de museo.',
+        'Use spatial behavior that fits Bottle-Glass Curio Miniature: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Bottle-Glass Curio Miniature: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Ilusión de inserción por cuello, malla fina tensada, sellado de corcho, magnificación por curvatura y base de exhibición.',
+        "Prioritize Bottle-Glass Curio Miniature's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Encapsula cualquier sujeto como curio miniatura dentro de vidrio: refracción cilíndrica, compresión por cuello, microdetalle meticuloso y base de vitrina. No depende de barco; depende de imposibilidad artesanal encapsulada.',
+        'Create a style-card that translates Bottle-Glass Curio Miniature into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -223,23 +232,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flat exterior-only view, uncut surface-only exterior, camera equipment',
     style: {
       aesthetic:
-        'Sección subterránea biofuncional con red capilar y zonificación interna estricta.',
+        "Subterranean Bio-Cutaway within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Subterranean Bio-Cutaway's specific style identity.",
       form_and_line:
-        'Ramificaciones capilares, cavidades nodales, conectores verticales y estratos seccionados por capas.',
+        'Define Subterranean Bio-Cutaway through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Compacted soil umber, sandy beige, amber gel translucency, deep chamber brown, charcoal ant silhouettes, and freshly turned earth tones',
+        'Use a Subterranean Bio-Cutaway-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación lateral de corte, transmisión translúcida en gel y pockets de sombra controlada en profundidad.',
+        'Use lighting that makes Subterranean Bio-Cutaway recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Compactación granular de suelo, bandas arenosas, alisado húmedo de túnel y marcas finas de excavación.',
+        'Use materials and textures that reinforce Subterranean Bio-Cutaway: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Cutaway naturalista de alto detalle con legibilidad sistémica y estratificación subterránea precisa.',
-      spatial_distortion: 'None',
-      atmosphere: 'Laboriosa, biológica y funcional, escondida bajo superficie inferida.',
+        'Render Subterranean Bio-Cutaway with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Subterranean Bio-Cutaway: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Subterranean Bio-Cutaway: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Jerarquía capilar, cavidades funcionales, ejes de circulación vertical y lectura estratificada de sección.',
+        "Prioritize Subterranean Bio-Cutaway's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Representa cualquier sistema como sección biofuncional subterránea: ramificaciones capilares, cavidades nodales, estratos granulares y lectura lateral de organizacion interna. La funcion importa mas que insectos, hormiguero, vitrina de observacion o superficie literal. Conserva capilaridad, estratos, escala seccionada y logica funcional interna sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Subterranean Bio-Cutaway into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -249,23 +260,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'closed uncut wall hiding section, sealed exterior facade',
     style: {
       aesthetic:
-        'Miniatura en corte abierto, curada por compartimentos-caja y precisión de exhibición artesanal.',
+        "Toy-Scale Sectional Cutaway within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Toy-Scale Sectional Cutaway's specific style identity.",
       form_and_line:
-        'Cara retirada en sección, bandas apiladas, retícula de compartimentos y diagonales de conexión compacta.',
+        'Define Toy-Scale Sectional Cutaway through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Soft pastel wall fields, printed wallpaper motifs, painted toy-wood neutrals, carpet beige bases, dusty pink highlights, and muted decorative accents',
+        'Use a Toy-Scale Sectional Cutaway-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz de vitrina uniforme, glow interior suave y sombreado de compartimentos en contraste bajo para lectura seccional.',
+        'Use lighting that makes Toy-Scale Sectional Cutaway recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Madera mini pintada, grano de papel tapiz, textil diminuto, plástico moldeado y remates satín lacados.',
+        'Use materials and textures that reinforce Toy-Scale Sectional Cutaway: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Miniatura cutaway de alta claridad con legibilidad compartimento-por-compartimento y densidad decorativa balanceada.',
-      spatial_distortion: 'None',
-      atmosphere: 'Lúdica, íntima y ordenada, con teatralidad doméstica curada.',
+        'Render Toy-Scale Sectional Cutaway with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Toy-Scale Sectional Cutaway: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Toy-Scale Sectional Cutaway: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Frente abierto seccionado, módulos apilados, transiciones diagonales y perímetros de corte nítidos.',
+        "Prioritize Toy-Scale Sectional Cutaway's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica corte seccional toy-scale: frente abierto, compartimentos apilados, materiales miniaturizados y luz de vitrina. Debe revelar estructura interna como maqueta curada sin exigir dollhouse doméstica.',
+        'Create a style-card that translates Toy-Scale Sectional Cutaway into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

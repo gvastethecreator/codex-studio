@@ -13,16 +13,37 @@ tags:
   - mythic
   - cosmology
 visualDna:
-  aesthetic: Lunar salt divination with monastic discipline, crystalline omens, and moon-tide vigilance.
-  form_and_line: Cloister grid cues, salt-pan bands, and observatory tower silhouettes.
-  color_palette: Chalk white, deep indigo, and amber flame.
-  lighting_setup: Moonwash and low torch perimeter glow.
-  material_texture: Crystalline salt crust, adobe, and oxidized metal.
-  render_quality: Serene yet ominous environment concept.
-  spatial_distortion: Layered progression from cloister-like order to salt-flat reflection.
-  atmosphere: Monastic discipline and astral vigilance.
-  key_features: Salt omens, lunar stills, prayer-terrace cues.
-  creative_brief: Recast the input through lunar salt divination, where weather and spirit readings crystallize without requiring a monastery.
+  aesthetic: >-
+    Lunar Salt Divination within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Lunar Salt Divination's specific style identity.
+  form_and_line: >-
+    Define Lunar Salt Divination through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Lunar Salt Divination-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Lunar Salt Divination recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Lunar Salt Divination: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Lunar Salt Divination with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Lunar Salt Divination: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Lunar Salt Divination: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Lunar Salt Divination's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Lunar Salt Divination into a portable visual system for 4. Mythic Cosmology &
+    Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - comic

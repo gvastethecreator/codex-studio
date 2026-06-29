@@ -12,20 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Ópera pop de dualidad estratégica y espectáculo emocional, donde tensión técnica y melodrama cromático coexisten.
-  form_and_line: Doble registro de línea, rigidez operacional y fluidez performativa de espectáculo.
-  color_palette: Grises tácticos, rojos de alerta, azules estelares y pasteles pop de contrapeso emocional.
-  lighting_setup: Haze técnico combinado con spot escénico, glow de interfaz y contraluces cósmicos de gran dramatismo.
-  material_texture: Placas pintadas, marcas operativas, superficies de show y shimmer de borde cel analógico.
-  render_quality: Acabado premium retro-futuro con balance nítido entre lectura táctica y catarsis pop escénica.
-  spatial_distortion: Escala macro contrapuesta a encuadre íntimo performativo para tensión entre estrategia y canción.
-  atmosphere: Romántica, estratégica, pop, sideral.
-  key_features: Contraste táctico-pop, escala operática, color pop, melodrama estratégico y diseño técnico sentimental.
+  aesthetic: >-
+    Strategic Pop Duality Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Strategic Pop Duality Style's specific style identity.
+  form_and_line: >-
+    Define Strategic Pop Duality Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Strategic Pop Duality Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Strategic Pop Duality Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Strategic Pop Duality Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Strategic Pop Duality Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Strategic Pop Duality Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Strategic Pop Duality Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Strategic Pop Duality Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática reusable de pop estratégico dual para cualquier prompt o imagen de entrada:
-    estrategia, espectáculo y romance gráfico. Idols, mechas, carrier decks,
-    ciudad-nave u operaciones militares pueden funcionar como indicios de escala
-    y dualidad pop-táctica cuando aporten estilo, sin fijar una escena militar.
+    Create a style-card that translates Strategic Pop Duality Style into a portable visual system for 11. 70s & 80s
+    Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-319.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -10,22 +10,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cheerful, modern-casual, action-chaos, watermark, text, logo',
     style: {
       aesthetic:
-        'Aristocratic relic-conservation noir with esoteric craft precision and velvet danger.',
+        "Velvet Relic Conservation Noir within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Velvet Relic Conservation Noir's specific style identity.",
       form_and_line:
-        'Precise artisan gesture lines, suspended-fragment arcs, drawer-grid order, and careful restoration geometry.',
-      color_palette: 'Oxblood velvet, tarnished brass, and parchment ivory.',
+        'Define Velvet Relic Conservation Noir through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Velvet Relic Conservation Noir-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Focused task-lamp pools, peripheral candle glow, and tight brass edge highlights.',
-      material_texture: 'Burnished metal filings, antique velvet, wax seals, and lacquered wood.',
+        'Use lighting that makes Velvet Relic Conservation Noir recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Velvet Relic Conservation Noir: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Premium narrative illustration with editorial precision and controlled contrast.',
+        'Render Velvet Relic Conservation Noir with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Layered conservation-depth framing with shelves, drawers, or suspended fragments as optional cues.',
-      atmosphere: 'Obsessive concentration, sacred secrecy, and museum-grade elegance.',
+        'Use spatial behavior that fits Velvet Relic Conservation Noir: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Velvet Relic Conservation Noir: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Velvet-lined shadow, relic-fragment geometry, wax-seal accents, brass tool precision, and forbidden-object value.',
+        "Prioritize Velvet Relic Conservation Noir's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Conserve the input as velvet relic noir: oxblood depth, tarnished brass precision, parchment highlights, wax-seal accents, and suspended fragment logic should make any subject feel priceless and dangerous without requiring an atelier, workbench, dedicated restorer, or literal relic set.',
+        'Create a style-card that translates Velvet Relic Conservation Noir into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -35,22 +38,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, bright-daylight, playful, watermark, text, logo',
     style: {
       aesthetic:
-        'Ruined metropolitan iconography where sanctity survives as unstable electric folklore.',
+        "Broken Neon Saint Icon within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Broken Neon Saint Icon's specific style identity.",
       form_and_line:
-        'Frontal icon geometry, fractured aureole rings, cable-bundle arcs, and shrine-like symmetry.',
-      color_palette: 'Faded cyan plasma, wounded magenta, and soot-black concrete.',
-      lighting_setup: 'Intermittent neon fault flicker with rain-slick reflected halos.',
+        'Define Broken Neon Saint Icon through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Broken Neon Saint Icon-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Broken Neon Saint Icon recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Wet brutalist concrete, shattered acrylic tubes, oxidized steel, and pasted liturgical posters.',
+        'Use materials and textures that reinforce Broken Neon Saint Icon: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'High-impact poster-concept hybrid with crisp silhouette readability for key-art use.',
+        'Render Broken Neon Saint Icon with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Flat-compressed devotional framing that pushes broken neon iconography toward the viewer without requiring an alley shrine.',
-      atmosphere: 'Defiant faith, civic collapse, and reverent urban tension.',
+        'Use spatial behavior that fits Broken Neon Saint Icon: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Broken Neon Saint Icon: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Broken halo scaffolds, votive cable bundles, rain-neon reflections, soot concrete, and unstable electric sainthood.',
+        "Prioritize Broken Neon Saint Icon's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Canonize the input as broken neon sainthood: fractured aureoles, cyan-magenta fault light, rain-slick concrete, votive cable bundles, and blackout-era devotional symmetry should sanctify any subject without requiring a saint, city shrine, alley, graffiti wall, or literal figure.',
+        'Create a style-card that translates Broken Neon Saint Icon into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -59,21 +65,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, soft-cute, random-chaos, watermark, text, logo',
     style: {
-      aesthetic: 'Eschatological court-noir where prophecy reads as legal force and sovereign ash.',
+      aesthetic:
+        "Ash-Crown Oracle Decree within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ash-Crown Oracle Decree's specific style identity.",
       form_and_line:
-        'High vertical authority, decree-tablet geometry, strict heraldic symmetry, and crown-halo framing.',
-      color_palette: 'Volcanic ash gray, funerary gold, and deep ultramarine dusk.',
-      lighting_setup: 'Ember uplight from censers plus a narrow crown halo rim.',
+        'Define Ash-Crown Oracle Decree through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Ash-Crown Oracle Decree-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Ash-Crown Oracle Decree recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Charred vellum, oxidized regalia, cinder dust, and brocade ceremonial cloth.',
-      render_quality: 'Prestige key art with precise icon hierarchy and high-distance readability.',
+        'Use materials and textures that reinforce Ash-Crown Oracle Decree: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Ash-Crown Oracle Decree with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Tribunal-axis convergence through smoke-layered arches or equivalent authority planes without requiring a throne room.',
-      atmosphere: 'Judicial inevitability, prophetic dread, and sovereign calm.',
+        'Use spatial behavior that fits Ash-Crown Oracle Decree: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ash-Crown Oracle Decree: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Cracked coronet cues, decree tablets, oath geometry, intelligent ash plumes, and funerary-gold verdict light.',
+        "Prioritize Ash-Crown Oracle Decree's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Decree the input through ash-crown oracle law: volcanic gray fields, funerary-gold halos, ultramarine dusk, charred-vellum texture, and heraldic verdict symmetry should make any subject feel prophetically binding without requiring a literal oracle figure, courtroom, attendants, tablets, or apocalypse tableau.',
+        'Create a style-card that translates Ash-Crown Oracle Decree into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -82,23 +93,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, cheerful-light, sci-fi-clean, watermark, text, logo',
     style: {
-      aesthetic: 'Covert mythic-noir relic infiltration with stealth precision and sacred urgency.',
+      aesthetic:
+        "Moonsteel Relic Infiltration within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Moonsteel Relic Infiltration's specific style identity.",
       form_and_line:
-        'Low-profile silhouette bias, rope-led diagonals, ritual cartography marks, and stealth-vector geometry.',
-      color_palette: 'Moonsteel blue, weathered slate, and blood-seal crimson accents.',
+        'Define Moonsteel Relic Infiltration through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Moonsteel Relic Infiltration-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Intermittent moon breaks, hand-lantern occlusion, and shard reflections off wet stone.',
+        'Use lighting that makes Moonsteel Relic Infiltration recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Rain-dark masonry, waxed travel leather, bronze relic clasps, and damp parchment maps.',
+        'Use materials and textures that reinforce Moonsteel Relic Infiltration: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Tactical narrative concept art with crisp readability across mid and far planes.',
+        'Render Moonsteel Relic Infiltration with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Vertical ruin-shaft depth, chained landings, or hidden-passage diagonals as optional structure cues.',
-      atmosphere: 'Measured tension, sacred urgency, and disciplined restraint.',
+        'Use spatial behavior that fits Moonsteel Relic Infiltration: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Moonsteel Relic Infiltration: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Relic lockbox cues, route-marking sigils, moonsteel reflections, suspended bridge fragments, and silent tracking posture.',
+        "Prioritize Moonsteel Relic Infiltration's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Infiltrate the input with moonsteel relic tension: blue wet-stone shadows, blood-seal accents, ritual map lines, stealth diagonals, and lockbox-like sacred-object cues should make any subject feel covert and urgent without requiring an operative, forbidden ruins, rival orders, bridge, or mission setup.',
+        'Create a style-card that translates Moonsteel Relic Infiltration into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -108,20 +122,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, playful, sci-fi-neon, low-detail, watermark, text, logo',
     style: {
       aesthetic:
-        'Judicial occult noir fused with antique mechanical ritualism and verdict pressure.',
+        "Clockwork Exorcism Tribunal within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Clockwork Exorcism Tribunal's specific style identity.",
       form_and_line:
-        'Triangular verdict staging, articulated device geometry, strict blocking, and procedural sigil alignment.',
-      color_palette: 'Charcoal black, brass amber, and parchment umber.',
-      lighting_setup: 'Overhead judicial beams with hot sparks from arcane machinery.',
-      material_texture: 'Engraved brass, scorched oak, vellum dossiers, and iron chains.',
-      render_quality: 'High-legibility narrative tableau with premium editorial sharpness.',
+        'Define Clockwork Exorcism Tribunal through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Clockwork Exorcism Tribunal-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Clockwork Exorcism Tribunal recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Clockwork Exorcism Tribunal: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Clockwork Exorcism Tribunal with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Forced-perspective chamber logic emphasizing a central verdict axis without requiring a courtroom.',
-      atmosphere: 'Moral gravity, procedural dread, and controlled ceremonial violence.',
+        'Use spatial behavior that fits Clockwork Exorcism Tribunal: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Clockwork Exorcism Tribunal: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Mechanized exorcism rig cues, brass verdict devices, evidentiary relic arrays, parchment dossiers, and moral-gravity beams.',
+        "Prioritize Clockwork Exorcism Tribunal's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Prosecute the input through clockwork exorcism tribunal logic: charcoal verdict shadows, brass amber machinery, parchment dossiers, iron-chain geometry, and procedural occult alignment should make any subject feel judged and ritually constrained without requiring judges, courtroom, exorcist, rig, or secret trial staging.',
+        'Create a style-card that translates Clockwork Exorcism Tribunal into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -130,19 +149,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, cheerful, empty, watermark, text, logo, flat-light',
     style: {
-      aesthetic: 'Ritual noir compressed by dense candlelight, black wax, and ironwork discipline.',
+      aesthetic:
+        "Midnight Candle Compression within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Midnight Candle Compression's specific style identity.",
       form_and_line:
-        'Tight chamber-like geometry, vertical candle clusters, and iron rail rhythms.',
-      color_palette: 'Black wax, amber flame, and aged brass.',
-      lighting_setup: 'Dense candle pools with deep surrounding shadow.',
-      material_texture: 'Sooted stone, melted wax, and oxidized metal.',
-      render_quality: 'Editorial noir with claustrophobic detail and clear symbolic hierarchy.',
+        'Define Midnight Candle Compression through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Midnight Candle Compression-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Midnight Candle Compression recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Midnight Candle Compression: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Midnight Candle Compression with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Close compressed depth that makes any subject feel sealed into ritual power.',
-      atmosphere: 'Secrecy, devotion, and controlled tension.',
-      key_features: 'Candle stacks, iron grates, sealed-alcove silhouettes.',
+        'Use spatial behavior that fits Midnight Candle Compression: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Midnight Candle Compression: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Midnight Candle Compression's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through midnight candle compression, where candlelight and iron geometry make power feel compact and secret.',
+        'Create a style-card that translates Midnight Candle Compression into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -152,20 +178,26 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, playful, bright-day, watermark, text, logo, action-pose, candle clusters, black wax, glass corridor, reliquary tower',
     style: {
-      aesthetic: 'Processional blood-moon omen language with solemn public ritual pressure.',
+      aesthetic:
+        "Blood Moon Processional Omen within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Blood Moon Processional Omen's specific style identity.",
       form_and_line:
-        'Long solemn verticals, lantern-pole rhythms, suspended banner lines, and a lunar arc overhead with no candle cluster centerpiece.',
-      color_palette: 'Blood red, midnight indigo, and ash gray.',
-      lighting_setup: 'Moonlit backlight with lantern accents.',
-      material_texture: 'Wet stone sheen, ceremonial cloth, lacquered wood, and ash haze.',
-      render_quality: 'Cinematic mythic rendering with processional clarity.',
+        'Define Blood Moon Processional Omen through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Blood Moon Processional Omen-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Blood Moon Processional Omen recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Blood Moon Processional Omen: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Blood Moon Processional Omen with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Receding ritual rhythm that leads visual force toward a blood moon disk.',
-      atmosphere: 'Omen, obedience, and a solemn public rite.',
+        'Use spatial behavior that fits Blood Moon Processional Omen: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Blood Moon Processional Omen: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Processional mask cues, lantern standards, blood moon sigils, suspended omen banners.',
+        "Prioritize Blood Moon Processional Omen's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply blood-moon processional omen logic to any input, making red celestial pressure feel like witness and verdict. Use lantern-pole rhythm, suspended omen banners, ash haze, solemn verticals, and obedient negative space without forcing candle clusters, black wax shrines, corridor reliquaries, moon disks, street marches, masks, crowds, or ritual parades.',
+        'Create a style-card that translates Blood Moon Processional Omen into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -176,18 +208,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, cute, pastel, watermark, text, logo, daytime, bedroom, bed, sofa, domestic interior, side table',
     style: {
       aesthetic:
-        'Confessional noir translated through blackwater reflections, secrecy, and ritual cleansing.',
-      form_and_line: 'Narrow vertical screen forms, water reflection bands, and arch-slit cues.',
-      color_palette: 'Tar black, tarnished silver, and deep teal.',
-      lighting_setup: 'Reflected water shimmer and slit-window light.',
-      material_texture: 'Damp stone, brushed metal, and polished confession screens.',
-      render_quality: 'Mysterious symbolic rendering with clean contrast.',
+        "Blackwater Confessional Reflection within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Blackwater Confessional Reflection's specific style identity.",
+      form_and_line:
+        'Define Blackwater Confessional Reflection through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Blackwater Confessional Reflection-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Blackwater Confessional Reflection recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Blackwater Confessional Reflection: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Blackwater Confessional Reflection with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Repeated screen rhythm over a submerged void feeling, usable on subjects or objects.',
-      atmosphere: 'Admission, secrecy, and ritual cleansing.',
-      key_features: 'Confessional screens, blackwater basin cues, whisper-grille textures.',
+        'Use spatial behavior that fits Blackwater Confessional Reflection: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Blackwater Confessional Reflection: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Blackwater Confessional Reflection's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret any input as blackwater confession, with dark reflective tides and narrow secrecy replacing literal room requirements. Use slit-light rhythm, whisper-grille texture, damp stone, and submerged void feeling without forcing confessionals, basins, rooms, screens, bedrooms, beds, domestic interiors, or religious props.',
+        'Create a style-card that translates Blackwater Confessional Reflection into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -196,18 +235,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Mythic — Ritual Noir',
     negativePrompt: 'photoreal, cartoon, neon, watermark, text, logo, glossy',
     style: {
-      aesthetic: 'Vow-binding noir guarded by ceremonial seals, cords, and austere authority.',
-      form_and_line: 'Sharp verticals, rite-edge cues, and disciplined symmetry.',
-      color_palette: 'Iron black, dried crimson, and bone white.',
-      lighting_setup: 'Single altar beam and edge highlights on metal.',
-      material_texture: 'Etched metal, cracked stone, and stained leather.',
-      render_quality: 'Stark mythic key art with ceremonial precision.',
+      aesthetic:
+        "Oath Knife Binding within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Oath Knife Binding's specific style identity.",
+      form_and_line:
+        'Define Oath Knife Binding through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Oath Knife Binding-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Oath Knife Binding recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Oath Knife Binding: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Oath Knife Binding with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Frontal axis with blades framing a symbolic commitment point, not a required chapel.',
-      atmosphere: 'Binding, sacrifice, and austere authority.',
-      key_features: 'Oath seals, binding cords, vow-tablet shapes.',
+        'Use spatial behavior that fits Oath Knife Binding: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Oath Knife Binding: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Oath Knife Binding's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convert any input into oath-knife binding style, where promises feel sealed by ceremonial emblems and cord tension. Keep sharp verticals, dried crimson, rite-beam contrast, and austere symmetry without requiring blades, chapels, altars, vows, or violent sacrifice scenes.',
+        'Create a style-card that translates Oath Knife Binding into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -217,17 +264,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, busy-patterns, daylight, watermark, text, logo, cute',
     style: {
       aesthetic:
-        'Silent choir absence expressed through ash traces, tall arch cues, and echoing negative space.',
-      form_and_line: 'Tall arch rhythms, ash streaks, and layered alcove silhouettes.',
-      color_palette: 'Charcoal, ivory ash, and bruised plum.',
-      lighting_setup: 'Soft overhead dusk and side-lamp glow.',
-      material_texture: 'Soot residue, stone dust, and faded silk.',
-      render_quality: 'Atmospheric symbolism with quiet architectural detail.',
-      spatial_distortion: 'Narrow funneling depth toward an implied hidden voice source.',
-      atmosphere: 'Absence, prayer, and echoing memory.',
-      key_features: 'Ash drifts, choir-stall traces, sealed-door silhouettes.',
+        "Ash Choir Absence within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ash Choir Absence's specific style identity.",
+      form_and_line:
+        'Define Ash Choir Absence through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Ash Choir Absence-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Ash Choir Absence recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Ash Choir Absence: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Ash Choir Absence with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Ash Choir Absence: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ash Choir Absence: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Ash Choir Absence's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Render the input through ash choir absence, leaving the feeling of vanished voices and ritual architecture without requiring a foyer.',
+        'Create a style-card that translates Ash Choir Absence into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -237,17 +292,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, action-chaos, neon, watermark, text, logo, messy',
     style: {
       aesthetic:
-        'Forbidden grimoire secrecy filtered through veils, coded margins, and intimate noir mystery.',
-      form_and_line: 'Layered curtains, semicircle sightlines, and hidden book-stand cues.',
-      color_palette: 'Ink blue, velvet burgundy, and parchment gold.',
-      lighting_setup: 'Desk lamps through gauze veils and candle reflections.',
-      material_texture: 'Suede, paper grain, brass clasps, and gauze fabric.',
-      render_quality: 'Premium mythic illustration with intimate mystery.',
-      spatial_distortion: 'Curved veiled sightlines that partially conceal and reveal the input.',
-      atmosphere: 'Curiosity, privacy, and sealed knowledge.',
-      key_features: 'Veiled shelf cues, coded margins, ritual reading surfaces.',
+        "Veiled Grimoire Secrecy within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Veiled Grimoire Secrecy's specific style identity.",
+      form_and_line:
+        'Define Veiled Grimoire Secrecy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Veiled Grimoire Secrecy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Veiled Grimoire Secrecy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Veiled Grimoire Secrecy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Veiled Grimoire Secrecy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Veiled Grimoire Secrecy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Veiled Grimoire Secrecy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Veiled Grimoire Secrecy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reframe the input through veiled grimoire secrecy, using forbidden-book cues and gauze layers without requiring a salon or readable text.',
+        'Create a style-card that translates Veiled Grimoire Secrecy into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -257,17 +320,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cute, neon, watermark, text, logo, bright-white',
     style: {
       aesthetic:
-        'Suspended bell warning language with mourning, silence, and monumental noir stillness.',
-      form_and_line: 'Heavy arch cues, bell silhouettes, and repeating niche rhythms.',
-      color_palette: 'Stone gray, bronze patina, and smoke black.',
-      lighting_setup: 'Dim crypt light with focused bell-edge highlights.',
-      material_texture: 'Chiseled stone, aged bronze, and cobwebbed cloth.',
-      render_quality: 'Monumental mythic stillness with strong contrast.',
-      spatial_distortion: 'Deep receding tunnel feeling ending in a silent bell focal cue.',
-      atmosphere: 'Mourning, suspension, and unspoken warning.',
-      key_features: 'Silent bells, niche shadows, ritual chainwork.',
+        "Silent Bell Warning within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Silent Bell Warning's specific style identity.",
+      form_and_line:
+        'Define Silent Bell Warning through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Silent Bell Warning-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Silent Bell Warning recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Silent Bell Warning: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Silent Bell Warning with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Silent Bell Warning: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Silent Bell Warning: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Silent Bell Warning's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply silent-bell warning to any input, making suspended mass read as omen rather than sound. Use bronze patina, niche rhythm, chainwork, cryptic stillness, and focused edge highlights without requiring bells, crypts, arches, tunnels, or mourning figures.',
+        'Create a style-card that translates Silent Bell Warning into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -277,18 +348,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, pastel, cartoon, watermark, text, logo, gloss',
     style: {
       aesthetic:
-        'Judgment and vow-accounting rendered through crimson tally forms, sealed compartments, and ritual gravitas.',
-      form_and_line: 'Upright compartment rhythms, stacked tally planes, and altar-table symmetry.',
-      color_palette: 'Crimson, charcoal, and antique paper.',
-      lighting_setup: 'Warm desk lamps and shadowed shelf depths.',
-      material_texture: 'Lacquered wood, heavy paper, sealed wax, and worn brass.',
-      render_quality: 'Scholarly noir with ritual gravitas.',
+        "Crimson Ledger Judgment within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Crimson Ledger Judgment's specific style identity.",
+      form_and_line:
+        'Define Crimson Ledger Judgment through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Crimson Ledger Judgment-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Crimson Ledger Judgment recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Crimson Ledger Judgment: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Crimson Ledger Judgment with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Upward compartment depth stretching into darkness without requiring an archive room or library sanctum.',
-      atmosphere: 'Accounting, judgment, and ceremonial order.',
-      key_features: 'Crimson tally tablets, ritual stamps, sealed-drawer shapes.',
+        'Use spatial behavior that fits Crimson Ledger Judgment: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Crimson Ledger Judgment: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Crimson Ledger Judgment's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Translate the input into crimson ledger judgment, where vows and consequences are rendered as illuminated tally pressure and sealed judgment compartments rather than books, libraries, or archival reading rooms.',
+        'Create a style-card that translates Crimson Ledger Judgment into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -298,18 +376,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cute, neon, watermark, text, logo, empty-space',
     style: {
       aesthetic:
-        'Ritual investigation expressed through wax seals, ceremonial stamp grids, and procedural suspicion.',
-      form_and_line: 'Seal-array geometry, compartment planes, and sharp docket-edge rhythms.',
-      color_palette: 'Deep red wax, midnight black, and parchment beige.',
-      lighting_setup: 'Tight inspection lamps with low peripheral shadow.',
-      material_texture: 'Melted wax, heavy card, brass stamp heads, linen, and dark lacquer.',
-      render_quality: 'Clean ritual-noir rendering with procedural suspicion mood.',
+        "Wax Seal Verdict Grid within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Wax Seal Verdict Grid's specific style identity.",
+      form_and_line:
+        'Define Wax Seal Verdict Grid through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Wax Seal Verdict Grid-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Wax Seal Verdict Grid recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Wax Seal Verdict Grid: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Wax Seal Verdict Grid with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Flattened verdict-plane perspective with stacked seals as visual pressure.',
-      atmosphere: 'Suspicion, procedure, and disciplined scrutiny.',
-      key_features: 'Wax seals, verdict stamps, sealed packet shapes.',
+        'Use spatial behavior that fits Wax Seal Verdict Grid: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Wax Seal Verdict Grid: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Wax Seal Verdict Grid's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Rework the input through wax-seal verdict logic, where stamps, seals, and docket pressure carry judgment without requiring an investigation room, reading desk, or evidence archive.',
+        'Create a style-card that translates Wax Seal Verdict Grid into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -319,17 +404,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cartoonish, overbright, watermark, text, logo, clutter',
     style: {
       aesthetic:
-        'Nocturnal orchid witness language with velvet drapery, secrecy, and ceremonial stillness.',
-      form_and_line: 'Floral verticals, screen rhythms, and balcony-like layered silhouettes.',
-      color_palette: 'Dark plum, black green, and muted gold.',
-      lighting_setup: 'Orchid biolight mixed with candle glows.',
-      material_texture: 'Velvet curtains, glossy petals, and dark lacquer.',
-      render_quality: 'Dreamlike mythic illustration with refined botanical detail.',
-      spatial_distortion: 'Layered depth with floral framing that can surround any subject.',
-      atmosphere: 'Seduction, secrecy, and ceremonial stillness.',
-      key_features: 'Orchid altar cues, midnight terrace silhouettes, ritual screens.',
+        "Night Orchid Witness within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Night Orchid Witness's specific style identity.",
+      form_and_line:
+        'Define Night Orchid Witness through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Night Orchid Witness-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Night Orchid Witness recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Night Orchid Witness: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Night Orchid Witness with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Night Orchid Witness: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Night Orchid Witness: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Night Orchid Witness's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through night-orchid witness, where dark blossoms become the final witness of a ritual without fixing the setting as a house.',
+        'Create a style-card that translates Night Orchid Witness into a portable visual system for 2. Mythic Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

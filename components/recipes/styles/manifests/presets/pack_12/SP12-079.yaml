@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Gramática co-op defense luminosa con sinergia de clases, múltiples accesos y sostén de línea.
-  subject_treatment: Convierte el input en support/damage/tank/control, objetivo protegido, acceso o nodo cristalino defensivo.
-  color_and_tone: Blanco alabastro, oro regio, acentos cobalto/azur y microseñales rojas de amenaza.
-  lighting_and_shadow: Emisivos arquitectónicos, fill heroico balanceado y canales de sombra que definen rutas.
-  texture_and_material: Mármol ceremonial pulido, aleación filigranada, nodos cristalinos y piedra patrimonial.
-  camera_and_composition: Ingresos ramificados, posiciones de equipo y foco objetivo por capas sin exigir citadel.
-  atmosphere_and_mood: Unida, urgente y épicamente esperanzada.
-  rendering_and_quality: 'Co-op hold gameplay frame: line control, team positions, pacing cues, radiant objective readable.'
+  aesthetic: >-
+    Radiant Citadel Co-op Hold within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Radiant Citadel Co-op Hold's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Radiant Citadel Co-op Hold's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Radiant Citadel Co-op Hold: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Radiant Citadel Co-op Hold: legible depth, purposeful highlights, readable focal zones,
+    and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Radiant Citadel Co-op Hold's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Radiant Citadel Co-op Hold's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Radiant Citadel Co-op Hold's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

@@ -12,18 +12,35 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Gramática frontier-defense RPG con brasas permanentes, patrulla, fortificación y caza reactiva.
-  subject_treatment: Convierte el input en ranger tecno-místico, refugio, trampa, rastro o perímetro defensivo según aplique.
-  color_and_tone: Naranja brasa, verde pino y negro humo para separar refugio, amenaza y rutas.
-  lighting_and_shadow: Brillos cálidos entre troncos oscuros para lectura de vigilancia nocturna.
-  texture_and_material: Corteza carbonizada, cuero reforzado, acero templado y ceniza suspendida.
-  camera_and_composition: Líneas de defensa, alarma y accesos secundarios visibles; outpost o portón son anclas opcionales.
-  atmosphere_and_mood: Vigilante, resistente y tácticamente austera.
-  rendering_and_quality: 'Defensive outpost gameplay frame: patrol paths, alarm states, ranger response, ember cues readable.'
+  aesthetic: >-
+    Emberwood Ranger Outpost within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Emberwood Ranger Outpost's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Emberwood Ranger Outpost's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Emberwood Ranger Outpost: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Emberwood Ranger Outpost: legible depth, purposeful highlights, readable focal zones, and
+    atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Emberwood Ranger Outpost's material logic: tactile detail, coherent finish, and texture choices
+    that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Emberwood Ranger Outpost's staging logic: strong focal hierarchy, stable readable framing, and spatial
+    rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Emberwood Ranger Outpost's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
   creative_brief: >-
-    Aplica Emberwood Ranger Outpost como gramatica original de videojuego sobre cualquier input: conserva su sistema de
-    genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
-    o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.
+    Create a style-card that translates Emberwood Ranger Outpost into a portable visual system for 6. Wilderness Hunts &
+    Harsh Frontiers. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - watermark
   - text

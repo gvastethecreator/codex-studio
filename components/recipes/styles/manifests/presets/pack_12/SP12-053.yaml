@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Gramática tactical-fantasy de coven con zonas de control, invocación, deny de terreno y ritual brumoso.
-  subject_treatment: Convierte el input en bruja, espíritu, tótem, zona de hechizo o amenaza invocada con escuela mágica clara.
-  color_and_tone: Verde oscuro, ámbar y violeta brumoso para separar utilidad, amenaza y ritual activo.
-  lighting_and_shadow: Bioluminiscencia mágica en niebla densa con telegraph de hechizos por anillo.
-  texture_and_material: Agua turbia, raíces vivas, piedra húmeda y tótems de canalización.
-  camera_and_composition: Anillos de hechizo, choke-points tácticos y conexiones de terreno sin exigir pantano o arena.
-  atmosphere_and_mood: Arcana, peligrosa y teatralmente agresiva.
-  rendering_and_quality: 'Fantasy-combat gameplay frame: area spells, cooldown danger, witch arena priority readable.'
+  aesthetic: >-
+    Marsh Witch Coven Arena within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Marsh Witch Coven Arena's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Marsh Witch Coven Arena's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Marsh Witch Coven Arena: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Marsh Witch Coven Arena: legible depth, purposeful highlights, readable focal zones, and
+    atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Marsh Witch Coven Arena's material logic: tactile detail, coherent finish, and texture choices
+    that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Marsh Witch Coven Arena's staging logic: strong focal hierarchy, stable readable framing, and spatial
+    rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Marsh Witch Coven Arena's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

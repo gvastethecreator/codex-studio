@@ -13,16 +13,38 @@ tags:
   - mythic
   - japanese-myth
 visualDna:
-  aesthetic: Hundred-mask ritual function where identities dissolve into sacred role and petition.
-  form_and_line: Processional axis cues, mask columns, and banner rhythms.
-  color_palette: Ash black, lacquer red, and pale lantern gold.
-  lighting_setup: Procession lantern chain with deep background haze.
-  material_texture: Carved masks, silk banners, and polished wooden palanquins.
-  render_quality: Story-rich cinematic tableau.
-  spatial_distortion: Forward motion perspective with repeating ceremonial forms.
-  atmosphere: Collective trance, secrecy, and sacred order.
-  key_features: Mask bearers, petition scrolls, drum-ritual cadence.
-  creative_brief: Recast the input through hundred-mask ritual function, letting identity dissolve into sacred role without requiring a parade.
+  aesthetic: >-
+    Hundred Mask Ritual Function within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Hundred Mask Ritual Function's specific style identity.
+  form_and_line: >-
+    Define Hundred Mask Ritual Function through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Hundred Mask Ritual Function-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Hundred Mask Ritual Function recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Hundred Mask Ritual Function: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Hundred Mask Ritual Function with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Hundred Mask Ritual Function: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Hundred Mask Ritual Function: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Hundred Mask Ritual Function's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Hundred Mask Ritual Function into a portable visual system for 7. Mythic
+    Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - photoreal
   - festival-pop

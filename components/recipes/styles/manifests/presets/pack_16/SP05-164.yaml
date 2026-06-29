@@ -12,16 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Techno-noir húmedo, precisión táctica austera y dilema filosófico de identidad disuelta.
-  form_and_line: Línea 90s precisa y sobria, blocking geométrico limpio y close-ups analíticos de tensión cognitiva.
-  color_palette: Cian neón húmedo, grafito nocturno, ámbar de interfaz y reflejos metálicos fríos.
-  lighting_setup: Nocturno high-contrast con especulares húmedos, rim quirúrgico y sombras vigilantes de lectura clínica.
-  material_texture: Vidrio lluvioso, acero cepillado, polímero táctico y grano fílmico sobrio de thriller tecnológico.
-  render_quality: Acabado premium noventero con lectura cristalina de acción táctica y subtexto existencial.
-  spatial_distortion: Profundidad estratificada, corredores abstractos de información y composición de vigilancia filosófica.
-  atmosphere: Clínica, filosófica, táctica y nocturna.
-  key_features: Reflejo húmedo, interfaces discretas, siluetas cibernéticas, vigilancia omnipresente y vacío existencial.
-  creative_brief: Construye una gramática reusable de techno-noir identitario para cualquier sujeto, equilibrando precisión operativa, melancolía húmeda y cuestionamiento del yo sin imponer megaciudad, policía, infiltración ni pasillos concretos.
+  aesthetic: >-
+    Wet Techno-Noir Consciousness Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Wet Techno-Noir Consciousness Style's specific style identity.
+  form_and_line: >-
+    Define Wet Techno-Noir Consciousness Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Wet Techno-Noir Consciousness Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Wet Techno-Noir Consciousness Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Wet Techno-Noir Consciousness Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Wet Techno-Noir Consciousness Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Wet Techno-Noir Consciousness Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Wet Techno-Noir Consciousness Style: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Wet Techno-Noir Consciousness Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Wet Techno-Noir Consciousness Style into a portable visual system for 3. 90s
+    Golden Era. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-164.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

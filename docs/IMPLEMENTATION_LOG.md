@@ -1,38 +1,38 @@
-# Registro de implementación
+# Implementation Log
 
-Este archivo resume una pasada previa de mantenimiento y profesionalización del proyecto.
+This file summarizes an earlier project maintenance and professionalization pass.
 
-## Trabajo completado
+## Completed Work
 
-1. **Tooling unificado**
-   - comandos de UI migrados a Vite+
-   - configuración de `fmt`, `lint`, `test` y `staged` centralizada
-   - retiro de configuración ESLint obsoleta
+1. **Unified tooling**
+   - migrated UI commands to Vite+
+   - centralized `fmt`, `lint`, `test`, and staged configuration
+   - removed obsolete ESLint configuration
 
-2. **Build/validación con logs persistentes**
-   - incorporación de `scripts/tooling-task.ts`
-   - logs timestamped y `*.latest.log` en `logs/tooling/`
+2. **Build/validation with persistent logs**
+   - added `scripts/tooling-task.ts`
+   - added timestamped logs and `*.latest.log` under `logs/tooling/`
 
-3. **Tareas de VS Code**
-   - nombres cortos con etiquetas emoji
-   - cobertura para format/lint/check/test/build/logs
+3. **VS Code tasks**
+   - short names with visible labels
+   - coverage for format/lint/check/test/build/logs
 
-4. **Animación**
-   - capa local de compatibilidad `lib/gsapMotion.tsx`
-   - desacople respecto de `motion/react`
+4. **Animation**
+   - local compatibility layer `lib/gsapMotion.tsx`
+   - decoupled from `motion/react`
 
-5. **Mantenibilidad**
-   - JSDoc en servicios/hooks críticos
-   - extracción de lógica para mejorar testabilidad
+5. **Maintainability**
+   - JSDoc on critical services/hooks
+   - extracted logic to improve testability
 
 6. **Tests**
-   - migración a `vite-plus/test`
-   - cobertura añadida en servicios clave
+   - migrated to `vite-plus/test`
+   - added coverage for key services
 
-7. **Higiene del repositorio**
-   - mejoras en `.env.example` y `.gitignore`
-   - limpieza de artefactos temporales/versionados por error
+7. **Repository hygiene**
+   - improved `.env.example` and `.gitignore`
+   - cleaned temporary artifacts that had been accidentally versioned
 
-8. **Documentación**
-   - actualización de README, guías de contribución/desarrollo y troubleshooting
-   - incorporación de archivos de salud comunitaria para release open-source
+8. **Documentation**
+   - updated README, contribution/development guides, and troubleshooting
+   - added community health files for the open-source release

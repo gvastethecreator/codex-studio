@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Teatro musical histórico-punk, con tradición remezclada, glam radical y energía de resurrección escénica.
-  form_and_line: Trazos elásticos y angulares, corporalidad performativa, siluetas exageradas y pose dramática de alta visibilidad.
-  color_palette: Rojos ceremoniales, púrpuras eléctricos, negros performativos y dorados antiguos reactivados como acentos de linaje.
-  lighting_setup: Contraluces performativos, haces dinámicos y cambios de temperatura por clímax rítmico para enfatizar catarsis colectiva.
-  material_texture: Tejidos históricos reinterpretados con brillo de show, madera pulida, tensión lineal y humo de performance.
-  render_quality: Acabado premium de ópera-rock animada con foco en impacto gestual, lectura coral y ritmo visual musical.
-  spatial_distortion: Espacio performativo expansivo con perspectiva coral y compresión frontal en momentos de explosión rítmica.
-  atmosphere: Extático, rebelde, ceremonial, liberador.
-  key_features: Ornamento histórico remezclado, luz performativa, manifiesto corporal, ritmo musical visual y exceso teatral controlado.
+  aesthetic: >-
+    Historical Glam Punk Performance Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Historical Glam Punk Performance Style's specific style identity.
+  form_and_line: >-
+    Define Historical Glam Punk Performance Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Historical Glam Punk Performance Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Historical Glam Punk Performance Style recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Historical Glam Punk Performance Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Historical Glam Punk Performance Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Historical Glam Punk Performance Style: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Historical Glam Punk Performance Style: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Historical Glam Punk Performance Style's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática reusable de teatro punk histórico para cualquier prompt o imagen de entrada:
-    performance, ornamento y energía glam sin imponer escenarios, instrumentos, audiencias ni vestuario literal.
+    Create a style-card that translates Historical Glam Punk Performance Style into a portable visual system for 10.
+    Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-292.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

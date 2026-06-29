@@ -13,34 +13,36 @@ tags:
   - interior-design-systems
 visualDna:
   aesthetic: >-
-    Reutilización industrial sofisticada, con infraestructura expuesta como ornamento principal y
-    pátina funcional controlada.
+    Industrial Loft within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Industrial Loft's specific style identity.
   form_and_line: >-
-    Tramas estructurales repetitivas, cerchas visibles, canalizaciones ortográficas y secuencias de
-    pórticos de gran luz.
+    Define Industrial Loft through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
   color_palette: >-
-    Óxidos de ladrillo, neutros cementicios, grafito metálico, cobre envejecido y ámbar cálido de
-    apoyo.
+    Use a Industrial Loft-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
   lighting_setup: >-
-    Entradas cenitales o laterales profundas, contraste medio-alto, zonas de penumbra técnica y
-    prácticos cálidos puntuales.
+    Use lighting that makes Industrial Loft recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
   material_texture: >-
-    Hormigón encofrado, mampostería rugosa, acero oxidado estabilizado, madera recuperada y cuero
-    mate desgastado.
+    Use materials and textures that reinforce Industrial Loft: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
   render_quality: >-
-    Acabado industrial-chic con legibilidad tectónica y balance entre crudeza material y curaduría
-    editorial.
+    Render Industrial Loft with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Profundidad longitudinal marcada por repetición estructural; sin deformación expresiva, sí
-    compresión por capas técnicas.
-  atmosphere: Productivo, robusto, creativo y adulto; tensión entre taller y vivienda premium.
+    Use spatial behavior that fits Industrial Loft: perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Industrial Loft: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
   key_features: >-
-    Estructura expuesta, uniones francas, capas técnicas visibles, escala productiva y pátina
-    utilitaria como lenguaje, no como set.
+    Prioritize Industrial Loft's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Conserva la identidad loft mediante una lógica estructura-instalación explícita: lo técnico debe
-    dominar la composición y la pátina contar uso real. La transferencia debe funcionar sobre
-    cualquier sujeto sin perder la tensión entre crudeza y refinamiento.
+    Create a style-card that translates Industrial Loft into a portable visual system for 1. Interior Design Systems.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - cozy
   - soft

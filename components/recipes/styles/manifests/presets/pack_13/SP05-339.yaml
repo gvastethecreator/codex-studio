@@ -13,26 +13,36 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Suspense adulto de realismo contenido, donde microexpresiones y presión moral dominan el
-    encuadre.
+    Adult Suspense Microgesture within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Adult Suspense Microgesture's specific style identity.
   form_and_line: >-
-    Contorno medido, detalle facial naturalista y marcas expresivas mínimas de alta intención
-    dramática.
-  color_palette: Muted khaki, asphalt grey, skin-warm taupe, office white, rainy blue, burgundy accent
-  lighting_setup: Fluorescencia práctica, luz lluviosa y sombras tipo interrogatorio en baja saturación.
-  material_texture: Tejido sobrio, papel de expediente, haze de humo, vidrio moteado por lluvia y muros vividos.
-  render_quality: Dramaturgia de close-up sobrio con legibilidad psicológica y tensión procedural sostenida.
+    Define Adult Suspense Microgesture through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Adult Suspense Microgesture-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Adult Suspense Microgesture recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Adult Suspense Microgesture: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Adult Suspense Microgesture with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Natural adult proportions, camera-close tension framing, realistic perspective, and
-    stillness-driven composition
-  atmosphere: Tensa, humana y terrenal, con inquietud ética persistente.
+    Use spatial behavior that fits Adult Suspense Microgesture: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Adult Suspense Microgesture: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
   key_features: >-
-    Adult microgesture tension, restrained realism, procedural backgrounds, moral pressure,
-    almost-still pacing, and unsentimental focus
+    Prioritize Adult Suspense Microgesture's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Use Naoki Urasawa as style anchor for adult suspense microgesture. Any prompt should hold
-    tension through tiny shifts, grounded space, and moral pressure. Offices, files, smoke, cities,
-    detectives, human close-ups, and crime scenes are optional.
+    Create a style-card that translates Adult Suspense Microgesture into a portable visual system for 12. Anime Style
+    Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - action spectacle
   - bright comedy palette
@@ -45,8 +55,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-339.webp
 attributes:
   negativePrompt: >-
-    action spectacle, bright comedy palette, cute chibi design, glossy fantasy armor, neon cyberpunk
-    glow, melodramatic speed lines, plastic 3d render
+    action spectacle, bright comedy palette, cute chibi design, glossy fantasy armor, neon cyberpunk glow, melodramatic
+    speed lines, plastic 3d render
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

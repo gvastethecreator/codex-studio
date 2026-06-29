@@ -13,16 +13,37 @@ tags:
   - mythic
   - greek-myth
 visualDna:
-  aesthetic: Underworld passage toll language enforcing solemn rites, coin debt, and fatal bureaucracy.
-  form_and_line: Fort-wall cues, mooring stairs, and toll altar symmetry.
-  color_palette: Charcoal, cold silver, and muted violet.
-  lighting_setup: Low fog glow and lantern edge illumination.
-  material_texture: Wet stone, black timber, and coin-worn bronze.
-  render_quality: Moody underworld concept with high tonal control.
-  spatial_distortion: Riverbank depth fading into a misted void.
-  atmosphere: Fatal bureaucracy and solemn inevitability.
-  key_features: Ferryman dock cues, coin basins, oath obelisks.
-  creative_brief: Recast any input through River Styx passage toll, where every form feels weighed against the cost of crossing. Use fatal bureaucracy, coin-worn bronze, fog falloff, toll symmetry, and wet-stone gravity without requiring ferrymen, docks, rivers, boats, coins, or an underworld scene.
+  aesthetic: >-
+    River Styx Passage Toll within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving River Styx Passage Toll's specific style identity.
+  form_and_line: >-
+    Define River Styx Passage Toll through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a River Styx Passage Toll-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes River Styx Passage Toll recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce River Styx Passage Toll: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render River Styx Passage Toll with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits River Styx Passage Toll: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to River Styx Passage Toll: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize River Styx Passage Toll's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates River Styx Passage Toll into a portable visual system for 5. Mythic Greek Epics.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - comedy

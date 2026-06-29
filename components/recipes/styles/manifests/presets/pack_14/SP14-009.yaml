@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Maritime mythic noir with cathedral-scale pressure, abyssal devotion, and leviathan mass.
-  form_and_line: Vertical nave-like ribs, colossal curved anatomy cues, tidal arches, and altar-core pull.
-  color_palette: Abyssal teal, oxidized bronze, and moonlit bone.
-  lighting_setup: Bioluminescent shafts filtered through submerged stained glass.
-  material_texture: Salt-scarred metal, wet basalt, barnacled stone, and ritual silk.
-  render_quality: Cinematic key art with crisp hierarchy and premium atmospheric depth.
-  spatial_distortion: Tidal perspective tunnels that pull toward a submerged sacred core without requiring a chapel.
-  atmosphere: Sacred terror, pressure, and silent devotion to the unknown.
-  key_features: Flooded aisle rhythm, leviathan-scale silhouette cues, submerged reliquary glow, barnacled stone, and abyssal teal pressure.
-  creative_brief: 'Drown the input in abyssal leviathan chapel pressure: teal darkness, oxidized bronze ribs, moonlit bone highlights, submerged stained-glass shafts, and colossal anatomy curves should make any subject sacred and oceanic without requiring a chapel, monster body, altar, ruin, or underwater setting.'
+  aesthetic: >-
+    Abyssal Leviathan Chapel within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Abyssal Leviathan Chapel's specific style identity.
+  form_and_line: >-
+    Define Abyssal Leviathan Chapel through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Abyssal Leviathan Chapel-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Abyssal Leviathan Chapel recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Abyssal Leviathan Chapel: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Abyssal Leviathan Chapel with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Abyssal Leviathan Chapel: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Abyssal Leviathan Chapel: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Abyssal Leviathan Chapel's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Abyssal Leviathan Chapel into a portable visual system for 3. Mythic Pantheons &
+    Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cheerful

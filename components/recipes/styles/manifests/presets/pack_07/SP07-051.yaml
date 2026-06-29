@@ -13,27 +13,37 @@ tags:
   - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: >-
-    Clasicismo élfico orgánico de santuario, con integración biocéntrica y refinamiento lírico de
-    alta fantasía.
+    Verdant Elven Sanctuary within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Verdant Elven Sanctuary's specific style identity.
   form_and_line: >-
-    Arcos filigranados, soportes derivados de ramas, estratos en cascada y curvas estructurales no
-    ortogonales.
-  color_palette: Autumn Gold, White, Silver Birch, Moss-floor Green, Waterfall Mist, Soft Lavender dusk
+    Define Verdant Elven Sanctuary through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Verdant Elven Sanctuary-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Glow etéreo cálido, faroles élficos, reflejo lunar en agua y radiancia interior contenida de
-    carácter ceremonial.
+    Use lighting that makes Verdant Elven Sanctuary recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
   material_texture: >-
-    Piedra tallada fina, madera viva, inlays nacarados, filigrana plateada y superficies de brillo
-    cristalino.
-  render_quality: Alta fidelidad fantástica con integración biótica-artesanal y ornamento de lectura precisa.
-  spatial_distortion: None
-  atmosphere: Refugio sacro, melancolía luminosa y continuidad atemporal.
+    Use materials and textures that reinforce Verdant Elven Sanctuary: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Verdant Elven Sanctuary with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Verdant Elven Sanctuary: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Verdant Elven Sanctuary: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Estratos atravesados por agua, fusión árbol-estructura, trazas finas suspendidas y orientación
-    celeste.
+    Prioritize Verdant Elven Sanctuary's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Cualquier sujeto adopta curvatura filigranada, fusión árbol-estructura, agua como estrato y luz
-    melancólica. La referencia élfica guía refinamiento lírico, no una localización licenciada.
+    Create a style-card that translates Verdant Elven Sanctuary into a portable visual system for 5. Fantasy And Mythic
+    Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - industrial
   - blocky

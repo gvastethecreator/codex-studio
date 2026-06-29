@@ -9,17 +9,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. 3D Styles',
     negativePrompt: 'smooth, digital',
     style: {
-      aesthetic: 'Plasticine model',
-      form_and_line: 'Fingerprints visible',
-      color_palette: 'Matte clay colors',
-      lighting_setup: 'Studio miniature',
-      material_texture: 'Imperfections, dust, thumbprint details',
-      render_quality: 'Aardman tactile stop-motion, charming imperfection',
-      spatial_distortion: 'Handmade look',
-      atmosphere: 'Playful, tactile, old-world craft',
-      key_features: 'Fingerprints',
+      aesthetic:
+        "Claymation (Stop Motion) within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Claymation (Stop Motion)'s specific style identity.",
+      form_and_line:
+        'Define Claymation (Stop Motion) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Claymation (Stop Motion)-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Claymation (Stop Motion) recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Claymation (Stop Motion): surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Claymation (Stop Motion) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Claymation (Stop Motion): perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Claymation (Stop Motion): specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Claymation (Stop Motion)'s key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        "Every surface bears the memory of the thumb that pressed it — fingerprints ride ridges of plasticine like fossil records of a touch that happened between frames. Dust motes settle into crevices, matte clay colors refuse to shine, and the miniature set glows under studio lights with the warmth of a handmade universe. The image channels Aardman's soul: imperfection as charm, patience as magic, the still frame vibrating with the effort of its own creation. Apply Claymation as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.",
+        'Create a style-card that translates Claymation (Stop Motion) into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -119,16 +128,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. 3D Styles',
     negativePrompt: 'sharp, geometric',
     style: {
-      aesthetic: 'Organic blobs merging',
-      form_and_line: 'Smooth curves',
-      color_palette: 'Gradient, glossy, blobby fusion',
-      lighting_setup: 'Studio, specular curves',
-      material_texture: 'Smooth plastic, elastic surface',
-      render_quality: 'Abstract, motion graphics, organic fluidity',
-      atmosphere: 'Fluid, abstract, hypnotic flow',
-      key_features: 'Merging shapes, surface tension',
+      aesthetic:
+        "Metaballs within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Metaballs's specific style identity.",
+      form_and_line:
+        'Define Metaballs through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Metaballs-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Metaballs recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Metaballs: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Metaballs with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      atmosphere:
+        'Set a mood that belongs to Metaballs: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Metaballs's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Spheres reach toward each other across invisible thresholds, and where they touch, surface tension bridges the gap into a single continuous form — the isosurface algorithm deciding where one blob ends and another begins. Glossy gradients wrap every curve like liquid plastic frozen mid-pour, and specular highlights trace the seams of fusion. The image is hypnotic abstraction: molecular, organic, a lava lamp rendered with the precision of mathematical inevitability. Apply Metaballs as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        'Create a style-card that translates Metaballs into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -173,16 +190,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. 3D Styles',
     negativePrompt: 'clean, perfect',
     style: {
-      aesthetic: 'Broken geometry',
-      form_and_line: 'Vertex explosion',
-      color_palette: 'Texture stretching, corrupted-channel hues',
-      lighting_setup: 'Broken, glitch-light',
-      material_texture: 'Corrupted UVs, vertex-color errors',
-      render_quality: 'Data moshing, digital decay',
-      atmosphere: 'Chaotic, broken, signal failure',
-      key_features: 'Artifacts, vertex explosion',
+      aesthetic:
+        "Glitch 3D within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Glitch 3D's specific style identity.",
+      form_and_line:
+        'Define Glitch 3D through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Glitch 3D-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Glitch 3D recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Glitch 3D: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Glitch 3D with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      atmosphere:
+        'Set a mood that belongs to Glitch 3D: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Glitch 3D's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Vertices tear free from their moorings and scatter like shrapnel from a digital explosion — UV maps stretch, texture channels swap, and the geometry itself forgets what shape it was supposed to hold. Corrupted data becomes aesthetic: chromatic offsets bleed at the seams, and mesh errors bloom into accidental sculpture. The image is signal failure rendered beautiful, a datamosh fever dream where the glitch is the message and destruction is the medium. Apply Glitch 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        'Create a style-card that translates Glitch 3D into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -191,17 +216,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. 3D Styles',
     negativePrompt: 'realistic, gradient',
     style: {
-      aesthetic: 'Anime style 3D',
-      form_and_line: 'Black outlines',
-      color_palette: 'Flat bands of color',
-      lighting_setup: 'Hard shadow edge',
-      material_texture: 'Flat, comic-book clarity',
-      render_quality: 'Guilty Gear/Zelda stylized cel-shaded game art, bold outlines, flat magic',
-      spatial_distortion: 'None',
-      atmosphere: 'Illustrated, fun, anime energy',
-      key_features: 'Banded shading, ink-line edges',
+      aesthetic:
+        "Toon Shader (Cel Shaded) within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Toon Shader (Cel Shaded)'s specific style identity.",
+      form_and_line:
+        'Define Toon Shader (Cel Shaded) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Toon Shader (Cel Shaded)-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Toon Shader (Cel Shaded) recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Toon Shader (Cel Shaded): surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Toon Shader (Cel Shaded) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Toon Shader (Cel Shaded): perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Toon Shader (Cel Shaded): specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Toon Shader (Cel Shaded)'s key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        "Shading collapses into discrete bands — no gradient softening, just the hard edge where light meets shadow like a comic panel rendered in three dimensions. Black ink lines trace every contour, and flat color regions declare themselves with the confidence of a keyframe cel. The image captures Guilty Gear's fighting-game bravado and Zelda's illustrated wonder: 3D geometry wearing 2D conviction, animation energy frozen into a pose that feels one frame from motion. Apply Toon Shader as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.",
+        'Create a style-card that translates Toon Shader (Cel Shaded) into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -228,17 +262,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. 3D Styles',
     negativePrompt: 'static, boring',
     style: {
-      aesthetic: 'Abstract shapes moving',
-      form_and_line: 'Trails',
-      color_palette: 'Vibrant, gradient',
-      lighting_setup: 'Studio',
-      material_texture: 'Glossy, abstract finish',
-      render_quality: 'Cinema 4D motion-design showcase, mograph energy',
-      spatial_distortion: 'Squash/Stretch',
-      atmosphere: 'Energetic, corporate, broadcast-level',
-      key_features: 'Abstract shapes, kinetic flow',
+      aesthetic:
+        "Motion Graphics within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Motion Graphics's specific style identity.",
+      form_and_line:
+        'Define Motion Graphics through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Motion Graphics-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Motion Graphics recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Motion Graphics: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Motion Graphics with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Motion Graphics: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Motion Graphics: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Motion Graphics's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        "Geometry forgets to be still — glossy abstract shapes trail kinetic echoes behind them, and vibrant gradients smear across the frame like a motion-blur photograph of pure energy. Squash and stretch remembers animation's elastic origins, and Cinema 4D mograph sensibilities give every sphere and spline the confidence of broadcast design. The image pulses with corporate creativity at its most unleashed: a logo reveal frozen at the peak of its own spectacle. Apply Motion Graphics as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.",
+        'Create a style-card that translates Motion Graphics into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -284,17 +327,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. 3D Styles',
     negativePrompt: 'modern, ambient occlusion',
     style: {
-      aesthetic: 'Reboot/Toy Story 1 early feature-era CGI, pioneer polygons, awkward charm',
-      form_and_line: 'Simple geometry',
-      color_palette: 'Primary colors, flat 90s palette',
-      lighting_setup: 'Phong shading, ambient-fill',
-      material_texture: 'Checkerboard, procedural era',
-      render_quality: 'Vintage CGI, uncanny, nostalgic retro',
-      spatial_distortion: 'Stiff animation',
-      atmosphere: 'Nostalgic, weird, pioneering spirit',
-      key_features: 'No shadows, jitter-free geometry',
+      aesthetic:
+        "Retro CGI (90s) within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Retro CGI (90s)'s specific style identity.",
+      form_and_line:
+        'Define Retro CGI (90s) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Retro CGI (90s)-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Retro CGI (90s) recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Retro CGI (90s): surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Retro CGI (90s) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Retro CGI (90s): perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Retro CGI (90s): specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Retro CGI (90s)'s key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Simple geometry wears Phong shading like a badge of its era — primary colors pop against checkerboard textures, and ambient-fill lighting substitutes for the bounce light these renderers could not yet calculate. No ambient occlusion, no global illumination, just the honest awkwardness of pioneer polygons rendered with the tools of 1995. The image channels Reboot and Toy Story 1: stiff animation, uncanny charm, the pioneering spirit of an industry discovering what it could become. Apply Retro CGI as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        'Create a style-card that translates Retro CGI (90s) into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -303,16 +355,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. 3D Styles',
     negativePrompt: 'sharp, flat',
     style: {
-      aesthetic: 'Soft 3D interface',
-      form_and_line: 'Rounded',
-      color_palette: 'Pastel, matte, soft-interface tones',
-      lighting_setup: 'Soft shadows, warm-ambient',
-      material_texture: 'Smooth clay, molded-touch feel',
-      render_quality: 'Friendly, app design, approachable UI',
-      atmosphere: 'Friendly, soft, warm-invitation',
-      key_features: 'Floating elements, pill-shape softness',
+      aesthetic:
+        "Clay UI within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Clay UI's specific style identity.",
+      form_and_line:
+        'Define Clay UI through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Clay UI-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Clay UI recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Clay UI: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Clay UI with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      atmosphere:
+        'Set a mood that belongs to Clay UI: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Clay UI's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Interface elements feel hand-molded from warm clay — pill-shape softness rounds every corner, and pastel matte surfaces catch gentle shadows like a sunlit pottery studio. Warm ambient lighting gives the floating cards and buttons the weight of physical objects without the coldness of metal or glass. The image radiates approachable UI: an app design so friendly it feels like it was shaped by thumbs rather than code, every interaction a soft invitation. Apply Clay UI as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        'Create a style-card that translates Clay UI into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {

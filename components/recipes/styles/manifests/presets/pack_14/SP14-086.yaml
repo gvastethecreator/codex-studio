@@ -13,16 +13,37 @@ tags:
   - mythic
   - cosmology
 visualDna:
-  aesthetic: Starfall precedent language where celestial debris becomes civic omen and judgment.
-  form_and_line: Basin rings, stepped bench cues, and central meteor-plinth geometry.
-  color_palette: Cobalt, charcoal, and molten copper.
-  lighting_setup: Meteor core glow and cool night perimeter lamps.
-  material_texture: Fused glass, fractured rock, and ceremonial bronze.
-  render_quality: Narrative keyframe with strong focal hierarchy.
-  spatial_distortion: Crater-bowl depth emphasizing a central meteor relic.
-  atmosphere: Collective anxiety and interpretive ceremony.
-  key_features: Meteor altar cues, verdict terraces, ash runes.
-  creative_brief: Convert any input through starfall precedent, making celestial impact feel like legal omen. Use basin rings, fused-glass scars, molten copper focal glow, verdict terraces, and collective anxiety without forcing meteors, courts, benches, craters, public gatherings, or ritual hearings.
+  aesthetic: >-
+    Starfall Precedent Basin within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Starfall Precedent Basin's specific style identity.
+  form_and_line: >-
+    Define Starfall Precedent Basin through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Starfall Precedent Basin-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Starfall Precedent Basin recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Starfall Precedent Basin: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Starfall Precedent Basin with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Starfall Precedent Basin: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Starfall Precedent Basin: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Starfall Precedent Basin's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Starfall Precedent Basin into a portable visual system for 4. Mythic Cosmology &
+    Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - bright-cartoon

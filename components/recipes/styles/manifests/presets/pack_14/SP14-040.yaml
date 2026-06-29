@@ -13,16 +13,38 @@ tags:
   - mythic
   - japanese-myth
 visualDna:
-  aesthetic: Borrowed-faces fate archive where lost identities become spirit masks and ambiguous memory.
-  form_and_line: Circular archive cues, mask alcove grids, and mirror corridors.
-  color_palette: Pearl gray, ink black, and candle saffron.
-  lighting_setup: Low interior candle halos and mirrored bounce light.
-  material_texture: Lacquer masks, cedar shelves, and soot-marked paper records.
-  render_quality: Intimate symbolic scene with high detail density.
-  spatial_distortion: Ring-like geometry focusing on a central identity altar.
-  atmosphere: Introspective dread, memory ritual, and identity ambiguity.
-  key_features: Mask repositories, confession box cues, mirror purification pools.
-  creative_brief: Apply borrowed-faces fate archive to the input, making identity negotiable without requiring a shrine.
+  aesthetic: >-
+    Borrowed Faces Fate Archive within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Borrowed Faces Fate Archive's specific style identity.
+  form_and_line: >-
+    Define Borrowed Faces Fate Archive through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Borrowed Faces Fate Archive-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Borrowed Faces Fate Archive recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Borrowed Faces Fate Archive: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Borrowed Faces Fate Archive with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Borrowed Faces Fate Archive: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Borrowed Faces Fate Archive: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Borrowed Faces Fate Archive's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Borrowed Faces Fate Archive into a portable visual system for 7. Mythic Japanese
+    Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - photoreal
   - anime-cute

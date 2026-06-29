@@ -12,25 +12,38 @@ tags:
   - architecture-and-interior
   - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Glamour deco de alta densidad geométrica, lujo metálico y teatralidad axial controlada.
+  aesthetic: >-
+    Art Deco within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Art Deco's specific style identity.
   form_and_line: >-
-    Perfiles escalonados, chevrons y sunbursts, simetría rígida y ornamentación jerárquica de
-    lectura frontal.
-  color_palette: Dominante negro-dorado con esmeralda y azul noche, balanceado por marfil y reflejos cromados.
+    Define Art Deco through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable
+    beyond one literal scene.
+  color_palette: >-
+    Use a Art Deco-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid
+    generic color wash.
   lighting_setup: >-
-    Uplights dramáticos, rebotes especulares en superficies pulidas, capas de apliques/candelabros y
-    nodos tipo marquee.
-  material_texture: Latón pulido, mármol veteado, terciopelo profundo, lacas brillantes y vidrio grabado.
-  render_quality: Acabado deco cinematográfico con precisión ornamental y contraste de lujo legible.
-  spatial_distortion: Simetría estructurada con tirón vertical para enfatizar monumentalidad ceremonial.
-  atmosphere: Opulento, nocturno, ceremonial y escénico.
+    Use lighting that makes Art Deco recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable
+    hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Art Deco: surface response, grain, patina, polish, or wear should feel
+    intentional and style-defining.
+  render_quality: >-
+    Render Art Deco with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI,
+    text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Art Deco: perspective, compression, exaggeration, or depth should support the style
+    without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Art Deco: specific, coherent, and distinct, with emotional tone carried by visual systems
+    rather than narrative captioning.
   key_features: >-
-    Motivos geométricos repetitivos, metales nobles, espejos amplificadores, perfiles stepped y
-    focos teatrales.
+    Prioritize Art Deco's key features: recognizable shape language, palette logic, material cues, lighting behavior,
+    and composition rules.
   creative_brief: >-
-    Mantén una gramática art déco transferible basada en jerarquía geométrica, contraste metálico y
-    composición axial escénica. La ornamentación debe ser sistema visual, no decoración anecdótica
-    de contexto.
+    Create a style-card that translates Art Deco into a portable visual system for 2. Architectural Movements And
+    Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - minimal
   - rustic

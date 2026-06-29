@@ -11,21 +11,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, lowres, blurry, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática action-RPG cyberpunk neo-noir con lectura táctica por silueta, neón diegético y tensión de infiltración nocturna.',
+        "Neon Samurai District within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Neon Samurai District's specific style identity.",
       subject_treatment:
-        'Convierte el input en clase jugable o asset de operación con kit modular, placas funcionales, señales de rol y jerarquía visual clara sin exigir distrito urbano.',
+        "Treat any subject through Neon Samurai District's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Dúo cian-magenta sobre negros aceitosos, con codificación cromática de facción y threat level.',
+        'Use a controlled palette that supports Neon Samurai District: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Iluminación diegética de neón con pockets de sombra para stealth readability y rim de detección.',
+        'Shape light and shadow for Neon Samurai District: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Asfalto mojado PBR, metal cepillado, vidrio sucio y holografía ambiental de baja persistencia.',
+        "Render surfaces with Neon Samurai District's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Composición third-person táctica con profundidad legible, rutas sugeridas, cobertura abstracta y puntos de interacción reconocibles.',
+        "Compose with Neon Samurai District's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
       atmosphere_and_mood:
-        'Tensión operativa, vigilancia constante y ritmo de incursión de alto riesgo.',
+        "Build Neon Samurai District's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'In-game third-person screencap AAA: stealth routes, interactables, objective contrast, neon threat readability.',
+        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -36,20 +36,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, fog-heavy, muddy-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática hero-shooter de movilidad vertical con control de altura, rotación rápida y lectura de ruta en movimiento.',
+        "Urban Parkour Rooftop Wars within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Urban Parkour Rooftop Wars's specific style identity.",
       subject_treatment:
-        'Aplica kits parkour/grapple, silueta ligera y hitbox legible al input cuando corresponda, sin exigir rooftop ni ciudad.',
+        "Treat any subject through Urban Parkour Rooftop Wars's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Grises metropolitanos con acentos de equipo saturados para friend-foe clarity.',
+        'Use a controlled palette that supports Urban Parkour Rooftop Wars: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Amanecer frío con sombras largas útiles para trazado de rutas y cobertura parcial.',
+        'Shape light and shadow for Urban Parkour Rooftop Wars: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Hormigón, metal galvanizado, graffiti táctico y vidrio rompible contextual.',
+        "Render surfaces with Urban Parkour Rooftop Wars's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Perspectiva dinámica con jump lines, flancos y high-ground abstracto como señal de navegación.',
-      atmosphere_and_mood: 'Rítmica, competitiva y técnica, centrada en posicionamiento.',
+        "Compose with Urban Parkour Rooftop Wars's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Urban Parkour Rooftop Wars's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'PvP parkour screencap: lanes, height changes, sightlines, chase pressure readable.',
+        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -60,20 +61,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, pastel, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática beat-em-up neon-noir con combate por oleadas, control de espacio, hit-confirm claro y flow rítmico.',
+        "Neon Underpass Brawler within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Neon Underpass Brawler's specific style identity.",
       subject_treatment:
-        'Aplica postura de luchador, arma improvisada, rivalidad de facción o silueta de crowd-control al input si corresponde.',
+        "Treat any subject through Neon Underpass Brawler's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Fucsia, verde ácido y grafito para contraste de facción y claridad de impacto.',
+        'Use a controlled palette that supports Neon Underpass Brawler: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Luces rotas, charcos reflectivos y contraluces que enfatizan silueta de combate.',
+        'Shape light and shadow for Neon Underpass Brawler: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Hormigón mojado, graffiti táctico, tuberías metálicas y señalética decadente.',
+        "Render surfaces with Neon Underpass Brawler's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Side-view clásico, capas activas y zonas de combo como lenguaje visual sin exigir underpass.',
-      atmosphere_and_mood: 'Energía callejera, agresiva y cadenciosa.',
+        "Compose with Neon Underpass Brawler's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Neon Underpass Brawler's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Side-brawler gameplay frame: hit confirms, crowd control, neon stage depth, movement lanes clear.',
+        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -84,20 +86,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, daylight, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática stealth-heist nocturna con infiltración modular, extracción silenciosa y rutas clandestinas.',
+        "Harbor Smuggler Night Heist within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Harbor Smuggler Night Heist's specific style identity.",
       subject_treatment:
-        'Reinterpreta el input como smuggler, guardia, botín, contenedor o dispositivo de patrulla según aplique.',
+        "Treat any subject through Harbor Smuggler Night Heist's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Azul petróleo, naranja sodio y negro profundo para separar cobertura, alarma y sombra útil.',
+        'Use a controlled palette that supports Harbor Smuggler Night Heist: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Farolas mojadas, contraluces de contenedor y charcos reflectivos como riesgo de exposición.',
+        'Shape light and shadow for Harbor Smuggler Night Heist: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Metal pintado gastado, cuerdas húmedas, asfalto aceitado y herrumbre industrial.',
+        "Render surfaces with Harbor Smuggler Night Heist's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Sightlines cruzadas, rutas altas/bajas, puntos ciegos y nodos de botín sin exigir puerto.',
-      atmosphere_and_mood: 'Nerviosa, oportunista y al borde del fallo.',
+        "Compose with Harbor Smuggler Night Heist's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Harbor Smuggler Night Heist's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Infiltration gameplay screencap: layered stealth routes, patrol landmarks, smuggler objective clear.',
+        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -108,20 +111,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, cute-style, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática urban-disaster action con evacuación dinámica, amenaza colosal y contención por fases.',
+        "Harbor Kaiju Evacuation within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Harbor Kaiju Evacuation's specific style identity.",
       subject_treatment:
-        'Si el input es criatura o máquina, escalarlo a amenaza kaiju; si es personaje/objeto, volverlo equipo evac/suppression/shield o infraestructura de crisis.',
+        "Treat any subject through Harbor Kaiju Evacuation's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Gris tormenta, rojo alarma y cian marino para priorizar riesgo civil y respuesta táctica.',
+        'Use a controlled palette that supports Harbor Kaiju Evacuation: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Relámpagos, incendios industriales y humo para telegraph de fases de crisis.',
+        'Shape light and shadow for Harbor Kaiju Evacuation: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Agua turbulenta, hormigón roto, acero doblado y residuos urbanos activos.',
+        "Render surfaces with Harbor Kaiju Evacuation's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Escala colosal, corredores de evacuación y puntos de defensa visibles sin exigir puerto.',
-      atmosphere_and_mood: 'Abrumadora, urgente y de supervivencia colectiva.',
+        "Compose with Harbor Kaiju Evacuation's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Harbor Kaiju Evacuation's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Evacuation event gameplay frame: civilian routes, kaiju scale, containment objectives readable.',
+        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -132,20 +136,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, medieval, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática urban-action crystalpunk con tránsito masivo, movilidad por capas y seguridad cívica militarizada.',
+        "Crystal Metro Hoverline within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Crystal Metro Hoverline's specific style identity.",
       subject_treatment:
-        'Convierte el input en silueta cívico-militar, vehículo, estación parcial, señal de control o módulo de mantenimiento.',
+        "Treat any subject through Crystal Metro Hoverline's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Cian eléctrico, blanco clínico, lila difuso y neutros acero con acentos de alerta.',
+        'Use a controlled palette that supports Crystal Metro Hoverline: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Luminarias distribuidas, rebotes en marquesinas y glow holográfico para navegación por capas.',
+        'Shape light and shadow for Crystal Metro Hoverline: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Smart-glass facetado, aleación cepillada, compuestos antideslizantes y artefactos volumétricos de navegación ambiental.',
+        "Render surfaces with Crystal Metro Hoverline's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Hub radial, vectores de circulación y sightlines tácticas limpias sin exigir metro o hoverline literal.',
-      atmosphere_and_mood: 'Ordenada, veloz y con tensión de seguridad contenida.',
+        "Compose with Crystal Metro Hoverline's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Crystal Metro Hoverline's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Urban transit gameplay screencap: hoverline routes, access points, platform state, navigation cues clear.',
+        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -156,19 +161,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, medieval, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática mobility-action parkour con momentum, persecución, elección de ruta y superficies de carbono.',
+        "Carbon Megacity Rooftop Chase within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Carbon Megacity Rooftop Chase's specific style identity.",
       subject_treatment:
-        'Reinterpreta el input como courier, drone cazador, ruta, checkpoint o módulo de agarre según aplique.',
+        "Treat any subject through Carbon Megacity Rooftop Chase's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Negro mate, cian brillante y rojo señal para guiar ruta, peligro y checkpoints.',
-      lighting_and_shadow: 'Atardecer urbano con acentos neon orientados a navegación vertical.',
+        'Use a controlled palette that supports Carbon Megacity Rooftop Chase: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+      lighting_and_shadow:
+        'Shape light and shadow for Carbon Megacity Rooftop Chase: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Fibra de carbono, vidrio estructural, hormigón técnico y superficies de agarre.',
+        "Render surfaces with Carbon Megacity Rooftop Chase's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Profundidad vertical, líneas de flujo y alternativas de escape sin exigir megaciudad o rooftop.',
-      atmosphere_and_mood: 'Cinética, urgente y técnicamente precisa.',
+        "Compose with Carbon Megacity Rooftop Chase's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Carbon Megacity Rooftop Chase's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Rooftop chase gameplay screencap: trajectory, risk gaps, checkpoint rhythm, timing clear.',
+        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -179,18 +186,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, medieval, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática open-world cyberpunk fluvial con patrulla, contrabando, control de canales y reflejos neon líquidos.',
+        "Neon Koi River District within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Neon Koi River District's specific style identity.",
       subject_treatment:
-        'Reinterpreta el input como patrulla, mercenario anfibio, ruta acuática, POI o objeto de contrabando.',
-      color_and_tone: 'Cian, rosa neon y negro profundo para lectura de facción y nivel de alerta.',
-      lighting_and_shadow: 'Reflejos líquidos y señalética animada como guía de rutas/POIs.',
+        "Treat any subject through Neon Koi River District's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+      color_and_tone:
+        'Use a controlled palette that supports Neon Koi River District: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+      lighting_and_shadow:
+        'Shape light and shadow for Neon Koi River District: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Acero mojado, madera envejecida, cristal urbano y superficies de atraque.',
+        "Render surfaces with Neon Koi River District's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Diagonales líquidas, rutas múltiples y sightlines de emboscada sin exigir distrito o canal literal.',
-      atmosphere_and_mood: 'Elegante, criminalmente tensa y viva.',
+        "Compose with Neon Koi River District's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Neon Koi River District's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Open-world patrol gameplay screencap: canal routes, ambush sightlines, POIs, neon water navigation clear.',
+        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -201,20 +211,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, medieval, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática urban-insurgency eco-tech con barricadas, control territorial y gear reciclado avanzado.',
+        "Verdant Metro Rebellion within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Verdant Metro Rebellion's specific style identity.",
       subject_treatment:
-        'Convierte el input en célula rebelde, barricada, nodo de sabotaje, soporte o avance táctico.',
+        "Treat any subject through Verdant Metro Rebellion's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Verde neon, gris hormigón y naranja señal para claridad de facción y objetivo.',
+        'Use a controlled palette that supports Verdant Metro Rebellion: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Tubos LED y sombras profundas de túnel para lectura de cobertura y riesgo.',
+        'Shape light and shadow for Verdant Metro Rebellion: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Musgo artificial, metal urbano, pintura descascarada y estructuras improvisadas.',
+        "Render surfaces with Verdant Metro Rebellion's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Barricadas, rutas de flanco y nodos críticos visibles sin exigir metro o estación.',
-      atmosphere_and_mood: 'Urgente, combativa y esperanzadamente política.',
+        "Compose with Verdant Metro Rebellion's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Verdant Metro Rebellion's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Rebellion gameplay frame: metro lanes, pressure points, territorial control, insurgent routes readable.',
+        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -225,20 +236,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, heavy-guns, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática stealth-op shinobi nocturna con verticalidad, silencio, ejecución quirúrgica y rutas en sombra.',
+        "Midnight Lotus Ninja Heist within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Midnight Lotus Ninja Heist's specific style identity.",
       subject_treatment:
-        'Convierte el input en infiltrador, gancho, ruta, objetivo o cobertura/exfil coordinada según aplique.',
+        "Treat any subject through Midnight Lotus Ninja Heist's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Índigo profundo, magenta loto, negro lacado y ámbar de farol para contraste selectivo.',
+        'Use a controlled palette that supports Midnight Lotus Ninja Heist: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Luz lunar suave, islas de linterna y bandas de ocultamiento de borde nítido.',
+        'Shape light and shadow for Midnight Lotus Ninja Heist: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Agua espejo, piedra pulida húmeda, seda en movimiento y madera envejecida.',
+        "Render surfaces with Midnight Lotus Ninja Heist's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Rutas elevadas, oclusión por capas y lectura stealth sin exigir puentes, lotus o azoteas.',
-      atmosphere_and_mood: 'Tensa, poética y disciplinadamente precisa.',
+        "Compose with Midnight Lotus Ninja Heist's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Midnight Lotus Ninja Heist's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Stealth-heist gameplay screencap: shadow route, objective, silent takedown spacing, escape plan clear.',
+        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

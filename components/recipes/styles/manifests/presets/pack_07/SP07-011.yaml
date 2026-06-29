@@ -13,30 +13,36 @@ tags:
   - interior-design-systems
 visualDna:
   aesthetic: >-
-    Lujo residencial aéreo de control extremo, opulencia contenida y precisión compositiva
-    editorial.
-  form_and_line: Paños continuos, losas flotantes, planos largos y siluetas bajas curadas por jerarquía de vacío.
+    Luxury Penthouse within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Luxury Penthouse's specific style identity.
+  form_and_line: >-
+    Define Luxury Penthouse through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
   color_palette: >-
-    Marfil cálido, carbón elegante, gris humo azulado y acentos de latón cepillado sobre base pétrea
-    neutra.
+    Use a Luxury Penthouse-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
   lighting_setup: >-
-    Capas de luz indirecta premium, prácticos puntuales suaves, control especular y baja fatiga
-    visual.
+    Use lighting that makes Luxury Penthouse recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
   material_texture: >-
-    Mármol libro abierto, metal satinado, cuero grano completo, textiles finos y lacas mate de alta
-    calidad.
-  render_quality: Acabado de hospitality de lujo con fidelidad material alta y staging impecable.
+    Use materials and textures that reinforce Luxury Penthouse: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
+  render_quality: >-
+    Render Luxury Penthouse with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Gran angular contenido con eje interior elongado y profundidad por piezas statement
-    cuidadosamente espaciadas.
-  atmosphere: Privado, aspiracional, sereno y altamente controlado.
+    Use spatial behavior that fits Luxury Penthouse: perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Luxury Penthouse: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
   key_features: >-
-    Carpinterías de gran luz, envolventes continuas, piezas-escultura, paleta sobria y detalle
-    constructivo invisible.
+    Prioritize Luxury Penthouse's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Define una gramática de lujo transferible por proporción, detalle oculto, material noble y
-    control lumínico. Evita la postal aspiracional: el valor debe emerger del sistema visual, no de
-    vista, altura o contexto externo.
+    Create a style-card that translates Luxury Penthouse into a portable visual system for 1. Interior Design Systems.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - basement
   - dark

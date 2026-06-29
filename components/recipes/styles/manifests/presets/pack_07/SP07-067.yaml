@@ -12,26 +12,38 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Construcción litoral efímera modelada en arena húmeda con vulnerabilidad mareal y fortificación lúdica improvisada.
+  aesthetic: >-
+    Wet-Sand Ephemeral Modeling within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Wet-Sand Ephemeral Modeling's specific style identity.
   form_and_line: >-
-    Torres cilíndricas de molde-balde, verticales por goteo, parapetos festoneados y contornos blandos propensos a
-    erosión.
-  color_palette: Dry sand beige, wet umber brown, shell off-white, sunlit shore gold, driftwood gray, and muted sea-glass accents
-  lighting_setup: Daylight costero duro, shimmer de agua reflejada, sombras bajas de playa y microespeculares en superficie húmeda.
+    Define Wet-Sand Ephemeral Modeling through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Wet-Sand Ephemeral Modeling-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Wet-Sand Ephemeral Modeling recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
   material_texture: >-
-    Agregación granular de arena, costra compactada, crestas de goteo, inclusiones de concha y bordes suavizados por
-    desgaste.
-  render_quality: Escultura transitoria de detalle alto con fidelidad granular y señales de colapso controlado.
-  spatial_distortion: Crumbling
-  atmosphere: Soleada, táctil y frágil, condicionada por decadencia natural inminente.
+    Use materials and textures that reinforce Wet-Sand Ephemeral Modeling: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Wet-Sand Ephemeral Modeling with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Wet-Sand Ephemeral Modeling: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Wet-Sand Ephemeral Modeling: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
   key_features: >-
-    Perfiles por goteo, módulos repetidos de molde, canales erosionables, crestas almenadas y líneas de desgaste de
-    marea.
+    Prioritize Wet-Sand Ephemeral Modeling's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Usa arena húmeda como lenguaje material: granulación compactada, bordes erosionables, goteo, molde repetido y
-    vulnerabilidad temporal. No necesita castillo ni playa; necesita comportamiento escultorico efimero sin depender de
-    horizonte costero o arena de juguete literal. Conserva granulacion humeda, erosion, molde repetido y fragilidad
-    mareal sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Wet-Sand Ephemeral Modeling into a portable visual system for 6. Toy Craft And
+    Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - hard carved stone finish replacing wet sand
 assets:

@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Gramática extraction-shooter bioluminiscente con stealth orgánico, rastreo térmico y hostilidad alienígena nocturna.
-  subject_treatment: Transforma el input en lectura de presa/equipo/ruta con perfiles térmicos, señales aliado-enemigo y camuflaje vivo sin exigir una jungla literal.
-  color_and_tone: Verdes bioluminiscentes y azules tinta con acentos de señalización táctica para rutas seguras.
-  lighting_and_shadow: Luz orgánica puntual + niebla volumétrica para ocultamiento parcial y ventanas de visibilidad situacional.
-  texture_and_material: Corteza húmeda, hojas translúcidas, barro pesado y fluidos vegetales reactivos al movimiento.
-  camera_and_composition: Capas de cobertura orgánica, líneas de visión quebradas, diagonales de emboscada y ventanas de extracción sugeridas.
-  atmosphere_and_mood: Cacería silenciosa, paranoia ambiental y descubrimiento biológico de alto riesgo.
-  rendering_and_quality: 'Gameplay screencap from active jungle raid: terrain reads, target priority, co-op encounter cues.'
+  aesthetic: >-
+    Bioluminescent Jungle Raid within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Bioluminescent Jungle Raid's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Bioluminescent Jungle Raid's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Bioluminescent Jungle Raid: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Bioluminescent Jungle Raid: legible depth, purposeful highlights, readable focal zones,
+    and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Bioluminescent Jungle Raid's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Bioluminescent Jungle Raid's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Bioluminescent Jungle Raid's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

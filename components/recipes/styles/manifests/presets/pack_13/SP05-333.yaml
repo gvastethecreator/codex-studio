@@ -12,19 +12,38 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Naturalismo humano silencioso centrado en microgesto cotidiano, peso corporal creíble y ternura observacional anti-espectáculo.
-  form_and_line: Contorno natural discreto, estilización mínima y claridad en gesto funcional de vida diaria.
-  color_palette: Soft beige, denim blue, skin-warm peach, lived-in white, rainy grey, muted green
-  lighting_setup: Luz natural suave, rebote interior moderado, suavidad nublada y prácticos de escala humana.
-  material_texture: Algodón usado, superficies vividas, roces de suelo, calidez de piel y difusión en vidrio lluvioso.
-  render_quality: Realismo animado íntimo con temporalidad pausada y lectura fina de comportamiento humano.
-  spatial_distortion: Believable anatomy, restrained perspective, human-scale depth, natural gait and gesture
-  atmosphere: Íntima, modesta y arraigada, con gravedad emocional cotidiana.
-  key_features: Body language observada, espacios habitados, peso postural natural y timing gestual realista.
+  aesthetic: >-
+    Hiroyuki Okiura - Quiet Human Naturalism within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Hiroyuki Okiura - Quiet Human Naturalism's specific style identity.
+  form_and_line: >-
+    Define Hiroyuki Okiura - Quiet Human Naturalism through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Hiroyuki Okiura - Quiet Human Naturalism-specific palette with clear dominant, secondary, and accent roles.
+    Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Hiroyuki Okiura - Quiet Human Naturalism recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Hiroyuki Okiura - Quiet Human Naturalism: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Hiroyuki Okiura - Quiet Human Naturalism with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Hiroyuki Okiura - Quiet Human Naturalism: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Hiroyuki Okiura - Quiet Human Naturalism: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Hiroyuki Okiura - Quiet Human Naturalism's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática quiet-human reusable donde microgesto, iluminación
-    natural y materialidad vivida transmitan emoción sin exigir cocina,
-    interior doméstico, vidrio lluvioso o escena humana específica.
+    Create a style-card that translates Hiroyuki Okiura - Quiet Human Naturalism into a portable visual system for 12.
+    Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - exaggerated action pose
   - glossy fantasy effects
@@ -36,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-333.webp
 attributes:
-  negativePrompt: exaggerated action pose, glossy fantasy effects, chibi simplification, neon spectacle, cinematic explosions, idealized glamour anatomy, plastic 3d render
+  negativePrompt: >-
+    exaggerated action pose, glossy fantasy effects, chibi simplification, neon spectacle, cinematic explosions,
+    idealized glamour anatomy, plastic 3d render
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

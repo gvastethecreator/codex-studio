@@ -13,21 +13,34 @@ tags:
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
   aesthetic: >-
-    Gramática action-adventure steampunk aérea con verticalidad, mecanismos de abordaje y exploración por nodos
-    flotantes.
+    Clockwork Sky Armada within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Clockwork Sky Armada's specific style identity.
   subject_treatment: >-
-    Reinterpreta el input con rol corsair/engineer/pilot cuando aplique, o con arneses, hélices, presión, poleas y
-    animación mecánica legible.
-  color_and_tone: Cobre viejo, azul tormenta y crema envejecido para codificar tecnología victoriana-fantástica.
-  lighting_and_shadow: Luz oblicua entre vapor de caldera, con silhouettes de casco y lectura de altura/plataformas.
-  texture_and_material: Remaches, latón aceitado, madera barnizada y lona de dirigible con desgaste funcional.
-  camera_and_composition: Triangulación de objetivos visuales, verticalidad clara y flow de misión; nave, torre o ruta son anclas opcionales.
-  atmosphere_and_mood: Aventura de alto riesgo, ambición imperial y dinamismo de frontera aérea.
-  rendering_and_quality: 'Playable sky-armada screencap: flight paths, boarding vectors, navigation puzzle state clear.'
+    Treat any subject through Clockwork Sky Armada's visual grammar: readable silhouette, role cues, controlled detail
+    density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Clockwork Sky Armada: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Clockwork Sky Armada: legible depth, purposeful highlights, readable focal zones, and
+    atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Clockwork Sky Armada's material logic: tactile detail, coherent finish, and texture choices
+    that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Clockwork Sky Armada's staging logic: strong focal hierarchy, stable readable framing, and spatial
+    rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Clockwork Sky Armada's mood through environment, color, light, and texture. Keep it distinct from neighboring
+    presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
   creative_brief: >-
-    Aplica Clockwork Sky Armada como gramatica original de videojuego sobre cualquier input: conserva su sistema de
-    genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
-    o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.
+    Create a style-card that translates Clockwork Sky Armada into a portable visual system for 8. Puzzle Chambers &
+    Adventure Setpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - watermark
   - text

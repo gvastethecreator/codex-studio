@@ -12,19 +12,37 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Art Nouveau organico con continuidad vegetal, sensualidad lineal y arquitectura total integrada.
-  form_and_line: Curvas whiplash, zarcillos estructurales, marcos florales, vidrio sinuoso y metal fluido.
-  color_palette: Salvia, dorado, azul pavo real, lila, ambar vitreo y verdes musgo.
-  lighting_setup: Luz filtrada por vitral, brillo calido de vidrio emplomado, apliques petalo opcionales y brillo irisado suave.
-  material_texture: Madera tallada, art glass iridiscente, hierro forjado, bronce patinado y marqueteria floral.
-  render_quality: Detalle ornamental de fin de siglo con continuidad formal y riqueza material controlada.
-  spatial_distortion: Ligera fluidez morfologica para enfatizar continuidad organica sobre rigidez geometrica.
-  atmosphere: Romantica, envolvente, botanica y artesanal.
-  key_features: Motivos florales estructurales, curvas tendril, vidrio cromatico activo y luminancia organica.
+  aesthetic: >-
+    Art Nouveau Interior within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Art Nouveau Interior's specific style identity.
+  form_and_line: >-
+    Define Art Nouveau Interior through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Art Nouveau Interior-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Art Nouveau Interior recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Art Nouveau Interior: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Art Nouveau Interior with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Art Nouveau Interior: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Art Nouveau Interior: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Art Nouveau Interior's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Convierte cualquier input en una continuidad Art Nouveau de linea vegetal, material artesanal y
-    ornamento estructural fluido. Debe leerse como organismo disenado de adentro hacia afuera, no
-    como floralidad aplicada ni como una habitacion de epoca obligatoria.
+    Create a style-card that translates Art Nouveau Interior into a portable visual system for 1. Interior Design
+    Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - rigid rectilinear grid
 assets:

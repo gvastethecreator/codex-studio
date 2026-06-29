@@ -13,24 +13,37 @@ tags:
   - architectural-movements-and-vernaculars
 visualDna:
   aesthetic: >-
-    Revival victoriano cromatico de ornamento pintado, identidad barrial y detalle carpintero
-    exuberante.
+    Victorian Painted Lady within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Victorian Painted Lady's specific style identity.
   form_and_line: >-
-    Gingerbread trim, spindles torneados, salientes facetados, frontones decorados y verticalidad
-    estrecha.
-  color_palette: Pasteles complejos (azul/rosa/amarillo), lavanda, menta y molduras crema con rosa polvoso.
-  lighting_setup: Luz costera difusa con niebla suave, realce dorado de atardecer y brillo de molduras pintadas.
-  material_texture: Siding de madera, pintura multicapa, calados finos, aleros con mensulas y tejuela decorativa.
-  render_quality: Detalle residencial historico de alta legibilidad ornamental con alegria cromatica controlada.
-  spatial_distortion: Perspectiva estable centrada en jerarquia de ornamentacion y capas cromaticas verticales.
-  atmosphere: Nostalgica, festiva, civica y orgullosamente preservada.
+    Define Victorian Painted Lady through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Victorian Painted Lady-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Victorian Painted Lady recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Victorian Painted Lady: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Victorian Painted Lady with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Victorian Painted Lady: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Victorian Painted Lady: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Esquemas tricromos, salientes facetados, tejuela fish-scale y carpinteria recortada de alta
-    densidad.
+    Prioritize Victorian Painted Lady's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Convierte cualquier input en una gramatica Painted Lady de molduras recortadas, color pastel
-    estratificado y verticalidad carpintera festiva. La identidad debe sostenerse por lenguaje
-    constructivo y alegria cromatica, no por postal victoriana ni por una calle preservada concreta.
+    Create a style-card that translates Victorian Painted Lady into a portable visual system for 2. Architectural
+    Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - plain
   - grey

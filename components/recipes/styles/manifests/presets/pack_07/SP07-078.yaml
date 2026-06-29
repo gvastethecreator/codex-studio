@@ -12,25 +12,38 @@ tags:
   - architecture-and-interior
   - megastructure-and-impossible-space
 visualDna:
-  aesthetic: Hive cibernético de infraestructura colectiva modular, utilidad implacable e integración máquina-orgánica invasiva.
+  aesthetic: >-
+    Cybernetic Hive Infrastructure within 7. Megastructure And Impossible Space: a reusable Architecture & Interior
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Cybernetic Hive Infrastructure's specific style identity.
   form_and_line: >-
-    Masa ortogonal cúbica, haces densos de conductos, retículas de alcobas repetitivas y panelería recursiva de
-    servicio.
+    Define Cybernetic Hive Infrastructure through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
   color_palette: >-
-    Graphite black metals, gunmetal gray fields, phosphor green emissions, cold cyan plasma accents, and deep
-    void-shadow undertones
+    Use a Cybernetic Hive Infrastructure-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
   lighting_setup: >-
-    Ambiente low-key espacial, pulso verde en conducciones, prácticos localizados y profundidad de sombra industrial de
-    alto contraste.
-  material_texture: Placas greeble densas, interfaces biomecánicas, arneses de cable, gel translúcido y pátina conductiva desgastada.
-  render_quality: Tecnoindustrial denso con repetición modular estricta y precisión mecánica opresiva.
-  spatial_distortion: None
-  atmosphere: Ominosa, deshumanizada y eficiente, con invasividad tecnológica constante.
-  key_features: Modularidad cube-shell, matrices repetitivas, superred de conducciones, canales verdes y emisores circulares.
+    Use lighting that makes Cybernetic Hive Infrastructure recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Cybernetic Hive Infrastructure: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Cybernetic Hive Infrastructure with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Cybernetic Hive Infrastructure: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Cybernetic Hive Infrastructure: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Cybernetic Hive Infrastructure's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica infraestructura hive cibernética: modularidad ortogonal, conducciones densas, fosforescencia verde, panelería
-    recursiva y utilidad colectiva opresiva. Debe funcionar sin nombrar faccion, personaje o nave. Conserva modularidad
-    hive, conducciones densas, fosforescencia verde y utilidad colectiva sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Cybernetic Hive Infrastructure into a portable visual system for 7.
+    Megastructure And Impossible Space. Preserve the preset identity through style mechanics, not a fixed scene,
+    character, prop, or story beat.
 avoidRules:
   - featureless minimal surfaces
 assets:

@@ -12,19 +12,39 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Doctrina arcana austero-imperial, con cálculo frío, jerarquía visual y tensión estratégica abstracta.
-  form_and_line: Geometría de mando, vectores diagonales, anillos técnicos y siluetas comprimidas por disciplina visual.
-  color_palette: Gris acero, rojo mandato, azul glaciar, negro tinta de expediente y ámbar cristalino de cálculo.
-  lighting_setup: Contraluz estratificado, brillos fríos de precisión y destellos duros colocados como marcas de decisión.
-  material_texture: Paño mate, cuero oscuro, metal bruñido, papel cartográfico abstracto y cristal facetado de energía contenida.
-  render_quality: Anime táctico de alta precisión, con orden visual severo y poder expresado por control compositivo.
-  spatial_distortion: Verticalidad opresiva, compresión jerárquica y diagonales de presión que organizan cualquier sujeto.
-  atmosphere: Severa, calculadora e implacable.
-  key_features: Vectores arcanos, burocracia visual, precisión geométrica, disciplina cromática y presión vertical.
+  aesthetic: >-
+    Saga of Tanya the Evil - Aerial War Mage Doctrine within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Saga of Tanya the Evil - Aerial War Mage Doctrine's specific style
+    identity.
+  form_and_line: >-
+    Define Saga of Tanya the Evil - Aerial War Mage Doctrine through line, mass, contour, spacing, and rhythm. Keep
+    forms readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Saga of Tanya the Evil - Aerial War Mage Doctrine-specific palette with clear dominant, secondary, and accent
+    roles. Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Saga of Tanya the Evil - Aerial War Mage Doctrine recognizable: purposeful key, rim, bounce,
+    shadow, and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Saga of Tanya the Evil - Aerial War Mage Doctrine: surface response,
+    grain, patina, polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Saga of Tanya the Evil - Aerial War Mage Doctrine with high production clarity, strong silhouette reads,
+    clean detail priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Saga of Tanya the Evil - Aerial War Mage Doctrine: perspective, compression,
+    exaggeration, or depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Saga of Tanya the Evil - Aerial War Mage Doctrine: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Saga of Tanya the Evil - Aerial War Mage Doctrine's key features: recognizable shape language, palette
+    logic, material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática aerial-war-doctrine reusable donde cualquier prompt se
-    vuelva severo, jerárquico y táctico mediante geometría fría, luz de cálculo
-    y sensación de poder administrado.
+    Create a style-card that translates Saga of Tanya the Evil - Aerial War Mage Doctrine into a portable visual system
+    for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character,
+    prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +61,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-251.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

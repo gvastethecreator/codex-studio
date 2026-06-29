@@ -13,26 +13,36 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Classic hot-blooded anime heroism built from technical discipline, monumental ignition, direct
-    emotion, luminous sacrifice, and rising scale
+    Monumental Ignition Sacrifice within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Monumental Ignition Sacrifice's specific style identity.
   form_and_line: >-
-    Silueta robusta abstracta, diagonales de lanzamiento, gestualidad enfática, verticalidad
-    monumental y contornos de determinación.
+    Define Monumental Ignition Sacrifice through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
   color_palette: >-
-    Azul técnico, rojo heroico, blanco de flare estelar, negro profundo y amarillo de núcleo
-    energético.
-  lighting_setup: Fluorescente técnico, flare de ignición y bañado estelar de escala astronómica.
-  material_texture: Carcasa marcada, juntas técnicas visibles, humo térmico y brillo energético de alto contraste.
-  render_quality: Anime épico clásico con claridad emocional, expansión de escala y dramatismo de entrega final.
-  spatial_distortion: Transición de escala íntima a cósmica con foreshortening heroico y verticalidad monumental.
-  atmosphere: Triunfante, emotiva y colosal, de épica sincera.
+    Use a Monumental Ignition Sacrifice-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Monumental Ignition Sacrifice recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Monumental Ignition Sacrifice: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Monumental Ignition Sacrifice with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Monumental Ignition Sacrifice: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Monumental Ignition Sacrifice: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
   key_features: >-
-    Launch diagonals, luminous core, colossal verticality, direct emotion, sacrificial iconography,
-    and astronomical expansion
+    Prioritize Monumental Ignition Sacrifice's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Use monumental ignition sacrifice as vertical-epic grammar. Any prompt should feel disciplined,
-    lit from within, ascending, and emotionally direct. Launch pads, operators, training, machines,
-    and narrative finales are optional.
+    Create a style-card that translates Monumental Ignition Sacrifice into a portable visual system for 7. Mecha &
+    Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -50,8 +60,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-237.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

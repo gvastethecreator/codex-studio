@@ -12,19 +12,39 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Healing-fantasy adulta, con pulcritud profesional, serenidad botánica y refinamiento institucional.
-  form_and_line: Trazo limpio, contornos serenos, gestos medidos y ornamentación funcional de cuidado experto.
-  color_palette: Verde botánico, marfil clínico, dorado tenue y azul pastel de calma mágica.
-  lighting_setup: Luz difusa de invernadero abstracto, reflejos suaves y bloom curativo de baja agresividad.
-  material_texture: Vidrio translúcido, papel fino, seda sobria, fibras vegetales y superficies cuidadosamente preparadas.
-  render_quality: Fantasía terapéutica de alta pulcritud, con autoridad tranquila y claridad de proceso visual.
-  spatial_distortion: Orden compositivo por capas, respiración limpia y jerarquías suaves de preparación y cuidado.
-  atmosphere: Calmada, luminosa y competente.
-  key_features: Verde sanador, brillo clínico suave, cortesía formal, detalle botánico y compostura adulta.
+  aesthetic: >-
+    The Saint's Magic Power Is Omnipotent - Herbarium Court Glow within 8. Isekai & High Fantasy: a reusable Anime
+    Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction.
+    Keep the result transferable across subjects while preserving The Saint's Magic Power Is Omnipotent - Herbarium
+    Court Glow's specific style identity.
+  form_and_line: >-
+    Define The Saint's Magic Power Is Omnipotent - Herbarium Court Glow through line, mass, contour, spacing, and
+    rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a The Saint's Magic Power Is Omnipotent - Herbarium Court Glow-specific palette with clear dominant, secondary,
+    and accent roles. Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes The Saint's Magic Power Is Omnipotent - Herbarium Court Glow recognizable: purposeful key,
+    rim, bounce, shadow, and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce The Saint's Magic Power Is Omnipotent - Herbarium Court Glow: surface
+    response, grain, patina, polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render The Saint's Magic Power Is Omnipotent - Herbarium Court Glow with high production clarity, strong silhouette
+    reads, clean detail priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits The Saint's Magic Power Is Omnipotent - Herbarium Court Glow: perspective,
+    compression, exaggeration, or depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to The Saint's Magic Power Is Omnipotent - Herbarium Court Glow: specific, coherent, and
+    distinct, with emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize The Saint's Magic Power Is Omnipotent - Herbarium Court Glow's key features: recognizable shape language,
+    palette logic, material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática herbarium-court reusable donde cualquier prompt se
-    refine mediante calma botánica, pulcritud curativa y luz institucional sin
-    obligar una escena profesional, palaciega o medicinal literal.
+    Create a style-card that translates The Saint's Magic Power Is Omnipotent - Herbarium Court Glow into a portable
+    visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene,
+    character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +61,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-253.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

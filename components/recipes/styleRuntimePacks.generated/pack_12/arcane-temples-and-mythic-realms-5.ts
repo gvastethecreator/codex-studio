@@ -11,22 +11,23 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, cartoon, flat, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática boss-arena dark fantasy con telemetría arcana, fases legibles y símbolos como mecánica visual.',
+        "Arcane Library Boss Arena within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Arcane Library Boss Arena's specific style identity.",
       subject_treatment:
-        'Eleva el input a boss, avatar conjurado o artefacto controlador; si aparece grimorio, debe reforzar fase y weak points, no fijar una biblioteca.',
+        "Treat any subject through Arcane Library Boss Arena's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Violeta profundo, oro gastado y negro tinta para separar cast windows y estados de fase.',
+        'Use a controlled palette that supports Arcane Library Boss Arena: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Círculos rúnicos como señalética diegética, iluminación por patrón de ataque y sombras de lectura circular.',
+        'Shape light and shadow for Arcane Library Boss Arena: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Pergamino cuarteado, mármol húmedo, metal ancestral y partículas de polvo ritual en suspensión.',
+        "Render surfaces with Arcane Library Boss Arena's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Composición radial o axial con centro mecánico, perímetro de evasión y lanes de party sugeridos sin requerir arena cerrada.',
-      atmosphere_and_mood: 'Solemnidad peligrosa, descubrimiento mecánico y presión de ejecución.',
+        "Compose with Arcane Library Boss Arena's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Arcane Library Boss Arena's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Boss-arena gameplay frame: spell telegraphs, threat hierarchy, dodge lanes visible.',
+        'Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
       creative_brief:
-        'Aplica Arcane Library Boss Arena como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
+        'Create a style-card that translates Arcane Library Boss Arena into a portable visual system for 2. Arcane Temples & Mythic Realms. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -37,21 +38,23 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, urban-neon, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática action-adventure mística con puzzle lumínico, refracción cristalina y orientación geométrica ritual.',
+        "Crystal Desert Shrine within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Crystal Desert Shrine's specific style identity.",
       subject_treatment:
-        'Reinterpreta el input como guardián, prisma, llave, avatar o superficie calibrada; santuario y desierto son anclas opcionales.',
-      color_and_tone: 'Arena rosada, amatista, blanco solar y acentos espectrales por refracción.',
+        "Treat any subject through Crystal Desert Shrine's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+      color_and_tone:
+        'Use a controlled palette that supports Crystal Desert Shrine: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Sol duro con rebotes policromáticos usados como mecánica de progresión visual.',
+        'Shape light and shadow for Crystal Desert Shrine: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Cuarzo facetado, polvo fino, piedra tallada y superficies de calibración óptica.',
+        "Render surfaces with Crystal Desert Shrine's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Gran angular con líneas guía, nodos puzzle y lectura ceremonial; escaleras o templos sólo si refuerzan la mecánica visual.',
-      atmosphere_and_mood: 'Sagrada, silenciosa y analítica, de descubrimiento ritual.',
+        "Compose with Crystal Desert Shrine's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Crystal Desert Shrine's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Exploration gameplay screencap: optical mechanics, shrine landmarks, traversal decisions clear.',
+        'Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
       creative_brief:
-        'Aplica Crystal Desert Shrine como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
+        'Create a style-card that translates Crystal Desert Shrine into a portable visual system for 2. Arcane Temples & Mythic Realms. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -62,22 +65,23 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, clean-modern, flat-light, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática metroidvania tecno-arcana con gating, activación ancestral, escala monumental y mecha sagrado.',
+        "Ancient Mecha Temple within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ancient Mecha Temple's specific style identity.",
       subject_treatment:
-        'Si el input contiene personaje/objeto/criatura, darle indicios de coloso mecánico, núcleo latente o arquitectura interactiva por estados dormant/active/hostile.',
+        "Treat any subject through Ancient Mecha Temple's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Piedra beige, pátina verde y núcleos azules para señalizar función tecnológica latente.',
+        'Use a controlled palette that supports Ancient Mecha Temple: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Rayos cenitales y polvo volumétrico para guiar descubrimiento de paths secretos.',
+        'Shape light and shadow for Ancient Mecha Temple: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Basalto, circuitería incrustada, musgo seco y juntas mecánicas erosionadas.',
+        "Render surfaces with Ancient Mecha Temple's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Escala monumental, rutas bloqueadas y landmarks de progreso; templo o ruina pueden aparecer pero no son obligatorios.',
-      atmosphere_and_mood: 'Reverente, misteriosa y arqueotecnológica.',
+        "Compose with Ancient Mecha Temple's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Ancient Mecha Temple's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Exploration gameplay screencap: ancient mech landmarks, blocked paths, environmental interactions clear.',
+        'Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
       creative_brief:
-        'Aplica Ancient Mecha Temple como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
+        'Create a style-card that translates Ancient Mecha Temple into a portable visual system for 2. Arcane Temples & Mythic Realms. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -88,22 +92,23 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, empty-scene, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática space-trade RPG con economía faccional, diplomacia armada, lujo logístico y rutas interestelares.',
+        "Celestial Harbor Trade Wars within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Celestial Harbor Trade Wars's specific style identity.",
       subject_treatment:
-        'Aplica identidad mercantil/escolta, corporación, sindicato o casa comercial al input; naves, carga o puerto son anclas opcionales.',
+        "Treat any subject through Celestial Harbor Trade Wars's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Oro solar, púrpura espacial y azul profundo para marcar riqueza, neutralidad y conflicto.',
+        'Use a controlled palette that supports Celestial Harbor Trade Wars: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Contraluz cósmico, balizas de muelle y focos de inspección de carga por zona.',
+        'Shape light and shadow for Celestial Harbor Trade Wars: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Cascos nacarados, metal bruñido, textiles ceremoniales y superficies de carga modular.',
+        "Render surfaces with Celestial Harbor Trade Wars's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Rutas de tránsito, negociación y disputa como lectura compositiva; no exigir hub, puerto ni muelle físico.',
-      atmosphere_and_mood: 'Ambiciosa, diplomática y volátil.',
+        "Compose with Celestial Harbor Trade Wars's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Celestial Harbor Trade Wars's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Trade-RPG gameplay screencap: route control, cargo stakes, reputation pressure, faction economy visible.',
+        'Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
       creative_brief:
-        'Aplica Celestial Harbor Trade Wars como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
+        'Create a style-card that translates Celestial Harbor Trade Wars into a portable visual system for 2. Arcane Temples & Mythic Realms. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -114,20 +119,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, grunge, chaotic-fx, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática duel-fighter ceremonial con spacing limpio, timing estricto, neutral game y sobriedad marcial.',
+        "Sky Monastery Duel within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Sky Monastery Duel's specific style identity.",
       subject_treatment:
-        'Transforma el input en duelista, arma ritual, stance o arena de alcance; monasterio celeste queda como ancla opcional.',
+        "Treat any subject through Sky Monastery Duel's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Blanco pétreo, azul cielo y oro sobrio para claridad de escenario y foco en combatientes.',
+        'Use a controlled palette that supports Sky Monastery Duel: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Luz natural limpia con sombra contenida para preservar lectura de animación frame a frame.',
+        'Shape light and shadow for Sky Monastery Duel: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Mármol pulido, madera lacada, tela ceremonial y detalles de desgaste por entrenamiento.',
+        "Render surfaces with Sky Monastery Duel's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Simetría central, límites claros, zonas de presión y reset neutral sin exigir arena física.',
-      atmosphere_and_mood: 'Serena, tensa y honorable.',
+        "Compose with Sky Monastery Duel's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Sky Monastery Duel's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Duel-stage gameplay screencap: hitbox distance, advantage state, vertical calm, timing cues visible.',
+        'Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -138,22 +144,23 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, combat-chaos, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática social-stealth ilusoria con engaño, acceso por estatus, fuga limpia y prestigio peligroso.',
+        "Mirage Palace Stealth Gala within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Mirage Palace Stealth Gala's specific style identity.",
       subject_treatment:
-        'Convierte el input en espía ceremonial, máscara de estatus, gadget discreto o nodo de vigilancia social.',
+        "Treat any subject through Mirage Palace Stealth Gala's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Oro suave, azul nocturno y púrpura real para codificar zonas de prestigio y riesgo.',
+        'Use a controlled palette that supports Mirage Palace Stealth Gala: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Candelabros refractados en múltiples planos para crear coberturas y falsos positivos visuales.',
+        'Shape light and shadow for Mirage Palace Stealth Gala: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Cristal facetado, seda de alto rango, mármol pulido y metal de ornamento funcional.',
+        "Render surfaces with Mirage Palace Stealth Gala's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Rutas ocultas, vigilancia y extracción en planos reflectivos; palacio o gala son anclas opcionales.',
-      atmosphere_and_mood: 'Glamorosa, engañosa y socialmente tensa.',
+        "Compose with Mirage Palace Stealth Gala's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Mirage Palace Stealth Gala's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Stealth-gala gameplay screencap: patrol loops, cover, access doors, illusion risks readable.',
+        'Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
       creative_brief:
-        'Aplica Mirage Palace Stealth Gala como gramatica original de videojuego sobre cualquier input: conserva su sistema de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.',
+        'Create a style-card that translates Mirage Palace Stealth Gala into a portable visual system for 2. Arcane Temples & Mythic Realms. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -164,19 +171,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, sci-fi-neon, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática tactical-fantasy de coven con zonas de control, invocación, deny de terreno y ritual brumoso.',
+        "Marsh Witch Coven Arena within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Marsh Witch Coven Arena's specific style identity.",
       subject_treatment:
-        'Convierte el input en bruja, espíritu, tótem, zona de hechizo o amenaza invocada con escuela mágica clara.',
+        "Treat any subject through Marsh Witch Coven Arena's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Verde oscuro, ámbar y violeta brumoso para separar utilidad, amenaza y ritual activo.',
+        'Use a controlled palette that supports Marsh Witch Coven Arena: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Bioluminiscencia mágica en niebla densa con telegraph de hechizos por anillo.',
-      texture_and_material: 'Agua turbia, raíces vivas, piedra húmeda y tótems de canalización.',
+        'Shape light and shadow for Marsh Witch Coven Arena: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+      texture_and_material:
+        "Render surfaces with Marsh Witch Coven Arena's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Anillos de hechizo, choke-points tácticos y conexiones de terreno sin exigir pantano o arena.',
-      atmosphere_and_mood: 'Arcana, peligrosa y teatralmente agresiva.',
+        "Compose with Marsh Witch Coven Arena's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Marsh Witch Coven Arena's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Fantasy-combat gameplay frame: area spells, cooldown danger, witch arena priority readable.',
+        'Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -187,20 +196,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, combat-chaos, murky, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática puzzle-garden refinada con luz redirigida, rotación, cadenas de activación y lectura espacial fina.',
+        "Orchid Palace Puzzle Gardens within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Orchid Palace Puzzle Gardens's specific style identity.",
       subject_treatment:
-        'Convierte el input en mecanismo vivo, espejo, nodo vegetal, llave floral o superficie calibrable.',
+        "Treat any subject through Orchid Palace Puzzle Gardens's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
       color_and_tone:
-        'Verde jade, rosa orquídea y mármol claro para navegación serena y foco mecánico.',
+        'Use a controlled palette that supports Orchid Palace Puzzle Gardens: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Luz solar redirigida por espejos móviles para progresión y desbloqueo de rutas.',
+        'Shape light and shadow for Orchid Palace Puzzle Gardens: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
       texture_and_material:
-        'Pétalos, piedra pulida, bronce fino y superficies reflectantes calibrables.',
+        "Render surfaces with Orchid Palace Puzzle Gardens's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Trazado geométrico, metas visuales y nodos encadenados sin exigir palacio o jardín literal.',
-      atmosphere_and_mood: 'Serena, refinada y cognitivamente desafiante.',
+        "Compose with Orchid Palace Puzzle Gardens's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Orchid Palace Puzzle Gardens's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Puzzle-garden gameplay frame: visual clues, garden mechanisms, route logic, ambiguity minimized.',
+        'Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -211,18 +221,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, snow, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática endgame shrine-run volcánica con ascenso por fases, hazard térmico y combate ritual.',
+        "Jade Volcano Shrine Run within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Jade Volcano Shrine Run's specific style identity.",
       subject_treatment:
-        'Convierte el input en peregrino guerrero, guardián pétreo, checkpoint, reliquia o hazard ígneo.',
-      color_and_tone: 'Verde jade, negro lava y naranja ígneo para jerarquía de riesgo/progreso.',
+        "Treat any subject through Jade Volcano Shrine Run's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+      color_and_tone:
+        'Use a controlled palette that supports Jade Volcano Shrine Run: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Glow de magma con humo denso para telegraph de zonas de daño y ventanas seguras.',
-      texture_and_material: 'Piedra vitrificada, oro ritual, ceniza suspendida y grietas activas.',
+        'Shape light and shadow for Jade Volcano Shrine Run: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+      texture_and_material:
+        "Render surfaces with Jade Volcano Shrine Run's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Ascenso por fases, checkpoints y cuellos de botella sin exigir templo o volcán literal.',
-      atmosphere_and_mood: 'Devocional, peligrosa y trascendente.',
+        "Compose with Jade Volcano Shrine Run's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Jade Volcano Shrine Run's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Endgame shrine gameplay frame: route, fire hazard phase, checkpoint priority, tactical read clear.',
+        'Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
   {
@@ -233,18 +246,21 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, text, logo, daytime, clutter, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
     style: {
       aesthetic:
-        'Gramática precision-trial de arquería mística con timing, trayectoria, control respiratorio y foco lunar.',
+        "Moonlit Shrine Archer Trials within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Moonlit Shrine Archer Trials's specific style identity.",
       subject_treatment:
-        'Reinterpreta el input como arquero espiritual, flecha de energía, diana ritual, trayectoria o scoring de precisión.',
-      color_and_tone: 'Azul lunar, plata y violeta tenue para concentración visual sin ruido.',
+        "Treat any subject through Moonlit Shrine Archer Trials's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+      color_and_tone:
+        'Use a controlled palette that supports Moonlit Shrine Archer Trials: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
       lighting_and_shadow:
-        'Luz de luna y faroles de papel para contrastes suaves y foco de objetivo.',
-      texture_and_material: 'Madera pulida, piedra húmeda, seda ritual y marcas de práctica.',
+        'Shape light and shadow for Moonlit Shrine Archer Trials: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+      texture_and_material:
+        "Render surfaces with Moonlit Shrine Archer Trials's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
       camera_and_composition:
-        'Trayectoria, impacto y dificultad progresiva sin exigir santuario o calle de tiro.',
-      atmosphere_and_mood: 'Concentrada, calmada y extremadamente precisa.',
+        "Compose with Moonlit Shrine Archer Trials's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+      atmosphere_and_mood:
+        "Build Moonlit Shrine Archer Trials's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
       rendering_and_quality:
-        'Archer-trial gameplay screencap: trajectory, impact scoring, shrine spacing, target timing clear.',
+        'Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

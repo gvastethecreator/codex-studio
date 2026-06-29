@@ -13,16 +13,37 @@ tags:
   - mythic
   - greek-myth
 visualDna:
-  aesthetic: Cyclopean forge prophecy where giant smith rites shape war relics under volcanic pressure.
-  form_and_line: Ravine-furnace cues, chain gantries, and anvil terraces.
-  color_palette: Lava orange, soot black, and iron gray.
-  lighting_setup: Furnace core glow with volcanic rimlight.
-  material_texture: Scorched basalt, riveted iron, and slag glass.
-  render_quality: High-contrast forge concept with tactile depth.
-  spatial_distortion: Descending pressure toward a molten heart.
-  atmosphere: Brutal craft, mythic labor, and heat pressure.
-  key_features: Titan anvils, giant tongs, lava-channel cues.
-  creative_brief: Recast any input through cyclops prophecy forge, as if its form were made to carry divine omens. Keep ravine-furnace pressure, molten orange core glow, slag-glass texture, titan-scale craft, and basalt weight without requiring cyclopes, war relics, giant tools, lava channels, or a forge location.
+  aesthetic: >-
+    Cyclops Prophecy Forge within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Cyclops Prophecy Forge's specific style identity.
+  form_and_line: >-
+    Define Cyclops Prophecy Forge through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Cyclops Prophecy Forge-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Cyclops Prophecy Forge recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Cyclops Prophecy Forge: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Cyclops Prophecy Forge with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Cyclops Prophecy Forge: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Cyclops Prophecy Forge: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Cyclops Prophecy Forge's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Cyclops Prophecy Forge into a portable visual system for 5. Mythic Greek Epics.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - bright-pop

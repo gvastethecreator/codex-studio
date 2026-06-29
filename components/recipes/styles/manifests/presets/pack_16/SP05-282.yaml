@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Humanismo cálido con comedia amarga, textura social y ternura resistente.
-  form_and_line: Línea expresiva de ensemble, gestualidad corporal imperfecta pero cálida y staging coral adaptable a cualquier motivo.
-  color_palette: Neones festivos, ámbares de refugio precario, azules fríos de noche invernal y rojos puntuales de esperanza doméstica.
-  lighting_setup: Contraste entre iluminación pública dura y focos cálidos de proximidad, con reflejos húmedos que amplifican intimidad.
-  material_texture: Superficie mojada, cartón gastado, telas superpuestas de invierno y señalética con desgaste cotidiano.
-  render_quality: Acabado cinematográfico con prioridad en química de grupo, legibilidad emocional y detalle ambiental vivido.
-  spatial_distortion: Perspectiva comprimida con capas de objetos y presencias que envuelven el foco relacional.
-  atmosphere: Caótica, compasiva, festiva, redentora.
-  key_features: Composición coral, microgestos de cuidado, humor corporal, textura social sugerida y contraste entre dureza visual y compasión.
+  aesthetic: >-
+    Social Humanist Warmth Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Social Humanist Warmth Style's specific style identity.
+  form_and_line: >-
+    Define Social Humanist Warmth Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Social Humanist Warmth Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Social Humanist Warmth Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Social Humanist Warmth Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Social Humanist Warmth Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Social Humanist Warmth Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Social Humanist Warmth Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Social Humanist Warmth Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Define un estilo reusable de gracia humanista para cualquier prompt o imagen de entrada:
-    calor emocional, imperfección expresiva y vínculo social sin imponer callejones, navidad, refugios ni grupos protagonistas.
+    Create a style-card that translates Social Humanist Warmth Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-282.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Deporte competitivo de ego extremo, presión de definición, visión táctica agresiva y ruptura individualista.
-  form_and_line: Líneas tensas de aceleración corta, torsión corporal agresiva y postura depredadora en finalización.
-  color_palette: Azules fríos técnicos, neón ácido de presión psicológica y rojos de amenaza decisiva.
-  lighting_setup: Iluminación high-contrast con foco cerrado y recorte duro sobre el sujeto.
-  material_texture: Superficies sintéticas de alta fricción, geometría de jaula, textiles de alto rendimiento y sudor especular.
-  render_quality: Sports frame de intensidad máxima con lectura instantánea de duelo interno y decisión final.
-  spatial_distortion: Túnel visual, compresión de distancia final y deformación dinámica por sprint terminal.
-  atmosphere: Predatoria, obsesiva y clínicamente competitiva.
-  key_features: Torque corporal, mirada de presión, geometría de jaula abstracta, último instante decisivo y aura de ego.
+  aesthetic: >-
+    Ego Pressure Breakout Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Ego Pressure Breakout Style's specific style identity.
+  form_and_line: >-
+    Define Ego Pressure Breakout Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Ego Pressure Breakout Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Ego Pressure Breakout Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Ego Pressure Breakout Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Ego Pressure Breakout Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Ego Pressure Breakout Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Ego Pressure Breakout Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Ego Pressure Breakout Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica una gramática reusable de presión ego-breakout a cualquier prompt o imagen de entrada:
-    jaula geométrica, mirada depredadora y decisión letal sin imponer fútbol, redes, goles ni disparos.
+    Create a style-card that translates Ego Pressure Breakout Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-344.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

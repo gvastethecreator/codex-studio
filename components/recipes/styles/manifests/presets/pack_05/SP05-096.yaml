@@ -12,19 +12,39 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Hyper-saturated strategy fantasy, with candy-neon logic, theatrical confidence, impossible geometry, and gameboard reality.
-  form_and_line: Crisp decorative contours, grid-aware diagonals, playful scale shifts, geometric overlays, and theatrical gesture rhythm.
-  color_palette: Electric magenta, cyan candy, saturated violet, acid yellow, luminous peach, and impossible sky blue.
-  lighting_setup: Overbright neon wash, prismatic rim bands, luminous grid bounce, and deliberately excessive bloom.
-  material_texture: Glossy cel polish, glassy game surfaces, holographic gradients, candy plastic sheen, and sharp geometric overlays.
-  render_quality: Ultra-clean anime finish with maximal saturation, strategic clarity, and surreal confidence.
-  spatial_distortion: Boardlike planes, impossible perspective folds, floating rule geometry, and controlled chibi-scale elasticity.
-  atmosphere: Strategic, dazzling, hyper, confident.
-  key_features: Candy-neon grids, rule-logic spectacle, overconfident saturation, geometric theater, impossible polish.
+  aesthetic: >-
+    No Game No Life Hyper-Saturated Strategy Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving No Game No Life Hyper-Saturated Strategy Fantasy's specific style
+    identity.
+  form_and_line: >-
+    Define No Game No Life Hyper-Saturated Strategy Fantasy through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a No Game No Life Hyper-Saturated Strategy Fantasy-specific palette with clear dominant, secondary, and accent
+    roles. Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes No Game No Life Hyper-Saturated Strategy Fantasy recognizable: purposeful key, rim, bounce,
+    shadow, and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce No Game No Life Hyper-Saturated Strategy Fantasy: surface response, grain,
+    patina, polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render No Game No Life Hyper-Saturated Strategy Fantasy with high production clarity, strong silhouette reads, clean
+    detail priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits No Game No Life Hyper-Saturated Strategy Fantasy: perspective, compression,
+    exaggeration, or depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to No Game No Life Hyper-Saturated Strategy Fantasy: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize No Game No Life Hyper-Saturated Strategy Fantasy's key features: recognizable shape language, palette
+    logic, material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Convert any prompt into a dazzling strategy space: color should exceed
-    physics, geometry should imply rules, and every surface should feel like a
-    confident move without requiring literal game props, cast, or scene.
+    Create a style-card that translates No Game No Life Hyper-Saturated Strategy Fantasy into a portable visual system
+    for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character,
+    prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +61,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-096.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

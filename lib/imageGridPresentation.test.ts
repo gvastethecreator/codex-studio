@@ -115,4 +115,23 @@ describe('imageGridPresentation', () => {
       }),
     ).toBe(6);
   });
+
+  it('allows up to twelve columns when width, thumbnail size, and items permit it', () => {
+    expect(
+      resolveImageGridColumnCount({
+        viewportWidth: 1920,
+        thumbnailSize: 144,
+        itemCount: 48,
+        horizontalPadding: 0,
+      }),
+    ).toBe(12);
+    expect(
+      resolveImageGridColumnCount({
+        viewportWidth: 1920,
+        thumbnailSize: 144,
+        itemCount: 5,
+        horizontalPadding: 0,
+      }),
+    ).toBe(5);
+  });
 });

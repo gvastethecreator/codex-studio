@@ -12,16 +12,38 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Hearth-deity guardianship expressed through ash warmth, shelter, kinship, and domestic flame.
-  form_and_line: Long hearth-row cues, guardian alcove rhythms, and smoke-vent silhouettes.
-  color_palette: Ember orange, ash gray, and bronze.
-  lighting_setup: Hearthfire flicker and smoke-softened daylight.
-  material_texture: Firebrick, iron hooks, and soot-dark timber.
-  render_quality: Warm mythic rendering with intimate domestic scale.
-  spatial_distortion: Horizontal warmth spreading through repeated hearth-like bands.
-  atmosphere: Shelter, kinship, and sacred homecoming.
-  key_features: Hearth altar cues, guardian masks, smoke glyphs.
-  creative_brief: Recast the input through ashen hearth guardian warmth, making domestic flame feel sacred without requiring a communal hall.
+  aesthetic: >-
+    Ashen Hearth Guardian Warmth within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Ashen Hearth Guardian Warmth's specific style identity.
+  form_and_line: >-
+    Define Ashen Hearth Guardian Warmth through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Ashen Hearth Guardian Warmth-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Ashen Hearth Guardian Warmth recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Ashen Hearth Guardian Warmth: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Ashen Hearth Guardian Warmth with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Ashen Hearth Guardian Warmth: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Ashen Hearth Guardian Warmth: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Ashen Hearth Guardian Warmth's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Ashen Hearth Guardian Warmth into a portable visual system for 3. Mythic
+    Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - photoreal
   - sterile

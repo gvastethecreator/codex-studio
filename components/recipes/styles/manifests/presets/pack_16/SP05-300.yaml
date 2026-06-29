@@ -12,20 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Espectáculo heroico hipergráfico, con anti-naturalismo cromático, energía geométrica y teatralidad de póster vivo.
-  form_and_line: Contorno duro y dinámico, geometría angular dominante y siluetas de acción que privilegian impacto inmediato sobre detalle realista.
-  color_palette: Bloques intensos en cian, magenta, naranja fuego y amarillos eléctricos con negros limpios de separación gráfica.
-  lighting_setup: Iluminación extrema de incendio estilizado, contraluces violentos y flashes de alto contraste para clímax continuo.
-  material_texture: Superficies mecha lisas de acabado sintético, humo estilizado y fuego triangular tratado como forma gráfica.
-  render_quality: Acabado premium de acción maximalista con legibilidad de coreografía de rescate y jerarquía clara de héroe-antihéroe.
-  spatial_distortion: Perspectiva de gran angular heroica con deformación cinética orientada a velocidad, choque y espectáculo.
-  atmosphere: Incandescente, teatral, gráfica, triunfal.
-  key_features: Formas triangulares, color blocking extremo, energía de choque, composición de póster y teatralidad operática.
+  aesthetic: >-
+    Hypergraphic Chromatic Action Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Hypergraphic Chromatic Action Style's specific style identity.
+  form_and_line: >-
+    Define Hypergraphic Chromatic Action Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Hypergraphic Chromatic Action Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Hypergraphic Chromatic Action Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Hypergraphic Chromatic Action Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Hypergraphic Chromatic Action Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Hypergraphic Chromatic Action Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Hypergraphic Chromatic Action Style: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Hypergraphic Chromatic Action Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de acción cromática hipergráfica para cualquier prompt o imagen de entrada:
-    geometría, saturación y heroísmo abstracto. El input puede ganar mecha
-    sintético, fuego triangular, rescate gráfico o rivalidad visual si aumenta
-    impacto, sin fijar una escena narrativa concreta.
+    Create a style-card that translates Hypergraphic Chromatic Action Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-300.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

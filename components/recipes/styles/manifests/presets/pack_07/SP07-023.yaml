@@ -12,29 +12,38 @@ tags:
   - architecture-and-interior
   - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Parametricismo fluido de logica algoritmica, continuidad topologica y espacialidad casi liquida.
+  aesthetic: >-
+    Parametric Architecture within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Parametric Architecture's specific style identity.
   form_and_line: >-
-    Curvas continuas, superficies sin junta visible, volumenes morfogeneticos y transiciones tipo
-    cinta.
-  color_palette: Blanco tecnico, gris frio gradual, plata liquida y azul hielo en senal luminica.
+    Define Parametric Architecture through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Parametric Architecture-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Ambiente suave continuo, lineas de glow embebidas, iluminacion de borde y nucleos de volumen
-    activos.
+    Use lighting that makes Parametric Architecture recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
   material_texture: >-
-    Compuestos lisos, hormigon de piel continua, paneleria GRP y membranas tensadas de alta
-    precision.
+    Use materials and textures that reinforce Parametric Architecture: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
   render_quality: >-
-    Futurista de precision computacional, con lectura limpia de geometria compleja y detalle
-    constructivo plausible.
-  spatial_distortion: Fluidez formal con profundidad sin quiebres, enfatizando continuidad vectorial.
-  atmosphere: Elegante, avanzada, ligera y matematica.
+    Render Parametric Architecture with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Parametric Architecture: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Parametric Architecture: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Vertices continuos, porosidad algoritmica, patrones parametricos y canales formales sin junta
-    visible.
+    Prioritize Parametric Architecture's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Convierte cualquier input en una gramatica parametrica donde continuidad de superficie, variacion
-    algoritmica y precision constructiva operen como un solo sistema. Debe sentirse computacional y
-    morfogenetico sin depender de un edificio heroico concreto.
+    Create a style-card that translates Parametric Architecture into a portable visual system for 2. Architectural
+    Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - brick
   - square

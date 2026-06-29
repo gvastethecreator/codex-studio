@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Gramática duel-arena real cristalina con 1v1 técnico, spacing, feints y castigo preciso.
-  subject_treatment: Convierte el input en campeón, arma, stance, corona-cristal o señal de ventaja de duelo.
-  color_and_tone: Blanco perla, azul zafiro y oro suave para máxima claridad en enfrentamiento directo.
-  lighting_and_shadow: Iluminación cenital limpia para preservar lectura frame-by-frame de animación.
-  texture_and_material: Cristal tallado, seda de gala, mármol pulido y detalles de desgaste controlado.
-  camera_and_composition: Simetría frontal, límites de arena y zonas neutrales claras sin exigir hall o cúpula.
-  atmosphere_and_mood: Noble, rival y extremadamente precisa.
-  rendering_and_quality: 'Duel-hall gameplay frame: reach, timing, advantage state, crystal arena spacing readable.'
+  aesthetic: >-
+    Crystal Crown Duel Hall within 5. Speed, Sport & Competitive Arenas: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Crystal Crown Duel Hall's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Crystal Crown Duel Hall's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Crystal Crown Duel Hall: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Crystal Crown Duel Hall: legible depth, purposeful highlights, readable focal zones, and
+    atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Crystal Crown Duel Hall's material logic: tactile detail, coherent finish, and texture choices
+    that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Crystal Crown Duel Hall's staging logic: strong focal hierarchy, stable readable framing, and spatial
+    rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Crystal Crown Duel Hall's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 5. Speed, Sport & Competitive Arenas style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

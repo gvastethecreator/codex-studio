@@ -12,20 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Picardía retro-jazz elegante, humor seco, glamour nocturno abstracto y tensión de engaño sofisticado.
-  form_and_line: Trazo cel vintage afilado, gestualidad pícara y coreografía de timing musical sin acción fija.
-  color_palette: Carbón nocturno, ámbar de farola, turquesa tenue y acentos crema de cartel antiguo.
-  lighting_setup: Noir suave con contraluz recortado, reflejo húmedo y key focal en gesto de engaño.
-  material_texture: Superficie mojada, tela textil elegante, cromado reflectante y grano telecine de caper setentero.
-  render_quality: Acabado broadcast 80s de alto carácter, lectura clara de astucia, ritmo y puesta en escena.
-  spatial_distortion: Perspectiva oblicua con encuadres de fuga, contrapicado de estilo y compresión de escape.
-  atmosphere: Jazzy, juguetona, traviesa, sofisticada.
-  key_features: Silueta estilizada, ritmo de montaje heist, luces recortadas y acting de doble intención.
+  aesthetic: >-
+    Jazzy Rogue Heist Rhythm Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Jazzy Rogue Heist Rhythm Style's specific style identity.
+  form_and_line: >-
+    Define Jazzy Rogue Heist Rhythm Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Jazzy Rogue Heist Rhythm Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Jazzy Rogue Heist Rhythm Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Jazzy Rogue Heist Rhythm Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Jazzy Rogue Heist Rhythm Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Jazzy Rogue Heist Rhythm Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Jazzy Rogue Heist Rhythm Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Jazzy Rogue Heist Rhythm Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática reusable de jazzy-rogue-heist-rhythm para cualquier
-    sujeto, priorizando elegancia táctica, ironía visual y swing nocturno sin
-    imponer robos, calles, callejones, gabardinas, vitrinas ni dúos
-    investigadores.
+    Create a style-card that translates Jazzy Rogue Heist Rhythm Style into a portable visual system for 11. 70s & 80s
+    Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-003.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

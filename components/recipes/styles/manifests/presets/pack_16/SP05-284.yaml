@@ -12,20 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Aventura celeste clásica, con maravilla retro-mecánica, optimismo de descubrimiento y escala vertical abierta.
-  form_and_line: Contornos claros, ingeniería retro sugerida, curvas orgánicas y diagonales de elevación que vuelven expansivo cualquier sujeto.
-  color_palette: Cielos cerúleos amplios, dorados envejecidos de metal, verdes de ruina suspendida y blancos de nube brillante.
-  lighting_setup: Iluminación de gran altitud con contraluces solares, volumen de nubes y destellos selectivos sobre superficies metálicas.
-  material_texture: Latón pulido y oxidado, piedra aérea erosionada, vegetación colgante y telas de aventura con desgaste funcional.
-  render_quality: Acabado premium de aventura cinematográfica, lectura limpia de escala aérea y claridad de acción en planos abiertos.
-  spatial_distortion: Perspectiva vertical expansiva con sensación de caída y ascenso continuo entre estratos de nubes.
-  atmosphere: Maravillosa, valiente, libre, expedicionaria.
-  key_features: Luz de altura, metales retro, composición vertical abierta, sensación de viaje y contraste entre inocencia y tecnología noble.
+  aesthetic: >-
+    Airborne Wonder Adventure Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Airborne Wonder Adventure Style's specific style identity.
+  form_and_line: >-
+    Define Airborne Wonder Adventure Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Airborne Wonder Adventure Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Airborne Wonder Adventure Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Airborne Wonder Adventure Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Airborne Wonder Adventure Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Airborne Wonder Adventure Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Airborne Wonder Adventure Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Airborne Wonder Adventure Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de aventura celeste para cualquier prompt o imagen de entrada:
-    asombro, escala aérea y diseño retro-mecánico. Puede elevar el input con
-    robots nobles, ruina suspendida, ingeniería aérea o silueta exploradora si
-    suma identidad, sin fijar isla flotante ni escena de expedición.
+    Create a style-card that translates Airborne Wonder Adventure Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-284.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

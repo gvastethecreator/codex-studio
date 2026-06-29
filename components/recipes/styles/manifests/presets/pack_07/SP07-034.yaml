@@ -12,20 +12,38 @@ tags:
   - architecture-and-interior
   - civic-infrastructure-and-specialty-spaces
 visualDna:
-  aesthetic: Patina institucional de deterioro burocratico, donde mantenimiento fallido y repeticion administrativa se vuelven sistema visual portable.
-  form_and_line: Axialidad rigida interrumpida por colapsos, repeticion modular de servicio y fallas en capas suspendidas sin requerir edificio publico literal.
-  color_palette: Desaturated green-grey, sickly mint, rust stain, water-damage brown, faded cream
-  lighting_setup: Hazes de luz quebrada, polvo en suspension, parpadeo electrico residual y fondos de sombra profunda.
-  material_texture: Pintura delaminada, escurridos minerales, oxidacion en uniones, yeso ampollado y trazas fungicas progresivas.
-  render_quality: Lectura forense del deterioro con autenticidad administrativa y decadencia material legible.
-  spatial_distortion: Partial collapse, axis interruption and service-depth fracture
-  atmosphere: Inmovilidad opresiva, vacio acustico frio y memoria administrativa detenida.
-  key_features: Placas graficas deslavadas no legibles, luminarias rotas, juntas abiertas, polvo estratificado y cielos parciales caidos.
+  aesthetic: >-
+    Institutional Ruin Patina within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Institutional Ruin Patina's specific style identity.
+  form_and_line: >-
+    Define Institutional Ruin Patina through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Institutional Ruin Patina-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Institutional Ruin Patina recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Institutional Ruin Patina: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Institutional Ruin Patina with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Institutional Ruin Patina: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Institutional Ruin Patina: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Institutional Ruin Patina's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Transforma cualquier tema en evidencia de mantenimiento fallido: pintura delaminada, repeticion administrativa,
-    humedad mineral y luz residual. La tension debe surgir de burocracia detenida y desgaste sistemico, no de hospital
-    embrujado, pasillo de asylum o ruina de terror demasiado literal. Conserva patina institucional, repeticion de
-    servicio, escala administrativa y luz rota sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Institutional Ruin Patina into a portable visual system for 3. Civic
+    Infrastructure And Specialty Spaces. Preserve the preset identity through style mechanics, not a fixed scene,
+    character, prop, or story beat.
 avoidRules:
   - clean
   - new

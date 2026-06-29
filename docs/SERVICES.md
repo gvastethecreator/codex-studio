@@ -1,67 +1,67 @@
-# Servicios e integración local
+# Services And Local Integration
 
-## Resumen
+## Summary
 
-La app está separada en dos capas: frontend React/Vite y backend local Bun/Hono. La integración se mantiene mediante servicios y hooks con seams explícitos.
+The app is split into two layers: a React/Vite frontend and a local Bun/Hono backend. Integration stays behind explicit service and hook seams.
 
 ## Frontend
 
 ### `services/studioRuntime.ts`
 
-Resuelve `apiBase` y metadatos de runtime (web o desktop) sin acoplar renderer a Electron.
+Resolves `apiBase` and runtime metadata for web or desktop contexts without coupling the renderer to Electron.
 
 ### `hooks/useStudioRuntime.ts`
 
-Orquesta estado de runtime para shell (sync, onboarding, diagnóstico y readiness).
+Orchestrates shell runtime state: sync, onboarding, diagnostics, and readiness.
 
 ### `services/localStudioService.ts`
 
-Adaptador HTTP único de la UI hacia backend local:
+Single HTTP adapter from the UI to the local backend:
 
-- salud (`getStudioHealth`)
-- sesión local Codex (`getLocalCodexSession`)
-- jobs/proyectos/librerías/catálogo/logs
-- inicio de app-server y reset de estudio
+- health (`getStudioHealth`)
+- local Codex session (`getLocalCodexSession`)
+- jobs, projects, libraries, catalog, and logs
+- app-server startup and studio reset
 
 ### `services/studioEventSource.ts`
 
-Adaptador SSE compartido (`GET /api/events`) para jobs, assets, logs y estado de conexión.
+Shared SSE adapter (`GET /api/events`) for jobs, assets, logs, and connection state.
 
 ### `services/localGenerationRun.ts`
 
-Seam de ejecución local: crea jobs persistentes, espera estado terminal, consulta catálogo por `jobId` y materializa resultado para UI.
+Local execution seam: creates persistent jobs, waits for terminal state, queries the catalog by `jobId`, and materializes the result for the UI.
 
 ### `hooks/useLocalStudioSync.ts`
 
-Sincroniza frontend con backend (catch-up HTTP + stream SSE + refresco de catálogo).
+Keeps the frontend synchronized with the backend through HTTP catch-up, the SSE stream, and catalog refresh.
 
 ## Backend
 
 ### `apps/local-server/src/appFactory.ts`
 
-Compone la API Hono local (`/api/health`, `/api/jobs`, `/api/catalog`, `/api/events`, `/library/*`, etc.).
+Composes the local Hono API (`/api/health`, `/api/jobs`, `/api/catalog`, `/api/events`, `/library/*`, and related routes).
 
 ### `apps/local-server/src/worker.ts`
 
-Procesa jobs (`dry_run`, `codex_imagegen`) y publica eventos para el stream SSE.
+Processes jobs (`dry_run`, `codex_imagegen`) and publishes events for the SSE stream.
 
 ### `apps/local-server/src/codex/*`
 
-Seams de integración local con Codex (`session`, `models`, `processSupervisor`, `rpcClient`, `turn`).
+Local Codex integration seams: `session`, `models`, `processSupervisor`, `rpcClient`, and `turn`.
 
 ### `apps/local-server/src/db.ts`
 
-Persistencia SQLite para settings, jobs, catálogo, librerías y logs.
+SQLite persistence for settings, jobs, catalog entries, libraries, and logs.
 
-## Decisiones de integración
+## Integration Decisions
 
-| Tema                 | Decisión                                |
-| -------------------- | --------------------------------------- |
-| Fuente durable       | SQLite + Image Catalog                  |
-| Eventos en vivo      | SSE compartido (`/api/events`)          |
-| Modelo visual legacy | `GenerationBatch[]` sólo compatibilidad |
-| Runtime principal    | Codex vía `codex app-server`            |
+| Topic               | Decision                               |
+| ------------------- | -------------------------------------- |
+| Durable source      | SQLite + Image Catalog                 |
+| Live events         | Shared SSE (`/api/events`)             |
+| Legacy visual model | `GenerationBatch[]` compatibility only |
+| Primary runtime     | Codex through `codex app-server`       |
 
-## Próximo paso
+## Next Step
 
-Si vas a tocar flujos de ejecución o sincronización, revisa también `docs/ARCHITECTURE.md` y `docs/TECHNICAL_DEBT.md`.
+Before changing execution or sync flows, also review `docs/ARCHITECTURE.md` and `docs/TECHNICAL_DEBT.md`.

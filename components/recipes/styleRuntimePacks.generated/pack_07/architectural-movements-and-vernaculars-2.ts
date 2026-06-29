@@ -11,24 +11,25 @@ export const GENERATED_STYLE_PRESETS = [
       'delicate trim, painted finish hiding raw mass, wood-warmth dominance, glass-curtain-wall dominance',
     style: {
       aesthetic:
-        'Monumentalidad brutalista centrada en masa tectónica, honestidad estructural y gravedad cívica sin concesiones decorativas.',
+        "Brutalist Architecture within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Brutalist Architecture's specific style identity.",
       form_and_line:
-        'Apilamientos monolíticos, vacíos profundos, cantiléveres pesados, ortogonalidad dura y cantos tallados por sombra.',
+        'Define Brutalist Architecture through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Gama de grises minerales, carbón y pizarra, con variaciones húmedas de ceniza de baja saturación.',
+        'Use a Brutalist Architecture-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol direccional severo, pozos de sombra profundos, contraste alto y lectura volumétrica por recesos.',
+        'Use lighting that makes Brutalist Architecture recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Marca de encofrado visible, poro de árido expuesto, junta estructural franca y pátina mineral envejecida.',
+        'Use materials and textures that reinforce Brutalist Architecture: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Render tectónico de alta fidelidad material, con prioridad de masa, proporción y lectura estructural.',
+        'Render Brutalist Architecture with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva monumental estable, compresión de profundidad por peso volumétrico y jerarquía de bloque.',
-      atmosphere: 'Austero, contundente, contemplativo y duradero.',
+        'Use spatial behavior that fits Brutalist Architecture: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Brutalist Architecture: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Hormigón crudo protagonista, huecos sombreados, planos pesados superpuestos y cantiléveres expresivos.',
+        "Prioritize Brutalist Architecture's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática brutalista transferible donde la masa y la sombra definan el carácter. La estructura debe leerse sin maquillaje y sostener una sensación de permanencia institucional en cualquier tipología.',
+        'Create a style-card that translates Brutalist Architecture into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -38,24 +39,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'minimal, rustic, plain',
     style: {
       aesthetic:
-        'Glamour deco de alta densidad geométrica, lujo metálico y teatralidad axial controlada.',
+        "Art Deco within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Art Deco's specific style identity.",
       form_and_line:
-        'Perfiles escalonados, chevrons y sunbursts, simetría rígida y ornamentación jerárquica de lectura frontal.',
+        'Define Art Deco through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Dominante negro-dorado con esmeralda y azul noche, balanceado por marfil y reflejos cromados.',
+        'Use a Art Deco-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Uplights dramáticos, rebotes especulares en superficies pulidas, capas de apliques/candelabros y nodos tipo marquee.',
+        'Use lighting that makes Art Deco recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Latón pulido, mármol veteado, terciopelo profundo, lacas brillantes y vidrio grabado.',
+        'Use materials and textures that reinforce Art Deco: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado deco cinematográfico con precisión ornamental y contraste de lujo legible.',
+        'Render Art Deco with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Simetría estructurada con tirón vertical para enfatizar monumentalidad ceremonial.',
-      atmosphere: 'Opulento, nocturno, ceremonial y escénico.',
+        'Use spatial behavior that fits Art Deco: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Art Deco: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Motivos geométricos repetitivos, metales nobles, espejos amplificadores, perfiles stepped y focos teatrales.',
+        "Prioritize Art Deco's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Mantén una gramática art déco transferible basada en jerarquía geométrica, contraste metálico y composición axial escénica. La ornamentación debe ser sistema visual, no decoración anecdótica de contexto.',
+        'Create a style-card that translates Art Deco into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -65,24 +67,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern, bright, simple',
     style: {
       aesthetic:
-        'Revival gótico de verticalidad devocional, dramatismo pétreo y solemnidad de luz filtrada.',
+        "Gothic Revival within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Gothic Revival's specific style identity.",
       form_and_line:
-        'Ojivas, nervaduras, tracería compleja, contrafuertes rítmicos y remates ascendentes como lógica gráfica vertical.',
+        'Define Gothic Revival through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Grises de piedra envejecida, estallidos cromáticos tipo vitral, sombras azul-carmesí y metal apagado.',
+        'Use a Gothic Revival-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación low-key con velas/luz lunar, proyección cromática de vitrales y contrastes de alta reverencia.',
+        'Use lighting that makes Gothic Revival recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Caliza tallada, roble envejecido, hierro frío patinado, polvo mineral y latón oscurecido.',
+        'Use materials and textures that reinforce Gothic Revival: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Visualización histórico-monumental con fidelidad ornamental y atmósfera sacra precisa.',
+        'Render Gothic Revival with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Énfasis en elongación vertical, profundidad reverencial y tracción ascendente sin exigir nave o templo literal.',
-      atmosphere: 'Solemne, ancestral, reverencial y dramática.',
+        'Use spatial behavior that fits Gothic Revival: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Gothic Revival: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Gramática de arco ojival, jerarquía vertical, vitral activo y ornamentación pétrea de alta densidad.',
+        "Prioritize Gothic Revival's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Mantén una gramática gótica transferible donde verticalidad, piedra tallada y luz de vitral construyan reverencia espacial. Debe funcionar sin caer en clichés narrativos de horror o ruina escénica.',
+        'Create a style-card that translates Gothic Revival into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -92,24 +95,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'box, symmetrical',
     style: {
       aesthetic:
-        'Deconstructivismo de inestabilidad controlada, tensión escultórica y rechazo deliberado de la ortogonalidad.',
+        "Deconstructivism within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Deconstructivism's specific style identity.",
       form_and_line:
-        'Planos plegados, intersecciones fracturadas, ejes desplazados y envolvente no lineal en conflicto ordenado.',
+        'Define Deconstructivism through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Titanio/ acero cepillado, minerales cálidos secundarios y reflejos especulares contenidos.',
+        'Use a Deconstructivism-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Cortes de sombra angulares, destellos especulares y contraste dinámico sobre facetas múltiples.',
+        'Use lighting that makes Deconstructivism recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Piel metálica segmentada, panelería zinc-titanio, vidrio de alto brillo y detalle de junta de precisión.',
+        'Use materials and textures that reinforce Deconstructivism: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Visualización escultórica de alta gama con anti-simetría legible y coherencia tectónica.',
+        'Render Deconstructivism with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Dislocación geométrica intencional con vectores de torsión y perspectiva en tensión.',
-      atmosphere: 'Cerebral, provocadora, energética y desestabilizante.',
+        'Use spatial behavior that fits Deconstructivism: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Deconstructivism: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Composición anti-ángulo recto, pliegues dominantes, volúmenes desplazados y coreografía de masa cinética.',
+        "Prioritize Deconstructivism's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Establece una gramática deconstructiva transferible: conflicto geométrico controlado, piel metálica plegada y desorientación espacial calculada. Debe sostener identidad formal sin depender de arquitectos o hitos concretos.',
+        'Create a style-card that translates Deconstructivism into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -119,23 +123,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern, asymmetry',
     style: {
       aesthetic:
-        'Neoclasico institucional de autoridad civica, orden axial y monumentalidad racional.',
+        "Neoclassical within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Neoclassical's specific style identity.",
       form_and_line:
-        'Columnatas, frontones triangulares, plintos escalonados y secuencias de eje largo con simetria estricta.',
+        'Define Neoclassical through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Marmol blanco, caliza clara, piedra fria y bronce dorado con sombras gris azuladas.',
+        'Use a Neoclassical-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol lateral que estria columnas, sombras porticadas profundas y acentos nocturnos monumentales.',
+        'Use lighting that makes Neoclassical recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Piedra lisa, marmol cincelado, granito pulido, yeso colado y cobre con verdin.',
+        'Use materials and textures that reinforce Neoclassical: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Monumental clasico de proporcion rigurosa y legibilidad institucional permanente.',
-      spatial_distortion: 'Perspectiva axial neutra con jerarquia frontal y escala ceremonial.',
-      atmosphere: 'Seria, estable, civica y atemporal.',
+        'Render Neoclassical with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Neoclassical: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Neoclassical: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Orden columnario, fronton canonico, basamento escalonado, masa civica y composicion perfectamente simetrica.',
+        "Prioritize Neoclassical's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier input en una gramatica neoclasica de eje, proporcion y masa petrea disciplinada. La autoridad debe surgir del orden tectonico y la claridad ceremonial, no de un capitolio, tribunal o fachada especifica.',
+        'Create a style-card that translates Neoclassical into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -145,24 +151,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'brick, square',
     style: {
       aesthetic:
-        'Parametricismo fluido de logica algoritmica, continuidad topologica y espacialidad casi liquida.',
+        "Parametric Architecture within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Parametric Architecture's specific style identity.",
       form_and_line:
-        'Curvas continuas, superficies sin junta visible, volumenes morfogeneticos y transiciones tipo cinta.',
+        'Define Parametric Architecture through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Blanco tecnico, gris frio gradual, plata liquida y azul hielo en senal luminica.',
+        'Use a Parametric Architecture-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Ambiente suave continuo, lineas de glow embebidas, iluminacion de borde y nucleos de volumen activos.',
+        'Use lighting that makes Parametric Architecture recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Compuestos lisos, hormigon de piel continua, paneleria GRP y membranas tensadas de alta precision.',
+        'Use materials and textures that reinforce Parametric Architecture: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Futurista de precision computacional, con lectura limpia de geometria compleja y detalle constructivo plausible.',
+        'Render Parametric Architecture with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Fluidez formal con profundidad sin quiebres, enfatizando continuidad vectorial.',
-      atmosphere: 'Elegante, avanzada, ligera y matematica.',
+        'Use spatial behavior that fits Parametric Architecture: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Parametric Architecture: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Vertices continuos, porosidad algoritmica, patrones parametricos y canales formales sin junta visible.',
+        "Prioritize Parametric Architecture's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier input en una gramatica parametrica donde continuidad de superficie, variacion algoritmica y precision constructiva operen como un solo sistema. Debe sentirse computacional y morfogenetico sin depender de un edificio heroico concreto.',
+        'Create a style-card that translates Parametric Architecture into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -172,24 +179,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'plain, grey',
     style: {
       aesthetic:
-        'Revival victoriano cromatico de ornamento pintado, identidad barrial y detalle carpintero exuberante.',
+        "Victorian Painted Lady within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Victorian Painted Lady's specific style identity.",
       form_and_line:
-        'Gingerbread trim, spindles torneados, salientes facetados, frontones decorados y verticalidad estrecha.',
+        'Define Victorian Painted Lady through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Pasteles complejos (azul/rosa/amarillo), lavanda, menta y molduras crema con rosa polvoso.',
+        'Use a Victorian Painted Lady-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz costera difusa con niebla suave, realce dorado de atardecer y brillo de molduras pintadas.',
+        'Use lighting that makes Victorian Painted Lady recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Siding de madera, pintura multicapa, calados finos, aleros con mensulas y tejuela decorativa.',
+        'Use materials and textures that reinforce Victorian Painted Lady: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Detalle residencial historico de alta legibilidad ornamental con alegria cromatica controlada.',
+        'Render Victorian Painted Lady with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva estable centrada en jerarquia de ornamentacion y capas cromaticas verticales.',
-      atmosphere: 'Nostalgica, festiva, civica y orgullosamente preservada.',
+        'Use spatial behavior that fits Victorian Painted Lady: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Victorian Painted Lady: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Esquemas tricromos, salientes facetados, tejuela fish-scale y carpinteria recortada de alta densidad.',
+        "Prioritize Victorian Painted Lady's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier input en una gramatica Painted Lady de molduras recortadas, color pastel estratificado y verticalidad carpintera festiva. La identidad debe sostenerse por lenguaje constructivo y alegria cromatica, no por postal victoriana ni por una calle preservada concreta.',
+        'Create a style-card that translates Victorian Painted Lady into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -199,22 +207,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'decoration, roof tiles',
     style: {
       aesthetic:
-        'Bauhaus arquitectónico de racionalismo industrial, antiornamento y legibilidad funcional explícita.',
+        "Bauhaus Architecture within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bauhaus Architecture's specific style identity.",
       form_and_line:
-        'Masas cúbicas, bandas lineales, cubiertas planas, asimetría planificada y estructura clara.',
+        'Define Bauhaus Architecture through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Base blanco-negro-gris con acentos puntuales de color-señal de baja frecuencia.',
+        'Use a Bauhaus Architecture-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Distribución diurna homogénea, sombras sobrias y ritmos lineales sin teatralización.',
+        'Use lighting that makes Bauhaus Architecture recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Revoque mineral mate, acero preciso, vidrio plano, linóleo y detalles metálicos tubulares.',
-      render_quality: 'Modernismo nítido de orden gráfico y verdad material.',
-      spatial_distortion: 'Estabilidad ortogonal con equilibrio de masas y asimetría medida.',
-      atmosphere: 'Precisa, progresiva, utilitaria y calmada.',
+        'Use materials and textures that reinforce Bauhaus Architecture: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Bauhaus Architecture with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Bauhaus Architecture: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Bauhaus Architecture: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Composición función-primero, bandas horizontales, planos limpios y señalética cromática mínima.',
+        "Prioritize Bauhaus Architecture's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Conserva una gramática Bauhaus transferible donde función, masa y estructura ordenen cada decisión visual. La asimetría debe ser racional y medible, nunca expresiva por capricho formal.',
+        'Create a style-card that translates Bauhaus Architecture into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -224,24 +235,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'square, boring',
     style: {
       aesthetic:
-        'Retrofuturismo Googie de optimismo atómico, velocidad visual y espectáculo comercial modernista.',
+        "Googie Architecture within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Googie Architecture's specific style identity.",
       form_and_line:
-        'Cantiléveres ascendentes, vectores boomerang, canopy en V, starbursts y acristalamientos angulares dinámicos.',
+        'Define Googie Architecture through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Primarios neón sobre neutros cromados, turquesa/rojo como anclas y amarillos mantequilla con naranja atómico.',
+        'Use a Googie Architecture-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Señalética brillante, difusiones plásticas retroiluminadas y bordes tipo marquee con secuencia luminosa.',
+        'Use lighting that makes Googie Architecture recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cromo pulido, terrazo brillante, Formica esmaltada, estuco pintado y reflejos duros de vidrio.',
+        'Use materials and textures that reinforce Googie Architecture: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Retro-futuro de media centuria con energía kitsch precisa y acabado optimista de alto contraste.',
+        'Render Googie Architecture with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Sesgo direccional y perspectiva levantada para sugerir movimiento continuo.',
-      atmosphere: 'Lúdica, veloz, nostálgica y espectacular.',
+        'Use spatial behavior that fits Googie Architecture: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Googie Architecture: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Motivos starburst, geometría de impulso, neón-cromo dominante y coreografía de voladizos.',
+        "Prioritize Googie Architecture's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática Googie transferible donde velocidad geométrica, exuberancia neón-cromo y optimismo atómico sean constantes visuales. Debe funcionar sin depender de la narrativa de un diner o carretera concreta.',
+        'Create a style-card that translates Googie Architecture into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -251,23 +263,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern',
     style: {
       aesthetic:
-        'Revival Tudor residencial con herencia entramada, asimetría pintoresca y calor histórico protector.',
+        "Tudor Revival within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Tudor Revival's specific style identity.",
       form_and_line:
-        'Retícula half-timber expuesta, cubiertas de fuerte pendiente, chimeneas verticales y carpintería plomada romboidal.',
+        'Define Tudor Revival through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Madera oscura sobre cal blanquecina, tierras terracota, verdes musgo y ocre envejecido.',
+        'Use a Tudor Revival-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Cielo difuso, brillo cálido interior de hogar y filtrado suave por vidrios emplomados.',
+        'Use lighting that makes Tudor Revival recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Madera envejecida, yeso de cal, ladrillo manual, vidrio facetado y cubierta con pátina climática.',
-      render_quality: 'Patrimonio doméstico de detalle constructivo sólido y atmósfera de arraigo.',
+        'Use materials and textures that reinforce Tudor Revival: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Tudor Revival with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Irregularidad pintoresca leve en cumbreras y entramados para reforzar artesanía premoderna.',
-      atmosphere: 'Íntima, protectora, nostálgica y terrenal.',
+        'Use spatial behavior that fits Tudor Revival: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Tudor Revival: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Half-timber contrastado, gable pronunciado, vidrio emplomado y núcleo térmico de hogar.',
+        "Prioritize Tudor Revival's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Conserva una gramática Tudor transferible basada en contraste madera-cal, asimetría pintoresca y calor de hogar. Debe transmitir continuidad histórica sin quedar reducida a una postal de cottage.',
+        'Create a style-card that translates Tudor Revival into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -278,24 +292,25 @@ export const GENERATED_STYLE_PRESETS = [
       'bare gray concrete dominance, smokestack industrial mood, greenwashing tech facade',
     style: {
       aesthetic:
-        'Bioclimatismo de envolvente viva, donde vegetación, estructura y clima operan como un único sistema metabólico.',
+        "Sustainable Green within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Sustainable Green's specific style identity.",
       form_and_line:
-        'Retícula base con protrusiones vegetales irregulares, bandas verdes en voladizo y capas estratificadas.',
+        'Define Sustainable Green through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Verdes estacionales, madera natural, reflejos de cielo, marrones de sustrato y floraciones puntuales.',
+        'Use a Sustainable Green-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol natural filtrado por copa vegetal, dapple dinámico y sombras estacionales por ángulo de incidencia.',
+        'Use lighting that makes Sustainable Green recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Hoja, corteza, madera, bambú, tierra compactada y áridos reciclados con lectura ecológica tangible.',
+        'Use materials and textures that reinforce Sustainable Green: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Visualización eco-arquitectónica de alto detalle con lógica de mantenimiento, riego y desempeño climático verosímil.',
+        'Render Sustainable Green with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Sensación de sobrecrecimiento controlado, con profundidad por capas de vegetación funcional.',
-      atmosphere: 'Regenerativa, respirable, cívica y optimista a largo plazo.',
+        'Use spatial behavior that fits Sustainable Green: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Sustainable Green: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Capas verdes profundas, corredores vivos, riego visible, bordes para biodiversidad y sombreamiento evapotranspirativo.',
+        "Prioritize Sustainable Green's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Formula una gramática verde transferible en la que vegetación, estructura y clima sean inseparables. La estética debe mostrar desempeño técnico real (sombra, drenaje, inercia, mantenimiento) además de densidad orgánica, aplicable a cualquier input.',
+        'Create a style-card that translates Sustainable Green into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -330,23 +345,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ornate, luxury retail gloss, corporate glass tower, consumer signage',
     style: {
       aesthetic:
-        'Constructivismo soviético de máquina cívica, monumentalidad ideológica y severidad programática.',
+        "Soviet Constructivist within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Soviet Constructivist's specific style identity.",
       form_and_line:
-        'Diagonales agresivas, prismas/cilindros interbloqueados, vectores estructurales expuestos y conectores suspendidos.',
+        'Define Soviet Constructivist through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Gris crudo, negro industrial, ocre desvaído y rojo propaganda como acento estratégico.',
+        'Use a Soviet Constructivist-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Cielo cubierto, dramatismo de ángulo bajo, sombras duras proyectadas y ritmo de hueco fabril.',
+        'Use lighting that makes Soviet Constructivist recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Hormigón bruto, revoque áspero, acero estructural, bloque de vidrio y placas atornilladas.',
+        'Use materials and textures that reinforce Soviet Constructivist: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Claridad diagramática de masas con legibilidad volumétrica alta y tono archivístico severo.',
-      spatial_distortion: 'Sensación de masas en tensión y volúmenes en suspensión controlada.',
-      atmosphere: 'Austera, colectiva, disciplinada y mecánico-utópica.',
+        'Render Soviet Constructivist with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Soviet Constructivist: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Soviet Constructivist: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Cantiléveres tensos, apoyos expuestos, conectores suspendidos, planos rojos de comando y estructura explícita.',
+        "Prioritize Soviet Constructivist's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática constructivista transferible donde la forma opere como manifiesto: conflicto geométrico, estructura sin ocultamiento y color político mínimo pero incisivo. Debe leerse como sistema-programa.',
+        'Create a style-card that translates Soviet Constructivist into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

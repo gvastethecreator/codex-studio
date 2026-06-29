@@ -13,16 +13,38 @@ tags:
   - mythic
   - african-myth
 visualDna:
-  aesthetic: West African epic memory language where cosmic lineage and oral history intertwine.
-  form_and_line: Circular storyteller cues, carved column rhythms, and braided canopy geometries.
-  color_palette: Indigo night, clay ochre, and brass sunlight.
-  lighting_setup: Fire bowl halos and starlit rim light defining communal rings.
-  material_texture: Packed earth, carved hardwood, dyed textiles, and hammered brass ornaments.
-  render_quality: Rich cinematic concept art with narrative clarity and cultural gravitas.
-  spatial_distortion: Concentric gathering layout emphasizing voice, rhythm, and collective focus.
-  atmosphere: Ancestral dignity, call-and-response memory, and cosmic continuity.
-  key_features: Griot dais cues, talking drum circle, constellation map marks, mask-alcove silhouettes.
-  creative_brief: Recast the input through griot star memory, where song preserves cosmic lineage without requiring a courtyard.
+  aesthetic: >-
+    Griot Star Memory Ring within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Griot Star Memory Ring's specific style identity.
+  form_and_line: >-
+    Define Griot Star Memory Ring through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Griot Star Memory Ring-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Griot Star Memory Ring recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Griot Star Memory Ring: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Griot Star Memory Ring with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Griot Star Memory Ring: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Griot Star Memory Ring: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Griot Star Memory Ring's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Griot Star Memory Ring into a portable visual system for 6. Mythic African
+    Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - photoreal
   - caricature

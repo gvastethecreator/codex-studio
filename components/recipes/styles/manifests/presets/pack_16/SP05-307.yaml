@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Melodrama deportivo de verano tardío, con rivalidad, duelo íntimo y crecimiento nostálgico.
-  form_and_line: Línea atlética limpia, gesto contenido y composición que alterna acción física y pausa emocional.
-  color_palette: Verdes soleados, naranjas de atardecer, blancos limpios y azules deslavados de verano tardío.
-  lighting_setup: Sol bajo cálido con contraluces amplios y sombras planas que sostienen melancolía ligera.
-  material_texture: Polvo seco, cuero cálido, tela funcional y grano fílmico de recuerdo deportivo.
-  render_quality: Acabado retro-atlético premium con lectura táctica de esfuerzo y subtexto romántico en respiraciones largas.
-  spatial_distortion: Perspectiva abierta con compresión selectiva en momentos de mirada y decisión sentimental.
-  atmosphere: Nostálgica, cálida, atlética, melancólica.
-  key_features: Luz estival, presión competitiva, pausa antes del esfuerzo, deseo contenido y crescendo emocional.
+  aesthetic: >-
+    Summer Sports Melodrama Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Summer Sports Melodrama Style's specific style identity.
+  form_and_line: >-
+    Define Summer Sports Melodrama Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Summer Sports Melodrama Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Summer Sports Melodrama Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Summer Sports Melodrama Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Summer Sports Melodrama Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Summer Sports Melodrama Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Summer Sports Melodrama Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Summer Sports Melodrama Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática reusable de deporte sentimental juvenil para cualquier prompt o imagen de entrada:
-    verano, competencia y maduración sin imponer baseball, diamantes, marcadores, dugouts ni adolescentes.
+    Create a style-card that translates Summer Sports Melodrama Style into a portable visual system for 11. 70s & 80s
+    Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-307.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

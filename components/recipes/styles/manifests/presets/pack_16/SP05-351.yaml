@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Resistencia de fondo nocturna, pacing mental, cohesión grupal y respiración progresiva.
-  form_and_line: Siluetas de avance eficiente, postura de economía física y acting de fatiga contenida.
-  color_palette: Azules nocturnos fríos, ámbar puntual y acentos discretos de cohesión grupal.
-  lighting_setup: Cadencia lumínica seriada, contraste bajo nocturno y halos de respiración en frío.
-  material_texture: Superficie húmeda fina, textil técnico, vapor de aliento y desgaste continuo.
-  render_quality: Frame deportivo introspectivo con claridad de spacing grupal, ritmo y esfuerzo acumulado.
-  spatial_distortion: Perspectiva de recorrido largo con compresión gradual de distancia y vector de avance continuo.
-  atmosphere: Determinada, fría, introspectiva y comunitaria.
-  key_features: Ritmo de luces, spacing de grupo, vapor respiratorio, continuidad de ruta abstracta y calma de esfuerzo.
+  aesthetic: >-
+    Long-Distance Night Endurance Style within 6. Sports, Competition & Performance: a reusable Anime Classics &
+    Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the
+    result transferable across subjects while preserving Long-Distance Night Endurance Style's specific style identity.
+  form_and_line: >-
+    Define Long-Distance Night Endurance Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Long-Distance Night Endurance Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Long-Distance Night Endurance Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Long-Distance Night Endurance Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Long-Distance Night Endurance Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Long-Distance Night Endurance Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Long-Distance Night Endurance Style: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Long-Distance Night Endurance Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica una gramática reusable de resistencia nocturna a cualquier prompt o imagen de entrada:
-    pacing, respiración y cohesión sin imponer running, campus, maratones, rutas ni farolas literales.
+    Create a style-card that translates Long-Distance Night Endurance Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-351.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

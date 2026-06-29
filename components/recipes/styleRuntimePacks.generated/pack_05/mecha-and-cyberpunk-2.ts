@@ -123,24 +123,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Extreme utilitarian anime wear where compact hardware, mud, rust, logistical pressure, and anti-glamour function replace spectacle',
+        "Compact Attrition Hardware within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Compact Attrition Hardware's specific style identity.",
       form_and_line:
-        'Volúmenes compactos blindados, ópticas mínimas abstractas, panelado funcional, proporciones bajas y ausencia de heroización formal.',
+        'Define Compact Attrition Hardware through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Verde oliva sucio, marrón barro, gris acero oxidado y rojo de testigo operativo mínimo.',
+        'Use a Compact Attrition Hardware-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz plomiza, rebote húmedo de lodo y lectura por focos funcionales de baja intensidad.',
+        'Use lighting that makes Compact Attrition Hardware recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Óxido activo, barro espeso, soldadura tosca, pintura descascarada y desgaste por fricción mecánica.',
+        'Use materials and textures that reinforce Compact Attrition Hardware: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Mecánica utilitaria de alta credibilidad con peso físico, suciedad persistente y enfoque anti-glamour.',
+        'Render Compact Attrition Hardware with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva baja, compresión de presión logística, visibilidad limitada y masa compacta en primer plano.',
-      atmosphere: 'Ruda, agotada y pragmática, sin épica.',
+        'Use spatial behavior that fits Compact Attrition Hardware: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Compact Attrition Hardware: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Low compact mass, utility chassis logic, mud-rust texture, survival materiality, compressed pressure, and anti-heroic function',
+        "Prioritize Compact Attrition Hardware's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use compact attrition hardware as worn-function grammar. Any prompt should feel low, heavy, disposable, repaired, and logistically stressed. Vehicles, factions, trenches, war, and hero spectacle are optional.',
+        'Create a style-card that translates Compact Attrition Hardware into a portable visual system for 7. Mecha & Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -151,24 +152,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Neo-tokusatsu anime melancholy with colossus-scale silhouettes, digital lattice motifs, clean heroic geometry, and nostalgic signal light',
+        "Tokusatsu Digital Grid Scale within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Tokusatsu Digital Grid Scale's specific style identity.",
       form_and_line:
-        'Contorno monumental limpio, apilado de escala por capas y overlays geométricos de precisión controlada.',
+        'Define Tokusatsu Digital Grid Scale through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Acero frío, cian eléctrico, magenta tenue de crepúsculo y blancos de energía puntuales.',
+        'Use a Tokusatsu Digital Grid Scale-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Contraluz de ícono heroico, emisión de grid holográfico y difusión atmosférica suave sobre key duro.',
+        'Use lighting that makes Tokusatsu Digital Grid Scale recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Compuesto sintético semibrillo, panelado depurado, interacción lumínica energía-armadura y desgaste mínimo.',
+        'Use materials and textures that reinforce Tokusatsu Digital Grid Scale: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado nítido tokusatsu-anime con legibilidad de silueta y limpieza emocional de alto contraste.',
+        'Render Tokusatsu Digital Grid Scale with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Compresión de profundidad para escalar la figura central y tensión foreground-midground de mundo miniaturizado.',
-      atmosphere: 'Heroica y resonante, con nostalgia tecnológica contenida.',
+        'Use spatial behavior that fits Tokusatsu Digital Grid Scale: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Tokusatsu Digital Grid Scale: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Colossal silhouette contrast, digital lattice, nostalgic tech glow, clean hero geometry, sentimental scale, and grid energy',
+        "Prioritize Tokusatsu Digital Grid Scale's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use SSSS.Gridman as style anchor for tokusatsu digital grid scale. Any prompt should feel huge, clean, signal-lit, and contemplatively heroic. If subject supports it, add colossus/robot scale hints or digital-lattice armor; cities, monsters, literal screens, and battle scenes remain optional.',
+        'Create a style-card that translates Tokusatsu Digital Grid Scale into a portable visual system for 7. Mecha & Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -179,24 +181,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Anti-naturalistic ignition anime with tricolor fire geometry, protest intensity, flat chromatic collision, and legible formal chaos',
+        "Tri-Fire Riot Geometry within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Tri-Fire Riot Geometry's specific style identity.",
       form_and_line:
-        'Aristas diagonales agresivas, siluetas icónicas abstractas, composición de póster y bloques de calor facetado.',
+        'Define Tri-Fire Riot Geometry through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Cian intenso, magenta caliente, amarillo ácido, negro carbón y blanco de choque térmico.',
+        'Use a Tri-Fire Riot Geometry-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Llama plana de alto croma, backlight térmico y rims duros para separar masas en conflicto.',
+        'Use lighting that makes Tri-Fire Riot Geometry recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Acabado gráfico semiplano, material termo-reactivo, hollín estilizado y overlays de energía lineal.',
+        'Use materials and textures that reinforce Tri-Fire Riot Geometry: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acción maximalista de lectura instantánea, con color-blocking extremo y control formal de caos ígneo.',
+        'Render Tri-Fire Riot Geometry with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva en diagonales violentas y compresión dramática para amplificar colisión heroica.',
-      atmosphere: 'Ardiente, rebelde y estruendosa, de protesta visual en combustión.',
+        'Use spatial behavior that fits Tri-Fire Riot Geometry: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Tri-Fire Riot Geometry: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Tricolor flame planes, angular riot geometry, flat extreme color, combative sanctity, readable chaos, and thermal protest pressure',
+        "Prioritize Tri-Fire Riot Geometry's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use tri-fire riot geometry as incendiary graphic grammar. Any prompt should feel urgent, flat-colored, angular, and rebellious. Hardware, cities, emergency roles, vehicles, and incident scenes are optional.',
+        'Create a style-card that translates Tri-Fire Riot Geometry into a portable visual system for 7. Mecha & Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -599,24 +602,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Metaphysical bio-mechanical opera with coral tectonics, sonic symbolism, sacred scale, and melancholic ritual structure',
+        "Coral Resonance Liturgy within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Coral Resonance Liturgy's specific style identity.",
       form_and_line:
-        'Silueta biomecánica orgánico-mecánica, panelado litúrgico y curvas de coral acopladas a aristas ceremoniales.',
+        'Define Coral Resonance Liturgy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azul abisal y cobalto litúrgico con acentos coral rojo, blanco sacramental y negro de vacío acuoso.',
+        'Use a Coral Resonance Liturgy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Halo ceremonial azul, contraluces de barrera urbana y destellos resonantes sincronizados al motivo musical.',
+        'Use lighting that makes Coral Resonance Liturgy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Carcasa nacarada, estrías coralinas, metal húmedo, pátina salina y superficies de energía translúcida.',
+        'Use materials and textures that reinforce Coral Resonance Liturgy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Alta definición simbólica con legibilidad de iconografía sacra y dramatismo de escala operática.',
+        'Render Coral Resonance Liturgy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad ceremonial con compresión axial hacia el ícono central y perspectiva de himno visual.',
-      atmosphere: 'Sagrada, enigmática y doliente, como himno visual en cámara lenta.',
+        'Use spatial behavior that fits Coral Resonance Liturgy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Coral Resonance Liturgy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Coral biomechanical forms, alien blue, sonic geometry, liturgical scale, resonant symmetry, and sacred machine melancholy',
+        "Prioritize Coral Resonance Liturgy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use RahXephon as style anchor for coral resonance liturgy. Any prompt should feel biotectonic, musical, sacred, and monumental. Mecha, cities, temples, entities, battles, and musical props are optional.',
+        'Create a style-card that translates Coral Resonance Liturgy into a portable visual system for 7. Mecha & Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -627,24 +631,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Tragic operational anime austerity with drone geometry, abrasive dust, low-frequency grief, and systemic dehumanization',
+        "Dustfront Drone Lament within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Dustfront Drone Lament's specific style identity.",
       form_and_line:
-        'Geometría baja y artrópoda abstracta, articulación funcional y composición táctica de horizonte horizontal.',
+        'Define Dustfront Drone Lament through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Arena desaturada, acero pálido, óxido mate y señales de interfaz en rojo de alerta contenido.',
+        'Use a Dustfront Drone Lament-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Cielo lechoso de guerra, contraluces de polvo en suspensión y pantallas tácticas como fuente secundaria.',
+        'Use lighting that makes Dustfront Drone Lament recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Blindaje erosionado, abrasión eólica, barro seco, arañazos de campo y polímero envejecido.',
+        'Use materials and textures that reinforce Dustfront Drone Lament: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Realismo anime táctico con énfasis en desgaste operacional y lectura de sistema.',
+        'Render Dustfront Drone Lament with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva terrestre comprimida con telemetría superpuesta y sensación de distancia sin salida.',
-      atmosphere: 'Sombría, ventosa y fatalista, de duelo militar silencioso.',
+        'Use spatial behavior that fits Dustfront Drone Lament: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Dustfront Drone Lament: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Drone-like hardware grammar, command overlays, abrasive dust, operational ruin, collective loss, and low-frequency emotion',
+        "Prioritize Dustfront Drone Lament's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use 86 as style anchor for dustfront drone lament. Any prompt should express disposability, remote pressure, abrasive terrain, and muted grief. Units, fronts, battles, spider machines, soldiers, and uniforms are optional.',
+        'Create a style-card that translates Dustfront Drone Lament into a portable visual system for 7. Mecha & Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -655,24 +660,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Austere survival anime in hostile scale, with closed-habitat discipline, cosmic emptiness, defensive biotechnology, and everyday last-resort ritual',
+        "Vacuum-Fortress Survival Discipline within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Vacuum-Fortress Survival Discipline's specific style identity.",
       form_and_line:
-        'Estructura modular cerrada, ortogonalidad funcional, perfiles sobrios y bloques volumétricos de hábitat.',
+        'Define Vacuum-Fortress Survival Discipline through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Gris grafito, verde tenue de sistemas vitales, blanco clínico y negro cósmico profundo.',
+        'Use a Vacuum-Fortress Survival Discipline-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación funcional de habitáculo, franjas frías de emergencia y contraluz de vacío exterior.',
+        'Use lighting that makes Vacuum-Fortress Survival Discipline recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Aleación reciclada, panelado utilitario, sellos de presión, marcas de mantenimiento y superficies de uso continuo.',
+        'Use materials and textures that reinforce Vacuum-Fortress Survival Discipline: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Sci-fi de precisión sobria con foco en escala interior y sensación de ecosistema cerrado.',
+        'Render Vacuum-Fortress Survival Discipline with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad longitudinal de hábitat y contraste radical entre densidad interna y exterior infinito.',
-      atmosphere: 'Ascética, aislada y resiliente, con tensión de extinción permanente.',
+        'Use spatial behavior that fits Vacuum-Fortress Survival Discipline: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Vacuum-Fortress Survival Discipline: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Closed-habitat geometry, operational uniformity, hostile void, defensive biotechnology, survival ritual, and systemic austerity',
+        "Prioritize Vacuum-Fortress Survival Discipline's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Knights of Sidonia as style anchor for vacuum-fortress survival discipline. Any prompt should feel sealed, procedural, isolated, and cosmically threatened. Ships, decks, cities, uniforms, pilots, and space battles are optional.',
+        'Create a style-card that translates Vacuum-Fortress Survival Discipline into a portable visual system for 7. Mecha & Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -683,23 +689,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Total-attrition tactical anime apocalypse with annihilation interfaces, critical alarms, mass-threat abstraction, and command-pressure geometry',
+        "Extinction Interface Command within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Extinction Interface Command's specific style identity.",
       form_and_line:
-        'Silueta vectorial dura, composición de comando en capas y masa hostil tratada como volumen estadístico.',
+        'Define Extinction Interface Command through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Acero opaco, rojo de alarma, humo gris, naranja de detonación y verde instrumental de HUD.',
-      lighting_setup: 'Parpadeo de alertas, backlight de crisis y luminancia electrónica de mando.',
+        'Use a Extinction Interface Command-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Extinction Interface Command recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie golpeada, concreto fracturado, residuos térmicos y lluvia sobre materiales bélicos.',
+        'Use materials and textures that reinforce Extinction Interface Command: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Sci-fi táctico con claridad operativa, presión visual alta y escala de colapso civilizatorio.',
+        'Render Extinction Interface Command with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad por enjambre y capas de táctica superpuesta, con compresión de decisiones en tiempo crítico.',
-      atmosphere: 'Desesperada, militarizada y sacrificial, de urgencia sostenida.',
+        'Use spatial behavior that fits Extinction Interface Command: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Extinction Interface Command: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Control overlays, critical alarms, mass threat fields, evacuation geometry, urban wear, and command-pressure severity',
+        "Prioritize Extinction Interface Command's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Muv-Luv Alternative as style anchor for extinction interface command. Any prompt should feel statistically overwhelmed, tactically compressed, and near-collapse. Suits, cities, enemies, battles, cockpits, and war scenes are optional.',
+        'Create a style-card that translates Extinction Interface Command into a portable visual system for 7. Mecha & Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -710,24 +718,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Eighties pop-cyber rebellion with glossy nocturnal surfaces, media holography, youth freedom pressure, and concealed simulation unease',
+        "Pop-Cyber Simulation Gloss within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Pop-Cyber Simulation Gloss's specific style identity.",
       form_and_line:
-        'Diseño aerodinámico, siluetas juveniles estilizadas y geometría urbana de cartelería holográfica.',
+        'Define Pop-Cyber Simulation Gloss through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Magenta neón, azul eléctrico, negro asfalto, cromo rosado y violeta sintético de videoclub futurista.',
+        'Use a Pop-Cyber Simulation Gloss-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Reflejos húmedos, signage holográfico pulsante y highlights de vitrina nocturna.',
+        'Use lighting that makes Pop-Cyber Simulation Gloss recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cuero brillante, plástico translúcido, cromo pulido, lluvia fina y granulado retro de pantalla.',
+        'Use materials and textures that reinforce Pop-Cyber Simulation Gloss: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Retrofuturo anime de acabado glossy con energía urbana y legibilidad de diseño pop.',
+        'Render Pop-Cyber Simulation Gloss with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad de corredor luminoso con fuga alta velocidad y capas de publicidad simulada.',
-      atmosphere: 'Seductora, rebelde y revelatoria, con falsedad sistémica bajo glamour.',
+        'Use spatial behavior that fits Pop-Cyber Simulation Gloss: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Pop-Cyber Simulation Gloss: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Pop-cyber glamour, media holography, glossy escape lines, retro fashion light, simulation signals, and nocturnal synthetic shine',
+        "Prioritize Pop-Cyber Simulation Gloss's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Megazone 23 as style anchor for pop-cyber simulation gloss. Any prompt should feel glossy, free, mediated, and secretly synthetic. Highways, vehicles, idols, city nights, screens, and chase scenes are optional.',
+        'Create a style-card that translates Pop-Cyber Simulation Gloss into a portable visual system for 7. Mecha & Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -738,24 +747,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Classic hot-blooded anime heroism built from technical discipline, monumental ignition, direct emotion, luminous sacrifice, and rising scale',
+        "Monumental Ignition Sacrifice within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Monumental Ignition Sacrifice's specific style identity.",
       form_and_line:
-        'Silueta robusta abstracta, diagonales de lanzamiento, gestualidad enfática, verticalidad monumental y contornos de determinación.',
+        'Define Monumental Ignition Sacrifice through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azul técnico, rojo heroico, blanco de flare estelar, negro profundo y amarillo de núcleo energético.',
+        'Use a Monumental Ignition Sacrifice-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Fluorescente técnico, flare de ignición y bañado estelar de escala astronómica.',
+        'Use lighting that makes Monumental Ignition Sacrifice recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Carcasa marcada, juntas técnicas visibles, humo térmico y brillo energético de alto contraste.',
+        'Use materials and textures that reinforce Monumental Ignition Sacrifice: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Anime épico clásico con claridad emocional, expansión de escala y dramatismo de entrega final.',
+        'Render Monumental Ignition Sacrifice with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Transición de escala íntima a cósmica con foreshortening heroico y verticalidad monumental.',
-      atmosphere: 'Triunfante, emotiva y colosal, de épica sincera.',
+        'Use spatial behavior that fits Monumental Ignition Sacrifice: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Monumental Ignition Sacrifice: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Launch diagonals, luminous core, colossal verticality, direct emotion, sacrificial iconography, and astronomical expansion',
+        "Prioritize Monumental Ignition Sacrifice's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use monumental ignition sacrifice as vertical-epic grammar. Any prompt should feel disciplined, lit from within, ascending, and emotionally direct. Launch pads, operators, training, machines, and narrative finales are optional.',
+        'Create a style-card that translates Monumental Ignition Sacrifice into a portable visual system for 7. Mecha & Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -766,24 +776,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Pop-cosmic anime exuberance where scale elasticity, saturated color, impossible spectacle, and hidden sentiment collide',
+        "Bubblegum Cosmic Overdrive within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bubblegum Cosmic Overdrive's specific style identity.",
       form_and_line:
-        'Líneas dinámicas estilizadas, poses expansivas, anatomía de acción expresiva no literal y curvas pop de alto impulso.',
+        'Define Bubblegum Cosmic Overdrive through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Rosa bubblegum, azul eléctrico, amarillo solar, violeta espacial y blanco de flare emocional.',
+        'Use a Bubblegum Cosmic Overdrive-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Resplandores cósmicos saturados, contraluces de explosión y gradientes pop de alto impacto cromático.',
+        'Use lighting that makes Bubblegum Cosmic Overdrive recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie brillante cartoon-tech, bloom de energía, trazas de velocidad y detalles técnicos simplificados.',
+        'Use materials and textures that reinforce Bubblegum Cosmic Overdrive: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Espectáculo anime de escala mutable con lectura pop inmediata y dramatismo afectivo debajo del caos.',
+        'Render Bubblegum Cosmic Overdrive with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Warps de tamaño, perspectiva juguetona y composición que alterna micro y macro en el mismo frame.',
-      atmosphere: 'Exultante, extraña y conmovedora, de caos colorido con corazón.',
+        'Use spatial behavior that fits Bubblegum Cosmic Overdrive: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Bubblegum Cosmic Overdrive: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Saturated pop color, mutable scale, youthful energy, impossible spectacle, elastic geometry, and heart under chromatic chaos',
+        "Prioritize Bubblegum Cosmic Overdrive's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use bubblegum cosmic overdrive as elastic-pop scale grammar. Any prompt should feel huge, joyful, impossible, and secretly sincere. Machines, pilots, galaxies, roles, and fixed worldbuilding are optional.',
+        'Create a style-card that translates Bubblegum Cosmic Overdrive into a portable visual system for 7. Mecha & Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {

@@ -158,16 +158,24 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Materials',
     negativePrompt: 'plastic, metal',
     style: {
-      aesthetic: 'Glazed ceramic material treatment',
-      form_and_line: 'Smooth curves',
-      color_palette: 'White, painted details, hand-glazed accents',
-      lighting_setup: 'Soft gloss, ceramic luster',
-      material_texture: 'Smooth, fragile, vitreous sheen',
-      render_quality: 'Doll, fine china, collectible-grade',
-      atmosphere: 'Delicate, creepy, period-piece elegance',
-      key_features: 'Glaze, crackle-line detail',
+      aesthetic:
+        "Porcelain within 2. Materials: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Porcelain's specific style identity.",
+      form_and_line:
+        'Define Porcelain through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Porcelain-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Porcelain recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Porcelain: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Porcelain with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      atmosphere:
+        'Set a mood that belongs to Porcelain: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Porcelain's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Smooth as frozen milk, the vitreous glaze catches light with the restraint of fine china — hand-painted details trace floral geometries across curved surfaces, and crackle lines web through the finish like frozen lightning. There is something unsettling in the perfection, a doll-like stillness that borders on the uncanny. Period-piece elegance meets the fragility of a collectible never meant to be touched. Apply Porcelain as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        'Create a style-card that translates Porcelain into a portable visual system for 2. Materials. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {

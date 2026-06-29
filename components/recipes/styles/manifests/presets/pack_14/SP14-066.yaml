@@ -13,16 +13,38 @@ tags:
   - mythic
   - african-myth
 visualDna:
-  aesthetic: Rainmaker commons engine where ritual infrastructure manages drought as shared fate.
-  form_and_line: Tower cluster cues, channel grids, and stepped cisterns.
-  color_palette: Slate, copper, and storm teal.
-  lighting_setup: Stormfront light with tower beacon pulses.
-  material_texture: Patinated metal, clay channels, and wet stone.
-  render_quality: Infrastructure-myth render with storm-channel readability.
-  spatial_distortion: Wide infrastructural rhythm made from clustered verticals, channel grids, and cistern-like geometry.
-  atmosphere: Urgency, collective effort, and hopeful tension.
-  key_features: Rain towers, cistern plaza cues, cloud drum platforms.
-  creative_brief: 'Transform the input through rainmaker commons engine: rain towers, copper channels, storm-teal light, cistern geometry, and beacon pulses should make any subject feel like shared weather infrastructure without requiring a plateau complex.'
+  aesthetic: >-
+    Rainmaker Commons Engine within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Rainmaker Commons Engine's specific style identity.
+  form_and_line: >-
+    Define Rainmaker Commons Engine through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Rainmaker Commons Engine-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Rainmaker Commons Engine recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Rainmaker Commons Engine: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Rainmaker Commons Engine with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Rainmaker Commons Engine: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Rainmaker Commons Engine: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Rainmaker Commons Engine's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Rainmaker Commons Engine into a portable visual system for 6. Mythic African
+    Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - photoreal
   - cyberpunk-city

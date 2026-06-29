@@ -12,16 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Cyber-aislamiento con mística de red, donde la identidad se vuelve señal y la intimidad, interfaz.
-  form_and_line: Línea fina y distanciada, acting minimal de disociación y composición de terminal obsesiva.
-  color_palette: Verdes CRT, grises de vacío periférico, azules fríos y blancos de estática electrónica.
-  lighting_setup: Luz baja de monitor, sombra blanda de madrugada y parpadeo digital como pulso emocional.
-  material_texture: Cableado denso, plástico viejo de terminal, plano desaturado y grano de señal analógica.
-  render_quality: Acabado premium 90s con tensión psicológica persistente y estética proto-red inquietante.
-  spatial_distortion: Espacio íntimo comprimido y vacío periférico para sensación de presencia fantasma.
-  atmosphere: Aislada, conectada, susurrante, extraña.
-  key_features: Clústeres de cables, glow de CRT, overlays de estática y mirada distante en tránsito digital.
-  creative_brief: Construye una gramática reusable de desmaterialización identitaria en red para cualquier sujeto, combinando silencio periférico, densidad electrónica y ambigüedad existencial sin imponer dormitorios, terminales, cables ni suburbios literales.
+  aesthetic: >-
+    Wired Identity Dissolution Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Wired Identity Dissolution Style's specific style identity.
+  form_and_line: >-
+    Define Wired Identity Dissolution Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Wired Identity Dissolution Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Wired Identity Dissolution Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Wired Identity Dissolution Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Wired Identity Dissolution Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Wired Identity Dissolution Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Wired Identity Dissolution Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Wired Identity Dissolution Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Wired Identity Dissolution Style into a portable visual system for 3. 90s Golden
+    Era. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-169.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

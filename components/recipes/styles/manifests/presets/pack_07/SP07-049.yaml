@@ -13,21 +13,37 @@ tags:
   - landscape-and-garden-systems
 visualDna:
   aesthetic: >-
-    Formalismo de greensward competitivo de alto mantenimiento, donde topografia, mantenimiento y toma de decisiones se
-    codifican en el terreno.
-  form_and_line: Franjas de siega en cinta, concavidades mineralizadas tipo bunker, mesetas cortas de precision y corredores visuales dirigidos.
-  color_palette: Vibrant green, sand mineral, cool sky blue, striped mow contrast, water-teal accents, hazard-marker yellow
-  lighting_setup: Neblina de manana, angulo bajo sobre cesped de precision, brillo de rocio y dramatismo de sombra en vacios excavados.
-  material_texture: Cesped corto de corte preciso, arena rastrillada, agua lisa contenida y marcadores de mantenimiento de alta visibilidad.
-  render_quality: Visualizacion precision-turf con lectura de mantenimiento, seleccion de trayectorias y control de superficie a distancia.
-  spatial_distortion: None
-  atmosphere: Calma controlada, concentracion competitiva y obsesion curada por la superficie.
-  key_features: Franjas de siega, recortes de arena nitidos, focos de objetivo y coreografia de riesgo superficial.
+    Tournament Turf Strategy within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Tournament Turf Strategy's specific style identity.
+  form_and_line: >-
+    Define Tournament Turf Strategy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Tournament Turf Strategy-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Tournament Turf Strategy recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Tournament Turf Strategy: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Tournament Turf Strategy with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Tournament Turf Strategy: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Tournament Turf Strategy: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Tournament Turf Strategy's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Convierte cualquier superficie en estrategia de precision: franjas de siega, recortes minerales, rocio, agua
-    contenida y decisiones de recorrido legibles sin exigir hoyos, banderas, jugadores o campo deportivo literal. Debe
-    sentirse mantenido con obsesion competitiva, no como paisaje verde generico. Conserva corte de precision, riesgo
-    superficial, escala de mantenimiento y estrategia de recorrido sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Tournament Turf Strategy into a portable visual system for 4. Landscape And
+    Garden Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - weeds
   - unmanaged meadow

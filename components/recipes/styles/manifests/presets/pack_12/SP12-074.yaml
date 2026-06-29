@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Gramática card-duel clandestina con mindgame, presión psicológica, avatares holográficos y lectura de mano.
-  subject_treatment: Convierte el input en duelista, avatar de mazo, carta, efecto o señal de ventaja competitiva.
-  color_and_tone: Púrpura profundo, cian y amarillo neon para separar jugadores, efectos y estado crítico.
-  lighting_and_shadow: Señalética fracturada como key light focal para mesa y zonas de público.
-  texture_and_material: Asfalto mojado, vidrio urbano, metal liviano y reflejos de interfaz holográfica.
-  camera_and_composition: Foco central, ventanas de jugada y presión de público sin exigir alley o mesa literal.
-  atmosphere_and_mood: Tensa, estilizada y de apuestas altas.
-  rendering_and_quality: 'Card-duel gameplay screencap: turn pressure, crowd advantage, alley tactics, readable play space.'
+  aesthetic: >-
+    Prism Alley Card Duel within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Prism Alley Card Duel's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Prism Alley Card Duel's visual grammar: readable silhouette, role cues, controlled detail
+    density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Prism Alley Card Duel: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Prism Alley Card Duel: legible depth, purposeful highlights, readable focal zones, and
+    atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Prism Alley Card Duel's material logic: tactile detail, coherent finish, and texture choices
+    that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Prism Alley Card Duel's staging logic: strong focal hierarchy, stable readable framing, and spatial
+    rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Prism Alley Card Duel's mood through environment, color, light, and texture. Keep it distinct from neighboring
+    presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

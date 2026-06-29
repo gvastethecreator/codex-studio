@@ -12,20 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Fantasía biomórfica de extrañeza onírica, con tecnología ritual, niebla viva y siluetas quiméricas.
-  form_and_line: Siluetas quiméricas con línea orgánico-metálica, poses heroicas y contorno clásico de cel.
-  color_palette: Verdes brumosos, violetas de crepúsculo arcano, metales opacos y acentos lumínicos etéreos.
-  lighting_setup: Niebla luminosa como fuente principal, key suave de contracampo y sombras planas que conservan legibilidad retro.
-  material_texture: Quitina metálica, membranas translúcidas, materia húmeda fantástica y ruido fílmico analógico.
-  render_quality: Acabado premium retro-fantasy con claridad de diseño híbrido y atmósfera de tensión irreal sostenida.
-  spatial_distortion: Profundidad brumosa con distorsión ligera de escala para reforzar mundo no terrestre.
-  atmosphere: Extraña, brumosa, heroica, ultraterrena.
-  key_features: Niebla viva, siluetas quiméricas, biología mecánica, brillo ritual y relieve fantástico abstracto.
+  aesthetic: >-
+    Biomorphic Mist Ritual Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Biomorphic Mist Ritual Style's specific style identity.
+  form_and_line: >-
+    Define Biomorphic Mist Ritual Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Biomorphic Mist Ritual Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Biomorphic Mist Ritual Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Biomorphic Mist Ritual Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Biomorphic Mist Ritual Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Biomorphic Mist Ritual Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Biomorphic Mist Ritual Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Biomorphic Mist Ritual Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de fantasía biomórfica para cualquier prompt o imagen de entrada:
-    niebla, quimera y tecnología ritual. Insectos, espadas, mechas orgánicos o
-    reliquias vivas pueden transformar el input si sostienen el estilo, sin
-    fijar guerra ni escena de combate.
+    Create a style-card that translates Biomorphic Mist Ritual Style into a portable visual system for 11. 70s & 80s
+    Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-316.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

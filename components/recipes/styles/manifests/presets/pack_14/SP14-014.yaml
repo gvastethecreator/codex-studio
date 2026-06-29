@@ -13,16 +13,37 @@ tags:
   - mythic
   - greek-myth
 visualDna:
-  aesthetic: Greek myth judgment noir where titanic law is pronounced through storm-lit marble and chthonic pressure.
-  form_and_line: Marble authority symmetry, armored drapery silhouettes, thunderbolt sigil geometry, and titan-scale vertical pressure.
-  color_palette: Aegean blue-black, weathered marble ivory, and oxidized gold.
-  lighting_setup: Lightning flashes with torch basin underlight.
-  material_texture: Cracked marble steps, bronze laurel crowns, wet stone dust, and ceremonial drapery.
-  render_quality: Prestige cinematic concept art with mythic scale and sharp icon readability.
-  spatial_distortion: Rising judgment perspective toward a central force without requiring a tribunal.
-  atmosphere: Epic authority, ancestral dread, and juridical grandeur.
-  key_features: Titan-mask cues, oath tablets, storm-lashed marble, sacrificial fire accents, and oxidized-gold law.
-  creative_brief: 'Judge the input through Aegean titan authority: Aegean blue-black fields, cracked marble ivory, oxidized gold, lightning cuts, and chthonic underlight should make form and light feel mythically sentenced without requiring a court, colonnade, judge, sacrifice, or Greek tableau.'
+  aesthetic: >-
+    Aegean Titan Judgment within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Aegean Titan Judgment's specific style identity.
+  form_and_line: >-
+    Define Aegean Titan Judgment through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Aegean Titan Judgment-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Aegean Titan Judgment recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Aegean Titan Judgment: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Aegean Titan Judgment with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Aegean Titan Judgment: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Aegean Titan Judgment: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Aegean Titan Judgment's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Aegean Titan Judgment into a portable visual system for 3. Mythic Pantheons &
+    Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cheerful

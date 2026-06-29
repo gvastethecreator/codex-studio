@@ -144,17 +144,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Documentary And Street',
     negativePrompt: 'tourist trap, selfie',
     style: {
-      aesthetic: 'Travel-editorial wanderlust',
-      form_and_line: 'Inviting wide composition',
-      color_palette: 'Vibrant, inviting',
-      lighting_setup: 'Golden hour',
-      material_texture: 'Localized tactile detail',
-      render_quality: 'Travel-magazine polish',
-      spatial_distortion: 'None',
-      atmosphere: 'Adventurous, beautiful',
-      key_features: 'Arrival energy',
+      aesthetic:
+        "Travel Photography within 4. Documentary And Street: a reusable Photography & Realism visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Travel Photography's specific style identity.",
+      form_and_line:
+        'Define Travel Photography through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Travel Photography-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Travel Photography recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Travel Photography: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Travel Photography with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Travel Photography: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Travel Photography: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Travel Photography's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Travel photography turns any subject into an inviting arrival: warm golden light, wide composition, vibrant palette, tactile local detail, and polished wanderlust framing. Keep Condé Nast escapism without requiring landmarks, foreign places, shorelines, or tourist narrative.',
+        'Create a style-card that translates Travel Photography into a portable visual system for 4. Documentary And Street. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {

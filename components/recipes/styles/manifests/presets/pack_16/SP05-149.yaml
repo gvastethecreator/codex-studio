@@ -12,20 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Comedia de pertenencia juvenil en escalada shonen, con heráldica pop, rito de compromiso y energía de clan.
-  form_and_line: Línea digital expresiva, poses grupales asimétricas y transición visual de gag cotidiano a solemnidad heroica.
-  color_palette: Primarios intensos de acción 2000s, negros ceremoniales, blancos limpios y acentos fuego para activación emocional.
-  lighting_setup: Highlights pulidos de comedia, contraste medio de ceremonia y rim energético en símbolos de pertenencia.
-  material_texture: Tela formal, emblemas gráficos, metal pulido pequeño y compositing digital limpio con grano mínimo.
-  render_quality: Acabado premium de shonen mafioso con lectura clara de jerarquía de clan y evolución de tono.
-  spatial_distortion: Encuadres de juramento grupal, diagonales de escalada y profundidad comprimida hacia símbolo central.
-  atmosphere: Ruidosa, cómica, leal, incendiaria.
-  key_features: Motivos heráldicos, mentoría excéntrica sugerida, activación circular y contraste gag-solemnidad en escalada.
+  aesthetic: >-
+    Clan Comedy Escalation Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Clan Comedy Escalation Style's specific style identity.
+  form_and_line: >-
+    Define Clan Comedy Escalation Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Clan Comedy Escalation Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Clan Comedy Escalation Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Clan Comedy Escalation Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Clan Comedy Escalation Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Clan Comedy Escalation Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Clan Comedy Escalation Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Clan Comedy Escalation Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática reusable de clan-comedy-escalation para cualquier
-    sujeto: pertenencia juvenil, rito pop, jerarquía afectiva y acción de
-    compromiso sin imponer escuela, mafia, trajes, anillos, mentores, clanes
-    literales ni duelos.
+    Create a style-card that translates Clan Comedy Escalation Style into a portable visual system for 2. 2000s
+    Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-149.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

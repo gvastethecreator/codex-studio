@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Gramática dungeon-raid nocturna con espinas arcanas, asalto coordinado y capas defensivas.
-  subject_treatment: Aplica roles de brecha/soporte/control/eliminación al input, o conviértelo en barrera orgánica, trampa o punto de entrada.
-  color_and_tone: Azul lunar, verde oscuro y rojo ritual para lectura de ruta, trampa y objetivo.
-  lighting_and_shadow: Antorchas escasas, niebla plateada y sombras profundas para windows de entrada.
-  texture_and_material: Piedra mojada, enredaderas hostiles, hierro antiguo y barreras orgánicas activas.
-  camera_and_composition: Punto de entrada claro, rutas secundarias y capas defensivas sin exigir castillo o murallas.
-  atmosphere_and_mood: Calculada, valiente y tensa en cooperación.
-  rendering_and_quality: 'Raid-opening gameplay frame: moonlit access, threat layers, tactical priority, escape routes readable.'
+  aesthetic: >-
+    Thorn Castle Moon Raid within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Thorn Castle Moon Raid's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Thorn Castle Moon Raid's visual grammar: readable silhouette, role cues, controlled detail
+    density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Thorn Castle Moon Raid: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Thorn Castle Moon Raid: legible depth, purposeful highlights, readable focal zones, and
+    atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Thorn Castle Moon Raid's material logic: tactile detail, coherent finish, and texture choices
+    that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Thorn Castle Moon Raid's staging logic: strong focal hierarchy, stable readable framing, and spatial
+    rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Thorn Castle Moon Raid's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

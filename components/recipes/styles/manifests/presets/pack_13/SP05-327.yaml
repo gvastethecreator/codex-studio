@@ -12,19 +12,38 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Melodrama clásico de postcard-memory, con congelado emocional y glamour luminoso de alto voltaje romántico.
-  form_and_line: Contorno clásico nítido, inking dramático cargado y acentos de brillo tipo estallido sentimental.
-  color_palette: Sepia gold, crimson rose, cream white, royal blue, amber light, filmic mauve
-  lighting_setup: Key teatral en spot, flares en highlight, glare de congelado y contraluz de escenario melodramático.
-  material_texture: Grano fílmico suave, bloom cel, brillo aerografiado y tactilidad de papel postal.
-  render_quality: Frame icónico de memoria dramática con composición concentrada y claridad de gesto emocional.
-  spatial_distortion: Iconic freeze composition, diagonal framing, symbolic overlay space, and concentrated emotional scale shifts
-  atmosphere: Nostálgica, intensa y luminosa, suspendida en un instante absoluto.
-  key_features: Freeze-frame postal, líneas de highlight dramático, overlays florales simbólicos y confrontación emocional.
+  aesthetic: >-
+    Osamu Dezaki - Postcard Memory Freeze within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Osamu Dezaki - Postcard Memory Freeze's specific style identity.
+  form_and_line: >-
+    Define Osamu Dezaki - Postcard Memory Freeze through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Osamu Dezaki - Postcard Memory Freeze-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Osamu Dezaki - Postcard Memory Freeze recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Osamu Dezaki - Postcard Memory Freeze: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Osamu Dezaki - Postcard Memory Freeze with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Osamu Dezaki - Postcard Memory Freeze: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Osamu Dezaki - Postcard Memory Freeze: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Osamu Dezaki - Postcard Memory Freeze's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática postcard-freeze reusable donde el tiempo se detiene
-    pero la emoción escala: brillo glam, símbolos florales y encuadre de
-    melodrama deben sostener identidad sin escena fija.
+    Create a style-card that translates Osamu Dezaki - Postcard Memory Freeze into a portable visual system for 12.
+    Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - casual snapshot
   - low-drama realism
@@ -36,7 +55,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-327.webp
 attributes:
-  negativePrompt: casual snapshot, low-drama realism, flat documentary lighting, cluttered background, muddy color, weak focal emotion, generic modern polish
+  negativePrompt: >-
+    casual snapshot, low-drama realism, flat documentary lighting, cluttered background, muddy color, weak focal
+    emotion, generic modern polish
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

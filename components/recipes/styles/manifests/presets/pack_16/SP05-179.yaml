@@ -12,19 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Cel anime 90s deportivo de rivalidad frontal, energía juvenil, esfuerzo sudado y carisma underdog.
-  form_and_line: Línea atlética, acting competitivo legible, diagonales de impulso, anatomía en tensión y gestos de remontada.
-  color_palette: Miel cálida, rojos y azules limpios, blanco intenso, sombra de esfuerzo y naranja acento de energía.
-  lighting_setup: Luz limpia de alto rebote, reflejos cálidos, rim de esfuerzo físico y contraste claro sobre gestos.
-  material_texture: Superficie encerada abstracta, tela sudada, grano clásico de anime deportivo y brillo de movimiento rápido.
-  render_quality: Acabado premium 90s con claridad táctica, emoción coral y ritmo de superación sin fijar deporte específico.
-  spatial_distortion: Perspectiva dinámica de acción media, líneas de velocidad y encuadres bajos para enfatizar salto, choque o avance.
-  atmosphere: Competitiva, sudada, esperanzadora, magnética.
-  key_features: Diagonales deportivas, reflejos cálidos, gestos de esfuerzo, química de equipo, encuadre de rivalidad y ritmo de remontada.
+  aesthetic: >-
+    Warm Rivalry Portrait Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Warm Rivalry Portrait Style's specific style identity.
+  form_and_line: >-
+    Define Warm Rivalry Portrait Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Warm Rivalry Portrait Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Warm Rivalry Portrait Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Warm Rivalry Portrait Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Warm Rivalry Portrait Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Warm Rivalry Portrait Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Warm Rivalry Portrait Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Warm Rivalry Portrait Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica este preset como tratamiento abstracto de anime deportivo 90s:
-    cualquier prompt debe ganar intensidad competitiva, vínculo grupal, energía
-    de remontada y fisicalidad clara sin forzar baloncesto ni cancha.
+    Create a style-card that translates Warm Rivalry Portrait Style into a portable visual system for 3. 90s Golden Era.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-179.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

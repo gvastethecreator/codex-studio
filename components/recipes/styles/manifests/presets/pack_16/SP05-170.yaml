@@ -12,20 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Magical-girl noventero de ternura luminosa, diseño ornamental, sellos elegantes y crecimiento emocional amable.
-  form_and_line: Línea limpia y delicada, acting inocente determinado y staging de transformación con detalle artesanal.
-  color_palette: Rosas pastel, dorados suaves, celestes claros y verdes de tarde acogedora.
-  lighting_setup: Glow cálido de atardecer y magia blanda, con highlights perlados en ornamento místico.
-  material_texture: Telas detalladas, papel simbólico, superficies suaves y grano analógico delicado.
-  render_quality: Acabado premium 90s con legibilidad impecable de encanto, ritual y cotidianidad protectora.
-  spatial_distortion: Escala íntima y protectora con aperturas fantásticas para sello, giro y vuelo visual.
-  atmosphere: Dulce, mágica, brillante, reconfortante.
-  key_features: Motivos de círculo-sello, ornamento arcano abstracto, transformación suave y coreografía aérea.
+  aesthetic: >-
+    Storybook Seal Magic Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Storybook Seal Magic Style's specific style identity.
+  form_and_line: >-
+    Define Storybook Seal Magic Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Storybook Seal Magic Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Storybook Seal Magic Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Storybook Seal Magic Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Storybook Seal Magic Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Storybook Seal Magic Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Storybook Seal Magic Style: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Storybook Seal Magic Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática reusable de storybook-seal-magic para cualquier
-    sujeto, equilibrando delicadeza visual, aventura juvenil y esperanza serena
-    sin imponer cartas, llaves, escuela, barrio, vestuario específico ni
-    rituales literales.
+    Create a style-card that translates Storybook Seal Magic Style into a portable visual system for 3. 90s Golden Era.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-170.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

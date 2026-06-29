@@ -12,22 +12,38 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Sección subterránea biofuncional con red capilar y zonificación interna estricta.
-  form_and_line: Ramificaciones capilares, cavidades nodales, conectores verticales y estratos seccionados por capas.
+  aesthetic: >-
+    Subterranean Bio-Cutaway within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Subterranean Bio-Cutaway's specific style identity.
+  form_and_line: >-
+    Define Subterranean Bio-Cutaway through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
   color_palette: >-
-    Compacted soil umber, sandy beige, amber gel translucency, deep chamber brown, charcoal ant silhouettes, and freshly
-    turned earth tones
-  lighting_setup: Iluminación lateral de corte, transmisión translúcida en gel y pockets de sombra controlada en profundidad.
-  material_texture: Compactación granular de suelo, bandas arenosas, alisado húmedo de túnel y marcas finas de excavación.
-  render_quality: Cutaway naturalista de alto detalle con legibilidad sistémica y estratificación subterránea precisa.
-  spatial_distortion: None
-  atmosphere: Laboriosa, biológica y funcional, escondida bajo superficie inferida.
-  key_features: Jerarquía capilar, cavidades funcionales, ejes de circulación vertical y lectura estratificada de sección.
+    Use a Subterranean Bio-Cutaway-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Subterranean Bio-Cutaway recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Subterranean Bio-Cutaway: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Subterranean Bio-Cutaway with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Subterranean Bio-Cutaway: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Subterranean Bio-Cutaway: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Subterranean Bio-Cutaway's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Representa cualquier sistema como sección biofuncional subterránea: ramificaciones capilares, cavidades nodales,
-    estratos granulares y lectura lateral de organizacion interna. La funcion importa mas que insectos, hormiguero,
-    vitrina de observacion o superficie literal. Conserva capilaridad, estratos, escala seccionada y logica funcional
-    interna sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Subterranean Bio-Cutaway into a portable visual system for 6. Toy Craft And
+    Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - flat exterior-only view
 assets:

@@ -12,27 +12,37 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Postmodernismo Memphis radical, ludico e irreverente, orientado al choque visual deliberado.
+  aesthetic: >-
+    Memphis Design within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Memphis Design's specific style identity.
   form_and_line: >-
-    Squiggles, triangulos, plintos totemicos, asimetria explicita y offsets compositivos
-    provocativos.
+    Define Memphis Design through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
   color_palette: >-
-    Pasteles saturados con blanco/negro grafico, rosa bubblegum, teal, amarillo trafico y naranja
-    vivo.
+    Use a Memphis Design-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and
+    avoid generic color wash.
   lighting_setup: >-
-    Iluminacion grafica brillante, acentos neon, globos cromaticos y spots expositivos de alto
-    contraste.
-  material_texture: Formica impresa, plastico brillante, esmalte, goma y terrazo en escala juguetona.
-  render_quality: Clash postmoderno legible, ironico y energetico sin perder estructura formal.
-  spatial_distortion: Asimetria intencional con jerarquia por color y geometria de alto impacto.
-  atmosphere: Rebelde, festiva, anti-solemnidad y manifiesto de diseno.
+    Use lighting that makes Memphis Design recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Memphis Design: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
+  render_quality: >-
+    Render Memphis Design with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Memphis Design: perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Memphis Design: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
   key_features: >-
-    Patrones bacterianos, squiggles reflectivos, modulos descentrados, bloques cromaticos y formas
-    totemizadas.
+    Prioritize Memphis Design's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Convierte cualquier input en una declaracion Memphis de asimetria provocativa, patron grafico y
-    color confrontativo. Debe conservar energia de manifiesto y humor postmoderno sin reducirse a
-    decoracion novelty, set de estudio ni a un living ochentoso fijo.
+    Create a style-card that translates Memphis Design into a portable visual system for 1. Interior Design Systems.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - boring
   - beige

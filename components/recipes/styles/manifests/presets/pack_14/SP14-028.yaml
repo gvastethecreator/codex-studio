@@ -13,16 +13,37 @@ tags:
   - mythic
   - norse-myth
 visualDna:
-  aesthetic: Valkyrie ice weighing where chosen souls pass through glacial sky and martial grace.
-  form_and_line: Arcing bridge cues, winged standards, and blade-like vertical accents.
-  color_palette: Aurora cyan, storm violet, and iron silver.
-  lighting_setup: Aurora veils and lightning backlight across drifting snow haze.
-  material_texture: Frosted metal, carved ice slabs, chainmail glints, and fur-lined pennants.
-  render_quality: Dramatic cinematic painting with crisp silhouette choreography.
-  spatial_distortion: Elevated aerial perspective receding into cloud depth.
-  atmosphere: Heroic melancholy, martial grace, and imminent transcendence.
-  key_features: Valkyrie rider cues, soul lanterns, storm ravens, sword-rune balustrades.
-  creative_brief: Transform the input through valkyrie ice weighing, where destiny is judged by warriors of the afterlife without requiring a causeway.
+  aesthetic: >-
+    Valkyrie Ice Weighing within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Valkyrie Ice Weighing's specific style identity.
+  form_and_line: >-
+    Define Valkyrie Ice Weighing through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Valkyrie Ice Weighing-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Valkyrie Ice Weighing recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Valkyrie Ice Weighing: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Valkyrie Ice Weighing with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Valkyrie Ice Weighing: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Valkyrie Ice Weighing: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Valkyrie Ice Weighing's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Valkyrie Ice Weighing into a portable visual system for 8. Mythic Norse Sagas.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - modern-aircraft

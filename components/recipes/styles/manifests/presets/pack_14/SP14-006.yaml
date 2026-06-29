@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Eschatological court-noir where prophecy reads as legal force and sovereign ash.
-  form_and_line: High vertical authority, decree-tablet geometry, strict heraldic symmetry, and crown-halo framing.
-  color_palette: Volcanic ash gray, funerary gold, and deep ultramarine dusk.
-  lighting_setup: Ember uplight from censers plus a narrow crown halo rim.
-  material_texture: Charred vellum, oxidized regalia, cinder dust, and brocade ceremonial cloth.
-  render_quality: Prestige key art with precise icon hierarchy and high-distance readability.
-  spatial_distortion: Tribunal-axis convergence through smoke-layered arches or equivalent authority planes without requiring a throne room.
-  atmosphere: Judicial inevitability, prophetic dread, and sovereign calm.
-  key_features: Cracked coronet cues, decree tablets, oath geometry, intelligent ash plumes, and funerary-gold verdict light.
-  creative_brief: 'Decree the input through ash-crown oracle law: volcanic gray fields, funerary-gold halos, ultramarine dusk, charred-vellum texture, and heraldic verdict symmetry should make any subject feel prophetically binding without requiring a literal oracle figure, courtroom, attendants, tablets, or apocalypse tableau.'
+  aesthetic: >-
+    Ash-Crown Oracle Decree within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Ash-Crown Oracle Decree's specific style identity.
+  form_and_line: >-
+    Define Ash-Crown Oracle Decree through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Ash-Crown Oracle Decree-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Ash-Crown Oracle Decree recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Ash-Crown Oracle Decree: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Ash-Crown Oracle Decree with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Ash-Crown Oracle Decree: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Ash-Crown Oracle Decree: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Ash-Crown Oracle Decree's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Ash-Crown Oracle Decree into a portable visual system for 2. Mythic Ritual Noir.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - soft-cute

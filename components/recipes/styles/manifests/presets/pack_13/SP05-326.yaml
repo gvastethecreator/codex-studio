@@ -12,19 +12,38 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: Expresionismo cinético de anatomía elástica, donde la realidad se pliega al gesto y la velocidad emocional gobierna la imagen.
-  form_and_line: Contorno gomoso, taper de brocha nerviosa, siluetas inestables y curvas de movimiento tipo danza explosiva.
-  color_palette: Acid cyan, burnt orange, grape purple, hot pink, black ink, fever yellow
-  lighting_setup: Flashes cromáticos abruptos, cambios de key violentos y prioridad expresiva sobre realismo fotométrico.
-  material_texture: Mancha pictórica energética, pincel digital áspero, bloques flat de póster y boil de animación visible.
-  render_quality: Frame de sakuga hiperactivo con legibilidad de impacto y caos controlado por ritmo.
-  spatial_distortion: Constant anatomical morphing, melting perspective, dance-curve poses, explosive timing shapes
-  atmosphere: Elástica, extática y febril, siempre al borde de romper la forma.
-  key_features: Morphing anatómico continuo, arcos bailados, bursts de color ácido y staging velocity-first anti-model.
+  aesthetic: >-
+    Masaaki Yuasa - Rubber Reality Sprint within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Masaaki Yuasa - Rubber Reality Sprint's specific style identity.
+  form_and_line: >-
+    Define Masaaki Yuasa - Rubber Reality Sprint through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Masaaki Yuasa - Rubber Reality Sprint-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Masaaki Yuasa - Rubber Reality Sprint recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Masaaki Yuasa - Rubber Reality Sprint: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Masaaki Yuasa - Rubber Reality Sprint with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Masaaki Yuasa - Rubber Reality Sprint: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Masaaki Yuasa - Rubber Reality Sprint: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Masaaki Yuasa - Rubber Reality Sprint's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática de rubber-reality transferible donde anatomía mutable,
-    color detonante y timing gestual extremo sustituyan rigidez por energía.
-    Debe sentirse en rebelión permanente contra el frame congelado.
+    Create a style-card that translates Masaaki Yuasa - Rubber Reality Sprint into a portable visual system for 12.
+    Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - still
   - calm

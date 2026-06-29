@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Ópera espacial clásica, con liturgia de mando analógico, solemnidad colectiva y supervivencia civilizatoria.
-  form_and_line: Contorno grueso de ingeniería, siluetas jerarquizadas y acting decidido de mando clásico setentero.
-  color_palette: Azules interestelares profundos, rojos de alerta analógica, grises metálicos y ámbares cálidos de interfaz.
-  lighting_setup: Iluminación de alarma táctica con pools rojos intermitentes, key de interfaz y sombra cel de alta urgencia.
-  material_texture: Paneles analógicos, metal pintado, fósforo de monitor y grano de telecine vintage.
-  render_quality: Acabado premium retro-broadcast con lectura táctica clara y dramatismo emocional coral.
-  spatial_distortion: Perspectiva forzada y escala cósmica monumental para enfatizar fragilidad humana frente al vacío.
-  atmosphere: Noble, urgente, cósmica, sacrificial.
-  key_features: Paneles analógicos, jerarquía compositiva, alerta solemne, escala interestelar sugerida y heroísmo coral.
+  aesthetic: >-
+    Analog Space Opera Command Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Analog Space Opera Command Style's specific style identity.
+  form_and_line: >-
+    Define Analog Space Opera Command Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Analog Space Opera Command Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Analog Space Opera Command Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Analog Space Opera Command Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Analog Space Opera Command Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Analog Space Opera Command Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Analog Space Opera Command Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Analog Space Opera Command Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de mando espacial analógico para cualquier prompt o imagen de entrada:
-    tensión, ceremonia técnica y escala épica sin imponer puentes de nave, consolas, cascos ni tripulaciones.
+    Create a style-card that translates Analog Space Opera Command Style into a portable visual system for 11. 70s & 80s
+    Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-301.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

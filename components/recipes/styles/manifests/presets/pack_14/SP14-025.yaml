@@ -13,16 +13,38 @@ tags:
   - mythic
   - japanese-myth
 visualDna:
-  aesthetic: Kappa water jurisprudence where river spirits negotiate law through rain-soaked diplomacy.
-  form_and_line: Stone canal grid cues, bridge arches, and magistrate pavilion rectangles.
-  color_palette: Moss jade, wet slate, and candle gold.
-  lighting_setup: Overcast dusk with reflected water highlights under low paper lamps.
-  material_texture: Slick river stone, soaked timber rails, ceramic seals, and reed rope.
-  render_quality: Detailed environment concept balancing civic realism with supernatural accents.
-  spatial_distortion: Multi-bridge perspective layering upper walkways over submerged symbolic depth.
-  atmosphere: Bureaucratic tension, folkloric wit, and rain-soaked diplomacy.
-  key_features: Canal-court cues, spirit offering docks, turtle-shell ledgers, omen buoys.
-  creative_brief: 'Apply kappa water jurisprudence to any input: wet civic ritual, moss-jade bureaucracy, bridge-like layering, ceramic seals, reed-rope tension, and river-spirit wit should make the style feel negotiated by water law without forcing canals, courts, yokai disputes, bridges, or turtle forms.'
+  aesthetic: >-
+    Kappa Water Jurisprudence within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Kappa Water Jurisprudence's specific style identity.
+  form_and_line: >-
+    Define Kappa Water Jurisprudence through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Kappa Water Jurisprudence-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Kappa Water Jurisprudence recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Kappa Water Jurisprudence: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Kappa Water Jurisprudence with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Kappa Water Jurisprudence: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Kappa Water Jurisprudence: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Kappa Water Jurisprudence's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Kappa Water Jurisprudence into a portable visual system for 7. Mythic Japanese
+    Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - photoreal
   - comedic-goof

@@ -9,20 +9,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, cartoonish, low-detail, watermark, text, logo',
     style: {
-      aesthetic: 'Lethal crystal-botany noir with warden-like vigilance and refined menace.',
+      aesthetic:
+        "Glass-Thorn Warden Botany within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Glass-Thorn Warden Botany's specific style identity.",
       form_and_line:
-        'Slender guarded silhouettes, translucent thorn geometry, regal verticals, and labyrinthine botanical contours.',
-      color_palette: 'Petrol green, smoked crystal, and cold silver.',
-      lighting_setup: 'Glow interno en espinas y rim glacial.',
-      material_texture: 'Fractal glass, fine metal, and nocturnal garden mist.',
-      render_quality: 'Refined concept art with unmistakable personality.',
+        'Define Glass-Thorn Warden Botany through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Glass-Thorn Warden Botany-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Glass-Thorn Warden Botany recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Glass-Thorn Warden Botany: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Glass-Thorn Warden Botany with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Layered labyrinthine depth made from glass thorns and nocturnal botanical planes.',
-      atmosphere: 'Refined menace, mystery, and vigilance.',
+        'Use spatial behavior that fits Glass-Thorn Warden Botany: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Glass-Thorn Warden Botany: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Crystal thorn crowns, smoked-glass foliage, petrol-green glow, severe guarded stance, and nocturnal garden mist.',
+        "Prioritize Glass-Thorn Warden Botany's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Thorn the input with glass-botany menace: petrol greens, smoked crystal, glacial rims, translucent spike geometry, and severe warden-like verticals should make any subject beautiful and dangerous without requiring a greenhouse, humanoid guardian, armor suit, or literal garden setting.',
+        'Create a style-card that translates Glass-Thorn Warden Botany into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -31,21 +37,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, cartoon-comedy, bright-summer, watermark, text, logo',
     style: {
-      aesthetic: 'Mythic psychopomp legend translated into solemn chivalric funerary grace.',
+      aesthetic:
+        "Funeral Rose Psychopomp within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Funeral Rose Psychopomp's specific style identity.",
       form_and_line:
-        'Processional profile rhythm, soul-guiding blade-like diagonals, heraldic floral drapery, and threshold arcs.',
-      color_palette: 'Withered rose crimson, velvet black, and funerary silver.',
-      lighting_setup: 'Ashen dawn haze with selective metallic glints over wet petals.',
+        'Define Funeral Rose Psychopomp through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Funeral Rose Psychopomp-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Funeral Rose Psychopomp recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Dried rose bundles, satin-polished armor, carved tomb marble, and mourning silk.',
-      render_quality: 'Lyrical prestige illustration with symbolic readability at mid-distance.',
+        'Use materials and textures that reinforce Funeral Rose Psychopomp: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Funeral Rose Psychopomp with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Threshold-axis perspective leading toward symbolic passage without requiring a necropolis or mausoleum.',
-      atmosphere: 'Sacred mourning, oath-bound honor, and tender fatality.',
+        'Use spatial behavior that fits Funeral Rose Psychopomp: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Funeral Rose Psychopomp: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Soulward rose trails, vigil-cavalier cues, boundary-gate silhouettes, funerary silver, and ceremonial mourning standards.',
+        "Prioritize Funeral Rose Psychopomp's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Escort the input through funeral rose psychopomp grace: withered crimson, velvet black, silver threshold light, rose-trail arcs, and chivalric mourning silhouettes should make any subject feel duty-bound and tenderly fatal without requiring a rider, dead soul, cemetery, gate, or funeral procession.',
+        'Create a style-card that translates Funeral Rose Psychopomp into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -55,20 +66,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cheerful, bright-summer, modern-urban, watermark, text, logo',
     style: {
       aesthetic:
-        'Maritime mythic noir with cathedral-scale pressure, abyssal devotion, and leviathan mass.',
+        "Abyssal Leviathan Chapel within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Abyssal Leviathan Chapel's specific style identity.",
       form_and_line:
-        'Vertical nave-like ribs, colossal curved anatomy cues, tidal arches, and altar-core pull.',
-      color_palette: 'Abyssal teal, oxidized bronze, and moonlit bone.',
-      lighting_setup: 'Bioluminescent shafts filtered through submerged stained glass.',
-      material_texture: 'Salt-scarred metal, wet basalt, barnacled stone, and ritual silk.',
-      render_quality: 'Cinematic key art with crisp hierarchy and premium atmospheric depth.',
+        'Define Abyssal Leviathan Chapel through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Abyssal Leviathan Chapel-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Abyssal Leviathan Chapel recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Abyssal Leviathan Chapel: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Abyssal Leviathan Chapel with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Tidal perspective tunnels that pull toward a submerged sacred core without requiring a chapel.',
-      atmosphere: 'Sacred terror, pressure, and silent devotion to the unknown.',
+        'Use spatial behavior that fits Abyssal Leviathan Chapel: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Abyssal Leviathan Chapel: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Flooded aisle rhythm, leviathan-scale silhouette cues, submerged reliquary glow, barnacled stone, and abyssal teal pressure.',
+        "Prioritize Abyssal Leviathan Chapel's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Drown the input in abyssal leviathan chapel pressure: teal darkness, oxidized bronze ribs, moonlit bone highlights, submerged stained-glass shafts, and colossal anatomy curves should make any subject sacred and oceanic without requiring a chapel, monster body, altar, ruin, or underwater setting.',
+        'Create a style-card that translates Abyssal Leviathan Chapel into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -79,20 +95,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, tropical-vibes, bright-comedy, modern-traffic, watermark, text, logo',
     style: {
       aesthetic:
-        'Glacial pilgrimage noir with austere sacred logistics and relic-protection discipline.',
+        "Frostbound Reliquary Endurance within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Frostbound Reliquary Endurance's specific style identity.",
       form_and_line:
-        'Protected-relic silhouettes, wind-cut banner rhythms, armored container cues, and elongated horizon bands.',
-      color_palette: 'Frost silver, midnight blue, and muted ember orange.',
-      lighting_setup: 'Polar twilight with intermittent lantern halos through blowing snow.',
-      material_texture: 'Iced leather, weathered wood, frosted iron, and crystalline snow crust.',
-      render_quality: 'Premium environmental key art balancing atmosphere and subject readability.',
+        'Define Frostbound Reliquary Endurance through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Frostbound Reliquary Endurance-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Frostbound Reliquary Endurance recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Frostbound Reliquary Endurance: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Frostbound Reliquary Endurance with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Wide depth cues with repeated protected-object silhouettes fading into blizzard haze.',
-      atmosphere: 'Endurance, solemn duty, and quiet eschatological urgency.',
+        'Use spatial behavior that fits Frostbound Reliquary Endurance: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Frostbound Reliquary Endurance: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Armored reliquary cues, wind-bent banners, frozen marker stones, lantern halos, and glacial duty.',
+        "Prioritize Frostbound Reliquary Endurance's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Freeze the input into frostbound reliquary endurance: silver ice, midnight blue depth, ember lantern points, armored sacred-object cues, and wind-bent banner rhythm should imply pilgrimage discipline without requiring caravans, wagons, travelers, or a winter landscape.',
+        'Create a style-card that translates Frostbound Reliquary Endurance into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -102,22 +123,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cheerful, modern-casual, flat-light, watermark, text, logo',
     style: {
       aesthetic:
-        'Greek myth judgment noir where titanic law is pronounced through storm-lit marble and chthonic pressure.',
+        "Aegean Titan Judgment within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Aegean Titan Judgment's specific style identity.",
       form_and_line:
-        'Marble authority symmetry, armored drapery silhouettes, thunderbolt sigil geometry, and titan-scale vertical pressure.',
-      color_palette: 'Aegean blue-black, weathered marble ivory, and oxidized gold.',
-      lighting_setup: 'Lightning flashes with torch basin underlight.',
+        'Define Aegean Titan Judgment through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Aegean Titan Judgment-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Aegean Titan Judgment recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cracked marble steps, bronze laurel crowns, wet stone dust, and ceremonial drapery.',
+        'Use materials and textures that reinforce Aegean Titan Judgment: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Prestige cinematic concept art with mythic scale and sharp icon readability.',
+        'Render Aegean Titan Judgment with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Rising judgment perspective toward a central force without requiring a tribunal.',
-      atmosphere: 'Epic authority, ancestral dread, and juridical grandeur.',
+        'Use spatial behavior that fits Aegean Titan Judgment: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Aegean Titan Judgment: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Titan-mask cues, oath tablets, storm-lashed marble, sacrificial fire accents, and oxidized-gold law.',
+        "Prioritize Aegean Titan Judgment's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Judge the input through Aegean titan authority: Aegean blue-black fields, cracked marble ivory, oxidized gold, lightning cuts, and chthonic underlight should make form and light feel mythically sentenced without requiring a court, colonnade, judge, sacrifice, or Greek tableau.',
+        'Create a style-card that translates Aegean Titan Judgment into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -127,19 +151,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, tropical, cartoon, glossy-sci-fi, watermark, text, logo',
     style: {
       aesthetic:
-        'Norse mythic forge-noir where worldroot prophecy, oath rings, and apocalyptic craft shape the input.',
+        "Worldroot Oathforged Prophecy within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Worldroot Oathforged Prophecy's specific style identity.",
       form_and_line:
-        'Rune-carved anvil cues, layered fur silhouettes, and trunk-to-vault verticality.',
-      color_palette: 'Frost steel, ember orange, and raven black.',
-      lighting_setup: 'Forge core glow against glacial overcast rim light.',
-      material_texture: 'Hammered iron, carved ash wood, snow crust, and smoked leather.',
-      render_quality: 'High-detail mythic key art with robust silhouette legibility.',
+        'Define Worldroot Oathforged Prophecy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Worldroot Oathforged Prophecy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Worldroot Oathforged Prophecy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Worldroot Oathforged Prophecy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Worldroot Oathforged Prophecy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Radial forge logic anchored by worldroot pillars and descending runic steps.',
-      atmosphere: 'Stoic resolve, ancestral weight, and apocalyptic preparedness.',
-      key_features: 'Rune anvils, oath rings, ravens, worldroot sap brazier cues.',
+        'Use spatial behavior that fits Worldroot Oathforged Prophecy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Worldroot Oathforged Prophecy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Worldroot Oathforged Prophecy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convert any input through worldroot oathforged prophecy, as if names, debts, tools, bodies, or treaties were struck before the last winter. Preserve rune-forge weight, oath-ring gravity, ash-wood verticality, and apocalyptic craft without requiring weapons, ravens, world trees, warriors, or a literal forge scene.',
+        'Create a style-card that translates Worldroot Oathforged Prophecy into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -149,21 +179,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, parody, modern-urban, cute, watermark, text, logo',
     style: {
       aesthetic:
-        'Mesoamerican mythic ceremony noir shaped by cenote depth, sun-serpent cycles, and living water.',
+        "Cenote Sun-Serpent Cycle within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cenote Sun-Serpent Cycle's specific style identity.",
       form_and_line:
-        'Terraced glyph geometry, feathered serpent curves, and descending ritual rhythms.',
-      color_palette: 'Jade green, obsidian black, and ceremonial gold.',
-      lighting_setup: 'Vertical cenote shaft light with torch flicker around glyph walls.',
+        'Define Cenote Sun-Serpent Cycle through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Cenote Sun-Serpent Cycle-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Cenote Sun-Serpent Cycle recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Carved volcanic stone, wet limestone, quetzal plume fibers, and lacquered ritual ceramics.',
+        'Use materials and textures that reinforce Cenote Sun-Serpent Cycle: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Premium symbolic concept art with strong shape language and atmospheric depth.',
-      spatial_distortion: 'Deep water-vortex perspective guiding toward a submerged symbolic core.',
-      atmosphere: 'Sacred gravity, cyclical time, and trembling devotion.',
+        'Render Cenote Sun-Serpent Cycle with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Cenote Sun-Serpent Cycle: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Cenote Sun-Serpent Cycle: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Feather-serpent reliefs, calendar discs, ritual banner rhythm, water-mirror omens, and jade-gold cyclic light.',
+        "Prioritize Cenote Sun-Serpent Cycle's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Cycle the input through cenote sun-serpent cosmology: jade water glow, obsidian depth, ceremonial-gold rims, feather-serpent curves, and calendar glyph geometry should make any subject feel cyclic and sacred without requiring a temple, cenote, procession, offering rite, or literal serpent.',
+        'Create a style-card that translates Cenote Sun-Serpent Cycle into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -173,21 +207,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, comedic, bright-pop, sci-fi-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Egyptian afterlife noir focused on feather-scale judgment, funerary precision, and eternal consequence.',
+        "Feathered Scale Afterlife Verdict within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Feathered Scale Afterlife Verdict's specific style identity.",
       form_and_line:
-        'Processional pylon cues, scale-centered symmetry, and jackal-priest silhouettes.',
-      color_palette: 'Desert umber, lapis shadow blue, and funerary electrum.',
-      lighting_setup: 'Oblique tomb apertures with oil-lamp edge glows on carved reliefs.',
+        'Define Feathered Scale Afterlife Verdict through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Feathered Scale Afterlife Verdict-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Feathered Scale Afterlife Verdict recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Sand-worn limestone, gilded inlays, linen wrappings, and polished basalt floors.',
+        'Use materials and textures that reinforce Feathered Scale Afterlife Verdict: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Monumental concept key art with high symbolic legibility and restrained contrast.',
-      spatial_distortion: 'Long hypostyle depth converging on a central weighing force.',
-      atmosphere: 'Solemn verdict, ritual order, and eternal consequence.',
+        'Render Feathered Scale Afterlife Verdict with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Feathered Scale Afterlife Verdict: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Feathered Scale Afterlife Verdict: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Heart-weighing scale, feather standard, canopic reliquary cues, abstract hieratic friezes.',
+        "Prioritize Feathered Scale Afterlife Verdict's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply feathered-scale afterlife verdict to the input, measuring it against cosmic balance without requiring a chamber.',
+        'Create a style-card that translates Feathered Scale Afterlife Verdict into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -197,18 +235,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cute, cartoon, watermark, text, logo, empty-space',
     style: {
       aesthetic:
-        'River-king sovereignty expressed through storm stone, flood memory, and lawful thunder.',
+        "River King Thunder Sovereignty within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving River King Thunder Sovereignty's specific style identity.",
       form_and_line:
-        'Cascading platform cues, thunder-pillar rhythms, and ceremonial flood channels.',
-      color_palette: 'Rain gray, bronze, and deep blue-green.',
-      lighting_setup: 'Storm-lit skylight with reflected water flashes.',
-      material_texture: 'Wet basalt, river jade, and hammered bronze.',
-      render_quality: 'Epic mythic rendering with authoritative scale.',
-      spatial_distortion: 'Diagonal water-terrace force leading toward a sovereign focal point.',
-      atmosphere: 'Sovereignty, rainfall, and lawful power.',
-      key_features: 'River-throne cues, storm basin motifs, oath-channel lines.',
+        'Define River King Thunder Sovereignty through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a River King Thunder Sovereignty-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes River King Thunder Sovereignty recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce River King Thunder Sovereignty: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render River King Thunder Sovereignty with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits River King Thunder Sovereignty: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to River King Thunder Sovereignty: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize River King Thunder Sovereignty's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform any input through river-king thunder sovereignty, where flood, memory, and lawful storm cues replace fixed palace requirements. Use wet basalt, bronze authority, thunder-pillar rhythm, oath-channel lines, and diagonal water force without requiring thrones, kings, rivers, storms, or palaces.',
+        'Create a style-card that translates River King Thunder Sovereignty into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -217,17 +262,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Mythic — Pantheons & Legends',
     negativePrompt: 'photoreal, cheerful, neon, watermark, text, logo, toy-like',
     style: {
-      aesthetic: 'Sun-pantheon trial tempered by ash, smoke, and sacrificial brilliance.',
-      form_and_line: 'Radial altar cues, stepped tiers, and haloed deity-niche rhythms.',
-      color_palette: 'Ash gold, ember red, and blackened ivory.',
-      lighting_setup: 'Furnace glow and solar shafts through smoke.',
-      material_texture: 'Burnt stone, gold leaf residue, and soot-streaked silk.',
-      render_quality: 'High-drama mythic rendering with iconographic clarity.',
-      spatial_distortion: 'Concentric sanctuary logic around a furnace-like solar core.',
-      atmosphere: 'Majesty, ordeal, and radiant severity.',
-      key_features: 'Sun disc, ash-step bands, deity-niche silhouettes.',
+      aesthetic:
+        "Cinder Sun Pantheon Trial within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cinder Sun Pantheon Trial's specific style identity.",
+      form_and_line:
+        'Define Cinder Sun Pantheon Trial through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Cinder Sun Pantheon Trial-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Cinder Sun Pantheon Trial recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Cinder Sun Pantheon Trial: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Cinder Sun Pantheon Trial with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Cinder Sun Pantheon Trial: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Cinder Sun Pantheon Trial: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Cinder Sun Pantheon Trial's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through a cinder sun pantheon trial, making radiance survive through ash and flame without requiring a hall.',
+        'Create a style-card that translates Cinder Sun Pantheon Trial into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -237,17 +291,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cute, cartoon, watermark, text, logo, clutter',
     style: {
       aesthetic:
-        'Lunar judgment language with calm tribunal authority and carved verdict symbolism.',
-      form_and_line: 'Circular seat cues, crescent dais logic, and tribunal-column rhythms.',
-      color_palette: 'Moon silver, dark stone, and pale lavender.',
-      lighting_setup: 'Night-sky glow with crisp tribunal highlights.',
-      material_texture: 'Chiseled limestone, silver inlay, and formal drapery.',
-      render_quality: 'Ceremonial concept art with judicial solemnity.',
-      spatial_distortion: 'Ringed convergence toward a crescent judgment center.',
-      atmosphere: 'Judgment, ritual fairness, and nocturnal authority.',
-      key_features: 'Verdict tablets, moon crest, witness-step bands.',
+        "Moon Judge Tribunal Ring within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Moon Judge Tribunal Ring's specific style identity.",
+      form_and_line:
+        'Define Moon Judge Tribunal Ring through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Moon Judge Tribunal Ring-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Moon Judge Tribunal Ring recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Moon Judge Tribunal Ring: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Moon Judge Tribunal Ring with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Moon Judge Tribunal Ring: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Moon Judge Tribunal Ring: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Moon Judge Tribunal Ring's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply moon-judge tribunal logic to the input, letting lunar calm and ringed verdict geometry carry judgment without requiring an amphitheater.',
+        'Create a style-card that translates Moon Judge Tribunal Ring into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -257,17 +319,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, bland, cyberpunk, watermark, text, logo, flat-light',
     style: {
       aesthetic:
-        'Mirrored twin-deity duality shaped by tides, protection, rivalry, and seasonal balance.',
-      form_and_line: 'Paired tower cues, tidal gate shapes, and mirrored causeway geometry.',
-      color_palette: 'Sea teal, copper, and storm white.',
-      lighting_setup: 'Dawn surf glow and lantern reflections.',
-      material_texture: 'Salt stone, bronze fittings, and wet timber.',
-      render_quality: 'Mythic rendering with strong duality and clean mirrored structure.',
-      spatial_distortion: 'Symmetric halves meeting at a central tidal threshold.',
-      atmosphere: 'Brotherhood, rivalry, and seasonal protection.',
-      key_features: 'Twin altar cues, tide gates, mirrored deity silhouettes.',
+        "Twin Gods Tidal Duality within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Twin Gods Tidal Duality's specific style identity.",
+      form_and_line:
+        'Define Twin Gods Tidal Duality through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Twin Gods Tidal Duality-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Twin Gods Tidal Duality recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Twin Gods Tidal Duality: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Twin Gods Tidal Duality with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Twin Gods Tidal Duality: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Twin Gods Tidal Duality: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Twin Gods Tidal Duality's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reframe any input through twin-gods tidal duality, balancing protection and rivalry. Use mirrored halves, sea-teal gates, copper fittings, tide-threshold symmetry, and paired-force tension without locking the image to harbors, gods, towers, causeways, or deity figures.',
+        'Create a style-card that translates Twin Gods Tidal Duality into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -277,18 +347,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cute, modern-farm, watermark, text, logo, glossy',
     style: {
       aesthetic:
-        'Harvest-pantheon stewardship where iron discipline and grain abundance become sacred labor.',
-      form_and_line: 'Grain-silo cues, tall sheaf rhythms, and ceremonial threshing arcs.',
-      color_palette: 'Wheat gold, iron black, and dusty green.',
-      lighting_setup: 'Late harvest sun with steel shadow lines.',
-      material_texture: 'Forged iron, straw, sunbaked clay, and old oak.',
-      render_quality: 'Monumental mythic rendering with rural material detail.',
+        "Iron Harvest Stewardship within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Iron Harvest Stewardship's specific style identity.",
+      form_and_line:
+        'Define Iron Harvest Stewardship through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Iron Harvest Stewardship-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Iron Harvest Stewardship recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Iron Harvest Stewardship: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Iron Harvest Stewardship with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Nave-like axis expanding into field-like abundance without requiring a basilica.',
-      atmosphere: 'Plenty, labor, and sacred stewardship.',
-      key_features: 'Harvest icons, iron scythes, grain reliquary cues.',
+        'Use spatial behavior that fits Iron Harvest Stewardship: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Iron Harvest Stewardship: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Iron Harvest Stewardship's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convert the input through iron harvest stewardship, treating work, grain, and forged ritual as miracle without forcing a farm temple.',
+        'Create a style-card that translates Iron Harvest Stewardship into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -298,17 +375,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, playful, candy-color, watermark, text, logo, static-pose',
     style: {
       aesthetic:
-        'Serpent-oracle lineage rendered through coiling prophecy, guarded wisdom, and emerald noir authority.',
-      form_and_line: 'Coiling column cues, court-step bands, and sinuous canopy lines.',
-      color_palette: 'Emerald black, gold, and obsidian.',
-      lighting_setup: 'Controlled torchlight with emerald underglow.',
-      material_texture: 'Polished stone, scale-like enamel, and gold wire.',
-      render_quality: 'Elegant mythic court illustration.',
-      spatial_distortion: 'Curved plan that coils around an oracle-like focal presence.',
-      atmosphere: 'Prophecy, continuity, and guarded wisdom.',
-      key_features: 'Oracle dais cues, serpent pillars, sigil mosaics.',
+        "Serpent Oracle Lineage within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Serpent Oracle Lineage's specific style identity.",
+      form_and_line:
+        'Define Serpent Oracle Lineage through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Serpent Oracle Lineage-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Serpent Oracle Lineage recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Serpent Oracle Lineage: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Serpent Oracle Lineage with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Serpent Oracle Lineage: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Serpent Oracle Lineage: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Serpent Oracle Lineage's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret the input as serpent-oracle lineage, letting prophecy coil through form and material without requiring a court.',
+        'Create a style-card that translates Serpent Oracle Lineage into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -318,17 +403,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, sterile, sci-fi, watermark, text, logo, cold',
     style: {
       aesthetic:
-        'Hearth-deity guardianship expressed through ash warmth, shelter, kinship, and domestic flame.',
-      form_and_line: 'Long hearth-row cues, guardian alcove rhythms, and smoke-vent silhouettes.',
-      color_palette: 'Ember orange, ash gray, and bronze.',
-      lighting_setup: 'Hearthfire flicker and smoke-softened daylight.',
-      material_texture: 'Firebrick, iron hooks, and soot-dark timber.',
-      render_quality: 'Warm mythic rendering with intimate domestic scale.',
-      spatial_distortion: 'Horizontal warmth spreading through repeated hearth-like bands.',
-      atmosphere: 'Shelter, kinship, and sacred homecoming.',
-      key_features: 'Hearth altar cues, guardian masks, smoke glyphs.',
+        "Ashen Hearth Guardian Warmth within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ashen Hearth Guardian Warmth's specific style identity.",
+      form_and_line:
+        'Define Ashen Hearth Guardian Warmth through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Ashen Hearth Guardian Warmth-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Ashen Hearth Guardian Warmth recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Ashen Hearth Guardian Warmth: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Ashen Hearth Guardian Warmth with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Ashen Hearth Guardian Warmth: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ashen Hearth Guardian Warmth: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Ashen Hearth Guardian Warmth's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through ashen hearth guardian warmth, making domestic flame feel sacred without requiring a communal hall.',
+        'Create a style-card that translates Ashen Hearth Guardian Warmth into a portable visual system for 3. Mythic Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Fallen authority rendered through ash-crown symbolism, soot residue, and memorial noir gravity.
-  form_and_line: Brittle crown silhouettes, collapsed diadem arcs, and asymmetrical ash cascade rhythms with no braided loops, serpent coils, or central totem symmetry.
-  color_palette: Charcoal, muted silver, and antique ivory.
-  lighting_setup: Narrow halo beam from above.
-  material_texture: Charred wood, cracked enamel, dusty glass, and powdery soot.
-  render_quality: Cinematic symbolic still life.
-  spatial_distortion: Tight iconic depth with offset fragment layers and drifting residue, not a required cabinet or shrine axis.
-  atmosphere: Loss, legitimacy, and solemn afterimage.
-  key_features: Ash crown, residue halos, memorial dust, collapsed diadem fragments, offset crown shards.
-  creative_brief: Reinterpret any input as authority surviving only as ash, residue, and crown-shaped memory. Use offset crown shards, brittle silhouette, soot halos, charred enamel, narrow overhead beams, and memorial gravity without requiring serpents, braided loops, shrine windows, relic cabinets, rulers, swords, or literal objects.
+  aesthetic: >-
+    Ash-Crown Residue Authority within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Ash-Crown Residue Authority's specific style identity.
+  form_and_line: >-
+    Define Ash-Crown Residue Authority through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Ash-Crown Residue Authority-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Ash-Crown Residue Authority recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Ash-Crown Residue Authority: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Ash-Crown Residue Authority with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Ash-Crown Residue Authority: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Ash-Crown Residue Authority: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Ash-Crown Residue Authority's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Ash-Crown Residue Authority into a portable visual system for 1. Mythic
+    Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - playful
@@ -33,7 +54,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP14-098.webp
 attributes:
-  negativePrompt: photoreal, playful, candy-color, watermark, text, logo, glossy, serpent, snake, braided loops, symmetric totem, sword, hanging plant, window alcove
+  negativePrompt: >-
+    photoreal, playful, candy-color, watermark, text, logo, glossy, serpent, snake, braided loops, symmetric totem,
+    sword, hanging plant, window alcove
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault

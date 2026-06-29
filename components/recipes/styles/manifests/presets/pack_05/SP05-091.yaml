@@ -12,20 +12,38 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Glowing VR fantasy, with interface-light magic, virtual romance, polished heroism, and visceral digital immersion.
-  form_and_line: Clean fantasy contours, translucent HUD arcs, thin luminous trim, modular edge highlights, and readable action silhouettes.
-  color_palette: Sky sapphire, interface cyan, warm amber courage, emerald status glow, white bloom, and deep virtual blue.
-  lighting_setup: Diegetic UI glow, atmospheric depth haze, soft rim auras, and crystalline light planes.
-  material_texture: Glassy overlays, polished cel surfaces, pixel-fine particles, synthetic fabric sheen, and luminous edge bloom.
-  render_quality: Expansive digital-fantasy anime polish with high clarity, clean compositing, and romantic virtual scale.
-  spatial_distortion: Layered interface depth, suspended panels, and horizon expansion that makes space feel software-shaped.
-  atmosphere: Adventurous, virtual, epic, romantic.
-  key_features: Interface constellations, virtual glow, clean adventure polish, synthetic depth, emotional immersion.
+  aesthetic: >-
+    Sword Art Online Glowing VR Adventure within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Sword Art Online Glowing VR Adventure's specific style identity.
+  form_and_line: >-
+    Define Sword Art Online Glowing VR Adventure through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Sword Art Online Glowing VR Adventure-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Sword Art Online Glowing VR Adventure recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Sword Art Online Glowing VR Adventure: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Sword Art Online Glowing VR Adventure with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Sword Art Online Glowing VR Adventure: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Sword Art Online Glowing VR Adventure: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Sword Art Online Glowing VR Adventure's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Make any prompt feel like fantasy translated through a beautiful virtual
-    system: UI light should behave like atmosphere, digital edges should feel
-    tactile, and heroic scale should come from immersion rather than fixed game
-    locations or named characters.
+    Create a style-card that translates Sword Art Online Glowing VR Adventure into a portable visual system for 8.
+    Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-091.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

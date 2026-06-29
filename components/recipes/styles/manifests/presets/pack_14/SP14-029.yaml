@@ -13,16 +13,37 @@ tags:
   - mythic
   - norse-myth
 visualDna:
-  aesthetic: Longnight rune forging where destiny-runes are hammered into war relics and debts.
-  form_and_line: Heavy anvil block cues, ribbed smoke stacks, and knotwork structural beams.
-  color_palette: Coal black, ember orange, and cold steel blue.
-  lighting_setup: Furnace glow and snow-reflected moonlight producing high contrast drama.
-  material_texture: Scorched iron, rough timber, riveted plates, and drifting ash.
-  render_quality: High-detail key art with tactile metalcraft emphasis.
-  spatial_distortion: Deep workshop-like perspective ending at a ritual forge heart.
-  atmosphere: Laborious reverence, survival pride, and pre-battle stillness.
-  key_features: Rune anvils, wolf-skin capes, oath blades, smoke prayer vents.
-  creative_brief: Apply longnight rune forging to any input, as if each form were born with name, debt, and prophecy. Emphasize ember-lit metalcraft, smoke prayer vents, knotwork beams, cold steel-blue shadow, and rune pressure without requiring anvils, blades, workshops, wolves, or pre-battle scenes.
+  aesthetic: >-
+    Longnight Rune Forging within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Longnight Rune Forging's specific style identity.
+  form_and_line: >-
+    Define Longnight Rune Forging through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Longnight Rune Forging-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Longnight Rune Forging recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Longnight Rune Forging: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Longnight Rune Forging with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Longnight Rune Forging: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Longnight Rune Forging: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Longnight Rune Forging's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Longnight Rune Forging into a portable visual system for 8. Mythic Norse Sagas.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - playful-cartoon

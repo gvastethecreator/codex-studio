@@ -6,18 +6,18 @@ Turn Codex Studio into a more professional local-first image studio while preser
 
 ## Execution order
 
-1. **Guía de agentes y proyecto**
+1. **Agent And Project Guide**
    - Add or update `AGENTS.md`, `SKILLS.md`, and architecture docs.
    - Keep `CONTEXT.md` as glossary-only.
    - Document validation commands, safe file operations, Codex official-doc alignment, provider work, recipe work, style-preset work, and token audits.
 
-2. **Contratos base de task/provider**
+2. **Base Task/Provider Contracts**
    - Introduce shared types for **Generation Task**, **Generation Provider**, **Generation Task Spec**, **Compiled Provider Input**, and **Provider Session Contract**.
    - Preserve Codex-first behavior while making provider selection explicit.
    - Keep task names provider-independent.
    - Done: provider capabilities are modeled as shared data so UI, API, and tests can distinguish active adapters from planned or unconfigured providers.
 
-3. **Provider Boundary con Codex como núcleo**
+3. **Provider Boundary With Codex As The Core**
    - Move existing Codex image generation behind the provider interface first.
    - Do not add external providers until the Codex provider proves the contract with current jobs, assets, catalog entries, metadata, logs, and diagnostics.
    - Audit repeated prompt boilerplate and move stable instructions into the provider/session contract.
@@ -57,7 +57,7 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: `library:layout:verify` now blocks raw `libraryDir` joins for DB, transcripts, assets, outputs, and `.studio` outside the layout helper/migration script. Default-generation scripts and metadata embedding now resolve through `resolveLibraryPathFromRoot`.
    - Done: Settings exposes registered source scanning, file selection, explicit selected-file import, and provider runtime preflight state.
 
-5. **Command Center y UI demand-mounted**
+5. **Command Center And Demand-Mounted UI**
    - Move global status, usage, active provider, queue summary, library/workspace switching, and settings entry points into the top toolbar.
    - Convert heavy diagnostics, settings, activity, and provider internals into Demand-Mounted Surfaces.
    - Avoid permanent floating global panels.
@@ -147,7 +147,7 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: added repo-local Style Preset Manifest templates for image, sprite-sheet, and texture presets under `components/recipes/styles/manifests/templates/`, plus `styles:templates:verify` to keep task-specific template coverage from drifting.
    - Done: added `styles:scaffold` as a non-destructive authoring CLI for new granular presets. It dry-runs by default, requires `--write` to mutate, scaffolds from the repo templates, accepts category id or exact category name, updates both pack-level and category `presetRefs`, supports optional `--default-image`, and has focused coverage in `scripts/scaffold-style-preset.test.ts`.
 
-8. **Pipeline y eficiencia de tokens**
+8. **Pipeline And Token Efficiency**
    - Done: `scripts/tooling-task.ts` forwards extra args for filtered `test`, `check`, `check:fix`, `fmt`, `fmt:check`, and `test:coverage` runs. Focused validation now executes only requested files during iteration.
    - Done: Codex imagegen stable instructions moved into one Provider Session Contract and Styles recipe payloads now compile from compact Recipe Provider Directives when available.
    - Done: `providers:audit` reports source spec size, compiled payload size, prompt character estimates, directive/context deltas, and unsafe inline-data/secret leakage for current provider compilers.
@@ -158,7 +158,7 @@ Turn Codex Studio into a more professional local-first image studio while preser
    - Done: frontend bundle cleanup avoids loading dev-only scanner and ZIP/export dependencies during normal startup.
    - Next: execute representative live Codex comparisons with `recipes:evaluate:live -- --execute`, then verify Styles render-plan budgets in a live browser pass.
 
-9. **Migración catalog-first de Visual Batch**
+9. **Catalog-First Visual Batch Migration**
    - Done: split `lib/studioCatalogView.ts` into a pure Catalog Entry read model. Legacy snapshot export now lives in `lib/studioLegacyVisualSnapshotExport.ts`; Catalog Entry image materialization lives in `lib/studioCatalogImageAdapter.ts`.
    - Done: added `catalog:source:verify` and wired it into `validate:full`, blocking regressions where `StudioCatalogView` imports Visual Batch adapters or `useCatalog` reads `catalog-cache`/global batch state.
 

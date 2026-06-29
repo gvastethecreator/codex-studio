@@ -12,20 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Retrofuturismo art deco monumental con tensión social, asombro tecnológico clásico y melancolía industrial humanista.
-  form_and_line: Contorno robusto, geometría decó escalonada, curvas humanoides suaves y masa mecánica abstracta.
-  color_palette: Ámbar cinematográfico, verdes petróleo industriales, cremas envejecidos y acentos cromados de ingeniería monumental.
-  lighting_setup: Iluminación vertical con bruma cálida, contraluces monumentales y brillos controlados sobre metal.
-  material_texture: Acero remachado, mármol art-decó, cristal antiguo y superficies mecánicas con pátina de uso civil.
-  render_quality: Acabado premium de gran espectáculo retrofuturo con lectura jerárquica impecable entre escala humana y escala sistémica.
-  spatial_distortion: Perspectiva ascendente con profundidad estratificada por capas sociales y flujos verticales.
-  atmosphere: Grandiosa, nostálgica, metálica, empática.
-  key_features: Geometría decó, escala industrial, ternura tecnológica, composición social en capas y contraste entre máquina y humanidad.
+  aesthetic: >-
+    Humanist Art Deco Retrofuture Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Humanist Art Deco Retrofuture Style's specific style identity.
+  form_and_line: >-
+    Define Humanist Art Deco Retrofuture Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Humanist Art Deco Retrofuture Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Humanist Art Deco Retrofuture Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Humanist Art Deco Retrofuture Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Humanist Art Deco Retrofuture Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Humanist Art Deco Retrofuture Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Humanist Art Deco Retrofuture Style: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Humanist Art Deco Retrofuture Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de retrofuturo humanista para cualquier prompt o imagen de entrada:
-    geometría decó, escala y sensibilidad tecnológica. Androides, maquinaria
-    cívica o siluetas monumentales pueden aparecer como indicios humanistas
-    cuando fortalezcan el input, sin fijar skyline ni jerarquía narrativa.
+    Create a style-card that translates Humanist Art Deco Retrofuture Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-296.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

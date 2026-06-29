@@ -12,20 +12,38 @@ tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
 visualDna:
-  aesthetic: Fluid psychedelic tragedy, with elastic deformation, neon collapse, raw youth panic, and ecstatic horror color.
-  form_and_line: Liquefied contours, rubbery distortion, broken silhouette rhythm, smear-heavy transitions, and unstable expressive anatomy.
-  color_palette: Acid magenta, toxic cyan, bruised violet, hot red, blacklight blue, and dirty flesh neutrals.
-  lighting_setup: Club-neon bleed, strobing color fields, overexposed emotional peaks, and hard underlight for panic surges.
-  material_texture: Wet ink smear, digital grain, oily bloom, rough cel edges, and visceral color mixing without literal gore dependence.
-  render_quality: Experimental anime finish with controlled chaos, readable deformation, and high-emotion psychedelic motion.
-  spatial_distortion: Bodies, space, and perspective stretch together as emotion overload bends the frame.
-  atmosphere: Psychedelic, tragic, devastating, neon-drenched.
-  key_features: Elastic metamorphosis, neon tragedy, blacklight horror, raw deformation, ecstatic collapse.
+  aesthetic: >-
+    Devilman Crybaby Neon Tragic Metamorphosis within 9. Dark Fantasy & Seinen: a reusable Anime Battle & Worlds visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Devilman Crybaby Neon Tragic Metamorphosis's specific style identity.
+  form_and_line: >-
+    Define Devilman Crybaby Neon Tragic Metamorphosis through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Devilman Crybaby Neon Tragic Metamorphosis-specific palette with clear dominant, secondary, and accent roles.
+    Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Devilman Crybaby Neon Tragic Metamorphosis recognizable: purposeful key, rim, bounce,
+    shadow, and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Devilman Crybaby Neon Tragic Metamorphosis: surface response, grain,
+    patina, polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Devilman Crybaby Neon Tragic Metamorphosis with high production clarity, strong silhouette reads, clean
+    detail priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Devilman Crybaby Neon Tragic Metamorphosis: perspective, compression, exaggeration,
+    or depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Devilman Crybaby Neon Tragic Metamorphosis: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Devilman Crybaby Neon Tragic Metamorphosis's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Apply neon tragic metamorphosis as a transferable visual treatment:
-    dissolve stable form, push color into blacklight panic, and make any prompt
-    feel emotionally overloaded without requiring a fixed horror event or
-    location.
+    Create a style-card that translates Devilman Crybaby Neon Tragic Metamorphosis into a portable visual system for 9.
+    Dark Fantasy & Seinen. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-070.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Gramática runner-adventure de trampas mecánicas con timing, reflejos, memoria de patrón y telegraph inmediato.
-  subject_treatment: Convierte el input en explorer, relic kit, hazard o mecanismo secuenciado; templo y reliquia son anclas opcionales.
-  color_and_tone: Arena ancestral, jade funcional y rojo alerta para telegraph de peligro inmediato.
-  lighting_and_shadow: Rayos solares recortados y contraste direccional para anticipar obstáculos secuenciados.
-  texture_and_material: Piedra tallada, madera estructural y metal oxidado de mecanismos activos.
-  camera_and_composition: Perspectiva de fuga, lanes y puntos de salto inequívocos como estructura, sin exigir gauntlet o templo.
-  atmosphere_and_mood: Urgente, rítmica y punitiva, de riesgo constante.
-  rendering_and_quality: 'Runner gameplay screencap: trap rhythm, hazard spacing, dodge timing, traversal path readable.'
+  aesthetic: >-
+    Temple Runner Trap Gauntlet within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Temple Runner Trap Gauntlet's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Temple Runner Trap Gauntlet's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Temple Runner Trap Gauntlet: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Temple Runner Trap Gauntlet: legible depth, purposeful highlights, readable focal zones,
+    and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Temple Runner Trap Gauntlet's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Temple Runner Trap Gauntlet's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Temple Runner Trap Gauntlet's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

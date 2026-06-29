@@ -12,21 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Espectáculo pop transformable de alto brillo, teatralidad aérea y emoción de clímax performático.
-  form_and_line: Trazo cel dinámico con coreografía de ascenso y transición performance-heroísmo.
-  color_palette: Magentas de show, cian eléctrico, blanco perlado y acentos metálicos cromados.
-  lighting_setup: Spotlights glam combinados con flare técnico, rim brillante y gradiente futurista.
-  material_texture: Lentejuela textil, pintura técnica brillante, panel translúcido y grano cálido broadcast.
-  render_quality: Acabado retro premium de espectáculo híbrido con legibilidad simultánea de ícono pop y tecnología.
-  spatial_distortion: Espacio elevado y ascendente conectado por encuadres de transformación y vuelo gráfico.
-  atmosphere: Radiante, emotiva, espectacular, eufórica.
-  key_features: Silueta pop distintiva, transformación técnica, iluminación de show y gestualidad de clímax.
+  aesthetic: >-
+    Pop Transformable Aerial Spectacle Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Pop Transformable Aerial Spectacle Style's specific style identity.
+  form_and_line: >-
+    Define Pop Transformable Aerial Spectacle Style through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Pop Transformable Aerial Spectacle Style-specific palette with clear dominant, secondary, and accent roles.
+    Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Pop Transformable Aerial Spectacle Style recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Pop Transformable Aerial Spectacle Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Pop Transformable Aerial Spectacle Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Pop Transformable Aerial Spectacle Style: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Pop Transformable Aerial Spectacle Style: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Pop Transformable Aerial Spectacle Style's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática reusable de pop-transformable-aerial-spectacle para
-    cualquier sujeto, equilibrando brillo escénico, ingeniería heroica y emoción
-    de directo. Puede convertir el input en ícono transformable, mecha pop o
-    nave-espectáculo si refuerza el estilo; evita fijar idol, escenario,
-    concierto, cockpit, aeronave literal o combate.
+    Create a style-card that translates Pop Transformable Aerial Spectacle Style into a portable visual system for 11.
+    70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -43,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-006.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

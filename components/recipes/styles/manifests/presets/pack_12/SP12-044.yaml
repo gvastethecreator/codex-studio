@@ -12,19 +12,35 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Gramática social-stealth ilusoria con engaño, acceso por estatus, fuga limpia y prestigio peligroso.
-  subject_treatment: Convierte el input en espía ceremonial, máscara de estatus, gadget discreto o nodo de vigilancia social.
-  color_and_tone: Oro suave, azul nocturno y púrpura real para codificar zonas de prestigio y riesgo.
-  lighting_and_shadow: Candelabros refractados en múltiples planos para crear coberturas y falsos positivos visuales.
-  texture_and_material: Cristal facetado, seda de alto rango, mármol pulido y metal de ornamento funcional.
-  camera_and_composition: Rutas ocultas, vigilancia y extracción en planos reflectivos; palacio o gala son anclas opcionales.
-  atmosphere_and_mood: Glamorosa, engañosa y socialmente tensa.
-  rendering_and_quality: 'Stealth-gala gameplay screencap: patrol loops, cover, access doors, illusion risks readable.'
+  aesthetic: >-
+    Mirage Palace Stealth Gala within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Mirage Palace Stealth Gala's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Mirage Palace Stealth Gala's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Mirage Palace Stealth Gala: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Mirage Palace Stealth Gala: legible depth, purposeful highlights, readable focal zones,
+    and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Mirage Palace Stealth Gala's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Mirage Palace Stealth Gala's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Mirage Palace Stealth Gala's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
   creative_brief: >-
-    Aplica Mirage Palace Stealth Gala como gramatica original de videojuego sobre cualquier input: conserva su sistema
-    de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
-    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece
-    fijo.
+    Create a style-card that translates Mirage Palace Stealth Gala into a portable visual system for 2. Arcane Temples &
+    Mythic Realms. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - watermark
   - text

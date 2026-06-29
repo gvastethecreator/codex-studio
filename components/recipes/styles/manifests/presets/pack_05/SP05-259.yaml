@@ -12,19 +12,38 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Cuento vulnerable de coraje moral, con ternura gráfica, simplicidad fábula y dignidad emocional.
-  form_and_line: Trazo storybook suave, proporciones amables, espacios amplios y contraste afectivo de escala.
-  color_palette: Celeste claro, amarillo mantequilla, rojo corona, verde prado y gris piedra amable.
-  lighting_setup: Luz de cuento diurna, halos cálidos de inocencia y sombras blandas de drama emocional.
-  material_texture: Papel ilustrado, pigmento mate, tejido ligero, piedra simple y madera amable en clave no literal.
-  render_quality: Narrativa visual emotiva de alta claridad gestual con estilo de fábula moderna.
-  spatial_distortion: Monumentalidad suave, figura vulnerable por escala relativa y aire narrativo de página abierta.
-  atmosphere: Inocente, valiente y conmovedora.
-  key_features: Ternura storybook, corona como motivo gráfico, escala afectiva, inocencia cromática y coraje visible.
+  aesthetic: >-
+    Ranking of Kings - Storybook Crown Courage within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Ranking of Kings - Storybook Crown Courage's specific style identity.
+  form_and_line: >-
+    Define Ranking of Kings - Storybook Crown Courage through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Ranking of Kings - Storybook Crown Courage-specific palette with clear dominant, secondary, and accent roles.
+    Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Ranking of Kings - Storybook Crown Courage recognizable: purposeful key, rim, bounce,
+    shadow, and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Ranking of Kings - Storybook Crown Courage: surface response, grain,
+    patina, polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Ranking of Kings - Storybook Crown Courage with high production clarity, strong silhouette reads, clean
+    detail priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Ranking of Kings - Storybook Crown Courage: perspective, compression, exaggeration,
+    or depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Ranking of Kings - Storybook Crown Courage: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Ranking of Kings - Storybook Crown Courage's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática storybook-crown reusable donde cualquier prompt se
-    vuelva tierno, monumental y moralmente valiente mediante escala afectiva,
-    línea simple y color de fábula sin fijar institución, rango o ceremonia.
+    Create a style-card that translates Ranking of Kings - Storybook Crown Courage into a portable visual system for 8.
+    Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-259.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

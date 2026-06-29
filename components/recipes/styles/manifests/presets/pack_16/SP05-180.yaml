@@ -12,20 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Estilo cel anime noventero de acción técnica, tensión cinética abstracta y confianza gráfica afilada.
-  form_and_line: Línea limpia y rápida, siluetas decididas, diagonales de velocidad y encuadres compactos de lectura inmediata.
-  color_palette: Azules nocturnos, acero cromado, negros densos, piel cálida y acentos naranjas de luz dura.
-  lighting_setup: Contraste de farola estilizada, brillos duros sobre bordes metálicos y sombras recortadas de thriller.
-  material_texture: Acetato satinado, metal pulido, cuero gráfico, grano analógico y superficies mecánicas sugeridas sin literalidad.
-  render_quality: Acabado premium 90s con precisión de contorno, energía cinética y detalle técnico subordinado al sujeto original.
-  spatial_distortion: Perspectiva comprimida, motion streaks controlados y planos tensos que vuelven dinámico cualquier motivo.
-  atmosphere: Afilada, acelerada, segura, peligrosa.
-  key_features: Cel shading limpio, reflejos cromados, tensión operativa abstracta, posing confiado y ritmo visual de aceleración.
+  aesthetic: >-
+    Precision Action Cel Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Precision Action Cel Style's specific style identity.
+  form_and_line: >-
+    Define Precision Action Cel Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Precision Action Cel Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Precision Action Cel Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Precision Action Cel Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Precision Action Cel Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Precision Action Cel Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Precision Action Cel Style: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Precision Action Cel Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica una gramática reusable de acción técnica noventera a cualquier prompt o imagen de entrada:
-    precisión gráfica, actitud afilada y dinamismo cinético. Vehículos, armas,
-    garajes o persecuciones pueden aparecer como indicios de thriller técnico si
-    potencian el input, sin fijar una escena literal.
+    Create a style-card that translates Precision Action Cel Style into a portable visual system for 3. 90s Golden Era.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-180.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

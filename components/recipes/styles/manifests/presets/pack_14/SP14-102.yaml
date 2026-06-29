@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Memorial veil language built from erased names, recovered marks, and quiet witness.
-  form_and_line: Soft drape, layered glyph-like traces, and narrow ritual framing.
-  color_palette: Smoke gray, ash white, and muted violet.
-  lighting_setup: Backlit cloth glow and candle edge light.
-  material_texture: Fine linen, thread shimmer, and wax residue.
-  render_quality: Intimate symbolic rendering with textile detail.
-  spatial_distortion: Shallow layered depth emphasizing veils, traces, and translucent memory.
-  atmosphere: Absence, remembrance, and quiet witness.
-  key_features: Veiled name traces, memorial stitches, folded witness layers.
-  creative_brief: Reinterpret any input through veils, erased-name marks, and mourning stitches. Use abstract glyph traces, linen translucency, wax residue, and witness-like layering instead of readable text, plaques, literal names, memorial rooms, or fixed ceremonial props.
+  aesthetic: >-
+    Veil of Erased Names within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Veil of Erased Names's specific style identity.
+  form_and_line: >-
+    Define Veil of Erased Names through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Veil of Erased Names-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Veil of Erased Names recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Veil of Erased Names: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Veil of Erased Names with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Veil of Erased Names: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Veil of Erased Names: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Veil of Erased Names's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Veil of Erased Names into a portable visual system for 1. Mythic Symbolism.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - loud-patterns

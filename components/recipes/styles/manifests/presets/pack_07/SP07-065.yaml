@@ -12,22 +12,38 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Miniatura papercraft basada en lógica de pliegue, estratificación de diorama y sensibilidad manual portable.
-  form_and_line: Siluetas de corte nítido, bisagras marcadas, uniones por pestaña y planos pop-up en profundidad apilada.
+  aesthetic: >-
+    Papercraft Diorama Construction within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Papercraft Diorama Construction's specific style identity.
+  form_and_line: >-
+    Define Papercraft Diorama Construction through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
   color_palette: >-
-    Off-white paper stock, kraft brown board, neutral newsprint gray, pastel card inserts, tracing-paper translucency,
-    and muted pigment accents
-  lighting_setup: Key suave de maqueta, sombras direccionales por cantos de papel y glow tenue por translucidez de láminas finas.
-  material_texture: Fibra visible, diente de cartulina, memoria de pliegue, pelusa de corte y costuras secas de pegamento mate.
-  render_quality: Miniatura artesanal de alta claridad con escala controlada y materialidad deliberadamente no fotoreal.
-  spatial_distortion: None
-  atmosphere: Delicada, paciente y contemplativa, con ensamblaje manual explícito.
-  key_features: Líneas de score expuestas, uniones tab-slot, planos por capas y ritmo de sombra en borde de papel.
+    Use a Papercraft Diorama Construction-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Papercraft Diorama Construction recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Papercraft Diorama Construction: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Papercraft Diorama Construction with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Papercraft Diorama Construction: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Papercraft Diorama Construction: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Papercraft Diorama Construction's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Renderiza cualquier tema como construcción papercraft: planos plegados, pestañas visibles, fibra de cartulina,
-    sombras de borde y profundidad de diorama. La maqueta debe sentirse hecha a mano sin depender de ciudad miniatura,
-    calle de maqueta, vitrina museistica o escena urbana obligatoria. Conserva pliegue, pestanas, fibra visible,
-    escala de maqueta y sombra por capas sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Papercraft Diorama Construction into a portable visual system for 6. Toy Craft
+    And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character,
+    prop, or story beat.
 avoidRules:
   - photoreal material finish
   - full-scale real scene

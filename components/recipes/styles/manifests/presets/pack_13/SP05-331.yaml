@@ -13,26 +13,36 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Heroísmo hiperpulido de espectacularidad máxima, anatomía cromada y energía de impacto
-    coreografiada con precisión quirúrgica.
+    Chrome Impact Spectacle within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Chrome Impact Spectacle's specific style identity.
   form_and_line: >-
-    Contorno de precisión absoluta, detalle anatómico denso y control ultralimpio de líneas de
-    acción.
-  color_palette: Steel grey, explosion orange, hero red, electric cyan, soot black, flash white
+    Define Chrome Impact Spectacle through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Chrome Impact Spectacle-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Iluminación HDR de impacto, sheen especular heroico, contraluz explosivo y relleno por
-    partículas incandescentes.
-  material_texture: Acabado pulido en piel/metal, granulado de debris, columnas de humo y microdetalle de fractura.
-  render_quality: Action frame premium con claridad de lectura cinética y acabado editorial de alto brillo.
-  spatial_distortion: Extreme foreshortening, focal compression, spectacle-first scale, and perfect action readability
-  atmosphere: Explosiva, triunfal y metálica, impulsada por perfección técnica agresiva.
+    Use lighting that makes Chrome Impact Spectacle recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Chrome Impact Spectacle: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Chrome Impact Spectacle with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Chrome Impact Spectacle: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Chrome Impact Spectacle: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Chrome-like anatomy, impact fractures, extreme foreshortening, scale-shatter perspective, and
-    hyperdefined spectacle polish
+    Prioritize Chrome Impact Spectacle's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Use Yusuke Murata as style anchor for chrome impact spectacle. Any prompt should gain
-    hyperdefined polish, forceful foreshortening, crisp anatomy, and scale fracture. Cities,
-    craters, superheroes, punches, and camera-hit poses are optional.
+    Create a style-card that translates Chrome Impact Spectacle into a portable visual system for 12. Anime Style
+    Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - still
   - calm

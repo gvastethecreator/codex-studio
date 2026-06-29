@@ -303,18 +303,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, software UI, vaporwave prop requirement',
     style: {
       aesthetic:
-        'Digital collage composite with layer logic, surreal scale play, and clean cut-screen edges',
-      form_and_line: 'Clean cuts',
-      color_palette: 'Vibrant, surreal',
-      lighting_setup: 'Digital',
-      material_texture: 'Screen',
+        "Digital Collage within 5. Mixed Media: a reusable Essential Art Styles visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Digital Collage's specific style identity.",
+      form_and_line:
+        'Define Digital Collage through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Digital Collage-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Digital Collage recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Digital Collage: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Modern screen-native collage polish without requiring vaporwave props or platform UI',
-      spatial_distortion: 'Scale play',
-      atmosphere: 'Surreal, fun',
-      key_features: 'Digital edges',
+        'Render Digital Collage with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Digital Collage: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Digital Collage: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Digital Collage's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Layers float in digital space, each element imported from a different universe, composited into a reality that Photoshop alone can sustain. Scale, perspective, gravity — all negotiable, all adjustable via transform handles. The image celebrates the cut-and-paste logic of the screen, where everything is a layer and nothing is final.',
+        'Create a style-card that translates Digital Collage into a portable visual system for 5. Mixed Media. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -405,17 +412,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable magazine text, specific source photo requirement',
     style: {
       aesthetic:
-        'Analog cut-paper collage with visible seams, mismatched print sources, and deliberate fragment tension',
-      form_and_line: 'Scissor cuts',
-      color_palette: 'Vintage print fragments, mismatched ink ages, and clashing CMYK residues',
-      lighting_setup: 'Inconsistent',
-      material_texture: 'Paper, glue',
-      render_quality: 'Dada, punk',
-      spatial_distortion: 'Disjointed',
-      atmosphere: 'Chaotic, surreal',
-      key_features: 'Cutout edges',
+        "Analog Cut-Paper Collage within 5. Mixed Media: a reusable Essential Art Styles visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Analog Cut-Paper Collage's specific style identity.",
+      form_and_line:
+        'Define Analog Cut-Paper Collage through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Analog Cut-Paper Collage-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Analog Cut-Paper Collage recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Analog Cut-Paper Collage: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Analog Cut-Paper Collage with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Analog Cut-Paper Collage: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Analog Cut-Paper Collage: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Analog Cut-Paper Collage's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Scissor cuts interrupt source material, reassembling fragments into a visual logic the originals never intended. Glue shows at the edges, paper types clash, perspectives collide — the seams are the point. The image makes meaning through juxtaposition, with gaps, scale jumps, and cut edges doing the expressive work. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text, boards, fire, studio setup, or literal craft-table scene.',
+        'Create a style-card that translates Analog Cut-Paper Collage into a portable visual system for 5. Mixed Media. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

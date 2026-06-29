@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Cámara musical intimista de precisión emocional, enfocada en distancia afectiva, pausa y resonancia silenciosa.
-  form_and_line: Trazo fino y reservado, microgestos delicados, respiración visual y timing compositivo entre presencia y ausencia.
-  color_palette: Marfiles pálidos, azules deslavados, grises silenciosos y dorados suaves de resonancia acústica.
-  lighting_setup: Luz interior filtrada de baja intensidad con sombras blandas que sostienen vulnerabilidad sin dramatismo excesivo.
-  material_texture: Barniz cálido, superficies enceradas, telas ligeras y aire suspendido con sensación acústica contenida.
-  render_quality: Acabado premium de alta sutileza, lectura de proximidad emocional y refinamiento acústico traducido a imagen.
-  spatial_distortion: Profundidad longitudinal usada como métrica de distancia vincular, con limpieza compositiva y mínima distorsión.
-  atmosphere: Frágil, musical, contenida, punzante.
-  key_features: Distancia espacial, gestualidad mínima, luz pálida, ritmo de cámara y composición de silencio compartido.
+  aesthetic: >-
+    Quiet Musical Distance Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Quiet Musical Distance Style's specific style identity.
+  form_and_line: >-
+    Define Quiet Musical Distance Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Quiet Musical Distance Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Quiet Musical Distance Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Quiet Musical Distance Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Quiet Musical Distance Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Quiet Musical Distance Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Quiet Musical Distance Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Quiet Musical Distance Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática reusable de intimidad musical para cualquier prompt o imagen de entrada:
-    pausa, aire y distancia emocional sin imponer instrumentos, pasillos, escuelas ni dúos de personajes.
+    Create a style-card that translates Quiet Musical Distance Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-295.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

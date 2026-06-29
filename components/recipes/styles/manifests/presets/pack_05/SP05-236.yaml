@@ -13,30 +13,36 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Extreme utilitarian anime wear where compact hardware, mud, rust, logistical pressure, and
-    anti-glamour function replace spectacle
+    Compact Attrition Hardware within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Compact Attrition Hardware's specific style identity.
   form_and_line: >-
-    Volúmenes compactos blindados, ópticas mínimas abstractas, panelado funcional, proporciones
-    bajas y ausencia de heroización formal.
-  color_palette: Verde oliva sucio, marrón barro, gris acero oxidado y rojo de testigo operativo mínimo.
-  lighting_setup: Luz plomiza, rebote húmedo de lodo y lectura por focos funcionales de baja intensidad.
+    Define Compact Attrition Hardware through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Compact Attrition Hardware-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Compact Attrition Hardware recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
   material_texture: >-
-    Óxido activo, barro espeso, soldadura tosca, pintura descascarada y desgaste por fricción
-    mecánica.
+    Use materials and textures that reinforce Compact Attrition Hardware: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
   render_quality: >-
-    Mecánica utilitaria de alta credibilidad con peso físico, suciedad persistente y enfoque
-    anti-glamour.
+    Render Compact Attrition Hardware with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Perspectiva baja, compresión de presión logística, visibilidad limitada y masa compacta en
-    primer plano.
-  atmosphere: Ruda, agotada y pragmática, sin épica.
+    Use spatial behavior that fits Compact Attrition Hardware: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Compact Attrition Hardware: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
   key_features: >-
-    Low compact mass, utility chassis logic, mud-rust texture, survival materiality, compressed
-    pressure, and anti-heroic function
+    Prioritize Compact Attrition Hardware's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Use compact attrition hardware as worn-function grammar. Any prompt should feel low, heavy,
-    disposable, repaired, and logistically stressed. Vehicles, factions, trenches, war, and hero
-    spectacle are optional.
+    Create a style-card that translates Compact Attrition Hardware into a portable visual system for 7. Mecha &
+    Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -54,8 +60,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-236.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -12,22 +12,35 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Gramática action-adventure mística con puzzle lumínico, refracción cristalina y orientación geométrica ritual.
+  aesthetic: >-
+    Crystal Desert Shrine within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Crystal Desert Shrine's specific style identity.
   subject_treatment: >-
-    Reinterpreta el input como guardián, prisma, llave, avatar o superficie calibrada; santuario y desierto son anclas
-    opcionales.
-  color_and_tone: Arena rosada, amatista, blanco solar y acentos espectrales por refracción.
-  lighting_and_shadow: Sol duro con rebotes policromáticos usados como mecánica de progresión visual.
-  texture_and_material: Cuarzo facetado, polvo fino, piedra tallada y superficies de calibración óptica.
+    Treat any subject through Crystal Desert Shrine's visual grammar: readable silhouette, role cues, controlled detail
+    density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Crystal Desert Shrine: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Crystal Desert Shrine: legible depth, purposeful highlights, readable focal zones, and
+    atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Crystal Desert Shrine's material logic: tactile detail, coherent finish, and texture choices
+    that reinforce the style rather than generic decoration.
   camera_and_composition: >-
-    Gran angular con líneas guía, nodos puzzle y lectura ceremonial; escaleras o templos sólo si refuerzan la mecánica
-    visual.
-  atmosphere_and_mood: Sagrada, silenciosa y analítica, de descubrimiento ritual.
-  rendering_and_quality: 'Exploration gameplay screencap: optical mechanics, shrine landmarks, traversal decisions clear.'
+    Compose with Crystal Desert Shrine's staging logic: strong focal hierarchy, stable readable framing, and spatial
+    rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Crystal Desert Shrine's mood through environment, color, light, and texture. Keep it distinct from neighboring
+    presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
   creative_brief: >-
-    Aplica Crystal Desert Shrine como gramatica original de videojuego sobre cualquier input: conserva su sistema de
-    genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura, arquitectura
-    o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece fijo.
+    Create a style-card that translates Crystal Desert Shrine into a portable visual system for 2. Arcane Temples &
+    Mythic Realms. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - watermark
   - text

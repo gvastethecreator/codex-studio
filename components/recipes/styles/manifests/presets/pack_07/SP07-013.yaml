@@ -12,25 +12,37 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Mediterráneo solar de cal y terracota, claridad térmica y umbral ventilado.
+  aesthetic: >-
+    Mediterranean Villa within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Mediterranean Villa's specific style identity.
   form_and_line: >-
-    Volúmenes estucados de canto blando, arquerías repetidas, colonnatas ligeras y transiciones de
-    sombra abierta.
-  color_palette: Blanco de cal, azul mediterráneo, terracota, ocre cálido y verdes vidrio mar en acento moderado.
+    Define Mediterranean Villa through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Mediterranean Villa-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Sol alto de contraste nítido, rebote cálido mineral y transición crepuscular con prácticos
-    discretos.
-  material_texture: Estuco mineral, baldosa manual, piedra junta abierta, madera blanqueada y hierro forjado mate.
-  render_quality: Realismo mediterráneo limpio con precisión de luz solar y lectura material aérea.
-  spatial_distortion: Perspectiva abierta con encuadres axiales suaves y secuencia de umbrales ventilados.
-  atmosphere: Luminosa, relajada, ventilada y restaurativa.
+    Use lighting that makes Mediterranean Villa recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Mediterranean Villa: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Mediterranean Villa with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Mediterranean Villa: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Mediterranean Villa: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Binomio cal-terracota, sombra arqueada, umbrales conectores y paleta costera de saturación
-    contenida.
+    Prioritize Mediterranean Villa's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Mantén una gramática mediterránea transferible de alto sol, cal mineral y terracota
-    estructurante. La identidad debe sostenerse por clima, material y secuencia espacial, no por una
-    narrativa de villa puntual.
+    Create a style-card that translates Mediterranean Villa into a portable visual system for 1. Interior Design
+    Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - overcast gloom
   - cold industrial grey cast

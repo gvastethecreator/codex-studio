@@ -12,27 +12,38 @@ tags:
   - architecture-and-interior
   - megastructure-and-impossible-space
 visualDna:
-  aesthetic: Megaestructura habitable en banda orbital con ecología lineal y paisaje planificado a escala de macro-civilización.
+  aesthetic: >-
+    Orbital Ribbon Habitat within 7. Megastructure And Impossible Space: a reusable Architecture & Interior visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Orbital Ribbon Habitat's specific style identity.
   form_and_line: >-
-    Arcos de horizonte ascendente, cinta territorial continua, muros de borde colosales y visuales longitudinales
-    guiadas por curvatura.
+    Define Orbital Ribbon Habitat through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
   color_palette: >-
-    Atmospheric blue gradients, biosphere green land strips, oceanic cyan bands, structural charcoal edge walls, void
-    black backdrop, and high-altitude white haze
+    Use a Orbital Ribbon Habitat-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Luz estelar direccional, sectores de autosombra masiva, scatter atmosférico frontal e iluminación de borde en
-    edge-walls.
+    Use lighting that makes Orbital Ribbon Habitat recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
   material_texture: >-
-    Tiling de terreno planetario, estelas de nubes, reflectividad de bandas acuáticas y facetas estructurales en
-    contención.
-  render_quality: Paisaje especulativo ultra-vasto con lectura rigurosa de curvatura y coherencia de ingeniería macro.
-  spatial_distortion: Orbital-band curvature with upward horizon wrap and macro-scale perspective compression
-  atmosphere: Grandiosa, serena y diseñada, con sensación de hábitat cósmico continuo.
-  key_features: Terreno arqueado, biosfera en cinta, contención kilométrica de borde y bandas de sombra por rotación.
+    Use materials and textures that reinforce Orbital Ribbon Habitat: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Orbital Ribbon Habitat with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Orbital Ribbon Habitat: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Orbital Ribbon Habitat: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Orbital Ribbon Habitat's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Usa claves de banda orbital como lenguaje de escala: curvatura ascendente, horizon wrap,
-    ecologia lineal, muros de borde y perspectiva macro. La identidad viene de continuidad anular
-    y planificacion biosferica sin obligar a que toda composicion sea un habitat completo.
+    Create a style-card that translates Orbital Ribbon Habitat into a portable visual system for 7. Megastructure And
+    Impossible Space. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - globe
 assets:

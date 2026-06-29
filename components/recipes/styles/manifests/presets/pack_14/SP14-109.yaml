@@ -12,16 +12,38 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Confessional noir translated through blackwater reflections, secrecy, and ritual cleansing.
-  form_and_line: Narrow vertical screen forms, water reflection bands, and arch-slit cues.
-  color_palette: Tar black, tarnished silver, and deep teal.
-  lighting_setup: Reflected water shimmer and slit-window light.
-  material_texture: Damp stone, brushed metal, and polished confession screens.
-  render_quality: Mysterious symbolic rendering with clean contrast.
-  spatial_distortion: Repeated screen rhythm over a submerged void feeling, usable on subjects or objects.
-  atmosphere: Admission, secrecy, and ritual cleansing.
-  key_features: Confessional screens, blackwater basin cues, whisper-grille textures.
-  creative_brief: Reinterpret any input as blackwater confession, with dark reflective tides and narrow secrecy replacing literal room requirements. Use slit-light rhythm, whisper-grille texture, damp stone, and submerged void feeling without forcing confessionals, basins, rooms, screens, bedrooms, beds, domestic interiors, or religious props.
+  aesthetic: >-
+    Blackwater Confessional Reflection within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Blackwater Confessional Reflection's specific style identity.
+  form_and_line: >-
+    Define Blackwater Confessional Reflection through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Blackwater Confessional Reflection-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Blackwater Confessional Reflection recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Blackwater Confessional Reflection: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Blackwater Confessional Reflection with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Blackwater Confessional Reflection: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Blackwater Confessional Reflection: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Blackwater Confessional Reflection's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Blackwater Confessional Reflection into a portable visual system for 2. Mythic
+    Ritual Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - photoreal
   - cute

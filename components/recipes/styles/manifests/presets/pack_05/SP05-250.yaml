@@ -12,19 +12,38 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Espiritualidad sobria, mentoría ritual, heroísmo devocional sin cinismo y solemnidad ética de alto fantasy.
-  form_and_line: Postura de voto, líneas de peregrinaje abstractas, siluetas protectoras y verticalidad de juramento.
-  color_palette: Oro alba, azul oración, gris piedra ancestral, blanco juramento y verde de santuario antiguo.
-  lighting_setup: Amanecer litúrgico, shafts verticales y halo moderado sobre símbolos sagrados.
-  material_texture: Piedra erosionada, metal bendecido, tela de viaje, reliquia ritual y polvo antiguo.
-  render_quality: Fantasía devocional de gran claridad ética, con equilibrio entre épica y contemplación religiosa.
-  spatial_distortion: Profundidad sagrada, horizonte de tránsito interior y eje vertical de trascendencia.
-  atmosphere: Solemne, esperanzada y piadosa, de camino interior y exterior.
-  key_features: Juramento visualizado, oro alba, piedra sagrada, tránsito moral y heroísmo contemplativo.
+  aesthetic: >-
+    The Faraway Paladin - Quiet Temple Quest within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving The Faraway Paladin - Quiet Temple Quest's specific style identity.
+  form_and_line: >-
+    Define The Faraway Paladin - Quiet Temple Quest through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a The Faraway Paladin - Quiet Temple Quest-specific palette with clear dominant, secondary, and accent roles.
+    Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes The Faraway Paladin - Quiet Temple Quest recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce The Faraway Paladin - Quiet Temple Quest: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render The Faraway Paladin - Quiet Temple Quest with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits The Faraway Paladin - Quiet Temple Quest: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to The Faraway Paladin - Quiet Temple Quest: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize The Faraway Paladin - Quiet Temple Quest's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática quiet-paladin reusable donde rito, deber y
-    monumentalidad sagrada expresen aprendizaje moral sin forzar edificio
-    ritual, protectores, armamento, ruta, rol literal o aventura concreta.
+    Create a style-card that translates The Faraway Paladin - Quiet Temple Quest into a portable visual system for 8.
+    Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-250.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

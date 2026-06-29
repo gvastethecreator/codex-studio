@@ -12,20 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Ópera astral romántica, heroicidad melancólica, nobleza crepuscular y escala monumental.
-  form_and_line: Línea cel clásica de figura elevada, drapeado amplio, acting contenido de añoranza y nobleza.
-  color_palette: Índigos profundos, oro envejecido, rojo vino ceremonial y grises siderales desaturados.
-  lighting_setup: Claroscuro estelar con key lateral dramática, halos de vacío y rim tenue sobre capa en movimiento.
-  material_texture: Metal envejecido, terciopelo ceremonial, vidrio oscuro y grano analógico elegante.
-  render_quality: Producción retro premium con lectura épica-lírica y composición de gran aliento visual.
-  spatial_distortion: Grandes vacíos y ejes largos para enfatizar soledad heroica y destino itinerante.
-  atmosphere: Melancólica, heroica, anhelante, grandiosa.
-  key_features: Drapeado icónico, silueta noble, escala axial y horizonte abstracto como contrapeso emocional.
+  aesthetic: >-
+    Melancholy Astral Opera Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Melancholy Astral Opera Style's specific style identity.
+  form_and_line: >-
+    Define Melancholy Astral Opera Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Melancholy Astral Opera Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Melancholy Astral Opera Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Melancholy Astral Opera Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Melancholy Astral Opera Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Melancholy Astral Opera Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Melancholy Astral Opera Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Melancholy Astral Opera Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de melancholy-astral-opera para cualquier
-    sujeto, equilibrando majestuosidad operática, soledad noble y escala
-    crepuscular sin imponer corsarios, naves, uniformes, puentes, ventanales ni
-    horizontes estelares literales.
+    Create a style-card that translates Melancholy Astral Opera Style into a portable visual system for 11. 70s & 80s
+    Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-004.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

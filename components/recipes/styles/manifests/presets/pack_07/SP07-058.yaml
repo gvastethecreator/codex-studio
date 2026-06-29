@@ -12,20 +12,38 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Megaestructura cristalina de crecimiento geologico y futurismo mineral monolitico, portable a cualquier masa o sistema.
-  form_and_line: Apilamientos facetados, haces hexagonales, placas gema y convergencias prismatica multiples sin depender de una sola aguja heroica.
-  color_palette: Purple-blue-white, amethyst, sapphire, diamond spark, deep crystal violet, iridescent flash
-  lighting_setup: Refraccion interna intensa, dispersion espectral, nucleos autoiluminados y bordes facetados de alto brillo.
-  material_texture: Cristal vitreo, caras gema, profundidad translucida y mineralizacion de microdetalle con optica coherente.
-  render_quality: Arquitectura cristalina de alta claridad con precision mineral monumental y control fisico de luz interna.
-  spatial_distortion: Faceted stacking and refractive scale drift without a mandatory spire apex
-  atmosphere: Quietud luminosa, asombro frio y elegancia mineral de otro mundo.
-  key_features: Planos refractivos, nucleos translucidos, estratos de brillo interno y jerarquia prismatica en capas.
+  aesthetic: >-
+    Prismatic Mineral Megastructure within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Prismatic Mineral Megastructure's specific style identity.
+  form_and_line: >-
+    Define Prismatic Mineral Megastructure through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Prismatic Mineral Megastructure-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Prismatic Mineral Megastructure recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Prismatic Mineral Megastructure: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Prismatic Mineral Megastructure with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Prismatic Mineral Megastructure: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Prismatic Mineral Megastructure: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Prismatic Mineral Megastructure's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Haz que el estilo nazca de optica mineral: masa facetada, crecimiento cristalino, refraccion interna y color
-    espectral disciplinado. Debe poder envolver arquitectura, objeto, personaje o paisaje sin exigir torre-aguja unica,
-    templo gema o skyline de monolitos identicos. Conserva logica mineral, escala prismatica, ritmo facetado y atmosfera
-    fria sin depender de edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Prismatic Mineral Megastructure into a portable visual system for 5. Fantasy And
+    Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - ordinary brick-wall dominance
   - wood-cabin material lock

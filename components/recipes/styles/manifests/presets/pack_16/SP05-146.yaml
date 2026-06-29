@@ -12,16 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Gótico aristocrático ceremonial con amenaza contenida, lujo oscuro y teatralidad de pacto oculto.
-  form_and_line: Silueta impecable, línea decorativa precisa y acting de protocolo frío y exacto.
-  color_palette: Negros ébano, burdeos profundos, ámbar de vela y plateados especulares de ceremonia.
-  lighting_setup: Piscinas de luz candlelit, gradiente low-key de opulencia y destello metálico ritual.
-  material_texture: Terciopelo, laca oscura, plata pulida y pliegue textil nítido con acabado digital sobrio.
-  render_quality: Refinamiento premium 2000s con alta legibilidad de silueta y atmósfera de opulencia sin exceso.
-  spatial_distortion: Composición ceremonial con distancia jerárquica y verticalidad elegante de teatro abstracto.
-  atmosphere: Elegante, siniestra, controlada, decadente.
-  key_features: Gramática de terciopelo y encaje, luz de vela gótica, metal ritual y precisión ceremonial impecable.
-  creative_brief: Construye una gramática reusable de amenaza aristocrática gótica para cualquier sujeto, manteniendo precisión ceremonial y opulencia oscura sin imponer mansiones, sirvientes, cubertería ni pactos literales.
+  aesthetic: >-
+    Velvet Covenant Gothic Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Velvet Covenant Gothic Style's specific style identity.
+  form_and_line: >-
+    Define Velvet Covenant Gothic Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Velvet Covenant Gothic Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Velvet Covenant Gothic Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Velvet Covenant Gothic Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Velvet Covenant Gothic Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Velvet Covenant Gothic Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Velvet Covenant Gothic Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Velvet Covenant Gothic Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Velvet Covenant Gothic Style into a portable visual system for 2. 2000s
+    Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-146.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

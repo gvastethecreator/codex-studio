@@ -13,26 +13,36 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Beauty-anime clásico de glamour pictórico, elegancia aristocrática y romanticismo maduro de
-    tempo lento.
+    Velvet Lash Refined Tension within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Velvet Lash Refined Tension's specific style identity.
   form_and_line: >-
-    Contorno rico en pestaña, precisión refinada y suavidad lineal orientada a presencia de alta
-    clase.
-  color_palette: Burgundy, ivory, smoky mauve, navy silk, gold trim, warm peach
-  lighting_setup: Spot de retrato, sombra aterciopelada, rim glam y brillo pictórico en pómulo.
-  material_texture: Cortinaje de terciopelo, sheen de cabello, detalle satinado en vestuario y suavidad old-cel.
-  render_quality: Portrait frame de alto refinamiento con dramatismo elegante y foco en presencia emocional.
+    Define Velvet Lash Refined Tension through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Velvet Lash Refined Tension-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Velvet Lash Refined Tension recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Velvet Lash Refined Tension: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Velvet Lash Refined Tension with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Beauty-first proportions, swan-neck elegance cues, luxuriant framing, and noble silhouette
-    emphasis
-  atmosphere: Aterciopelada, madura y dramática, de confesión íntima ceremonial.
+    Use spatial behavior that fits Velvet Lash Refined Tension: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Velvet Lash Refined Tension: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
   key_features: >-
-    Velvet texture, lash-heavy graphic elegance, aristocratic posture language, slow romantic
-    pressure, and classic beauty-anime polish
+    Prioritize Velvet Lash Refined Tension's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Use Akio Sugino as style anchor for velvet-lash refined tension. Any prompt should become
-    elegant, luxurious, slow, and romantically pressurized. Human portraits, swan-neck poses,
-    curtains, close-ups, and aristocratic scenes are optional.
+    Create a style-card that translates Velvet Lash Refined Tension into a portable visual system for 12. Anime Style
+    Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - crude action pose
   - rough sketch dirt
@@ -45,8 +55,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-340.webp
 attributes:
   negativePrompt: >-
-    crude action pose, rough sketch dirt, flat office lighting, low-glam casual realism, neon glitch
-    clutter, comic chibi proportions, plastic 3d render
+    crude action pose, rough sketch dirt, flat office lighting, low-glam casual realism, neon glitch clutter, comic
+    chibi proportions, plastic 3d render
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

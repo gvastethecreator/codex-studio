@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
 visualDna:
-  aesthetic: Gramática hero-draft esports con selección estratégica, counterpicks, roster instantáneo y presentación broadcast.
-  subject_treatment: Convierte el input en héroe, rol, counterpick, emblema de clase o amenaza temprana con silueta diferenciada.
-  color_and_tone: Multicolor controlado sobre base neutra para evitar ruido y preservar claridad competitiva.
-  lighting_and_shadow: Spotlights escénicos y paneles LED que refuerzan turnos de pick/ban.
-  texture_and_material: Armaduras limpias, cristal de energía y materiales de escenario broadcast-ready.
-  camera_and_composition: Presentación frontal, jerarquía de picks y composición de equipo sin exigir arena.
-  atmosphere_and_mood: Competitiva, hypeada y visualmente precisa.
-  rendering_and_quality: 'Hero-draft gameplay frame: roles, counters, team pressure, readable picks staged as arena silhouettes.'
+  aesthetic: >-
+    Prismatic Arena Hero Draft within 5. Speed, Sport & Competitive Arenas: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Prismatic Arena Hero Draft's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Prismatic Arena Hero Draft's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Prismatic Arena Hero Draft: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Prismatic Arena Hero Draft: legible depth, purposeful highlights, readable focal zones,
+    and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Prismatic Arena Hero Draft's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Prismatic Arena Hero Draft's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Prismatic Arena Hero Draft's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 5. Speed, Sport & Competitive Arenas style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

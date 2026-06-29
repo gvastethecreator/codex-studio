@@ -12,20 +12,38 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Fantasía sistémica de cooperación visible, política social abstracta, administración luminosa y mundo legible como infraestructura cultural.
-  form_and_line: Retículas ordenadas, siluetas funcionales claras, linework táctico de interfaz diegética y composición coral modular.
-  color_palette: Azul acero urbano, verde esmeralda administrativo, ámbar cálido de taberna y acentos cian de UI arcana.
-  lighting_setup: Luz administrativa clara, tungsteno suave y superposición luminosa de ventanas de sistema.
-  material_texture: Piedra pulida, madera tabular, pergamino abstracto, metal de emblema y tela funcional.
-  render_quality: Fantasía de alta legibilidad estratégica, con composición coral y claridad de roles visuales.
-  spatial_distortion: Escala comunitaria horizontal, jerarquía visual por módulos y profundidad orientada a mapa social.
-  atmosphere: Comunal, analítica y esperanzada, de sistema que aprende a autogobernarse.
-  key_features: Emblemas abstractos, nodos de negociación, pizarras de sistema y staging colaborativo modular.
+  aesthetic: >-
+    Systemic Cooperation Grid Style within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Systemic Cooperation Grid Style's specific style identity.
+  form_and_line: >-
+    Define Systemic Cooperation Grid Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Systemic Cooperation Grid Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Systemic Cooperation Grid Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Systemic Cooperation Grid Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Systemic Cooperation Grid Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Systemic Cooperation Grid Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Systemic Cooperation Grid Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Systemic Cooperation Grid Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática cooperation-grid reusable donde infraestructura social,
-    estética de sistema y cooperación visible articulen identidad sin
-    instituciones nombradas, nodos cívicos fijos, tableros de misión, escuadras
-    o urbe concreta.
+    Create a style-card that translates Systemic Cooperation Grid Style into a portable visual system for 8. Isekai &
+    High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-241.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

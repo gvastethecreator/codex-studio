@@ -12,20 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Aventura cómica de formas redondas, inocencia física, slapstick amable y energía itinerante.
-  form_and_line: Trazo cel elástico y expresivo, timing de gag corporal y silueta cartoon de lectura instantánea.
-  color_palette: Amarillos soleados, verdes vivos, naranjas suaves y azules limpios de viaje clásico.
-  lighting_setup: Iluminación abierta de aventura diurna, sombra simple y acentos brillantes de humor físico.
-  material_texture: Polvo caricaturesco, tela simple, piedra ligera y grano retro optimista.
-  render_quality: Acabado broadcast cálido con énfasis en claridad cómica y ternura de movimiento.
-  spatial_distortion: Espacio expansivo y flexible para carrera, salto y choque cómico sin perder legibilidad.
-  atmosphere: Aventurera, alegre, juguetona, entrañable.
-  key_features: Proporción redondeada, energía de troupe, beat de broma visual y choque amistoso.
+  aesthetic: >-
+    Round Adventure Slapstick Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Round Adventure Slapstick Style's specific style identity.
+  form_and_line: >-
+    Define Round Adventure Slapstick Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Round Adventure Slapstick Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Round Adventure Slapstick Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Round Adventure Slapstick Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Round Adventure Slapstick Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Round Adventure Slapstick Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Round Adventure Slapstick Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Round Adventure Slapstick Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática reusable de round-adventure-slapstick para cualquier
-    sujeto, enfocada en elasticidad expresiva, optimismo narrativo y ritmo de
-    gag físico sin imponer artes marciales, viajes, troupe, combate ni mundo
-    expansivo literal.
+    Create a style-card that translates Round Adventure Slapstick Style into a portable visual system for 11. 70s & 80s
+    Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-010.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

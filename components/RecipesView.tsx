@@ -18,7 +18,7 @@ import {
 } from '@tabler/icons-react';
 import type { RecipeAliasId } from '../lib/recipeAliases';
 import type { RecipeId } from '../types';
-import { RECIPE_CARD_IMAGES } from '../lib/recipeAssetCatalog';
+import { RECIPE_CARD_IMAGES } from '../lib/recipeCardCatalog';
 import type { RecipeCatalogDisplayEntry } from '../lib/recipeCatalog';
 import { createRecipesGridProjection } from '../lib/recipeDiscoveryProjection';
 

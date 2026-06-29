@@ -12,20 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Thriller nocturno clínico-táctico, con disciplina operativa, melancolía hemática y tragedia íntima contenida.
-  form_and_line: Trazado limpio de acción táctica, siluetas contrastantes y movimiento cortante de amenaza cercana.
-  color_palette: Azules hospitalarios, rojos hemáticos contenidos, grises logísticos y blancos fríos de interior estéril.
-  lighting_setup: Iluminación fluorescente logística, contraluces nocturnos y highlights finos sobre metal clínico.
-  material_texture: Acero clínico, vidrio oscuro, textil técnico y superficies limpias de infraestructura estéril.
-  render_quality: Acabado premium dark-action 2000s con legibilidad de operación y peso emocional de misión secreta.
-  spatial_distortion: Composición longitudinal de tránsito y corredor abstracto para reforzar encierro psicológico.
-  atmosphere: Desolada, disciplinada, nocturna, trágica.
-  key_features: Limpieza táctica, iconografía hemática, encuadre de operación oculta y amenaza cortante contenida.
+  aesthetic: >-
+    Clinical Nocturne Tactics Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Clinical Nocturne Tactics Style's specific style identity.
+  form_and_line: >-
+    Define Clinical Nocturne Tactics Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Clinical Nocturne Tactics Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Clinical Nocturne Tactics Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Clinical Nocturne Tactics Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Clinical Nocturne Tactics Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Clinical Nocturne Tactics Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Clinical Nocturne Tactics Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Clinical Nocturne Tactics Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática reusable de clinical-nocturne-tactics para cualquier
-    sujeto: limpieza táctica, melancolía hemática, noche controlada y violencia
-    contenida sin imponer vampiros, militares, trenes, carreteras, uniformes,
-    katanas ni protagonistas escolares.
+    Create a style-card that translates Clinical Nocturne Tactics Style into a portable visual system for 2. 2000s
+    Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-154.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

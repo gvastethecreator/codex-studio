@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Psicodelia de reinvención radical con lógica mutante de estilos, donde la imagen cambia de piel como motor narrativo principal.
-  form_and_line: Hibridación de trazo caricatural, anatomía distorsionada y fragmentos gráficos que alternan registro cómico y existencial.
-  color_palette: Saturaciones altas en magenta, cian, naranja ácido y negros de corte abrupto para choques perceptivos deliberados.
-  lighting_setup: Iluminación no naturalista, flashes de transición y bloques de luz plana que marcan saltos de estado mental.
-  material_texture: Collage gráfico, pinceladas abruptas, manchas digitales y capas visuales de apariencia heterogénea intencional.
-  render_quality: Acabado premium de caos controlado, con claridad de ritmo interno pese a la ruptura constante de lenguaje visual.
-  spatial_distortion: Espacio elástico con deformaciones súbitas, cámaras imposibles y continuidad quebrada orientada a vértigo liberador.
-  atmosphere: Liberadora, delirante, brillante, cinética.
-  key_features: Estallidos mixed-media, transiciones violentas, distorsión corporal, colisión de registros y renacimiento por cambio de forma.
+  aesthetic: >-
+    Mutating Psychedelic Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Mutating Psychedelic Style's specific style identity.
+  form_and_line: >-
+    Define Mutating Psychedelic Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Mutating Psychedelic Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Mutating Psychedelic Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Mutating Psychedelic Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Mutating Psychedelic Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Mutating Psychedelic Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Mutating Psychedelic Style: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Mutating Psychedelic Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de mutación psicodélica para cualquier prompt o imagen de entrada:
-    choque de estilos, distorsión espacial y reinvención gráfica sin imponer fugas, persecuciones ni escena narrativa.
+    Create a style-card that translates Mutating Psychedelic Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-294.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

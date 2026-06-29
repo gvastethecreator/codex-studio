@@ -12,19 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Cel anime 90s de tragedia pesada, masa de hierro, sombra fúnebre y supervivencia emocional extrema.
-  form_and_line: Línea gruesa y agresiva, anatomía angulosa, contornos cargados de peso, diagonales brutales y poses de resistencia física.
-  color_palette: Negro ceniza, gris hierro, óxido oscuro, rojo herida apagado y marrón barro profundo.
-  lighting_setup: Tormenta baja, highlights metálicos duros, contraluces mínimos y sombra opresiva que aplasta el encuadre.
-  material_texture: Hierro rugoso, barro seco, piel marcada, piedra quebrada abstracta y grano fílmico áspero.
-  render_quality: Acabado premium noventero con densidad dramática extrema, peso material claro y violencia sugerida por composición.
-  spatial_distortion: Escala monumental y diagonales sobredimensionadas hacen que cualquier sujeto parezca cargar una fatalidad física.
-  atmosphere: Brutal, fúnebre, condenada, implacable.
-  key_features: Silueta pesada, grano áspero, sombra de trauma, masa metálica, rojos apagados y gesto de dolor contenido.
+  aesthetic: >-
+    Iron Ruin Tragedy Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Iron Ruin Tragedy Style's specific style identity.
+  form_and_line: >-
+    Define Iron Ruin Tragedy Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Iron Ruin Tragedy Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Iron Ruin Tragedy Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Iron Ruin Tragedy Style: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Iron Ruin Tragedy Style with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Iron Ruin Tragedy Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Iron Ruin Tragedy Style: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Iron Ruin Tragedy Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica este preset como tratamiento abstracto de anime oscuro 90s:
-    cualquier prompt debe ganar peso, fatalidad, textura áspera y tragedia
-    corporal sin exigir espada, castillo ni escena medieval.
+    Create a style-card that translates Iron Ruin Tragedy Style into a portable visual system for 3. 90s Golden Era.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-174.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

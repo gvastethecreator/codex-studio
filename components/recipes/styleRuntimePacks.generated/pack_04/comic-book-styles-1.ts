@@ -137,17 +137,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Comic Book Styles',
     negativePrompt: 'shading, gradient',
     style: {
-      aesthetic: 'Ligne Claire European comics language (Hergé/Tintin clear-line tradition)',
-      form_and_line: 'Uniform monoline contour with high descriptive precision',
-      color_palette: 'Bright flat fills with disciplined primary/secondary harmony',
-      lighting_setup: 'Shadow-minimal, evenly lit graphic treatment',
-      material_texture: 'Smooth ink-and-flat-color finish, no grain emphasis',
-      render_quality: 'Crisp editorial clarity with restrained visual noise',
-      spatial_distortion: 'Mild cartoon stylization with accurate environmental structure',
-      atmosphere: 'Curious, adventurous, lucid, observational',
-      key_features: 'Zero hatching, stable line weight, readable architecture and props',
+      aesthetic:
+        "Franco-Belgian (Ligne Claire) within 1. Comic Book Styles: a reusable Illustration & Graphic Novel visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Franco-Belgian (Ligne Claire)'s specific style identity.",
+      form_and_line:
+        'Define Franco-Belgian (Ligne Claire) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Franco-Belgian (Ligne Claire)-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Franco-Belgian (Ligne Claire) recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Franco-Belgian (Ligne Claire): surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Franco-Belgian (Ligne Claire) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Franco-Belgian (Ligne Claire): perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Franco-Belgian (Ligne Claire): specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Franco-Belgian (Ligne Claire)'s key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply Ligne Claire discipline to any input: uniform monoline contour, flat color fields, readable props, clear spatial logic, and noise-free staging should make clarity the expressive engine without requiring adventurers, vehicles, architecture, travel scenes, or a fixed European-comic setup.',
+        'Create a style-card that translates Franco-Belgian (Ligne Claire) into a portable visual system for 1. Comic Book Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {

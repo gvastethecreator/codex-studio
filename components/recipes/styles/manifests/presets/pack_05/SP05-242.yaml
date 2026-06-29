@@ -12,20 +12,37 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Fantasía precaria marcada por vulnerabilidad, duelo íntimo, colaboración temblorosa y supervivencia sin épica grandilocuente.
-  form_and_line: Siluetas contenidas, postura defensiva, distancia emocional visible y lectura de movimiento cauteloso.
-  color_palette: Marrón humo, gris barro, verde apagado, naranja tenue de fogata y azul noche húmeda.
-  lighting_setup: Luz débil y cálida, niebla baja, sombras largas y ambiente frío hostil.
-  material_texture: Cuero remendado, tela mojada, metal sin pulir, barro adherido y desgaste acumulado en equipo improvisado.
-  render_quality: Realismo anime sobrio con foco en vulnerabilidad corporal y narrativa de pérdidas pequeñas.
-  spatial_distortion: Escala humana reducida, encuadres cerrados y profundidad incierta por niebla y textura vegetal abstracta.
-  atmosphere: Frágil, humilde y sincera, con miedo persistente y lealtad emergente.
-  key_features: Luz mínima, protección parchada, barro, formación insegura y vulnerabilidad corporal.
+  aesthetic: >-
+    Smoke-Mud Vulnerability Style within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Smoke-Mud Vulnerability Style's specific style identity.
+  form_and_line: >-
+    Define Smoke-Mud Vulnerability Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Smoke-Mud Vulnerability Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Smoke-Mud Vulnerability Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Smoke-Mud Vulnerability Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Smoke-Mud Vulnerability Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Smoke-Mud Vulnerability Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Smoke-Mud Vulnerability Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Smoke-Mud Vulnerability Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática smoke-and-mud reusable donde materialidad precaria,
-    luz pobre y colaboración temblorosa expresen crecimiento sin grupo fijo,
-    asentamiento temporal, entorno natural fijo, rutas, roles de equipo o situación
-    narrativa obligatoria.
+    Create a style-card that translates Smoke-Mud Vulnerability Style into a portable visual system for 8. Isekai & High
+    Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-242.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

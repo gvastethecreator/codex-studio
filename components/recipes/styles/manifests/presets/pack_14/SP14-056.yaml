@@ -13,16 +13,37 @@ tags:
   - mythic
   - greek-myth
 visualDna:
-  aesthetic: Returning-heroes memorial language for victory, loss, honor, and communal remembrance.
-  form_and_line: Memorial terrace cues, votive niches, and processional ramps.
-  color_palette: Warm sandstone, laurel green, and bronze highlights.
-  lighting_setup: Evening golden light and commemorative torch rows.
-  material_texture: Carved stone tablets, bronze plaques, and linen standards.
-  render_quality: Emotional epic concept with clear memorial storytelling.
-  spatial_distortion: Ascending path perspective toward a central memorial presence.
-  atmosphere: Honor, grief, and communal remembrance.
-  key_features: Abstract name steles, hero reliefs, offering court cues.
-  creative_brief: Convert the input through returning-heroes memorial, curating victory and loss together without requiring a temple.
+  aesthetic: >-
+    Returning Heroes Memorial within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Returning Heroes Memorial's specific style identity.
+  form_and_line: >-
+    Define Returning Heroes Memorial through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Returning Heroes Memorial-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Returning Heroes Memorial recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Returning Heroes Memorial: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Returning Heroes Memorial with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Returning Heroes Memorial: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Returning Heroes Memorial: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Returning Heroes Memorial's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Returning Heroes Memorial into a portable visual system for 5. Mythic Greek
+    Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - comedy

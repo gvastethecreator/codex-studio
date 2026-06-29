@@ -12,19 +12,38 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Aventura ornamental cálida, magia joya, tensión comercio-autoridad y fantasía móvil como saturación decorativa.
-  form_and_line: Ornamento arabesco dinámico, verticales laberínticas abstractas, curvas itinerantes y lectura épica por capas.
-  color_palette: Ámbar cálido, turquesa brillante, rojo granate, verde esmeralda y azul noche ornamental.
-  lighting_setup: Sol cálido, luces colgantes abstractas y destellos mágicos facetados tipo gema.
-  material_texture: Tejidos bordados, latón trabajado, piedra caliza, polvo cálido y cristal encantado.
-  render_quality: Fantasía saturada de aventura móvil con riqueza decorativa y claridad narrativa de expedición.
-  spatial_distortion: Profundidad por capas ornamentales, verticalidad laberíntica, diagonales de viaje y escala fabulística.
-  atmosphere: Colorida, expansiva y enérgica, de descubrimiento continuo.
-  key_features: Arabescos dinámicos, gemas facetadas, ámbar-turquesa, verticalidad laberíntica y tensión comercio-autoridad.
+  aesthetic: >-
+    Magi - Labyrinth Jewel Caravan within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Magi - Labyrinth Jewel Caravan's specific style identity.
+  form_and_line: >-
+    Define Magi - Labyrinth Jewel Caravan through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Magi - Labyrinth Jewel Caravan-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Magi - Labyrinth Jewel Caravan recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Magi - Labyrinth Jewel Caravan: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Magi - Labyrinth Jewel Caravan with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Magi - Labyrinth Jewel Caravan: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Magi - Labyrinth Jewel Caravan: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Magi - Labyrinth Jewel Caravan's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática labyrinth-caravan reusable donde ornamentación,
-    cromática cálida y magia gema articulen fábula comercial y política sin
-    exigir locación, transporte, ruta, bioma o arquitectura narrativa específica.
+    Create a style-card that translates Magi - Labyrinth Jewel Caravan into a portable visual system for 8. Isekai &
+    High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-246.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

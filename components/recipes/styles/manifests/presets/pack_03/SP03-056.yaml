@@ -12,23 +12,38 @@ tags:
   - 3d-and-cgi-rendering
   - environment-and-worldbuilding
 visualDna:
-  aesthetic: Molecule or galaxy
-  form_and_line: Data driven
-  color_palette: False color data
-  lighting_setup: Self illuminated
-  material_texture: Particle cloud, volumetric data
-  render_quality: NASA lab-grade accuracy, scientific storytelling
-  spatial_distortion: None
-  atmosphere: Smart, complex, knowledge-driven
-  key_features: Data points, scale-reference
+  aesthetic: >-
+    Scientific Visualization within 7. Environment And Worldbuilding: a reusable 3D & CGI Rendering visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Scientific Visualization's specific style identity.
+  form_and_line: >-
+    Define Scientific Visualization through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Scientific Visualization-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Scientific Visualization recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Scientific Visualization: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Scientific Visualization with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Scientific Visualization: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Scientific Visualization: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Scientific Visualization's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Data becomes image — false-color palettes map the invisible spectrum to visible beauty, and particle clouds render
-    protein folds or galactic clusters with equal authority. Self-illuminated volumetric forms float against deep space
-    or cellular void, and scale references remind the eye that this is neither fantasy nor metaphor. The image channels
-    NASA-grade accuracy: scientific storytelling where every color, every data point, every rendered voxel carries the
-    weight of measurement. Apply Scientific Visualization as a portable 3D/render style system over any input: preserve
-    its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
-    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Create a style-card that translates Scientific Visualization into a portable visual system for 7. Environment And
+    Worldbuilding. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - fantasy
   - magic

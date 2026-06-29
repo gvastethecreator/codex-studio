@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Performance competitiva vulnerable, centrada en coreografía emocional, línea corporal y control de eje.
-  form_and_line: Silueta elongada, transición fluida entre poses y precisión de eje curvo.
-  color_palette: Azules glaciales, plateados de foco y acentos cromáticos de vestuario escénico.
-  lighting_setup: Conos de spotlight con relleno frío y reflejo especular controlado.
-  material_texture: Superficie pulida con trazas finas, tela brillante y cristales fríos.
-  render_quality: Performance frame premium con claridad de impulso, spin abstracto y cierre limpio.
-  spatial_distortion: Curvatura elegante de trayectorias y profundidad escénica para lectura de programa completo.
-  atmosphere: Elegante, vulnerable, emotiva y competitiva.
-  key_features: Reflejo frío, postura de spin, shimmer de vestuario y curvas de trayectoria precisas.
+  aesthetic: >-
+    Vulnerable Performance Spin Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Vulnerable Performance Spin Style's specific style identity.
+  form_and_line: >-
+    Define Vulnerable Performance Spin Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Vulnerable Performance Spin Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Vulnerable Performance Spin Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Vulnerable Performance Spin Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Vulnerable Performance Spin Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Vulnerable Performance Spin Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Vulnerable Performance Spin Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Vulnerable Performance Spin Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática reusable de performance vulnerable en eje para cualquier prompt o imagen de entrada:
-    coreografía, reflejo y precisión emocional sin imponer patinaje, pista, cuchillas ni rutina.
+    Create a style-card that translates Vulnerable Performance Spin Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-359.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
-  aesthetic: Gramática puzzle-chamber ancestral con rotación, sincronía, energía diferida y reglas visuales limpias.
-  subject_treatment: Reinterpreta el input como explorador, monolito, runa móvil, nodo de solución o mecanismo alineable.
-  color_and_tone: Gris ceniza, azul tenue y blanco espectral para lectura de estado activo/inactivo.
-  lighting_and_shadow: Halo central con sombras geométricas suaves que revelan alineaciones correctas.
-  texture_and_material: Basalto pulido, polvo lunar, cristal opaco y juntas de mecanismo antiguo.
-  camera_and_composition: Simetría funcional, nodos de resolución y sombras geométricas sin exigir cámara lunar.
-  atmosphere_and_mood: Contemplativa, ingeniosa y enigmática.
-  rendering_and_quality: 'Puzzle-chamber gameplay screencap: monolith rule, progress state, solution path, scale readable.'
+  aesthetic: >-
+    Lunar Monolith Puzzle Chamber within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game Originals Vault
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Lunar Monolith Puzzle Chamber's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Lunar Monolith Puzzle Chamber's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Lunar Monolith Puzzle Chamber: clear tonal hierarchy, intentional contrast,
+    and category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Lunar Monolith Puzzle Chamber: legible depth, purposeful highlights, readable focal
+    zones, and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Lunar Monolith Puzzle Chamber's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Lunar Monolith Puzzle Chamber's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Lunar Monolith Puzzle Chamber's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

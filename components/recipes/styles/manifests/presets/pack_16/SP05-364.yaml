@@ -12,20 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Ensayo obsesivo de línea corporal, disciplina técnica, exposición emocional y perfección frágil.
-  form_and_line: Eje corporal refinado, extensiones largas, transición de peso controlada y gesto vulnerable.
-  color_palette: Neutros de estudio, rosas empolvados, grises cálidos y acentos de piel iluminada por esfuerzo.
-  lighting_setup: Luz de sala y rebote de espejo con contraste medio para enfatizar corrección postural.
-  material_texture: Piso desgastado, tela de ensayo transpirable, resina fina y sudor de práctica.
-  render_quality: Frame performativo elegante con lectura clara de técnica, tensión muscular y vulnerabilidad.
-  spatial_distortion: Perspectiva de espejo múltiple con profundidad repetida que acentúa autocorrección y presión.
-  atmosphere: Apasionada, disciplinada, elegante y técnicamente frágil.
-  key_features: Multiplicación especular, líneas de extremidad, respiración de ensayo y foco corporal expresivo.
+  aesthetic: >-
+    Obsessive Line Rehearsal Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Obsessive Line Rehearsal Style's specific style identity.
+  form_and_line: >-
+    Define Obsessive Line Rehearsal Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Obsessive Line Rehearsal Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Obsessive Line Rehearsal Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Obsessive Line Rehearsal Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Obsessive Line Rehearsal Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Obsessive Line Rehearsal Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Obsessive Line Rehearsal Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Obsessive Line Rehearsal Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de obsessive-line-rehearsal donde línea
-    anatómica, autocorrección, repetición especular y emocionalidad contenida
-    formen identidad visual transferible sin imponer ballet, estudio,
-    zapatillas ni ensayo literal.
+    Create a style-card that translates Obsessive Line Rehearsal Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-364.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

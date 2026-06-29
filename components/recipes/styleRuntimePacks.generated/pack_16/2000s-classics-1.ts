@@ -11,24 +11,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Romcom invernal de fricción emocional, ternura escondida, tensión reactiva y vulnerabilidad cálida.',
+        "Winter Friction Romance Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Winter Friction Romance Style's specific style identity.",
       form_and_line:
-        'Línea digital compacta, acting reactivo intenso y siluetas cercanas para conflicto afectivo continuo.',
+        'Define Winter Friction Romance Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules fríos, naranjas cálidos, rojos suaves de rubor emocional y grises de invierno.',
+        'Use a Winter Friction Romance Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Contraste entre luz fría exteriorizada y calidez íntima, con gradientes suaves de cercanía emocional.',
+        'Use lighting that makes Winter Friction Romance Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Texturas textiles suaves, superficies cotidianas simplificadas y acabado limpio early-HD con ruido sutil.',
+        'Use materials and textures that reinforce Winter Friction Romance Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Producción premium 2000s con excelente lectura de timing cómico y desgarro sentimental.',
+        'Render Winter Friction Romance Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Composición comprimida para enfatizar proximidad, choque, pausa incómoda y reconciliación.',
-      atmosphere: 'Combativa, dulce, invernal, honesta.',
+        'Use spatial behavior that fits Winter Friction Romance Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Winter Friction Romance Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Microgestos de tensión, luminaria invernal, clutter emocional abstracto y acting de distancia que se acorta.',
+        "Prioritize Winter Friction Romance Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de romance invernal conflictivo para cualquier sujeto, equilibrando humor cortante, fricción de carácter y calidez emocional sin imponer escuela, apartamento, uniformes ni pareja fija.',
+        'Create a style-card that translates Winter Friction Romance Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -39,24 +40,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Comedia de pertenencia juvenil en escalada shonen, con heráldica pop, rito de compromiso y energía de clan.',
+        "Clan Comedy Escalation Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Clan Comedy Escalation Style's specific style identity.",
       form_and_line:
-        'Línea digital expresiva, poses grupales asimétricas y transición visual de gag cotidiano a solemnidad heroica.',
+        'Define Clan Comedy Escalation Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Primarios intensos de acción 2000s, negros ceremoniales, blancos limpios y acentos fuego para activación emocional.',
+        'Use a Clan Comedy Escalation Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Highlights pulidos de comedia, contraste medio de ceremonia y rim energético en símbolos de pertenencia.',
+        'Use lighting that makes Clan Comedy Escalation Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Tela formal, emblemas gráficos, metal pulido pequeño y compositing digital limpio con grano mínimo.',
+        'Use materials and textures that reinforce Clan Comedy Escalation Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de shonen mafioso con lectura clara de jerarquía de clan y evolución de tono.',
+        'Render Clan Comedy Escalation Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Encuadres de juramento grupal, diagonales de escalada y profundidad comprimida hacia símbolo central.',
-      atmosphere: 'Ruidosa, cómica, leal, incendiaria.',
+        'Use spatial behavior that fits Clan Comedy Escalation Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Clan Comedy Escalation Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Motivos heráldicos, mentoría excéntrica sugerida, activación circular y contraste gag-solemnidad en escalada.',
+        "Prioritize Clan Comedy Escalation Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de clan-comedy-escalation para cualquier sujeto: pertenencia juvenil, rito pop, jerarquía afectiva y acción de compromiso sin imponer escuela, mafia, trajes, anillos, mentores, clanes literales ni duelos.',
+        'Create a style-card that translates Clan Comedy Escalation Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -67,24 +69,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Comedia pop cotidiana con anomalía cosmológica latente, donde energía juvenil y metafísica inestable conviven.',
+        "Pop Reality Bend Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Pop Reality Bend Style's specific style identity.",
       form_and_line:
-        'Trazado digital pulcro, acting excéntrico central, ensemble reactivo y staging de comedia con quiebre súbito.',
+        'Define Pop Reality Bend Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Amarillos cálidos, azules vivos, acentos primarios pop y destellos extraños de ruptura dimensional.',
+        'Use a Pop Reality Bend Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz de tarde brillante con gradientes suaves y micro-anomalías lumínicas que sugieren realidad maleable.',
+        'Use lighting that makes Pop Reality Bend Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Detalle cotidiano abarrotado, superficies limpias de era digital y ruido leve de broadcast 2000s.',
+        'Use materials and textures that reinforce Pop Reality Bend Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium meta-pop con legibilidad alta del tono híbrido entre cotidianeidad y amenaza cósmica.',
+        'Render Pop Reality Bend Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio cotidiano estable con microdesplazamientos perceptivos cuando emerge la capa de distorsión narrativa.',
-      atmosphere: 'Lúdica, inquietante, brillante, meta.',
+        'Use spatial behavior that fits Pop Reality Bend Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Pop Reality Bend Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Caos pop controlado, figura carismática dominante, ensemble reactivo y señales sutiles de reality bend.',
+        "Prioritize Pop Reality Bend Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Crea una gramática reusable de pop-reality-bend para cualquier sujeto: cotidianeidad brillante, energía excéntrica, ruptura cosmológica de bajo umbral y comedia meta sin imponer aula, clubroom, escuela, uniformes ni grupo juvenil fijo.',
+        'Create a style-card that translates Pop Reality Bend Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -95,24 +98,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Comedia anacrónica irreverente de choque tonal total, con corazón dramático escondido bajo parodia constante.',
+        "Anachronistic Deadpan Mayhem Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Anachronistic Deadpan Mayhem Style's specific style identity.",
       form_and_line:
-        'Línea digital expresiva para reacción cómica extrema, postura holgazana arquetípica y ritmo visual de gag.',
+        'Define Anachronistic Deadpan Mayhem Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Saturaciones pop, neones moderados, tierras cálidas tradicionales y acentos absurdos en choque continuo.',
+        'Use a Anachronistic Deadpan Mayhem Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación flexible de comedia-acción, highlights pulidos y contraste medio para sostener cambios de tono abruptos.',
+        'Use lighting that makes Anachronistic Deadpan Mayhem Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Materia utilitaria, metal cotidiano, señalética híbrida y acabados limpios de producción 2000s.',
+        'Use materials and textures that reinforce Anachronistic Deadpan Mayhem Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de parodia-action con legibilidad alta de chiste, acción y microdrama humano.',
+        'Render Anachronistic Deadpan Mayhem Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Composición modular para gag episódico, con perspectivas exageradas en punchlines y choques tonales.',
-      atmosphere: 'Irreverente, caótica, entrañable, astuta.',
+        'Use spatial behavior that fits Anachronistic Deadpan Mayhem Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Anachronistic Deadpan Mayhem Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Mashup histórico-moderno, acting deadpan, heroísmo perezoso y staging de caos con timing preciso.',
+        "Prioritize Anachronistic Deadpan Mayhem Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de anachronistic-deadpan-mayhem para cualquier sujeto: absurdo, swagger, choque temporal y humanidad subyacente sin imponer samuráis, ciudad, props históricos, armas de madera, duelos ni sci-fi literal.',
+        'Create a style-card that translates Anachronistic Deadpan Mayhem Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -123,24 +127,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Thriller nocturno clínico-táctico, con disciplina operativa, melancolía hemática y tragedia íntima contenida.',
+        "Clinical Nocturne Tactics Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Clinical Nocturne Tactics Style's specific style identity.",
       form_and_line:
-        'Trazado limpio de acción táctica, siluetas contrastantes y movimiento cortante de amenaza cercana.',
+        'Define Clinical Nocturne Tactics Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules hospitalarios, rojos hemáticos contenidos, grises logísticos y blancos fríos de interior estéril.',
+        'Use a Clinical Nocturne Tactics Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación fluorescente logística, contraluces nocturnos y highlights finos sobre metal clínico.',
+        'Use lighting that makes Clinical Nocturne Tactics Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Acero clínico, vidrio oscuro, textil técnico y superficies limpias de infraestructura estéril.',
+        'Use materials and textures that reinforce Clinical Nocturne Tactics Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium dark-action 2000s con legibilidad de operación y peso emocional de misión secreta.',
+        'Render Clinical Nocturne Tactics Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Composición longitudinal de tránsito y corredor abstracto para reforzar encierro psicológico.',
-      atmosphere: 'Desolada, disciplinada, nocturna, trágica.',
+        'Use spatial behavior that fits Clinical Nocturne Tactics Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Clinical Nocturne Tactics Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Limpieza táctica, iconografía hemática, encuadre de operación oculta y amenaza cortante contenida.',
+        "Prioritize Clinical Nocturne Tactics Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de clinical-nocturne-tactics para cualquier sujeto: limpieza táctica, melancolía hemática, noche controlada y violencia contenida sin imponer vampiros, militares, trenes, carreteras, uniformes, katanas ni protagonistas escolares.',
+        'Create a style-card that translates Clinical Nocturne Tactics Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -151,24 +156,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Horror estival de bucle cerrado, con fachada moe quebrada por paranoia íntima y colapso de confianza.',
+        "Summer Loop Paranoia Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Summer Loop Paranoia Style's specific style identity.",
       form_and_line:
-        'Trazado cute limpio con ruptura facial extrema en crisis, alternando inocencia visual y violencia psicológica.',
+        'Define Summer Loop Paranoia Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Verdes estivales, rojos de alarma, amarillos de tarde densa y sombras violetas de fiebre.',
+        'Use a Summer Loop Paranoia Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz solar opresiva de verano con transiciones abruptas a contraste ansioso en momentos de breakdown.',
+        'Use lighting that makes Summer Loop Paranoia Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Madera cálida, tierra húmeda, telas festivas abstractas y limpieza digital que potencia el quiebre tonal.',
+        'Use materials and textures that reinforce Summer Loop Paranoia Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium horror-2000s con alto contraste cute-to-terror y claridad de escalada paranoica.',
+        'Render Summer Loop Paranoia Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio cerrado con repetición de recorridos, encuadre de bucle y presión del entorno sobre figuras.',
-      atmosphere: 'Pastoril, paranoica, febril, aterradora.',
+        'Use spatial behavior that fits Summer Loop Paranoia Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Summer Loop Paranoia Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Pulso sonoro visual, expresiones de quiebre, repetición ritual y contraste cute-to-terror.',
+        "Prioritize Summer Loop Paranoia Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de summer-loop-paranoia para cualquier sujeto, combinando estética tierna, calor opresivo, repetición ritual y terror de sospecha íntima sin imponer aldeas, santuarios, máscaras, cigarras, casas ni festivales.',
+        'Create a style-card that translates Summer Loop Paranoia Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -179,24 +185,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Cultura speed-tech de rebeldía vertical, con libertad cinética, crew-energy y conquista de altura.',
+        "Vertical Speed Rebellion Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Vertical Speed Rebellion Style's specific style identity.",
       form_and_line:
-        'Línea dinámica de impulso aéreo, diagonales extremas y siluetas aerodinámicas de alta energía.',
+        'Define Vertical Speed Rebellion Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Cianes eléctricos, naranjas de fricción, morados sintéticos y negros rugosos nocturnos.',
+        'Use a Vertical Speed Rebellion Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación en movimiento con brillos de velocidad, gradiente digital pulido y rim en salto.',
+        'Use lighting that makes Vertical Speed Rebellion Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie rugosa, metal marcado, goma técnica abstracta y grano leve de era HD temprana.',
+        'Use materials and textures that reinforce Vertical Speed Rebellion Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium action-2000s con legibilidad cinética, pose aérea y cultura de crew bien diferenciada.',
+        'Render Vertical Speed Rebellion Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva de vértigo vertical con elongación de trayectoria y compresión de altura.',
-      atmosphere: 'Rápida, rebelde, vistosa, ingrávida.',
+        'Use spatial behavior that fits Vertical Speed Rebellion Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Vertical Speed Rebellion Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Siluetas aerodinámicas, estelas de viento, moda tech-rebelde y trayectoria extrema.',
+        "Prioritize Vertical Speed Rebellion Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de vertical-speed-rebellion para cualquier sujeto, mezclando estilo de crew, trayectoria extrema y conquista vertical sin imponer skates, rooftops, pandillas, ciudad, rails ni ruedas.',
+        'Create a style-card that translates Vertical Speed Rebellion Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -207,24 +214,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Melodrama rock adulto, estilismo punk-femenino, vulnerabilidad nocturna y fricción afectiva sofisticada.',
+        "Black-Lipstick Melodrama Punk Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Black-Lipstick Melodrama Punk Style's specific style identity.",
       form_and_line:
-        'Línea limpia de retrato íntimo, siluetas fashion, close-up expresivo y tensión corporal contenida.',
+        'Define Black-Lipstick Melodrama Punk Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Negros carbón, burdeos de labial, ámbar íntimo y grises azulados de noche emocional.',
+        'Use a Black-Lipstick Melodrama Punk Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz tenue, highlights de performance y reflejos suaves para tono melancólico sofisticado.',
+        'Use lighting that makes Black-Lipstick Melodrama Punk Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Tela de moda rock, superficies vividas, humo fino y grano digital de época.',
+        'Use materials and textures that reinforce Black-Lipstick Melodrama Punk Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium drama-2000s con foco en química interpersonal, estilo performativo y herida emocional latente.',
+        'Render Black-Lipstick Melodrama Punk Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio íntimo comprimido con tensión de convivencia y aperturas de escape visual.',
-      atmosphere: 'Estilizada, doliente, adulta, íntima.',
+        'Use spatial behavior that fits Black-Lipstick Melodrama Punk Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Black-Lipstick Melodrama Punk Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Iconografía de moda rock, contraste labial oscuro, clutter romántico y primeros planos de tensión.',
+        "Prioritize Black-Lipstick Melodrama Punk Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de black-lipstick-melodrama-punk para cualquier sujeto, combinando estética punk, convivencia frágil y nocturnidad emocional sin imponer apartamentos, bandas, trenes, clubs, cigarrillos ni ciudad literal.',
+        'Create a style-card that translates Black-Lipstick Melodrama Punk Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -235,24 +243,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Sátira de élite teatral, exceso floral, glamour paródico y comedia romántica autorreferencial.',
+        "Rose Elite Comedy Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Rose Elite Comedy Style's specific style identity.",
       form_and_line:
-        'Línea digital elegante, poses simétricas de ensemble y acting de príncipe-parodia con timing de sketch.',
+        'Define Rose Elite Comedy Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Rosas de pétalo, dorados ornamentales, marfiles pulidos y acentos pastel brillantes.',
+        'Use a Rose Elite Comedy Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación alta y pulida con sparkles selectivos y gradiente suave de comedia romántica.',
+        'Use lighting that makes Rose Elite Comedy Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Ornamento noble, telas refinadas y acabado digital limpio con brillo controlado de fantasía social.',
+        'Use materials and textures that reinforce Rose Elite Comedy Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Producción premium 2000s con lectura clara de sátira de clase y encanto escénico.',
+        'Render Rose Elite Comedy Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad teatral con encuadre coral centrado en gesto performativo y parodia social.',
-      atmosphere: 'Juguetona, pulida, satírica, exuberante.',
+        'Use spatial behavior that fits Rose Elite Comedy Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Rose Elite Comedy Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Pétalos y sparkle, gesto principesco parodiado, opulencia abstracta y composición coral exuberante.',
+        "Prioritize Rose Elite Comedy Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de rose-elite-comedy para cualquier sujeto, equilibrando glamour absurdo, crítica social, exceso floral y calidez romántica sin imponer escuela, host club, uniformes, interiores opulentos ni harem literal.',
+        'Create a style-card that translates Rose Elite Comedy Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -375,24 +384,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Pop gótico de resonancia espiritual, humor macabro gráfico y pulso punk sobrenatural transferible.',
+        "Gothic Resonance Punk Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Gothic Resonance Punk Style's specific style identity.",
       form_and_line:
-        'Línea digital afilada, siluetas angulares, gestualidad exagerada y ritmo visual sincopado.',
+        'Define Gothic Resonance Punk Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Morados de noche de Halloween, naranjas encendidos, negros tinta y acentos cian de resonancia espiritual.',
+        'Use a Gothic Resonance Punk Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Contrastes teatrales con glow espectral, sombras planas expresivas y rims fríos sobre bordes gráficos.',
+        'Use lighting that makes Gothic Resonance Punk Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Acabados limpios de era digital, superficies góticas estilizadas, patrones rayados y grano leve siniestro-pop.',
+        'Use materials and textures that reinforce Gothic Resonance Punk Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Producción premium early-2000s con lectura inmediata de pose, beat visual y personalidad visual intensa.',
+        'Render Gothic Resonance Punk Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva dinámica, diagonales juguetonas y deformación elástica alrededor de pulsos de alma.',
-      atmosphere: 'Traviesa, spooky, vibrante, desafiante.',
+        'Use spatial behavior that fits Gothic Resonance Punk Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Gothic Resonance Punk Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Contrastes Halloween-pop, accesorios a rayas, morfologías angulares, iconografía lunar abstracta y acentos de resonancia.',
+        "Prioritize Gothic Resonance Punk Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de punk gótico espiritual para cualquier sujeto, combinando iconografía de Halloween, ritmo rebelde y energía de alma sin imponer academia, armas, dúos ni combate.',
+        'Create a style-card that translates Gothic Resonance Punk Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -403,24 +413,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Romanticismo aéreo contracultural, sensación de lift libre y melancolía luminosa de horizonte abierto.',
+        "Sky-Surf Romantic Momentum Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Sky-Surf Romantic Momentum Style's specific style identity.",
       form_and_line:
-        'Contornos fluidos aerodinámicos, curvas de deslizamiento y cinética de arco sin fijar vehículo ni piloto.',
+        'Define Sky-Surf Romantic Momentum Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Cianes de cielo abierto, magentas de atardecer, neones de tabla y gradientes de alta saturación optimista.',
+        'Use a Sky-Surf Romantic Momentum Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Backlight dorado de horizonte, relleno por nube reflectante y streaks de rim para velocidad en altura.',
+        'Use lighting that makes Sky-Surf Romantic Momentum Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficies semibrillo, compositing digital pulido, halos de vapor y volumen nuboso suave de alto recorrido.',
+        'Use materials and textures that reinforce Sky-Surf Romantic Momentum Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Calidad premium mid-2000s con lectura aérea clara y control emocional vibrante.',
+        'Render Sky-Surf Romantic Momentum Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva diagonal ascendente, profundidad atmosférica y framing liviano de gravedad reducida.',
-      atmosphere: 'Aérea, romántica, juvenil y liberadora.',
+        'Use spatial behavior that fits Sky-Surf Romantic Momentum Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Sky-Surf Romantic Momentum Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Trazas de aire, gradientes de altura, códigos de subcultura, siluetas en suspensión y dinámica de impulso continuo.',
+        "Prioritize Sky-Surf Romantic Momentum Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de romance cinético aéreo para cualquier sujeto, priorizando lift, momentum, juventud luminosa y anhelo. El input puede recibir tabla, mecha ligero, rider silhouette o estela de vuelo cuando refuerce el estilo, sin fijar cielo literal ni escena de carrera.',
+        'Create a style-card that translates Sky-Surf Romantic Momentum Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -431,24 +442,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Gótico aristocrático ceremonial con amenaza contenida, lujo oscuro y teatralidad de pacto oculto.',
+        "Velvet Covenant Gothic Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Velvet Covenant Gothic Style's specific style identity.",
       form_and_line:
-        'Silueta impecable, línea decorativa precisa y acting de protocolo frío y exacto.',
+        'Define Velvet Covenant Gothic Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Negros ébano, burdeos profundos, ámbar de vela y plateados especulares de ceremonia.',
+        'Use a Velvet Covenant Gothic Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Piscinas de luz candlelit, gradiente low-key de opulencia y destello metálico ritual.',
+        'Use lighting that makes Velvet Covenant Gothic Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Terciopelo, laca oscura, plata pulida y pliegue textil nítido con acabado digital sobrio.',
+        'Use materials and textures that reinforce Velvet Covenant Gothic Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Refinamiento premium 2000s con alta legibilidad de silueta y atmósfera de opulencia sin exceso.',
+        'Render Velvet Covenant Gothic Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Composición ceremonial con distancia jerárquica y verticalidad elegante de teatro abstracto.',
-      atmosphere: 'Elegante, siniestra, controlada, decadente.',
+        'Use spatial behavior that fits Velvet Covenant Gothic Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Velvet Covenant Gothic Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Gramática de terciopelo y encaje, luz de vela gótica, metal ritual y precisión ceremonial impecable.',
+        "Prioritize Velvet Covenant Gothic Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de amenaza aristocrática gótica para cualquier sujeto, manteniendo precisión ceremonial y opulencia oscura sin imponer mansiones, sirvientes, cubertería ni pactos literales.',
+        'Create a style-card that translates Velvet Covenant Gothic Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -459,24 +471,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía sobrenatural de umbral carmesí, con tensión romántica, severidad emocional y combustión contenida.',
+        "Crimson Threshold Embers Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Crimson Threshold Embers Style's specific style identity.",
       form_and_line:
-        'Línea digital limpia y compacta, silueta dominante, ejes frontales de confrontación y acting de intensidad contenida.',
+        'Define Crimson Threshold Embers Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Rojos brasa, naranjas ígneos, azules fríos de contraste y negros de plano oculto con saturación nítida.',
+        'Use a Crimson Threshold Embers Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Glow de fuego sobrenatural, key crepuscular y gradiente suave típico de compositing digital de época.',
+        'Use lighting that makes Crimson Threshold Embers Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficies limpias, partículas de ceniza flotante, bordes de calor y acabado cel-digital con ruido sutil.',
+        'Use materials and textures that reinforce Crimson Threshold Embers Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium de acción romántica 2000s con lectura inmediata de choque mundo ordinario-mundo oculto.',
+        'Render Crimson Threshold Embers Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio cotidiano tensionado por overlays dimensionales y encuadre cerrado de choque emocional crepuscular.',
-      atmosphere: 'Ígnea, estricta, romántica y secretamente combativa.',
+        'Use spatial behavior that fits Crimson Threshold Embers Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Crimson Threshold Embers Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Mirada carmesí, partículas de ember, silueta severa, plano oculto superpuesto y frontera dimensional.',
+        "Prioritize Crimson Threshold Embers Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de crimson-threshold-embers para cualquier sujeto: fuego arcano, romance de frontera dimensional, severidad emocional y contraste mundo visible/oculto sin imponer escuela, uniformes, espadas, armas, patios ni duelos.',
+        'Create a style-card that translates Crimson Threshold Embers Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -487,24 +500,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Gótico tecno-sacral, con juventud maldita, liturgia de presión abstracta y solemnidad mecánica sombría.',
+        "Techno-Gothic Exorcism Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Techno-Gothic Exorcism Style's specific style identity.",
       form_and_line:
-        'Línea digital fina con silueta pesada, gesto melancólico y lenguaje de fuerza sacramental.',
+        'Define Techno-Gothic Exorcism Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azules fríos de penumbra, granates vitrales, marfiles sagrados y negros de condena mecánica.',
+        'Use a Techno-Gothic Exorcism Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz filtrada tipo vitral, rim tenue sobre insignias abstractas y sombras graduales sacro-industriales.',
+        'Use lighting that makes Techno-Gothic Exorcism Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Piedra gótica, metal maldito, tela pesada, polvo eclesial y pátina mecánica.',
+        'Use materials and textures that reinforce Techno-Gothic Exorcism Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium dark-2000s con equilibrio entre combate ritual y dolor juvenil persistente.',
+        'Render Techno-Gothic Exorcism Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad sacra comprimida con fuga vertical para enfatizar carga espiritual y amenaza.',
-      atmosphere: 'Lúgubre, sagrada, maldita, decidida.',
+        'Use spatial behavior that fits Techno-Gothic Exorcism Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Techno-Gothic Exorcism Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Iconografía sacra tecnificada, marcas de maldición, silueta pesada y profundidad ritual.',
+        "Prioritize Techno-Gothic Exorcism Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de techno-gothic-exorcism para cualquier sujeto: solemnidad religiosa, ingeniería maldita, dolor juvenil y contraste sacro-industrial sin imponer catedrales, templos, abrigos, armas, uniformes ni exorcistas literales.',
+        'Create a style-card that translates Techno-Gothic Exorcism Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -515,24 +529,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Romcom arcana aristocrática, con energía tsundere, nobleza lúdica y espectáculo mágico de conflicto afectivo.',
+        "Noble Arcane Romcom Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Noble Arcane Romcom Style's specific style identity.",
       form_and_line:
-        'Línea digital brillante, acting exagerado de conflicto afectivo y poses gestuales de alto dramatismo cómico.',
+        'Define Noble Arcane Romcom Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Rosas nobles, azules limpios, dorados ornamentales y blancos mágicos de gran saturación.',
+        'Use a Noble Arcane Romcom Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz mágica pulida, destellos de conjuro y gradientes suaves de producción 2000s.',
+        'Use lighting that makes Noble Arcane Romcom Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Piedra pulida, ornamento aristocrático, textiles refinados y brillo limpio de compositing digital.',
+        'Use materials and textures that reinforce Noble Arcane Romcom Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium romcom-fantasy con legibilidad de gag romántico y fricción ceremonial.',
+        'Render Noble Arcane Romcom Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio nobiliario abstracto con teatralidad ornamental y campo emocional para choques relacionales.',
-      atmosphere: 'Cómica, mágica, caprichosa, romántica.',
+        'Use spatial behavior that fits Noble Arcane Romcom Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Noble Arcane Romcom Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Ornamento noble, invocación pop, choque romántico, gestualidad tsundere y brillo arcano limpio.',
+        "Prioritize Noble Arcane Romcom Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática reusable de noble-arcane-romcom para cualquier sujeto: nobleza lúdica, hechicería pop, romance conflictivo y gag emocional sin imponer academias, uniformes, castillos, familiares invocados, varitas ni duelos.',
+        'Create a style-card that translates Noble Arcane Romcom Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -543,24 +558,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía naturalista contemplativa de sanación folklórica, con sobrenatural ecológico de baja estridencia y ritmo perceptivo lento.',
+        "Ecological Whisper Healing Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ecological Whisper Healing Style's specific style identity.",
       form_and_line:
-        'Línea serena y precisa, gestualidad mínima, pausas diagnósticas y contornos que parecen escuchar el entorno.',
+        'Define Ecological Whisper Healing Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Verdes musgo, marfiles pálidos, grises de niebla y marrones orgánicos de humedad mineral.',
+        'Use a Ecological Whisper Healing Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz difusa con gradientes suaves y halos leves sobre trazas espirituales casi invisibles.',
+        'Use lighting that makes Ecological Whisper Healing Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Materia húmeda, fibra natural gastada, pigmento orgánico y atmósfera de rocío permanente.',
+        'Use materials and textures that reinforce Ecological Whisper Healing Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado premium contemplativo 2000s con claridad poética y detalle ambiental calmado.',
+        'Render Ecological Whisper Healing Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad calma sin exageración, privilegiando percepción lenta, capas orgánicas y distancia meditativa.',
-      atmosphere: 'Silenciosa, mística, terapéutica, solitaria.',
+        'Use spatial behavior that fits Ecological Whisper Healing Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ecological Whisper Healing Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Huellas espirituales tenues, materia orgánica sensible, niebla suave y composición de curación paciente.',
+        "Prioritize Ecological Whisper Healing Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Diseña una gramática reusable de sanación sobrenatural ecológica para cualquier sujeto, usando luz blanda, materia orgánica y observación tranquila sin imponer bosques, aldeas, viajeros ni remedios físicos.',
+        'Create a style-card that translates Ecological Whisper Healing Style into a portable visual system for 2. 2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

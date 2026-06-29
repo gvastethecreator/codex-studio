@@ -12,19 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Jazz nocturno visceral, improvisación ascendente, presencia solista y explosión soulful.
-  form_and_line: Silueta performativa en tensión, gesto respiratorio marcado y arcos de cuerpo al fraseo.
-  color_palette: Azules midnight, dorados latón, magentas de neón tenue y negros humo de sala.
-  lighting_setup: Spot cálido aislado con contraluz de neblina y glow lateral sobre metal curvo.
-  material_texture: Latón con pátina, madera oscura, humo volumétrico fino y tela de performance.
-  render_quality: Frame performativo adulto con lectura de intensidad, dinámica de solo y respuesta de sala.
-  spatial_distortion: Profundidad nocturna comprimida hacia foco performativo con halo periférico difuso.
-  atmosphere: Nocturna, impulsada, soulful y explosiva.
-  key_features: Brillo de latón, haze nocturno, spot aislado y silueta de solo en ascenso continuo.
+  aesthetic: >-
+    Midnight Jazz Ascension Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Midnight Jazz Ascension Style's specific style identity.
+  form_and_line: >-
+    Define Midnight Jazz Ascension Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Midnight Jazz Ascension Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Midnight Jazz Ascension Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Midnight Jazz Ascension Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Midnight Jazz Ascension Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Midnight Jazz Ascension Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Midnight Jazz Ascension Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Midnight Jazz Ascension Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática reusable de midnight-jazz-ascension donde timbre de
-    latón, atmósfera nocturna y cuerpo performativo construyan identidad
-    transferible sin imponer saxofón, club, concierto ni solista literal.
+    Create a style-card that translates Midnight Jazz Ascension Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-368.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

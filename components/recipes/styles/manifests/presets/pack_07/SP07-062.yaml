@@ -12,20 +12,38 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Vernáculo de canopy elevado, con ingeniería orgánica artesanal y vida comunal suspendida.
-  form_and_line: Hubs circulares, catenarias de cuerda, anillos de amarre y circulación vertical por niveles orgánicos.
-  color_palette: Redwood brown, moss green, rope tan, bark gray, filtered canopy gold, and muted ember accents for night signaling
-  lighting_setup: Luz moteada filtrada por hojas, prácticos cálidos colgantes, rebote de fogata y glow nocturno de bajo contraste.
-  material_texture: Madera desbastada, fibra de cuerda trenzada, paneles de paja tejida y amarres vegetales sobre soportes de corteza.
-  render_quality: Realismo artesanal aventurero con integración arbórea legible y profundidad vertical consistente.
-  spatial_distortion: None
-  atmosphere: Comunal, ingeniosa y vigilante, con ritualidad suave de hábitat ecológico.
-  key_features: Cuerdas enlazadas, plataformas radiales, pasarelas suspendidas y puntos elevados de observación.
+  aesthetic: >-
+    Canopy Rope Vernacular within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Canopy Rope Vernacular's specific style identity.
+  form_and_line: >-
+    Define Canopy Rope Vernacular through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Canopy Rope Vernacular-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Canopy Rope Vernacular recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Canopy Rope Vernacular: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Canopy Rope Vernacular with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Canopy Rope Vernacular: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Canopy Rope Vernacular: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Canopy Rope Vernacular's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica una gramática vernacular suspendida: plataformas radiales, cuerdas catenarias, amarres vegetales, luz
-    filtrada por dosel y materiales vivos. Debe expresar ingenieria comunal elevada sin tribu literal, pueblo arboreo
-    fijo, planeta selvatico ni set especifico. Mantiene material vivo, tension suspendida, escala vertical y ritmo de
-    amarre sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Canopy Rope Vernacular into a portable visual system for 5. Fantasy And Mythic
+    Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - dominant polished industrial metal
 assets:

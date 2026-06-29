@@ -12,16 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Fantasía liminal cálida con artesanía viva, humor espiritual y extrañeza amable de cuento iniciático.
-  form_and_line: Línea de largometraje orgánica, acting expresivo de curiosidad valiente y siluetas de criatura no amenazante.
-  color_palette: Ocres cálidos de interior, rojos lacados, verdes musgo suaves y dorados de luz húmeda.
-  lighting_setup: Vapor volumétrico con glow ámbar, puntos de luz difusos y contraste blando de umbral encantado.
-  material_texture: Madera barnizada, cerámica húmeda, papel tradicional y fondos pintados con densidad artesanal.
-  render_quality: Acabado cinematográfico premium con microgesto emocional y atmósfera envolvente continua.
-  spatial_distortion: Estructura laberíntica acogedora con escalas variables para sensación de umbral entre mundos.
-  atmosphere: Asombrada, mágica, íntima, onírica.
-  key_features: Rituales cotidianos vivos, formas entrañables y narrativa visual de descubrimiento ético.
-  creative_brief: Construye una gramática reusable de fantasía liminal cálida para cualquier sujeto, equilibrando misterio amable, ritual cotidiano y crecimiento emocional sin imponer bathhouses, criaturas, pasillos ni arquitectura concreta.
+  aesthetic: >-
+    Warm Liminal Reverie Fantasy Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Warm Liminal Reverie Fantasy Style's specific style identity.
+  form_and_line: >-
+    Define Warm Liminal Reverie Fantasy Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Warm Liminal Reverie Fantasy Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Warm Liminal Reverie Fantasy Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Warm Liminal Reverie Fantasy Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Warm Liminal Reverie Fantasy Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Warm Liminal Reverie Fantasy Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Warm Liminal Reverie Fantasy Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Warm Liminal Reverie Fantasy Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Warm Liminal Reverie Fantasy Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-071.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Covert mythic-noir relic infiltration with stealth precision and sacred urgency.
-  form_and_line: Low-profile silhouette bias, rope-led diagonals, ritual cartography marks, and stealth-vector geometry.
-  color_palette: Moonsteel blue, weathered slate, and blood-seal crimson accents.
-  lighting_setup: Intermittent moon breaks, hand-lantern occlusion, and shard reflections off wet stone.
-  material_texture: Rain-dark masonry, waxed travel leather, bronze relic clasps, and damp parchment maps.
-  render_quality: Tactical narrative concept art with crisp readability across mid and far planes.
-  spatial_distortion: Vertical ruin-shaft depth, chained landings, or hidden-passage diagonals as optional structure cues.
-  atmosphere: Measured tension, sacred urgency, and disciplined restraint.
-  key_features: Relic lockbox cues, route-marking sigils, moonsteel reflections, suspended bridge fragments, and silent tracking posture.
-  creative_brief: 'Infiltrate the input with moonsteel relic tension: blue wet-stone shadows, blood-seal accents, ritual map lines, stealth diagonals, and lockbox-like sacred-object cues should make any subject feel covert and urgent without requiring an operative, forbidden ruins, rival orders, bridge, or mission setup.'
+  aesthetic: >-
+    Moonsteel Relic Infiltration within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Moonsteel Relic Infiltration's specific style identity.
+  form_and_line: >-
+    Define Moonsteel Relic Infiltration through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Moonsteel Relic Infiltration-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Moonsteel Relic Infiltration recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Moonsteel Relic Infiltration: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Moonsteel Relic Infiltration with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Moonsteel Relic Infiltration: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Moonsteel Relic Infiltration: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Moonsteel Relic Infiltration's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Moonsteel Relic Infiltration into a portable visual system for 2. Mythic Ritual
+    Noir. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cheerful-light

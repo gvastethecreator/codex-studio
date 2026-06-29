@@ -13,34 +13,36 @@ tags:
   - interior-design-systems
 visualDna:
   aesthetic: >-
-    Eclecticismo bohemio de acumulación curada, con densidad táctil, color viajado y ritmo orgánico
-    como estructura visual principal.
+    Bohemian Eclectic within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Bohemian Eclectic's specific style identity.
   form_and_line: >-
-    Asimetría orgánica, cascadas textiles, perfiles artesanales redondeados y composiciones
-    intencionalmente no axiales.
+    Define Bohemian Eclectic through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
   color_palette: >-
-    Base tierra cálida con turquesa/índigo, especias cromáticas, terracota y punctuaciones de patrón
-    saturado.
+    Use a Bohemian Eclectic-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
   lighting_setup: >-
-    Luz natural moteada, prácticos bajos tipo farol, difusión cálida y solapamiento suave de
-    sombras.
+    Use lighting that makes Bohemian Eclectic recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
   material_texture: >-
-    Fibras tejidas, alfombras anudadas, macramé, lino crudo, tallas en madera y hojas
-    semitranslúcidas.
+    Use materials and textures that reinforce Bohemian Eclectic: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
   render_quality: >-
-    Editorial boho de alta densidad material con clutter controlado y armonía entre piezas
-    heterogéneas.
+    Render Bohemian Eclectic with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Profundidad orgánica por capas irregulares, solapes textiles y asimetría intencional; sin
-    rigidez geométrica.
-  atmosphere: Libre, habitado, cálido, viajero y creativo, con riqueza sensorial continua.
+    Use spatial behavior that fits Bohemian Eclectic: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Bohemian Eclectic: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Artesanía acumulada, mezcla de patrones, pulsos orgánicos, textiles superpuestos y baja
-    simetría.
+    Prioritize Bohemian Eclectic's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Establece una gramática bohemia transferible basada en acumulación artesanal, ritmo
-    orgánico-textil y abundancia asimétrica. Debe sentirse vivido y curado, nunca caótico ni
-    dependiente de una escena puntual.
+    Create a style-card that translates Bohemian Eclectic into a portable visual system for 1. Interior Design Systems.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - minimalist
   - empty

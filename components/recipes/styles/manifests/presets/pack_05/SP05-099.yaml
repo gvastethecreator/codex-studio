@@ -12,19 +12,38 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Defensive underdog fantasy, with resilience, grit, layered mistrust, protective geometry, and forward-moving defiance.
-  form_and_line: Broad blocking shapes, guarded silhouettes, nested arcs, scarred contour weight, and stance-like compositional stability.
-  color_palette: Burnished bronze, storm blue, mud brown, ember red, wounded violet, and hard steel highlights.
-  lighting_setup: Low defensive glow, side-lit grit, hard edge rims, and ember accents that make endurance visible.
-  material_texture: Scratched metal, rough cloth, cracked stone grain, soot glaze, and protective magic particles.
-  render_quality: Gritty fantasy anime polish with tactile defense logic, emotional resilience, and clear silhouette weight.
-  spatial_distortion: Forward pressure against heavy opposition, layered barriers, and compressed depth that makes survival active.
-  atmosphere: Determined, defensive, resilient, betrayed.
-  key_features: Protective geometry, underdog grit, barrier layering, resilient glow, distrust-to-defiance tension.
+  aesthetic: >-
+    Shield Hero Defensive Underdog Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Shield Hero Defensive Underdog Fantasy's specific style identity.
+  form_and_line: >-
+    Define Shield Hero Defensive Underdog Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Shield Hero Defensive Underdog Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Shield Hero Defensive Underdog Fantasy recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Shield Hero Defensive Underdog Fantasy: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Shield Hero Defensive Underdog Fantasy with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Shield Hero Defensive Underdog Fantasy: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Shield Hero Defensive Underdog Fantasy: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Shield Hero Defensive Underdog Fantasy's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Render any prompt as defense becoming motion: use barrier geometry, scarred
-    material texture, and hard-earned glow so resilience reads visually without
-    requiring a literal defensive artifact, group, kingdom, curse, or disaster.
+    Create a style-card that translates Shield Hero Defensive Underdog Fantasy into a portable visual system for 8.
+    Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-099.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

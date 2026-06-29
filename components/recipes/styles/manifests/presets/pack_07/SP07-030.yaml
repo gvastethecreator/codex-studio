@@ -12,23 +12,38 @@ tags:
   - architecture-and-interior
   - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Constructivismo soviético de máquina cívica, monumentalidad ideológica y severidad programática.
+  aesthetic: >-
+    Soviet Constructivist within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Soviet Constructivist's specific style identity.
   form_and_line: >-
-    Diagonales agresivas, prismas/cilindros interbloqueados, vectores estructurales expuestos y
-    conectores suspendidos.
-  color_palette: Gris crudo, negro industrial, ocre desvaído y rojo propaganda como acento estratégico.
-  lighting_setup: Cielo cubierto, dramatismo de ángulo bajo, sombras duras proyectadas y ritmo de hueco fabril.
-  material_texture: Hormigón bruto, revoque áspero, acero estructural, bloque de vidrio y placas atornilladas.
-  render_quality: Claridad diagramática de masas con legibilidad volumétrica alta y tono archivístico severo.
-  spatial_distortion: Sensación de masas en tensión y volúmenes en suspensión controlada.
-  atmosphere: Austera, colectiva, disciplinada y mecánico-utópica.
+    Define Soviet Constructivist through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Soviet Constructivist-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Soviet Constructivist recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Soviet Constructivist: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Soviet Constructivist with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Soviet Constructivist: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Soviet Constructivist: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Cantiléveres tensos, apoyos expuestos, conectores suspendidos, planos rojos de comando y
-    estructura explícita.
+    Prioritize Soviet Constructivist's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Define una gramática constructivista transferible donde la forma opere como manifiesto:
-    conflicto geométrico, estructura sin ocultamiento y color político mínimo pero incisivo. Debe
-    leerse como sistema-programa.
+    Create a style-card that translates Soviet Constructivist into a portable visual system for 2. Architectural
+    Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - ornate
   - luxury retail gloss

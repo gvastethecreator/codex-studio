@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Ritual performance noir translated into masked symbolism and controlled theatrical menace.
-  form_and_line: Mask-like silhouettes, proscenium cues, and choreographed diagonals that can wrap any subject.
-  color_palette: Obsidian black, lacquer red, and pearl smoke.
-  lighting_setup: Knife-like stage spotlights with dense velvet shadow pockets.
-  material_texture: Lacquered masks, velvet shadow, carved emblems, and metallic dust.
-  render_quality: Prestige concept illustration with clear theatrical staging language.
-  spatial_distortion: Layered stage depth and recursive curtain geometry without requiring a literal theatre.
-  atmosphere: Fatal spectacle, sacred drama, and poised emotional tension.
-  key_features: Ceremonial mask cues, fractured proscenium shapes, ritual choreography marks.
-  creative_brief: Recast the input as an immaculate noir rite, using obsidian masks and stagecraft as symbolic style cues rather than a fixed theatre setup.
+  aesthetic: >-
+    Obsidian Mask Stagecraft within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Obsidian Mask Stagecraft's specific style identity.
+  form_and_line: >-
+    Define Obsidian Mask Stagecraft through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Obsidian Mask Stagecraft-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Obsidian Mask Stagecraft recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Obsidian Mask Stagecraft: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Obsidian Mask Stagecraft with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Obsidian Mask Stagecraft: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Obsidian Mask Stagecraft: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Obsidian Mask Stagecraft's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Obsidian Mask Stagecraft into a portable visual system for 1. Mythic Symbolism.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - slapstick

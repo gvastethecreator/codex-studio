@@ -37,23 +37,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'formal, concrete',
     style: {
       aesthetic:
-        'Jardín cottage de abundancia romántica, domesticidad hortícola y espontaneidad cuidadosamente compuesta.',
+        "Cottage Bloom Layering within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cottage Bloom Layering's specific style identity.",
       form_and_line:
-        'Borduras estratificadas por altura, recorridos sinuosos, masas redondeadas y acentos verticales trepadores.',
+        'Define Cottage Bloom Layering through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Pastel flowers, Green, Lavender haze, Hollyhock Pink, Delphinium Blue, Cream Rose',
+        'Use a Cottage Bloom Layering-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol suave con difusión nubosa, dapple bajo arbolado y brillo cálido de pétalo en tarde baja.',
+        'Use lighting that makes Cottage Bloom Layering recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Pétalo y hoja de textura variada, ladrillo con musgo, piedra rugosa, mulch de corteza y follaje plumoso.',
+        'Use materials and textures that reinforce Cottage Bloom Layering: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Riqueza botánica pictórica con estratificación estacional legible e informalidad estructurada.',
-      spatial_distortion: 'None',
-      atmosphere: 'Íntima, suave y vivida, con abundancia vegetal acogedora.',
+        'Render Cottage Bloom Layering with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Cottage Bloom Layering: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Cottage Bloom Layering: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Transiciones desbordadas, manchas aromáticas, floración vertical, recorridos curvos y señales para polinizadores.',
+        "Prioritize Cottage Bloom Layering's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Lleva cualquier input a abundancia hortícola compuesta: capas por altura, bordes que desbordan, floración escalonada y calidez doméstica. Debe parecer espontáneo, pero revelar estructura estacional al mirarlo de cerca.',
+        'Create a style-card that translates Cottage Bloom Layering into a portable visual system for 4. Landscape And Garden Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -89,25 +91,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'wild forest',
     style: {
       aesthetic:
-        'Ecologia postindustrial de borde reutilizado, donde memoria infraestructural y vegetacion urbana coexisten como una sola gramatica de superficie.',
+        "Postindustrial Ecological Promenade within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Postindustrial Ecological Promenade's specific style identity.",
       form_and_line:
-        'Estratos lineales de borde, alternancia hardscape-softscape y modulos repetidos de retencion, pausa y filtrado.',
+        'Define Postindustrial Ecological Promenade through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Weathered concrete neutrals, oxidized steel oranges, prairie grass olive tones, muted florals, cool urban greys',
+        'Use a Postindustrial Ecological Promenade-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz urbana difusa con rebote mineral suave y caida progresiva sobre planos, franjas y vacios reutilizados.',
+        'Use lighting that makes Postindustrial Ecological Promenade recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Hormigon crudo, corten oxidado, acero cepillado, grava fina, gramaneas al viento e inserciones de madera envejecida.',
+        'Use materials and textures that reinforce Postindustrial Ecological Promenade: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Nivel concurso de paisaje con legibilidad de reutilizacion y sucesion vegetal creible.',
+        'Render Postindustrial Ecological Promenade with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Layered edge compression, depth through repeating field modules, strong threshold legibility without a required promenade axis',
+        'Use spatial behavior that fits Postindustrial Ecological Promenade: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
       atmosphere:
-        'Respiro civico contemporaneo, permeable y con patina de infraestructura heredada en transicion ecologica.',
+        'Set a mood that belongs to Postindustrial Ecological Promenade: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Linealidad infraestructural, bordes estratificados, umbrales de retencion y mezclas de plantacion resiliente para polinizadores.',
+        "Prioritize Postindustrial Ecological Promenade's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reprograma cualquier composicion como ecologia de borde reutilizado: corten, hormigon heredado, grava, madera envejecida y plantacion resiliente colonizando una reticula previa. Debe sentirse civic-reclaimed y modular, no como sendero heroico, parque lineal obligatorio o paseo con procession fija. Conserva borde reutilizado, estratos civicos, plantacion resiliente y ritmo modular sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Postindustrial Ecological Promenade into a portable visual system for 4. Landscape And Garden Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -116,24 +118,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Landscape And Garden Systems',
     negativePrompt: 'lawn, wet',
     style: {
-      aesthetic: 'Paisaje xerófito de austeridad escultórica y desempeño hídrico explícito.',
+      aesthetic:
+        "Xeriscape Climate Grammar within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Xeriscape Climate Grammar's specific style identity.",
       form_and_line:
-        'Contraste de formas roseta/columnar, swales de grava, canales secos y masas agrupadas de bajo mantenimiento.',
+        'Define Xeriscape Climate Grammar through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Sage Green, Red Earth, Blue Agave, Golden Barrel, Ochre rock, Prickly-pear Magenta fruit',
+        'Use a Xeriscape Climate Grammar-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol duro con shimmer térmico, contraluz de espinas y glow cálido de última hora.',
+        'Use lighting that makes Xeriscape Climate Grammar recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Piedra árida, suculenta cerosa, granito descompuesto, espina rígida y borde metálico oxidado.',
+        'Use materials and textures that reinforce Xeriscape Climate Grammar: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Realismo climático resiliente con morfología botánica precisa y lógica water-wise verificable.',
-      spatial_distortion: 'None',
+        'Render Xeriscape Climate Grammar with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Xeriscape Climate Grammar: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
       atmosphere:
-        'Calma endurecida por sol, sobriedad resiliente y elegancia de baja demanda hídrica.',
+        'Set a mood that belongs to Xeriscape Climate Grammar: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Rosetas focales, mulch mineral, dry creek routing, cadencia xerófita y bandas de acero oxidado.',
+        "Prioritize Xeriscape Climate Grammar's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier prompt en tactica hidrica visible: suculentas escultoricas, mulch mineral, swales, drenaje seco y sol duro. Belleza austera por desempeno climatico, no postal de desierto.',
+        'Create a style-card that translates Xeriscape Climate Grammar into a portable visual system for 4. Landscape And Garden Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -143,23 +147,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cold, cold concrete',
     style: {
       aesthetic:
-        'Paisaje-hospitalidad tropical de lujo sereno, con agua y horizonte como eje compositivo principal.',
+        "Water-Horizon Hospitality within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Water-Horizon Hospitality's specific style identity.",
       form_and_line:
-        'Datum de infinity edge, plataformas someras, verticales tropicales y capas de terraza-agua.',
+        'Define Water-Horizon Hospitality through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Turquoise, Palm Green, White cabana, Bougainvillea Pink, Sand Beige, Sky-reflected teal',
+        'Use a Water-Horizon Hospitality-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol intenso diurno, brillo subacuático controlado, ámbar nocturno de antorcha y shimmer de atardecer sobre lámina.',
+        'Use lighting that makes Water-Horizon Hospitality recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Agua reflectante, piedra térmica, revestimiento húmedo, teca exterior y textil de sombra.',
+        'Use materials and textures that reinforce Water-Horizon Hospitality: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Visualización hospitality premium con lujo creíble y control físico de reflejo acuático.',
-      spatial_distortion: 'None',
-      atmosphere: 'Indulgencia de ritmo lento, serenidad cálida y escape curado.',
+        'Render Water-Horizon Hospitality with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Water-Horizon Hospitality: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Water-Horizon Hospitality: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Línea knife-edge, planos someros, módulos de sombra, acentos de fuego y marco vegetal tropical.',
+        "Prioritize Water-Horizon Hospitality's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'El lujo aparece por lamina de agua, borde infinito, sombra vegetal y tacto exterior calido. Cualquier sujeto debe sentirse desacelerado por reflejos, shimmer y horizonte abstracto, sin destino ni marca.',
+        'Create a style-card that translates Water-Horizon Hospitality into a portable visual system for 4. Landscape And Garden Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -224,24 +230,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'weeds, unmanaged meadow',
     style: {
       aesthetic:
-        'Formalismo de greensward competitivo de alto mantenimiento, donde topografia, mantenimiento y toma de decisiones se codifican en el terreno.',
+        "Tournament Turf Strategy within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Tournament Turf Strategy's specific style identity.",
       form_and_line:
-        'Franjas de siega en cinta, concavidades mineralizadas tipo bunker, mesetas cortas de precision y corredores visuales dirigidos.',
+        'Define Tournament Turf Strategy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Vibrant green, sand mineral, cool sky blue, striped mow contrast, water-teal accents, hazard-marker yellow',
+        'Use a Tournament Turf Strategy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Neblina de manana, angulo bajo sobre cesped de precision, brillo de rocio y dramatismo de sombra en vacios excavados.',
+        'Use lighting that makes Tournament Turf Strategy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cesped corto de corte preciso, arena rastrillada, agua lisa contenida y marcadores de mantenimiento de alta visibilidad.',
+        'Use materials and textures that reinforce Tournament Turf Strategy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Visualizacion precision-turf con lectura de mantenimiento, seleccion de trayectorias y control de superficie a distancia.',
-      spatial_distortion: 'None',
+        'Render Tournament Turf Strategy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Tournament Turf Strategy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
       atmosphere:
-        'Calma controlada, concentracion competitiva y obsesion curada por la superficie.',
+        'Set a mood that belongs to Tournament Turf Strategy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Franjas de siega, recortes de arena nitidos, focos de objetivo y coreografia de riesgo superficial.',
+        "Prioritize Tournament Turf Strategy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier superficie en estrategia de precision: franjas de siega, recortes minerales, rocio, agua contenida y decisiones de recorrido legibles sin exigir hoyos, banderas, jugadores o campo deportivo literal. Debe sentirse mantenido con obsesion competitiva, no como paisaje verde generico. Conserva corte de precision, riesgo superficial, escala de mantenimiento y estrategia de recorrido sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Tournament Turf Strategy into a portable visual system for 4. Landscape And Garden Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {

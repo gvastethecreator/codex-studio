@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Entrenamiento metódico de mejora incremental, análisis técnico, repetición y evolución medible.
-  form_and_line: Mecánica depurada, pasos didácticos y acting de concentración sostenida.
-  color_palette: Paleta sobria de práctica, verdes funcionales, blancos de guía y acentos azules de análisis.
-  lighting_setup: Luz de entrenamiento uniforme con contraste moderado para lectura didáctica de gesto.
-  material_texture: Superficie usada, material funcional, marcas tácticas sugeridas y textil de práctica.
-  render_quality: Frame técnico de entrenamiento con claridad de corrección, progreso y consistencia.
-  spatial_distortion: Perspectiva funcional sin dramatización excesiva, enfocada en secuencia y repetición.
-  atmosphere: Estudiosa, práctica, constante y determinada.
-  key_features: Cues de análisis, mecánica repetida, patrón de pies y lenguaje corporal de mejora progresiva.
+  aesthetic: >-
+    Incremental Method Training Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Incremental Method Training Style's specific style identity.
+  form_and_line: >-
+    Define Incremental Method Training Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Incremental Method Training Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Incremental Method Training Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Incremental Method Training Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Incremental Method Training Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Incremental Method Training Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Incremental Method Training Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Incremental Method Training Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática reusable de entrenamiento calculado para cualquier prompt o imagen de entrada:
-    método, repetición y progreso medible sin imponer tennis, cuadernos, raquetas ni cancha.
+    Create a style-card that translates Incremental Method Training Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-361.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

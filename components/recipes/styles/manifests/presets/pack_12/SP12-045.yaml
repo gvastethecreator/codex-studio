@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
 visualDna:
-  aesthetic: Gramática mech-hunt táctica con rastreo de firmas, sigilo, captura selectiva y biomasa metálica viva.
-  subject_treatment: Si el input contiene personaje/criatura, convertirlo en tracker o presa mech; si es objeto, darle firma electromagnética, trampa o weak point.
-  color_and_tone: Verde óxido, cobre y azul eléctrico para señalizar biomasa sintética y actividad mecánica.
-  lighting_and_shadow: Contraluz filtrado por follaje de acero con zonas de ocultamiento táctico.
-  texture_and_material: Troncado de aleación, cableado orgánico, barro conductor y depósitos de limadura.
-  camera_and_composition: Acecho, presa, rodeo y ventana de ataque como composición sin exigir bosque.
-  atmosphere_and_mood: Silenciosa, precisa y de tensión incremental.
-  rendering_and_quality: 'Mech-hunt gameplay frame: target signature, cover pockets, attack window, alloy forest routes clear.'
+  aesthetic: >-
+    Alloy Forest Mech Hunt within 3. Sci-Fi Frontiers & Mech Zones: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Alloy Forest Mech Hunt's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Alloy Forest Mech Hunt's visual grammar: readable silhouette, role cues, controlled detail
+    density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Alloy Forest Mech Hunt: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Alloy Forest Mech Hunt: legible depth, purposeful highlights, readable focal zones, and
+    atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Alloy Forest Mech Hunt's material logic: tactile detail, coherent finish, and texture choices
+    that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Alloy Forest Mech Hunt's staging logic: strong focal hierarchy, stable readable framing, and spatial
+    rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Alloy Forest Mech Hunt's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 3. Sci-Fi Frontiers & Mech Zones style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

@@ -12,29 +12,38 @@ tags:
   - architecture-and-interior
   - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Revival gótico de verticalidad devocional, dramatismo pétreo y solemnidad de luz filtrada.
+  aesthetic: >-
+    Gothic Revival within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Gothic Revival's specific style identity.
   form_and_line: >-
-    Ojivas, nervaduras, tracería compleja, contrafuertes rítmicos y remates ascendentes como lógica
-    gráfica vertical.
+    Define Gothic Revival through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
   color_palette: >-
-    Grises de piedra envejecida, estallidos cromáticos tipo vitral, sombras azul-carmesí y metal
-    apagado.
+    Use a Gothic Revival-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and
+    avoid generic color wash.
   lighting_setup: >-
-    Iluminación low-key con velas/luz lunar, proyección cromática de vitrales y contrastes de alta
-    reverencia.
-  material_texture: Caliza tallada, roble envejecido, hierro frío patinado, polvo mineral y latón oscurecido.
-  render_quality: Visualización histórico-monumental con fidelidad ornamental y atmósfera sacra precisa.
+    Use lighting that makes Gothic Revival recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Gothic Revival: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
+  render_quality: >-
+    Render Gothic Revival with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Énfasis en elongación vertical, profundidad reverencial y tracción ascendente sin exigir nave o
-    templo literal.
-  atmosphere: Solemne, ancestral, reverencial y dramática.
+    Use spatial behavior that fits Gothic Revival: perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Gothic Revival: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
   key_features: >-
-    Gramática de arco ojival, jerarquía vertical, vitral activo y ornamentación pétrea de alta
-    densidad.
+    Prioritize Gothic Revival's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Mantén una gramática gótica transferible donde verticalidad, piedra tallada y luz de vitral
-    construyan reverencia espacial. Debe funcionar sin caer en clichés narrativos de horror o ruina
-    escénica.
+    Create a style-card that translates Gothic Revival into a portable visual system for 2. Architectural Movements And
+    Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - modern
   - bright

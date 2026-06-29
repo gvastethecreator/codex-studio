@@ -10,24 +10,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, sunny, readable text, ads, logos, maps',
     style: {
       aesthetic:
-        'Infraestructura metropolitana de alto flujo, con pátina cerámica y presión cotidiana de movilidad masiva.',
+        "Metropolitan Transit Patina within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Metropolitan Transit Patina's specific style identity.",
       form_and_line:
-        'Ritmo repetitivo de crujías, convergencia longitudinal, techos híbridos y bandas abstractas de orientación no legible.',
+        'Define Metropolitan Transit Patina through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Tile White, Grime, Signal Green, Rust Orange, Gum-grey floor, Sick-fluorescent tone',
+        'Use a Metropolitan Transit Patina-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Fluorescencia intermitente, pools de borde operativo, brillo comercial no textual y vacío negro como contrapunto.',
+        'Use lighting that makes Metropolitan Transit Patina recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Baldosa astillada, acero oxidado, grasa mineral, humedad capilar y pavimento antideslizante gastado.',
+        'Use materials and textures that reinforce Metropolitan Transit Patina: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Realismo documental de tránsito con microdesgaste verosímil y lectura clara de espacio público denso.',
-      spatial_distortion: 'Blur de tránsito y compresión longitudinal por flujo.',
+        'Render Metropolitan Transit Patina with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Metropolitan Transit Patina: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
       atmosphere:
-        'Transitoria, anónima y húmeda, con urgencia rutinaria y compresión subterránea constante.',
+        'Set a mood that belongs to Metropolitan Transit Patina: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Franja de seguridad, bandas de orientación no legibles, conducciones vistas, derrame de luz comercial y huecos profundos.',
+        "Prioritize Metropolitan Transit Patina's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier input en infraestructura de flujo masivo: repetición modular, cerámica gastada, orientación abstracta como estructura y humedad subterránea. La imagen debe cargar presión de tránsito aun sin mostrar una estación literal.',
+        'Create a style-card that translates Metropolitan Transit Patina into a portable visual system for 3. Civic Infrastructure And Specialty Spaces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -37,23 +38,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'dark, dry',
     style: {
       aesthetic:
-        'Envolvente bioclimática húmeda, donde estructura fina y masa vegetal conviven en equilibrio técnico.',
+        "Conservatory Bioclimate within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Conservatory Bioclimate's specific style identity.",
       form_and_line:
-        'Luces acristaladas nervadas, tracería metálica fina y estratos orgánicos por profundidad.',
+        'Define Conservatory Bioclimate through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Green, Glass, Tropical Bloom accents, Dew-drop Silver, Mossy floor, Whitewashed iron',
+        'Use a Conservatory Bioclimate-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol filtrado por vidrio, difusión húmeda, prismas por condensación y rayos suavizados por neblina interna.',
+        'Use lighting that makes Conservatory Bioclimate recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Película de condensación, hierro pintado oxidado, grava húmeda, terracota eflorescente y hojas de brillo ceroso.',
+        'Use materials and textures that reinforce Conservatory Bioclimate: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Precisión botánica con control de atmósfera húmeda y claridad estructural operativa.',
-      spatial_distortion: 'Condensación refractiva y capas de humedad que suavizan profundidad.',
-      atmosphere: 'Cálida-húmeda, protectora y fértil, con calma de cultivo intensivo controlado.',
+        'Render Conservatory Bioclimate with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Conservatory Bioclimate: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Conservatory Bioclimate: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Gradientes de condensación, zonificación vegetal, repetición de nervios, estratificación de niebla y rutas técnicas.',
+        "Prioritize Conservatory Bioclimate's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'El tratamiento mezcla retícula fina, humedad visible y crecimiento controlado hasta que cualquier sujeto parezca mantenido por clima artificial. Condensación, vidrio, nervios estructurales y botánica técnica deben operar como un solo sistema.',
+        'Create a style-card that translates Conservatory Bioclimate into a portable visual system for 3. Civic Infrastructure And Specialty Spaces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -63,23 +66,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, new',
     style: {
       aesthetic:
-        'Patina institucional de deterioro burocratico, donde mantenimiento fallido y repeticion administrativa se vuelven sistema visual portable.',
+        "Institutional Ruin Patina within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Institutional Ruin Patina's specific style identity.",
       form_and_line:
-        'Axialidad rigida interrumpida por colapsos, repeticion modular de servicio y fallas en capas suspendidas sin requerir edificio publico literal.',
+        'Define Institutional Ruin Patina through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Desaturated green-grey, sickly mint, rust stain, water-damage brown, faded cream',
+        'Use a Institutional Ruin Patina-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Hazes de luz quebrada, polvo en suspension, parpadeo electrico residual y fondos de sombra profunda.',
+        'Use lighting that makes Institutional Ruin Patina recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Pintura delaminada, escurridos minerales, oxidacion en uniones, yeso ampollado y trazas fungicas progresivas.',
+        'Use materials and textures that reinforce Institutional Ruin Patina: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Lectura forense del deterioro con autenticidad administrativa y decadencia material legible.',
-      spatial_distortion: 'Partial collapse, axis interruption and service-depth fracture',
-      atmosphere: 'Inmovilidad opresiva, vacio acustico frio y memoria administrativa detenida.',
+        'Render Institutional Ruin Patina with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Institutional Ruin Patina: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Institutional Ruin Patina: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Placas graficas deslavadas no legibles, luminarias rotas, juntas abiertas, polvo estratificado y cielos parciales caidos.',
+        "Prioritize Institutional Ruin Patina's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transforma cualquier tema en evidencia de mantenimiento fallido: pintura delaminada, repeticion administrativa, humedad mineral y luz residual. La tension debe surgir de burocracia detenida y desgaste sistemico, no de hospital embrujado, pasillo de asylum o ruina de terror demasiado literal. Conserva patina institucional, repeticion de servicio, escala administrativa y luz rota sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Institutional Ruin Patina into a portable visual system for 3. Civic Infrastructure And Specialty Spaces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -143,24 +148,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'flat dry-air scene, no refraction, no water optics, no suspended particles',
     style: {
       aesthetic:
-        'Inmersión azul técnica, donde envolvente acrílica y columna de agua construyen espectáculo óptico.',
+        "Immersive Aquarium Optics within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Immersive Aquarium Optics's specific style identity.",
       form_and_line:
-        'Secciones arqueadas continuas, empuje tubular de perspectiva y capas de profundidad acuática con flujo suave.',
+        'Define Immersive Aquarium Optics through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Blue, Cyan, Aquamarine, Deep Navy shadow, Bioluminescent fleck, Sandy floor tan',
+        'Use a Immersive Aquarium Optics-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Redes caústicas dinámicas, dapple cenital, ambiente azul profundo y brillo de tanque de alta difusión.',
+        'Use lighting that makes Immersive Aquarium Optics recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Acrílico grueso, piel de agua refractiva, partículas suspendidas y rugosidad de sustrato húmedo.',
+        'Use materials and textures that reinforce Immersive Aquarium Optics: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Claridad acuática alta con refracción físicamente creíble y atenuación cromática por profundidad.',
-      spatial_distortion: 'Refracción, atenuación azul y curvatura óptica controlada.',
+        'Render Immersive Aquarium Optics with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Immersive Aquarium Optics: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
       atmosphere:
-        'Asombro silencioso, calma presurizada e inmersión azul de ritmo humano ralentizado.',
+        'Set a mood that belongs to Immersive Aquarium Optics: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Barridos caústicos, nervios acrílicos, turbidez variable, siluetas acuáticas y estratos bióticos.',
+        "Prioritize Immersive Aquarium Optics's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Pasa cualquier sujeto por agua presurizada: acrílico grueso, atenuación azul, caústicas móviles, partículas suspendidas y curvatura óptica. La biota puede aparecer, pero el estilo vive en la física visual del tanque.',
+        'Create a style-card that translates Immersive Aquarium Optics into a portable visual system for 3. Civic Infrastructure And Specialty Spaces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -222,23 +228,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ground level',
     style: {
       aesthetic:
-        'Artesanía arbórea elevada, ensamblada contra crecimiento vivo y gobernada por adaptación orgánica.',
+        "Arboreal Craft Shelter within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Arboreal Craft Shelter's specific style identity.",
       form_and_line:
-        'Soportes híbridos, plataformas moduladas, diagonales tensadas y vacíos de evasión orgánica.',
-      color_palette: 'Brown, Green leaves, Bark Grey, Rope Tan, Sky Blue through leaves, Moss',
+        'Define Arboreal Craft Shelter through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Arboreal Craft Shelter-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol moteado filtrado por hoja, brillo variable de dosel y pools cálidos en escala íntima.',
+        'Use lighting that makes Arboreal Craft Shelter recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Veta de madera expuesta al clima, cuerda fibrosa, abrasión de corteza y herrajes galvanizados oxidados.',
+        'Use materials and textures that reinforce Arboreal Craft Shelter: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Autenticidad hand-built con plausibilidad estructural ligera y detalle de uso exterior real.',
-      spatial_distortion: 'Inclinación artesanal, torsión orgánica y apoyo asimétrico creíble.',
+        'Render Arboreal Craft Shelter with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Arboreal Craft Shelter: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
       atmosphere:
-        'Íntima y adaptativa, con autonomía exploratoria y abrigo ligero frente a exposición ambiental.',
+        'Set a mood that belongs to Arboreal Craft Shelter: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Encuentros con soporte vivo, accesos ligeros, bordes suspendidos, pools cálidos y uniones improvisadas.',
+        "Prioritize Arboreal Craft Shelter's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'El estilo negocia cualquier forma contra soporte vivo mediante ensamblaje elevado, cuerda, madera expuesta y tensiones improvisadas. Debe sentirse artesanal y suspendido sin exigir treehouse, refugio infantil, tronco heroico ni postal de aventura. Conserva logica material, escala ligera y ritmo estructural adaptativo sin fijar tipologia, paisaje, franquicia, criatura ni escena cerrada.',
+        'Create a style-card that translates Arboreal Craft Shelter into a portable visual system for 3. Civic Infrastructure And Specialty Spaces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

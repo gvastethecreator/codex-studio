@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Nocturnal orchid witness language with velvet drapery, secrecy, and ceremonial stillness.
-  form_and_line: Floral verticals, screen rhythms, and balcony-like layered silhouettes.
-  color_palette: Dark plum, black green, and muted gold.
-  lighting_setup: Orchid biolight mixed with candle glows.
-  material_texture: Velvet curtains, glossy petals, and dark lacquer.
-  render_quality: Dreamlike mythic illustration with refined botanical detail.
-  spatial_distortion: Layered depth with floral framing that can surround any subject.
-  atmosphere: Seduction, secrecy, and ceremonial stillness.
-  key_features: Orchid altar cues, midnight terrace silhouettes, ritual screens.
-  creative_brief: Recast the input through night-orchid witness, where dark blossoms become the final witness of a ritual without fixing the setting as a house.
+  aesthetic: >-
+    Night Orchid Witness within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Night Orchid Witness's specific style identity.
+  form_and_line: >-
+    Define Night Orchid Witness through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Night Orchid Witness-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Night Orchid Witness recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Night Orchid Witness: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Night Orchid Witness with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Night Orchid Witness: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Night Orchid Witness: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Night Orchid Witness's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Night Orchid Witness into a portable visual system for 2. Mythic Ritual Noir.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cartoonish

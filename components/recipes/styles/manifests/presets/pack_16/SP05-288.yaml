@@ -12,19 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Juventud luminosa con elasticidad temporal ligera, energía de error cotidiano y melancolía de decisión irreversible.
-  form_and_line: Trazos ágiles, expresividad espontánea, diagonales de impulso y siluetas limpias de alta legibilidad.
-  color_palette: Azules brillantes, blancos cálidos, verdes suaves de cotidianidad abierta y acentos rosados de impulso emocional.
-  lighting_setup: Sol de tarde alto con rebotes claros, sombras suaves y brillo atmosférico de verano en expansión.
-  material_texture: Superficies cálidas al sol, metal liviano, telas ligeras y aire húmedo estival sin anclar locación.
-  render_quality: Acabado cinematográfico fresco con prioridad en ritmo corporal, timing visual y lectura clara de loop temporal.
-  spatial_distortion: Perspectiva naturalista con elongación dinámica en saltos y microdeformación de trayectoria para sugerir rewind temporal.
-  atmosphere: Lúdica, nostálgica, aérea, impulsiva.
-  key_features: Luz de tarde, impulso corporal, repetición temporal sutil, aire de verano abstracto y tensión entre juego y arrepentimiento.
+  aesthetic: >-
+    Elastic Summer Time Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Elastic Summer Time Style's specific style identity.
+  form_and_line: >-
+    Define Elastic Summer Time Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Elastic Summer Time Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Elastic Summer Time Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Elastic Summer Time Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Elastic Summer Time Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Elastic Summer Time Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Elastic Summer Time Style: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Elastic Summer Time Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Crea una gramática reusable de tiempo elástico veraniego para cualquier prompt o imagen de entrada:
-    ligereza, impulso y arrepentimiento suave sin imponer azoteas, escuelas, saltos literales ni grupos juveniles.
-
+    Create a style-card that translates Elastic Summer Time Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-288.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

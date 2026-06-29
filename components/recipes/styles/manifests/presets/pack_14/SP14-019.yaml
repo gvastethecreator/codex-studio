@@ -13,16 +13,37 @@ tags:
   - mythic
   - greek-myth
 visualDna:
-  aesthetic: Thesean labyrinth logic reimagined as ominous palace-noir puzzle geometry.
-  form_and_line: Concentric corridor cues, angular relief murals, and thread-guided vanishing lines.
-  color_palette: Oxblood red, soot black, and tarnished gold.
-  lighting_setup: Torch pools and skylight slits producing alternating bright traps and blind corners.
-  material_texture: Cracked stucco, polished black stone, and frayed ceremonial textiles.
-  render_quality: Cinematic environment painting with clear traversal logic and symbolic motifs.
-  spatial_distortion: Recursive corridor geometry suggesting impossible returns and hidden chambers.
-  atmosphere: Claustrophobic destiny, strategic fear, and ritual courage.
-  key_features: Red guiding thread, horned relief masks, sacrificial gate cues, echoing maze wells.
-  creative_brief: Apply red-thread labyrinth logic to the input, testing memory and nerve through recursive geometry without requiring a literal maze.
+  aesthetic: >-
+    Red Thread Labyrinth Logic within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Red Thread Labyrinth Logic's specific style identity.
+  form_and_line: >-
+    Define Red Thread Labyrinth Logic through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Red Thread Labyrinth Logic-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Red Thread Labyrinth Logic recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Red Thread Labyrinth Logic: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Red Thread Labyrinth Logic with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Red Thread Labyrinth Logic: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Red Thread Labyrinth Logic: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Red Thread Labyrinth Logic's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Red Thread Labyrinth Logic into a portable visual system for 5. Mythic Greek
+    Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - whimsical-cute

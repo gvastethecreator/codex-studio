@@ -10,25 +10,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clutter, ornate, pattern, dark',
     style: {
       aesthetic:
-        'Minimalismo arquitectónico de alta precisión, donde la ausencia programática y la continuidad material construyen lujo silencioso.',
+        "Modern Minimalist within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Modern Minimalist's specific style identity.",
       form_and_line:
-        'Planos ortogonales largos, encuentros sin marco, espesores ocultos, ejes de circulación limpios y piezas flotantes de bajo perfil.',
+        'Define Modern Minimalist through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Blanco mineral, marfil cálido, gris piedra frío, arena pálida y roble desaturado como único acento térmico.',
+        'Use a Modern Minimalist-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz diurna difusa de gran apertura, rebotes uniformes sin hotspots, cove lighting perimetral oculto y sombras extremadamente blandas.',
+        'Use lighting that makes Modern Minimalist recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Yeso fino continuo, microcemento mate, piedra apomazada de poro cerrado y madera cepillada casi sin veta visible.',
+        'Use materials and textures that reinforce Modern Minimalist: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Visualización editorial ultra-clean con énfasis en proporción, borde, alineación y disciplina de vacío.',
+        'Render Modern Minimalist with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva neutra y estable, con profundidad construida por capas tonales suaves en lugar de dramatización angular.',
+        'Use spatial behavior that fits Modern Minimalist: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
       atmosphere:
-        'Serenidad curada, control acústico implícito, claridad mental, y sensación de lujo por contención.',
+        'Set a mood that belongs to Modern Minimalist: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Vacío activo, alineación invisible, planos enrasados, módulos suspendidos y continuidad material sin lectura de escena obligatoria.',
+        "Prioritize Modern Minimalist's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Preserva una gramática minimalista transferible basada en sustracción extrema, continuidad constructiva y jerarquía por vacío. Cualquier input debe absorberse en planos silenciosos, luz uniforme y detalle oculto de alta precisión sin quedar atado a arquitectura literal.',
+        'Create a style-card that translates Modern Minimalist into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -38,25 +38,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'cozy, soft, carpet, wallpaper',
     style: {
       aesthetic:
-        'Reutilización industrial sofisticada, con infraestructura expuesta como ornamento principal y pátina funcional controlada.',
+        "Industrial Loft within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Industrial Loft's specific style identity.",
       form_and_line:
-        'Tramas estructurales repetitivas, cerchas visibles, canalizaciones ortográficas y secuencias de pórticos de gran luz.',
+        'Define Industrial Loft through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Óxidos de ladrillo, neutros cementicios, grafito metálico, cobre envejecido y ámbar cálido de apoyo.',
+        'Use a Industrial Loft-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Entradas cenitales o laterales profundas, contraste medio-alto, zonas de penumbra técnica y prácticos cálidos puntuales.',
+        'Use lighting that makes Industrial Loft recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Hormigón encofrado, mampostería rugosa, acero oxidado estabilizado, madera recuperada y cuero mate desgastado.',
+        'Use materials and textures that reinforce Industrial Loft: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado industrial-chic con legibilidad tectónica y balance entre crudeza material y curaduría editorial.',
+        'Render Industrial Loft with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad longitudinal marcada por repetición estructural; sin deformación expresiva, sí compresión por capas técnicas.',
+        'Use spatial behavior that fits Industrial Loft: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
       atmosphere:
-        'Productivo, robusto, creativo y adulto; tensión entre taller y vivienda premium.',
+        'Set a mood that belongs to Industrial Loft: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Estructura expuesta, uniones francas, capas técnicas visibles, escala productiva y pátina utilitaria como lenguaje, no como set.',
+        "Prioritize Industrial Loft's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Conserva la identidad loft mediante una lógica estructura-instalación explícita: lo técnico debe dominar la composición y la pátina contar uso real. La transferencia debe funcionar sobre cualquier sujeto sin perder la tensión entre crudeza y refinamiento.',
+        'Create a style-card that translates Industrial Loft into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -66,24 +66,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'antique, victorian, industrial, literal lamp, staged living room',
     style: {
       aesthetic:
-        'Modernismo doméstico de mitad de siglo con optimismo atómico, sofisticación sobria y presencia escultórica habitable.',
+        "Mid-Century Modern within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Mid-Century Modern's specific style identity.",
       form_and_line:
-        'Curvas orgánicas contenidas, patas cónicas, volúmenes bajos, módulos horizontales y siluetas icónicas equilibradas.',
+        'Define Mid-Century Modern through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Teca y nogal como base, mostaza/oliva y naranja quemado como acentos, neutros cálidos para cohesión.',
+        'Use a Mid-Century Modern-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Resplandor práctico cálido, colgantes de época como geometría opcional, luz de tarde filtrada y contraste suave de hospitalidad social.',
+        'Use lighting that makes Mid-Century Modern recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Chapas de madera finas, tejidos de lana/tweed, contrachapado moldeado, metal ligero cepillado.',
+        'Use materials and textures that reinforce Mid-Century Modern: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Editorial retro contemporáneo con nostalgia controlada, claridad de mobiliario y composición funcional elegante.',
+        'Render Mid-Century Modern with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Proporción estable con énfasis en lectura de piezas; profundidad por ritmo modular, no por teatralidad.',
-      atmosphere: 'Acogedor, conversacional, curado y optimista sin exceso decorativo.',
+        'Use spatial behavior that fits Mid-Century Modern: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Mid-Century Modern: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Silueta baja, soporte cónico, calidez nogal-teca, acentos atómicos y equilibrio entre función legible y curva suave.',
+        "Prioritize Mid-Century Modern's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Mantén una gramática mid-century transferible: proporción baja, silueta icónica y coreografía madera-textil-luz cálida. El resultado debe sentirse social y refinado sobre cualquier input, sin caer en pastiche vintage ni depender de lámparas literales o sala escenificada.',
+        'Create a style-card that translates Mid-Century Modern into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -94,24 +95,25 @@ export const GENERATED_STYLE_PRESETS = [
       'gloomy low-key palette, cold industrial mood, hard metal dominance, glossy plastic dominance',
     style: {
       aesthetic:
-        'Confort nordico de bajo contraste, intimidad termica y bienestar cotidiano traducidos a una gramatica material portable.',
+        "Scandinavian Hygge within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Scandinavian Hygge's specific style identity.",
       form_and_line:
-        'Volumenes bajos, cantos redondeados, capas textiles continuas y respiracion despejada sin requerir living domestico fijo.',
+        'Define Scandinavian Hygge through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Blancos rotos y crema, maderas claras aceitada, verde salvia y rosa apagado como microacento',
+        'Use a Scandinavian Hygge-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Difusion suave, red de practicos calidos, puntos de baja intensidad y balance envolvente de refugio.',
+        'Use lighting that makes Scandinavian Hygge recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Lana tejida, piel suave, ceramica mate, lino cepillado y madera de veta discreta.',
+        'Use materials and textures that reinforce Scandinavian Hygge: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado editorial escandinavo con prioridad de confort legible, detalle contenido y atmosfera acogedora coherente.',
+        'Render Scandinavian Hygge with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Neutralidad geometrica; profundidad construida por superposicion blanda de textiles y luminancia calida.',
-      atmosphere: 'Refugio, calma, seguridad y calidez continua de escala humana.',
+        'Use spatial behavior that fits Scandinavian Hygge: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Scandinavian Hygge: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Escala baja, capas textiles, madera palida, iluminacion calida distribuida y ausencia de estridencia visual.',
+        "Prioritize Scandinavian Hygge's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Asegura transferencia hygge mediante una triada constante: luz blanda, tactilidad natural y contraste bajo. El estilo debe priorizar confort sensorial y claridad funcional por encima de cualquier habitacion, temporada o escena domestica concreta. Conserva logica material, escala baja y ritmo arquitectonico sereno sin fijar tipologia, paisaje, franquicia, criatura ni escena cerrada.',
+        'Create a style-card that translates Scandinavian Hygge into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -121,24 +123,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'minimalist, empty, sterile',
     style: {
       aesthetic:
-        'Eclecticismo bohemio de acumulación curada, con densidad táctil, color viajado y ritmo orgánico como estructura visual principal.',
+        "Bohemian Eclectic within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bohemian Eclectic's specific style identity.",
       form_and_line:
-        'Asimetría orgánica, cascadas textiles, perfiles artesanales redondeados y composiciones intencionalmente no axiales.',
+        'Define Bohemian Eclectic through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Base tierra cálida con turquesa/índigo, especias cromáticas, terracota y punctuaciones de patrón saturado.',
+        'Use a Bohemian Eclectic-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz natural moteada, prácticos bajos tipo farol, difusión cálida y solapamiento suave de sombras.',
+        'Use lighting that makes Bohemian Eclectic recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Fibras tejidas, alfombras anudadas, macramé, lino crudo, tallas en madera y hojas semitranslúcidas.',
+        'Use materials and textures that reinforce Bohemian Eclectic: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Editorial boho de alta densidad material con clutter controlado y armonía entre piezas heterogéneas.',
+        'Render Bohemian Eclectic with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad orgánica por capas irregulares, solapes textiles y asimetría intencional; sin rigidez geométrica.',
-      atmosphere: 'Libre, habitado, cálido, viajero y creativo, con riqueza sensorial continua.',
+        'Use spatial behavior that fits Bohemian Eclectic: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Bohemian Eclectic: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Artesanía acumulada, mezcla de patrones, pulsos orgánicos, textiles superpuestos y baja simetría.',
+        "Prioritize Bohemian Eclectic's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Establece una gramática bohemia transferible basada en acumulación artesanal, ritmo orgánico-textil y abundancia asimétrica. Debe sentirse vivido y curado, nunca caótico ni dependiente de una escena puntual.',
+        'Create a style-card that translates Bohemian Eclectic into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -148,24 +151,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clutter, western, plastic',
     style: {
       aesthetic:
-        'Calma zen de contencion extrema, vacio disciplinado y materialidad natural silenciosa sin dependencia de interior tradicional fijo.',
+        "Japanese Zen within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Japanese Zen's specific style identity.",
       form_and_line:
-        'Reticula modular baja, lineas horizontales contenidas, filtros transluidos y focos asimetricos de vacio intencional.',
+        'Define Japanese Zen through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Blanco papel de arroz, madera clara calida, verde tatami, carbon sumi e indigo apagado',
+        'Use a Japanese Zen-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Difusion filtrada, pools calidos de baja intensidad y sombras de transicion lenta con control contemplativo.',
+        'Use lighting that makes Japanese Zen recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Fibra vegetal visible, veta de madera cruda, arcilla mate alisada a mano y translucidez de papel.',
+        'Use materials and textures that reinforce Japanese Zen: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Minimal refinado con equilibrio de espacio negativo y precision contemplativa portable.',
+        'Render Japanese Zen with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Geometria neutra; profundidad por capas filtrantes y vacios secuenciados.',
-      atmosphere: 'Serena, reverente, lenta y enfocada.',
+        'Use spatial behavior that fits Japanese Zen: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Japanese Zen: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Reticula baja, filtros transluidos, focos sobrios, materiales organicos desnudos y ritmo contenido.',
+        "Prioritize Japanese Zen's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define el preset como una gramatica de calma modular: reticula, filtro de luz y vacio intencional. La transferencia debe sostener quietud material y precision ritual sin depender de tatami-room, templo, jardin seco o escena tradicional especifica. Conserva logica material, escala contenida y ritmo espacial contemplativo sin fijar tipologia, paisaje, franquicia, criatura ni escena cerrada.',
+        'Create a style-card that translates Japanese Zen into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -175,24 +179,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'basement, dark, cheap',
     style: {
       aesthetic:
-        'Lujo residencial aéreo de control extremo, opulencia contenida y precisión compositiva editorial.',
+        "Luxury Penthouse within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Luxury Penthouse's specific style identity.",
       form_and_line:
-        'Paños continuos, losas flotantes, planos largos y siluetas bajas curadas por jerarquía de vacío.',
+        'Define Luxury Penthouse through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Marfil cálido, carbón elegante, gris humo azulado y acentos de latón cepillado sobre base pétrea neutra.',
+        'Use a Luxury Penthouse-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Capas de luz indirecta premium, prácticos puntuales suaves, control especular y baja fatiga visual.',
+        'Use lighting that makes Luxury Penthouse recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Mármol libro abierto, metal satinado, cuero grano completo, textiles finos y lacas mate de alta calidad.',
+        'Use materials and textures that reinforce Luxury Penthouse: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado de hospitality de lujo con fidelidad material alta y staging impecable.',
+        'Render Luxury Penthouse with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Gran angular contenido con eje interior elongado y profundidad por piezas statement cuidadosamente espaciadas.',
-      atmosphere: 'Privado, aspiracional, sereno y altamente controlado.',
+        'Use spatial behavior that fits Luxury Penthouse: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Luxury Penthouse: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Carpinterías de gran luz, envolventes continuas, piezas-escultura, paleta sobria y detalle constructivo invisible.',
+        "Prioritize Luxury Penthouse's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática de lujo transferible por proporción, detalle oculto, material noble y control lumínico. Evita la postal aspiracional: el valor debe emerger del sistema visual, no de vista, altura o contexto externo.',
+        'Create a style-card that translates Luxury Penthouse into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -202,23 +207,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'synthetic, modern, cold',
     style: {
       aesthetic:
-        'Rusticidad protectora de masa natural, oficio manual visible y calor de núcleo térmico.',
+        "Rustic Cabin within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Rustic Cabin's specific style identity.",
       form_and_line:
-        'Geometrías gruesas de madera y mampostería, ensambles robustos, proporciones compactas protectoras.',
+        'Define Rustic Cabin through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Umber quemado, roble ahumado, ámbar brasa, verde pino y cenizas neutras de baja saturación.',
+        'Use a Rustic Cabin-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Prioridad de resplandor térmico, parpadeo cálido de prácticos, filtrado diurno moderado y zonas de sombra confortable.',
+        'Use lighting that makes Rustic Cabin recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Veta labrada a mano, piedra porosa, lana y piel, metal forjado patinado y acabados terrosos mates.',
+        'Use materials and textures that reinforce Rustic Cabin: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Realismo rústico auténtico con lectura de peso material y construcción duradera.',
-      spatial_distortion: 'Profundidad cerrada estable con compresión íntima de abrigo.',
-      atmosphere: 'Protector, terrenal, silencioso y resistente.',
+        'Render Rustic Cabin with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Rustic Cabin: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Rustic Cabin: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Núcleo térmico dominante, jerarquía de materiales pesados, ensamble artesanal y confort visual cálido.',
+        "Prioritize Rustic Cabin's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Preserva una gramática rústica transferible basada en masa, calor y oficio. El estilo debe comunicar protección climática y permanencia material sin quedar atado a una cabaña específica.',
+        'Create a style-card that translates Rustic Cabin into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -228,24 +235,26 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'overcast gloom, cold industrial grey cast, storm-soaked mood overriding sunlit lime terracotta identity',
     style: {
-      aesthetic: 'Mediterráneo solar de cal y terracota, claridad térmica y umbral ventilado.',
+      aesthetic:
+        "Mediterranean Villa within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Mediterranean Villa's specific style identity.",
       form_and_line:
-        'Volúmenes estucados de canto blando, arquerías repetidas, colonnatas ligeras y transiciones de sombra abierta.',
+        'Define Mediterranean Villa through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Blanco de cal, azul mediterráneo, terracota, ocre cálido y verdes vidrio mar en acento moderado.',
+        'Use a Mediterranean Villa-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol alto de contraste nítido, rebote cálido mineral y transición crepuscular con prácticos discretos.',
+        'Use lighting that makes Mediterranean Villa recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Estuco mineral, baldosa manual, piedra junta abierta, madera blanqueada y hierro forjado mate.',
+        'Use materials and textures that reinforce Mediterranean Villa: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Realismo mediterráneo limpio con precisión de luz solar y lectura material aérea.',
+        'Render Mediterranean Villa with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Perspectiva abierta con encuadres axiales suaves y secuencia de umbrales ventilados.',
-      atmosphere: 'Luminosa, relajada, ventilada y restaurativa.',
+        'Use spatial behavior that fits Mediterranean Villa: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Mediterranean Villa: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Binomio cal-terracota, sombra arqueada, umbrales conectores y paleta costera de saturación contenida.',
+        "Prioritize Mediterranean Villa's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Mantén una gramática mediterránea transferible de alto sol, cal mineral y terracota estructurante. La identidad debe sostenerse por clima, material y secuencia espacial, no por una narrativa de villa puntual.',
+        'Create a style-card that translates Mediterranean Villa into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -255,24 +264,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'clean, organized, day',
     style: {
       aesthetic:
-        'Ciber-nocturnidad saturada, con densidad tecnológica improvisada y electricidad funcional.',
+        "Cyberpunk Apartment within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cyberpunk Apartment's specific style identity.",
       form_and_line:
-        'Diagonales de cableado, grillas técnicas apiladas, fuentes lumínicas múltiples y circulación comprimida por hardware.',
+        'Define Cyberpunk Apartment through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Carbón profundo, neones tóxicos rosa/azul/verde, bolsillos ámbar CRT y violetas fríos de sombra.',
+        'Use a Cyberpunk Apartment-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Mezcla multi-fuente de baja iluminación con displays, tiras LED, indicadores y derrames neón de caída abrupta.',
+        'Use lighting that makes Cyberpunk Apartment recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Chapa rayada, plásticos quebradizos, residuos adhesivos, tapicerías sintéticas gastadas y disipadores empolvados.',
+        'Use materials and textures that reinforce Cyberpunk Apartment: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Alta densidad de detalle con caos controlado, legibilidad técnica y suciedad creíble de uso continuo.',
+        'Render Cyberpunk Apartment with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Primer plano obstruido por estratos de tecnología, profundidad fragmentada por planos superpuestos.',
-      atmosphere: 'Insomne, hiperestimulada, obsesiva y frágilmente funcional.',
+        'Use spatial behavior that fits Cyberpunk Apartment: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Cyberpunk Apartment: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Entropía de cableado, luminancia heterogénea, módulos recuperados y textura tecnológica patinada.',
+        "Prioritize Cyberpunk Apartment's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Formula una gramática cyber transferible donde infraestructura visible, luminancia de fuentes mixtas y desgaste improvisado sean el núcleo. Debe sentirse habitada por tecnología, no decorada con tecnología.',
+        'Create a style-card that translates Cyberpunk Apartment into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -282,24 +292,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'minimal, bright, open, curtain-dominant interior, literal mansion room',
     style: {
       aesthetic:
-        'Victoriano de herencia pesada, exceso ornamental y teatralidad historica contenida.',
+        "Victorian Mansion within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Victorian Mansion's specific style identity.",
       form_and_line:
-        'Densidad de patron, marcos repetidos, drapeados voluminosos y siluetas sobrecargadas.',
+        'Define Victorian Mansion through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Rojo oscuro, dorado envejecido, caoba, ciruela, verde botella y laton antiguo.',
+        'Use a Victorian Mansion-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Gaslight tenue, brillo aceitoso bajo, parpadeo de hogar y penumbra filtrada por sombra textil espesa.',
+        'Use lighting that makes Victorian Mansion recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Terciopelo, brocado, papel estampado, marmol oscuro, maderas profundas y metal envejecido.',
+        'Use materials and textures that reinforce Victorian Mansion: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Densidad museografica de epoca con lectura material opulenta y atmosfera historica densa.',
+        'Render Victorian Mansion with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad estable saturada por acumulacion decorativa en multiples capas.',
-      atmosphere: 'Opresiva, aristocratica, nostalgica y ceremoniosa.',
+        'Use spatial behavior that fits Victorian Mansion: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Victorian Mansion: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Sombra textil pesada, tapizados cargados, marcos acumulados, ornamentacion floral y volumen overstuffed.',
+        "Prioritize Victorian Mansion's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier input en una lectura victoriana de peso ceremonial, acumulacion material y opulencia sombria. La identidad debe emerger de drapeados, densidad ornamental, maderas profundas y luz baja ritual, no de una mansion concreta, cortina dominante ni escena literaria cerrada.',
+        'Create a style-card that translates Victorian Mansion into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -309,24 +320,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ornate, cluttered',
     style: {
       aesthetic:
-        'Modernismo Bauhaus funcional, claridad industrial y belleza derivada de funcion explicita.',
+        "Bauhaus Interior within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bauhaus Interior's specific style identity.",
       form_and_line:
-        'Interseccion de circulo/cuadrado, reticula racional, tubulares metalicos y planos limpios de lectura didactica.',
+        'Define Bauhaus Interior through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Blanco/negro estructural, grises calidos y acentos primarios (rojo, amarillo, azul) de uso jerarquico.',
+        'Use a Bauhaus Interior-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminacion uniforme de tarea, spots funcionales y pendentes simples sin dramatizacion superflua.',
+        'Use lighting that makes Bauhaus Interior recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Acero tubular, vidrio claro, cuero liso, madera curvada, loneta y linoleo de acabado honesto.',
+        'Use materials and textures that reinforce Bauhaus Interior: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Precision racionalista con prioridad constructiva, composicion pedagogica y eficiencia visual atemporal.',
+        'Render Bauhaus Interior with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Neutralidad geometrica con enfasis en orden proporcional e interaccion de formas basicas.',
-      atmosphere: 'Intelectual, limpio, pragmatico y optimista.',
+        'Use spatial behavior that fits Bauhaus Interior: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Bauhaus Interior: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Cantilever visual, acentos cromaticos controlados, estructura visible y gramatica geometrica elemental.',
+        "Prioritize Bauhaus Interior's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier input en un sistema Bauhaus donde funcion, estructura visible y geometria primaria gobiernen cada decision visual. Debe sentirse pedagogico, productivo y construido, sin depender de un interior ejemplar ni de ornamento anecdotico.',
+        'Create a style-card that translates Bauhaus Interior into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -336,24 +348,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'empty, white, minimal, literal lamp, bookshelf wall, clutter-only room',
     style: {
       aesthetic:
-        'Maximalismo curatorial de alta saturacion, donde superposicion y coleccion son gramatica base.',
+        "Maximalist Decor within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Maximalist Decor's specific style identity.",
       form_and_line:
-        'Capas sucesivas de patron, marcos densos, textiles sobre textiles y ocupacion casi total de superficies.',
+        'Define Maximalist Decor through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Joyas saturadas (esmeralda, zafiro, rubi, amatista), teal pavo y coral como disonancias controladas.',
+        'Use a Maximalist Decor-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Red calida de brillos puntuales, luces de cuadro, reflejos de cristal y ambientes regulados por dimmer.',
+        'Use lighting that makes Maximalist Decor recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Terciopelo, papeles estampados, alfombras superpuestas, sedas bordadas, dorados y bandas graficas visible.',
+        'Use materials and textures that reinforce Maximalist Decor: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Densidad opulenta legible, caos controlado y riqueza material acumulativa sin perdida de jerarquia.',
+        'Render Maximalist Decor with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad estable con compresion visual por saturacion de objetos y patrones.',
-      atmosphere: 'Efervescente, personal, exuberante y deliberadamente excesiva.',
+        'Use spatial behavior that fits Maximalist Decor: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Maximalist Decor: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Campo galeria saturado, mezcla agresiva de patron, capas textiles y acumulacion curatorial.',
+        "Prioritize Maximalist Decor's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier input en una composicion maximalista de saturacion cromatica, coleccion curatorial y capas textiles exuberantes. Debe conservar jerarquia y criterio de display, no volverse simple ruido decorativo ni depender de una sala repleta especifica.',
+        'Create a style-card that translates Maximalist Decor into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -363,24 +376,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'modern, sleek, chrome',
     style: {
       aesthetic:
-        'Farmhouse contemporaneo de refinamiento rural, calidez blanca y nostalgia funcional controlada.',
+        "Farmhouse Chic within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Farmhouse Chic's specific style identity.",
       form_and_line:
-        'Listones horizontales, diagonales brace, geometria utilitaria abierta y lineas apron-front suavizadas.',
+        'Define Farmhouse Chic through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Blanco/crema dominante, madera natural, plata galvanizada, lino suave y hierro negro de acento.',
+        'Use a Farmhouse Chic-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Manana luminosa aireada, pendentes sobredimensionados y practicos utilitarios de tono calido.',
+        'Use lighting that makes Farmhouse Chic recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Madera envejecida, lino lavado, pintura tiza, algodon rayado, fibras trenzadas y metal galvanizado.',
+        'Use materials and textures that reinforce Farmhouse Chic: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Editorial farmhouse limpio con legibilidad domestica y calidez cotidiana consistente.',
+        'Render Farmhouse Chic with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Escala estable y amplitud moderada por luz distribuida y geometria utilitaria visible.',
-      atmosphere: 'Acogedor, amable, comunitario y familiar.',
+        'Use spatial behavior that fits Farmhouse Chic: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Farmhouse Chic: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Liston blanco, madera recuperada, beadboard, metal galvanizado y utilidad visible como ornamento.',
+        "Prioritize Farmhouse Chic's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier input en una gramatica farmhouse de blanco calido, madera envejecida, utilidad visible y calma cotidiana. Debe sentirse vivido y funcional sin quedar atado a una casa de campo literal ni a cliches televisivos de domesticidad escenografica.',
+        'Create a style-card that translates Farmhouse Chic into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -390,23 +404,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'rigid rectilinear grid, literal lamp, fixed period room',
     style: {
       aesthetic:
-        'Art Nouveau organico con continuidad vegetal, sensualidad lineal y arquitectura total integrada.',
+        "Art Nouveau Interior within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Art Nouveau Interior's specific style identity.",
       form_and_line:
-        'Curvas whiplash, zarcillos estructurales, marcos florales, vidrio sinuoso y metal fluido.',
-      color_palette: 'Salvia, dorado, azul pavo real, lila, ambar vitreo y verdes musgo.',
+        'Define Art Nouveau Interior through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Art Nouveau Interior-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz filtrada por vitral, brillo calido de vidrio emplomado, apliques petalo opcionales y brillo irisado suave.',
+        'Use lighting that makes Art Nouveau Interior recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Madera tallada, art glass iridiscente, hierro forjado, bronce patinado y marqueteria floral.',
+        'Use materials and textures that reinforce Art Nouveau Interior: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Detalle ornamental de fin de siglo con continuidad formal y riqueza material controlada.',
+        'Render Art Nouveau Interior with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Ligera fluidez morfologica para enfatizar continuidad organica sobre rigidez geometrica.',
-      atmosphere: 'Romantica, envolvente, botanica y artesanal.',
+        'Use spatial behavior that fits Art Nouveau Interior: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Art Nouveau Interior: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Motivos florales estructurales, curvas tendril, vidrio cromatico activo y luminancia organica.',
+        "Prioritize Art Nouveau Interior's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier input en una continuidad Art Nouveau de linea vegetal, material artesanal y ornamento estructural fluido. Debe leerse como organismo disenado de adentro hacia afuera, no como floralidad aplicada ni como una habitacion de epoca obligatoria.',
+        'Create a style-card that translates Art Nouveau Interior into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -416,24 +432,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'boring, beige, studio set, 1980s living room',
     style: {
       aesthetic:
-        'Postmodernismo Memphis radical, ludico e irreverente, orientado al choque visual deliberado.',
+        "Memphis Design within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Memphis Design's specific style identity.",
       form_and_line:
-        'Squiggles, triangulos, plintos totemicos, asimetria explicita y offsets compositivos provocativos.',
+        'Define Memphis Design through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Pasteles saturados con blanco/negro grafico, rosa bubblegum, teal, amarillo trafico y naranja vivo.',
+        'Use a Memphis Design-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminacion grafica brillante, acentos neon, globos cromaticos y spots expositivos de alto contraste.',
+        'Use lighting that makes Memphis Design recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Formica impresa, plastico brillante, esmalte, goma y terrazo en escala juguetona.',
+        'Use materials and textures that reinforce Memphis Design: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Clash postmoderno legible, ironico y energetico sin perder estructura formal.',
+        'Render Memphis Design with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Asimetria intencional con jerarquia por color y geometria de alto impacto.',
-      atmosphere: 'Rebelde, festiva, anti-solemnidad y manifiesto de diseno.',
+        'Use spatial behavior that fits Memphis Design: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Memphis Design: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Patrones bacterianos, squiggles reflectivos, modulos descentrados, bloques cromaticos y formas totemizadas.',
+        "Prioritize Memphis Design's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convierte cualquier input en una declaracion Memphis de asimetria provocativa, patron grafico y color confrontativo. Debe conservar energia de manifiesto y humor postmoderno sin reducirse a decoracion novelty, set de estudio ni a un living ochentoso fijo.',
+        'Create a style-card that translates Memphis Design into a portable visual system for 1. Interior Design Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -12,20 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Ensamble tradicional de resonancia colectiva, precisión de digitación y sinceridad performativa.
-  form_and_line: Postura estable, gesto de mano fino y coreografía mínima de conjunto por respiración.
-  color_palette: Maderas cálidas, ámbar íntimo, negro laca y acentos crema de formalidad.
-  lighting_setup: Luz suave con foco frontal sobre líneas resonantes y rebote cálido de madera.
-  material_texture: Laca pulida, tensión lineal visible, tela ceremonial y madera resonante.
-  render_quality: Frame musical de alta delicadeza con legibilidad de ataque, dinámica y balance entre intérpretes.
-  spatial_distortion: Perspectiva de ensamble en abanico con profundidad serena y jerarquía de secciones.
-  atmosphere: Sincera, resonante, delicada y elevadora.
-  key_features: Detalle lineal resonante, postura estable, brillo de laca y foco en colocación de manos.
+  aesthetic: >-
+    Traditional Ensemble Resonance Style within 6. Sports, Competition & Performance: a reusable Anime Classics &
+    Prestige visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the
+    result transferable across subjects while preserving Traditional Ensemble Resonance Style's specific style identity.
+  form_and_line: >-
+    Define Traditional Ensemble Resonance Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Traditional Ensemble Resonance Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Traditional Ensemble Resonance Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Traditional Ensemble Resonance Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Traditional Ensemble Resonance Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Traditional Ensemble Resonance Style: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Traditional Ensemble Resonance Style: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Traditional Ensemble Resonance Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Formula una gramática reusable de traditional-ensemble-resonance donde
-    materialidad resonante, respiración grupal y lectura de gesto musical
-    construyan identidad transferible sin imponer koto, escuela, escenario ni
-    postura sentada fija.
+    Create a style-card that translates Traditional Ensemble Resonance Style into a portable visual system for 6.
+    Sports, Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene,
+    character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -42,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-366.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

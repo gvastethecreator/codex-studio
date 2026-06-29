@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
 visualDna:
-  aesthetic: Gramática mobility-action parkour con momentum, persecución, elección de ruta y superficies de carbono.
-  subject_treatment: Reinterpreta el input como courier, drone cazador, ruta, checkpoint o módulo de agarre según aplique.
-  color_and_tone: Negro mate, cian brillante y rojo señal para guiar ruta, peligro y checkpoints.
-  lighting_and_shadow: Atardecer urbano con acentos neon orientados a navegación vertical.
-  texture_and_material: Fibra de carbono, vidrio estructural, hormigón técnico y superficies de agarre.
-  camera_and_composition: Profundidad vertical, líneas de flujo y alternativas de escape sin exigir megaciudad o rooftop.
-  atmosphere_and_mood: Cinética, urgente y técnicamente precisa.
-  rendering_and_quality: 'Rooftop chase gameplay screencap: trajectory, risk gaps, checkpoint rhythm, timing clear.'
+  aesthetic: >-
+    Carbon Megacity Rooftop Chase within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Carbon Megacity Rooftop Chase's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Carbon Megacity Rooftop Chase's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Carbon Megacity Rooftop Chase: clear tonal hierarchy, intentional contrast,
+    and category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Carbon Megacity Rooftop Chase: legible depth, purposeful highlights, readable focal
+    zones, and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Carbon Megacity Rooftop Chase's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Carbon Megacity Rooftop Chase's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Carbon Megacity Rooftop Chase's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail
+    readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

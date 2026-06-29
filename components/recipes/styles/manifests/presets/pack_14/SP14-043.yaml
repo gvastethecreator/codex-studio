@@ -13,16 +13,38 @@ tags:
   - mythic
   - japanese-myth
 visualDna:
-  aesthetic: Storm drum weather command where cadence summons storm kami for protection.
-  form_and_line: Cliff pass gate cues, drum towers, and rope-bound warning posts.
-  color_palette: Slate blue, thunder white, and charcoal black.
-  lighting_setup: Pre-storm sky flashes and brazier counterlight.
-  material_texture: Rain-soaked rock, stretched hide drums, and weathered timber pylons.
-  render_quality: Dynamic weather concept with strong environmental motion.
-  spatial_distortion: Diagonal pass-like perspective amplifying wind force.
-  atmosphere: Urgent preparation, sacred rhythm, and climatic tension.
-  key_features: Thunder drums, storm wards, cliff shrine sentry cues.
-  creative_brief: Apply storm-drum weather command to the input, making rhythm control weather without requiring a mountain pass.
+  aesthetic: >-
+    Storm Drum Weather Command within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Storm Drum Weather Command's specific style identity.
+  form_and_line: >-
+    Define Storm Drum Weather Command through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Storm Drum Weather Command-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Storm Drum Weather Command recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Storm Drum Weather Command: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Storm Drum Weather Command with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Storm Drum Weather Command: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Storm Drum Weather Command: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Storm Drum Weather Command's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Storm Drum Weather Command into a portable visual system for 7. Mythic Japanese
+    Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - photoreal
   - bright-cartoon

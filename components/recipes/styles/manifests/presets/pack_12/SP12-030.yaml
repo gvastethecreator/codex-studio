@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Gramática horror-action carnavalesca con telegraphs engañosos, zonas corruptas y espectáculo grotesco de boss.
-  subject_treatment: Reinterpreta el input como ringmaster, mascota fallida, atracción hostil, prop maldito o señal mecánica de miedo.
-  color_and_tone: Amarillos nicotina, carmín coagulado, violeta amoratado y blanco sodio intermitente para inestabilidad emocional.
-  lighting_and_shadow: Parpadeo errático de marquesina, estrobos prácticos y sombras profundas en bordes de circulación.
-  texture_and_material: Esmalte cuarteado, lona con moho, mecánica oxidada y grasa envejecida en nodos críticos.
-  camera_and_composition: Choke-points, revelación escalonada y funnels de presión sin exigir parque, showdown o arena fija.
-  atmosphere_and_mood: Macabra, burlona y crecientemente impredecible.
-  rendering_and_quality: 'Boss-showdown gameplay screencap: phase hazards, grotesque arena beats, dodge space readable.'
+  aesthetic: >-
+    Cursed Carnival Showdown within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Cursed Carnival Showdown's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Cursed Carnival Showdown's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Cursed Carnival Showdown: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Cursed Carnival Showdown: legible depth, purposeful highlights, readable focal zones, and
+    atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Cursed Carnival Showdown's material logic: tactile detail, coherent finish, and texture choices
+    that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Cursed Carnival Showdown's staging logic: strong focal hierarchy, stable readable framing, and spatial
+    rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Cursed Carnival Showdown's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

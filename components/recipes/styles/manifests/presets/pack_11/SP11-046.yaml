@@ -12,20 +12,37 @@ tags:
   - miscellaneous-and-fun
   - food-and-drink
 visualDna:
-  aesthetic: Fine-dining editorial geometry, tasting-menu precision, negative-space culinary composition, premium plating art
-  form_and_line: Precise plating, tweezer-placement contour, sauce-swirl geometry, micro-green garnish, geometric-stacking
-  color_palette: Vibrant, fresh, reduction-glaze mahogany, herb-oil emerald, nasturtium-orange, crème-fraîche white, plate-negative-space
-  lighting_setup: Soft editorial light, candle-warm accents, clean bounce fill, rim-light-on-sauce sheen
-  material_texture: Sauce gloss, fresh herbs, demi-glace mirror, micro-green velvet, tuile-crisp, edible-flower petal, sea-salt crystal
-  render_quality: Delicious, expensive, Michelin-level precision, tasting-menu restraint, culinary-art, gastronomic-beauty
-  spatial_distortion: Tiny portions, negative-space plating, height-stacked architecture, swoosh-negative, edge-placement composition
-  atmosphere: Elegant, tasty, restrained, premium, quiet anticipation
-  key_features: Garnish, sauce-swirl swoosh, tweezered-microgreen, edible-flower accent, tuile-crisp, reduction-drizzle, sea-salt-flake
+  aesthetic: >-
+    Michelin Fine-Dining Editorial within 4. Food And Drink: a reusable Miscellaneous & Fun visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Michelin Fine-Dining Editorial's specific style identity.
+  form_and_line: >-
+    Define Michelin Fine-Dining Editorial through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Michelin Fine-Dining Editorial-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Michelin Fine-Dining Editorial recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Michelin Fine-Dining Editorial: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Michelin Fine-Dining Editorial with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Michelin Fine-Dining Editorial: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Michelin Fine-Dining Editorial: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Michelin Fine-Dining Editorial's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Apply fine-dining editorial logic to the input: controlled negative space,
-    precise garnish-like accents, sauce-architecture curves, texture contrast,
-    and premium finish cues. Plating can anchor the style, but avoid requiring
-    a dining room, white tablecloth, service ritual, or specific dish.
+    Create a style-card that translates Michelin Fine-Dining Editorial into a portable visual system for 4. Food And
+    Drink. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - messy
   - cafeteria

@@ -10,24 +10,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'old, dirty, square corners',
     style: {
       aesthetic:
-        'Hábitat neo-futurista de fricción cero, ergonomía continua e inteligencia ambiental integrada.',
+        "Futuristic Pod within 7. Megastructure And Impossible Space: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Futuristic Pod's specific style identity.",
       form_and_line:
-        'Shells continuas sin esquina, transiciones fluidas, planos interfaz embebidos y repetición biomórfica modular.',
+        'Define Futuristic Pod through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Blanco clínico, cian/azul frío lumínico, plata holográfica y magenta puntual de señalización.',
+        'Use a Futuristic Pod-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luminancia indirecta integrada, gradientes adaptativos por zona y glow controlado en paneles activos.',
+        'Use lighting that makes Futuristic Pod recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Polímeros smart mate-brillo, vidrio de baja fricción, superficies táctiles reactivas y uniones invisibles.',
+        'Use materials and textures that reinforce Futuristic Pod: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Render ultra-clean de precisión superficial, bloom moderado y limpieza tecnológica de alta legibilidad.',
+        'Render Futuristic Pod with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Continuidad axial suave, sin quiebres abruptos, con percepción de flotación funcional.',
-      atmosphere: 'Controlada, avanzada, serena y ligeramente clínica.',
+        'Use spatial behavior that fits Futuristic Pod: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Futuristic Pod: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Geometría cornerless, iluminación sistémica integrada, fusión carcasa-interfaz y señalética mínima reactiva.',
+        "Prioritize Futuristic Pod's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Formula una gramática futurista transferible donde continuidad de carcasa, luz adaptativa y ergonomía post-fricción sean innegociables. Cada input debe integrarse como extensión del sistema, no como objeto insertado.',
+        'Create a style-card that translates Futuristic Pod into a portable visual system for 7. Megastructure And Impossible Space. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -37,25 +38,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'wood, brick',
     style: {
       aesthetic:
-        'Utilitarismo aeroespacial operativo, donde la habitabilidad emerge de ingeniería compacta y no de decoración.',
+        "Orbital Utility Habitat within 7. Megastructure And Impossible Space: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Orbital Utility Habitat's specific style identity.",
       form_and_line:
-        'Retículas modulares, aperturas circulares, vectores de sujeción y grillas de acceso técnico de alta densidad.',
+        'Define Orbital Utility Habitat through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'White, Hook-and-loop Blue, Equipment Beige, Soft-glow Green LED, Black panel accents',
+        'Use a Orbital Utility Habitat-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'LED técnico de alto control, focos de tarea integrados en panel, rebote frío y modo nocturno ámbar de baja fatiga.',
+        'Use lighting that makes Orbital Utility Habitat recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Paneles textiles técnicos ignífugos, aleación cepillada, hook-and-loop retention, foil aislante y polímeros moldeados funcionales.',
+        'Use materials and textures that reinforce Orbital Utility Habitat: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Fidelidad mission-grade con densidad instrumental legible, ergonomía de mantenimiento y desgaste realista de uso continuo.',
+        'Render Orbital Utility Habitat with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Flotación funcional y orientación múltiple sugerida por grillas técnicas.',
+        'Use spatial behavior that fits Orbital Utility Habitat: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
       atmosphere:
-        'Contenida y procedimental, con precisión operativa bajo fatiga y sensación de vida frágil en entorno hostil.',
+        'Set a mood that belongs to Orbital Utility Habitat: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Sujeciones redundantes, módulos etiquetados, aperturas presurizadas, bolsillos utilitarios y orientación no terrestre.',
+        "Prioritize Orbital Utility Habitat's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Lleva cualquier sujeto hacia habitabilidad orbital compacta: retención física, orientación múltiple, paneles de acceso y fatiga operacional. El estilo debe sentirse diseñado para sobrevivir microgravedad, no para verse futurista.',
+        'Create a style-card that translates Orbital Utility Habitat into a portable visual system for 7. Megastructure And Impossible Space. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -119,25 +120,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'ground-level planetary landscape lock, ordinary planet surface view',
     style: {
       aesthetic:
-        'Megaestructura estelar de escala civilizatoria con encapsulamiento luminoso y monumentalismo industrial cósmico.',
+        "Stellar Shell Megastructure within 7. Megastructure And Impossible Space: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Stellar Shell Megastructure's specific style identity.",
       form_and_line:
-        'Retículas hex-panel, costillas concéntricas, simetría radial estelar y segmentación orbital de anillos en curvatura extrema.',
+        'Define Stellar Shell Megastructure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Near-black structural silhouettes, solar gold-orange emission, corona-white edge burn, deep panel graphite grays, and faint ionized blue fringes',
+        'Use a Stellar Shell Megastructure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Contraluz estelar extremo, rim de alto contraste, bandas de autosombra en panel y bloom controlado en núcleos emisivos.',
+        'Use lighting that makes Stellar Shell Megastructure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Compuestos metálicos densos, microtiling de colectores, aletas de disipación y costuras macro de fabricación.',
+        'Use materials and textures that reinforce Stellar Shell Megastructure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Ingeniería especulativa ultra-escala con legibilidad estructural rigurosa y contraste astrofísico cinematográfico.',
+        'Render Stellar Shell Megastructure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Extreme interior-horizon curvature and radial mega-scale perspective compression',
+        'Use spatial behavior that fits Stellar Shell Megastructure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
       atmosphere:
-        'Sublime, colosal y austera, impulsada por ambición tecnológica de civilización tipo II.',
+        'Set a mood that belongs to Stellar Shell Megastructure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Núcleo luminoso enmarcado, campos colectores hexagonales, segmentación radial, horizonte interior curvo y silueta de alto contraste.',
+        "Prioritize Stellar Shell Megastructure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Escala cualquier tema a ingeniería estelar: paneles colectores, simetría radial, contraluz solar extremo y horizonte interior curvo. Debe transmitir captura energética civilizatoria sin fijar una esfera literal.',
+        'Create a style-card that translates Stellar Shell Megastructure into a portable visual system for 7. Megastructure And Impossible Space. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -147,24 +148,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'globe',
     style: {
       aesthetic:
-        'Megaestructura habitable en banda orbital con ecología lineal y paisaje planificado a escala de macro-civilización.',
+        "Orbital Ribbon Habitat within 7. Megastructure And Impossible Space: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Orbital Ribbon Habitat's specific style identity.",
       form_and_line:
-        'Arcos de horizonte ascendente, cinta territorial continua, muros de borde colosales y visuales longitudinales guiadas por curvatura.',
+        'Define Orbital Ribbon Habitat through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Atmospheric blue gradients, biosphere green land strips, oceanic cyan bands, structural charcoal edge walls, void black backdrop, and high-altitude white haze',
+        'Use a Orbital Ribbon Habitat-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz estelar direccional, sectores de autosombra masiva, scatter atmosférico frontal e iluminación de borde en edge-walls.',
+        'Use lighting that makes Orbital Ribbon Habitat recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Tiling de terreno planetario, estelas de nubes, reflectividad de bandas acuáticas y facetas estructurales en contención.',
+        'Use materials and textures that reinforce Orbital Ribbon Habitat: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Paisaje especulativo ultra-vasto con lectura rigurosa de curvatura y coherencia de ingeniería macro.',
+        'Render Orbital Ribbon Habitat with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Orbital-band curvature with upward horizon wrap and macro-scale perspective compression',
-      atmosphere: 'Grandiosa, serena y diseñada, con sensación de hábitat cósmico continuo.',
+        'Use spatial behavior that fits Orbital Ribbon Habitat: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Orbital Ribbon Habitat: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Terreno arqueado, biosfera en cinta, contención kilométrica de borde y bandas de sombra por rotación.',
+        "Prioritize Orbital Ribbon Habitat's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Usa claves de banda orbital como lenguaje de escala: curvatura ascendente, horizon wrap, ecologia lineal, muros de borde y perspectiva macro. La identidad viene de continuidad anular y planificacion biosferica sin obligar a que toda composicion sea un habitat completo.',
+        'Create a style-card that translates Orbital Ribbon Habitat into a portable visual system for 7. Megastructure And Impossible Space. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -174,23 +176,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'featureless minimal surfaces, clean seamless shell, empty smooth panels',
     style: {
       aesthetic:
-        'Hive cibernético de infraestructura colectiva modular, utilidad implacable e integración máquina-orgánica invasiva.',
+        "Cybernetic Hive Infrastructure within 7. Megastructure And Impossible Space: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cybernetic Hive Infrastructure's specific style identity.",
       form_and_line:
-        'Masa ortogonal cúbica, haces densos de conductos, retículas de alcobas repetitivas y panelería recursiva de servicio.',
+        'Define Cybernetic Hive Infrastructure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Graphite black metals, gunmetal gray fields, phosphor green emissions, cold cyan plasma accents, and deep void-shadow undertones',
+        'Use a Cybernetic Hive Infrastructure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Ambiente low-key espacial, pulso verde en conducciones, prácticos localizados y profundidad de sombra industrial de alto contraste.',
+        'Use lighting that makes Cybernetic Hive Infrastructure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Placas greeble densas, interfaces biomecánicas, arneses de cable, gel translúcido y pátina conductiva desgastada.',
+        'Use materials and textures that reinforce Cybernetic Hive Infrastructure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Tecnoindustrial denso con repetición modular estricta y precisión mecánica opresiva.',
-      spatial_distortion: 'None',
-      atmosphere: 'Ominosa, deshumanizada y eficiente, con invasividad tecnológica constante.',
+        'Render Cybernetic Hive Infrastructure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Cybernetic Hive Infrastructure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Cybernetic Hive Infrastructure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Modularidad cube-shell, matrices repetitivas, superred de conducciones, canales verdes y emisores circulares.',
+        "Prioritize Cybernetic Hive Infrastructure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Aplica infraestructura hive cibernética: modularidad ortogonal, conducciones densas, fosforescencia verde, panelería recursiva y utilidad colectiva opresiva. Debe funcionar sin nombrar faccion, personaje o nave. Conserva modularidad hive, conducciones densas, fosforescencia verde y utilidad colectiva sin exigir edificio, paisaje, set, criatura ni escena fija.',
+        'Create a style-card that translates Cybernetic Hive Infrastructure into a portable visual system for 7. Megastructure And Impossible Space. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {

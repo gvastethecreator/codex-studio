@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Aristocratic death-feast noir where etiquette persists as cursed protocol and petrified luxury.
-  form_and_line: Rigid protocol silhouettes, knife-and-goblet rhythm, axial table-like geometry, and formal spacing.
-  color_palette: Bone ivory, coagulated wine black, and smoked pewter gray.
-  lighting_setup: Candle troughs with mirrored marble bounce and deep peripheral falloff.
-  material_texture: Veined marble slabs, tarnished heirloom silver, oxidized candelabra, and desiccated floral garlands.
-  render_quality: Prestige editorial key art with high micro-detail and controlled tonal compression.
-  spatial_distortion: Vaulted axial depth that tunnels attention through ceremonial place-setting rhythm without requiring a banquet hall.
-  atmosphere: Ritualized decay, dynastic arrogance, and prophetic unease.
-  key_features: Petrified etiquette cues, carbonized centerpiece forms, oath-cutlery lines, veined marble, and empty sovereign-axis tension.
-  creative_brief: 'Petrify the input through banquet etiquette noir: bone ivory, coagulated wine-black shadows, pewter decay, oath-cutlery rhythm, and rigid protocol geometry should make any subject feel cursed by perfect manners without requiring nobles, table, courtiers, food, or dining room.'
+  aesthetic: >-
+    Petrified Banquet Etiquette within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Petrified Banquet Etiquette's specific style identity.
+  form_and_line: >-
+    Define Petrified Banquet Etiquette through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Petrified Banquet Etiquette-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Petrified Banquet Etiquette recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Petrified Banquet Etiquette: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Petrified Banquet Etiquette with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Petrified Banquet Etiquette: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Petrified Banquet Etiquette: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Petrified Banquet Etiquette's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Petrified Banquet Etiquette into a portable visual system for 1. Mythic
+    Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - comedy

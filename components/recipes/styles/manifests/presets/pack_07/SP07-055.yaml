@@ -12,20 +12,38 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Fantasia confitera de surrealismo comestible, donde masa, azucar y glaseado se vuelven sistema arquitectonico portable.
-  form_and_line: Masas redondeadas blandas, repeticion modular candy, bandas de icing y uniones dulces que deforman estructura sin requerir castillo o calle de cuento.
-  color_palette: Pink, pastel, candy-apple red, gumdrop green, marshmallow white, licorice black
-  lighting_setup: Glow calido de confiteria, brillos de frosting, translucidez gumdrop y destellos de cristal de azucar controlados.
-  material_texture: Glaseado, bizcocho, caramelo duro, malvavisco, oblea y hebras de azucar estirada con tactilidad de exceso edible.
-  render_quality: Fantasia estilizada de saturacion alta con coherencia ludica de material comestible y construccion creible.
-  spatial_distortion: Melting and soft structural sag without forcing a fairy-tale skyline
-  atmosphere: Exceso ludico, surrealismo alegre y escapismo hiper-dulce convertido en materia construida.
-  key_features: Planos de icing, nodos gumdrop, acentos sprinkle y soportes candy-cane integrados como lenguaje estructural.
+  aesthetic: >-
+    Confectionery Surrealism within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Confectionery Surrealism's specific style identity.
+  form_and_line: >-
+    Define Confectionery Surrealism through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Confectionery Surrealism-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Confectionery Surrealism recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Confectionery Surrealism: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Confectionery Surrealism with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Confectionery Surrealism: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Confectionery Surrealism: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Confectionery Surrealism's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Convierte cualquier sujeto o volumen en surrealismo confitero: glaseado como junta, caramelo como soporte, gumdrops
-    como nodos y pastel como masa. La fantasia debe sentirse material y tactil, no dependiente de reino, cuento, mesa
-    de postres o escena infantil fija. Mantiene logica comestible, escala de ensamblaje, ritmo candy y atmosfera ludica
-    sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Confectionery Surrealism into a portable visual system for 5. Fantasy And Mythic
+    Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - horror candy
   - photoreal food macro

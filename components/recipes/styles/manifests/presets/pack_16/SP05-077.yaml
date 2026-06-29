@@ -12,16 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Thriller identitario de paranoia íntima, performance pública y disociación reflejada.
-  form_and_line: Línea sobria y tensa, acting microexpresivo y composición de encierro psicológico.
-  color_palette: Neón frío, piel desaturada, rojos de alarma y grises de vigilancia íntima.
-  lighting_setup: Iluminación clínica nocturna, reflejos espejados agresivos y zonas de sombra de amenaza latente.
-  material_texture: Cristal, pantalla CRT, maquillaje escénico y superficies cotidianas de realismo inquietante.
-  render_quality: Acabado fílmico de precisión psicológica con montaje de ambigüedad controlada.
-  spatial_distortion: Interiores comprimidos y capas de reflejo para sensación de yo fragmentado y mirada externa invasiva.
-  atmosphere: Tensa, desorientadora, paranoica, gélida.
-  key_features: Motivo de espejo duplicado, vigilancia implícita y tensión entre persona pública y privada.
-  creative_brief: Define una gramática reusable de thriller de identidad fracturada para cualquier sujeto, combinando intimidad hostil, vigilancia perceptiva y colapso del autorretrato sin imponer apartamentos, idols, escenarios ni cámaras literales.
+  aesthetic: >-
+    Mirror Identity Collapse Thriller Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Mirror Identity Collapse Thriller Style's specific style identity.
+  form_and_line: >-
+    Define Mirror Identity Collapse Thriller Style through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Mirror Identity Collapse Thriller Style-specific palette with clear dominant, secondary, and accent roles.
+    Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Mirror Identity Collapse Thriller Style recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Mirror Identity Collapse Thriller Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Mirror Identity Collapse Thriller Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Mirror Identity Collapse Thriller Style: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Mirror Identity Collapse Thriller Style: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Mirror Identity Collapse Thriller Style's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Mirror Identity Collapse Thriller Style into a portable visual system for 10.
+    Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-077.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

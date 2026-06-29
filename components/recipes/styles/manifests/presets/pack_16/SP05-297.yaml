@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Lirismo pluvial hiperobservacional, donde intimidad contenida se expresa mediante materia húmeda y pausa contemplativa.
-  form_and_line: Línea pulcra y elegante, anatomía naturalista serena y encuadres de detalle que priorizan objetos-cuerpo como signos emocionales.
-  color_palette: Verdes saturados por lluvia, grises perlados, negros húmedos y acentos piel de baja saturación.
-  lighting_setup: Luz de día lluvioso con reflexión especular en superficies mojadas y contraste delicado de refugio cubierto.
-  material_texture: Gotas sobre materia orgánica, madera barnizada húmeda, concreto encharcado y cuero con brillo de lluvia.
-  render_quality: Acabado premium de refinamiento atmosférico extremo, con foco en microdetalle material y silencio expresivo.
-  spatial_distortion: Espacio naturalista íntimo con profundidad por cortinas de lluvia y capas reflectantes.
-  atmosphere: Lluviosa, íntima, solitaria, exquisita.
-  key_features: Textura acuosa, detalle milimétrico, objetos cotidianos tratados como emoción y quietud de alta carga afectiva.
+  aesthetic: >-
+    Hyperobserved Rain Intimacy Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Hyperobserved Rain Intimacy Style's specific style identity.
+  form_and_line: >-
+    Define Hyperobserved Rain Intimacy Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Hyperobserved Rain Intimacy Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Hyperobserved Rain Intimacy Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Hyperobserved Rain Intimacy Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Hyperobserved Rain Intimacy Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Hyperobserved Rain Intimacy Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Hyperobserved Rain Intimacy Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Hyperobserved Rain Intimacy Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática reusable de intimidad bajo lluvia para cualquier prompt o imagen de entrada:
-    humedad, pausa y observación microscópica sin imponer jardines, pabellones, zapatos ni encuentros románticos.
+    Create a style-card that translates Hyperobserved Rain Intimacy Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-297.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

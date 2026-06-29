@@ -10,20 +10,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, campy-comic, neon-sci-fi, modern-vehicles, watermark, text, logo',
     style: {
       aesthetic:
-        'Heroic Hellenic command rendered as dark ceremonial epic with stormlit aegis grandeur.',
-      form_and_line: 'Doric battlement cues, shield-emblem friezes, and steep processional axes.',
-      color_palette: 'Aegean cobalt, aged marble ivory, and oxidized bronze.',
+        "Aegis Storm Command within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Aegis Storm Command's specific style identity.",
+      form_and_line:
+        'Define Aegis Storm Command through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Aegis Storm Command-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Lightning forks and temple braziers carving hard silhouettes across colonnades.',
+        'Use lighting that makes Aegis Storm Command recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Salt-weathered limestone, hammered bronze shields, and wet obsidian flagstones.',
-      render_quality: 'High-fidelity concept keyframe with monumental scale readability.',
+        'Use materials and textures that reinforce Aegis Storm Command: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Aegis Storm Command with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Vertical acropolis-like perspective rising through layered terraces and clouds.',
-      atmosphere: 'Oath-bound valor, divine scrutiny, and thunder before battle.',
-      key_features: 'Aegis iconography, eagle standards, storm altar cues, spear-lined corridors.',
+        'Use spatial behavior that fits Aegis Storm Command: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Aegis Storm Command: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Aegis Storm Command's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through aegis storm command, where mortal strategy and Olympian wrath converge without requiring a stronghold.',
+        'Create a style-card that translates Aegis Storm Command into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -32,22 +37,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Mythic — Greek Epics',
     negativePrompt: 'photoreal, whimsical-cute, bright-pop, futuristic-ui, watermark, text, logo',
     style: {
-      aesthetic: 'Thesean labyrinth logic reimagined as ominous palace-noir puzzle geometry.',
+      aesthetic:
+        "Red Thread Labyrinth Logic within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Red Thread Labyrinth Logic's specific style identity.",
       form_and_line:
-        'Concentric corridor cues, angular relief murals, and thread-guided vanishing lines.',
-      color_palette: 'Oxblood red, soot black, and tarnished gold.',
+        'Define Red Thread Labyrinth Logic through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Red Thread Labyrinth Logic-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Torch pools and skylight slits producing alternating bright traps and blind corners.',
-      material_texture: 'Cracked stucco, polished black stone, and frayed ceremonial textiles.',
+        'Use lighting that makes Red Thread Labyrinth Logic recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Red Thread Labyrinth Logic: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Cinematic environment painting with clear traversal logic and symbolic motifs.',
+        'Render Red Thread Labyrinth Logic with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Recursive corridor geometry suggesting impossible returns and hidden chambers.',
-      atmosphere: 'Claustrophobic destiny, strategic fear, and ritual courage.',
+        'Use spatial behavior that fits Red Thread Labyrinth Logic: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Red Thread Labyrinth Logic: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Red guiding thread, horned relief masks, sacrificial gate cues, echoing maze wells.',
+        "Prioritize Red Thread Labyrinth Logic's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply red-thread labyrinth logic to the input, testing memory and nerve through recursive geometry without requiring a literal maze.',
+        'Create a style-card that translates Red Thread Labyrinth Logic into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -57,19 +66,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, slapstick, candy-colors, cyberpunk-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Delphic divination austerity with bronze smoke, aristocratic protocol, and prophetic unease.',
+        "Bronze Smoke Oracle Fragment within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bronze Smoke Oracle Fragment's specific style identity.",
       form_and_line:
-        'Circular tripod-dais cues, ascending amphitheater steps, and laurel-pattern friezes.',
-      color_palette: 'Patinated bronze, charcoal violet, and candle amber.',
-      lighting_setup: 'Underlit incense smoke and skylight shafts isolating the seer.',
-      material_texture: 'Burnished bronze panels, ash-stained marble, and woven wool drapery.',
-      render_quality: 'Premium matte-painting detail tuned for symbolic and narrative focus.',
+        'Define Bronze Smoke Oracle Fragment through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Bronze Smoke Oracle Fragment-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Bronze Smoke Oracle Fragment recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Bronze Smoke Oracle Fragment: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Bronze Smoke Oracle Fragment with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Bowl-like shrine geometry drawing attention toward a prophecy focal point.',
-      atmosphere: 'Ambiguous revelation, sacred protocol, and political dread.',
-      key_features: 'Tripod oracle cues, smoke vents, supplicant terraces, laurel votive marks.',
+        'Use spatial behavior that fits Bronze Smoke Oracle Fragment: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Bronze Smoke Oracle Fragment: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Bronze Smoke Oracle Fragment's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret the input through bronze-smoke oracle fragments, making truth arrive broken through ritual smoke without requiring a sanctuary.',
+        'Create a style-card that translates Bronze Smoke Oracle Fragment into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -78,17 +93,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Mythic — Greek Epics',
     negativePrompt: 'photoreal, comedic, neon-sci-fi, watermark, text, logo',
     style: {
-      aesthetic: 'Heroic civic oath-duel language under divine law and martial ceremony.',
-      form_and_line: 'Semicircle tier cues, spear colonnades, and altar-axis geometry.',
-      color_palette: 'Marble ivory, bronze, and storm blue.',
-      lighting_setup: 'Dramatic noon shafts and brazier accents.',
-      material_texture: 'Worn limestone, hammered bronze, and ash-sand flooring.',
-      render_quality: 'Monumental concept scene with crisp readability.',
-      spatial_distortion: 'Arena-bowl perspective drawing toward a central oath point.',
-      atmosphere: 'Martial honor, ceremony, and public tension.',
-      key_features: 'Oath altar cues, spear standards, eagle banners.',
+      aesthetic:
+        "Bronze Spear Public Oath within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bronze Spear Public Oath's specific style identity.",
+      form_and_line:
+        'Define Bronze Spear Public Oath through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Bronze Spear Public Oath-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Bronze Spear Public Oath recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Bronze Spear Public Oath: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Bronze Spear Public Oath with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Bronze Spear Public Oath: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Bronze Spear Public Oath: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Bronze Spear Public Oath's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform the input through bronze-spear public oath, where verdict and combat feel inseparable without requiring an amphitheater.',
+        'Create a style-card that translates Bronze Spear Public Oath into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -98,17 +122,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, bright-pop, cyberpunk, watermark, text, logo',
     style: {
       aesthetic:
-        'Cyclopean forge prophecy where giant smith rites shape war relics under volcanic pressure.',
-      form_and_line: 'Ravine-furnace cues, chain gantries, and anvil terraces.',
-      color_palette: 'Lava orange, soot black, and iron gray.',
-      lighting_setup: 'Furnace core glow with volcanic rimlight.',
-      material_texture: 'Scorched basalt, riveted iron, and slag glass.',
-      render_quality: 'High-contrast forge concept with tactile depth.',
-      spatial_distortion: 'Descending pressure toward a molten heart.',
-      atmosphere: 'Brutal craft, mythic labor, and heat pressure.',
-      key_features: 'Titan anvils, giant tongs, lava-channel cues.',
+        "Cyclops Prophecy Forge within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cyclops Prophecy Forge's specific style identity.",
+      form_and_line:
+        'Define Cyclops Prophecy Forge through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Cyclops Prophecy Forge-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Cyclops Prophecy Forge recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Cyclops Prophecy Forge: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Cyclops Prophecy Forge with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Cyclops Prophecy Forge: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Cyclops Prophecy Forge: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Cyclops Prophecy Forge's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast any input through cyclops prophecy forge, as if its form were made to carry divine omens. Keep ravine-furnace pressure, molten orange core glow, slag-glass texture, titan-scale craft, and basalt weight without requiring cyclopes, war relics, giant tools, lava channels, or a forge location.',
+        'Create a style-card that translates Cyclops Prophecy Forge into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -118,17 +150,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, playful-cartoon, modern-ships, watermark, text, logo',
     style: {
       aesthetic:
-        'Trireme omen strategy where augury, naval rhythm, and divine dependence guide motion.',
-      form_and_line: 'Pier-grid cues, trireme prow shapes, and temple beacon rhythms.',
-      color_palette: 'Sea teal, bronze, and cloud gray.',
-      lighting_setup: 'Dawn haze with beacon flare highlights.',
-      material_texture: 'Salted wood, rope rigging, and stone docks.',
-      render_quality: 'Maritime epic concept with clear silhouette flow.',
-      spatial_distortion: 'Diagonal maritime perspective toward an open horizon.',
-      atmosphere: 'Strategic suspense and divine dependence.',
-      key_features: 'Augur platform cues, omen braziers, battle prows.',
+        "Trireme Omen Strategy within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Trireme Omen Strategy's specific style identity.",
+      form_and_line:
+        'Define Trireme Omen Strategy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Trireme Omen Strategy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Trireme Omen Strategy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Trireme Omen Strategy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Trireme Omen Strategy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Trireme Omen Strategy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Trireme Omen Strategy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Trireme Omen Strategy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply trireme omen strategy to the input, making movement feel ritually interpreted without requiring a port.',
+        'Create a style-card that translates Trireme Omen Strategy into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -137,17 +177,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Mythic — Greek Epics',
     negativePrompt: 'photoreal, comic, neon, watermark, text, logo',
     style: {
-      aesthetic: 'Sacred olive jurisprudence with aristocratic restraint and civic ritual gravity.',
-      form_and_line: 'Court-rectangle cues, colonnade rhythm, and stepped bench geometry.',
-      color_palette: 'Olive green, stone beige, and bronze patina.',
-      lighting_setup: 'Side daylight and smoke-filtered braziers.',
-      material_texture: 'Carved marble, olive wood, and linen drapery.',
-      render_quality: 'Detailed civic-ritual concept frame.',
-      spatial_distortion: 'Balanced frontal perspective emphasizing hierarchy and deliberation.',
-      atmosphere: 'Stern deliberation and sacred jurisprudence.',
-      key_features: 'Laurel crown stand, verdict tablets, votive niche cues.',
+      aesthetic:
+        "Olive Crown Jurisprudence within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Olive Crown Jurisprudence's specific style identity.",
+      form_and_line:
+        'Define Olive Crown Jurisprudence through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Olive Crown Jurisprudence-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Olive Crown Jurisprudence recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Olive Crown Jurisprudence: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Olive Crown Jurisprudence with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Olive Crown Jurisprudence: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Olive Crown Jurisprudence: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Olive Crown Jurisprudence's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret the input through olive-crown jurisprudence, framing justice as a pact with the gods without requiring a tribunal.',
+        'Create a style-card that translates Olive Crown Jurisprudence into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -157,17 +206,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, dark-cyber, goofy, watermark, text, logo',
     style: {
       aesthetic:
-        'Divine chariot transit where sunrise, radial force, and horse frieze rhythm carry the image.',
-      form_and_line: 'Arched portal cues, radial paving, and horse frieze lines.',
-      color_palette: 'Gold amber, sandstone, and azure sky.',
-      lighting_setup: 'Hard sunrise backlight with long cast shadows.',
-      material_texture: 'Sun-warmed stone, gilt reliefs, and polished bronze.',
-      render_quality: 'Bright monumental concept with strong icon clarity.',
-      spatial_distortion: 'Forced perspective toward a glowing horizon threshold.',
-      atmosphere: 'Triumph, destiny, and ritual spectacle.',
-      key_features: 'Solar arch cues, bronze quadriga, prayer causeway rhythm.',
+        "Chariot Sun Transit within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Chariot Sun Transit's specific style identity.",
+      form_and_line:
+        'Define Chariot Sun Transit through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Chariot Sun Transit-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Chariot Sun Transit recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Chariot Sun Transit: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Chariot Sun Transit with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Chariot Sun Transit: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Chariot Sun Transit: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Chariot Sun Transit's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convert the input through chariot sun transit, as if dawn reenacts divine transport of light without requiring a gate.',
+        'Create a style-card that translates Chariot Sun Transit into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -177,17 +234,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, comedy, bright-pop, watermark, text, logo',
     style: {
       aesthetic:
-        'Underworld passage toll language enforcing solemn rites, coin debt, and fatal bureaucracy.',
-      form_and_line: 'Fort-wall cues, mooring stairs, and toll altar symmetry.',
-      color_palette: 'Charcoal, cold silver, and muted violet.',
-      lighting_setup: 'Low fog glow and lantern edge illumination.',
-      material_texture: 'Wet stone, black timber, and coin-worn bronze.',
-      render_quality: 'Moody underworld concept with high tonal control.',
-      spatial_distortion: 'Riverbank depth fading into a misted void.',
-      atmosphere: 'Fatal bureaucracy and solemn inevitability.',
-      key_features: 'Ferryman dock cues, coin basins, oath obelisks.',
+        "River Styx Passage Toll within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving River Styx Passage Toll's specific style identity.",
+      form_and_line:
+        'Define River Styx Passage Toll through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a River Styx Passage Toll-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes River Styx Passage Toll recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce River Styx Passage Toll: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render River Styx Passage Toll with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits River Styx Passage Toll: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to River Styx Passage Toll: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize River Styx Passage Toll's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast any input through River Styx passage toll, where every form feels weighed against the cost of crossing. Use fatal bureaucracy, coin-worn bronze, fog falloff, toll symmetry, and wet-stone gravity without requiring ferrymen, docks, rivers, boats, coins, or an underworld scene.',
+        'Create a style-card that translates River Styx Passage Toll into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -197,17 +262,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cartoon, neon-tech, watermark, text, logo',
     style: {
       aesthetic:
-        'Laurel academy governance where philosophy, prophecy, and leadership discipline shape the input.',
-      form_and_line: 'Courtyard cloister cues, lecture tiers, and battlement edges.',
-      color_palette: 'Chalk white, olive, and warm terracotta.',
-      lighting_setup: 'Soft daylight and torch-lit arcades at dusk.',
-      material_texture: 'Plaster walls, scroll parchment, and carved wood desks.',
-      render_quality: 'Detailed architectural concept with narrative hints.',
-      spatial_distortion: 'Central courtyard-like framing with academic wings receding.',
-      atmosphere: 'Intellectual rigor and political gravity.',
-      key_features: 'Debate rotunda cues, omen observatory marks, laurel archive rhythms.',
+        "Laurel Academy Governance within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Laurel Academy Governance's specific style identity.",
+      form_and_line:
+        'Define Laurel Academy Governance through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Laurel Academy Governance-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Laurel Academy Governance recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Laurel Academy Governance: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Laurel Academy Governance with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Laurel Academy Governance: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Laurel Academy Governance: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Laurel Academy Governance's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply laurel academy governance to the input, teaching authority as mythic responsibility without requiring a citadel.',
+        'Create a style-card that translates Laurel Academy Governance into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -217,17 +290,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, modern-lighthouse-tech, goofy, watermark, text, logo',
     style: {
       aesthetic:
-        'Helios beacon signal where sunlight becomes weaponized communication and sacred warning.',
-      form_and_line: 'Cliff-tower cues, signal braziers, and stepped lookout paths.',
-      color_palette: 'Sun gold, sea blue, and chalk stone.',
-      lighting_setup: 'Intense horizon glare and ember beacon punctuations.',
-      material_texture: 'Wind-eroded limestone, bronze mirrors, and rope rigging.',
-      render_quality: 'Wide environmental concept with clear distance cues.',
-      spatial_distortion: 'Cascading perspective between beacon points and sun-struck edges.',
-      atmosphere: 'Alert devotion and maritime vigilance.',
-      key_features: 'Solar mirrors, beacon pyres, cliff-shrine cues.',
+        "Helios Beacon Signal within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Helios Beacon Signal's specific style identity.",
+      form_and_line:
+        'Define Helios Beacon Signal through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Helios Beacon Signal-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Helios Beacon Signal recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Helios Beacon Signal: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Helios Beacon Signal with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Helios Beacon Signal: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Helios Beacon Signal: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Helios Beacon Signal's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform the input through Helios beacon signal, using sunlight as warning and communication without requiring cliffs.',
+        'Create a style-card that translates Helios Beacon Signal into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -237,17 +318,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, comedic, cyber-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Medusa reliquary warning where monstrous memory becomes political discipline and ritual containment.',
-      form_and_line: 'Vaulted aisle cues, shield displays, and mirrored defense layout.',
-      color_palette: 'Obsidian, pale green, and antique gold.',
-      lighting_setup: 'Low torchlight and mirrored reflection traps.',
-      material_texture: 'Dark stone, burnished shields, and cracked mosaics.',
-      render_quality: 'Intense interior concept with symbolic density.',
-      spatial_distortion: 'Tight converging lines toward a central relic warning.',
-      atmosphere: 'Fear discipline and ritual containment.',
-      key_features: 'Gorgon iconography, mirror-wall cues, hero relic alcoves.',
+        "Medusa Reliquary Warning within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Medusa Reliquary Warning's specific style identity.",
+      form_and_line:
+        'Define Medusa Reliquary Warning through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Medusa Reliquary Warning-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Medusa Reliquary Warning recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Medusa Reliquary Warning: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Medusa Reliquary Warning with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Medusa Reliquary Warning: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Medusa Reliquary Warning: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Medusa Reliquary Warning's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret the input through Medusa reliquary warning, making monster myth read as state memory without requiring a chamber.',
+        'Create a style-card that translates Medusa Reliquary Warning into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -257,17 +346,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cartoon, futuristic-ui, watermark, text, logo',
     style: {
       aesthetic:
-        'Oracle wind interpretation where weather becomes legal instrument and sacred message.',
-      form_and_line: 'Long colonnade cues, hanging chimes, and divination markers.',
-      color_palette: 'Pale stone, sky gray, and laurel green.',
-      lighting_setup: 'Overcast diffuse light and intermittent shrine fire.',
-      material_texture: 'Chalky marble, bronze chimes, and weathered cloth banners.',
-      render_quality: 'Refined atmospheric concept with motion cues.',
-      spatial_distortion: 'Linear tunnel effect through repeated column-like rhythms.',
-      atmosphere: 'Suspense, interpretation, and ritual patience.',
-      key_features: 'Wind chime arrays, prophecy steles, supplicant station cues.',
+        "Oracle Wind Legal Instrument within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Oracle Wind Legal Instrument's specific style identity.",
+      form_and_line:
+        'Define Oracle Wind Legal Instrument through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Oracle Wind Legal Instrument-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Oracle Wind Legal Instrument recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Oracle Wind Legal Instrument: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Oracle Wind Legal Instrument with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Oracle Wind Legal Instrument: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Oracle Wind Legal Instrument: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Oracle Wind Legal Instrument's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply oracle-wind legal instrument logic to the input, letting weather read as verdict without requiring an oracle hall.',
+        'Create a style-card that translates Oracle Wind Legal Instrument into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -277,17 +374,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, slapstick, neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Hoplite dawn discipline where martial routine and sacred duty become one visual order.',
-      form_and_line: 'Grid barrack cues, shield walls, and drill-yard symmetry.',
-      color_palette: 'Dust tan, bronze, and muted crimson.',
-      lighting_setup: 'Low dawn light with brazier contrast.',
-      material_texture: 'Packed earth, leather straps, and polished bronze gear.',
-      render_quality: 'Grounded epic concept with disciplined composition.',
-      spatial_distortion: 'Yard-centric framing with disciplined rows receding into dawn.',
-      atmosphere: 'Stoic resolve and communal duty.',
-      key_features: 'Shield racks, spear drill cues, oath pyre corners.',
+        "Hoplite Dawn Discipline within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Hoplite Dawn Discipline's specific style identity.",
+      form_and_line:
+        'Define Hoplite Dawn Discipline through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Hoplite Dawn Discipline-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Hoplite Dawn Discipline recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Hoplite Dawn Discipline: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Hoplite Dawn Discipline with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Hoplite Dawn Discipline: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Hoplite Dawn Discipline: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Hoplite Dawn Discipline's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through hoplite dawn discipline, making preparation feel sacred without requiring barracks.',
+        'Create a style-card that translates Hoplite Dawn Discipline into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -297,17 +402,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, comedy, cyberpunk, watermark, text, logo',
     style: {
       aesthetic:
-        'Returning-heroes memorial language for victory, loss, honor, and communal remembrance.',
-      form_and_line: 'Memorial terrace cues, votive niches, and processional ramps.',
-      color_palette: 'Warm sandstone, laurel green, and bronze highlights.',
-      lighting_setup: 'Evening golden light and commemorative torch rows.',
-      material_texture: 'Carved stone tablets, bronze plaques, and linen standards.',
-      render_quality: 'Emotional epic concept with clear memorial storytelling.',
-      spatial_distortion: 'Ascending path perspective toward a central memorial presence.',
-      atmosphere: 'Honor, grief, and communal remembrance.',
-      key_features: 'Abstract name steles, hero reliefs, offering court cues.',
+        "Returning Heroes Memorial within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Returning Heroes Memorial's specific style identity.",
+      form_and_line:
+        'Define Returning Heroes Memorial through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Returning Heroes Memorial-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Returning Heroes Memorial recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Returning Heroes Memorial: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Returning Heroes Memorial with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Returning Heroes Memorial: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Returning Heroes Memorial: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Returning Heroes Memorial's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convert the input through returning-heroes memorial, curating victory and loss together without requiring a temple.',
+        'Create a style-card that translates Returning Heroes Memorial into a portable visual system for 5. Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

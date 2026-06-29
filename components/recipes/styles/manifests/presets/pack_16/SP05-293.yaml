@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Mitología rugosa de supervivencia compartida, con pulso feroz, espiritualidad gráfica y ternura bajo presión.
-  form_and_line: Línea nerviosa, contornos irregulares, verticalidad agresiva y siluetas compactas en tensión.
-  color_palette: Amarillos sucios de sodio, cianes de señal, rojos gastados de pigmento erosionado y sombras petroladas profundas.
-  lighting_setup: Iluminación mixta contaminada, focos duros, brillos sucios y contraluces altos.
-  material_texture: Chapa rugosa, piel pictórica descascarada, filamentos expuestos, superficie caliente y desgaste cotidiano.
-  render_quality: Terminación premium de crudeza controlada con alta legibilidad espacial en caos multicapa.
-  spatial_distortion: Perspectiva vertical laberíntica con compresión estrecha y saltos de altura que refuerzan dominio emocional.
-  atmosphere: Áspera, sagrada, abarrotada, feral.
-  key_features: Textura densa, tótems gráficos, verticalidad agresiva, energía instintiva y mezcla de ternura con amenaza.
+  aesthetic: >-
+    Rough Mythic Density Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Rough Mythic Density Style's specific style identity.
+  form_and_line: >-
+    Define Rough Mythic Density Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Rough Mythic Density Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Rough Mythic Density Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Rough Mythic Density Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Rough Mythic Density Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Rough Mythic Density Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Rough Mythic Density Style: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Rough Mythic Density Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Crea una gramática reusable de mito rugoso para cualquier prompt o imagen de entrada:
-    densidad, irregularidad y supervivencia compartida sin imponer callejones, azoteas, infancia ni ciudad literal.
+    Create a style-card that translates Rough Mythic Density Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-293.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

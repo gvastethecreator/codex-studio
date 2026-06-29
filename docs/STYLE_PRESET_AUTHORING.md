@@ -1,94 +1,77 @@
-# Guía de authoring de Style Presets
+# Style Preset Authoring Guide
 
-Los presets reales viven en `components/recipes/styles/manifests/presets/<pack_id>/<PRESET_ID>.yaml`.
-Empieza desde una de estas plantillas:
+Real presets live in `components/recipes/styles/manifests/presets/<pack_id>/<PRESET_ID>.yaml`.
+Start from one of these templates:
 
 - `components/recipes/styles/manifests/templates/style-preset.template.yaml` for image style presets.
 - `components/recipes/styles/manifests/templates/sprite-sheet-preset.template.yaml` for sprite or animation-sheet presets.
 - `components/recipes/styles/manifests/templates/texture-preset.template.yaml` for texture/material presets.
 
-No agregues presets nuevos al YAML legacy. Ese formato monolítico está retirado;
-`scripts/style-migration/legacy-packs/` debe permanecer sin YAML.
-`bun run styles:source:verify` falla si reaparecen YAML fuera de `manifests/`.
+Do not add new presets to legacy YAML. That monolithic format is retired; `scripts/style-migration/legacy-packs/` must stay YAML-free. `bun run styles:source:verify` fails if YAML reappears outside `manifests/`.
 
-## Primero scaffold, después edición
+## Scaffold First, Then Edit
 
-Usa `styles:scaffold` para crear el esqueleto del preset y actualizar `presetRefs`
-tanto a nivel pack como categoría.
+Use `styles:scaffold` to create the preset skeleton and update `presetRefs` at both pack and category level.
 
-El comando corre en dry-run por defecto e imprime cambios planificados y pasos de validación. Usa `--write` para mutar archivos.
+The command runs in dry-run mode by default and prints planned changes plus validation steps. Use `--write` to mutate files.
 
 ```bash
 bun run styles:scaffold -- --preset=SP01-082 --pack=pack_01 --category=portrait-styles --name="Morning Window Portrait" --template=style
 bun run styles:scaffold -- --preset=SP06-101 --pack=pack_06 --category="6. Video Game & Pixel Art Styles" --name="Arcade Action Sprite" --template=sprite --write
 ```
 
-Flags opcionales:
+Optional flags:
 
 - `--default-image=/assets/...` to prefill a real default image path.
 - `--write` to actually create/update files.
 
-Si omites `--default-image`, el scaffold apunta igual a `/assets/recipes/styles/defaults/<PRESET_ID>.webp`, pero deja `taxonomy.hasDefaultImage: false` para reflejar que falta generar ese asset.
+If `--default-image` is omitted, the scaffold still points to `/assets/recipes/styles/defaults/<PRESET_ID>.webp`, but leaves `taxonomy.hasDefaultImage: false` to reflect the missing asset.
 
-## Especificidad de prompts
+## Prompt Specificity
 
-Batch generation prompts are deliberately pack- and category-specific.
-Before running a new pack, extend `scripts/generate-style-defaults.ts` with
-distinct scene anchors and motif rules for that pack instead of relying on the
-generic fallback. This keeps thumbnails from converging on the same generic
-props or staging.
+Batch generation prompts are deliberately pack- and category-specific. Before running a new pack, extend `scripts/generate-style-defaults.ts` with distinct scene anchors and motif rules for that pack instead of relying on the generic fallback. This keeps thumbnails from converging on the same generic props or staging.
 
-`generate-style-defaults.ts` now checkpoints `manifest-<pack>.json` and
-`failures-<pack>.json` after each preset and polls job/asset completion from the
-local Studio SQLite (`.studio/studio.sqlite`) instead of hammering the HTTP list
-endpoints. If a long batch is interrupted, trust the `.webp` files on disk and
-the latest checkpoint files before assuming the pack did not advance.
+`generate-style-defaults.ts` checkpoints `manifest-<pack>.json` and `failures-<pack>.json` after each preset and polls job/asset completion from local Studio SQLite (`.studio/studio.sqlite`) instead of hammering HTTP list endpoints. If a long batch is interrupted, trust the `.webp` files on disk and the latest checkpoint files before assuming the pack did not advance.
 
-Frontend style previews should trust existing `.webp` files on disk, not just
-manifest intent. If a preset points at a default image path that has not been
-generated yet, suppress the broken URL and fall back to a real category or pack
-preview instead.
+Frontend style previews should trust existing `.webp` files on disk, not only manifest intent. If a preset points at a default image path that has not been generated yet, suppress the broken URL and fall back to a real category or pack preview instead.
 
-Anime packs now have a deliberately finer split:
+Anime packs have a deliberately finer split:
 
 - `pack_05` is `Anime Battle & Worlds`: modern shonen/action, mecha/cyberpunk, isekai/high fantasy, dark fantasy/seinen, and action.
 - `pack_13` is `Anime Character & Lifestyle`: shojo/magical/visionary classics, slice-of-life/moe, anime style spectrum, core anime, and slice-of-life / school / music.
 - `pack_16` is `Anime Classics & Prestige`: 2000s classics, 90s golden era, sports/performance, studio masterpieces, 70s/80s retro anime, samurai/medieval, and horror.
-- Non-anime packs also rely on semantic buckets now, especially `pack_01`, `pack_02`, `pack_03`, `pack_04`, `pack_06`, `pack_07`, `pack_08`, `pack_09`, `pack_10`, `pack_11`, and `pack_12`; do not collapse them back into catch-all categories like `Videojuegos`, `Pattern & Texture`, or `Oddities`.
-- When authoring or regenerating those packs, keep the prompt anchors and category labels aligned with that split instead of collapsing them back into generic anime staging.
+- Non-anime packs also rely on semantic buckets now, especially `pack_01`, `pack_02`, `pack_03`, `pack_04`, `pack_06`, `pack_07`, `pack_08`, `pack_09`, `pack_10`, `pack_11`, and `pack_12`; do not collapse them back into catch-all categories like `Pattern & Texture`, `Oddities`, or generic game buckets.
+- When authoring or regenerating those packs, keep prompt anchors and category labels aligned with that split instead of collapsing them back into generic anime staging.
 
-## Política de naming e idioma (obligatoria)
+## Naming And Language Policy
 
-Usa una convención única y durable en manifiestos:
+Use one durable convention in manifests:
 
 - `category.id` MUST be `kebab-case`.
 - `taxonomy.categoryId` MUST match the category id exactly.
 - `tags` and `taxonomy.tags` MUST be English slugs.
-- `packName`, `categoryName`, and editorial labels MUST be English in the source manifests.
+- `packName`, `categoryName`, and editorial labels MUST be English in source manifests.
 
-Do not introduce legacy Spanish catch-all slugs like `videojuegos` or
-`videojuegos-originals-vault`. The normalized slug for pack 12 is
-`video-game-originals-vault`.
+Do not introduce legacy non-English catch-all slugs. The normalized slug for pack 12 is `video-game-originals-vault`.
 
-## Contrato Style-First (obligatorio)
+## Style-First Contract
 
-`Style Preset` significa **lenguaje visual reusable**, no escena fija.
+`Style Preset` means reusable visual language, not a fixed scene.
 
 - `visualDna` MUST describe style mechanics first: linework, palette logic, lighting model, material response, composition behavior, render finish.
-- `creative_brief` MUST explain the visual intent as a transferable style system.
-- Avoid scene-anchored identity phrases as the core definition (e.g. hard-coding one location/story beat like `wet city street`, `classroom confession`, `battle in alley`).
+- `creative_brief` MUST explain visual intent as a transferable style system.
+- Avoid scene-anchored identity phrases as the core definition, such as hard-coding one location or story beat like `wet city street`, `classroom confession`, or `battle in alley`.
 - A preset can include mild context cues, but they cannot be the main identity of the style.
 
 Quick self-check before saving:
 
 1. Could this style apply to at least 5 different subjects without rewriting the DNA?
-2. If I remove the location/story nouns, does the preset still have a clear visual identity?
+2. If I remove location/story nouns, does the preset still have a clear visual identity?
 3. Is this preset materially distinct from neighboring presets in the same category?
 
-## Flujo con plantillas
+## Template Flow
 
-`styles:scaffold` uses the template files below automatically. If you need a
-manual flow, use the same files directly:
+`styles:scaffold` uses the template files below automatically. If you need a manual flow, use the same files directly:
 
 1. Copy `components/recipes/styles/manifests/templates/style-preset.template.yaml`.
 2. Paste it as `components/recipes/styles/manifests/presets/<pack_id>/<PRESET_ID>.yaml`.
@@ -103,7 +86,7 @@ bun run styles:templates:verify
 bun run styles:verify
 ```
 
-## Ejemplo rápido
+## Quick Example
 
 Create `presets/pack_01/MY-CUSTOM.yaml`:
 
@@ -160,7 +143,7 @@ taxonomy:
   hasDefaultImage: true
 ```
 
-## Luego registra en el manifiesto del pack
+## Register In The Pack Manifest
 
 Edit `manifests/packs/pack_01.yaml`:
 
@@ -172,18 +155,16 @@ Edit `manifests/packs/pack_01.yaml`:
    ```
 2. Add to the top-level `presetRefs` list in the same file.
 
-Both references are required. `styles:validate` rejects duplicate pack refs,
-category refs missing from the pack-level list, and refs that point outside the
-pack namespace.
+Both references are required. `styles:validate` rejects duplicate pack refs, category refs missing from the pack-level list, and refs that point outside the pack namespace.
 
-## Finalmente genera runtime + valida
+## Generate Runtime And Validate
 
 ```bash
 bun run styles:runtime:check   # verify runtime data is current
 bun run styles:verify          # full validation: taxonomy, coverage, source audit
 ```
 
-## Contrato de taxonomía
+## Taxonomy Contract
 
 Every preset manifest must include a `taxonomy` block:
 
@@ -199,17 +180,17 @@ Every preset manifest must include a `taxonomy` block:
 
 The `styles:validate` check enforces taxonomy drift:
 
-- `packId`/`packName` must match the parent pack
-- `categoryId`/`categoryName` must match the registered category
-- `tags` and `supportedTasks` must match the manifest fields
+- `packId`/`packName` must match the parent pack.
+- `categoryId`/`categoryName` must match the registered category.
+- `tags` and `supportedTasks` must match the manifest fields.
 
 It also enforces pack-reference drift:
 
-- top-level `presetRefs` cannot duplicate refs
-- category `presetRefs` must also exist in top-level `presetRefs`
-- pack and category refs must use the same `<pack_id>/<PRESET_ID>.yaml` namespace
+- top-level `presetRefs` cannot duplicate refs.
+- category `presetRefs` must also exist in top-level `presetRefs`.
+- pack and category refs must use the same `<pack_id>/<PRESET_ID>.yaml` namespace.
 
-## Campos de Visual DNA
+## Visual DNA Fields
 
 All 8 fields are required and checked for emptiness by `validateStyleManifestGraph`:
 
@@ -224,9 +205,9 @@ All 8 fields are required and checked for emptiness by `validateStyleManifestGra
 | `atmosphere_and_mood`    | Emotional quality, ambient feel   |
 | `rendering_and_quality`  | Resolution, polish level          |
 
-## Reglas de exclusión (avoid rules)
+## Avoid Rules
 
-Negative prompt snippets applied per-preset. Use simple lowercase keywords:
+Negative prompt snippets applied per preset. Use simple lowercase keywords:
 
 ```yaml
 avoidRules:
@@ -244,15 +225,8 @@ assets:
 
 Default images live in `assets/recipes/styles/defaults/`. Use `.webp` format.
 
-## Regeneración de default cards
+## Default Card Regeneration
 
-Default cards are prompt-derived artifacts. `scripts/generate-style-defaults.ts`
-builds the image prompt from the current pack, category, preset `name`,
-`visualDna`, `negativePrompt`, and deterministic variation helpers. Existing
-`.webp` files do not update when a manifest changes.
+Default cards are prompt-derived artifacts. `scripts/generate-style-defaults.ts` builds the image prompt from the current pack, category, preset `name`, `visualDna`, `negativePrompt`, and deterministic variation helpers. Existing `.webp` files do not update when a manifest changes.
 
-If a preset changes `name`, `visualDna`, `avoidRules`, or
-`attributes.negativePrompt`, mark its card as needing regeneration in
-`docs/active/style-preset-card-regeneration-backlog.md` and regenerate
-`assets/recipes/styles/defaults/<PRESET_ID>.webp` before considering the visual
-work complete.
+If a preset changes `name`, `visualDna`, `avoidRules`, or `attributes.negativePrompt`, mark its card as needing regeneration in `docs/active/style-preset-card-regeneration-backlog.md` and regenerate `assets/recipes/styles/defaults/<PRESET_ID>.webp` before considering visual work complete.

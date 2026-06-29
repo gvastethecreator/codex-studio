@@ -12,31 +12,38 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Miniatura en corte abierto, curada por compartimentos-caja y precisión de exhibición artesanal.
+  aesthetic: >-
+    Toy-Scale Sectional Cutaway within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Toy-Scale Sectional Cutaway's specific style identity.
   form_and_line: >-
-    Cara retirada en sección, bandas apiladas, retícula de compartimentos y diagonales de conexión
-    compacta.
+    Define Toy-Scale Sectional Cutaway through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
   color_palette: >-
-    Soft pastel wall fields, printed wallpaper motifs, painted toy-wood neutrals, carpet beige
-    bases, dusty pink highlights, and muted decorative accents
+    Use a Toy-Scale Sectional Cutaway-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Luz de vitrina uniforme, glow interior suave y sombreado de compartimentos en contraste bajo
-    para lectura seccional.
+    Use lighting that makes Toy-Scale Sectional Cutaway recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
   material_texture: >-
-    Madera mini pintada, grano de papel tapiz, textil diminuto, plástico moldeado y remates satín
-    lacados.
+    Use materials and textures that reinforce Toy-Scale Sectional Cutaway: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
   render_quality: >-
-    Miniatura cutaway de alta claridad con legibilidad compartimento-por-compartimento y densidad
-    decorativa balanceada.
-  spatial_distortion: None
-  atmosphere: Lúdica, íntima y ordenada, con teatralidad doméstica curada.
+    Render Toy-Scale Sectional Cutaway with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Toy-Scale Sectional Cutaway: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Toy-Scale Sectional Cutaway: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
   key_features: >-
-    Frente abierto seccionado, módulos apilados, transiciones diagonales y perímetros de corte
-    nítidos.
+    Prioritize Toy-Scale Sectional Cutaway's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica corte seccional toy-scale: frente abierto, compartimentos apilados, materiales
-    miniaturizados y luz de vitrina. Debe revelar estructura interna como maqueta curada sin exigir
-    dollhouse doméstica.
+    Create a style-card that translates Toy-Scale Sectional Cutaway into a portable visual system for 6. Toy Craft And
+    Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - closed uncut wall hiding section
 assets:

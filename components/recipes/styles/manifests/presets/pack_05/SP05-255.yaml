@@ -12,19 +12,39 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Heroísmo magical-knight de alto brillo, con energía cooperativa, runas tecnomísticas y valentía cromática.
-  form_and_line: Siluetas diferenciadas por color, ornamentación rúnica angular y líneas ascendentes de impulso coral.
-  color_palette: Rojo rubí, azul cobalto, verde esmeralda, dorado mágico y blanco de energía invocada.
-  lighting_setup: Emisión rúnica, flare joya y key vibrante de aventura luminosa.
-  material_texture: Metal encantado, tela ceremonial, mineral pulido y superficies lumínicas de energía geométrica.
-  render_quality: Fantasy-team abstracto de acabado brillante, con roles cromáticos y épica juvenil cooperativa.
-  spatial_distortion: Contraste de escala sugerido, composición ascendente y expansión energética sin entidad obligatoria.
-  atmosphere: Valiente, luminosa y solidaria.
-  key_features: Runas activas, colorimetría joya, impulso ascendente, cooperación gráfica y brillo tecnomístico.
+  aesthetic: >-
+    Magic Knight Rayearth - Gem-Engine Rescue Quest within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Magic Knight Rayearth - Gem-Engine Rescue Quest's specific style
+    identity.
+  form_and_line: >-
+    Define Magic Knight Rayearth - Gem-Engine Rescue Quest through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Magic Knight Rayearth - Gem-Engine Rescue Quest-specific palette with clear dominant, secondary, and accent
+    roles. Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Magic Knight Rayearth - Gem-Engine Rescue Quest recognizable: purposeful key, rim, bounce,
+    shadow, and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Magic Knight Rayearth - Gem-Engine Rescue Quest: surface response, grain,
+    patina, polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Magic Knight Rayearth - Gem-Engine Rescue Quest with high production clarity, strong silhouette reads, clean
+    detail priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Magic Knight Rayearth - Gem-Engine Rescue Quest: perspective, compression,
+    exaggeration, or depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Magic Knight Rayearth - Gem-Engine Rescue Quest: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Magic Knight Rayearth - Gem-Engine Rescue Quest's key features: recognizable shape language, palette
+    logic, material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática gem-engine-rescue reusable donde cualquier prompt
-    gane claridad heroica mediante cromas joya, runas energéticas y sensación de
-    cooperación sin fijar roles, vestuario, entidades o evento narrativo.
+    Create a style-card that translates Magic Knight Rayearth - Gem-Engine Rescue Quest into a portable visual system
+    for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character,
+    prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +61,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-255.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

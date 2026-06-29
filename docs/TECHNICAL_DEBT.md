@@ -1,10 +1,10 @@
-# Deuda técnica
+# Technical Debt
 
-Este documento registra deuda técnica activa mientras Codex Studio se prepara para una release open-source más sólida.
+This document tracks active technical debt while Codex Studio moves toward a stronger open-source release baseline.
 
-## Alta prioridad
+## High Priority
 
-Referencia de arquitectura aceptada:
+Accepted architecture references:
 
 - `docs/architecture/architecture-review-2026-06-28-improve-debt-audit.md` (current improve/debt audit)
 - `docs/architecture/architecture-review-2026-06-29-performance-fluidity.md`
@@ -16,17 +16,17 @@ Referencia de arquitectura aceptada:
 - `docs/architecture/architecture-review-2026-05-29.md`
 - `docs/architecture/DEEPENING-ROADMAP.md`
 
-Cola de ejecución actual:
+Current execution queue:
 
-1. Continuar el lote front-performance 2026-06-19: finish full Local Studio Sync job-waiting ownership, backend full-scope Catalog Page commands, Style Browser session split, and remaining Studio Readiness freshness.
-2. Profundizar orquestación de `Studio Shell`.
-3. Profundizar `Studio Generation Session`.
-4. Reducir traducción de overlays de sistema tras separar seams de `Studio Settings` por dominio operativo.
-5. Completar deepening de rutas en `appFactory`.
-6. Mejorar semántica de refresh en `Local Studio Sync`.
-7. Revisar claridad de seams en `Local Generation Run`.
+1. Continue the 2026-06-19 front-performance batch: finish full Local Studio Sync job-waiting ownership, backend full-scope Catalog Page commands, Style Browser session split, and remaining Studio Readiness freshness.
+2. Deepen `Studio Shell` orchestration.
+3. Deepen `Studio Generation Session`.
+4. Reduce system overlay translation after splitting `Studio Settings` seams by operational domain.
+5. Complete route deepening in `appFactory`.
+6. Improve refresh semantics in `Local Studio Sync`.
+7. Review seam clarity in `Local Generation Run`.
 
-Prioridad inmediata del lote runtime-storage-UX 2026-06-21:
+Immediate priority for the 2026-06-21 runtime-storage-UX batch:
 
 - Surface partial-failure UX for full-scope backend Catalog commands.
 - Type catalog events and give Local Studio Sync scoped invalidation plus bounded job waiting.
@@ -55,9 +55,9 @@ Second-pass candidate follow-ups from 2026-06-21:
 - Measure Studio Readiness request overlap before consolidating freshness ownership.
 - Add catalog search timing before deciding whether FTS is justified.
 
-### 1. Further decompose `components/AppContent.tsx`
+### 1. Further Decompose `components/AppContent.tsx`
 
-`AppContent` already delegates a significant amount of work to hooks and shell modules, but it still concentrates overlay composition, navigation wiring, and context coordination.
+`AppContent` already delegates significant work to hooks and shell modules, but it still concentrates overlay composition, navigation wiring, and context coordination.
 
 Recent progress in the `Studio Shell` track:
 
@@ -82,7 +82,7 @@ Recommended next steps:
 - keep overlay orchestration in focused controllers;
 - add integration tests around the shell after each extraction.
 
-### 2. Complete the catalog-first migration
+### 2. Complete The Catalog-First Migration
 
 SQLite/Image Catalog is the durable source of truth. Visual Batch compatibility remains for recovery and generated append paths, but it should not drive new product decisions.
 
@@ -101,7 +101,7 @@ Recommended next steps:
 - shrink remaining recovery and generated append compatibility edges;
 - keep IndexedDB as recovery/UI convenience only.
 
-### 3. Continue backend dependency-injection seams
+### 3. Continue Backend Dependency-Injection Seams
 
 `appFactory.ts` provides useful seams, but some backend modules still rely on singletons or module-level state.
 
@@ -117,39 +117,39 @@ Recent delta:
 - `createStudioApp` composition tests now also cover codex failure-path behavior and app-server runtime dependency wiring.
 - `createStudioApp` now accepts library/workspace route dependency overrides; workspace routes no longer require singleton functions at route construction, and composition tests cover injected library/workspace lists.
 
-## Prioridad media
+## Medium Priority
 
-### 1. Studio Runtime vs Studio Readiness naming
+### 1. Studio Runtime vs Studio Readiness Naming
 
 Docs distinguish the concepts, but code still uses similar names for a static runtime adapter and a React orchestrator.
 
 Recommended next step: decide whether the hook name should become more explicit before exposing more extension seams.
 
-### 2. Uniform frontend logging
+### 2. Uniform Frontend Logging
 
 Several components and utilities still use direct `console.*` calls.
 
 Recommended next step: introduce a small UI logging adapter with levels and consistent context fields.
 
-### 3. GSAP local animation parity
+### 3. GSAP Local Animation Parity
 
 The local animation compatibility layer avoids `motion/react`, but not every exit/layout semantic has equivalent coverage yet.
 
 Recommended next step: strengthen exit transitions and list animation helpers where real UI needs them.
 
-### 4. UI integration tests
+### 4. UI Integration Tests
 
 More coverage is needed around `Toolbar`, `QueuePanel`, `StudioPage`, `useLocalStudioSync`, onboarding, and reset flows.
 
-### 5. Dependency compatibility reviews
+### 5. Dependency Compatibility Reviews
 
 After major Vite+, Rolldown, OXC, React, or Bun updates, run the full validation loop and check real compatibility rather than assuming ecosystem stability.
 
-### 6. Final artifact audit before release
+### 6. Final Artifact Audit Before Release
 
 Before a public release candidate, review tracked files and history for local prompts, generated assets, SQLite files, logs, and machine-specific paths.
 
-## Notas de rendimiento
+## Performance Notes
 
 - Heavy recipe surfaces should remain demand-loaded.
 - `react-scan`, Three.js, style catalog data, ZIP export, and YAML parsing should not enter the startup bundle eagerly.
@@ -157,21 +157,21 @@ Before a public release candidate, review tracked files and history for local pr
 - Catalog fluidity now has an explicit budget: hot Home reads should not silently return to 200 rendered cards, and idle desktop cards should not mount every secondary command/tooltip.
 - Confirmed next performance debt: recipe preloading should be intent/budget driven, high-frequency generation animation timers should move out of broad React render paths, and large-library scrolling needs a real Catalog Grid Render Plan rather than only `content-visibility`.
 
-## Brechas de documentación
+## Documentation Gaps
 
 - Add more catalog-first migration guidance as ADR-0013 continues.
 - Done: manual release checks now live in `docs/active/release-manual-checklist.md`.
 - Keep large style-generation logs behind the short active index; avoid adding new local absolute backup paths to active docs.
 - Keep provider configuration docs explicit about Provider Secrets staying outside SQLite-backed Studio Settings.
 
-## Áreas cerradas (o casi cerradas)
+## Closed Or Nearly Closed Areas
 
 - Monolithic legacy style pack YAML has been retired in favor of granular manifests.
 - Style runtime naming is explicit with `StyleRuntimePack` and `StyleRuntimePreset`.
 - Style preset templates exist for image, sprite sheet, and texture authoring.
 - External Output Sources provide the safer import boundary for unmanaged output folders.
 
-## Regla de priorización hacia release
+## Release Prioritization Rule
 
 Technical debt should be prioritized when it blocks one of these outcomes:
 

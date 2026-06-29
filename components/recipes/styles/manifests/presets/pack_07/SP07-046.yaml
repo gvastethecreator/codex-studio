@@ -13,22 +13,37 @@ tags:
   - landscape-and-garden-systems
 visualDna:
   aesthetic: >-
-    Paisaje-hospitalidad tropical de lujo sereno, con agua y horizonte como eje compositivo
-    principal.
-  form_and_line: Datum de infinity edge, plataformas someras, verticales tropicales y capas de terraza-agua.
-  color_palette: Turquoise, Palm Green, White cabana, Bougainvillea Pink, Sand Beige, Sky-reflected teal
+    Water-Horizon Hospitality within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Water-Horizon Hospitality's specific style identity.
+  form_and_line: >-
+    Define Water-Horizon Hospitality through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Water-Horizon Hospitality-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Sol intenso diurno, brillo subacuático controlado, ámbar nocturno de antorcha y shimmer de
-    atardecer sobre lámina.
-  material_texture: Agua reflectante, piedra térmica, revestimiento húmedo, teca exterior y textil de sombra.
-  render_quality: Visualización hospitality premium con lujo creíble y control físico de reflejo acuático.
-  spatial_distortion: None
-  atmosphere: Indulgencia de ritmo lento, serenidad cálida y escape curado.
-  key_features: Línea knife-edge, planos someros, módulos de sombra, acentos de fuego y marco vegetal tropical.
+    Use lighting that makes Water-Horizon Hospitality recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Water-Horizon Hospitality: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Water-Horizon Hospitality with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Water-Horizon Hospitality: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Water-Horizon Hospitality: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Water-Horizon Hospitality's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    El lujo aparece por lamina de agua, borde infinito, sombra vegetal y tacto exterior calido.
-    Cualquier sujeto debe sentirse desacelerado por reflejos, shimmer y horizonte abstracto, sin
-    destino ni marca.
+    Create a style-card that translates Water-Horizon Hospitality into a portable visual system for 4. Landscape And
+    Garden Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - cold
   - cold concrete

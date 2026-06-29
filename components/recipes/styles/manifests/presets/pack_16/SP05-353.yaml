@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Velocidad nocturna técnica, con deriva controlada, transferencia de peso visual y lectura de riesgo invisible.
-  form_and_line: Contornos afilados, vectores de derrape abstracto y postura de concentración máxima aplicable a cualquier sujeto.
-  color_palette: Azules de noche inclinada, blanco de haz alto, naranja térmico y negros húmedos.
-  lighting_setup: Cortes de luz direccionales y halos de niebla que enfatizan apex y salida de curva.
-  material_texture: Granularidad húmeda, metal mojado, humo fino y reflejos bajos de velocidad.
-  render_quality: Frame de performance anime con prioridad en trayectoria, adherencia visual y lectura de riesgo.
-  spatial_distortion: Compresión agresiva de túnel visual y estiramiento lateral de deriva.
-  atmosphere: Nocturna, tensa, técnica y adictiva.
-  key_features: Ángulo de deriva, conos de luz, curva abstracta, foco técnico y estela de humo precisa.
+  aesthetic: >-
+    Nocturnal Drift Tension Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Nocturnal Drift Tension Style's specific style identity.
+  form_and_line: >-
+    Define Nocturnal Drift Tension Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Nocturnal Drift Tension Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Nocturnal Drift Tension Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Nocturnal Drift Tension Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Nocturnal Drift Tension Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Nocturnal Drift Tension Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Nocturnal Drift Tension Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Nocturnal Drift Tension Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática reusable de deriva nocturna para cualquier prompt o imagen de entrada:
-    tracción, riesgo y luz direccional sin imponer autos, montaña, faros, volantes ni carreras.
+    Create a style-card that translates Nocturnal Drift Tension Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-353.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

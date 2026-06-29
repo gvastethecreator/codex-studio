@@ -13,16 +13,37 @@ tags:
   - mythic
   - greek-myth
 visualDna:
-  aesthetic: Helios beacon signal where sunlight becomes weaponized communication and sacred warning.
-  form_and_line: Cliff-tower cues, signal braziers, and stepped lookout paths.
-  color_palette: Sun gold, sea blue, and chalk stone.
-  lighting_setup: Intense horizon glare and ember beacon punctuations.
-  material_texture: Wind-eroded limestone, bronze mirrors, and rope rigging.
-  render_quality: Wide environmental concept with clear distance cues.
-  spatial_distortion: Cascading perspective between beacon points and sun-struck edges.
-  atmosphere: Alert devotion and maritime vigilance.
-  key_features: Solar mirrors, beacon pyres, cliff-shrine cues.
-  creative_brief: Transform the input through Helios beacon signal, using sunlight as warning and communication without requiring cliffs.
+  aesthetic: >-
+    Helios Beacon Signal within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Helios Beacon Signal's specific style identity.
+  form_and_line: >-
+    Define Helios Beacon Signal through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Helios Beacon Signal-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Helios Beacon Signal recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Helios Beacon Signal: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Helios Beacon Signal with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Helios Beacon Signal: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Helios Beacon Signal: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Helios Beacon Signal's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Helios Beacon Signal into a portable visual system for 5. Mythic Greek Epics.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - modern-lighthouse-tech

@@ -13,24 +13,37 @@ tags:
   - architectural-movements-and-vernaculars
 visualDna:
   aesthetic: >-
-    Revival Tudor residencial con herencia entramada, asimetría pintoresca y calor histórico
-    protector.
+    Tudor Revival within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Tudor Revival's specific style identity.
   form_and_line: >-
-    Retícula half-timber expuesta, cubiertas de fuerte pendiente, chimeneas verticales y carpintería
-    plomada romboidal.
-  color_palette: Madera oscura sobre cal blanquecina, tierras terracota, verdes musgo y ocre envejecido.
-  lighting_setup: Cielo difuso, brillo cálido interior de hogar y filtrado suave por vidrios emplomados.
+    Define Tudor Revival through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Tudor Revival-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and
+    avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Tudor Revival recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
   material_texture: >-
-    Madera envejecida, yeso de cal, ladrillo manual, vidrio facetado y cubierta con pátina
-    climática.
-  render_quality: Patrimonio doméstico de detalle constructivo sólido y atmósfera de arraigo.
-  spatial_distortion: Irregularidad pintoresca leve en cumbreras y entramados para reforzar artesanía premoderna.
-  atmosphere: Íntima, protectora, nostálgica y terrenal.
-  key_features: Half-timber contrastado, gable pronunciado, vidrio emplomado y núcleo térmico de hogar.
+    Use materials and textures that reinforce Tudor Revival: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
+  render_quality: >-
+    Render Tudor Revival with high production clarity, strong silhouette reads, clean detail priority, and no accidental
+    UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Tudor Revival: perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Tudor Revival: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Tudor Revival's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Conserva una gramática Tudor transferible basada en contraste madera-cal, asimetría pintoresca y
-    calor de hogar. Debe transmitir continuidad histórica sin quedar reducida a una postal de
-    cottage.
+    Create a style-card that translates Tudor Revival into a portable visual system for 2. Architectural Movements And
+    Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - modern
 assets:

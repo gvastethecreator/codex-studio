@@ -12,20 +12,38 @@ tags:
   - architecture-and-interior
   - civic-infrastructure-and-specialty-spaces
 visualDna:
-  aesthetic: Artesanía arbórea elevada, ensamblada contra crecimiento vivo y gobernada por adaptación orgánica.
-  form_and_line: Soportes híbridos, plataformas moduladas, diagonales tensadas y vacíos de evasión orgánica.
-  color_palette: Brown, Green leaves, Bark Grey, Rope Tan, Sky Blue through leaves, Moss
-  lighting_setup: Sol moteado filtrado por hoja, brillo variable de dosel y pools cálidos en escala íntima.
-  material_texture: Veta de madera expuesta al clima, cuerda fibrosa, abrasión de corteza y herrajes galvanizados oxidados.
-  render_quality: Autenticidad hand-built con plausibilidad estructural ligera y detalle de uso exterior real.
-  spatial_distortion: Inclinación artesanal, torsión orgánica y apoyo asimétrico creíble.
-  atmosphere: Íntima y adaptativa, con autonomía exploratoria y abrigo ligero frente a exposición ambiental.
-  key_features: Encuentros con soporte vivo, accesos ligeros, bordes suspendidos, pools cálidos y uniones improvisadas.
+  aesthetic: >-
+    Arboreal Craft Shelter within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Arboreal Craft Shelter's specific style identity.
+  form_and_line: >-
+    Define Arboreal Craft Shelter through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Arboreal Craft Shelter-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Arboreal Craft Shelter recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Arboreal Craft Shelter: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Arboreal Craft Shelter with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Arboreal Craft Shelter: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Arboreal Craft Shelter: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Arboreal Craft Shelter's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    El estilo negocia cualquier forma contra soporte vivo mediante ensamblaje elevado, cuerda, madera expuesta y
-    tensiones improvisadas. Debe sentirse artesanal y suspendido sin exigir treehouse, refugio infantil, tronco heroico
-    ni postal de aventura. Conserva logica material, escala ligera y ritmo estructural adaptativo sin fijar tipologia,
-    paisaje, franquicia, criatura ni escena cerrada.
+    Create a style-card that translates Arboreal Craft Shelter into a portable visual system for 3. Civic Infrastructure
+    And Specialty Spaces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - ground level
 assets:

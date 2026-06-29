@@ -12,19 +12,39 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Romance ocultista doméstico, ternura ritual, extrañeza feérica, hueso/musgo como materialidad y misterio afectivo.
-  form_and_line: Contorno delicado de cuento gótico, curvas botánicas, siluetas extrañas abstractas y detalle íntimo de rito cotidiano.
-  color_palette: Verde musgo, crema té, marrón madera húmeda, negro hueso y dorado tenue de lámpara.
-  lighting_setup: Luz de atardecer filtrada, velas bajas y brillos mágicos discretos de escala íntima.
-  material_texture: Piedra húmeda, madera antigua, porcelana, pergamino arcano y fibras vegetales vivas.
-  render_quality: Fantasía íntima de alta atmósfera con microdetalle doméstico y pulsación sobrenatural sutil.
-  spatial_distortion: Acogimiento comprimido, profundidad íntima, escala humana y foco suave sobre ritualidad cotidiana.
-  atmosphere: Encantada, melancólica y cálida, con inquietud amorosa latente.
-  key_features: Talismán óseo abstracto, musgo, luz cálida, botánica ritual, folklore feérico y delicadeza gótica.
+  aesthetic: >-
+    The Ancient Magus' Bride - Thorn Cottage Enchantment within 8. Isekai & High Fantasy: a reusable Anime Battle &
+    Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the
+    result transferable across subjects while preserving The Ancient Magus' Bride - Thorn Cottage Enchantment's specific
+    style identity.
+  form_and_line: >-
+    Define The Ancient Magus' Bride - Thorn Cottage Enchantment through line, mass, contour, spacing, and rhythm. Keep
+    forms readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a The Ancient Magus' Bride - Thorn Cottage Enchantment-specific palette with clear dominant, secondary, and
+    accent roles. Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes The Ancient Magus' Bride - Thorn Cottage Enchantment recognizable: purposeful key, rim,
+    bounce, shadow, and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce The Ancient Magus' Bride - Thorn Cottage Enchantment: surface response,
+    grain, patina, polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render The Ancient Magus' Bride - Thorn Cottage Enchantment with high production clarity, strong silhouette reads,
+    clean detail priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits The Ancient Magus' Bride - Thorn Cottage Enchantment: perspective, compression,
+    exaggeration, or depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to The Ancient Magus' Bride - Thorn Cottage Enchantment: specific, coherent, and distinct,
+    with emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize The Ancient Magus' Bride - Thorn Cottage Enchantment's key features: recognizable shape language, palette
+    logic, material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática thorn-cottage reusable donde domesticidad ritual,
-    naturaleza encantada y misterio afectivo convivan con libertad de sujeto, sin
-    exigir vivienda, interior, rol mágico, pasaje o rito literal.
+    Create a style-card that translates The Ancient Magus' Bride - Thorn Cottage Enchantment into a portable visual
+    system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene,
+    character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +61,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-247.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

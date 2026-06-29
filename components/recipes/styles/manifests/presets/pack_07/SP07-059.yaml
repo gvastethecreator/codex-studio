@@ -12,22 +12,38 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: Domesticidad pastoral semienterrada de escala humana, con umbrales redondos y calidez artesanal portable.
-  form_and_line: Aberturas redondeadas dominantes, cubierta bermada baja, corredores suaves y planificación íntima de perfil contenido.
+  aesthetic: >-
+    Bermed Round-Door Pastoral within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Bermed Round-Door Pastoral's specific style identity.
+  form_and_line: >-
+    Define Bermed Round-Door Pastoral through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
   color_palette: >-
-    Moss green, weathered timber brown, loam umber, butter-cream plaster, muted brass highlights, warm terracotta
-    accents, soft wildflower notes
-  lighting_setup: Clave cálida de hogar, spill bajo de umbral, prácticos de linterna y rebote difuso de tarde.
-  material_texture: Cubierta de césped, madera cepillada a mano, revoco de cal-arcilla, piedra gastada y latón cepillado.
-  render_quality: Realismo de cuento doméstico con tactilidad artesanal y encanto fantástico contenido por función vivida.
-  spatial_distortion: None
-  atmosphere: Protegida, íntima y celebratoria de rituales cotidianos de vida lenta.
-  key_features: Umbral redondeado, cubierta vegetal, masa bermada y núcleo compacto de calor doméstico.
+    Use a Bermed Round-Door Pastoral-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Bermed Round-Door Pastoral recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Bermed Round-Door Pastoral: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Bermed Round-Door Pastoral with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Bermed Round-Door Pastoral: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Bermed Round-Door Pastoral: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Bermed Round-Door Pastoral's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Traslada cualquier tema a domesticidad pastoral semienterrada: umbrales redondeados, proporciones bajas, materiales
-    calidos, cubierta vegetal y escala artesanal. El resultado debe comunicar refugio lento y tactil sin depender de
-    round-door pastoral burrow-home trope, licensed literary burrow-home, aldea pastoral fija o casa concreta. Conserva umbrales redondos, masa bermada,
-    calidez artesanal y proporcion contenida sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Bermed Round-Door Pastoral into a portable visual system for 5. Fantasy And
+    Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - square
   - tall

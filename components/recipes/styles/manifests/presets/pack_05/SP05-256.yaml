@@ -12,19 +12,38 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Fantasía folclórica de umbral temporal, con romance combativo, nostalgia espiritual y tensión mítica.
-  form_and_line: Contrastes de época abstractos, cortes dinámicos, gestos de persecución y bordes espirituales filosos.
-  color_palette: Rojo crepuscular, verde musgo profundo, púrpura espiritual, marfil de talismán y azul nostalgia.
-  lighting_setup: Atardecer rojizo, destellos purificadores y sombras espirituales con contraste de memoria.
-  material_texture: Fibra ritual, papel talismán, metal desgastado, tierra pigmentada y aura particulada.
-  render_quality: Aventura fantástica de largo aliento con equilibrio entre acción, comedia de fricción y melancolía.
-  spatial_distortion: Profundidad episódica, pliegues de tiempo y umbrales sugeridos sin locación obligatoria.
-  atmosphere: Nostálgica, combativa y mítica.
-  key_features: Rojo espiritual, talismán gráfico, nostalgia temporal, fricción romántica y energía folclórica.
+  aesthetic: >-
+    Inuyasha - Shrine-Well Sengoku Pursuit within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Inuyasha - Shrine-Well Sengoku Pursuit's specific style identity.
+  form_and_line: >-
+    Define Inuyasha - Shrine-Well Sengoku Pursuit through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Inuyasha - Shrine-Well Sengoku Pursuit-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Inuyasha - Shrine-Well Sengoku Pursuit recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Inuyasha - Shrine-Well Sengoku Pursuit: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Inuyasha - Shrine-Well Sengoku Pursuit with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Inuyasha - Shrine-Well Sengoku Pursuit: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Inuyasha - Shrine-Well Sengoku Pursuit: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Inuyasha - Shrine-Well Sengoku Pursuit's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática shrine-well-feudal reusable donde cualquier prompt
-    reciba folklore temporal, tensión romántica y aura purificadora sin exigir
-    locación, amenaza, arma, grupo o episodio de aventura literal.
+    Create a style-card that translates Inuyasha - Shrine-Well Sengoku Pursuit into a portable visual system for 8.
+    Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-256.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

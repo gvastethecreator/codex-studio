@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Gramática survival-horror polar con reparación de sistemas, defensa de perímetro, baliza rota y aislamiento.
-  subject_treatment: Convierte el input en técnico armado, entidad desconocida, herramienta, antena parcial o fallo de protocolo.
-  color_and_tone: Blanco grisáceo, rojo emergencia y azul metálico para jerarquía de estado crítico.
-  lighting_and_shadow: Baliza rotatoria, penumbra dominante y ventanas de visibilidad intermitente.
-  texture_and_material: Nieve compacta, acero helado, escarcha y cableado expuesto por clima extremo.
-  camera_and_composition: Nodo central, rutas de acceso y puntos de fallo identificables sin exigir torre o estación.
-  atmosphere_and_mood: Aislada, paranoica y resistente.
-  rendering_and_quality: 'Survival-outbreak gameplay screencap: signal objective, infection risk, weather cover, route pressure clear.'
+  aesthetic: >-
+    Polar Signal Tower Outbreak within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Polar Signal Tower Outbreak's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Polar Signal Tower Outbreak's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Polar Signal Tower Outbreak: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Polar Signal Tower Outbreak: legible depth, purposeful highlights, readable focal zones,
+    and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Polar Signal Tower Outbreak's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Polar Signal Tower Outbreak's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Polar Signal Tower Outbreak's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

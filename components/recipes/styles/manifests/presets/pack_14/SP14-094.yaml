@@ -13,16 +13,38 @@ tags:
   - mythic
   - cosmology
 visualDna:
-  aesthetic: Night meridian secrecy with anomaly records, obsessive study, and scholarly noir dread.
-  form_and_line: Vertical stack cues, narrow galleries, and rotating index-bridge rhythms.
-  color_palette: Ink black, brass, and parchment beige.
-  lighting_setup: Desk pools and faint celestial backlight.
-  material_texture: Leather folios, brass rails, and timber shelves.
-  render_quality: Scholarly noir concept with dense detail.
-  spatial_distortion: Tower-like interior depth with stacked perspective and sealed layers.
-  atmosphere: Obsessive study and quiet dread.
-  key_features: Meridian ledgers, index clockwork, sealed prophecy-vault cues.
-  creative_brief: Translate the input through night-meridian state secrecy, treating cosmic anomaly as classified evidence without requiring an archive tower.
+  aesthetic: >-
+    Night Meridian State Secret within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Night Meridian State Secret's specific style identity.
+  form_and_line: >-
+    Define Night Meridian State Secret through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Night Meridian State Secret-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Night Meridian State Secret recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Night Meridian State Secret: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Night Meridian State Secret with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Night Meridian State Secret: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Night Meridian State Secret: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Night Meridian State Secret's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Night Meridian State Secret into a portable visual system for 4. Mythic
+    Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - photoreal
   - playful

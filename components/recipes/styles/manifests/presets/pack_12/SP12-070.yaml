@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
 visualDna:
-  aesthetic: Gramática precision-trial de arquería mística con timing, trayectoria, control respiratorio y foco lunar.
-  subject_treatment: Reinterpreta el input como arquero espiritual, flecha de energía, diana ritual, trayectoria o scoring de precisión.
-  color_and_tone: Azul lunar, plata y violeta tenue para concentración visual sin ruido.
-  lighting_and_shadow: Luz de luna y faroles de papel para contrastes suaves y foco de objetivo.
-  texture_and_material: Madera pulida, piedra húmeda, seda ritual y marcas de práctica.
-  camera_and_composition: Trayectoria, impacto y dificultad progresiva sin exigir santuario o calle de tiro.
-  atmosphere_and_mood: Concentrada, calmada y extremadamente precisa.
-  rendering_and_quality: 'Archer-trial gameplay screencap: trajectory, impact scoring, shrine spacing, target timing clear.'
+  aesthetic: >-
+    Moonlit Shrine Archer Trials within 2. Arcane Temples & Mythic Realms: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Moonlit Shrine Archer Trials's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Moonlit Shrine Archer Trials's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Moonlit Shrine Archer Trials: clear tonal hierarchy, intentional contrast,
+    and category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Moonlit Shrine Archer Trials: legible depth, purposeful highlights, readable focal zones,
+    and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Moonlit Shrine Archer Trials's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Moonlit Shrine Archer Trials's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Moonlit Shrine Archer Trials's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 2. Arcane Temples & Mythic Realms style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

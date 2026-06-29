@@ -13,32 +13,36 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Pop-cosmic anime exuberance where scale elasticity, saturated color, impossible spectacle, and
-    hidden sentiment collide
+    Bubblegum Cosmic Overdrive within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Bubblegum Cosmic Overdrive's specific style identity.
   form_and_line: >-
-    Líneas dinámicas estilizadas, poses expansivas, anatomía de acción expresiva no literal y curvas
-    pop de alto impulso.
-  color_palette: Rosa bubblegum, azul eléctrico, amarillo solar, violeta espacial y blanco de flare emocional.
+    Define Bubblegum Cosmic Overdrive through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Bubblegum Cosmic Overdrive-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Resplandores cósmicos saturados, contraluces de explosión y gradientes pop de alto impacto
-    cromático.
+    Use lighting that makes Bubblegum Cosmic Overdrive recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
   material_texture: >-
-    Superficie brillante cartoon-tech, bloom de energía, trazas de velocidad y detalles técnicos
-    simplificados.
+    Use materials and textures that reinforce Bubblegum Cosmic Overdrive: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
   render_quality: >-
-    Espectáculo anime de escala mutable con lectura pop inmediata y dramatismo afectivo debajo del
-    caos.
+    Render Bubblegum Cosmic Overdrive with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Warps de tamaño, perspectiva juguetona y composición que alterna micro y macro en el mismo
-    frame.
-  atmosphere: Exultante, extraña y conmovedora, de caos colorido con corazón.
+    Use spatial behavior that fits Bubblegum Cosmic Overdrive: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Bubblegum Cosmic Overdrive: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
   key_features: >-
-    Saturated pop color, mutable scale, youthful energy, impossible spectacle, elastic geometry, and
-    heart under chromatic chaos
+    Prioritize Bubblegum Cosmic Overdrive's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Use bubblegum cosmic overdrive as elastic-pop scale grammar. Any prompt should feel huge,
-    joyful, impossible, and secretly sincere. Machines, pilots, galaxies, roles, and fixed
-    worldbuilding are optional.
+    Create a style-card that translates Bubblegum Cosmic Overdrive into a portable visual system for 7. Mecha &
+    Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -56,8 +60,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-239.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

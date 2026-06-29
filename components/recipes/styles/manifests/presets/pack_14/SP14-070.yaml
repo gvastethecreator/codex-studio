@@ -13,16 +13,37 @@ tags:
   - mythic
   - norse-myth
 visualDna:
-  aesthetic: Valkyrie soul departure where funeral honor and battle summons share one divine logistics.
-  form_and_line: Pier-arm cues, wing standards, and high cliff ramp geometry.
-  color_palette: Aurora green, steel, and midnight blue.
-  lighting_setup: Aurora backlight and wind-burned fire pits.
-  material_texture: Frosted iron, rope rigging, and carved oak.
-  render_quality: Dramatic aerial concept frame.
-  spatial_distortion: Cliff-edge depth into cloud-sea distance.
-  atmosphere: Heroic melancholy and divine logistics.
-  key_features: Valkyrie mooring cues, lantern cranes, oath pylons.
-  creative_brief: Recast the input through valkyrie soul departure, making exit feel both funeral honor and battle summons without requiring a dock.
+  aesthetic: >-
+    Valkyrie Soul Departure within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Valkyrie Soul Departure's specific style identity.
+  form_and_line: >-
+    Define Valkyrie Soul Departure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Valkyrie Soul Departure-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Valkyrie Soul Departure recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Valkyrie Soul Departure: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Valkyrie Soul Departure with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Valkyrie Soul Departure: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Valkyrie Soul Departure: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Valkyrie Soul Departure's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Valkyrie Soul Departure into a portable visual system for 8. Mythic Norse Sagas.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - comedy

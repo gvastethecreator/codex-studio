@@ -13,16 +13,38 @@ tags:
   - mythic
   - norse-myth
 visualDna:
-  aesthetic: Norse mythic forge-noir where worldroot prophecy, oath rings, and apocalyptic craft shape the input.
-  form_and_line: Rune-carved anvil cues, layered fur silhouettes, and trunk-to-vault verticality.
-  color_palette: Frost steel, ember orange, and raven black.
-  lighting_setup: Forge core glow against glacial overcast rim light.
-  material_texture: Hammered iron, carved ash wood, snow crust, and smoked leather.
-  render_quality: High-detail mythic key art with robust silhouette legibility.
-  spatial_distortion: Radial forge logic anchored by worldroot pillars and descending runic steps.
-  atmosphere: Stoic resolve, ancestral weight, and apocalyptic preparedness.
-  key_features: Rune anvils, oath rings, ravens, worldroot sap brazier cues.
-  creative_brief: Convert any input through worldroot oathforged prophecy, as if names, debts, tools, bodies, or treaties were struck before the last winter. Preserve rune-forge weight, oath-ring gravity, ash-wood verticality, and apocalyptic craft without requiring weapons, ravens, world trees, warriors, or a literal forge scene.
+  aesthetic: >-
+    Worldroot Oathforged Prophecy within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Worldroot Oathforged Prophecy's specific style identity.
+  form_and_line: >-
+    Define Worldroot Oathforged Prophecy through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Worldroot Oathforged Prophecy-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Worldroot Oathforged Prophecy recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Worldroot Oathforged Prophecy: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Worldroot Oathforged Prophecy with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Worldroot Oathforged Prophecy: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Worldroot Oathforged Prophecy: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Worldroot Oathforged Prophecy's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Worldroot Oathforged Prophecy into a portable visual system for 3. Mythic
+    Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - photoreal
   - tropical

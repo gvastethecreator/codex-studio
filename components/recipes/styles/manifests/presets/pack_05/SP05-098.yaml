@@ -12,19 +12,38 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Monster-nation bright fantasy, with diplomatic optimism, polished diversity, cooperative growth, and sun-washed worldbuilding.
-  form_and_line: Rounded approachable contours, clean fantasy trims, civic pattern rhythm, soft power silhouettes, and modular growth shapes.
-  color_palette: Slime blue, spring green, warm gold, soft stone gray, sky cyan, and celebratory banner reds.
-  lighting_setup: Friendly daylight, optimistic rim glow, sparkling civic highlights, and gentle magical bounce.
-  material_texture: Glossy gel accents, clean timber grain, polished stone, cloth banners, soft particles, and bright settlement polish.
-  render_quality: Upbeat fantasy anime finish with high readability, communal detail, and constantly improving world texture.
-  spatial_distortion: Expanding modular composition, cooperative scale layering, and open civic depth without fixed architecture.
-  atmosphere: Upbeat, communal, optimistic, vibrant.
-  key_features: Cooperative brightness, civic fantasy polish, friendly diversity, growth motifs, diplomatic warmth.
+  aesthetic: >-
+    Slime Isekai Monster-Nation Bright Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Slime Isekai Monster-Nation Bright Fantasy's specific style identity.
+  form_and_line: >-
+    Define Slime Isekai Monster-Nation Bright Fantasy through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Slime Isekai Monster-Nation Bright Fantasy-specific palette with clear dominant, secondary, and accent roles.
+    Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Slime Isekai Monster-Nation Bright Fantasy recognizable: purposeful key, rim, bounce,
+    shadow, and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Slime Isekai Monster-Nation Bright Fantasy: surface response, grain,
+    patina, polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Slime Isekai Monster-Nation Bright Fantasy with high production clarity, strong silhouette reads, clean
+    detail priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Slime Isekai Monster-Nation Bright Fantasy: perspective, compression, exaggeration,
+    or depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Slime Isekai Monster-Nation Bright Fantasy: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Slime Isekai Monster-Nation Bright Fantasy's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Make any prompt feel like optimistic fantasy nation-building: emphasize
-    cooperative brightness, rounded friendliness, and constructive growth
-    without requiring a specific species, settlement, alliance, or ruler.
+    Create a style-card that translates Slime Isekai Monster-Nation Bright Fantasy into a portable visual system for 8.
+    Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-098.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

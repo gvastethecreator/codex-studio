@@ -12,22 +12,38 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Vernaculo fungico encantado con masa bulbosa y logica ecologica miniatura, portable mas alla del bosque de cuento.
-  form_and_line: Columnas tipo tallo, cubiertas domo-cap, intrados acanalado de laminas y transiciones organicas de volumen hinchado.
+  aesthetic: >-
+    Fungal Vernacular Miniature within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Fungal Vernacular Miniature's specific style identity.
+  form_and_line: >-
+    Define Fungal Vernacular Miniature through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
   color_palette: >-
-    Toadstool red, cream speckling, soft stem white, spore brown, moss green, muted fairy blue accents, and warm
-    understory amber
-  lighting_setup: Luz filtrada moteada, relleno frio de sombra y acentos bioluminiscentes sutiles en bordes y cavidades bajas.
-  material_texture: Piel fungica mate, moteado de sombrero, costillas de lamina, manto musgoso humedo y polvo fino de esporas.
-  render_quality: Fantasia storybook con curvatura organica fiel y detalle tactil de micromaterial biologico.
-  spatial_distortion: Cap-and-stem volumetric swelling with softened miniature proportion drift
-  atmosphere: Encantada, protegida y diminuta, como un ecosistema construido desde crecimiento biologico.
-  key_features: Siluetas cap-dome, tallos estructurales, aperturas circulares, bases humedas y jerarquia de cluster biologico.
+    Use a Fungal Vernacular Miniature-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Fungal Vernacular Miniature recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Fungal Vernacular Miniature: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Fungal Vernacular Miniature with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Fungal Vernacular Miniature: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Fungal Vernacular Miniature: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Fungal Vernacular Miniature's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Usa morfologia fungica como estilo: jerarquia cap-stem, piel moteada, laminas acanaladas, musgo humedo y escala
-    miniatura ecologica. El sujeto puede variar; la logica biologica y bulbosa debe mandar sin exigir suelo de bosque,
-    anillo de setas, cottage fae o cluster narrativo fijo. Conserva jerarquia cap-stem, microescala humeda y tactilidad
-    biologica sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Fungal Vernacular Miniature into a portable visual system for 6. Toy Craft And
+    Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - square
 assets:

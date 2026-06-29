@@ -12,27 +12,37 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Maximalismo curatorial de alta saturacion, donde superposicion y coleccion son gramatica base.
+  aesthetic: >-
+    Maximalist Decor within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Maximalist Decor's specific style identity.
   form_and_line: >-
-    Capas sucesivas de patron, marcos densos, textiles sobre textiles y ocupacion casi total de
-    superficies.
+    Define Maximalist Decor through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
   color_palette: >-
-    Joyas saturadas (esmeralda, zafiro, rubi, amatista), teal pavo y coral como disonancias
-    controladas.
-  lighting_setup: Red calida de brillos puntuales, luces de cuadro, reflejos de cristal y ambientes regulados por dimmer.
+    Use a Maximalist Decor-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Maximalist Decor recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
   material_texture: >-
-    Terciopelo, papeles estampados, alfombras superpuestas, sedas bordadas, dorados y bandas graficas
-    visible.
+    Use materials and textures that reinforce Maximalist Decor: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
   render_quality: >-
-    Densidad opulenta legible, caos controlado y riqueza material acumulativa sin perdida de
-    jerarquia.
-  spatial_distortion: Profundidad estable con compresion visual por saturacion de objetos y patrones.
-  atmosphere: Efervescente, personal, exuberante y deliberadamente excesiva.
-  key_features: Campo galeria saturado, mezcla agresiva de patron, capas textiles y acumulacion curatorial.
+    Render Maximalist Decor with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Maximalist Decor: perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Maximalist Decor: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Maximalist Decor's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Convierte cualquier input en una composicion maximalista de saturacion cromatica, coleccion
-    curatorial y capas textiles exuberantes. Debe conservar jerarquia y criterio de display, no
-    volverse simple ruido decorativo ni depender de una sala repleta especifica.
+    Create a style-card that translates Maximalist Decor into a portable visual system for 1. Interior Design Systems.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - empty
   - white

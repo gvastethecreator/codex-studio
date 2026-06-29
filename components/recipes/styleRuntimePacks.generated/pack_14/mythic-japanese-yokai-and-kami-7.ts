@@ -9,19 +9,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Mythic — Japanese Yokai & Kami',
     negativePrompt: 'photoreal, anime-chibi, urban-neon, slapstick, watermark, text, logo',
     style: {
-      aesthetic: 'Sacred foxfire threshold blending shrine dignity with sly yokai presence.',
-      form_and_line: 'Receding torii cues, lantern braids, and fox-mask shrine sigils.',
-      color_palette: 'Vermilion lacquer, pine shadow green, and foxfire cyan.',
-      lighting_setup: 'Mist-soft moonlight punctuated by floating spirit flames near gates.',
-      material_texture: 'Rain-dark cedar, worn stone steps, paper talismans, and lacquered beams.',
-      render_quality: 'Atmospheric premium matte art with crisp shrine iconography.',
+      aesthetic:
+        "Whispering Foxfire Threshold within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Whispering Foxfire Threshold's specific style identity.",
+      form_and_line:
+        'Define Whispering Foxfire Threshold through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Whispering Foxfire Threshold-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Whispering Foxfire Threshold recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Whispering Foxfire Threshold: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Whispering Foxfire Threshold with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Narrowing gate-sequence depth guiding the eye toward hidden pact energy.',
-      atmosphere: 'Reverence, subtle mischief, and sacred suspense.',
+        'Use spatial behavior that fits Whispering Foxfire Threshold: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Whispering Foxfire Threshold: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Kitsune statue cues, warding charms, spirit lantern trail, purification basin hints.',
+        "Prioritize Whispering Foxfire Threshold's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through whispering foxfire threshold, marking deeper pacts with unseen beings without requiring a shrine passage.',
+        'Create a style-card that translates Whispering Foxfire Threshold into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -32,19 +39,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, comedic-goof, cyberpunk-signage, futuristic-vehicles, watermark, text, logo',
     style: {
       aesthetic:
-        'Kappa water jurisprudence where river spirits negotiate law through rain-soaked diplomacy.',
-      form_and_line: 'Stone canal grid cues, bridge arches, and magistrate pavilion rectangles.',
-      color_palette: 'Moss jade, wet slate, and candle gold.',
-      lighting_setup: 'Overcast dusk with reflected water highlights under low paper lamps.',
-      material_texture: 'Slick river stone, soaked timber rails, ceramic seals, and reed rope.',
+        "Kappa Water Jurisprudence within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Kappa Water Jurisprudence's specific style identity.",
+      form_and_line:
+        'Define Kappa Water Jurisprudence through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Kappa Water Jurisprudence-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Kappa Water Jurisprudence recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Kappa Water Jurisprudence: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Detailed environment concept balancing civic realism with supernatural accents.',
+        'Render Kappa Water Jurisprudence with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Multi-bridge perspective layering upper walkways over submerged symbolic depth.',
-      atmosphere: 'Bureaucratic tension, folkloric wit, and rain-soaked diplomacy.',
-      key_features: 'Canal-court cues, spirit offering docks, turtle-shell ledgers, omen buoys.',
+        'Use spatial behavior that fits Kappa Water Jurisprudence: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Kappa Water Jurisprudence: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Kappa Water Jurisprudence's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply kappa water jurisprudence to any input: wet civic ritual, moss-jade bureaucracy, bridge-like layering, ceramic seals, reed-rope tension, and river-spirit wit should make the style feel negotiated by water law without forcing canals, courts, yokai disputes, bridges, or turtle forms.',
+        'Create a style-card that translates Kappa Water Jurisprudence into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -55,19 +68,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, modern-concert-tech, comedic, fluorescent-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Celestial kagura motion invoking storm kami through disciplined theatrical elegance.',
-      form_and_line: 'Raised stage cues, fan-like drape geometry, and braided ritual ropes.',
-      color_palette: 'Ink black, moon silver, and crimson silk.',
-      lighting_setup: 'Spotlight-like moon shafts and ritual braziers framing masked performers.',
+        "Eight Storm Kagura Motion within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Eight Storm Kagura Motion's specific style identity.",
+      form_and_line:
+        'Define Eight Storm Kagura Motion through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Eight Storm Kagura Motion-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Eight Storm Kagura Motion recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Polished cypress floor, silk costumes, bronze bells, and rice-paper screens.',
-      render_quality: 'High-end performance key art with crisp silhouette language.',
+        'Use materials and textures that reinforce Eight Storm Kagura Motion: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Eight Storm Kagura Motion with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Stage-forward composition with layered shadow depth and divine weather corridors.',
-      atmosphere: 'Controlled ecstasy, divine attention, and formal danger.',
-      key_features: 'Kagura masks, storm drums, sacred mirrors, rope-bounded dance-ring cues.',
+        'Use spatial behavior that fits Eight Storm Kagura Motion: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Eight Storm Kagura Motion: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Eight Storm Kagura Motion's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform any input through eight-storm kagura motion, where disciplined gesture opens temporary corridors to weather gods. Use fan geometry, braided rope rhythm, moon-silver spotlighting, storm-drum pressure, and silk-like motion without requiring dancers, masks, stages, shrines, or performance scenes.',
+        'Create a style-card that translates Eight Storm Kagura Motion into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -78,18 +97,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, cartoon-cute, cyberpunk-neon, modern-signage, watermark, text, logo',
     style: {
       aesthetic:
-        'Paper-lantern exorcism protocol with folk wards, shrine noir, and ritual urgency.',
+        "Paper Lantern Exorcism Protocol within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Paper Lantern Exorcism Protocol's specific style identity.",
       form_and_line:
-        'Narrow lane cues, stacked eaves, and talisman grids over sliding-door shapes.',
-      color_palette: 'Vermilion, soot black, and lantern amber.',
-      lighting_setup: 'Dense lantern pools and rim moonlight on roof edges.',
-      material_texture: 'Oiled wood, rice paper, lacquer seals, and worn stone drains.',
-      render_quality: 'Cinematic matte painting with sharp atmosphere depth.',
-      spatial_distortion: 'Compressed perspective with layered shrine-gate cues.',
-      atmosphere: 'Tense vigilance, ritual urgency, and whispering folklore.',
-      key_features: 'Exorcist ward tags, fox masks, spirit bait altar cues.',
+        'Define Paper Lantern Exorcism Protocol through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Paper Lantern Exorcism Protocol-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Paper Lantern Exorcism Protocol recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Paper Lantern Exorcism Protocol: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Paper Lantern Exorcism Protocol with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Paper Lantern Exorcism Protocol: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Paper Lantern Exorcism Protocol: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Paper Lantern Exorcism Protocol's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret the input through paper-lantern exorcism protocol, using wards and purification cues without requiring an alley.',
+        'Create a style-card that translates Paper Lantern Exorcism Protocol into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -99,17 +125,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, kawaii, urban-neon, sci-fi-tech, watermark, text, logo',
     style: {
       aesthetic:
-        'Winter shrine boundary seals against spirit incursions, quiet danger, and seasonal austerity.',
-      form_and_line: 'Repeating boundary pillar cues, rope arcs, and stepped approach paths.',
-      color_palette: 'Snow white, cedar brown, and indigo dusk.',
-      lighting_setup: 'Blue-hour snowfall with sparse fire basins.',
-      material_texture: 'Frosted granite, braided shimenawa rope, and wet timber gates.',
-      render_quality: 'High-detail concept frame with ritual clarity.',
-      spatial_distortion: 'Long path vanishing line through torii-like layers.',
-      atmosphere: 'Quiet danger, reverence, and seasonal austerity.',
-      key_features: 'Boundary stones, warning talismans, guardian fox statue cues.',
+        "Snow Shrine Boundary Seals within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Snow Shrine Boundary Seals's specific style identity.",
+      form_and_line:
+        'Define Snow Shrine Boundary Seals through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Snow Shrine Boundary Seals-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Snow Shrine Boundary Seals recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Snow Shrine Boundary Seals: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Snow Shrine Boundary Seals with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Snow Shrine Boundary Seals: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Snow Shrine Boundary Seals: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Snow Shrine Boundary Seals's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply snow-shrine boundary seals to the input, making winter spirits test sacred limits without requiring a shrine border.',
+        'Create a style-card that translates Snow Shrine Boundary Seals into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -120,17 +154,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, goofy-comedy, fluorescent-cyber, modern-brands, watermark, text, logo',
     style: {
       aesthetic:
-        'Rain-wet yokai bargain language where spirits and humans barter under strict symbolic codes.',
-      form_and_line: 'Covered stall cues, hanging charms, and zigzag wet-lane rhythms.',
-      color_palette: 'Petrol blue, candle gold, and muted crimson.',
-      lighting_setup: 'Rain reflections and lantern haze.',
-      material_texture: 'Bamboo awnings, lacquer trays, paper amulets, and puddled stone.',
-      render_quality: 'Rich market scene with strong readability.',
-      spatial_distortion: 'Layered stall-like depth receding into fog.',
-      atmosphere: 'Suspicion, curiosity, and fragile coexistence.',
-      key_features: 'Spirit vendor masks, warded stall cues, rain talisman ribbons.',
+        "Rain-Wet Yokai Bargain within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Rain-Wet Yokai Bargain's specific style identity.",
+      form_and_line:
+        'Define Rain-Wet Yokai Bargain through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Rain-Wet Yokai Bargain-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Rain-Wet Yokai Bargain recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Rain-Wet Yokai Bargain: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Rain-Wet Yokai Bargain with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Rain-Wet Yokai Bargain: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Rain-Wet Yokai Bargain: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Rain-Wet Yokai Bargain's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through rain-wet yokai bargain, where every exchange feels symbolically priced without requiring a market.',
+        'Create a style-card that translates Rain-Wet Yokai Bargain into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -139,17 +181,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Mythic — Japanese Yokai & Kami',
     negativePrompt: 'photoreal, bright-pop, sci-fi-neon, slapstick, watermark, text, logo',
     style: {
-      aesthetic: 'Hungry ghost bell shelter where sound becomes mercy for wandering spirits.',
-      form_and_line: 'Vertical bell-pagoda cues, ringed courtyard rhythms, and ritual rope lines.',
-      color_palette: 'Iron gray, incense amber, and moss green.',
-      lighting_setup: 'Dawn mist with directional bell-chamber shafts.',
-      material_texture: 'Aged bronze, damp wood, mossed stone, and woven prayer cords.',
-      render_quality: 'Dramatic environment concept with symbolic focal points.',
-      spatial_distortion: 'Bell-centric composition with descending terrace rings.',
-      atmosphere: 'Melancholy mercy, disciplined ritual, and spiritual gravity.',
-      key_features: 'Giant temple bell, spirit tablets, offering lantern corridor cues.',
+      aesthetic:
+        "Hungry Ghost Bell Shelter within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Hungry Ghost Bell Shelter's specific style identity.",
+      form_and_line:
+        'Define Hungry Ghost Bell Shelter through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Hungry Ghost Bell Shelter-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Hungry Ghost Bell Shelter recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Hungry Ghost Bell Shelter: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Hungry Ghost Bell Shelter with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Hungry Ghost Bell Shelter: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Hungry Ghost Bell Shelter: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Hungry Ghost Bell Shelter's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform the input through hungry-ghost bell shelter, making resonance feel protective without requiring a tower.',
+        'Create a style-card that translates Hungry Ghost Bell Shelter into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -159,17 +210,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, comic-style, cyber-neon, modern-city, watermark, text, logo',
     style: {
       aesthetic:
-        'Moon carp vow crossing where river spirits test sincerity through calm transformation.',
-      form_and_line: 'Arched span cues, prayer posts, and river-axis symmetry.',
-      color_palette: 'Moon silver, ink blue, and temple red.',
-      lighting_setup: 'Reflected moonlight with floating votive lanterns.',
-      material_texture: 'Wet cedar planks, river stones, and paper streamers.',
-      render_quality: 'Elegant key art with nuanced water rendering.',
-      spatial_distortion: 'Curved bridge-like perspective into shrine silhouette.',
-      atmosphere: 'Quiet devotion, omen-reading, and transformational calm.',
-      key_features: 'Spirit carp wakes, bridge talismans, vow lantern flotillas.',
+        "Moon Carp Vow Crossing within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Moon Carp Vow Crossing's specific style identity.",
+      form_and_line:
+        'Define Moon Carp Vow Crossing through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Moon Carp Vow Crossing-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Moon Carp Vow Crossing recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Moon Carp Vow Crossing: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Moon Carp Vow Crossing with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Moon Carp Vow Crossing: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Moon Carp Vow Crossing: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Moon Carp Vow Crossing's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply moon-carp vow crossing to the input, testing sincerity through reflected water without requiring a bridge.',
+        'Create a style-card that translates Moon Carp Vow Crossing into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -180,17 +239,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, cheerful-cartoon, cyberpunk-city, modern-hiking-gear, watermark, text, logo',
     style: {
       aesthetic:
-        'Serpent-kami oath path with protective shrine cues, vertical peril, and sacred caution.',
-      form_and_line: 'Zigzag cliff stair cues, cliff torii, and coiling carved balustrades.',
-      color_palette: 'Slate green, fog gray, and cinnabar accents.',
-      lighting_setup: 'Side-lit fog banks and shrine candle nodes.',
-      material_texture: 'Eroded rock, lacquered wood rails, and damp rope bindings.',
-      render_quality: 'Atmospheric concept art with perilous path legibility.',
-      spatial_distortion: 'Vertical zigzag composition over abyss-like depth.',
-      atmosphere: 'Awe, vertigo, and sacred caution.',
-      key_features: 'Serpent carvings, oath plaques, cliffside spirit altar cues.',
+        "Serpent Kami Oath Path within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Serpent Kami Oath Path's specific style identity.",
+      form_and_line:
+        'Define Serpent Kami Oath Path through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Serpent Kami Oath Path-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Serpent Kami Oath Path recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Serpent Kami Oath Path: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Serpent Kami Oath Path with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Serpent Kami Oath Path: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Serpent Kami Oath Path: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Serpent Kami Oath Path's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret the input through serpent-kami oath path, renewing a pact with river-serpent deity without requiring a mountain trail.',
+        'Create a style-card that translates Serpent Kami Oath Path into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -200,17 +267,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, festival-pop, neon-club, modern-vehicles, watermark, text, logo',
     style: {
       aesthetic:
-        'Hundred-mask ritual function where identities dissolve into sacred role and petition.',
-      form_and_line: 'Processional axis cues, mask columns, and banner rhythms.',
-      color_palette: 'Ash black, lacquer red, and pale lantern gold.',
-      lighting_setup: 'Procession lantern chain with deep background haze.',
-      material_texture: 'Carved masks, silk banners, and polished wooden palanquins.',
-      render_quality: 'Story-rich cinematic tableau.',
-      spatial_distortion: 'Forward motion perspective with repeating ceremonial forms.',
-      atmosphere: 'Collective trance, secrecy, and sacred order.',
-      key_features: 'Mask bearers, petition scrolls, drum-ritual cadence.',
+        "Hundred Mask Ritual Function within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Hundred Mask Ritual Function's specific style identity.",
+      form_and_line:
+        'Define Hundred Mask Ritual Function through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Hundred Mask Ritual Function-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Hundred Mask Ritual Function recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Hundred Mask Ritual Function: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Hundred Mask Ritual Function with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Hundred Mask Ritual Function: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Hundred Mask Ritual Function: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Hundred Mask Ritual Function's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through hundred-mask ritual function, letting identity dissolve into sacred role without requiring a parade.',
+        'Create a style-card that translates Hundred Mask Ritual Function into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -220,17 +295,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, anime-cute, cyberpunk-ui, slapstick, watermark, text, logo',
     style: {
       aesthetic:
-        'Borrowed-faces fate archive where lost identities become spirit masks and ambiguous memory.',
-      form_and_line: 'Circular archive cues, mask alcove grids, and mirror corridors.',
-      color_palette: 'Pearl gray, ink black, and candle saffron.',
-      lighting_setup: 'Low interior candle halos and mirrored bounce light.',
-      material_texture: 'Lacquer masks, cedar shelves, and soot-marked paper records.',
-      render_quality: 'Intimate symbolic scene with high detail density.',
-      spatial_distortion: 'Ring-like geometry focusing on a central identity altar.',
-      atmosphere: 'Introspective dread, memory ritual, and identity ambiguity.',
-      key_features: 'Mask repositories, confession box cues, mirror purification pools.',
+        "Borrowed Faces Fate Archive within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Borrowed Faces Fate Archive's specific style identity.",
+      form_and_line:
+        'Define Borrowed Faces Fate Archive through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Borrowed Faces Fate Archive-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Borrowed Faces Fate Archive recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Borrowed Faces Fate Archive: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Borrowed Faces Fate Archive with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Borrowed Faces Fate Archive: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Borrowed Faces Fate Archive: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Borrowed Faces Fate Archive's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply borrowed-faces fate archive to the input, making identity negotiable without requiring a shrine.',
+        'Create a style-card that translates Borrowed Faces Fate Archive into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -240,17 +323,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, comedic, neon-club, dieselpunk-war, watermark, text, logo',
     style: {
       aesthetic:
-        'Cormorant kami appeasement where labor, tide, and avian river spirits share ritual timing.',
-      form_and_line: 'Jetty row cues, lantern masts, and shrine breakwater arcs.',
-      color_palette: 'Marine navy, ember orange, and weathered wood brown.',
-      lighting_setup: 'Night harbor braziers and lantern wake reflections.',
-      material_texture: 'Tarred ropes, wet timber, lacquer charms, and salt-dark stone.',
-      render_quality: 'Detailed coastal concept with strong silhouette rhythm.',
-      spatial_distortion: 'Harbor-like depth with receding boat lane rhythms.',
-      atmosphere: 'Tidal solemnity, labor devotion, and protective folklore.',
-      key_features: 'Spirit cormorant perches, offering dock cues, tide ward totems.',
+        "Cormorant Kami Appeasement within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cormorant Kami Appeasement's specific style identity.",
+      form_and_line:
+        'Define Cormorant Kami Appeasement through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Cormorant Kami Appeasement-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Cormorant Kami Appeasement recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Cormorant Kami Appeasement: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Cormorant Kami Appeasement with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Cormorant Kami Appeasement: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Cormorant Kami Appeasement: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Cormorant Kami Appeasement's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Rework the input through cormorant kami appeasement, making each effort begin with river-spirit respect without requiring a harbor.',
+        'Create a style-card that translates Cormorant Kami Appeasement into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -261,18 +352,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, goofy-style, cyberpunk-neon, modern-courtroom, watermark, text, logo',
     style: {
       aesthetic:
-        'Willow fox oath arbitration where lies alter shadow and fox spirits judge deception.',
-      form_and_line: 'Courtyard-rectangle cues, willow curtains, and raised tribunal platform.',
-      color_palette: 'Willow green, moon gray, and lacquer crimson.',
-      lighting_setup: 'Soft moon canopy with focused altar lanterns.',
-      material_texture: 'Polished wood, hanging willow fibers, and engraved stone tablets.',
-      render_quality: 'Narrative concept art with formal composition.',
+        "Willow Fox Oath Arbitration within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Willow Fox Oath Arbitration's specific style identity.",
+      form_and_line:
+        'Define Willow Fox Oath Arbitration through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Willow Fox Oath Arbitration-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Willow Fox Oath Arbitration recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Willow Fox Oath Arbitration: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Willow Fox Oath Arbitration with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Centered perspective emphasizing ritual hierarchy and shadow distortion.',
-      atmosphere: 'Elegant menace, legal mysticism, and quiet negotiation.',
-      key_features: 'Fox judge masks, oath stones, incense testimony braziers.',
+        'Use spatial behavior that fits Willow Fox Oath Arbitration: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Willow Fox Oath Arbitration: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Willow Fox Oath Arbitration's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform the input through willow fox oath arbitration, where deception visibly changes shadow without requiring a court.',
+        'Create a style-card that translates Willow Fox Oath Arbitration into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -282,17 +380,26 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, bright-cartoon, sci-fi-city, modern-military, watermark, text, logo',
     style: {
-      aesthetic: 'Storm drum weather command where cadence summons storm kami for protection.',
-      form_and_line: 'Cliff pass gate cues, drum towers, and rope-bound warning posts.',
-      color_palette: 'Slate blue, thunder white, and charcoal black.',
-      lighting_setup: 'Pre-storm sky flashes and brazier counterlight.',
-      material_texture: 'Rain-soaked rock, stretched hide drums, and weathered timber pylons.',
-      render_quality: 'Dynamic weather concept with strong environmental motion.',
-      spatial_distortion: 'Diagonal pass-like perspective amplifying wind force.',
-      atmosphere: 'Urgent preparation, sacred rhythm, and climatic tension.',
-      key_features: 'Thunder drums, storm wards, cliff shrine sentry cues.',
+      aesthetic:
+        "Storm Drum Weather Command within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Storm Drum Weather Command's specific style identity.",
+      form_and_line:
+        'Define Storm Drum Weather Command through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Storm Drum Weather Command-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Storm Drum Weather Command recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Storm Drum Weather Command: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Storm Drum Weather Command with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Storm Drum Weather Command: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Storm Drum Weather Command: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Storm Drum Weather Command's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply storm-drum weather command to the input, making rhythm control weather without requiring a mountain pass.',
+        'Create a style-card that translates Storm Drum Weather Command into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -302,17 +409,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, comic-fun, cyber-neon, modern-spa, watermark, text, logo',
     style: {
       aesthetic:
-        'Dawn purification silence where first light washes spirit residue into calm transition.',
-      form_and_line: 'Basin terrace cues, stone channels, and radial stepping stones.',
-      color_palette: 'Pale jade, dawn peach, and temple wood umber.',
-      lighting_setup: 'Sunrise edge light and mist diffusion over water surfaces.',
-      material_texture: 'Smooth river stone, carved bamboo spouts, and linen prayer cloth.',
-      render_quality: 'Calm high-end concept illustration with refined mood control.',
-      spatial_distortion: 'Gentle concentric geometry centered on a water-altar cue.',
-      atmosphere: 'Renewal, relief, and sacred transition.',
-      key_features: 'Purification ladles, spirit ash channels, dawn prayer plaque cues.',
+        "Dawn Purification Silence within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Dawn Purification Silence's specific style identity.",
+      form_and_line:
+        'Define Dawn Purification Silence through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Dawn Purification Silence-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Dawn Purification Silence recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Dawn Purification Silence: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Dawn Purification Silence with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Dawn Purification Silence: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Dawn Purification Silence: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Dawn Purification Silence's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through dawn purification silence, washing night hauntings into morning calm without requiring a basin.',
+        'Create a style-card that translates Dawn Purification Silence into a portable visual system for 7. Mythic Japanese Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

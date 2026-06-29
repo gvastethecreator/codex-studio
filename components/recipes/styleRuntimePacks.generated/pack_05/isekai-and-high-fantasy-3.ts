@@ -11,24 +11,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Afterquest melancholy fantasy, with quiet post-heroic light, long memory, restrained spellcraft, and time-softened grief.',
+        "Frieren Afterquest Melancholy Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Frieren Afterquest Melancholy Fantasy's specific style identity.",
       form_and_line:
-        'Gentle contours, delicate trim, small gesture emphasis, wide breathing spaces, and low-conflict silhouette rhythm.',
+        'Define Frieren Afterquest Melancholy Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Pale sky blue, sage green, soft wheat gold, faded violet, pearl white, and warm memory amber.',
+        'Use a Frieren Afterquest Melancholy Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Diffuse morning light, slow rim glow, transparent magical motes, and subtle shifts that make time visible.',
+        'Use lighting that makes Frieren Afterquest Melancholy Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Soft cloth grain, weathered parchment, grasslike brush texture, translucent particles, and watercolor-like cel softness.',
+        'Use materials and textures that reinforce Frieren Afterquest Melancholy Fantasy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Serene fantasy anime finish with high restraint, lyrical clarity, and emotional negative space.',
+        'Render Frieren Afterquest Melancholy Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Open horizontal breathing room, postcard stillness, and time-depth layering through light rather than action.',
-      atmosphere: 'Reflective, serene, melancholic, timeless.',
+        'Use spatial behavior that fits Frieren Afterquest Melancholy Fantasy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Frieren Afterquest Melancholy Fantasy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Post-heroic quiet, memory light, soft horizon, gentle spellcraft, gratitude-through-distance.',
+        "Prioritize Frieren Afterquest Melancholy Fantasy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Give any prompt afterquest melancholy: let light carry memory, let space breathe, and let magic feel almost incidental, avoiding fixed roads, groups, rituals, landscapes, or aftermath scenes.',
+        'Create a style-card that translates Frieren Afterquest Melancholy Fantasy into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -39,24 +40,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Defensive underdog fantasy, with resilience, grit, layered mistrust, protective geometry, and forward-moving defiance.',
+        "Shield Hero Defensive Underdog Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Shield Hero Defensive Underdog Fantasy's specific style identity.",
       form_and_line:
-        'Broad blocking shapes, guarded silhouettes, nested arcs, scarred contour weight, and stance-like compositional stability.',
+        'Define Shield Hero Defensive Underdog Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Burnished bronze, storm blue, mud brown, ember red, wounded violet, and hard steel highlights.',
+        'Use a Shield Hero Defensive Underdog Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Low defensive glow, side-lit grit, hard edge rims, and ember accents that make endurance visible.',
+        'Use lighting that makes Shield Hero Defensive Underdog Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Scratched metal, rough cloth, cracked stone grain, soot glaze, and protective magic particles.',
+        'Use materials and textures that reinforce Shield Hero Defensive Underdog Fantasy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Gritty fantasy anime polish with tactile defense logic, emotional resilience, and clear silhouette weight.',
+        'Render Shield Hero Defensive Underdog Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Forward pressure against heavy opposition, layered barriers, and compressed depth that makes survival active.',
-      atmosphere: 'Determined, defensive, resilient, betrayed.',
+        'Use spatial behavior that fits Shield Hero Defensive Underdog Fantasy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Shield Hero Defensive Underdog Fantasy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Protective geometry, underdog grit, barrier layering, resilient glow, distrust-to-defiance tension.',
+        "Prioritize Shield Hero Defensive Underdog Fantasy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Render any prompt as defense becoming motion: use barrier geometry, scarred material texture, and hard-earned glow so resilience reads visually without requiring a literal defensive artifact, group, kingdom, curse, or disaster.',
+        'Create a style-card that translates Shield Hero Defensive Underdog Fantasy into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -67,24 +69,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Gastronomía fantástica funcional, ecología aplicada, humor práctico y apetito técnico como dirección visual.',
+        "Delicious in Dungeon - Stove-Top Monster Cuisine within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Delicious in Dungeon - Stove-Top Monster Cuisine's specific style identity.",
       form_and_line:
-        'Gestualidad culinaria abstracta, ritmo de preparación, composición circular comunitaria y lectura clara de proceso.',
+        'Define Delicious in Dungeon - Stove-Top Monster Cuisine through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Dorado de caldo, rojo especia, verde hierba, gris piedra y azul tenue de fuego mágico.',
+        'Use a Delicious in Dungeon - Stove-Top Monster Cuisine-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz cálida de cocción, rebote bajo y brillo funcional sobre superficies húmedas.',
+        'Use lighting that makes Delicious in Dungeon - Stove-Top Monster Cuisine recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Hierro fundido, superficies trabajadas, piedra rugosa, tejido manchado y brillo de grasa.',
+        'Use materials and textures that reinforce Delicious in Dungeon - Stove-Top Monster Cuisine: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Fantasía culinaria de alto detalle funcional con equilibrio entre humor, peligro y apetito.',
+        'Render Delicious in Dungeon - Stove-Top Monster Cuisine with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Compresión de preparación, escala funcional, círculo de colaboración y profundidad cálida de oficio.',
-      atmosphere: 'Curiosa, nutritiva y aventurera, con alegría práctica.',
+        'Use spatial behavior that fits Delicious in Dungeon - Stove-Top Monster Cuisine: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Delicious in Dungeon - Stove-Top Monster Cuisine: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Calor culinario, proceso visible, ecología fantástica, grasa brillante y colaboración nutritiva.',
+        "Prioritize Delicious in Dungeon - Stove-Top Monster Cuisine's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática stove-top-dungeon reusable donde lógica culinaria, ecología fantástica y camaradería práctica conviertan cualquier sujeto en acto técnico/comunitario sin forzar arquitectura subterránea, criaturas, herramientas, superficie de comida o grupo fijo.',
+        'Create a style-card that translates Delicious in Dungeon - Stove-Top Monster Cuisine into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -95,23 +98,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasy comfort-food itinerante, con calidez práctica, abundancia amable y economía visual de baja tensión.',
+        "Campfire Cooking in Another World - Merchant Road Stew within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Campfire Cooking in Another World - Merchant Road Stew's specific style identity.",
       form_and_line:
-        'Curvas suaves, agrupación hospitalaria, ritmos redondeados y lectura doméstica aplicada a cualquier sujeto.',
-      color_palette: 'Dorado caldo, marrón pan, verde campo, azul cielo abierto y crema rústica.',
+        'Define Campfire Cooking in Another World - Merchant Road Stew through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Campfire Cooking in Another World - Merchant Road Stew-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Calor bajo envolvente, luz crepuscular amable y vapor luminoso como velo atmosférico.',
+        'Use lighting that makes Campfire Cooking in Another World - Merchant Road Stew recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Esmalte gastado, madera cálida, tela viajera, brillo gastronómico y grano especiado sin prop obligatorio.',
+        'Use materials and textures that reinforce Campfire Cooking in Another World - Merchant Road Stew: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Slice-of-life fantástico con detalle sensorial, bordes suaves y apetito cromático transferible.',
+        'Render Campfire Cooking in Another World - Merchant Road Stew with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Escala íntima y acogedora, con foco cercano y profundidad tranquila de pausa compartida.',
-      atmosphere: 'Cálida, relajada y generosa, sin urgencia trágica.',
+        'Use spatial behavior that fits Campfire Cooking in Another World - Merchant Road Stew: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Campfire Cooking in Another World - Merchant Road Stew: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Vapor apetecible, superficies sabrosas, hospitalidad de viaje, abundancia práctica y calma nutricional.',
+        "Prioritize Campfire Cooking in Another World - Merchant Road Stew's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática merchant-road-stew reusable donde cualquier prompt reciba calidez comestible, brillo de hospitalidad y textura de abundancia cotidiana sin anclar la composición a una escena culinaria o viajera fija.',
+        'Create a style-card that translates Campfire Cooking in Another World - Merchant Road Stew into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -122,24 +127,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Isekai mercantil lunar de tono deadpan, donde poder abrumador se expresa como calma práctica y diplomacia seca.',
+        "Tsukimichi - Moonlit Merchant Wanderer within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Tsukimichi - Moonlit Merchant Wanderer's specific style identity.",
       form_and_line:
-        'Formas sobrias, ritmo negociador, gestos contenidos y contraste entre escala implícita y lectura cotidiana.',
+        'Define Tsukimichi - Moonlit Merchant Wanderer through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Plata de luna, azul medianoche, verde comercio, ocre de camino y violeta tenue de aura contenida.',
+        'Use a Tsukimichi - Moonlit Merchant Wanderer-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Nocturnidad limpia, highlights cálidos bajos y acentos suaves que dejan el poder en reserva.',
+        'Use lighting that makes Tsukimichi - Moonlit Merchant Wanderer recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Madera seca, cuero sobrio, metal de intercambio, tela mate y polvo mineral en clave abstracta.',
+        'Use materials and textures that reinforce Tsukimichi - Moonlit Merchant Wanderer: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Fantasía transaccional con detalle económico, humor seco y poder subrayado por contención.',
+        'Render Tsukimichi - Moonlit Merchant Wanderer with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Espacio amplio sugerido, microjerarquías de intercambio y foco tranquilo sin escena fija.',
-      atmosphere: 'Desapegada, práctica y confiada.',
+        'Use spatial behavior that fits Tsukimichi - Moonlit Merchant Wanderer: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Tsukimichi - Moonlit Merchant Wanderer: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Luz lunar mercantil, calma overpowered, diplomacia práctica, economía visual y aura violeta contenida.',
+        "Prioritize Tsukimichi - Moonlit Merchant Wanderer's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática moonlit-merchant reusable donde cualquier prompt se vuelva práctico, lunar y diplomático mediante economía visual, humor seco y poder contenido sin depender de escena transaccional o utilería literal.',
+        'Create a style-card that translates Tsukimichi - Moonlit Merchant Wanderer into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -150,24 +156,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía de utilidad cotidiana, donde oficio, logística y soporte práctico reemplazan el espectáculo heroico.',
+        "Handyman Saitou in Another World - Toolbox Party Quest within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Handyman Saitou in Another World - Toolbox Party Quest's specific style identity.",
       form_and_line:
-        'Composición funcional, gestos de precisión, módulos pequeños y lectura clara de competencia manual.',
+        'Define Handyman Saitou in Another World - Toolbox Party Quest through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Marrón herramienta, acero gris, naranja lámpara, verde cuerda y beige de piedra utilitaria.',
+        'Use a Handyman Saitou in Another World - Toolbox Party Quest-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Focos cálidos portátiles, sombras técnicas y acentos de trabajo que guían la mirada por función.',
+        'Use lighting that makes Handyman Saitou in Another World - Toolbox Party Quest recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Fibra trenzada, metal opaco, cuero utilitario, polvo mineral y marcas de uso cuidadoso.',
+        'Use materials and textures that reinforce Handyman Saitou in Another World - Toolbox Party Quest: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Slice-of-adventure operativo, con encanto de competencia práctica y detalle táctil legible.',
+        'Render Handyman Saitou in Another World - Toolbox Party Quest with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Escala humana de mantenimiento, proximidad funcional y tensión pequeña resuelta con método.',
-      atmosphere: 'Modesta, cálida y confiable.',
+        'Use spatial behavior that fits Handyman Saitou in Another World - Toolbox Party Quest: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Handyman Saitou in Another World - Toolbox Party Quest: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Precisión artesanal, soporte logístico, microgestos de oficio, calidez técnica y humildad competente.',
+        "Prioritize Handyman Saitou in Another World - Toolbox Party Quest's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática toolbox-quest reusable donde cualquier prompt gane oficio, cuidado técnico y eficacia narrativa sin exigir utilería, grupo, locación peligrosa o situación de reparación literal.',
+        'Create a style-card that translates Handyman Saitou in Another World - Toolbox Party Quest into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -178,24 +185,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Cuento vulnerable de coraje moral, con ternura gráfica, simplicidad fábula y dignidad emocional.',
+        "Ranking of Kings - Storybook Crown Courage within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ranking of Kings - Storybook Crown Courage's specific style identity.",
       form_and_line:
-        'Trazo storybook suave, proporciones amables, espacios amplios y contraste afectivo de escala.',
+        'Define Ranking of Kings - Storybook Crown Courage through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Celeste claro, amarillo mantequilla, rojo corona, verde prado y gris piedra amable.',
+        'Use a Ranking of Kings - Storybook Crown Courage-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz de cuento diurna, halos cálidos de inocencia y sombras blandas de drama emocional.',
+        'Use lighting that makes Ranking of Kings - Storybook Crown Courage recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Papel ilustrado, pigmento mate, tejido ligero, piedra simple y madera amable en clave no literal.',
+        'Use materials and textures that reinforce Ranking of Kings - Storybook Crown Courage: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Narrativa visual emotiva de alta claridad gestual con estilo de fábula moderna.',
+        'Render Ranking of Kings - Storybook Crown Courage with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Monumentalidad suave, figura vulnerable por escala relativa y aire narrativo de página abierta.',
-      atmosphere: 'Inocente, valiente y conmovedora.',
+        'Use spatial behavior that fits Ranking of Kings - Storybook Crown Courage: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ranking of Kings - Storybook Crown Courage: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Ternura storybook, corona como motivo gráfico, escala afectiva, inocencia cromática y coraje visible.',
+        "Prioritize Ranking of Kings - Storybook Crown Courage's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática storybook-crown reusable donde cualquier prompt se vuelva tierno, monumental y moralmente valiente mediante escala afectiva, línea simple y color de fábula sin fijar institución, rango o ceremonia.',
+        'Create a style-card that translates Ranking of Kings - Storybook Crown Courage into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -206,23 +214,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía pastel de convivencia alegre, con banquet como ancla sensorial, comedia suave y luz de celebración.',
+        "Princess Connect! Re:Dive - Banquet Quest Pastel within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Princess Connect! Re:Dive - Banquet Quest Pastel's specific style identity.",
       form_and_line:
-        'Siluetas cute limpias, agrupación amable, curvas dulces y composición horizontal de abundancia compartida.',
-      color_palette: 'Rosa crema, azul caramelo, melocotón, verde menta y dorado postre.',
+        'Define Princess Connect! Re:Dive - Banquet Quest Pastel through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Princess Connect! Re:Dive - Banquet Quest Pastel-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz alta festiva, rebote cálido y acentos brillantes que convierten bordes y ornamentos en dulzor visual.',
+        'Use lighting that makes Princess Connect! Re:Dive - Banquet Quest Pastel recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Glaseado, pan suave, cerámica brillante, tela colorida y superficies pulidas sin locación obligatoria.',
+        'Use materials and textures that reinforce Princess Connect! Re:Dive - Banquet Quest Pastel: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado candy-clean con legibilidad de ensemble y tono celebratorio continuo.',
+        'Render Princess Connect! Re:Dive - Banquet Quest Pastel with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Densidad amable, profundidad de convivencia y ritmo horizontal que deja respirar cada forma.',
-      atmosphere: 'Alegre, acogedora y deliciosa.',
+        'Use spatial behavior that fits Princess Connect! Re:Dive - Banquet Quest Pastel: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Princess Connect! Re:Dive - Banquet Quest Pastel: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Colorimetría de postre, abundancia pastel, comedia suave, brillo candy-clean y camaradería luminosa.',
+        "Prioritize Princess Connect! Re:Dive - Banquet Quest Pastel's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática banquet-quest-pastel reusable donde cualquier prompt gane alegría compartida, dulzor cromático y acabado candy-clean sin exigir reunión, locación pública o escena culinaria fija.',
+        'Create a style-card that translates Princess Connect! Re:Dive - Banquet Quest Pastel into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -233,24 +243,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Glowing VR fantasy, with interface-light magic, virtual romance, polished heroism, and visceral digital immersion.',
+        "Sword Art Online Glowing VR Adventure within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Sword Art Online Glowing VR Adventure's specific style identity.",
       form_and_line:
-        'Clean fantasy contours, translucent HUD arcs, thin luminous trim, modular edge highlights, and readable action silhouettes.',
+        'Define Sword Art Online Glowing VR Adventure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Sky sapphire, interface cyan, warm amber courage, emerald status glow, white bloom, and deep virtual blue.',
+        'Use a Sword Art Online Glowing VR Adventure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Diegetic UI glow, atmospheric depth haze, soft rim auras, and crystalline light planes.',
+        'Use lighting that makes Sword Art Online Glowing VR Adventure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Glassy overlays, polished cel surfaces, pixel-fine particles, synthetic fabric sheen, and luminous edge bloom.',
+        'Use materials and textures that reinforce Sword Art Online Glowing VR Adventure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Expansive digital-fantasy anime polish with high clarity, clean compositing, and romantic virtual scale.',
+        'Render Sword Art Online Glowing VR Adventure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Layered interface depth, suspended panels, and horizon expansion that makes space feel software-shaped.',
-      atmosphere: 'Adventurous, virtual, epic, romantic.',
+        'Use spatial behavior that fits Sword Art Online Glowing VR Adventure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Sword Art Online Glowing VR Adventure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Interface constellations, virtual glow, clean adventure polish, synthetic depth, emotional immersion.',
+        "Prioritize Sword Art Online Glowing VR Adventure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Make any prompt feel like fantasy translated through a beautiful virtual system: UI light should behave like atmosphere, digital edges should feel tactile, and heroic scale should come from immersion rather than fixed game locations or named characters.',
+        'Create a style-card that translates Sword Art Online Glowing VR Adventure into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -261,24 +272,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Reset-loop dark fantasy, with ornate beauty under dread, emotional collapse, and recursive fate pressure.',
+        "Re:Zero Reset-Loop Dark Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Re:Zero Reset-Loop Dark Fantasy's specific style identity.",
       form_and_line:
-        'Elegant fantasy contouring interrupted by spiral repeats, stress-fracture accents, and tightening visual rhythms.',
+        'Define Re:Zero Reset-Loop Dark Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Icy violet, pale silver, bruised blue, candle amber, deep burgundy, and shadowed ivory.',
+        'Use a Re:Zero Reset-Loop Dark Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Beautiful surface glow with dread below it, cold rim halos, looping highlight echoes, and suffocating low contrast.',
+        'Use lighting that makes Re:Zero Reset-Loop Dark Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Fine fabric grain, carved ornament, paper-thin magic particles, damp shadow glaze, and polished despair.',
+        'Use materials and textures that reinforce Re:Zero Reset-Loop Dark Fantasy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'High-polish fantasy anime with psychological tension, delicate detail, and controlled emotional breakdown.',
+        'Render Re:Zero Reset-Loop Dark Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Spiral compression, deja-vu repetition, and ornamental depth that seems to close inward.',
-      atmosphere: 'Anxious, tragic, harrowing, relentless.',
+        'Use spatial behavior that fits Re:Zero Reset-Loop Dark Fantasy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Re:Zero Reset-Loop Dark Fantasy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Recursive fate, beauty-as-pressure, spiral dread, fragile hope, ornate emotional collapse.',
+        "Prioritize Re:Zero Reset-Loop Dark Fantasy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Treat any prompt as trapped inside beautiful repetition: use spiral composition, delicate ornament, cold glow, and emotional pressure to imply a reset-loop without literal locations, antagonists, set pieces, or named characters.',
+        'Create a style-card that translates Re:Zero Reset-Loop Dark Fantasy into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -289,24 +301,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Wandering mage chronicle style, with patient world texture, learned magic, natural wonder, and mature travel curiosity.',
+        "Mushoku Tensei Wandering Mage Chronicle within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Mushoku Tensei Wandering Mage Chronicle's specific style identity.",
       form_and_line:
-        'Soft fantasy linework, practical ornament, maplike flow lines, layered detail zones, and calm exploratory rhythm.',
+        'Define Mushoku Tensei Wandering Mage Chronicle through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Weathered sky blue, warm ochre, moss green, parchment cream, mineral violet, and soft mana glow.',
+        'Use a Mushoku Tensei Wandering Mage Chronicle-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Long-horizon daylight, warm ambient bounce, gentle spell glows, and atmospheric depth that feels lived-in.',
+        'Use lighting that makes Mushoku Tensei Wandering Mage Chronicle recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Parchment grain, woven cloth, weathered leather, mineral dust, soft magic particles, and hand-painted terrain color.',
+        'Use materials and textures that reinforce Mushoku Tensei Wandering Mage Chronicle: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Expansive but intimate fantasy anime polish with rich cultural texture and curiosity-first clarity.',
+        'Render Mushoku Tensei Wandering Mage Chronicle with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Maplike expansion, slow parallax depth, and open composition that rewards looking around.',
-      atmosphere: 'Curious, expansive, wondrous, immersive.',
+        'Use spatial behavior that fits Mushoku Tensei Wandering Mage Chronicle: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Mushoku Tensei Wandering Mage Chronicle: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Learned magic, lived-in texture, journey-as-growth, soft horizon depth, world curiosity.',
+        "Prioritize Mushoku Tensei Wandering Mage Chronicle's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Render any subject as part of a patient magical chronicle: magic should feel studied and geographic, surfaces should look traveled, and wonder should come from accumulated detail rather than a canonical itinerary or event.',
+        'Create a style-card that translates Mushoku Tensei Wandering Mage Chronicle into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -317,24 +330,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Party-quest comedy style, with bright parody fantasy, theatrical incompetence, overblown magic timing, and joyful failure.',
+        "Konosuba Party-Quest Comedy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Konosuba Party-Quest Comedy's specific style identity.",
       form_and_line:
-        'Bouncy contours, exaggerated reaction shapes, clean fantasy trims, comedic pose beats, and elastic timing accents.',
+        'Define Konosuba Party-Quest Comedy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Aqua blue, sunny gold, rosy blush, carnival green, comic violet, and warm tavern-amber notes.',
+        'Use a Konosuba Party-Quest Comedy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Cheerful high-key glow, sudden gag flashes, soft magical bloom, and clean readable contrast for punchline timing.',
+        'Use lighting that makes Konosuba Party-Quest Comedy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Polished cel surfaces, fluffy effect puffs, glossy magical sparks, soft cloth color, and bright comedic overlays.',
+        'Use materials and textures that reinforce Konosuba Party-Quest Comedy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Clean comedy-fantasy anime finish with expressive timing, readable silhouettes, and charming controlled chaos.',
+        'Render Konosuba Party-Quest Comedy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Small perspective exaggerations, reaction zooms, and anticlimax framing that undercuts epic scale.',
-      atmosphere: 'Comedic, chaotic, irreverent, satirical.',
+        'Use spatial behavior that fits Konosuba Party-Quest Comedy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Konosuba Party-Quest Comedy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Parody brightness, elastic failure, gag-timed magic, cheerful disorder, anticlimax composition.',
+        "Prioritize Konosuba Party-Quest Comedy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply fantasy parody as a visual treatment: make any prompt bright, theatrical, and joyfully inept through gag timing, saturated clarity, and anticlimax composition without requiring a fixed group, place, or gag scene.',
+        'Create a style-card that translates Konosuba Party-Quest Comedy into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -345,24 +359,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Monster-nation bright fantasy, with diplomatic optimism, polished diversity, cooperative growth, and sun-washed worldbuilding.',
+        "Slime Isekai Monster-Nation Bright Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Slime Isekai Monster-Nation Bright Fantasy's specific style identity.",
       form_and_line:
-        'Rounded approachable contours, clean fantasy trims, civic pattern rhythm, soft power silhouettes, and modular growth shapes.',
+        'Define Slime Isekai Monster-Nation Bright Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Slime blue, spring green, warm gold, soft stone gray, sky cyan, and celebratory banner reds.',
+        'Use a Slime Isekai Monster-Nation Bright Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Friendly daylight, optimistic rim glow, sparkling civic highlights, and gentle magical bounce.',
+        'Use lighting that makes Slime Isekai Monster-Nation Bright Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Glossy gel accents, clean timber grain, polished stone, cloth banners, soft particles, and bright settlement polish.',
+        'Use materials and textures that reinforce Slime Isekai Monster-Nation Bright Fantasy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Upbeat fantasy anime finish with high readability, communal detail, and constantly improving world texture.',
+        'Render Slime Isekai Monster-Nation Bright Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Expanding modular composition, cooperative scale layering, and open civic depth without fixed architecture.',
-      atmosphere: 'Upbeat, communal, optimistic, vibrant.',
+        'Use spatial behavior that fits Slime Isekai Monster-Nation Bright Fantasy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Slime Isekai Monster-Nation Bright Fantasy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Cooperative brightness, civic fantasy polish, friendly diversity, growth motifs, diplomatic warmth.',
+        "Prioritize Slime Isekai Monster-Nation Bright Fantasy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Make any prompt feel like optimistic fantasy nation-building: emphasize cooperative brightness, rounded friendliness, and constructive growth without requiring a specific species, settlement, alliance, or ruler.',
+        'Create a style-card that translates Slime Isekai Monster-Nation Bright Fantasy into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -373,24 +388,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Dungeon-lantern adventure style, with luminous aspiration, layered depth, mythic growth, and warm light against unknown dark.',
+        "DanMachi Dungeon Lantern Adventure within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving DanMachi Dungeon Lantern Adventure's specific style identity.",
       form_and_line:
-        'Upward-leading contours, lanternlike glow halos, tiered depth bands, clean fantasy detail, and heroic small-scale emphasis.',
+        'Define DanMachi Dungeon Lantern Adventure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Lantern gold, crystal blue, deep cavern teal, warm leather brown, divine white, and hopeful rose accents.',
+        'Use a DanMachi Dungeon Lantern Adventure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Portable warm glow, crystalline bounce, darkness-to-light gradients, and vertical rays that imply ascent.',
+        'Use lighting that makes DanMachi Dungeon Lantern Adventure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Faceted crystal shimmer, rough mineral grain, worn cloth, soft leather, and luminous dust.',
+        'Use materials and textures that reinforce DanMachi Dungeon Lantern Adventure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Luminous fantasy anime polish with aspirational clarity, readable depth, and gentle mythic sparkle.',
+        'Render DanMachi Dungeon Lantern Adventure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Layered descent-as-ascent geometry, vertical pull, and darkness shaped by warm focal light.',
-      atmosphere: 'Adventurous, luminous, mythic, aspirational.',
+        'Use spatial behavior that fits DanMachi Dungeon Lantern Adventure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to DanMachi Dungeon Lantern Adventure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Lantern warmth, crystal depth, aspirational darkness, vertical growth, mythic smallness.',
+        "Prioritize DanMachi Dungeon Lantern Adventure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Make any prompt feel like light earning its way upward: use warm focal glow, mineral sparkle, and layered darkness to imply aspiration without requiring a fixed underground location, faction system, or specific artifact.',
+        'Create a style-card that translates DanMachi Dungeon Lantern Adventure into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -401,24 +417,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía sistémica de cooperación visible, política social abstracta, administración luminosa y mundo legible como infraestructura cultural.',
+        "Systemic Cooperation Grid Style within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Systemic Cooperation Grid Style's specific style identity.",
       form_and_line:
-        'Retículas ordenadas, siluetas funcionales claras, linework táctico de interfaz diegética y composición coral modular.',
+        'Define Systemic Cooperation Grid Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Azul acero urbano, verde esmeralda administrativo, ámbar cálido de taberna y acentos cian de UI arcana.',
+        'Use a Systemic Cooperation Grid Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz administrativa clara, tungsteno suave y superposición luminosa de ventanas de sistema.',
+        'Use lighting that makes Systemic Cooperation Grid Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Piedra pulida, madera tabular, pergamino abstracto, metal de emblema y tela funcional.',
+        'Use materials and textures that reinforce Systemic Cooperation Grid Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Fantasía de alta legibilidad estratégica, con composición coral y claridad de roles visuales.',
+        'Render Systemic Cooperation Grid Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Escala comunitaria horizontal, jerarquía visual por módulos y profundidad orientada a mapa social.',
-      atmosphere: 'Comunal, analítica y esperanzada, de sistema que aprende a autogobernarse.',
+        'Use spatial behavior that fits Systemic Cooperation Grid Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Systemic Cooperation Grid Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Emblemas abstractos, nodos de negociación, pizarras de sistema y staging colaborativo modular.',
+        "Prioritize Systemic Cooperation Grid Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática cooperation-grid reusable donde infraestructura social, estética de sistema y cooperación visible articulen identidad sin instituciones nombradas, nodos cívicos fijos, tableros de misión, escuadras o urbe concreta.',
+        'Create a style-card that translates Systemic Cooperation Grid Style into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -429,23 +446,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía precaria marcada por vulnerabilidad, duelo íntimo, colaboración temblorosa y supervivencia sin épica grandilocuente.',
+        "Smoke-Mud Vulnerability Style within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Smoke-Mud Vulnerability Style's specific style identity.",
       form_and_line:
-        'Siluetas contenidas, postura defensiva, distancia emocional visible y lectura de movimiento cauteloso.',
+        'Define Smoke-Mud Vulnerability Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Marrón humo, gris barro, verde apagado, naranja tenue de fogata y azul noche húmeda.',
-      lighting_setup: 'Luz débil y cálida, niebla baja, sombras largas y ambiente frío hostil.',
+        'Use a Smoke-Mud Vulnerability Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Smoke-Mud Vulnerability Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cuero remendado, tela mojada, metal sin pulir, barro adherido y desgaste acumulado en equipo improvisado.',
+        'Use materials and textures that reinforce Smoke-Mud Vulnerability Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Realismo anime sobrio con foco en vulnerabilidad corporal y narrativa de pérdidas pequeñas.',
+        'Render Smoke-Mud Vulnerability Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Escala humana reducida, encuadres cerrados y profundidad incierta por niebla y textura vegetal abstracta.',
-      atmosphere: 'Frágil, humilde y sincera, con miedo persistente y lealtad emergente.',
+        'Use spatial behavior that fits Smoke-Mud Vulnerability Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Smoke-Mud Vulnerability Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Luz mínima, protección parchada, barro, formación insegura y vulnerabilidad corporal.',
+        "Prioritize Smoke-Mud Vulnerability Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática smoke-and-mud reusable donde materialidad precaria, luz pobre y colaboración temblorosa expresen crecimiento sin grupo fijo, asentamiento temporal, entorno natural fijo, rutas, roles de equipo o situación narrativa obligatoria.',
+        'Create a style-card that translates Smoke-Mud Vulnerability Style into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -456,24 +475,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Grandilocuencia OVA de fantasy clásico, sinceridad tabletop, nobleza heroica y aventura coral como composición atemporal.',
+        "Classic OVA Quest Tapestry Style within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Classic OVA Quest Tapestry Style's specific style identity.",
       form_and_line:
-        'Contorno elegante tradicional, ornamento clásico visible, composición frontal tipo tapiz y jerarquía coral.',
+        'Define Classic OVA Quest Tapestry Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Zafiro profundo, oro heráldico, rojo estandarte, marfil de pergamino y verde épico.',
+        'Use a Classic OVA Quest Tapestry Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Fondo pictórico luminoso, key cálido de amanecer abstracto y rim heroico en superficies pulidas.',
+        'Use lighting that makes Classic OVA Quest Tapestry Style recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Malla decorativa, textiles bordados, piedra antigua, cuero noble y escamas ornamentales.',
+        'Use materials and textures that reinforce Classic OVA Quest Tapestry Style: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acabado clásico de fantasía ilustrada con lectura mítica y belleza de cuadro aventurero.',
+        'Render Classic OVA Quest Tapestry Style with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Escala heroica tradicional, profundidad amplia y staging de formación coral.',
-      atmosphere: 'Mítica, noble y aspiracional, con pureza de aventura antigua.',
+        'Use spatial behavior that fits Classic OVA Quest Tapestry Style: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Classic OVA Quest Tapestry Style: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Formación coral, brillo noble, fondos pintados, tapiz épico y códigos visuales de aventura clásica.',
+        "Prioritize Classic OVA Quest Tapestry Style's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática OVA-quest reusable donde ornamento clásico, composición coral y romanticismo aventurero conserven épica sincera sin grupo fijo, protección obligatoria, paisaje concreto, campaña o misión narrativa.',
+        'Create a style-card that translates Classic OVA Quest Tapestry Style into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -484,24 +504,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía cortesana de mandato celeste, legitimidad ritual, exilio interior y densidad político-espiritual como presión visual.',
+        "The Twelve Kingdoms - Imperial Destiny Chronicle within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving The Twelve Kingdoms - Imperial Destiny Chronicle's specific style identity.",
       form_and_line:
-        'Siluetas ceremoniales, pliegues autoritarios, ejes verticales de poder, ornamento sobrio y contorno de destino impuesto.',
+        'Define The Twelve Kingdoms - Imperial Destiny Chronicle through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Verde jade, rojo cinabrio, dorado imperial, negro tinta y azul niebla ceremonial.',
+        'Use a The Twelve Kingdoms - Imperial Destiny Chronicle-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz solemne de autoridad, contraluz ritual y brillos selectivos sobre símbolos de legitimidad.',
+        'Use lighting that makes The Twelve Kingdoms - Imperial Destiny Chronicle recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Seda pesada, laca ceremonial, piedra pulida, ornamento broncíneo y talismanes abstractos.',
+        'Use materials and textures that reinforce The Twelve Kingdoms - Imperial Destiny Chronicle: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Drama de alta fantasía político-mítica con lectura jerárquica clara y peso ceremonial.',
+        'Render The Twelve Kingdoms - Imperial Destiny Chronicle with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Verticalidad de poder, horizontalidad de tránsito interior, simetría protocolar y distancia jerárquica.',
-      atmosphere: 'Regia, fatal y reflexiva, atravesada por destino y deber.',
+        'Use spatial behavior that fits The Twelve Kingdoms - Imperial Destiny Chronicle: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to The Twelve Kingdoms - Imperial Destiny Chronicle: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Protocolo ritual, jade y cinabrio, legitimidad visual, distancia jerárquica y transformación de exilio en autoridad.',
+        "Prioritize The Twelve Kingdoms - Imperial Destiny Chronicle's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática imperial-destiny reusable donde protocolo, mandato, jade/cinabrio, simetría y distancia jerárquica transformen cualquier sujeto en drama de autoridad, sin exigir institución, objeto, rol o tránsito narrativo específico.',
+        'Create a style-card that translates The Twelve Kingdoms - Imperial Destiny Chronicle into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -512,24 +533,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Profecía romántica ventosa, fatalismo adivinatorio, melancolía carmín y contraste entre curva shōjo y geometría épica.',
+        "The Vision of Escaflowne - Windblown Tarot Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving The Vision of Escaflowne - Windblown Tarot Fantasy's specific style identity.",
       form_and_line:
-        'Curvas emocionales, diagonales de viento, ornamento arcano, contrapunto angular y poses teatrales de destino.',
+        'Define The Vision of Escaflowne - Windblown Tarot Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Carmín crepuscular, azul viento, dorado arcano, plata fría y violeta profético.',
+        'Use a The Vision of Escaflowne - Windblown Tarot Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Backlight ventoso, glow místico facetado y key dramático de tensión sentimental.',
+        'Use lighting that makes The Vision of Escaflowne - Windblown Tarot Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Tela batida por viento, metal pulido abstracto, piedra ceremonial, brillo adivinatorio y humo atmosférico.',
+        'Use materials and textures that reinforce The Vision of Escaflowne - Windblown Tarot Fantasy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Fantasía romántica de alto dramatismo con fusión legible de épica mecha y sensibilidad shōjo.',
+        'Render The Vision of Escaflowne - Windblown Tarot Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad por corrientes de viento, diagonales de destino, tensión entre curvas suaves y masas angulares.',
-      atmosphere: 'Ventosa, mística y apasionada, con tensión entre amor y guerra.',
+        'Use spatial behavior that fits The Vision of Escaflowne - Windblown Tarot Fantasy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to The Vision of Escaflowne - Windblown Tarot Fantasy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Simbolismo adivinatorio, ráfagas diagonales, contraste shōjo-angular, plata arcana y mirada predestinada.',
+        "Prioritize The Vision of Escaflowne - Windblown Tarot Fantasy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática windblown-prophecy reusable donde romance fatalista, iconografía adivinatoria, viento y contraste angular construyan épica emotiva transferible, sin fijar rol, artefacto, conflicto o vínculo narrativo específico.',
+        'Create a style-card that translates The Vision of Escaflowne - Windblown Tarot Fantasy into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -540,24 +562,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Aventura ornamental cálida, magia joya, tensión comercio-autoridad y fantasía móvil como saturación decorativa.',
+        "Magi - Labyrinth Jewel Caravan within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Magi - Labyrinth Jewel Caravan's specific style identity.",
       form_and_line:
-        'Ornamento arabesco dinámico, verticales laberínticas abstractas, curvas itinerantes y lectura épica por capas.',
+        'Define Magi - Labyrinth Jewel Caravan through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Ámbar cálido, turquesa brillante, rojo granate, verde esmeralda y azul noche ornamental.',
+        'Use a Magi - Labyrinth Jewel Caravan-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Sol cálido, luces colgantes abstractas y destellos mágicos facetados tipo gema.',
+        'Use lighting that makes Magi - Labyrinth Jewel Caravan recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Tejidos bordados, latón trabajado, piedra caliza, polvo cálido y cristal encantado.',
+        'Use materials and textures that reinforce Magi - Labyrinth Jewel Caravan: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Fantasía saturada de aventura móvil con riqueza decorativa y claridad narrativa de expedición.',
+        'Render Magi - Labyrinth Jewel Caravan with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad por capas ornamentales, verticalidad laberíntica, diagonales de viaje y escala fabulística.',
-      atmosphere: 'Colorida, expansiva y enérgica, de descubrimiento continuo.',
+        'Use spatial behavior that fits Magi - Labyrinth Jewel Caravan: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Magi - Labyrinth Jewel Caravan: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Arabescos dinámicos, gemas facetadas, ámbar-turquesa, verticalidad laberíntica y tensión comercio-autoridad.',
+        "Prioritize Magi - Labyrinth Jewel Caravan's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática labyrinth-caravan reusable donde ornamentación, cromática cálida y magia gema articulen fábula comercial y política sin exigir locación, transporte, ruta, bioma o arquitectura narrativa específica.',
+        'Create a style-card that translates Magi - Labyrinth Jewel Caravan into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -568,23 +591,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía artesanal de conocimiento emergente, fragilidad íntima, obsesión material por el libro y tecnología transformadora.',
+        "Ascendance of a Bookworm - Printing Press Devotion within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ascendance of a Bookworm - Printing Press Devotion's specific style identity.",
       form_and_line:
-        'Escala pequeña, detalle manual, lenguaje visual centrado en oficio, proceso, paciencia y acumulación de pasos.',
+        'Define Ascendance of a Bookworm - Printing Press Devotion through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Sepia pergamino, azul tinta, marrón madera, crema papel y rojo cera de sello.',
-      lighting_setup: 'Luz suave de lectura, lámpara cálida y contraste bajo de espacio artesanal.',
+        'Use a Ascendance of a Bookworm - Printing Press Devotion-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Ascendance of a Bookworm - Printing Press Devotion recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Vellum, pulpa de papel, madera prensada, metal tipográfico y manchas de tinta en tela.',
+        'Use materials and textures that reinforce Ascendance of a Bookworm - Printing Press Devotion: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Narrativa íntima de craft medieval con precisión material y foco en innovación cotidiana.',
+        'Render Ascendance of a Bookworm - Printing Press Devotion with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Escala concentrada, composición por proceso manual y profundidad de oficio paciente.',
-      atmosphere: 'Estudiosa, tierna y obstinada, con fervor por la lectura.',
+        'Use spatial behavior that fits Ascendance of a Bookworm - Printing Press Devotion: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ascendance of a Bookworm - Printing Press Devotion: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Tinta y papel, materialidad de libro, proceso artesanal, voluntad férrea y progreso silencioso.',
+        "Prioritize Ascendance of a Bookworm - Printing Press Devotion's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática printing-devotion reusable donde materialidad del libro, labor artesanal y progreso silencioso conviertan cualquier sujeto en motor visual de conocimiento, sin espacio de trabajo fijo, herramientas concretas, organización artesanal o fragilidad corporal obligatoria.',
+        'Create a style-card that translates Ascendance of a Bookworm - Printing Press Devotion into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -595,24 +620,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Espiritualidad sobria, mentoría ritual, heroísmo devocional sin cinismo y solemnidad ética de alto fantasy.',
+        "The Faraway Paladin - Quiet Temple Quest within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving The Faraway Paladin - Quiet Temple Quest's specific style identity.",
       form_and_line:
-        'Postura de voto, líneas de peregrinaje abstractas, siluetas protectoras y verticalidad de juramento.',
+        'Define The Faraway Paladin - Quiet Temple Quest through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Oro alba, azul oración, gris piedra ancestral, blanco juramento y verde de santuario antiguo.',
+        'Use a The Faraway Paladin - Quiet Temple Quest-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Amanecer litúrgico, shafts verticales y halo moderado sobre símbolos sagrados.',
+        'Use lighting that makes The Faraway Paladin - Quiet Temple Quest recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Piedra erosionada, metal bendecido, tela de viaje, reliquia ritual y polvo antiguo.',
+        'Use materials and textures that reinforce The Faraway Paladin - Quiet Temple Quest: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Fantasía devocional de gran claridad ética, con equilibrio entre épica y contemplación religiosa.',
+        'Render The Faraway Paladin - Quiet Temple Quest with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad sagrada, horizonte de tránsito interior y eje vertical de trascendencia.',
-      atmosphere: 'Solemne, esperanzada y piadosa, de camino interior y exterior.',
+        'Use spatial behavior that fits The Faraway Paladin - Quiet Temple Quest: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to The Faraway Paladin - Quiet Temple Quest: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Juramento visualizado, oro alba, piedra sagrada, tránsito moral y heroísmo contemplativo.',
+        "Prioritize The Faraway Paladin - Quiet Temple Quest's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática quiet-paladin reusable donde rito, deber y monumentalidad sagrada expresen aprendizaje moral sin forzar edificio ritual, protectores, armamento, ruta, rol literal o aventura concreta.',
+        'Create a style-card that translates The Faraway Paladin - Quiet Temple Quest into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -623,23 +649,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Healing-fantasy adulta, con pulcritud profesional, serenidad botánica y refinamiento institucional.',
+        "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving The Saint's Magic Power Is Omnipotent - Herbarium Court Glow's specific style identity.",
       form_and_line:
-        'Trazo limpio, contornos serenos, gestos medidos y ornamentación funcional de cuidado experto.',
-      color_palette: 'Verde botánico, marfil clínico, dorado tenue y azul pastel de calma mágica.',
+        "Define The Saint's Magic Power Is Omnipotent - Herbarium Court Glow through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.",
+      color_palette:
+        "Use a The Saint's Magic Power Is Omnipotent - Herbarium Court Glow-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.",
       lighting_setup:
-        'Luz difusa de invernadero abstracto, reflejos suaves y bloom curativo de baja agresividad.',
+        "Use lighting that makes The Saint's Magic Power Is Omnipotent - Herbarium Court Glow recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.",
       material_texture:
-        'Vidrio translúcido, papel fino, seda sobria, fibras vegetales y superficies cuidadosamente preparadas.',
+        "Use materials and textures that reinforce The Saint's Magic Power Is Omnipotent - Herbarium Court Glow: surface response, grain, patina, polish, or wear should feel intentional and style-defining.",
       render_quality:
-        'Fantasía terapéutica de alta pulcritud, con autoridad tranquila y claridad de proceso visual.',
+        "Render The Saint's Magic Power Is Omnipotent - Herbarium Court Glow with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.",
       spatial_distortion:
-        'Orden compositivo por capas, respiración limpia y jerarquías suaves de preparación y cuidado.',
-      atmosphere: 'Calmada, luminosa y competente.',
+        "Use spatial behavior that fits The Saint's Magic Power Is Omnipotent - Herbarium Court Glow: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.",
+      atmosphere:
+        "Set a mood that belongs to The Saint's Magic Power Is Omnipotent - Herbarium Court Glow: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.",
       key_features:
-        'Verde sanador, brillo clínico suave, cortesía formal, detalle botánico y compostura adulta.',
+        "Prioritize The Saint's Magic Power Is Omnipotent - Herbarium Court Glow's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática herbarium-court reusable donde cualquier prompt se refine mediante calma botánica, pulcritud curativa y luz institucional sin obligar una escena profesional, palaciega o medicinal literal.',
+        "Create a style-card that translates The Saint's Magic Power Is Omnipotent - Herbarium Court Glow into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.",
     },
   },
   {
@@ -650,23 +678,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Melodrama romántico celestial, con destino brillante, ornamento astral y sensibilidad noventera luminosa.',
+        "Fushigi Yuugi - Celestial Maiden Portal Epic within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Fushigi Yuugi - Celestial Maiden Portal Epic's specific style identity.",
       form_and_line:
-        'Contorno suave emocional, símbolos astrales recurrentes y composición guiada por vínculos afectivos.',
-      color_palette: 'Rosa cósmico, azul estrella, oro constelar, blanco papel y violeta destino.',
+        'Define Fushigi Yuugi - Celestial Maiden Portal Epic through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Fushigi Yuugi - Celestial Maiden Portal Epic-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Halos celestes, bloom difuso y luz dramática que sugiere tránsito emocional más que lugar fijo.',
+        'Use lighting that makes Fushigi Yuugi - Celestial Maiden Portal Epic recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Blanco fibroso, tejido ritual abstracto, ornamento metálico fino y partículas de constelación.',
+        'Use materials and textures that reinforce Fushigi Yuugi - Celestial Maiden Portal Epic: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Fantasía de romance épico con claridad sentimental, brillo editorial y aventura por capítulos.',
+        'Render Fushigi Yuugi - Celestial Maiden Portal Epic with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Pliegues dimensionales, marcos luminosos no literales y profundidad de tránsito afectivo.',
-      atmosphere: 'Predestinada, brillante y emotiva.',
+        'Use spatial behavior that fits Fushigi Yuugi - Celestial Maiden Portal Epic: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Fushigi Yuugi - Celestial Maiden Portal Epic: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Simbología astral, devoción cromática, brillo de destino, melodrama limpio y ornamento constelar.',
+        "Prioritize Fushigi Yuugi - Celestial Maiden Portal Epic's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática celestial-portal reusable donde cualquier prompt se vuelva romántico, astral y predestinado mediante halos, constelaciones y melodrama gráfico sin fijar composición de tránsito o elenco narrativo.',
+        'Create a style-card that translates Fushigi Yuugi - Celestial Maiden Portal Epic into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -677,23 +707,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Heroísmo magical-knight de alto brillo, con energía cooperativa, runas tecnomísticas y valentía cromática.',
+        "Magic Knight Rayearth - Gem-Engine Rescue Quest within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Magic Knight Rayearth - Gem-Engine Rescue Quest's specific style identity.",
       form_and_line:
-        'Siluetas diferenciadas por color, ornamentación rúnica angular y líneas ascendentes de impulso coral.',
+        'Define Magic Knight Rayearth - Gem-Engine Rescue Quest through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Rojo rubí, azul cobalto, verde esmeralda, dorado mágico y blanco de energía invocada.',
-      lighting_setup: 'Emisión rúnica, flare joya y key vibrante de aventura luminosa.',
+        'Use a Magic Knight Rayearth - Gem-Engine Rescue Quest-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Magic Knight Rayearth - Gem-Engine Rescue Quest recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Metal encantado, tela ceremonial, mineral pulido y superficies lumínicas de energía geométrica.',
+        'Use materials and textures that reinforce Magic Knight Rayearth - Gem-Engine Rescue Quest: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Fantasy-team abstracto de acabado brillante, con roles cromáticos y épica juvenil cooperativa.',
+        'Render Magic Knight Rayearth - Gem-Engine Rescue Quest with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Contraste de escala sugerido, composición ascendente y expansión energética sin entidad obligatoria.',
-      atmosphere: 'Valiente, luminosa y solidaria.',
+        'Use spatial behavior that fits Magic Knight Rayearth - Gem-Engine Rescue Quest: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Magic Knight Rayearth - Gem-Engine Rescue Quest: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Runas activas, colorimetría joya, impulso ascendente, cooperación gráfica y brillo tecnomístico.',
+        "Prioritize Magic Knight Rayearth - Gem-Engine Rescue Quest's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática gem-engine-rescue reusable donde cualquier prompt gane claridad heroica mediante cromas joya, runas energéticas y sensación de cooperación sin fijar roles, vestuario, entidades o evento narrativo.',
+        'Create a style-card that translates Magic Knight Rayearth - Gem-Engine Rescue Quest into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -704,24 +736,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Hyper-saturated strategy fantasy, with candy-neon logic, theatrical confidence, impossible geometry, and gameboard reality.',
+        "No Game No Life Hyper-Saturated Strategy Fantasy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving No Game No Life Hyper-Saturated Strategy Fantasy's specific style identity.",
       form_and_line:
-        'Crisp decorative contours, grid-aware diagonals, playful scale shifts, geometric overlays, and theatrical gesture rhythm.',
+        'Define No Game No Life Hyper-Saturated Strategy Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Electric magenta, cyan candy, saturated violet, acid yellow, luminous peach, and impossible sky blue.',
+        'Use a No Game No Life Hyper-Saturated Strategy Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Overbright neon wash, prismatic rim bands, luminous grid bounce, and deliberately excessive bloom.',
+        'Use lighting that makes No Game No Life Hyper-Saturated Strategy Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Glossy cel polish, glassy game surfaces, holographic gradients, candy plastic sheen, and sharp geometric overlays.',
+        'Use materials and textures that reinforce No Game No Life Hyper-Saturated Strategy Fantasy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Ultra-clean anime finish with maximal saturation, strategic clarity, and surreal confidence.',
+        'Render No Game No Life Hyper-Saturated Strategy Fantasy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Boardlike planes, impossible perspective folds, floating rule geometry, and controlled chibi-scale elasticity.',
-      atmosphere: 'Strategic, dazzling, hyper, confident.',
+        'Use spatial behavior that fits No Game No Life Hyper-Saturated Strategy Fantasy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to No Game No Life Hyper-Saturated Strategy Fantasy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Candy-neon grids, rule-logic spectacle, overconfident saturation, geometric theater, impossible polish.',
+        "Prioritize No Game No Life Hyper-Saturated Strategy Fantasy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Convert any prompt into a dazzling strategy space: color should exceed physics, geometry should imply rules, and every surface should feel like a confident move without requiring literal game props, cast, or scene.',
+        'Create a style-card that translates No Game No Life Hyper-Saturated Strategy Fantasy into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -732,24 +765,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Doctrina arcana austero-imperial, con cálculo frío, jerarquía visual y tensión estratégica abstracta.',
+        "Saga of Tanya the Evil - Aerial War Mage Doctrine within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Saga of Tanya the Evil - Aerial War Mage Doctrine's specific style identity.",
       form_and_line:
-        'Geometría de mando, vectores diagonales, anillos técnicos y siluetas comprimidas por disciplina visual.',
+        'Define Saga of Tanya the Evil - Aerial War Mage Doctrine through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Gris acero, rojo mandato, azul glaciar, negro tinta de expediente y ámbar cristalino de cálculo.',
+        'Use a Saga of Tanya the Evil - Aerial War Mage Doctrine-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Contraluz estratificado, brillos fríos de precisión y destellos duros colocados como marcas de decisión.',
+        'Use lighting that makes Saga of Tanya the Evil - Aerial War Mage Doctrine recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Paño mate, cuero oscuro, metal bruñido, papel cartográfico abstracto y cristal facetado de energía contenida.',
+        'Use materials and textures that reinforce Saga of Tanya the Evil - Aerial War Mage Doctrine: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Anime táctico de alta precisión, con orden visual severo y poder expresado por control compositivo.',
+        'Render Saga of Tanya the Evil - Aerial War Mage Doctrine with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Verticalidad opresiva, compresión jerárquica y diagonales de presión que organizan cualquier sujeto.',
-      atmosphere: 'Severa, calculadora e implacable.',
+        'Use spatial behavior that fits Saga of Tanya the Evil - Aerial War Mage Doctrine: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Saga of Tanya the Evil - Aerial War Mage Doctrine: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Vectores arcanos, burocracia visual, precisión geométrica, disciplina cromática y presión vertical.',
+        "Prioritize Saga of Tanya the Evil - Aerial War Mage Doctrine's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática aerial-war-doctrine reusable donde cualquier prompt se vuelva severo, jerárquico y táctico mediante geometría fría, luz de cálculo y sensación de poder administrado.',
+        'Create a style-card that translates Saga of Tanya the Evil - Aerial War Mage Doctrine into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -760,24 +794,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Bone-throne dark dominion, with ornate villain regality, cathedral dread, absolute hierarchy, and frozen authority.',
+        "Overlord Bone Throne Dark Dominion within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Overlord Bone Throne Dark Dominion's specific style identity.",
       form_and_line:
-        'Massive vertical symmetry, baroque contour density, crownlike negative space, severe silhouettes, and ceremonial stillness.',
+        'Define Overlord Bone Throne Dark Dominion through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Bone ivory, royal black, grave violet, antique gold, cold emerald, and deep crimson authority.',
+        'Use a Overlord Bone Throne Dark Dominion-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Low underglow, throne-like backlight, cathedral shadow shafts, and hard rim halos around dominant forms.',
+        'Use lighting that makes Overlord Bone Throne Dark Dominion recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Carved bone texture, polished black stone, heavy velvet darkness, tarnished gold, and cold magical dust.',
+        'Use materials and textures that reinforce Overlord Bone Throne Dark Dominion: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Grand dark-fantasy anime polish with ornate detail, oppressive scale, and absolute compositional control.',
+        'Render Overlord Bone Throne Dark Dominion with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Monumental centrality, vertical dread, and symmetrical pressure that makes any subject feel enthroned.',
-      atmosphere: 'Dominant, sinister, grandiose, foreboding.',
+        'Use spatial behavior that fits Overlord Bone Throne Dark Dominion: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Overlord Bone Throne Dark Dominion: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Skeletal regality, cathedral shadow, imperial stillness, ornate dread, absolute hierarchy.',
+        "Prioritize Overlord Bone Throne Dark Dominion's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Render any prompt with dark dominion authority: use bone-ivory contrast, baroque symmetry, cold magical dust, and oppressive stillness without requiring a literal seat of power, faction, army, or named ruler.',
+        'Create a style-card that translates Overlord Bone Throne Dark Dominion into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -788,24 +823,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Romance ocultista doméstico, ternura ritual, extrañeza feérica, hueso/musgo como materialidad y misterio afectivo.',
+        "The Ancient Magus' Bride - Thorn Cottage Enchantment within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving The Ancient Magus' Bride - Thorn Cottage Enchantment's specific style identity.",
       form_and_line:
-        'Contorno delicado de cuento gótico, curvas botánicas, siluetas extrañas abstractas y detalle íntimo de rito cotidiano.',
+        "Define The Ancient Magus' Bride - Thorn Cottage Enchantment through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.",
       color_palette:
-        'Verde musgo, crema té, marrón madera húmeda, negro hueso y dorado tenue de lámpara.',
+        "Use a The Ancient Magus' Bride - Thorn Cottage Enchantment-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.",
       lighting_setup:
-        'Luz de atardecer filtrada, velas bajas y brillos mágicos discretos de escala íntima.',
+        "Use lighting that makes The Ancient Magus' Bride - Thorn Cottage Enchantment recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.",
       material_texture:
-        'Piedra húmeda, madera antigua, porcelana, pergamino arcano y fibras vegetales vivas.',
+        "Use materials and textures that reinforce The Ancient Magus' Bride - Thorn Cottage Enchantment: surface response, grain, patina, polish, or wear should feel intentional and style-defining.",
       render_quality:
-        'Fantasía íntima de alta atmósfera con microdetalle doméstico y pulsación sobrenatural sutil.',
+        "Render The Ancient Magus' Bride - Thorn Cottage Enchantment with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.",
       spatial_distortion:
-        'Acogimiento comprimido, profundidad íntima, escala humana y foco suave sobre ritualidad cotidiana.',
-      atmosphere: 'Encantada, melancólica y cálida, con inquietud amorosa latente.',
+        "Use spatial behavior that fits The Ancient Magus' Bride - Thorn Cottage Enchantment: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.",
+      atmosphere:
+        "Set a mood that belongs to The Ancient Magus' Bride - Thorn Cottage Enchantment: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.",
       key_features:
-        'Talismán óseo abstracto, musgo, luz cálida, botánica ritual, folklore feérico y delicadeza gótica.',
+        "Prioritize The Ancient Magus' Bride - Thorn Cottage Enchantment's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática thorn-cottage reusable donde domesticidad ritual, naturaleza encantada y misterio afectivo convivan con libertad de sujeto, sin exigir vivienda, interior, rol mágico, pasaje o rito literal.',
+        "Create a style-card that translates The Ancient Magus' Bride - Thorn Cottage Enchantment into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.",
     },
   },
   {
@@ -816,24 +852,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Fantasía folclórica de umbral temporal, con romance combativo, nostalgia espiritual y tensión mítica.',
+        "Inuyasha - Shrine-Well Sengoku Pursuit within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Inuyasha - Shrine-Well Sengoku Pursuit's specific style identity.",
       form_and_line:
-        'Contrastes de época abstractos, cortes dinámicos, gestos de persecución y bordes espirituales filosos.',
+        'Define Inuyasha - Shrine-Well Sengoku Pursuit through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Rojo crepuscular, verde musgo profundo, púrpura espiritual, marfil de talismán y azul nostalgia.',
+        'Use a Inuyasha - Shrine-Well Sengoku Pursuit-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Atardecer rojizo, destellos purificadores y sombras espirituales con contraste de memoria.',
+        'Use lighting that makes Inuyasha - Shrine-Well Sengoku Pursuit recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Fibra ritual, papel talismán, metal desgastado, tierra pigmentada y aura particulada.',
+        'Use materials and textures that reinforce Inuyasha - Shrine-Well Sengoku Pursuit: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Aventura fantástica de largo aliento con equilibrio entre acción, comedia de fricción y melancolía.',
+        'Render Inuyasha - Shrine-Well Sengoku Pursuit with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Profundidad episódica, pliegues de tiempo y umbrales sugeridos sin locación obligatoria.',
-      atmosphere: 'Nostálgica, combativa y mítica.',
+        'Use spatial behavior that fits Inuyasha - Shrine-Well Sengoku Pursuit: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Inuyasha - Shrine-Well Sengoku Pursuit: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Rojo espiritual, talismán gráfico, nostalgia temporal, fricción romántica y energía folclórica.',
+        "Prioritize Inuyasha - Shrine-Well Sengoku Pursuit's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática shrine-well-feudal reusable donde cualquier prompt reciba folklore temporal, tensión romántica y aura purificadora sin exigir locación, amenaza, arma, grupo o episodio de aventura literal.',
+        'Create a style-card that translates Inuyasha - Shrine-Well Sengoku Pursuit into a portable visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

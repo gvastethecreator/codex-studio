@@ -12,23 +12,38 @@ tags:
   - architecture-and-interior
   - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: Neoclasico institucional de autoridad civica, orden axial y monumentalidad racional.
+  aesthetic: >-
+    Neoclassical within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Neoclassical's specific style identity.
   form_and_line: >-
-    Columnatas, frontones triangulares, plintos escalonados y secuencias de eje largo con simetria
-    estricta.
-  color_palette: Marmol blanco, caliza clara, piedra fria y bronce dorado con sombras gris azuladas.
-  lighting_setup: Sol lateral que estria columnas, sombras porticadas profundas y acentos nocturnos monumentales.
-  material_texture: Piedra lisa, marmol cincelado, granito pulido, yeso colado y cobre con verdin.
-  render_quality: Monumental clasico de proporcion rigurosa y legibilidad institucional permanente.
-  spatial_distortion: Perspectiva axial neutra con jerarquia frontal y escala ceremonial.
-  atmosphere: Seria, estable, civica y atemporal.
+    Define Neoclassical through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable
+    beyond one literal scene.
+  color_palette: >-
+    Use a Neoclassical-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and
+    avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Neoclassical recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Neoclassical: surface response, grain, patina, polish, or wear should feel
+    intentional and style-defining.
+  render_quality: >-
+    Render Neoclassical with high production clarity, strong silhouette reads, clean detail priority, and no accidental
+    UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Neoclassical: perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Neoclassical: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
   key_features: >-
-    Orden columnario, fronton canonico, basamento escalonado, masa civica y composicion
-    perfectamente simetrica.
+    Prioritize Neoclassical's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Convierte cualquier input en una gramatica neoclasica de eje, proporcion y masa petrea
-    disciplinada. La autoridad debe surgir del orden tectonico y la claridad ceremonial, no de un
-    capitolio, tribunal o fachada especifica.
+    Create a style-card that translates Neoclassical into a portable visual system for 2. Architectural Movements And
+    Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - modern
   - asymmetry

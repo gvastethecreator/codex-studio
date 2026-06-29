@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Deporte generacional de largo arco, legado competitivo, maduración personal y resolución sostenida.
-  form_and_line: Acting deportivo emocional, mecánica de esfuerzo sólida y postura de determinación.
-  color_palette: Paleta competitiva clásica con azules profundos, blancos cálidos y acentos rojos de herencia emocional.
-  lighting_setup: Iluminación nocturna amplia con foco sentimental sobre gesto, materia y decisión.
-  material_texture: Cuero envejecido, polvo deportivo, tela en desgaste progresivo y metal de fondo.
-  render_quality: Frame deportivo emotivo con lectura clara de trayectoria vital y tensión competitiva.
-  spatial_distortion: Perspectiva progresiva que conserva un eje de objetivo como núcleo simbólico.
-  atmosphere: Resuelta, nostálgica y profundamente motivada.
-  key_features: Iconografía deportiva abstracta, profundidad de trayectoria, ecos de crecimiento y herencia emocional.
+  aesthetic: >-
+    Generational Sports Resolve Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Generational Sports Resolve Style's specific style identity.
+  form_and_line: >-
+    Define Generational Sports Resolve Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Generational Sports Resolve Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Generational Sports Resolve Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Generational Sports Resolve Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Generational Sports Resolve Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Generational Sports Resolve Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Generational Sports Resolve Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Generational Sports Resolve Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica una gramática reusable de resolución deportiva generacional a cualquier prompt o imagen de entrada:
-    legado, madurez y arco vital sin imponer baseball, guantes, pelotas, estadios ni linajes literales.
+    Create a style-card that translates Generational Sports Resolve Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-349.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

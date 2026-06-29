@@ -12,19 +12,37 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Party-quest comedy style, with bright parody fantasy, theatrical incompetence, overblown magic timing, and joyful failure.
-  form_and_line: Bouncy contours, exaggerated reaction shapes, clean fantasy trims, comedic pose beats, and elastic timing accents.
-  color_palette: Aqua blue, sunny gold, rosy blush, carnival green, comic violet, and warm tavern-amber notes.
-  lighting_setup: Cheerful high-key glow, sudden gag flashes, soft magical bloom, and clean readable contrast for punchline timing.
-  material_texture: Polished cel surfaces, fluffy effect puffs, glossy magical sparks, soft cloth color, and bright comedic overlays.
-  render_quality: Clean comedy-fantasy anime finish with expressive timing, readable silhouettes, and charming controlled chaos.
-  spatial_distortion: Small perspective exaggerations, reaction zooms, and anticlimax framing that undercuts epic scale.
-  atmosphere: Comedic, chaotic, irreverent, satirical.
-  key_features: Parody brightness, elastic failure, gag-timed magic, cheerful disorder, anticlimax composition.
+  aesthetic: >-
+    Konosuba Party-Quest Comedy within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Konosuba Party-Quest Comedy's specific style identity.
+  form_and_line: >-
+    Define Konosuba Party-Quest Comedy through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Konosuba Party-Quest Comedy-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Konosuba Party-Quest Comedy recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Konosuba Party-Quest Comedy: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Konosuba Party-Quest Comedy with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Konosuba Party-Quest Comedy: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Konosuba Party-Quest Comedy: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Konosuba Party-Quest Comedy's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Apply fantasy parody as a visual treatment: make any prompt bright,
-    theatrical, and joyfully inept through gag timing, saturated clarity, and
-    anticlimax composition without requiring a fixed group, place, or gag scene.
+    Create a style-card that translates Konosuba Party-Quest Comedy into a portable visual system for 8. Isekai & High
+    Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-094.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

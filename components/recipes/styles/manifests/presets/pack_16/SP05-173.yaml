@@ -12,19 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Cel anime 90s de melancolía humanista, humor defensivo y heroísmo pacifista bajo luz abrasada.
-  form_and_line: Línea energética y elástica, siluetas largas, gestos cómicos que se quiebran en pausa dramática y contornos de gran soledad.
-  color_palette: Ocres dorados, azul seco, rojo acento dominante, marrones quemados y sombras violeta apagadas.
-  lighting_setup: Luz dura de mediodía, rim cálido, contraluces crepusculares y sombras amplias que agrandan la distancia emocional.
-  material_texture: Grano seco de cel clásico, polvo atmosférico, superficies gastadas, cuero estilizado y ruido cinematográfico cálido.
-  render_quality: Acabado premium noventero que alterna slapstick, tensión ética y lirismo de largo alcance sin exigir props específicos.
-  spatial_distortion: Horizontes enormes y encuadres comprimidos que convierten cualquier sujeto en figura solitaria ante una decisión moral.
-  atmosphere: Bufonesca, compasiva, errante, melancólica.
-  key_features: Rojo protagonista, polvo dorado, acting cómico-serio, líneas de distancia épica y contraste entre ternura y peligro.
+  aesthetic: >-
+    Dust-Warm Pacifist Melancholy Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Dust-Warm Pacifist Melancholy Style's specific style identity.
+  form_and_line: >-
+    Define Dust-Warm Pacifist Melancholy Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Dust-Warm Pacifist Melancholy Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Dust-Warm Pacifist Melancholy Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Dust-Warm Pacifist Melancholy Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Dust-Warm Pacifist Melancholy Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Dust-Warm Pacifist Melancholy Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Dust-Warm Pacifist Melancholy Style: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Dust-Warm Pacifist Melancholy Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica este preset como tratamiento abstracto de anime 90s: cualquier
-    prompt debe ganar calidez polvorienta, humanidad contradictoria, humor
-    frágil y melancolía ética sin quedar atado a una escena western.
+    Create a style-card that translates Dust-Warm Pacifist Melancholy Style into a portable visual system for 3. 90s
+    Golden Era. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-173.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Romanticismo corsario crepuscular, con ética disidente, elegancia fúnebre y soledad heroica.
-  form_and_line: Silueta de capa dominante, línea heroica elongada y contornos limpios de icono outlaw de alto contraste.
-  color_palette: Negros terciopelo, azules de abismo estelar, rojos vino de emblema y blancos fríos de insignia.
-  lighting_setup: Contraluz estelar dramático con rim fuerte sobre capa y rostro, sombras planas de fuerte identidad gráfica.
-  material_texture: Tejido pesado en movimiento, superficies de casco oscurecidas y señalética pirata de acabado clásico.
-  render_quality: Terminación premium retro-operática con foco en presencia de figura única y aura de leyenda errante.
-  spatial_distortion: Contraste de primerísimo monumental contra vacío astral negativo para acentuar aislamiento soberano.
-  atmosphere: Romántica, solitaria, rebelde, cósmica.
-  key_features: Silueta imperial, vacío compositivo, viento estelar abstracto, emblemas oscuros y código moral insumiso.
+  aesthetic: >-
+    Melancholic Space Corsair Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Melancholic Space Corsair Style's specific style identity.
+  form_and_line: >-
+    Define Melancholic Space Corsair Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Melancholic Space Corsair Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Melancholic Space Corsair Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Melancholic Space Corsair Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Melancholic Space Corsair Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Melancholic Space Corsair Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Melancholic Space Corsair Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Melancholic Space Corsair Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Crea una gramática reusable de leyenda corsaria melancólica para cualquier prompt o imagen de entrada:
-    elegancia fúnebre, vacío y disidencia sin imponer capas, calaveras, capitanes ni naves.
+    Create a style-card that translates Melancholic Space Corsair Style into a portable visual system for 11. 70s & 80s
+    Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-302.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

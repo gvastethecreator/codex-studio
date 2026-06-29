@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Comedia romántica adulta de convivencia lenta, erosión cotidiana y ternura de segunda oportunidad.
-  form_and_line: Línea suave de convivencia, actuación sutil de proximidad y composición íntima con humor de fricción diaria.
-  color_palette: Ámbares de atardecer, marrones de madera vivida, verdes apagados y rojos discretos de intimidad.
-  lighting_setup: Luz dorada de fin de tarde con sombras planas tranquilas y contraste bajo que favorece ternura acumulativa.
-  material_texture: Superficies gastadas, telas colgadas, muebles usados y grano cálido de serie televisiva clásica.
-  render_quality: Acabado premium retro-doméstico con énfasis en microdrama emocional y timing cómico cotidiano.
-  spatial_distortion: Corredores estrechos y espacios conectados que intensifican roce emocional continuo.
-  atmosphere: Cálida, nostálgica, doméstica, paciente.
-  key_features: Clutter habitable, luz de atardecer, microgesto afectivo, desgaste entrañable y humor cotidiano suave.
+  aesthetic: >-
+    Adult Domestic Warmth Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Adult Domestic Warmth Style's specific style identity.
+  form_and_line: >-
+    Define Adult Domestic Warmth Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Adult Domestic Warmth Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Adult Domestic Warmth Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Adult Domestic Warmth Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Adult Domestic Warmth Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Adult Domestic Warmth Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Adult Domestic Warmth Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Adult Domestic Warmth Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Crea una gramática reusable de intimidad doméstica adulta para cualquier prompt o imagen de entrada:
-    rutina, calidez y tiempo vivido sin imponer pensiones, balcones, vecinos ni romance explícito.
+    Create a style-card that translates Adult Domestic Warmth Style into a portable visual system for 11. 70s & 80s
+    Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-306.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

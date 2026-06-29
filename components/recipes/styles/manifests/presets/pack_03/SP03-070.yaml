@@ -12,23 +12,37 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: Reboot/Toy Story 1 early feature-era CGI, pioneer polygons, awkward charm
-  form_and_line: Simple geometry
-  color_palette: Primary colors, flat 90s palette
-  lighting_setup: Phong shading, ambient-fill
-  material_texture: Checkerboard, procedural era
-  render_quality: Vintage CGI, uncanny, nostalgic retro
-  spatial_distortion: Stiff animation
-  atmosphere: Nostalgic, weird, pioneering spirit
-  key_features: No shadows, jitter-free geometry
+  aesthetic: >-
+    Retro CGI (90s) within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis,
+    disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving
+    Retro CGI (90s)'s specific style identity.
+  form_and_line: >-
+    Define Retro CGI (90s) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Retro CGI (90s)-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Retro CGI (90s) recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Retro CGI (90s): surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
+  render_quality: >-
+    Render Retro CGI (90s) with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Retro CGI (90s): perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Retro CGI (90s): specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Retro CGI (90s)'s key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Simple geometry wears Phong shading like a badge of its era — primary colors pop against checkerboard textures, and
-    ambient-fill lighting substitutes for the bounce light these renderers could not yet calculate. No ambient
-    occlusion, no global illumination, just the honest awkwardness of pioneer polygons rendered with the tools of 1995.
-    The image channels Reboot and Toy Story 1: stiff animation, uncanny charm, the pioneering spirit of an industry
-    discovering what it could become. Apply Retro CGI as a portable 3D/render style system over any input: preserve its
-    renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
-    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Create a style-card that translates Retro CGI (90s) into a portable visual system for 4. 3D Styles. Preserve the
+    preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - modern
   - ambient occlusion

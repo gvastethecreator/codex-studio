@@ -49,17 +49,26 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text',
     style: {
-      aesthetic: 'Biased GPU render',
-      form_and_line: 'Clean, noise-free',
-      color_palette: 'Production quality, cinematic tones',
-      lighting_setup: 'Soft shadows, caustics, photon-mapped',
-      material_texture: 'Production assets, complex shaders',
-      render_quality: 'Motion graphics, clean, broadcast-ready',
-      spatial_distortion: 'None',
-      atmosphere: 'Professional, studio, fast-turnaround',
-      key_features: 'Fast blur, out-of-core rendering',
+      aesthetic:
+        "Redshift Biased GPU Renderer within 1. Render Engines: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Redshift Biased GPU Renderer's specific style identity.",
+      form_and_line:
+        'Define Redshift Biased GPU Renderer through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Redshift Biased GPU Renderer-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Redshift Biased GPU Renderer recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Redshift Biased GPU Renderer: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Redshift Biased GPU Renderer with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Redshift Biased GPU Renderer: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Redshift Biased GPU Renderer: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Redshift Biased GPU Renderer's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        "Speed and beauty converge in a renderer that knows exactly which corners to cut without leaving a trace — caustics cascade through photon-mapped precision while soft shadows pool like spilled ink. Redshift's biased genius lies in choosing its battles: flawless blur, noise-free interiors, production-ready frames delivered at the pace of creative impulse. The result is broadcast-ready clarity, a signal unblemished by hesitation. Apply Redshift Biased GPU Renderer as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.",
+        'Create a style-card that translates Redshift Biased GPU Renderer into a portable visual system for 1. Render Engines. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {

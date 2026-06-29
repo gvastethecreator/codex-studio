@@ -13,29 +13,37 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Realismo pulido quebrado por memoria, performance e identidad inestable entre reflejos,
-    pantallas y cortes perceptivos.
-  form_and_line: Contorno refinado realista, detalle facial actoral y dislocación sutil en líneas de encuadre.
-  color_palette: Cool steel, skin peach, screen blue, lipstick crimson, neutral beige, shadow plum
+    Reality-Slip Reflection Continuity within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Reality-Slip Reflection Continuity's specific style identity.
+  form_and_line: >-
+    Define Reality-Slip Reflection Continuity through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Reality-Slip Reflection Continuity-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
   lighting_setup: >-
-    Iluminación práctica reflectiva, spill de monitor, spot íntimo y sombras de suspense de
-    superficie limpia.
-  material_texture: Reflejos en vidrio, brillo cosmético, barniz pulido y glow de escaneo electrónico.
+    Use lighting that makes Reality-Slip Reflection Continuity recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Reality-Slip Reflection Continuity: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
   render_quality: >-
-    Suspense psicológico cinematográfico con continuidad quebrada y lectura precisa de capas
-    perceptivas.
+    Render Reality-Slip Reflection Continuity with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Reality-slip match cuts, reflection-depth confusion, poised adult proportion, and cinematic
-    frame logic with subtle breakage
-  atmosphere: Inquietante y sofisticada, de tensión mental bajo control aparente.
+    Use spatial behavior that fits Reality-Slip Reflection Continuity: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Reality-Slip Reflection Continuity: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
   key_features: >-
-    Reflection logic, polished adult spaces, screenlike cuts, memory-performance slippage, identity
-    fracture, and seamless impossible continuity
+    Prioritize Reality-Slip Reflection Continuity's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Use Satoshi Kon as style anchor for reality-slip reflection continuity. Any prompt should
-    fracture identity through polished surfaces, perceptual cuts, memory drift, and seamless
-    impossible transitions. Hallways, cities, screens, mirrors, protagonists, and literal
-    reflections are optional.
+    Create a style-card that translates Reality-Slip Reflection Continuity into a portable visual system for 12. Anime
+    Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - blunt horror gore
   - chaotic dream collage
@@ -48,8 +56,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-342.webp
 attributes:
   negativePrompt: >-
-    blunt horror gore, chaotic dream collage, flat sitcom framing, cartoon chibi acting, muddy
-    low-detail realism, fantasy ornament clutter, obvious literal symbolism
+    blunt horror gore, chaotic dream collage, flat sitcom framing, cartoon chibi acting, muddy low-detail realism,
+    fantasy ornament clutter, obvious literal symbolism
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -13,30 +13,37 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Fantasía tecnomágica festiva donde ingeniería arcana, hechicería explosiva y virtuosismo del
-    dibujo celebran movimiento.
-  form_and_line: Contorno seguro y enérgico, detalle técnico abundante y arcos de movimiento con timing jubiloso.
-  color_palette: Festival orange, cobalt blue, emerald, parchment cream, ruby red, twilight purple
+    Technomagic Draftsmanship Burst within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Technomagic Draftsmanship Burst's specific style identity.
+  form_and_line: >-
+    Define Technomagic Draftsmanship Burst through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Technomagic Draftsmanship Burst-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
   lighting_setup: >-
-    Burst lumínico festivo, lluvia de chispas mágicas y rim de celebración con acentos
-    direccionales.
+    Use lighting that makes Technomagic Draftsmanship Burst recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
   material_texture: >-
-    Herrajes metálicos, cuero y pergamino, partículas de chispa y superficies de acabado animado
-    pulcro.
+    Use materials and textures that reinforce Technomagic Draftsmanship Burst: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
   render_quality: >-
-    Ilustración de fantasía cinética con densidad de ingeniería legible y espectáculo luminoso
-    controlado.
+    Render Technomagic Draftsmanship Burst with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Whip-fast action curves, machine-layer depth, playful figure exaggeration, fireworks-burst
-    composition
-  atmosphere: Lúdica, compleja y expansiva, con energía de celebración artesanal.
+    Use spatial behavior that fits Technomagic Draftsmanship Burst: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Technomagic Draftsmanship Burst: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
   key_features: >-
-    Complex fantasy hardware, celebratory motion arcs, bright technical magic, expressive
-    construction lines, and draftsmanship as spectacle
+    Prioritize Technomagic Draftsmanship Burst's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Use Yoh Yoshinari as style anchor for technomagic draftsmanship bursts. Any prompt should feel
-    engineered, magical, precise, explosive, and joyfully drawn. Machinery, festivals, fireworks,
-    mages, and adventure scenes are optional.
+    Create a style-card that translates Technomagic Draftsmanship Burst into a portable visual system for 12. Anime
+    Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - still
   - calm

@@ -12,21 +12,35 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Gramática co-op siege medieval-fantasy con defensa por oleadas, presión escalada y ornamentación gótica funcional.
+  aesthetic: >-
+    Ruined Cathedral Co-op Siege within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Ruined Cathedral Co-op Siege's specific style identity.
   subject_treatment: >-
-    Reinterpreta el input como party, fortificación, reliquia o amenaza de asedio; roles tank/heal/range/control deben
-    aparecer sólo cuando ayudan a la lectura.
-  color_and_tone: Grises ceniza, rojo brasa y oro apagado para diferenciar estado de fortificación y daño acumulado.
-  lighting_and_shadow: Antorchas locales + cielo de tormenta para alternar zonas seguras y puntos de riesgo.
-  texture_and_material: Piedra erosionada, vitrales rotos, metal fatigado y restos de barricada reutilizable.
-  camera_and_composition: Objective hub, flancos activos y rutas de oleada telegráficas como composición; no exigir catedral ni nave central.
-  atmosphere_and_mood: Presión sostenida, heroísmo cooperativo y resistencia de último tramo.
-  rendering_and_quality: 'Co-op raid gameplay frame: objective layers, enemy flow, cooldown windows, party roles visible.'
+    Treat any subject through Ruined Cathedral Co-op Siege's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Ruined Cathedral Co-op Siege: clear tonal hierarchy, intentional contrast,
+    and category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Ruined Cathedral Co-op Siege: legible depth, purposeful highlights, readable focal zones,
+    and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Ruined Cathedral Co-op Siege's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Ruined Cathedral Co-op Siege's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Ruined Cathedral Co-op Siege's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
   creative_brief: >-
-    Aplica Ruined Cathedral Co-op Siege como gramatica original de videojuego sobre cualquier input: conserva su sistema
-    de genero, silueta, materiales, camara, color y tension jugable, pero traduce personaje, objeto, criatura,
-    arquitectura o abstraccion sin exigir escenario literal, faccion, mapa, combate, texto legible ni set-piece
-    fijo.
+    Create a style-card that translates Ruined Cathedral Co-op Siege into a portable visual system for 4. Sieges,
+    Warfronts & Last Stands. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - watermark
   - text

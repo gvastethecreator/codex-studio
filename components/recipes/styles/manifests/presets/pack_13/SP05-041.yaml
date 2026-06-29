@@ -12,30 +12,38 @@ tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
 visualDna:
-  aesthetic: Ornamental court-romance shojo style with aristocratic elegance, ceremonial drama, and emotionally charged decorum
+  aesthetic: >-
+    Ornate Palace Shojo within 4. Shojo, Magical Girl & Visionary Classics: a reusable Anime Character & Lifestyle
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Ornate Palace Shojo's specific style identity.
   form_and_line: >-
-    Fine calligraphic contouring, elongated graceful anatomy, couture silhouette emphasis, gesture-rich hand and gaze
-    choreography
+    Define Ornate Palace Shojo through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
   color_palette: >-
-    Rose-pearl pastels with jewel-toned ceremonial accents, warm candle ambers, ivory highlights, and muted velvet
-    shadows
+    Use a Ornate Palace Shojo-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Portrait-soft bloom, candle-like practical glows, selective rim polish, and luminous halation tuned for emotional
-    proximity
+    Use lighting that makes Ornate Palace Shojo recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
   material_texture: >-
-    Silk drape fidelity, lace micro-detail, satin reflectance, floral appliqué softness, delicate ornamental surface
-    layering
+    Use materials and textures that reinforce Ornate Palace Shojo: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
   render_quality: >-
-    Luxe shojo rendering with couture-grade fabric readability, polished emotional close-ups, and restrained cinematic
-    softness
-  spatial_distortion: Ballroom-scale elegance through vertical elongation and curated depth layering that prioritizes relational staging
-  atmosphere: Regal, yearning, tender, ceremonial, dramatic
-  key_features: Couture-emotion coupling, ornament-driven composition, gaze-led dramaturgy, ceremonial color hierarchy
+    Render Ornate Palace Shojo with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Ornate Palace Shojo: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Ornate Palace Shojo: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Ornate Palace Shojo's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Encode this preset as an ornamental romance grammar: couture silhouettes, ceremonial lighting, and emotionally
-    loaded gaze choreography should remain transferable beyond any single palace narrative. Apply this anime/IP-title
-    grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and production cues
-    while avoiding a required cast, lore event, location, prop, or fixed scene.
+    Create a style-card that translates Ornate Palace Shojo into a portable visual system for 4. Shojo, Magical Girl &
+    Visionary Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render

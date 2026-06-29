@@ -13,16 +13,37 @@ tags:
   - mythic
   - cosmology
 visualDna:
-  aesthetic: Planetary bell alarm language with celestial timing, ritual defense, and solemn warning.
-  form_and_line: Bell-tower cues, concentric wall rhythms, and hanging bridge loops.
-  color_palette: Iron gray, moon silver, and ember bronze.
-  lighting_setup: Bell-chamber glows and storm backlight.
-  material_texture: Cast bronze bells, weathered stone, and rope fibers.
-  render_quality: High-contrast fortress concept with ritual emphasis.
-  spatial_distortion: Vertical focus rising from threshold to bell crown.
-  atmosphere: Alarmed solemnity and cosmic timing.
-  key_features: Planetary bells, omen gears, signal parapet cues.
-  creative_brief: Apply planetary bell alarm to the input, calibrating its rhythm to celestial conjunctions without requiring a citadel.
+  aesthetic: >-
+    Planetary Bell Alarm within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Planetary Bell Alarm's specific style identity.
+  form_and_line: >-
+    Define Planetary Bell Alarm through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Planetary Bell Alarm-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Planetary Bell Alarm recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Planetary Bell Alarm: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Planetary Bell Alarm with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Planetary Bell Alarm: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Planetary Bell Alarm: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Planetary Bell Alarm's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Planetary Bell Alarm into a portable visual system for 4. Mythic Cosmology &
+    Omens. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - playful

@@ -12,19 +12,38 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Isekai mercantil lunar de tono deadpan, donde poder abrumador se expresa como calma práctica y diplomacia seca.
-  form_and_line: Formas sobrias, ritmo negociador, gestos contenidos y contraste entre escala implícita y lectura cotidiana.
-  color_palette: Plata de luna, azul medianoche, verde comercio, ocre de camino y violeta tenue de aura contenida.
-  lighting_setup: Nocturnidad limpia, highlights cálidos bajos y acentos suaves que dejan el poder en reserva.
-  material_texture: Madera seca, cuero sobrio, metal de intercambio, tela mate y polvo mineral en clave abstracta.
-  render_quality: Fantasía transaccional con detalle económico, humor seco y poder subrayado por contención.
-  spatial_distortion: Espacio amplio sugerido, microjerarquías de intercambio y foco tranquilo sin escena fija.
-  atmosphere: Desapegada, práctica y confiada.
-  key_features: Luz lunar mercantil, calma overpowered, diplomacia práctica, economía visual y aura violeta contenida.
+  aesthetic: >-
+    Tsukimichi - Moonlit Merchant Wanderer within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Tsukimichi - Moonlit Merchant Wanderer's specific style identity.
+  form_and_line: >-
+    Define Tsukimichi - Moonlit Merchant Wanderer through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Tsukimichi - Moonlit Merchant Wanderer-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Tsukimichi - Moonlit Merchant Wanderer recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Tsukimichi - Moonlit Merchant Wanderer: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Tsukimichi - Moonlit Merchant Wanderer with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Tsukimichi - Moonlit Merchant Wanderer: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Tsukimichi - Moonlit Merchant Wanderer: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Tsukimichi - Moonlit Merchant Wanderer's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Define una gramática moonlit-merchant reusable donde cualquier prompt se
-    vuelva práctico, lunar y diplomático mediante economía visual, humor seco y
-    poder contenido sin depender de escena transaccional o utilería literal.
+    Create a style-card that translates Tsukimichi - Moonlit Merchant Wanderer into a portable visual system for 8.
+    Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-257.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

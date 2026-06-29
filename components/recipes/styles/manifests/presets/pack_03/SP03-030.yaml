@@ -12,22 +12,34 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: Broken geometry
-  form_and_line: Vertex explosion
-  color_palette: Texture stretching, corrupted-channel hues
-  lighting_setup: Broken, glitch-light
-  material_texture: Corrupted UVs, vertex-color errors
-  render_quality: Data moshing, digital decay
-  atmosphere: Chaotic, broken, signal failure
-  key_features: Artifacts, vertex explosion
+  aesthetic: >-
+    Glitch 3D within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis,
+    disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving
+    Glitch 3D's specific style identity.
+  form_and_line: >-
+    Define Glitch 3D through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable
+    beyond one literal scene.
+  color_palette: >-
+    Use a Glitch 3D-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and
+    avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Glitch 3D recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable
+    hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Glitch 3D: surface response, grain, patina, polish, or wear should feel
+    intentional and style-defining.
+  render_quality: >-
+    Render Glitch 3D with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI,
+    text, logos, or watermark.
+  atmosphere: >-
+    Set a mood that belongs to Glitch 3D: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Glitch 3D's key features: recognizable shape language, palette logic, material cues, lighting behavior,
+    and composition rules.
   creative_brief: >-
-    Vertices tear free from their moorings and scatter like shrapnel from a digital explosion — UV maps stretch, texture
-    channels swap, and the geometry itself forgets what shape it was supposed to hold. Corrupted data becomes aesthetic:
-    chromatic offsets bleed at the seams, and mesh errors bloom into accidental sculpture. The image is signal failure
-    rendered beautiful, a datamosh fever dream where the glitch is the message and destruction is the medium. Apply
-    Glitch 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior,
-    geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
-    environment, UI screen, product shot, or scene template.
+    Create a style-card that translates Glitch 3D into a portable visual system for 4. 3D Styles. Preserve the preset
+    identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - clean
   - perfect

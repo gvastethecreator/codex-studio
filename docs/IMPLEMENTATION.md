@@ -1,38 +1,38 @@
-# Detalles de implementación
+# Implementation Details
 
-## Resumen
+## Summary
 
-El flujo actual evita acoplar la UI a proveedores externos desde navegador y centraliza la ejecución real en backend local.
+The current flow avoids coupling the browser UI to external providers and centralizes real execution in the local backend.
 
 ## Routing
 
-Se mantiene routing hash-based liviano para studio, recipes, modales y editor, preservando navegación back/forward sin introducir `react-router`.
+The app keeps lightweight hash-based routing for studio, recipes, modals, and editor flows, preserving back/forward navigation without introducing `react-router`.
 
-## Grid y miniaturas
+## Grid And Thumbnails
 
-`ImageGrid` conserva layout visual principal. Las imágenes nuevas llegan como URLs servidas por `/library/*`.
+`ImageGrid` keeps the main visual layout. New images arrive as URLs served by `/library/*`.
 
-## Flujo de generación
+## Generation Flow
 
-1. La UI crea un job visual transitorio.
-2. `runLocalGeneration` crea jobs persistentes en backend local.
-3. `watchJob()` espera estados terminales sobre SSE.
-4. `worker` ejecuta vía Provider Boundary (Codex principal).
-5. Se escriben assets/transcripts/metadatos en Studio Library.
-6. La UI consulta `/api/catalog` por `jobId` y renderiza desde Catalog Entries.
+1. The UI creates a transient visual job.
+2. `runLocalGeneration` creates persistent jobs in the local backend.
+3. `watchJob()` waits for terminal states over SSE.
+4. `worker` executes through the Provider Boundary, with Codex as the primary path.
+5. Assets, transcripts, and metadata are written to the Studio Library.
+6. The UI queries `/api/catalog` by `jobId` and renders from Catalog Entries.
 
-## Cola persistente
+## Persistent Queue
 
-La cola visible mezcla Browser Queue y jobs persistentes (SQLite). La Browser Queue persiste sus jobs en IndexedDB para sobrevivir refreshes. Si un job ya llegó al backend antes del refresh, la UI no lo re-ejecuta: el seguimiento durable queda en Backend Session Jobs.
+The visible queue blends Browser Queue and persistent SQLite-backed jobs. Browser Queue persists jobs in IndexedDB so they survive refreshes. If a job already reached the backend before refresh, the UI does not execute it again: durable tracking stays in Backend Session Jobs.
 
-## Sincronización en vivo
+## Live Sync
 
-`useLocalStudioSync` hace catch-up HTTP y luego escucha `GET /api/events`. Si se corta SSE, refresca estado antes de reconectar.
+`useLocalStudioSync` performs HTTP catch-up and then listens to `GET /api/events`. If SSE disconnects, it refreshes state before reconnecting.
 
 ## Logs
 
-La consola visual combina logs de UI y backend; además el backend persiste logs en disco dentro de Studio Library.
+The visual console combines UI and backend logs. The backend also persists logs to disk inside the Studio Library.
 
-## Compatibilidad legacy
+## Legacy Compatibility
 
-`GenerationBatch[]` y Vault JSON quedan como superficies de compatibilidad/recovery, no como modelo durable principal.
+`GenerationBatch[]` and Vault JSON remain compatibility/recovery surfaces, not the main durable model.

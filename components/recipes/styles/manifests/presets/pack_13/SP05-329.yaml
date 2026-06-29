@@ -13,28 +13,36 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Horror manga clásico de pánico espiral, con teatralidad de alto contraste y neurosis gráfica
-    corrosiva.
+    Spiral Panic Engraving within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Spiral Panic Engraving's specific style identity.
   form_and_line: >-
-    Contorno dentado, masas negras contundentes y densidad chillante de stress-lines alrededor del
-    foco.
-  color_palette: Bone white, pitch black, dried blood red, sickly mint, corpse blue, bruise violet
-  lighting_setup: Spotlight hostil, negativos profundos y sobreexposición de formas en estado de shock.
+    Define Spiral Panic Engraving through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Spiral Panic Engraving-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Spiral Panic Engraving recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
   material_texture: >-
-    Negro de tinta saturado, screentone rasposo, diente de papel y sombreado áspero de pesadilla
-    impresa.
-  render_quality: Terror gráfico de lectura inmediata, con composición de crisis y contraste brutal.
+    Use materials and textures that reinforce Spiral Panic Engraving: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Spiral Panic Engraving with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Wide scream-like apertures, bulging eye-like focal shapes, warped depth corridors, and
-    panic-twisted posture
-  atmosphere: Histérica, uncanny y retro, con amenaza infantil deformada.
+    Use spatial behavior that fits Spiral Panic Engraving: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Spiral Panic Engraving: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Spiral panic geometry, severe black-white contrast, striated fear patterns, theatrical
-    expression pressure, and corrosive manga texture
+    Prioritize Spiral Panic Engraving's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Use Kazuo Umezz as style anchor for spiral panic engraving. Any prompt should be trapped by
-    graphic fear geometry, high-contrast pressure, and obsessive line pattern. Human faces, screams,
-    hallways, victims, and chase scenes are optional.
+    Create a style-card that translates Spiral Panic Engraving into a portable visual system for 12. Anime Style
+    Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - still
   - calm

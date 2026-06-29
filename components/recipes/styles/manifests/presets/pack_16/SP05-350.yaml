@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
 visualDna:
-  aesthetic: Deporte acuático luminoso centrado en sincronía, técnica corporal y transición fluida.
-  form_and_line: Anatomía hidrodinámica limpia, arcos fluidos y lectura clara de cambio de ritmo.
-  color_palette: Azules clorados, blancos espumosos y acentos saturados para lectura de flujo direccional.
-  lighting_setup: Iluminación acuática con caústicas controladas y highlights sobre láminas fluidas.
-  material_texture: Láminas especulares, humedad mineral, tejido elástico y gotas en suspensión.
-  render_quality: Frame acuático de alta nitidez con prioridad en salida, ritmo y transición.
-  spatial_distortion: Distorsión suave por refracción y perspectiva longitudinal para lectura de velocidad.
-  atmosphere: Refrescante, competitiva y emocionalmente cohesionada.
-  key_features: Arcos de splash, geometría líquida, reflejos de cloro, tensión de relevo y siluetas aerodinámicas.
+  aesthetic: >-
+    Aquatic Relay Glow Style within 6. Sports, Competition & Performance: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Aquatic Relay Glow Style's specific style identity.
+  form_and_line: >-
+    Define Aquatic Relay Glow Style through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Aquatic Relay Glow Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Aquatic Relay Glow Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Aquatic Relay Glow Style: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Aquatic Relay Glow Style with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Aquatic Relay Glow Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Aquatic Relay Glow Style: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Aquatic Relay Glow Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica una gramática reusable de energía acuática sincronizada a cualquier prompt o imagen de entrada:
-    agua, brillo y transición fluida sin imponer natación, carriles, piletas, relevos ni cuerpos poolside.
+    Create a style-card that translates Aquatic Relay Glow Style into a portable visual system for 6. Sports,
+    Competition & Performance. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-350.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

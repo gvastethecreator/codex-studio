@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Vow-binding noir guarded by ceremonial seals, cords, and austere authority.
-  form_and_line: Sharp verticals, rite-edge cues, and disciplined symmetry.
-  color_palette: Iron black, dried crimson, and bone white.
-  lighting_setup: Single altar beam and edge highlights on metal.
-  material_texture: Etched metal, cracked stone, and stained leather.
-  render_quality: Stark mythic key art with ceremonial precision.
-  spatial_distortion: Frontal axis with blades framing a symbolic commitment point, not a required chapel.
-  atmosphere: Binding, sacrifice, and austere authority.
-  key_features: Oath seals, binding cords, vow-tablet shapes.
-  creative_brief: Convert any input into oath-knife binding style, where promises feel sealed by ceremonial emblems and cord tension. Keep sharp verticals, dried crimson, rite-beam contrast, and austere symmetry without requiring blades, chapels, altars, vows, or violent sacrifice scenes.
+  aesthetic: >-
+    Oath Knife Binding within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Oath Knife Binding's specific style identity.
+  form_and_line: >-
+    Define Oath Knife Binding through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Oath Knife Binding-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Oath Knife Binding recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Oath Knife Binding: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Oath Knife Binding with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Oath Knife Binding: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Oath Knife Binding: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Oath Knife Binding's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Oath Knife Binding into a portable visual system for 2. Mythic Ritual Noir.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cartoon

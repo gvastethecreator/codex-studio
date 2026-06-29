@@ -12,16 +12,38 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Glacial pilgrimage noir with austere sacred logistics and relic-protection discipline.
-  form_and_line: Protected-relic silhouettes, wind-cut banner rhythms, armored container cues, and elongated horizon bands.
-  color_palette: Frost silver, midnight blue, and muted ember orange.
-  lighting_setup: Polar twilight with intermittent lantern halos through blowing snow.
-  material_texture: Iced leather, weathered wood, frosted iron, and crystalline snow crust.
-  render_quality: Premium environmental key art balancing atmosphere and subject readability.
-  spatial_distortion: Wide depth cues with repeated protected-object silhouettes fading into blizzard haze.
-  atmosphere: Endurance, solemn duty, and quiet eschatological urgency.
-  key_features: Armored reliquary cues, wind-bent banners, frozen marker stones, lantern halos, and glacial duty.
-  creative_brief: 'Freeze the input into frostbound reliquary endurance: silver ice, midnight blue depth, ember lantern points, armored sacred-object cues, and wind-bent banner rhythm should imply pilgrimage discipline without requiring caravans, wagons, travelers, or a winter landscape.'
+  aesthetic: >-
+    Frostbound Reliquary Endurance within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Frostbound Reliquary Endurance's specific style identity.
+  form_and_line: >-
+    Define Frostbound Reliquary Endurance through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Frostbound Reliquary Endurance-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Frostbound Reliquary Endurance recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Frostbound Reliquary Endurance: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Frostbound Reliquary Endurance with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Frostbound Reliquary Endurance: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Frostbound Reliquary Endurance: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Frostbound Reliquary Endurance's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Frostbound Reliquary Endurance into a portable visual system for 3. Mythic
+    Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - photoreal
   - tropical-vibes

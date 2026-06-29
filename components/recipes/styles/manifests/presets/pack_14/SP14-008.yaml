@@ -13,16 +13,37 @@ tags:
   - mythic
   - psychopomp-legend
 visualDna:
-  aesthetic: Mythic psychopomp legend translated into solemn chivalric funerary grace.
-  form_and_line: Processional profile rhythm, soul-guiding blade-like diagonals, heraldic floral drapery, and threshold arcs.
-  color_palette: Withered rose crimson, velvet black, and funerary silver.
-  lighting_setup: Ashen dawn haze with selective metallic glints over wet petals.
-  material_texture: Dried rose bundles, satin-polished armor, carved tomb marble, and mourning silk.
-  render_quality: Lyrical prestige illustration with symbolic readability at mid-distance.
-  spatial_distortion: Threshold-axis perspective leading toward symbolic passage without requiring a necropolis or mausoleum.
-  atmosphere: Sacred mourning, oath-bound honor, and tender fatality.
-  key_features: Soulward rose trails, vigil-cavalier cues, boundary-gate silhouettes, funerary silver, and ceremonial mourning standards.
-  creative_brief: 'Escort the input through funeral rose psychopomp grace: withered crimson, velvet black, silver threshold light, rose-trail arcs, and chivalric mourning silhouettes should make any subject feel duty-bound and tenderly fatal without requiring a rider, dead soul, cemetery, gate, or funeral procession.'
+  aesthetic: >-
+    Funeral Rose Psychopomp within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Funeral Rose Psychopomp's specific style identity.
+  form_and_line: >-
+    Define Funeral Rose Psychopomp through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Funeral Rose Psychopomp-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Funeral Rose Psychopomp recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Funeral Rose Psychopomp: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Funeral Rose Psychopomp with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Funeral Rose Psychopomp: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Funeral Rose Psychopomp: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Funeral Rose Psychopomp's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Funeral Rose Psychopomp into a portable visual system for 3. Mythic Pantheons &
+    Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cartoon-comedy

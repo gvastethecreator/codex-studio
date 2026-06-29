@@ -12,19 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Fantasía metafísica de duelo, con naturaleza velada, umbrales abstractos y transformación interna.
-  form_and_line: Línea delicada y contemplativa, bordes suavemente inestables y siluetas tratadas como presencias ambiguas.
-  color_palette: Verdes apagados de humedad emocional, grises de luto, marfiles velados y acentos cálidos mínimos de memoria íntima.
-  lighting_setup: Luz difusa de cielo cubierto con contraluces tenues en bruma, preservando ambigüedad entre vigilia y sueño.
-  material_texture: Veladuras húmedas, fibras orgánicas sugeridas, yeso erosionado y madera envejecida como memoria material.
-  render_quality: Terminación premium de tono introspectivo, con jerarquía suave y microdetalle atmosférico orientado a sensación de tránsito.
-  spatial_distortion: Profundidad por capas de neblina y arquitectura no euclidiana ligera que sugiere pasaje interior.
-  atmosphere: Doliente, extraña, contemplativa, en búsqueda.
-  key_features: Umbral simbólico, quietud suspendida, luz velada, escala emocional ambigua y materia orgánica sugerida.
+  aesthetic: >-
+    Metaphysical Mourning Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Metaphysical Mourning Style's specific style identity.
+  form_and_line: >-
+    Define Metaphysical Mourning Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Metaphysical Mourning Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Metaphysical Mourning Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Metaphysical Mourning Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Metaphysical Mourning Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Metaphysical Mourning Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Metaphysical Mourning Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Metaphysical Mourning Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática transferible de duelo onírico para cualquier prompt o imagen de entrada:
-    silencio metafísico, bordes inestables y sensación de tránsito interior sin imponer aves, torres, pantanos ni portales literales.
-
+    Create a style-card that translates Metaphysical Mourning Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-283.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

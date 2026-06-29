@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Drama de entrenamiento y sacrificio extremo, con vulnerabilidad emotiva, escala cósmica y determinación formativa.
-  form_and_line: Línea cel de alto contraste, close-ups emocionales intensos y siluetas monumentales frente a fragilidad humana.
-  color_palette: Azules nocturnos de base, blancos técnicos, rojos de alarma y naranjas de impulso terminal.
-  lighting_setup: Luz industrial con destellos de energía, sombras planas rígidas y backlight de cuenta regresiva emocional.
-  material_texture: Masa técnica pesada, paneles funcionales, superficies de esfuerzo y grano televisivo ochentero.
-  render_quality: Acabado premium retro-dramático con énfasis en escala, cuerpo vulnerable y crescendo emocional de partida.
-  spatial_distortion: Perspectiva vertical extrema que magnifica madurez forzada y salto irreversible.
-  atmosphere: Sincera, grandiosa, llorosa, heroica.
-  key_features: Escala colosal, lágrimas de determinación, infraestructura abstracta, salto irreversible y emoción formativa.
+  aesthetic: >-
+    Monumental Formation Sacrifice Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Monumental Formation Sacrifice Style's specific style identity.
+  form_and_line: >-
+    Define Monumental Formation Sacrifice Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Monumental Formation Sacrifice Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Monumental Formation Sacrifice Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Monumental Formation Sacrifice Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Monumental Formation Sacrifice Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Monumental Formation Sacrifice Style: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Monumental Formation Sacrifice Style: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Monumental Formation Sacrifice Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Crea una gramática reusable de heroísmo formativo monumental para cualquier prompt o imagen de entrada:
-    entrenamiento, sacrificio y escala cósmica sin imponer academias, plataformas, motores, pilotos ni lanzamientos.
+    Create a style-card that translates Monumental Formation Sacrifice Style into a portable visual system for 11. 70s &
+    80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-314.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -13,16 +13,37 @@ tags:
   - mythic
   - greek-myth
 visualDna:
-  aesthetic: Hoplite dawn discipline where martial routine and sacred duty become one visual order.
-  form_and_line: Grid barrack cues, shield walls, and drill-yard symmetry.
-  color_palette: Dust tan, bronze, and muted crimson.
-  lighting_setup: Low dawn light with brazier contrast.
-  material_texture: Packed earth, leather straps, and polished bronze gear.
-  render_quality: Grounded epic concept with disciplined composition.
-  spatial_distortion: Yard-centric framing with disciplined rows receding into dawn.
-  atmosphere: Stoic resolve and communal duty.
-  key_features: Shield racks, spear drill cues, oath pyre corners.
-  creative_brief: Recast the input through hoplite dawn discipline, making preparation feel sacred without requiring barracks.
+  aesthetic: >-
+    Hoplite Dawn Discipline within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Hoplite Dawn Discipline's specific style identity.
+  form_and_line: >-
+    Define Hoplite Dawn Discipline through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Hoplite Dawn Discipline-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Hoplite Dawn Discipline recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Hoplite Dawn Discipline: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Hoplite Dawn Discipline with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Hoplite Dawn Discipline: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Hoplite Dawn Discipline: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Hoplite Dawn Discipline's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Hoplite Dawn Discipline into a portable visual system for 5. Mythic Greek Epics.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - slapstick

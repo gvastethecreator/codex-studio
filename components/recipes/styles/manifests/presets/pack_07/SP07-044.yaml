@@ -12,20 +12,38 @@ tags:
   - architecture-and-interior
   - landscape-and-garden-systems
 visualDna:
-  aesthetic: Ecologia postindustrial de borde reutilizado, donde memoria infraestructural y vegetacion urbana coexisten como una sola gramatica de superficie.
-  form_and_line: Estratos lineales de borde, alternancia hardscape-softscape y modulos repetidos de retencion, pausa y filtrado.
-  color_palette: Weathered concrete neutrals, oxidized steel oranges, prairie grass olive tones, muted florals, cool urban greys
-  lighting_setup: Luz urbana difusa con rebote mineral suave y caida progresiva sobre planos, franjas y vacios reutilizados.
-  material_texture: Hormigon crudo, corten oxidado, acero cepillado, grava fina, gramaneas al viento e inserciones de madera envejecida.
-  render_quality: Nivel concurso de paisaje con legibilidad de reutilizacion y sucesion vegetal creible.
-  spatial_distortion: Layered edge compression, depth through repeating field modules, strong threshold legibility without a required promenade axis
-  atmosphere: Respiro civico contemporaneo, permeable y con patina de infraestructura heredada en transicion ecologica.
-  key_features: Linealidad infraestructural, bordes estratificados, umbrales de retencion y mezclas de plantacion resiliente para polinizadores.
+  aesthetic: >-
+    Postindustrial Ecological Promenade within 4. Landscape And Garden Systems: a reusable Architecture & Interior
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Postindustrial Ecological Promenade's specific style identity.
+  form_and_line: >-
+    Define Postindustrial Ecological Promenade through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Postindustrial Ecological Promenade-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Postindustrial Ecological Promenade recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Postindustrial Ecological Promenade: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Postindustrial Ecological Promenade with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Postindustrial Ecological Promenade: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Postindustrial Ecological Promenade: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Postindustrial Ecological Promenade's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Reprograma cualquier composicion como ecologia de borde reutilizado: corten, hormigon heredado, grava, madera
-    envejecida y plantacion resiliente colonizando una reticula previa. Debe sentirse civic-reclaimed y modular, no
-    como sendero heroico, parque lineal obligatorio o paseo con procession fija. Conserva borde reutilizado, estratos
-    civicos, plantacion resiliente y ritmo modular sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Postindustrial Ecological Promenade into a portable visual system for 4.
+    Landscape And Garden Systems. Preserve the preset identity through style mechanics, not a fixed scene, character,
+    prop, or story beat.
 avoidRules:
   - wild forest
 assets:

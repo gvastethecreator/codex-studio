@@ -1,4 +1,5 @@
 import React from 'react';
+import { IconLoader2 as Loader2 } from '@tabler/icons-react';
 
 interface LazySurfaceFallbackProps {
   label: string;
@@ -11,9 +12,11 @@ export const LazySurfaceFallback: React.FC<LazySurfaceFallbackProps> = ({
 }) => (
   <output aria-live="polite" className={className}>
     <div className="flex flex-col items-center gap-2 text-[10px] font-black uppercase tracking-widest">
-      <span
+      <Loader2
         aria-hidden="true"
-        className="block size-8 animate-spin rounded-full border-[3px] border-white/15 border-t-white shadow-[0_0_12px_rgba(255,255,255,0.12)]"
+        size={30}
+        strokeWidth={1.8}
+        className="block animate-spin text-zinc-100 drop-shadow-[0_0_12px_rgba(255,255,255,0.18)]"
       />
       <span>{label}</span>
     </div>

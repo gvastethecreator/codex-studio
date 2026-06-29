@@ -12,16 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Romanticismo aéreo contracultural, sensación de lift libre y melancolía luminosa de horizonte abierto.
-  form_and_line: Contornos fluidos aerodinámicos, curvas de deslizamiento y cinética de arco sin fijar vehículo ni piloto.
-  color_palette: Cianes de cielo abierto, magentas de atardecer, neones de tabla y gradientes de alta saturación optimista.
-  lighting_setup: Backlight dorado de horizonte, relleno por nube reflectante y streaks de rim para velocidad en altura.
-  material_texture: Superficies semibrillo, compositing digital pulido, halos de vapor y volumen nuboso suave de alto recorrido.
-  render_quality: Calidad premium mid-2000s con lectura aérea clara y control emocional vibrante.
-  spatial_distortion: Perspectiva diagonal ascendente, profundidad atmosférica y framing liviano de gravedad reducida.
-  atmosphere: Aérea, romántica, juvenil y liberadora.
-  key_features: Trazas de aire, gradientes de altura, códigos de subcultura, siluetas en suspensión y dinámica de impulso continuo.
-  creative_brief: Define una gramática reusable de romance cinético aéreo para cualquier sujeto, priorizando lift, momentum, juventud luminosa y anhelo. El input puede recibir tabla, mecha ligero, rider silhouette o estela de vuelo cuando refuerce el estilo, sin fijar cielo literal ni escena de carrera.
+  aesthetic: >-
+    Sky-Surf Romantic Momentum Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Sky-Surf Romantic Momentum Style's specific style identity.
+  form_and_line: >-
+    Define Sky-Surf Romantic Momentum Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Sky-Surf Romantic Momentum Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Sky-Surf Romantic Momentum Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Sky-Surf Romantic Momentum Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Sky-Surf Romantic Momentum Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Sky-Surf Romantic Momentum Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Sky-Surf Romantic Momentum Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Sky-Surf Romantic Momentum Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Sky-Surf Romantic Momentum Style into a portable visual system for 2. 2000s
+    Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-145.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

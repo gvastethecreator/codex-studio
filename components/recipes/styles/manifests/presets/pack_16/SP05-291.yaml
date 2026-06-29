@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Drama íntimo de reparación emocional, centrado en vulnerabilidad, escucha y dignidad relacional.
-  form_and_line: Línea delicada de microgesto, énfasis en manos, hombros y mirada baja, con contornos limpios que priorizan lectura afectiva sobre acción.
-  color_palette: Azules calmados, beiges suaves, verdes pálidos de primavera y acentos rosados de empatía contenida.
-  lighting_setup: Luz natural de tarde nublada con difusión amable, contraste bajo y brillos discretos que favorecen intimidad conversacional.
-  material_texture: Hormigón húmedo, telas cotidianas, metal gastado y reflejos acuosos serenos.
-  render_quality: Acabado premium de realismo sensible con foco en expresión corporal mínima y continuidad emocional entre planos.
-  spatial_distortion: Espacialidad naturalista abierta con distancia interpersonal modulada como métrica visual de confianza y perdón.
-  atmosphere: Tierno, arrepentido, respirable, humano.
-  key_features: Microgesto, manos como énfasis opcional, luz suave, distancia afectiva y silencio visual elocuente.
+  aesthetic: >-
+    Delicate Reconciliation Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Delicate Reconciliation Style's specific style identity.
+  form_and_line: >-
+    Define Delicate Reconciliation Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Delicate Reconciliation Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Delicate Reconciliation Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Delicate Reconciliation Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Delicate Reconciliation Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Delicate Reconciliation Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Delicate Reconciliation Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Delicate Reconciliation Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de reconciliación humana para cualquier prompt o imagen de entrada:
-    microgesto, escucha y fragilidad sin imponer escuelas, riberas, parejas de personajes ni escenas de disculpa.
+    Create a style-card that translates Delicate Reconciliation Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-291.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

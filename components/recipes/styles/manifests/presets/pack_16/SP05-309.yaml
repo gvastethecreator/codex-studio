@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Space-action glam hiperpop, con elegancia táctica, croma explosivo y caos coreografiado.
-  form_and_line: Siluetas fashion dinámicas, contorno cel contundente y lenguaje de pose dual coordinada en clave de impacto.
-  color_palette: Blancos clínicos de corredor, rosas explosivos, cianes láser y acentos amarillos de advertencia pop.
-  lighting_setup: Luz interior brillante de sci-fi retro con flashes de energía y sombras planas para legibilidad de acción veloz.
-  material_texture: Corredor sci-fi pulido, textil técnico brillante, residuos de disparo láser y grano analógico televisivo.
-  render_quality: Acabado premium retro-glam con claridad de dúo protagonista y balance entre espectacularidad y control.
-  spatial_distortion: Corredores de fuga y combate con perspectiva lineal acelerada para subrayar velocidad y destrucción elegante.
-  atmosphere: Flashy, traviesa, pop, explosiva.
-  key_features: Moda sci-fi abstracta, láseres de color, sincronía táctica sugerida, croma explosivo y composición de caos limpio.
+  aesthetic: >-
+    Explosive Space Glam Action Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Explosive Space Glam Action Style's specific style identity.
+  form_and_line: >-
+    Define Explosive Space Glam Action Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Explosive Space Glam Action Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Explosive Space Glam Action Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Explosive Space Glam Action Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Explosive Space Glam Action Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Explosive Space Glam Action Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Explosive Space Glam Action Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Explosive Space Glam Action Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática reusable de acción glam espacial para cualquier prompt o imagen de entrada:
-    moda, energía táctica y color explosivo sin imponer dúos, pasillos, misiones ni protagonistas concretos.
+    Create a style-card that translates Explosive Space Glam Action Style into a portable visual system for 11. 70s &
+    80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-309.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

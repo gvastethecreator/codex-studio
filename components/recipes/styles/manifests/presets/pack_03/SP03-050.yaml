@@ -12,23 +12,37 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: Abstract shapes moving
-  form_and_line: Trails
-  color_palette: Vibrant, gradient
-  lighting_setup: Studio
-  material_texture: Glossy, abstract finish
-  render_quality: Cinema 4D motion-design showcase, mograph energy
-  spatial_distortion: Squash/Stretch
-  atmosphere: Energetic, corporate, broadcast-level
-  key_features: Abstract shapes, kinetic flow
+  aesthetic: >-
+    Motion Graphics within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis,
+    disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving
+    Motion Graphics's specific style identity.
+  form_and_line: >-
+    Define Motion Graphics through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Motion Graphics-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Motion Graphics recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Motion Graphics: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
+  render_quality: >-
+    Render Motion Graphics with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Motion Graphics: perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Motion Graphics: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Motion Graphics's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Geometry forgets to be still — glossy abstract shapes trail kinetic echoes behind them, and vibrant gradients smear
-    across the frame like a motion-blur photograph of pure energy. Squash and stretch remembers animation's elastic
-    origins, and Cinema 4D mograph sensibilities give every sphere and spline the confidence of broadcast design. The
-    image pulses with corporate creativity at its most unleashed: a logo reveal frozen at the peak of its own spectacle.
-    Apply Motion Graphics as a portable 3D/render style system over any input: preserve its renderer logic, material
-    behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle,
-    prop, environment, UI screen, product shot, or scene template.
+    Create a style-card that translates Motion Graphics into a portable visual system for 4. 3D Styles. Preserve the
+    preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - static
   - boring

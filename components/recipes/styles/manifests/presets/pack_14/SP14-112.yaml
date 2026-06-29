@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Forbidden grimoire secrecy filtered through veils, coded margins, and intimate noir mystery.
-  form_and_line: Layered curtains, semicircle sightlines, and hidden book-stand cues.
-  color_palette: Ink blue, velvet burgundy, and parchment gold.
-  lighting_setup: Desk lamps through gauze veils and candle reflections.
-  material_texture: Suede, paper grain, brass clasps, and gauze fabric.
-  render_quality: Premium mythic illustration with intimate mystery.
-  spatial_distortion: Curved veiled sightlines that partially conceal and reveal the input.
-  atmosphere: Curiosity, privacy, and sealed knowledge.
-  key_features: Veiled shelf cues, coded margins, ritual reading surfaces.
-  creative_brief: Reframe the input through veiled grimoire secrecy, using forbidden-book cues and gauze layers without requiring a salon or readable text.
+  aesthetic: >-
+    Veiled Grimoire Secrecy within 2. Mythic Ritual Noir: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Veiled Grimoire Secrecy's specific style identity.
+  form_and_line: >-
+    Define Veiled Grimoire Secrecy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Veiled Grimoire Secrecy-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Veiled Grimoire Secrecy recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Veiled Grimoire Secrecy: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Veiled Grimoire Secrecy with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Veiled Grimoire Secrecy: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Veiled Grimoire Secrecy: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Veiled Grimoire Secrecy's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Veiled Grimoire Secrecy into a portable visual system for 2. Mythic Ritual Noir.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - action-chaos

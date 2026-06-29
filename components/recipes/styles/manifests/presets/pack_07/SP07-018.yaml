@@ -12,25 +12,37 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Farmhouse contemporaneo de refinamiento rural, calidez blanca y nostalgia funcional controlada.
+  aesthetic: >-
+    Farmhouse Chic within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Farmhouse Chic's specific style identity.
   form_and_line: >-
-    Listones horizontales, diagonales brace, geometria utilitaria abierta y lineas apron-front
-    suavizadas.
-  color_palette: Blanco/crema dominante, madera natural, plata galvanizada, lino suave y hierro negro de acento.
-  lighting_setup: Manana luminosa aireada, pendentes sobredimensionados y practicos utilitarios de tono calido.
+    Define Farmhouse Chic through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Farmhouse Chic-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and
+    avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Farmhouse Chic recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
   material_texture: >-
-    Madera envejecida, lino lavado, pintura tiza, algodon rayado, fibras trenzadas y metal
-    galvanizado.
-  render_quality: Editorial farmhouse limpio con legibilidad domestica y calidez cotidiana consistente.
-  spatial_distortion: Escala estable y amplitud moderada por luz distribuida y geometria utilitaria visible.
-  atmosphere: Acogedor, amable, comunitario y familiar.
+    Use materials and textures that reinforce Farmhouse Chic: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
+  render_quality: >-
+    Render Farmhouse Chic with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Farmhouse Chic: perspective, compression, exaggeration, or depth should support the
+    style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Farmhouse Chic: specific, coherent, and distinct, with emotional tone carried by visual
+    systems rather than narrative captioning.
   key_features: >-
-    Liston blanco, madera recuperada, beadboard, metal galvanizado y utilidad visible como
-    ornamento.
+    Prioritize Farmhouse Chic's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Convierte cualquier input en una gramatica farmhouse de blanco calido, madera envejecida,
-    utilidad visible y calma cotidiana. Debe sentirse vivido y funcional sin quedar atado a una casa
-    de campo literal ni a cliches televisivos de domesticidad escenografica.
+    Create a style-card that translates Farmhouse Chic into a portable visual system for 1. Interior Design Systems.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - modern
   - sleek

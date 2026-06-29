@@ -12,23 +12,37 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Victoriano de herencia pesada, exceso ornamental y teatralidad historica contenida.
-  form_and_line: Densidad de patron, marcos repetidos, drapeados voluminosos y siluetas sobrecargadas.
-  color_palette: Rojo oscuro, dorado envejecido, caoba, ciruela, verde botella y laton antiguo.
+  aesthetic: >-
+    Victorian Mansion within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Victorian Mansion's specific style identity.
+  form_and_line: >-
+    Define Victorian Mansion through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Victorian Mansion-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
   lighting_setup: >-
-    Gaslight tenue, brillo aceitoso bajo, parpadeo de hogar y penumbra filtrada por sombra textil
-    espesa.
-  material_texture: Terciopelo, brocado, papel estampado, marmol oscuro, maderas profundas y metal envejecido.
-  render_quality: Densidad museografica de epoca con lectura material opulenta y atmosfera historica densa.
-  spatial_distortion: Profundidad estable saturada por acumulacion decorativa en multiples capas.
-  atmosphere: Opresiva, aristocratica, nostalgica y ceremoniosa.
+    Use lighting that makes Victorian Mansion recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Victorian Mansion: surface response, grain, patina, polish, or wear should
+    feel intentional and style-defining.
+  render_quality: >-
+    Render Victorian Mansion with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Victorian Mansion: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Victorian Mansion: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Sombra textil pesada, tapizados cargados, marcos acumulados, ornamentacion floral y volumen
-    overstuffed.
+    Prioritize Victorian Mansion's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Convierte cualquier input en una lectura victoriana de peso ceremonial, acumulacion material y
-    opulencia sombria. La identidad debe emerger de drapeados, densidad ornamental, maderas
-    profundas y luz baja ritual, no de una mansion concreta, cortina dominante ni escena literaria cerrada.
+    Create a style-card that translates Victorian Mansion into a portable visual system for 1. Interior Design Systems.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - minimal
   - bright

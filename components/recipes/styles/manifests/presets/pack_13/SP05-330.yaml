@@ -13,26 +13,36 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Folklore ink nocturno con extrañeza documental, humor seco, grotesco amable y familiaridad
-    inquietante.
+    Folkloric Deadpan Ink Catalog within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Folkloric Deadpan Ink Catalog's specific style identity.
   form_and_line: >-
-    Contorno de brocha vernácula, detalle de criatura contundente y bordes difuminados tipo tinta
-    lavada.
-  color_palette: Sumi black, lantern orange, moss green, moon grey, mud brown, ghostly cyan
-  lighting_setup: Doble fuente linterna-luna, negativos oscuros de tinta y niebla rural de baja saturación.
-  material_texture: Sangrado de pincel, papel washi, tierra húmeda y veta de madera con musgo.
-  render_quality: Ilustración yokai de gran legibilidad taxonómica y tono nocturno narrativo contenido.
+    Define Folkloric Deadpan Ink Catalog through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Folkloric Deadpan Ink Catalog-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Folkloric Deadpan Ink Catalog recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Folkloric Deadpan Ink Catalog: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Folkloric Deadpan Ink Catalog with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Odd spirit-like anatomy, procession depth, deadpan scale contrast, and uncanny silhouette
-    spacing
-  atmosphere: Folclórica, eerie y nocturna, con ironía tranquila ante lo sobrenatural.
+    Use spatial behavior that fits Folkloric Deadpan Ink Catalog: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Folkloric Deadpan Ink Catalog: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
   key_features: >-
-    Earthy nocturnal ink, deadpan catalog framing, friendly grotesque silhouettes, dry humor, and
-    pseudo-documentary oddity
+    Prioritize Folkloric Deadpan Ink Catalog's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Use Shigeru Mizuki as style anchor for folkloric deadpan ink catalog. Any prompt should feel
-    archived from strange folklore: earthy ink, dry humor, nocturnal calm, and friendly grotesque
-    logic. Yokai, parades, fields, lanterns, witnesses, and story scenes are optional.
+    Create a style-card that translates Folkloric Deadpan Ink Catalog into a portable visual system for 12. Anime Style
+    Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - glossy digital polish
   - photoreal creature rendering
@@ -44,8 +54,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-330.webp
 attributes:
   negativePrompt: >-
-    glossy digital polish, photoreal creature rendering, clean modern fantasy UI, neon sci-fi
-    palette, cute mascot simplification, empty flat background
+    glossy digital polish, photoreal creature rendering, clean modern fantasy UI, neon sci-fi palette, cute mascot
+    simplification, empty flat background
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

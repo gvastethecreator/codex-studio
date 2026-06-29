@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Eclipse-based cipher knowledge rendered through lunar codes and secret symbolic order.
-  form_and_line: Radial divisions, cipher rings, and circular reading-table cues.
-  color_palette: Midnight blue, brass, and parchment.
-  lighting_setup: Eclipse shadow with thin clerical lamps.
-  material_texture: Old paper, etched brass, polished oak, and darkened lunar enamel.
-  render_quality: Scholarly mythic concept art.
-  spatial_distortion: Circular planning and orbital cipher pull without requiring a library interior.
-  atmosphere: Intellect, secrecy, and cosmic patterning.
-  key_features: Cipher scroll cues, eclipse disks, encoded index marks.
-  creative_brief: Apply eclipse-cipher knowledge to the input, turning lunar geometry into secret language without forcing shelves or a study room.
+  aesthetic: >-
+    Eclipse Cipher Knowledge within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Eclipse Cipher Knowledge's specific style identity.
+  form_and_line: >-
+    Define Eclipse Cipher Knowledge through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Eclipse Cipher Knowledge-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Eclipse Cipher Knowledge recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Eclipse Cipher Knowledge: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Eclipse Cipher Knowledge with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Eclipse Cipher Knowledge: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Eclipse Cipher Knowledge: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Eclipse Cipher Knowledge's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Eclipse Cipher Knowledge into a portable visual system for 1. Mythic Symbolism.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - whimsical

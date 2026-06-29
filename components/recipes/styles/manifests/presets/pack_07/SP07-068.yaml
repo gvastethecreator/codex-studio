@@ -12,22 +12,38 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Carton reciclado improvisado con union visible, invencion low-tech y fantasia manual de bajo recurso portable.
-  form_and_line: Ortogonales apiladas, voladizos de solapa, aperturas recortadas a mano y remiendos estructurales sin cuarto infantil obligatorio.
+  aesthetic: >-
+    Corrugated Cardboard Improvisation within 6. Toy Craft And Miniature Architecture: a reusable Architecture &
+    Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the
+    result transferable across subjects while preserving Corrugated Cardboard Improvisation's specific style identity.
+  form_and_line: >-
+    Define Corrugated Cardboard Improvisation through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
   color_palette: >-
-    Kraft cardboard brown, packing-tape tan, marker black linework, wax-crayon accent colors, label-white patches, and
-    soft neutral inserts
-  lighting_setup: Calidez domestica suave, hotspots puntuales de linterna y rebote filtrado de baja tecnologia sin fijar interior narrativo unico.
-  material_texture: Canales corrugados, superficie kraft fibrosa, cinta brillante, bleed de marcador y trazas cerosas de crayon.
-  render_quality: Realismo artesanal low-tech con imperfeccion de ensamblaje, tactilidad reciclada y lectura estructural clara.
-  spatial_distortion: Sagging and patched asymmetry from improvised load paths
-  atmosphere: Ingeniosa, temporal y orgullosamente homemade.
-  key_features: Canto corrugado expuesto, juntas reforzadas con cinta, solapas estructurales, ornamento a marcador y refuerzos blandos insertados.
+    Use a Corrugated Cardboard Improvisation-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Corrugated Cardboard Improvisation recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Corrugated Cardboard Improvisation: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Corrugated Cardboard Improvisation with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Corrugated Cardboard Improvisation: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Corrugated Cardboard Improvisation: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Corrugated Cardboard Improvisation's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica construccion de carton improvisado: corrugado expuesto, cinta brillante, solapas estructurales, cortes
-    manuales y marcas de low-tech craft. Debe expresar invencion material barata sin escena infantil fija, fuerte sesgo
-    de playroom ni maqueta de cuarto cerrada. Conserva corrugado, cinta, escala improvisada y logica de carga remendada
-    sin exigir edificio, paisaje, set, criatura ni escena fija.
+    Create a style-card that translates Corrugated Cardboard Improvisation into a portable visual system for 6. Toy
+    Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene,
+    character, prop, or story beat.
 avoidRules:
   - solid wall
 assets:

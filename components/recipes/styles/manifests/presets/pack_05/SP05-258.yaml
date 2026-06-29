@@ -12,19 +12,39 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Fantasía de utilidad cotidiana, donde oficio, logística y soporte práctico reemplazan el espectáculo heroico.
-  form_and_line: Composición funcional, gestos de precisión, módulos pequeños y lectura clara de competencia manual.
-  color_palette: Marrón herramienta, acero gris, naranja lámpara, verde cuerda y beige de piedra utilitaria.
-  lighting_setup: Focos cálidos portátiles, sombras técnicas y acentos de trabajo que guían la mirada por función.
-  material_texture: Fibra trenzada, metal opaco, cuero utilitario, polvo mineral y marcas de uso cuidadoso.
-  render_quality: Slice-of-adventure operativo, con encanto de competencia práctica y detalle táctil legible.
-  spatial_distortion: Escala humana de mantenimiento, proximidad funcional y tensión pequeña resuelta con método.
-  atmosphere: Modesta, cálida y confiable.
-  key_features: Precisión artesanal, soporte logístico, microgestos de oficio, calidez técnica y humildad competente.
+  aesthetic: >-
+    Handyman Saitou in Another World - Toolbox Party Quest within 8. Isekai & High Fantasy: a reusable Anime Battle &
+    Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the
+    result transferable across subjects while preserving Handyman Saitou in Another World - Toolbox Party Quest's
+    specific style identity.
+  form_and_line: >-
+    Define Handyman Saitou in Another World - Toolbox Party Quest through line, mass, contour, spacing, and rhythm. Keep
+    forms readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Handyman Saitou in Another World - Toolbox Party Quest-specific palette with clear dominant, secondary, and
+    accent roles. Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Handyman Saitou in Another World - Toolbox Party Quest recognizable: purposeful key, rim,
+    bounce, shadow, and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Handyman Saitou in Another World - Toolbox Party Quest: surface response,
+    grain, patina, polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Handyman Saitou in Another World - Toolbox Party Quest with high production clarity, strong silhouette reads,
+    clean detail priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Handyman Saitou in Another World - Toolbox Party Quest: perspective, compression,
+    exaggeration, or depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Handyman Saitou in Another World - Toolbox Party Quest: specific, coherent, and distinct,
+    with emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Handyman Saitou in Another World - Toolbox Party Quest's key features: recognizable shape language,
+    palette logic, material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática toolbox-quest reusable donde cualquier prompt gane
-    oficio, cuidado técnico y eficacia narrativa sin exigir utilería, grupo,
-    locación peligrosa o situación de reparación literal.
+    Create a style-card that translates Handyman Saitou in Another World - Toolbox Party Quest into a portable visual
+    system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene,
+    character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +61,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-258.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

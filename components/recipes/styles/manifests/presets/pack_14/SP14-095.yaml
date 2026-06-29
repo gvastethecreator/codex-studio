@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Sacred solar iconography pierced by thorned metal and sacrificial noir tension.
-  form_and_line: Circular halo logic, pointed thorns, and vertical relic framing adaptable to any subject.
-  color_palette: Bone white, soot black, and burnished gold.
-  lighting_setup: Hard rimlight through stained haze.
-  material_texture: Hammered bronze, cracked stone, scarred enamel, and velvet shadow.
-  render_quality: Editorial mythic illustration with high contrast.
-  spatial_distortion: Radiating tension lines and compressed icon depth without requiring a pedestal.
-  atmosphere: Reverence, danger, and compressed power.
-  key_features: Sun sigil, thorn crown, burnished sacrificial edges.
-  creative_brief: Transform the input through a thorn-pierced solar relic language, fusing divinity and sacrifice without locking the image to an altar object.
+  aesthetic: >-
+    Thorned Solar Relic Icon within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Thorned Solar Relic Icon's specific style identity.
+  form_and_line: >-
+    Define Thorned Solar Relic Icon through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Thorned Solar Relic Icon-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Thorned Solar Relic Icon recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Thorned Solar Relic Icon: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Thorned Solar Relic Icon with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Thorned Solar Relic Icon: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Thorned Solar Relic Icon: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Thorned Solar Relic Icon's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Thorned Solar Relic Icon into a portable visual system for 1. Mythic Symbolism.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cute

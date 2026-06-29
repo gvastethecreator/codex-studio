@@ -13,16 +13,37 @@ tags:
   - mythic
   - norse-myth
 visualDna:
-  aesthetic: Raven signal intelligence where bird flight, war messages, and state secrets converge.
-  form_and_line: Signal tower cues, perched standards, and stone map-court geometry.
-  color_palette: Steel blue, basalt, and torch orange.
-  lighting_setup: Windy overcast with beacon pulses.
-  material_texture: Weathered stone, feather banners, and iron cages.
-  render_quality: Tactical overview concept with strong scale cues.
-  spatial_distortion: Plateau-like spread with layered lookout depths.
-  atmosphere: Surveillance, strategy, and mythic intelligence.
-  key_features: Raven roost towers, map stones, signal fires.
-  creative_brief: Reinterpret the input through raven signal intelligence, letting birds carry hidden strategic meaning without requiring a plateau.
+  aesthetic: >-
+    Raven Signal Intelligence within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Raven Signal Intelligence's specific style identity.
+  form_and_line: >-
+    Define Raven Signal Intelligence through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Raven Signal Intelligence-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Raven Signal Intelligence recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Raven Signal Intelligence: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Raven Signal Intelligence with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Raven Signal Intelligence: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Raven Signal Intelligence: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Raven Signal Intelligence's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Raven Signal Intelligence into a portable visual system for 8. Mythic Norse
+    Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cute-style

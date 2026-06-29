@@ -12,20 +12,37 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: Confort nordico de bajo contraste, intimidad termica y bienestar cotidiano traducidos a una gramatica material portable.
-  form_and_line: Volumenes bajos, cantos redondeados, capas textiles continuas y respiracion despejada sin requerir living domestico fijo.
-  color_palette: Blancos rotos y crema, maderas claras aceitada, verde salvia y rosa apagado como microacento
-  lighting_setup: Difusion suave, red de practicos calidos, puntos de baja intensidad y balance envolvente de refugio.
-  material_texture: Lana tejida, piel suave, ceramica mate, lino cepillado y madera de veta discreta.
-  render_quality: Acabado editorial escandinavo con prioridad de confort legible, detalle contenido y atmosfera acogedora coherente.
-  spatial_distortion: Neutralidad geometrica; profundidad construida por superposicion blanda de textiles y luminancia calida.
-  atmosphere: Refugio, calma, seguridad y calidez continua de escala humana.
-  key_features: Escala baja, capas textiles, madera palida, iluminacion calida distribuida y ausencia de estridencia visual.
+  aesthetic: >-
+    Scandinavian Hygge within 1. Interior Design Systems: a reusable Architecture & Interior visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Scandinavian Hygge's specific style identity.
+  form_and_line: >-
+    Define Scandinavian Hygge through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Scandinavian Hygge-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate
+    and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Scandinavian Hygge recognizable: purposeful key, rim, bounce, shadow, and glow behavior with
+    readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Scandinavian Hygge: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Scandinavian Hygge with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Scandinavian Hygge: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Scandinavian Hygge: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Scandinavian Hygge's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
   creative_brief: >-
-    Asegura transferencia hygge mediante una triada constante: luz blanda, tactilidad natural y contraste bajo. El
-    estilo debe priorizar confort sensorial y claridad funcional por encima de cualquier habitacion, temporada o escena
-    domestica concreta. Conserva logica material, escala baja y ritmo arquitectonico sereno sin fijar tipologia,
-    paisaje, franquicia, criatura ni escena cerrada.
+    Create a style-card that translates Scandinavian Hygge into a portable visual system for 1. Interior Design Systems.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - gloomy low-key palette
   - cold industrial mood

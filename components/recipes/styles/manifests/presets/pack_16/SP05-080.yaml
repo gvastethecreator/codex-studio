@@ -12,16 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Lirismo oceánico-cósmico de contemplación mística, con biología marina y trascendencia sensorial.
-  form_and_line: Línea delicada y fluida, formas etéreas y movimiento acuático continuo de baja fricción.
-  color_palette: Turquesas abisales, azules ultraprofundos, plateados lunares y destellos bioluminiscentes.
-  lighting_setup: Luz submarina difusa, caústicas suaves y halos celestes que funden agua y firmamento.
-  material_texture: Película de agua translúcida, superficies húmedas luminosas, partículas suspendidas y fondos de profundidad orgánica.
-  render_quality: Acabado cinematográfico de alta pureza visual con foco en fluidez y silencio emocional.
-  spatial_distortion: Escalas líquidas entre macrocosmos marino y proximidad íntima para experiencia de inmersión total.
-  atmosphere: Mística, acuática, etérea, cósmica.
-  key_features: Movimiento de marea coreográfico, foco contemplativo y fusión iconográfica de océano-universo.
-  creative_brief: Define una gramática reusable de espiritualidad oceánica cósmica para cualquier sujeto, equilibrando fluidez material, asombro contemplativo y resonancia trascendente.
+  aesthetic: >-
+    Children of the Sea Cosmic Ocean Lyrical within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Children of the Sea Cosmic Ocean Lyrical's specific style identity.
+  form_and_line: >-
+    Define Children of the Sea Cosmic Ocean Lyrical through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Children of the Sea Cosmic Ocean Lyrical-specific palette with clear dominant, secondary, and accent roles.
+    Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Children of the Sea Cosmic Ocean Lyrical recognizable: purposeful key, rim, bounce, shadow,
+    and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Children of the Sea Cosmic Ocean Lyrical: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Children of the Sea Cosmic Ocean Lyrical with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Children of the Sea Cosmic Ocean Lyrical: perspective, compression, exaggeration, or
+    depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Children of the Sea Cosmic Ocean Lyrical: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Children of the Sea Cosmic Ocean Lyrical's key features: recognizable shape language, palette logic,
+    material cues, lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Children of the Sea Cosmic Ocean Lyrical into a portable visual system for 10.
+    Studio Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-080.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -13,16 +13,38 @@ tags:
   - mythic
   - mesoamerican-myth
 visualDna:
-  aesthetic: Feathered eclipse continuity where celestial shadow becomes divine recalibration.
-  form_and_line: Stepped pyramid cues, serpent balustrades, and rhythmic processional plaza geometry.
-  color_palette: Obsidian black, jade green, and blood-sun crimson.
-  lighting_setup: Eclipse corona backlight with torchline highlights on carved reliefs.
-  material_texture: Volcanic stone, painted stucco, feathered standards, and polished jade inserts.
-  render_quality: Monumental concept art with clear symbolic focal hierarchy.
-  spatial_distortion: Long axial perspective linking solar altar cues to horizon tiers.
-  atmosphere: Cosmic urgency, civic ritual, and awe under celestial shadow.
-  key_features: Feathered serpent motifs, eclipse disk, ritual stairway cues, abstract codex wall panels.
-  creative_brief: Recast the input through feathered eclipse continuity, negotiating survival through celestial recalibration without requiring a causeway.
+  aesthetic: >-
+    Feathered Eclipse Continuity within 9. Mythic Mesoamerican Suns: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Feathered Eclipse Continuity's specific style identity.
+  form_and_line: >-
+    Define Feathered Eclipse Continuity through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Feathered Eclipse Continuity-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Feathered Eclipse Continuity recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Feathered Eclipse Continuity: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Feathered Eclipse Continuity with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Feathered Eclipse Continuity: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Feathered Eclipse Continuity: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Feathered Eclipse Continuity's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Feathered Eclipse Continuity into a portable visual system for 9. Mythic
+    Mesoamerican Suns. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - photoreal
   - caricature

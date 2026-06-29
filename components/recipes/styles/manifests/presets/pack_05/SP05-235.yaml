@@ -13,26 +13,36 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Eighties pop-cyber rebellion with glossy nocturnal surfaces, media holography, youth freedom
-    pressure, and concealed simulation unease
+    Pop-Cyber Simulation Gloss within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Pop-Cyber Simulation Gloss's specific style identity.
   form_and_line: >-
-    Diseño aerodinámico, siluetas juveniles estilizadas y geometría urbana de cartelería
-    holográfica.
+    Define Pop-Cyber Simulation Gloss through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
   color_palette: >-
-    Magenta neón, azul eléctrico, negro asfalto, cromo rosado y violeta sintético de videoclub
-    futurista.
-  lighting_setup: Reflejos húmedos, signage holográfico pulsante y highlights de vitrina nocturna.
-  material_texture: Cuero brillante, plástico translúcido, cromo pulido, lluvia fina y granulado retro de pantalla.
-  render_quality: Retrofuturo anime de acabado glossy con energía urbana y legibilidad de diseño pop.
-  spatial_distortion: Profundidad de corredor luminoso con fuga alta velocidad y capas de publicidad simulada.
-  atmosphere: Seductora, rebelde y revelatoria, con falsedad sistémica bajo glamour.
+    Use a Pop-Cyber Simulation Gloss-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Pop-Cyber Simulation Gloss recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Pop-Cyber Simulation Gloss: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Pop-Cyber Simulation Gloss with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Pop-Cyber Simulation Gloss: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Pop-Cyber Simulation Gloss: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
   key_features: >-
-    Pop-cyber glamour, media holography, glossy escape lines, retro fashion light, simulation
-    signals, and nocturnal synthetic shine
+    Prioritize Pop-Cyber Simulation Gloss's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Use Megazone 23 as style anchor for pop-cyber simulation gloss. Any prompt should feel glossy,
-    free, mediated, and secretly synthetic. Highways, vehicles, idols, city nights, screens, and
-    chase scenes are optional.
+    Create a style-card that translates Pop-Cyber Simulation Gloss into a portable visual system for 7. Mecha &
+    Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -50,8 +60,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-235.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

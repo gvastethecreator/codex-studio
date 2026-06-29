@@ -12,23 +12,37 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: Anime style 3D
-  form_and_line: Black outlines
-  color_palette: Flat bands of color
-  lighting_setup: Hard shadow edge
-  material_texture: Flat, comic-book clarity
-  render_quality: Guilty Gear/Zelda stylized cel-shaded game art, bold outlines, flat magic
-  spatial_distortion: None
-  atmosphere: Illustrated, fun, anime energy
-  key_features: Banded shading, ink-line edges
+  aesthetic: >-
+    Toon Shader (Cel Shaded) within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic
+    thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while
+    preserving Toon Shader (Cel Shaded)'s specific style identity.
+  form_and_line: >-
+    Define Toon Shader (Cel Shaded) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Toon Shader (Cel Shaded)-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Toon Shader (Cel Shaded) recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Toon Shader (Cel Shaded): surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Toon Shader (Cel Shaded) with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Toon Shader (Cel Shaded): perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Toon Shader (Cel Shaded): specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Toon Shader (Cel Shaded)'s key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Shading collapses into discrete bands — no gradient softening, just the hard edge where light meets shadow like a
-    comic panel rendered in three dimensions. Black ink lines trace every contour, and flat color regions declare
-    themselves with the confidence of a keyframe cel. The image captures Guilty Gear's fighting-game bravado and Zelda's
-    illustrated wonder: 3D geometry wearing 2D conviction, animation energy frozen into a pose that feels one frame from
-    motion. Apply Toon Shader as a portable 3D/render style system over any input: preserve its renderer logic, material
-    behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle,
-    prop, environment, UI screen, product shot, or scene template.
+    Create a style-card that translates Toon Shader (Cel Shaded) into a portable visual system for 4. 3D Styles.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - gradient

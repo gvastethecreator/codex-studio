@@ -12,16 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Epopeya eco-mítica ancestral, conflicto civilizatorio y espiritualidad feroz de materia viva.
-  form_and_line: Línea robusta y noble, anatomía heroica contenida y composición de choque entre organicidad y hierro.
-  color_palette: Verdes profundos, tierra húmeda, negros de hierro y blancos fantasmales de espíritu natural.
-  lighting_setup: Luz filtrada con rayos dramáticos, niebla profunda y contrastes de incendio industrial.
-  material_texture: Corteza viva, piel rugosa, metal forjado y barro bélico sobre fondo pictórico orgánico.
-  render_quality: Producción cinematográfica de alta gravedad moral, con lectura clara de escala natural y tragedia humana.
-  spatial_distortion: Grandes vacíos orgánicos y gargantas de escala para enfatizar mundo viejo vs mundo mecánico.
-  atmosphere: Majestuosa, elemental, primal, sobrecogedora.
-  key_features: Iconografía de guardián natural, tensión organicidad-industria y narrativa visual de pacto roto.
-  creative_brief: Diseña una gramática reusable de conflicto eco-épico para cualquier sujeto, fusionando misticismo natural, violencia histórica y peso de decisión moral sin imponer bosques, bestias, armaduras ni guerra literal.
+  aesthetic: >-
+    Eco-Mythic Conflict Epic Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Eco-Mythic Conflict Epic Style's specific style identity.
+  form_and_line: >-
+    Define Eco-Mythic Conflict Epic Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Eco-Mythic Conflict Epic Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Eco-Mythic Conflict Epic Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Eco-Mythic Conflict Epic Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Eco-Mythic Conflict Epic Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Eco-Mythic Conflict Epic Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Eco-Mythic Conflict Epic Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Eco-Mythic Conflict Epic Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Eco-Mythic Conflict Epic Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-072.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

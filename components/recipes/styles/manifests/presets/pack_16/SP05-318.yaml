@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Horror demónico setentero de violencia expresionista, con transformación corporal cruda y tragedia sin filtro.
-  form_and_line: Deformación anatómica agresiva, trazo quebrado de metamorfosis y energía de tinta frenética.
-  color_palette: Rojos hemáticos ácidos, amarillos tóxicos, violetas infernales y blancos de pánico estroboscópico.
-  lighting_setup: Estallidos de contraste, subluces de horror y sombras cel inestables con artefacto de señal analógica.
-  material_texture: Pintura cel rugosa, sangrado croma de TV antigua y fondos deteriorados de pincel duro.
-  render_quality: Acabado premium de shock-retro deliberadamente abrasivo, con legibilidad emocional asentada en confrontación visual.
-  spatial_distortion: Warping de body horror y encuadre desorientado impulsado por dolor de transformación.
-  atmosphere: Pánico, psicodelia, tragedia, primalidad.
-  key_features: Agonía metamórfica, simbolismo apocalíptico, brutalidad cromática, grano de broadcast antiguo e impacto visceral.
+  aesthetic: >-
+    Psychedelic Demonic Horror Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Psychedelic Demonic Horror Style's specific style identity.
+  form_and_line: >-
+    Define Psychedelic Demonic Horror Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Psychedelic Demonic Horror Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Psychedelic Demonic Horror Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Psychedelic Demonic Horror Style: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Psychedelic Demonic Horror Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Psychedelic Demonic Horror Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Psychedelic Demonic Horror Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Psychedelic Demonic Horror Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de horror demónico expresionista para cualquier prompt o imagen de entrada:
-    transformación, crudeza y tragedia cromática sin imponer demonios literales ni escenas de violencia concreta.
+    Create a style-card that translates Psychedelic Demonic Horror Style into a portable visual system for 11. 70s & 80s
+    Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-318.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

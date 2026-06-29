@@ -13,16 +13,38 @@ tags:
   - mythic
   - japanese-myth
 visualDna:
-  aesthetic: Dawn purification silence where first light washes spirit residue into calm transition.
-  form_and_line: Basin terrace cues, stone channels, and radial stepping stones.
-  color_palette: Pale jade, dawn peach, and temple wood umber.
-  lighting_setup: Sunrise edge light and mist diffusion over water surfaces.
-  material_texture: Smooth river stone, carved bamboo spouts, and linen prayer cloth.
-  render_quality: Calm high-end concept illustration with refined mood control.
-  spatial_distortion: Gentle concentric geometry centered on a water-altar cue.
-  atmosphere: Renewal, relief, and sacred transition.
-  key_features: Purification ladles, spirit ash channels, dawn prayer plaque cues.
-  creative_brief: Recast the input through dawn purification silence, washing night hauntings into morning calm without requiring a basin.
+  aesthetic: >-
+    Dawn Purification Silence within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Dawn Purification Silence's specific style identity.
+  form_and_line: >-
+    Define Dawn Purification Silence through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Dawn Purification Silence-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Dawn Purification Silence recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Dawn Purification Silence: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Dawn Purification Silence with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Dawn Purification Silence: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Dawn Purification Silence: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Dawn Purification Silence's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Dawn Purification Silence into a portable visual system for 7. Mythic Japanese
+    Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - photoreal
   - comic-fun

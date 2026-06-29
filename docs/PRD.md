@@ -1,34 +1,34 @@
-# PRD: Codex Studio local-first
+# PRD: Codex Studio Local-First
 
-## Objetivo
+## Objective
 
-Convertir la app visual actual en un estudio local para generar, revisar y gestionar imágenes usando la sesión autenticada de Codex/ChatGPT del propio usuario, sin requerir API keys en el flujo principal.
+Turn the current visual app into a local studio for generating, reviewing, and managing images through the user's authenticated Codex/ChatGPT session, without requiring API keys in the main flow.
 
-## Usuarios objetivo
+## Target Users
 
-- Creadores que quieren flujo local con librería persistente.
-- Artistas técnicos que trabajan con prompts, recetas, referencias y exportaciones.
-- Usuarios de Codex/ChatGPT que prefieren automatizar generación desde su entorno local.
+- Creators who want a local workflow with a persistent library.
+- Technical artists who work with prompts, recipes, references, and exports.
+- Codex/ChatGPT users who prefer to automate generation from their local environment.
 
-## Requisitos funcionales
+## Functional Requirements
 
-- Generación desde UI con jobs persistentes (`Generation Task`).
-- Codex como runtime principal vía `codex app-server`.
-- Assets/logs/transcripts en Studio Library configurable.
-- Persistencia de jobs/catálogo/librerías/logs en SQLite.
-- Soporte de cola transitoria UI + cola persistente backend.
-- Importación de archivos desde External Output Sources registradas.
+- Generate from the UI with persistent jobs (`Generation Task`).
+- Use Codex as the primary runtime through `codex app-server`.
+- Keep assets, logs, and transcripts in a configurable Studio Library.
+- Persist jobs, catalog entries, libraries, and logs in SQLite.
+- Support both a transient UI queue and a persistent backend queue.
+- Import files from registered External Output Sources.
 
-## Requisitos no funcionales
+## Non-Functional Requirements
 
-- No exigir `OPENAI_API_KEY` en flujo principal.
-- Mantener Provider Secrets fuera de Studio Settings persistidos en SQLite.
-- Backend local ejecutable con Bun.
-- Tareas de VS Code para ejecutar, validar e inspeccionar logs.
+- Do not require `OPENAI_API_KEY` in the main flow.
+- Keep Provider Secrets outside SQLite-backed Studio Settings.
+- Run the local backend with Bun.
+- Provide VS Code tasks for running, validating, and inspecting logs.
 
-## Fuera de alcance actual
+## Out Of Scope For Now
 
-- Operación multiusuario remota.
-- Sincronización cloud.
-- Empaquetado final soportado de Electron.
-- Edición semántica perfecta de máscaras.
+- Remote multi-user operation.
+- Cloud sync.
+- Final supported Electron packaging.
+- Perfect semantic mask editing.

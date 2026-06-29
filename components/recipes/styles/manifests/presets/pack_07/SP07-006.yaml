@@ -13,34 +13,37 @@ tags:
   - architectural-movements-and-vernaculars
 visualDna:
   aesthetic: >-
-    Monumentalidad brutalista centrada en masa tectónica, honestidad estructural y gravedad cívica
-    sin concesiones decorativas.
+    Brutalist Architecture within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Brutalist Architecture's specific style identity.
   form_and_line: >-
-    Apilamientos monolíticos, vacíos profundos, cantiléveres pesados, ortogonalidad dura y cantos
-    tallados por sombra.
+    Define Brutalist Architecture through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
   color_palette: >-
-    Gama de grises minerales, carbón y pizarra, con variaciones húmedas de ceniza de baja
-    saturación.
+    Use a Brutalist Architecture-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Sol direccional severo, pozos de sombra profundos, contraste alto y lectura volumétrica por
-    recesos.
+    Use lighting that makes Brutalist Architecture recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
   material_texture: >-
-    Marca de encofrado visible, poro de árido expuesto, junta estructural franca y pátina mineral
-    envejecida.
+    Use materials and textures that reinforce Brutalist Architecture: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
   render_quality: >-
-    Render tectónico de alta fidelidad material, con prioridad de masa, proporción y lectura
-    estructural.
+    Render Brutalist Architecture with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Perspectiva monumental estable, compresión de profundidad por peso volumétrico y jerarquía de
-    bloque.
-  atmosphere: Austero, contundente, contemplativo y duradero.
+    Use spatial behavior that fits Brutalist Architecture: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Brutalist Architecture: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Hormigón crudo protagonista, huecos sombreados, planos pesados superpuestos y cantiléveres
-    expresivos.
+    Prioritize Brutalist Architecture's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática brutalista transferible donde la masa y la sombra definan el carácter.
-    La estructura debe leerse sin maquillaje y sostener una sensación de permanencia institucional
-    en cualquier tipología.
+    Create a style-card that translates Brutalist Architecture into a portable visual system for 2. Architectural
+    Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
+    or story beat.
 avoidRules:
   - delicate trim
   - painted finish hiding raw mass

@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
 visualDna:
-  aesthetic: Gramática survival-horror postindustrial con recursos escasos, stealth, proximidad y mutación húmeda.
-  subject_treatment: Reinterpreta el input como amenaza lurker/rusher/brute, refugio, herramienta o residuo orgánico intrusivo según su forma.
-  color_and_tone: Verde tóxico, negro húmedo y rojo señal para navegación de riesgo y objetivos de escape.
-  lighting_and_shadow: Fluorescentes inestables, parches oscuros y halos de humedad que alteran visibilidad.
-  texture_and_material: Óxido, moho, hormigón mojado, cableado expuesto y residuos orgánicos intrusivos.
-  camera_and_composition: Profundidad estrecha, evasión lateral y visibilidad rota como tensión; no requiere metro ni pasillos concretos.
-  atmosphere_and_mood: Opresiva, incómoda y paranoica.
-  rendering_and_quality: 'Survival-horror gameplay frame: danger telemetry, escape route, mutation pressure readable.'
+  aesthetic: >-
+    Forgotten Subway Mutation Zone within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Forgotten Subway Mutation Zone's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Forgotten Subway Mutation Zone's visual grammar: readable silhouette, role cues,
+    controlled detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Forgotten Subway Mutation Zone: clear tonal hierarchy, intentional contrast,
+    and category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Forgotten Subway Mutation Zone: legible depth, purposeful highlights, readable focal
+    zones, and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Forgotten Subway Mutation Zone's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Forgotten Subway Mutation Zone's staging logic: strong focal hierarchy, stable readable framing, and
+    spatial rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Forgotten Subway Mutation Zone's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

@@ -13,26 +13,37 @@ tags:
   - civic-infrastructure-and-specialty-spaces
 visualDna:
   aesthetic: >-
-    Envolvente bioclimática húmeda, donde estructura fina y masa vegetal conviven en equilibrio
-    técnico.
-  form_and_line: Luces acristaladas nervadas, tracería metálica fina y estratos orgánicos por profundidad.
-  color_palette: Green, Glass, Tropical Bloom accents, Dew-drop Silver, Mossy floor, Whitewashed iron
+    Conservatory Bioclimate within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture & Interior
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Conservatory Bioclimate's specific style identity.
+  form_and_line: >-
+    Define Conservatory Bioclimate through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Conservatory Bioclimate-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
   lighting_setup: >-
-    Sol filtrado por vidrio, difusión húmeda, prismas por condensación y rayos suavizados por
-    neblina interna.
+    Use lighting that makes Conservatory Bioclimate recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
   material_texture: >-
-    Película de condensación, hierro pintado oxidado, grava húmeda, terracota eflorescente y hojas
-    de brillo ceroso.
-  render_quality: Precisión botánica con control de atmósfera húmeda y claridad estructural operativa.
-  spatial_distortion: Condensación refractiva y capas de humedad que suavizan profundidad.
-  atmosphere: Cálida-húmeda, protectora y fértil, con calma de cultivo intensivo controlado.
+    Use materials and textures that reinforce Conservatory Bioclimate: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Conservatory Bioclimate with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Conservatory Bioclimate: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Conservatory Bioclimate: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
   key_features: >-
-    Gradientes de condensación, zonificación vegetal, repetición de nervios, estratificación de
-    niebla y rutas técnicas.
+    Prioritize Conservatory Bioclimate's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    El tratamiento mezcla retícula fina, humedad visible y crecimiento controlado hasta que
-    cualquier sujeto parezca mantenido por clima artificial. Condensación, vidrio, nervios
-    estructurales y botánica técnica deben operar como un solo sistema.
+    Create a style-card that translates Conservatory Bioclimate into a portable visual system for 3. Civic
+    Infrastructure And Specialty Spaces. Preserve the preset identity through style mechanics, not a fixed scene,
+    character, prop, or story beat.
 avoidRules:
   - dark
   - dry

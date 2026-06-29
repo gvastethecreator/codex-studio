@@ -427,7 +427,7 @@ export async function main() {
   const log = createWriteStream(runLogPath, { flags: 'a' });
 
   try {
-    writeConsoleBanner(`Ejecutando tarea "${taskName}"`);
+    writeConsoleBanner(`Running task "${taskName}"`);
     writeConsoleBanner(`Log: ${runLogPath}`);
 
     writeBanner(log, `Task ${taskName}`);
@@ -441,11 +441,11 @@ export async function main() {
     }
 
     writeBanner(log, `Task ${taskName} completed successfully`);
-    writeConsoleBanner(`Tarea "${taskName}" completada`);
+    writeConsoleBanner(`Task "${taskName}" completed`);
   } catch (error) {
     writeBanner(log, `Task ${taskName} failed`);
     log.write(`${error instanceof Error ? (error.stack ?? error.message) : String(error)}\n`);
-    writeConsoleBanner(`Tarea "${taskName}" fall├│`);
+    writeConsoleBanner(`Task "${taskName}" failed`);
     throw error;
   } finally {
     await new Promise<void>((resolve) => {
@@ -458,7 +458,7 @@ export async function main() {
     if (pruned > 0) {
       console.log(`[tooling] Pruned ${pruned} old tooling log(s)`);
     }
-    console.log(`\n[tooling] Log escrito en ${runLogPath}`);
+    console.log(`\n[tooling] Log written to ${runLogPath}`);
   }
 }
 

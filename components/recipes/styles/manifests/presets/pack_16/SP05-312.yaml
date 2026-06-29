@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
 visualDna:
-  aesthetic: Heist glam nocturno de alta elegancia, con sofisticación ochentera, precisión coreográfica y tensión de infiltración.
-  form_and_line: Línea estilizada de figura felina, poses de infiltración milimétrica y coreografía silenciosa táctica.
-  color_palette: Rojos icónicos, negros cerrados, dorados de lujo y blancos de spotlight.
-  lighting_setup: Conos de luz de seguridad, sombras planas marcadas y brillos reflectivos para tensión furtiva.
-  material_texture: Piedra pulida, vidrio reflectivo, cuero técnico y grano analógico de serie nocturna retro.
-  render_quality: Acabado premium de thriller elegante con legibilidad de movimiento furtivo y glamour controlado.
-  spatial_distortion: Espacio abstracto con perspectiva profunda y capas de vigilancia que tensionan el vector de salida.
-  atmosphere: Astuta, elegante, nocturna, glamurosa.
-  key_features: Rojo acento, lujo reflejado, ballet criminal abstracto, siluetas elegantes y precisión estratégica.
+  aesthetic: >-
+    Elegant Eighties Heist Glam Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Elegant Eighties Heist Glam Style's specific style identity.
+  form_and_line: >-
+    Define Elegant Eighties Heist Glam Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Elegant Eighties Heist Glam Style-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Elegant Eighties Heist Glam Style recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Elegant Eighties Heist Glam Style: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Elegant Eighties Heist Glam Style with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Elegant Eighties Heist Glam Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Elegant Eighties Heist Glam Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Elegant Eighties Heist Glam Style's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de heist glam para cualquier prompt o imagen de entrada:
-    elegancia, reflejos y tensión furtiva sin imponer tríos, ladronas, museos, vitrinas ni leotardos.
+    Create a style-card that translates Elegant Eighties Heist Glam Style into a portable visual system for 11. 70s &
+    80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-312.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

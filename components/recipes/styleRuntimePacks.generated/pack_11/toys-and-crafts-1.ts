@@ -37,24 +37,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'realistic proportions, small head',
     style: {
       aesthetic:
-        'Designer-vinyl collectible style with iconic simplification, shelf-display charisma, and fandom-object polish',
+        "Funko Pop Vinyl Collectible Figure within 1. Toys And Crafts: a reusable Miscellaneous & Fun visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Funko Pop Vinyl Collectible Figure's specific style identity.",
       form_and_line:
-        'Big-head minimal silhouette logic, rounded contour economy, reduced facial feature grammar, and toy-like geometric abstraction',
+        'Define Funko Pop Vinyl Collectible Figure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Matte-vinyl friendly saturated blocks with restrained pastel accents and high-contrast identity markers',
+        'Use a Funko Pop Vinyl Collectible Figure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Soft-box product illumination, even diffusion for form clarity, controlled specular restraint, and shelf-ready glow balance',
+        'Use lighting that makes Funko Pop Vinyl Collectible Figure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Rotocast vinyl matte skin, smooth molded edges, subtle seam minimalism, and semi-soft tactile finish cues',
+        'Use materials and textures that reinforce Funko Pop Vinyl Collectible Figure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Premium collectible-render aesthetic focused on silhouette recognizability and display-case merchandising clarity',
+        'Render Funko Pop Vinyl Collectible Figure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Exaggerated cranium-to-body ratio with simplified limb volume to maintain stylized collectible identity',
-      atmosphere: 'Cute, curated, iconic, collectible, display-forward',
+        'Use spatial behavior that fits Funko Pop Vinyl Collectible Figure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Funko Pop Vinyl Collectible Figure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Big-head abstraction grammar, button-eye minimalism, display-figure composition cues, vinyl-matte surface discipline',
+        "Prioritize Funko Pop Vinyl Collectible Figure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Preserve this preset through collectible abstraction rules—overscaled head ratios, reduced facial geometry, and matte vinyl display polish should define the style regardless of franchise character source. Apply Funko Pop Vinyl Collectible Figure as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Create a style-card that translates Funko Pop Vinyl Collectible Figure into a portable visual system for 1. Toys And Crafts. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {

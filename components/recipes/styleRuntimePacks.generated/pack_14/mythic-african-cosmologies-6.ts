@@ -11,21 +11,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, caricature, generic-tribal-cliche, sci-fi-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'West African epic memory language where cosmic lineage and oral history intertwine.',
+        "Griot Star Memory Ring within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Griot Star Memory Ring's specific style identity.",
       form_and_line:
-        'Circular storyteller cues, carved column rhythms, and braided canopy geometries.',
-      color_palette: 'Indigo night, clay ochre, and brass sunlight.',
-      lighting_setup: 'Fire bowl halos and starlit rim light defining communal rings.',
+        'Define Griot Star Memory Ring through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Griot Star Memory Ring-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Griot Star Memory Ring recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Packed earth, carved hardwood, dyed textiles, and hammered brass ornaments.',
-      render_quality: 'Rich cinematic concept art with narrative clarity and cultural gravitas.',
+        'Use materials and textures that reinforce Griot Star Memory Ring: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Griot Star Memory Ring with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Concentric gathering layout emphasizing voice, rhythm, and collective focus.',
-      atmosphere: 'Ancestral dignity, call-and-response memory, and cosmic continuity.',
+        'Use spatial behavior that fits Griot Star Memory Ring: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Griot Star Memory Ring: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Griot dais cues, talking drum circle, constellation map marks, mask-alcove silhouettes.',
+        "Prioritize Griot Star Memory Ring's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through griot star memory, where song preserves cosmic lineage without requiring a courtyard.',
+        'Create a style-card that translates Griot Star Memory Ring into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -34,18 +38,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Mythic — African Cosmologies',
     negativePrompt: 'photoreal, parody, over-neon, steampunk-gears, watermark, text, logo',
     style: {
-      aesthetic: 'Orisha thunder verdict language where storm, tide, law, and ceremony converge.',
-      form_and_line: 'Tiered dock cues, shrine pylons, and wave-like colonnade rhythms.',
-      color_palette: 'Atlantic teal, lightning silver, and ceremonial white.',
-      lighting_setup: 'Tempest flashes mixed with lantern processions along rain-slick piers.',
-      material_texture: 'Salted stone, painted wood hulls, coral inlays, and wet woven cloth.',
-      render_quality: 'Dynamic key art balancing large-scale weather and ritual detail.',
-      spatial_distortion: 'Curving tidal perspective funneling toward a storm-altar focal point.',
-      atmosphere: 'Reverent power, civic urgency, and thunderous blessing.',
+      aesthetic:
+        "Orisha Thunder Verdict within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Orisha Thunder Verdict's specific style identity.",
+      form_and_line:
+        'Define Orisha Thunder Verdict through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Orisha Thunder Verdict-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Orisha Thunder Verdict recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Orisha Thunder Verdict: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Orisha Thunder Verdict with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Orisha Thunder Verdict: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Orisha Thunder Verdict: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Storm-bell cues, offering canoe silhouettes, rain-lit shrine marks, tide calendar walls.',
+        "Prioritize Orisha Thunder Verdict's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply Orisha thunder verdict to the input, making ocean storm read as sacred judgment without requiring a harbor.',
+        'Create a style-card that translates Orisha Thunder Verdict into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -55,19 +67,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, slapstick, modern-signage, cyber-ui, watermark, text, logo',
     style: {
       aesthetic:
-        'Trickster mythology as elegant nocturnal tapestry-work of fate, wit, and bargain.',
-      form_and_line: 'Suspended thread cues, radial loom structures, and mask-like knot motifs.',
-      color_palette: 'Midnight indigo, moon ivory, and ember copper.',
-      lighting_setup: 'Moonbeams filtered through woven canopies with ember lantern punctuation.',
-      material_texture: 'Dyed fibers, polished wood frames, lacquered beads, and burnished clay.',
-      render_quality: 'Storybook-noir concept illustration with precise symbolic detailing.',
+        "Anansi Moon Fate Weave within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Anansi Moon Fate Weave's specific style identity.",
+      form_and_line:
+        'Define Anansi Moon Fate Weave through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Anansi Moon Fate Weave-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Anansi Moon Fate Weave recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Anansi Moon Fate Weave: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Anansi Moon Fate Weave with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Layered hanging planes creating a vertical labyrinth of narrative strands.',
-      atmosphere: 'Clever tension, playful danger, and whispered transformation.',
+        'Use spatial behavior that fits Anansi Moon Fate Weave: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Anansi Moon Fate Weave: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Cosmic loom cues, trickster glyphs, suspended market silhouettes, story-knot archives.',
+        "Prioritize Anansi Moon Fate Weave's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform any input through Anansi moon fate-weave, where every contour can become a clever bargain with destiny. Keep trickster intelligence, suspended thread logic, lunar indigo, knot motifs, and tapestry-depth without requiring spiders, markets, looms, masks, or a literal myth scene.',
+        'Create a style-card that translates Anansi Moon Fate Weave into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -77,17 +95,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, caricature, cyber-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Baobab star counsel where living memory interprets constellations as ancestral guidance.',
-      form_and_line: 'Circular root cues, carved pillars, and radial pathways.',
-      color_palette: 'Indigo, clay, and brass.',
-      lighting_setup: 'Night fire bowls and starlit canopy.',
-      material_texture: 'Bark, packed earth, bronze charms.',
-      render_quality: 'Cinematic concept with symbolic focus.',
-      spatial_distortion: 'Concentric composition around the tree core.',
-      atmosphere: 'Wisdom, continuity, and ritual gravity.',
-      key_features: 'Oracle ring cues, drum markers, ancestor glyph stones.',
+        "Baobab Star Counsel within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Baobab Star Counsel's specific style identity.",
+      form_and_line:
+        'Define Baobab Star Counsel through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Baobab Star Counsel-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Baobab Star Counsel recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Baobab Star Counsel: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Baobab Star Counsel with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Baobab Star Counsel: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Baobab Star Counsel: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Baobab Star Counsel's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret the input through baobab star counsel, reading sky and memory together without requiring a court or observatory.',
+        'Create a style-card that translates Baobab Star Counsel into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -96,20 +122,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Mythic — African Cosmologies',
     negativePrompt: 'photoreal, cartoon, neon-city, watermark, text, logo',
     style: {
-      aesthetic: 'Lion-guarded rain sovereignty where weather negotiation becomes governance.',
+      aesthetic:
+        "Lion Rain Sovereignty within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Lion Rain Sovereignty's specific style identity.",
       form_and_line:
-        'Lion-standard silhouettes, rain-channel lines, banner-post rhythm, and sovereign vertical pressure.',
-      color_palette: 'Ocher, storm gray, and gold.',
-      lighting_setup: 'Pre-rain sky flash and torch edge glows.',
-      material_texture: 'Carved wood, beadwork, and wet stone.',
-      render_quality: 'Regal ritual render with strong weather-governance readability.',
+        'Define Lion Rain Sovereignty through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Lion Rain Sovereignty-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Lion Rain Sovereignty recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Lion Rain Sovereignty: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Lion Rain Sovereignty with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Frontal authority perspective with deep ceremonial tiers without requiring a throne.',
-      atmosphere: 'Authority, supplication, and climatic suspense.',
+        'Use spatial behavior that fits Lion Rain Sovereignty: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Lion Rain Sovereignty: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Lion standards, rain basins, praise-drum rhythm, ocher authority fields, and storm-gold suspense.',
+        "Prioritize Lion Rain Sovereignty's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Sovereign the input through lion rain negotiation: ocher mass, storm-gray sky pressure, gold authority glints, rain-channel geometry, and lion-standard cues should make weather feel governed without requiring a throne, ruler, palace, drum circle, or ritual assembly.',
+        'Create a style-card that translates Lion Rain Sovereignty into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -119,17 +151,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, slapstick, cyberpunk, watermark, text, logo',
     style: {
       aesthetic:
-        'Crocodile river pact language guarded by spirit totems, caution, and elemental respect.',
-      form_and_line: 'River-stair cues, shrine pylons, and rope-crossing geometry.',
-      color_palette: 'Mud green, bronze, and dusk violet.',
-      lighting_setup: 'Reflective water light and ritual lantern clusters.',
-      material_texture: 'Reed mats, wet stone, and carved totems.',
-      render_quality: 'Atmospheric riverside concept.',
-      spatial_distortion: 'Longitudinal water-edge depth with crossing tension.',
-      atmosphere: 'Caution, reverence, and elemental pact.',
-      key_features: 'Covenant basin cues, crocodile masks, oath posts.',
+        "Crocodile River Pact within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Crocodile River Pact's specific style identity.",
+      form_and_line:
+        'Define Crocodile River Pact through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Crocodile River Pact-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Crocodile River Pact recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Crocodile River Pact: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Crocodile River Pact with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Crocodile River Pact: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Crocodile River Pact: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Crocodile River Pact's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply crocodile river pact to the input, making passage feel ritually acknowledged without requiring a ford or shrine.',
+        'Create a style-card that translates Crocodile River Pact into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -138,18 +178,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Mythic — African Cosmologies',
     negativePrompt: 'photoreal, comic, sci-fi-neon, watermark, text, logo',
     style: {
-      aesthetic: 'Lineage mask carving where identity is shaped before public ritual.',
-      form_and_line: 'Workshop bay cues, hanging mask rows, and kiln chamber rhythms.',
-      color_palette: 'Sienna, charcoal, and indigo.',
-      lighting_setup: 'Forge embers and roof slit beams.',
-      material_texture: 'Wood grain, pigment clay, and copper wire.',
-      render_quality: 'Craft-focused symbolic render with carved-surface clarity.',
+      aesthetic:
+        "Lineage Mask Carving within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Lineage Mask Carving's specific style identity.",
+      form_and_line:
+        'Define Lineage Mask Carving through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Lineage Mask Carving-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Lineage Mask Carving recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Lineage Mask Carving: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Lineage Mask Carving with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Layered craft depth built from mask rows, ember planes, and carved identity surfaces.',
-      atmosphere: 'Heritage labor and ceremonial continuity.',
-      key_features: 'Mask racks, pigment tables, ancestor shrine cues.',
+        'Use spatial behavior that fits Lineage Mask Carving: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Lineage Mask Carving: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Lineage Mask Carving's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reframe the input through lineage mask carving, treating identity as crafted surface, pigment, copper-wire binding, ember warmth, and ritual continuity without requiring an atelier or workshop setup.',
+        'Create a style-card that translates Lineage Mask Carving into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -158,17 +206,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Mythic — African Cosmologies',
     negativePrompt: 'photoreal, playful, cyberpunk, watermark, text, logo',
     style: {
-      aesthetic: 'Savannah eclipse civic law where celestial events trigger collective judgment.',
-      form_and_line: 'Circular court-stone cues, shade canopies, and flag lances.',
-      color_palette: 'Dust gold, eclipse black, and crimson.',
-      lighting_setup: 'Eclipse halo and fire-basin highlights.',
-      material_texture: 'Dry grass, stone slabs, and woven textiles.',
-      render_quality: 'Wide ceremonial concept.',
-      spatial_distortion: 'Horizon-heavy composition with centered civic focal force.',
-      atmosphere: 'Collective tension and cosmic judgment.',
-      key_features: 'Eclipse marker obelisk, elder-seat cues, vow fires.',
+      aesthetic:
+        "Savannah Eclipse Civic Law within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Savannah Eclipse Civic Law's specific style identity.",
+      form_and_line:
+        'Define Savannah Eclipse Civic Law through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Savannah Eclipse Civic Law-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Savannah Eclipse Civic Law recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Savannah Eclipse Civic Law: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Savannah Eclipse Civic Law with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Savannah Eclipse Civic Law: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Savannah Eclipse Civic Law: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Savannah Eclipse Civic Law's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform the input through savannah eclipse civic law, making eclipse alignment feel legally binding without requiring a court.',
+        'Create a style-card that translates Savannah Eclipse Civic Law into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -177,17 +234,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Mythic — African Cosmologies',
     negativePrompt: 'photoreal, cartoon, neon-tech, watermark, text, logo',
     style: {
-      aesthetic: 'Calabash sky knowledge where astronomy and myth become one ancestral craft.',
-      form_and_line: 'Dome-ring cues, star ladders, and engraved platform geometry.',
-      color_palette: 'Midnight blue, clay, and brass.',
-      lighting_setup: 'Low firelight and celestial highlights.',
-      material_texture: 'Clay plaster, etched brass, and woven mats.',
-      render_quality: 'Scholarly-ritual concept composition.',
-      spatial_distortion: 'Upward gaze perspective into a bowl-like celestial vault.',
-      atmosphere: 'Curiosity, reverence, and ancestral science.',
-      key_features: 'Star chart marks, ritual bowls, alignment pillar cues.',
+      aesthetic:
+        "Calabash Sky Knowledge within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Calabash Sky Knowledge's specific style identity.",
+      form_and_line:
+        'Define Calabash Sky Knowledge through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Calabash Sky Knowledge-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Calabash Sky Knowledge recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Calabash Sky Knowledge: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Calabash Sky Knowledge with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Calabash Sky Knowledge: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Calabash Sky Knowledge: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Calabash Sky Knowledge's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through calabash sky knowledge, using bowl, star, and alignment symbols without requiring an observatory.',
+        'Create a style-card that translates Calabash Sky Knowledge into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -197,17 +263,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, goofy, modern-road, watermark, text, logo',
     style: {
       aesthetic:
-        'Ancestor drum relay where sound carries warning, blessing, and intergenerational memory.',
-      form_and_line: 'Causeway segment cues, drum towers, and signal gates.',
-      color_palette: 'Terracotta, night indigo, and ember orange.',
-      lighting_setup: 'Alternating drum tower fires through dusk fog.',
-      material_texture: 'Packed earth, carved timber, and braided cords.',
-      render_quality: 'Dynamic processional concept.',
-      spatial_distortion: 'Strong vanishing lines toward a distant ritual signal.',
-      atmosphere: 'Motion, duty, and intergenerational memory.',
-      key_features: 'Relay drums, signal braziers, messenger-plaza cues.',
+        "Ancestor Drum Relay within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ancestor Drum Relay's specific style identity.",
+      form_and_line:
+        'Define Ancestor Drum Relay through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Ancestor Drum Relay-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Ancestor Drum Relay recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Ancestor Drum Relay: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Ancestor Drum Relay with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Ancestor Drum Relay: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ancestor Drum Relay: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Ancestor Drum Relay's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply ancestor drum relay to the input, making rhythm and signal carry memory without requiring a road.',
+        'Create a style-card that translates Ancestor Drum Relay into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -217,17 +291,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cartoon, cyber-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Elephant guardian stewardship expressed through patience, protection, and ancestral force.',
-      form_and_line: 'Massive pylon cues, tusk arches, and processional stair rhythms.',
-      color_palette: 'Ivory, basalt, and ochre.',
-      lighting_setup: 'Harsh sun and deep shadow carvings.',
-      material_texture: 'Stone reliefs, bone inlays, and dust-worn surfaces.',
-      render_quality: 'Monumental worldbuilding concept.',
-      spatial_distortion: 'Low-angle grandeur toward a guardian crest.',
-      atmosphere: 'Protection, patience, and ancestral force.',
-      key_features: 'Tusk arch cues, guardian masks, oath threshold.',
+        "Spirit Elephant Stewardship within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Spirit Elephant Stewardship's specific style identity.",
+      form_and_line:
+        'Define Spirit Elephant Stewardship through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Spirit Elephant Stewardship-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Spirit Elephant Stewardship recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Spirit Elephant Stewardship: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Spirit Elephant Stewardship with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Spirit Elephant Stewardship: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Spirit Elephant Stewardship: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Spirit Elephant Stewardship's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret the input through spirit-elephant stewardship, making strength read as protection without requiring a gate.',
+        'Create a style-card that translates Spirit Elephant Stewardship into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -237,17 +319,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, slapstick, sci-fi-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Hyena moon border wit where trickster-night spirits mix fear, humor, and resilience.',
-      form_and_line: 'Thorn fence cues, moon shrines, and winding track lines.',
-      color_palette: 'Moon gray, dry ochre, and ember red.',
-      lighting_setup: 'Sparse moonlight and protective fire circles.',
-      material_texture: 'Thatch, bone charms, and rough stone.',
-      render_quality: 'Moody nocturnal concept.',
-      spatial_distortion: 'Peripheral composition around a protective ring.',
-      atmosphere: 'Watchfulness and cunning resilience.',
-      key_features: 'Trickster totems, night sentry drums, moon wards.',
+        "Hyena Moon Border Wit within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Hyena Moon Border Wit's specific style identity.",
+      form_and_line:
+        'Define Hyena Moon Border Wit through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Hyena Moon Border Wit-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Hyena Moon Border Wit recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Hyena Moon Border Wit: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Hyena Moon Border Wit with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Hyena Moon Border Wit: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Hyena Moon Border Wit: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Hyena Moon Border Wit's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through hyena moon border wit, balancing cunning resilience and protective folklore without requiring a settlement edge.',
+        'Create a style-card that translates Hyena Moon Border Wit into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -257,18 +347,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cyberpunk-city, comic, watermark, text, logo',
     style: {
       aesthetic:
-        'Rainmaker commons engine where ritual infrastructure manages drought as shared fate.',
-      form_and_line: 'Tower cluster cues, channel grids, and stepped cisterns.',
-      color_palette: 'Slate, copper, and storm teal.',
-      lighting_setup: 'Stormfront light with tower beacon pulses.',
-      material_texture: 'Patinated metal, clay channels, and wet stone.',
-      render_quality: 'Infrastructure-myth render with storm-channel readability.',
+        "Rainmaker Commons Engine within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Rainmaker Commons Engine's specific style identity.",
+      form_and_line:
+        'Define Rainmaker Commons Engine through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Rainmaker Commons Engine-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Rainmaker Commons Engine recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Rainmaker Commons Engine: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Rainmaker Commons Engine with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Wide infrastructural rhythm made from clustered verticals, channel grids, and cistern-like geometry.',
-      atmosphere: 'Urgency, collective effort, and hopeful tension.',
-      key_features: 'Rain towers, cistern plaza cues, cloud drum platforms.',
+        'Use spatial behavior that fits Rainmaker Commons Engine: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Rainmaker Commons Engine: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Rainmaker Commons Engine's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform the input through rainmaker commons engine: rain towers, copper channels, storm-teal light, cistern geometry, and beacon pulses should make any subject feel like shared weather infrastructure without requiring a plateau complex.',
+        'Create a style-card that translates Rainmaker Commons Engine into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -278,17 +375,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, modern-container-port, cyber-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Palm-crown astral navigation aligned to star tides, lunar timing, and ritual trade.',
-      form_and_line: 'Pier ladder cues, mast forests, and shrine watchtower silhouettes.',
-      color_palette: 'Lagoon teal, palm green, and dusk amber.',
-      lighting_setup: 'Wet sunset reflections and mast lanterns.',
-      material_texture: 'Palm rope, river timber, and clay amphorae.',
-      render_quality: 'Maritime myth concept with detailed docking life.',
-      spatial_distortion: 'Curved dock-like perspective into open delta channels.',
-      atmosphere: 'Trade, ritual timing, and tidal mysticism.',
-      key_features: 'Astral chart cues, palm crown shrine, omen buoy lights.',
+        "Palm Crown Astral Navigation within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Palm Crown Astral Navigation's specific style identity.",
+      form_and_line:
+        'Define Palm Crown Astral Navigation through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Palm Crown Astral Navigation-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Palm Crown Astral Navigation recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Palm Crown Astral Navigation: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Palm Crown Astral Navigation with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Palm Crown Astral Navigation: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Palm Crown Astral Navigation: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Palm Crown Astral Navigation's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply palm-crown astral navigation to the input, letting stellar calendars guide motion without requiring a port.',
+        'Create a style-card that translates Palm Crown Astral Navigation into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -298,21 +403,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, goofy, neon-sci-fi, watermark, text, logo',
     style: {
       aesthetic:
-        'Ancestor fire deliberation where law, memory, and collective accountability meet.',
+        "Ancestor Fire Deliberation within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ancestor Fire Deliberation's specific style identity.",
       form_and_line:
-        'Circular deliberation rings, stepped accountability bands, ember channels, and ancestral witness marks.',
-      color_palette: 'Ebony, ember, and bronze.',
-      lighting_setup: 'Central bonfire and perimeter torch halos.',
+        'Define Ancestor Fire Deliberation through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Ancestor Fire Deliberation-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Ancestor Fire Deliberation recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Carved stone, staff-like verticals, woven fiber cues, ember ash, and bronze ritual marks.',
-      render_quality: 'Political-ritual render with strong symbolic staging.',
+        'Use materials and textures that reinforce Ancestor Fire Deliberation: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Ancestor Fire Deliberation with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Circular focus around a central ancestral flame or equivalent ember core.',
-      atmosphere: 'Debate, memory, and collective accountability.',
+        'Use spatial behavior that fits Ancestor Fire Deliberation: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ancestor Fire Deliberation: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Council-staff cues, ember parliament rhythm, ancestry mural marks, bronze memory light, and collective accountability.',
+        "Prioritize Ancestor Fire Deliberation's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Deliberate the input through ancestor fire law: ebony fields, bronze marks, ember cores, circular accountability bands, and ancestral witness symbols should make any subject feel judged by memory without requiring parliament, council, seated figures, fire pit, or literal debate.',
+        'Create a style-card that translates Ancestor Fire Deliberation into a portable visual system for 6. Mythic African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -13,16 +13,38 @@ tags:
   - mythic
   - japanese-myth
 visualDna:
-  aesthetic: Rain-wet yokai bargain language where spirits and humans barter under strict symbolic codes.
-  form_and_line: Covered stall cues, hanging charms, and zigzag wet-lane rhythms.
-  color_palette: Petrol blue, candle gold, and muted crimson.
-  lighting_setup: Rain reflections and lantern haze.
-  material_texture: Bamboo awnings, lacquer trays, paper amulets, and puddled stone.
-  render_quality: Rich market scene with strong readability.
-  spatial_distortion: Layered stall-like depth receding into fog.
-  atmosphere: Suspicion, curiosity, and fragile coexistence.
-  key_features: Spirit vendor masks, warded stall cues, rain talisman ribbons.
-  creative_brief: Recast the input through rain-wet yokai bargain, where every exchange feels symbolically priced without requiring a market.
+  aesthetic: >-
+    Rain-Wet Yokai Bargain within 7. Mythic Japanese Yokai & Kami: a reusable Mythic Noir Curated Vault visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Rain-Wet Yokai Bargain's specific style identity.
+  form_and_line: >-
+    Define Rain-Wet Yokai Bargain through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Rain-Wet Yokai Bargain-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Rain-Wet Yokai Bargain recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Rain-Wet Yokai Bargain: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Rain-Wet Yokai Bargain with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Rain-Wet Yokai Bargain: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Rain-Wet Yokai Bargain: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Rain-Wet Yokai Bargain's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Rain-Wet Yokai Bargain into a portable visual system for 7. Mythic Japanese
+    Yokai & Kami. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - photoreal
   - goofy-comedy

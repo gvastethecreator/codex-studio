@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
 visualDna:
-  aesthetic: Gramática naval-tactics de escaramuza con maniobra, bloqueo de ruta, fuego cruzado y vectores de alcance.
-  subject_treatment: Transforma el input en fragata, corbeta, obstáculo, vector táctico o estructura marina armada.
-  color_and_tone: Azul acero, espuma blanca y rojo señal para lectura de aliados, daño y alerta.
-  lighting_and_shadow: Cielo cubierto con reflejos marinos fríos y destellos de artillería.
-  texture_and_material: Planchas húmedas, cabos tensos, óxido salino y oleaje áspero de alta fricción.
-  camera_and_composition: Vista amplia con corredores de flanqueo, bloqueo y emboscada sin exigir arrecife o mar literal.
-  atmosphere_and_mood: Tensa, táctica y dominada por control marítimo.
-  rendering_and_quality: 'Naval strategy gameplay screencap: vectors, range bands, target priority, reef hazards visible.'
+  aesthetic: >-
+    Iron Reef Naval Skirmish within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Iron Reef Naval Skirmish's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Iron Reef Naval Skirmish's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Iron Reef Naval Skirmish: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Iron Reef Naval Skirmish: legible depth, purposeful highlights, readable focal zones, and
+    atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Iron Reef Naval Skirmish's material logic: tactile detail, coherent finish, and texture choices
+    that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Iron Reef Naval Skirmish's staging logic: strong focal hierarchy, stable readable framing, and spatial
+    rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Iron Reef Naval Skirmish's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

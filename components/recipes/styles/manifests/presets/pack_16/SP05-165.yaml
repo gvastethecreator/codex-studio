@@ -12,16 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Presión espiritual noventera con rivalidad intensa, bravura juvenil y energía sobrenatural de alto voltaje.
-  form_and_line: Línea 90s firme y expresiva, acting facial combativo y momentum corporal limpio.
-  color_palette: Azules eléctricos, naranjas de impacto, verdes oscuros de inframundo y acentos púrpura místicos.
-  lighting_setup: Cel contrastado con flashes de técnica espiritual, rims calientes y sombras de confrontación frontal.
-  material_texture: Polvo energético, telas tensas, marcas gráficas de impacto y grano analógico de acción clásica.
-  render_quality: Acabado premium sobrenatural con legibilidad perfecta de técnica, rivalidad y emoción.
-  spatial_distortion: Encuadres de stare-down, rush ofensivo abstracto y cierre heroico sin fijar ring ni arena.
-  atmosphere: Ardiente, competitiva, cool, sincera.
-  key_features: Estallidos de energía, postura delinquent, marcas de presión espiritual y símbolos místicos en crescendo.
-  creative_brief: Define una gramática reusable de rivalidad espiritual para cualquier sujeto, mezclando bravura juvenil, lealtad y mística de superación sin imponer torneo, ring, arena ni combate literal.
+  aesthetic: >-
+    Spirit Pressure Rivalry Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Spirit Pressure Rivalry Style's specific style identity.
+  form_and_line: >-
+    Define Spirit Pressure Rivalry Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Spirit Pressure Rivalry Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Spirit Pressure Rivalry Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Spirit Pressure Rivalry Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Spirit Pressure Rivalry Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Spirit Pressure Rivalry Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Spirit Pressure Rivalry Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Spirit Pressure Rivalry Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Spirit Pressure Rivalry Style into a portable visual system for 3. 90s Golden
+    Era. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-165.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

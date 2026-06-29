@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Surrealismo psicoanalítico invasivo, con teatralidad cromática, metamorfosis de identidad y colapso de la vigilia.
-  form_and_line: Contornos pulidos con rupturas súbitas, metamorfosis en cadena y coreografía simbólica sin multitud obligatoria.
-  color_palette: Primarios saturados de carnaval, dorados performativos, negros profundos de inconsciente y pasteles inquietantes.
-  lighting_setup: Iluminación de show onírico con focos teatrales, pulsos cromáticos y transiciones abruptas entre planos mentales.
-  material_texture: Superficies brillantes de objeto-pop, telas pesadas, plástico simbólico y niebla de densidad psicológica.
-  render_quality: Acabado premium de alta densidad visual con orden interno preciso para sostener legibilidad en caos simbólico.
-  spatial_distortion: Espacio no estable con colapso de fronteras sueño-vigilia y continuidad fluida entre planos incompatibles.
-  atmosphere: Surreal, carnavalesca, invasiva, deslumbrante.
-  key_features: Saturación teatral, objetos simbólicos mutantes, fragmentación identitaria, ritmo carnavalesco y ruptura de fronteras mentales.
+  aesthetic: >-
+    Dream Invasion Carnival Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Dream Invasion Carnival Style's specific style identity.
+  form_and_line: >-
+    Define Dream Invasion Carnival Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Dream Invasion Carnival Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Dream Invasion Carnival Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Dream Invasion Carnival Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Dream Invasion Carnival Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Dream Invasion Carnival Style: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Dream Invasion Carnival Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Dream Invasion Carnival Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Diseña una gramática reusable de invasión onírica para cualquier prompt o imagen de entrada:
-    carnaval mental, metamorfosis y exceso cromático sin imponer desfiles, objetos domésticos, multitudes ni escenas de sueño concretas.
+    Create a style-card that translates Dream Invasion Carnival Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-299.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

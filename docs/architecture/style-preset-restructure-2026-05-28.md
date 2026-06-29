@@ -6,7 +6,7 @@ Reorganize `Style Pack Manifest` and `Style Preset Manifest` taxonomy to:
 
 - split overloaded anime inventory into coherent packs,
 - remove mixed-language taxonomy drift (ES/EN),
-- eliminate legacy catch-all category ids like `videojuegos`,
+- eliminate legacy game catch-all category ids,
 - keep compatibility with existing preset ids and manifest graph validation.
 
 This plan follows ADR-0025 (granular manifests) and keeps stable preset identity (`id`, `packId`, file path).
@@ -20,7 +20,7 @@ This plan follows ADR-0025 (granular manifests) and keeps stable preset identity
 
 ### Problem
 
-- 7 packs still collapse all presets into category id `videojuegos`.
+- 7 packs still collapse all presets into a legacy game catch-all category id.
 - Category id naming is mixed (`kebab-case` vs `snake_case`).
 - Language is mixed in pack metadata (English + Spanish).
 - Anime content is semantically broad and currently too dense for one main pack family.
@@ -31,7 +31,7 @@ This plan follows ADR-0025 (granular manifests) and keeps stable preset identity
    - `category.id` MUST be `kebab-case`.
    - taxonomy ids and tags MUST be English.
 2. Split anime inventory into 3 coherent `Style Pack Manifest` groups.
-3. Replace `videojuegos` categories in affected packs with domain-correct categories.
+3. Replace legacy game catch-all categories in affected packs with domain-correct categories.
 4. Migrate taxonomy fields in affected preset manifests with scripted safety checks.
 
 ### Benefits
@@ -42,7 +42,7 @@ This plan follows ADR-0025 (granular manifests) and keeps stable preset identity
 
 ### Before / After
 
-**Before:** several packs with single `videojuegos` category and mixed-language metadata.
+**Before:** several packs with a single legacy game catch-all category and mixed-language metadata.
 
 **After:** domain-specific categories, English-only taxonomy ids/tags, balanced anime split across 3 pack groups.
 
@@ -54,7 +54,7 @@ This plan follows ADR-0025 (granular manifests) and keeps stable preset identity
 
 1. Metadata normalization first (safe, low risk).
 2. Anime split decision and pack/category mapping freeze.
-3. Category migration for `videojuegos` packs.
+3. Category migration for legacy game catch-all packs.
 4. Validation guardrails in CI for naming/language policy.
 
 ### Documentation follow-ups
@@ -108,13 +108,13 @@ Includes current categories:
 
 Immediate low-risk normalization:
 
-- `pack_12` name: `Videojuegos Originals Vault` -> `Video Game Originals Vault`
+- `pack_12` name: old non-English game label -> `Video Game Originals Vault`
 - `pack_14` description: ES -> EN
 - `pack_15` description: ES -> EN
 
 ## High-impact taxonomy migration set (Phase 2)
 
-Packs with single legacy category `videojuegos` to be decomposed:
+Packs with a single legacy game catch-all category to be decomposed:
 
 - `pack_01`, `pack_02`, `pack_03`, `pack_04`, `pack_07`, `pack_09`, `pack_11`
 
@@ -128,15 +128,15 @@ Migration rule:
 1. Apply Phase 1 language normalization and validate (`styles:validate`).
 2. Freeze anime target manifests and category ids.
 3. Execute anime migration with scripted remap table + validation after each pack.
-4. Execute `videojuegos` pack decomposition by domain.
+4. Execute legacy game catch-all pack decomposition by domain.
 5. Add CI/source verification for:
-   - forbidden `videojuegos` category id,
+   - forbidden legacy game catch-all category id,
    - forbidden `snake_case` category id,
    - non-English taxonomy ids/tags.
 
 ## Execution status (current)
 
-- done: legacy `videojuegos` category id removed from previously affected packs.
+- done: legacy game catch-all category id removed from previously affected packs.
 - done: category ids normalized to `kebab-case` across active pack manifests.
 - done: `pack_12` normalized to `Video Game Originals Vault` with taxonomy/tag updates.
 - done: anime family split implemented as real 3-pack topology:

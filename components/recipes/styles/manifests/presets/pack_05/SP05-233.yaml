@@ -13,28 +13,36 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Austere survival anime in hostile scale, with closed-habitat discipline, cosmic emptiness,
-    defensive biotechnology, and everyday last-resort ritual
+    Vacuum-Fortress Survival Discipline within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Vacuum-Fortress Survival Discipline's specific style identity.
   form_and_line: >-
-    Estructura modular cerrada, ortogonalidad funcional, perfiles sobrios y bloques volumétricos de
-    hábitat.
-  color_palette: Gris grafito, verde tenue de sistemas vitales, blanco clínico y negro cósmico profundo.
-  lighting_setup: Iluminación funcional de habitáculo, franjas frías de emergencia y contraluz de vacío exterior.
+    Define Vacuum-Fortress Survival Discipline through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Vacuum-Fortress Survival Discipline-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Vacuum-Fortress Survival Discipline recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
   material_texture: >-
-    Aleación reciclada, panelado utilitario, sellos de presión, marcas de mantenimiento y
-    superficies de uso continuo.
-  render_quality: Sci-fi de precisión sobria con foco en escala interior y sensación de ecosistema cerrado.
+    Use materials and textures that reinforce Vacuum-Fortress Survival Discipline: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Vacuum-Fortress Survival Discipline with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
   spatial_distortion: >-
-    Profundidad longitudinal de hábitat y contraste radical entre densidad interna y exterior
-    infinito.
-  atmosphere: Ascética, aislada y resiliente, con tensión de extinción permanente.
+    Use spatial behavior that fits Vacuum-Fortress Survival Discipline: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Vacuum-Fortress Survival Discipline: specific, coherent, and distinct, with emotional
+    tone carried by visual systems rather than narrative captioning.
   key_features: >-
-    Closed-habitat geometry, operational uniformity, hostile void, defensive biotechnology, survival
-    ritual, and systemic austerity
+    Prioritize Vacuum-Fortress Survival Discipline's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Use Knights of Sidonia as style anchor for vacuum-fortress survival discipline. Any prompt
-    should feel sealed, procedural, isolated, and cosmically threatened. Ships, decks, cities,
-    uniforms, pilots, and space battles are optional.
+    Create a style-card that translates Vacuum-Fortress Survival Discipline into a portable visual system for 7. Mecha &
+    Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -52,8 +60,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-233.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

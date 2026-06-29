@@ -12,16 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 2000s-classics
 visualDna:
-  aesthetic: Pop gótico de resonancia espiritual, humor macabro gráfico y pulso punk sobrenatural transferible.
-  form_and_line: Línea digital afilada, siluetas angulares, gestualidad exagerada y ritmo visual sincopado.
-  color_palette: Morados de noche de Halloween, naranjas encendidos, negros tinta y acentos cian de resonancia espiritual.
-  lighting_setup: Contrastes teatrales con glow espectral, sombras planas expresivas y rims fríos sobre bordes gráficos.
-  material_texture: Acabados limpios de era digital, superficies góticas estilizadas, patrones rayados y grano leve siniestro-pop.
-  render_quality: Producción premium early-2000s con lectura inmediata de pose, beat visual y personalidad visual intensa.
-  spatial_distortion: Perspectiva dinámica, diagonales juguetonas y deformación elástica alrededor de pulsos de alma.
-  atmosphere: Traviesa, spooky, vibrante, desafiante.
-  key_features: Contrastes Halloween-pop, accesorios a rayas, morfologías angulares, iconografía lunar abstracta y acentos de resonancia.
-  creative_brief: Diseña una gramática reusable de punk gótico espiritual para cualquier sujeto, combinando iconografía de Halloween, ritmo rebelde y energía de alma sin imponer academia, armas, dúos ni combate.
+  aesthetic: >-
+    Gothic Resonance Punk Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Gothic Resonance Punk Style's specific style identity.
+  form_and_line: >-
+    Define Gothic Resonance Punk Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Gothic Resonance Punk Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Gothic Resonance Punk Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Gothic Resonance Punk Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Gothic Resonance Punk Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Gothic Resonance Punk Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Gothic Resonance Punk Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Gothic Resonance Punk Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Gothic Resonance Punk Style into a portable visual system for 2. 2000s Classics.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -38,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-141.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Interwoven serpent iconography as a renewal glyph with vigilant mythic noir energy.
-  form_and_line: Braided curves, looping arches, and spiral geometry that can coil around any subject.
-  color_palette: Jade black, tarnished gold, and ember red.
-  lighting_setup: Low lantern pools and glints on scale-like surfaces.
-  material_texture: Carved stone, woven metal, and polished bone.
-  render_quality: Mythic illustration with strong emblematic readability.
-  spatial_distortion: Spiraling pull toward a symbolic core without requiring chapel architecture.
-  atmosphere: Transformation, vigilance, and sacred continuity.
-  key_features: Serpent knot, renewal loops, scale-like surfaces.
-  creative_brief: Convert the input into a serpent-knot renewal emblem, keeping the serpentine identity while avoiding a fixed chapel or altar setup.
+  aesthetic: >-
+    Serpent Knot Renewal Glyph within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Serpent Knot Renewal Glyph's specific style identity.
+  form_and_line: >-
+    Define Serpent Knot Renewal Glyph through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Serpent Knot Renewal Glyph-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Serpent Knot Renewal Glyph recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Serpent Knot Renewal Glyph: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Serpent Knot Renewal Glyph with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Serpent Knot Renewal Glyph: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Serpent Knot Renewal Glyph: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Serpent Knot Renewal Glyph's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Serpent Knot Renewal Glyph into a portable visual system for 1. Mythic
+    Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cute

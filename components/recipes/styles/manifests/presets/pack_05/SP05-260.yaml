@@ -12,19 +12,39 @@ tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
 visualDna:
-  aesthetic: Fantasía pastel de convivencia alegre, con banquet como ancla sensorial, comedia suave y luz de celebración.
-  form_and_line: Siluetas cute limpias, agrupación amable, curvas dulces y composición horizontal de abundancia compartida.
-  color_palette: Rosa crema, azul caramelo, melocotón, verde menta y dorado postre.
-  lighting_setup: Luz alta festiva, rebote cálido y acentos brillantes que convierten bordes y ornamentos en dulzor visual.
-  material_texture: Glaseado, pan suave, cerámica brillante, tela colorida y superficies pulidas sin locación obligatoria.
-  render_quality: Acabado candy-clean con legibilidad de ensemble y tono celebratorio continuo.
-  spatial_distortion: Densidad amable, profundidad de convivencia y ritmo horizontal que deja respirar cada forma.
-  atmosphere: Alegre, acogedora y deliciosa.
-  key_features: Colorimetría de postre, abundancia pastel, comedia suave, brillo candy-clean y camaradería luminosa.
+  aesthetic: >-
+    Princess Connect! Re:Dive - Banquet Quest Pastel within 8. Isekai & High Fantasy: a reusable Anime Battle & Worlds
+    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Princess Connect! Re:Dive - Banquet Quest Pastel's specific style
+    identity.
+  form_and_line: >-
+    Define Princess Connect! Re:Dive - Banquet Quest Pastel through line, mass, contour, spacing, and rhythm. Keep forms
+    readable, intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Princess Connect! Re:Dive - Banquet Quest Pastel-specific palette with clear dominant, secondary, and accent
+    roles. Keep contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Princess Connect! Re:Dive - Banquet Quest Pastel recognizable: purposeful key, rim, bounce,
+    shadow, and glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Princess Connect! Re:Dive - Banquet Quest Pastel: surface response, grain,
+    patina, polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Princess Connect! Re:Dive - Banquet Quest Pastel with high production clarity, strong silhouette reads, clean
+    detail priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Princess Connect! Re:Dive - Banquet Quest Pastel: perspective, compression,
+    exaggeration, or depth should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Princess Connect! Re:Dive - Banquet Quest Pastel: specific, coherent, and distinct, with
+    emotional tone carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Princess Connect! Re:Dive - Banquet Quest Pastel's key features: recognizable shape language, palette
+    logic, material cues, lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática banquet-quest-pastel reusable donde cualquier prompt
-    gane alegría compartida, dulzor cromático y acabado candy-clean sin exigir
-    reunión, locación pública o escena culinaria fija.
+    Create a style-card that translates Princess Connect! Re:Dive - Banquet Quest Pastel into a portable visual system
+    for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a fixed scene, character,
+    prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +61,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-260.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

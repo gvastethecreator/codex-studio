@@ -12,19 +12,37 @@ tags:
   - anime-classics-and-prestige
   - 90s-golden-era
 visualDna:
-  aesthetic: Cel anime 90s de simbolismo teatral, elegancia ritual, tensión identitaria y revolución emocional codificada.
-  form_and_line: Línea refinada, poses ceremoniosas, simetría alegórica, diagonales de confrontación y ornamento floral abstracto.
-  color_palette: Rosas profundos, blanco ceremonial, lila dramático, dorado escénico y sombras violetas psicológicas.
-  lighting_setup: Luz teatral abstracta, halo emocional limpio, contrastes de ópera juvenil y focos suaves sobre símbolos clave.
-  material_texture: Satén estilizado, encaje gráfico, superficies idealizadas, brillos dorados planos y grano psicológico elegante.
-  render_quality: Acabado premium 90s con símbolo legible, tensión de poder, lirismo performático y abstracción emocional.
-  spatial_distortion: Perspectivas imposibles, profundidad teatral y composición ritual que convierten cualquier sujeto en alegoría.
-  atmosphere: Teatral, simbólica, elegante, inquietante.
-  key_features: Motivos de rosa abstractos, simetría ritual, poses codificadas, dorado ceremonial y ruptura de roles como forma visual.
+  aesthetic: >-
+    Rose Ritual Symbolism Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Rose Ritual Symbolism Style's specific style identity.
+  form_and_line: >-
+    Define Rose Ritual Symbolism Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Rose Ritual Symbolism Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Rose Ritual Symbolism Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Rose Ritual Symbolism Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Rose Ritual Symbolism Style with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Rose Ritual Symbolism Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Rose Ritual Symbolism Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Rose Ritual Symbolism Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Aplica este preset como tratamiento abstracto de anime simbólico 90s:
-    cualquier prompt debe ganar teatralidad, ornamento emocional, tensión de
-    identidad y lenguaje ritual sin forzar academia, duelo o plataforma.
+    Create a style-card that translates Rose Ritual Symbolism Style into a portable visual system for 3. 90s Golden Era.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - realistic
   - 3d render
@@ -41,7 +59,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-175.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

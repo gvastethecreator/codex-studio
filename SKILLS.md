@@ -1,26 +1,26 @@
-# Skills de flujo de trabajo de Codex Studio
+# Codex Studio Workflow Skills
 
-Este archivo describe flujos de trabajo locales del repo para personas y agentes. No es un glosario; para términos canónicos usa `CONTEXT.md`.
+This file describes local repo workflows for people and agents. It is not a glossary; canonical terms live in `CONTEXT.md`.
 
-## Setup inicial de Codex Studio
+## Initial Codex Studio Setup
 
-1. Use la skill repo-local `skills/codex-studio-setup/SKILL.md` para preparar un checkout nuevo o reparar una welcome screen bloqueada.
-2. El prompt copiable de onboarding debe apuntar a esa skill y pasar snapshot de runtime: repo, API local, Studio Library, `.env.local`, Bun, Codex CLI, app-server, Local Codex Session y readiness.
-3. Setup automatico debe operar por comandos soportados del repo: `bun install` cuando haga falta, `bun run studio:init`, `bun run dev`, `/api/health`, `/api/codex/session` y `/api/app-server/start`.
-4. Si falta ChatGPT login, detenerse con accion exacta `codex login`; no marcar readiness completa sin sesion real.
-5. Mantener Provider Secrets fuera de SQLite, catalogo, logs, capturas, docs y archivos committeados.
-6. Cierre: `bun run test`, `bun run check`, `bun run build`. Para cambios de onboarding/frontend, agregar verificacion visual.
+1. Use the repo-local skill `skills/codex-studio-setup/SKILL.md` to prepare a new checkout or repair a blocked welcome screen.
+2. The copyable onboarding prompt must point to that skill and pass a runtime snapshot: repo, local API, Studio Library, `.env.local`, Bun, Codex CLI, app-server, Local Codex Session, and readiness.
+3. Automated setup must use supported repo commands: `bun install` when needed, `bun run studio:init`, `bun run dev`, `/api/health`, `/api/codex/session`, and `/api/app-server/start`.
+4. If ChatGPT login is missing, stop with the exact action `codex login`; do not mark readiness complete without a real session.
+5. Keep Provider Secrets out of SQLite, catalog metadata, logs, screenshots, docs, and committed files.
+6. Close with `bun run test`, `bun run check`, and `bun run build`. For onboarding/frontend changes, also add visual verification.
 
-## Actualizar dependencias y CI basico
+## Update Dependencies And Basic CI
 
-1. Tratar `package.json`, `bun.lock`, `.github/workflows/ci.yml` y `docs/TOOLING.md` como el baseline auditable.
-2. Resolver versiones actuales antes de editar: `npm view <package> version` para paquetes npm y tags oficiales de GitHub para actions.
-3. Mantener `packageManager`, CI y runtime local en el mismo baseline de Bun.
-4. Si cambian `vite`, `oxlint` u `oxfmt`, sincronizar dependencias directas y `overrides`.
-5. Usar Bun para mutar dependencias y lockfile; no editar `bun.lock` a mano.
-6. Cerrar con `bun install --frozen-lockfile`, `bun run check`, `bun run test` y `bun run build`. El CI basico debe seguir ese mismo contrato.
+1. Treat `package.json`, `bun.lock`, `.github/workflows/ci.yml`, and `docs/TOOLING.md` as the auditable baseline.
+2. Resolve current versions before editing: `npm view <package> version` for npm packages and official GitHub tags for actions.
+3. Keep `packageManager`, CI, and the local runtime on the same Bun baseline.
+4. If `vite`, `oxlint`, or `oxfmt` change, sync direct dependencies and `overrides`.
+5. Use Bun to mutate dependencies and the lockfile; do not edit `bun.lock` by hand.
+6. Close with `bun install --frozen-lockfile`, `bun run check`, `bun run test`, and `bun run build`. Basic CI must follow the same contract.
 
-## Agregar o cambiar un Generation Provider
+## Add Or Change A Generation Provider
 
 1. Keep Codex-first product semantics.
 2. Add provider capability/config behind Provider Boundary.
@@ -28,7 +28,7 @@ Este archivo describe flujos de trabajo locales del repo para personas y agentes
 4. Add a provider-specific compiler fixture before enabling execution.
 5. Compile Generation Task Specs into compact provider-specific Compiled Provider Inputs.
 6. Keep inline image data, API keys, provider endpoints, and secret-like metadata out of compiled payloads.
-7. Return same local contract as Codex jobs: job state, Local Asset, Catalog Entry, metadata, logs, diagnostics.
+7. Return the same local contract as Codex jobs: job state, Local Asset, Catalog Entry, metadata, logs, and diagnostics.
 8. Add tests for provider selection, input compilation, and failure reporting.
 9. Keep provider capability `hasAdapter` false until a concrete executor can produce or import Local Assets.
 10. Register concrete external executors in `apps/local-server/src/providers/externalProviderExecutors.ts` only after tests prove they return the same Local Asset contract as Codex jobs.
@@ -38,13 +38,13 @@ Este archivo describe flujos de trabajo locales del repo para personas y agentes
 14. For fal.ai task assets, use `apps/local-server/src/providers/falAssetInputs.ts`. Hosted `sourceUrl` refs can map to `image_url`, `mask_url`, `control_image_url`, and `reference_image_urls`; local `localPath` refs upload through `apps/local-server/src/providers/falStorageUpload.ts`; inline asset bytes are intentionally omitted from compact Provider Inputs and must be imported as `localPath` or `sourceUrl` before execution.
 15. For fal.ai `image_edit`, require an `input` or `external_output` asset before network execution. Do not let edit jobs run as text-only generation by accident.
 
-No agregues nombres de task específicos de proveedor como `fal_spritesheet` o `comfy_texture`. Usa Generation Tasks agnósticos de proveedor + configuración del provider.
+Do not add provider-specific task names such as `fal_spritesheet` or `comfy_texture`. Use provider-agnostic Generation Tasks plus provider configuration.
 
-## Agregar o cambiar un Recipe Module
+## Add Or Change A Recipe Module
 
-1. Update `lib/recipeModules.ts` metadata: title, description, parameter descriptors, default task, supported tasks, supported providers.
+1. Update `lib/recipeModules.ts` metadata: title, description, parameter descriptors, default task, supported tasks, and supported providers.
 2. Define parameter schema details there too: group, control, default, options, min/max/step, and required flags.
-3. Build provider-independent Generation Task Spec.
+3. Build a provider-independent Generation Task Spec.
 4. Put provider-independent derived params in tested helpers instead of React surfaces.
 5. Put provider-independent prompt fragments in tested helpers before changing the shared Recipe Context envelope.
 6. Put Recipe Context builders in `lib/recipeContextBuilders/<recipe>.ts` and register them in `lib/recipeContextBuilders/index.ts`.
@@ -54,7 +54,7 @@ No agregues nombres de task específicos de proveedor como `fal_spritesheet` o `
 10. Let providers compile task specs into their own payloads.
 11. Store rich task spec for traceability; send compact provider input for execution.
 
-Un Recipe Module no es una página React. La página puede alojar la UI, pero el contrato de workflow debe ser puro y testeable.
+A Recipe Module is not a React page. The page may host the UI, but the workflow contract must stay pure and testable.
 
 Run `bun run recipes:catalog -- --query=<text> --limit=20` to inspect Recipe Modules by text. Add `--task=<task>`, `--provider=<provider_id>`, `--parameter=<param_id>`, `--examples`, or `--json` for agent-ready output.
 Run `bun run recipes:verify` before closing broad recipe work. It checks Recipe Module catalog coverage, default task support, provider coverage, duplicate parameter ids, enum options, slider types, required/default conflicts, provider-independent examples, React surface boundaries, and prompt evaluation.
@@ -62,14 +62,12 @@ Run `bun run recipes:examples:verify` when changing future asset-task blueprints
 Run `bun run recipes:source:verify` when changing recipe UI or module plumbing. It blocks React recipe surfaces from importing task-spec builders, Recipe Context builders, Recipe Provider Directives, or provider compilers.
 Run `bun run recipes:evaluate:live -- --recipe=<id> --out=logs/recipe-prompt-quality` to plan a live Codex quality comparison without creating jobs. Add `--execute` to queue real legacy-vs-directives jobs through the local backend, record JSON + Markdown review templates, and keep only job/catalog refs plus transcript paths in the repo-local report.
 
-## Agregar o cambiar un Style Preset
+## Add Or Change A Style Preset
 
-1. Prefer `bun run styles:scaffold -- --preset=<ID> --pack=<pack_id> --category=<category id or exact name> --name=<Name> --template=style|sprite|texture` when creating a new preset.
-   It is dry-run by default; pass `--write` to mutate files and optionally `--default-image=/assets/...` to prefill a real default image path.
-2. Edit `components/recipes/styles/manifests/presets/<pack>/<preset>.yaml` first.
-   `styles:scaffold` uses `components/recipes/styles/manifests/templates/style-preset.template.yaml`, `sprite-sheet-preset.template.yaml`, or `texture-preset.template.yaml` under the hood for new presets.
-3. Preserve stable `id`, `packId`, `name`, `category`, visual DNA, avoid rules, asset refs, supported tasks, tags, version.
-4. Keep taxonomy source language in English for durable ids/tags/labels, and keep `category.id` in `kebab-case` (no `snake_case`, no `videojuegos` legacy slugs).
+1. Prefer `bun run styles:scaffold -- --preset=<ID> --pack=<pack_id> --category=<category id or exact name> --name=<Name> --template=style|sprite|texture` when creating a new preset. It is dry-run by default; pass `--write` to mutate files and optionally `--default-image=/assets/...` to prefill a real default image path.
+2. Edit `components/recipes/styles/manifests/presets/<pack>/<preset>.yaml` first. `styles:scaffold` uses `components/recipes/styles/manifests/templates/style-preset.template.yaml`, `sprite-sheet-preset.template.yaml`, or `texture-preset.template.yaml` under the hood for new presets.
+3. Preserve stable `id`, `packId`, `name`, `category`, visual DNA, avoid rules, asset refs, supported tasks, tags, and version.
+4. Keep taxonomy source language in English for durable ids/tags/labels, and keep `category.id` in `kebab-case` with no `snake_case` or legacy non-English slugs.
 5. Maintain editorial taxonomy (`packId`, `packName`, `categoryId`, `categoryName`, domain, tags, supported tasks, default image state) so agents can query presets without scanning compatibility packs.
 6. Register the preset in both the matching category `presetRefs` and the pack-level `presetRefs`; refs must stay inside the same pack namespace.
 7. Keep each preset visually distinct from neighboring presets.
@@ -88,9 +86,9 @@ Run `bun run styles:source:verify` when changing Styles runtime/scripts. It bloc
 Run `bun run styles:render:verify` after changing Styles UI grouping, pack runtime data, or virtualized rendering. It reports mounted/eager/placeholder sections plus eager/planned card budgets per pack from `styleBrowserRenderPlan`, keeping large packs from mounting every preset at once. For major Styles UI changes, verify `pack_05` in browser and compare collapsed/expanded DOM counts against this report.
 Run `bun run styles:browser:verify -- --url=http://localhost:17222/#recipe-styles` (or the active dev URL) after major Styles UI changes when you want the reusable browser gate instead of a manual pass. If the gate should validate a clean dev console on Windows, start the UI with `VITE_ENABLE_REACT_SCAN=false bun run dev:ui` first.
 
-El pack YAML legacy está retirado. `bun run styles:split`, `scripts/expand-pack-02-pack-05.ts` y `scripts/reorder-style-packs.ts` rechazan mutar manifiestos granulares desde flujos antiguos. Usa `StyleRuntimePack`, `StyleRuntimePreset`, `composeStyleRuntimePacksFromManifests()`, `STYLE_RUNTIME_PACK_SUMMARIES`, `loadStyleRuntimePack()`, `loadStyleRuntimePacks()` y tipos de manifest/catalog para código nuevo. `styles:source:verify` bloquea aliases/export legacy fuera del guard de source-audit.
+Legacy pack YAML is retired. `bun run styles:split`, `scripts/expand-pack-02-pack-05.ts`, and `scripts/reorder-style-packs.ts` reject mutations from old flows. Use `StyleRuntimePack`, `StyleRuntimePreset`, `composeStyleRuntimePacksFromManifests()`, `STYLE_RUNTIME_PACK_SUMMARIES`, `loadStyleRuntimePack()`, `loadStyleRuntimePacks()`, and manifest/catalog types for new code. `styles:source:verify` blocks legacy aliases/exports outside the source-audit guard.
 
-## Auditar uso de tokens
+## Audit Token Usage
 
 1. Compare Generation Task Spec size vs Compiled Provider Input size.
 2. Move stable boilerplate into Provider Session Contract.
@@ -103,7 +101,7 @@ El pack YAML legacy está retirado. `bun run styles:split`, `scripts/expand-pack
 9. Use `createProviderInputMetrics()` when adding token/size diagnostics so source spec size, compiled input size, compiled payload size, asset count, inline-asset state, and Provider Session Contract id stay consistent.
 10. Treat inline asset bytes as a preflight signal, not debug data; never serialize inline image bytes into Compiled Provider Input logs.
 
-El ahorro de tokens debe venir de mejor compilación, no de debilitar recetas.
+Token savings must come from better compilation, not weaker recipes.
 
 Run `bun run providers:audit` to inspect Recipe Module and provider conformance rows, including source spec size, compiled payload size, prompt estimates, Recipe Provider Directives coverage, and inline-data/secret leak checks. Run `bun run providers:verify` before changing provider compilers or removing legacy Recipe Context metadata.
 Run `bun run providers:source:verify` after backend route/worker/provider-boundary changes. It blocks route handlers and non-provider backend modules from importing provider compilers, shared hosted result internals, or concrete hosted/local executors.
@@ -112,7 +110,7 @@ Use `apps/local-server/src/providers/externalProvider.ts` as the adapter shell f
 Use `apps/local-server/src/providers/externalProviderResults.ts` for hosted image result handling before adding provider-specific download/transcript code. Keep retry policy, image URL extraction, mime/ext inference, asset writes, transcript writes, and secret redaction shared unless a provider truly needs a different contract.
 For ComfyUI, use `apps/local-server/src/providers/comfyExecutor.ts`. It requires `COMFY_API_URL` or `COMFYUI_API_URL` plus `COMFY_WORKFLOW_TEMPLATE_PATH`. The template must be a Comfy workflow JSON with `{{prompt}}` and optional `{{negativePrompt}}` placeholders. The executor submits `/prompt`, polls `/history/{prompt_id}`, imports the first `/view` image into the Studio Library, and records only compact no-secret diagnostics.
 
-## Auditar y compactar storage local
+## Audit And Compact Local Storage
 
 1. Start with Studio Settings -> Storage Maintenance for interactive work, or `bun run storage:audit` for automation. It reports database size, WAL/SHM size, row counts, oversized JSON fields, inline `data:image` markers, missing thumbnails, reference dedupe stats, tooling-log size, and Studio Library directory sizes without printing prompts, transcript text, secrets, or inline image data.
 2. Use `bun run storage:compact` for dry-run planning only. It reports how many historical inline image payloads would be omitted and whether adjacent `localPath` files make them recoverable.
@@ -123,7 +121,7 @@ For ComfyUI, use `apps/local-server/src/providers/comfyExecutor.ts`. It requires
 7. Do not delete duplicate reference files until a content-addressed Reference Store exists.
 8. Use Storage Maintenance or `bun run tooling:logs:prune` when repo-local `logs/tooling` history needs manual cleanup; normal tooling runs prune timestamped logs automatically.
 
-## Endurecer cola de generación
+## Harden Generation Queue
 
 1. Validate `Generation Task Spec` before enqueue when a job carries `sourceSpec`.
 2. Local queued jobs with `metadata.workspaceId` or `metadata.batchId` must use `batch-*` batch ids and `spec-batch-*` spec ids.
@@ -131,14 +129,14 @@ For ComfyUI, use `apps/local-server/src/providers/comfyExecutor.ts`. It requires
 4. Return normalized validation fields (`code`, `field`, `reason`, `issues`) so UI and agents can diagnose without backend stack traces.
 5. Keep reference persistence in `apps/local-server/src/referenceManager.ts`; do not let route handlers or providers write ad-hoc reference files.
 
-Run focused coverage first:
+Focused coverage:
 
 ```bash
 bun run test -- packages/shared/src/generationContracts.test.ts apps/local-server/src/jobRoutes.test.ts
 bun run check -- packages/shared/src/generationContracts.ts packages/shared/src/generationContracts.test.ts apps/local-server/src/jobRoutes.ts apps/local-server/src/jobRoutes.test.ts
 ```
 
-## Mejorar calidad de generación
+## Improve Generation Quality
 
 1. Keep quality semantics in provider-independent `Generation Task Spec.quality`, not React surfaces.
 2. Use compact quality presets (`image_general`, `image_edit`, `style_reference`, `sprite_sheet`, `texture`, `product_or_ui_asset`) to add intent without restoring huge Recipe Context prompts.
@@ -155,7 +153,7 @@ bun run providers:verify
 bun run recipes:verify
 ```
 
-## Agregar UI o configuración de Settings
+## Add UI Or Settings Configuration
 
 1. Ask: is this Bootstrap Configuration, Studio Settings, or Provider Secret?
 2. Bootstrap Configuration: `.env.local`, ports, initial library path, dev flags.
@@ -167,25 +165,25 @@ bun run recipes:verify
 8. Keep Studio Library roots clean: internal state belongs in `.studio/`, generated images and exports belong in `outputs/`.
 9. Output organization preferences may control subfolders by date/provider/model/recipe and file-name templates; keep defaults readable and avoid exposing secret/provider endpoint values.
 
-## Trabajar con carpetas de salida
+## Work With Output Folders
 
 1. Detect likely External Output Sources.
-2. Let user register source.
+2. Let the user register the source.
 3. Registration only records path intent; it must not import, delete, move, tag, or catalog files by itself.
 4. Import selected image files by copying them into Studio Library before catalog/delete/move/tag.
 5. Run catalog operations only on managed Local Assets.
-6. Preserve original external folder unless user explicitly asks for cleanup.
+6. Preserve the original external folder unless the user explicitly asks for cleanup.
 
-## Avanzar hacia una UI catalog-first
+## Move Toward A Catalog-First UI
 
-1. Treat Image Catalog / Catalog Entries as durable read model.
+1. Treat Image Catalog / Catalog Entries as the durable read model.
 2. Keep Visual Batch as a compatibility adapter only while legacy grid surfaces need it.
 3. Put Catalog Entry grouping/filtering in `lib/studioCatalogView.ts`.
 4. Put Catalog Entry UI image materialization in `lib/studioCatalogImageAdapter.ts`, and keep legacy `GenerationBatch[]` snapshots behind explicit compatibility helpers.
 5. Do not read `catalog-cache`, `GlobalContext`, or `useIndexedDBStorage` from `useCatalog`.
 6. Run `bun run catalog:source:verify` after changing catalog/grid read paths.
 
-## Limpieza de UI
+## UI Cleanup
 
 1. Global status and entry points go to Command Center.
 2. Heavy detail panels become Demand-Mounted Surfaces.

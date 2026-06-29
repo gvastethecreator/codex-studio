@@ -13,16 +13,37 @@ tags:
   - mythic
   - greek-myth
 visualDna:
-  aesthetic: Divine chariot transit where sunrise, radial force, and horse frieze rhythm carry the image.
-  form_and_line: Arched portal cues, radial paving, and horse frieze lines.
-  color_palette: Gold amber, sandstone, and azure sky.
-  lighting_setup: Hard sunrise backlight with long cast shadows.
-  material_texture: Sun-warmed stone, gilt reliefs, and polished bronze.
-  render_quality: Bright monumental concept with strong icon clarity.
-  spatial_distortion: Forced perspective toward a glowing horizon threshold.
-  atmosphere: Triumph, destiny, and ritual spectacle.
-  key_features: Solar arch cues, bronze quadriga, prayer causeway rhythm.
-  creative_brief: Convert the input through chariot sun transit, as if dawn reenacts divine transport of light without requiring a gate.
+  aesthetic: >-
+    Chariot Sun Transit within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language with a clear
+    stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
+    while preserving Chariot Sun Transit's specific style identity.
+  form_and_line: >-
+    Define Chariot Sun Transit through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
+    reusable beyond one literal scene.
+  color_palette: >-
+    Use a Chariot Sun Transit-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Chariot Sun Transit recognizable: purposeful key, rim, bounce, shadow, and glow behavior
+    with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Chariot Sun Transit: surface response, grain, patina, polish, or wear
+    should feel intentional and style-defining.
+  render_quality: >-
+    Render Chariot Sun Transit with high production clarity, strong silhouette reads, clean detail priority, and no
+    accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Chariot Sun Transit: perspective, compression, exaggeration, or depth should support
+    the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Chariot Sun Transit: specific, coherent, and distinct, with emotional tone carried by
+    visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Chariot Sun Transit's key features: recognizable shape language, palette logic, material cues, lighting
+    behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Chariot Sun Transit into a portable visual system for 5. Mythic Greek Epics.
+    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - dark-cyber

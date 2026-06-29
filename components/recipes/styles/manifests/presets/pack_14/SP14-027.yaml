@@ -13,16 +13,37 @@ tags:
   - mythic
   - norse-myth
 visualDna:
-  aesthetic: Norse worldtree threshold where cosmic roots split realms under winter twilight.
-  form_and_line: Rune-carved trunk cues, stave-arch buttresses, and spear-straight processional routes.
-  color_palette: Frost blue, ash gray, and raven black.
-  lighting_setup: Polar dusk and forge fire pockets creating stark warm-cold opposition.
-  material_texture: Ice-crusted timber, iron bindings, hide banners, and soot-dark stone.
-  render_quality: Epic concept frame emphasizing mythic scale and symbolic readability.
-  spatial_distortion: Monumental low-angle composition centered on root-formed threshold energy.
-  atmosphere: Stoic fatalism, oath-duty, and suspended apocalypse.
-  key_features: Worldtree roots, rune monoliths, longhouse watchfire cues, shield walls.
-  creative_brief: Recast the input through ashen worldtree threshold, guarding passage between mortal and god-haunted realms without requiring a bastion.
+  aesthetic: >-
+    Ashen Worldtree Threshold within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Ashen Worldtree Threshold's specific style identity.
+  form_and_line: >-
+    Define Ashen Worldtree Threshold through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
+    and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Ashen Worldtree Threshold-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Ashen Worldtree Threshold recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Ashen Worldtree Threshold: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Ashen Worldtree Threshold with high production clarity, strong silhouette reads, clean detail priority, and
+    no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Ashen Worldtree Threshold: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Ashen Worldtree Threshold: specific, coherent, and distinct, with emotional tone carried
+    by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Ashen Worldtree Threshold's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Ashen Worldtree Threshold into a portable visual system for 8. Mythic Norse
+    Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cartoon-goofy

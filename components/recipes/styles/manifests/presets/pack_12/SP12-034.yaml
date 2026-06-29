@@ -12,14 +12,31 @@ tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
 visualDna:
-  aesthetic: Gramática tactical-shooter de largo alcance con control de líneas, ventaja de altura y exposición calculada.
-  subject_treatment: Aplica rol marksman, camuflaje geológico, kit de reposicionamiento o vulnerabilidad de cruce al input.
-  color_and_tone: Rojo mineral, beige seco y azul limpio para separar terreno, cobertura y exposición.
-  lighting_and_shadow: Sol agresivo con sombras definidas que marcan ventanas de disparo y tránsito.
-  texture_and_material: Roca sedimentaria, polvo fino, textil áspero y equipamiento antiabrasión.
-  camera_and_composition: Profundidad extrema, rutas de flanqueo y ventanas de tiro como composición sin exigir cañón.
-  atmosphere_and_mood: Precisa, paciente y letal a distancia.
-  rendering_and_quality: 'Competitive sniper-map screencap: sightlines, nests, crossing risk, canyon cover readable.'
+  aesthetic: >-
+    Crimson Canyon Sniper Run within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Crimson Canyon Sniper Run's specific style identity.
+  subject_treatment: >-
+    Treat any subject through Crimson Canyon Sniper Run's visual grammar: readable silhouette, role cues, controlled
+    detail density, and no dependency on one fixed scene or body pose.
+  color_and_tone: >-
+    Use a controlled palette that supports Crimson Canyon Sniper Run: clear tonal hierarchy, intentional contrast, and
+    category-appropriate color accents without muddy blends.
+  lighting_and_shadow: >-
+    Shape light and shadow for Crimson Canyon Sniper Run: legible depth, purposeful highlights, readable focal zones,
+    and atmosphere that supports the style without hiding the subject.
+  texture_and_material: >-
+    Render surfaces with Crimson Canyon Sniper Run's material logic: tactile detail, coherent finish, and texture
+    choices that reinforce the style rather than generic decoration.
+  camera_and_composition: >-
+    Compose with Crimson Canyon Sniper Run's staging logic: strong focal hierarchy, stable readable framing, and spatial
+    rhythm that can adapt to different subjects.
+  atmosphere_and_mood: >-
+    Build Crimson Canyon Sniper Run's mood through environment, color, light, and texture. Keep it distinct from
+    neighboring presets and avoid generic pretty-card staging.
+  rendering_and_quality: >-
+    Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong
+    thumbnail readability, and consistent production quality.
 avoidRules:
   - watermark
   - text

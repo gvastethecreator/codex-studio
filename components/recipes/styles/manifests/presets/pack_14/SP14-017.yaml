@@ -13,16 +13,38 @@ tags:
   - mythic
   - egyptian-myth
 visualDna:
-  aesthetic: Egyptian afterlife noir focused on feather-scale judgment, funerary precision, and eternal consequence.
-  form_and_line: Processional pylon cues, scale-centered symmetry, and jackal-priest silhouettes.
-  color_palette: Desert umber, lapis shadow blue, and funerary electrum.
-  lighting_setup: Oblique tomb apertures with oil-lamp edge glows on carved reliefs.
-  material_texture: Sand-worn limestone, gilded inlays, linen wrappings, and polished basalt floors.
-  render_quality: Monumental concept key art with high symbolic legibility and restrained contrast.
-  spatial_distortion: Long hypostyle depth converging on a central weighing force.
-  atmosphere: Solemn verdict, ritual order, and eternal consequence.
-  key_features: Heart-weighing scale, feather standard, canopic reliquary cues, abstract hieratic friezes.
-  creative_brief: Apply feathered-scale afterlife verdict to the input, measuring it against cosmic balance without requiring a chamber.
+  aesthetic: >-
+    Feathered Scale Afterlife Verdict within 3. Mythic Pantheons & Legends: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Feathered Scale Afterlife Verdict's specific style identity.
+  form_and_line: >-
+    Define Feathered Scale Afterlife Verdict through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Feathered Scale Afterlife Verdict-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Feathered Scale Afterlife Verdict recognizable: purposeful key, rim, bounce, shadow, and
+    glow behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Feathered Scale Afterlife Verdict: surface response, grain, patina,
+    polish, or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Feathered Scale Afterlife Verdict with high production clarity, strong silhouette reads, clean detail
+    priority, and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Feathered Scale Afterlife Verdict: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Feathered Scale Afterlife Verdict: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Feathered Scale Afterlife Verdict's key features: recognizable shape language, palette logic, material
+    cues, lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Feathered Scale Afterlife Verdict into a portable visual system for 3. Mythic
+    Pantheons & Legends. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
+    story beat.
 avoidRules:
   - photoreal
   - comedic

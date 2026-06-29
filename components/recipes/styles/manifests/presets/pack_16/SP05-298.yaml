@@ -12,18 +12,38 @@ tags:
   - anime-classics-and-prestige
   - studio-masterpieces
 visualDna:
-  aesthetic: Comedia nocturna surreal, con deriva social, caos cálido y humor romántico sin gravedad.
-  form_and_line: Trazo ágil de comedia, siluetas expresivas, curvas de remolino y staging coral adaptable al sujeto original.
-  color_palette: Naranjas de farol, rojos festivos, violetas nocturnos y verdes de neón suave para ritmo de ronda.
-  lighting_setup: Iluminación nocturna cálida y señalética blanda, con contrastes dinámicos que favorecen aventura improvisada.
-  material_texture: Madera cálida, vidrio empañado, papel impreso y superficie húmeda con brillo de noche.
-  render_quality: Acabado premium de odisea ligera, con legibilidad alta en multiescena y pulso narrativo continuo.
-  spatial_distortion: Laberinto amable con compresión íntima y expansión episódica por umbrales y desvíos narrativos.
-  atmosphere: Caprichosa, nocturna, afectuosa, social.
-  key_features: Luz nocturna cálida, remolino social, humor excéntrico, paleta festiva y deriva episódica abstracta.
+  aesthetic: >-
+    Nocturnal Social Whirl Style within 10. Studio Masterpieces: a reusable Anime Classics & Prestige visual language
+    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Nocturnal Social Whirl Style's specific style identity.
+  form_and_line: >-
+    Define Nocturnal Social Whirl Style through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Nocturnal Social Whirl Style-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Nocturnal Social Whirl Style recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Nocturnal Social Whirl Style: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Nocturnal Social Whirl Style with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Nocturnal Social Whirl Style: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Nocturnal Social Whirl Style: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Nocturnal Social Whirl Style's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
   creative_brief: >-
-    Construye una gramática reusable de remolino nocturno para cualquier prompt o imagen de entrada:
-    comedia, calidez y azar social sin imponer ciudades, pubs, alcohol, literatura ni encuentros específicos.
+    Create a style-card that translates Nocturnal Social Whirl Style into a portable visual system for 10. Studio
+    Masterpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - realistic
   - 3d render
@@ -40,7 +60,9 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-298.webp
 attributes:
-  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature
+  negativePrompt: >-
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark,
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

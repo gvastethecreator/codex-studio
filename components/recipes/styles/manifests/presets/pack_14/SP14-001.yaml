@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Dark sacred fantasy with eclipse-lit reliquary authority and processional rhythm.
-  form_and_line: Long ritual silhouettes, gothic ornament bands, vertical icon axes, and solemn procession-like spacing.
-  color_palette: Negro obsidiana, marfil antiguo y oro quemado.
-  lighting_setup: Eclipse backlight, narrow sacred beams, gold rim partitions, and deep obsidian falloff.
-  material_texture: Wet stone, liturgical metal, and heavy velvet.
-  render_quality: Key art premium con dramatismo controlado.
-  spatial_distortion: Monumental central-axis depth that feels processional without requiring a cathedral interior.
-  atmosphere: Reverence, fatality, and ceremonial magnetism.
-  key_features: Eclipse halo hierarchy, reliquary gold accents, processional silhouette rhythm, gothic verticals, and silent authority.
-  creative_brief: 'Process the input through eclipse reliquary grandeur: obsidian negative space, antique-ivory sacred axes, burned-gold rimlight, and solemn processional spacing should make any subject feel dark, majestic, and ceremonial without requiring a cathedral, clergy, stained glass, or parade.'
+  aesthetic: >-
+    Eclipse Reliquary Processional within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with
+    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Eclipse Reliquary Processional's specific style identity.
+  form_and_line: >-
+    Define Eclipse Reliquary Processional through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Eclipse Reliquary Processional-specific palette with clear dominant, secondary, and accent roles. Keep
+    contrast deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Eclipse Reliquary Processional recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Eclipse Reliquary Processional: surface response, grain, patina, polish,
+    or wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Eclipse Reliquary Processional with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Eclipse Reliquary Processional: perspective, compression, exaggeration, or depth
+    should support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Eclipse Reliquary Processional: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Eclipse Reliquary Processional's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Eclipse Reliquary Processional into a portable visual system for 1. Mythic
+    Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - cute

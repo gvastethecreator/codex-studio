@@ -851,24 +851,25 @@ export const GENERATED_STYLE_PRESETS = [
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
       aesthetic:
-        'Cerebral thriller-anime style with moral-void minimalism, symbolic menace, and strategic psychological framing',
+        "Shadow Notebook Thriller within 1. Modern Shonen & Action: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Shadow Notebook Thriller's specific style identity.",
       form_and_line:
-        'Controlled precision contours, stillness-priority pose language, sharp silhouette partitions, sparse gesture economy for tension buildup',
+        'Define Shadow Notebook Thriller through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Near-monochrome neutrals, selective crimson warning accents, cold amber paper tones, deep black shadow architecture',
+        'Use a Shadow Notebook Thriller-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Hard chiaroscuro segmentation, surgical highlight placement, constrained ambient lift, and intentional darkness as compositional mass',
+        'Use lighting that makes Shadow Notebook Thriller recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Matte paper-like surfaces, subtle analog grain, polished low-noise cel layers, restrained reflective cues',
+        'Use materials and textures that reinforce Shadow Notebook Thriller: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'High-discipline early-digital anime finish optimized for suspense readability and symbolic hierarchy',
+        'Render Shadow Notebook Thriller with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Compressed psychological space with strategic negative voids and perspective restraint to amplify mental pressure',
-      atmosphere: 'Calculating, oppressive, cold, analytical, ominous',
+        'Use spatial behavior that fits Shadow Notebook Thriller: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Shadow Notebook Thriller: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Chiaroscuro intellect, symbolic hierarchy, stillness-driven menace, contrast-led narrative tension',
+        "Prioritize Shadow Notebook Thriller's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Build identity through psychological contrast logic—severe light partition, symbolic hierarchy, and compositional restraint—so the preset reads as cerebral suspense across any subject matter without requiring a fixed clue.',
+        'Create a style-card that translates Shadow Notebook Thriller into a portable visual system for 1. Modern Shonen & Action. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {

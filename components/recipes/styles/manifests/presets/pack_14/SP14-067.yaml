@@ -13,16 +13,38 @@ tags:
   - mythic
   - african-myth
 visualDna:
-  aesthetic: Palm-crown astral navigation aligned to star tides, lunar timing, and ritual trade.
-  form_and_line: Pier ladder cues, mast forests, and shrine watchtower silhouettes.
-  color_palette: Lagoon teal, palm green, and dusk amber.
-  lighting_setup: Wet sunset reflections and mast lanterns.
-  material_texture: Palm rope, river timber, and clay amphorae.
-  render_quality: Maritime myth concept with detailed docking life.
-  spatial_distortion: Curved dock-like perspective into open delta channels.
-  atmosphere: Trade, ritual timing, and tidal mysticism.
-  key_features: Astral chart cues, palm crown shrine, omen buoy lights.
-  creative_brief: Apply palm-crown astral navigation to the input, letting stellar calendars guide motion without requiring a port.
+  aesthetic: >-
+    Palm Crown Astral Navigation within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual
+    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
+    transferable across subjects while preserving Palm Crown Astral Navigation's specific style identity.
+  form_and_line: >-
+    Define Palm Crown Astral Navigation through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Palm Crown Astral Navigation-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Palm Crown Astral Navigation recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Palm Crown Astral Navigation: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Palm Crown Astral Navigation with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Palm Crown Astral Navigation: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Palm Crown Astral Navigation: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Palm Crown Astral Navigation's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Palm Crown Astral Navigation into a portable visual system for 6. Mythic African
+    Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
+    beat.
 avoidRules:
   - photoreal
   - modern-container-port

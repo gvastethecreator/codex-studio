@@ -10,19 +10,26 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt:
       'photoreal, cartoon-goofy, high-saturation-pop, cyberpunk, watermark, text, logo',
     style: {
-      aesthetic: 'Norse worldtree threshold where cosmic roots split realms under winter twilight.',
+      aesthetic:
+        "Ashen Worldtree Threshold within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ashen Worldtree Threshold's specific style identity.",
       form_and_line:
-        'Rune-carved trunk cues, stave-arch buttresses, and spear-straight processional routes.',
-      color_palette: 'Frost blue, ash gray, and raven black.',
-      lighting_setup: 'Polar dusk and forge fire pockets creating stark warm-cold opposition.',
-      material_texture: 'Ice-crusted timber, iron bindings, hide banners, and soot-dark stone.',
-      render_quality: 'Epic concept frame emphasizing mythic scale and symbolic readability.',
+        'Define Ashen Worldtree Threshold through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Ashen Worldtree Threshold-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Ashen Worldtree Threshold recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Ashen Worldtree Threshold: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Ashen Worldtree Threshold with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Monumental low-angle composition centered on root-formed threshold energy.',
-      atmosphere: 'Stoic fatalism, oath-duty, and suspended apocalypse.',
-      key_features: 'Worldtree roots, rune monoliths, longhouse watchfire cues, shield walls.',
+        'Use spatial behavior that fits Ashen Worldtree Threshold: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ashen Worldtree Threshold: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Ashen Worldtree Threshold's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through ashen worldtree threshold, guarding passage between mortal and god-haunted realms without requiring a bastion.',
+        'Create a style-card that translates Ashen Worldtree Threshold into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -32,18 +39,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, modern-aircraft, comedic, neon-city, watermark, text, logo',
     style: {
       aesthetic:
-        'Valkyrie ice weighing where chosen souls pass through glacial sky and martial grace.',
-      form_and_line: 'Arcing bridge cues, winged standards, and blade-like vertical accents.',
-      color_palette: 'Aurora cyan, storm violet, and iron silver.',
-      lighting_setup: 'Aurora veils and lightning backlight across drifting snow haze.',
+        "Valkyrie Ice Weighing within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Valkyrie Ice Weighing's specific style identity.",
+      form_and_line:
+        'Define Valkyrie Ice Weighing through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Valkyrie Ice Weighing-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Valkyrie Ice Weighing recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Frosted metal, carved ice slabs, chainmail glints, and fur-lined pennants.',
-      render_quality: 'Dramatic cinematic painting with crisp silhouette choreography.',
-      spatial_distortion: 'Elevated aerial perspective receding into cloud depth.',
-      atmosphere: 'Heroic melancholy, martial grace, and imminent transcendence.',
-      key_features: 'Valkyrie rider cues, soul lanterns, storm ravens, sword-rune balustrades.',
+        'Use materials and textures that reinforce Valkyrie Ice Weighing: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Valkyrie Ice Weighing with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Valkyrie Ice Weighing: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Valkyrie Ice Weighing: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Valkyrie Ice Weighing's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform the input through valkyrie ice weighing, where destiny is judged by warriors of the afterlife without requiring a causeway.',
+        'Create a style-card that translates Valkyrie Ice Weighing into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -54,17 +68,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal, playful-cartoon, flashy-neon, modern-factory-tech, watermark, text, logo',
     style: {
       aesthetic:
-        'Longnight rune forging where destiny-runes are hammered into war relics and debts.',
-      form_and_line: 'Heavy anvil block cues, ribbed smoke stacks, and knotwork structural beams.',
-      color_palette: 'Coal black, ember orange, and cold steel blue.',
-      lighting_setup: 'Furnace glow and snow-reflected moonlight producing high contrast drama.',
-      material_texture: 'Scorched iron, rough timber, riveted plates, and drifting ash.',
-      render_quality: 'High-detail key art with tactile metalcraft emphasis.',
-      spatial_distortion: 'Deep workshop-like perspective ending at a ritual forge heart.',
-      atmosphere: 'Laborious reverence, survival pride, and pre-battle stillness.',
-      key_features: 'Rune anvils, wolf-skin capes, oath blades, smoke prayer vents.',
+        "Longnight Rune Forging within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Longnight Rune Forging's specific style identity.",
+      form_and_line:
+        'Define Longnight Rune Forging through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Longnight Rune Forging-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Longnight Rune Forging recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Longnight Rune Forging: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Longnight Rune Forging with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Longnight Rune Forging: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Longnight Rune Forging: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Longnight Rune Forging's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply longnight rune forging to any input, as if each form were born with name, debt, and prophecy. Emphasize ember-lit metalcraft, smoke prayer vents, knotwork beams, cold steel-blue shadow, and rune pressure without requiring anvils, blades, workshops, wolves, or pre-battle scenes.',
+        'Create a style-card that translates Longnight Rune Forging into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -73,17 +95,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Mythic — Norse Sagas',
     negativePrompt: 'photoreal, cartoon, neon-cyber, watermark, text, logo',
     style: {
-      aesthetic: 'Frost jarl authority ruled by oaths, shield law, and permanent winter severity.',
-      form_and_line: 'Timber hall cues, shield walls, and rune gate symmetry.',
-      color_palette: 'Ice blue, charcoal, and iron silver.',
-      lighting_setup: 'Polar dusk and forge embers.',
-      material_texture: 'Ice-crusted wood, chainmail steel, and carved stone.',
-      render_quality: 'Cinematic fortress concept with high silhouette clarity.',
-      spatial_distortion: 'Ascending approach toward a central law-speaking focus.',
-      atmosphere: 'Severity, honor, and winter authority.',
-      key_features: 'Jarl throne cues, rune banners, wolf brazier courts.',
+      aesthetic:
+        "Frost Jarl Authority within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Frost Jarl Authority's specific style identity.",
+      form_and_line:
+        'Define Frost Jarl Authority through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Frost Jarl Authority-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Frost Jarl Authority recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Frost Jarl Authority: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Frost Jarl Authority with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Frost Jarl Authority: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Frost Jarl Authority: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Frost Jarl Authority's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret the input through frost jarl authority, where law is spoken above blizzard winds without requiring a fortress.',
+        'Create a style-card that translates Frost Jarl Authority into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -93,17 +124,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, comedy, futuristic-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Valkyrie soul departure where funeral honor and battle summons share one divine logistics.',
-      form_and_line: 'Pier-arm cues, wing standards, and high cliff ramp geometry.',
-      color_palette: 'Aurora green, steel, and midnight blue.',
-      lighting_setup: 'Aurora backlight and wind-burned fire pits.',
-      material_texture: 'Frosted iron, rope rigging, and carved oak.',
-      render_quality: 'Dramatic aerial concept frame.',
-      spatial_distortion: 'Cliff-edge depth into cloud-sea distance.',
-      atmosphere: 'Heroic melancholy and divine logistics.',
-      key_features: 'Valkyrie mooring cues, lantern cranes, oath pylons.',
+        "Valkyrie Soul Departure within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Valkyrie Soul Departure's specific style identity.",
+      form_and_line:
+        'Define Valkyrie Soul Departure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Valkyrie Soul Departure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Valkyrie Soul Departure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Valkyrie Soul Departure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Valkyrie Soul Departure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Valkyrie Soul Departure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Valkyrie Soul Departure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Valkyrie Soul Departure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through valkyrie soul departure, making exit feel both funeral honor and battle summons without requiring a dock.',
+        'Create a style-card that translates Valkyrie Soul Departure into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -112,17 +151,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Mythic — Norse Sagas',
     negativePrompt: 'photoreal, kawaii, cyberpunk, watermark, text, logo',
     style: {
-      aesthetic: 'Longnight saga doctrine where story, strategy, and winter brotherhood merge.',
-      form_and_line: 'Beam-heavy nave cues, long table axis, and hearth symmetry.',
-      color_palette: 'Ember orange, soot black, and timber brown.',
-      lighting_setup: 'Hearth glow and narrow roof-slit moonlight.',
-      material_texture: 'Carved wood, fur textiles, and hammered cups.',
-      render_quality: 'Warm-noir interior concept with crisp detail.',
-      spatial_distortion: 'Deep hall-like perspective toward a carved high-seat focus.',
-      atmosphere: 'Brotherhood, tension, and ancestral voice.',
-      key_features: 'Saga carvings, feast banners, oath blade rack.',
+      aesthetic:
+        "Longnight Saga Doctrine within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Longnight Saga Doctrine's specific style identity.",
+      form_and_line:
+        'Define Longnight Saga Doctrine through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Longnight Saga Doctrine-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Longnight Saga Doctrine recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Longnight Saga Doctrine: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Longnight Saga Doctrine with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Longnight Saga Doctrine: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Longnight Saga Doctrine: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Longnight Saga Doctrine's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply longnight saga doctrine to the input, making stories function as military memory without requiring a mead hall.',
+        'Create a style-card that translates Longnight Saga Doctrine into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -131,17 +179,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Mythic — Norse Sagas',
     negativePrompt: 'photoreal, cartoon, neon-signage, watermark, text, logo',
     style: {
-      aesthetic: 'Fjord rune navigation where currents and prophecy govern movement.',
-      form_and_line: 'Narrow pier cues, carved sea walls, and mast forests.',
-      color_palette: 'Cold teal, slate gray, and brass firelight.',
-      lighting_setup: 'Clouded dawn and signal pyre highlights.',
-      material_texture: 'Wet timber, ice spray, and rough stone.',
-      render_quality: 'Maritime myth concept with layered depth.',
-      spatial_distortion: 'Fjord tunnel perspective toward horizon fog.',
-      atmosphere: 'Tactical calm and tidal menace.',
-      key_features: 'Rune dock cues, war drakkars, beacon towers.',
+      aesthetic:
+        "Fjord Rune Navigation within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Fjord Rune Navigation's specific style identity.",
+      form_and_line:
+        'Define Fjord Rune Navigation through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Fjord Rune Navigation-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Fjord Rune Navigation recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Fjord Rune Navigation: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Fjord Rune Navigation with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Fjord Rune Navigation: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Fjord Rune Navigation: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Fjord Rune Navigation's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform the input through fjord rune navigation, following currents and prophecy without requiring a port.',
+        'Create a style-card that translates Fjord Rune Navigation into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -151,17 +208,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, playful, neon-cyber, watermark, text, logo',
     style: {
       aesthetic:
-        'Wolf oath momentum where blood pact, regiment rhythm, and fated war pressure align.',
-      form_and_line: 'Processional path cues, pillar cadence, and ridge watchpoints.',
-      color_palette: 'Ash gray, blood red, and iron.',
-      lighting_setup: 'Low sun and braziers in snow wind.',
-      material_texture: 'Packed snow, carved stone, and hide standards.',
-      render_quality: 'Directional concept emphasizing movement.',
-      spatial_distortion: 'Strong vanishing line toward battle-shrine pressure.',
-      atmosphere: 'Determination and fated momentum.',
-      key_features: 'Wolf standards, oath steles, war drums.',
+        "Wolf Oath Momentum within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Wolf Oath Momentum's specific style identity.",
+      form_and_line:
+        'Define Wolf Oath Momentum through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Wolf Oath Momentum-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Wolf Oath Momentum recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Wolf Oath Momentum: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Wolf Oath Momentum with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Wolf Oath Momentum: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Wolf Oath Momentum: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Wolf Oath Momentum's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through wolf oath momentum, renewing blood pacts before conflict without requiring a marchway.',
+        'Create a style-card that translates Wolf Oath Momentum into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -170,17 +235,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Mythic — Norse Sagas',
     negativePrompt: 'photoreal, comic, modern-bridge-tech, watermark, text, logo',
     style: {
-      aesthetic: 'Serpent ash crossing where fear is bargained with before sacred transit.',
-      form_and_line: 'Rope-span arch cues, carved serpent rails, and watch shrines.',
-      color_palette: 'Ash black, pale cyan, and rust bronze.',
-      lighting_setup: 'Backlit fog and ember shrine points.',
-      material_texture: 'Burnt timber, iron links, and soot stone.',
-      render_quality: 'High-drama environmental concept.',
-      spatial_distortion: 'Bridge-depth framing over abyss-like void.',
-      atmosphere: 'Vertigo, mythic dread, and ritual transit.',
-      key_features: 'Serpent carvings, ash braziers, toll altar cues.',
+      aesthetic:
+        "Serpent Ash Crossing within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Serpent Ash Crossing's specific style identity.",
+      form_and_line:
+        'Define Serpent Ash Crossing through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Serpent Ash Crossing-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Serpent Ash Crossing recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Serpent Ash Crossing: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Serpent Ash Crossing with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Serpent Ash Crossing: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Serpent Ash Crossing: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Serpent Ash Crossing's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply serpent ash crossing to the input, making sacred transit feel like a bargain with fear without requiring a bridge.',
+        'Create a style-card that translates Serpent Ash Crossing into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -190,17 +264,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cute-style, cyberpunk, watermark, text, logo',
     style: {
       aesthetic:
-        'Raven signal intelligence where bird flight, war messages, and state secrets converge.',
-      form_and_line: 'Signal tower cues, perched standards, and stone map-court geometry.',
-      color_palette: 'Steel blue, basalt, and torch orange.',
-      lighting_setup: 'Windy overcast with beacon pulses.',
-      material_texture: 'Weathered stone, feather banners, and iron cages.',
-      render_quality: 'Tactical overview concept with strong scale cues.',
-      spatial_distortion: 'Plateau-like spread with layered lookout depths.',
-      atmosphere: 'Surveillance, strategy, and mythic intelligence.',
-      key_features: 'Raven roost towers, map stones, signal fires.',
+        "Raven Signal Intelligence within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Raven Signal Intelligence's specific style identity.",
+      form_and_line:
+        'Define Raven Signal Intelligence through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Raven Signal Intelligence-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Raven Signal Intelligence recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Raven Signal Intelligence: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Raven Signal Intelligence with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Raven Signal Intelligence: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Raven Signal Intelligence: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Raven Signal Intelligence's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret the input through raven signal intelligence, letting birds carry hidden strategic meaning without requiring a plateau.',
+        'Create a style-card that translates Raven Signal Intelligence into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -210,17 +292,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cartoon, futuristic-neon, watermark, text, logo',
     style: {
       aesthetic:
-        'Iceblade quench rite where winter itself becomes tool, judge, and tempering force.',
-      form_and_line: 'Terraced workshop cues, sluice channels, and chimney clusters.',
-      color_palette: 'Glacier white, coal black, and ember orange.',
-      lighting_setup: 'Forge cores and reflected ice glow.',
-      material_texture: 'Quenched steel, frozen runoff, and soot brick.',
-      render_quality: 'Industrial myth concept with tactile realism.',
-      spatial_distortion: 'Layered terraces descending toward a master forge focus.',
-      atmosphere: 'Harsh labor and precision ritual.',
-      key_features: 'Quench vats, rune anvils, smith shrine cues.',
+        "Iceblade Quench Rite within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Iceblade Quench Rite's specific style identity.",
+      form_and_line:
+        'Define Iceblade Quench Rite through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Iceblade Quench Rite-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Iceblade Quench Rite recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Iceblade Quench Rite: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Iceblade Quench Rite with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Iceblade Quench Rite: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Iceblade Quench Rite: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Iceblade Quench Rite's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Transform the input through iceblade quench rite, using winter as tool and judge without requiring a foundry district.',
+        'Create a style-card that translates Iceblade Quench Rite into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -230,17 +320,25 @@ export const GENERATED_STYLE_PRESETS = [
     negativePrompt: 'photoreal, cartoon, cyberpunk-city, watermark, text, logo',
     style: {
       aesthetic:
-        'Glacier Thing deliberation where governance happens under mortal weather and cold law.',
-      form_and_line: 'Circular bench cues, speaker stone, and herald poles.',
-      color_palette: 'Ice gray, raven black, and muted red.',
-      lighting_setup: 'Cold daylight and perimeter torch braziers.',
-      material_texture: 'Ice crust, carved granite, and wool cloaks.',
-      render_quality: 'Civic epic concept with clear hierarchy.',
-      spatial_distortion: 'Bowl composition focused on law-stone center.',
-      atmosphere: 'Deliberation, conflict, and communal accountability.',
-      key_features: 'Lawspeaker mound, clan banners, oath ring.',
+        "Glacier Thing Deliberation within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Glacier Thing Deliberation's specific style identity.",
+      form_and_line:
+        'Define Glacier Thing Deliberation through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Glacier Thing Deliberation-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Glacier Thing Deliberation recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Glacier Thing Deliberation: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Glacier Thing Deliberation with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Glacier Thing Deliberation: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Glacier Thing Deliberation: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Glacier Thing Deliberation's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Recast the input through glacier Thing deliberation, turning governance into cold public oath without requiring a parliament.',
+        'Create a style-card that translates Glacier Thing Deliberation into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -249,17 +347,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Mythic — Norse Sagas',
     negativePrompt: 'photoreal, playful, neon, watermark, text, logo',
     style: {
-      aesthetic: 'Frostbound burial memory where hero ships, ice, and flame preserve stoic grief.',
-      form_and_line: 'Ship row cues, cairn lines, and memorial pier geometry.',
-      color_palette: 'Pale cyan, charcoal, and fire amber.',
-      lighting_setup: 'Twilight memorial fires and icy reflections.',
-      material_texture: 'Frosted hull wood, stone cairns, and funeral cloth.',
-      render_quality: 'Emotional cinematic concept.',
-      spatial_distortion: 'Receding fleet-like perspective along frozen depth.',
-      atmosphere: 'Grief, reverence, and stoic closure.',
-      key_features: 'Burial drakkars, cairn altars, torch processions.',
+      aesthetic:
+        "Frostbound Burial Memory within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Frostbound Burial Memory's specific style identity.",
+      form_and_line:
+        'Define Frostbound Burial Memory through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Frostbound Burial Memory-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Frostbound Burial Memory recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Frostbound Burial Memory: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Frostbound Burial Memory with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Frostbound Burial Memory: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Frostbound Burial Memory: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Frostbound Burial Memory's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply frostbound burial memory to the input, preserving memory in ice and flame without requiring a harbor.',
+        'Create a style-card that translates Frostbound Burial Memory into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -268,17 +375,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Mythic — Norse Sagas',
     negativePrompt: 'photoreal, comedy, cyberpunk, watermark, text, logo',
     style: {
-      aesthetic: 'Ashen Ragnarok last stand prepared to buy time against the end of worlds.',
-      form_and_line: 'Bastion ring cues, spear forests, and barricade wedges.',
-      color_palette: 'Ash gray, ember red, and iron.',
-      lighting_setup: 'Smoke-diffused glow and emergency beacons.',
-      material_texture: 'Burnt timber, cracked stone, and scorched metal.',
-      render_quality: 'Apocalyptic epic scene with strategic legibility.',
-      spatial_distortion: 'Defensive layers receding toward an inner last-stand core.',
-      atmosphere: 'Defiance, fatalism, and martial resolve.',
-      key_features: 'Last-stand wall cues, war horns, omen banners.',
+      aesthetic:
+        "Ashen Ragnarok Last Stand within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ashen Ragnarok Last Stand's specific style identity.",
+      form_and_line:
+        'Define Ashen Ragnarok Last Stand through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Ashen Ragnarok Last Stand-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Ashen Ragnarok Last Stand recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Ashen Ragnarok Last Stand: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Ashen Ragnarok Last Stand with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Ashen Ragnarok Last Stand: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ashen Ragnarok Last Stand: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Ashen Ragnarok Last Stand's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Reinterpret the input through ashen Ragnarok last stand, defiant against apocalypse without requiring a fortress.',
+        'Create a style-card that translates Ashen Ragnarok Last Stand into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -287,17 +403,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Mythic — Norse Sagas',
     negativePrompt: 'photoreal, cartoon, neon-cyber, watermark, text, logo',
     style: {
-      aesthetic: 'Yew nine-path fate where every branch and route rewrites destiny.',
-      form_and_line: 'Triple arch cues, branch tracery, and path bifurcations.',
-      color_palette: 'Moss green, bark brown, and moon silver.',
-      lighting_setup: 'Misty moonlight and root lantern nodes.',
-      material_texture: 'Ancient yew bark, rune stones, and wet earth.',
-      render_quality: 'Mystical landscape concept with symbolic geometry.',
-      spatial_distortion: 'Multi-path composition radiating from a yew-root center.',
-      atmosphere: 'Liminal wonder and cautious reverence.',
-      key_features: 'Realm markers, yew roots, guardian runes.',
+      aesthetic:
+        "Yew Nine-Path Fate within 8. Mythic Norse Sagas: a reusable Mythic Noir Curated Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Yew Nine-Path Fate's specific style identity.",
+      form_and_line:
+        'Define Yew Nine-Path Fate through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Yew Nine-Path Fate-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+      lighting_setup:
+        'Use lighting that makes Yew Nine-Path Fate recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+      material_texture:
+        'Use materials and textures that reinforce Yew Nine-Path Fate: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+      render_quality:
+        'Render Yew Nine-Path Fate with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+      spatial_distortion:
+        'Use spatial behavior that fits Yew Nine-Path Fate: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Yew Nine-Path Fate: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+      key_features:
+        "Prioritize Yew Nine-Path Fate's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Apply yew nine-path fate to the input, making each possible route rewrite destiny without requiring a gateway.',
+        'Create a style-card that translates Yew Nine-Path Fate into a portable visual system for 8. Mythic Norse Sagas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

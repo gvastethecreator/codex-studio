@@ -12,16 +12,37 @@ tags:
   - mythic-noir-curated-vault
   - mythic-noir
 visualDna:
-  aesthetic: Celestial marker language carved with hymn-like stone symbols and sacred astronomy.
-  form_and_line: Ringed forms, psalmic mark bands, and viewing-aperture cues.
-  color_palette: Granite, moon silver, and faded blue.
-  lighting_setup: Night sky glow with measured interior lanterns.
-  material_texture: Chiseled stone, bronze lens accents, and weathered carved marks.
-  render_quality: Monumental symbolic render with sacred astronomy and carved-stone clarity.
-  spatial_distortion: Rising concentric rings toward a celestial aperture without requiring an observatory.
-  atmosphere: Contemplation, astronomy, and sacred order.
-  key_features: Psalm-like carvings, celestial apertures, star-ledger marks.
-  creative_brief: 'Mark the input with stone psalm astronomy: granite mass, moon-silver rings, faded-blue night glow, chiseled hymn bands, and celestial aperture cues should make any subject feel liturgical and star-measured without requiring an observatory, monument, stairs, telescope, or sky-viewing setup.'
+  aesthetic: >-
+    Stone Psalm Celestial Marker within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language with a
+    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across
+    subjects while preserving Stone Psalm Celestial Marker's specific style identity.
+  form_and_line: >-
+    Define Stone Psalm Celestial Marker through line, mass, contour, spacing, and rhythm. Keep forms readable,
+    intentional, and reusable beyond one literal scene.
+  color_palette: >-
+    Use a Stone Psalm Celestial Marker-specific palette with clear dominant, secondary, and accent roles. Keep contrast
+    deliberate and avoid generic color wash.
+  lighting_setup: >-
+    Use lighting that makes Stone Psalm Celestial Marker recognizable: purposeful key, rim, bounce, shadow, and glow
+    behavior with readable hierarchy.
+  material_texture: >-
+    Use materials and textures that reinforce Stone Psalm Celestial Marker: surface response, grain, patina, polish, or
+    wear should feel intentional and style-defining.
+  render_quality: >-
+    Render Stone Psalm Celestial Marker with high production clarity, strong silhouette reads, clean detail priority,
+    and no accidental UI, text, logos, or watermark.
+  spatial_distortion: >-
+    Use spatial behavior that fits Stone Psalm Celestial Marker: perspective, compression, exaggeration, or depth should
+    support the style without forcing one fixed location.
+  atmosphere: >-
+    Set a mood that belongs to Stone Psalm Celestial Marker: specific, coherent, and distinct, with emotional tone
+    carried by visual systems rather than narrative captioning.
+  key_features: >-
+    Prioritize Stone Psalm Celestial Marker's key features: recognizable shape language, palette logic, material cues,
+    lighting behavior, and composition rules.
+  creative_brief: >-
+    Create a style-card that translates Stone Psalm Celestial Marker into a portable visual system for 1. Mythic
+    Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
 avoidRules:
   - photoreal
   - neon

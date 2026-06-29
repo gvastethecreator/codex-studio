@@ -65,24 +65,25 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Heroísmo hiperpulido de espectacularidad máxima, anatomía cromada y energía de impacto coreografiada con precisión quirúrgica.',
+        "Chrome Impact Spectacle within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Chrome Impact Spectacle's specific style identity.",
       form_and_line:
-        'Contorno de precisión absoluta, detalle anatómico denso y control ultralimpio de líneas de acción.',
+        'Define Chrome Impact Spectacle through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Steel grey, explosion orange, hero red, electric cyan, soot black, flash white',
+        'Use a Chrome Impact Spectacle-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación HDR de impacto, sheen especular heroico, contraluz explosivo y relleno por partículas incandescentes.',
+        'Use lighting that makes Chrome Impact Spectacle recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Acabado pulido en piel/metal, granulado de debris, columnas de humo y microdetalle de fractura.',
+        'Use materials and textures that reinforce Chrome Impact Spectacle: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Action frame premium con claridad de lectura cinética y acabado editorial de alto brillo.',
+        'Render Chrome Impact Spectacle with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Extreme foreshortening, focal compression, spectacle-first scale, and perfect action readability',
-      atmosphere: 'Explosiva, triunfal y metálica, impulsada por perfección técnica agresiva.',
+        'Use spatial behavior that fits Chrome Impact Spectacle: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Chrome Impact Spectacle: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Chrome-like anatomy, impact fractures, extreme foreshortening, scale-shatter perspective, and hyperdefined spectacle polish',
+        "Prioritize Chrome Impact Spectacle's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Yusuke Murata as style anchor for chrome impact spectacle. Any prompt should gain hyperdefined polish, forceful foreshortening, crisp anatomy, and scale fracture. Cities, craters, superheroes, punches, and camera-hit poses are optional.',
+        'Create a style-card that translates Chrome Impact Spectacle into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -93,24 +94,25 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Urgencia de storyboard en crudo, monocromo ansioso y catástrofe emocional codificada en anotaciones de producción.',
+        "Emergency Storyboard Tension within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Emergency Storyboard Tension's specific style identity.",
       form_and_line:
-        'Contorno de lápiz nervioso, marcas técnicas densas, hatch urgente y soltura de boceto operacional.',
+        'Define Emergency Storyboard Tension through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Pencil grey, warning red, photocopy black, paper white, rust sepia, alarm orange',
+        'Use a Emergency Storyboard Tension-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Spotlight conceptual duro, estallidos rojo-alarma y glare de material no finalizado.',
+        'Use lighting that makes Emergency Storyboard Tension recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Smudge de grafito, grano de fotocopia, pliegues de papel, bleed de marcador y líneas borradas de construcción.',
+        'Use materials and textures that reinforce Emergency Storyboard Tension: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Sketch-frame de emergencia con lectura táctica alta y energía preproducción apocalíptica.',
+        'Render Emergency Storyboard Tension with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Storyboard panel shifts, emergency-angle perspective, rough dramatic framing, and note-margin compression',
-      atmosphere: 'Urgente, ansiosa y esquelética, al borde de colapso planificado.',
+        'Use spatial behavior that fits Emergency Storyboard Tension: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Emergency Storyboard Tension: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Raw storyboard panels, emergency arrows, technical notation, incomplete strokes, monochrome anxiety, and explosive preproduction framing',
+        "Prioritize Emergency Storyboard Tension's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Hideaki Anno as style anchor for emergency storyboard tension. Any prompt should feel urgent, unfinished, annotated, and emotionally diagrammed. Missiles, disasters, mecha, cockpits, panel narratives, and readable notes are optional.',
+        'Create a style-card that translates Emergency Storyboard Tension into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -121,24 +123,25 @@ export const GENERATED_STYLE_PRESETS = [
       'action spectacle, bright comedy palette, cute chibi design, glossy fantasy armor, neon cyberpunk glow, melodramatic speed lines, plastic 3d render',
     style: {
       aesthetic:
-        'Suspense adulto de realismo contenido, donde microexpresiones y presión moral dominan el encuadre.',
+        "Adult Suspense Microgesture within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Adult Suspense Microgesture's specific style identity.",
       form_and_line:
-        'Contorno medido, detalle facial naturalista y marcas expresivas mínimas de alta intención dramática.',
+        'Define Adult Suspense Microgesture through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Muted khaki, asphalt grey, skin-warm taupe, office white, rainy blue, burgundy accent',
+        'Use a Adult Suspense Microgesture-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Fluorescencia práctica, luz lluviosa y sombras tipo interrogatorio en baja saturación.',
+        'Use lighting that makes Adult Suspense Microgesture recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Tejido sobrio, papel de expediente, haze de humo, vidrio moteado por lluvia y muros vividos.',
+        'Use materials and textures that reinforce Adult Suspense Microgesture: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Dramaturgia de close-up sobrio con legibilidad psicológica y tensión procedural sostenida.',
+        'Render Adult Suspense Microgesture with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Natural adult proportions, camera-close tension framing, realistic perspective, and stillness-driven composition',
-      atmosphere: 'Tensa, humana y terrenal, con inquietud ética persistente.',
+        'Use spatial behavior that fits Adult Suspense Microgesture: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Adult Suspense Microgesture: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Adult microgesture tension, restrained realism, procedural backgrounds, moral pressure, almost-still pacing, and unsentimental focus',
+        "Prioritize Adult Suspense Microgesture's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Naoki Urasawa as style anchor for adult suspense microgesture. Any prompt should hold tension through tiny shifts, grounded space, and moral pressure. Offices, files, smoke, cities, detectives, human close-ups, and crime scenes are optional.',
+        'Create a style-card that translates Adult Suspense Microgesture into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -149,24 +152,25 @@ export const GENERATED_STYLE_PRESETS = [
       'blunt horror gore, chaotic dream collage, flat sitcom framing, cartoon chibi acting, muddy low-detail realism, fantasy ornament clutter, obvious literal symbolism',
     style: {
       aesthetic:
-        'Realismo pulido quebrado por memoria, performance e identidad inestable entre reflejos, pantallas y cortes perceptivos.',
+        "Reality-Slip Reflection Continuity within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Reality-Slip Reflection Continuity's specific style identity.",
       form_and_line:
-        'Contorno refinado realista, detalle facial actoral y dislocación sutil en líneas de encuadre.',
+        'Define Reality-Slip Reflection Continuity through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Cool steel, skin peach, screen blue, lipstick crimson, neutral beige, shadow plum',
+        'Use a Reality-Slip Reflection Continuity-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Iluminación práctica reflectiva, spill de monitor, spot íntimo y sombras de suspense de superficie limpia.',
+        'Use lighting that makes Reality-Slip Reflection Continuity recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Reflejos en vidrio, brillo cosmético, barniz pulido y glow de escaneo electrónico.',
+        'Use materials and textures that reinforce Reality-Slip Reflection Continuity: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Suspense psicológico cinematográfico con continuidad quebrada y lectura precisa de capas perceptivas.',
+        'Render Reality-Slip Reflection Continuity with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Reality-slip match cuts, reflection-depth confusion, poised adult proportion, and cinematic frame logic with subtle breakage',
-      atmosphere: 'Inquietante y sofisticada, de tensión mental bajo control aparente.',
+        'Use spatial behavior that fits Reality-Slip Reflection Continuity: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Reality-Slip Reflection Continuity: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Reflection logic, polished adult spaces, screenlike cuts, memory-performance slippage, identity fracture, and seamless impossible continuity',
+        "Prioritize Reality-Slip Reflection Continuity's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Satoshi Kon as style anchor for reality-slip reflection continuity. Any prompt should fracture identity through polished surfaces, perceptual cuts, memory drift, and seamless impossible transitions. Hallways, cities, screens, mirrors, protagonists, and literal reflections are optional.',
+        'Create a style-card that translates Reality-Slip Reflection Continuity into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -177,24 +181,25 @@ export const GENERATED_STYLE_PRESETS = [
       'exaggerated action pose, glossy fantasy effects, chibi simplification, neon spectacle, cinematic explosions, idealized glamour anatomy, plastic 3d render',
     style: {
       aesthetic:
-        'Naturalismo humano silencioso centrado en microgesto cotidiano, peso corporal creíble y ternura observacional anti-espectáculo.',
+        "Hiroyuki Okiura - Quiet Human Naturalism within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Hiroyuki Okiura - Quiet Human Naturalism's specific style identity.",
       form_and_line:
-        'Contorno natural discreto, estilización mínima y claridad en gesto funcional de vida diaria.',
+        'Define Hiroyuki Okiura - Quiet Human Naturalism through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Soft beige, denim blue, skin-warm peach, lived-in white, rainy grey, muted green',
+        'Use a Hiroyuki Okiura - Quiet Human Naturalism-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz natural suave, rebote interior moderado, suavidad nublada y prácticos de escala humana.',
+        'Use lighting that makes Hiroyuki Okiura - Quiet Human Naturalism recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Algodón usado, superficies vividas, roces de suelo, calidez de piel y difusión en vidrio lluvioso.',
+        'Use materials and textures that reinforce Hiroyuki Okiura - Quiet Human Naturalism: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Realismo animado íntimo con temporalidad pausada y lectura fina de comportamiento humano.',
+        'Render Hiroyuki Okiura - Quiet Human Naturalism with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Believable anatomy, restrained perspective, human-scale depth, natural gait and gesture',
-      atmosphere: 'Íntima, modesta y arraigada, con gravedad emocional cotidiana.',
+        'Use spatial behavior that fits Hiroyuki Okiura - Quiet Human Naturalism: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Hiroyuki Okiura - Quiet Human Naturalism: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Body language observada, espacios habitados, peso postural natural y timing gestual realista.',
+        "Prioritize Hiroyuki Okiura - Quiet Human Naturalism's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática quiet-human reusable donde microgesto, iluminación natural y materialidad vivida transmitan emoción sin exigir cocina, interior doméstico, vidrio lluvioso o escena humana específica.',
+        'Create a style-card that translates Hiroyuki Okiura - Quiet Human Naturalism into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -205,23 +210,25 @@ export const GENERATED_STYLE_PRESETS = [
       'noisy maximalism, cluttered environment, gritty horror texture, warm muddy palette, heavy outline cartooning, dense crowd staging, opaque plastic surfaces',
     style: {
       aesthetic:
-        'Minimalismo mineral introspectivo con translucidez gema suspendida en vacío contemplativo.',
+        "Haruko Ichikawa - Mineral Void Serenity within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Haruko Ichikawa - Mineral Void Serenity's specific style identity.",
       form_and_line:
-        'Contorno mínimo preciso, arista cristalina limpia y marcas expresivas de baja densidad.',
-      color_palette: 'Opal white, seafoam cyan, pale gold, quartz pink, void black, glacial blue',
+        'Define Haruko Ichikawa - Mineral Void Serenity through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Haruko Ichikawa - Mineral Void Serenity-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Luz refractiva limpia, glow de borde, apertura ambiental inmensa y chispa cristalina sin ruido escénico.',
+        'Use lighting that makes Haruko Ichikawa - Mineral Void Serenity recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Translucidez mineral pulida, suavidad de erosión marina, superficie vítrea y terreno mate mínimo.',
+        'Use materials and textures that reinforce Haruko Ichikawa - Mineral Void Serenity: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Claridad contemplativa de alto control, con espacio negativo dominante y detalle selectivo.',
+        'Render Haruko Ichikawa - Mineral Void Serenity with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Slim fragile proportion logic, open-space isolation, clean silhouette spacing, and low-clutter monumental emptiness',
-      atmosphere: 'Esparsa, luminosa e introspectiva, sostenida por fragilidad cristalina.',
+        'Use spatial behavior that fits Haruko Ichikawa - Mineral Void Serenity: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Haruko Ichikawa - Mineral Void Serenity: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Translucidez gema, composición en vacío abierto, paisaje mínimo y lenguaje postural delicado.',
+        "Prioritize Haruko Ichikawa - Mineral Void Serenity's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Haruko Ichikawa as style anchor for mineral-void serenity. Any prompt should become translucent, quiet, faceted, spacious, and melancholic through negative space. Gem bodies, empty terrain, fragile figures, and literal landscapes are optional.',
+        'Create a style-card that translates Haruko Ichikawa - Mineral Void Serenity into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -232,23 +239,25 @@ export const GENERATED_STYLE_PRESETS = [
       'sterile machine render, cold villainous armor, glossy sci-fi UI, isolated product shot, flat generic workshop, weak mechanical detail, cynical grimdark tone',
     style: {
       aesthetic:
-        'Aventura industrial-humanista con coralidad cálida, ingeniería práctica y emocionalidad familiar entre humor y duelo.',
+        "Hiromu Arakawa - Mechanical Warmth Ensemble within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Hiromu Arakawa - Mechanical Warmth Ensemble's specific style identity.",
       form_and_line:
-        'Contorno limpio y seguro, balance entre rostro y máquina, y linework expresivo funcional.',
-      color_palette: 'Steel blue, workwear brown, ember orange, cream, engine red, soot grey',
+        'Define Hiromu Arakawa - Mechanical Warmth Ensemble through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Hiromu Arakawa - Mechanical Warmth Ensemble-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Prácticos de taller, glow cálido de atardecer y contraste térmico industrial legible.',
+        'Use lighting that makes Hiromu Arakawa - Mechanical Warmth Ensemble recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Grasa mecánica, telas de trabajo, madera usada, metal empolvado y cuero marcado por uso.',
+        'Use materials and textures that reinforce Hiromu Arakawa - Mechanical Warmth Ensemble: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acción de conjunto robusta con claridad mecánica y narrativa afectiva en simultáneo.',
+        'Render Hiromu Arakawa - Mechanical Warmth Ensemble with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Strong readable anatomy, ensemble-balanced composition, practical depth, and robust physical posing',
-      atmosphere: 'Cálida y fuerte, con pragmatismo emocional de equipo.',
+        'Use spatial behavior that fits Hiromu Arakawa - Mechanical Warmth Ensemble: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Hiromu Arakawa - Mechanical Warmth Ensemble: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Detalle mecánico legible, química coral, gestos family-coded y oscilación tonal humor-duelo.',
+        "Prioritize Hiromu Arakawa - Mechanical Warmth Ensemble's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Hiromu Arakawa as style anchor for mechanical-warmth ensemble grammar. Any prompt should combine legible craft, practical engineering, tonal humor/grief, and humanist warmth. Workshops, groups, families, prosthetics, vehicles, and action scenes are optional.',
+        'Create a style-card that translates Hiromu Arakawa - Mechanical Warmth Ensemble into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -259,23 +268,25 @@ export const GENERATED_STYLE_PRESETS = [
       'photoreal spaceship realism, hard sci-fi UI clutter, comedic chibi tone, bright candy palette, grounded contemporary streetwear, shallow space scale',
     style: {
       aesthetic:
-        'Romanticismo retrofuturista de melancolía noble, distancia cósmica y heroísmo resignado.',
+        "Retrofuture Distance Melancholy within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Retrofuture Distance Melancholy's specific style identity.",
       form_and_line:
-        'Contorno elegante retro, proporciones alargadas, linework fino en capas y maquinaria estelar sugerida.',
-      color_palette: 'Deep navy, brass gold, wine red, vacuum black, starlight white, engine blue',
+        'Define Retrofuture Distance Melancholy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Retrofuture Distance Melancholy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Contraluz de campo estelar, glow de latón técnico y framing de silueta en penumbra solemne.',
+        'Use lighting that makes Retrofuture Distance Melancholy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cielo pintado profundo, paneles metálicos gastados, caída textil aterciopelada y suavidad cel-era.',
+        'Use materials and textures that reinforce Retrofuture Distance Melancholy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Space-opera de alta legibilidad con escala infinita y dramatismo de horizonte prolongado.',
+        'Render Retrofuture Distance Melancholy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Tall melancholy forms, long horizon lines, deep star-distance perspective, and theatrical fabric flow',
-      atmosphere: 'Solitaria, romántica y cósmica, con nobleza de despedida interminable.',
+        'Use spatial behavior that fits Retrofuture Distance Melancholy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Retrofuture Distance Melancholy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Retrofuture silhouettes, noble aged metal, star-track-like distance cues, long-loss framing, and romantic cosmic scale',
+        "Prioritize Retrofuture Distance Melancholy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Leiji Matsumoto as style anchor for retrofuture distance melancholy. Any prompt should feel noble, far away, aged by travel, and emotionally vast. Trains, command bridges, capes, starships, and heroic characters are optional.',
+        'Create a style-card that translates Retrofuture Distance Melancholy into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -315,24 +326,25 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Estética pulp de velocidad extrema construida como póster de impacto, con agresividad gráfica y adrenalina neon-noir.',
+        "Takeshi Koike - Razorline Velocity Poster within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Takeshi Koike - Razorline Velocity Poster's specific style identity.",
       form_and_line:
-        'Contorno afilado tipo cuchilla, contraste grueso-fino de tinta y tallado de silueta en bloques violentos.',
+        'Define Takeshi Koike - Razorline Velocity Poster through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Racing red, black ink, chrome white, toxic yellow, electric blue, asphalt violet',
+        'Use a Takeshi Koike - Razorline Velocity Poster-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Spot de alto contraste, rim duro, glare de neón nocturno y masas de sombra en cuña.',
+        'Use lighting that makes Takeshi Koike - Razorline Velocity Poster recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Brillo lacquered, guiños de caucho, grano screenprint y acabado de cartel pulido.',
+        'Use materials and textures that reinforce Takeshi Koike - Razorline Velocity Poster: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acción hiperdinámica con lectura instantánea de movimiento y composición de afiche cinético.',
+        'Render Takeshi Koike - Razorline Velocity Poster with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Velocity-smeared perspective, lunging anatomy, poster-compressed depth, impact-first framing',
-      atmosphere: 'Agresiva, estridente y elegante, impulsada por urgencia de carrera.',
+        'Use spatial behavior that fits Takeshi Koike - Razorline Velocity Poster: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Takeshi Koike - Razorline Velocity Poster: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Razorline anatomy, cuñas de sombra pesada, motion de póster y actitud neon pulp de máxima velocidad.',
+        "Prioritize Takeshi Koike - Razorline Velocity Poster's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática reusable de razor-velocity basada en silueta cortante, contrastes gráficos severos y desplazamiento imposible, sin exigir carrera, auto, carretera, piloto ni póster de vehículo.',
+        'Create a style-card that translates Takeshi Koike - Razorline Velocity Poster into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -371,24 +383,25 @@ export const GENERATED_STYLE_PRESETS = [
       'literal realism, casual slice of life, unstyled modern room, flat documentary light, generic fantasy battle, low-symbolism composition, random prop clutter',
     style: {
       aesthetic:
-        'Teatralidad alegórica de alta ceremonia, donde conflicto emocional se codifica en iconos, rosas, simetría ritual y cambios de escala.',
+        "Ritual Allegory Icon System within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ritual Allegory Icon System's specific style identity.",
       form_and_line:
-        'Contorno elegante simbólico, precisión ceremonial y ornamento lineal con flourishes operáticos.',
+        'Define Ritual Allegory Icon System through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Rose crimson, cathedral violet, candle gold, ivory, shadow navy, ceremonial black',
+        'Use a Ritual Allegory Icon System-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Spot de escenario, contraluz ritual, glow simbólico teñido y oscuridad de telón dramático.',
+        'Use lighting that makes Ritual Allegory Icon System recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Terciopelo de cortina, pétalo suave, mármol satinado y velo de humo de vela.',
+        'Use materials and textures that reinforce Ritual Allegory Icon System: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Composición alegórica de alta legibilidad semiótica con densidad escénica controlada.',
+        'Render Ritual Allegory Icon System with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Ceremonial symmetry, impossible stage transitions, allegorical scale changes, and posed ritual spacing',
-      atmosphere: 'Simbólica, intoxicante e inestable, con intensidad ritual adolescente.',
+        'Use spatial behavior that fits Ritual Allegory Icon System: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Ritual Allegory Icon System: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Symbolic repetition, ceremonial symmetry, coded props as abstract icons, emotional scale shifts, and theatrical ritual space',
+        "Prioritize Ritual Allegory Icon System's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Kunihiko Ikuhara as style anchor for ritual allegory icon systems. Any prompt should become symbolic, ceremonial, symmetrical, and emotionally coded. Roses, altars, trains, duels, uniforms, arenas, and literal theater sets are optional.',
+        'Create a style-card that translates Ritual Allegory Icon System into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -399,24 +412,25 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Fantasía tecnomágica festiva donde ingeniería arcana, hechicería explosiva y virtuosismo del dibujo celebran movimiento.',
+        "Technomagic Draftsmanship Burst within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Technomagic Draftsmanship Burst's specific style identity.",
       form_and_line:
-        'Contorno seguro y enérgico, detalle técnico abundante y arcos de movimiento con timing jubiloso.',
+        'Define Technomagic Draftsmanship Burst through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Festival orange, cobalt blue, emerald, parchment cream, ruby red, twilight purple',
+        'Use a Technomagic Draftsmanship Burst-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Burst lumínico festivo, lluvia de chispas mágicas y rim de celebración con acentos direccionales.',
+        'Use lighting that makes Technomagic Draftsmanship Burst recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Herrajes metálicos, cuero y pergamino, partículas de chispa y superficies de acabado animado pulcro.',
+        'Use materials and textures that reinforce Technomagic Draftsmanship Burst: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Ilustración de fantasía cinética con densidad de ingeniería legible y espectáculo luminoso controlado.',
+        'Render Technomagic Draftsmanship Burst with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Whip-fast action curves, machine-layer depth, playful figure exaggeration, fireworks-burst composition',
-      atmosphere: 'Lúdica, compleja y expansiva, con energía de celebración artesanal.',
+        'Use spatial behavior that fits Technomagic Draftsmanship Burst: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Technomagic Draftsmanship Burst: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Complex fantasy hardware, celebratory motion arcs, bright technical magic, expressive construction lines, and draftsmanship as spectacle',
+        "Prioritize Technomagic Draftsmanship Burst's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Yoh Yoshinari as style anchor for technomagic draftsmanship bursts. Any prompt should feel engineered, magical, precise, explosive, and joyfully drawn. Machinery, festivals, fireworks, mages, and adventure scenes are optional.',
+        'Create a style-card that translates Technomagic Draftsmanship Burst into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -456,23 +470,25 @@ export const GENERATED_STYLE_PRESETS = [
       'casual snapshot, low-drama realism, flat documentary lighting, cluttered background, muddy color, weak focal emotion, generic modern polish',
     style: {
       aesthetic:
-        'Melodrama clásico de postcard-memory, con congelado emocional y glamour luminoso de alto voltaje romántico.',
+        "Osamu Dezaki - Postcard Memory Freeze within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Osamu Dezaki - Postcard Memory Freeze's specific style identity.",
       form_and_line:
-        'Contorno clásico nítido, inking dramático cargado y acentos de brillo tipo estallido sentimental.',
-      color_palette: 'Sepia gold, crimson rose, cream white, royal blue, amber light, filmic mauve',
+        'Define Osamu Dezaki - Postcard Memory Freeze through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Osamu Dezaki - Postcard Memory Freeze-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Key teatral en spot, flares en highlight, glare de congelado y contraluz de escenario melodramático.',
+        'Use lighting that makes Osamu Dezaki - Postcard Memory Freeze recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Grano fílmico suave, bloom cel, brillo aerografiado y tactilidad de papel postal.',
+        'Use materials and textures that reinforce Osamu Dezaki - Postcard Memory Freeze: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame icónico de memoria dramática con composición concentrada y claridad de gesto emocional.',
+        'Render Osamu Dezaki - Postcard Memory Freeze with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Iconic freeze composition, diagonal framing, symbolic overlay space, and concentrated emotional scale shifts',
-      atmosphere: 'Nostálgica, intensa y luminosa, suspendida en un instante absoluto.',
+        'Use spatial behavior that fits Osamu Dezaki - Postcard Memory Freeze: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Osamu Dezaki - Postcard Memory Freeze: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Freeze-frame postal, líneas de highlight dramático, overlays florales simbólicos y confrontación emocional.',
+        "Prioritize Osamu Dezaki - Postcard Memory Freeze's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Construye una gramática postcard-freeze reusable donde el tiempo se detiene pero la emoción escala: brillo glam, símbolos florales y encuadre de melodrama deben sostener identidad sin escena fija.',
+        'Create a style-card that translates Osamu Dezaki - Postcard Memory Freeze into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -483,23 +499,25 @@ export const GENERATED_STYLE_PRESETS = [
       'crude action pose, rough sketch dirt, flat office lighting, low-glam casual realism, neon glitch clutter, comic chibi proportions, plastic 3d render',
     style: {
       aesthetic:
-        'Beauty-anime clásico de glamour pictórico, elegancia aristocrática y romanticismo maduro de tempo lento.',
+        "Velvet Lash Refined Tension within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Velvet Lash Refined Tension's specific style identity.",
       form_and_line:
-        'Contorno rico en pestaña, precisión refinada y suavidad lineal orientada a presencia de alta clase.',
-      color_palette: 'Burgundy, ivory, smoky mauve, navy silk, gold trim, warm peach',
+        'Define Velvet Lash Refined Tension through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Velvet Lash Refined Tension-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Spot de retrato, sombra aterciopelada, rim glam y brillo pictórico en pómulo.',
+        'Use lighting that makes Velvet Lash Refined Tension recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Cortinaje de terciopelo, sheen de cabello, detalle satinado en vestuario y suavidad old-cel.',
+        'Use materials and textures that reinforce Velvet Lash Refined Tension: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Portrait frame de alto refinamiento con dramatismo elegante y foco en presencia emocional.',
+        'Render Velvet Lash Refined Tension with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Beauty-first proportions, swan-neck elegance cues, luxuriant framing, and noble silhouette emphasis',
-      atmosphere: 'Aterciopelada, madura y dramática, de confesión íntima ceremonial.',
+        'Use spatial behavior that fits Velvet Lash Refined Tension: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Velvet Lash Refined Tension: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Velvet texture, lash-heavy graphic elegance, aristocratic posture language, slow romantic pressure, and classic beauty-anime polish',
+        "Prioritize Velvet Lash Refined Tension's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Akio Sugino as style anchor for velvet-lash refined tension. Any prompt should become elegant, luxurious, slow, and romantically pressurized. Human portraits, swan-neck poses, curtains, close-ups, and aristocratic scenes are optional.',
+        'Create a style-card that translates Velvet Lash Refined Tension into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -594,23 +612,25 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Expresionismo cinético de anatomía elástica, donde la realidad se pliega al gesto y la velocidad emocional gobierna la imagen.',
+        "Masaaki Yuasa - Rubber Reality Sprint within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Masaaki Yuasa - Rubber Reality Sprint's specific style identity.",
       form_and_line:
-        'Contorno gomoso, taper de brocha nerviosa, siluetas inestables y curvas de movimiento tipo danza explosiva.',
-      color_palette: 'Acid cyan, burnt orange, grape purple, hot pink, black ink, fever yellow',
+        'Define Masaaki Yuasa - Rubber Reality Sprint through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Masaaki Yuasa - Rubber Reality Sprint-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Flashes cromáticos abruptos, cambios de key violentos y prioridad expresiva sobre realismo fotométrico.',
+        'Use lighting that makes Masaaki Yuasa - Rubber Reality Sprint recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Mancha pictórica energética, pincel digital áspero, bloques flat de póster y boil de animación visible.',
+        'Use materials and textures that reinforce Masaaki Yuasa - Rubber Reality Sprint: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Frame de sakuga hiperactivo con legibilidad de impacto y caos controlado por ritmo.',
+        'Render Masaaki Yuasa - Rubber Reality Sprint with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Constant anatomical morphing, melting perspective, dance-curve poses, explosive timing shapes',
-      atmosphere: 'Elástica, extática y febril, siempre al borde de romper la forma.',
+        'Use spatial behavior that fits Masaaki Yuasa - Rubber Reality Sprint: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Masaaki Yuasa - Rubber Reality Sprint: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Morphing anatómico continuo, arcos bailados, bursts de color ácido y staging velocity-first anti-model.',
+        "Prioritize Masaaki Yuasa - Rubber Reality Sprint's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Define una gramática de rubber-reality transferible donde anatomía mutable, color detonante y timing gestual extremo sustituyan rigidez por energía. Debe sentirse en rebelión permanente contra el frame congelado.',
+        'Create a style-card that translates Masaaki Yuasa - Rubber Reality Sprint into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -874,23 +894,25 @@ export const GENERATED_STYLE_PRESETS = [
       'glossy digital polish, photoreal creature rendering, clean modern fantasy UI, neon sci-fi palette, cute mascot simplification, empty flat background',
     style: {
       aesthetic:
-        'Folklore ink nocturno con extrañeza documental, humor seco, grotesco amable y familiaridad inquietante.',
+        "Folkloric Deadpan Ink Catalog within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Folkloric Deadpan Ink Catalog's specific style identity.",
       form_and_line:
-        'Contorno de brocha vernácula, detalle de criatura contundente y bordes difuminados tipo tinta lavada.',
-      color_palette: 'Sumi black, lantern orange, moss green, moon grey, mud brown, ghostly cyan',
+        'Define Folkloric Deadpan Ink Catalog through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Folkloric Deadpan Ink Catalog-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Doble fuente linterna-luna, negativos oscuros de tinta y niebla rural de baja saturación.',
+        'Use lighting that makes Folkloric Deadpan Ink Catalog recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Sangrado de pincel, papel washi, tierra húmeda y veta de madera con musgo.',
+        'Use materials and textures that reinforce Folkloric Deadpan Ink Catalog: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Ilustración yokai de gran legibilidad taxonómica y tono nocturno narrativo contenido.',
+        'Render Folkloric Deadpan Ink Catalog with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Odd spirit-like anatomy, procession depth, deadpan scale contrast, and uncanny silhouette spacing',
-      atmosphere: 'Folclórica, eerie y nocturna, con ironía tranquila ante lo sobrenatural.',
+        'Use spatial behavior that fits Folkloric Deadpan Ink Catalog: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Folkloric Deadpan Ink Catalog: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Earthy nocturnal ink, deadpan catalog framing, friendly grotesque silhouettes, dry humor, and pseudo-documentary oddity',
+        "Prioritize Folkloric Deadpan Ink Catalog's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Shigeru Mizuki as style anchor for folkloric deadpan ink catalog. Any prompt should feel archived from strange folklore: earthy ink, dry humor, nocturnal calm, and friendly grotesque logic. Yokai, parades, fields, lanterns, witnesses, and story scenes are optional.',
+        'Create a style-card that translates Folkloric Deadpan Ink Catalog into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -928,24 +950,25 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Horror manga clásico de pánico espiral, con teatralidad de alto contraste y neurosis gráfica corrosiva.',
+        "Spiral Panic Engraving within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Spiral Panic Engraving's specific style identity.",
       form_and_line:
-        'Contorno dentado, masas negras contundentes y densidad chillante de stress-lines alrededor del foco.',
+        'Define Spiral Panic Engraving through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
       color_palette:
-        'Bone white, pitch black, dried blood red, sickly mint, corpse blue, bruise violet',
+        'Use a Spiral Panic Engraving-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Spotlight hostil, negativos profundos y sobreexposición de formas en estado de shock.',
+        'Use lighting that makes Spiral Panic Engraving recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Negro de tinta saturado, screentone rasposo, diente de papel y sombreado áspero de pesadilla impresa.',
+        'Use materials and textures that reinforce Spiral Panic Engraving: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Terror gráfico de lectura inmediata, con composición de crisis y contraste brutal.',
+        'Render Spiral Panic Engraving with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Wide scream-like apertures, bulging eye-like focal shapes, warped depth corridors, and panic-twisted posture',
-      atmosphere: 'Histérica, uncanny y retro, con amenaza infantil deformada.',
+        'Use spatial behavior that fits Spiral Panic Engraving: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Spiral Panic Engraving: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Spiral panic geometry, severe black-white contrast, striated fear patterns, theatrical expression pressure, and corrosive manga texture',
+        "Prioritize Spiral Panic Engraving's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Kazuo Umezz as style anchor for spiral panic engraving. Any prompt should be trapped by graphic fear geometry, high-contrast pressure, and obsessive line pattern. Human faces, screams, hallways, victims, and chase scenes are optional.',
+        'Create a style-card that translates Spiral Panic Engraving into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
@@ -956,23 +979,25 @@ export const GENERATED_STYLE_PRESETS = [
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
       aesthetic:
-        'Diseño iconográfico angular de grin maligno, fuego geométrico y actitud callejera gótica de combustión estilizada.',
+        "Angular Combustion Iconography within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Angular Combustion Iconography's specific style identity.",
       form_and_line:
-        'Contorno duro limpio, dominio de diagonales y disciplina formal en triángulos, dientes y flamas.',
-      color_palette: 'Carbon black, fire orange, bone white, acid lime, charcoal grey, ember red',
+        'Define Angular Combustion Iconography through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+      color_palette:
+        'Use a Angular Combustion Iconography-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
       lighting_setup:
-        'Contraste fuerte por fuego, underglow geométrico y rims nítidos que recortan siluetas agresivas.',
+        'Use lighting that makes Angular Combustion Iconography recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
       material_texture:
-        'Superficie cel limpia, bordes de hollín, gradientes de llama estilizada y textil negro mate.',
+        'Use materials and textures that reinforce Angular Combustion Iconography: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
       render_quality:
-        'Acción estilizada de lectura icónica con diseño de forma dominante sobre detalle realista.',
+        'Render Angular Combustion Iconography with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
       spatial_distortion:
-        'Angular anatomy, sharp perspective cuts, grin-led focal geometry, and icon-heavy pose language',
-      atmosphere: 'Incendiaria, insolente y lúdicamente siniestra.',
+        'Use spatial behavior that fits Angular Combustion Iconography: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+      atmosphere:
+        'Set a mood that belongs to Angular Combustion Iconography: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
       key_features:
-        'Triangular rhythm, angular flame geometry, toothlike graphic accents, clean street-goth silhouette, and aggressive contrast',
+        "Prioritize Angular Combustion Iconography's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
       creative_brief:
-        'Use Atsushi Ohkubo as style anchor for angular combustion iconography. Any prompt should gain sharp triangular rhythm, firelike geometry, toothy graphic energy, and clean dark contrast. Faces, uniforms, characters, weapons, and combat scenes are optional.',
+        'Create a style-card that translates Angular Combustion Iconography into a portable visual system for 12. Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
     },
   },
   {
