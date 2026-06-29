@@ -51,7 +51,9 @@ This roadmap tracks refactors that turn shallow modules into deeper modules with
 
 - Preserve Catalog Render Budget.
 - Keep Catalog Card Action Surface lightweight by default.
-- Make large-library scrolling and recipe preloading budget-driven.
+- Keep route preloading budget-driven by route and explicit recipe intent.
+- Keep Image Grid Geometry Budget in front of Catalog image priority and LCP discovery.
+- Continue with Studio Animation Clock, CLS/reflow, and large-library grid windowing.
 
 ## Work Tracking
 

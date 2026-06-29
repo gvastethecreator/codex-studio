@@ -18,13 +18,16 @@ Codex Studio runs on your machine: a React/Vite studio UI, a local Bun/Hono serv
 
 ## Screenshots
 
-### Studio workspace
 
 ![Codex Studio workspace](./docs/assets/screenshots/studio.webp)
 
 ### Recipes
 
 ![Codex Studio recipes](./docs/assets/screenshots/recipes.webp)
+
+### Style
+
+![Codex Studio styles](./docs/assets/screenshots/styles.webp)
 
 ## Quick Start
 

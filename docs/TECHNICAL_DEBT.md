@@ -8,6 +8,7 @@ Accepted architecture references:
 
 - `docs/architecture/architecture-review-2026-06-28-improve-debt-audit.md` (current improve/debt audit)
 - `docs/architecture/architecture-review-2026-06-29-performance-fluidity.md`
+- `docs/adr/0035-route-preload-and-image-geometry-budget.md`
 - `docs/adr/0034-catalog-fluidity-budget.md`
 - `docs/adr/0033-public-library-and-job-intake-boundaries.md`
 - `docs/architecture/architecture-review-2026-06-21-second-pass-runtime-ux.md` (candidate follow-up findings)
@@ -37,6 +38,7 @@ Immediate priority for the 2026-06-21 runtime-storage-UX batch:
 Recent runtime-storage progress:
 
 - Done 2026-06-29: dependency/CI baseline refreshed against npm registry and action tags; `docs/TOOLING.md` now records Bun 1.3.14, Vite 8.1.0, Tailwind CSS 4.3.2, Electron 42.5.1, and audited CI action versions.
+- Done 2026-06-29: second performance/fluidity slice added `Route Preload Budget` and `Image Grid Geometry Budget`; Home no longer fans out every recipe component on idle, and initial-viewport Catalog thumbnails are eager/high while off-viewport cards remain lazy.
 - Done 2026-06-29: first performance/fluidity slice added `Catalog Render Budget` and `Catalog Card Action Surface`; active Home catalog now renders a 48-entry page, desktop secondary card actions mount on hover/focus/selection, and mobile keeps card actions available for touch.
 - Done 2026-06-28: `plans/008-public-library-job-intake-reference-boundaries.md` closed `/library/*` public-asset allowlisting, malformed `Persistent Job Intake` validation, and reference count/byte budgets.
 - `JobSummary` is now the default hot read shape for `/api/jobs`.
@@ -155,7 +157,8 @@ Before a public release candidate, review tracked files and history for local pr
 - `react-scan`, Three.js, style catalog data, ZIP export, and YAML parsing should not enter the startup bundle eagerly.
 - `ui:source:verify`, `ui:chunks:verify`, and `styles:render:verify` should remain release gates if they continue to catch real regressions.
 - Catalog fluidity now has an explicit budget: hot Home reads should not silently return to 200 rendered cards, and idle desktop cards should not mount every secondary command/tooltip.
-- Confirmed next performance debt: recipe preloading should be intent/budget driven, high-frequency generation animation timers should move out of broad React render paths, and large-library scrolling needs a real Catalog Grid Render Plan rather than only `content-visibility`.
+- Route preloading is now intent/budget driven; keep it from regressing into broad recipe-surface fan-out.
+- Confirmed next performance debt from Chrome DevTools trace: high-frequency generation animation timers and Toolbar textarea sizing should move out of broad React render paths, CLS/reflow remains high, and large-library scrolling still needs a real Catalog Grid Render Plan rather than only `content-visibility`.
 
 ## Documentation Gaps
 

@@ -30,12 +30,17 @@ import {
 } from '../lib/catalogCardActionSurface';
 import {
   DEFAULT_THUMBNAIL_SIZE,
+  IMAGE_GRID_COLUMN_GAP,
   MAX_THUMBNAIL_SIZE,
   MIN_THUMBNAIL_SIZE,
   THUMBNAIL_SIZE_STEP,
+  estimateImageGridItemHeight,
   filterImageGridImages,
   resolveImageGridColumnCount,
+  resolveImageGridAspectRatio,
+  resolveImageGridIntrinsicSize,
   resolveImageGridTemplateColumns,
+  shouldPriorityLoadImageGridItem,
   sortImageGridImages,
   type ImageGridSortOption,
 } from '../lib/imageGridPresentation';
@@ -52,6 +57,7 @@ interface ImageItemProps {
   onToggleFavorite: (id: string) => void;
   transitionName?: string;
   alwaysShowActions?: boolean;
+  priorityLoad?: boolean;
 }
 
 const ImageItem: React.FC<ImageItemProps> = React.memo(
@@ -67,6 +73,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     onToggleFavorite,
     transitionName,
     alwaysShowActions = false,
+    priorityLoad = false,
   }) => {
     const itemRef = useRef<HTMLDivElement>(null);
     const [copiedPrompt, setCopiedPrompt] = useState(false);
@@ -76,6 +83,8 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     const [failedSrc, setFailedSrc] = useState<string | null>(null);
     const imageSrc = primaryImageSrc;
     const imageLoadFailed = failedSrc === primaryImageSrc;
+    const imageAspectRatio = resolveImageGridAspectRatio(image);
+    const imageIntrinsicSize = resolveImageGridIntrinsicSize(image);
     const shouldMountActions = shouldMountCatalogCardActions({
       alwaysShowActions,
       isActionSurfaceActive,
@@ -162,22 +171,29 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         >
           {imageLoadFailed ? (
             <div
-              className="flex aspect-[3/4] w-full items-center justify-center rounded-xl bg-zinc-900 text-[10px] font-black uppercase tracking-widest text-zinc-600"
-              style={{ viewTransitionName: transitionName }}
+              className="flex w-full items-center justify-center rounded-xl bg-zinc-900 text-[10px] font-black uppercase tracking-widest text-zinc-600"
+              style={{ aspectRatio: imageAspectRatio, viewTransitionName: transitionName }}
               aria-label="Image unavailable"
             >
               <ImageOff size={20} aria-hidden="true" />
             </div>
           ) : (
-            <img
-              src={imageSrc}
-              alt=""
-              loading="lazy"
-              decoding="async"
-              onError={handleImageError}
-              className="block h-auto w-full cursor-pointer rounded-xl bg-zinc-900"
-              style={{ viewTransitionName: transitionName }}
-            />
+            <span
+              className="block w-full overflow-hidden rounded-xl bg-zinc-900"
+              style={{ aspectRatio: imageAspectRatio, viewTransitionName: transitionName }}
+            >
+              <img
+                src={imageSrc}
+                alt=""
+                width={imageIntrinsicSize.width}
+                height={imageIntrinsicSize.height}
+                loading={priorityLoad ? 'eager' : 'lazy'}
+                fetchPriority={priorityLoad ? 'high' : 'auto'}
+                decoding="async"
+                onError={handleImageError}
+                className="block h-full w-full cursor-pointer object-cover"
+              />
+            </span>
           )}
 
           <div
@@ -357,7 +373,7 @@ export interface ImageGridProps {
   onRetryCatalog?: () => void;
 }
 
-function subscribeViewportWidth(onStoreChange: () => void) {
+function subscribeViewportSize(onStoreChange: () => void) {
   if (typeof window === 'undefined') {
     return () => undefined;
   }
@@ -371,6 +387,11 @@ function subscribeViewportWidth(onStoreChange: () => void) {
 function getViewportWidthSnapshot() {
   if (typeof window === 'undefined') return 1280;
   return window.innerWidth;
+}
+
+function getViewportHeightSnapshot() {
+  if (typeof window === 'undefined') return 900;
+  return window.innerHeight;
 }
 
 export const ImageGrid: React.FC<ImageGridProps> = React.memo(
@@ -405,9 +426,14 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
     const [thumbnailSize, setThumbnailSize] = useState(DEFAULT_THUMBNAIL_SIZE);
     const viewportWidth = useSyncExternalStore(
-      subscribeViewportWidth,
+      subscribeViewportSize,
       getViewportWidthSnapshot,
       () => 1280,
+    );
+    const viewportHeight = useSyncExternalStore(
+      subscribeViewportSize,
+      getViewportHeightSnapshot,
+      () => 900,
     );
     const gridMeasureRef = useRef<HTMLDivElement>(null);
     const [gridMeasuredWidth, setGridMeasuredWidth] = useState(0);
@@ -490,6 +516,31 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
 
       return buckets;
     }, [gridItems, columnCount]);
+
+    const priorityImageIds = useMemo(() => {
+      const ids = new Set<string>();
+
+      for (const bucket of columnBuckets) {
+        let estimatedTop = 0;
+
+        for (const item of bucket) {
+          if (item.type === 'image') {
+            if (shouldPriorityLoadImageGridItem({ estimatedTop, viewportHeight })) {
+              ids.add(item.image.id);
+            }
+
+            estimatedTop +=
+              estimateImageGridItemHeight({ image: item.image, thumbnailSize }) +
+              IMAGE_GRID_COLUMN_GAP;
+            continue;
+          }
+
+          estimatedTop += thumbnailSize + IMAGE_GRID_COLUMN_GAP;
+        }
+      }
+
+      return ids;
+    }, [columnBuckets, thumbnailSize, viewportHeight]);
 
     if (sourceImageCount === 0 && generationPlaceholders.length === 0) {
       return (
@@ -725,6 +776,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                             transitioningImageId === item.image.id ? 'master-canvas' : undefined
                           }
                           alwaysShowActions={alwaysShowCardActions}
+                          priorityLoad={priorityImageIds.has(item.image.id)}
                         />
                       </div>
                     ),

@@ -24,6 +24,7 @@ import { createRecipesGridProjection } from '../lib/recipeDiscoveryProjection';
 
 interface RecipesViewProps {
   onSelectRecipe: (id: RecipeId, aliasId?: RecipeAliasId | null) => void;
+  onPreviewRecipe: (id: RecipeId) => void;
 }
 
 const RECIPE_TAG_ICONS: Record<Exclude<RecipeId, null>, TablerIcon> = {
@@ -48,7 +49,7 @@ const RECIPE_BUTTON_ICONS: Record<Exclude<RecipeId, null>, TablerIcon> = {
   character: Users,
 };
 
-export const RecipesView: React.FC<RecipesViewProps> = ({ onSelectRecipe }) => {
+export const RecipesView: React.FC<RecipesViewProps> = ({ onSelectRecipe, onPreviewRecipe }) => {
   const recipeDiscovery = React.useMemo(() => createRecipesGridProjection(), []);
 
   return (
@@ -56,7 +57,12 @@ export const RecipesView: React.FC<RecipesViewProps> = ({ onSelectRecipe }) => {
       <div className="max-w-[1680px] mx-auto">
         <div className="grid grid-cols-2 gap-2 pt-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
           {recipeDiscovery.entries.map((recipe) => (
-            <RecipeCard key={recipe.id} recipe={recipe} onSelect={onSelectRecipe} />
+            <RecipeCard
+              key={recipe.id}
+              recipe={recipe}
+              onPreview={onPreviewRecipe}
+              onSelect={onSelectRecipe}
+            />
           ))}
         </div>
       </div>
@@ -124,8 +130,9 @@ const NOISE_SVG = `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='h
 
 const RecipeCard: React.FC<{
   recipe: RecipeCatalogDisplayEntry;
+  onPreview: (id: RecipeId) => void;
   onSelect: (id: RecipeId, aliasId?: RecipeAliasId | null) => void;
-}> = React.memo(({ recipe, onSelect }) => {
+}> = React.memo(({ recipe, onPreview, onSelect }) => {
   const TagIcon = RECIPE_TAG_ICONS[recipe.targetRecipeId] || Sparkles;
   const BtnIcon = RECIPE_BUTTON_ICONS[recipe.targetRecipeId] || ArrowRight;
   const bgImage = RECIPE_CARD_IMAGES[recipe.cardImageKey];
@@ -136,11 +143,16 @@ const RecipeCard: React.FC<{
   const handleSelectRecipe = () => {
     onSelect(recipe.targetRecipeId, recipe.routeAliasId);
   };
+  const preloadRecipe = () => {
+    onPreview(recipe.targetRecipeId);
+  };
 
   return (
     <button
       type="button"
       onClick={handleSelectRecipe}
+      onFocus={preloadRecipe}
+      onPointerEnter={preloadRecipe}
       className={`
                 group relative isolate flex aspect-[3/5] flex-col overflow-hidden rounded-lg border border-white/10 bg-zinc-950 p-1 text-left shadow-black/30 sm:aspect-[2/3]
                 cursor-pointer appearance-none grayscale-[0.25] transition-[color,background-color,border-color,opacity,transform] duration-200 hover:-translate-y-0.5 hover:border-white/25 hover:grayscale-0

@@ -1,137 +1,72 @@
 import { describe, expect, it } from 'vite-plus/test';
-
+import {
+  estimateImageGridItemHeight,
+  resolveImageGridAspectRatio,
+  resolveImageGridIntrinsicSize,
+  shouldPriorityLoadImageGridItem,
+} from './imageGridPresentation';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import type { GeneratedImageWithConfig } from '../types';
-import {
-  filterImageGridImages,
-  resolveImageGridColumnCount,
-  resolveImageGridTemplateColumns,
-  sortImageGridImages,
-} from './imageGridPresentation';
 
-function image(overrides: Partial<GeneratedImageWithConfig>): GeneratedImageWithConfig {
+function imageWithAspectRatio(
+  aspectRatio: GeneratedImageWithConfig['config']['aspectRatio'],
+): GeneratedImageWithConfig {
   return {
-    id: overrides.id ?? 'image',
-    src: overrides.src ?? '/image.png',
-    batchId: overrides.batchId ?? 'batch',
-    createdAt: overrides.createdAt ?? 1,
-    isFavorite: overrides.isFavorite ?? false,
+    id: 'image-1',
+    src: '/image.webp',
+    batchId: 'batch-1',
+    createdAt: 1,
     config: {
       ...DEFAULT_GENERATION_CONFIG,
-      ...overrides.config,
-      prompt: overrides.config?.prompt ?? 'Prompt',
-      aspectRatio: overrides.config?.aspectRatio ?? '1:1',
+      prompt: 'prompt',
+      aspectRatio,
     },
   };
 }
 
 describe('imageGridPresentation', () => {
-  it('filters favorites without pinning them ahead of the chosen sort', () => {
-    const images = [
-      image({
-        id: 'favorite-old',
-        createdAt: 1,
-        isFavorite: true,
-        config: { ...DEFAULT_GENERATION_CONFIG, prompt: 'B', aspectRatio: '1:1' },
+  it('reserves card geometry from generation aspect ratio', () => {
+    expect(resolveImageGridAspectRatio(imageWithAspectRatio('2:3'))).toBe('2 / 3');
+    expect(resolveImageGridAspectRatio(imageWithAspectRatio('3:2'))).toBe('3 / 2');
+    expect(resolveImageGridAspectRatio(imageWithAspectRatio('1:1'))).toBe('1 / 1');
+    expect(
+      resolveImageGridAspectRatio({
+        ...imageWithAspectRatio('1:1'),
+        width: 1024,
+        height: 1536,
       }),
-      image({
-        id: 'regular-new',
-        createdAt: 3,
-        isFavorite: false,
-        config: { ...DEFAULT_GENERATION_CONFIG, prompt: 'A', aspectRatio: '2:3' },
-      }),
-      image({
-        id: 'favorite-mid',
-        createdAt: 2,
-        isFavorite: true,
-        config: { ...DEFAULT_GENERATION_CONFIG, prompt: 'C', aspectRatio: '3:2' },
-      }),
-    ];
-
-    expect(sortImageGridImages(images, 'desc').map((entry) => entry.id)).toEqual([
-      'regular-new',
-      'favorite-mid',
-      'favorite-old',
-    ]);
-    expect(filterImageGridImages(images, true).map((entry) => entry.id)).toEqual([
-      'favorite-old',
-      'favorite-mid',
-    ]);
+    ).toBe('1024 / 1536');
   });
 
-  it('changes column density from thumbnail size while keeping mobile single-column', () => {
-    expect(
-      resolveImageGridColumnCount({
-        viewportWidth: 390,
-        thumbnailSize: 144,
-        itemCount: 12,
-      }),
-    ).toBe(1);
-    expect(
-      resolveImageGridColumnCount({
-        viewportWidth: 1280,
-        thumbnailSize: 160,
-        itemCount: 12,
-      }),
-    ).toBeGreaterThan(
-      resolveImageGridColumnCount({
-        viewportWidth: 1280,
-        thumbnailSize: 320,
-        itemCount: 12,
-      }),
-    );
+  it('passes valid intrinsic dimensions to priority images', () => {
+    expect(resolveImageGridIntrinsicSize({ width: 1024, height: 1536 })).toEqual({
+      width: 1024,
+      height: 1536,
+    });
+    expect(resolveImageGridIntrinsicSize({ width: null, height: 1536 })).toEqual({
+      width: undefined,
+      height: undefined,
+    });
   });
 
-  it('keeps each thumbnail size value visible in the multi-column grid template', () => {
-    const templates = [144, 152, 160, 168, 176, 184].map((thumbnailSize) =>
-      resolveImageGridTemplateColumns(4, thumbnailSize),
-    );
-
-    expect(resolveImageGridTemplateColumns(4, 176)).toBe('repeat(4, 176px)');
-    expect(new Set(templates).size).toBe(templates.length);
+  it('estimates card height from the resolved image geometry', () => {
+    expect(
+      estimateImageGridItemHeight({
+        image: imageWithAspectRatio('3:2'),
+        thumbnailSize: 176,
+      }),
+    ).toBeCloseTo(117.33, 1);
+    expect(
+      estimateImageGridItemHeight({
+        image: { ...imageWithAspectRatio('1:1'), width: 512, height: 768 },
+        thumbnailSize: 176,
+      }),
+    ).toBeCloseTo(264, 0);
   });
 
-  it('keeps single-column grids fluid for narrow layouts', () => {
-    expect(resolveImageGridTemplateColumns(1, 176)).toBe('repeat(1, minmax(0, 1fr))');
-  });
-
-  it('accounts for grid gaps before adding another column', () => {
-    expect(
-      resolveImageGridColumnCount({
-        viewportWidth: 1118,
-        thumbnailSize: 144,
-        itemCount: 20,
-      }),
-    ).toBe(6);
-  });
-
-  it('uses measured grid width directly when padding is already excluded', () => {
-    expect(
-      resolveImageGridColumnCount({
-        viewportWidth: 1072,
-        thumbnailSize: 144,
-        itemCount: 20,
-        horizontalPadding: 0,
-      }),
-    ).toBe(6);
-  });
-
-  it('allows up to twelve columns when width, thumbnail size, and items permit it', () => {
-    expect(
-      resolveImageGridColumnCount({
-        viewportWidth: 1920,
-        thumbnailSize: 144,
-        itemCount: 48,
-        horizontalPadding: 0,
-      }),
-    ).toBe(12);
-    expect(
-      resolveImageGridColumnCount({
-        viewportWidth: 1920,
-        thumbnailSize: 144,
-        itemCount: 5,
-        horizontalPadding: 0,
-      }),
-    ).toBe(5);
+  it('prioritizes images estimated inside the first viewport', () => {
+    expect(shouldPriorityLoadImageGridItem({ estimatedTop: 0, viewportHeight: 800 })).toBe(true);
+    expect(shouldPriorityLoadImageGridItem({ estimatedTop: 850, viewportHeight: 800 })).toBe(true);
+    expect(shouldPriorityLoadImageGridItem({ estimatedTop: 920, viewportHeight: 800 })).toBe(false);
   });
 });

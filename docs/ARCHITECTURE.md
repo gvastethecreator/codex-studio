@@ -46,6 +46,8 @@ graph TD
 - `services/localGenerationRun.ts` creates Persistent Jobs, waits for terminal state, and returns catalog-derived results.
 - `services/localGenerationVisualBatchCompat.ts` is the explicit legacy Visual Batch compatibility edge.
 - `lib/studioCatalogView.ts` and `lib/studioCatalogImageAdapter.ts` materialize UI images from Catalog Entries.
+- `lib/catalogRenderBudget.ts`, `lib/catalogCardActionSurface.ts`, and `lib/imageGridPresentation.ts` keep hot Catalog rendering bounded while preserving card animation, hover/focus commands, and initial-viewport image discovery.
+- `lib/routePreloadBudget.ts` owns idle and intent-based route preloads so Home does not import every recipe surface before user intent.
 - `lib/buildStudioHeaderToolbarProps.ts` and `lib/commandCenterProjection.ts` project Command Center state.
 - `components/shell/StudioViewport.tsx` demand-loads route surfaces.
 

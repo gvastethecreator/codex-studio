@@ -162,6 +162,14 @@ _Avoid_: magic page size, gallery default limit, arbitrary load cap
 Frontend surface that decides when secondary Image Catalog card commands mount, preserving touch access and desktop hover/focus polish without mounting every command for every idle card.
 _Avoid_: hidden per-card toolbar, always-mounted action row, tooltip farm
 
+**Image Grid Geometry Budget**:
+Frontend image-grid budget that reserves Catalog card geometry and gives initial-viewport thumbnails eager/high priority without eager-loading the full Catalog Page.
+_Avoid_: blanket eager images, lazy LCP thumbnail, index-only image priority
+
+**Route Preload Budget**:
+Frontend routing budget that separates active navigation, idle route-shell preload, and explicit recipe hover/focus intent.
+_Avoid_: preload every recipe, route import fan-out, hidden startup work
+
 **Local Generation Run**:
 Frontend seam that creates Persistent Jobs, waits for completion, queries catalog results, and returns one Visual Batch.
 _Avoid_: inline job choreography, direct editor pipeline
@@ -224,6 +232,8 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - A **Catalog Operation Result** lets the shell show scoped command outcomes without treating every mutation as a blind full refresh.
 - A **Catalog Render Budget** keeps hot **Catalog Page** reads bounded per surface.
 - A **Catalog Card Action Surface** keeps secondary card commands available by intent instead of permanently mounted for every **Catalog Entry** card.
+- An **Image Grid Geometry Budget** keeps first-viewport Catalog thumbnails discoverable while off-viewport images remain lazy.
+- A **Route Preload Budget** lets the **Studio Shell** warm route surfaces by route and user intent without importing every **Recipe Module** surface on Home.
 - **Studio Shell** materializes **Studio Runtime**, navigation state, overlays, and **Visual Batches** into the renderable app layout.
 - **Studio Readiness** depends on **Studio Runtime**, **Studio Library**, **App-Server Lifecycle**, and the **Local Codex Session**.
 - The **Command Center** exposes global status and commands, while deeper configuration and diagnostics open from it.

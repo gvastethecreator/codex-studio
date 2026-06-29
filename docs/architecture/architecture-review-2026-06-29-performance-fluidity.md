@@ -1,8 +1,8 @@
 # Performance and fluidity architecture review - 2026-06-29
 
-Status: first slice implemented; remaining candidates queued.
+Status: catalog slice plus route/image-geometry slice implemented; remaining candidates queued.
 
-Scope: performance and perceived fluidity without removing animation quality. This pass used `improve`, `improve-codebase-architecture`, `technical-debt-audit`, and repo-local measurement. Chrome DevTools MCP was configured in the Codex host, but native DevTools tools were not callable in this thread after restart, so measurements used Playwright plus browser DOM/performance probes.
+Scope: performance and perceived fluidity without removing animation quality. This pass used `improve`, `improve-codebase-architecture`, `technical-debt-audit`, repo-local measurement, Playwright probes, and Chrome DevTools MCP traces once the DevTools server became callable.
 
 ## Sources read
 
@@ -20,7 +20,14 @@ After the first slice:
 - Desktop hover/focus on first card: secondary actions mount from `6` to `12` total action buttons, and the card rect stays stable (`165.328125 x 110.109375` before and after hover).
 - Mobile 390px: `48` masonry items, about `4,258` DOM nodes, `534` buttons, and actions remain mounted for touch access.
 
-The improvement is real, but subagent probes still found long tasks and eager recipe/style assets after Home. This review therefore treats the catalog slice as the first accepted cut, not the whole performance story.
+Second slice measurements from Chrome DevTools MCP:
+
+- Before route/image-geometry work: LCP `2,535ms`, CLS `2.36`, LCP render delay `1,085ms`, and a broad `preloadAllRecipeComponents()` fan-out into recipe/style assets after Home.
+- After `Route Preload Budget` and `Image Grid Geometry Budget`: LCP `1,998ms`, CLS `2.03`, LCP render delay `476ms`, DOM size `1,561` elements, and `RecipesView` preloads only after the bounded idle budget instead of importing every recipe component.
+- The LCP image is no longer lazy-loaded, but DevTools still reports failed initial-document discovery because the Catalog grid is rendered from client-side catalog data rather than server HTML.
+- Remaining trace debt: CLS stays high (`2.03`), forced reflow totals `128ms`, with the largest sources in `components/Toolbar.tsx` textarea sizing/timers and `components/ImageGrid.tsx` grid-width measurement.
+
+The improvement is real, but the performance story is still not done. The next high-leverage slice is `Studio Animation Clock` plus a CLS/reflow pass, not more card-count trimming.
 
 ## Subagent agreement
 
@@ -82,6 +89,24 @@ The improvement is real, but subagent probes still found long tasks and eager re
 
 **Documentation follow-ups** - Add to `CONTEXT.md` only when implemented.
 
+## Candidate 3A - Image Grid Geometry Budget
+
+**Files** - `components/ImageGrid.tsx`, `lib/imageGridPresentation.ts`, `lib/studioCatalogImageAdapter.ts`, `types.ts`.
+
+**Problem** - Catalog cards had visual aspect-ratio styling, but the browser still treated important thumbnail requests too lazily in mixed masonry layouts. A simple linear index budget missed lower visible masonry cards that could become LCP.
+
+**Solution** - Carry optional Catalog Entry dimensions into `GeneratedImage`, resolve intrinsic image size/aspect ratio in `imageGridPresentation`, and prioritize images estimated to fall inside the initial viewport rather than only the first linear rows.
+
+**Benefits** - Leverage: image discovery policy becomes a tested Module instead of JSX heuristics. Locality: future large-grid work can reuse the same geometry estimates before adding full windowing.
+
+**Before / After** - Before: the LCP candidate could be `loading=lazy` / `fetchpriority=auto`. After: visible initial-viewport masonry images are `eager` / `high`, and off-viewport cards remain lazy.
+
+**Recommendation strength** - Strong. Implemented.
+
+**Dependencies / sequencing** - Complements Candidates 1 and 2; still does not replace the future `Catalog Grid Render Plan`.
+
+**Documentation follow-ups** - Added to `CONTEXT.md`, `docs/ARCHITECTURE.md`, `docs/adr/0035-route-preload-and-image-geometry-budget.md`, and this review.
+
 ## Candidate 4 - Route Preload Budget
 
 **Files** - `components/shell/StudioViewport.tsx`, `components/RecipeRouter.tsx`, `scripts/report-ui-chunks.ts`.
@@ -94,11 +119,11 @@ The improvement is real, but subagent probes still found long tasks and eager re
 
 **Before / After** - Before: idle preloads all recipes. After: preloads are ordered by route/user intent and idle budget.
 
-**Recommendation strength** - Strong.
+**Recommendation strength** - Strong. Implemented.
 
 **Dependencies / sequencing** - Next after catalog slice; subagents measured remaining long tasks and style assets from preload behavior.
 
-**Documentation follow-ups** - Likely ADR update if preload semantics change.
+**Documentation follow-ups** - Added to `CONTEXT.md`, `docs/ARCHITECTURE.md`, `docs/adr/0035-route-preload-and-image-geometry-budget.md`, and this review.
 
 ## Candidate 5 - Studio Animation Clock
 
@@ -176,11 +201,25 @@ The improvement is real, but subagent probes still found long tasks and eager re
 
 1. Catalog Render Budget Module. Implemented.
 2. Catalog Card Action Surface. Implemented.
-3. Route Preload Budget.
-4. Studio Animation Clock.
-5. Style Result Index.
-6. Catalog Grid Render Plan.
-7. Runtime Event Reducer.
-8. Settings Surface Session.
+3. Route Preload Budget. Implemented.
+4. Image Grid Geometry Budget. Implemented.
+5. Studio Animation Clock.
+6. CLS/Reflow pass for Toolbar and ImageGrid measurement.
+7. Style Result Index.
+8. Catalog Grid Render Plan.
+9. Runtime Event Reducer.
+10. Settings Surface Session.
 
 This order keeps visible animation quality first, then removes invisible main-thread work, then handles large-library durability.
+
+## Verification - route/image-geometry slice
+
+- Focused tests: `bun run test -- lib/routePreloadBudget.test.ts lib/imageGridPresentation.test.ts lib/studioCatalogImageAdapter.test.ts lib/studioCatalogView.test.ts lib/catalogCardActionSurface.test.ts` passed (`5` files / `19` tests).
+- Full tests: `bun run test` passed (`168` files / `587` tests).
+- `bun run check` passed.
+- `bun run build` passed, including `ui:chunks:verify`.
+- Chrome DevTools trace: `output/perf/route-preload-image-geometry-final-2-2026-06-29.json.json.gz`.
+- Playwright visual/perf smoke: `output/perf/route-preload-image-geometry-visual-smoke-2026-06-29.json` with `visual-smoke-ok`.
+- Screenshots: `output/playwright/route-preload-image-geometry-desktop-idle.png`, `output/playwright/route-preload-image-geometry-desktop-hover.png`, `output/playwright/route-preload-image-geometry-recipes.png`, `output/playwright/route-preload-image-geometry-mobile.png`, and `output/playwright/route-preload-image-geometry-mobile-grid.png`.
+
+Residual risk: mobile grid actions are preserved and were metric-checked, but the current workspace can auto-open the queue on mobile, so the mobile screenshot is also a real queue-over-grid state. The next UI pass should include explicit mobile queue closed/open visual states.

@@ -48,6 +48,8 @@ export function materializeCatalogEntryImage(
     src: toStudioAssetUrl(entry.publicUrl),
     thumbnail: options.thumbnail ?? resolveCatalogEntryThumbnailUrl(entry),
     preview: resolveCatalogEntryPreviewUrl(entry),
+    width: entry.width,
+    height: entry.height,
     batchId,
     createdAt,
     isFavorite: entry.isFavorite,

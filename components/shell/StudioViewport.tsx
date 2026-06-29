@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect } from 'react';
+import React, { Suspense, useCallback, useEffect } from 'react';
 
 import type { AppPageView } from '../../hooks/useHashRouter';
 import type { StudioPageController } from '../../lib/buildStudioPageController';
@@ -6,10 +6,16 @@ import type { RecipeAliasId } from '../../lib/recipeAliases';
 import type { RecipeId } from '../../types';
 import { ErrorBoundary } from '../ErrorBoundary';
 import type { RecipePage as RecipePageComponent, RecipePageProps } from '../RecipePage';
-import { preloadAllRecipeComponents, preloadRecipeComponent } from '../RecipeRouter';
+import { preloadRecipeComponent } from '../RecipeRouter';
 import type { RecipesView as RecipesViewComponent } from '../RecipesView';
 import type { StudioPage as StudioPageComponent } from '../StudioPage';
 import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
+import {
+  buildRecipeIntentPreloadPlan,
+  buildRoutePreloadPlan,
+  type RoutePreloadPlan,
+  type RoutePreloadSurface,
+} from '../../lib/routePreloadBudget';
 import {
   getStudioViewportTransitionClassName,
   resolveStudioViewportRouteKey,
@@ -71,10 +77,24 @@ export function preloadStudioViewportRoute(routeView: AppPageView, activeRecipe:
   return recipesViewSurface.load().then(() => {});
 }
 
-function preloadCoreStudioViewportRoutes() {
-  void recipePageSurface.load();
-  void recipesViewSurface.load();
-  void studioPageSurface.load();
+function preloadStudioViewportSurface(surface: RoutePreloadSurface) {
+  switch (surface) {
+    case 'studio-page':
+      return studioPageSurface.load();
+    case 'recipes-view':
+      return recipesViewSurface.load();
+    case 'recipe-page':
+      return recipePageSurface.load();
+  }
+}
+
+function preloadStudioViewportPlan(plan: RoutePreloadPlan) {
+  for (const surface of plan.surfaces) {
+    void preloadStudioViewportSurface(surface);
+  }
+  for (const recipeId of plan.recipeIds) {
+    void preloadRecipeComponent(recipeId);
+  }
 }
 
 const VIEWPORT_SURFACE_BASE_CLASS =
@@ -107,26 +127,33 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
       : `${VIEWPORT_SURFACE_BASE_CLASS} ${transitionClassName}`;
 
   useEffect(() => {
-    const preload = () => {
-      preloadCoreStudioViewportRoutes();
-      void preloadAllRecipeComponents();
-      if (activeRecipe) {
-        void preloadRecipeComponent(activeRecipe);
+    const plan = buildRoutePreloadPlan({ routeView, activeRecipe });
+    const preload = () => preloadStudioViewportPlan(plan);
+
+    let idleId: number | null = null;
+    const timeoutId = window.setTimeout(() => {
+      if ('requestIdleCallback' in window) {
+        idleId = window.requestIdleCallback(preload, { timeout: 1000 });
+        return;
+      }
+
+      preload();
+    }, plan.delayMs);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+      if (idleId !== null) {
+        window.cancelIdleCallback(idleId);
       }
     };
-
-    if ('requestIdleCallback' in window) {
-      const idleId = window.requestIdleCallback(preload, { timeout: 1000 });
-      return () => window.cancelIdleCallback(idleId);
-    }
-
-    const timeoutId = globalThis.setTimeout(preload, 250);
-    return () => globalThis.clearTimeout(timeoutId);
-  }, [activeRecipe]);
+  }, [activeRecipe, routeView]);
 
   const RouteRecipePage = recipePageSurface.getLoaded() ?? RecipePage;
   const RouteRecipesView = recipesViewSurface.getLoaded() ?? RecipesView;
   const RouteStudioPage = studioPageSurface.getLoaded() ?? StudioPage;
+  const handlePreviewRecipe = useCallback((recipeId: RecipeId) => {
+    preloadStudioViewportPlan(buildRecipeIntentPreloadPlan(recipeId));
+  }, []);
 
   return (
     <ErrorBoundary fallbackMessage="Could not load this studio view.">
@@ -148,7 +175,10 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
           ) : routeView === 'studio' ? (
             <RouteStudioPage controller={studioPageController} />
           ) : (
-            <RouteRecipesView onSelectRecipe={onSelectRecipe} />
+            <RouteRecipesView
+              onPreviewRecipe={handlePreviewRecipe}
+              onSelectRecipe={onSelectRecipe}
+            />
           )}
         </Suspense>
       </div>

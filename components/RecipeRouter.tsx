@@ -108,10 +108,6 @@ export function preloadRecipeComponent(recipeId: RecipeId | null) {
   return RECIPE_PRELOADERS[recipeId]();
 }
 
-export function preloadAllRecipeComponents() {
-  return Promise.all(Object.values(RECIPE_PRELOADERS).map((preload) => preload())).then(() => {});
-}
-
 interface RecipeRouterProps {
   activeRecipe: RecipeId | null;
   activeRecipeAliasId?: RecipeAliasId | null;
