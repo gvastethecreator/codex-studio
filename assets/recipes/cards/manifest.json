@@ -3,104 +3,104 @@
     "id": "camera",
     "title": "Camera",
     "file": "assets/recipes/cards/recipe-camera.webp",
-    "jobId": "built-in-imagegen-019f066f-dedc-7e32-b55a-4d616c3d9bb2",
+    "jobId": "built-in-imagegen-019f1503-3270-7580-a8da-8c8a410235e3",
     "sourceAsset": "assets/recipes/cards/recipe-camera.webp",
-    "generatedAt": "2026-06-27T00:40:00.000Z"
+    "generatedAt": "2026-06-29T20:37:56.000Z"
   },
   {
     "id": "character",
     "title": "Character",
     "file": "assets/recipes/cards/recipe-character.webp",
-    "jobId": "built-in-imagegen-019f066f-dedc-7e32-b55a-4d616c3d9bb2",
+    "jobId": "built-in-imagegen-019f1503-3270-7580-a8da-8c8a410235e3",
     "sourceAsset": "assets/recipes/cards/recipe-character.webp",
-    "generatedAt": "2026-06-27T00:40:00.000Z"
+    "generatedAt": "2026-06-29T20:37:56.000Z"
   },
   {
     "id": "character-lab",
     "title": "Character Lab",
     "file": "assets/recipes/cards/recipe-character-lab.webp",
-    "jobId": "built-in-imagegen-019f066f-dedc-7e32-b55a-4d616c3d9bb2",
+    "jobId": "built-in-imagegen-019f1503-3270-7580-a8da-8c8a410235e3",
     "sourceAsset": "assets/recipes/cards/recipe-character-lab.webp",
-    "generatedAt": "2026-06-27T00:40:00.000Z"
+    "generatedAt": "2026-06-29T20:37:56.000Z"
   },
   {
     "id": "character-poses",
     "title": "Character Poses",
     "file": "assets/recipes/cards/recipe-character-poses.webp",
-    "jobId": "built-in-imagegen-019f066f-dedc-7e32-b55a-4d616c3d9bb2",
+    "jobId": "built-in-imagegen-019f1503-3270-7580-a8da-8c8a410235e3",
     "sourceAsset": "assets/recipes/cards/recipe-character-poses.webp",
-    "generatedAt": "2026-06-27T00:55:00.000Z"
+    "generatedAt": "2026-06-29T20:37:56.000Z"
   },
   {
     "id": "character-scenes",
     "title": "Character Scenes",
     "file": "assets/recipes/cards/recipe-character-scenes.webp",
-    "jobId": "built-in-imagegen-019f066f-dedc-7e32-b55a-4d616c3d9bb2",
+    "jobId": "built-in-imagegen-019f1503-3270-7580-a8da-8c8a410235e3",
     "sourceAsset": "assets/recipes/cards/recipe-character-scenes.webp",
-    "generatedAt": "2026-06-27T00:55:00.000Z"
+    "generatedAt": "2026-06-29T20:37:56.000Z"
   },
   {
     "id": "character-sprites",
     "title": "Character Sprites",
     "file": "assets/recipes/cards/recipe-character-sprites.webp",
-    "jobId": "built-in-imagegen-019f066f-dedc-7e32-b55a-4d616c3d9bb2",
+    "jobId": "built-in-imagegen-019f1503-3270-7580-a8da-8c8a410235e3",
     "sourceAsset": "assets/recipes/cards/recipe-character-sprites.webp",
-    "generatedAt": "2026-06-27T00:55:00.000Z"
+    "generatedAt": "2026-06-29T20:37:56.000Z"
   },
   {
     "id": "character-transforms",
     "title": "Character Transforms",
     "file": "assets/recipes/cards/recipe-character-transforms.webp",
-    "jobId": "built-in-imagegen-019f066f-dedc-7e32-b55a-4d616c3d9bb2",
+    "jobId": "built-in-imagegen-019f1503-3270-7580-a8da-8c8a410235e3",
     "sourceAsset": "assets/recipes/cards/recipe-character-transforms.webp",
-    "generatedAt": "2026-06-27T00:55:00.000Z"
+    "generatedAt": "2026-06-29T20:37:56.000Z"
   },
   {
     "id": "character-variants",
     "title": "Character Variants",
     "file": "assets/recipes/cards/recipe-character-variants.webp",
-    "jobId": "built-in-imagegen-019f066f-dedc-7e32-b55a-4d616c3d9bb2",
+    "jobId": "built-in-imagegen-019f1503-3270-7580-a8da-8c8a410235e3",
     "sourceAsset": "assets/recipes/cards/recipe-character-variants.webp",
-    "generatedAt": "2026-06-27T00:55:00.000Z"
+    "generatedAt": "2026-06-29T20:37:56.000Z"
   },
   {
     "id": "cinematic",
     "title": "Cinematic",
     "file": "assets/recipes/cards/recipe-cinematic.webp",
-    "jobId": "built-in-imagegen-019f066f-dedc-7e32-b55a-4d616c3d9bb2",
+    "jobId": "built-in-imagegen-019f1503-3270-7580-a8da-8c8a410235e3",
     "sourceAsset": "assets/recipes/cards/recipe-cinematic.webp",
-    "generatedAt": "2026-06-27T00:40:00.000Z"
+    "generatedAt": "2026-06-29T20:37:56.000Z"
   },
   {
     "id": "remaster",
     "title": "Remaster",
     "file": "assets/recipes/cards/recipe-remaster.webp",
-    "jobId": "built-in-imagegen-019f066f-dedc-7e32-b55a-4d616c3d9bb2",
+    "jobId": "built-in-imagegen-019f1503-3270-7580-a8da-8c8a410235e3",
     "sourceAsset": "assets/recipes/cards/recipe-remaster.webp",
-    "generatedAt": "2026-06-27T00:40:00.000Z"
+    "generatedAt": "2026-06-29T20:37:56.000Z"
   },
   {
     "id": "spritesheet",
     "title": "Sprite Sheet",
     "file": "assets/recipes/cards/recipe-spritesheet.webp",
-    "jobId": "built-in-imagegen-019f066f-dedc-7e32-b55a-4d616c3d9bb2",
+    "jobId": "built-in-imagegen-019f1503-3270-7580-a8da-8c8a410235e3",
     "sourceAsset": "assets/recipes/cards/recipe-spritesheet.webp",
-    "generatedAt": "2026-06-27T00:40:00.000Z"
+    "generatedAt": "2026-06-29T20:37:56.000Z"
   },
   {
     "id": "styles",
     "title": "Styles",
     "file": "assets/recipes/cards/recipe-styles.webp",
-    "jobId": "built-in-imagegen-019f066f-dedc-7e32-b55a-4d616c3d9bb2",
+    "jobId": "built-in-imagegen-019f1503-3270-7580-a8da-8c8a410235e3",
     "sourceAsset": "assets/recipes/cards/recipe-styles.webp",
-    "generatedAt": "2026-06-27T00:40:00.000Z"
+    "generatedAt": "2026-06-29T20:37:56.000Z"
   },
   {
     "id": "timeline",
     "title": "Timeline",
     "file": "assets/recipes/cards/recipe-timeline.webp",
-    "jobId": "built-in-imagegen-019f066f-dedc-7e32-b55a-4d616c3d9bb2",
+    "jobId": "built-in-imagegen-019f1503-3270-7580-a8da-8c8a410235e3",
     "sourceAsset": "assets/recipes/cards/recipe-timeline.webp",
-    "generatedAt": "2026-06-27T00:40:00.000Z"
+    "generatedAt": "2026-06-29T20:37:56.000Z"
   }
 ]
