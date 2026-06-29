@@ -9,6 +9,10 @@ export interface RecipeDiscoveryProjection {
   entries: RecipeCatalogDisplayEntry[];
 }
 
+function isRecipesGridEntry(entry: RecipeCatalogDisplayEntry) {
+  return !entry.isAlias;
+}
+
 function normalize(value?: string) {
   return value?.trim().toLowerCase() ?? '';
 }
@@ -56,6 +60,12 @@ export function createRecipeDiscoveryProjection(
   entries: RecipeCatalogDisplayEntry[] = RECIPE_DISCOVERY_CATALOG,
 ): RecipeDiscoveryProjection {
   return { entries };
+}
+
+export function createRecipesGridProjection(
+  entries: RecipeCatalogDisplayEntry[] = RECIPE_DISCOVERY_CATALOG,
+): RecipeDiscoveryProjection {
+  return { entries: entries.filter(isRecipesGridEntry) };
 }
 
 export function searchRecipeDiscoveryProjection(

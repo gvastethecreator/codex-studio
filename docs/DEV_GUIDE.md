@@ -1,43 +1,43 @@
-# Guía de desarrollo
+# Development Guide
 
-Esta guía resume convenciones para entender, extender y contribuir a Codex Studio.
+This guide summarizes the conventions for understanding, extending, and contributing to Codex Studio.
 
-## Ruta rápida
+## Fast Path
 
-1. Revisa `CONTEXT.md` + `docs/ARCHITECTURE.md`.
-2. Implementa cambios pequeños con seams claros.
-3. Valida con `bun run check`, `bun run test`, `bun run build`.
+1. Read `CONTEXT.md` and `docs/ARCHITECTURE.md`.
+2. Make small, verifiable changes through clear seams.
+3. Validate with `bun run check`, `bun run test`, and `bun run build`.
 
-## Convenciones de proyecto
+## Project Conventions
 
-- TypeScript estricto (evitar `any`).
-- Contratos compartidos en `packages/shared` o `types.ts`.
-- Frontend local-first: usa `services/localStudioService.ts` / `services/studioEventSource.ts`.
-- Modelo durable: SQLite/Image Catalog.
-- `GenerationBatch[]` = compatibilidad visual, no fuente de verdad.
-- Toolchain unificado en `vite.config.ts`.
+- Use strict TypeScript and avoid `any`.
+- Put shared contracts in `packages/shared` or `types.ts`.
+- Frontend backend calls should go through `services/localStudioService.ts` or `services/studioEventSource.ts`.
+- Durable state belongs to SQLite and the Image Catalog.
+- `GenerationBatch[]` is a compatibility surface, not durable truth.
+- Tooling configuration lives in `vite.config.ts`.
 
-## Recetas
+## Recipes
 
-Al agregar/modificar una receta:
+When adding or changing a recipe:
 
-1. Actualiza `lib/recipeModules.ts`.
-2. Mantén params derivados y builders fuera de componentes React.
-3. Valida con `recipes:verify` y `recipes:source:verify`.
+1. Update the Recipe Module metadata and builders.
+2. Keep derived params and task-spec builders out of React components.
+3. Validate with `recipes:verify` and `recipes:source:verify`.
 
-## Persistencia y seguridad
+## Persistence And Security
 
-- Estado durable en Studio Library + SQLite backend.
-- Storage de navegador solo para compatibilidad/conveniencia UI.
-- No guardar Provider Secrets en SQLite, logs, metadata ni docs.
+- Durable state lives in the Studio Library plus backend SQLite.
+- Browser storage is for UI convenience and compatibility only.
+- Provider Secrets must not be stored in SQLite, logs, metadata, screenshots, or docs.
 
-## Estilos y rendimiento
+## UI And Performance
 
-- Tailwind v4 + tokens compartidos.
-- Preferir superficies demand-mounted.
-- Evitar dependencias pesadas en startup.
+- Use Tailwind CSS v4 and shared tokens.
+- Prefer Demand-Mounted Surfaces for heavy UI.
+- Keep startup dependencies small.
 
-## DX y debugging
+## Debugging
 
-- Logs de calidad/build en `logs/tooling/`.
-- Si falla un gate, adjunta log concreto en issue/PR.
+- Quality and build logs are written under `logs/tooling/`.
+- When a gate fails, use the exact `*.latest.log` file in bug reports or PR notes.

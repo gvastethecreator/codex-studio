@@ -20,7 +20,7 @@ import type { RecipeAliasId } from '../lib/recipeAliases';
 import type { RecipeId } from '../types';
 import { RECIPE_CARD_IMAGES } from '../lib/recipeAssetCatalog';
 import type { RecipeCatalogDisplayEntry } from '../lib/recipeCatalog';
-import { createRecipeDiscoveryProjection } from '../lib/recipeDiscoveryProjection';
+import { createRecipesGridProjection } from '../lib/recipeDiscoveryProjection';
 
 interface RecipesViewProps {
   onSelectRecipe: (id: RecipeId, aliasId?: RecipeAliasId | null) => void;
@@ -49,7 +49,7 @@ const RECIPE_BUTTON_ICONS: Record<Exclude<RecipeId, null>, TablerIcon> = {
 };
 
 export const RecipesView: React.FC<RecipesViewProps> = ({ onSelectRecipe }) => {
-  const recipeDiscovery = React.useMemo(() => createRecipeDiscoveryProjection(), []);
+  const recipeDiscovery = React.useMemo(() => createRecipesGridProjection(), []);
 
   return (
     <div className="w-full h-full overflow-y-auto overflow-x-hidden custom-scrollbar py-0 px-3">

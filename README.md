@@ -1,133 +1,84 @@
 # Codex Studio
 
-> A local-first image generation studio powered by your authenticated Codex/ChatGPT session — no `OPENAI_API_KEY` required for the main workflow.
+> Local-first image studio for creating, reviewing, and organizing AI images through your authenticated Codex/ChatGPT session.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Bun](https://img.shields.io/badge/runtime-Bun-black?logo=bun)](https://bun.sh)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Status](https://img.shields.io/badge/status-open--source%20preview-7c3aed)](#open-source-readiness-checklist)
+[![Status](https://img.shields.io/badge/status-open--source%20preview-7c3aed)](#status)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-22c55e)](./CONTRIBUTING.md)
 
-Codex Studio is an open-source image creation environment built for fast local iteration, reliable job history, and future workflow expansion. Today it is Codex-first. Over time, it is designed to support multiple workflow types and providers behind a consistent studio UX.
+Codex Studio runs on your machine: a React/Vite studio UI, a local Bun/Hono server, and `codex app-server` working together against your local ChatGPT login. The main Codex workflow does not require `OPENAI_API_KEY`; assets, job history, logs, and SQLite state live in your local Studio Library instead of the repo.
 
-## Who this is for
-
-- Creative developers building image pipelines locally
-- Technical artists who need repeatable generation/editing workflows
-- Product teams prototyping AI-assisted visual tooling
-- Open-source contributors interested in workflow-driven studio systems
-
-## Quick start
-
-Fast path: ask Codex from this repo to do the first-run setup.
-
-```text
-Set up Codex Studio for first run.
-```
-
-Codex will use [`AGENTS.md`](./AGENTS.md), [`SKILLS.md`](./SKILLS.md), and
-[`skills/codex-studio-setup/SKILL.md`](./skills/codex-studio-setup/SKILL.md)
-to install dependencies when needed, initialize the local Studio Library,
-verify Codex/ChatGPT session readiness, start the local runtime, and report any
-remaining user-only action.
-
-Manual fallback:
-
-1. Install dependencies and initialize your local studio library.
-   - `bun install`
-   - `bun run studio:init`
-2. Start the development environment.
-   - `bun run dev`
-3. Confirm everything is healthy.
-   - UI: <http://localhost:17222>
-   - Local API health: <http://localhost:17223/api/health>
+- Generate and edit images from a visual studio surface.
+- Browse workspaces, recipes, recent jobs, and generated assets in one place.
+- Keep job history and catalog metadata traceable through local SQLite.
+- Use Codex first, with optional provider adapters kept behind backend boundaries.
+- Maintain local assets outside git by default.
 
 ## Screenshots
 
 ### Studio workspace
 
-![Codex Studio workspace screenshot](./docs/assets/screenshots/studio-view.webp)
+![Codex Studio workspace](./docs/assets/screenshots/studio.webp)
 
-## Why this project
+### Recipes
 
-- **No API key required** for the primary Codex flow.
-- **Uses your local authenticated Codex/ChatGPT session**.
-- **Persistent job queue + traceability** backed by SQLite.
-- **Library-backed storage** keeps assets, logs, and transcripts outside the repo.
-- **Full creative UI** with recipes, workspaces, visual grid, and review tools.
-- **Extensible architecture** designed for multi-workflow evolution.
+![Codex Studio recipes](./docs/assets/screenshots/recipes.webp)
 
-## Product direction: image studio + evolving workflows
+## Quick Start
 
-Codex Studio starts with a strong image-generation core and a clear path to broader workflow support.
+Requirements:
 
-| Scope                    | Current status                  | Direction                                         |
-| ------------------------ | ------------------------------- | ------------------------------------------------- |
-| Image generation/editing | Production-ready locally        | Continue hardening and quality improvements       |
-| Workflow model           | Codex-first runtime             | Add more workflow types over time                 |
-| Provider boundary        | Adapter-based                   | Expand provider compatibility without UI rewrites |
-| Studio UX                | Unified queue + review surfaces | Keep one coherent UX across workflow families     |
+- Bun on `PATH`
+- Codex CLI installed and authenticated with ChatGPT
+- `codex app-server` support in that Codex installation
+- A modern browser
 
-## Open-source launch positioning
+Fast path: ask Codex from this repo to run first setup.
 
-Codex Studio is being prepared as an open-source platform for image-first creation that can evolve into a multi-workflow studio runtime.
+```text
+Set up Codex Studio for first run.
+```
 
-| Pillar                            | What this means in practice                                              |
-| --------------------------------- | ------------------------------------------------------------------------ |
-| Image-first excellence            | Prioritize quality, speed, and reliability for image generation/editing  |
-| Workflow extensibility            | Introduce new workflow families without fragmenting UX                   |
-| Local-first reliability           | Keep durable history, assets, and logs under your control                |
-| Contributor-friendly architecture | Clear boundaries, shared contracts, and docs that reduce onboarding time |
+Manual path:
 
-## How it works
+```bash
+bun install
+bun run studio:init
+bun run dev
+```
 
-1. React/Vite UI collects prompts, recipes, and reference assets.
-2. Bun/Hono local server creates and supervises persistent jobs.
-3. `codex app-server` executes real turns for image generation/editing.
-4. Studio Library stores assets, SQLite data, transcripts, and logs.
-5. UI syncs via HTTP + SSE and maintains compatibility surfaces for continuity.
+Then open:
 
-## Requirements
+- UI: <http://localhost:17222>
+- Local API health: <http://localhost:17223/api/health>
 
-- **Bun** in PATH — [bun.sh](https://bun.sh)
-- **Codex CLI** installed and authenticated with ChatGPT on the same machine
-- `codex app-server` support in that installation
-- A modern browser with IndexedDB support
+## First Minute
 
-If Codex or local session auth is missing, the UI may open but real generations will not complete. See [`docs/TROUBLESHOOTING.md`](./docs/TROUBLESHOOTING.md).
+1. Start the app with `bun run dev`.
+2. Confirm the toolbar shows the local backend and Codex session as ready.
+3. Choose a workspace or create one.
+4. Open `Recipes` for guided workflows, or stay in `Studio` for direct prompts.
+5. Generate, then review results in the grid and queue.
 
-## Local configuration
+## Configuration
 
-The backend reads variables from `.env.local`. You can let `bun run studio:init` generate it, or copy from `.env.example`.
+Run `bun run studio:init` to create local defaults. For manual setup, copy `.env.example` to `.env.local`.
 
-Primary variables:
+The most common setting is:
 
-- `STUDIO_LIBRARY_DIR`
-- `STUDIO_SERVER_PORT`
-- `STUDIO_CODEX_WS_PORT`
-- `VITE_STUDIO_API_BASE`
+```env
+STUDIO_LIBRARY_DIR=D:\AI-Studio-Library
+```
 
-Optional variables for Electron shell:
+Provider secrets, if used for optional external adapters, must stay in backend environment variables and out of SQLite, logs, screenshots, docs, and committed files.
 
-- `STUDIO_ELECTRON_API_BASE`
-- `STUDIO_ELECTRON_RENDERER_URL`
-
-Example library paths:
-
-- Windows: `%USERPROFILE%\AI-Studio-Library`
-- macOS: `/Users/<your-user>/AI-Studio-Library`
-- Linux: `/home/<your-user>/AI-Studio-Library`
-
-## Useful scripts
+## Useful Commands
 
 ```bash
 bun run dev
-bun run dev:server
-bun run dev:ui
-bun run dev:electron
 bun run studio:init
-bun run fmt
-bun run lint
 bun run check
 bun run test
 bun run build
@@ -144,55 +95,29 @@ bun run storage:thumbnails:backfill
 bun run tooling:logs:prune
 ```
 
-Interactive maintenance is also available in Studio Settings -> Storage Maintenance.
+## Documentation
 
-## Core technical decisions
+- [Agent guide](./AGENTS.md)
+- [Project vocabulary](./CONTEXT.md)
+- [Architecture](./docs/ARCHITECTURE.md)
+- [Development guide](./docs/DEV_GUIDE.md)
+- [Tooling](./docs/TOOLING.md)
+- [Troubleshooting](./docs/TROUBLESHOOTING.md)
+- [Roadmap](./ROADMAP.md)
 
-| Topic                            | Decision                                              |
-| -------------------------------- | ----------------------------------------------------- |
-| Durable source of truth          | `SQLite + Image Catalog`                              |
-| Compatibility visual cache       | `GenerationBatch[]` in IndexedDB (compatibility-only) |
-| Live events                      | `GET /api/events` (SSE)                               |
-| Canonical local session endpoint | `/api/codex/session`                                  |
-| Product philosophy               | Codex-first, local-first, library-backed              |
+## Status
 
-## Repository layout
+Codex Studio is in open-source preview.
 
-```text
-.
-├─ apps/local-server/
-├─ components/
-├─ contexts/
-├─ docs/
-├─ hooks/
-├─ packages/shared/
-├─ scripts/
-└─ services/
-```
-
-## Documentation map
-
-- [`CONTEXT.md`](./CONTEXT.md) — canonical domain vocabulary
-- [`AGENTS.md`](./AGENTS.md) — operational rules for agents
-- [`SKILLS.md`](./SKILLS.md) — specialized workflow guides
-- [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) — current architecture
-- [`docs/SERVICES.md`](./docs/SERVICES.md) — service and integration map
-- [`docs/DEV_GUIDE.md`](./docs/DEV_GUIDE.md) — development conventions
-- [`docs/TOOLING.md`](./docs/TOOLING.md) — tooling and quality commands
-- [`docs/TROUBLESHOOTING.md`](./docs/TROUBLESHOOTING.md) — quick diagnostics
-
-## Open-source readiness checklist
-
-- [ ] `bun run studio:init` completes successfully
-- [ ] `bun run dev` starts UI + backend
-- [ ] `GET /api/health` returns healthy response
-- [ ] UI opens and shows readiness status
-- [ ] `CONTRIBUTING.md`, `SECURITY.md`, and `CODE_OF_CONDUCT.md` are reviewed before publishing
+- Local development flow is active and documented.
+- The default path is Codex-first and local-first.
+- Optional provider adapters exist, but should be treated as backend integrations, not the product center.
+- Desktop packaging and broader first-run polish are still being hardened.
 
 ## Contributing
 
-Contributions are welcome. Start with [`CONTRIBUTING.md`](./CONTRIBUTING.md), then review [`ROADMAP.md`](./ROADMAP.md) for product priorities.
+Contributions are welcome. Start with [CONTRIBUTING.md](./CONTRIBUTING.md), then check [ROADMAP.md](./ROADMAP.md) for current priorities.
 
 ## License
 
-This project is licensed under the [MIT License](./LICENSE).
+MIT. See [LICENSE](./LICENSE).

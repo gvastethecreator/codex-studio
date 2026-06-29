@@ -1,8 +1,6 @@
-# Arquitectura
+# Architecture
 
-## Visión general
-
-Codex Studio mantiene una SPA React/Vite como interfaz principal, pero la ejecución real de generación ocurre en un backend local Bun/Hono. Ese backend supervisa `codex app-server`, persiste estado en SQLite, sirve assets de Studio Library y emite eventos SSE en vivo.
+Codex Studio is a local-first image studio. The React/Vite UI is the main product surface, while a local Bun/Hono backend supervises `codex app-server`, persists state in SQLite, serves Studio Library assets, and emits live SSE events.
 
 ```mermaid
 graph TD
@@ -29,93 +27,84 @@ graph TD
     PROVIDERS --> COMFY["ComfyUI local runtime"]
 ```
 
-## Seams principales
+## Product Shape
 
-- `hooks/useStudioShell.ts`: materializes the `Studio Shell` by composing deeper shell-facing seams instead of owning catalog, page, and command wiring inline.
-- `hooks/useStudioViewState.ts`: groups shell-local queue, editor, preview, and overlay visibility state so `useStudioShell.ts` can cross smaller view-state surfaces instead of a flat list of UI setters.
-- `hooks/useStudioNavigation.ts`: groups recipe, modal, editor, and shell navigation concerns so route synchronization and overlay closing rules cross one deeper navigation seam instead of another flat argument list.
-- `hooks/useStudioSettings.ts` and `hooks/useSettingsSurface.ts`: group editable `Studio Settings`, provider capability/runtime-preflight reads, External Output Source loading/import commands, and open-time Settings Surface hydration behind one shell-facing data surface. Startup reads only the lightweight settings summary; full provider/output-source data refreshes when the Settings surface opens.
-- `hooks/useStudioActivitySession.ts`: groups selected-job inspection state and debug-panel toggling so shell activity wiring crosses focused `selection` and `debugPanel` surfaces instead of another flat list of runtime-detail props.
-- `hooks/useCatalog.ts`: exposes the `Image Catalog` read seam plus `Catalog Page` state (`total`, `hasMore`, loading, error, load more) and `useStudioCatalogController()` for catalog mutations, queue-result previews, trash grouping, and refresh choreography.
-- `lib/catalogRenderBudget.ts`: owns the first-render catalog budgets for active grid, workspace summary, trash, and queue-result previews so hot Home reads do not inherit broad Catalog Page defaults.
-- `lib/catalogCardActionSurface.ts`: owns when secondary Image Catalog card commands mount. Desktop cards pay command/tooltip cost on hover, focus, or selection; touch-width cards keep actions available until a deeper mobile command surface exists.
-- `hooks/useStudioGenerationSession.ts`: groups queue and generation-action surfaces so the `Studio Shell` no longer consumes another flat spread of generation-session fields.
-- `services/studioRuntime.ts`: resolves the backend API base and runtime metadata without coupling the renderer to Electron.
-- `hooks/useStudioRuntime.ts`: aggregates sync, onboarding, diagnostics, readiness, and session verification for shell consumers.
-- `lib/queueStateMachine.ts`: centralizes queue slot selection, abort classification, and per-job queue execution results from explicit generation outcomes so `useQueueManager.ts` can stay focused on queue orchestration instead of owning the full execution lifecycle inline.
-- `hooks/useLocalStudioSync.ts`: performs HTTP catch-up, subscribes to the shared `GET /api/events` stream, mirrors compact Shell Activity Jobs/logs, refreshes the catalog from typed Catalog Operation scopes, and owns bounded backend job waiting.
-- `services/localGenerationRun.ts`: creates Generation Task jobs, waits for terminal states with `watchJob()`, queries `/api/catalog?job_id=...`, and returns catalog-derived local result data.
-- `services/localGenerationVisualBatchCompat.ts`: builds the legacy Visual Batch only at the compatibility edge.
-- `services/localStudioService.ts`: the UI's single HTTP adapter to the local backend.
-- `services/studioEventSource.ts`: shared SSE adapter for jobs, assets, catalog changes, logs, and connection state. Browser consumers receive ref-counted stream leases so the shell and generation runs do not open duplicate EventSource connections.
-- `apps/local-server/src/db.ts` and `apps/local-server/src/catalog.ts`: expose summary-first hot reads for jobs and Catalog Pages, while detail reads keep full durable payload access on demand.
-- `lib/studioCatalogView.ts`: pure Catalog Entry read model. It groups and filters catalog data without depending on Visual Batches or IndexedDB.
-- `lib/studioCatalogImageAdapter.ts`: materializes UI images from Catalog Entries.
-- `lib/studioLegacyVisualBatchTypes.ts` and `lib/studioLegacyVisualSnapshotExport.ts`: define and translate explicit Legacy Visual Batch DTO snapshots only for export/import compatibility.
-- `lib/buildStudioPageController.ts`: concentrates `Studio Page` debug, grid, and operations projection and also exposes the shared `buildStudioViewportController()` presentation seam, so route view, recipe props, and dock visibility stop being rebuilt inline in `useStudioShell.ts`.
-- `lib/buildStudioHeaderToolbarProps.ts` and `lib/commandCenterProjection.ts`: concentrate `Command Center` and header-toolbar transitions, runtime status derivation, provider capability/preflight projection, compact-mode policy, and queue counts in one seam.
-- `hooks/useStudioOverlayController.ts`: keeps the lower-level overlay controller seam and publishes grouped `settingsModule` data into `StudioSystemOverlays` instead of widening a flat settings prop surface.
-- `components/recipes/styleSearchProjection.ts` and `lib/recipeDiscoveryProjection.ts`: expose manifest-backed Style Search and Recipe Discovery projections for lazy UI surfaces, scripts, and aliases without redefining Recipe Modules.
-- `lib/importOperation.ts`: owns External Output Source import summaries, toast tone, and pending-file removal at the Settings surface boundary.
-- `lib/studioReadiness.ts` and `lib/studioDiagnostics.ts`: pure builders for onboarding, header status, and system panels.
-- `hooks/useGenerationConfig.ts`: owns the Codex model catalog read for generation defaults and passes the catalog to the Toolbar instead of letting the Toolbar fetch model freshness separately.
-- `apps/local-server/src/settingsRoutes.ts`: groups editable `Studio Settings` read/patch HTTP behavior so `appFactory.ts` keeps runtime composition concerns.
-- `apps/local-server/src/codexRoutes.ts`: groups Local Codex Session and model/account route behavior (`/api/codex/*`) behind one backend seam.
-- `apps/local-server/src/librariesRoutes.ts`: groups Studio Library list/create/default/remove HTTP behavior (`/api/libraries/*`) behind one backend seam.
-- `apps/local-server/src/projectRoutes.ts`: groups project listing/creation HTTP behavior (`/api/projects`) and keeps event/log side effects out of `appFactory.ts` inline handlers.
-- `apps/local-server/src/jobRoutes.ts` and `apps/local-server/src/persistentJobIntake.ts`: group job list/detail/cancel/create HTTP behavior (`/api/jobs/*`) and keep provider-blocker/reference-processing/new-job compatibility policy out of route handlers.
-- `apps/local-server/src/assetLogRoutes.ts`: groups lightweight asset/log list HTTP behavior (`/api/assets`, `/api/logs`) into a dedicated backend seam.
-- `apps/local-server/src/runtimeRoutes.ts`: groups runtime health/bootstrap/app-server-start HTTP behavior (`/api/health`, `/api/bootstrap-config`, `/api/app-server/start`) into a dedicated backend seam.
-- `apps/local-server/src/studioControlRoutes.ts`: groups Studio control HTTP behavior (`/api/studio/reset`) into a dedicated backend seam.
-- `apps/local-server/src/providerRoutes.ts`, `apps/local-server/src/providers/providerRegistry.ts`, and `apps/local-server/src/outputSourceRoutes.ts`: keep provider capability/preflight, Provider Registry facts, worker routing, compiler/executor availability, and External Output Source HTTP behavior out of `appFactory.ts` inline handlers.
-- `apps/local-server/src/eventStreamRoutes.ts`: groups SSE event stream behavior (`/api/events`) into a dedicated backend seam.
-- `apps/local-server/src/libraryRoutes.ts`: groups local asset serving behavior (`/library/*`) including thumbnail variant fallback and cache headers into a dedicated backend seam.
-- `components/shell/StudioViewport.tsx`: demand-mounted route shell that lazy-loads studio and recipe surfaces.
-- `components/recipes/styles/manifests/`: granular source of truth for Style Pack Manifests and Style Preset Manifests.
-- `packages/shared/src/storageMaintenance.ts`: shares Storage Maintenance DTOs plus dry-run Storage Repair Plan projection between Settings and automation scripts.
+- **Codex-first:** the default image workflow uses the user's local Codex/ChatGPT session through `codex app-server`.
+- **Local-first:** assets, SQLite state, transcripts, thumbnails, and logs live in the Studio Library, outside the repo.
+- **Library-backed:** the repo contains source code and public assets; generated user data belongs in the Studio Library.
+- **Provider-aware:** optional providers plug in behind backend adapters without changing the product center.
+- **Catalog-first:** durable image truth is the Image Catalog; legacy Visual Batch data is compatibility only.
 
-## Flujo de generación
+## Core Frontend Seams
 
-1. The user works in the UI: prompt, recipe, attachments, batch count, provider, and workspace.
+- `hooks/useStudioShell.ts` composes navigation, runtime, overlays, page state, catalog state, and generation state into the shell.
+- `hooks/useStudioRuntime.ts` aggregates backend health, onboarding, diagnostics, session verification, and readiness.
+- `hooks/useLocalStudioSync.ts` mirrors jobs, logs, catalog changes, and SSE state.
+- `hooks/useCatalog.ts` owns Image Catalog reads, pagination, mutations, trash, queue-result previews, and refresh scopes.
+- `services/localStudioService.ts` is the frontend HTTP adapter to the local backend.
+- `services/studioEventSource.ts` owns the shared SSE connection.
+- `services/localGenerationRun.ts` creates Persistent Jobs, waits for terminal state, and returns catalog-derived results.
+- `services/localGenerationVisualBatchCompat.ts` is the explicit legacy Visual Batch compatibility edge.
+- `lib/studioCatalogView.ts` and `lib/studioCatalogImageAdapter.ts` materialize UI images from Catalog Entries.
+- `lib/buildStudioHeaderToolbarProps.ts` and `lib/commandCenterProjection.ts` project Command Center state.
+- `components/shell/StudioViewport.tsx` demand-loads route surfaces.
+
+## Core Backend Seams
+
+- `apps/local-server/src/appFactory.ts` composes the local API.
+- `apps/local-server/src/runtimeRoutes.ts` owns health, bootstrap config, and app-server lifecycle routes.
+- `apps/local-server/src/codexRoutes.ts` owns Local Codex Session routes.
+- `apps/local-server/src/jobRoutes.ts` and `apps/local-server/src/persistentJobIntake.ts` own job creation, validation, provider selection, and enqueue behavior.
+- `apps/local-server/src/catalog.ts` and `apps/local-server/src/db.ts` own catalog and SQLite persistence.
+- `apps/local-server/src/eventStreamRoutes.ts` owns SSE.
+- `apps/local-server/src/libraryRoutes.ts` owns local asset serving.
+- `apps/local-server/src/settingsRoutes.ts` owns editable Studio Settings.
+- `apps/local-server/src/providerRoutes.ts` and `apps/local-server/src/providers/providerRegistry.ts` own provider facts, capability reads, preflight, compilers, and executor routing.
+- `apps/local-server/src/outputSourceRoutes.ts` owns External Output Source registration and import.
+
+## Generation Flow
+
+1. The user works in the UI with a prompt, recipe, attachments, provider choice, batch count, and workspace.
 2. `useGenerationPipeline` delegates execution to the local generation runner.
-3. The runner resolves the Recipe Module, creates a `batch-*` local run id, builds provider-independent Generation Task Specs with `spec-*` ids and compact quality intent, creates one or more Persistent Jobs, and waits through the shared SSE stream.
-4. The backend worker executes each job through the Provider Boundary.
-5. Codex remains the primary adapter and runs turns against `codex app-server`.
-6. External adapters compile the same Generation Task Spec into compact provider-specific inputs and only execute when concrete runtime preflight passes.
+3. The runner resolves Recipe Module data, builds provider-independent Generation Task Specs, and creates Persistent Jobs.
+4. The backend validates intake, selects the Generation Provider, persists job state, and enqueues work.
+5. The Provider Boundary compiles the Generation Task Spec into provider-specific input.
+6. The Codex provider runs turns through `codex app-server`; external providers run only when concrete preflight passes.
 7. Completed jobs write Local Assets, Catalog Entries, transcripts, and logs into the Studio Library.
-8. The UI refreshes `/api/catalog` by `jobId` and renders catalog-derived images.
-9. Legacy Visual Batch compatibility is built only for remaining grid/recovery edges.
+8. The UI refreshes `/api/catalog` by job id and renders catalog-derived images.
+9. Legacy Visual Batch compatibility is built only at remaining export/recovery/generated-append edges.
 
-## Estado y persistencia
+## Persistence
 
-- SQLite is the local source of truth for jobs, cataloged assets, libraries, projects, settings, job events, and system logs.
-- Hot UI reads are summary-first. `/api/jobs` returns Job Summary records that omit `sourceSpec`; `/api/catalog` returns Catalog Pages that omit full `generationConfig`. Job detail and catalog detail paths load full payloads on demand.
-- Job detail includes a compact provider-neutral trace summary derived from durable job, event, turn, and catalog facts before exposing transcript tail data.
-- The Studio Library is an external local folder. By default it lives under the user's home directory, for example `%USERPROFILE%\AI-Studio-Library` on Windows.
-- Internal state lives under `.studio/`; generated outputs, thumbnails, exports, and trash assets live under `outputs/`.
-- The Browser Queue is an IndexedDB-backed UI execution buffer. Pending browser-only items survive refresh within a bounded inline-reference payload budget; jobs that already reached the backend remain durable as Persistent Jobs and are tracked in the backend session list to avoid duplicate execution.
-- IndexedDB no longer persists the active visual cache. Legacy keys such as `catalog-cache` and `catalog-trash` remain recovery-only compatibility surfaces.
-- `LegacyVisualBatchContext` stores only lightweight refs for recovery dedupe and generated append compatibility.
-- External Output Sources are read-only candidates until selected files are explicitly imported as Local Assets into the Studio Library.
+- SQLite is the durable source of truth for jobs, cataloged assets, libraries, projects, settings, events, and system logs.
+- `/api/jobs` and `/api/catalog` are summary-first hot reads; detail paths load full payloads on demand.
+- The Studio Library defaults to a local user folder, for example `%USERPROFILE%\AI-Studio-Library` on Windows.
+- Internal Studio Library state lives under `.studio/`.
+- Generated outputs, thumbnails, exports, and trash assets live under `outputs/`.
+- Browser storage is bounded compatibility state, not durable truth.
+- External Output Sources are read-only candidates until selected files are explicitly imported as Local Assets.
 
-## Sesión local y readiness
+## Readiness
 
-- The main product flow is blocked on **ChatGPT login** through the local Codex CLI.
-- The default Codex flow does not require `OPENAI_API_KEY`.
-- `/api/codex/session` is the canonical Local Codex Session read.
-- `/api/codex/account` remains as a compatibility alias.
-- Studio Readiness combines backend reachability, Studio Library health, Codex CLI availability, `codex app-server`, and Local Codex Session state.
+Studio Readiness combines:
+
+- local backend reachability
+- Studio Library health
+- Codex CLI availability
+- `codex app-server` lifecycle
+- Local Codex Session state
+
+The main product flow is blocked when the local Codex/ChatGPT login cannot run jobs. The default Codex flow does not require `OPENAI_API_KEY`.
 
 ## Provider Boundary
 
-The Provider Boundary keeps Generation Tasks provider-independent:
+Generation Tasks and Generation Providers stay separate:
 
 - Recipe Modules produce Generation Task Specs.
-- Providers compile specs into compact provider-specific Compiled Provider Inputs.
-- Quality intent lives in Generation Task Specs and compiles into provider prompts before Recipe Provider Directives.
-- Provider Secrets remain outside SQLite-backed Studio Settings.
+- Providers compile specs into Compiled Provider Inputs.
+- Provider-specific secrets, SDKs, retries, and output discovery stay behind backend adapters.
+- Provider Secrets stay outside SQLite-backed Studio Settings, job metadata, logs, transcripts, screenshots, and docs.
 - Providers must return the same local contract: job state, Local Assets, Catalog Entries, metadata, logs, and diagnostics.
-- Planned providers stay blocked until a concrete executor can produce or import Local Assets.
 
 Current concrete adapters:
 
@@ -124,18 +113,19 @@ Current concrete adapters:
 - **Google Gemini image API:** hosted executor using `GOOGLE_API_KEY`, `GEMINI_API_KEY`, or `NANO_BANANA_API_KEY` from backend env only.
 - **ComfyUI:** local executor using `COMFY_API_URL` or `COMFYUI_API_URL` plus `COMFY_WORKFLOW_TEMPLATE_PATH`.
 
-## Superficies demand-mounted
+## Demand-Mounted Surfaces
 
-Large or optional UI surfaces should not inflate startup:
+Heavy or optional UI should mount only when visible or explicitly requested:
 
-- recipe pages are lazy-loaded by route;
+- recipe pages are route-lazy;
 - style catalog search mounts on demand;
 - heavy catalog data, YAML parsing, ZIP export, and Three.js are lazy-loaded;
-- `ui:source:verify` and `ui:chunks:verify` guard against regressions.
+- settings, diagnostics, activity, and provider internals open from explicit surfaces;
+- `ui:source:verify` and `ui:chunks:verify` guard against eager-regression imports.
 
-## Superficies de automatización
+## Automation Surfaces
 
-Codex SDK or scripts are automation surfaces, not the product runtime. They are used for audits, migrations, checks, and maintenance:
+Codex SDK and scripts are automation surfaces, not the product runtime. They support audits, migrations, verification, and maintenance:
 
 - `storage:audit`
 - `storage:compact`
@@ -149,11 +139,13 @@ Codex SDK or scripts are automation surfaces, not the product runtime. They are 
 - `ui:chunks:verify`
 - `library:layout:verify`
 
-## Superficie de mantenimiento en la app
+## Storage Maintenance
 
-Studio Settings exposes a demand-mounted Storage Maintenance panel backed by `/api/maintenance`. It can run storage audit, inline-payload compaction plan/write, historical thumbnail backfill plan/write, and tooling-log pruning from the product UI without letting the browser execute arbitrary shell commands. Storage Repair Plan is derived from the same audit data and stays dry-run/read-only until a guarded write adapter is chosen. Script commands remain the automation equivalent for agents and release checks.
+Studio Settings exposes a demand-mounted Storage Maintenance panel backed by `/api/maintenance`. It can run storage audit, inline-payload compaction plans/writes, historical thumbnail backfill plans/writes, and tooling-log pruning without letting the browser execute arbitrary shell commands.
 
-## Objetivos de arquitectura open-source
+Storage Repair Plans are dry-run/read-only until a guarded write adapter is selected. Script commands remain the automation equivalent for agents and release checks.
+
+## Open-Source Architecture Goals
 
 - Keep setup local-first and Codex-first.
 - Keep user assets and runtime state outside the repo.

@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import {
   createRecipeDiscoveryProjection,
+  createRecipesGridProjection,
   searchRecipeDiscoveryProjection,
 } from './recipeDiscoveryProjection';
 import { RECIPE_DISCOVERY_CATALOG } from './recipeCatalog';
@@ -28,5 +29,21 @@ describe('recipeDiscoveryProjection', () => {
     expect(
       searchRecipeDiscoveryProjection({ task: 'sprite_sheet' }).map((entry) => entry.id),
     ).toEqual(expect.arrayContaining(['spritesheet', 'character-lab', 'character-sprites']));
+  });
+
+  it('keeps Character Lab alias cards out of the Recipes grid', () => {
+    const projection = createRecipesGridProjection(RECIPE_DISCOVERY_CATALOG);
+
+    expect(projection.entries.map((entry) => entry.id)).toEqual([
+      'styles',
+      'remaster',
+      'spritesheet',
+      'cinematic',
+      'character-lab',
+      'character',
+      'camera',
+      'timeline',
+    ]);
+    expect(projection.entries.some((entry) => entry.id === 'character-variants')).toBe(false);
   });
 });

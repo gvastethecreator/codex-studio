@@ -1,32 +1,32 @@
-# Tooling y flujo de calidad
+# Tooling And Quality Flow
 
-Este documento resume el stack de desarrollo y los comandos operativos del repo.
+This document summarizes the repo's development stack and operational commands.
 
-## Ruta rápida
+## Fast Path
 
-1. Usa `bun run check` durante el ciclo normal.
-2. Valida con `bun run test`.
-3. Cierra con `bun run build` o `bun run validate:full`.
+1. Use `bun run check` during normal implementation.
+2. Validate behavior with `bun run test`.
+3. Close larger work with `bun run build` or `bun run validate:full`.
 
-## Stack actual
+## Current Stack
 
-- Gestor de paquetes: **Bun**
-- Toolchain UI: **Vite+**
-- Bundler UI: **Vite 8.1 + Rolldown**
-- Lint/format: **Oxlint + Oxfmt** vía Vite+
-- Tests unitarios: **Vitest** vía Vite+
-- Estilos: **Tailwind CSS v4**
-- Animación React: **GSAP**
+- Package manager: **Bun**
+- UI toolchain: **Vite+**
+- UI bundler: **Vite 8.1 + Rolldown**
+- Lint/format: **Oxlint + Oxfmt** through Vite+
+- Unit tests: **Vitest** through Vite+
+- Styles: **Tailwind CSS v4**
+- React animation: **GSAP**
 
-## Fuente de verdad
+## Source Of Truth
 
-La configuración de tooling vive en `vite.config.ts`.
+Tooling configuration lives in `vite.config.ts`.
 
-`package.json` declara `vite`, `oxlint` y `oxfmt` como dependencias directas del workspace para que los binarios locales sean auditables. Los `overrides` mantienen esa misma baseline cuando `vite-plus` o runners internos declaran rangos o pines transitivos anteriores.
+`package.json` declares `vite`, `oxlint`, and `oxfmt` as direct workspace dependencies so local binaries stay auditable. `overrides` keep the same baseline when `vite-plus` or internal runners declare older transitive ranges or pins.
 
-No dupliques configuración de ESLint/Prettier/Vitest fuera de ese archivo salvo excepción explícitamente documentada.
+Do not duplicate ESLint, Prettier, or Vitest configuration outside that file unless an exception is explicitly documented.
 
-## Comandos principales
+## Main Commands
 
 ```bash
 bun run fmt
@@ -41,7 +41,7 @@ bun run validate:fast
 bun run validate:full
 ```
 
-## Comandos de mantenimiento
+## Maintenance Commands
 
 ```bash
 bun run storage:audit
@@ -50,31 +50,32 @@ bun run storage:thumbnails:backfill
 bun run tooling:logs:prune
 ```
 
-`storage:compact` y `storage:thumbnails:backfill` son dry-run por defecto. Los modos de escritura requieren `--write` y confirmacion explicita.
-Para batches grandes de thumbnails, agrega `--limit=<n>` despues del nombre del comando y revisa cuantos rows tienen archivos fuente antes de escribir.
+`storage:compact` and `storage:thumbnails:backfill` are dry-run by default. Write modes require `--write` and an explicit confirmation flag.
 
-La misma superficie existe dentro de la app en Studio Settings -> Storage Maintenance. La UI llama endpoints locales bajo `/api/maintenance`, mantiene audit/plan como acciones directas, y reserva confirmacion explicita para los modos de escritura.
+For large thumbnail batches, add `--limit=<n>` after the command name and review how many rows have source files before writing.
 
-## Logs persistentes
+The same maintenance surface exists inside the app under Studio Settings -> Storage Maintenance. The UI calls local endpoints under `/api/maintenance`, keeps audit and plan actions direct, and reserves explicit confirmation for write modes.
 
-Las tareas de calidad/build pasan por `scripts/tooling-task.ts` y escriben en `logs/tooling/`:
+## Persistent Logs
+
+Quality and build tasks run through `scripts/tooling-task.ts` and write logs under `logs/tooling/`:
 
 - `<task>-YYYY-MM-DDTHH-MM-SS.log`
 - `<task>.latest.log`
 
-Los logs timestamped se podan automaticamente por tarea. Usa `bun run tooling:logs:prune` o Studio Settings -> Storage Maintenance si necesitas forzar la limpieza manual.
+Timestamped logs are pruned automatically per task. Use `bun run tooling:logs:prune` or Studio Settings -> Storage Maintenance to force cleanup.
 
 ## Checklist
 
-- [ ] Usar `validate:fast` durante iteración.
-- [ ] Usar `validate:full` antes de cerrar trabajo grande.
-- [ ] Adjuntar logs relevantes si reportas fallos.
+- [ ] Use `validate:fast` during iteration.
+- [ ] Use `validate:full` before closing broad work.
+- [ ] Attach exact logs when reporting failures.
 
-## Nota de rendimiento (Windows)
+## Windows Performance Note
 
-Puedes reducir carga del terminal/IDE ajustando:
+You can reduce terminal or IDE load by adjusting:
 
 - `OXFMT_THREADS`
 - `OXLINT_THREADS`
 
-Si necesitas detalle completo, revisa `logs/tooling/` en lugar de repetir comandos sólo para leer salida.
+When you need full detail, read `logs/tooling/` instead of repeating commands only to recover truncated output.

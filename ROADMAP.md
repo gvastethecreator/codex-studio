@@ -1,55 +1,52 @@
-# Hoja de ruta
+# Roadmap
 
-Esta hoja de ruta define la dirección del producto mientras Codex Studio se prepara para una preview open-source más sólida.
+Codex Studio is moving toward a polished open-source preview while staying local-first, Codex-first, and library-backed.
 
-## Ruta rápida
+## Current Focus
 
-1. Consolidar shell y experiencia de primer uso.
-2. Completar transición catalog-first.
-3. Fortalecer operabilidad (diagnóstico + jobs + recuperación).
-4. Cerrar brecha de portabilidad y estrategia desktop.
-5. Publicar un release candidate presentable.
+1. Make first run easier to understand and recover.
+2. Finish the catalog-first transition for generated assets.
+3. Improve diagnostics for jobs, storage, providers, and Codex session readiness.
+4. Keep the desktop path credible without making packaging the center of the project.
+5. Prepare a small, presentable release candidate.
 
-## Estado actual
+## What Works Today
 
-Codex Studio ya está alineado en pilares clave:
+- Local assets, logs, transcripts, and SQLite state live in a Studio Library outside the repo.
+- The main flow runs through `codex app-server` and does not require `OPENAI_API_KEY`.
+- Jobs, events, transcripts, and catalog entries are traceable.
+- Generation Tasks and Generation Providers are separate concepts.
+- Recipe Modules and Style Preset Manifests are becoming the durable authoring surface.
 
-- **Local-first**: estado, assets y logs viven en una Studio Library local.
-- **Codex-first**: flujo principal vía `codex app-server`.
-- **Trazable**: jobs, eventos, transcripts y catálogo permiten inspección real.
-- **Portable**: la librería está separada del repo y es configurable.
-- **Extensible**: `Generation Task` y `Generation Provider` son conceptos separados.
+## Phases
 
-## Fases
+| Phase | Goal                          | Expected result                                  |
+| ----- | ----------------------------- | ------------------------------------------------ |
+| 0     | Stabilize the current shell   | Clearer navigation and global state              |
+| 1     | Finish catalog-first behavior | UI aligned around SQLite and Image Catalog truth |
+| 2     | Improve operations            | Common failures produce actionable diagnostics   |
+| 3     | Harden setup and portability  | Smoother Windows/macOS/Linux development setup   |
+| 4     | Release candidate             | Public repo is clear, safe, and reproducible     |
 
-| Fase | Objetivo                        | Resultado esperado                        |
-| ---- | ------------------------------- | ----------------------------------------- |
-| 0    | Estabilizar shell actual        | Navegación y estados globales más claros  |
-| 1    | Cerrar transición catalog-first | UI alineada con SQLite/Image Catalog      |
-| 2    | Mejorar operabilidad            | Fallos comunes con diagnóstico accionable |
-| 3    | Setup y portabilidad            | Instalación más simple en Win/macOS/Linux |
-| 4    | Release candidate OSS           | Repo listo para exposición pública        |
+## Near-Term Priorities
 
-## Prioridades cercanas
+- Improve onboarding and error messages.
+- Strengthen job recovery and detail views.
+- Reduce orchestration debt in shell code.
+- Keep validation focused during iteration and complete at closeout.
+- Keep public docs short, current, and easy to scan.
 
-- Mejorar onboarding y mensajes de error.
-- Reforzar recuperación y detalle de jobs.
-- Reducir deuda de orquestación en shell.
-- Mantener calidad con `validate:fast` y `validate:full`.
+## Release Candidate Checklist
 
-## Checklist de salida para release candidate
+- [ ] Fresh checkout can run `bun run studio:init`.
+- [ ] `bun run dev` starts UI and backend.
+- [ ] `/api/health` reports local backend status.
+- [ ] UI shows useful readiness state when Codex auth is missing.
+- [ ] Public docs, troubleshooting, and contributing notes agree with current scripts.
+- [ ] No local DBs, logs, transcripts, secrets, or Studio Library assets are committed by mistake.
 
-- [ ] Instalación reproducible en máquinas nuevas.
-- [ ] Diagnóstico básico disponible desde UI.
-- [ ] Documentación de setup, troubleshooting y contribución alineada.
-- [ ] Sin artefactos sensibles/versionados por error (DBs, logs, assets locales, secretos).
+## Non-Goals For Now
 
-## No-objetivos (por ahora)
-
-- Convertirlo en SaaS multiusuario.
-- Hacer API keys obligatorias para el flujo principal.
-- Empaquetar como librería npm reutilizable.
-
-## Próximo paso
-
-Usar este documento junto con `docs/active/professionalization-roadmap.md` para priorizar slices semanales.
+- Turning Codex Studio into a hosted SaaS.
+- Making API keys mandatory for the default Codex flow.
+- Publishing it as a reusable npm library.

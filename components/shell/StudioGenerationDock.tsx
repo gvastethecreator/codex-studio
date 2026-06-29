@@ -33,7 +33,11 @@ const StudioGenerationDockFn: React.FC<StudioGenerationDockProps> = ({
   return (
     <BottomToolbar className="w-full relative z-30 shrink-0">
       <DropZoneOverlay isVisible={isDragging} />
-      <Toolbar {...toolbarProps} interactionScope={`${currentView}:${activeRecipe ?? 'studio'}`} />
+      <Toolbar
+        {...toolbarProps}
+        activeRecipe={activeRecipe}
+        interactionScope={`${currentView}:${activeRecipe ?? 'studio'}`}
+      />
     </BottomToolbar>
   );
 };

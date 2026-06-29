@@ -1,89 +1,93 @@
 # Troubleshooting
 
-## Ruta rápida de diagnóstico
+## Fast Diagnostics
 
-1. Ejecuta `bun run studio:init`.
-2. Levanta backend con `bun run dev:server`.
-3. Revisa salud en `http://localhost:17223/api/health`.
-4. Si falla algo, abre `logs/tooling/*.latest.log`.
+1. Run `bun run studio:init`.
+2. Start the backend with `bun run dev:server`.
+3. Check `http://localhost:17223/api/health`.
+4. If a quality gate failed, open `logs/tooling/*.latest.log`.
 
-## Problemas comunes de arranque
+## Common Startup Problems
 
-### `codex` no existe o no responde
+### `codex` is missing or does not respond
 
-**Síntomas:** `codexCli.available: false`, jobs reales no inician.
+Symptoms: `codexCli.available: false`, real jobs do not start.
 
-**Verifica:** `codex --version`, instalación en PATH y reinicio de terminal.
+Check: `codex --version`, PATH setup, and terminal restart after installing Codex.
 
-### `codex app-server` no disponible
+### `codex app-server` is not available
 
-**Síntomas:** backend inicia pero generación no avanza, `appServer.running: false`.
+Symptoms: backend starts but generations do not progress, `appServer.running: false`.
 
-**Verifica:** soporte de `app-server`, sesión autenticada y puerto WebSocket libre.
+Check: app-server support, authenticated Codex session, and free WebSocket port.
 
-### Sesión de Codex expirada
+### Codex session expired
 
-**Síntomas:** CLI existe pero jobs fallan por permisos/autorización.
+Symptoms: Codex CLI exists but jobs fail with permission or authorization errors.
 
-**Verifica:** reautentica Codex y reinicia `bun run dev:server`.
+Check: reauthenticate Codex, then restart `bun run dev:server`.
 
-### Está corriendo solo la UI
+### Only the UI is running
 
-**Síntomas:** `dev:ui` funciona pero no sincroniza jobs/assets.
+Symptoms: `dev:ui` opens but jobs and assets do not sync.
 
-**Verifica:** usa `bun run dev` o corre `dev:server` en paralelo.
+Check: use `bun run dev`, or run `dev:server` and `dev:ui` in parallel.
 
-### Puertos ocupados
+### Ports are busy
 
-**Síntomas:** errores de `listen` en Vite/Bun.
+Symptoms: Vite or Bun reports `listen` errors.
 
-**Verifica:** cambia `STUDIO_SERVER_PORT` y/o `STUDIO_CODEX_WS_PORT` en `.env.local`.
+Check: change `STUDIO_SERVER_PORT` or `STUDIO_CODEX_WS_PORT` in `.env.local`.
 
-## Cuando la consola no alcanza
+## When Terminal Output Is Too Short
 
-Si `check`/`lint`/`test` falla y la salida se corta:
+If `check`, `lint`, `test`, or `build` fails and the terminal output is truncated:
 
-- revisa `logs/tooling/`
-- usa `*.latest.log`
-- comparte log exacto en issue/PR
+- open `logs/tooling/`
+- inspect the matching `*.latest.log`
+- include the exact log in issue or PR notes
 
-## Problemas con Studio Library
+## Studio Library Problems
 
-Si la ruta por defecto no existe, define `STUDIO_LIBRARY_DIR` absoluto en `.env.local` y ejecuta `bun run studio:init` de nuevo.
+If the default path does not exist, set an absolute `STUDIO_LIBRARY_DIR` in `.env.local`, then run:
 
-## Storage y logs pesados
+```bash
+bun run studio:init
+```
 
-Ejecuta `bun run storage:audit` para revisar tamano de SQLite, WAL/SHM, logs, transcripts, references y payloads historicos inline sin imprimir contenido privado.
-El audit tambien reporta thumbnails faltantes, duplicados de referencias por hash, tamano de `logs/tooling`, y payloads compactables recuperables vs no recuperables.
+## Storage And Heavy Logs
 
-Desde la app, abre Studio Settings -> Storage Maintenance para ejecutar audit, plan de compactacion, backfill de thumbnails y prune de tooling logs mediante `/api/maintenance`.
+Run `bun run storage:audit` to review SQLite size, WAL/SHM files, logs, transcripts, references, historical inline payloads, missing thumbnails, duplicate references, and compactable payloads without printing private content.
 
-`storage:compact` es dry-run por defecto. Para escribir cambios historicos debes detener el servidor local y usar:
+From the app, open Studio Settings -> Storage Maintenance to run audit, compaction plans, thumbnail backfill plans, and tooling-log pruning through `/api/maintenance`.
+
+`storage:compact` is dry-run by default. To write historical compaction, stop the local server and run:
 
 ```bash
 bun run storage:compact -- --write --confirm=compact-inline-payloads
 ```
 
-Los logs de backend rotan en `.studio/logs/history`. `/api/logs` y el panel de actividad muestran una ventana reciente, no un archivo historico infinito.
-Los logs de tooling mantienen `.latest.log` por tarea y podan corridas timestamped automaticamente. Para limpiar manualmente desde terminal o desde Storage Maintenance:
+Backend logs rotate under `.studio/logs/history`. `/api/logs` and the activity panel show a recent window, not an infinite historical file.
+
+Tooling logs keep one `.latest.log` per task and prune timestamped runs automatically. To clean them manually:
 
 ```bash
 bun run tooling:logs:prune
 ```
 
-Para calentar thumbnails historicos faltantes sin tocar la base primero:
+To warm missing historical thumbnails without writing first:
 
 ```bash
 bun run storage:thumbnails:backfill
 ```
 
-Para escribir el batch planeado:
+To write a planned thumbnail batch:
 
 ```bash
 bun run storage:thumbnails:backfill -- --limit=1000 --write --confirm=backfill-thumbnails
 ```
 
-## Comandos útiles
+## Useful Commands
 
 ```bash
 bun run studio:init

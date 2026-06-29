@@ -39,6 +39,7 @@ import {
   normalizeCodexSpeed,
   pickPreferredCodexModel,
 } from '../lib/codexExecution';
+import { getActiveRecipeIndicator } from '../lib/activeRecipeIndicator';
 import type {
   CodexModel,
   CodexModelCatalogResponse,
@@ -85,6 +86,7 @@ export interface ToolbarProps {
   codexModelCatalog: CodexModelCatalogResponse | null;
   isLoadingCodexModelCatalog: boolean;
   codexModelCatalogError: string | null;
+  activeRecipe?: ImageGenerationConfig['recipeId'];
 }
 
 const ICON_SIZE = 14;
@@ -168,6 +170,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     codexModelCatalog,
     isLoadingCodexModelCatalog,
     codexModelCatalogError,
+    activeRecipe = null,
   }) => {
     const { addToast } = useGlobal();
     const containerRef = useRef<HTMLDivElement>(null);
@@ -420,6 +423,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const hasAttachments = generationConfig.attachments.length > 0;
     const isNearLimit = generationConfig.attachments.length >= maxAttachments;
     const hasQuickStartInput = localPrompt.trim().length > 0 || hasAttachments;
+    const activeRecipeIndicator = getActiveRecipeIndicator(
+      generationConfig.recipeId ?? activeRecipe,
+    );
 
     if (quickStartError && (quickStartErrorScope !== interactionScope || hasQuickStartInput)) {
       setQuickStartError(false);
@@ -494,6 +500,30 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       </div>
                     </div>
                   ))}
+                </div>
+              )}
+
+              {activeRecipeIndicator && (
+                <div
+                  data-active-recipe-card={activeRecipeIndicator.id}
+                  aria-label={`Active recipe: ${activeRecipeIndicator.title}. ${activeRecipeIndicator.summary}.`}
+                  title={`${activeRecipeIndicator.title}: ${activeRecipeIndicator.summary}`}
+                  className={`flex h-8 min-w-[4.75rem] max-w-[8.5rem] flex-[0_1_8.5rem] items-center gap-1.5 overflow-hidden rounded-lg border px-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] sm:h-9 sm:max-w-[9.5rem] sm:flex-[0_0_9.5rem] ${activeRecipeIndicator.toneClassName}`}
+                >
+                  <span
+                    className={`h-5 w-1 shrink-0 rounded-full shadow-[0_0_12px_currentColor] ${activeRecipeIndicator.dotClassName}`}
+                  />
+                  <span className="min-w-0">
+                    <span className="block text-[6px] font-black uppercase leading-none tracking-[0.18em] opacity-60">
+                      Recipe
+                    </span>
+                    <span className="block truncate text-[9px] font-black uppercase leading-tight tracking-[0.08em] text-white sm:text-[10px]">
+                      {activeRecipeIndicator.title}
+                    </span>
+                    <span className="block truncate text-[8px] font-bold leading-none opacity-70">
+                      {activeRecipeIndicator.summary}
+                    </span>
+                  </span>
                 </div>
               )}
 
