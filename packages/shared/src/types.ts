@@ -304,6 +304,18 @@ export interface CatalogPage {
   hasMore: boolean;
 }
 
+export interface CatalogWorkspaceSummary {
+  workspaceId: string;
+  imageCount: number;
+  totalFileSizeBytes: number;
+  knownFileSizeCount: number;
+  libraryIds: string[];
+  firstCreatedAt: string | null;
+  latestCreatedAt: string | null;
+  sampleFilePath: string | null;
+  lastImage: CatalogImageSummary | null;
+}
+
 export interface CatalogCommandFilter {
   ids?: string[];
   workspaceId?: string | null;

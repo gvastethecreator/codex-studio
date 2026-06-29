@@ -26,7 +26,7 @@ export interface StudioGridSurfaceProps {
   activeModalImageId: string | null;
   handleSelectAll: (images: GeneratedImage[]) => void;
   handleDeselectAll: () => void;
-  handleDeleteSelected: () => void;
+  handleDeleteSelected: (imageIds?: string[]) => void;
   handleClearWorkspace: (workspaceId: string) => void;
   chrome: {
     isModalOpen: boolean;
@@ -80,22 +80,39 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
     [handleGenerate],
   );
 
-  const handleGridSelectAll = useCallback(() => {
-    handleSelectAll(allImages);
-  }, [allImages, handleSelectAll]);
+  const handleGridSelectAll = useCallback(
+    (visibleImages: GeneratedImageWithConfig[]) => {
+      handleSelectAll(visibleImages);
+    },
+    [handleSelectAll],
+  );
 
-  const handleGridDownloadSelected = useCallback(() => {
-    const selectedImages = imagesWithConfig.filter((image) => selectedImageIds.includes(image.id));
-    if (selectedImages.length > 0) {
-      void downloadMultipleImagesAsZip(selectedImages, `assets-${Date.now()}.zip`);
-    }
-  }, [imagesWithConfig, selectedImageIds]);
+  const handleGridDownloadSelected = useCallback(
+    (visibleImages: GeneratedImageWithConfig[]) => {
+      const selectedImages = visibleImages.filter((image) => selectedImageIds.includes(image.id));
+      if (selectedImages.length > 0) {
+        void downloadMultipleImagesAsZip(selectedImages, `assets-${Date.now()}.zip`);
+      }
+    },
+    [selectedImageIds],
+  );
 
-  const handleGridDownloadAll = useCallback(() => {
-    if (imagesWithConfig.length > 0) {
-      void downloadMultipleImagesAsZip(imagesWithConfig, `assets-${Date.now()}.zip`);
+  const handleGridDownloadAll = useCallback((visibleImages: GeneratedImageWithConfig[]) => {
+    if (visibleImages.length > 0) {
+      void downloadMultipleImagesAsZip(visibleImages, `assets-${Date.now()}.zip`);
     }
-  }, [imagesWithConfig]);
+  }, []);
+
+  const handleGridDeleteSelected = useCallback(
+    (visibleImages: GeneratedImageWithConfig[]) => {
+      handleDeleteSelected(
+        visibleImages
+          .filter((image) => selectedImageIds.includes(image.id))
+          .map((image) => image.id),
+      );
+    },
+    [handleDeleteSelected, selectedImageIds],
+  );
 
   const handleGridClearWorkspace = useCallback(() => {
     handleClearWorkspace(activeWorkspaceId);
@@ -124,7 +141,7 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
             onDeselectAll={handleDeselectAll}
             onDownloadSelected={handleGridDownloadSelected}
             onDownloadAll={handleGridDownloadAll}
-            onDeleteSelected={handleDeleteSelected}
+            onDeleteSelected={handleGridDeleteSelected}
             onClearWorkspace={handleGridClearWorkspace}
             catalogTotal={catalog.total}
             hasMore={catalog.hasMore}

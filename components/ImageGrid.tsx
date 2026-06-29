@@ -14,6 +14,7 @@ import {
   IconHistory as History,
   IconHeart as Heart,
   IconPhotoOff as ImageOff,
+  IconPhoto as Photo,
   IconArrowsSort as ArrowUpDown,
   IconSquareCheck as CheckSquare,
   IconLoader2 as Loader2,
@@ -22,6 +23,22 @@ import {
 import ActionButton from './ui/ActionButton';
 import { downloadImage, generateSmartFilename } from '../utils/fileUtils';
 import Tooltip from './Tooltip';
+import {
+  shouldAlwaysShowCatalogCardActions,
+  shouldMountCatalogCardActions,
+  shouldShowCatalogCardQuickActions,
+} from '../lib/catalogCardActionSurface';
+import {
+  DEFAULT_THUMBNAIL_SIZE,
+  MAX_THUMBNAIL_SIZE,
+  MIN_THUMBNAIL_SIZE,
+  THUMBNAIL_SIZE_STEP,
+  filterImageGridImages,
+  resolveImageGridColumnCount,
+  resolveImageGridTemplateColumns,
+  sortImageGridImages,
+  type ImageGridSortOption,
+} from '../lib/imageGridPresentation';
 
 interface ImageItemProps {
   image: GeneratedImageWithConfig;
@@ -34,6 +51,7 @@ interface ImageItemProps {
   onDelete: (id: string) => void;
   onToggleFavorite: (id: string) => void;
   transitionName?: string;
+  alwaysShowActions?: boolean;
 }
 
 const ImageItem: React.FC<ImageItemProps> = React.memo(
@@ -48,14 +66,25 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     onDelete,
     onToggleFavorite,
     transitionName,
+    alwaysShowActions = false,
   }) => {
     const itemRef = useRef<HTMLDivElement>(null);
     const [copiedPrompt, setCopiedPrompt] = useState(false);
+    const [isActionSurfaceActive, setIsActionSurfaceActive] = useState(false);
     const timeoutRef = useRef<number | null>(null);
     const primaryImageSrc = image.thumbnail || image.src;
     const [failedSrc, setFailedSrc] = useState<string | null>(null);
     const imageSrc = primaryImageSrc;
     const imageLoadFailed = failedSrc === primaryImageSrc;
+    const shouldMountActions = shouldMountCatalogCardActions({
+      alwaysShowActions,
+      isActionSurfaceActive,
+      isSelected,
+    });
+    const shouldShowQuickActions = shouldShowCatalogCardQuickActions({
+      alwaysShowActions,
+      isActionSurfaceActive,
+    });
 
     React.useEffect(() => {
       const timeout = timeoutRef.current;
@@ -81,6 +110,18 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
       }
     };
 
+    const handleFocusCapture = () => {
+      setIsActionSurfaceActive(true);
+    };
+
+    const handleBlurCapture = (event: React.FocusEvent<HTMLDivElement>) => {
+      if (event.currentTarget.contains(event.relatedTarget)) {
+        return;
+      }
+
+      setIsActionSurfaceActive(false);
+    };
+
     const handleDownload = () => {
       const smartName = generateSmartFilename(
         image.config.prompt,
@@ -103,6 +144,10 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     return (
       <div
         ref={itemRef}
+        onMouseEnter={() => setIsActionSurfaceActive(true)}
+        onMouseLeave={() => setIsActionSurfaceActive(false)}
+        onFocusCapture={handleFocusCapture}
+        onBlurCapture={handleBlurCapture}
         className={`masonry-item mb-4 relative group rounded-xl overflow-hidden cursor-pointer transition-[opacity,transform,box-shadow] duration-700 ease-out-expo appearance-none border-none p-0 m-0 bg-transparent text-left
         ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black z-10' : 'shadow-lg'}
         animate-in fade-in-0 zoom-in-95
@@ -140,105 +185,113 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           ></div>
         </button>
 
-        <div className="absolute top-2 right-2 z-20 flex gap-2">
-          <Tooltip
-            content={image.isFavorite ? 'Remove Favorite' : 'Add Favorite'}
-            position="bottom"
-          >
-            <button
-              type="button"
-              aria-label={image.isFavorite ? 'Remove favorite' : 'Add favorite'}
-              aria-pressed={image.isFavorite}
-              onClick={(e) => {
-                e.stopPropagation();
-                onToggleFavorite(image.id);
-              }}
-              className={`flex size-10 items-center justify-center rounded-lg border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
-                      ${
-                        image.isFavorite
-                          ? 'bg-accent-500 border-accent-400 text-white scale-110'
-                          : 'bg-black/45 border-white/15 text-white/60 hover:border-white/30 hover:bg-black/60 hover:text-white group-hover:text-white/80'
-                      }`}
+        {shouldShowQuickActions && (
+          <div className="absolute top-2 right-2 z-20 flex gap-2">
+            <Tooltip
+              content={image.isFavorite ? 'Remove Favorite' : 'Add Favorite'}
+              position="bottom"
             >
-              <Heart size={14} fill={image.isFavorite ? 'currentColor' : 'none'} strokeWidth={3} />
-            </button>
-          </Tooltip>
-          <Tooltip content={isSelected ? 'Deselect' : 'Select'} position="bottom">
-            <button
-              type="button"
-              aria-label={isSelected ? 'Deselect image' : 'Select image'}
-              aria-pressed={isSelected}
-              onClick={handleSelectClick}
-              className={`flex size-10 items-center justify-center rounded-lg border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
-                      ${
-                        isSelected
-                          ? 'bg-accent-600 border-accent-400 text-white scale-110'
-                          : 'bg-black/45 border-white/15 text-white/60 hover:border-white/30 hover:bg-black/60 hover:text-white group-hover:text-white/80'
-                      }`}
-            >
-              <Check size={14} strokeWidth={3} />
-            </button>
-          </Tooltip>
-        </div>
+              <button
+                type="button"
+                aria-label={image.isFavorite ? 'Remove favorite' : 'Add favorite'}
+                aria-pressed={image.isFavorite}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onToggleFavorite(image.id);
+                }}
+                className={`flex size-10 items-center justify-center rounded-lg border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
+                        ${
+                          image.isFavorite
+                            ? 'bg-accent-500 border-accent-400 text-white scale-110'
+                            : 'bg-black/45 border-white/15 text-white/60 hover:border-white/30 hover:bg-black/60 hover:text-white group-hover:text-white/80'
+                        }`}
+              >
+                <Heart
+                  size={14}
+                  fill={image.isFavorite ? 'currentColor' : 'none'}
+                  strokeWidth={3}
+                />
+              </button>
+            </Tooltip>
+            <Tooltip content={isSelected ? 'Deselect' : 'Select'} position="bottom">
+              <button
+                type="button"
+                aria-label={isSelected ? 'Deselect image' : 'Select image'}
+                aria-pressed={isSelected}
+                onClick={handleSelectClick}
+                className={`flex size-10 items-center justify-center rounded-lg border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
+                        ${
+                          isSelected
+                            ? 'bg-accent-600 border-accent-400 text-white scale-110'
+                            : 'bg-black/45 border-white/15 text-white/60 hover:border-white/30 hover:bg-black/60 hover:text-white group-hover:text-white/80'
+                        }`}
+              >
+                <Check size={14} strokeWidth={3} />
+              </button>
+            </Tooltip>
+          </div>
+        )}
 
-        <div className="absolute bottom-2 left-2 right-2 z-20 flex translate-y-0 flex-col gap-1 opacity-100 transition-[opacity,transform] sm:bottom-3 sm:left-3 sm:right-3 sm:flex-row sm:items-center sm:justify-between sm:translate-y-2 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100 sm:group-focus-within:translate-y-0 sm:group-focus-within:opacity-100">
-          <div className="flex items-center gap-1.5 p-1 rounded-lg bg-black/60 backdrop-blur-md border border-white/10">
-            <ActionButton
-              onClick={(e) => {
-                e.stopPropagation();
-                onAddToContext(image);
-              }}
-              icon={<PlusCircle size={14} />}
-              label="Use"
-            />
-            <ActionButton
-              onClick={(e) => {
-                e.stopPropagation();
-                onLoadConfig(image.config);
-              }}
-              icon={<History size={14} />}
-              label="Recipe"
-            />
-            <ActionButton
-              onClick={(e) => {
-                e.stopPropagation();
-                onRegenerate(image.config);
-              }}
-              icon={<RefreshCw size={14} />}
-              label="Regen"
-            />
+        {shouldMountActions && (
+          <div className="absolute bottom-2 left-2 right-2 z-20 flex translate-y-0 flex-col gap-1 opacity-100 transition-[opacity,transform] sm:bottom-3 sm:left-3 sm:right-3 sm:flex-row sm:items-center sm:justify-between sm:translate-y-2 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100 sm:group-focus-within:translate-y-0 sm:group-focus-within:opacity-100">
+            <div className="flex items-center gap-1.5 p-1 rounded-lg bg-black/60 backdrop-blur-md border border-white/10">
+              <ActionButton
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onAddToContext(image);
+                }}
+                icon={<PlusCircle size={14} />}
+                label="Use"
+              />
+              <ActionButton
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onLoadConfig(image.config);
+                }}
+                icon={<History size={14} />}
+                label="Recipe"
+              />
+              <ActionButton
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onRegenerate(image.config);
+                }}
+                icon={<RefreshCw size={14} />}
+                label="Regen"
+              />
+            </div>
+            <div className="flex items-center gap-1.5 p-1 rounded-lg bg-black/60 backdrop-blur-md border border-white/10">
+              <ActionButton
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleDownload();
+                }}
+                icon={<Download size={14} />}
+                label="Save"
+              />
+              <ActionButton
+                onClick={handleCopyPrompt}
+                icon={
+                  copiedPrompt ? (
+                    <Check size={14} className="text-green-400" />
+                  ) : (
+                    <ClipboardList size={14} />
+                  )
+                }
+                label="Copy Prompt"
+              />
+              <ActionButton
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onDelete(image.id);
+                }}
+                icon={<Trash2 size={14} />}
+                label="Delete"
+                variant="danger"
+              />
+            </div>
           </div>
-          <div className="flex items-center gap-1.5 p-1 rounded-lg bg-black/60 backdrop-blur-md border border-white/10">
-            <ActionButton
-              onClick={(e) => {
-                e.stopPropagation();
-                handleDownload();
-              }}
-              icon={<Download size={14} />}
-              label="Save"
-            />
-            <ActionButton
-              onClick={handleCopyPrompt}
-              icon={
-                copiedPrompt ? (
-                  <Check size={14} className="text-green-400" />
-                ) : (
-                  <ClipboardList size={14} />
-                )
-              }
-              label="Copy Prompt"
-            />
-            <ActionButton
-              onClick={(e) => {
-                e.stopPropagation();
-                onDelete(image.id);
-              }}
-              icon={<Trash2 size={14} />}
-              label="Delete"
-              variant="danger"
-            />
-          </div>
-        </div>
+        )}
       </div>
     );
   },
@@ -290,11 +343,11 @@ export interface ImageGridProps {
   isGenerating: boolean;
   transitioningImageId: string | null;
   activeModalImageId?: string | null;
-  onSelectAll: () => void;
+  onSelectAll: (images: GeneratedImageWithConfig[]) => void;
   onDeselectAll: () => void;
-  onDownloadSelected: () => void;
-  onDownloadAll: () => void;
-  onDeleteSelected: () => void;
+  onDownloadSelected: (images: GeneratedImageWithConfig[]) => void;
+  onDownloadAll: (images: GeneratedImageWithConfig[]) => void;
+  onDeleteSelected: (images: GeneratedImageWithConfig[]) => void;
   onClearWorkspace: () => void;
   catalogTotal?: number;
   hasMore?: boolean;
@@ -318,17 +371,6 @@ function subscribeViewportWidth(onStoreChange: () => void) {
 function getViewportWidthSnapshot() {
   if (typeof window === 'undefined') return 1280;
   return window.innerWidth;
-}
-
-type SortOption = 'desc' | 'asc' | 'prompt' | 'ratio';
-
-function resolveColumnCount(width: number) {
-  if (width >= 1280) return 6;
-  if (width >= 1024) return 5;
-  if (width >= 768) return 4;
-  if (width >= 640) return 3;
-  if (width < 480) return 1;
-  return 2;
 }
 
 export const ImageGrid: React.FC<ImageGridProps> = React.memo(
@@ -358,40 +400,41 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     onRetryCatalog,
     generationPlaceholders = EMPTY_GENERATION_PLACEHOLDERS,
   }) => {
-    const [sortOrder, setSortOrder] = useState<SortOption>('desc');
+    const [sortOrder, setSortOrder] = useState<ImageGridSortOption>('desc');
     const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
+    const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+    const [thumbnailSize, setThumbnailSize] = useState(DEFAULT_THUMBNAIL_SIZE);
     const viewportWidth = useSyncExternalStore(
       subscribeViewportWidth,
       getViewportWidthSnapshot,
       () => 1280,
     );
+    const gridMeasureRef = useRef<HTMLDivElement>(null);
+    const [gridMeasuredWidth, setGridMeasuredWidth] = useState(0);
 
-    const imageCount = images.length;
-    const totalCount = catalogTotal ?? imageCount;
-    const isPartialCatalog = hasMore || totalCount > imageCount;
-    const selectedImageCount = selectedImageIds.length;
+    const sourceImageCount = images.length;
+    const favoriteCount = useMemo(
+      () => images.reduce((count, image) => count + (image.isFavorite ? 1 : 0), 0),
+      [images],
+    );
+    const visibleImages = useMemo(
+      () => filterImageGridImages(images, showFavoritesOnly),
+      [images, showFavoritesOnly],
+    );
+    const imageCount = visibleImages.length;
+    const alwaysShowCardActions = shouldAlwaysShowCatalogCardActions(viewportWidth);
+    const totalCount = catalogTotal ?? sourceImageCount;
+    const isPartialCatalog = hasMore || totalCount > sourceImageCount;
+    const visibleImageIds = useMemo(
+      () => new Set(visibleImages.map((image) => image.id)),
+      [visibleImages],
+    );
+    const selectedImageCount = selectedImageIds.filter((id) => visibleImageIds.has(id)).length;
     const isAllSelected = imageCount > 0 && selectedImageCount === imageCount;
 
     const sortedImages = useMemo(() => {
-      const imgs = [...images];
-      return imgs.sort((a, b) => {
-        if (a.isFavorite !== b.isFavorite) {
-          return a.isFavorite ? -1 : 1;
-        }
-        switch (sortOrder) {
-          case 'asc':
-            return a.createdAt - b.createdAt;
-          case 'desc':
-            return b.createdAt - a.createdAt;
-          case 'prompt':
-            return (a.config.prompt || '').localeCompare(b.config.prompt || '');
-          case 'ratio':
-            return a.config.aspectRatio.localeCompare(b.config.aspectRatio);
-          default:
-            return 0;
-        }
-      });
-    }, [images, sortOrder]);
+      return sortImageGridImages(visibleImages, sortOrder);
+    }, [visibleImages, sortOrder]);
 
     const gridItems = useMemo<GridItem[]>(
       () => [
@@ -404,10 +447,38 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
       [generationPlaceholders, sortedImages],
     );
 
+    React.useEffect(() => {
+      const element = gridMeasureRef.current;
+      if (!element) {
+        setGridMeasuredWidth(0);
+        return;
+      }
+
+      const updateGridWidth = () => {
+        setGridMeasuredWidth(element.clientWidth);
+      };
+
+      updateGridWidth();
+
+      if (typeof ResizeObserver === 'undefined') {
+        window.addEventListener('resize', updateGridWidth);
+        return () => window.removeEventListener('resize', updateGridWidth);
+      }
+
+      const resizeObserver = new ResizeObserver(updateGridWidth);
+      resizeObserver.observe(element);
+      return () => resizeObserver.disconnect();
+    }, [gridItems.length, viewportWidth]);
+
     const columnCount = useMemo(() => {
-      const resolved = resolveColumnCount(viewportWidth);
-      return Math.max(1, Math.min(resolved, Math.max(1, gridItems.length)));
-    }, [viewportWidth, gridItems.length]);
+      const measuredGridWidth = gridMeasuredWidth || viewportWidth;
+      return resolveImageGridColumnCount({
+        viewportWidth: measuredGridWidth,
+        thumbnailSize,
+        itemCount: gridItems.length,
+        horizontalPadding: gridMeasuredWidth > 0 ? 0 : undefined,
+      });
+    }, [gridMeasuredWidth, viewportWidth, thumbnailSize, gridItems.length]);
 
     const columnBuckets = useMemo(() => {
       const safeColumnCount = Math.max(1, columnCount);
@@ -420,7 +491,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
       return buckets;
     }, [gridItems, columnCount]);
 
-    if (images.length === 0 && generationPlaceholders.length === 0) {
+    if (sourceImageCount === 0 && generationPlaceholders.length === 0) {
       return (
         <div className="flex h-full w-full items-center justify-center px-6 text-center">
           {catalogError ? (
@@ -445,11 +516,11 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     return (
       <div className="w-full h-full relative">
         <div className="absolute left-3 right-3 top-3 z-30 flex items-center justify-end gap-2 sm:left-auto sm:right-8 sm:top-4">
-          {imageCount > 0 && (
+          {sourceImageCount > 0 && (
             <div className="flex items-center gap-1 rounded-xl border border-white/10 bg-zinc-900/80 p-1 shadow-2xl backdrop-blur-md">
               {imageCount > 1 && (
                 <ActionButton
-                  onClick={isAllSelected ? onDeselectAll : onSelectAll}
+                  onClick={isAllSelected ? onDeselectAll : () => onSelectAll(sortedImages)}
                   icon={
                     isAllSelected ? (
                       <CheckSquare size={16} className="text-accent-400" />
@@ -462,10 +533,25 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                   tooltipPosition="bottom"
                 />
               )}
+              <ActionButton
+                onClick={() => setShowFavoritesOnly((current) => !current)}
+                icon={
+                  <Heart
+                    size={16}
+                    fill={showFavoritesOnly ? 'currentColor' : 'none'}
+                    strokeWidth={2.5}
+                  />
+                }
+                label={
+                  showFavoritesOnly ? `All (${sourceImageCount})` : `Favorites (${favoriteCount})`
+                }
+                isActive={showFavoritesOnly}
+                tooltipPosition="bottom"
+              />
               {selectedImageCount === 0 && imageCount > 0 && !isPartialCatalog && (
                 <>
                   <ActionButton
-                    onClick={onDownloadAll}
+                    onClick={() => onDownloadAll(sortedImages)}
                     icon={<Download size={16} />}
                     label="Download All"
                     tooltipPosition="bottom"
@@ -482,7 +568,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
               {selectedImageCount > 0 && (
                 <>
                   <ActionButton
-                    onClick={onDownloadSelected}
+                    onClick={() => onDownloadSelected(sortedImages)}
                     icon={
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -504,7 +590,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                     tooltipPosition="bottom"
                   />
                   <ActionButton
-                    onClick={onDeleteSelected}
+                    onClick={() => onDeleteSelected(sortedImages)}
                     icon={<Trash2 size={16} />}
                     label="Purge Selected"
                     variant="danger"
@@ -514,6 +600,21 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
               )}
             </div>
           )}
+          <Tooltip content="Thumbnail size" position="bottom">
+            <label className="flex h-10 items-center gap-2 rounded-xl border border-white/10 bg-zinc-900/80 px-2 text-zinc-400 shadow-2xl backdrop-blur-md">
+              <Photo size={15} />
+              <input
+                type="range"
+                aria-label="Thumbnail size"
+                min={MIN_THUMBNAIL_SIZE}
+                max={MAX_THUMBNAIL_SIZE}
+                step={THUMBNAIL_SIZE_STEP}
+                value={thumbnailSize}
+                onChange={(event) => setThumbnailSize(Number(event.target.value))}
+                className="h-1 w-24 cursor-pointer accent-accent-500 sm:w-28"
+              />
+            </label>
+          </Tooltip>
           <div className="relative">
             <Tooltip content="Sort Images" position="bottom">
               <button
@@ -573,9 +674,20 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
           </div>
         </div>
         <div className="custom-scrollbar h-full w-full overflow-y-auto px-3 pt-16 pb-8 sm:px-8">
+          {showFavoritesOnly && imageCount === 0 && generationPlaceholders.length === 0 && (
+            <div className="flex min-h-[45vh] items-center justify-center text-center">
+              <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-xs font-semibold text-zinc-500">
+                No favorite images in this workspace.
+              </div>
+            </div>
+          )}
           <div
+            ref={gridMeasureRef}
             className="grid gap-4"
-            style={{ gridTemplateColumns: `repeat(${Math.max(1, columnCount)}, minmax(0, 1fr))` }}
+            style={{
+              gridTemplateColumns: resolveImageGridTemplateColumns(columnCount, thumbnailSize),
+              justifyContent: columnCount > 1 ? 'space-between' : 'stretch',
+            }}
           >
             {columnBuckets.map((bucket, columnIndex) => {
               const firstItem = bucket[0];
@@ -612,6 +724,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                           transitionName={
                             transitioningImageId === item.image.id ? 'master-canvas' : undefined
                           }
+                          alwaysShowActions={alwaysShowCardActions}
                         />
                       </div>
                     ),
@@ -620,10 +733,10 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
               );
             })}
           </div>
-          {(hasMore || isCatalogLoading || catalogError || totalCount > imageCount) && (
+          {(hasMore || isCatalogLoading || catalogError || totalCount > sourceImageCount) && (
             <div className="flex flex-col items-center gap-3 py-6 text-center">
               <div className="text-[10px] font-black tabular-nums uppercase tracking-widest text-zinc-500">
-                {imageCount} / {totalCount} loaded
+                {sourceImageCount} / {totalCount} loaded
               </div>
               {catalogError && <div className="max-w-lg text-xs text-rose-300">{catalogError}</div>}
               {hasMore && onLoadMore && (

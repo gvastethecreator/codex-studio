@@ -5,7 +5,7 @@ import { getDb } from './db';
 import { getDefaultLibrary, getLibrary } from './libraries';
 import { resolveLibraryPathFromRoot, toPublicAssetUrl } from './library';
 import { buildCatalogWorkspaceClause } from './catalogWorkspaceClause';
-import type { CatalogCommandFilter } from '../../../packages/shared/src';
+import type { CatalogCommandFilter, CatalogWorkspaceSummary } from '../../../packages/shared/src';
 
 export interface CatalogImage {
   id: string;
@@ -246,6 +246,89 @@ export function queryCatalog(filters: Parameters<typeof queryCatalogInternal>[0]
 
 export function queryCatalogDetails(filters: Parameters<typeof queryCatalogInternal>[0] = {}) {
   return queryCatalogInternal(filters, { includeGenerationConfig: true });
+}
+
+export function queryCatalogWorkspaceSummaries(
+  filters: { isDeleted?: boolean; libraryId?: string | null } = {},
+): CatalogWorkspaceSummary[] {
+  const clauses = ['is_deleted = ?'];
+  const params: any[] = [filters.isDeleted ? 1 : 0];
+
+  if (filters.libraryId) {
+    clauses.push('library_id = ?');
+    params.push(filters.libraryId);
+  }
+
+  const where = `WHERE ${clauses.join(' AND ')}`;
+  const rows = getDb()
+    .query(
+      `
+        WITH filtered AS (
+          SELECT
+            ${CATALOG_IMAGE_SUMMARY_COLUMNS},
+            COALESCE(workspace_id, 'default') AS normalized_workspace_id
+          FROM catalog_images
+          ${where}
+        ),
+        ranked AS (
+          SELECT
+            *,
+            ROW_NUMBER() OVER (
+              PARTITION BY normalized_workspace_id
+              ORDER BY created_at DESC, id DESC
+            ) AS workspace_rank
+          FROM filtered
+        ),
+        summaries AS (
+          SELECT
+            normalized_workspace_id,
+            COUNT(*) AS image_count,
+            COALESCE(SUM(file_size_bytes), 0) AS total_file_size_bytes,
+            COUNT(file_size_bytes) AS known_file_size_count,
+            GROUP_CONCAT(DISTINCT library_id) AS library_ids,
+            MIN(created_at) AS first_created_at,
+            MAX(created_at) AS latest_created_at
+          FROM filtered
+          GROUP BY normalized_workspace_id
+        )
+        SELECT
+          summaries.normalized_workspace_id,
+          summaries.image_count,
+          summaries.total_file_size_bytes,
+          summaries.known_file_size_count,
+          summaries.library_ids,
+          summaries.first_created_at,
+          summaries.latest_created_at,
+          ranked.${CATALOG_IMAGE_SUMMARY_COLUMNS.replaceAll(', ', ', ranked.')}
+        FROM summaries
+        LEFT JOIN ranked
+          ON ranked.normalized_workspace_id = summaries.normalized_workspace_id
+         AND ranked.workspace_rank = 1
+        ORDER BY summaries.latest_created_at DESC
+      `,
+    )
+    .all(...params) as any[];
+
+  return rows.map((row) => {
+    const lastImage: CatalogWorkspaceSummary['lastImage'] = row.id
+      ? { ...mapCatalogImage(row, { includeGenerationConfig: false }), generationConfig: null }
+      : null;
+
+    return {
+      workspaceId: row.normalized_workspace_id,
+      imageCount: row.image_count ?? 0,
+      totalFileSizeBytes: row.total_file_size_bytes ?? 0,
+      knownFileSizeCount: row.known_file_size_count ?? 0,
+      libraryIds:
+        typeof row.library_ids === 'string' && row.library_ids.length > 0
+          ? row.library_ids.split(',').filter(Boolean)
+          : [],
+      firstCreatedAt: row.first_created_at ?? null,
+      latestCreatedAt: row.latest_created_at ?? null,
+      sampleFilePath: lastImage?.filePath ?? null,
+      lastImage,
+    };
+  });
 }
 
 export function listCatalogImageIds(filters: CatalogCommandFilter = {}) {

@@ -1,6 +1,7 @@
 import type {
   CatalogPage,
   CatalogImage,
+  CatalogWorkspaceSummary,
   CatalogBatchCommandResult,
   CatalogCommandFilter,
   CodexAccountStatusResponse,
@@ -342,6 +343,17 @@ export function buildCatalogQuery(params: CatalogQueryParams = {}) {
  */
 export async function queryCatalog(params: CatalogQueryParams = {}) {
   return request<CatalogPage>(`/api/catalog${buildCatalogQuery(params)}`);
+}
+
+export async function queryCatalogWorkspaceSummaries(
+  params: Pick<CatalogQueryParams, 'deleted'> = {},
+) {
+  const search = new URLSearchParams();
+  if (params.deleted !== undefined) search.set('deleted', String(params.deleted));
+
+  return request<CatalogWorkspaceSummary[]>(
+    `/api/catalog/workspaces${search.size > 0 ? `?${search.toString()}` : ''}`,
+  );
 }
 
 export async function updateCatalogImage(

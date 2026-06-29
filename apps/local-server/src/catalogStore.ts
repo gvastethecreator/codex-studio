@@ -1,4 +1,9 @@
-import type { CatalogCommandFilter, CatalogImage, CatalogPage } from '../../../packages/shared/src';
+import type {
+  CatalogCommandFilter,
+  CatalogImage,
+  CatalogPage,
+  CatalogWorkspaceSummary,
+} from '../../../packages/shared/src';
 
 export interface RegisterCatalogImageInput {
   libraryId?: string | null;
@@ -41,6 +46,10 @@ export type CatalogUpdatePatch = {
 export interface StudioCatalogStore {
   getCatalogImage(id: string): CatalogImage | null;
   queryCatalog(filters?: QueryCatalogFilters): CatalogPage;
+  queryWorkspaceSummaries(filters?: {
+    libraryId?: string | null;
+    isDeleted?: boolean;
+  }): CatalogWorkspaceSummary[];
   listCatalogImageIds(filters?: CatalogCommandFilter): string[];
   registerCatalogImage(input: RegisterCatalogImageInput): CatalogImage;
   updateCatalogImage(id: string, patch: CatalogUpdatePatch): CatalogImage | null;
@@ -55,6 +64,7 @@ export async function createDefaultCatalogStore(): Promise<StudioCatalogStore> {
     listCatalogImageIds,
     purgeCatalogImage,
     queryCatalog,
+    queryCatalogWorkspaceSummaries,
     registerCatalogImage,
     restoreCatalogImage,
     softDeleteCatalogImage,
@@ -65,6 +75,7 @@ export async function createDefaultCatalogStore(): Promise<StudioCatalogStore> {
     getCatalogImage,
     listCatalogImageIds,
     queryCatalog,
+    queryWorkspaceSummaries: queryCatalogWorkspaceSummaries,
     registerCatalogImage,
     updateCatalogImage,
     softDeleteCatalogImage,

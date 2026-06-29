@@ -82,6 +82,16 @@ export function createCatalogRoutes({
     );
   });
 
+  routes.get('/workspaces', (c) => {
+    const searchParams = new URL(c.req.url).searchParams;
+    return c.json(
+      catalogStore.queryWorkspaceSummaries({
+        libraryId: searchParams.get('library_id'),
+        isDeleted: searchParams.get('deleted') === 'true',
+      }),
+    );
+  });
+
   routes.post('/commands/archive', async (c) => {
     return c.json(catalogCommands.archiveByFilter(await readCatalogCommandFilter(c.req)));
   });
@@ -182,6 +192,75 @@ export function createMemoryCatalogStore(
         total: images.length,
         hasMore: false,
       };
+    },
+    queryWorkspaceSummaries(filters = {}) {
+      const summaries = new Map<
+        string,
+        {
+          images: CatalogImage[];
+          imageCount: number;
+          totalFileSizeBytes: number;
+          knownFileSizeCount: number;
+          libraryIds: Set<string>;
+        }
+      >();
+
+      for (const image of byId.values()) {
+        if (image.isDeleted !== Boolean(filters.isDeleted)) continue;
+        if (filters.libraryId && image.libraryId !== filters.libraryId) continue;
+
+        const workspaceId = image.workspaceId ?? 'default';
+        const summary =
+          summaries.get(workspaceId) ??
+          ({
+            images: [],
+            imageCount: 0,
+            totalFileSizeBytes: 0,
+            knownFileSizeCount: 0,
+            libraryIds: new Set<string>(),
+          } satisfies {
+            images: CatalogImage[];
+            imageCount: number;
+            totalFileSizeBytes: number;
+            knownFileSizeCount: number;
+            libraryIds: Set<string>;
+          });
+
+        summary.images.push(image);
+        summary.imageCount += 1;
+        summary.libraryIds.add(image.libraryId);
+        if (image.fileSizeBytes !== null) {
+          summary.totalFileSizeBytes += image.fileSizeBytes;
+          summary.knownFileSizeCount += 1;
+        }
+        summaries.set(workspaceId, summary);
+      }
+
+      return [...summaries.entries()]
+        .map(([workspaceId, summary]) => {
+          const lastImage =
+            [...summary.images].sort((left, right) =>
+              right.createdAt.localeCompare(left.createdAt),
+            )[0] ?? null;
+
+          return {
+            workspaceId,
+            imageCount: summary.imageCount,
+            totalFileSizeBytes: summary.totalFileSizeBytes,
+            knownFileSizeCount: summary.knownFileSizeCount,
+            libraryIds: [...summary.libraryIds],
+            firstCreatedAt:
+              [...summary.images].sort((left, right) =>
+                left.createdAt.localeCompare(right.createdAt),
+              )[0]?.createdAt ?? null,
+            latestCreatedAt: lastImage?.createdAt ?? null,
+            sampleFilePath: lastImage?.filePath ?? null,
+            lastImage: lastImage ? { ...lastImage, generationConfig: null } : null,
+          };
+        })
+        .sort((left, right) =>
+          (right.latestCreatedAt ?? '').localeCompare(left.latestCreatedAt ?? ''),
+        );
     },
     registerCatalogImage(input) {
       const image = {

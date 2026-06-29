@@ -121,6 +121,74 @@ describe('catalog routes', () => {
     expect(missing.status).toBe(404);
   });
 
+  it('returns exact workspace summaries independent of catalog page budgets', async () => {
+    const routes = createRoutes(
+      createMemoryCatalogStore([
+        catalogImage({
+          id: 'default-old',
+          workspaceId: null,
+          fileSizeBytes: 1024,
+          createdAt: '2026-05-24T00:00:00.000Z',
+        }),
+        catalogImage({
+          id: 'default-new',
+          workspaceId: 'default',
+          filePath: 'D:/library/outputs/default-new.png',
+          thumbnailUrl: '/thumbs/default-new.webp',
+          fileSizeBytes: 2048,
+          createdAt: '2026-05-25T00:00:00.000Z',
+        }),
+        catalogImage({
+          id: 'concept-a',
+          workspaceId: 'concepts',
+          fileSizeBytes: null,
+          createdAt: '2026-05-23T00:00:00.000Z',
+        }),
+        catalogImage({
+          id: 'archived-default',
+          workspaceId: 'default',
+          isDeleted: true,
+          fileSizeBytes: 99_999,
+          createdAt: '2026-05-26T00:00:00.000Z',
+        }),
+      ]),
+    );
+
+    const response = await routes.request('/workspaces?deleted=false');
+
+    expect(response.status).toBe(200);
+    await expect(response.json()).resolves.toEqual([
+      {
+        workspaceId: 'default',
+        imageCount: 2,
+        totalFileSizeBytes: 3072,
+        knownFileSizeCount: 2,
+        libraryIds: ['library-1'],
+        firstCreatedAt: '2026-05-24T00:00:00.000Z',
+        latestCreatedAt: '2026-05-25T00:00:00.000Z',
+        sampleFilePath: 'D:/library/outputs/default-new.png',
+        lastImage: expect.objectContaining({
+          id: 'default-new',
+          generationConfig: null,
+        }),
+      },
+      {
+        workspaceId: 'concepts',
+        imageCount: 1,
+        totalFileSizeBytes: 0,
+        knownFileSizeCount: 0,
+        libraryIds: ['library-1'],
+        firstCreatedAt: '2026-05-23T00:00:00.000Z',
+        latestCreatedAt: '2026-05-23T00:00:00.000Z',
+        sampleFilePath: 'D:/library/outputs/image-1.png',
+        lastImage: expect.objectContaining({
+          id: 'concept-a',
+          generationConfig: null,
+        }),
+      },
+    ]);
+  });
+
   it('archives Catalog Entries by full-scope command filter', async () => {
     const routes = createRoutes(
       createMemoryCatalogStore([

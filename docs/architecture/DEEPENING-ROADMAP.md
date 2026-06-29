@@ -6,6 +6,7 @@ Current findings index: `docs/architecture/architecture-review-2026-06-21-runtim
 Additional second-pass findings: `docs/architecture/architecture-review-2026-06-21-second-pass-runtime-ux.md`.
 Provider/sync/operations follow-up findings: `docs/architecture/architecture-review-2026-06-28-provider-sync-operations-followup.md`.
 Improve/debt audit findings: `docs/architecture/architecture-review-2026-06-28-improve-debt-audit.md`.
+Performance/fluidity findings: `docs/architecture/architecture-review-2026-06-29-performance-fluidity.md`.
 
 ## Conceptos
 
@@ -121,6 +122,22 @@ Execution order for this batch:
 - **Exit criteria:** focused boundary tests pass; `bun run test`, `bun run check`, and `bun run build` pass or blockers are recorded.
 - **Exit proof:** focused boundary tests passed (`bun run test -- apps/local-server/src/publicLibraryAssetPolicy.test.ts apps/local-server/src/libraryRoutes.test.ts apps/local-server/src/referenceManager.test.ts apps/local-server/src/persistentJobIntake.test.ts apps/local-server/src/jobRoutes.test.ts packages/shared/src/generationContracts.test.ts`, 6 files / 29 tests); `bun run test` passed (159 files / 551 tests); `bun run check` passed; `bun run build` passed. No visual verification was required because this batch changed backend contracts and docs only.
 - **Docs:** keep this tracker, ADR-0033, and plan 008 aligned.
+
+### Accepted batch: performance and fluidity - 2026-06-29
+
+- **Status:** First slice implemented; remaining candidates queued.
+- **Findings:** `docs/architecture/architecture-review-2026-06-29-performance-fluidity.md`
+- **ADR:** `docs/adr/0034-catalog-fluidity-budget.md`
+- **Files:** `lib/catalogRenderBudget.ts`, `lib/catalogCardActionSurface.ts`, `hooks/useCatalog.ts`, `components/ImageGrid.tsx`.
+- **Depends on:** ADR-0028 and ADR-0031.
+- **Unblocks:** lighter Home initial render, catalog-grid DOM budgets, card command demand mounting, and future route-preload / animation-clock work.
+- **Concrete steps:**
+  - implemented: active Catalog Page render budget is 48 entries; workspace summary and trash keep separate budgets;
+  - implemented: desktop secondary card actions mount only on hover, focus, or selection;
+  - implemented: mobile keeps card actions mounted for touch access;
+  - pending: Route Preload Budget, Studio Animation Clock, Style Result Index, Catalog Grid Render Plan, Runtime Event Reducer, Settings Surface Session.
+- **Exit criteria:** focused budget tests pass; `bun run test`, `bun run check`, and `bun run build` pass or blockers are recorded; Playwright visual/perf smoke verifies desktop hover/focus and mobile action access.
+- **Exit proof:** `bun run test -- lib/catalogRenderBudget.test.ts lib/catalogCardActionSurface.test.ts lib/studioCatalogView.test.ts hooks/useStudioGallery.test.ts scripts/catalog-first-source-audit.test.ts` passed (5 files / 11 tests); `bun run test` passed (161 files / 555 tests); `bun run check` passed; `bun run build` passed, including `ui:chunks:verify`; Playwright visual/perf smoke on `http://localhost:17225/` passed with `visual-clean-ok`, desktop 48 cards / 2007 nodes / 252 buttons, hover actions 6 -> 12 with stable card rect, mobile 48 cards with touch actions preserved. Screenshots: `output/playwright/perf-fluidity-desktop-idle.png`, `output/playwright/perf-fluidity-desktop-hover.png`, `output/playwright/perf-fluidity-mobile-grid.png`. Perf JSON: `output/perf/perf-fluidity-catalog-2026-06-29.json`.
 
 ### Accepted batch: provider sync and operations follow-up - 2026-06-28
 

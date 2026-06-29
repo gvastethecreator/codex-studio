@@ -154,6 +154,14 @@ _Avoid_: full job payload in hot UI reads, queue-only job model, debug-only job 
 Frontend-visible result from an Image Catalog command, including counts, skipped items, warnings, and refresh scope.
 _Avoid_: ignored mutation response, toast-only side effect, blind catalog refresh
 
+**Catalog Render Budget**:
+Frontend budget that caps how many Catalog Entries each hot catalog surface initially reads or renders.
+_Avoid_: magic page size, gallery default limit, arbitrary load cap
+
+**Catalog Card Action Surface**:
+Frontend surface that decides when secondary Image Catalog card commands mount, preserving touch access and desktop hover/focus polish without mounting every command for every idle card.
+_Avoid_: hidden per-card toolbar, always-mounted action row, tooltip farm
+
 **Local Generation Run**:
 Frontend seam that creates Persistent Jobs, waits for completion, queries catalog results, and returns one Visual Batch.
 _Avoid_: inline job choreography, direct editor pipeline
@@ -214,6 +222,8 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - **Local Studio Sync** imports **Catalog Entries** into **Visual Batches** for the current grid.
 - A **Shell Activity Job** is the shell-facing model for hot job reads; full **Persistent Job** detail is loaded on demand.
 - A **Catalog Operation Result** lets the shell show scoped command outcomes without treating every mutation as a blind full refresh.
+- A **Catalog Render Budget** keeps hot **Catalog Page** reads bounded per surface.
+- A **Catalog Card Action Surface** keeps secondary card commands available by intent instead of permanently mounted for every **Catalog Entry** card.
 - **Studio Shell** materializes **Studio Runtime**, navigation state, overlays, and **Visual Batches** into the renderable app layout.
 - **Studio Readiness** depends on **Studio Runtime**, **Studio Library**, **App-Server Lifecycle**, and the **Local Codex Session**.
 - The **Command Center** exposes global status and commands, while deeper configuration and diagnostics open from it.

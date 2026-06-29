@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vite-plus/test';
-import type { CatalogImage } from '../packages/shared/src';
+import type { CatalogImage, CatalogWorkspaceSummary } from '../packages/shared/src';
 import type { Workspace } from '../types';
 import { createCatalogView } from '../lib/studioCatalogView';
 import { buildWorkspacesWithThumbs, mergeWorkspacesWithCatalogEntries } from './useWorkspaceStrip';
@@ -63,6 +63,35 @@ describe('buildWorkspacesWithThumbs', () => {
     ]);
   });
 
+  it('derives missing workspaces from workspace summaries when catalog pages are partial', () => {
+    const merged = mergeWorkspacesWithCatalogEntries(
+      [{ id: 'default', name: 'Default', createdAt: 1 }],
+      undefined,
+      [
+        {
+          workspaceId: '604b5e44-9e74-47b6-92bd-5ae8b446676b',
+          imageCount: 24,
+          totalFileSizeBytes: 1024,
+          knownFileSizeCount: 1,
+          libraryIds: ['library-1'],
+          firstCreatedAt: '2026-05-25T08:00:00.000Z',
+          latestCreatedAt: '2026-05-26T08:00:00.000Z',
+          sampleFilePath: 'D:/library/assets/summary.png',
+          lastImage: null,
+        },
+      ],
+    );
+
+    expect(merged).toEqual([
+      { id: 'default', name: 'Default', createdAt: 1 },
+      {
+        id: '604b5e44-9e74-47b6-92bd-5ae8b446676b',
+        name: 'Imported (676b)',
+        createdAt: Date.parse('2026-05-25T08:00:00.000Z'),
+      },
+    ]);
+  });
+
   it('builds workspace thumbs from Catalog Entries', () => {
     const catalogView = createCatalogView([
       catalogImage({
@@ -99,6 +128,57 @@ describe('buildWorkspacesWithThumbs', () => {
       },
     ]);
     expect(result[0].lastImage).toContain('/thumbs/new-default.webp');
+  });
+
+  it('uses workspace summaries for exact counts and storage beyond the loaded page', () => {
+    const summaryLastImage = {
+      ...catalogImage({
+        id: 'summary-default',
+        workspaceId: 'default',
+        thumbnailUrl: '/thumbs/summary-default.webp',
+        filePath: 'D:/studio/library/assets/summary-default.png',
+        fileSizeBytes: 4096,
+        createdAt: '2026-05-29T00:00:00.000Z',
+      }),
+      generationConfig: null as null,
+    };
+    const summaries: CatalogWorkspaceSummary[] = [
+      {
+        workspaceId: 'default',
+        imageCount: 65,
+        totalFileSizeBytes: 5_242_880,
+        knownFileSizeCount: 64,
+        libraryIds: ['library-1'],
+        firstCreatedAt: '2026-05-20T00:00:00.000Z',
+        latestCreatedAt: '2026-05-29T00:00:00.000Z',
+        sampleFilePath: 'D:/studio/library/assets/summary-default.png',
+        lastImage: summaryLastImage,
+      },
+    ];
+
+    const result = buildWorkspacesWithThumbs({
+      workspaces,
+      catalogView: createCatalogView([
+        catalogImage({
+          id: 'loaded-page-default',
+          workspaceId: 'default',
+          thumbnailUrl: '/thumbs/loaded-page-default.webp',
+        }),
+      ]),
+      workspaceSummaries: summaries,
+    });
+
+    expect(result[0]).toMatchObject({
+      id: 'default',
+      imageCount: 65,
+      totalFileSizeBytes: 5_242_880,
+      knownFileSizeCount: 64,
+      libraryIds: ['library-1'],
+      locationPath: 'D:/studio/library/assets/summary-default.png',
+      firstImageCreatedAt: '2026-05-20T00:00:00.000Z',
+      latestImageCreatedAt: '2026-05-29T00:00:00.000Z',
+    });
+    expect(result[0].lastImage).toContain('/thumbs/summary-default.webp');
   });
 
   it('treats legacy null workspace entries as part of the default workspace', () => {

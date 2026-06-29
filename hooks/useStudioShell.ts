@@ -107,6 +107,7 @@ export function useStudioShell(): StudioShellController {
   const {
     activeCatalog,
     workspaceCatalog,
+    workspaceSummaries,
     trashCatalog,
     catalogVisualGroupCount,
     queueResults,
@@ -288,6 +289,7 @@ export function useStudioShell(): StudioShellController {
     useWorkspaceStrip({
       workspaces,
       catalogView: workspaceCatalog.view,
+      workspaceSummaries,
       createWorkspace,
       deleteWorkspace,
       renameWorkspace,

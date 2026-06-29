@@ -7,6 +7,8 @@ Este documento registra deuda técnica activa mientras Codex Studio se prepara p
 Referencia de arquitectura aceptada:
 
 - `docs/architecture/architecture-review-2026-06-28-improve-debt-audit.md` (current improve/debt audit)
+- `docs/architecture/architecture-review-2026-06-29-performance-fluidity.md`
+- `docs/adr/0034-catalog-fluidity-budget.md`
 - `docs/adr/0033-public-library-and-job-intake-boundaries.md`
 - `docs/architecture/architecture-review-2026-06-21-second-pass-runtime-ux.md` (candidate follow-up findings)
 - `docs/architecture/architecture-review-2026-06-21-runtime-storage-ux.md`
@@ -34,6 +36,7 @@ Prioridad inmediata del lote runtime-storage-UX 2026-06-21:
 
 Recent runtime-storage progress:
 
+- Done 2026-06-29: first performance/fluidity slice added `Catalog Render Budget` and `Catalog Card Action Surface`; active Home catalog now renders a 48-entry page, desktop secondary card actions mount on hover/focus/selection, and mobile keeps card actions available for touch.
 - Done 2026-06-28: `plans/008-public-library-job-intake-reference-boundaries.md` closed `/library/*` public-asset allowlisting, malformed `Persistent Job Intake` validation, and reference count/byte budgets.
 - `JobSummary` is now the default hot read shape for `/api/jobs`.
 - Catalog Page reads no longer select or parse full `generation_config` by default.
@@ -150,6 +153,8 @@ Before a public release candidate, review tracked files and history for local pr
 - Heavy recipe surfaces should remain demand-loaded.
 - `react-scan`, Three.js, style catalog data, ZIP export, and YAML parsing should not enter the startup bundle eagerly.
 - `ui:source:verify`, `ui:chunks:verify`, and `styles:render:verify` should remain release gates if they continue to catch real regressions.
+- Catalog fluidity now has an explicit budget: hot Home reads should not silently return to 200 rendered cards, and idle desktop cards should not mount every secondary command/tooltip.
+- Confirmed next performance debt: recipe preloading should be intent/budget driven, high-frequency generation animation timers should move out of broad React render paths, and large-library scrolling needs a real Catalog Grid Render Plan rather than only `content-visibility`.
 
 ## Brechas de documentación
 

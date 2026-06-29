@@ -64,19 +64,22 @@ export const useImageManager = ({
     [allImages, modalImage, deleteImage, handleCloseModal, log],
   );
 
-  const handleDeleteSelected = useCallback(() => {
-    const performDelete = () => {
-      if (selectedImageIds.length > 0) {
-        deleteImages(selectedImageIds);
-        log(`Moved ${selectedImageIds.length} selected images to archives.`);
-        if (modalImage && selectedImageIds.includes(modalImage.id)) {
-          handleCloseModal();
+  const handleDeleteSelected = useCallback(
+    (imageIds = selectedImageIds) => {
+      const performDelete = () => {
+        if (imageIds.length > 0) {
+          deleteImages(imageIds);
+          log(`Moved ${imageIds.length} selected images to archives.`);
+          if (modalImage && imageIds.includes(modalImage.id)) {
+            handleCloseModal();
+          }
+          setSelectedImageIds((prev) => prev.filter((id) => !imageIds.includes(id)));
         }
-        setSelectedImageIds([]);
-      }
-    };
-    startViewTransition(performDelete);
-  }, [selectedImageIds, deleteImages, log, modalImage, handleCloseModal]);
+      };
+      startViewTransition(performDelete);
+    },
+    [selectedImageIds, deleteImages, log, modalImage, handleCloseModal],
+  );
 
   const handleSelectAll = useCallback(
     (images: GeneratedImage[]) => {
