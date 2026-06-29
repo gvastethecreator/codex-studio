@@ -11,6 +11,15 @@ Este archivo describe flujos de trabajo locales del repo para personas y agentes
 5. Mantener Provider Secrets fuera de SQLite, catalogo, logs, capturas, docs y archivos committeados.
 6. Cierre: `bun run test`, `bun run check`, `bun run build`. Para cambios de onboarding/frontend, agregar verificacion visual.
 
+## Actualizar dependencias y CI basico
+
+1. Tratar `package.json`, `bun.lock`, `.github/workflows/ci.yml` y `docs/TOOLING.md` como el baseline auditable.
+2. Resolver versiones actuales antes de editar: `npm view <package> version` para paquetes npm y tags oficiales de GitHub para actions.
+3. Mantener `packageManager`, CI y runtime local en el mismo baseline de Bun.
+4. Si cambian `vite`, `oxlint` u `oxfmt`, sincronizar dependencias directas y `overrides`.
+5. Usar Bun para mutar dependencias y lockfile; no editar `bun.lock` a mano.
+6. Cerrar con `bun install --frozen-lockfile`, `bun run check`, `bun run test` y `bun run build`. El CI basico debe seguir ese mismo contrato.
+
 ## Agregar o cambiar un Generation Provider
 
 1. Keep Codex-first product semantics.
@@ -136,6 +145,7 @@ bun run check -- packages/shared/src/generationContracts.ts packages/shared/src/
 3. Providers should compile quality sections with `composeGenerationQualityPromptSections()` before recipe directives, then keep stable output rules in Provider Session Contract.
 4. Do not duplicate the base prompt or `negativePrompt` inside quality fields; only add real structured hints such as style, color, constraints, and reference-role instructions.
 5. For live evidence, run dry evaluation first and store only job/catalog/transcript refs plus reviewer notes.
+6. The repo-local `skills/imagegen/SKILL.md` must understand recipe-generated jobs with or without UI: plain Codex prompts plus recipe id/preset/task/params are valid, `/imagine` is not required, and the skill should preserve each Recipe Module output shape instead of flattening everything into generic image generation.
 
 Focused validation:
 

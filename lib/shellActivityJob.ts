@@ -1,4 +1,5 @@
 import type { Job, JobSummary } from '../packages/shared/src';
+import { parsePromptTransport } from '../packages/shared/src/promptTransport';
 import type { AspectRatio } from '../types';
 
 export type ShellActivityJobSource = 'backend_summary' | 'backend_event' | 'browser_queue';
@@ -14,6 +15,7 @@ export interface ShellActivityJob {
   error: string | null;
   promptPreview: string;
   workspaceId: string | null;
+  recipeId: string | null;
   aspectRatio: AspectRatio | null;
   createdAt: string;
   updatedAt: string;
@@ -49,6 +51,9 @@ export function toShellActivityJob(
     error: job.error,
     promptPreview: readPromptPreview(job),
     workspaceId: readMetadataString(job.sourceSpec?.metadata, 'workspaceId'),
+    recipeId:
+      job.sourceSpec?.recipeId ??
+      parsePromptTransport(job.finalPromptUsed || job.originalPrompt).recipeId,
     aspectRatio: (job.sourceSpec?.output.aspectRatio as AspectRatio | null | undefined) ?? null,
     createdAt: job.createdAt,
     updatedAt: job.updatedAt,

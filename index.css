@@ -565,6 +565,38 @@ react-scan-overlay,
     view-transition-name: bottom-toolbar;
   }
 
+  .vt-style-browser-surface {
+    view-transition-name: style-browser-surface;
+    contain: layout paint;
+  }
+  .vt-style-tabs {
+    view-transition-name: style-tabs;
+  }
+  .vt-style-pack-title {
+    view-transition-name: style-pack-title;
+  }
+  .vt-style-actionbar {
+    view-transition-name: style-actionbar;
+  }
+
+  ::view-transition-group(style-browser-surface),
+  ::view-transition-group(style-tabs),
+  ::view-transition-group(style-pack-title),
+  ::view-transition-group(style-actionbar) {
+    animation-duration: 0.24s;
+    animation-timing-function: var(--ease-out-expo);
+  }
+  ::view-transition-old(style-browser-surface),
+  ::view-transition-new(style-browser-surface),
+  ::view-transition-old(style-tabs),
+  ::view-transition-new(style-tabs),
+  ::view-transition-old(style-pack-title),
+  ::view-transition-new(style-pack-title),
+  ::view-transition-old(style-actionbar),
+  ::view-transition-new(style-actionbar) {
+    mix-blend-mode: normal;
+  }
+
   ::view-transition-group(nav-studio),
   ::view-transition-group(nav-recipes),
   ::view-transition-group(dashboard-modal),

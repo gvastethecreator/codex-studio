@@ -6,6 +6,7 @@ import type { JobStatus } from '../packages/shared/src';
 import type { AppPageView } from '../hooks/useHashRouter';
 import type { RecipeAliasId } from './recipeAliases';
 import type { ShellActivityJob as StudioJob } from './shellActivityJob';
+import { getQueueJobServerJobIds } from './browserQueueBackendSync';
 import type {
   AspectRatio,
   LogEntry,
@@ -141,7 +142,9 @@ export function buildStudioGenerationPlaceholders({
   fallbackAspectRatio: AspectRatio;
 }): StudioGenerationPlaceholder[] {
   const linkedLocalJobs = new Map(
-    jobs.flatMap((job) => (job.serverJobId ? [[job.serverJobId, job] as const] : [])),
+    jobs.flatMap((job) =>
+      getQueueJobServerJobIds(job).map((serverJobId) => [serverJobId, job] as const),
+    ),
   );
   const activeServerJobs = studioJobs.filter((job) => ACTIVE_SERVER_JOB_STATUSES.has(job.status));
   const activeServerJobIds = new Set(activeServerJobs.map((job) => job.id));
@@ -165,7 +168,9 @@ export function buildStudioGenerationPlaceholders({
     ...jobs.flatMap((job) => {
       if (!ACTIVE_LOCAL_JOB_STATUSES.has(job.status)) return [];
       if (job.workspaceId !== activeWorkspaceId) return [];
-      if (job.serverJobId && activeServerJobIds.has(job.serverJobId)) return [];
+      if (getQueueJobServerJobIds(job).some((serverJobId) => activeServerJobIds.has(serverJobId))) {
+        return [];
+      }
 
       return [
         {

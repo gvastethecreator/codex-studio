@@ -33,7 +33,7 @@ export function extractRecipeContextFromPrompt(prompt: string | null | undefined
 
 export function extractRecipeIdFromRecipeContext(recipeContext: string | null | undefined) {
   const context = trimPrompt(recipeContext);
-  const match = context.match(/^recipe:\s*(\w+)$/m);
+  const match = context.match(/^recipe:\s*([\w-]+)$/m);
 
   return match?.[1] ?? null;
 }

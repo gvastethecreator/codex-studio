@@ -76,8 +76,25 @@ describe('browser queue persistence', () => {
     expect(restored[0]).toMatchObject({
       status: 'failed',
       serverJobId: 'server-job-1',
+      serverJobIds: ['server-job-1'],
     });
     expect(restored[0]?.error).toContain('Backend Session Jobs');
+  });
+
+  it('restores linked backend job ids from the multi-job compatibility field', () => {
+    const restored = prepareBrowserQueueJobsForRestore([
+      createBrowserQueueJob({
+        status: 'processing',
+        serverJobId: null,
+        serverJobIds: ['server-job-1', 'server-job-2'],
+      }),
+    ]);
+
+    expect(restored[0]).toMatchObject({
+      status: 'failed',
+      serverJobId: 'server-job-2',
+      serverJobIds: ['server-job-1', 'server-job-2'],
+    });
   });
 
   it('drops malformed persisted payloads', () => {

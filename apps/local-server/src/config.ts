@@ -1,12 +1,8 @@
 import { existsSync, readFileSync } from 'node:fs';
-import os from 'node:os';
 import path from 'node:path';
 import type { StudioSettings } from '../../../packages/shared/src';
+import { resolveUserHome } from './platformHome';
 
-const DEFAULT_LIBRARY_DIR = path.join(
-  process.env.USERPROFILE?.trim() || process.env.HOME?.trim() || os.homedir() || process.cwd(),
-  'AI-Studio-Library',
-);
 const DEFAULT_SERVER_PORT = 17223;
 const DEFAULT_CODEX_WS_PORT = 17224;
 const DEFAULT_CODEX_IMAGEGEN_MODEL = 'gpt-5.4-mini';
@@ -19,6 +15,10 @@ let envLocalLoaded = false;
 
 export function getEnvLocalPath() {
   return path.resolve(process.cwd(), '.env.local');
+}
+
+export function resolveDefaultLibraryDir() {
+  return path.join(resolveUserHome(), 'AI-Studio-Library');
 }
 
 export function hasEnvLocalFile() {
@@ -103,7 +103,7 @@ export function getSettings(): StudioSettings {
   loadDotEnvLocal();
 
   return {
-    libraryDir: readStringSetting('STUDIO_LIBRARY_DIR', DEFAULT_LIBRARY_DIR),
+    libraryDir: readStringSetting('STUDIO_LIBRARY_DIR', resolveDefaultLibraryDir()),
     serverPort: readPositiveIntSetting('STUDIO_SERVER_PORT', DEFAULT_SERVER_PORT),
     codexWsPort: readPositiveIntSetting('STUDIO_CODEX_WS_PORT', DEFAULT_CODEX_WS_PORT),
     codexImagegenModel: readStringSetting('CODEX_IMAGEGEN_MODEL', DEFAULT_CODEX_IMAGEGEN_MODEL),

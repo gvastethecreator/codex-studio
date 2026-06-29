@@ -2,6 +2,7 @@ import { useCallback } from 'react';
 import type { Attachment, RecipeId } from '../types';
 import type { ToastMessage } from './useToasts';
 import type { useGeneration } from '../contexts/GenerationContext';
+import type { ShellActivityJob } from '../lib/shellActivityJob';
 import { useQueueManager } from './useQueueManager';
 import { useStudioGenerationActions } from './useStudioGenerationActions';
 import { useStudioGenerationLifecycle } from './useStudioGenerationLifecycle';
@@ -18,6 +19,7 @@ interface UseStudioGenerationSessionOptions {
   onViewChange: (view: 'studio' | 'recipes') => void;
   setIsEditorOpen: (isOpen: boolean) => void;
   setImageToEdit: (attachment: Attachment | null) => void;
+  backendJobs?: ShellActivityJob[];
 }
 
 export interface StudioGenerationSessionController {
@@ -39,6 +41,7 @@ export function useStudioGenerationSession({
   onViewChange,
   setIsEditorOpen,
   setImageToEdit,
+  backendJobs,
 }: UseStudioGenerationSessionOptions): StudioGenerationSessionController {
   const lifecycle = useStudioGenerationLifecycle({ pipeline, addToast });
 
@@ -47,6 +50,7 @@ export function useStudioGenerationSession({
     isGenerating: lifecycle.isGenerating,
     addToast,
     cancelPersistentJob: lifecycle.cancelPersistentJob,
+    backendJobs,
   });
 
   const onEditSettled = useCallback(() => {

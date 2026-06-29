@@ -20,7 +20,9 @@ function getQueueStats(jobs: QueueJob[]) {
     pending: jobs.filter((j) => j.status === 'pending').length,
     processing: jobs.filter((j) => j.status === 'processing').length,
     completed: jobs.filter((j) => j.status === 'completed').length,
-    failed: jobs.filter((j) => j.status === 'failed' || j.status === 'cancelled').length,
+    failed: jobs.filter(
+      (j) => j.status === 'failed' || j.status === 'cancelled' || j.status === 'needs_review',
+    ).length,
     total: jobs.length,
   };
 }
@@ -31,7 +33,11 @@ function hasPendingOrProcessing(jobs: QueueJob[]) {
 
 function hasCompletedOrFailed(jobs: QueueJob[]) {
   return jobs.some(
-    (j) => j.status === 'completed' || j.status === 'failed' || j.status === 'cancelled',
+    (j) =>
+      j.status === 'completed' ||
+      j.status === 'failed' ||
+      j.status === 'cancelled' ||
+      j.status === 'needs_review',
   );
 }
 
@@ -43,6 +49,7 @@ describe('QueuePanel stats', () => {
       createJob({ id: 'j3', status: 'completed' }),
       createJob({ id: 'j4', status: 'failed' }),
       createJob({ id: 'j5', status: 'cancelled' }),
+      createJob({ id: 'j6', status: 'needs_review' }),
     ];
 
     const stats = getQueueStats(jobs);
@@ -51,8 +58,8 @@ describe('QueuePanel stats', () => {
       pending: 1,
       processing: 1,
       completed: 1,
-      failed: 2,
-      total: 5,
+      failed: 3,
+      total: 6,
     });
   });
 
@@ -62,6 +69,7 @@ describe('QueuePanel stats', () => {
     expect(hasCompletedOrFailed([createJob({ status: 'completed' })])).toBe(true);
     expect(hasCompletedOrFailed([createJob({ status: 'failed' })])).toBe(true);
     expect(hasCompletedOrFailed([createJob({ status: 'cancelled' })])).toBe(true);
+    expect(hasCompletedOrFailed([createJob({ status: 'needs_review' })])).toBe(true);
   });
 
   it('returns correct active-queue flag', () => {

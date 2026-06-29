@@ -44,6 +44,12 @@ describe('promptTransport', () => {
     expect(snapshot.imageSize).toBe('1024x1536');
   });
 
+  it('accepts hyphenated recipe ids in recipe context', () => {
+    const prompt = finalPrompt.replace('recipe: styles', 'recipe: character-lab');
+
+    expect(parsePromptTransport(prompt).recipeId).toBe('character-lab');
+  });
+
   it('leaves plain prompts untouched', () => {
     const plainPrompt = 'Simple portrait study';
 

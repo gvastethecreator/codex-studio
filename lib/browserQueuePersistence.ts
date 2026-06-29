@@ -3,6 +3,7 @@ import {
   MAX_PERSISTED_INLINE_ATTACHMENT_BYTES,
   preparePersistableAttachments,
 } from './browserPersistenceBudget';
+import { getQueueJobServerJobIds, normalizeQueueJobBackendLinks } from './browserQueueBackendSync';
 
 export const BROWSER_QUEUE_STORAGE_KEY = 'browser-queue-jobs';
 
@@ -23,7 +24,8 @@ function isQueueJob(value: unknown): value is QueueJob {
       job.status === 'processing' ||
       job.status === 'completed' ||
       job.status === 'failed' ||
-      job.status === 'cancelled')
+      job.status === 'cancelled' ||
+      job.status === 'needs_review')
   );
 }
 
@@ -33,10 +35,12 @@ export function prepareBrowserQueueJobsForRestore(value: unknown): QueueJob[] {
   return value
     .filter(isQueueJob)
     .slice(-MAX_RESTORED_BROWSER_QUEUE_JOBS)
-    .map((job) => {
+    .map((restoredJob) => {
+      const job = normalizeQueueJobBackendLinks(restoredJob);
       if (job.status !== 'processing') return job;
 
-      if (!job.serverJobId) {
+      const serverJobIds = getQueueJobServerJobIds(job);
+      if (serverJobIds.length === 0) {
         return {
           ...job,
           status: 'pending',
@@ -47,6 +51,8 @@ export function prepareBrowserQueueJobsForRestore(value: unknown): QueueJob[] {
       return {
         ...job,
         status: 'failed',
+        serverJobId: serverJobIds.at(-1) ?? job.serverJobId,
+        serverJobIds,
         error:
           'Browser refreshed after the backend job started. Track the durable job under Backend Session Jobs.',
       };

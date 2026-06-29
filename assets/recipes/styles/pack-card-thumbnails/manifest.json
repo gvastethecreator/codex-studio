@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-06-29T19:44:39.347Z",
+  "size": {
+    "width": 384,
+    "height": 512
+  },
+  "defaultImagesPerPack": 12,
+  "count": 276,
+  "totalBytes": 7239688,
+  "packs": {
+    "pack_01": 23,
+    "pack_02": 19,
+    "pack_03": 22,
+    "pack_04": 22,
+    "pack_05": 23,
+    "pack_06": 17,
+    "pack_07": 17,
+    "pack_08": 17,
+    "pack_09": 17,
+    "pack_10": 17,
+    "pack_11": 17,
+    "pack_12": 12,
+    "pack_13": 17,
+    "pack_14": 12,
+    "pack_15": 12,
+    "pack_17": 12
+  }
+}

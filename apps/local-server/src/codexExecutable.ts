@@ -1,9 +1,10 @@
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { resolvePlatformPath } from './platformPaths';
+import { resolveUserHome } from './platformHome';
 
 function resolveWindowsCodexShim() {
-  const home = process.env.USERPROFILE || '';
+  const home = resolveUserHome({ platform: 'win32' });
   const appData = process.env.APPDATA || path.join(home, 'AppData', 'Roaming');
   const shimCandidates = [
     resolvePlatformPath('codex-binary'),

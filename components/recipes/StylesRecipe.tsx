@@ -1,6 +1,7 @@
 import {
   IconArchive as Archive,
   IconArrowsSort as ArrowUpDown,
+  IconBolt as Bolt,
   IconBook as BookOpen,
   IconBox as Box,
   IconBriefcase as Briefcase,
@@ -15,6 +16,7 @@ import {
   IconDeviceGamepad2 as Gamepad2,
   IconHeart as Heart,
   IconPhoto as ImageIcon,
+  IconMoonStars as MoonStars,
   IconStack as Layers,
   IconPalette as Palette,
   IconPencil as PenTool,
@@ -27,19 +29,21 @@ import {
   IconMoodPlus as SmilePlus,
   IconSparkles as Sparkles,
   IconStar as Star,
+  IconSword as Sword,
   IconDeviceTv as Tv,
   IconUpload as Upload,
   IconWand as Wand2,
   IconX as X,
 } from '@tabler/icons-react';
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import gsap from '../../lib/motionRuntime';
 import {
+  STYLE_CARD_THUMBNAILS,
   STYLE_CATEGORY_IMAGES,
   STYLE_CATEGORY_PREVIEWS,
-  STYLE_PACK_FALLBACK_IMAGES,
-  resolveStyleDefaultImage,
-  resolveStyleDefaultImageVariants,
-} from '../../lib/recipeAssetCatalog';
+  resolveStyleDefaultImageThumbnail,
+  resolveStyleDefaultImageVariantThumbnails,
+} from '../../lib/styleThumbnailCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
 import { isStyleDefaultImageStale } from '../../lib/staleStyleDefaultImages.generated';
@@ -50,6 +54,7 @@ import {
 import type { Attachment, GeneratedImageWithConfig, ImageGenerationConfig } from '../../types';
 import Tooltip from '../Tooltip';
 import { FloatingTooltip } from '../ui/FloatingTooltip';
+import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
 import { RecipeLayout } from './RecipeLayout';
 import {
   collectStylePresetPreviewSources,
@@ -90,12 +95,18 @@ interface StylesRecipeProps {
 const FAVORITES_PACK_ID = 'favorites';
 const EMPTY_IMAGES: GeneratedImageWithConfig[] = [];
 const DEFAULT_STYLE_PACK_ID = STYLE_RUNTIME_PACK_SUMMARIES[0]?.id ?? 'pack_01';
-const STYLE_GROUP_VIEWPORT_ROOT_MARGIN = '900px 0px';
+const STYLE_GROUP_VIEWPORT_ROOT_MARGIN = '220px 0px';
 const MAX_STYLE_REFERENCE_IMAGES = 5;
 const MAX_SELECTED_STYLE_SLOTS = 5;
 const DEFAULT_SELECTED_STYLE_STRENGTH = 0.75;
 const STYLE_PACKS_TAB_ID = 'packs';
 const STYLE_RECIPE_HASH_PREFIX = 'recipe-styles';
+const STYLE_PACK_FOLDER_FILE_LIMIT = 5;
+const STYLE_PACK_FOLDER_EASE = 'power3.out';
+const STYLE_PACK_FOLDER_EXIT_EASE = 'power2.inOut';
+const STYLE_PACK_FOLDER_SCATTER_X = [-34, 32, -12, 25, -24] as const;
+const STYLE_PACK_FOLDER_SCATTER_Y = [-52, -66, -78, -59, -72] as const;
+const STYLE_PACK_FOLDER_SCATTER_ROTATE = [-7, 8, -4, 5, -6] as const;
 
 type StyleTabId = string;
 
@@ -215,6 +226,50 @@ const PACK_THEMES: Record<string, { color: string; bg: string; border: string; t
     border: 'border-green-500',
     text: 'text-green-400',
   }, // Medieval Fantasy & Dungeon Zine
+};
+
+const PACK_CARD_TITLES: Record<string, string> = {
+  pack_01: 'Photo Realism',
+  pack_02: 'Cinematic Media',
+  pack_03: '3D CGI',
+  pack_04: 'Graphic Novel',
+  pack_05: 'Anime Battle',
+  pack_06: 'Essential Art',
+  pack_07: 'Architecture',
+  pack_08: 'Fashion Costume',
+  pack_09: 'Texture Material',
+  pack_10: 'Abstract Lab',
+  pack_11: 'Fun Oddities',
+  pack_12: 'Game Originals',
+  pack_13: 'Anime Lifestyle',
+  pack_14: 'Mythic Noir',
+  pack_15: 'Punk Spectrum',
+  pack_16: 'Anime Prestige',
+  pack_17: 'Dungeon Zine',
+};
+
+const PACK_CARD_DESCRIPTIONS: Record<string, string> = {
+  pack_01: 'Photography, film stock, lens, portrait, lighting.',
+  pack_02: 'Film, broadcast, animation, media-grade looks.',
+  pack_03: 'CGI, render engines, materials, stylized 3D.',
+  pack_04: 'Comics, illustration, ink, posters, editorial art.',
+  pack_05: 'Action anime, battles, mecha, fantasy worlds.',
+  pack_06: 'Painting, print, drawing, mixed media, digital art.',
+  pack_07: 'Architecture, interiors, landscapes, spatial design.',
+  pack_08: 'Fashion, costume, fabric, subculture silhouettes.',
+  pack_09: 'Materials, surfaces, texture, wear, procedural FX.',
+  pack_10: 'Glitch, geometry, surreal systems, visual experiments.',
+  pack_11: 'Playful objects, food, toys, science curiosities.',
+  pack_12: 'Game-native worlds, arenas, quests, encounter moods.',
+  pack_13: 'Character anime, slice-of-life, shojo, magical moods.',
+  pack_14: 'Dark myth, elegant symbols, noir authorial looks.',
+  pack_15: 'Punk languages, DIY rebellion, biotech, media ghosts.',
+  pack_16: 'Classic anime craft, prestige drama, retro eras.',
+  pack_17: 'Fantasy zines, dungeons, bestiary, grim kingdoms.',
+};
+
+const PACK_CARD_PRESET_PREFIXES: Record<string, string[]> = {
+  pack_16: ['SP05-', 'SP13-'],
 };
 
 interface CategoryVisualIdentity {
@@ -393,10 +448,11 @@ function createStylePresetVisualState({
     .filter((img) => hasStylePresetIdentity(img.config, preset.id))
     .sort((a, b) => b.createdAt - a.createdAt);
   const defaultImageStale = isStyleDefaultImageStale(preset.id);
-  const defaultImage = resolveStyleDefaultImage(preset.id);
-  const defaultImageVariants = resolveStyleDefaultImageVariants(preset.id);
+  const defaultImage = resolveStyleDefaultImageThumbnail(preset.id);
+  const defaultImageVariants = resolveStyleDefaultImageVariantThumbnails(preset.id);
   const categoryImage = preset.category
-    ? STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)]
+    ? (STYLE_CARD_THUMBNAILS[styleCategoryImageKey(presetPackId, preset.category)] ??
+      STYLE_CATEGORY_IMAGES[styleCategoryImageKey(presetPackId, preset.category)])
     : undefined;
   const previewImage =
     categoryImage || (preset.category ? STYLE_CATEGORY_PREVIEWS[preset.category] : undefined);
@@ -466,8 +522,6 @@ interface StylePresetResultButtonProps {
   active: boolean;
   onCycle: (dir: number) => void;
   hasMultipleImages: boolean;
-  imageIndex: number;
-  imageCount: number;
   theme: { color: string; bg: string; border: string; text: string };
   onApply: (preset: StyleRuntimePreset) => void;
 }
@@ -478,8 +532,6 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
   active,
   onCycle,
   hasMultipleImages,
-  imageIndex,
-  imageCount,
   theme,
   onApply,
 }) => {
@@ -500,15 +552,11 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
   if (activeCardImage) {
     const staleBadge =
       activeCardImage.kind === 'stale-default' ? (
-        <div className="absolute left-2 top-2 z-20 rounded-full border border-amber-400/30 bg-amber-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-amber-200 shadow-lg backdrop-blur-md">
+        <div className="absolute left-2 top-2 z-20 rounded-[6px] border border-amber-400/30 bg-amber-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-amber-200 shadow-lg backdrop-blur-md">
           Stale
         </div>
-      ) : activeCardImage.kind === 'variant' ? (
-        <div className="absolute left-2 top-2 z-20 rounded-full border border-emerald-400/30 bg-emerald-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-emerald-100 shadow-lg backdrop-blur-md">
-          Variant
-        </div>
       ) : activeCardImage.kind === 'preview' ? (
-        <div className="absolute left-2 top-2 z-20 rounded-full border border-sky-400/30 bg-sky-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-sky-100 shadow-lg backdrop-blur-md">
+        <div className="absolute left-2 top-2 z-20 rounded-[6px] border border-sky-400/30 bg-sky-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-sky-100 shadow-lg backdrop-blur-md">
           Preview
         </div>
       ) : null;
@@ -525,6 +573,8 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
             src={activeCardImage.src}
             width={300}
             height={400}
+            loading="lazy"
+            decoding="async"
             className={`style-preset-thumbnail size-full object-cover transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02] ${
               activeCardImage.kind === 'stale-default'
                 ? 'opacity-[0.82] saturate-[0.86] brightness-[0.92]'
@@ -548,7 +598,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
         {staleBadge}
 
         {hasMultipleImages && (
-          <div className="pointer-events-none absolute inset-y-0 left-2 right-2 z-30 flex items-center justify-between opacity-85 transition-opacity group-hover/image:opacity-100">
+          <div className="pointer-events-none absolute inset-y-0 left-2 right-2 z-30 flex items-center justify-between opacity-0 transition-opacity group-hover/image:opacity-100 group-focus-within/image:opacity-100">
             <button
               type="button"
               onClick={(e) => {
@@ -556,7 +606,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
                 onCycle(-1);
               }}
               onKeyDown={(e) => handleCycleFromKeyboard(e, -1)}
-              className="pointer-events-auto flex size-8 items-center justify-center rounded-full border border-white/15 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
+              className="pointer-events-auto flex size-8 items-center justify-center rounded-[6px] border border-white/15 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
               aria-label={`Previous image for ${preset.name}`}
             >
               <ChevronLeft size={14} />
@@ -568,17 +618,11 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
                 onCycle(1);
               }}
               onKeyDown={(e) => handleCycleFromKeyboard(e, 1)}
-              className="pointer-events-auto flex size-8 items-center justify-center rounded-full border border-white/15 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
+              className="pointer-events-auto flex size-8 items-center justify-center rounded-[6px] border border-white/15 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
               aria-label={`Next image for ${preset.name}`}
             >
               <ChevronRight size={14} />
             </button>
-          </div>
-        )}
-
-        {hasMultipleImages && (
-          <div className="absolute left-1/2 top-2 z-20 -translate-x-1/2 rounded-full border border-white/10 bg-zinc-950/60 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-white/70 backdrop-blur-md">
-            {imageIndex + 1} / {imageCount}
           </div>
         )}
 
@@ -590,7 +634,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
               onApply(preset);
             }}
             onKeyDown={handleApplyFromKeyboard}
-            className="rounded-lg border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600"
+            className="rounded-[6px] border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600"
             title={active ? 'Remove style' : 'Select style'}
           >
             {active ? <Check size={14} /> : <Plus size={14} />}
@@ -608,7 +652,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
       aria-pressed={active}
     >
       <div
-        className={`flex size-14 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-colors duration-300 group-hover:bg-white/8 ${theme.text}`}
+        className={`flex size-14 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors duration-300 group-hover:bg-white/8 ${theme.text}`}
       >
         <Palette size={24} />
       </div>
@@ -737,11 +781,17 @@ const StylePresetCard = React.memo(
           data-style-image-kind={imageDiagnostics.kind}
           data-style-image-src={imageDiagnostics.src ?? ''}
           data-style-default-stale={visualState?.defaultImageStale ? 'true' : 'false'}
-          className={`group relative aspect-[3/4] overflow-hidden rounded-xl text-left transition-[border-color,background-color,box-shadow] duration-250 ${
+          className={`group relative aspect-[3/4] overflow-hidden rounded-[6px] text-left transition-[border-color,background-color,box-shadow,transform] duration-200 ease-out hover:-translate-y-0.5 ${
             active
               ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
               : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
           }`}
+          style={
+            {
+              contentVisibility: 'auto',
+              containIntrinsicSize: '280px 210px',
+            } as React.CSSProperties
+          }
         >
           <div className="absolute inset-0 overflow-hidden bg-zinc-950">
             <StylePresetResultButton
@@ -750,21 +800,19 @@ const StylePresetCard = React.memo(
               active={active}
               onCycle={handleCycle}
               hasMultipleImages={hasMultipleImages}
-              imageIndex={imageIndex}
-              imageCount={cardImages.length}
               theme={theme}
               onApply={onApply}
             />
           </div>
 
-          <div className="absolute right-2 top-2 z-30">
+          <div className="pointer-events-none absolute right-2 top-2 z-30 opacity-0 transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
             <button
               type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 onToggleFavorite(preset.id);
               }}
-              className={`rounded-full border border-white/10 p-1.5 backdrop-blur-md transition-all duration-300 ${favorite ? 'bg-zinc-950/60 text-rose-500' : 'bg-zinc-950/35 text-zinc-500 hover:bg-zinc-950/60 hover:text-rose-400'}`}
+              className={`rounded-[6px] border border-white/10 p-1.5 backdrop-blur-md transition-all duration-150 ${favorite ? 'bg-zinc-950/60 text-rose-500' : 'bg-zinc-950/35 text-zinc-500 hover:bg-zinc-950/60 hover:text-rose-400'}`}
               title={favorite ? 'Unpin' : 'Pin to top'}
             >
               <Heart
@@ -775,17 +823,17 @@ const StylePresetCard = React.memo(
             </button>
           </div>
 
-          <div className="absolute inset-x-0 bottom-0 z-20 px-3 pt-4 pb-0">
-            <div className="rounded-t-xl rounded-b-none border border-white/10 border-b-0 bg-zinc-950/34 px-3 py-2 text-left shadow-[0_-12px_28px_rgba(0,0,0,0.32)] backdrop-blur-md">
+          <div className="absolute inset-x-0 bottom-0 z-20">
+            <div className="relative w-full rounded-t-[6px] rounded-b-none border-t border-white/10 bg-zinc-950/58 px-3 py-2 text-left shadow-[0_-12px_28px_rgba(0,0,0,0.32)] backdrop-blur-md transition-transform duration-200 ease-out group-hover:-translate-y-1 group-focus-within:-translate-y-1">
               <button
                 type="button"
                 onClick={() => onApply(preset)}
                 aria-pressed={active}
                 className="flex cursor-pointer flex-col justify-center appearance-none border-none p-0 m-0 bg-transparent text-left w-full"
               >
-                <div className="mb-1 flex w-full items-center justify-between gap-2">
+                <div className="flex w-full items-center justify-between gap-2">
                   <span
-                    className={`truncate pr-2 text-[9px] font-black uppercase tracking-tight transition-colors ${active ? 'text-white' : 'text-zinc-200 group-hover:text-white'}`}
+                    className={`truncate pr-8 text-[9px] font-black uppercase tracking-tight transition-colors ${active ? 'text-white' : 'text-zinc-200 group-hover:text-white'}`}
                   >
                     {preset.name}
                   </span>
@@ -793,21 +841,16 @@ const StylePresetCard = React.memo(
                     <div className="size-1.5 shrink-0 rounded-full bg-accent-500 shadow-[0_0_5px_rgba(var(--accent-500),0.8)]" />
                   )}
                 </div>
-                <span className="line-clamp-2 pr-7 text-[8px] leading-relaxed text-zinc-300/80 group-hover:text-zinc-200/90">
+                <span className="mt-1 block max-h-0 overflow-hidden pr-7 text-[8px] leading-relaxed text-zinc-300/80 opacity-0 transition-[max-height,opacity,transform,color] duration-200 ease-out group-hover:max-h-10 group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-zinc-200/90 group-focus-within:max-h-10 group-focus-within:translate-y-0 group-focus-within:opacity-100">
                   {preset.style.aesthetic}
                 </span>
               </button>
 
-              <div className="absolute bottom-2 right-2 flex items-center gap-1">
-                {hasMultipleImages && (
-                  <span className="rounded-md border border-white/10 bg-zinc-950/50 px-1.5 py-1 text-[7px] font-black uppercase tracking-[0.18em] text-zinc-300/80">
-                    {imageIndex + 1}/{cardImages.length}
-                  </span>
-                )}
+              <div className="pointer-events-none absolute bottom-2 right-2 flex items-center gap-1 opacity-0 transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
                 <button
                   type="button"
                   onClick={(e) => onCopy(e, preset)}
-                  className="rounded-md p-1 text-zinc-400 transition-all hover:bg-white/8 hover:text-white"
+                  className="rounded-[6px] p-1 text-zinc-400 transition-all hover:bg-white/8 hover:text-white"
                   title="Copy Style Prompt"
                 >
                   {copied ? <Check size={12} className="text-green-500" /> : <Copy size={12} />}
@@ -889,13 +932,13 @@ const StylePresetGroupSection = React.memo(
         data-style-group-state={isNearViewport ? 'eager' : 'placeholder'}
         data-style-group-planned-cards={visiblePresets.length}
         data-style-group-hidden-cards={hiddenPresetCount}
-        className="animate-in fade-in slide-in-from-bottom-4 duration-500"
+        className="relative"
         style={isNearViewport ? undefined : { minHeight: placeholderHeight }}
       >
         <div
-          className={`flex items-center gap-3 mb-4 sticky top-0 backdrop-blur-xl py-2 z-10 ${headerClassName}`}
+          className={`sticky top-0 z-30 mb-2 flex items-center gap-2 border-y border-white/5 bg-zinc-950/78 px-2 py-2 shadow-[0_10px_18px_rgba(0,0,0,0.28)] backdrop-blur-xl ${headerClassName}`}
         >
-          <div className={`w-1 h-4 rounded-full ${accentClassName}`} />
+          <div className={`h-4 w-1 rounded-[2px] ${accentClassName}`} />
           {icon ? <span className="text-zinc-400">{icon}</span> : null}
           <h3 className={`text-[10px] font-black uppercase tracking-[0.2em] ${titleClassName}`}>
             {title}
@@ -907,7 +950,7 @@ const StylePresetGroupSection = React.memo(
           <>
             <div
               data-style-group-grid={groupKey}
-              className="grid gap-4"
+              className="grid gap-2.5"
               style={{
                 gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))`,
               }}
@@ -928,7 +971,7 @@ const StylePresetGroupSection = React.memo(
         ) : (
           <div
             aria-hidden="true"
-            className="rounded-2xl border border-white/5 bg-zinc-950/20"
+            className="rounded-[6px] border border-white/5 bg-zinc-950/20"
             style={{ height: Math.max(120, placeholderHeight - 40) }}
           />
         )}
@@ -1081,7 +1124,7 @@ function getPackIcon(id: string): React.ReactNode {
     case 'pack_04':
       return <PenTool size={size} />;
     case 'pack_05':
-      return <Sparkles size={size} />;
+      return <Sword size={size} />;
     case 'pack_06':
       return <Palette size={size} />;
     case 'pack_07':
@@ -1097,11 +1140,11 @@ function getPackIcon(id: string): React.ReactNode {
     case 'pack_12':
       return <Gamepad2 size={size} />;
     case 'pack_13':
-      return <Sparkles size={size} />;
+      return <Heart size={size} />;
     case 'pack_14':
-      return <Archive size={size} />;
+      return <MoonStars size={size} />;
     case 'pack_15':
-      return <Wand2 size={size} />;
+      return <Bolt size={size} />;
     case 'pack_16':
       return <Star size={size} />;
     case 'pack_17':
@@ -1109,6 +1152,468 @@ function getPackIcon(id: string): React.ReactNode {
     default:
       return <Layers size={size} />;
   }
+}
+
+type StylePackTheme = (typeof PACK_THEMES)[keyof typeof PACK_THEMES];
+type StylePackSummary = (typeof STYLE_RUNTIME_PACK_SUMMARIES)[number];
+
+interface StylePackFolderFile {
+  id: string;
+  src: string | null;
+  label: string;
+}
+
+interface StylePackFolderImages {
+  cover: StylePackFolderFile;
+  files: StylePackFolderFile[];
+}
+
+interface StylePackFolderCardProps {
+  pack: StylePackSummary;
+  index: number;
+  theme: StylePackTheme;
+  onOpen: () => void;
+}
+
+function formatStylePackFolderFileLabel(packId: string, key: string, index: number) {
+  const rawName = key.startsWith(`${packId}__`) ? key.slice(`${packId}__`.length) : key;
+  const label = rawName
+    .replace(/_/g, ' ')
+    .replace(/\b[a-z]/g, (letter) => letter.toUpperCase())
+    .trim();
+
+  return label || `Style ${index + 1}`;
+}
+
+function createFallbackStylePackFolderFile(packId: string) {
+  return {
+    id: `${packId}-fallback`,
+    src: null,
+    label: 'Style sample',
+  };
+}
+
+function shuffleStylePackFolderFiles(files: StylePackFolderFile[]) {
+  const shuffled = [...files];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+
+  return shuffled;
+}
+
+function getStylePackPresetThumbnailPrefixes(packId: string) {
+  const explicitPrefixes = PACK_CARD_PRESET_PREFIXES[packId];
+  if (explicitPrefixes) return explicitPrefixes;
+
+  const match = packId.match(/^pack_(\d+)$/);
+  return match ? [`SP${match[1].padStart(2, '0')}-`] : [];
+}
+
+function getStylePackFolderImages(packId: string): StylePackFolderImages {
+  const presetPrefixes = getStylePackPresetThumbnailPrefixes(packId);
+  const thumbnailFiles = Object.entries(STYLE_CARD_THUMBNAILS)
+    .filter(([key]) => {
+      if (key.startsWith(`${packId}__`)) return true;
+      return presetPrefixes.some((prefix) => key.startsWith(prefix));
+    })
+    .map(([key, src], index) => ({
+      id: key,
+      src,
+      label: formatStylePackFolderFileLabel(packId, key, index),
+    }));
+
+  const fallbackFile = createFallbackStylePackFolderFile(packId);
+  const selectedFiles = shuffleStylePackFolderFiles(
+    thumbnailFiles.length > 0 ? thumbnailFiles : [fallbackFile],
+  ).slice(0, STYLE_PACK_FOLDER_FILE_LIMIT + 1);
+
+  while (selectedFiles.length < STYLE_PACK_FOLDER_FILE_LIMIT + 1) {
+    selectedFiles.push({
+      id: `${packId}-fallback-${selectedFiles.length}`,
+      src: null,
+      label: `Style sample ${selectedFiles.length + 1}`,
+    });
+  }
+
+  return {
+    cover: selectedFiles[0] ?? fallbackFile,
+    files: selectedFiles.slice(1, STYLE_PACK_FOLDER_FILE_LIMIT + 1),
+  };
+}
+
+function getStylePackCardTitle(pack: StylePackSummary) {
+  return PACK_CARD_TITLES[pack.id] ?? pack.name;
+}
+
+function getStylePackCardDescription(pack: StylePackSummary) {
+  return PACK_CARD_DESCRIPTIONS[pack.id] ?? pack.description;
+}
+
+function getStylePackTitleClassName(title: string) {
+  if (title.length > 21) return 'text-[10px]';
+  if (title.length > 17) return 'text-[11px]';
+  if (title.length > 13) return 'text-xs';
+  return 'text-sm';
+}
+
+function StylePackFolderCard({ pack, index, theme, onOpen }: StylePackFolderCardProps) {
+  const rootRef = useRef<HTMLButtonElement | null>(null);
+  const coverRef = useRef<HTMLDivElement | null>(null);
+  const fileRefs = useRef<Array<HTMLDivElement | null>>([]);
+  const timelineRef = useRef<ReturnType<typeof gsap.timeline> | null>(null);
+  const entryTimelineRef = useRef<ReturnType<typeof gsap.timeline> | null>(null);
+  const isOpenRef = useRef(false);
+  const isNavigatingRef = useRef(false);
+  const [filesMounted, setFilesMounted] = useState(false);
+  const folderImages = useMemo(() => getStylePackFolderImages(pack.id), [pack.id]);
+  const { cover, files } = folderImages;
+  const coverImage = cover.src ?? null;
+  const displayTitle = getStylePackCardTitle(pack);
+  const displayDescription = getStylePackCardDescription(pack);
+  const titleClassName = getStylePackTitleClassName(displayTitle);
+  const getFileNodes = useCallback(
+    () => fileRefs.current.slice(0, files.length).filter((node): node is HTMLDivElement => !!node),
+    [files.length],
+  );
+
+  const stopFolderAnimation = useCallback(() => {
+    const root = rootRef.current;
+    const cover = coverRef.current;
+    const fileNodes = getFileNodes();
+
+    timelineRef.current?.kill();
+    timelineRef.current = null;
+    gsap.killTweensOf([root, cover, ...fileNodes].filter(Boolean));
+    gsap.set([root, cover, ...fileNodes].filter(Boolean), { willChange: 'auto' });
+  }, [getFileNodes]);
+
+  const animateFolder = useCallback(
+    (nextOpen: boolean) => {
+      const root = rootRef.current;
+      const cover = coverRef.current;
+      const fileNodes = getFileNodes();
+      if (!root || !cover || fileNodes.length === 0 || isNavigatingRef.current) return;
+      if (isOpenRef.current === nextOpen) return;
+
+      isOpenRef.current = nextOpen;
+      root.dataset.stylePackFolderOpen = nextOpen ? 'true' : 'false';
+      stopFolderAnimation();
+
+      const animatedNodes = [root, cover, ...fileNodes];
+      const timeline = gsap.timeline({
+        defaults: { overwrite: 'auto' },
+        onStart: () => gsap.set(animatedNodes, { willChange: 'transform, opacity' }),
+        onComplete: () => gsap.set(animatedNodes, { willChange: 'auto' }),
+      });
+      timeline.to(
+        root,
+        {
+          y: nextOpen ? -3 : 0,
+          duration: nextOpen ? 0.34 : 0.28,
+          ease: STYLE_PACK_FOLDER_EASE,
+        },
+        0,
+      );
+      timeline.to(
+        cover,
+        {
+          y: nextOpen ? 5 : 0,
+          rotation: nextOpen ? -0.8 : 0,
+          scale: nextOpen ? 0.985 : 1,
+          duration: nextOpen ? 0.42 : 0.3,
+          ease: STYLE_PACK_FOLDER_EASE,
+        },
+        0,
+      );
+
+      fileNodes.forEach((node, idx) => {
+        timeline.to(
+          node,
+          {
+            x: nextOpen ? STYLE_PACK_FOLDER_SCATTER_X[idx % STYLE_PACK_FOLDER_SCATTER_X.length] : 0,
+            y: nextOpen
+              ? STYLE_PACK_FOLDER_SCATTER_Y[idx % STYLE_PACK_FOLDER_SCATTER_Y.length]
+              : idx * -4,
+            rotation: nextOpen
+              ? STYLE_PACK_FOLDER_SCATTER_ROTATE[idx % STYLE_PACK_FOLDER_SCATTER_ROTATE.length]
+              : 0,
+            scale: nextOpen ? 1 : 0.94 + idx * 0.012,
+            zIndex: nextOpen ? 14 + idx : 8 + idx,
+            duration: nextOpen ? 0.46 : 0.32,
+            ease: STYLE_PACK_FOLDER_EASE,
+          },
+          nextOpen ? idx * 0.035 : (STYLE_PACK_FOLDER_FILE_LIMIT - idx - 1) * 0.016,
+        );
+      });
+
+      timelineRef.current = timeline;
+    },
+    [getFileNodes, stopFolderAnimation],
+  );
+
+  const runExitAnimation = useCallback(() => {
+    const root = rootRef.current;
+    const cover = coverRef.current;
+    const fileNodes = getFileNodes();
+    if (!root || !cover || fileNodes.length === 0 || isNavigatingRef.current) return;
+
+    isNavigatingRef.current = true;
+    root.dataset.stylePackFolderOpen = 'exit';
+    stopFolderAnimation();
+    entryTimelineRef.current?.kill();
+
+    const animatedNodes = [root, cover, ...fileNodes];
+    const timeline = gsap.timeline({
+      defaults: { overwrite: 'auto' },
+      onStart: () => gsap.set(animatedNodes, { willChange: 'transform, opacity' }),
+      onComplete: onOpen,
+    });
+
+    fileNodes.forEach((node, idx) => {
+      timeline.to(
+        node,
+        {
+          x: STYLE_PACK_FOLDER_SCATTER_X[idx % STYLE_PACK_FOLDER_SCATTER_X.length] * 0.8,
+          y: STYLE_PACK_FOLDER_SCATTER_Y[idx % STYLE_PACK_FOLDER_SCATTER_Y.length] - 20,
+          rotation:
+            STYLE_PACK_FOLDER_SCATTER_ROTATE[idx % STYLE_PACK_FOLDER_SCATTER_ROTATE.length] * 1.2,
+          scale: 0.98,
+          opacity: 0,
+          duration: 0.24,
+          ease: STYLE_PACK_FOLDER_EXIT_EASE,
+        },
+        idx * 0.018,
+      );
+    });
+
+    timeline.to(
+      cover,
+      {
+        y: 10,
+        scale: 0.96,
+        opacity: 0,
+        duration: 0.22,
+        ease: STYLE_PACK_FOLDER_EXIT_EASE,
+      },
+      0.04,
+    );
+    timeline.to(
+      root,
+      {
+        y: -10,
+        scale: 0.985,
+        opacity: 0,
+        duration: 0.24,
+        ease: STYLE_PACK_FOLDER_EXIT_EASE,
+      },
+      0.08,
+    );
+
+    timelineRef.current = timeline;
+  }, [getFileNodes, onOpen, stopFolderAnimation]);
+
+  const handleOpen = useCallback(() => {
+    if (!filesMounted) {
+      setFilesMounted(true);
+      window.requestAnimationFrame(runExitAnimation);
+      return;
+    }
+
+    runExitAnimation();
+  }, [filesMounted, runExitAnimation]);
+
+  const handleFolderEnter = useCallback(() => {
+    if (!filesMounted) setFilesMounted(true);
+    animateFolder(true);
+  }, [animateFolder, filesMounted]);
+
+  useLayoutEffect(() => {
+    const root = rootRef.current;
+    const cover = coverRef.current;
+    const fileNodes = getFileNodes();
+    if (!root || !cover || fileNodes.length === 0) return undefined;
+
+    root.dataset.stylePackFolderOpen = 'false';
+    isOpenRef.current = false;
+    isNavigatingRef.current = false;
+
+    gsap.set(root, {
+      opacity: 0,
+      y: 14,
+      scale: 0.985,
+      transformOrigin: 'center bottom',
+    });
+    gsap.set(cover, {
+      y: 0,
+      rotation: 0,
+      scale: 1,
+      opacity: 1,
+      zIndex: 40,
+      transformOrigin: 'center bottom',
+    });
+    fileNodes.forEach((node, idx) => {
+      gsap.set(node, {
+        x: 0,
+        y: idx * -4,
+        rotation: 0,
+        scale: 0.94 + idx * 0.012,
+        opacity: 1,
+        zIndex: 8 + idx,
+        transformOrigin: 'center center',
+      });
+    });
+
+    entryTimelineRef.current?.kill();
+    entryTimelineRef.current = gsap
+      .timeline({
+        defaults: { overwrite: 'auto' },
+        onStart: () => gsap.set(root, { willChange: 'transform, opacity' }),
+        onComplete: () => gsap.set(root, { willChange: 'auto' }),
+      })
+      .to(root, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.36,
+        delay: Math.min(0.42, index * 0.026),
+        ease: STYLE_PACK_FOLDER_EASE,
+      });
+
+    return () => {
+      timelineRef.current?.kill();
+      entryTimelineRef.current?.kill();
+      gsap.killTweensOf([root, cover, ...fileNodes]);
+    };
+  }, [files.length, getFileNodes, index]);
+
+  return (
+    <button
+      type="button"
+      ref={rootRef}
+      data-style-pack-card={pack.id}
+      data-style-pack-folder-open="false"
+      data-style-tab-url={`#${getStyleTabHash(pack.id)}`}
+      aria-label={`Open ${pack.name}`}
+      onClick={handleOpen}
+      onPointerEnter={handleFolderEnter}
+      onPointerLeave={() => animateFolder(false)}
+      onFocus={handleFolderEnter}
+      onBlur={() => animateFolder(false)}
+      className="group relative z-0 block aspect-[3/4] min-h-[252px] w-full cursor-pointer overflow-visible rounded-[6px] text-left outline-none hover:z-20 focus-visible:z-20 focus-visible:ring-2 focus-visible:ring-white/35 sm:min-h-[286px]"
+      style={{ perspective: '1200px' }}
+    >
+      <div className="absolute inset-0 rounded-[6px] border border-white/8 bg-zinc-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]" />
+      <div
+        className={`absolute -top-2 left-0 h-4 w-[46%] rounded-t-[6px] border-x border-t border-white/10 ${theme.bg} opacity-60 shadow-[0_8px_22px_rgba(0,0,0,0.28)]`}
+      />
+
+      {files.map((file, idx) => {
+        return (
+          <div
+            key={file.id}
+            ref={(node) => {
+              fileRefs.current[idx] = node;
+            }}
+            data-style-pack-folder-file={file.id}
+            aria-hidden="true"
+            className="absolute inset-x-4 bottom-11 top-8 overflow-hidden rounded-[6px] border border-white/10 bg-zinc-900 shadow-[0_18px_34px_rgba(0,0,0,0.38)]"
+          >
+            {filesMounted && file.src ? (
+              <img
+                src={file.src}
+                alt=""
+                width={320}
+                height={420}
+                loading="lazy"
+                decoding="async"
+                className="size-full object-cover"
+              />
+            ) : filesMounted ? (
+              <div
+                className={`flex size-full items-center justify-center bg-zinc-900 ${theme.text}`}
+              >
+                {getPackIcon(pack.id)}
+              </div>
+            ) : (
+              <div className="size-full bg-zinc-900" />
+            )}
+            <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-white/10" />
+            <div
+              className={`absolute left-2 top-2 flex size-6 items-center justify-center rounded-[6px] border border-white/10 bg-black/42 ${theme.text} backdrop-blur`}
+            >
+              {getPackIcon(pack.id)}
+            </div>
+          </div>
+        );
+      })}
+
+      <div
+        ref={coverRef}
+        data-style-pack-folder-cover={pack.id}
+        className="absolute inset-0 overflow-visible rounded-[6px] border border-white/10 bg-zinc-900 shadow-[0_18px_42px_rgba(0,0,0,0.38)]"
+        style={{ transformOrigin: 'center bottom' }}
+      >
+        <div
+          className={`absolute -top-3 left-0 h-5 w-[54%] rounded-t-[6px] border-x border-t border-white/10 ${theme.bg} opacity-75 shadow-[0_8px_22px_rgba(0,0,0,0.32)]`}
+        />
+        <div className="absolute inset-0 overflow-hidden rounded-[6px]">
+          <div className="absolute inset-0 bg-zinc-950">
+            {coverImage ? (
+              <img
+                src={coverImage}
+                alt=""
+                width={420}
+                height={560}
+                loading="lazy"
+                decoding="async"
+                className="size-full object-cover opacity-[0.72] transition-[opacity,transform,filter] duration-300 group-hover:scale-[1.025] group-hover:opacity-[0.88] group-hover:saturate-[1.05]"
+              />
+            ) : (
+              <div className={`flex size-full items-center justify-center ${theme.text}`}>
+                {getPackIcon(pack.id)}
+              </div>
+            )}
+            <div className="absolute inset-0 bg-linear-to-t from-black via-black/46 to-black/8" />
+            <div className={`absolute inset-x-0 top-0 h-1 ${theme.bg}`} />
+          </div>
+
+          <div className="relative z-10 flex h-full flex-col justify-end p-3.5 sm:p-4">
+            <div className="absolute right-3 top-3 sm:right-4 sm:top-4">
+              <span
+                data-style-pack-count={pack.id}
+                className={`flex min-w-9 items-center justify-center rounded-[6px] border border-white/10 ${theme.bg} px-2 py-1 text-[10px] font-black tabular-nums text-white/95 shadow-[0_8px_18px_rgba(0,0,0,0.28)] backdrop-blur-md`}
+                style={
+                  {
+                    '--tw-bg-opacity': '0.76',
+                    textShadow: '0 1px 5px rgba(0,0,0,0.78)',
+                  } as React.CSSProperties
+                }
+              >
+                {pack.presetCount}
+              </span>
+            </div>
+
+            <div className="min-w-0">
+              <h3
+                data-style-pack-card-title={pack.id}
+                className={`flex min-w-0 items-center gap-1.5 whitespace-nowrap font-black leading-tight tracking-normal text-white ${titleClassName}`}
+              >
+                <span className={`flex size-6 shrink-0 items-center justify-center ${theme.text}`}>
+                  {getPackIcon(pack.id)}
+                </span>
+                <span className="min-w-0">{displayTitle}</span>
+              </h3>
+              <p className="mt-1.5 line-clamp-2 text-[10px] font-medium leading-snug text-zinc-300/86">
+                {displayDescription}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </button>
+  );
 }
 
 // react-doctor-disable-next-line react-doctor/no-giant-component
@@ -1141,10 +1646,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     () => new Set(selectedStyles.map((slot) => slot.preset.id)),
     [selectedStyles],
   );
-  const lastHoveredPresetPreviewRef = useRef<StyleCardHoverPreview | null>(null);
-  if (hoveredPresetPreview) {
-    lastHoveredPresetPreviewRef.current = hoveredPresetPreview;
-  }
   const timeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
@@ -1163,7 +1664,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     showFavoritesOnly: false,
     isCatalogSearchOpen: false,
     expandedStyleGroups: new Set<string>(),
-    showAllStyleCategories: true,
+    showAllStyleCategories: false,
     styleScrollWidth: 0,
   });
   const {
@@ -1354,7 +1855,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   }, [currentPackId, loadedStylePacksById]);
 
   const activeTheme = PACK_THEMES[currentPackId] || PACK_THEMES['pack_01'];
-  const resolvedHoveredPresetPreview = hoveredPresetPreview ?? lastHoveredPresetPreviewRef.current;
+  const resolvedHoveredPresetPreview = hoveredPresetPreview;
 
   const favoritePresets = useMemo(() => {
     const presetById = new Map<string, StyleRuntimePreset>();
@@ -1441,7 +1942,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     setBrowserState((prev) => ({
       ...prev,
       expandedStyleGroups: new Set(),
-      showAllStyleCategories: true,
+      showAllStyleCategories: false,
     }));
   }
 
@@ -1806,7 +2307,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           <div
             onDragOver={(e) => e.preventDefault()}
             onDrop={handleDrop}
-            className="rounded-xl border border-white/8 bg-white/[0.025] p-1.5"
+            className="rounded-[6px] border border-white/8 bg-white/[0.025] p-1.5"
           >
             <input
               type="file"
@@ -1896,7 +2397,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
           <div
             data-style-preview-card
-            className="relative min-h-[480px] flex-1 overflow-hidden rounded-2xl border border-white/18 bg-zinc-950 shadow-[0_30px_90px_rgba(0,0,0,0.52)] ring-1 ring-white/8"
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={handleDrop}
+            className="relative min-h-[480px] flex-1 overflow-hidden rounded-[6px] border border-white/18 bg-zinc-950 shadow-[0_30px_90px_rgba(0,0,0,0.52)] ring-1 ring-white/8"
           >
             {resolvedHoveredPresetPreview?.imageSrc ? (
               <img
@@ -1911,27 +2414,31 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 src={referenceImages[0].dataUrl}
                 width={480}
                 height={480}
-                className="absolute inset-0 size-full object-contain p-2 opacity-95"
+                className="absolute inset-0 size-full object-cover opacity-95"
                 alt=""
               />
             ) : (
-              <div className="absolute inset-0 flex items-center justify-center text-zinc-600">
+              <button
+                type="button"
+                onClick={() => fileInputRef.current?.click()}
+                className="absolute inset-3 flex items-center justify-center rounded-[6px] border border-dashed border-white/12 bg-white/[0.025] text-zinc-600 transition-[border-color,background-color,color] hover:border-white/22 hover:bg-white/[0.045] hover:text-zinc-300"
+              >
                 <div className="flex flex-col items-center gap-3">
-                  <div className="flex size-14 items-center justify-center rounded-xl border border-white/10 bg-white/5">
-                    <ImageIcon size={24} />
+                  <div className="flex size-14 items-center justify-center rounded-[6px] border border-white/10 bg-white/5">
+                    <Upload size={24} />
                   </div>
                   <span className="text-[9px] font-black uppercase tracking-[0.24em]">
-                    Style Preview
+                    Drop reference image
                   </span>
                 </div>
-              </div>
+              </button>
             )}
 
             {resolvedHoveredPresetPreview && (
               <>
                 <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-black/5" />
                 <div className="absolute inset-x-0 bottom-0 p-3">
-                  <div className="max-w-[94%] rounded-xl border border-white/12 bg-zinc-950/62 px-3 py-2.5 backdrop-blur-2xl shadow-[0_12px_32px_rgba(0,0,0,0.34)]">
+                  <div className="max-w-[94%] rounded-[6px] border border-white/12 bg-zinc-950/62 px-3 py-2.5 shadow-[0_12px_32px_rgba(0,0,0,0.34)] backdrop-blur-2xl">
                     <div className="flex min-w-0 flex-wrap items-center gap-1.5">
                       <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[7px] font-black uppercase tracking-[0.2em] text-white/65">
                         {resolvedHoveredPresetPreview.packName}
@@ -1957,12 +2464,12 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       {/* RIGHT: STYLE BROWSER */}
       <div
         data-style-browser-root
-        className="relative flex h-full min-w-0 flex-1 flex-col bg-[#060606]"
+        className="vt-style-browser-surface relative flex h-full min-w-0 flex-1 flex-col bg-[#060606]"
       >
         <div className="absolute inset-0 opacity-[0.02] pointer-events-none" />
 
         <div className="xl:hidden border-b border-white/5 bg-zinc-950/72 px-3 py-2 backdrop-blur-md">
-          <details className="group rounded-xl border border-white/8 bg-white/[0.025]">
+          <details className="group rounded-[6px] border border-white/8 bg-white/[0.025]">
             <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-3 py-2">
               <div className="min-w-0">
                 <div className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500">
@@ -1992,7 +2499,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             </summary>
 
             <div className="grid gap-3 border-t border-white/6 p-3">
-              <div className="rounded-xl border border-white/6 bg-black/20 p-2">
+              <div className="rounded-[6px] border border-white/6 bg-black/20 p-2">
                 <div className="mb-2 flex items-center justify-between gap-3">
                   <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
                     References
@@ -2055,7 +2562,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 </div>
               </div>
 
-              <div className="rounded-xl border border-white/6 bg-black/20 p-2">
+              <div className="rounded-[6px] border border-white/6 bg-black/20 p-2">
                 <div className="mb-2 flex items-center justify-between gap-3">
                   <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
                     Style Slots
@@ -2077,52 +2584,77 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                       Pick styles from the browser
                     </div>
                   ) : (
-                    selectedStyles.map((slot, index) => (
-                      <div
-                        key={slot.preset.id}
-                        className="rounded-lg border border-white/8 bg-zinc-950/80 p-2"
-                      >
-                        <div className="flex min-w-0 items-center gap-2">
-                          <div className="min-w-0 flex-1">
-                            <div className="truncate text-[8px] font-black uppercase tracking-widest text-zinc-500">
-                              Slot {index + 1} - {slot.packName}
+                    selectedStyles.map((slot, index) => {
+                      const slotCardImage = resolveStylePresetPrimaryCardImage(
+                        selectedStyleVisualStateById.get(slot.preset.id),
+                      );
+                      return (
+                        <div
+                          key={slot.preset.id}
+                          className="rounded-[6px] border border-white/8 bg-zinc-950/80 p-2"
+                        >
+                          <div className="grid grid-cols-[2.75rem_minmax(0,1fr)_2rem] items-start gap-2">
+                            <div className="relative aspect-[2/3] w-[2.75rem] overflow-hidden rounded-[6px] border border-white/10 bg-zinc-950">
+                              {slotCardImage ? (
+                                <img
+                                  src={slotCardImage.src}
+                                  alt=""
+                                  className="size-full object-cover"
+                                  loading="lazy"
+                                  decoding="async"
+                                />
+                              ) : (
+                                <div
+                                  className={`flex size-full items-center justify-center ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'}`}
+                                >
+                                  {getPackIcon(slot.packId)}
+                                </div>
+                              )}
+                              <div className="absolute left-1 top-1 rounded-[4px] bg-black/55 px-1 text-[7px] font-black text-white/80">
+                                {index + 1}
+                              </div>
                             </div>
-                            <div className="truncate text-[11px] font-black uppercase tracking-tight text-white">
-                              {slot.preset.name}
+                            <div className="min-w-0 flex-1">
+                              <div className="truncate text-[8px] font-black uppercase tracking-widest text-zinc-500">
+                                {slot.packName}
+                              </div>
+                              <div className="truncate text-[11px] font-black uppercase tracking-tight text-white">
+                                {slot.preset.name}
+                              </div>
                             </div>
+                            <button
+                              type="button"
+                              onClick={() => removeSelectedStyle(slot.preset.id)}
+                              className="flex size-8 shrink-0 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 text-zinc-400"
+                              aria-label={`Remove ${slot.preset.name}`}
+                            >
+                              <X size={13} />
+                            </button>
                           </div>
-                          <button
-                            type="button"
-                            onClick={() => removeSelectedStyle(slot.preset.id)}
-                            className="flex size-8 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-400"
-                            aria-label={`Remove ${slot.preset.name}`}
-                          >
-                            <X size={13} />
-                          </button>
+                          <div className="mt-2 flex items-center gap-2">
+                            <Palette className="size-3 shrink-0 text-zinc-500" />
+                            <input
+                              type="range"
+                              min={0.1}
+                              max={1}
+                              step={0.05}
+                              value={slot.strength}
+                              onChange={(event) =>
+                                updateSelectedStyleStrength(
+                                  slot.preset.id,
+                                  Number(event.target.value),
+                                )
+                              }
+                              className="h-1 min-w-0 flex-1 accent-white"
+                              aria-label={`Style Strength ${slot.preset.name}`}
+                            />
+                            <span className="w-8 text-right text-[8px] font-black tabular-nums text-zinc-400">
+                              {formatStyleStrength(slot.strength)}
+                            </span>
+                          </div>
                         </div>
-                        <div className="mt-2 flex items-center gap-2">
-                          <Palette className="size-3 shrink-0 text-zinc-500" />
-                          <input
-                            type="range"
-                            min={0.1}
-                            max={1}
-                            step={0.05}
-                            value={slot.strength}
-                            onChange={(event) =>
-                              updateSelectedStyleStrength(
-                                slot.preset.id,
-                                Number(event.target.value),
-                              )
-                            }
-                            className="h-1 min-w-0 flex-1 accent-white"
-                            aria-label={`Style Strength ${slot.preset.name}`}
-                          />
-                          <span className="w-8 text-right text-[8px] font-black tabular-nums text-zinc-400">
-                            {formatStyleStrength(slot.strength)}
-                          </span>
-                        </div>
-                      </div>
-                    ))
+                      );
+                    })
                   )}
                 </div>
 
@@ -2130,7 +2662,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   type="button"
                   onClick={handleGenerateSelectedStyles}
                   disabled={selectedStyles.length === 0 || isGenerating}
-                  className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-xl border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] disabled:cursor-not-allowed disabled:border-white/8 disabled:bg-white/5 disabled:text-zinc-600"
+                  className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-[6px] border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] disabled:cursor-not-allowed disabled:border-white/8 disabled:bg-white/5 disabled:text-zinc-600"
                 >
                   <Play size={15} />
                   {isGenerating ? 'Generating' : 'Generate'}
@@ -2141,8 +2673,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         </div>
 
         {/* Pack Tabs */}
-        <div className="vt-recipe-tabs h-14 sm:h-16 flex items-center px-3 sm:px-6 border-b border-white/5 gap-2 overflow-x-auto custom-scrollbar bg-zinc-950/40 backdrop-blur-md z-20">
-          <div className="mr-1 flex shrink-0 items-center gap-1 rounded-lg border border-white/5 bg-zinc-950/55 p-1">
+        <div className="vt-recipe-tabs vt-style-tabs z-20 flex h-11 items-center gap-1.5 overflow-x-auto border-b border-white/5 bg-zinc-950/40 py-0 pl-3 pr-1 backdrop-blur-md custom-scrollbar sm:h-12 sm:pl-6 sm:pr-2">
+          <div className="mr-1 flex shrink-0 items-center gap-1 rounded-[6px] border border-white/5 bg-zinc-950/55 p-1">
             <button
               type="button"
               onClick={() => previousStyleTab && navigateToStyleTab(previousStyleTab.id)}
@@ -2150,7 +2682,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
               data-style-tab-previous
               aria-label="Previous style tab"
               title={previousStyleTab ? `Previous: ${previousStyleTab.label}` : 'No previous tab'}
-              className="flex size-7 items-center justify-center rounded-md text-zinc-400 transition-[background-color,color,opacity] hover:bg-white/6 hover:text-white disabled:cursor-not-allowed disabled:opacity-35"
+              className="flex size-7 items-center justify-center rounded-[6px] text-zinc-400 transition-[background-color,color,opacity] hover:bg-white/6 hover:text-white disabled:cursor-not-allowed disabled:opacity-35"
             >
               <ChevronLeft size={15} />
             </button>
@@ -2161,7 +2693,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
               data-style-tab-next
               aria-label="Next style tab"
               title={nextStyleTab ? `Next: ${nextStyleTab.label}` : 'No next tab'}
-              className="flex size-7 items-center justify-center rounded-md text-zinc-400 transition-[background-color,color,opacity] hover:bg-white/6 hover:text-white disabled:cursor-not-allowed disabled:opacity-35"
+              className="flex size-7 items-center justify-center rounded-[6px] text-zinc-400 transition-[background-color,color,opacity] hover:bg-white/6 hover:text-white disabled:cursor-not-allowed disabled:opacity-35"
             >
               <ChevronRight size={15} />
             </button>
@@ -2172,7 +2704,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             onClick={() => navigateToStyleTab(STYLE_PACKS_TAB_ID)}
             data-style-tab-url={`#${getStyleTabHash(STYLE_PACKS_TAB_ID)}`}
             className={`
-                  group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-[background-color,border-color,color,box-shadow] duration-300 flex items-center gap-2
+                  group relative h-8 shrink-0 overflow-hidden rounded-[6px] px-2.5 transition-[background-color,border-color,color,box-shadow] duration-200 flex items-center gap-2
                     ${
                       isPackLandingOpen
                         ? 'bg-zinc-800 border border-white/10 text-white shadow-lg'
@@ -2182,35 +2714,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           >
             <Layers size={16} />
             {isPackLandingOpen && (
-              <span className="text-[9px] font-black uppercase tracking-widest whitespace-nowrap animate-in fade-in slide-in-from-left-2">
+              <span className="whitespace-nowrap text-[9px] font-black uppercase tracking-widest">
                 Packs
-              </span>
-            )}
-          </button>
-
-          {/* Favorites Tab */}
-          <button
-            type="button"
-            onClick={() => navigateToStyleTab(FAVORITES_PACK_ID)}
-            data-style-tab-url={`#${getStyleTabHash(FAVORITES_PACK_ID)}`}
-            className={`
-                  group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-[background-color,border-color,color,box-shadow] duration-300 flex items-center gap-2
-                    ${
-                      !isPackLandingOpen && currentPackId === FAVORITES_PACK_ID
-                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
-                        : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-rose-400'
-                    }
-                `}
-          >
-            <Heart
-              size={16}
-              fill={
-                !isPackLandingOpen && currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'
-              }
-            />
-            {!isPackLandingOpen && currentPackId === FAVORITES_PACK_ID && (
-              <span className="text-[9px] font-black uppercase tracking-widest whitespace-nowrap animate-in fade-in slide-in-from-left-2">
-                Favorites
               </span>
             )}
           </button>
@@ -2229,7 +2734,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 data-style-tab-url={`#${getStyleTabHash(pack.id)}`}
                 onClick={() => navigateToStyleTab(pack.id)}
                 className={`
-                      group relative h-9 shrink-0 overflow-hidden rounded-lg px-3 transition-[background-color,border-color,color,box-shadow] duration-300 flex items-center gap-2
+                      group relative h-8 shrink-0 overflow-hidden rounded-[6px] px-2.5 transition-[background-color,border-color,color,box-shadow] duration-200 flex items-center gap-2
                             ${
                               isActive
                                 ? `bg-zinc-800 border border-white/10 text-white shadow-lg`
@@ -2242,106 +2747,84 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 </div>
 
                 {isActive && (
-                  <span className="relative z-10 text-[9px] font-black uppercase tracking-widest whitespace-nowrap animate-in fade-in slide-in-from-left-2 duration-300">
+                  <span className="relative z-10 whitespace-nowrap text-[9px] font-black uppercase tracking-widest">
                     {pack.name}
                   </span>
                 )}
               </button>
             );
           })}
+
+          <button
+            type="button"
+            onClick={() => navigateToStyleTab(FAVORITES_PACK_ID)}
+            data-style-tab-url={`#${getStyleTabHash(FAVORITES_PACK_ID)}`}
+            className={`
+                  group sticky right-0 z-20 ml-auto h-8 shrink-0 overflow-hidden rounded-[6px] px-2.5 backdrop-blur-md transition-[background-color,border-color,color,box-shadow] duration-200 flex items-center gap-2
+                    ${
+                      !isPackLandingOpen && currentPackId === FAVORITES_PACK_ID
+                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                        : 'bg-zinc-950/45 text-zinc-500 hover:bg-white/5 hover:text-rose-400'
+                    }
+                `}
+            title="Favorite styles"
+          >
+            <Heart
+              size={16}
+              fill={
+                !isPackLandingOpen && currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'
+              }
+            />
+            <span className="whitespace-nowrap text-[9px] font-black uppercase tracking-widest">
+              Favorites
+            </span>
+          </button>
         </div>
 
         {isPackLandingOpen ? (
-          <div className="flex-1 overflow-y-auto custom-scrollbar px-4 py-5 sm:px-8 sm:py-8 animate-in fade-in slide-in-from-bottom-3 duration-300">
-            <div className="mb-7 flex flex-col gap-2">
-              <h2 className="text-2xl font-black uppercase tracking-tighter text-white">
+          <div className="flex-1 overflow-y-auto px-4 py-4 custom-scrollbar sm:px-8 sm:py-5">
+            <div className="mb-3 flex flex-col gap-1">
+              <h2 className="vt-style-pack-title text-2xl font-black uppercase tracking-normal text-white sm:tracking-tight">
                 Style Packs
               </h2>
-              <p className="max-w-3xl text-[10px] font-bold uppercase tracking-widest text-zinc-500">
+              <p className="max-w-3xl text-[10px] font-medium leading-relaxed text-zinc-500">
                 Curated visual systems for controlled style direction.
               </p>
             </div>
 
-            <div className="grid grid-cols-[repeat(auto-fill,minmax(170px,1fr))] gap-3 pb-16 sm:grid-cols-[repeat(auto-fill,minmax(220px,1fr))] sm:gap-4">
-              {STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => {
+            <div className="grid grid-cols-[repeat(auto-fill,minmax(158px,1fr))] gap-2 pb-16 sm:grid-cols-[repeat(auto-fill,minmax(190px,1fr))] xl:grid-cols-[repeat(auto-fill,minmax(204px,1fr))]">
+              {STYLE_RUNTIME_PACK_SUMMARIES.map((pack, index) => {
                 const theme = PACK_THEMES[pack.id] || PACK_THEMES['pack_01'];
-                const fallbackImage = STYLE_PACK_FALLBACK_IMAGES[pack.id];
                 return (
-                  <button
-                    type="button"
+                  <StylePackFolderCard
                     key={pack.id}
-                    data-style-pack-card={pack.id}
-                    data-style-tab-url={`#${getStyleTabHash(pack.id)}`}
-                    onClick={() => navigateToStyleTab(pack.id)}
-                    className="group relative min-h-72 overflow-hidden rounded-xl border border-white/8 bg-zinc-950 text-left transition-[border-color,background-color,box-shadow,transform] hover:border-white/16 hover:bg-zinc-900 hover:shadow-[0_20px_44px_rgba(0,0,0,0.34)]"
-                  >
-                    <div className="absolute inset-0 bg-zinc-900">
-                      {fallbackImage ? (
-                        <img
-                          src={fallbackImage}
-                          alt=""
-                          width={420}
-                          height={288}
-                          className="size-full object-cover opacity-70 transition-[opacity,transform,filter] duration-300 group-hover:scale-[1.03] group-hover:opacity-85 group-hover:saturate-[1.04]"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                      ) : (
-                        <div className={`flex size-full items-center justify-center ${theme.text}`}>
-                          {getPackIcon(pack.id)}
-                        </div>
-                      )}
-                      <div className="absolute inset-0 bg-linear-to-t from-black via-black/45 to-black/8" />
-                    </div>
-
-                    <div className="relative z-10 flex min-h-72 flex-col justify-between p-4">
-                      <div className="flex items-center justify-between gap-3">
-                        <div
-                          className={`flex size-10 items-center justify-center rounded-xl border border-white/10 bg-black/45 ${theme.text} backdrop-blur-md`}
-                        >
-                          {getPackIcon(pack.id)}
-                        </div>
-                        <span className="rounded-full border border-white/10 bg-black/45 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-300 backdrop-blur-md">
-                          {pack.presetCount} Styles
-                        </span>
-                      </div>
-
-                      <div>
-                        <h3 className="line-clamp-2 text-lg font-black uppercase tracking-tight text-white">
-                          {pack.name}
-                        </h3>
-                        <p className="mt-2 line-clamp-3 text-[10px] font-medium leading-relaxed text-zinc-300/86">
-                          {pack.description}
-                        </p>
-                      </div>
-                    </div>
-                  </button>
+                    pack={pack}
+                    index={index}
+                    theme={theme}
+                    onOpen={() => navigateToStyleTab(pack.id)}
+                  />
                 );
               })}
             </div>
           </div>
         ) : (
-          <div
-            key={currentPackId}
-            data-style-folder={currentPackId}
-            className="flex min-h-0 flex-1 flex-col animate-in fade-in slide-in-from-right-3 duration-300"
-          >
+          <div data-style-folder={currentPackId} className="flex min-h-0 flex-1 flex-col">
             {/* Pack Header Info + Search Bar */}
-            <div className="px-4 pt-4 pb-2 sm:px-8 sm:pt-6 flex flex-col xl:flex-row xl:items-end justify-between gap-4">
-              <div>
+            <div className="flex flex-col gap-2 border-b border-white/5 px-4 py-1.5 sm:flex-row sm:items-start sm:justify-between sm:px-8">
+              <div className="min-w-0 pt-1">
                 <h2
-                  className={`text-2xl font-black uppercase tracking-tighter mb-1 transition-colors duration-500 ${activeTheme.text}`}
+                  className={`vt-style-pack-title truncate text-lg font-black uppercase tracking-tighter transition-colors duration-300 sm:text-xl ${activeTheme.text}`}
                 >
                   {activePack.name}
                 </h2>
-                <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-widest">
+                <p className="line-clamp-1 text-[10px] font-medium leading-relaxed text-zinc-500">
                   {activePack.description}
                 </p>
               </div>
 
               {/* Search & Filter Toolbar */}
-              <div className="flex flex-wrap items-center gap-2 p-1 rounded-xl border border-white/5">
-                <div className="flex min-w-0 flex-1 basis-48 items-center gap-2 rounded-lg border border-white/5 bg-zinc-950/40 px-3 py-1.5">
+              <div className="vt-style-actionbar flex shrink-0 flex-nowrap items-center gap-1.5 rounded-[6px] border border-white/5 p-1">
+                <div className="flex min-w-0 w-40 items-center gap-2 rounded-[6px] border border-white/5 bg-zinc-950/40 px-3 py-1.5 2xl:w-48">
                   <Search size={14} className="text-zinc-500" />
                   <input
                     type="text"
@@ -2371,7 +2854,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                     setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: true }))
                   }
                   data-style-open-catalog
-                  className="flex h-8 items-center gap-2 rounded-lg px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
+                  className="flex h-8 items-center gap-2 rounded-[6px] px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
                   title="Open Style Catalog"
                 >
                   <BookOpen size={15} />
@@ -2386,7 +2869,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                       sortOrder: prev.sortOrder === 'az' ? 'za' : 'az',
                     }))
                   }
-                  className="p-1.5 rounded-lg text-zinc-500 hover:text-white hover:bg-white/5 transition-colors"
+                  className="rounded-[6px] p-1.5 text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
                   title={sortOrder === 'az' ? 'Sort A-Z' : 'Sort Z-A'}
                 >
                   <ArrowUpDown size={16} />
@@ -2401,7 +2884,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                         showFavoritesOnly: !prev.showFavoritesOnly,
                       }))
                     }
-                    className={`p-1.5 rounded-lg transition-colors ${showFavoritesOnly ? 'text-rose-400 bg-rose-500/10' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
+                    className={`rounded-[6px] p-1.5 transition-colors ${showFavoritesOnly ? 'text-rose-400 bg-rose-500/10' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
                     title="Filter Favorites in this Pack"
                   >
                     <Heart size={16} fill={showFavoritesOnly ? 'currentColor' : 'none'} />
@@ -2410,7 +2893,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
                 <div className="h-6 w-px bg-white/5" />
 
-                <div className="hidden items-center gap-2 rounded-lg border border-white/5 bg-zinc-950/40 px-2 py-1 sm:flex">
+                <div className="hidden items-center gap-2 rounded-[6px] border border-white/5 bg-zinc-950/40 px-2 py-1 2xl:flex">
                   <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
                     Zoom
                   </span>
@@ -2435,16 +2918,16 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             {/* The Grid - Grouped by Category */}
             <div
               ref={styleScrollRootRef}
-              className="flex-1 overflow-y-auto custom-scrollbar px-4 pb-12 pt-4 sm:px-8"
+              className="flex-1 overflow-y-auto px-4 pb-12 pt-2 custom-scrollbar sm:px-8"
             >
-              <div className="w-full pb-20 space-y-10">
+              <div className="w-full space-y-6 pb-20">
                 {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
                 {processedData.favorites.length > 0 && currentPackId !== FAVORITES_PACK_ID && (
                   <StylePresetGroupSection
                     groupKey="favorites"
                     title="Pinned / Favorites"
                     presets={processedData.favorites}
-                    expanded
+                    expanded={expandedStyleGroups.has('favorites')}
                     gridColumns={gridColumns}
                     scrollRootRef={styleScrollRootRef}
                     scrollContainerWidth={styleScrollWidth}
@@ -2453,7 +2936,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                     accentClassName="bg-rose-500"
                     titleClassName="text-rose-400"
                     dividerClassName="bg-linear-to-r from-rose-500/20 to-transparent"
-                    showMoreClassName="mt-4 flex h-9 items-center gap-2 rounded-lg border border-rose-500/20 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-300 transition-colors hover:bg-rose-500/20"
+                    showMoreClassName="mt-3 flex h-9 items-center gap-2 rounded-[6px] border border-rose-500/20 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-300 transition-colors hover:bg-rose-500/20"
                     renderPresetCard={renderPresetCard}
                     onShowAll={showAllStylesInGroup}
                   />
@@ -2469,16 +2952,16 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                       title={category}
                       icon={categoryIdentity?.icon}
                       presets={presets}
-                      expanded
+                      expanded={expandedStyleGroups.has(category)}
                       gridColumns={gridColumns}
                       scrollRootRef={styleScrollRootRef}
                       scrollContainerWidth={styleScrollWidth}
                       initiallyVisible={index === 0 && processedData.favorites.length === 0}
-                      headerClassName="opacity-60"
+                      headerClassName=""
                       accentClassName={categoryIdentity?.accentClassName ?? activeTheme.bg}
                       titleClassName={categoryIdentity?.titleClassName ?? 'text-zinc-300'}
                       dividerClassName="bg-white/10"
-                      showMoreClassName="mt-4 flex h-9 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+                      showMoreClassName="mt-3 flex h-9 items-center gap-2 rounded-[6px] border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
                       renderPresetCard={renderPresetCard}
                       onShowAll={showAllStylesInGroup}
                     />
@@ -2494,7 +2977,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                     data-style-show-all-categories
                     data-style-hidden-groups={hiddenStyleGroupEntries.length}
                     data-style-hidden-presets={hiddenStylePresetCount}
-                    className="flex h-10 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+                    className="flex h-10 items-center gap-2 rounded-[6px] border border-white/10 bg-white/5 px-4 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
                   >
                     <ChevronRight size={14} />
                     Show {hiddenStyleGroupEntries.length} more categories ({hiddenStylePresetCount}{' '}
@@ -2519,9 +3002,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         {isCatalogSearchOpen && (
           <React.Suspense
             fallback={
-              <div className="absolute inset-0 z-40 flex items-center justify-center bg-zinc-950/86 text-[10px] font-black uppercase tracking-widest text-zinc-500 backdrop-blur-xl">
-                Loading catalog
-              </div>
+              <LazySurfaceFallback
+                label="Loading catalog"
+                className="absolute inset-0 z-40 grid place-items-center bg-zinc-950/86 text-zinc-500 backdrop-blur-xl"
+              />
             }
           >
             <StylePresetCatalogSearchSurface
@@ -2547,7 +3031,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             <button
               type="button"
               onClick={() => setSelectedStyles([])}
-              className="flex size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
+              className="flex size-8 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
               aria-label="Clear selected styles"
             >
               <X size={14} />
@@ -2556,8 +3040,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         </div>
 
         <div
-          className={`flex flex-col gap-2 overflow-y-auto custom-scrollbar pr-1 ${
-            selectedStyles.length > 0 ? 'min-h-0 flex-1' : 'shrink-0'
+          className={`grid grid-cols-2 gap-2 overflow-y-auto custom-scrollbar pr-1 ${
+            selectedStyles.length > 0 ? 'min-h-0 flex-1 content-start' : 'shrink-0'
           }`}
         >
           {Array.from({ length: MAX_SELECTED_STYLE_SLOTS }).map((_, index) => {
@@ -2571,9 +3055,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 <div
                   key={`empty-${index}`}
                   data-selected-style-empty-slot={index + 1}
-                  className="flex h-14 items-center gap-2 rounded-lg border border-dashed border-white/8 bg-white/[0.02] px-3 text-zinc-600"
+                  className="flex aspect-[2/3] min-h-0 flex-col items-center justify-center gap-2 rounded-[6px] border border-dashed border-white/8 bg-white/[0.02] p-3 text-center text-zinc-600"
                 >
-                  <div className="flex size-7 shrink-0 items-center justify-center rounded-md border border-white/8 bg-white/4">
+                  <div className="flex size-10 shrink-0 items-center justify-center rounded-[6px] border border-white/8 bg-white/4">
                     <Palette size={13} />
                   </div>
                   <span className="text-[9px] font-black uppercase tracking-widest">
@@ -2588,75 +3072,77 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                 key={slot.preset.id}
                 data-selected-style-slot={slot.preset.id}
                 data-selected-style-card-image={slotCardImage?.kind ?? 'empty'}
-                className="rounded-xl border border-white/10 bg-zinc-900/55 p-2.5 shadow-[0_14px_30px_rgba(0,0,0,0.22)]"
+                className="group/slot relative aspect-[2/3] overflow-hidden rounded-[6px] border border-white/10 bg-zinc-950 shadow-[0_14px_30px_rgba(0,0,0,0.22)]"
               >
-                <div className="grid grid-cols-[3.25rem_minmax(0,1fr)_1.75rem] items-start gap-2.5">
-                  <div className="relative aspect-[3/4] w-[3.25rem] shrink-0 overflow-hidden rounded-lg border border-white/10 bg-zinc-950">
-                    {slotCardImage ? (
-                      <img
-                        src={slotCardImage.src}
-                        alt=""
-                        width={52}
-                        height={69}
-                        className="size-full object-cover"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    ) : (
-                      <div
-                        className={`flex size-full items-center justify-center ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'}`}
-                      >
-                        {getPackIcon(slot.packId)}
-                      </div>
-                    )}
-                    <div className="absolute left-1 top-1 rounded-sm border border-black/30 bg-black/55 px-1 py-0.5 text-[7px] font-black text-white/80 backdrop-blur">
-                      {index + 1}
-                    </div>
-                    <div
-                      className={`absolute bottom-1 right-1 flex size-5 items-center justify-center rounded-md border border-white/10 bg-black/52 ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'} backdrop-blur`}
+                {slotCardImage ? (
+                  <img
+                    src={slotCardImage.src}
+                    alt=""
+                    width={180}
+                    height={270}
+                    className="absolute inset-0 size-full object-cover transition-transform duration-300 group-hover/slot:scale-[1.025]"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : (
+                  <div
+                    className={`absolute inset-0 flex items-center justify-center ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'}`}
+                  >
+                    {getPackIcon(slot.packId)}
+                  </div>
+                )}
+
+                <div className="absolute inset-0 bg-linear-to-t from-black/92 via-black/18 to-black/18" />
+
+                <div className="absolute left-1.5 top-1.5 rounded-[4px] border border-black/30 bg-black/58 px-1 py-0.5 text-[7px] font-black text-white/80 backdrop-blur">
+                  {index + 1}
+                </div>
+                <button
+                  type="button"
+                  onClick={() => removeSelectedStyle(slot.preset.id)}
+                  className="absolute right-1.5 top-1.5 flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-white/10 bg-black/52 text-zinc-300 opacity-0 backdrop-blur transition-[background-color,color,opacity] hover:bg-red-500/20 hover:text-red-100 group-hover/slot:opacity-100 group-focus-within/slot:opacity-100"
+                  aria-label={`Remove ${slot.preset.name}`}
+                >
+                  <X size={13} />
+                </button>
+
+                <div className="absolute inset-x-0 bottom-0 p-2">
+                  <div className="mb-1 flex items-center gap-1 text-[7px] font-black uppercase tracking-[0.16em] text-zinc-300/75">
+                    <span
+                      className={`flex size-4 items-center justify-center rounded-[4px] border border-white/10 bg-black/42 ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'} backdrop-blur`}
                     >
                       {getPackIcon(slot.packId)}
-                    </div>
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <div className="mb-1 text-[8px] font-black uppercase tracking-[0.2em] text-zinc-500">
+                    </span>
+                    <span className="truncate">
                       Slot {index + 1} - {slot.packName}
-                    </div>
-                    <h3 className="truncate text-xs font-black uppercase tracking-tight text-white">
-                      {slot.preset.name}
-                    </h3>
-                    <p className="mt-1 line-clamp-1 text-[9px] leading-relaxed text-zinc-400">
-                      {layer.aesthetic}
-                    </p>
+                    </span>
                   </div>
-                  <button
-                    type="button"
-                    onClick={() => removeSelectedStyle(slot.preset.id)}
-                    className="flex size-7 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-400 transition-colors hover:bg-red-500/15 hover:text-red-200"
-                    aria-label={`Remove ${slot.preset.name}`}
-                  >
-                    <X size={13} />
-                  </button>
-                </div>
+                  <h3 className="truncate text-[10px] font-black uppercase leading-tight tracking-tight text-white">
+                    {slot.preset.name}
+                  </h3>
+                  <p className="mt-1 line-clamp-2 text-[8px] leading-relaxed text-zinc-300/82">
+                    {layer.aesthetic}
+                  </p>
 
-                <div className="mt-2 flex items-center gap-2">
-                  <Palette className="size-3 shrink-0 text-zinc-500" />
-                  <input
-                    type="range"
-                    min={0.1}
-                    max={1}
-                    step={0.05}
-                    value={slot.strength}
-                    onChange={(event) =>
-                      updateSelectedStyleStrength(slot.preset.id, Number(event.target.value))
-                    }
-                    className="h-1 min-w-0 flex-1 accent-white"
-                    aria-label={`Style Strength ${slot.preset.name}`}
-                    data-selected-style-strength={slot.preset.id}
-                  />
-                  <span className="w-8 text-right text-[8px] font-black tabular-nums text-zinc-400">
-                    {formatStyleStrength(slot.strength)}
-                  </span>
+                  <div className="mt-2 flex items-center gap-1.5">
+                    <Palette className="size-3 shrink-0 text-zinc-400" />
+                    <input
+                      type="range"
+                      min={0.1}
+                      max={1}
+                      step={0.05}
+                      value={slot.strength}
+                      onChange={(event) =>
+                        updateSelectedStyleStrength(slot.preset.id, Number(event.target.value))
+                      }
+                      className="h-1 min-w-0 flex-1 accent-white"
+                      aria-label={`Style Strength ${slot.preset.name}`}
+                      data-selected-style-strength={slot.preset.id}
+                    />
+                    <span className="w-7 text-right text-[8px] font-black tabular-nums text-zinc-300">
+                      {formatStyleStrength(slot.strength)}
+                    </span>
+                  </div>
                 </div>
               </div>
             );
@@ -2667,7 +3153,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
           type="button"
           onClick={handleGenerateSelectedStyles}
           disabled={selectedStyles.length === 0 || isGenerating}
-          className="mt-3 flex h-11 items-center justify-center gap-2 rounded-xl border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/35 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-white/8 disabled:bg-white/5 disabled:text-zinc-600"
+          className="mt-3 flex h-11 items-center justify-center gap-2 rounded-[6px] border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/35 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-white/8 disabled:bg-white/5 disabled:text-zinc-600"
         >
           <Play size={16} />
           {isGenerating ? 'Generating' : 'Generate'}

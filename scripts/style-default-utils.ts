@@ -1,8 +1,8 @@
 import { copyFile, mkdir, rename, rm, stat } from 'node:fs/promises';
-import os from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
 import { Effect } from 'effect';
+import { resolveUserHome } from '../apps/local-server/src/platformHome';
 import type { StyleRuntimePreset } from '../components/recipes/styles/runtimeTypes';
 import { loadStyleManifestGraph, styleManifestsDir } from './style-manifest-files';
 import { composeStyleRuntimePacksFromManifests } from '../components/recipes/stylePresetManifests';
@@ -11,7 +11,7 @@ import { styleCategoryImageKey } from '../lib/recipeAssetKeys';
 import { runWithScriptRetry } from './runtimePolicy';
 
 export const rootDir = process.cwd();
-const homeDir = process.env.USERPROFILE?.trim() || process.env.HOME?.trim() || os.homedir();
+const homeDir = resolveUserHome();
 const recipeAssetsDir = path.join(rootDir, 'assets', 'recipes');
 export const recipeCardsDir = path.join(recipeAssetsDir, 'cards');
 const recipeStylesDir = path.join(recipeAssetsDir, 'styles');

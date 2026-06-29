@@ -508,10 +508,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   data-active-recipe-card={activeRecipeIndicator.id}
                   aria-label={`Active recipe: ${activeRecipeIndicator.title}. ${activeRecipeIndicator.summary}.`}
                   title={`${activeRecipeIndicator.title}: ${activeRecipeIndicator.summary}`}
-                  className={`flex h-8 min-w-[4.75rem] max-w-[8.5rem] flex-[0_1_8.5rem] items-center gap-1.5 overflow-hidden rounded-lg border px-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] sm:h-9 sm:max-w-[9.5rem] sm:flex-[0_0_9.5rem] ${activeRecipeIndicator.toneClassName}`}
+                  className={`group flex h-8 min-w-[5.5rem] max-w-[9.75rem] flex-[0_1_9.75rem] items-center gap-1.5 overflow-hidden rounded-[6px] border px-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] transition-[border-color,background-color,box-shadow] hover:shadow-[0_0_18px_rgba(255,255,255,0.05)] sm:h-9 sm:max-w-[10.5rem] sm:flex-[0_0_10.5rem] ${activeRecipeIndicator.toneClassName}`}
                 >
                   <span
-                    className={`h-5 w-1 shrink-0 rounded-full shadow-[0_0_12px_currentColor] ${activeRecipeIndicator.dotClassName}`}
+                    className={`h-5 w-1 shrink-0 rounded-[2px] shadow-[0_0_12px_currentColor] ${activeRecipeIndicator.dotClassName}`}
                   />
                   <span className="min-w-0">
                     <span className="block text-[6px] font-black uppercase leading-none tracking-[0.18em] opacity-60">
@@ -520,7 +520,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     <span className="block truncate text-[9px] font-black uppercase leading-tight tracking-[0.08em] text-white sm:text-[10px]">
                       {activeRecipeIndicator.title}
                     </span>
-                    <span className="block truncate text-[8px] font-bold leading-none opacity-70">
+                    <span className="block truncate text-[8px] font-medium leading-none opacity-70">
                       {activeRecipeIndicator.summary}
                     </span>
                   </span>

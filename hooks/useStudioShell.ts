@@ -27,6 +27,7 @@ import { useVaultTransfer } from './useVaultTransfer';
 import { useWorkspaceStrip } from './useWorkspaceStrip';
 import { useGenerationToolbarConfig } from './useGenerationToolbarConfig';
 import { buildStudioHeaderToolbarProps } from '../lib/buildStudioHeaderToolbarProps';
+import { countUnlinkedActiveServerJobs } from '../lib/browserQueueBackendSync';
 import {
   buildStudioPageController,
   buildStudioViewportController,
@@ -225,6 +226,7 @@ export function useStudioShell(): StudioShellController {
     onViewChange: handleViewChange,
     setIsEditorOpen: viewState.editor.setIsOpen,
     setImageToEdit: viewState.editor.setImage,
+    backendJobs: studioRuntime.activity.studioJobs,
   });
   const {
     jobs,
@@ -236,6 +238,10 @@ export function useStudioShell(): StudioShellController {
     isResting,
     cancelPersistentJob,
   } = generationSession.queue;
+  const unlinkedActiveServerJobCount = useMemo(
+    () => countUnlinkedActiveServerJobs(studioRuntime.activity.studioJobs, jobs),
+    [studioRuntime.activity.studioJobs, jobs],
+  );
   const {
     isEnhancingPrompt,
     isEditingImage,
@@ -727,7 +733,7 @@ export function useStudioShell(): StudioShellController {
             statusItems: studioRuntime.status.diagnostics.statusItems,
             queueResultPreviews,
             queueJobCount: jobs.length,
-            activeServerJobCount: studioRuntime.activity.activeServerJobCount,
+            activeServerJobCount: unlinkedActiveServerJobCount,
             isQueueOpen: viewState.queue.isOpen,
             setIsQueueOpen: viewState.queue.setIsOpen,
           },
@@ -763,7 +769,7 @@ export function useStudioShell(): StudioShellController {
       studioRuntime.status.diagnostics.statusItems,
       queueResultPreviews,
       jobs.length,
-      studioRuntime.activity.activeServerJobCount,
+      unlinkedActiveServerJobCount,
       viewState.queue.isOpen,
       viewState.queue.setIsOpen,
       viewState.overlays.settings.open,

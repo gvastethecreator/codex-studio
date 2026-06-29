@@ -80,7 +80,13 @@ export interface Workspace {
   lastImage?: string; // Cache for the thumbnail
 }
 
-export type QueueJobStatus = 'pending' | 'processing' | 'completed' | 'failed' | 'cancelled';
+export type QueueJobStatus =
+  | 'pending'
+  | 'processing'
+  | 'completed'
+  | 'failed'
+  | 'cancelled'
+  | 'needs_review';
 
 export interface QueueJob {
   id: string;
@@ -89,6 +95,7 @@ export interface QueueJob {
   config: ImageGenerationConfig;
   status: QueueJobStatus;
   serverJobId?: string | null;
+  serverJobIds?: string[];
   error?: string;
   createdAt: number;
   completedAt?: number;

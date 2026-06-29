@@ -5,7 +5,7 @@
 1. Run `bun run studio:init`.
 2. Start the backend with `bun run dev:server`.
 3. Check `http://localhost:17223/api/health`.
-4. If a quality gate failed, open `logs/tooling/*.latest.log`.
+4. If a quality gate failed, run `bun run tooling:logs` and inspect `*.latest.log`.
 
 ## Common Startup Problems
 
@@ -43,7 +43,7 @@ Check: change `STUDIO_SERVER_PORT` or `STUDIO_CODEX_WS_PORT` in `.env.local`.
 
 If `check`, `lint`, `test`, or `build` fails and the terminal output is truncated:
 
-- open `logs/tooling/`
+- run `bun run tooling:logs`
 - inspect the matching `*.latest.log`
 - include the exact log in issue or PR notes
 

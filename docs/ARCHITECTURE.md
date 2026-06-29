@@ -78,7 +78,7 @@ graph TD
 
 - SQLite is the durable source of truth for jobs, cataloged assets, libraries, projects, settings, events, and system logs.
 - `/api/jobs` and `/api/catalog` are summary-first hot reads; detail paths load full payloads on demand.
-- The Studio Library defaults to a local user folder, for example `%USERPROFILE%\AI-Studio-Library` on Windows.
+- The Studio Library defaults to a local user folder: `C:\Users\<user>\AI-Studio-Library` on Windows, `/Users/<user>/AI-Studio-Library` on macOS, or `/home/<user>/AI-Studio-Library` on Linux.
 - Internal Studio Library state lives under `.studio/`.
 - Generated outputs, thumbnails, exports, and trash assets live under `outputs/`.
 - Browser storage is bounded compatibility state, not durable truth.

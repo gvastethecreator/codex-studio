@@ -17,10 +17,15 @@ import {
 } from '@tabler/icons-react';
 
 import { canRetryStudioJob } from '../lib/studioJobRetry';
+import { getActiveRecipeIndicator } from '../lib/activeRecipeIndicator';
+import {
+  getPrimaryQueueJobServerJobId,
+  getQueueJobServerJobIds,
+} from '../lib/browserQueueBackendSync';
 import { cn } from '../lib/utils';
 import type { StudioQueueResultPreview } from '../lib/studioQueueResults';
 import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
-import type { QueueJob } from '../types';
+import type { QueueJob, RecipeId } from '../types';
 
 interface QueuePanelProps {
   jobs: QueueJob[];
@@ -79,6 +84,12 @@ const localStatusConfig: Record<
     bg: 'bg-rose-500/10',
     border: 'border-rose-500/20',
   },
+  needs_review: {
+    icon: AlertTriangle,
+    color: 'text-amber-300',
+    bg: 'bg-amber-500/10',
+    border: 'border-amber-500/20',
+  },
 };
 
 function getServerStatusColor(status: StudioJob['status']) {
@@ -127,6 +138,47 @@ const StatItem = ({ label, value, color }: { label: string; value: number; color
   </div>
 );
 
+type RegisteredRecipeId = Exclude<RecipeId, null>;
+
+function normalizeQueueRecipeId(value: string | null | undefined): RegisteredRecipeId | null {
+  switch (value) {
+    case 'styles':
+    case 'remaster':
+    case 'spritesheet':
+    case 'cinematic':
+    case 'character-lab':
+    case 'character':
+    case 'camera':
+    case 'timeline':
+      return value;
+    default:
+      return null;
+  }
+}
+
+function formatQueueTaskLabel(value: string | null | undefined) {
+  if (!value) return 'Task';
+  return value.replace(/_/g, ' ').replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function resolveQueueRecipeTone(recipeId: string | null | undefined, fallbackTask?: string | null) {
+  const normalizedRecipeId = normalizeQueueRecipeId(recipeId);
+  const recipe = getActiveRecipeIndicator(normalizedRecipeId);
+  if (recipe) {
+    return {
+      label: recipe.title,
+      toneClassName: recipe.toneClassName,
+      dotClassName: recipe.dotClassName,
+    };
+  }
+
+  return {
+    label: formatQueueTaskLabel(fallbackTask),
+    toneClassName: 'border-white/10 bg-white/5 text-white/45',
+    dotClassName: 'bg-white/35',
+  };
+}
+
 export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
   ({
     jobs,
@@ -162,6 +214,10 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
       }
       return map;
     }, [results]);
+    const linkedServerJobIds = useMemo(
+      () => new Set(jobs.flatMap((job) => getQueueJobServerJobIds(job))),
+      [jobs],
+    );
 
     const hasLiveDurations =
       jobs.some((job) => job.status === 'pending' || job.status === 'processing') ||
@@ -179,9 +235,11 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     const processingCount = jobs.filter((job) => job.status === 'processing').length;
     const completedCount = jobs.filter((job) => job.status === 'completed').length;
     const failedCount = jobs.filter(
-      (job) => job.status === 'failed' || job.status === 'cancelled',
+      (job) =>
+        job.status === 'failed' || job.status === 'cancelled' || job.status === 'needs_review',
     ).length;
-    const totalJobs = jobs.length + serverJobs.length;
+    const totalJobs =
+      jobs.length + serverJobs.filter((job) => !linkedServerJobIds.has(job.id)).length;
 
     return (
       <div className="flex h-full w-full flex-col border border-white/10 bg-zinc-950 backdrop-blur-xl sm:w-[304px] sm:border-y-0 sm:border-r-0 sm:border-l sm:bg-black/45">
@@ -193,13 +251,14 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             <div>
               <h3 className="text-xs font-semibold text-white/90">Generation Queue</h3>
               <p className="text-[10px] font-medium uppercase tracking-wider text-white/40">
-                {totalJobs} visible jobs • 3 local concurrent
+                {totalJobs} tracked jobs • 3 local concurrent
               </p>
             </div>
           </div>
 
           <div className="flex items-center gap-1">
-            {(completedCount > 0 || jobs.some((job) => job.status === 'cancelled')) && (
+            {(completedCount > 0 ||
+              jobs.some((job) => job.status === 'cancelled' || job.status === 'needs_review')) && (
               <button
                 type="button"
                 onClick={onClearCompleted}
@@ -400,31 +459,36 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                           No browser-side queued items.
                         </div>
                       ) : (
-                        [...jobs]
-                          .reverse()
-                          .map((job) => (
+                        [...jobs].reverse().map((job) => {
+                          const serverJobIds = getQueueJobServerJobIds(job);
+                          const primaryServerJobId = getPrimaryQueueJobServerJobId(job);
+                          const resultPreview =
+                            serverJobIds
+                              .map((serverJobId) => resultsByJobId.get(serverJobId))
+                              .find((src): src is string => Boolean(src)) ??
+                            job.config.attachments[0]?.dataUrl ??
+                            null;
+
+                          return (
                             <JobItem
                               key={job.id}
                               job={job}
                               nowMs={nowMs}
-                              previewSrc={
-                                job.serverJobId
-                                  ? (resultsByJobId.get(job.serverJobId) ??
-                                    job.config.attachments[0]?.dataUrl ??
-                                    null)
-                                  : (job.config.attachments[0]?.dataUrl ?? null)
-                              }
-                              isSelected={selectedJobId === job.serverJobId}
+                              previewSrc={resultPreview}
+                              isSelected={Boolean(
+                                selectedJobId && serverJobIds.includes(selectedJobId),
+                              )}
                               onInspect={
-                                job.serverJobId
-                                  ? () => onInspectJob(job.serverJobId as string)
+                                primaryServerJobId
+                                  ? () => onInspectJob(primaryServerJobId)
                                   : undefined
                               }
                               onRetry={() => onRetry(job.id)}
                               onCancel={() => onCancel(job.id)}
                               onRemove={() => onRemove(job.id)}
                             />
-                          ))
+                          );
+                        })
                       )}
                     </AnimatePresence>
                   </div>
@@ -549,6 +613,7 @@ const ServerJobItem: React.FC<{
   const canCancel = job.status === 'queued' || job.status === 'running';
   const canRetry = Boolean(onRetry) && canRetryStudioJob(job.status);
   const statusColor = getServerStatusColor(job.status);
+  const recipeTone = resolveQueueRecipeTone(job.recipeId, job.kind);
   const createdAtMs = toEpochMs(job.createdAt);
   const completedAtMs = toEpochMs(job.completedAt ?? null);
   const durationMs = createdAtMs ? (completedAtMs ?? nowMs) - createdAtMs : null;
@@ -568,12 +633,13 @@ const ServerJobItem: React.FC<{
   return (
     <div
       className={cn(
-        'flex items-start gap-1.5 rounded-lg border px-1.5 py-1 transition-colors',
+        'relative flex items-start gap-1.5 overflow-hidden rounded-[6px] border px-1.5 py-1 transition-colors',
         isSelected
           ? 'border-accent-500/30 bg-accent-500/10'
           : 'border-white/5 bg-black/20 hover:border-white/10 hover:bg-white/5',
       )}
     >
+      <span className={cn('absolute inset-y-0 left-0 w-0.5', recipeTone.dotClassName)} />
       <button
         type="button"
         onClick={onInspect}
@@ -581,7 +647,7 @@ const ServerJobItem: React.FC<{
       >
         <div className="mt-0.5 shrink-0">{icon}</div>
 
-        <div className="mt-0.5 size-7 shrink-0 overflow-hidden rounded-md border border-white/10 bg-black/40">
+        <div className="mt-0.5 size-7 shrink-0 overflow-hidden rounded-[6px] border border-white/10 bg-black/40">
           {previewSrc ? (
             <img
               src={previewSrc}
@@ -605,7 +671,16 @@ const ServerJobItem: React.FC<{
           <div className="mt-0.5 flex items-center gap-1">
             <span
               className={cn(
-                'rounded-md border px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider',
+                'inline-flex items-center gap-1 rounded-[6px] border px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider',
+                recipeTone.toneClassName,
+              )}
+            >
+              <span className={cn('size-1.5 rounded-full', recipeTone.dotClassName)} />
+              {recipeTone.label}
+            </span>
+            <span
+              className={cn(
+                'rounded-[6px] border px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider',
                 statusColor,
                 job.status === 'completed'
                   ? 'border-emerald-500/20 bg-emerald-500/10'
@@ -619,7 +694,7 @@ const ServerJobItem: React.FC<{
               {job.status}
             </span>
 
-            <span className="rounded-md border border-white/10 bg-black/30 px-1.5 py-0.5 text-[9px] text-white/35">
+            <span className="rounded-[6px] border border-white/10 bg-black/30 px-1.5 py-0.5 text-[9px] text-white/35">
               {job.kind}
             </span>
           </div>
@@ -639,7 +714,7 @@ const ServerJobItem: React.FC<{
           </div>
 
           {job.error && (
-            <p className="mt-1 line-clamp-2 rounded border border-rose-500/10 bg-rose-500/5 p-1 text-[9px] text-rose-300/80">
+            <p className="mt-1 line-clamp-2 rounded-[6px] border border-rose-500/10 bg-rose-500/5 p-1 text-[9px] text-rose-300/80">
               {job.error}
             </p>
           )}
@@ -652,7 +727,7 @@ const ServerJobItem: React.FC<{
           <button
             type="button"
             onClick={onCancel}
-            className="studio-hit-target rounded-lg p-1 text-white/35 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
+            className="studio-hit-target rounded-[6px] p-1 text-white/35 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
             title="Cancel backend job"
           >
             <XCircle size={13} />
@@ -662,7 +737,7 @@ const ServerJobItem: React.FC<{
           <button
             type="button"
             onClick={onRetry}
-            className="studio-hit-target rounded-lg p-1 text-white/35 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
+            className="studio-hit-target rounded-[6px] p-1 text-white/35 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
             title="Retry backend job"
           >
             <RotateCcw size={13} />
@@ -686,6 +761,9 @@ const JobItem: React.FC<{
   const config = localStatusConfig[job.status];
   const Icon = config.icon;
   const durationMs = (job.completedAt ?? nowMs) - job.createdAt;
+  const serverJobIds = getQueueJobServerJobIds(job);
+  const primaryServerJobId = getPrimaryQueueJobServerJobId(job);
+  const recipeTone = resolveQueueRecipeTone(job.config.recipeId, job.config.recipeId);
 
   const content = (
     <>
@@ -693,7 +771,7 @@ const JobItem: React.FC<{
         <Icon size={14} className={cn(config.spin && 'animate-spin')} />
       </div>
 
-      <div className="mt-0.5 size-7 shrink-0 overflow-hidden rounded-md border border-white/10 bg-black/40">
+      <div className="mt-0.5 size-7 shrink-0 overflow-hidden rounded-[6px] border border-white/10 bg-black/40">
         {previewSrc ? (
           <img
             src={previewSrc}
@@ -717,15 +795,26 @@ const JobItem: React.FC<{
         <div className="flex flex-wrap items-center gap-1.5">
           <span
             className={cn(
-              'rounded-md border px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider',
+              'inline-flex items-center gap-1 rounded-[6px] border px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider',
+              recipeTone.toneClassName,
+            )}
+          >
+            <span className={cn('size-1.5 rounded-full', recipeTone.dotClassName)} />
+            {recipeTone.label}
+          </span>
+          <span
+            className={cn(
+              'rounded-[6px] border px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider',
               config.color,
               job.status === 'completed'
                 ? 'border-emerald-500/20 bg-emerald-500/10'
                 : job.status === 'failed' || job.status === 'cancelled'
                   ? 'border-rose-500/20 bg-rose-500/10'
-                  : job.status === 'processing'
-                    ? 'border-accent-500/20 bg-accent-500/10'
-                    : 'border-white/15 bg-white/5',
+                  : job.status === 'needs_review'
+                    ? 'border-amber-500/20 bg-amber-500/10'
+                    : job.status === 'processing'
+                      ? 'border-accent-500/20 bg-accent-500/10'
+                      : 'border-white/15 bg-white/5',
             )}
           >
             {job.status}
@@ -735,20 +824,28 @@ const JobItem: React.FC<{
           <span className="text-[9px] text-white/20">•</span>
           <span className="text-[9px] text-white/30">{formatDurationMs(durationMs)}</span>
 
-          {job.serverJobId ? (
-            <span className="rounded-md border border-accent-500/20 bg-accent-500/10 px-1.5 py-0.5 text-[9px] text-accent-300">
-              #{job.serverJobId.slice(0, 8)}
+          {primaryServerJobId ? (
+            <span className="rounded-[6px] border border-accent-500/20 bg-accent-500/10 px-1.5 py-0.5 text-[9px] text-accent-300">
+              #{primaryServerJobId.slice(0, 8)}
+              {serverJobIds.length > 1 ? ` +${serverJobIds.length - 1}` : ''}
             </span>
           ) : null}
         </div>
 
         {job.error && (
-          <p className="mt-1 line-clamp-2 rounded border border-rose-500/10 bg-rose-500/5 p-1 text-[9px] leading-tight text-rose-400/80">
+          <p
+            className={cn(
+              'mt-1 line-clamp-2 rounded-[6px] border p-1 text-[9px] leading-tight',
+              job.status === 'needs_review'
+                ? 'border-amber-500/10 bg-amber-500/5 text-amber-300/80'
+                : 'border-rose-500/10 bg-rose-500/5 text-rose-400/80',
+            )}
+          >
             {job.error}
           </p>
         )}
 
-        {job.serverJobId ? (
+        {primaryServerJobId ? (
           <div className="mt-1 flex items-center gap-1.5 text-[8px] font-bold uppercase tracking-wider text-zinc-500">
             <BrainCircuit size={11} className="text-accent-400" />
             Click to inspect backend transcript
@@ -765,11 +862,12 @@ const JobItem: React.FC<{
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, scale: 0.95 }}
       className={cn(
-        'group relative rounded-lg border px-1.5 py-1 transition-[color,background-color,border-color,opacity,transform] duration-200',
+        'group relative overflow-hidden rounded-[6px] border px-1.5 py-1 transition-[color,background-color,border-color,opacity,transform] duration-200',
         config.bg,
         isSelected ? 'border-accent-500/30 ring-1 ring-accent-500/20' : config.border,
       )}
     >
+      <span className={cn('absolute inset-y-0 left-0 w-0.5', recipeTone.dotClassName)} />
       <div className="flex items-start gap-1.5">
         {onInspect ? (
           <button
@@ -788,18 +886,20 @@ const JobItem: React.FC<{
             <button
               type="button"
               onClick={onCancel}
-              className="studio-hit-target rounded-lg p-1 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
+              className="studio-hit-target rounded-[6px] p-1 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
               title="Cancel"
             >
               <XCircle size={14} />
             </button>
           )}
 
-          {(job.status === 'failed' || job.status === 'cancelled') && (
+          {(job.status === 'failed' ||
+            job.status === 'cancelled' ||
+            job.status === 'needs_review') && (
             <button
               type="button"
               onClick={onRetry}
-              className="studio-hit-target rounded-lg p-1 text-white/40 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
+              className="studio-hit-target rounded-[6px] p-1 text-white/40 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
               title="Retry"
             >
               <RotateCcw size={14} />
@@ -809,7 +909,7 @@ const JobItem: React.FC<{
           <button
             type="button"
             onClick={onRemove}
-            className="studio-hit-target rounded-lg p-1 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
+            className="studio-hit-target rounded-[6px] p-1 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
             title="Remove"
           >
             <Trash2 size={14} />

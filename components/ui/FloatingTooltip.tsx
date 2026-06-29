@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { MotionDiv, AnimatePresence } from 'motion/react';
+import { AnimatePresence, MotionDiv } from 'motion/react';
 import { createPortal } from 'react-dom';
 
 interface FloatingTooltipProps {
@@ -14,31 +14,74 @@ export const FloatingTooltip: React.FC<FloatingTooltipProps> = ({
   delay = 300,
 }) => {
   const [isVisible, setIsVisible] = useState(false);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
   const timeoutRef = useRef<number | null>(null);
+  const frameRef = useRef<number | null>(null);
+  const positionRef = useRef({ x: 0, y: 0 });
+  const tooltipNodeRef = useRef<HTMLDivElement | null>(null);
+
+  const updateTooltipPosition = useCallback(() => {
+    frameRef.current = null;
+    const node = tooltipNodeRef.current;
+    if (!node) return;
+
+    const offset = 15;
+    const { x, y } = positionRef.current;
+    let nextX = x + offset;
+    let nextY = y + offset;
+    const width = node.offsetWidth;
+    const height = node.offsetHeight;
+
+    if (nextX + width > window.innerWidth - 10) {
+      nextX = x - width - offset;
+    }
+
+    if (nextY + height > window.innerHeight - 10) {
+      nextY = y - height - offset;
+    }
+
+    node.style.transform = `translate3d(${Math.max(10, nextX)}px, ${Math.max(10, nextY)}px, 0)`;
+  }, []);
+
+  const scheduleTooltipPosition = useCallback(() => {
+    if (frameRef.current !== null) return;
+    frameRef.current = window.requestAnimationFrame(updateTooltipPosition);
+  }, [updateTooltipPosition]);
+
+  const setTooltipNode = useCallback(
+    (node: HTMLDivElement | null) => {
+      tooltipNodeRef.current = node;
+      if (node) scheduleTooltipPosition();
+    },
+    [scheduleTooltipPosition],
+  );
 
   const handleMouseEnter = (e: React.MouseEvent) => {
-    setPosition({ x: e.clientX, y: e.clientY });
+    positionRef.current = { x: e.clientX, y: e.clientY };
     timeoutRef.current = window.setTimeout(() => {
       setIsVisible(true);
+      scheduleTooltipPosition();
     }, delay);
   };
 
   const handleMouseMove = (e: React.MouseEvent) => {
-    setPosition({ x: e.clientX, y: e.clientY });
+    positionRef.current = { x: e.clientX, y: e.clientY };
+    if (tooltipNodeRef.current) scheduleTooltipPosition();
   };
 
   const handleMouseLeave = () => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
     }
     setIsVisible(false);
   };
 
   useEffect(() => {
-    const timeout = timeoutRef.current;
     return () => {
+      const timeout = timeoutRef.current;
       if (timeout) clearTimeout(timeout);
+      const frame = frameRef.current;
+      if (frame !== null) window.cancelAnimationFrame(frame);
     };
   }, []);
 
@@ -53,7 +96,7 @@ export const FloatingTooltip: React.FC<FloatingTooltipProps> = ({
       {typeof window !== 'undefined' &&
         createPortal(
           <AnimatePresence>
-            {isVisible && <TooltipPortal content={content} position={position} />}
+            {isVisible && <TooltipPortal content={content} setNode={setTooltipNode} />}
           </AnimatePresence>,
           document.body,
         )}
@@ -63,58 +106,32 @@ export const FloatingTooltip: React.FC<FloatingTooltipProps> = ({
 
 const TooltipPortal = ({
   content,
-  position,
+  setNode,
 }: {
   content: React.ReactNode;
-  position: { x: number; y: number };
+  setNode: (node: HTMLDivElement | null) => void;
 }) => {
-  const [adjustedPos, setAdjustedPos] = useState({ x: position.x + 15, y: position.y + 15 });
-
-  const tooltipRef = useCallback(
-    (node: HTMLDivElement | null) => {
-      if (!node) return;
-      const rect = node.getBoundingClientRect();
-      let newX = position.x + 15;
-      let newY = position.y + 15;
-
-      if (newX + rect.width > window.innerWidth - 10) {
-        newX = position.x - rect.width - 15;
-      }
-
-      if (newY + rect.height > window.innerHeight - 10) {
-        newY = position.y - rect.height - 15;
-      }
-
-      setAdjustedPos({ x: newX, y: newY });
-    },
-    [position],
-  );
-
   return (
     <MotionDiv
-      ref={tooltipRef}
-      initial={{ opacity: 0, scale: 0.95, x: adjustedPos.x, y: adjustedPos.y }}
+      ref={setNode}
+      initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        scale: 1,
-        x: adjustedPos.x,
-        y: adjustedPos.y,
       }}
-      exit={{ opacity: 0, scale: 0.95 }}
+      exit={{ opacity: 0 }}
       transition={{
         opacity: { duration: 0.15, ease: 'easeOut' },
-        scale: { duration: 0.15, ease: 'easeOut' },
-        x: { type: 'spring', damping: 25, stiffness: 300 },
-        y: { type: 'spring', damping: 25, stiffness: 300 },
       }}
       style={{
         position: 'fixed',
         top: 0,
         left: 0,
+        transform: 'translate3d(-9999px, -9999px, 0)',
         zIndex: 50,
         pointerEvents: 'none',
+        willChange: 'transform, opacity',
       }}
-      className="bg-zinc-900/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl"
+      className="rounded-[6px] border border-white/10 bg-zinc-900/95 shadow-2xl backdrop-blur-xl"
     >
       {content}
     </MotionDiv>

@@ -11,6 +11,12 @@ import {
   prepareBrowserQueueJobsForPersist,
   prepareBrowserQueueJobsForRestore,
 } from '../lib/browserQueuePersistence';
+import {
+  getQueueJobServerJobIds,
+  linkQueueJobToBackendJob,
+  reconcileBrowserQueueWithBackendJobs,
+} from '../lib/browserQueueBackendSync';
+import type { ShellActivityJob } from '../lib/shellActivityJob';
 import { get, set } from '../utils/idb';
 import { runtimeLogger } from '../utils/runtimeLogger';
 import { useLazyRef } from './useLazyRef';
@@ -20,6 +26,7 @@ interface UseQueueManagerProps {
   isGenerating: boolean;
   addToast: (message: string, type: 'success' | 'error' | 'info') => void;
   cancelPersistentJob: (jobId: string) => Promise<void>;
+  backendJobs?: ShellActivityJob[];
 }
 
 export function createQueueJob(
@@ -48,15 +55,22 @@ export const useQueueManager = ({
   isGenerating,
   addToast,
   cancelPersistentJob,
+  backendJobs = [],
 }: UseQueueManagerProps) => {
   const [jobs, setJobs] = useState<QueueJob[]>([]);
   const [isResting, setIsResting] = useState(false);
   const [queueTick, setQueueTick] = useState(0);
   const restTimerRef = useRef<NodeJS.Timeout | null>(null);
   const abortControllersRef = useLazyRef(() => new Map<string, AbortController>());
-  const linkedServerJobIdsRef = useLazyRef(() => new Map<string, string>());
+  const linkedServerJobIdsRef = useLazyRef(() => new Map<string, string[]>());
   const processingJobsRef = useLazyRef(() => new Set<string>());
   const hasHydratedPersistedQueueRef = useRef(false);
+  const backendJobsRef = useRef<ShellActivityJob[]>(backendJobs);
+
+  useEffect(() => {
+    backendJobsRef.current = backendJobs;
+    setJobs((currentJobs) => reconcileBrowserQueueWithBackendJobs(currentJobs, backendJobs));
+  }, [backendJobs]);
 
   useEffect(() => {
     let isMounted = true;
@@ -68,12 +82,17 @@ export const useQueueManager = ({
         const restoredJobs = prepareBrowserQueueJobsForRestore(storedJobs);
         linkedServerJobIdsRef.current.clear();
         for (const job of restoredJobs) {
-          if (job.serverJobId) {
-            linkedServerJobIdsRef.current.set(job.id, job.serverJobId);
+          const serverJobIds = getQueueJobServerJobIds(job);
+          if (serverJobIds.length > 0) {
+            linkedServerJobIdsRef.current.set(job.id, serverJobIds);
           }
         }
 
-        setJobs((currentJobs) => (currentJobs.length > 0 ? currentJobs : restoredJobs));
+        setJobs((currentJobs) =>
+          currentJobs.length > 0
+            ? currentJobs
+            : reconcileBrowserQueueWithBackendJobs(restoredJobs, backendJobsRef.current),
+        );
       })
       .catch((error) => {
         runtimeLogger.warn('Unable to restore browser queue from IndexedDB', error);
@@ -116,27 +135,37 @@ export const useQueueManager = ({
   const retry = useCallback(
     (jobId: string) => {
       startViewTransition(() => {
+        linkedServerJobIdsRef.current.delete(jobId);
         setJobs((prev) =>
           prev.map((job) =>
-            job.id === jobId ? { ...job, status: 'pending', error: undefined } : job,
+            job.id === jobId
+              ? {
+                  ...job,
+                  status: 'pending',
+                  serverJobId: null,
+                  serverJobIds: [],
+                  error: undefined,
+                  completedAt: undefined,
+                }
+              : job,
           ),
         );
         addToast('Retrying job...', 'info');
       });
     },
-    [addToast],
+    [addToast, linkedServerJobIdsRef],
   );
 
   const cancelJob = useCallback(
     (jobId: string) => {
       const controller = abortControllersRef.current.get(jobId);
-      const linkedServerJobId = linkedServerJobIdsRef.current.get(jobId);
+      const linkedServerJobIds = linkedServerJobIdsRef.current.get(jobId) ?? [];
       if (controller) {
         controller.abort();
         abortControllersRef.current.delete(jobId);
       }
 
-      if (linkedServerJobId) {
+      for (const linkedServerJobId of linkedServerJobIds) {
         void cancelPersistentJob(linkedServerJobId).catch((error) => {
           addToast(
             error instanceof Error ? error.message : 'Unable to cancel backend job',
@@ -176,7 +205,10 @@ export const useQueueManager = ({
       const remaining = new Set<string>();
       setJobs((prev) =>
         prev.filter((job) => {
-          const keep = job.status !== 'completed' && job.status !== 'cancelled';
+          const keep =
+            job.status !== 'completed' &&
+            job.status !== 'cancelled' &&
+            job.status !== 'needs_review';
           if (keep) remaining.add(job.id);
           return keep;
         }),
@@ -230,10 +262,13 @@ export const useQueueManager = ({
         const execution = startQueuedJobExecution(nextJob, {
           executeGeneration,
           onJobCreated: (studioJob) => {
-            linkedServerJobIdsRef.current.set(nextJob.id, studioJob.id);
+            const linkedIds = linkedServerJobIdsRef.current.get(nextJob.id) ?? [];
+            if (!linkedIds.includes(studioJob.id)) {
+              linkedServerJobIdsRef.current.set(nextJob.id, [...linkedIds, studioJob.id]);
+            }
             setJobs((prev) =>
               prev.map((job) =>
-                job.id === nextJob.id ? { ...job, serverJobId: studioJob.id } : job,
+                job.id === nextJob.id ? linkQueueJobToBackendJob(job, studioJob.id) : job,
               ),
             );
           },
@@ -250,14 +285,18 @@ export const useQueueManager = ({
 
           if (result.status === 'completed') {
             setJobs((prev) =>
-              prev.map((j) =>
-                j.id === nextJob.id
-                  ? {
-                      ...j,
-                      status: 'completed',
-                      completedAt: result.completedAt,
-                    }
-                  : j,
+              reconcileBrowserQueueWithBackendJobs(
+                prev.map((j) =>
+                  j.id === nextJob.id
+                    ? {
+                        ...j,
+                        status: 'completed',
+                        completedAt: result.completedAt,
+                        error: undefined,
+                      }
+                    : j,
+                ),
+                backendJobsRef.current,
               ),
             );
 
@@ -274,20 +313,28 @@ export const useQueueManager = ({
 
           if (result.status === 'cancelled') {
             setJobs((prev) =>
-              prev.map((j) => (j.id === nextJob.id ? { ...j, status: 'cancelled' } : j)),
+              reconcileBrowserQueueWithBackendJobs(
+                prev.map((j) =>
+                  j.id === nextJob.id ? { ...j, status: 'cancelled', error: undefined } : j,
+                ),
+                backendJobsRef.current,
+              ),
             );
             return;
           }
 
           setJobs((prev) =>
-            prev.map((j) =>
-              j.id === nextJob.id
-                ? {
-                    ...j,
-                    status: 'failed',
-                    error: result.error,
-                  }
-                : j,
+            reconcileBrowserQueueWithBackendJobs(
+              prev.map((j) =>
+                j.id === nextJob.id
+                  ? {
+                      ...j,
+                      status: 'failed',
+                      error: result.error,
+                    }
+                  : j,
+              ),
+              backendJobsRef.current,
             ),
           );
         } finally {

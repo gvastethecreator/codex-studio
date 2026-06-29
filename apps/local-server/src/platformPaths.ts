@@ -1,6 +1,6 @@
 import { existsSync } from 'node:fs';
-import os from 'node:os';
 import path from 'node:path';
+import { resolveUserHome } from './platformHome';
 
 export type PlatformPathKey =
   | 'codex-binary'
@@ -9,7 +9,7 @@ export type PlatformPathKey =
   | 'codex-config-dir';
 
 function homeDir() {
-  return process.env.USERPROFILE || os.homedir();
+  return resolveUserHome();
 }
 
 function firstExisting(paths: string[], fallback: string) {

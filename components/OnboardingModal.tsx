@@ -20,6 +20,11 @@ import {
   buildCodexStudioSetupPrompt,
   CODEX_STUDIO_SETUP_SKILL_PATH,
 } from '../lib/onboardingSetupPrompt';
+import {
+  buildOnboardingStyleCarouselEntries,
+  pickNextOnboardingStyleCarouselIndex,
+  type OnboardingStyleCarouselEntry,
+} from '../lib/onboardingStyleCarousel';
 import { STYLE_AVAILABLE_DEFAULT_IMAGES } from '../lib/recipeAssetCatalog';
 import type {
   HealthResponse,
@@ -29,10 +34,6 @@ import type {
 
 type OnboardingStatus = 'idle' | 'checking' | 'starting' | 'ready';
 type CheckTone = 'ready' | 'warning' | 'error' | 'pending';
-
-const styleRecipePreviewImages = Object.values(STYLE_AVAILABLE_DEFAULT_IMAGES)
-  .filter((imageUrl): imageUrl is string => typeof imageUrl === 'string' && imageUrl.length > 0)
-  .sort();
 
 interface OnboardingModalProps {
   apiBase: string;
@@ -53,12 +54,6 @@ function getToneIcon(tone: CheckTone) {
   if (tone === 'ready') return CheckCircle2;
   if (tone === 'pending') return CircleDashed;
   return CircleAlert;
-}
-
-function pickStyleRecipePreviewImage() {
-  if (styleRecipePreviewImages.length === 0) return fallbackStyleRecipePreview;
-  const randomIndex = Math.floor(Math.random() * styleRecipePreviewImages.length);
-  return styleRecipePreviewImages[randomIndex] ?? fallbackStyleRecipePreview;
 }
 
 function CheckRow({
@@ -106,25 +101,64 @@ function CheckRow({
   );
 }
 
-function PreviewCard({ previewImage }: { previewImage: string }) {
+function PreviewCard({ entry }: { entry: OnboardingStyleCarouselEntry }) {
   return (
-    <div className="mt-8 grid items-center gap-5 sm:grid-cols-[minmax(0,0.9fr)_32px_minmax(0,1fr)]">
-      <div className="order-last rounded-2xl border border-white/10 bg-black/30 p-4 sm:order-none">
-        <div className="mb-4 inline-grid size-11 place-items-center rounded-2xl border border-white/10 bg-white/5 text-zinc-300">
-          <Sparkles size={18} />
+    <div className="mt-6 grid grid-cols-[minmax(7.5rem,0.42fr)_minmax(0,1fr)] items-start gap-3 sm:grid-cols-1 sm:gap-4 lg:grid-cols-[minmax(15rem,0.7fr)_minmax(0,1fr)] xl:gap-5">
+      <div className="mx-auto w-full max-w-[8.75rem] sm:max-w-[22rem] lg:max-w-[24rem]">
+        <div className="relative overflow-hidden rounded-xl border border-white/10 bg-black/45 shadow-2xl shadow-black/40">
+          <div className="aspect-[2/3] w-full">
+            <AnimatePresence mode="wait">
+              <MotionDiv
+                key={entry.presetId}
+                initial={{ opacity: 0, scale: 1.035, x: 18, filter: 'blur(10px)' }}
+                animate={{ opacity: 1, scale: 1, x: 0, filter: 'blur(0px)' }}
+                transition={{ duration: 0.42, ease: 'power3.out' }}
+                className="absolute inset-0 grid place-items-center"
+              >
+                <img
+                  src={entry.imageUrl}
+                  alt={entry.alt}
+                  className="h-full w-full object-contain"
+                  loading="eager"
+                  decoding="async"
+                />
+              </MotionDiv>
+            </AnimatePresence>
+          </div>
+          <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/8" />
         </div>
-        <p className="font-mono text-sm font-semibold text-blue-300">/imagine</p>
-        <p className="mt-3 font-mono text-sm leading-7 text-zinc-300">
-          a strong subject with a clear mood, composed through a random style recipe
-        </p>
+        <div className="mt-2 flex flex-col gap-0.5 px-1 sm:flex-row sm:items-center sm:justify-between sm:gap-2">
+          <span className="min-w-0 truncate text-[10px] font-black uppercase tracking-[0.2em] text-white">
+            {entry.styleName}
+          </span>
+          <span className="shrink-0 font-mono text-[10px] text-zinc-400">{entry.presetId}</span>
+        </div>
       </div>
-      <ArrowRight className="mx-auto hidden text-blue-400 sm:block" size={22} />
-      <div className="order-first overflow-hidden rounded-2xl border border-white/10 bg-white/5 sm:order-none">
-        <img
-          src={previewImage}
-          alt="Random style recipe preview"
-          className="aspect-[4/3] w-full object-cover"
-        />
+
+      <div className="rounded-xl border border-white/10 bg-black/35 p-3 sm:p-5">
+        <div className="mb-3 flex flex-wrap items-center gap-2 sm:mb-4">
+          <span className="inline-flex items-center gap-2 rounded-lg border border-blue-400/20 bg-blue-500/10 px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-blue-200">
+            <Sparkles size={13} />
+            <span className="hidden sm:inline">Styles recipe</span>
+            <span className="sm:hidden">Style</span>
+          </span>
+          <span className="hidden rounded-lg border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-zinc-400 sm:inline-flex">
+            {entry.packName}
+          </span>
+        </div>
+        <AnimatePresence mode="wait">
+          <MotionDiv
+            key={`${entry.presetId}-prompt`}
+            initial={{ opacity: 0, y: 10, filter: 'blur(8px)' }}
+            animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+            transition={{ duration: 0.32, ease: 'power2.out' }}
+          >
+            <p className="text-sm font-semibold text-white">{entry.styleName}</p>
+            <p className="mt-2 rounded-lg border border-white/8 bg-black/35 p-2.5 font-mono text-[10px] leading-5 text-zinc-300 sm:mt-3 sm:p-3 sm:text-[12px] sm:leading-6">
+              {entry.prompt}
+            </p>
+          </MotionDiv>
+        </AnimatePresence>
       </div>
     </div>
   );
@@ -221,10 +255,16 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   const intro = isReady
     ? 'Create images locally with Codex. Your data stays on your machine.'
     : readiness.description;
-  const previewImage = React.useMemo(
-    () => (isOpen ? pickStyleRecipePreviewImage() : fallbackStyleRecipePreview),
-    [isOpen],
+  const previewEntries = React.useMemo(
+    () =>
+      buildOnboardingStyleCarouselEntries(
+        STYLE_AVAILABLE_DEFAULT_IMAGES,
+        fallbackStyleRecipePreview,
+      ),
+    [],
   );
+  const [previewIndex, setPreviewIndex] = React.useState(0);
+  const previewEntry = previewEntries[previewIndex] ?? previewEntries[0];
   const setupPrompt = React.useMemo(
     () =>
       buildCodexStudioSetupPrompt({
@@ -241,6 +281,26 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
     : localCodexSession?.reason === 'chatgpt_login_required'
       ? 'Run codex login and choose ChatGPT.'
       : localCodexSession?.error || 'Connect your local Codex session.';
+
+  React.useEffect(() => {
+    if (!isOpen) return;
+
+    setPreviewIndex((currentIndex) =>
+      pickNextOnboardingStyleCarouselIndex(previewEntries.length, currentIndex),
+    );
+  }, [isOpen, previewEntries.length]);
+
+  React.useEffect(() => {
+    if (!isOpen || previewEntries.length <= 1) return;
+
+    const intervalId = window.setInterval(() => {
+      setPreviewIndex((currentIndex) =>
+        pickNextOnboardingStyleCarouselIndex(previewEntries.length, currentIndex),
+      );
+    }, 3000);
+
+    return () => window.clearInterval(intervalId);
+  }, [isOpen, previewEntries.length]);
 
   return (
     <AnimatePresence>
@@ -296,10 +356,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
               </div>
             </header>
 
-            <main className="custom-scrollbar min-h-0 flex-1 overflow-y-auto px-5 py-7 sm:px-14 sm:py-10">
-              <div className="mx-auto max-w-7xl">
+            <main className="custom-scrollbar min-h-0 flex-1 overflow-y-auto overflow-x-hidden px-4 py-6 sm:px-8 sm:py-8 lg:px-10">
+              <div className="mx-auto w-full max-w-[100rem]">
                 <section className="border-b border-white/8 pb-7 sm:pb-9">
-                  <h2 className="max-w-4xl text-4xl font-semibold leading-tight text-white sm:text-6xl">
+                  <h2 className="max-w-4xl text-3xl font-semibold leading-tight text-white sm:text-5xl xl:text-6xl">
                     {headline}
                   </h2>
                   <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-400 sm:text-lg">
@@ -312,8 +372,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   ) : null}
                 </section>
 
-                <section className="grid gap-8 py-7 sm:py-10 xl:grid-cols-[minmax(0,1fr)_minmax(360px,0.92fr)]">
-                  <div>
+                <section className="grid gap-7 py-7 lg:grid-cols-[minmax(0,1.05fr)_minmax(21rem,0.78fr)] xl:grid-cols-[minmax(0,1.12fr)_minmax(24rem,0.72fr)]">
+                  <div className="min-w-0">
                     <p className="text-[11px] font-black uppercase tracking-[0.24em] text-blue-300">
                       Create images locally with Codex
                     </p>
@@ -321,15 +381,15 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       Describe what you want. Codex turns the prompt into images while your library
                       and outputs stay on this machine.
                     </p>
-                    <PreviewCard previewImage={previewImage} />
-                    <p className="mt-5 flex items-center gap-2 text-sm text-zinc-500">
+                    <PreviewCard entry={previewEntry} />
+                    <p className="mt-5 flex items-start gap-2 text-sm leading-6 text-zinc-500">
                       <Folder size={15} />
                       Everything runs locally. Nothing leaves your Studio Library unless you move
                       it.
                     </p>
                   </div>
 
-                  <div className="xl:border-l xl:border-white/8 xl:pl-10">
+                  <div className="min-w-0 lg:border-l lg:border-white/8 lg:pl-7 xl:pl-10">
                     <p className="text-[11px] font-black uppercase tracking-[0.24em] text-blue-300">
                       Local environment check
                     </p>

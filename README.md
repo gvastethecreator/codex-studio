@@ -2,11 +2,11 @@
 
 > Local-first image studio for creating, reviewing, and organizing AI images through your authenticated Codex/ChatGPT session.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Bun](https://img.shields.io/badge/runtime-Bun-black?logo=bun)](https://bun.sh)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Status](https://img.shields.io/badge/status-open--source%20preview-7c3aed)](#status)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-22c55e)](./CONTRIBUTING.md)
+[![License: MIT](https://shieldcn.dev/badge/license-MIT-yellow.svg?variant=secondary&size=xs)](./LICENSE)
+[![Bun](https://shieldcn.dev/badge/runtime-Bun-black.svg?logo=bun&variant=branded&size=xs)](https://bun.sh)
+[![TypeScript](https://shieldcn.dev/badge/TypeScript-6.x-blue.svg?logo=typescript&variant=branded&size=xs)](https://www.typescriptlang.org/)
+[![Status](https://shieldcn.dev/badge/status-preview-purple.svg?variant=secondary&size=xs)](#status)
+[![PRs Welcome](https://shieldcn.dev/badge/PRs-welcome-green.svg?variant=secondary&size=xs)](./CONTRIBUTING.md)
 
 Codex Studio runs on your machine: a React/Vite studio UI, a local Bun/Hono server, and `codex app-server` working together against your local ChatGPT login. The main Codex workflow does not require `OPENAI_API_KEY`; assets, job history, logs, and SQLite state live in your local Studio Library instead of the repo.
 
@@ -30,7 +30,7 @@ Codex Studio runs on your machine: a React/Vite studio UI, a local Bun/Hono serv
 
 Requirements:
 
-- Bun on `PATH`
+- Bun 1.3.14 on `PATH`
 - Codex CLI installed and authenticated with ChatGPT
 - `codex app-server` support in that Codex installation
 - A modern browser
@@ -66,10 +66,17 @@ Then open:
 
 Run `bun run studio:init` to create local defaults. For manual setup, copy `.env.example` to `.env.local`.
 
-The most common setting is:
+By default, the Studio Library lives under your OS home directory as `AI-Studio-Library`. Override it only when you want a custom absolute path:
 
 ```env
-STUDIO_LIBRARY_DIR=D:\AI-Studio-Library
+# Windows
+STUDIO_LIBRARY_DIR=C:\Users\<your-user>\AI-Studio-Library
+
+# macOS
+STUDIO_LIBRARY_DIR=/Users/<your-user>/AI-Studio-Library
+
+# Linux
+STUDIO_LIBRARY_DIR=/home/<your-user>/AI-Studio-Library
 ```
 
 Provider secrets, if used for optional external adapters, must stay in backend environment variables and out of SQLite, logs, screenshots, docs, and committed files.
@@ -114,10 +121,16 @@ Codex Studio is in open-source preview.
 - Optional provider adapters exist, but should be treated as backend integrations, not the product center.
 - Desktop packaging and broader first-run polish are still being hardened.
 
-## Contributing
+---
 
-Contributions are welcome. Start with [CONTRIBUTING.md](./CONTRIBUTING.md), then check [ROADMAP.md](./ROADMAP.md) for current priorities.
+- For deep technical details, check the [docs](docs/README.md) folder.
+- For feature requests and suggestions, create an issue or submit a PR.
+- If you like this project, consider giving it a star or becoming a sponsor.
 
-## License
+---
 
-MIT. See [LICENSE](./LICENSE).
+<h4 align="right">Support the further development of this tool 🤍</h4>
+<p align="right">
+  <a href="https://github.com/sponsors/gvastethecreator/"><img src="https://shieldcn.dev/badge/%E2%9D%A4-sponsor%20this%20project-red.svg?animate=pulse" alt="Sponsor this project" /></a>
+  <a href="https://x.com/gvastebb"><img src="https://shieldcn.dev/x/mention/gvastebb.svg?variant=branded" alt="Follow on X" /></a>
+</p>

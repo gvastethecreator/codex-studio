@@ -16,6 +16,7 @@ import type {
   RecipeId,
 } from '../types';
 import type { RecipeAliasId } from '../lib/recipeAliases';
+import { LazySurfaceFallback } from './ui/LazySurfaceFallback';
 
 type CameraAnglesRecipeProps = React.ComponentProps<typeof CameraAnglesRecipeComponent>;
 type CharacterLabRecipeProps = React.ComponentProps<typeof CharacterLabRecipeComponent>;
@@ -132,12 +133,6 @@ interface RecipeRouterProps {
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
 }
 
-const RecipeLoadingSurface: React.FC = () => (
-  <div className="flex h-full min-h-[420px] items-center justify-center text-[10px] font-black uppercase tracking-widest text-zinc-500">
-    Loading recipe
-  </div>
-);
-
 export const RecipeRouter: React.FC<RecipeRouterProps> = ({
   activeRecipe,
   activeRecipeAliasId = null,
@@ -164,7 +159,14 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
 
   return (
     <ErrorBoundary fallbackMessage="A critical error occurred while rendering this recipe.">
-      <React.Suspense fallback={<RecipeLoadingSurface />}>
+      <React.Suspense
+        fallback={
+          <LazySurfaceFallback
+            label="Loading recipe"
+            className="grid h-full min-h-[420px] place-items-center bg-transparent text-zinc-500"
+          />
+        }
+      >
         {activeRecipe === 'styles' && (
           <LoadedStylesRecipe
             config={generationConfig}

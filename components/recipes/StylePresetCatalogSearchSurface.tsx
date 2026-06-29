@@ -8,10 +8,10 @@ import {
   IconLoader as LoaderCircle,
 } from '@tabler/icons-react';
 import {
+  STYLE_CARD_THUMBNAILS,
   STYLE_CATEGORY_IMAGES,
   STYLE_CATEGORY_PREVIEWS,
-  STYLE_DEFAULT_IMAGES,
-} from '../../lib/recipeAssetCatalog';
+} from '../../lib/styleThumbnailCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { resolveStylePreviewImage } from '../../lib/stylePresetVisuals';
 
@@ -202,7 +202,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
         ) : results.length > 0 ? (
           <div data-style-catalog-results className="grid grid-cols-1 gap-3 2xl:grid-cols-2">
             {results.map((result) => {
-              const resultImageFromDefault = result.defaultImage || STYLE_DEFAULT_IMAGES[result.id];
+              const resultImageFromDefault = STYLE_CARD_THUMBNAILS[result.id];
               const categoryImage =
                 STYLE_CATEGORY_IMAGES[styleCategoryImageKey(result.packId, result.categoryName)];
               const resultImageFromPreview = resolveStylePreviewImage({
@@ -225,6 +225,8 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                         <img
                           src={resultImage}
                           alt={result.name}
+                          loading="lazy"
+                          decoding="async"
                           className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                         {resultImageIsPreview ? (

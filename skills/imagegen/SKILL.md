@@ -34,6 +34,49 @@ Rules:
 - If the user explicitly asks for CLI mode, use the bundled `scripts/image_gen.py` workflow. Do not create one-off SDK runners.
 - Never modify `scripts/image_gen.py`. If something is missing, ask the user before doing anything else.
 
+## Codex Studio recipe-aware workflow
+
+When this skill runs inside Codex Studio, it may receive either a UI-compiled job
+from `codex app-server` or a direct user request that names a recipe. Handle both
+paths through the same recipe contract.
+
+UI-compiled jobs:
+
+- If prompt text contains `Task:`, `Recipe directives:`, `Recipe instructions:`,
+  `Image size:`, or `Aspect ratio:`, treat it as an already compiled Codex Studio
+  job.
+- Follow the current turn only. Do not assume previous image context unless the
+  turn includes input/reference images.
+- Do not ask for `/imagine`. Codex Studio prompts are plain text plus recipe
+  directives; slash commands are not part of the contract.
+- Preserve the split between Generation Task and Generation Provider. A task such
+  as `image_generate`, `image_edit`, `sprite_sheet`, `texture_generate`, or
+  `style_preset_card` describes intent; `codex` is only the provider executing it.
+- Prefer `Recipe directives:` over legacy recipe context when both are present.
+  They are compact provider-ready summaries of the Recipe Module controls.
+
+Direct agent requests without UI:
+
+- If the user names a Codex Studio recipe, inspect `SKILLS.md` and
+  `lib/recipeModules.ts` instead of inventing a free-form prompt path.
+- For any recipe, identify: recipe id, intended Generation Task, useful
+  recipe params, attachments/reference roles, aspect ratio or output format, and
+  provider constraints.
+- If the user asks for a style preset, query or identify the preset id/name when
+  available, then keep that concrete preset identity in the prompt. Plain
+  language like `Use the Styles recipe preset SP02-001 Film Noir...` is enough.
+- For recipe work with no UI, generate one focused asset unless the user asks for
+  a batch or sheet. Preserve recipe-specific output shape: spritesheet grids stay
+  sheets, character sheets stay sheets, cinematic storyboards stay frame grids,
+  style-preset cards stay one representative card, and image edits preserve the
+  input identity.
+- Do not weaken recipe detail to save tokens. Compress repeated boilerplate, but
+  keep the recipe controls, style identity, negative constraints, and output
+  shape needed for the job.
+- For style-preset cards, keep the preset-specific visual DNA stronger than a
+  generic pretty-card look; output one image, portrait by default when requested,
+  with no text, labels, logos, watermark, or UI unless explicitly requested.
+
 Built-in save-path policy:
 
 - In built-in tool mode, Codex saves generated images under `$CODEX_HOME/*` by default.

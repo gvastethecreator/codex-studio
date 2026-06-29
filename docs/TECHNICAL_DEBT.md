@@ -36,6 +36,7 @@ Prioridad inmediata del lote runtime-storage-UX 2026-06-21:
 
 Recent runtime-storage progress:
 
+- Done 2026-06-29: dependency/CI baseline refreshed against npm registry and action tags; `docs/TOOLING.md` now records Bun 1.3.14, Vite 8.1.0, Tailwind CSS 4.3.2, Electron 42.5.1, and audited CI action versions.
 - Done 2026-06-29: first performance/fluidity slice added `Catalog Render Budget` and `Catalog Card Action Surface`; active Home catalog now renders a 48-entry page, desktop secondary card actions mount on hover/focus/selection, and mobile keeps card actions available for touch.
 - Done 2026-06-28: `plans/008-public-library-job-intake-reference-boundaries.md` closed `/library/*` public-asset allowlisting, malformed `Persistent Job Intake` validation, and reference count/byte budgets.
 - `JobSummary` is now the default hot read shape for `/api/jobs`.

@@ -17,6 +17,15 @@ const styleCategoryImageFiles = import.meta.glob('../assets/recipes/styles/categ
   import: 'default',
 }) as Record<string, unknown>;
 
+const styleCardThumbnailFiles = import.meta.glob(
+  '../assets/recipes/styles/style-card-thumbnails/*.webp',
+  {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  },
+) as Record<string, unknown>;
+
 const stylePreviewImageFiles = import.meta.glob('../assets/recipes/styles/previews/*.webp', {
   eager: true,
   query: '?url',
@@ -51,6 +60,7 @@ const recipeCardCatalogByKey = Object.entries(recipeCardCatalog).reduce<Record<s
 
 export const RECIPE_CARD_IMAGES = recipeCardCatalogByKey;
 export const STYLE_CATEGORY_IMAGES = buildUrlCatalog(styleCategoryImageFiles);
+export const STYLE_CARD_THUMBNAILS = buildUrlCatalog(styleCardThumbnailFiles);
 export const STYLE_DEFAULT_IMAGES = GENERATED_STYLE_DEFAULT_IMAGES;
 const STYLE_DEFAULT_IMAGE_VARIANTS = GENERATED_STYLE_DEFAULT_IMAGE_VARIANTS;
 export const STYLE_AVAILABLE_DEFAULT_IMAGES = Object.fromEntries(
@@ -62,8 +72,19 @@ export function resolveStyleDefaultImage(presetId: string) {
   return STYLE_DEFAULT_IMAGES[presetId];
 }
 
+export function resolveStyleDefaultImageThumbnail(presetId: string) {
+  return STYLE_CARD_THUMBNAILS[presetId] ?? STYLE_DEFAULT_IMAGES[presetId];
+}
+
 export function resolveStyleDefaultImageVariants(presetId: string) {
   return STYLE_DEFAULT_IMAGE_VARIANTS[presetId] ?? [];
+}
+
+export function resolveStyleDefaultImageVariantThumbnails(presetId: string) {
+  return resolveStyleDefaultImageVariants(presetId).map((src, index) => {
+    const variantKey = `${presetId}-${String(index + 1).padStart(2, '0')}`;
+    return STYLE_CARD_THUMBNAILS[variantKey] ?? src;
+  });
 }
 
 export const STYLE_CATEGORY_PREVIEWS: Record<string, string> = {

@@ -99,6 +99,7 @@ Tasks:
 - Ensure edit mode keeps `input` and `mask` assets while text-to-image uses references.
 - Add a test for queueing an image-guided job then changing composer attachments.
 - Done: Browser Queue jobs persist in IndexedDB across refresh. Browser-only `processing` jobs resume as `pending`; jobs already linked to backend are not re-executed and point users to Backend Session Jobs.
+- Done: Browser Queue jobs now keep all linked backend job ids, reconcile against backend summaries/events, let backend terminal state repair stale browser failures, and avoid double-counting linked active jobs in the Command Center.
 
 Acceptance:
 
