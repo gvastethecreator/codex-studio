@@ -46,7 +46,7 @@ bun run build
 - Do not commit `.env.local` or real secrets.
 - Keep the local-first experience working without `OPENAI_API_KEY`.
 - Document new variables and public scripts in `README.md`.
-- If you change structural decisions, leave a trace in `docs/adr/`.
+- If you change structural behavior, explain the rationale in the PR and update public or agent-facing docs when the change affects contributors.
 
 ## How to file useful bug reports
 

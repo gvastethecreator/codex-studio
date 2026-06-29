@@ -8,6 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Temp / scratch
+.local/
 .tmp
 .tmp-*
 .tmp_*

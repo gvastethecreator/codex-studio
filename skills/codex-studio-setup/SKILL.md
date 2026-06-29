@@ -42,11 +42,10 @@ Before changing repo files, read:
 1. `AGENTS.md`
 2. `CONTEXT.md`
 3. `docs/ARCHITECTURE.md`
-4. `docs/active/professionalization-roadmap.md`
-5. `docs/TECHNICAL_DEBT.md`
-6. `SKILLS.md`
-7. `README.md`
-8. `docs/TROUBLESHOOTING.md`
+4. `ROADMAP.md`
+5. `SKILLS.md`
+6. `README.md`
+7. `docs/TROUBLESHOOTING.md`
 
 For UI onboarding changes, also read:
 

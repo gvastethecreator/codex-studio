@@ -1,6 +1,6 @@
 # Codex Studio Context
 
-Canonical language for the local-first image studio. This file defines the project vocabulary only; current system shape lives in `docs/ARCHITECTURE.md`, and hard-to-reverse trade-offs live in `docs/adr/`.
+Canonical language for the local-first image studio. This file defines the project vocabulary only; current system shape lives in `docs/ARCHITECTURE.md`, and agent workflows live in `SKILLS.md`.
 
 ## Language
 
@@ -250,7 +250,7 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 
 ## Flagged ambiguities
 
-- `CONTEXT.md` is glossary-only; system shape belongs in `docs/ARCHITECTURE.md`, and hard-to-reverse trade-offs belong in `docs/adr/`.
+- `CONTEXT.md` is glossary-only; system shape belongs in `docs/ARCHITECTURE.md`, and workflow rules belong in `AGENTS.md` or `SKILLS.md`.
 - `AGENTS.md` should guide repo work practices, while `SKILLS.md` should guide specialized workflows; neither should duplicate the glossary in `CONTEXT.md`.
 - **Visual Batch** is a UI compatibility cache, not the durable source of truth; the durable record is the **Catalog Entry** in the **Image Catalog**.
 - **Studio Settings** are not `.env.local`; environment files are for **Bootstrap Configuration** and secrets that must exist before the app can load the library.

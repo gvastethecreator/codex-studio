@@ -13,7 +13,7 @@ This file describes local repo workflows for people and agents. It is not a glos
 
 ## Update Dependencies And Basic CI
 
-1. Treat `package.json`, `bun.lock`, `.github/workflows/ci.yml`, and `docs/TOOLING.md` as the auditable baseline.
+1. Treat `package.json`, `bun.lock`, `.github/workflows/ci.yml`, `README.md`, and `CONTRIBUTING.md` as the auditable baseline.
 2. Resolve current versions before editing: `npm view <package> version` for npm packages and official GitHub tags for actions.
 3. Keep `packageManager`, CI, and the local runtime on the same Bun baseline.
 4. If `vite`, `oxlint`, or `oxfmt` change, sync direct dependencies and `overrides`.

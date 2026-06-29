@@ -1,6 +1,6 @@
 # Codex Studio Agent Guide
 
-This file is for agents working inside this repo. Vocabulary lives in `CONTEXT.md`; decisions live in `docs/adr/`; system shape lives in `docs/ARCHITECTURE.md`.
+This file is for agents working inside this repo. Vocabulary lives in `CONTEXT.md`; system shape lives in `docs/ARCHITECTURE.md`; specialized workflows live in `SKILLS.md`.
 
 ## Current Direction
 
@@ -48,9 +48,8 @@ Before architecture or runtime work, read:
 
 1. `CONTEXT.md`
 2. `docs/ARCHITECTURE.md`
-3. Latest relevant ADRs in `docs/adr/`
-4. `docs/active/professionalization-roadmap.md`
-5. `docs/TECHNICAL_DEBT.md`
+3. `ROADMAP.md`
+4. `SKILLS.md` when the change touches providers, recipes, presets, output, storage, or setup workflows.
 
 Before UI work, also read:
 

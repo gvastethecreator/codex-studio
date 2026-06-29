@@ -229,4 +229,4 @@ Default images live in `assets/recipes/styles/defaults/`. Use `.webp` format.
 
 Default cards are prompt-derived artifacts. `scripts/generate-style-defaults.ts` builds the image prompt from the current pack, category, preset `name`, `visualDna`, `negativePrompt`, and deterministic variation helpers. Existing `.webp` files do not update when a manifest changes.
 
-If a preset changes `name`, `visualDna`, `avoidRules`, or `attributes.negativePrompt`, mark its card as needing regeneration in `docs/active/style-preset-card-regeneration-backlog.md` and regenerate `assets/recipes/styles/defaults/<PRESET_ID>.webp` before considering visual work complete.
+If a preset changes `name`, `visualDna`, `avoidRules`, or `attributes.negativePrompt`, regenerate `assets/recipes/styles/defaults/<PRESET_ID>.webp` before considering visual work complete. If you keep a local backlog for stale cards, put it in `.local/style-preset-card-regeneration-backlog.md`; `.local/` is ignored.
